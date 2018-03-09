@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>포인트 관리</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css"> 
+    <link rel="stylesheet" type="text/css" href="scripts/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="scripts/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">  
+    <link rel="stylesheet" type="text/css" href="styles/akl-common.css">  
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.js"></script>
+    <script type="text/javascript" src="scripts/select2.js"></script>
+    <script type="text/javascript" src="scripts/new.js"></script>
+    <script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+	<script src="scripts/bootstrap.datepicker.js"></script>
+    <script type="text/javascript" src="scripts/akl_common.js"></script>
+</head> 
+<body class="akl">  
+	<!-- skipToContent -->
+	<div id="skipToContent"> 
+	   <a href="#contents">콘텐츠 바로가기 </a> 
+	</div>
+	<!-- //skipToContent --> 
+	
+	<main>
+	    <div id="header"></div>
+	    <div class="container-fluid main-container" id="contents"> 
+	        <div class="print-hide breadcrumb-section">
+	            <ol class="breadcrumb">
+	                <li><a href="homepage-logged-in.html">홈</a></li>
+	                <li><a href="my-account.html">마이 페이지</a></li>
+	                <li>멤버포인트 관리</li>
+	            </ol>
+	        </div>
+	    </div>
+	    <div class="container-fluid my-count">
+	        <div class="row">
+	            <div class="container-lg">
+	                <div class="account-landing-page">
+	                    <div class="user-account-header row">
+	                        <div class="container">
+	                            <div class="row">
+	                                <div class="user-block col-sm-6">
+	                                    <div class="user-image-container">
+	                                        <img class="user-image" src="images/yui.png" alt="프로필 이미지">
+	                                        <div class="icon icon-pencil">
+	                                        </div>
+	                                    </div>
+	                                    <div class="user-info">
+	                                        <span class="user-name">암순이</span>
+											<span class="user-email">ConnectID : Soonee_Am@amway.com</span>
+	                                        <span class="user-id">ABO : 7480002</span>
+	                                    </div>
+	                                </div>
+	                                <div class="go-block col-sm-6">
+	                                    <div class="amway-theme">
+	                                        <div class="jump-to-wrapper">
+	                                            <select class="js-jump-to-selection form-control no-uppercase-form-control" aria-hidden="true" title="간편가입 선택"> 
+	                                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">간편가입</option> 
+	                                            </select>
+	                                            <input type="button" class="js-jump-to-selection-btn" value="GO">
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="container">
+	                <div class="bonus-payment amway-theme">
+	                    <div class="bonus-payment-content">
+	                        <div class="bonus-payment-wrapper">
+	                            <h1 class="bonus-payment__title member-pointe">멤버포인트 관리</h1>
+								<p class="bonus-payment__description">회원님의 개인 정보 활용 범위를 확인하고 동의여부를 결정할 수 있습니다.</p>
+
+								<div class="member-point-body">
+									<div class="poit-contents">
+										<p class="bonus-payment__description">김성내(sungne@hanmail.net)님의 멤버포인트 내역</p>
+										<div class="point-title">
+											<div class="tit">사용가능 멤버 포인트</div>
+											<div class="money">457,000</div>
+										</div>
+
+										<div class="po-list">
+											<ul class="list-type2">
+												<li>월간 총 구매 PV의 합계가 200,000 PV이상일 경우 포인트가 적립됩니다.</li>
+												<li>포인트는 구매 익월 15일 이후에 적립되며 현금과 동일하게 제품 구매시에만 사용 가능합니다.</li>
+											</ul>
+										</div>
+										
+										<div class="point-management">
+											<div class="form-group">
+												<label class="control-label" for="weekSelect">기간 선택</label>
+												<div class="date-range-select">
+													<select class="form-control" id="weekSelect">
+														<option>1 week</option>
+														<option>2 week</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group date-form-group">
+												<div class="point-date-range date-begin">
+													<div class="box-date-select">
+														<input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="01/09/2017" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+													</div>
+												</div>
+												<div class="date-range-icon"></div>
+												<div class="point-date-range date-end">
+													<div class="box-date-select">
+														<input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="01/09/2017" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+													</div>
+												</div>
+												<button class="bt-akl-blue" href="#">조회</button>
+											</div>
+										</div>
+										
+										<div class="table-point-wrapper member">
+											<ul>
+												<li class="thead-tit">
+													<span class="day-txt">일시</span>
+													<span class="order-return-txt">주문/반품번호</span>
+													<span class="division-txt">구분</span>
+													<span class="earning-used">적립/사용</span>
+													<span class="available-point">사용가능 멤버포인트</span>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">99,999,999</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+												<li class="tbody">
+													<div class="day-txt">2018-01-27 02:05:27</div>
+													<div class="order-divison">
+														<span>215194064</span>
+														<span class="mob-order-txt">(주문)</span>
+													</div>
+													<div class="division-txt">주문</div>
+													<div class="earning-used">
+														<span class="mob-earning-txt">적립/사용</span>
+														<span class="earning-money">-80,000</span>
+													</div>
+													<div class="available-point">
+														<span class="mob-available-txt">사용가능 멤버포인트</span>
+														<span class="available-money">290,000</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="paging pointer">  
+											<a href="#" class="prev">맨 처음 페이지</a>
+											<a href="#" class="before">이전 페이지</a>
+											<ul>
+												<li><a href="#">1</a></li>
+												<li class="on"><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li> 
+											</ul>
+											<a href="#" class="after">다음페이지</a>
+											<a href="#" class="next">맨 마지막 페이지</a>
+										</div>
+									</div>
+								</div>
+
+	                        </div>
+	                    </div>
+	                </div>
+	
+	            </div>
+	        </div>
+	
+	    </div>
+	    <div id="quick"></div>
+	    <div id="footer"></div>
+	</main>
+	 
+	<div class="overlay"></div> 
+	<!-- 로그인 비밀번호 확인 팝업 -->
+	<div class="cbox U60501_lp1 popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">로그인 비밀번호 확인
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+                       <img src="images/close.png" alt="닫기">
+                    </a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label for="login-pw" class="col-md-5 account-profile__label">로그인 비밀번호</label>
+							<div class="col-md-7 account-profile__value">
+								<input type="text" class="form-control" id="login-pw">
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="cart-popup__item-link">
+                <button type="button" class="btn-blue-white">계속</button>
+                <button type="button" class="bt-akl-txt">취소</button>
+            </div>
+		</div>
+	</div>
+	<!-- //로그인 비밀번호 확인 팝업 --> 
+	
+	
+	<script type="text/javascript">
+	    $(function () {
+	   
+	        $(".select2-hidden-accessible").select2();
+			$(".form_datetime").datepicker({format: 'dd-mm-yyyy',autoclose: true});
+	
+	        
+			//akl 추가 : 팝업   
+			$(".cart-popup__close,.closeCbox").click(function(event) {
+				event.preventDefault();
+				$(".cbox,.overlay").hide();
+			});
+	
+			$('#U60501_lp1').click(function(event) {
+				event.preventDefault();
+				$(".U60501_lp1,.overlay").show(); 
+			}); 
+	    })
+	</script>
+</body>
+
+</html>

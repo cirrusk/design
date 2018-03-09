@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>검색결과  | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css"> 
+    <link rel="stylesheet" type="text/css" href="scripts/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="scripts/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">  
+    <link rel="stylesheet" type="text/css" href="styles/akl-common.css">  
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.js"></script>
+    <script type="text/javascript" src="scripts/select2.js"></script>
+    <script type="text/javascript" src="scripts/new.js"></script>
+    <script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+    <script type="text/javascript" src="scripts/akl_common.js"></script>
+</head>
+<body class="akl"> 
+	<!-- skipToContent -->
+	<div id="skipToContent"> 
+	   <a href="#contents">콘텐츠 바로가기 </a> 
+	</div>
+	<!-- //skipToContent -->
+	  
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents"> 
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li> 
+					<li>“ 시그니처 “ 검색결과</li>
+				</ol>
+			</div>
+		</div> 
+	    <div class="container-fluid main-container akl-search">
+            <div class="row">
+                <div class="popular-searches">
+	                <dl>
+	                    <dt>인기검색어 </dt>
+	                    <dd class="clearfix">
+	                        <ul>
+	                            <li>암웨이</li>
+		                        <li>트리라이트</li>
+		                        <li>아티스트리 </li>
+		                        <li>퀸</li>
+		                        <li>나이프</li>
+		                        <li>정수기</li>
+		                        <li>오메가 </li>
+		                     </ul>
+	                         <button type="button" id="U101000_lp" class="bt-akl-white mini">검색도움말</button> 
+	                    </dd>
+	                </dl>
+                </div>
+                
+                <!-- No Results -->
+                <div class="akl-no-results">
+                    <h1 class="product-list-page-title spl-page-title"><strong>“XXX“</strong> 검색결과가 없습니다.</h1>
+                    <div class="ui-front">
+                        <p>입력하신 내용을 확인 후 다시 검색해 보세요.</p> 
+                         <div class="input-group">
+                             <input type="text" class="form-control js-site-search-input ui-autocomplete-input" name="text" value="" maxlength="100" placeholder="검색어를 입력하세요" data-options="{&quot;autocompleteUrl&quot; : &quot;/lynxstorefront/lynx/en/search/autocomplete/SearchBox&quot;,&quot;minCharactersBeforeRequest&quot; : &quot;2&quot;,&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,&quot;displayProductImages&quot; : true}" autocomplete="off" title="검색어 입력">
+                             <span class="input-group-btn">
+                                 <a class="btn btn-link" type="submit">
+                                    <span class="icon-search"></span>
+                                 </a>
+                             </span>
+                         </div> 
+                     </div>
+                </div>
+				<!--// No Results --> 
+            </div> 
+        </div> 
+        <div id="quick"></div>
+        <div id="footer"></div>
+    </main> 
+    
+    
+    <div class="overlay"></div>  
+    <!-- 검색도움말 팝업 -->
+    <div class="cbox U101000_lp popWidM">
+        <div class="cart-popup__dialog">
+            <div class="cart-popup__header">
+                <span class="cart-popup__header-text">검색도움말
+                    <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+                       <img src="images/close.png" alt="닫기">
+                    </a>
+                </span>
+            </div>
+            <div class="cart-popup__content payment"> 
+                <div class="cart-popup__item-info"> 개발 완료 후 작성 </div>
+            </div> 
+        </div>
+    </div>
+    <!-- // 검색도움말 팝업 --> 
+    
+    <script type="text/javascript">
+        $(function(){
+            $('.content-button').click(function(e) {
+                e.preventDefault();
+                $('.content-button').add('active');
+                $('.product-button').remove('active');
+                $('.product-search').hide();
+                $('.content-search').show();
+            });
+            $('.product-button').click(function(e) {
+                e.preventDefault();
+                $('.product-button').add('active');
+                $('.content-button').remove('active');
+                $('.content-search').hide();
+                $('.product-search').show();
+            });
+            //fillters checkbox
+            $(".facet__list__label").click(function(e) {
+                e.preventDefault();
+                if ($(this).prev().prop("checked") == false) {
+                    $(this).prev().prop("checked", true);
+                } else {
+                    $(this).prev().prop("checked", false);
+                }
+            });
+            //search box click event
+            $(".icon-search").click(function(e) {
+                e.preventDefault();
+                var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+                console.log(value);
+                if (value == 'did you mean') {
+                    window.location.href = "did-you-mean.html";
+                } else if (value == 'artistry') {
+                    window.location.href = "search-result-page.html";
+                } else {
+                    window.location.href = "search-no-result.html";
+                }
+            });
+
+            //  add to shopping cart
+            $('.product-list__item-link .btn-blue-white').click(function(event) {
+                event.preventDefault();
+                $("#add-to-cart-box.cbox,.overlay").show();
+                $("#colorbox").hide();
+                
+            });
+
+            $(".cart-popup__close").click(function() {
+                $("#add-to-cart-box.cbox,.overlay").hide();
+            });
+
+            $('.quick-view-btn').click(function(event) {
+                event.preventDefault();
+                $(".view-box,.overlay").show();
+                
+            });
+            $(".cart-popup__close.quick-view-close").click(function() {
+                $(".view-box,.overlay").hide();
+            });
+
+            //right part list item check event
+            $(".checkbox-element-wrapper").click(function(e){
+                e.preventDefault();
+                if ($(this).children('input').prop("checked") == false) {
+                    $(this).children('input').prop("checked", true);
+                } else {
+                    $(this).children('input').prop("checked", false);
+                }
+            });
+
+            //dropdown item check event
+            $(".cart-detail__addto-options").click(function(e){
+                e.preventDefault();
+                if ($(this).prev('input').prop("checked") == false) {
+                    $(this).prev('input').prop("checked", true);
+                } else {
+                    $(this).prev('input').prop("checked", false);
+                }
+            });
+
+            //add to shopping list event
+            (function ($) {
+                $(".js-add-list-shopping-button,.addToLIST").click(function(e){
+                    var tag = $(this).siblings('.dropdown-menu');
+                    var flag=true;
+                    if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
+                        e.stopPropagation();
+                        $(".plp-add-to-shopping-list ").removeClass("open");
+                        $(this).parent(".plp-add-to-shopping-list ").addClass("open");
+                        $(tag).show();
+                        $(".plp-add-to-ditto").removeClass("open");
+                    }else{
+                        $(this).parent(".plp-add-to-shopping-list ").removeClass("open");
+                        $(tag).hide();
+                    }
+                    $(document).bind("click",function(e){//点击空白处，设置的弹框消失
+                        var target = $(e.target);
+                        if(target.closest(tag).length == 0 && flag == true){
+                            $(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
+                            $(tag).hide();
+                            flag = false;
+                        }
+                    });
+                });
+            })(jQuery);
+
+            //add to ditto event
+            (function ($) {
+                $(".product-list__item-link-ditto").click(function(e){
+                    var tag = $(this).siblings('.dropdown-menu');
+                    var flag=true;
+                    if(!$(this).parent(".plp-add-to-ditto ").hasClass("open")){
+                        e.stopPropagation();
+                        $(".plp-add-to-ditto").removeClass("open");
+                        $(this).parent(".plp-add-to-ditto").addClass("open");
+                        $(tag).show();
+                        $(".plp-add-to-shopping-list ").removeClass("open");
+                    }else{
+                        $(this).parent(".plp-add-to-ditto").removeClass("open");
+                        $(tag).hide();
+                    }
+                    $(document).bind("click",function(e){//点击空白处，设置的弹框消失
+                        var target = $(e.target);
+                        if(target.closest(tag).length == 0 && flag == true){
+                            $(tag).parent(".plp-add-to-ditto ").removeClass("open");
+                            $(tag).hide();
+                            flag = false;
+                        }
+                    });
+                });
+            })(jQuery);
+
+            $('.addToDitto').click(function(event) {
+                event.preventDefault();
+                $(".cboxAddToYourDitto.cbox,.overlay").show(); 
+            });
+            $(".cart-popup__close,.closeCbox").click(function() {
+                $(".cbox,.overlay").hide();
+            });
+            $('.creatNewDitto').click(function(event) {
+                event.preventDefault();
+                $(".cboxCreateNewDitto,.overlay").show(); 
+            });
+
+        })
+        //akl 추가 : 팝업 
+        $(function() {
+            $(".cart-popup__close,.closeCbox").click(function(event) {
+                event.preventDefault();
+                $(".cbox,.overlay").hide();
+            }); 
+            $('#U101000_lp').click(function(event) {
+                event.preventDefault();
+                $(".U101000_lp,.overlay").show();
+                
+            });
+        }) 
+
+    </script>
+</body>
+
+</html>
