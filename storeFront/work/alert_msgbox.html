@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>alert</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="scripts/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="scripts/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/akl-common.css">
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+	<script type="text/javascript" src="scripts/select2.js"></script>
+	<script type="text/javascript" src="scripts/new.js"></script>
+	<script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+
+	<script type="text/javascript" src="_scripts/jquery.msgbox.js"></script>
+	<script type="text/javascript" src="scripts/akl_common.js"></script>
+<style>
+.jMsgbox-overlay {background-color:rgba(0,0,0,.4)}
+.jMsgbox-wrap {box-shadow:5px 0 15px rgba(0,0,0,.2);/* border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px; */border:1px solid #999;}
+/* .jMsgbox-title {color:#333; height:50px !important; padding-left:15px; font-size:24px; border-bottom:1px solid #eee; font-weight:bold; background-color:#fff;} */
+
+.jMsgbox-title {color:#55565a; height:50px !important; background-color:#fff;}
+
+
+.jMsgbox-controls {right:6px; top:3px;}
+.jMsgbox-controls a {width:20px; height:20px; margin:10px 2px; background:url(images/akl_common/ico_closed.png) no-repeat;}
+.jMsgbox-close {}
+.jMsgbox-close:hover {}
+.jMsgbox-max {backgroun-color:pink; background-position:-42px -25px}
+.jMsgbox-max:hover {backgroun-color:#000; background-position:-42px -1px}
+.jMsgbox-min {background-position:-21px -25px}
+.jMsgbox-min:hover {background-position:-21px -1px}
+.jMsgbox-restore {background-position:0px -25px}
+.jMsgbox-restore:hover {background-position:0px -1px}
+.jMsgbox-next {background-position:-104px -25px}
+.jMsgbox-next:hover {background-position:-104px -1px}
+.jMsgbox-prev {background-position:-139px -25px}
+.jMsgbox-prev:hover {background-position:-139px -1px}
+.jMsgbox-play {background-position:-122px -25px}
+.jMsgbox-play:hover {background-position:-122px -1px}
+.jMsgbox-pause {background-position:-157px -25px}
+.jMsgbox-pause:hover {background-position:-157px -1px}
+.jMsgbox-content {background-color:#fff;}
+/* .jMsgbox-content .jMsgbox-shortcut {border:1px solid red; padding:36px 0px 0px 78px !important;} */
+
+.jMsgbox-content .jMsgbox-shortcut {background:skyblue; padding:50px 30px 20px; text-align:center;}
+
+.jMsgbox-content .jMsgbox-alert {backgroun-color:#ff560c; background-image:url(../img/warning.png);}
+.jMsgbox-content .jMsgbox-info {backgroun-color:yellow; background-image:url(../img/info.png);}
+.jMsgbox-content .jMsgbox-warning {backgroun-color:#4474f0; background-image:url(../img/warning.png);}
+.jMsgbox-content .jMsgbox-error {backgroun-color:red; background-image:url(../img/error.png); color:#e30000;}
+.jMsgbox-content .jMsgbox-success {backgroun-color:#f044c5; background-image:url(../img/success.png);}
+.jMsgbox-content .jMsgbox-confirm {backgroun-color:pink; color:red;}
+.jMsgbox-content .jMsgbox-prompt {backgroun-color:hotpink; background-image:url(../img/prompt.png);  color:#000000; padding-top:20px !important;}
+.jMsgbox-prompt-input {display:block; padding:6px 6px; margin-bottom:10px; color:#555; vertical-align:middle; 
+	/* -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; */ background-color:#FFF; border:1px solid #CCC; 
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+	-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+	-webkit-transition:border linear 0.2s, box-shadow linear 0.2s; 
+	-moz-transition:border linear 0.2s, box-shadow linear 0.2s; 
+	-o-transition:border linear 0.2s, box-shadow linear 0.2s; transition:border linear 0.2s, box-shadow linear 0.2s; width:206px;
+}
+.jMsgbox-loading {background:url(../img/loading.gif) center center no-repeat transparent;}
+.jMsgbox-loaded {padding:15px;}
+.jMsgbox-foot {height:80px !important;background:#fff; margin-bottom:0; padding:0 20px;}
+.jMsgbox-foot input {display:inline-block; min-width:120px; height:40px; padding:4px 12px; border:0; font-size:14px; line-height:20px;color:#fff; background:#002F5F;}
+.jMsgbox-foot input:hover {color:#002F5F; background:#fff;}
+
+.jMsgbox-foot input.jMsgbox-ok {color:#fff; background:#002F5F;}
+.jMsgbox-foot input.jMsgbox-ok:hover {color:#002F5F; background:#fff;border:2px solid #002F5F;}
+.jMsgbox-foot input.jMsgbox-cancel {color:#0075a4; background:#fff;}
+.jMsgbox-foot input.jMsgbox-cancel:hover {color:#002f5f;text-decoration:underline; background:#fff;}
+
+.jMsgbox-resize {background:#ddd; width:10px; height:10px;}
+.jMsgbox-resize:hover {}
+</style>
+</head>
+<body class="akl">
+
+
+<!-- 
+<h3>text: <a href="javascript:;" class="jmb jmb-text">text Open msgbox</a></h3>
+<h3>html (default): <a href="javascript:;" class="jmb jmb-html">html (default) Open msgbox</a></h3> -->
+
+<h3>confirm: <a href="#" onclick="return false;" class="jmb jmb-confirm">confirm Open msgbox</a></h3>
+<h3>alert: <a href="#" onclick="return false;" class="jmb jmb-alert">alert Open msgbox</a></h3>
+
+<button type="button" class="" onclick="layerPopOver(this,'.sample01');">기존알럿</button>
+
+<!-- 
+<h3>prompt: <a href="javascript:;" class="jmb jmb-prompt">prompt Open msgbox</a></h3> -->
+
+
+<!-- alert -->
+<div class="layerWrapper sample01"><!-- sample01 임시 클래스 개발에서 용도에 맞게 변경하세요 -->
+	<div class="cbox layerBox popWidS">
+		<div class="akl-alt-wrap">
+			<a href="#" class="cart-popup__close">
+				<img src="images/akl_common/ico_closed.png" alt="닫기">
+			</a>
+			<div class="akl-alt-pop">
+				<p>URL 복사를 완료하였습니다. </p>
+			</div>
+			<div class="cart-popup__item-link commpete">
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //alert -->
+
+<script type="text/javascript">
+	$(function() {
+		
+		$(".jmb-confirm").msgbox({
+			type: 'confirm',
+			content: 'confirm 등록하시겠습니까?<br>confirm 등록하시겠습니까?<br>confirm 등록하시겠습니까?',
+			onClose: function(){
+				alert(!!this.val());
+			}
+		});
+		
+		$(".jmb-alert").msgbox({
+			type: 'alert',
+			content: 'alert 메시지 들어갑니다.<br>alert 메시지 들어갑니다.<br>alert 메시지 들어갑니다.'
+		});
+		
+	});
+</script>
+</body>
+
+</html>
