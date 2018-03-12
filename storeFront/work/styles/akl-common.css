@@ -2,7 +2,7 @@
 Version : AKL Hybris UIUX 1.0
 Date : 2018-01-25
 Editor : eunmyoung Noh
-*************************************************/
+*************************************************/ 
 @import url("shop-finder.css");
 @import url("navigation.css");
 @import url("select2.css");
@@ -315,15 +315,17 @@ ul .ol-list { margin:10px 0 20px 15px}
 .refund-box {border:1px solid #e3e3e3;padding:18px 20px 10px;margin-top:20px;}
 .refund-box h5 {font-size:13px;padding:0;margin:0;}
 
-/* common > tab */
+/* common > tab  
 .akl .outer-border-bottom .tabs-toggles.num02 .tab-toggle-wrap,
 .akl .outer-border-bottom .tabs-toggles.num03 .tab-toggle-wrap,
 .akl .outer-border-bottom .tabs-toggles.num04 .tab-toggle-wrap,
 .akl .outer-border-bottom .tabs-toggles.num05 .tab-toggle-wrap,
-.akl .outer-border-bottom .tabs-toggles.num06 .tab-toggle-wrap {width:20%; }
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle{ display: table; width: 100%; text-align: center; padding:0 20px !important; table-layout:fixed; word-break:break-all; height: 60px}
+.akl .outer-border-bottom .tabs-toggles.num06 .tab-toggle-wrap {width:20%; }*/ 
+.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap { min-width:120px;} 
+.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle{ display: table;  min-width:120px;table-layout:fixed; text-align:center; word-break:break-all; height: 60px}
 .akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text { display:table-cell; font-weight:500; font-size:14px; vertical-align: middle; line-height:120%;}
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i { display: inline-block;}
+.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i { display: inline-block;}*/
+ 
 
 /* common > step */
 .step-wrap .checkout-steps { margin:0 0 30px; padding:0;}
@@ -392,6 +394,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .shipping-list .search-no-result {padding: 20px 0 ; margin-bottom: 0} 
 .col-search-right .search-no-result { margin-bottom:60px; border-bottom: 1px solid #dadada; padding: 40px 0}
 .table-point-wrapper  .search-no-result { border-bottom: 1px solid #dadada; }
+.mt25 { margin-top:25px}
 
 /*** header ***/
 .akl header {font-family:'Noto Sans KR', sans-serif; font-weight:500 }
@@ -1062,14 +1065,17 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .akl #videobox .popup-video-preview__content .video-cont span img { height: 100%;}
     .akl .popup-video-preview__content .video-preview__play { margin-left:-41px;margin-top:-41px;}
 
-     /* common > tabs */
+     /* common > tabs  
     .akl .outer-border-bottom .tabs-toggles.num02 .tab-toggle-wrap {width:50%;}
 	.akl .outer-border-bottom .tabs-toggles.num03 .tab-toggle-wrap {width:33.333%;}
 	.akl .outer-border-bottom .tabs-toggles.num04 .tab-toggle-wrap {width:50%;}
 	.akl .outer-border-bottom .tabs-toggles.num05 .tab-toggle-wrap {width:33.333%;}
-	.akl .outer-border-bottom .tabs-toggles.num06 .tab-toggle-wrap {width:33.333%;}
-	.akl .amway-theme .navigation-tabs-container .tabs-toggles .tab-toggle-wrap .tab-toggle{ height: 50px}
-
+	.akl .outer-border-bottom .tabs-toggles.num06 .tab-toggle-wrap {width:33.333%;}*/
+	.akl .amway-theme .navigation-tabs-container .tabs-toggles .tab-toggle-wrap .tab-toggle{ height: 50px} 
+	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle{  padding:0 10px}
+	
+	.akl .amway-theme .tabs-toggles {padding-left: 20px; margin-left: 0;margin-right: -20px;overflow-x: auto;overflow-y: hidden; border: 0;}
+	
 	/* common > form */
 	.form-group .address p { margin-right:0; }
 	.form-group .address button {  position: static; margin-top: 5px }

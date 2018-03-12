@@ -152,67 +152,30 @@
 	    <div id="footer"></div>
 	</main>
 	 
-	<div class="overlay"></div> 
-
-	<!-- Alert case01 -->
-	<div class="layerWrapper Alert-case01_pop"><!-- div.layerWrapper 추가 -->
-		<div class="cbox Alert-case01 layerBox popWidS">
-			<div class="popup__alert">
-				<a href="#" class="cart-popup__close">
-					<img src="images/akl_common/ico_closed.png" alt="닫기">
-				</a>
-				<div class="pop-alert">
-					<p>URL 복사를 완료하였습니다. </p>
-				</div>
-				<div class="cart-popup__item-link commpete">
-					<button type="button" class="bt-akl-blue">확인</button> 
-				</div>
-			</div>
-		</div> 
-	</div>
-	<!-- //Alert case01 -->
-
-	<!-- Alert case02 -->
-	<div class="layerWrapper Alert-case02_pop"><!-- div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidS">
-			<div class="popup__alert">
-				<a href="#" class="cart-popup__close">
-					<img src="images/akl_common/ico_closed.png" alt="닫기">
-				</a>
-				<div class="pop-alert">
-					<p>수신인 휴대폰번호를 입력한 후 <br> 확인 버튼을 선택 하세요.</p>
-				</div>
-				<div class="cart-popup__item-link commpete">
-					<button type="button" class="bt-akl-blue">확인</button>
-				</div>
-			</div>
+	<div class="layerWrapper pop-sample"><!-- div.layerWrapper 추가 -->
+	<div class="cbox layerBox popWidS"><!-- popWidS, popWidM, popWidL .layerBox 추가 --> 
+	    <div class="cart-popup__dialog">
+	        <div class="cart-popup__header">
+	            <span class="cart-popup__header-text">수신인 휴대폰 번호 확인
+	                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+	                   <img src="images/close.png" alt="닫기">
+	                </a>
+	            </span>
+	        </div>
+	        <div class="cart-popup__content payment"> 
+	            <div class="cart-popup__item-info">
+	            	ABO님의 후원을 받으실 분에게 간편가입 URL을 전송하려면, 후원을받으실 분으로부터 ‘간편가입 URL 수신’ 및 ‘후원 받으실 분의 휴대전화번호를 간편가입 URL 
+					생성을 위해 한국 암웨이에 제공한다는사실’에 대한 동의를 받으셔야 합니다. <br>
+					동의를 받지 않으셨으면, 후원을 받으실 분으로부터 모든 동의를 받으신 후 진행하시기 바랍니다. 
+	            	<p class="st-text mt25">후원을 받으실 분의 동의를 받으셨습니까?</p>
+	            </div> 
+	        </div> 
+	        <div class="cart-popup__item-link"> 
+				<button type="button" class="bt-akl-blue">확인</button>
+				<button type="button" class="bt-akl-white">취소</button>
+			</div>  
 		</div>
 	</div>
-	<!-- //Alert case02 -->
-
-	<!-- Alert case03 -->
-	<div class="layerWrapper Alert-case03_pop"><!-- div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidS">
-			<div class="popup__alert">
-				<a href="#" class="cart-popup__close" data-dismiss="modal" aria-label="Close" aria-hidden="true">
-					<img src="images/akl_common/ico_closed.png" alt="닫기">
-				</a>
-				<div class="pop-confirm"> 
-					<p>
-						ABO님의 후원을 받으실 분에게 간편가입 URL을 전송하려면, 후원을받으실 분으로부터 ‘간편가입 URL 수신’ 및 ‘후원 받으실 분의 휴대전화번호를 간편가입 URL 
-						생성을 위해 한국 암웨이에 제공한다는사실’에 대한 동의를 받으셔야 합니다. <br>
-						동의를 받지 않으셨으면, 후원을 받으실 분으로부터 모든 동의를 받으신 후 진행하시기 바랍니다. 
-						<em>후원을 받으실 분의 동의를 받으셨습니까?</em> 
-					</p>
-				</div>
-				<div class="cart-popup__item-link commpete">
-					<button type="button" class="bt-akl-blue">확인</button>
-					<button type="button" class="bt-akl-white">취소</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //Alert case03 -->
 	
 	
 	<script type="text/javascript">
@@ -222,7 +185,7 @@
 	        $('#confirm').click(function(event) {
 				event.preventDefault();
 				//$(".Alert-case01_pop,.overlay").show();
-				layerPopOver(this,'.Alert-case01_pop');
+				layerPopOver(this,'.pop-sample');
 			}); 
 
 	    })
