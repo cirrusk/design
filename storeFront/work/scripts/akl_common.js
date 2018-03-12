@@ -22,6 +22,9 @@ $(function() {
 
 		e.preventDefault();
 	});
+	
+	/* 약관 더보기 (768이하) */
+	terms_ViewAll();
 });
 
 //header login tooltip
@@ -48,7 +51,6 @@ $(function() {
 
 
 
-
 /* 퀵링크 */
 function quickLinks(){
 	var $qLinkBTN = $('.brand-btn');
@@ -64,6 +66,21 @@ function quickLinks(){
 		}
 	});
 };
+
+/* 약관 더보기 (768이하) */
+function terms_ViewAll(){
+	var $btnViewAll = $('.text-btn.view-all');
+	$btnViewAll.each(function(){
+		$(this).on('click',function(){
+			var $termsTexts = $(this).parent('.conditions');
+			if ($termsTexts.hasClass('expand')){
+				$termsTexts.removeClass('expand');
+			}else {
+				$termsTexts.addClass('expand');
+			}
+		});
+	});
+}
 
 /** ------------------------------------------
  *  @layerPopOver
