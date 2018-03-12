@@ -745,11 +745,11 @@ ul li.tbody div.mob-ttoy {display:none;}
 .product-solition-top {padding:40px 0 0}
 
 /* 카테고리 > 2차 제품분류 */
-.akl .accordion-custom.pro-category .panel-title {padding:20px 10px;font-size:14px;font-weight:500}
+.akl .accordion-custom.pro-category .panel-title {padding:20px 0;font-size:14px;font-weight:500}
 .akl .accordion-custom.pro-category .panel-title a {color:#002f5f;}
 .akl .accordion-custom.pro-category .panel-title a:hover {color:#0075a4}
 .akl .accordion-custom.pro-category .icon-minus {font-size:14px;top:0;line-height:14px;}
-.akl .accordion-custom.pro-category .icon-minus:before {font-size:14px;top:0;line-height:14px;}
+.akl .accordion-custom.pro-category .icon-minus:before {font-size:14px;top:0;line-height:14px;padding-right:6px;}
 
 .product-solition-top.type2 {padding:0 0 0}
 .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;}
@@ -764,6 +764,18 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 .akl .product__facet .facet .facet__list {padding:0 20px;}
 .akl .product-list-right-component .pagination-wrapper .filter-facet-button-container .filter-facet-button {padding:9px 0;font-size:16px;font-weight:500;color:#0075a4;letter-spacing:-1px;}
+
+/* 카테고리 > 2차 제품분류 왼쪽메뉴 */
+.list-group.aisde {margin-bottom:0;}
+.panel.aisde {box-shadow:0 0 0 rgba(0, 0, 0, 0.05);margin-bottom:0;border-top:1px solid #ddd}
+.panel.aisde .list-group-item {border-bottom:1px solid #ddd;border:0 none;padding:16px 16px;font-size:14px;letter-spacing:-1px;font-weight:500;color:#002f5f;background:transparent}
+.panel.aisde .list-group-item .icon-minus {font-size:30px;font-family:'Noto Sans KR', sans-serif;font-weight:700;line-height:15px;}
+.panel.aisde a.list-group-item:hover, .panel.aisde a.list-group-item:focus {background:transparent}
+.panel.aisde .sub-cateogry {margin:0 10px;}
+.panel.aisde .list-group-item.sub-item {padding:16px 20px;border-top:1px solid #ddd;background:transparent;}
+.panel.aisde .list-group-submenu {border-top:1px solid #ddd;padding:10px 0;-webkit-transition: all 0.15s;-moz-transition: all 0.15s;-o-transition: all 0.15s;-ms-transition: all 0.15s;transition: all 0.15s;}
+.panel.aisde .list-group-submenu .list-group-item {padding:10px 30px;color:#56565a;
+	-webkit-transition: all 0.15s;-moz-transition: all 0.15s;-o-transition: all 0.15s;-ms-transition: all 0.15s;transition: all 0.15s;}
 
 @media (max-width: 990px) {
 	/* 카테고리 */
@@ -1160,6 +1172,9 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .category-soultion .plp-add-to-ditto {padding-left:0}
 
 	.product-solition-top {padding:0 0 0}
+
+	/* 카테고리 > 2차분류 왼쪽메뉴 */
+	.panel.aisde .sub-cateogry {margin:0 20px;}
 
 
 }
