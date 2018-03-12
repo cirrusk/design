@@ -22,12 +22,21 @@
     <script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
     <script type="text/javascript" src="scripts/akl_common.js"></script>
 </head>
-<body class="akl"> 
+<body class="akl">
+	<a href="#" onclick="loadingLayerClose();" style="position:absolute; top:0; left:0; z-index:10000; color:yellow">닫기</a>
+	<!-- 
 	<div class="loading"> 
-		<div class="loading-wrap">
-		   <img src="images/akl_common/img_loading.png" alt=""> 
-		</div>
-	</div> 
+		<div class="loading-wrap"><img src="images/akl_common/img_loading.png" alt=""></div>
+	</div> -->
+	
+	
+<script>
+$(function(){
+	loadingLayer();
+});
+
+
+</script>
 </body>
 
 </html>

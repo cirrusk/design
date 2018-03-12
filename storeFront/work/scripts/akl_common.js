@@ -83,6 +83,20 @@ function terms_ViewAll(){
 	});
 }
 
+/* 로딩 */
+function loadingLayer(){
+	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="images/akl_common/img_loading.png" alt="로딩중"></div></div>');
+	if (loadImg.length){
+		$('#loading').remove();
+	}
+	$('body').append(loadImg);
+	loadImg.before(layerM);
+}
+function loadingLayerClose(){
+	$('#loading').remove();
+	return false;
+}
+
 /** ------------------------------------------
  *  @layerPopOver
  *  - btnOpenLayer : 레이어 열기 버튼
