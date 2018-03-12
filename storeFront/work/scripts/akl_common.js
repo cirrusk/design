@@ -364,7 +364,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		width: 500,			// the width of msgbox
 		height: 350,		// the height of msgbox
 		initialWidth: reWidth, // the initial width of msgbox, when loaded, it will be animated to options.width and options.height
-		initialHeight: 250, // see initialHeight
+		initialHeight: 300, // see initialHeight
 		top: false,			// the position of msgbox, if false, will show in the middle of the window
 		left: false,
 		titleHeight: 30,	// the height of the title of it is not specified in css
