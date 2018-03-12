@@ -122,22 +122,22 @@
 																<div class="form-group">
 																	<label class="control-label" for="weekSelect">기간 선택</label>
 																	<div class="date-range-select">
-																		<select class="form-control" id="weekSelect">
-																			<option>1 week</option>
-																			<option>2 week</option>
+																		<select class="form-control" id="weekSelect"><!-- week < 주일로 변경 2018.03.12 -->
+																			<option>1 주일</option>
+																			<option>2 주일</option>
 																		</select>
 																	</div>
 																</div>
 																<div class="form-group date-form-group">
 																	<div class="point-date-range date-begin">
-																		<div class="box-date-select">
-																			<input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="01/09/2017" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+																		<div class="box-date-select"><!-- value 년도 순서 변경 2018.03.12 -->
+																			<input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
 																		</div>
 																	</div>
 																	<div class="date-range-icon"></div>
 																	<div class="point-date-range date-end">
-																		<div class="box-date-select">
-																			<input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="01/09/2017" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+																		<div class="box-date-select"><!-- value 년도 순서 변경 2018.03.12 -->
+																			<input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
 																		</div>
 																	</div>
 																	<button class="bt-akl-blue" href="#">조회</button>
@@ -354,7 +354,7 @@
 																			<span class="available-money">290,000</span>
 																		</div>
 																	</li>
-																	<li><!-- 내역이 없을때 클래스 삭제하고 넣어주세요. -->
+																	<li><!-- 내역이 없을때 클래스 삭제하고 넣어주세요. 2018.03.12-->
 																		<div class="search-no-result">
 													                    	<p>포인트 내역이 없습니다. </p>
 													                    </div>
@@ -393,7 +393,7 @@
 															<div class="table-point-wrapper mpoint">
 																<ul>
 																	<li class="thead-tit">
-																		<span class="name-txt">구분</span>
+																		<span class="name-txt">이름</span><!-- 2018.03.12 이름으로 변경 -->
 																		<span class="m-point-look">M포인트조회</span>
 																		<span class="apply-conver">전환신청포인트</span>
 																		<span class="request-conver">전환요청</span>
@@ -551,7 +551,7 @@
 	    $(function () {
 	   
 	        $(".select2-hidden-accessible").select2();
-			$(".form_datetime").datepicker({format: 'dd-mm-yyyy',autoclose: true});
+			$(".form_datetime").datepicker({format: 'yyyy-mm-dd',autoclose: true});//년도 순서 변경 2018.03.12
 	
 			//akl 추가 : 팝업   
 			$(".cart-popup__close,.closeCbox").click(function(event) {
