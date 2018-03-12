@@ -396,7 +396,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		photoScaled: false,	// whether to scale the photo the scale of (options.width, options.height)
 		photoFade: 500,		// whether to use fade transition to show photos, false, or a miniseconds
 		
-		padding: 0,			// the padding of the content
+		padding: '0 0 10px',			// the padding of the content
 		
 		imgError: 'Failed to load image.',	// the error message when loading image
 		xhrError: 'Failed to load URL.',	// the error message when using ajax
