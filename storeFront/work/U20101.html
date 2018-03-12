@@ -58,7 +58,7 @@
 			<div class="container-fluid main-container">
 				<ul id="terms" class="box-sizing">
 					<li>
-						<h3 class="uppercase">
+						<h3><!-- .uppercase 삭제 -->
 							1.[필수] 전자상거래에 관한 이용약관
 							<a href="#" class="show-terms2 U20101_lp1_btn"><i class="icon icon-exports"><em class="hidden">자세히 보기</em></i></a>
 						</h3>
@@ -69,7 +69,7 @@
 								내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.
 								<!-- //약관 -->
 							</div>
-							<button class="text-btn view-all U20101_lp1_btn">
+							<button class="text-btn view-all">
 								더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
@@ -94,7 +94,7 @@
 						</div>
 					</li>
 					<li>
-						<h3 class="uppercase">
+						<h3><!-- .uppercase 삭제 -->
 							2.[필수] 개인정보 수집/이용 동의서
 							<a href="#" class="show-terms2 U20101_lp2_btn"><i class="icon icon-exports"><em class="hidden">자세히 보기</em></i></a>
 						</h3>
@@ -105,8 +105,8 @@
 								내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.
 								<!-- //약관 -->
 							</div>
-							<button class="text-btn view-all U20101_lp2_btn">
-								View All
+							<button class="text-btn view-all">
+								더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
 							</button>
@@ -130,7 +130,7 @@
 						</div>
 					</li>
 					<li>
-						<h3 class="uppercase">
+						<h3><!-- .uppercase 삭제 -->
 							3.[필수] Connect ID 생성을 위한 제3자 제공
 							<a href="#" class="show-terms2 U20101_lp3_btn"><i class="icon icon-exports"><em class="hidden">자세히 보기</em></i></a>
 						</h3>
@@ -141,7 +141,7 @@
 								내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.
 								<!-- //약관 -->
 							</div>
-							<button class="text-btn view-all U20101_lp3_btn">
+							<button class="text-btn view-all">
 								더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
@@ -166,7 +166,7 @@
 						</div>
 					</li>
 					<li>
-						<h3 class="uppercase">
+						<h3><!-- .uppercase 삭제 -->
 							4.[선택] 개인정보의 제3자 제공에 대한 동의
 							<a href="#"  class="show-terms2 U20101_lp4_btn"><i class="icon icon-exports"><em class="hidden">자세히 보기</em></i></a>
 						</h3>
@@ -177,7 +177,7 @@
 								내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.
 								<!-- //약관 -->
 							</div>
-							<button class="text-btn view-all U20101_lp4_btn">
+							<button class="text-btn view-all">
 								더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
@@ -202,7 +202,7 @@
 						</div>
 					</li>
 					<li>
-						<h3 class="uppercase">
+						<h3><!-- .uppercase 삭제 -->
 							5.[필수] ABO 계약 동의서
 							<a href="#" class="show-terms2 U20101_lp5_btn"><i class="icon icon-exports"><em class="hidden">자세히 보기</em></i></a>
 						</h3>
@@ -213,7 +213,7 @@
 								내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.
 								<!-- //약관 -->
 							</div>
-							<button class="text-btn view-all U20101_lp5_btn">
+							<button class="text-btn view-all">
 								더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
@@ -238,7 +238,7 @@
 						</div>
 					</li>
 					<li>
-						<h3 class="uppercase">
+						<h3><!-- .uppercase 삭제 -->
 							6.[필수] ABO 유의사항
 							<a href="#" class="show-terms2 U20101_lp6_btn"><i class="icon icon-exports"><em class="hidden">자세히 보기</em></i></a>
 						</h3>
@@ -249,7 +249,7 @@
 								내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.<br>내용이 출력됩니다.
 								<!-- //약관 -->
 							</div>
-							<button class="text-btn view-all U20101_lp6_btn">
+							<button class="text-btn view-all">
 								더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
@@ -458,29 +458,32 @@
 	<!-- //약관6 팝업 -->
 	
 	<script type="text/javascript">
-	$('.U20101_lp1_btn').on('click',function(){
-		layerPopOver(this,'.U20101_lp1_pop');
+	$(function(){
+		$('.U20101_lp1_btn').on('click',function(){
+			layerPopOver(this,'.U20101_lp1_pop');
+		});
+		
+		$('.U20101_lp2_btn').on('click',function(){
+			layerPopOver(this,'.U20101_lp2_pop');
+		});
+		
+		$('.U20101_lp3_btn').on('click',function(){
+			layerPopOver(this,'.U20101_lp3_pop');
+		});
+		
+		$('.U20101_lp4_btn').on('click',function(){
+			layerPopOver(this,'.U20101_lp4_pop');
+		});
+		
+		$('.U20101_lp5_btn').on('click',function(){
+			layerPopOver(this,'.U20101_lp5_pop');
+		});
+		
+		$('.U20101_lp6_btn').on('click',function(){
+			layerPopOver(this,'.U20101_lp6_pop');
+		});
 	});
-	
-	$('.U20101_lp2_btn').on('click',function(){
-		layerPopOver(this,'.U20101_lp2_pop');
-	});
-	
-	$('.U20101_lp3_btn').on('click',function(){
-		layerPopOver(this,'.U20101_lp3_pop');
-	});
-	
-	$('.U20101_lp4_btn').on('click',function(){
-		layerPopOver(this,'.U20101_lp4_pop');
-	});
-	
-	$('.U20101_lp5_btn').on('click',function(){
-		layerPopOver(this,'.U20101_lp5_pop');
-	});
-	
-	$('.U20101_lp6_btn').on('click',function(){
-		layerPopOver(this,'.U20101_lp6_pop');
-	});
+
 	</script>
 </body>
 
