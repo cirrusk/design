@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>alert</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords">
-    <meta name="description" content="NY Fee Bundle">
-    <meta name="robots" content="index,follow">
-    <link rel="stylesheet" type="text/css" href="styles/style.css"> 
-    <link rel="stylesheet" type="text/css" href="scripts/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="scripts/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">  
-    <link rel="stylesheet" type="text/css" href="styles/akl-common.css">  
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/owl.carousel.js"></script>
-    <script type="text/javascript" src="scripts/select2.js"></script>
-    <script type="text/javascript" src="scripts/new.js"></script>
-    <script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
-    <script type="text/javascript" src="scripts/akl_common.js"></script>
+	<title>alert</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="scripts/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="scripts/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/akl-common.css">
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+	<script type="text/javascript" src="scripts/select2.js"></script>
+	<script type="text/javascript" src="scripts/new.js"></script>
+	<script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="scripts/akl_common.js"></script>
 </head>
-<body class="akl">  
-<!-- alert -->
-<div class="layerWrapper sample01"><!-- sample01 임시 클래스 개발에서 용도에 맞게 변경하세요 --> 
+<body class="akl">
+
+<a href="#" class="bt-akl-blue jmb jmb-alert">alert (.jmb-alert)</a>
+<a href="#" class="bt-akl-blue jmb jmb-confirm">confirm (.jmb-confirm)</a>
+<button type="button" class="bt-akl-white jmb jmb-confirm-abc1">button 클릭</button>
+
+<script type="text/javascript">
+	$(function() {
+		$(".jmb-confirm").msgbox({
+			type: 'confirm',
+			content: 'confirm 내용 자리 <br> 등록하시겠습니까?',
+			onClose: function(){
+				alert(!!this.val());
+			}
+		});
+		
+		$(".jmb-confirm-abc1").msgbox({
+			type: 'confirm',
+			content: '내용 자리 <br>.jmb-confirm-abc1<br> 등록하시겠습니까?',
+			onClose: function(){
+				alert(!!this.val());
+			}
+		});
+		
+		$(".jmb-alert").msgbox({
+			type: 'alert',
+			content: 'URL 복사를 완료하였습니다.'
+		});
+	});
+</script>
+
+
+
+
+<!-- 기존 레이어 alert 사용안함 : 2018.03.12
+
+<div class="layerWrapper sample01">sample01 임시 클래스 개발에서 용도에 맞게 변경하세요
 	<div class="cbox layerBox popWidS">
 		<div class="akl-alt-wrap">
 			<a href="#" class="cart-popup__close">
@@ -34,18 +68,19 @@
 				<p>URL 복사를 완료하였습니다. </p>
 			</div>
 			<div class="cart-popup__item-link commpete">
-				<button type="button" class="bt-akl-blue">확인</button> 
+				<button type="button" class="bt-akl-blue">확인</button>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- //alert -->
-
-<script type="text/javascript"> 
-    $(function() {
-    	layerPopOver('','.sample01'); 
-    }); 
+<script type="text/javascript">
+	$(function() {
+		//layerPopOver('','.sample01');
+	});
 </script>
-</body>
+-->
 
+
+
+</body>
 </html>

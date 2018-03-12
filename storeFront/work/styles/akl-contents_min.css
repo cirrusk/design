@@ -29,6 +29,27 @@ html.scrollLock body {overflow:hidden;}
 /* TYPE 3 : 제품상세 > 동영상보기 */
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important;}
 
+/* jquery.msgbox 관련 */
+.jMsgbox-overlay {background-color:rgba(0,0,0,.4)}
+.jMsgbox-wrap {border:1px solid #999;}
+.jMsgbox-title {color:#55565a; height:40px !important; background-color:#fff;}
+.jMsgbox-controls {right:6px; top:3px;}
+.jMsgbox-controls a {width:20px; height:20px; margin:10px 2px; background:url(../images/akl_common/ico_closed.png) no-repeat;}
+.jMsgbox-content {display:table; width:100%; background-color:#fff;}
+.jMsgbox-content .jMsgbox-shortcut {display:table-cell; vertical-align:middle; padding:0; text-align:center;}
+.jMsgbox-prompt-input {display:block; padding:6px 6px; margin-bottom:10px; color:#555; vertical-align:middle; background-color:#FFF; border:1px solid #ccc;}
+.jMsgbox-loading {background:url(../img/loading.gif) center center no-repeat transparent;}
+.jMsgbox-loaded {padding:15px;}
+.jMsgbox-foot {height:80px !important;background:#fff; margin-bottom:0; padding:0 20px; border-top:1px solid #dadada}
+.jMsgbox-foot input {display:inline-block; min-width:120px; height:40px; padding:4px 12px; border:0; font-size:14px; line-height:20px;color:#fff; background:#002F5F;}
+.jMsgbox-foot input:hover {color:#002F5F; background:#fff;}
+.jMsgbox-foot input.jMsgbox-ok {color:#fff; background:#002F5F;}
+.jMsgbox-foot input.jMsgbox-ok:hover {color:#002F5F; background:#fff;border:2px solid #002F5F;}
+.jMsgbox-foot input.jMsgbox-cancel {color:#0075a4; background:#fff;}
+.jMsgbox-foot input.jMsgbox-cancel:hover {color:#002f5f;text-decoration:underline; background:#fff;}
+.jMsgbox-resize {background:#ddd; width:10px; height:10px;}
+.jMsgbox-resize:hover {}
+
 /* ----- 회원가입----- */
 .akl .wrapper-memb-join {max-width: 1400px; margin: 0 auto;}
 .akl .wrapper-memb-join h2.tit-h2 {font-size:18px; color:#002f5f; padding:0 12px;}
@@ -185,10 +206,11 @@ html.scrollLock body {overflow:hidden;}
 	.akl .wrapper-memb-join #terms .agreement-box .agreement-para-box p+.italic {margin-top:16px;}
 
 	/* 본인확인 > 본인확인 방법 선택 */
-	.validation-wrapper {padding:0; margin-bottom:20px;}
-	.validation-wrapper>div[class^=valid-type]{padding:30px 0; border-top:1px solid #dadada;}
+	.validation-wrapper {padding:0; margin-top:0; margin-bottom:20px; border-top:0;}
+	.validation-wrapper>div[class^=valid-type]{padding:30px 0; border-top:0;}
 	.validation-wrapper>div[class^=valid-type]>p {position:static; width:auto;border-left:0;}
 	.validation-wrapper .validation-para {margin-bottom:20px;}
+	.validation-wrapper .valid-progress .box-input-details {padding-top:0;border-top:1px solid #dadada;}
 
 	.validation-box-simple {padding-right:0; margin-top:30px;}
 	.validation-box-simple .ty-input-name input[type=text],
@@ -206,10 +228,7 @@ html.scrollLock body {overflow:hidden;}
 	.akl #register-step-page .boxtype-form-sponsor .abo-step1-confirm-button {margin-top:10px;margin-left:0;}
 	.akl #register-step-page .form-group.overseas-abo .form-control {margin-bottom:10px;}
 	.akl #register-step-page .label-paddingLeft15 .control-label {padding-left:0; margin-bottom:10px;}
-	
 	.akl .wrapper-memb-join #terms h3 a.show-terms2 {display:none;width:0;height:0;}
-	
-	.akl .wrapper-memb-join #terms .text.expandAll {min-height:0; height:auto; overflow:visible;}
 
 	/* 정보입력 */
 	.akl #register-step-page .form-control + .bt-akl-white {margin:10px 0 0 0;}
