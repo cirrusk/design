@@ -151,41 +151,41 @@
 	    <div id="quick"></div>
 	    <div id="footer"></div>
 	</main>
-	 
-	<div class="layerWrapper pop-sample"><!-- div.layerWrapper 추가 -->
-	<div class="cbox layerBox popWidS"><!-- popWidS, popWidM, popWidL .layerBox 추가 --> 
-	    <div class="cart-popup__dialog">
-	        <div class="cart-popup__header">
-	            <span class="cart-popup__header-text">수신인 휴대폰 번호 확인
-	                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
-	                   <img src="images/close.png" alt="닫기">
-	                </a>
-	            </span>
-	        </div>
-	        <div class="cart-popup__content payment"> 
-	            <div class="cart-popup__item-info">
-	            	ABO님의 후원을 받으실 분에게 간편가입 URL을 전송하려면, 후원을받으실 분으로부터 ‘간편가입 URL 수신’ 및 ‘후원 받으실 분의 휴대전화번호를 간편가입 URL 
-					생성을 위해 한국 암웨이에 제공한다는사실’에 대한 동의를 받으셔야 합니다. <br>
-					동의를 받지 않으셨으면, 후원을 받으실 분으로부터 모든 동의를 받으신 후 진행하시기 바랍니다. 
-	            	<p class="st-text mt25">후원을 받으실 분의 동의를 받으셨습니까?</p>
-	            </div> 
-	        </div> 
-	        <div class="cart-popup__item-link"> 
-				<button type="button" class="bt-akl-blue">확인</button>
-				<button type="button" class="bt-akl-white">취소</button>
-			</div>  
-		</div>
-	</div>
 	
+	<!-- 2018.03.12 팝업 코딩 전체 수정 --> 
+	<div class="layerWrapper U60100_lp1_pop"> 
+		<div class="cbox layerBox popWidS"> 
+	    	<div class="cart-popup__dialog">
+		        <div class="cart-popup__header">
+		            <span class="cart-popup__header-text">수신인 휴대폰 번호 확인
+		                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+		                   <img src="images/close.png" alt="닫기">
+		                </a>
+		            </span>
+		        </div>
+		        <div class="cart-popup__content payment"> 
+		            <div class="cart-popup__item-info">
+		            	ABO님의 후원을 받으실 분에게 간편가입 URL을 전송하려면, 후원을받으실 분으로부터 ‘간편가입 URL 수신’ 및 ‘후원 받으실 분의 휴대전화번호를 간편가입 URL 
+						생성을 위해 한국 암웨이에 제공한다는사실’에 대한 동의를 받으셔야 합니다. <br>
+						동의를 받지 않으셨으면, 후원을 받으실 분으로부터 모든 동의를 받으신 후 진행하시기 바랍니다. 
+		            	<p class="st-text mt25">후원을 받으실 분의 동의를 받으셨습니까?</p>
+		            </div> 
+		        </div> 
+		        <div class="cart-popup__item-link"> 
+					<button type="button" class="bt-akl-blue">확인</button>
+					<button type="button" class="bt-akl-white">취소</button>
+				 </div> 
+		    </div>
+		</div> 
+	</div> 
 	
 	<script type="text/javascript">
 	    $(function () {
 			
 			//akl 추가 : 팝업  
 	        $('#confirm').click(function(event) {
-				event.preventDefault();
-				//$(".Alert-case01_pop,.overlay").show();
-				layerPopOver(this,'.pop-sample');
+				event.preventDefault(); 
+				layerPopOver(this,'.U60100_lp1_pop');
 			}); 
 
 	    })
