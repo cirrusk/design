@@ -85,7 +85,7 @@ function terms_ViewAll(){
 
 /* 로딩 */
 function loadingLayer(){
-	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="images/akl_common/img_loading.png" alt="로딩중"></div></div>');
+	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="images/akl_common/img_loading.gif" alt="로딩중"></div></div>');
 	if (loadImg.length){
 		$('#loading').remove();
 	}
