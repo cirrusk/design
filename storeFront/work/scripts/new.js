@@ -19,7 +19,7 @@
 function orderSummary() {
         var win = $(window);
         win.scroll(function(){
-            var confirmH = $('.cartTitile').height() + $('.checkout-steps').height() + $('.prw-nav').height() + $('.des-wrapper').height() + 62;
+            var confirmH = $('.cartTitile').height() + $('.checkout-steps').height() + 62;
             var winH = $('.shipping-delivery').height() + 120;
             var winW = $(window).width();
             var conW = ($('.container').width() / 2) + 12;
@@ -33,7 +33,7 @@ function orderSummary() {
             if (winW > 768) {
                 if( sc.scrollTop() > confirmH && sc.scrollTop() < orderHtop ){
                     order.addClass('fix');
-                    order.css({"position":"fixed", "top": "150px", "right": "50%", "margin-right":"-" + conW + "px" });
+                    order.css({"position":"fixed", "top": "70px", "right": "50%", "margin-right":"-" + conW + "px" });
                 } else if( sc.scrollTop() >= orderHtop) {
                     order.removeClass('fix');
                     order.css({"position":"absolute", "top":posTop + "px", "right": 0, "margin-right": "auto"});
@@ -44,21 +44,39 @@ function orderSummary() {
             } else {
                 
             }
-            
-            // if(sc.scrollTop() > 402){
-            //     shop.addClass("fix326");
-            // }else{
-            //     shop.removeClass("fix326");
-            // }
+
         });
-        
 }
+
+function registerABO() {
+    var win=$(window);
+    win.scroll(function(){
+        var winW = $(window).width();
+        var winH = $('.float-reg-side-info').height() + 186;
+        var sc=$(document);
+        var confirmH=$('.breadcrumb-section').height()+$('product-list-page-title').height()+$('.abo-checkout-steps').height() + 200;
+        var maxHeight= confirmH + $('.new-ibo-reg').height() -500;
+        var order=$('.float-reg-side-info');
+        if (winW > 768) {
+            if( sc.scrollTop() > confirmH && sc.scrollTop() < maxHeight){
+                order.addClass('fixed');
+                order.css({"position":"fixed", "top": "136px", "right": "auto", "margin-right": "auto"});
+            }else if(sc.scrollTop() < confirmH){
+                order.css({"position":"relative", "top": "auto", "right": "auto", "margin-right": "auto"});
+            }else{
+                order.removeClass('fixed');
+                order.css({"position":"relative", "top": "auto", "right": "auto", "margin-right": "auto"});
+            }
+        }
+    })
+}
+
 $(function(){
     $("#header").load("header.html");
     $("#quick").load("quicklink.html");
     $("#footer").load("footer.html");
     orderSummary();
-	
+    registerABO();
  });
 
 

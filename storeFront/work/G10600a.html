@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>주문/결제</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css"> 
+    <link rel="stylesheet" type="text/css" href="scripts/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="scripts/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">  
+    <link rel="stylesheet" type="text/css" href="styles/akl-common.css">  
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.js"></script>
+    <script type="text/javascript" src="scripts/select2.js"></script>
+    <script type="text/javascript" src="scripts/new.js"></script>
+    <script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+    <script type="text/javascript" src="scripts/akl_common.js"></script>
+</head> 
+<body class="akl"> 
+<!-- skipToContent -->
+<div id="skipToContent"> 
+   <a href="#contents">콘텐츠 바로가기 </a> 
+</div>
+<!-- //skipToContent --> 
+
+<main>
+    <div id="header"></div>
+	<div class="container-fluid main-container" id="contents"> 
+		<div class="print-hide breadcrumb-section">
+			<ol class="breadcrumb">
+				<li><a href="#">홈</a></li>
+				<li class="active">주문/결제</li>
+			</ol>
+		</div>
+	</div>
+    <div class="container-fluid main-container">
+        <div class="shipping-delivery">
+            <div class="container-fluid">
+				<div class="row cartTitile">
+					<h1 class="product-list-page-title mb25">주문/결제</h1>
+				</div>
+            </div>
+            <ul class="checkout-steps">
+                <li class="checkout-step col-xs-6 col-md-6 checkout-steps-active"> <span class="checkout-steps-circleactive">1</span> <span class="checkout-steps-text arrow-steps-ship">배송지 & 결제방법 선택</span> </li>
+               <!--  <li class="checkout-step col-xs-6 col-md-6"> <span class="checkout-steps-circle">2</span> <span class="checkout-steps-text checkout-steps-pay">payment</span></li> -->
+                <li class="checkout-step col-xs-6 col-md-6"> <span class="checkout-steps-circle">2</span> <span class="checkout-steps-text checkout-steps-order">주문완료</span></li>
+            </ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9 cart-items-wrapper">
+                        <div id="shippingdiv" class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">배송방법 선택 <span class="btn-delivery-guide"><a href="#" class="bt-akl-white mini">배송방법 가이드</a></span></p>
+
+							<div class="delivery-txt">
+								<ul class="list-type2">
+									<li>배송방법을 선택해 주세요, 중개판매 주문 시 배달주문, 픽업주문 중 선택 후 진행하세요.</li>
+									<li>AP 픽업 예약 주문 후, 찾아가지 않은 물품에 대해서는 매 익월 20일에 자동반품과 환불 및 실적차감 처리가 이루어집니다.</li>
+								</ul>
+							</div>
+
+
+                            <div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1" />
+                                <label for="radio1" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">배달주문(ABN에서 주문하시고 택배로 제품을 인수하는 방법)</label>
+                                <div id="collapseOne" class="shipping-delivery-radio-body panel-collapse collapse">
+									<div class="amway-theme">
+										<div class="navigation-tabs-container order-history-container js-order-history-container">
+											<div class="outer-border-bottom">
+												<ul class="tabs-toggles">
+													<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#All"> <span class="toggle-text">단일</span> </a> </li>
+													<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#General"> <span class="toggle-text">복수</span> </a> </li>
+												</ul>
+											</div>
+											<div class="tab-content tabs-content-blocks">
+												<div class="tab-pane content-block active" id="All">
+													<h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>  
+													<div>
+															내용 1
+													</div> 
+												</div>
+												<div class="tab-pane content-block" id="General"> 
+													<h2 class="hidden">Tab02 타이틀 (탭명과 동일)</h2> 
+													<div>
+															내용2
+													</div> 
+												</div>
+											</div>      
+										</div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="panel col-panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio2" />
+                                <label for="radio2" class="collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">픽업주문(ABN에서 주문하시고 AP에서 제품을 인수하는 방법)</label>
+                                <div id="collapseTwo" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <form action="" method="post" name="editAddress">
+                                        <fieldset>
+                                            <div class="form-group row">
+                                                <label for="addName" class="col-xs-12 col-md-3">Name</label>
+                                                <input name="addName" type="text" class="col-xs-12 col-md-4" value="Aiko Fukui" />
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="zipCode" class="col-xs-12 col-md-3">zip code</label>
+                                                <input name="zipCode" value="120" />
+                                                <div class="shipping-delivery-dash"></div>
+                                                <input name="zipCode2" type="text" value="0023" />
+                                                <button class="btn btn-block">Search Zip Code</button>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="perfecture" class="col-xs-12 col-md-3">PREFECTURE</label>
+                                                <select class="shipping-delivery-size col-xs-12 col-md-4" id="perfecture"> <option>Tokyo-to</option> <option selected="">Tokyo-to</option> <option>Tokyo-to</option> </select>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="city" class="col-xs-12 col-md-3">city, WORD (ISLAND)</label>
+                                                <input name="city" type="text" class="col-xs-12 col-md-4" value="3-5-10, Taito, Taito-Ku, Tokyo" />
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="rest" class="col-xs-12 col-md-3">REST OF ADDRESS</label>
+                                                <input name="rest" type="text" class="col-xs-12 col-md-4" value="RM 102-1, 6F" />
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="email" class="col-xs-12 col-md-3">email</label>
+                                                <input name="email" type="text" class="col-xs-12 col-md-4" value="aiko.fukui@email.com" />
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-xs-12 col-md-3"></label>
+                                                <div class="shipping-delivery-options-container col-xs-12 col-md-9">
+                                                    <input class="login-form-remember" id="makePrimary" name="makePrimary" type="checkbox" />
+                                                    <label for="makePrimary">Make Primary Shipping Address</label>
+                                                    <a name="savebutton" href="#" class="shipping-delivery-save btn-blue-white">save</a>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+						<div class="shipping-delivery-ship">
+							<p class="shipping-delivery-shipping-header">결제방법 선택</p>
+							<div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio3" />
+                                <label for="radio3" class="collapsed" data-toggle="collapse" href="#collapseThree" data-parent="#shippingdiv">신용카드</label>
+                                <div id="collapseThree" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Alternate Address
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio4" />
+                                <label for="radio4" class="collapsed" data-toggle="collapse" href="#collapseFour" data-parent="#shippingdiv">무통장입금</label>
+                                <div id="collapseFour" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <div class="panel-body">
+                                        IBO / Customer
+                                    </div>
+                                </div>
+                            </div>
+							<div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio5" />
+                                <label for="radio5" class="collapsed" data-toggle="collapse" href="#collapseFive" data-parent="#shippingdiv">자동이체</label>
+                                <div id="collapseFive" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <div class="panel-body">
+                                        IBO / Customer
+                                    </div>
+                                </div>
+                            </div>
+							<div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio6" />
+                                <label for="radio6" class="collapsed" data-toggle="collapse" href="#collapseSix" data-parent="#shippingdiv">자동이체예약</label>
+                                <div id="collapseSix" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <div class="panel-body">
+                                        IBO / Customer
+                                    </div>
+                                </div>
+                            </div>
+							<div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio7" />
+                                <label for="radio7" class="collapsed" data-toggle="collapse" href="#collapseSeven" data-parent="#shippingdiv">A포인트</label>
+                                <div id="collapseSeven" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <div class="panel-body">
+                                        IBO / Customer
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+                        <div class="shipping-delivery-ship">
+							<div class="col-xs-12 pay-transaction">
+								<p class="shipping-delivery-setup-title col-md-3">거래내역 증빙신청</p>
+								<div class="col-md-9">
+									<div class="panel">
+										<input class="amwa-radio" type="radio" name="optradio3" id="radio31" value="radio31" checked="" />
+										<label for="radio31">신청안함</label>
+									</div>
+									<div class="panel">
+										<input class="amwa-radio" type="radio" name="optradio3" id="radio32" value="radio32" />
+										<label for="radio32"  style="display:inline-block;">세금계산서(중개판매 신청) : 123456789 명품서천특산품</label>
+										<span style="display:inline-block;"><a href="#" class="bt-akl-white mini">사업자등록증 선택</a></span>
+									</div>
+									<div class="panel">
+										<div class="col-xs-12 col-md-3">
+											<input class="amwa-radio" type="radio" name="optradio3" id="radio32" value="radio32" />
+											<label for="radio32"  style="display:inline-block;">현금영수증</label>
+										</div>
+										<div style="col-xs-12 col-md-9">
+											<div class="col-xs-8 col">
+												<select class="form-control" title="구분번호를 선택하세요">
+													<option>010</option>
+													<option>011</option>
+												</select>
+												<input type="text" class="form-control" placeholder="‘-’없이 입력" title="핸드폰 번호 뒷자리 6~8자리를 입력하세요 ">
+											</div>
+											<div class="">
+												<label for="">영수증 유형</label>
+												<select class="form-control" id="">
+													<option>소득공제용(개인)</option>
+													<option>소득공제용(법인)</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div>
+						<div class="shipping-delivery-ship">
+							<div class="col-xs-12 pay-transaction">
+								<p class="shipping-delivery-setup-title col-md-3">거래명세서에 가격/PV/BV를 표시하시겠습니까?</p>
+								<div class="col-md-9">
+									<div class="panel">
+										<input class="login-form-remember" id="includePrice1" name="includePrice" type="checkbox" checked="" />
+										<label for="includePrice1">가격표시</label>
+										<input class="login-form-remember" id="includePrice2" name="includePrice" type="checkbox" checked="" />
+										<label for="includePrice2">PV/BV 표시</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shipping-delivery-ship">
+							<ul class="list-type2">
+								<li>세금계산서 발행일은 재화가 인도된 날 기준이므로, 배달 주문의 경우 출고 완료 기준으로 발행됩니다. 발행일 기준 익일 10시 이후부터 국세청 사이트에서 조회 가능합니다. 단, 월말/ 월초 등 물량 증가로 출고가 지연될 경우 ,출고일 기준으로 세금계산서가 발행됩니다.</li>
+							</ul>
+							<div class="">
+								<p class="shipping-delivery-setup-title">주문완료까지 시간이 지연될 수 있습니다. 조금만 기다려 주세요.</p>
+								<p>[결제요청] 버튼을 한 번만 누르세요. 여러 번 선택하시면 주문이 중복 생성될 수 있습니다.</p>
+							</div>
+						</div>
+						<div class="shipping-delivery-ship">
+							<div class="">
+								<p class="">소비자피해보상보험 가입 안내</p>
+								<p>전자상거래등에서의 소비자보호에관한 법률에 따라 직접판매공제조합에 가입하여 고객님의 결제금액에 대해 안전거래를 보장하고 있습니다.</p>
+								<p><a href="#" class="bt-akl-white mini">보험가입사실 확인</a></p>
+							</div>
+						</div>
+						<div class="shipping-delivery-ship">
+							<div class="row dev-agree">
+								<div class="col-xs-12 col-md-8">
+									<p>주문하실 상품의 상품명, 가격, 배송정보를 확인하였으며, 이에 동의하십니까? (전자상거래법 제8조 제2항)</p>
+								</div>
+								<div class="col-xs-12 col-md-4">
+									<input class="login-form-remember" id="includeagree1" name="includeagree" type="checkbox" checked="" />
+									<label for="includeagree1">동의합니다</label>
+								</div>
+								<div class="col-xs-12 col-md-8">
+									<p>배송정보, 결제정보 약관에 대해서 이해하였으며, 이에 동의하십니까?</p>
+								</div>
+								<div class="col-xs-12 col-md-4">
+									<input class="login-form-remember" id="includeagree2" name="includeagree" type="checkbox" checked="" />
+									<label for="includeagree2">동의합니다</label>
+								</div>
+							</div>
+							<div class="">
+								<ul id="terms" class="box-sizing">  
+									<li>
+										<h3 class="uppercase">[선택] 마케팅/홍보 목적 등의 개인정보 수집 및 이용 동의</h3>
+										<div class="conditions expand">
+											<div class="row">
+												<div class="col-md-3 col-xs-12 col">
+													<h4 class="uppercase">구분</h4>
+													<div class="col-text">
+														<p>광고성 정보 수신</p>
+													</div>
+													<div class="line"></div>
+												</div>
+												<div class="col-md-3 col-xs-12 col">
+													<h4 class="uppercase">목적</h4>
+													<div class="col-text">
+														<p>제품소개, 프로모션, 이벤트 안내</p>
+													</div>
+													<div class="line"></div>
+												</div>
+												<div class="col-md-3 col-xs-12 col">
+													<h4 class="uppercase">항목</h4>
+													<div class="col-text">
+														<p>휴대폰번호, 이메일 주소</p>
+													</div>
+													<div class="line"></div>
+												</div>
+												<div class="col-md-3 col-xs-12 col">
+													<h4 class="uppercase">이용·보유기간</h4>
+													<div class="col-text">
+														<p>동의철회 시/회원 탈퇴 시</p>
+													</div>
+												</div>
+											</div>
+											<button class="text-btn view-all">더보기
+												<i class="icon icon-arrow-downs"></i>
+												<i class="icon icon-arrow-ups"></i>
+											</button>
+										</div> 
+									</li> 
+								</ul>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 shipping-delivery-summary">
+                        <div class="shipping-delivery-side">
+                            <div class="shipping-delivery-summary-header">
+                                <span>order summary</span>
+                            </div>
+                            <div class="shipping-delivery-summary-prices">
+                                <ul>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Item(s) Subtotal</span> <span class="performance-box-item-abovalue">$556.59</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Shipping</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Tax One</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Tax Two</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Service Fee(s)</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+                                    <li class="shipping-delivery-list-item-total"> <span class="shipping-delivery-item-total">TOTAL</span> <span class="shipping-delivery-item-totalvalue">$543.08</span> </li>
+                                    <li class="shipping-delivery-list-item-pvbv"> <span class="shipping-delivery-item-total">TOTAL PV/ BV</span> <span class="shipping-delivery-item-totalvalue">222.45 / 699.63</span> </li>
+                                </ul>
+                            </div>
+                            <div class="shipping-delivery-summary-link">
+                                <a href="checkout-2-payment.html" class="shipping-delivery-summary-continue btn-blue-white" data-toggle="modal" data-target="#cart-modal" onclick="javascript:location.href='checkout-2-payment.html'">continue to payment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cartlist">
+            <span class="cartlist-header cartlist-detail-mob " data-toggle="collapse" href="#cartlistContent" data-parent="#accordion"> ORDER DETAILS </span>
+            <div id="cartlistContent" class="cartlist-content panel-collapse collapse in">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="cartlist-th cartlist-detail-desktop">
+                                <div>
+                                    <div class="col-xs-6">
+                                        PRODUCT DETAILS
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        QTY
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        SET PRICE
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        SERVICE FEE
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        TOTAL PRICE
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        TOTAL PB/BV
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cartlist-tbody container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+             <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+               <div class="cartlist-detail-mob">
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">QTY</span>
+                 <span class="cartlist-mbright">5</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">SET PRICE</span>
+                 <span class="cartlist-mbright">$22.80</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">SERVICE FEE</span>
+                 <span class="cartlist-mbright">$0.00</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">TOTAL PRICE</span>
+                 <span class="cartlist-mbright">$114.00</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                 <span class="cartlist-mbright">91.10 / 285.55</span>
+                </div>
+               </div> </span></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $0.00</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+             <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+               <div class="cartlist-detail-mob">
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">QTY</span>
+                 <span class="cartlist-mbright">5</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">SET PRICE</span>
+                 <span class="cartlist-mbright">$22.80</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">SERVICE FEE</span>
+                 <span class="cartlist-mbright">$0.00</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">TOTAL PRICE</span>
+                 <span class="cartlist-mbright">$114.00</span>
+                </div>
+                <div class="cartlist-mbweight">
+                 <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                 <span class="cartlist-mbright">91.10 / 285.55</span>
+                </div>
+               </div> </span></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $0.00</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="amwa-btnbar">
+            <a href="checkout-2-payment.html" class="btn-blue-white" onclick="">continue to payment</a>
+            <a class="cartlist-cancelorder">Cancel Order</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+    
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/new.js"></script>
+<script>
+    
+$(function () {
+    $(".quickShopBody").collapse();
+
+    //search box click even
+    $(".icon-search").click(function(e) {
+        e.preventDefault();
+        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+        console.log(value);
+        if (value == 'did you mean') {
+            window.location.href = "did-you-mean.html";
+        } else {
+            window.location.href = "search-no-result.html";
+        }
+    });
+})
+</script>
+</body>
+</html>

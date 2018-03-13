@@ -212,6 +212,7 @@ Editor : minjung Koo
 .akl .news-result-prom img {width:100%;height:auto;min-width:auto;max-height:224px;}
 .akl .news-result-prom-text {background:#f4f4f4;width:100%;min-height:80px;padding:20px;}
 .akl .news-result-prom-text .product__title {font-size:16px;line-height:24px;color:#002f5f;font-weight:500;height:48px;}
+.akl .news-result-prom-text .product__title a {display:block;font-weight:500;}
 .akl .news-result-prom-text .product__subtitle {font-size:14px;line-height:20px;}
 .akl .news-result-prom .featured-product__thumnail {margin-bottom:0;}
 .akl .product-body-photo img {width:100%;height:auto;}
@@ -777,6 +778,14 @@ ul li.tbody div.mob-ttoy {display:none;}
 .panel.aisde .list-group-submenu .list-group-item {padding:10px 30px;color:#56565a;
 	-webkit-transition: all 0.15s;-moz-transition: all 0.15s;-o-transition: all 0.15s;-ms-transition: all 0.15s;transition: all 0.15s;}
 
+/* 주문결제 */
+.akl .checkout-step {font-size:16px;font-weight:500;letter-spacing:-1px;}
+.akl .shipping-delivery-shipping-header {font-size:16px;font-weight:500;letter-spacing:-1px;margin-bottom:12px;}
+.btn-delivery-guide {padding-left:10px;}
+.delivery-txt {padding:0 0 20px;}
+.akl .shipping-delivery-ship {clear:both;display:block;}
+.akl .shipping-delivery-ship:after {clear:both;display:block;content:'';}
+
 @media (max-width: 990px) {
 	/* 카테고리 */
 	.akl .amway-theme .full-width-banner-component.banner-left-align .banner-content-wrap {width:100%;}
@@ -1176,5 +1185,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 	/* 카테고리 > 2차분류 왼쪽메뉴 */
 	.panel.aisde .sub-cateogry {margin:0 20px;}
 
-
+	/* 주문결제 */
+	.akl .checkout-steps-active {width:75%}
+	.akl .checkout-steps-active .checkout-steps-text {left:65px}
 }
