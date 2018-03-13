@@ -90,7 +90,6 @@ function loadingLayer(){
 		$('#loading').remove();
 	}
 	$('body').append(loadImg);
-	loadImg.before(layerM);
 }
 function loadingLayerClose(){
 	$('#loading').remove();
