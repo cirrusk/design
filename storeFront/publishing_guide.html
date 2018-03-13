@@ -125,6 +125,11 @@
 			self.section_title.text(title_text.join(''));
 			self.section_title.click(function() {
 				self.content.slideToggle(450);
+				
+				//수정: 2018.03.13
+				var findParent = $(this).parent();
+				findParent.siblings().removeClass('open');
+				findParent.addClass('open');
 			});
 			$(settings.toggleBtn).text('전체열기').toggle(function() {
 				$(settings.toggleBtn).text('전체닫기');
@@ -218,13 +223,14 @@
 			$('.showHideBtn').hide();
 			$('.noneHideBtn').show();
 		});
-
+		
+		/* self.section_title 이동 : 2018.03.13
 		$('.section .title').click(function(){
 			var findParent = $(this).parent('.section');
 
 			$(this).parent('.section').addClass('open');
 			$(findParent).siblings().removeClass('open');
-		});
+		}); */
 
 		// to top
 		var scrollDiv = document.createElement('div');
