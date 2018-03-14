@@ -193,13 +193,13 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			} else {
 				$layerPrdtDetail.css({
 					'display':'block',
-					'position':'fixed',
-					'top':topPosition,
+					'position':'absolute',
+					'top':'5%',//'top':topPosition,
 					'left':leftPosition,
 					'right':'',
 					'width':'80%',
 					'height':'auto',
-					'margin-top': -(targetHeight_prdt/2),
+					'margin-bottom':'3%', //'margin-top': -(targetHeight_prdt/2),
 					'margin-left':-(targetWidth_prdt/2)
 				});
 			}
