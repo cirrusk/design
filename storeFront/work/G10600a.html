@@ -49,7 +49,6 @@
             </div>
             <ul class="checkout-steps">
                 <li class="checkout-step col-xs-6 col-md-6 checkout-steps-active"> <span class="checkout-steps-circleactive">1</span> <span class="checkout-steps-text arrow-steps-ship">배송지 & 결제방법 선택</span> </li>
-               <!--  <li class="checkout-step col-xs-6 col-md-6"> <span class="checkout-steps-circle">2</span> <span class="checkout-steps-text checkout-steps-pay">payment</span></li> -->
                 <li class="checkout-step col-xs-6 col-md-6"> <span class="checkout-steps-circle">2</span> <span class="checkout-steps-text checkout-steps-order">주문완료</span></li>
             </ul>
             <div class="container-fluid">
@@ -276,34 +275,27 @@
 							<div class="use-agreement">
 								<ul id="terms" class="box-sizing">  
 									<li>
-										<h3 class="uppercase">[선택] 마케팅/홍보 목적 등의 개인정보 수집 및 이용 동의</h3>
+										<h3 class="uppercase">[필수] 개인정보 수집/이용에 대한 동의</h3>
 										<div class="conditions expand">
 											<div class="row">
-												<div class="col-md-3 col-xs-12 col">
-													<h4 class="uppercase">구분</h4>
-													<div class="col-text">
-														<p>광고성 정보 수신</p>
-													</div>
-													<div class="line"></div>
-												</div>
-												<div class="col-md-3 col-xs-12 col">
+												<div class="col-md-4 col-xs-12 col">
 													<h4 class="uppercase">목적</h4>
 													<div class="col-text">
-														<p>제품소개, 프로모션, 이벤트 안내</p>
+														<p>대금 결제 서비스</p>
 													</div>
 													<div class="line"></div>
 												</div>
-												<div class="col-md-3 col-xs-12 col">
+												<div class="col-md-4 col-xs-12 col">
 													<h4 class="uppercase">항목</h4>
 													<div class="col-text">
-														<p>휴대폰번호, 이메일 주소</p>
+														<p>ABO 번호 또는 회원 ID, 이름, 신용카드 정보, 계좌정보, A 포인트 정보(결제 방식에 따른 정보 수집)</p>
 													</div>
 													<div class="line"></div>
 												</div>
-												<div class="col-md-3 col-xs-12 col">
-													<h4 class="uppercase">이용·보유기간</h4>
+												<div class="col-md-4 col-xs-12 col">
+													<h4 class="uppercase">이용&middot;보유기간</h4>
 													<div class="col-text">
-														<p>동의철회 시/회원 탈퇴 시</p>
+														<p>계약 또는 청약철회 등에 관한 기록 5년</p>
 													</div>
 												</div>
 											</div>
@@ -346,9 +338,32 @@
 									</li>
                                 </ul>
                             </div>
+							<div class="shipping-delivery-coupon">
+								<div class="delivery-coupon-choice">
+									<input class="amwa-radio" type="radio" name="optradio4" id="radio44" value="radio33" />
+									<label for="radio44"  style="display:inline-block;">쿠폰선택</label>
+									<input class="amwa-radio" type="radio" name="optradio4" id="radio55" value="radio33" />
+									<label for="radio55"  style="display:inline-block;">쿠폰직접입력</label>
+								</div>
+								<div class="delivery-coupon-box">
+									<span></span>
+									<dl>
+										<dt>쿠폰타이틀 50%</dt>
+										<dd>쿠폰 서브텍스트</dd>
+									</dl>
+								</div>
+								<!-- 쿠폰선택시 나오는 화면 -->
+								<div class="">
+								</div>
+								<!-- //쿠폰선택시 나오는 화면 -->
+								<!-- 쿠폰직접입력 -->
+								<div class="">
+								</div>
+								<!-- //쿠폰직접입력시 나오는 화면 -->
+							</div>
                             <div class="shipping-delivery-summary-link">
-                                <a href="#" class="shipping-delivery-summary-continue btn-blue-white" data-toggle="modal" data-target="#cart-modal" onclick="javascript:location.href='checkout-2-payment.html'">쿠폰 선택</a>
-								<a href="#" class="shipping-delivery-summary-continue btn-white-blue" data-toggle="modal" data-target="#cart-modal" onclick="javascript:location.href='checkout-2-payment.html'">쿠폰적용 취소</a>
+                                <a href="#" class="shipping-delivery-summary-continue btn-blue-white" data-toggle="modal" data-target="#cart-modal" onclick="javascript:location.href='#'">쿠폰 선택</a>
+								<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
                             </div>
                             <div class="shipping-delivery-summary-header">
                                 <span>결제금액</span>
@@ -397,24 +412,12 @@
                         <div class="col-xs-12">
                             <div class="cartlist-th cartlist-detail-desktop">
                                 <div>
-                                    <div class="col-xs-5">
-                                       제품
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-1">
-                                        수량
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-2">
-                                        옵션
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-2">
-                                        총 PV/BV
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-1">
-                                        단가(원)
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-1">
-                                        소계(원)
-                                    </div>
+                                    <div class="col-xs-5">제품</div>
+                                    <div class="cartlist-detail-desktop col-xs-1">수량</div>
+                                    <div class="cartlist-detail-desktop col-xs-2">옵션</div>
+                                    <div class="cartlist-detail-desktop col-xs-2">총 PV/BV</div>
+                                    <div class="cartlist-detail-desktop col-xs-1">단가(원)</div>
+                                    <div class="cartlist-detail-desktop col-xs-1">소계(원)</div>
                                 </div>
                             </div>
                             <div class="cartlist-tbody container-fluid">
@@ -426,9 +429,9 @@
                                         <div class="cartlist-text">
 											<span class="cartlist-big"> 
 												아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스
-												<span> <br /> 
-													<span class="cartlist-small2">1038 / 120435D </span> <br /> 
-													<span class="cartlist-small3">PV 18,650 / BV 29,100 </span> <br /> 
+												<span> <br> 
+													<span class="cartlist-small2">1038 / 120435D </span>
+													<span class="cartlist-small3">PV 18,650 / BV 29,100 </span>
 													<span class="cartlist-instock"><img src="images/check.png" alt="check" /> 재고있음</span>
 													<div class="cartlist-detail-mob">
 														<div class="cartlist-mbweight">
@@ -440,9 +443,9 @@
 															<span class="cartlist-mbright">
 																<span class="value-wrapper option">
 																	<img src="images/glitz-4.png" alt="color-4">
-																	<div class="option-info">
+																	<span class="option-info">
 																		<span>19번 코랄 선라이즈</span>
-																	</div>
+																	</span>
 																</span>
 															</span>
 														</div>
@@ -470,9 +473,9 @@
                                         <p class="cartlist-td">
 											<span class="value-wrapper option">
 												<img src="images/glitz-4.png" alt="color-4">
-												<div class="option-info">
+												<span class="option-info">
 													<span>19번 코랄 선라이즈</span>
-												</div>
+												</span>
 											</span>
 										</p>
                                     </div>
@@ -483,56 +486,79 @@
                                         <p class="cartlist-td">35,000</p>
                                     </div>
                                     <div class="cartlist-detail-desktop col-xs-1">
-                                        <p class="cartlist-td">350,000</p>
+                                        <p class="cartlist-td">3,500,000</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-6 extraclass-mobile-width">
+
+								<div class="row">
+                                    <div class="col-xs-5 extraclass-mobile-width">
                                         <div class="cartlist-image">
                                             <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
                                         </div>
                                         <div class="cartlist-text">
-											 <span class="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
-											   <div class="cartlist-detail-mob">
-												<div class="cartlist-mbweight">
-												 <span class="cartlist-mbleft">QTY</span>
-												 <span class="cartlist-mbright">5</span>
-												</div>
-												<div class="cartlist-mbweight">
-												 <span class="cartlist-mbleft">SET PRICE</span>
-												 <span class="cartlist-mbright">$22.80</span>
-												</div>
-												<div class="cartlist-mbweight">
-												 <span class="cartlist-mbleft">SERVICE FEE</span>
-												 <span class="cartlist-mbright">$0.00</span>
-												</div>
-												<div class="cartlist-mbweight">
-												 <span class="cartlist-mbleft">TOTAL PRICE</span>
-												 <span class="cartlist-mbright">$114.00</span>
-												</div>
-												<div class="cartlist-mbweight">
-												 <span class="cartlist-mbleft">TOTAL PV/BV</span>
-												 <span class="cartlist-mbright">91.10 / 285.55</span>
-												</div>
-											   </div> </span></span>
+											<span class="cartlist-big"> 
+												아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스
+												<span><br> 
+													<span class="cartlist-small2">1038 / 120435D </span>
+													<span class="cartlist-small3">PV 18,650 / BV 29,100 </span> 
+													<span class="cartlist-instock"><img src="images/check.png" alt="check" /> 재고있음</span>
+													<div class="cartlist-detail-mob">
+														<div class="cartlist-mbweight">
+															<span class="cartlist-mbleft">수량</span>
+															<span class="cartlist-mbright">5</span>
+														</div>
+														<div class="cartlist-mbweight">
+															<span class="cartlist-mbleft">옵션</span>
+															<span class="cartlist-mbright">
+																<span class="value-wrapper option">
+																	<img src="images/glitz-4.png" alt="color-4">
+																	<span class="option-info">
+																		<span>19번 코랄 선라이즈</span>
+																	</span>
+																</span>
+															</span>
+														</div>
+														<div class="cartlist-mbweight">
+															<span class="cartlist-mbleft">총 PV/BV</span>
+															<span class="cartlist-mbright">37,300 / 58,200</span>
+														</div>
+														<div class="cartlist-mbweight">
+															<span class="cartlist-mbleft">단가(원)</span>
+															<span class="cartlist-mbright">35,000</span>
+														</div>
+														<div class="cartlist-mbweight">
+															<span class="cartlist-mbleft">소계(원)</span>
+															<span class="cartlist-mbright">350,000</span>
+														</div>
+													</div> 
+												</span>
+											</span>
                                         </div>
                                     </div>
                                     <div class="cartlist-detail-desktop col-xs-1">
                                         <p class="cartlist-td">5</p>
                                     </div>
-                                    <div class="cartlist-detail-desktop col-xs-1">
-                                        <p class="cartlist-td"> $22.80</p>
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-1">
-                                        <p class="cartlist-td"> $0.00</p>
-                                    </div>
-                                    <div class="cartlist-detail-desktop col-xs-1">
-                                        <p class="cartlist-td"> $114.00 </p>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td">
+											<span class="value-wrapper option">
+												<img src="images/glitz-4.png" alt="color-4">
+												<span class="option-info">
+													<span>19번 코랄 선라이즈</span>
+												</span>
+											</span>
+										</p>
                                     </div>
                                     <div class="cartlist-detail-desktop col-xs-2">
-                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                        <p class="cartlist-td">37,300 / 58,200</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">35,000</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">3,500,000</p>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -541,7 +567,7 @@
         </div>
         <div class="amwa-btnbar">
             <a href="G10600b.html" class="btn-blue-white" onclick="">주문결제</a>
-            <a class="cartlist-cancelorder">장바구니로 이동</a>
+            <a href="#" class="bt-akl-txt">장바구니로 이동</a>
         </div>
     </div>
     <div id="quick"></div>
