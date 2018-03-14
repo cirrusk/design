@@ -783,8 +783,58 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .shipping-delivery-shipping-header {font-size:16px;font-weight:500;letter-spacing:-1px;margin-bottom:12px;}
 .btn-delivery-guide {padding-left:10px;}
 .delivery-txt {padding:0 0 20px;}
-.akl .shipping-delivery-ship {clear:both;display:block;}
+.akl .shipping-delivery-ship {clear:both;display:block;margin:0;padding:35px 0;}
 .akl .shipping-delivery-ship:after {clear:both;display:block;content:'';}
+
+/* 주문결제 > 거래내역증빙신청 */
+.akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
+.akl .shipping-delivery-setup-title.col-md-3 {padding:0 12px 0 0;font-size:14px;font-weight:500;}
+.akl .pay-transaction .amwa-radio + label {font-size:14px;font-weight:500;}
+.akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
+.akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
+.akl .panel.cash-receipts .cash-phone {display:block;text-align:right;}
+.akl .panel.cash-receipts .cash-phone select.form-control {width:100px;display:inline-block;vertical-align:middle;}
+.akl .panel.cash-receipts .cash-phone input.form-control {width:60%;display:inline-block;vertical-align:middle;}
+.akl .panel.cash-receipts .receipt-type {display:block;padding:10px 0 0 0;text-align:right;}
+.receipt-type label {font-size:14px;display:inline-block;vertical-align:middle;text-align:left;}
+.receipt-type select.form-control {font-size:14px;width:60%;display:inline-block;vertical-align:middle;}
+
+.akl .shipping-delivery .panel label {font-size:14px;color:#56565a;font-weight:500;margin-right:20px;}
+.txt-tye {padding:25px 0 0;font-size:14px;letter-spacing:-1px;}
+.txt-tye .setup-title {color:#002f5f;font-weight:500;line-height:20px;padding:0;margin:0;}
+.txt-tye .setup-info {font-weight:400;line-height:20px;padding:5px 0 0;margin:0;}
+.txt-tye .setup-info strong {color:#e11e45;font-weight:500;}
+
+/* 주문결제 > 소비자 피해보상보험 가입안내 */
+.deli-introduction {margin:0 0;padding:0;}
+.deli-introduction p {margin:0 0;padding:0;font-size:14px;font-weight:400;line-height:22px;}
+.deli-introduction p.tit {font-weight:500;}
+.btn-checking-insurance {padding:10px 0 0;}
+
+/* 주문결제 > 이용동의 */ 
+.akl .shipping-delivery-ship .row.dev-agree {padding:0 0;margin:0;}
+.akl .shipping-delivery-ship .row.dev-agree .col-xs-12 {padding:0 0;}
+.akl .shipping-delivery-ship .row.dev-agree label {font-size:14px;font-weight:500;}
+.akl .shipping-delivery-ship .row.dev-agree .col-md-4 {text-align:right;}
+.use-agreement {margin-top:15px;border:1px solid #e3e3e3;padding:0 20px;}
+.use-agreement .box-sizing {font-size:14px;table-layout:fixed;}
+.use-agreement #terms h3 {font-size:14px;font-weight:500}
+
+
+/* 주문결제 > 오른쪽 주문회원정보 */
+.akl .shipping-delivery-summary {z-index:10;background:#fff;padding:0 0;right:0;}
+.akl .shipping-delivery-summary-header {font-size:13px;font-weight:500;padding:10px 0 10px 18px;}
+.akl .shipping-delivery-list-item {font-size:14px;}
+.akl .shipping-delivery-item-label {font-weight:500}
+.akl .performance-box-item-abovalue {font-weight:400}
+.akl .shipping-delivery-summary-prices li {padding:5px 18px;line-height:18px;}
+.akl .shipping-delivery-item-total {font-size:14px;margin-top:0;padding:10px 0;}
+.akl .shipping-delivery-list-item-total {margin:8px 0;}
+.akl .shipping-delivery-list-item-total .shipping-delivery-item-totalvalue {font-size:18px;padding:10px 0;}
+.akl .shipping-delivery-list-item-pvbv {font-size:14px;}
+.akl .shipping-delivery-list-item-pvbv .shipping-delivery-item-total{ padding:0 0;}
+.akl .shipping-delivery-list-item-pvbv .shipping-delivery-item-totalvalue {font-size:14px;padding:0 0;}
+
 
 @media (max-width: 990px) {
 	/* 카테고리 */
@@ -1188,4 +1238,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 	/* 주문결제 */
 	.akl .checkout-steps-active {width:75%}
 	.akl .checkout-steps-active .checkout-steps-text {left:65px}
+
+	/* 주문결제 > 거래내역증빙신청 */
+	.akl .panel.cash-receipts .cash-phone {display:block;text-align:left;}
+
 }

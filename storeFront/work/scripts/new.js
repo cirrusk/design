@@ -17,9 +17,9 @@
 //     dialogPos();
 // }
 function orderSummary() {
-        var win = $(window);
-        win.scroll(function(){
-            var confirmH = $('.cartTitile').height() + $('.checkout-steps').height() + 62;
+		orderFn();
+		function orderFn(){
+			var confirmH = $('.cartTitile').height() + $('.checkout-steps').height() + 62;
             var winH = $('.shipping-delivery').height() + 120;
             var winW = $(window).width();
             var conW = ($('.container').width() / 2) + 12;
@@ -44,7 +44,11 @@ function orderSummary() {
             } else {
                 
             }
+		}
 
+        var win = $(window);
+        win.scroll(function(){
+			orderFn();
         });
 }
 
