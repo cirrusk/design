@@ -212,7 +212,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				});
 			}
 		}
-		_layerTypeBasic();
 
 		/* TYPE 2 : 제품상세-크게보기 (모바일 전체화면) */
 		function _layerTypeFullSize(){
@@ -227,7 +226,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			} else {
 				var reHeight = '100%';
 			}
-
+			
 			if( _winWidth < 600 ){
 				$layerPrdtDetail.css({
 					'display':'block',
@@ -245,17 +244,18 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				$layerPrdtDetail.css({
 					'display':'block',
 					'position':'absolute',
-					'top':'5%',//'top':topPosition,
+					'top':'5%',
 					'left':leftPosition,
 					'right':'',
 					'width':'80%',
 					'height':'auto',
-					'margin-bottom':'3%', //'margin-top': -(targetHeight_prdt/2),
-					'margin-left':-(targetWidth_prdt/2)
+					'margin-bottom':'3%',
+					'margin-left':-(targetWidth_prdt/2),
+					'-webkit-transition':'left .5s',
+					'transition':'left .5s'
 				});
 			}
 		}
-		_layerTypeFullSize();
 
 		/* TYPE 3 : 동영상보기 */
 		function _layerTypeVideoView(){
@@ -270,26 +270,33 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				'left':leftPosition,
 				'width':(_winWidth - 20),
 				'margin-top': -(targetHeight_video/2),
-				'margin-left':-(targetWidth_video/2)
+				'margin-left':-(targetWidth_video/2),
+				'-webkit-transition':'left .5s',
+				'transition':'left .5s'
 			});
 		}
-		_layerTypeVideoView();
+		
+		_layerTypeBasic(); //기본형
+		_layerTypeFullSize(); //제품상세 큰이미지 보기
+		_layerTypeVideoView(); //동영상
 	}
+	
+	/* 레이어 위치잡기 */
 	setPosition();
 	$(window).resize(function(){
 		setPosition();
 	});
-
+	
 	/* 레이어 열기 */
 	layerCounter++;
 	var _zindex = 9999;
 	var _thisIndex = _zindex+layerCounter;
-
+	
 	if(!$('#mask').length){
 		$('body').append('<div id="mask"/>');
 	}
-
-	$(targetLayer).fadeIn(100, function(){
+	
+	$(targetLayer).fadeIn(150, function(){
 		$('#mask').addClass('on');
 		setPosition();
 		scroll_LOCK();
