@@ -67,7 +67,7 @@
 											<div class="inp-button">
 												<div class="form-s"><!-- 2018.03.06 구조변경 -->
 													<input type="text" id="name-vps" name="" value="" class="input-st">
-													<button type="submit" class="btn btn-primary" id="order-quick-search"><span class="hidden-sm hidden-xs">검색</span></button>
+													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-sm hidden-xs">검색</span></button><!-- 2018.03.15 태깅 아이디 추가 -->
 												</div>
 											</div>
 										</div>
@@ -117,7 +117,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" tabindex="0">장바구니</a>
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" tabindex="0" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 -->
 															</div>
 														</div>
 													</div>
@@ -142,7 +142,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" tabindex="0">장바구니</a>
+																<a href="#" class="btn-blue-white" tabindex="0" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
 															</div>
 														</div>
 													</div>
@@ -167,7 +167,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" tabindex="0">장바구니</a>
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
 															</div>
 														</div>
 													</div>
@@ -192,7 +192,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" tabindex="0">장바구니</a>
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
 															</div>
 														</div>
 													</div>
@@ -217,7 +217,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" tabindex="-1">장바구니</a>
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
 															</div>
 														</div>
 													</div>
@@ -262,7 +262,7 @@
 										</div> 
 										<div class="col-xs-12 col-sm-4 col-md-4 pagination-left">
 											<div class="wish-del">
-												<a id="" href="#" class="bt-akl-txt normal">선택 항목 삭제</a>
+												<a id="Cart_Delete1" href="#" class="bt-akl-txt normal">선택 항목 삭제</a><!--  2018.03.15 태깅 아이디 추가 -->
 											</div>
 										</div>
 										<div class="col-xs-12 col-sm-8 col-md-8 pagination-wrap">
@@ -301,8 +301,8 @@
 																		</li>
 																	</ul>
 																	<div class="dropdown-menu-bottom">
-																		<button id="addToLIST" class="btn btn-primary">담기</button>
-																		<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+																		<button id="addToLIST" class="btn btn-primary">담기</button><!--  2018.03.15 태깅 아이디 추가 -->
+																		<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a><!--  2018.03.15 태깅 아이디 추가 -->
 																	</div>
 																</div>
 															</div>
@@ -601,7 +601,7 @@
 					<div class="shop-list-right">
 						<div class="col-xs-12 col-sm-4 col-md-4 pagination-left">
 							<div class="wish-del">
-								<a id="" href="#" class="bt-akl-txt normal">선택 항목 삭제</a>
+								<a id="Cart_Delete2" href="#" class="bt-akl-txt normal">선택 항목 삭제</a><!--  2018.03.15 태깅 아이디 추가 -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-8 pagination-wrap">
@@ -640,8 +640,8 @@
 														</li>
 													</ul>
 													<div class="dropdown-menu-bottom">
-														<button id="addToLIST" class="btn btn-primary">담기</button>
-														<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														<button id="addToLIST" class="btn btn-primary">담기</button><!--  2018.03.15 태깅 아이디 추가 -->
+														<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a><!--  2018.03.15 태깅 아이디 추가 -->
 													</div>
 												</div>
 											</div>
@@ -716,7 +716,7 @@
 							</div>
 						</div>
 						<div class="express-checkout-block">
-							<a href="" class="bt-akl-blue">주문하기</a>
+							<a href="#" class="bt-akl-blue" id="Cart_Order1">주문하기</a><!--  2018.03.15 태깅 아이디 추가 -->
 						</div>
 					</div>
 				</div>
@@ -724,7 +724,7 @@
 
 			<!-- 마크업 수정 -->
 			<div class="add_to_cart_form shop-cart type2"> 
-				<a href="checkout-1-shipping-and-delivery.html" class="bt-akl-blue" data-checkout-url="#">주문하기</a>
+				<a href="checkout-1-shipping-and-delivery.html" class="bt-akl-blue" data-checkout-url="#" id="Cart_Order2">주문하기</a><!--  2018.03.15 태깅 아이디 추가 -->
 				<a class="bt-akl-txt" data-continue-shopping-url="#">쇼핑하기</a> 
 			</div>
 			<!-- //마크업 구조 변경 -->
