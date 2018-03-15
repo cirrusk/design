@@ -64,7 +64,7 @@ $(function() {
 /* 제품상세 > 크게보기 레이어 : 이미지보기 */
 function popupGalleryIMG(){
 	var $IMG = $('#largeImgView.pop-gallery').find('img');
-	var $img = $('#recentlyViewedListTab2').find('img');
+	var $listIMG = $('#recentlyViewedListTab2').find('img');
 	
 	//첫 이미지 가져오기
 	var $imgFirst = $('#recentlyViewedListTab2').find('img').first();
@@ -73,7 +73,7 @@ function popupGalleryIMG(){
 	$IMG.attr({'src':_firstSRC, 'alt':_firstALT});
 	
 	//이미지 클릭시
-	$img.each(function(){
+	$listIMG.each(function(){
 		$(this).on('click',function(){
 			var _SRC = $(this).attr('src');
 			var _ALT = $(this).attr('alt');
