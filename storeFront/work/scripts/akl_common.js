@@ -226,7 +226,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			} else {
 				var reHeight = '100%';
 			}
-			
+
 			if( _winWidth < 600 ){
 				$layerPrdtDetail.css({
 					'display':'block',
@@ -275,31 +275,32 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				'transition':'left .5s'
 			});
 		}
-		
+
 		_layerTypeBasic(); //기본형
 		_layerTypeFullSize(); //제품상세 큰이미지 보기
 		_layerTypeVideoView(); //동영상
 	}
-	
+
 	/* 레이어 위치잡기 */
 	setPosition();
 	$(window).resize(function(){
 		setPosition();
 	});
-	
+
 	/* 레이어 열기 */
 	layerCounter++;
 	var _zindex = 9999;
 	var _thisIndex = _zindex+layerCounter;
-	
+
 	if(!$('#mask').length){
 		$('body').append('<div id="mask"/>');
 	}
-	
+
 	$(targetLayer).fadeIn(150, function(){
-		$('#mask').addClass('on');
-		setPosition();
 		scroll_LOCK();
+		setPosition();
+		
+		$('#mask').addClass('on');
 		$(this).css('z-index',_thisIndex);
 		$(this).addClass('active');
 		$(this).attr('tabindex','0').show().focus();
