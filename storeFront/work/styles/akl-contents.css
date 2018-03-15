@@ -788,6 +788,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .panel label {line-height:18px;}
 .akl .shipping-delivery-ship {clear:both;display:block;margin:0 0;padding:35px 0;}
 .akl .shipping-delivery-ship:after {clear:both;display:block;content:'';}
+.tax-bill {display:inline-block;}
+.btn-business {display:inline-block;}
 
 /* 주문결제 > 거래내역증빙신청 */
 .akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
@@ -795,6 +797,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .pay-transaction .amwa-radio + label {font-size:14px;font-weight:500;}
 .akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
 .akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
+.akl .panel.cash-receipts label {display:inline-block;}
 .akl .panel.cash-receipts .cash-phone {display:block;text-align:right;}
 .akl .panel.cash-receipts .cash-phone select.form-control {width:100px;display:inline-block;vertical-align:middle;}
 .akl .panel.cash-receipts .cash-phone input.form-control {width:60%;display:inline-block;vertical-align:middle;}
@@ -862,12 +865,15 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 /* 주문결제 > 오른쪽 > 쿠폰선택 */
 .shipping-delivery-coupon {margin:0 15px;border-top:1px solid #e3e3e3}
-.delivery-coupon-choice {padding:20px 0 10px;}
-.delivery-coupon-choice label {font-size:14px;font-weight:400;padding-right:10px;}
+.delivery-coupon-choice {padding:15px 0 10px;}
+.delivery-coupon-choice label {font-size:14px;font-weight:400;padding-right:15px;}
 .delivery-coupon-choice label:last-child {padding-right:0;}
-.delivery-coupon-box {border:1px solid #e3e3e3;padding:20px;}
-.delivery-coupon-box span {display:inline-block;vertical-align:middle}
-.delivery-coupon-box dl {display:inline-block;vertical-align:middle}
+.delivery-coupon-box {border:1px solid #e3e3e3;padding:20px 20px 0;}
+.delivery-coupon-box span {display:inline-block;vertical-align:top;width:60px;height:35px;}
+.delivery-coupon-box span img {width:60px;height:35px;}
+.delivery-coupon-box dl {display:inline-block;vertical-align:top;padding-left:18px;font-size:14px;letter-spacing:-1px;}
+.delivery-coupon-box dl dt {font-weight:500;color:#002f5f;}
+.delivery-coupon-box dl dd {font-weight:400;line-height:20px;}
 .akl .shipping-delivery-summary-link {border-top:0 none;padding:20px 15px;}
 
 
@@ -1276,6 +1282,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .checkout-steps-active {width:75%}
 	.akl .checkout-steps-active .checkout-steps-text {left:65px}
 	.akl .shipping-delivery-ship {padding:25px 0}
+	.btn-business {display:block;padding:5px 0 0 30px}
 
 	/* 주문결제 > 거래내역증빙신청 */
 	.akl .panel.cash-receipts .cash-phone {display:block;text-align:left;padding:30px 0 0 0}
