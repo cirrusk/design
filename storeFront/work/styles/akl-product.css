@@ -98,22 +98,25 @@ Editor : sookkyung Han
 .product-detail-view .product-health-info{margin-top:70px;border:solid #e3e3e3;border-width:1px;}
 .product-detail-view .product-health-info .detail-tit{padding:15px 0 18px;background-color:#eeefef;}
 .product-detail-view .product-health-info .health-info{padding:30px 92px;border:solid #e3e3e3;border-width:1px 0 0;}
-
-.product-detail-view .product-health-info .health-info{display:table;width:100%;table-layout:fixed;}
-.product-detail-view .product-health-info .health-info .health-info-left{display:table-cell;vertical-align:middle;}
-.product-detail-view .product-health-info .health-info .health-info-right{display:table-cell;width:45%;vertical-align:middle;text-align:right;}
-.product-detail-view .product-health-info .health-info.top .health-info-left, .product-detail-view .product-health-info .health-info.top02 .health-info-left{vertical-align:top;}
-.product-detail-view .product-health-info .health-info.top .health-info-right{vertical-align:top;padding-top:67px;}
-.product-detail-view .product-health-info .health-info.top02 .health-info-right{width:50%;vertical-align:top;padding-top:41px;}
-.product-detail-view .product-health-info .health-info .health-info-tit{display:inline-block;margin-bottom:15px;font-size:30px;color:#56565a;font-weight:400;letter-spacing:-2px;}
 .product-detail-view .product-health-info .health-info .info-txt{font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;line-height:1.7;}
+
+.product-detail-view .product-health-info .health-info .health-info-tit{display:block;margin-bottom:15px;font-size:30px;color:#56565a;font-weight:400;letter-spacing:-2px;}
+.product-detail-view .product-health-info .health-info .health-info-box{font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;line-height:1.7;}
+
 .product-detail-view .product-health-info .health-info .detail-img{display:inline-block;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list{margin-top:-6px;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list li{display:inline-block;width:50%;padding:20px 5% 0 0;vertical-align:top;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list .detail-img{display:table-cell;width:81px;vertical-align:middle;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list .age-group{display:table-cell;padding-left:20px;vertical-align:middle;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list .age-group .age-group-tit{display:block;font-size:16px;color:#56565a;font-weight:500;letter-spacing:-1px;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list .age-group .age-group-txt{display:block;margin-top:2px;font-size:13px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px;}
+.product-detail-view .product-health-info .health-info-wrap{display:table;width:100%;table-layout:fixed;}
+.product-detail-view .product-health-info .health-info-wrap .health-info-box{display:table-cell;vertical-align:top;}
+.product-detail-view .product-health-info .health-info-wrap .health-info-img{display:table-cell;width:50%;vertical-align:top;text-align:right;}
+.product-detail-view .product-health-info .health-info-wrap.mid .health-info-box,
+.product-detail-view .product-health-info .health-info-wrap.mid .health-info-img{vertical-align:middle;}
+
+
+.product-detail-view .product-health-info .health-info .health-info-list{margin-top:-6px;}
+.product-detail-view .product-health-info .health-info .health-info-list li{display:inline-block;width:50%;padding:20px 5% 0 0;vertical-align:top;}
+.product-detail-view .product-health-info .health-info .health-info-list .detail-img{display:table-cell;width:81px;vertical-align:middle;}
+.product-detail-view .product-health-info .health-info .health-info-list .age-group{display:table-cell;padding-left:20px;vertical-align:middle;}
+.product-detail-view .product-health-info .health-info .health-info-list .age-group .age-group-tit{display:block;font-size:16px;color:#56565a;font-weight:500;letter-spacing:-1px;}
+.product-detail-view .product-health-info .health-info .health-info-list .age-group .age-group-txt{display:block;margin-top:2px;font-size:13px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px;}
 
 .product-detail-view .product-health-info .health-info .info-graph{margin-top:30px;}
 .product-detail-view .product-health-info .health-info .info-graph li{display:inline-block;width:50%;padding-left:8px;}
@@ -154,13 +157,15 @@ Editor : sookkyung Han
 .product-detail-view .product-feature .detail-img{width:20%;}
 .product-detail-view .product-feature .detail-dot{margin:15px 0 0 20px;}
 .product-detail-view .product-health-info .health-info{padding:30px 50px}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list .detail-img{vertical-align:top;}
+.product-detail-view .product-health-info .health-info .health-info-list .detail-img,
+.product-detail-view .product-health-info .health-info .health-info-list .age-group{vertical-align:top;}
 .product-detail-view .product-health-info .detail-tit{padding:10px 0 12px;}
 .product-detail-view .product-health-info .health-info .health-info-tit{font-size:20px;}
-.product-detail-view .product-health-info .health-info .info-list .health-info-list li{width:100%;}
+.product-detail-view .product-health-info .health-info .health-info-list li{width:100%;}
 .product-detail-view .product-health-info .health-info .info-graph li{width:100%;margin-top:20px;text-align:center;}
 .product-detail-view .product-health-info .health-info .info-graph li:first-child{margin-top:0;}
 .product-detail-view .product-health-info .health-info .info-txt br{display:none;}
+
 
 
 }
