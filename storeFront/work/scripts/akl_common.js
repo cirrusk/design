@@ -23,10 +23,7 @@ $(function() {
 	});
 	
 	//제품상세 > 크게보기 레이어 : 이미지보기
-	popupGalleryIMG();
-	
-	//제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정
-	videodSize();
+	popupGalleryIMG(); 
 
 	//약관 더보기 (768이하)
 	terms_ViewAll();
@@ -82,23 +79,6 @@ function popupGalleryIMG(){
 			var _ALT = $(this).attr('alt');
 			$IMG.attr({'src':_SRC, 'alt':_ALT});
 		});
-	});
-}
-/* 제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정 */
-function videodSize(){
-	var _video = $('.flexslider#pdpImg').find('.video-wrapper');
-	if(! _video.length ){ return;}
-	
-	vdSize();
-	function vdSize(){
-		var WD = $('.flexslider#pdpImg').width();
-		var HT = $('.flexslider#pdpImg').height();
-		var boxHT = WD*0.5625; //16:9 비율
-		var mgt = boxHT*.20;
-		_video.css({'height':boxHT+80,'margin-top':mgt});
-	}
-	$(window).resize(function(){
-		vdSize();
 	});
 }
 
@@ -238,8 +218,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					'width':'100%',
 					'height':reHeight,
 					'margin-top':'0',
-					'margin-left':'0',
-					'margin-bottom':'0'
+					'margin-left':'0'
 				});
 			} else {
 				$layerPrdtDetail.css({
