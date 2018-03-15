@@ -221,10 +221,13 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			var targetHeight_prdt = $layerPrdtDetail.height();
 
 			//레이어 길이와 윈도우 높이 비교
+			var reHeight, reMargin;
 			if(targetHeight_prdt > _winHeight || _winWidth < 321){
-				var reHeight = 'auto';
+				reHeight = 'auto';
+				reMargin = '3%';
 			} else {
-				var reHeight = '100%';
+				reHeight = '100%';
+				reMargin = '';
 			}
 
 			if( _winWidth < 600 ){
@@ -249,7 +252,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					'right':'',
 					'width':'80%',
 					'height':'auto',
-					'margin-bottom':'3%',
+					'margin-bottom':reMargin,
 					'margin-left':-(targetWidth_prdt/2),
 					'-webkit-transition':'left .5s',
 					'transition':'left .5s'
