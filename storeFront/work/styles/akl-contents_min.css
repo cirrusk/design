@@ -24,7 +24,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .layerWrapper.active .cbox.layerBox {opacity:1;}
 
 /* TYPE 2 : 제품상세 > 크게보기 */
-.akl .layerWrapper #colorbox {top:0; display:block; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important;}
+.akl .layerWrapper #colorbox {top:0; display:block; left:0; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important;}
 
 /* TYPE 3 : 제품상세 > 동영상보기 */
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important;}
@@ -203,7 +203,7 @@ html.scrollLock body {overflow:hidden;}
 }
 @media (max-width: 768px) {
 	/* TYPE 2 : 제품상세(크게보기) */
-	html.activeFullSizeView .akl main {display:none;}
+	html.activeFullSizeView .akl main {position:absolute; left:-999999px;}
 	.akl .wrapper-memb-join #terms .text-btn {margin-top:30px;}
 	.akl .wrapper-memb-join #terms .conditions {margin-bottom:10px;}
 	.akl .wrapper-memb-join #terms .agreement-box .agreement-para-box>p {margin-bottom:0;}
