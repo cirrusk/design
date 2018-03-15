@@ -903,7 +903,7 @@
 									</div>
 								</div>
 								<div class="amway-suggest__item-link">
-									<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">장바구니</a>
+									<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="PDP_AddCartRecommended">장바구니</a><!-- 2018.03.13 태깅 아이디 추가 -->
 								</div>
 							</div>
 						</div>
@@ -1482,13 +1482,13 @@
 					<p>뉴트리라이트 프린트 팩</p>
 				</div>
 				<div class="popop-tbody">
-					<div class="pop-gallery">
+					<div class="pop-gallery" id="largeImgView"><!-- 2018.03.14 마크업 수정: #largeImgView 추가  -->
 						<span><img src="images/heart-health.png" alt="heart health pack"></span>
 					</div>
 					<div class="popup-img-list">
 						<div class="product-recentlyviewed__imagelist" id="recentlyViewedListTab2">
 							<!-- 2018.03.14 마크업 수정  -->
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/vitamin-c.png" alt="vitamin-c"></a></div>
+							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/vitamin-c.png" alt="vitamin-c 테스트용"></a></div>
 							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/lip-gloss.png" alt="lip-gloss"></a></div>
 							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/protein-powder-sm.png" alt="protein-powder-sm"></a></div>
 							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/truvivity.png" alt="truvivity"></a></div>
@@ -1498,7 +1498,7 @@
 							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/blush.png" alt="blush"></a></div>
 							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/perfect-pack.png" alt="perfect-pack"></a></div>
 							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="images/no-border-images/lip-gloss.png" alt="lip-gloss"></a></div>
-							<!--// 2018.03.14 마크업 수정  -->
+							<!-- // 2018.03.14 마크업 수정  -->
 						</div>
 					</div>
 				</div>
@@ -1873,7 +1873,25 @@
 				itemMargin: 9,
 				asNavFor: '#pdpImg'
 			});
-
+		   
+		   $('#pdpImg2').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#pdpCarousel2"
+			});
+		   $('#pdpCarousel2').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 84,
+				itemMargin: 9,
+				asNavFor: '#pdpImg2'
+			});
+			
+			/* 크게보기-레이어 */
 			$('#recentlyViewedListTab2').owlCarousel({
 				loop: true,
 				nav: true,

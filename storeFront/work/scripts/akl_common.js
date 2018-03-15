@@ -21,8 +21,11 @@ $(function() {
 		}
 		e.preventDefault();
 	});
+	
+	//제품상세 > 크게보기 레이어 : 이미지보기
+	popupGalleryIMG(); 
 
-	/* 약관 더보기 (768이하) */
+	//약관 더보기 (768이하)
 	terms_ViewAll();
 
 	//header login tooltip
@@ -58,6 +61,26 @@ $(function() {
 });
 
 
+/* 제품상세 > 크게보기 레이어 : 이미지보기 */
+function popupGalleryIMG(){
+	var $IMG = $('#largeImgView.pop-gallery').find('img');
+	var $img = $('#recentlyViewedListTab2').find('img');
+	
+	//첫 이미지 가져오기
+	var $imgFirst = $('#recentlyViewedListTab2').find('img').first();
+	var _firstSRC = $imgFirst.attr('src');
+	var _firstALT = $imgFirst.attr('alt');
+	$IMG.attr({'src':_firstSRC, 'alt':_firstALT});
+	
+	//이미지 클릭시
+	$img.each(function(){
+		$(this).on('click',function(){
+			var _SRC = $(this).attr('src');
+			var _ALT = $(this).attr('alt');
+			$IMG.attr({'src':_SRC, 'alt':_ALT});
+		});
+	});
+}
 
 /* 퀵링크 */
 function quickLinks(){
