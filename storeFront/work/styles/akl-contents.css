@@ -783,13 +783,77 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .col-md-3.shipping-delivery-summary {padding-right:12px;padding-left:0;}
 .akl .checkout-step {font-size:16px;font-weight:500;letter-spacing:-1px;}
 .akl .shipping-delivery-shipping-header {font-size:16px;font-weight:500;letter-spacing:-1px;margin-bottom:12px;}
+.akl .shipping-delivery-radio-body {margin:17px 0 30px 30px}
+.akl .shipping-delivery .form-group input {width:100%;}
 .btn-delivery-guide {padding-left:10px;}
 .delivery-txt {padding:0 0 20px;}
 .akl .panel label {line-height:18px;}
 .akl .shipping-delivery-ship {clear:both;display:block;margin:0 0;padding:35px 0;}
 .akl .shipping-delivery-ship:after {clear:both;display:block;content:'';}
-.tax-bill {display:inline-block;}
-.btn-business {display:inline-block;}
+label.tax-bill {display:inline-block;}
+span.btn-business {display:inline-block;}
+.shipping-list-order span {display:block;margin-top:20px}
+
+/* 주문결제 > Tab */
+.akl .amway-theme.order-payment {}
+.akl .amway-theme.order-payment .tabs-toggles {border-bottom:0 none;}
+.akl .amway-theme.order-payment .outer-border-bottom .tabs-toggles .tab-toggle-wrap {min-width:62px;padding:0 0;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle {border:1px solid #dadada;background:#f4f4f4;padding:0 0;min-width:62px;height:38px;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {font-size:14px;color:#bbb;font-weight:700}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle {border:1px solid #dadada;background:#fff;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {color:#20893d;font-weight:700}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap:first-child .tab-toggle {border-top-left-radius:4px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:4px;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap:last-child .tab-toggle {margin-left:-1px;border-top-left-radius:0px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:0px;}
+
+/* 주문결제 > 단일 */
+.single-body {position:relative;}
+.btn-adress-list {position: absolute;top:-51px;left:160px;}
+
+/* 주문결제 > 단일 > 기본배송지 */
+.default-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
+.address-tit {font-size:16px;font-weight:500;letter-spacing:-1px;}
+.default-shipping-address .detail-content {margin:0 0;padding:0 0;letter-spacing:-1px;width:100%;}
+.default-shipping-address .detail-content .col-xs-12 {margin:0 0 10px;padding:0 0;}
+.default-shipping-address .detail-content .col-xs-12 .col-md-2.left-content {padding:0 0;font-size:14px;font-weight:500;color:#002f5f;}
+.default-shipping-address .detail-content .form-group label {margin-right:0;}
+.default-shipping-address .detail-content .form-group label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
+.default-shipping-address .detail-content .right-info {font-size:14px;font-weight:400;}
+.default-shipping-address .detail-content input.form-control {width:90%;}
+.default-shipping-address .message-shop {padding:15px 30px 0 10px;}
+
+/* 주문결제 > 단일 > 새배송지 */
+.new-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
+.new-message-shop {}
+.new-message-shop p {font-size:13px;font-weight:400;letter-spacing:-1px;}
+.new-message-shop p span {vertical-align:middle;}
+.new-shipping-address .detail-content {width:100%;}
+.new-shipping-address .detail-content .col-md-3 {padding:0 0;margin:0 0;}
+.new-shipping-address .detail-content .col-md-9 {padding:0 0 0 10px;margin:0 0;}
+.new-shipping-address .detail-content .col-xs-12 {padding:0 0;margin:0 0;}
+.new-shipping-address .detail-content .new-cart {width:100%;text-align:left;}
+.new-shipping-address .detail-content .new-cart label {text-align:left;}
+.new-shipping-address .detail-content .new-cart .form-group {width:60%;}
+.new-shipping-address .detail-content .new-cart label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
+
+.new-shipping-address .new-shipping-agree .form-group {width:100%;padding:5px 0 0;}
+.new-shipping-address .new-shipping-agree .form-group > label {padding-top:0 !important;}
+.pot-basic {color:#0075a4;font-size:13px;}
+.new-shipping-address .new-shipping-btnw {padding-bottom:20px}
+.new-shipping-address .new-shipping-btnw .list-type2 {padding:0 0 20px;}
+.new-shipping-address .phone-group {padding-left:10px !important;}
+.new-shipping-address .phone-group > .control-group {width:30%;margin:0 0;padding:0 0;float:none;display:table-cell;vertical-align:top;}
+.new-shipping-address .phone-group > .form-group {width:70%;margin:0 0;padding:0 0;float:none;display:table-cell;vertical-align:top;}
+
+/* 주문결제 > 단일 > 배송지 목록 */
+.address-book {}
+.address-book input {vertical-align:middle;width:60%;}
+.address-book button {vertical-align:middle;}
+.address-book .btn.btn-primary {margin-left:10px;} 
+.address-book button.link-btn {margin-left:30px}
+p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10px 0 10px;margin:0;}
+.table-wrapper.my-Shipping-list  {height:260px;overflow:auto;}
+.table-wrapper.my-Shipping-list .tbl-type1 tr:nth-child(even) td {background:#f4f4f4;}
+.table-wrapper.my-Shipping-list .tbl-type1 td.no-data {text-align:center;padding:30px 0;}
 
 /* 주문결제 > 거래내역증빙신청 */
 .akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
@@ -805,11 +869,14 @@ ul li.tbody div.mob-ttoy {display:none;}
 .receipt-type label {font-size:14px;display:inline-block;vertical-align:middle;text-align:left;}
 .receipt-type select.form-control {font-size:14px;width:60%;display:inline-block;vertical-align:middle;}
 
-.akl .shipping-delivery .panel label {font-size:14px;color:#56565a;font-weight:500;margin-right:20px;}
+.akl .shipping-delivery .panel label {font-size:14px;color:#56565a;font-weight:500;}
 .txt-tye {padding:25px 0 0;font-size:14px;letter-spacing:-1px;}
 .txt-tye .setup-title {color:#002f5f;font-weight:500;line-height:20px;padding:0;margin:0;}
 .txt-tye .setup-info {font-weight:400;line-height:20px;padding:5px 0 0;margin:0;}
 .txt-tye .setup-info strong {color:#e11e45;font-weight:500;}
+
+.akl .panel.pay-pvbv label {margin-right:10px;}
+.akl .panel.pay-pvbv label:last-child {margin-right:0;}
 
 /* 주문결제 > 소비자 피해보상보험 가입안내 */
 .deli-introduction {margin:0 0;padding:0;}
@@ -1282,13 +1349,38 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .checkout-steps-active {width:75%}
 	.akl .checkout-steps-active .checkout-steps-text {left:65px}
 	.akl .shipping-delivery-ship {padding:25px 0}
-	.btn-business {display:block;padding:5px 0 0 30px}
+	span.btn-business {padding-left:30px;}
+	
+	/* 주문결제 > Tab */
+	.akl .amway-theme.order-payment .outer-border-bottom {border-bottom:0 none;}
+	.akl .amway-theme.order-payment .outer-border-bottom .tabs-toggles .tab-toggle-wrap {margin-bottom:0 !important;}
+	.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle {height:38px;}
+
+	/* 주문결제 > 단일 */
+	.btn-adress-list {position: absolute;top:-60px;left:140px;}
+	
+	/* 주문결제 > 단일 > 배송지 목록 */
+	.address-book span.btn-book {display:block;margin:10px 0 0}
+	.address-book input {width:100%;}
+	.address-book .btn.btn-primary {margin-left:0;} 
+
+	.table-wrapper.my-Shipping-list  {height:200px;overflow:auto;}
+	.table-wrapper.my-Shipping-list .tbl-type1 td {padding:8px 15px}
+
+
+	/* 주문결제 > 단일 > 기본배송지 */
+	.default-shipping-address .detail-content .right-info {display:block;}
+
+	/* 주문결제 > 단일 > 새배송지 */
+	.new-shipping-address .detail-content .new-cart .form-group {width:100%;}
+	.new-shipping-address .phone-group {padding-left:0 !important;}
+	.new-shipping-address .phone-group > .form-group {width:68%;padding-left:10px}
+	.new-shipping-address .new-shipping-agree {padding-top:25px}
 
 	/* 주문결제 > 거래내역증빙신청 */
-	.akl .panel.cash-receipts .cash-phone {display:block;text-align:left;padding:30px 0 0 0}
-	.akl .panel.cash-receipts .receipt-type {display:block;text-align:left;}
+	.akl .panel.cash-receipts .cash-phone {display:block;text-align:left;padding:30px 0 0 30px}
+	.akl .panel.cash-receipts .receipt-type {display:block;text-align:left;padding:10px 0 0 30px}
 	.akl .panel.cash-receipts .receipt-type label {padding-right:12px;}
-
-
+	.akl .panel.cash-receipts .receipt-type select.form-control {width:67%;}
 
 }
