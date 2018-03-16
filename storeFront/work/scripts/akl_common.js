@@ -6,12 +6,14 @@ $(function() {
 	}
 
 	$('.accordion-section-title').click(function(e) {
+		e.preventDefault();
+
 		// Grab current anchor value
 		var currentAttrValue = $(this).attr('href');
 
 		if(jQuery(e.target).is('.active')) {
 			close_accordion_section();
-		}else {
+		} else {
 			close_accordion_section();
 
 			// Add active class to section title
@@ -19,7 +21,6 @@ $(function() {
 			// Open up the hidden content panel
 			$('.akl-accordion ' + currentAttrValue).slideDown(400).addClass('open');
 		}
-		e.preventDefault();
 	});
 
 	//제품상세 > 크게보기 레이어 : 이미지보기
