@@ -881,113 +881,61 @@
 		</div>
 	</div>
 	<!-- //옵션변경 팝업  -->
-
-	<script>$(function() {
-			$(".quickShopBody").collapse();
-			//search box click event
-			$(".icon-search").click(function(e) {
-				e.preventDefault();
-				var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-				console.log(value);
-				if (value == 'did you mean') {
-					window.location.href = "did-you-mean.html";
-				} else if (value == 'artistry') {
-					window.location.href = "search-result-page.html";
-				} else {
-					window.location.href = "search-no-result.html";
+	
+	<!--  2018.03.16 스크립트 정리 -->
+	<script>
+	$(function() {
+		$(".quickShopBody").collapse(); 
+		
+		$('#productSuggestListTabs').owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			margin: 0,
+			items: 1,
+			responsiveClass: true,
+			responsive: {
+				480 : {
+					items: 1
+				},
+				768 : {
+					items: 2
+				},
+				960 : {
+					items: 3
+				},
+				1200 : {
+					items: 5
 				}
-			});
-
-			$(".cart-detail__addto.dropdown-toggle").click(function () {
-				if($(".cart-detail__dropdown-menu.dropdown-menu").css('display')=='none'){
-					$(".cart-detail__dropdown-menu.dropdown-menu").show();
-				}else{
-					$(".cart-detail__dropdown-menu.dropdown-menu").hide();
-				}
-
-			})
-		});
-
-	//select all function
-	$("#shopping-list-content #selectAllDitto").click(function() {
-		if (this.checked) {
-			$("#shopping-list-content .shopping-cart-item-list :checkbox").prop("checked", true);
-		} else {
-			$("#shopping-list-content .shopping-cart-item-list :checkbox").prop("checked", false);
-		}
-	});
-	$("#shopping-list-content .shopping-cart-item-list :checkbox").click(function() {
-		allchkone();
-	});
-	function allchkone() {
-		var chknum = $("#shopping-list-content .shopping-cart-item-list :checkbox").size(); //选项总个数
-		console.log(chknum);
-		var chk = 0;
-		$("#shopping-list-content .shopping-cart-item-list :checkbox").each(function() {
-			if ($(this).prop("checked") == true) {
-				chk++;
 			}
 		});
-		if (chknum == chk) { //全选
-			$("#shopping-list-content #selectAllDitto").prop("checked", true);
-		} else { //不全选
-			$("#shopping-list-content #selectAllDitto").prop("checked", false);
-		}
-	}
-
-	//akl 추가 2018.03.04
-	$('#G10300_lp2').click(function(event) {
-		event.preventDefault();
-		layerPopOver(this,'.G10300_lp2_pop');
-	});
-	
-	$('#productSuggestListTabs').owlCarousel({
-		loop: true,
-		nav: true,
-		dots: false,
-		margin: 0,
-		items: 1,
-		responsiveClass: true,
-		responsive: {
-			480 : {
-				items: 1
-			},
-			768 : {
-				items: 2
-			},
-			960 : {
-				items: 3
-			},
-			1200 : {
-				items: 5
-			}
-		}
-	});
-	
-	$('#G10500_lp1').click(function(event) {
+	 
+		//akl 추가 2018.03.04
+		$('#G10300_lp2').click(function(event) {
 			event.preventDefault();
-			layerPopOver(this,'.G10500_lp1_pop');
-	});
+			layerPopOver(this,'.G10300_lp2_pop');
+		});
+		$('#G10500_lp2').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.G10500_lp2_pop');
+		});
 
-	$('#G10500_lp2').click(function(event) {
-		event.preventDefault();
-		layerPopOver(this,'.G10500_lp2_pop');
-	});
+		$('.btn-add-wish').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp5_pop');
+		});
 
-	$('.btn-add-wish').click(function(event) {
-		event.preventDefault();
-		layerPopOver(this,'.G10000_lp5_pop');
-	});
-
-	$('#order-quick-search').click(function(event) {
-		event.preventDefault();
-		$(".shoping-cart-search").show();
-	});
-	$(".btnClosed").click(function() {
-		$(".shoping-cart-search").hide();
-	});
-
+		$('#order-quick-search').click(function(event) {
+			event.preventDefault();
+			$(".shoping-cart-search").show();
+		});
+		$(".btnClosed").click(function() {
+			$(".shoping-cart-search").hide();
+		}); 
+	});   
 	</script>
+	<!--  2018.03.16 스크립트 정리 -->
+	
 </body>
 
 </html>

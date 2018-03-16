@@ -762,7 +762,8 @@
 	</div>
 	<!-- //동영상 재생 팝업 -->
 	
-	<script type="text/javascript">$(function() {
+	<script type="text/javascript">
+		$(function() {
 			
 			$('#recentlyViewedListTab').owlCarousel({
 				loop: true,
@@ -785,39 +786,7 @@
 						items: 7
 					}
 				}
-			});
-			//search box click event
-			$(".icon-search").click(function(e) {
-				e.preventDefault();
-				var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-				console.log(value);
-				if (value == 'did you mean') {
-					window.location.href = "did-you-mean.html";
-				} else if (value == 'artistry') {
-					window.location.href = "search-result-page.html";
-				} else {
-					window.location.href = "search-no-result.html";
-				}
-			});
-
-			//akl 추가 2018.03.05
-			$('#sub_banner_list').owlCarousel({
-	            loop: true,
-	            nav: true,
-	            dots: false,
-	            margin: 0,
-	            items: 1
-	
-	        });
-			//akl 추가 2018.03.15
-			$('.quick-view-btn').click(function(event) {
-				event.preventDefault();
-				layerPopOver(this,'.QUICK_VIEW_pop');
 			}); 
-			$('.G10000_lp2').click(function(event) { 
-				event.preventDefault(); 
-				layerPopOver('this','.G10000_lp2_pop');
-			});
 
 			$('#productLearningListTabs').owlCarousel({
 				loop: true,
@@ -860,6 +829,25 @@
 					}
 				}
 			});
-		})</script>
+			
+			//akl 추가 2018.03.05
+			$('#sub_banner_list').owlCarousel({
+	            loop: true,
+	            nav: true,
+	            dots: false,
+	            margin: 0,
+	            items: 1 
+	        }); 
+			
+			$('.quick-view-btn').click(function(event) {
+				event.preventDefault();
+				layerPopOver(this,'.QUICK_VIEW_pop');
+			}); 
+			$('.G10000_lp2').click(function(event) { 
+				event.preventDefault(); 
+				layerPopOver('this','.G10000_lp2_pop');
+			});
+		})
+	</script>
 </body>
 </html>
