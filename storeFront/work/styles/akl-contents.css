@@ -3,6 +3,9 @@ Version : AKL Hybris UIUX 1.0
 Date : 2018-01-25
 Editor : minjung Koo
 *************************************************/ 
+/* color */
+.txt-blue {color:#002f5f;font-weight:500;}
+
 /*** 마이페이지 ***/ 
 .akl .breadcrumb {letter-spacing:-1px;}
 .akl .user-account-header .user-block {padding-left:60px;}
@@ -783,7 +786,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .col-md-3.shipping-delivery-summary {padding-right:12px;padding-left:0;}
 .akl .checkout-step {font-size:16px;font-weight:500;letter-spacing:-1px;}
 .akl .shipping-delivery-shipping-header {font-size:16px;font-weight:500;letter-spacing:-1px;margin-bottom:12px;}
-.akl .shipping-delivery-radio-body {margin:17px 0 30px 30px}
+.akl .shipping-delivery-radio-body {margin:17px 0 0 30px}
 .akl .shipping-delivery .form-group input {width:100%;}
 .btn-delivery-guide {padding-left:10px;}
 .delivery-txt {padding:0 0 20px;}
@@ -854,6 +857,36 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 .table-wrapper.my-Shipping-list  {height:260px;overflow:auto;}
 .table-wrapper.my-Shipping-list .tbl-type1 tr:nth-child(even) td {background:#f4f4f4;}
 .table-wrapper.my-Shipping-list .tbl-type1 td.no-data {text-align:center;padding:30px 0;}
+
+/* 주문결제 > 픽업주문 */
+.pickup-order-body {}
+.pickup-ap {padding-bottom:10px;}
+.pickup-ap span {font-size:14px;font-weight:500;}
+.pickup-ap .btn-ap {padding-left:20px;}
+.pickup-gge {width:60%;}
+.akl .pickup-gge .form-group {margin:0 0;padding:0 0;}
+.akl .pickup-gge .form-group select.form-control {width:50%;}
+
+/* 주문결제 > 픽업주문 > AP안내 */
+ul.ap-tabs {margin:0;padding:0;}
+ul.ap-tabs li {display:inline-block;font-size:14px;color:#0075a4;padding:0 10px;border-left:1px solid #55565a;margin-bottom:10px;}
+ul.ap-tabs li a.active {color:#56565a;}
+ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
+.aptab_content  {width:100%;margin:20px 0 0;padding:0;overflow:hidden;}
+.ap-container {margin:0 auto;}
+.map-info-pay {padding:0 0 20px;}
+.ap-map-google {}
+.ap-map-google img {width:100%;height:auto;}
+.tab-tit {font-weight:500;font-size:16px;}
+.title-adder, .title-phone, .title-time {font-size:14px;color:#002f5f;font-weight:500;margin-top:30px}
+.title-adder {background:url("../images/akl_common/ico_address.png") no-repeat left top;padding:0 0 0 30px;}
+.title-phone {background:url("../images/akl_common/ico_phone.png") no-repeat left top;padding:0 0 0 30px;}
+.title-time {background:url("../images/akl_common/ico_time.png") no-repeat left top;padding:0 0 0 30px;}
+.map-inp-txt {padding:0 30px;font-size:14px;font-weight:400;letter-spacing:-1px;}
+.map-inp-txt ul {}
+.map-inp-txt ul > li {background:url("../images/akl_common/ico_dot_arrow.png") no-repeat left 9px;padding:0 0 0 12px;margin-bottom:5px}
+.map-inp-txt ul > li ul li {background:none;padding:0 0 0 0;margin-bottom:0}
+.map-inp-txt ul > li ul li strong {color:#002f5f;font-weight:500;}
 
 /* 주문결제 > 거래내역증빙신청 */
 .akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
@@ -933,7 +966,7 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 /* 주문결제 > 오른쪽 > 쿠폰선택 */
 .shipping-delivery-coupon {margin:0 15px;border-top:1px solid #e3e3e3}
 .delivery-coupon-choice {padding:15px 0 10px;}
-.delivery-coupon-choice label {font-size:14px;font-weight:400;padding-right:15px;}
+.delivery-coupon-choice label {display:inline-block;font-size:14px;font-weight:400;padding-right:15px;}
 .delivery-coupon-choice label:last-child {padding-right:0;}
 .delivery-coupon-box {border:1px solid #e3e3e3;padding:20px 20px 0;}
 .delivery-coupon-box span {display:inline-block;vertical-align:top;width:60px;height:35px;}
@@ -943,8 +976,25 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 .delivery-coupon-box dl dd {font-weight:400;line-height:20px;}
 .akl .shipping-delivery-summary-link {border-top:0 none;padding:20px 15px;}
 
+/* 주문결제 > 쿠폰선택 팝업 */
+.pop-coupon-list {width:100%;padding:0 0 0}
+.pop-coupon-list ul {width:100%;border-top:1px solid #e3e3e3;}
+.pop-coupon-list ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;}
+.pop-coupon-list ul li.thead-tit span {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;text-align:left;}
+.pop-coupon-list ul li.thead-tit span.pcupon-number {width:40%;padding-left:10%;}
+.pop-coupon-list ul li.thead-tit span.pcupon-name {width:30%;}
+.pop-coupon-list ul li.thead-tit span.pcupon-period {width:30%;}
 
+.pop-coupon-list ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;}
+.pop-coupon-list ul li.tbody div {display:table-cell;font-size:14px;}
+.pop-coupon-list ul li.tbody span {font-size:14px;vertical-align:middle;}
+.pop-coupon-list ul li.tbody:nth-child(odd) {background:#f4f4f4;}
 
+div.pcupon-check {width:10%;margin:0;padding:15px 0 0;vertical-align:top;}
+div.pcupon-number {width:30%;vertical-align:middle;}
+div.pcupon-name {width:30%;vertical-align:middle;}
+div.pcupon-period {width:30%;vertical-align:middle;}
+.pop-coupon-list .pcu-group .mob-txt {display:none;}
 
 @media (max-width: 990px) {
 	/* 카테고리 */
@@ -1363,10 +1413,10 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 	.address-book span.btn-book {display:block;margin:10px 0 0}
 	.address-book input {width:100%;}
 	.address-book .btn.btn-primary {margin-left:0;} 
-
+	
+	p.my-Shipping-txt {padding:8px 0 10px;}
 	.table-wrapper.my-Shipping-list  {height:200px;overflow:auto;}
 	.table-wrapper.my-Shipping-list .tbl-type1 td {padding:8px 15px}
-
 
 	/* 주문결제 > 단일 > 기본배송지 */
 	.default-shipping-address .detail-content .right-info {display:block;}
@@ -1377,10 +1427,28 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 	.new-shipping-address .phone-group > .form-group {width:68%;padding-left:10px}
 	.new-shipping-address .new-shipping-agree {padding-top:25px}
 
+	/* 주문결제 > 픽업주문 */
+	.pickup-ap .btn-ap {display:block;padding-left:0;}
+	.pickup-gge {width:100%;}
+	.akl .pickup-gge .form-group {margin:0 0;padding:0 0;}
+	.akl .pickup-gge .form-group select.form-control {width:100%;}
+	.akl .pickup-gge .form-group button {display:block;margin-top:10px}
+
 	/* 주문결제 > 거래내역증빙신청 */
 	.akl .panel.cash-receipts .cash-phone {display:block;text-align:left;padding:30px 0 0 30px}
 	.akl .panel.cash-receipts .receipt-type {display:block;text-align:left;padding:10px 0 0 30px}
 	.akl .panel.cash-receipts .receipt-type label {padding-right:12px;}
 	.akl .panel.cash-receipts .receipt-type select.form-control {width:67%;}
+	
+	/* 주문결제 > 쿠폰선택 팝업 */
+	.pop-coupon-list ul li.thead-tit {display:none;}
+	.pop-coupon-list ul li.tbody div {display:inline-block;vertical-align:top;}
+	div.pcupon-check {width:15%;padding:5px 0 0}
+	div.pcu-group {width:75%;}
+	div.pcupon-number {width:100%;}
+	div.pcupon-name {width:100%;padding:8px 0 0}
+	div.pcupon-period {width:100%;padding:8px 0 0}
+	.pop-coupon-list .pcu-group .mob-txt {display:block;font-size:14px;color:#002f5f;font-weight:500;letter-spacing:-1px}
+
 
 }

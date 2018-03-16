@@ -240,45 +240,21 @@
                                 <input class="amwa-radio" type="radio" name="optradio" id="radio2" />
                                 <label for="radio2" class="collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">픽업주문(ABN에서 주문하시고 AP에서 제품을 인수하는 방법)</label>
                                 <div id="collapseTwo" class="shipping-delivery-radio-body panel-collapse collapse">
-                                    <form action="" method="post" name="editAddress">
-                                        <fieldset>
-                                            <div class="form-group row">
-                                                <label for="addName" class="col-xs-12 col-md-3">Name</label>
-                                                <input name="addName" type="text" class="col-xs-12 col-md-4" value="Aiko Fukui" />
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="zipCode" class="col-xs-12 col-md-3">zip code</label>
-                                                <input name="zipCode" value="120" />
-                                                <div class="shipping-delivery-dash"></div>
-                                                <input name="zipCode2" type="text" value="0023" />
-                                                <button class="btn btn-block">Search Zip Code</button>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="perfecture" class="col-xs-12 col-md-3">PREFECTURE</label>
-                                                <select class="shipping-delivery-size col-xs-12 col-md-4" id="perfecture"> <option>Tokyo-to</option> <option selected="">Tokyo-to</option> <option>Tokyo-to</option> </select>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="city" class="col-xs-12 col-md-3">city, WORD (ISLAND)</label>
-                                                <input name="city" type="text" class="col-xs-12 col-md-4" value="3-5-10, Taito, Taito-Ku, Tokyo" />
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="rest" class="col-xs-12 col-md-3">REST OF ADDRESS</label>
-                                                <input name="rest" type="text" class="col-xs-12 col-md-4" value="RM 102-1, 6F" />
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="email" class="col-xs-12 col-md-3">email</label>
-                                                <input name="email" type="text" class="col-xs-12 col-md-4" value="aiko.fukui@email.com" />
-                                            </div>
-                                            <div class="form-group row">
-                                                <label class="col-xs-12 col-md-3"></label>
-                                                <div class="shipping-delivery-options-container col-xs-12 col-md-9">
-                                                    <input class="login-form-remember" id="makePrimary" name="makePrimary" type="checkbox" />
-                                                    <label for="makePrimary">Make Primary Shipping Address</label>
-                                                    <a name="savebutton" href="#" class="shipping-delivery-save btn-blue-white">save</a>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </form>
+                                    <div class="pickup-order-body">
+										<div class="pickup-ap">
+											<span>픽업할 AP를 선택해주세요. (최근픽업 : 강서AP)</span>
+											<span class="btn-ap"><a class="link-btn G10600_lp8" href="#">AP안내<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a></span>
+										</div>
+										<div class="pickup-gge">
+											<div class="form-group">
+												<select class="form-control" title="구분번호를 선택하세요">
+													<option>선택하세요</option>
+													<option>011</option>
+												</select>
+												<button type="button" class="bt-akl-blue">확인</button>
+											</div>
+										</div>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -340,8 +316,8 @@
 									</div>
 									<div class="panel">
 										<input class="amwa-radio" type="radio" name="optradio3" id="radio32" value="radio32" />
-										<label for="radio32"  class="tax-bill">세금계산서(중개판매 신청) : 123456789 명품서천특산품</label>
-										<span class="btn-business"><a href="#" class="bt-akl-white mini">사업자등록증 선택</a></span>
+										<label for="radio32" class="tax-bill">세금계산서(중개판매 신청) : 123456789 명품서천특산품</label>
+										<span class="btn-business G10600_lp5"><a href="#" class="bt-akl-white mini">사업자등록증 선택</a></span>
 									</div>
 									<div class="panel cash-receipts">
 										<div class="col-xs-12 col-md-3">
@@ -482,31 +458,53 @@
                             </div>
 							<div class="shipping-delivery-coupon">
 								<div class="delivery-coupon-choice">
-									<input class="amwa-radio" type="radio" name="optradio4" id="radio44" value="radio33" />
-									<label for="radio44"  style="display:inline-block;">쿠폰선택</label>
-									<input class="amwa-radio" type="radio" name="optradio4" id="radio55" value="radio33" />
-									<label for="radio55"  style="display:inline-block;">쿠폰직접입력</label>
+									<input class="amwa-radio" type="radio" name="coupon" id="radio444" value="cpM" />
+									<label for="radio444">쿠폰선택</label>
+									<input class="amwa-radio" type="radio" name="coupon" id="radio555" value="cpI" />
+									<label for="radio555">쿠폰직접입력</label>
 								</div>
-								<div class="delivery-coupon-box">
-									<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
-									<dl>
-										<dt>쿠폰타이틀 50%</dt>
-										<dd>쿠폰 서브텍스트</dd>
-									</dl>
-								</div>
+								
 								<!-- 쿠폰선택시 나오는 화면 -->
-								<div class="">
+								<div class="coupon-offer" id="cuponM">
+									<p>
+										<a href="#" class="shipping-delivery-summary-continue btn-blue-white" id="G10600_lp7">쿠폰 선택</a>
+									</p>
+									<div class="delivery-coupon-box">
+										<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
+										<dl>
+											<dt>쿠폰타이틀 50%</dt>
+											<dd>쿠폰 서브텍스트</dd>
+										</dl>
+									</div>
+									<div class="coupon-offer-link">
+										<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
+									</div>
 								</div>
 								<!-- //쿠폰선택시 나오는 화면 -->
-								<!-- 쿠폰직접입력 -->
-								<div class="">
+
+								<!-- 쿠폰직접입력시 나오는 화면 -->
+								<div class="coupon-offer" id="cuponI">
+									<div class="">
+										<input type="text" id="" name="" placeholder="쿠폰번호를 입력해주세요" value="" title="검색할 쿠폰번호 입력">
+											<button type="submit" class="btn btn-primary">
+												<span>적용</span>
+											</button> 
+										</div>
+									</div>
+									<div class="delivery-coupon-box">
+										<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
+										<dl>
+											<dt>쿠폰타이틀 50%</dt>
+											<dd>쿠폰 서브텍스트</dd>
+										</dl>
+									</div>
+									<div class="coupon-offer-link">
+										<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
+									</div>
 								</div>
 								<!-- //쿠폰직접입력시 나오는 화면 -->
 							</div>
-                            <div class="shipping-delivery-summary-link">
-                                <a href="#" class="shipping-delivery-summary-continue btn-blue-white" data-toggle="modal" data-target="#cart-modal" onclick="javascript:location.href='#'">쿠폰 선택</a>
-								<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
-                            </div>
+                            
                             <div class="shipping-delivery-summary-header">
                                 <span>결제금액</span>
                             </div>
@@ -723,7 +721,7 @@
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
 				<span class="cart-popup__header-text">주소찾기
-					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
 					   <img src="images/close.png" alt="닫기">
 					</a>
 				</span>
@@ -743,7 +741,7 @@
 					<p>아래에서 해당되는 주소의 [선택]버튼을 눌러주세요</p>
 					<div class="table-wrapper">
 						<table class="tbl-type1 address">
-							<caption>개인정보의 제3자 제공에 대한 동의에 대한 제공받는자, 이용목적, 제공항목, 보유기간 제공</caption>
+							<caption>우편번호, 주소, 그룹명 제공</caption>
 							<colgroup>
 								<col style="width:90px">
 								<col style="">
@@ -853,6 +851,7 @@
 					<p class="my-Shipping-txt">나의 배송지(999)</p>
 					<div class="table-wrapper my-Shipping-list">
 						<table class="tbl-type1">
+							<caption>이름, 주소, 선택항목 제공</caption>
 							<colgroup>
 								<col style="width:75%">
 								<col style="width:25%">
@@ -904,6 +903,1142 @@
 </div>
 <!--//단일주소록 팝업 --> 
 
+<!-- AP안내 팝업 -->
+<div class="layerWrapper G10600_lp8">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">AP안내
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					   <img src="images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="ap-container">
+						<ul class="ap-tabs">
+							<li><a href='#tab1'>분당ABC</a></li>
+							<li><a href='#tab2'>강남</a></li>
+							<li><a href='#tab3'>강서</a></li>
+							<li><a href='#tab4'>인천</a></li>
+							<li><a href='#tab5'>대전</a></li>
+							<li><a href='#tab6'>천안</a></li>
+							<li><a href='#tab7'>청주</a></li>
+							<li><a href='#tab8'>해운대ABC</a></li>
+							<li><a href='#tab9'>부산</a></li>
+							<li><a href='#tab10'>대구</a></li>
+							<li><a href='#tab11'>창원</a></li>
+							<li><a href='#tab12'>울산</a></li>
+							<li><a href='#tab13'>광주</a></li>
+							<li><a href='#tab14'>전주</a></li>
+							<li><a href='#tab15'>강릉</a></li>
+							<li><a href='#tab16'>제주</a></li>
+						</ul>
+						<div id='tab1' class="aptab_content">
+							<p class="tab-tit">분당ABC (암웨이 브랜드 체험센터)</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="분당ABC 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab2' class="aptab_content">
+							<p class="tab-tit">강남</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="강남 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab3' class="aptab_content">
+							<p class="tab-tit">강서</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="강서 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab4' class="aptab_content">
+							<p class="tab-tit">인천</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="인천 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab5' class="aptab_content">
+							<p class="tab-tit">대전</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="대전 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab6' class="aptab_content">
+							<p class="tab-tit">천안</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="천안 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab7' class="aptab_content">
+							<p class="tab-tit">청주</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="청주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab8' class="aptab_content">
+							<p class="tab-tit">해운대ABC</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="해운대ABC 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab9' class="aptab_content">
+							<p class="tab-tit">부산</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="부산 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab10' class="aptab_content">
+							<p class="tab-tit">대구</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="대구 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab11' class="aptab_content">
+							<p class="tab-tit">창원</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="창원 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab12' class="aptab_content">
+							<p class="tab-tit">울산</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="울산 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab13' class="aptab_content">
+							<p class="tab-tit">광주</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="광주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab14' class="aptab_content">
+							<p class="tab-tit">전주</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="전주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab15' class="aptab_content">
+							<p class="tab-tit">강릉</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="강릉 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id='tab16' class="aptab_content">
+							<p class="tab-tit">제주</p>
+							<div class="ap-map-google">
+								<img src="images/akl_common/img_map.png" alt="제주 지도">
+							</div>
+							<div class="map-info-pay">
+								<p class="title-adder">주소</p>
+								<div class="map-inp-txt">
+									<p>[지번]  경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+									<p>[도로]  경기도 성남시 분당구 탄천상로 151번길 20 베어캐슬 1,2층 한국암웨이 브랜드 체험 센터</p>
+								</div>
+
+								<p class="title-phone">전화번호</p>
+								<div class="map-inp-txt">
+									<p>031-786-1199</p>
+								</div>
+
+								<p class="title-time">영업시간</p>
+								<div class="map-inp-txt">
+									<ul>
+										<li>매장
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>Café W
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 18:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 22:00</li>
+												<li><strong>휴무일 없음(설,추석 연휴 당일 제외)</strong></li>
+											</ul>
+										</li>
+										<li>상담부스, 체험관, 반품창구
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 20:30</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 : 일요일(반품창구 제외)</strong></li>
+											</ul>
+										</li>
+										<li>미술관
+											<ul>
+												<li>평일(월요일~금요일) 10:00 ~ 19:00</li>
+												<li>주말(토요일~일요일) 10:00 ~ 18:00</li>
+												<li><strong>휴무일 없음(법정공휴일 제외)</strong></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//AP안내 팝업 --> 
+
+<!-- 쿠폰선택 팝업 -->
+<div class="layerWrapper G10600_lp7">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">쿠폰선택
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					   <img src="images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<div class="form-wrapper address-pop"> 
+						<input type="text" id="" name="" placeholder="쿠폰명, 쿠폰번호를 입력해주세요" value="" title="검색할 쿠폰명, 쿠폰번호 입력">
+						<button type="submit" class="btn btn-primary">
+							<span>검색</span>
+						</button> 
+					</div>
+
+					<p>총 쿠폰 수 : <strong class="txt-blue">3</strong> 개</p>
+					<div class="table-wrapper">
+						<div class="pop-coupon-list">
+							<ul>
+								<li class="thead-tit">
+									<span class="pcupon-number">쿠폰번호</span>
+									<span class="pcupon-name">쿠폰명</span>
+									<span class="pcupon-period">사용기한</span>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li><!-- 내역이 없을때 클래스 삭제하고 넣어주세요. -->
+									<div class="search-no-result">
+										<p>쿠폰 내역이 없습니다. </p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">적용</button>
+				<button type="button" class="bt-akl-txt">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//쿠폰선택 팝업 --> 
+
+<!-- 사업자등록증 관리 팝업 -->
+<div class="layerWrapper G10600_lp5">
+	<div class="cbox layerBox popWidL">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">사업자등록증 관리
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					   <img src="images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content payment">
+				<div class="cart-popup__item-info">
+					<p>사업자등록번호를 해당사업장의 동의 없이 무단으로 이용하시는 경우 법적으로 제재 조치가 발생할 수 있습니다.</p>
+					<div class="form-wrapper address-pop"> 
+						<label for="company-name" style="display:inline-block;">법인명 검색</label>
+						<span  style="display:inline-block;">
+							<input type="text" id="company-name" name="" placeholder="쿠폰명, 쿠폰번호를 입력해주세요" value="" style="width:70%">
+							<button type="submit" class="btn btn-primary">
+								<span>검색</span>
+							</button>
+						</span>
+						<button type="button" class="link-btn">검색초기화</button>
+					</div>
+
+					<p>총 <strong class="txt-blue">4</strong>개의 사업자등록증이 있습니다.</p>
+					<div class="table-wrapper">
+						<div class="pop-coupon-list">
+							<ul>
+								<li class="thead-tit">
+									<span class="pcupon-number">쿠폰번호</span>
+									<span class="pcupon-name">쿠폰명</span>
+									<span class="pcupon-period">사용기한</span>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li class="tbody">
+									<div class="pcupon-check">
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
+										<label for="cupob1"><span class="hidden">선택</span></label>
+									</div>
+									<div class="pcu-group">
+										<div class="pcupon-number">
+											<span class="mob-txt">쿠폰번호</span>
+											<span class="number">11711010000030</span>
+										</div>
+										<div class="pcupon-name">
+											<span class="mob-txt">쿠폰명</span>
+											<span class="name">SOP THANK YOU PROMOTION</span>
+										</div>
+										<div class="pcupon-period">
+											<span class="mob-txt">사용기한</span>
+											<span class="period">2017-11-01 ~ 2018-01-31</span>
+										</div>
+									</div>
+								</li>
+								<li><!-- 내역이 없을때 클래스 삭제하고 넣어주세요. -->
+									<div class="search-no-result">
+										<p>쿠폰 내역이 없습니다. </p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">적용</button>
+				<button type="button" class="bt-akl-txt">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//사업자등록증 관리 팝업 --> 
+
 <script>
     
 $(function () {
@@ -922,7 +2057,7 @@ $(function () {
     });
 })
 
-//2018.03.15 배송지 선택
+//akl 배송지 선택
 $(document).ready(function() {
 	// DOM 생성 완료 시 화면 숨김 (파라미터로 전달되는 id는 제외)
 	hideExclude("changeM");
@@ -945,6 +2080,7 @@ $(document).ready(function() {
 		$("input[name=abnAdress]").eq(0).attr("checked", true);
 	}
 });
+
 // text area 숨김
 function hideExclude(excludeId) {
 	$("#changeTextArea").children().each(function() {
@@ -954,17 +2090,82 @@ function hideExclude(excludeId) {
 	$("#" + excludeId).show();
 }
 
-//2018.03.15 주소찾기 팝업
+//akl 주소찾기 팝업
 $('#U61000_lp1').click(function(event) {
 	event.preventDefault(); 
 	layerPopOver(this,'.U61000_lp1');
 });
 
-//2018.03.15 단일주소록 팝업
+//akl 단일주소록 팝업
 $('.G10600_lp3').click(function(event) {
 	event.preventDefault(); 
 	layerPopOver(this,'.G10600_lp3');
 });
+
+//akl AP안내 팝업
+$('.G10600_lp8').click(function(event) {
+	event.preventDefault(); 
+	layerPopOver(this,'.G10600_lp8');
+});
+
+//akl AP안내 Tab
+$('ul.ap-tabs').each(function(){
+  var $active, $content, $links = $(this).find('a');
+  $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+  $active.addClass('active');
+
+  $content = $($active[0].hash);
+  $links.not($active).each(function () {
+    $(this.hash).hide();
+  });
+
+  $(this).on('click', 'a', function(e){
+    $active.removeClass('active');
+    $content.hide();
+    $active = $(this);
+    $content = $(this.hash);
+    $active.addClass('active');
+    $content.show();
+    e.preventDefault();
+  });
+});
+
+//akl 쿠폰선택
+$(document).ready(function() {
+	// DOM 생성 완료 시 화면 숨김 (파라미터로 전달되는 id는 제외)
+	hideExclude("cuponM");
+	// radio change 이벤트
+	$("input[name=coupon]").change(function() {
+		var radioValue = $(this).val();
+		if (radioValue == "cpM") {
+			hideExclude("cuponM");
+		} else if (radioValue == "cpI") {
+			hideExclude("cuponI");
+		} else if (radioValue == "H") {
+			hideExclude("changeH");
+		}
+	});
+
+	// 체크 되어 있는지 확인
+	var checkCnt = $("input[name=coupon]:checked").size();
+	if (checkCnt == 0) {
+		// default radio 체크 (첫 번째)
+		$("input[name=coupon]").eq(0).attr("checked", true);
+	}
+});
+
+//akl 쿠폰선택 팝업(
+$('#G10600_lp7').click(function(event) {
+	event.preventDefault(); 
+	layerPopOver(this,'.G10600_lp7');
+});
+
+//akl 사업자등록증 관리 팝업(
+$('.G10600_lp5').click(function(event) {
+	event.preventDefault(); 
+	layerPopOver(this,'.G10600_lp5');
+});
+
 
 </script>
 </body>
