@@ -4,6 +4,7 @@ Date : 2018-03-13
 Editor : sookkyung Han
 *************************************************/ 
 /*** 상품상세 가이드 ***/
+.product-detail-view{padding-bottom:40px;}
 .product-detail-view > div{max-width:1100px;margin:0 auto;}
 .product-detail-view .product-visual{width:-webkit-calc(100% + 100px);width:-moz-calc(100% + 100px);width:calc(100% + 100px);max-width:calc(100% + 100px);max-width:calc-webkit-(100% + 100px);max-width:-moz-calc(100% + 100px);margin-left:-50px;padding:78px 0 70px;}
 .typeA .product-visual{background-color:#eeede3;}
@@ -136,20 +137,46 @@ Editor : sookkyung Han
 .product-health-info .info-point-tit:first-child{margin-top:0;}
 .product-health-info .info-point-txt{font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;line-height:1.6;}
 
+.product-detail-view .product-advantage{margin-top:40px;}
+.product-detail-view .product-advantage + .product-advantage{margin-top:70px;}
 .product-advantage .detail-tit{text-align:left;line-height:1.3;}
 .product-advantage:after{content:""; display:block;  clear:both; width: 0; height: 0;}
-.product-advantage .advantage-box{float:left;width:50%;text-align:left;}
-.product-advantage.reverse .advantage-box{float:right;}
+.product-advantage .advantage-box{float:right;width:50%;text-align:left;}
+.product-advantage.reverse .advantage-box{float:left;}
 .product-advantage .advantage-txt{margin-top:18px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.6;}
 .product-advantage .advantage-txt-etc{font-size:16px;color:#008fc5;letter-spacing:-1px;}
 .product-advantage .advantage-txt-etc:first-child{margin-top:20px;}
-.product-advantage .advantage-img{float:right;width:50%;text-align:right;}
-.product-advantage.reverse .advantage-img{float:left;text-align:left;}
+.product-advantage .advantage-img{float:left;width:50%;text-align:left;padding-right:50px;}
+.product-advantage.reverse .advantage-img{float:right;text-align:right;padding:0 0 0 50px;}
 .product-advantage .advantage-img .detail-img{display:inline-block;}
 
+.product-detail-view .product-process{padding:26px 50px 23px;margin-top:50px;border:10px solid #eff0f1;}
+.product-detail-view .product-process .detail-tit{font-size:36px;color:#444;}
+.product-process-step{margin-top:36px;}
+.product-process-step li{display:inline-block;}
+.step05.product-process-step li{width:20%;padding:0 30px;vertical-align:top;text-align:center;}
+.product-process-step .step-img{display:inline-block;}
+.product-process-step .step-num{display:block;max-width:60px;margin:30px auto 0;padding:0px 10px;border-radius:10px;font-size:14px;color:#fff;letter-spacing:-1px;font-weight:300;background-color:#bbb;}
+.product-process-step .step-txt{display:block;margin-top:7px;font-size:14px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.7;}
 
 
 
+
+
+
+
+
+
+
+
+@media (max-width: 990px) {
+	.product-detail-view .product-setup .setup-list li{width:50%;}
+	.product-detail-view .product-feature .feature-list > li{padding:20px 20px 21px;}
+	.product-detail-view .product-feature .detail-txt{padding-right:20px;}
+	.product-detail-view .product-feature02 .feature-box .feature-list-txt br{display:none;}
+	.step05.product-process-step{margin-top:0;}
+	.step05.product-process-step li{width:33.33%;margin-top:30px;}
+}
 
 
 
@@ -157,7 +184,7 @@ Editor : sookkyung Han
 	.product-detail-view > div{margin:0 12px;}
 	.product-visual .visual-info{padding:0 120px;}
 	.product-visual .txt-area .visual-tit{margin-top:10px;font-size:50px;}
-	.product-visual .txt-area .visual-tit strong{font-size:50px;}
+	.product-visual .txt-area .visual-tit strong{font-size:50px;line-height:1.0;}
 	.product-visual .txt-area .visual-txt br, 
 	.product-info .info-txt br, 
 	.product-setup .detail-title .detail-s-tit br{display:none;}
@@ -182,7 +209,18 @@ Editor : sookkyung Han
 	.product-feature02 .feature-list{width:100%;}
 	.product-feature02 .feature-img{width:100%;max-width:100%;text-align:center;margin-top:20px;}
 	.product-feature02 .feature-img img{width:50%;}
-	
+	.product-detail-view .product-process .detail-tit{font-size:30px;}
+	.product-detail-view .product-advantage + .product-advantage{margin-top:50px;}
+	.product-advantage .advantage-img,
+	.product-advantage.reverse .advantage-img{width:100%;text-align:center;}
+	.product-advantage .advantage-box{width:100%;text-align:center;}
+	.product-advantage .detail-tit{text-align:center;}
+	.product-detail-view .product-process{padding:26px 25px 23px;}
+	.step05.product-process-step li{width:100%;margin-top:30px;text-align:left;overflow:hidden;}
+	.step05.product-process-step li:first-child{margin-top:0;}
+	.product-process-step .step-img{float:left;width:30%;padding-right:30px;}
+	.product-process-step .step-num{float:left;margin-top:10px;}
+	.product-process-step .step-txt{float:left;width:70%;}
 
 }
 
@@ -190,11 +228,5 @@ Editor : sookkyung Han
 
 }
 
-@media (max-width: 990px) {
-	.product-detail-view .product-setup .setup-list li{width:50%;}
-	.product-detail-view .product-feature .feature-list > li{padding:20px 20px 21px;}
-	.product-detail-view .product-feature .detail-txt{padding-right:20px;}
-	.product-detail-view .product-feature02 .feature-box .feature-list-txt br{display:none;}
-}
 
 
