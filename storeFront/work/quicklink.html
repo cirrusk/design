@@ -1,4 +1,4 @@
-
+﻿
 	<div class="quick-links">
 		<div class="container">
 			<div class="row">
@@ -36,15 +36,15 @@
 					<li class="quick-links-item col-sm-3 panel">
 						<h5 class="quick-links-header akl-foot mob3"><a href="#">암웨이플라자</a></h5>
 						<h5 class="quick-links-header akl-foot mob4"><a href="#">암웨이브랜드체험센터</a></h5>
-					</li> 
+					</li>
 				</ul>
 				<div class="quick-links-misc col-sm-4">
-					<ul> 
+					<ul>
 						<li>
 							<p class="quick-links-title">App 다운로드</p>
 							<img src="images/footer_android.png" alt="download on the android" />
 							<img src="images/footer_appstore.png" alt="download on the appstore" />
-						</li> 
+						</li>
 					</ul>
 					<!--  pc -->
 					<section class="footerShotcut pc">
@@ -59,7 +59,7 @@
 								<a href="http://www.xsblast.kr/main.asp" title="새창열림" target="_blank">XS Energy Drink</a>
 								<a href="http://www.nutrilite.co.kr/homecafe/index.asp" title="새창열림" target="_blank">파이토 홈까페</a>
 								<a href="http://www.amwayon.co.kr" title="새창열림" target="_blank">AmwayOn</a>
-							</div> 
+							</div>
 						</div>
 						<div class="scFamilyT">
 							<button type="button" class="brand-btn">관련사이트 <span class="hidden">바로가기 열기</span></button>
@@ -70,9 +70,9 @@
 								<a href="/myBiz/autoLogin" title="새창열림" target="_blank">MyBiz</a>
 							</div>
 						</div>
-					</section> 
+					</section>
 					<!--  pc -->
-					 
+
 					<!--  mobile -->
 					<section class="footerShotcut mob">
 						<h2 class="hidden">바로가기</h2>
@@ -96,34 +96,33 @@
 								<option value="https://www.macco.or.kr/ko/main.action">직접판매공제조합</option>
 								<option value="/myBiz/autoLogin">MyBiz</option>
 							</select>
-						</div> 
+						</div>
 					</section>
 					<!--  mobile -->
 				</div>
-				
+
 			</div>
 		</div>
-	</div> 
+	</div>
 
 <script>
-    //This code will be removed when project end.Consistent with the new.js
-    (function () {
-        function linkToggle () {
-            $(".quick-links-item").click(function () {
-                if($(this).hasClass("switcher")){
-                    $(this).removeClass("switcher");
-                }else{
-                    $(this).addClass("switcher");
-                    $(this).siblings().removeClass("switcher");
+	//모바일사이즈에서 사용
+	//This code will be removed when project end.Consistent with the new.js
+	(function () {
+		function linkToggle () {
+			$(".quick-links-item").click(function () {
+				if($(this).hasClass("switcher")){
+					$(this).removeClass("switcher");
+				}else{
+					$(this).addClass("switcher");
+					$(this).siblings().removeClass("switcher");
 
-                }
-            });
-        }
-        linkToggle();
-    })(); 
-    
-    //akl_common.js
-    quickLinks();
+				}
+			});
+		}
+		linkToggle();
+	})();
+
+	//akl_common.js
+	quickLinks();
 </script>
- 
- 
