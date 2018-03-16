@@ -21,10 +21,10 @@ $(function() {
 		}
 		e.preventDefault();
 	});
-	
+
 	//제품상세 > 크게보기 레이어 : 이미지보기
 	popupGalleryIMG();
-	
+
 	//제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정
 	videodSize();
 
@@ -68,13 +68,13 @@ $(function() {
 function popupGalleryIMG(){
 	var $IMG = $('#largeImgView.pop-gallery').find('img');
 	var $listIMG = $('#recentlyViewedListTab2').find('img');
-	
+
 	//첫 이미지 가져오기
 	var $imgFirst = $('#recentlyViewedListTab2').find('img').first();
 	var _firstSRC = $imgFirst.attr('src');
 	var _firstALT = $imgFirst.attr('alt');
 	$IMG.attr({'src':_firstSRC, 'alt':_firstALT});
-	
+
 	//이미지 클릭시
 	$listIMG.each(function(){
 		$(this).on('click',function(){
@@ -88,7 +88,7 @@ function popupGalleryIMG(){
 function videodSize(){
 	var _video = $('.flexslider#pdpImg').find('.video-wrapper');
 	if(! _video.length ){ return;}
-	
+
 	vdSize();
 	function vdSize(){
 		var WD = $('.flexslider#pdpImg').width();
@@ -302,7 +302,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	$(targetLayer).fadeIn(150, function(){
 		scroll_LOCK();
 		setPosition();
-		
+
 		$('#mask').addClass('on');
 		$(this).css('z-index',_thisIndex);
 		$(this).addClass('active');
