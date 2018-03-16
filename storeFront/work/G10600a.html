@@ -458,49 +458,56 @@
                             </div>
 							<div class="shipping-delivery-coupon">
 								<div class="delivery-coupon-choice">
-									<input class="amwa-radio" type="radio" name="coupon" id="radio444" value="cpM" />
+									<input class="amwa-radio" type="radio" name="coupon" id="radio444" value="cpM" checked="checked" />
 									<label for="radio444">쿠폰선택</label>
 									<input class="amwa-radio" type="radio" name="coupon" id="radio555" value="cpI" />
 									<label for="radio555">쿠폰직접입력</label>
 								</div>
 								
 								<!-- 쿠폰선택시 나오는 화면 -->
-								<div class="coupon-offer" id="cuponM">
+								<div class="coupon-offer">
 									<p>
 										<a href="#" class="shipping-delivery-summary-continue btn-blue-white" id="G10600_lp7">쿠폰 선택</a>
 									</p>
-									<div class="delivery-coupon-box">
-										<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
-										<dl>
-											<dt>쿠폰타이틀 50%</dt>
-											<dd>쿠폰 서브텍스트</dd>
-										</dl>
+									<!-- 적용을 클릭했을 경우 나오는 화면 -->
+									<div class="coupon-offer-body" style="display:none;">
+										<div class="delivery-coupon-box">
+											<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
+											<dl>
+												<dt>쿠폰타이틀 50%</dt>
+												<dd>쿠폰 서브텍스트</dd>
+											</dl>
+										</div>
+										<div class="coupon-offer-link">
+											<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
+										</div>
 									</div>
-									<div class="coupon-offer-link">
-										<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
-									</div>
+									<!-- //적용을 클릭했을 경우 나오는 화면 -->
 								</div>
 								<!-- //쿠폰선택시 나오는 화면 -->
 
 								<!-- 쿠폰직접입력시 나오는 화면 -->
-								<div class="coupon-offer" id="cuponI">
-									<div class="">
+								<div class="coupon-offer-direct" style="display:none;">
+									<div class="coupon-offer-search">
 										<input type="text" id="" name="" placeholder="쿠폰번호를 입력해주세요" value="" title="검색할 쿠폰번호 입력">
-											<button type="submit" class="btn btn-primary">
-												<span>적용</span>
-											</button> 
+										<button type="submit" class="btn btn-primary">
+											<span>적용</span>
+										</button> 
+									</div>
+									<!-- 적용을 클릭했을 경우 나오는 화면 -->
+									<div class="coupon-offer-body" style="display:none;">
+										<div class="delivery-coupon-box">
+											<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
+											<dl>
+												<dt>쿠폰타이틀 50%</dt>
+												<dd>쿠폰 서브텍스트</dd>
+											</dl>
+										</div>
+										<div class="coupon-offer-link">
+											<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
 										</div>
 									</div>
-									<div class="delivery-coupon-box">
-										<span><img src="images/akl_common/img_helping03.png" alt="쿠폰"></span>
-										<dl>
-											<dt>쿠폰타이틀 50%</dt>
-											<dd>쿠폰 서브텍스트</dd>
-										</dl>
-									</div>
-									<div class="coupon-offer-link">
-										<a href="#" class="shipping-delivery-summary-continue bt-akl-txt">쿠폰적용 취소</a>
-									</div>
+									<!-- //적용을 클릭했을 경우 나오는 화면 -->
 								</div>
 								<!-- //쿠폰직접입력시 나오는 화면 -->
 							</div>
@@ -1829,8 +1836,8 @@
 								</li>
 								<li class="tbody">
 									<div class="pcupon-check">
-										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
-										<label for="cupob1"><span class="hidden">선택</span></label>
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob2" value="" />
+										<label for="cupob2"><span class="hidden">선택</span></label>
 									</div>
 									<div class="pcu-group">
 										<div class="pcupon-number">
@@ -1849,8 +1856,8 @@
 								</li>
 								<li class="tbody">
 									<div class="pcupon-check">
-										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
-										<label for="cupob1"><span class="hidden">선택</span></label>
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob3" value="" />
+										<label for="cupob3"><span class="hidden">선택</span></label>
 									</div>
 									<div class="pcu-group">
 										<div class="pcupon-number">
@@ -1869,8 +1876,8 @@
 								</li>
 								<li class="tbody">
 									<div class="pcupon-check">
-										<input class="amwa-radio" type="radio" name="cupo" id="cupob1" value="" />
-										<label for="cupob1"><span class="hidden">선택</span></label>
+										<input class="amwa-radio" type="radio" name="cupo" id="cupob4" value="" />
+										<label for="cupob4"><span class="hidden">선택</span></label>
 									</div>
 									<div class="pcu-group">
 										<div class="pcupon-number">
@@ -1920,10 +1927,10 @@
 			<div class="cart-popup__content payment">
 				<div class="cart-popup__item-info">
 					<p>사업자등록번호를 해당사업장의 동의 없이 무단으로 이용하시는 경우 법적으로 제재 조치가 발생할 수 있습니다.</p>
-					<div class="form-wrapper address-pop"> 
-						<label for="company-name" style="display:inline-block;">법인명 검색</label>
-						<span  style="display:inline-block;">
-							<input type="text" id="company-name" name="" placeholder="쿠폰명, 쿠폰번호를 입력해주세요" value="" style="width:70%">
+					<div class="form-wrapper business-pop"> 
+						<label for="company-name">법인명 검색</label>
+						<span class="busn-search">
+							<input type="text" id="company-name" name="" placeholder="" value="">
 							<button type="submit" class="btn btn-primary">
 								<span>검색</span>
 							</button>
@@ -2128,30 +2135,6 @@ $('ul.ap-tabs').each(function(){
     $content.show();
     e.preventDefault();
   });
-});
-
-//akl 쿠폰선택
-$(document).ready(function() {
-	// DOM 생성 완료 시 화면 숨김 (파라미터로 전달되는 id는 제외)
-	hideExclude("cuponM");
-	// radio change 이벤트
-	$("input[name=coupon]").change(function() {
-		var radioValue = $(this).val();
-		if (radioValue == "cpM") {
-			hideExclude("cuponM");
-		} else if (radioValue == "cpI") {
-			hideExclude("cuponI");
-		} else if (radioValue == "H") {
-			hideExclude("changeH");
-		}
-	});
-
-	// 체크 되어 있는지 확인
-	var checkCnt = $("input[name=coupon]:checked").size();
-	if (checkCnt == 0) {
-		// default radio 체크 (첫 번째)
-		$("input[name=coupon]").eq(0).attr("checked", true);
-	}
 });
 
 //akl 쿠폰선택 팝업(
