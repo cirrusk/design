@@ -651,7 +651,7 @@
 												<div class="list-item-wrapper">
 													<div class="product-list__item">
 														<div class="plp-item-label bg-red">일시품절</div>
-					                                    <div class="plp-item-label bg-purple lsize04">10개월무이자</div> 
+					                                    <div class="plp-item-label bg-purple lsize04">10개월무이자</div>
 														<div class="product-list__item-content amwahover">
 															<label class="checkbox-element-wrapper">
 																<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -780,7 +780,7 @@
 											<div class="product__list--item col-sm-12 col-md-4 js-query-result-item">
 												<div class="list-item-wrapper">
 													<div class="product-list__item">
-														<div class="plp-item-label bg-red">일시품절</div> 
+														<div class="plp-item-label bg-red">일시품절</div>
 														<div class="product-list__item-content amwahover">
 															<label class="checkbox-element-wrapper">
 																<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -1013,8 +1013,7 @@
 	<!-- QUICK VIEW 팝업 -->
 
 	<script type="text/javascript">
-		$(function() {
-
+		$(function(){
 			//mob filter
 			$(".filter-facet-button").click(function(e){
 				e.preventDefault();
@@ -1027,40 +1026,11 @@
 				}
 			});
 
-
-				$(".cart-popup__close.quick-view-close").click(function() {
-					$(".view-box,.overlay").hide();
-				});
-
-				$('.quick-view-btn').click(function(event) {
-					event.preventDefault();
-					$(".view-box,.overlay").show();
-
-				});
-				//search box click event
-				$(".icon-search").click(function(e) {
-					e.preventDefault();
-					var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-					if (value == 'did you mean') {
-						window.location.href = "did-you-mean.html";
-					} else if (value == 'artistry') {
-						window.location.href = "search-result-page.html";
-					} else {
-						window.location.href = "search-no-result.html";
-					}
-				});
-
-			//  add to shopping cart
-			$('.product-list__item-link .btn-blue-white').click(function(event) {
+			//akl 추가 : 팝업
+			$('.quick-view-btn').click(function(event) {
 				event.preventDefault();
-				$("#add-to-cart-box.cbox,.overlay").show();
-				$("#colorbox").hide();
+				layerPopOver(this,'.QUICK_VIEW_pop');
 			});
-
-			$(".cart-popup__close").click(function() {
-				$("#add-to-cart-box.cbox,.overlay").hide();
-			});
-
 		});
 
 
@@ -1115,15 +1085,6 @@
 				});
 			});
 		})(jQuery);
-
-		//akl 추가 : 팝업
-		$(function() {
-			$('.quick-view-btn').click(function(event) {
-				event.preventDefault();
-				layerPopOver(this,'.QUICK_VIEW_pop');
-			});
-		})
-
 	</script>
 </body>
 </html>
