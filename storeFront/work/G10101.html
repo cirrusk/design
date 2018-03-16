@@ -711,156 +711,66 @@
     </div>
     <!-- QUICK VIEW 팝업 --> 
 
-	<script type="text/javascript">$(function() {
-			
-			$('#recentlyViewedListTab').owlCarousel({
-				loop: true,
-				nav: true,
-				dots: false,
-				margin: 0,
-				items: 1,
-				responsiveClass: true,
-				responsive: {
-					480 : {
-						items: 2
-					},
-					768 : {
-						items: 4
-					},
-					960 : {
-						items: 5
-					},
-					1200 : {
-						items: 7
-					}
+	<!--  2018.03.16 스크립트 정리 -->
+	<script type="text/javascript"> 
+		(function ($) {
+			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
+				var tag = $(this).siblings('.dropdown-menu');
+				var flag=true;
+				if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
+					e.stopPropagation();
+					$(".plp-add-to-shopping-list ").removeClass("open");
+					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
+					$(tag).show();
+					$(".plp-add-to-ditto").removeClass("open");
+				}else{
+					$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
+					$(tag).hide();
 				}
-			});
-			//search box click event
-			$(".icon-search").click(function(e) {
-				e.preventDefault();
-				var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-				console.log(value);
-				if (value == 'did you mean') {
-					window.location.href = "did-you-mean.html";
-				} else if (value == 'artistry') {
-					window.location.href = "search-result-page.html";
-				} else {
-					window.location.href = "search-no-result.html";
-				}
-			});
-			
-			//add to shopping list event
-			(function ($) {
-				$(".js-add-list-shopping-button,.addToLIST").click(function(e){
-					var tag = $(this).siblings('.dropdown-menu');
-					var flag=true;
-					if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
-						e.stopPropagation();
-						$(".plp-add-to-shopping-list ").removeClass("open");
-						$(this).parent(".plp-add-to-shopping-list ").addClass("open");
-						$(tag).show();
-						$(".plp-add-to-ditto").removeClass("open");
-					}else{
-						$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
+				$(document).bind("click",function(e){//点击空白处，设置的弹框消失
+					var target = $(e.target);
+					if(target.closest(tag).length == 0 && flag == true){
+						$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
 						$(tag).hide();
+						flag = false;
 					}
-					$(document).bind("click",function(e){//点击空白处，设置的弹框消失
-						var target = $(e.target);
-						if(target.closest(tag).length == 0 && flag == true){
-							$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
-							$(tag).hide();
-							flag = false;
-						}
-					});
 				});
-			})(jQuery);
-
-
-			//add to ditto event
-			(function ($) {
-				$(".product-list__item-link-ditto").click(function(e){
-					var tag = $(this).siblings('.dropdown-menu');
-					var flag=true;
-					if(!$(this).parent(".plp-add-to-ditto ").hasClass("open")){
-						e.stopPropagation();
-						$(".plp-add-to-ditto").removeClass("open");
-						$(this).parent(".plp-add-to-ditto").addClass("open");
-						$(tag).show();
-						$(".plp-add-to-shopping-list ").removeClass("open");
-					}else{
-						$(this).parent(".plp-add-to-ditto").removeClass("open");
+			});
+		})(jQuery); 
+		
+		//add to ditto event
+		(function ($) {
+			$(".product-list__item-link-ditto").click(function(e){
+				var tag = $(this).siblings('.dropdown-menu');
+				var flag=true;
+				if(!$(this).parent(".plp-add-to-ditto ").hasClass("open")){
+					e.stopPropagation();
+					$(".plp-add-to-ditto").removeClass("open");
+					$(this).parent(".plp-add-to-ditto").addClass("open");
+					$(tag).show();
+					$(".plp-add-to-shopping-list ").removeClass("open");
+				}else{
+					$(this).parent(".plp-add-to-ditto").removeClass("open");
+					$(tag).hide();
+				}
+				$(document).bind("click",function(e){//点击空白处，设置的弹框消失
+					var target = $(e.target);
+					if(target.closest(tag).length == 0 && flag == true){
+						$(tag).parent(".plp-add-to-ditto ").removeClass("open");
 						$(tag).hide();
+						flag = false;
 					}
-					$(document).bind("click",function(e){//点击空白处，设置的弹框消失
-						var target = $(e.target);
-						if(target.closest(tag).length == 0 && flag == true){
-							$(tag).parent(".plp-add-to-ditto ").removeClass("open");
-							$(tag).hide();
-							flag = false;
-						}
-					});
 				});
-			})(jQuery);
-
-			//akl 추가 2018.03.05
-			$('#sub_banner_list').owlCarousel({
-	            loop: true,
-	            nav: true,
-	            dots: false,
-	            margin: 0,
-	            items: 1
-	
-	        });
-
-			$('#productLearningListTabs').owlCarousel({
-				loop: true,
-				nav: true,
-				dots: false,
-				margin: 0,
-				items: 1,
-				responsiveClass: true,
-				responsive: {
-					480 : {
-						items: 1
-					},
-					960 : {
-						items: 2
-					},
-					1200 : {
-						items: 3
-					}
-				}
 			});
-			$('#productSuggestListTabs').owlCarousel({
-				loop: true,
-				nav: true,
-				dots: false,
-				margin: 0,
-				items: 1,
-				responsiveClass: true,
-				responsive: {
-					480 : {
-						items: 1
-					},
-					768 : {
-						items: 2
-					},
-					960 : {
-						items: 3
-					},
-					1200 : {
-						items: 4
-					}
-				}
-			});
+		})(jQuery); 
 
-			$(function() {
-				$('.quick-view-btn').click(function(event) {
-					event.preventDefault();
-					layerPopOver(this,'.QUICK_VIEW_pop');
-				});
-			}) 
-			
-		})</script>
+		$(function() {
+			$('.quick-view-btn').click(function(event) {
+				event.preventDefault();
+				layerPopOver(this,'.QUICK_VIEW_pop');
+			});
+		}) 
+		<!--//  2018.03.16 스크립트 정리 -->	 
+	</script>
 </body>
 </html>
