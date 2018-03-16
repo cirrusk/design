@@ -781,102 +781,53 @@
 
 
 	<script type="text/javascript">
-		$(function () {
+	$(function(){
+		$('#U60501_lp1').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp1_pop');
+		});
 
-			$(".select2-hidden-accessible").select2();
+		$('#U60501_lp2').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp2_pop');
+		});
 
-			$(".js-order-history-filters").click(function () {
-				$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
-				if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
-					$(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
-				} else {
-					$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
-				}
-			});
-			$(".js-order-history-search").click(function () {
-				$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
-				if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
-					$(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
-				} else {
-					$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
-				}
-			});
+		$('#U60501_lp3').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp3_pop');
+		});
 
-			$(".js-expand-order").click(function () {
-				if (!$(this).hasClass("open")) {
-					$(this).addClass("open");
-					$(this).next(".js-order-details-block").addClass("expanded");
-				} else {
-					$(this).removeClass("open");
-					$(this).next(".js-order-details-block").removeClass("expanded");
-				}
-			});
+		$('#U60501_lp2-1').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp2-1_pop');
+		});
 
+		$('#U60501_lp4').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp4_pop');
+		});
 
-			//akl 추가 : 팝업
-			/* 삭제: 2018.03.02 (사용안함)
-			$(".cart-popup__close,.closeCbox").click(function(event) {
-				event.preventDefault();
-				$(".cbox,.overlay").hide();
-			}); */
+		$('#U60501_lp4-1').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp4-1_pop');
+		});
 
-			$('#U60501_lp1').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp1,.overlay").show();
-				layerPopOver(this,'.U60501_lp1_pop');
-			});
+		$('#U60501_lp5').click(function(event) {
+			event.preventDefault();
+			$(".U60501_lp4_pop").find('.cart-popup__close').trigger('click');
+			layerPopOver(this,'.U60501_lp5_pop');
+		});
 
-			$('#U60501_lp2').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp2,.overlay").show();
-				layerPopOver(this,'.U60501_lp2_pop');
-			});
+		$('#U60501_lp6').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp6_pop');
+		});
 
-			$('#U60501_lp3').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp3,.overlay").show();
-				layerPopOver(this,'.U60501_lp3_pop');
-			});
-
-			$('#U60501_lp2-1').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp2-1,.overlay").show();
-				layerPopOver(this,'.U60501_lp2-1_pop');
-			});
-
-			$('#U60501_lp4').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp4,.overlay").show();
-				layerPopOver(this,'.U60501_lp4_pop');
-			});
-
-			$('#U60501_lp4-1').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp4-1,.overlay").show();
-				layerPopOver(this,'.U60501_lp4-1_pop');
-			});
-
-			$('#U60501_lp5').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp5,.overlay").show();
-				//$(".U60501_lp4").hide();
-
-				$(".U60501_lp4_pop").find('.cart-popup__close').trigger('click');
-				layerPopOver(this,'.U60501_lp5_pop');
-			});
-
-			$('#U60501_lp6').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp6,.overlay").show();
-				layerPopOver(this,'.U60501_lp6_pop');
-			});
-
-			$('#U60501_lp7').click(function(event) {
-				event.preventDefault();
-				//$(".U60501_lp7,.overlay").show();
-				layerPopOver(this,'.U60501_lp7_pop');
-			});
-		})
+		$('#U60501_lp7').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.U60501_lp7_pop');
+		});
+	});
 	</script>
 </body>
 
