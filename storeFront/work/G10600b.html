@@ -327,22 +327,6 @@
 
 <script>
 
-$(function () {
-    $(".quickShopBody").collapse();
-
-    //search box click even
-    $(".icon-search").click(function(e) {
-        e.preventDefault();
-        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-        console.log(value);
-        if (value == 'did you mean') {
-            window.location.href = "did-you-mean.html";
-        } else {
-            window.location.href = "search-no-result.html";
-        }
-    });
-})
-
 </script>
 </body>
 </html>

@@ -3122,22 +3122,6 @@
 <!--//주문불가 제품 알림 팝업 --> 
 
 <script>
-    
-$(function () {
-    $(".quickShopBody").collapse();
-
-    //search box click even
-    $(".icon-search").click(function(e) {
-        e.preventDefault();
-        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-        console.log(value);
-        if (value == 'did you mean') {
-            window.location.href = "did-you-mean.html";
-        } else {
-            window.location.href = "search-no-result.html";
-        }
-    });
-})
 
 //akl 배송지 선택
 $(document).ready(function() {
@@ -3173,6 +3157,7 @@ function hideExclude(excludeId) {
 }
 
 $(function(){
+
 	//akl 주소찾기 팝업
 	$('#U61000_lp1').click(function(event) {
 		event.preventDefault(); 
