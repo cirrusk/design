@@ -826,8 +826,8 @@ span.btn-business {display:inline-block;}
 /* 주문결제 > 단일 > 새배송지 */
 .new-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
 .new-message-shop {}
-.new-message-shop p {font-size:13px;font-weight:400;letter-spacing:-1px;}
-.new-message-shop p span {vertical-align:middle;}
+.new-message-shop > p {font-size:13px;font-weight:400;letter-spacing:-1px;}
+.new-message-shop > p span {vertical-align:middle;}
 .new-shipping-address .detail-content {width:100%;}
 .new-shipping-address .detail-content .col-md-3 {padding:0 0;margin:0 0;}
 .new-shipping-address .detail-content .col-md-9 {padding:0 0 0 10px;margin:0 0;}
@@ -889,6 +889,7 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 .akl .reven-ship .icon-minus {font-size:30px;font-weight:700;line-height:20px;}
 .akl .reven-ship .icon-minus:before {font-size:30px;font-weight:700;line-height:20px;}
 .akl .reven-ship .accordion-custom .panel-title .p-delect {position: absolute;top:13px;right:60px;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {.akl .reven-ship .accordion-custom .icon-minus {line-height:25px;}}
 
 .reven-ship-box {}
 .reven-ship-box p {margin:0;padding:5px 0 0;font-size:14px;font-weight:400;letter-spacing:-1px;line-height:22px;}
@@ -1186,6 +1187,28 @@ div.pcupon-name {width:30%;vertical-align:middle;}
 div.pcupon-period {width:30%;vertical-align:middle;}
 .popTable-list .mob-txt {display:none;}
 
+/* 주문결제 > 설치주문 */
+.installation-order {padding:38px 0 30px;border-bottom:1px solid #e3e3e3;}
+.insta-area {}
+.insta-area p {font-size:14px;font-weight:400;line-height:22px;padding:0;margin:0;letter-spacing:-1px;}
+.insta-area p.tit {color:#002f5f;font-weight:500;padding:0;margin:0;}
+.insta-area .detail-content {padding:10px 0 15px;}
+.insta-area .detail-content .col-md-2 {padding:5px 0;font-size:14px;font-weight:500;width:12%;color:#002f5f;}
+.insta-area .detail-content .col-md-2 label {font-size:14px;font-weight:500;vertical-align:middle;}
+.insta-area .detail-content .col-md-4 {padding:5px 0;}
+.insta-area .detail-content .form-group input {margin-left:0;width:auto;}
+
+.akl .datepicker .datepicker-days .table-condensed thead tr th {color:#fff;}
+
+/* 주문결제 > 주문완료 */
+.akl .confirm-box {padding:34px 0 34px;}
+.akl .confirm-box-message {font-size:16px;font-weight:700;letter-spacing:-1px;}
+.akl .confirm-box-continue-shopping {font-size:14px;font-weight:500;letter-spacing:-1px;}
+.akl .order-preview-box {}
+.akl .order-preview-label {font-size:14px;font-weight:500;letter-spacing:-1px;}
+.akl .order-preview-value {font-size:14px;font-weight:400;letter-spacing:-0.05em;}
+.akl .order-preview-value strong {font-weight:500;}
+.akl .shipping-delivery-address-name {font-size:14px;font-weight:400;letter-spacing:-0.05em;}
 
 
 @media (max-width: 990px) {
@@ -1722,4 +1745,9 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .cartlist-content .container-fluid {padding:0 10px;}
 	.akl .cartlist-content .cartlist-tbody .cartlist-text {padding-left:25px;}
 	.akl .amwa-btnbar {margin:40px 0 0;}
+
+	/* 주문결제 > 설치주문 */
+	.insta-area .detail-content .col-md-2 {width:100%;}
+	.insta-area .detail-content .col-md-4 {width:100%;padding:0 0 5px;}
+
 }
