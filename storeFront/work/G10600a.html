@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>주문/결제</title>
+	<title>G10300_제품상세</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="scripts/new.js"></script>
 	<script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="scripts/akl_common.js"></script>
-</head> 
+</head>
 <body class="akl"> 
 <!-- skipToContent -->
 <div id="skipToContent"> 
@@ -79,8 +79,8 @@
 												<div class="tab-pane content-block active" id="single">
 													<h2 class="hidden">단일</h2>
 													<div class="single-body">
-														<div class="btn-adress-list">
-															<a class="link-btn G10600_lp3" href="#">배송지목록<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+														<div class="btn-adress-list G10600_lp3">
+															<a class="link-btn" href="#">배송지목록<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 														</div>
 														<div class="shipping-list-order">
 															<span>
@@ -1233,7 +1233,7 @@
 </main>
 
 <!-- 주소찾기 팝업 -->
-<div class="layerWrapper U61000_lp1">
+<div class="layerWrapper U61000_lp1_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -1344,7 +1344,7 @@
 <!--// 주소찾기 팝업 --> 
 
 <!-- 배송지 목록(단일) 팝업 -->
-<div class="layerWrapper G10600_lp3">
+<div class="layerWrapper G10600_lp3_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -1421,7 +1421,7 @@
 <!--//배송지 목록(단일) 팝업 --> 
 
 <!-- 배송지 목록(복수) 팝업 -->
-<div class="layerWrapper G10600_lp4">
+<div class="layerWrapper G10600_lp4_pop">
 	<div class="cbox layerBox popWidL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -1696,7 +1696,7 @@
 <!--//배송지 목록(복수)팝업 --> 
 
 <!-- AP안내 팝업 -->
-<div class="layerWrapper G10600_lp8">
+<div class="layerWrapper G10600_lp8_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -2571,7 +2571,7 @@
 <!--//AP안내 팝업 --> 
 
 <!-- 쿠폰선택 팝업 -->
-<div class="layerWrapper G10600_lp7">
+<div class="layerWrapper G10600_lp7_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -2699,7 +2699,7 @@
 <!--//쿠폰선택 팝업 --> 
 
 <!-- 사업자등록증 관리 팝업 -->
-<div class="layerWrapper G10600_lp5">
+<div class="layerWrapper G10600_lp5_pop">
 	<div class="cbox layerBox popWidL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -2863,7 +2863,7 @@
 <!--//사업자등록증 관리 팝업 --> 
 
 <!-- 사업자등록증 상세보기 팝업 -->
-<div class="layerWrapper G10600_lp6">
+<div class="layerWrapper G10600_lp6_pop">
 	<div class="cbox layerBox popWidL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -2961,7 +2961,7 @@
 <!--//사업자등록증 상세보기 팝업 --> 
 
 <!-- 카드사 혜택보기 팝업 -->
-<div class="layerWrapper G10600_lp2">
+<div class="layerWrapper G10600_lp2_pop">
 	<div class="cbox layerBox popWidL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -3029,7 +3029,7 @@
 <!--//카드사 혜택보기 팝업 --> 
 
 <!-- 주문불가 제품 알림 팝업 -->
-<div class="layerWrapper G10600_lp1">
+<div class="layerWrapper G10600_lp1_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
@@ -3128,102 +3128,97 @@ $(document).ready(function() {
 		// default radio 체크 (첫 번째)
 		$("input[name=abnAdress]").eq(0).attr("checked", true);
 	}
+
+	// text area 숨김
+	function hideExclude(excludeId) {
+		$("#changeTextArea").children().each(function() {
+			$(this).hide();
+		});
+		// 파라미터로 넘겨 받은 id 요소는 show
+		$("#" + excludeId).show();
+	}
 });
 
-// text area 숨김
-function hideExclude(excludeId) {
-	$("#changeTextArea").children().each(function() {
-		$(this).hide();
+
+$(function(){
+	//akl 주소찾기 팝업
+	$('#U61000_lp1').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.U61000_lp1_pop');
 	});
-	// 파라미터로 넘겨 받은 id 요소는 show
-	$("#" + excludeId).show();
-}
 
-//akl 주소찾기 팝업
-$('#U61000_lp1').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.U61000_lp1');
+	//akl 배송지 목록(단일) 팝업
+	$('.G10600_lp3').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp3_pop');
+	});
+
+	//akl 배송지 목록(복수) 팝업
+	$('.G10600_lp4').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp4_pop');
+	});
+
+	//akl AP안내 팝업
+	$('.G10600_lp8').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp8_pop');
+	});
+
+	//akl AP안내 Tab
+	$('ul.ap-tabs').each(function(){
+	  var $active, $content, $links = $(this).find('a');
+	  $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+	  $active.addClass('active');
+
+	  $content = $($active[0].hash);
+	  $links.not($active).each(function () {
+		$(this.hash).hide();
+	  });
+
+	  $(this).on('click', 'a', function(e){
+		$active.removeClass('active');
+		$content.hide();
+		$active = $(this);
+		$content = $(this.hash);
+		$active.addClass('active');
+		$content.show();
+		e.preventDefault();
+	  });
+	});
+
+	//akl 쿠폰선택 팝업
+	$('#G10600_lp7').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp7_pop');
+	});
+
+	//akl 사업자등록증 관리 팝업
+	$('.G10600_lp5').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp5_pop');
+	});
+
+	//akl 사업자등록증 상세보기
+	$('.G10600_lp6').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp6_pop');
+	});
+
+	//akl 카드사 혜택보기
+	$('.G10600_lp2').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp2_pop');
+	});
+
+
+	//akl 주문불가 제품 알림
+	$('.G10600_lp1').click(function(event) {
+		event.preventDefault(); 
+		layerPopOver(this,'.G10600_lp1_pop');
+	});
+
 });
-
-//akl 배송지 목록(단일) 팝업
-$('.G10600_lp3').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp3');
-});
-
-//akl 배송지 목록(복수) 팝업
-$('.G10600_lp4').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp4');
-});
-
-//akl AP안내 팝업
-$('.G10600_lp8').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp8');
-});
-
-//akl AP안내 Tab
-$('ul.ap-tabs').each(function(){
-  var $active, $content, $links = $(this).find('a');
-  $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
-  $active.addClass('active');
-
-  $content = $($active[0].hash);
-  $links.not($active).each(function () {
-    $(this.hash).hide();
-  });
-
-  $(this).on('click', 'a', function(e){
-    $active.removeClass('active');
-    $content.hide();
-    $active = $(this);
-    $content = $(this.hash);
-    $active.addClass('active');
-    $content.show();
-    e.preventDefault();
-  });
-});
-
-//akl 쿠폰선택 팝업
-$('#G10600_lp7').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp7');
-});
-
-//akl 사업자등록증 관리 팝업
-$('.G10600_lp5').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp5');
-});
-
-//akl 사업자등록증 상세보기
-$('.G10600_lp6').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp6');
-});
-
-//akl 카드사 혜택보기
-$('.G10600_lp2').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp2');
-});
-
-
-//akl 주문불가 제품 알림
-$('.G10600_lp1').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10600_lp1');
-});
-
-
-//akl 주문실패 알림
-$('.G10700_lp').click(function(event) {
-	event.preventDefault(); 
-	layerPopOver(this,'.G10700_lp');
-});
-
-
 </script>
 </body>
 </html>
