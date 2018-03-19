@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>배송지관리 | ABN Korea</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/akl-common.css">
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+	<script type="text/javascript" src="scripts/jquery.flexslider.js"></script><!-- 상품상세 전용 : 2018.03.14 (core에서 추가) -->
+	<script type="text/javascript" src="scripts/select2.js"></script>
+	<script type="text/javascript" src="scripts/new.js"></script>
+	<script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="scripts/akl_common.js"></script>
+</head>
+<body class="akl"> 
+<div class="layerWrapper pop-sample"><!-- div.layerWrapper 추가 -->
+	<div class="cbox layerBox popWidM"><!-- popWidS, popWidM, popWidL .layerBox 추가 --> 
+	    <div class="cart-popup__dialog">
+	        <div class="cart-popup__header">
+	            <span class="cart-popup__header-text">팝업 타이틀
+	                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+	                   <img src="images/close.png" alt="닫기">
+	                </a>
+	            </span>
+	        </div>
+	        <div class="cart-popup__content payment">
+	            <div class="cart-popup__item-info">팝업 내용
+	            	<p><a href="#" onclick="layerPopOver(this,'.alert-sample');">알럿열기</a></p>
+	            </div> 
+	        </div>
+	        <div class="cart-popup__item-link"> 
+	            <button type="button" class="bt-akl-blue">주소입력</button> 
+	            <button type="button" class="btn-cancel">취소</button> 
+	        </div> 
+	    </div>
+	</div>
+</div>
+ 
+<!-- alert -->
+<div class="layerWrapper alert-sample"> 
+	<div class="cbox layerBox popWidS">
+		<div class="akl-alt-wrap">
+			<a href="#" class="cart-popup__close">
+				<img src="images/akl_common/ico_closed.png" alt="닫기">
+			</a>
+			<div class="akl-alt-pop">
+				<p>URL 복사를 완료하였습니다. </p>
+			</div>
+			<div class="cart-popup__item-link commpete">
+				<button type="button" class="bt-akl-blue">확인</button> 
+			</div>
+		</div>
+	</div>
+</div> 
+ 
+ 
+<script type="text/javascript"> 
+    $(function() {
+    	layerPopOver('','.pop-sample'); 
+    });
+
+</script>
+</body>
+
+</html>

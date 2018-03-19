@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>간편가입</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/akl-common.css">
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+	<script type="text/javascript" src="scripts/jquery.flexslider.js"></script><!-- 상품상세 전용 : 2018.03.14 (core에서 추가) -->
+	<script type="text/javascript" src="scripts/select2.js"></script>
+	<script type="text/javascript" src="scripts/new.js"></script>
+	<script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="scripts/akl_common.js"></script>
+</head>
+<body class="akl">  
+	<!-- skipToContent -->
+	<div id="skipToContent"> 
+	   <a href="#contents">콘텐츠 바로가기 </a> 
+	</div>
+	<!-- //skipToContent --> 
+	
+	<main>
+	    <div id="header"></div>
+	    <div class="container-fluid main-container" id="contents"> 
+	        <div class="print-hide breadcrumb-section">
+	            <ol class="breadcrumb">
+	                <li><a href="homepage-logged-in.html">홈</a></li>
+	                <li><a href="my-account.html">마이 페이지</a></li>
+	                <li>간편가입</li>
+	            </ol>
+	        </div>
+	    </div>
+	    <div class="container-fluid my-count">
+	        <div class="row">
+	            <div class="container-lg">
+	                <div class="account-landing-page">
+	                    <div class="user-account-header row">
+	                        <div class="container">
+	                            <div class="row">
+	                                <div class="user-block col-sm-6">
+	                                    <div class="user-image-container">
+	                                        <img class="user-image" src="images/yui.png" alt="프로필 이미지">
+	                                        <div class="icon icon-pencil">
+	                                        </div>
+	                                    </div>
+	                                    <div class="user-info">
+	                                        <span class="user-name">암순이</span>
+											<span class="user-email">ConnectID : Soonee_Am@amway.com</span>
+	                                        <span class="user-id">ABO : 7480002</span>
+	                                    </div>
+	                                </div>
+	                                <div class="go-block col-sm-6">
+	                                    <div class="amway-theme">
+	                                        <div class="jump-to-wrapper">
+	                                            <select class="js-jump-to-selection form-control no-uppercase-form-control" aria-hidden="true" title="간편가입 선택"> 
+	                                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">간편가입</option> 
+	                                            </select>
+	                                            <input type="button" class="js-jump-to-selection-btn" value="GO">
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="container">
+	                <div class="bonus-payment amway-theme">
+	                    <div class="bonus-payment-content">
+	                        <div class="bonus-payment-wrapper">
+	                            <h1 class="bonus-payment__title member-pointe">간편가입</h1>
+								<p class="bonus-payment__description">쉽고 빠른 가입을 위해 아래 링크를 전달 하세요. URL을 SMS, 카카오톡 등으로 보내시면 후원자 번호가 자동 등록됩니다.</p>
+
+								<div class="member-point-body">
+									<div class="poit-contents">
+										<div class="po-list">
+											<ul class="list-type5">
+												<li>수신인 휴대폰 번호 입력 후 URL 복사하기 혹은 카카오톡 공유를 누르면 자동으로 URL이 생성됩니다.</li>
+												<li>아래 휴대폰번호는 전달 받으실 분의 유효한 휴대폰 번호를 입력 바랍니다</li>
+											</ul>
+										</div>
+
+										<div class="easy-join">
+											<div class="form-group">
+												<label class="col-md-2 control-label">수신인 휴대폰 번호</label>
+												<div class="col-md-10 col-xs-12">
+													<div class="row form-item-row telephone">
+														<div class="col-xs-8 col">
+															<select class="form-control" title="구분번호를 선택하세요">
+																<option>010</option>
+																<option>011</option>
+															</select>
+															<input type="text" class="form-control" placeholder="‘-’없이 입력" title="핸드폰 번호 뒷자리 6~8자리를 입력하세요 ">
+														</div>
+														<div class="col-xs-4 col last-col">
+															<button type="button" class="bt-akl-white" id="confirm">확인</button>
+														</div>
+														<p class="body-alert-txt red">등록된 후원자와 일치하는 번호가 없습니다. 확인 후 다시 입력해주세요.</p>
+														<p class="body-alert-txt red">수신인 휴대폰 번호가 잘못되었습니다.</p>
+													</div>
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<label class="col-md-2 control-label" for="url">공유 URL</label>
+												<div class="col-md-10 col-xs-12">
+													<div class="row form-item-row commurl">
+														<div class="col-xs-8 col">
+															<input type="text" class="form-control" id="url">
+														</div>
+														<div class="col-xs-4 col last-col">
+															<button type="button" class="bt-akl-white" id="UrlLink_Recruitment">URL 복사하기</button><!-- 2018.03.13 태깅 아이디 추가 -->
+															<a href="#" class="btn-cacao" id="Kakaotalk_Recruitment"><img src="images/akl_common/ico_btn_cacao.png" alt="카카오톡 바로가기"></a><!-- 2018.03.13 태깅 아이디 추가 -->
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="po-list">
+											<p class="po-timag">주의사항</p>
+											<ul class="list-type2">
+												<li>해당 URL은 요청 하신 분께만 전송해야 하며, 위의 입력하신 동일한 휴대폰으로 전송 해야 합니다.</li>
+												<li>요청하지 않으신 분에게 전송할 경우, 정보통신망법 위반으로 3천만원 이하의 벌금에 처해질 수 있습니다.</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+
+	                        </div>
+	                    </div>
+	                </div>
+	
+	            </div>
+	        </div>
+	
+	    </div>
+	    <div id="quick"></div>
+	    <div id="footer"></div>
+	</main>
+	
+	<!-- 2018.03.12 팝업 코딩 전체 수정 --> 
+	<div class="layerWrapper U60100_lp1_pop"> 
+		<div class="cbox layerBox popWidS"> 
+	    	<div class="cart-popup__dialog">
+		        <div class="cart-popup__header">
+		            <span class="cart-popup__header-text">수신인 휴대폰 번호 확인
+		                <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+		                   <img src="images/close.png" alt="닫기">
+		                </a>
+		            </span>
+		        </div>
+		        <div class="cart-popup__content payment"> 
+		            <div class="cart-popup__item-info">
+		            	ABO님의 후원을 받으실 분에게 간편가입 URL을 전송하려면, 후원을받으실 분으로부터 ‘간편가입 URL 수신’ 및 ‘후원 받으실 분의 휴대전화번호를 간편가입 URL 
+						생성을 위해 한국 암웨이에 제공한다는사실’에 대한 동의를 받으셔야 합니다. <br>
+						동의를 받지 않으셨으면, 후원을 받으실 분으로부터 모든 동의를 받으신 후 진행하시기 바랍니다. 
+		            	<p class="st-text mt25">후원을 받으실 분의 동의를 받으셨습니까?</p>
+		            </div> 
+		        </div> 
+		        <div class="cart-popup__item-link"> 
+					<button type="button" class="bt-akl-blue">확인</button>
+					<button type="button" class="bt-akl-white">취소</button>
+				 </div> 
+		    </div>
+		</div> 
+	</div> 
+	
+	<script type="text/javascript">
+	    $(function () {
+			
+			//akl 추가 : 팝업  
+	        $('#UrlLink_Recruitment').click(function(event) { <!-- 2018.03.13 수정 -->
+				event.preventDefault(); 
+				layerPopOver(this,'.U60100_lp1_pop');
+			}); 
+
+	    })
+	</script>
+</body>
+
+</html>

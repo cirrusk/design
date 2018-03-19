@@ -1,0 +1,2055 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Amway Publishing Guide</title>
+<style type="text/css">
+	* {margin:0; padding:0;}
+	html {overflow-y:scroll;}
+	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; word-break:break-all}
+	a {color:#27e; }
+	a:focus, a:hover, a:active {text-decoration:underline5;}
+	.header {position: fixed; width: 100%; height: 140px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
+	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
+	.header h1 strong {font-size:70%;}
+	.header .nav {list-style:none; background:#969696; padding:0.5em 0.5em 0.2em; color:#f9f9f9; font-2017-07-24weight:bold; font-size:1.1em;}
+	.header .nav li {display:inline; margin-right:0.5em;}
+	.header .nav li a {color:#f9f9f9;}
+	.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
+	.header .nav-otherlink {list-style:none; text-align:right; padding:0.5em 0.5em 0.2em; color:#969696; font-size:1em;}
+	.header .nav-otherlink li {display:inline;}
+	.header .nav-otherlink li a {color:#969696; font-weight:bold;}
+	.header .nav-otherlink li a.on {color:#3e3e3e;}
+	.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
+	.rule {background:#f7f7f7; margin:0 0.8em 2em; padding:0.5em; font-size:95%;}
+	.rule dt {margin-bottom:0.3em; font-weight:bold;}
+	.rule dd {padding-left:0.5em;}
+	.rule dd ul {list-style-type:square; margin-left:1.2em;}
+	.progress {height: 24px; line-height:<!-- 2017.06.21  24px;background: #fafafa; border: 2px solid #eee; border-top: 0 none; }
+	.progress .total{ float: right ; width: 50%; border-left: 1px solid #eee;font-size:11px; font-weight:bold; color:#666; text-align: center; box-sizing: border-box; }
+	.progress .total_D{ float: left; width: 50%;  font-size:11px; font-weight:bold; colro:#666; text-align: center;  }
+	.guide_txt {float: right; margin-top: 33px; font-size:11px; font-weight:bold; color:#666; text-align:right;}
+	.togglebtn{padding:2px 5px; margin:0; background:#000; border:0; border-radius:3px; color:#f2f2f2; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none;vertical-align: middle;}
+	.noneHideBtn,
+	.noneHideBtn:hover,
+	.showHideBtn,
+	.showHideBtn:hover {padding:2px 8px; margin:0; background:#ab1111; border:0; border-radius:3px; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none; }
+	.noneHideBtn,
+	.showHideBtn { color: #fff; }
+	.noneHideBtn:hover,
+	.showHideBtn:hover { color: #000; }
+	.body {margin-top: 150px; padding-bottom:1em;}
+	.section .title {position: relative;}
+	.section .title:after { content:"▼"; position:absolute; right:20px; top:5px; z-index:10000; color:#fff }
+	.section .title {  margin:0; padding:0.5em; background-color:#6b7178; color:#fff; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1; cursor:pointer;}
+	.section {margin-top:10px; }
+	.section .title_toggle {margin:0; padding:0 0 6px 0;  color:#000; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1;}
+	.section .content { display: none; }
+	.section.open .content { display:block; }
+	.section.open .title{ background: #014286; }
+	.section.open .title:after { content:"▲";  }
+
+	.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0; table-layout:fixed;}
+	.section table caption {display:none;}
+	.section table th {color:#333; background-color:#f1f1f1; font-size:11px; text-align:center;}
+	.section table td {text-align:left;/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */}
+	.section table th, table td {padding:0.3em; border:1px solid #ddd; }
+	.section table td.tit {color:#333; font-weight:bold;}
+	.section table td.file {color:#aaa;}
+	.section table td.date {text-align:center; font-style:italic; white-space:nowrap;}
+	.section table td.date del {display:block; color:#aaa !important;}
+	.section table td.stat , .section table td.statD{text-align:center; font-family:Gulim;}
+	 .statD{color: #41a919}
+	 .stat {color: #5da9dd}
+	.section table td.desc, .section table td.note, .section table td.history {font-style:italic; color:#777; font-size:11px;}
+	.section table td.author {text-align:center; white-space:nowrap;}
+	.section table td ul {list-style:none; margin:0; padding:0 10px; font-style:italic;}
+	.section table td em {color:#c82026;}
+	.section table td em.blue {color:#69f;}
+	.section table tr.overcoloring {background:#fafafa !important;}
+	.section table tr.today {background:#fcf7bd;}
+	.section table tr.today .date {color:#444;}
+	.section table td.history-jira {font-style:italic; font-size:11px;}
+	.section table td.history-jira a {color:#3b73af; font-weight:bold;}
+	.section table td.history ul li:before, .section table td.history-jira ul li:before {content:'- ';}
+	.section table .taCenter{text-align:center !important}
+	table td span.red {color:red} /* 추가 수정*/
+	.brbottom1 td{border-bottom: 1px solid #bebebe; }
+	.brbottom2 {border-bottom: 2px solid #aaa; }
+	.btn-top { display:block; background:#000; color:#fff; text-align:center; padding:10px; font-weight:bold}
+	td.note p:nth-of-type(odd) { color:#0760a4}
+	td.note p:nth-of-type(even) { color:#8a5bab}
+	td.note p:nth-of-type(odd) b{ color:#5ea519}
+	td.note p:nth-of-type(even) b{ color:#dc8027}
+	.section table td ul.modify-date { padding: 0}
+	.modify-date li:nth-of-type(1){ color:#119f22}
+	.modify-date li:nth-of-type(2){ color:#157ef5}
+	.modify-date li:nth-of-type(3){ color:#c660d5}
+	.modify-date li:nth-of-type(4){ color:#d5a860}
+	.modify-date li:nth-of-type(5n+1){ color:#119f22}
+	.link-btn1 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #8c429c; border-radius:3px;}
+	.link-btn2 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #1f85bf; border-radius:3px;}
+	.link-btn3 { display:inline-block; padding:0 10px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #074f99; border-radius:3px;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery.fn.stat = function (options) {
+		var settings = jQuery.extend({
+				total: '.total',
+				toggleBtn: '.togglebtn',
+				title: 'h2.title',
+				content: 'div.content',
+				files: 'tbody tr',
+				stat: 'td.stat',
+				completed: '●',
+				index: 0,
+				openAll: true
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var stat = $(settings.stat, this);
+				stat.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), ' (퍼블 진행상황: ',completed,'/',self.files.length,' / '];
+			self.section_title.text(title_text.join(''));
+			self.section_title.click(function() {
+				self.content.slideToggle(450);
+
+				//수정: 2018.03.13
+				var findParent = $(this).parent();
+				findParent.siblings().removeClass('open');
+				findParent.addClass('open');
+			});
+			$(settings.toggleBtn).text('전체열기').toggle(function() {
+				$(settings.toggleBtn).text('전체닫기');
+				$(settings.content).show();
+			}, function() {
+				$(settings.toggleBtn).text('전체열기');
+				$(settings.content).hide();
+			});
+
+
+			//total
+			var completedAll = 0;
+			$(settings.stat).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll++;
+				}
+			});
+			$(settings.total).text('검수 진행률 : '+completedAll+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll/$(settings.files).length*100)+'%)');
+
+		});
+	};
+
+	jQuery.fn.statD = function (options) {
+		var settings = jQuery.extend({
+				total_D: '.total_D',
+				toggleBtn: '.togglebtn',
+				title: 'h2.title',
+				content: 'div.content',
+				files: 'tbody tr',
+				statD: 'td.statD',
+				completed: '●',
+				index: 0,
+				openAll: true
+			}, options),
+			all_sections = this;
+		return this.each(function () {
+			var self = this,
+				$self = $(self),
+				title_text = [],
+				completed = 0;
+			self.section_title = $(settings.title, $self);
+			self.content = $(settings.content, $self);
+			self.files = $(settings.files, $self);
+			self.files.each(function () {
+				var statD = $(settings.statD, this);
+				statD.each(function () {
+					var text = $(this).text();
+					if (text && (text === settings.completed)) {
+						completed++;
+					}
+				});
+			});
+			title_text = [self.section_title.text(), ' 검수 진행상황: ',completed,'/',self.files.length,')'];
+			self.section_title.text(title_text.join(''));
+
+
+			//total
+			var completedAll_D = 0;
+			$(settings.statD).each(function () {
+				var text = $(this).text();
+				if (text && (text == settings.completed)) {
+					completedAll_D++;
+				}
+			});
+			$(settings.total_D).text('퍼블리싱 진행율 : '+completedAll_D+'/'+$(settings.files).length+'pages (전체진행율'+Math.round(completedAll_D/$(settings.files).length*100)+'%)');
+
+		});
+	};
+
+	$(document).ready(function () {
+		$('div.section').stat();
+		$('div.section').statD();
+
+		//over-coloring
+		$('div.section tbody tr').mouseover(function() {
+			$(this).addClass('overcoloring');
+		}).mouseout(function() {
+			$(this).removeClass('overcoloring');
+		});
+		$('.showHideBtn').hide();
+
+		$('a.noneHideBtn').click(function () {
+			$('.none').hide();
+			$('.showHideBtn').show();
+			$('.noneHideBtn').hide();
+		});
+
+		$('a.showHideBtn').click(function () {
+			$('.none').show();
+			$('.showHideBtn').hide();
+			$('.noneHideBtn').show();
+		});
+
+		/* 수정: 2018.03.13 (self.section_title 이동)
+		$('.section .title').click(function(){
+			var findParent = $(this).parent('.section');
+
+			$(this).parent('.section').addClass('open');
+			$(findParent).siblings().removeClass('open');
+		}); */
+
+		// to top
+		var scrollDiv = document.createElement('div');
+		$(scrollDiv).attr('id', 'toTop').html('<a href="#nohref" class="btn-top"> ↑ 처음으로 이동 </a>').appendTo('body');
+		$(window).scroll(function(){
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		});
+		$('#toTop').click(function(){
+			$('body,html').animate({scrollTop: 0}, 'fast');
+			return false;
+		});
+		$('.overlay').click(function(){
+			$('.dNotice').hide(200); $('.overlay').fadeOut();
+		});
+	});
+
+</script>
+</head>
+<body>
+<div class="header">
+	<h1>:: Amway Publishing Guide   ::</h1>
+	<div class="progress">
+		<p class="total_D"></p>
+		<p class="total"></p>
+	</div>
+
+	<p class="guide_txt">△ : 대기 / ○ : 부분완료 /  <span class="statD">● </span>: 퍼블리싱 완료 / <span class="stat">● </span>: 검수 완료&nbsp;&nbsp;
+
+	<div class="section" style="margin-top: 30px;">
+		<div class="title_toggle">
+			<button class="togglebtn" type="button"></button>
+			<a href="publishing_guide.html" class="link-btn1">mark-up</a>
+			<a href="publishing_guide_migration.html" class="link-btn2">Migration</a>
+			<a href="publishing_guide_pos.html" class="link-btn3">pos</a>
+		</div>
+
+	</div>
+</div>
+<div class="body">
+
+<!-- ##  가이드  -->
+	<div class="section">
+		  <h2 class="title">Guide</h2>
+		<div class="content">
+			<table border="1">
+				 <colgroup>
+					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" /><col width="8%" />
+					<col width="3%" /><col width="2%" /><col width="2%" /><col width="3%" /><col width="3%" /><col width="3%" />
+					<col width="4%" /><col width="5%" /><col width="3%" /><col width="10%" /><col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">Service Catalog</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Template</th>
+						<th scope="col">IE10</th>
+						<th scope="col">IE11</th>
+						<th scope="col">Chrome</th>
+						<th scope="col">Safari</th>
+						<th scope="col">접근성</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing<br>Status</th>
+						<th scope="col">Check<br>Status</th>
+						<th scope="col">담당자</th>
+						<th scope="col">complete date / modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">Guide</td>
+						<td>layout</td>
+						<td>&nbsp;</td>
+						<td class="taCenter">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="file"><a href="responsive/html/layout.html" target="_blank">layout.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>component</td>
+						<td>&nbsp;</td>
+						<td class="taCenter">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="file"><a href="responsive/html/component.html" target="_blank">component.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">○</td>
+						<td class="stat"> </td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>popup</td>
+						<td>&nbsp;</td>
+						<td class="taCenter">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="file"><a href="responsive/html/popup.html" target="_blank">popup.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">○</td>
+						<td class="stat"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>table</td>
+						<td>&nbsp;</td>
+						<td class="taCenter">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="file"><a href="responsive/html/table.html" target="_blank">table.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">○</td>
+						<td class="stat"> </td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>Alert/Confirm</td>
+						<td></td>
+						<td class="taCenter"> </td>
+						<td></td>
+						<td class="file"><a href="responsive/html/alert_Confirm.html" target="_blank">alert_Confirm.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">○</td>
+						<td class="stat"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					 </tr>
+					 <!-- <tr>
+						<td class="tit">&nbsp;</td>
+						<td>Confirm</td>
+						<td></td>
+						<td class="taCenter"> </td>
+						<td></td>
+						<td class="file"><a href="responsive/html/confirm.html" target="_blank">confirm.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">○</td>
+						<td class="stat"></td>
+						<td class="taCenter">&nbsp;</td>s
+						<td class="taCenter">완료날짜</td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					</tr> -->
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>loading</td>
+						<td></td>
+						<td class="taCenter"> </td>
+						<td></td>
+						<td class="file"><a href="responsive/html/loading.html" target="_blank">loading.html</a></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="statD">○</td>
+						<td class="stat"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td class="note">
+							<p style="color:#ff0000"> </p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<!-- ##  공통페이지  -->
+	<div class="section">
+	  <h2 class="title">Common</h2>
+		<div class="content">
+			<table border="1">
+				 <colgroup>
+					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" /><col width="8%" />
+					<col width="3%" /><col width="2%" /><col width="2%" /><col width="3%" /><col width="3%" /><col width="3%" />
+					<col width="4%" /><col width="5%" /><col width="3%" /><col width="10%" /><col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">Service Catalog</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Template</th>
+						<th scope="col">IE10</th>
+						<th scope="col">IE11</th>
+						<th scope="col">Chrome</th>
+						<th scope="col">Safari</th>
+						<th scope="col">접근성</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing<br>Status</th>
+						<th scope="col">Check<br>Status</th>
+						<th scope="col">담당자</th>
+						<th scope="col">complete date / modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">사이트 공통 사용</td>
+						<td>비밀번호 확인</td>
+						<td> </td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60300.html" target="_blank">U60300.html</a></td>
+						<td class="taCenter"> </td>
+
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter"></td>
+						<td class="taCenter">2018.02.12</td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>(LP)동영상재생</td>
+						<td>&nbsp;</td>
+						<td class="taCenter"></td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/shop/G10000_lp2.html" target="_blank">G10000_lp2.html</a></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter"></td>
+						<td class="taCenter">2018.02.12</td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>(LP)주소찾기</td>
+						<td></td>
+						<td class="taCenter"> </td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/account/U61000_lp1.html" target="_blank">U61000_lp1.html</a></td>
+						<td>&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter"></td>
+						<td class="taCenter">2018.02.12</td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>장바구니담긴</td>
+						<td></td>
+						<td class="taCenter"> </td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/shop/G10000_lp3.html" target="_blank">G10000_lp3.html</a></td>
+						<td>&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter"></td>
+						<td class="taCenter">2018.03.16</td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- ##  Sprint1  -->
+	<div class="section">
+		  <h2 class="title">Sprint1</h2>
+		<div class="content">
+			<table border="1">
+				 <colgroup>
+					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" /><col width="8%" />
+					<col width="3%" /><col width="2%" /><col width="2%" /><col width="3%" /><col width="3%" /><col width="3%" />
+					<col width="4%" /><col width="5%" /><col width="3%" /><col width="10%" /><col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">Service Catalog</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Template</th>
+						<th scope="col">IE10</th>
+						<th scope="col">IE11</th>
+						<th scope="col">Chrome</th>
+						<th scope="col">Safari</th>
+						<th scope="col">접근성</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing<br>Status</th>
+						<th scope="col">Check<br>Status</th>
+						<th scope="col">담당자</th>
+						<th scope="col">complete date / modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">헤더</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>DG.DGC.Header&Utility</td>
+						<td class="file"><a href="responsive/html/header.html" target="_blank">header.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.14</strong>PV 18,650 / BV 29,100 추가</li>
+								 <li><strong>2018.03.16</strong>브랜드샵 이미지 지 명 변경</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">푸터</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/footer.html" target="_blank">footer.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.06</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>퀵링크</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/quicklink.html" target="_blank">quicklink.html</a></td>
+						<td>&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.02.19</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">홈 페이지</td>
+						<td>메인_로그인_ABO</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>DG.DGE.SEO & Search</td>
+						<td class="file"><a href="responsive/html/shop/G00000.html" target="_blank">G00000.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.02.21</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>메인_비로그인/Member</td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>DG.DGE.SEO & Search</td>
+						<td class="file"><a href="responsive/html/shop/G00000_non.html" target="_blank">G00000_non.html</a></td>
+						<td>&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.02.19</span></td>
+						<td class="note">
+							<p style="color:#ff0000">로그인 전 상태 확인 용</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">제품상세</td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>PB.PRD.Product information</td>
+						<td class="file"><a href="responsive/html/shop/G10300.html" target="_blank">G10300.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.15</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000">팝업 G10300_lp1,G10300_lp2,G10000_lp1,G10000_lp2,G10000_lp3,G10000_lp4,G10000_lp5 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.02.22</strong> 스마트오더 버튼 추가 및 간격조정 반영</li>
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+								 <li><strong>2018.03.13</strong> 프로모션,제품상세 toggle 기능 삭제 및 link 기능 추가</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="taCenter">(LP)동영상재생</td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/shop/G10000_lp2.html" target="_blank">G10000_lp2.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.02.19</span></td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">장바구니</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>SO.ORT.Common</td>
+						<td class="file"><a href="responsive/html/shop/G10500.html" target="_blank">G10500.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.15</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000">팝업 G10500_lp1,G10500_lp2 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.02.22</strong> 퀵오더제거, 빠른 검색 정렬부분 삭제, 부분적인 마크업 수정 반영,정렬기능 제거</li>
+								 <li><strong>2018.02.23</strong> 총 25개 제품 위치이동, 위시리스트 버튼명, 클릭시 팝업 체크박스에서 라디오 버튼으로 변경</li>
+								 <li><strong>2018.03.02</strong>위시리스트 이동 팝업 코어화면으로 변경, 팝업 html,스크립트 수정</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제, 빠른 제품검색 디자인수정</li>
+								 <li><strong>2018.03.07</strong> "장바구니에 담긴 없습니다." 추가</li>
+								 <li><strong>2018.03.14</strong>PV 18,650 / BV 29,100 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">마이페이지</td>
+						<td>개인정보 활용동의 관리</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60400.html" target="_blank">U60400.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.05</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U60400_lp1 ~ U60400_lp5 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.02.28</strong> 버튼 클래스명 추가</li>
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정,팝업 버튼 아이콘 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>계좌관리(ABO 케이스)</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60501.html" target="_blank">U60501.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.05</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U60501_lp1 ~ U60501_lp7 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>계좌관리(Member 케이스)</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60502.html" target="_blank">U60502.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.06</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U60501_lp1(공통), U60502_lp1, U60502_lp3 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.05</strong> css 요청 변경, mail link 추가</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>배송지관리</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Del.Address Mgmt.</td>
+						<td class="file"><a href="responsive/html/account/U610001.html" target="_blank">U610001.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.12</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U61000_lp1, U61000_lp2 포함</p>
+							 <ul class="modify-date">
+								 <li><strong>2018.02.28</strong> 전제적으로 수정됨</li>
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+								 <li><strong>2018.03.07</strong> "등록된 주소가 없습니다." 추가</li>
+								 <li><strong>2018.03.12</strong> 즐겨찾기 삭제/ readonly 추가</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>회원정보 변경</td>
+						<td>비밀번호 확인</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60300.html" target="_blank">U60300.html</a></td>
+						<td>&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.02.20</span></td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+						</td>
+					</tr>
+					 <tr>
+						<td class="tit"></td>
+						<td>&nbsp;</td>
+						<td>기본정보 수정-ABO</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60301a.html" target="_blank">U60301a.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.06</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U60301a_lp1 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						 <td>&nbsp;</td>
+						<td>기본정보 수정-Member</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Common Info.</td>
+						<td class="file"><a href="responsive/html/account/U60301b.html" target="_blank">U60301b.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.06</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U60301b_lp1 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="taCenter">주소찾기[팝업]</td>
+						<td>n/a.n/a.n/a</td>
+						<td class="file"><a href="responsive/html/account/U61000_lp1.html" target="_blank">U61000_lp1.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.06</span></td>
+						<td class="note">
+							<p style="color:#20893d"></p>
+							 <ul class="modify-date">
+								 <li><strong>2018.03.05</strong> 팝업 html,스크립트 수정</li>
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">암웨이플라자</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>PP.PP.Shop Finder</td>
+						<td class="file"><a href="responsive/html/customer/F10000.html" target="_blank">F10000.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat">●</td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.02.12 / <span style="color: #914698;font-weight:bold">2018.03.06</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+							 <ul class="modify-date">
+								 <li><strong>2018.03.06</strong> form 태그변경 및 삭제</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<!-- ##  Sprint2 -->
+	<div class="section open">
+		  <h2 class="title">Sprint2</h2>
+		<div class="content">
+			<table border="1">
+				 <colgroup>
+					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" /><col width="8%" />
+					<col width="3%" /><col width="2%" /><col width="2%" /><col width="3%" /><col width="3%" /><col width="3%" />
+					<col width="4%" /><col width="5%" /><col width="3%" /><col width="10%" /><col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th>
+						<th scope="col">2depth</th>
+						<th scope="col">3depth</th>
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">Service Catalog</th>
+						<th scope="col">File Name(html)</th>
+						<th scope="col">Template</th>
+						<th scope="col">IE10</th>
+						<th scope="col">IE11</th>
+						<th scope="col">Chrome</th>
+						<th scope="col">Safari</th>
+						<th scope="col">접근성</th>
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing<br>Status</th>
+						<th scope="col">Check<br>Status</th>
+						<th scope="col">담당자</th>
+						<th scope="col">complete date / modify Date</th>
+						<th scope="col">note</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">검색</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>DG.DGE.SEO & Search</td>
+						<td class="file"><a href="responsive/html/shop/U10102a.html" target="_blank">U10102a.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.05 /<span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U101000_lp 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.16</strong> 스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"> </td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>DG.DGE.SEO & Search</td>
+						<td class="file"><a href="responsive/html/shop/U10102a_view.html" target="_blank">U10102a_view.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.05</td>
+						<td class="note">
+							<p style="color:#ff0000">최근 검색어 확인용</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>검색결과 없음</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>DG.DGE.SEO & Search</td>
+						<td class="file"><a href="responsive/html/shop/U10101.html" target="_blank">U10101.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.05 /<span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.16</strong> 검색도움말 팝업 마크업 변경 및 스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					 <tr>
+						<td class="tit">회원가입</td>
+						<td>회원가입 안내</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="file"><a href="responsive/html/account/U20000.html" target="_blank">U20000.html</a></td>
+						<td class="taCenter">Core</td>
+					   <td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.07</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<!-- 여기부터 수정 -->
+					<tr>
+						<td class="tit"></td>
+						<td>ABO</td>
+						<td>ABO 주사업자 회원가입 - 약관 및 계약서 동의</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20101.html" target="_blank">U20101.html</a></td>
+						<td class="taCenter">Core</td>
+						 <td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.05</td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U20101_lp1 ~ U20101_lp6 포함: 약관내용 추후 작업</p>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) [필수] 전자상거래에 관한 이용약관</td>
+						<td>M.REG.Registration(ABO)</td>
+						<td class="file"><a href="responsive/html/account/U20101_lp1.html" target="_blank"></a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) [필수] 개인정보 수집/이용 동의서</td>
+						<td>M.REG.Registration(ABO)</td>
+						<td class="file"><a href="responsive/html/account/U20101_lp2.html" target="_blank"></a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) [필수] Connect ID 생성을 위한 제3자 제공 </td>
+						<td>M.REG.Registration(ABO)</td>
+						<td class="file"><a href="responsive/html/account/U20101_lp3.html" target="_blank"></a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) [선택] 개인정보의 제3자 제공에 대한 동의 </td>
+						<td>M.REG.Registration(ABO)</td>
+						<td class="file"><a href="responsive/html/account/U20101_lp4.html" target="_blank"></a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) [필수] ABO 계약 동의서 </td>
+						<td>M.REG.Registration(ABO)</td>
+						<td class="file"><a href="responsive/html/account/U20101_lp5.html" target="_blank"></a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) [필수] ABO 유의사항 </td>
+						<td>M.REG.Registration(ABO)</td>
+						<td class="file"><a href="responsive/html/account/U20101_lp6.html" target="_blank"></a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter"></td>
+						<td class="taCenter"></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr> -->
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>ABO 주사업자 회원가입 - 본인확인</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20102.html" target="_blank">U20102.html</a></td>
+						  <td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.07 / <span style="color: #914698;font-weight:bold">2018.03.15</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td> ABO 주사업자 회원가입 -회원정보 입력</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20103.html" target="_blank">U20103.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.07</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>(LP) 한국암웨이 등록 시 국제사업자 등록에 대한 안내</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20103_lp1.html" target="_blank">U20103_lp1.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.06</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>ABO 부사업자 회원가입 - 약관 및 계약서 동의</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20201.html" target="_blank">U20201.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09</td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U20101_lp1, U20101_lp2, U20101_lp5, U20101_lp6 : 약관내용 추후 작업(주사업자와 동일)</p>
+							<p style="color:#ff0000">팝업 U20201_lp2 ~ U20201_lp3 포함 : 약관내용 추후 작업 (부사업자)</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>ABO 부사업자 회원가입 - 본인확인</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20202.html" target="_blank">U20202.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09 / <span style="color: #914698;font-weight:bold">2018.03.15</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>ABO 부사업자 회원가입 -회원정보 입력</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20203.html" target="_blank">U20203.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<!-- //여기부터 수정 -->
+					<tr>
+						<td class="tit"></td>
+						<td>회원가입 완료</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20004.html" target="_blank">U20004.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.07</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>Member</td>
+						<td>Member 회원가입 -  약관 및 계약서 동의</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20301.html" target="_blank">U20301</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09</td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 U20301_lp1 ~ U20301_lp6 포함: 약관내용 추후 작업</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>Member 회원가입 - 간편인증</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20302.html" target="_blank">U20302</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>Member 회원가입 - 회원정보 입력</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20303.html" target="_blank">U20303</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>Member 회원가입 - 회원가입 완료</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Registration</td>
+						<td class="file"><a href="responsive/html/account/U20304.html" target="_blank">U20304</a></td>
+						<td class="taCenter">Core</td>
+					   <td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">민은정</td>
+						<td class="taCenter">2018.03.09</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="tit">&nbsp;</td>
+						<td>로그인시 회원상태 체크 후 제공팝업</td>
+						<td>&nbsp;</td>
+						<td>(LP) 비밀번호 변경 권유 (6개월미변경)</td>
+						<td>AM.n/a.Log-in / Connected ID</td>
+						<td class="file"><a href="responsive/html/account/U30000_lp1.html" target="_blank">U30000_lp1.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.06</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>(LP) 비밀번호 변경 권유 (AP가입자)</td>
+						<td>AM.n/a.Log-in / Connected ID</td>
+						<td class="file"><a href="responsive/html/account/U30000_lp2.html" target="_blank">U30000_lp2.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.06</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>(LP) 미수금 안내 (당사에 입금해주셔야 할 금액 발생 안내)</td>
+						<td>AM.n/a.Log-in / Connected ID</td>
+						<td class="file"><a href="responsive/html/account/U30000_lp3.html" target="_blank">U30000_lp3.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.06</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>(LP) 미지급보너스 관련 안내</td>
+						<td>AM.n/a.Log-in / Connected ID</td>
+						<td class="file"><a href="responsive/html/account/U30000_lp4.html" target="_blank">U30000_lp4.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.06</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					 <tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>(LP) 보너스 발생 안내 </td>
+						<td></td>
+						<td class="file"><a href="responsive/html/account/U30000_lp5.html" target="_blank">U30000_lp5.html</a></td>
+						<td class="taCenter">X</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">노은명</td>
+						<td class="taCenter">2018.03.06</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>간편가입</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>AM.REG.Recruitment</td>
+						<td class="file"><a href="responsive/html/account/U60100.html" target="_blank">U60100.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.02 / <span style="color: #914698;font-weight:bold">2018.03.12</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000">팝업 U60100_lp1 포함</p>
+							 <ul class="modify-date">
+								 <li><strong>2018.03.12</strong>팝업 수정</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>포인트관리(ABO, Member)</td>
+						<td>ABO-탭(M포인트)</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Point Mgmt. </td>
+						<td class="file"><a href="responsive/html/account/U61101a.html" target="_blank">U61101a.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.28 / <span style="color: #914698;font-weight:bold">2018.03.15</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000">팝업 U61101b_lp 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>수정사항 작업</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>포인트관리(ABO, Member)</td>
+						<td>Member</td>
+						<td>&nbsp;</td>
+						<td>AM.MYA.Point Mgmt. </td>
+						<td class="file"><a href="responsive/html/account/U61102.html" target="_blank">U61102.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.02.28 / <span style="color: #914698;font-weight:bold">2018.03.12</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>수정사항 작업</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>위시리스트</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>SO.Wishlist (My Favorite List) </td>
+						<td class="file"><a href="responsive/html/shop/U70300.html" target="_blank">U70300.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.02 / <span style="color: #914698;font-weight:bold">2018.03.12</span></td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>수정사항 작업</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>위시리스트</td>
+						<td>상세보기</td>
+						<td>&nbsp;</td>
+						<td>SO.Wishlist (My Favorite List) </td>
+						<td class="file"><a href="responsive/html/shop/U70301.html" target="_blank">U70301.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.02 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000">팝업 U70301_lp1, G10000_lp5 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>수정사항 작업</li>
+								 <li><strong>2018.03.14</strong>PV 18,650 / BV 29,100 추가</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">제품카테고리, 2차제품카테고리 플러스샵</td>
+						<td>제품카테고리-1차 제품분류</td>
+						<td>브랜드 카테고리</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10100.html" target="_blank">G10100.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.07 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.15</strong>QUICK VIEW 추가, 태깅ID관련 마크업 수정, 최근본제품 링크 추가, 영양건강제품 링크 추가</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>브랜드 카테고리 솔루션</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10101.html" target="_blank">G10101.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.07 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>제품카테고리-제품 2차 분류</td>
+						<td>브랜드 카테고리</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10200.html" target="_blank">G10200.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.07 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000">팝업 G10000_lp1 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>왼쪽메뉴 수정변경</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>플러스샵</td>
+						<td>브랜드별 제품 목록</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10200a.html" target="_blank">G10200a.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.07 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>왼쪽메뉴 수정변경</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>간편선물</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10200b.html" target="_blank">G10200b.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.08 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>왼쪽메뉴 수정변경</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>설치제품</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10200c.html" target="_blank">G10200c.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.08 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>왼쪽메뉴 수정변경</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>선물세트</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10200d.html" target="_blank">G10200d.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.08 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>왼쪽메뉴 수정변경</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>무이자 할부 프로모션</td>
+						<td>&nbsp;</td>
+						<td>PB.Product Information(PLP)</td>
+						<td class="file"><a href="responsive/html/shop/G10200e.html" target="_blank">G10200e.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.08 / <span style="color: #914698;font-weight:bold">2018.03.16</span></td>
+						<td class="note">
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
+							<p style="color:#ff0000"></p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.12</strong>왼쪽메뉴 수정변경</li>
+								 <li><strong>2018.03.15</strong>태깅ID관련 마크업 수정</li>
+								 <li><strong>2018.03.16</strong>스크립트 정리</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit">주문결제(배달,픽업,설치)-주문완료</td>
+						<td>주문결제(배달,픽업,설치)</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>SO.ORT. Regular Order</td>
+						<td class="file"><a href="responsive/html/shop/G10600a.html" target="_blank">G10600a.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.19</td>
+						<td class="note">
+							<p style="color:#ff0000">팝업 G10600_lp1, G10600_lp2, G10600_lp3, G10600_lp4, G10600_lp5, G10600_lp6, G10600_lp7, G10600_lp8, G10700_lp 포함</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>주문완료</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>SO.ORT. Regular Order</td>
+						<td class="file"><a href="responsive/html/shop/G10600b.html" target="_blank">G10600b.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.19</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>설치주문</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>SO.ORT. Regular Order</td>
+						<td class="file"><a href="responsive/html/shop/G10600c.html" target="_blank">G10600c.html</a></td>
+						<td class="taCenter">Core</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">●</td>
+						<td class="taCenter">&nbsp;</td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">구민정</td>
+						<td class="taCenter">2018.03.19</td>
+						<td class="note">
+							<p style="color:#ff0000"></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
