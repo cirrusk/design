@@ -7,7 +7,7 @@
 	* {margin:0; padding:0;}
 	html {overflow-y:scroll;}
 	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; word-break:break-all}
-	a {color:#27e; }
+	a {color:#27e;}
 	a:focus, a:hover, a:active {text-decoration:underline5;}
 	.header {position: fixed; width: 100%; height: 140px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
 	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
@@ -127,7 +127,7 @@
 			self.section_title.text(title_text.join(''));
 			self.section_title.click(function() {
 				self.content.slideToggle(450);
-				
+
 				//수정: 2018.03.13
 				var findParent = $(this).parent();
 				findParent.siblings().removeClass('open');
@@ -225,7 +225,7 @@
 			$('.showHideBtn').hide();
 			$('.noneHideBtn').show();
 		});
-		
+
 		/* 수정: 2018.03.13 (self.section_title 이동)
 		$('.section .title').click(function(){
 			var findParent = $(this).parent('.section');
@@ -272,18 +272,18 @@
 			<a href="publishing_guide_migration.html" class="link-btn2">Migration</a>
 			<a href="publishing_guide_pos.html" class="link-btn3">pos</a>
 		</div>
-		 
+
 	</div>
 </div>
-<div class="body"> 
+<div class="body">
 <!-- ##  가이드  -->
 	<div class="section open"><!-- 열림상태 : open -->
 		  <h2 class="title">Guide</h2>
 		<div class="content">
 			<table border="1">
 				 <colgroup>
-					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" /> 
-					<col width="3%" /><col width="3%" /><col width="4%" /><col width="3%" /><col width="7%" /> 
+					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" />
+					<col width="3%" /><col width="3%" /><col width="4%" /><col width="3%" /><col width="7%" />
 					<col width="7%" /><col width="5%" /><col width="10%" /><col width="*" />
 				</colgroup>
 				<thead>
@@ -291,12 +291,12 @@
 						<th scope="col">1depth</th>
 						<th scope="col">2depth</th>
 						<th scope="col">3depth</th>
-						<th scope="col">화면[TAB/POP]</th> 
-						<th scope="col">File Name(html)</th> 
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">File Name(html)</th>
 						<th scope="col">IE10</th>
 						<th scope="col">IE11</th>
 						<th scope="col">Chrome</th>
-						<th scope="col">Safari</th> 
+						<th scope="col">Safari</th>
 						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing tatus</th>
 						<th scope="col">Check Status</th>
 						<th scope="col">담당자</th>
@@ -304,7 +304,7 @@
 						<th scope="col">note</th>
 					</tr>
 				</thead>
-				<tbody> 
+				<tbody>
 					<tr>
 						<td>&nbsp;</td>
 						<td></td>
@@ -314,7 +314,7 @@
 						<td class="file"><a href="work/component.html" target="_blank"></a></td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td> 
+						<td>&nbsp;</td>
 						<td class="statD"></td>
 						<td class="stat"> </td>
 						<td class="taCenter">&nbsp;</td>
@@ -326,7 +326,7 @@
 				</tbody>
 			</table>
 		</div>
-	</div> 
+	</div>
 </div>
 </body>
 </html>
