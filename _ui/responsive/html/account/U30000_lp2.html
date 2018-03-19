@@ -37,14 +37,28 @@
 	        <div class="cart-popup__content payment">
 	            <div class="cart-popup__item-info">
 					<p>ABN(Amway Business Network) 사이트 방문을 환영합니다.<br>새로운 비밀번호 변경으로 회원님의 개인정보를 보호하세요.</p> 
-					<div class="name-form-group connectedID">
-                        <label class="account-profile__label">ConnectID</label>
-                        <span class="account-profile__value">abcd1234@gmail.com</span>
-                    </div> 
+					<!-- 2018.03.09 수정 -->
+					<div class="connectedID">
+						<div class="form-group">
+	                        <label class="account-profile__label" id="account__label01">현재 비밀번호</label>
+	                        <span class="account-profile__value"><input type="text" id="account__label01" class="form-control"></span>
+	                    </div> 
+	                    <div class="form-group">
+	                        <label class="account-profile__label" id="account__label02">새 비밀번호</label>
+	                        <span class="account-profile__value"><input type="text" id="account__label02" class="form-control" placeholder="영문/숫자 조합 6~8자리"></span>
+	                    </div> 
+	                    <div class="form-group">
+	                        <label class="account-profile__label" id="account__label03">새 비밀번호 확인</label>
+	                        <span class="account-profile__value"><input type="text" id="account__label03" class="form-control"></span>
+	                    </div> 
+                    </div>
 					<ul class="list-type2">
-						<li>ConnectID로 발송된 메일에 접속하여 비밀번호를 변경해 주세요.</li>
-						<li>인증메일을 못 받으신 분은 스팸 혹은 정크 메일함을 확인하시기 바랍니다.</li>
-					</ul>		                	
+						<li>회원님의 안전한 비밀번호로 영문/숫자 조합 6 ~ 8자리 사이로 설정해주세요.</li>
+						<li>비밀번호 재설정의 경우 최근에 사용한 4개의 비밀번호는 사용이 불가합니다.</li> 
+						<li>4번 이상 반복되는 문자나 숫자, 아이디, 생년월일, 전화번호는 사용이 불가합니다.</li>
+						<li>타 사이트와는 다른 비밀번호를 사용하고, 비밀번호는 주기적으로 변경해 주세요.</li>
+					</ul>	
+					<!--// 2018.03.09 수정 -->	                            	
 	            </div> 
 	        </div>
 	        <div class="cart-popup__item-link"> 
