@@ -42,7 +42,7 @@ function orderSummary() {
                     order.css({"position":"relative", "top": "auto", "right": "auto", "margin-right": "auto"});
                 }
             } else {
-                
+
             }
 		}
 
@@ -76,9 +76,9 @@ function registerABO() {
 }
 
 $(function(){
-    $("#header").load("header.html");
-    $("#quick").load("quicklink.html");
-    $("#footer").load("footer.html");
+    $("#header").load("/_ui/responsive/html/header.html");
+    $("#quick").load("/_ui/responsive/html/quicklink.html");
+    $("#footer").load("/_ui/responsive/html/footer.html");
     orderSummary();
     registerABO();
  });
@@ -117,7 +117,7 @@ $(function(){
     'use strict';
 
     $(window).resize(handleToggling);
-    
+
     function handleToggling() {
         if (window.innerWidth < 768) {
 
@@ -141,7 +141,7 @@ $(function(){
         } else {
             $("#cartlistContent").slideUp(300);
         }
-        
+
     })
 })();
 
@@ -275,5 +275,5 @@ $(function(){
             $(this).prev(".toolTips").fadeOut();
         }
     })
-    
+
 });
