@@ -1145,13 +1145,17 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .tbl-type1.buse-view td {width:75%;}
 .busine-infotxe {padding:10px 0 0}
 
+/* 주문결제 > 오른쪽 내용 */
+.fixe { position: fixed; z-index: 1; right: 50%;background: #fff;}
+.fixe .shipping-delivery-side {background: #fff;}
+@media (max-width: 1024px) { .fixe { margin-right: -50%;}}
+
 /* 주문결제 > 오른쪽 주문회원정보 */
 .akl .shipping-delivery-summary {z-index:10;background:#fff;padding:0 0;right:0;}
 .akl .shipping-delivery-summary-header {font-size:13px;font-weight:500;padding:10px 0 10px 18px;}
 .akl .shipping-delivery-list-item {font-size:14px;}
 .akl .shipping-delivery-item-label {font-weight:500}
 .akl .performance-box-item-abovalue {font-weight:400}
-
 .akl .shipping-delivery-summary-prices li {padding:5px 18px;line-height:18px;}
 .akl .shipping-delivery-summary-prices li.shipping-delivery-list-item-total {padding:5px 0;}
 .akl .shipping-delivery-list-item-total {margin:8px 15px;}
