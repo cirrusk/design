@@ -31,6 +31,9 @@ $(function() {
 
 	//약관 더보기 (768이하)
 	terms_ViewAll();
+	
+	//주문결제 : floating box
+	orderSummaryFixed();
 
 	//header login tooltip
 	$('.tooltip-btn').click(function() {
@@ -64,6 +67,58 @@ $(function() {
 	var accordion = new Accordion($('#accordion'), false);
 });
 
+/* 주문결제 : floating box */
+function orderSummaryFixed(){
+	function fixedBox(){
+		//target top
+		var wScrollTop = $(window).scrollTop();
+		var headerHeight = 138;
+		var headerBtmSpace = 66;
+		var topAreaHeight = headerHeight + headerBtmSpace;
+		
+		//target right
+		var winWidth = $(window).width(); //윈도우 width
+		var conWidth = $('.shipping-delivery .row').width(); //컨텐츠 width
+		var positionRight = (winWidth - conWidth)/2;
+		
+		/* -- 중간 멈춤 지점 찾기 -- */
+		//주문결제 div
+		var targetWrapper = $('.shipping-delivery');
+		var targetWrap_top = targetWrapper.offset().top;
+		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //주문결제 div Bottom : 1750
+		
+		//주문회원정보 (floating div)
+		var targetObj = $('.shipping-delivery-summary');
+		var targetObj_H = targetObj.outerHeight(true);
+		
+		//재설정 위치값
+		var compareTop = targetWrap_btm - targetObj_H; //1063
+		var targetReTOP = compareTop - targetWrap_top + headerHeight;
+
+		if( wScrollTop > compareTop){
+			$('.shipping-delivery-summary').css({
+				'position':'absolute',
+				'top':targetReTOP,
+				'right':'12px'
+			});
+		} else if( wScrollTop > topAreaHeight ){
+			$('.shipping-delivery-summary').css({
+				'position':'fixed',
+				'top': headerHeight,
+				'right':positionRight
+			});
+			console.log('top2 : '+ wScrollTop);
+		} 
+		else {
+			$('.shipping-delivery-summary').attr('style','');
+			console.log('top3 : '+ wScrollTop);
+		}
+	}
+
+	$(window).scroll(function(){
+		fixedBox();
+	});
+}
 
 /* 제품상세 > 크게보기 레이어 : 이미지보기 */
 function popupGalleryIMG(){

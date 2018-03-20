@@ -17,31 +17,37 @@
 //     dialogPos();
 // }
 
-/* core 스크립트 수정적용 : 2018.03.19 */
-function orderSummary_fixed(){
-	var confirmH = $('.cartTitile').height() + $('.checkout-steps').height() + 62;
-	var winH = $('.shipping-delivery').height() + 120;
-	var winW = $(window).width();
-	var conW = ($('#contents').width()/2);
-	var order = $(".shipping-delivery-summary");
-	var orderH = $(".shipping-delivery-summary").height();
-	var orderHtop = winH - 590;
-	var posTop = orderHtop - 40;
-	var shop = $(".shopping-cart-total-wrapper");
-	var sc=$(document);
-	if (winW > 768) {
-		if( sc.scrollTop() > confirmH && sc.scrollTop() < orderHtop ){
-			order.addClass('order-fixed');
-			order.css({"position":"fixed", "top": "70px", "right": "50%", "margin-right":"-" + conW + "px" });
-		} else if( sc.scrollTop() >= orderHtop) {
-			order.removeClass('order-fixed');
-			order.css({"position":"absolute", "top":posTop + "px", "right": 0, "margin-right": "auto"});
+/* akl 사용안함 : 2018.03.20
+function orderSummary() {
+	var win = $(window);
+	win.scroll(function(){
+		var confirmH = $('.cartTitile').height() + $('.checkout-steps').height() + 62;
+		var winH = $('.shipping-delivery').height() + 120;
+		var winW = $(window).width();
+		var conW = ($('.container').width() / 2) + 12;
+		//alert($('.cartTitile').height());
+		var order = $(".shipping-delivery-summary");
+		var orderH = $(".shipping-delivery-summary").height();
+		var orderHtop = winH - 590;
+		var posTop = orderHtop - 40;
+		var shop = $(".shopping-cart-total-wrapper");
+		var sc=$(document);
+		if (winW > 768) {
+			if( sc.scrollTop() > confirmH && sc.scrollTop() < orderHtop ){
+				order.addClass('fix');
+				order.css({"position":"fixed", "top": "70px", "right": "50%", "margin-right":"-" + conW + "px" });
+			} else if( sc.scrollTop() >= orderHtop) {
+				order.removeClass('fix');
+				order.css({"position":"absolute", "top":posTop + "px", "right": 0, "margin-right": "auto"});
+			} else {
+				order.removeClass('fix');
+				order.css({"position":"relative", "top": "auto", "right": "auto", "margin-right": "auto"});
+			}
 		} else {
-			order.removeClass('order-fixed');
-			order.css({"position":"relative", "top": "auto", "right": "auto", "margin-right": "auto"});
 		}
-	}
+	});
 }
+*/
 
 function registerABO() {
 	var win=$(window);
@@ -70,10 +76,7 @@ $(function(){
 	$("#header").load("/_ui/responsive/html/header.html");
 	$("#quick").load("/_ui/responsive/html/quicklink.html");
 	$("#footer").load("/_ui/responsive/html/footer.html");
-	//orderSummary();
-	$(window).scroll(function(){
-		orderSummary_fixed();
-	});
+
 	registerABO();
 });
 
