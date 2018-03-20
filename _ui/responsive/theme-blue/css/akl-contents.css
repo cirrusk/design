@@ -1151,7 +1151,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 @media (max-width: 1024px) { .fixe { margin-right: -50%;}}
 
 /* 주문결제 > 오른쪽 주문회원정보 */
-.akl .shipping-delivery-summary {z-index:10;background:#fff;padding:0 0;right:0; width:344px;}
+.akl .shipping-delivery-summary {z-index:10;background:#fff;padding:0 0;right:0; max-width:344px;}
 .akl .shipping-delivery-summary-header {font-size:13px;font-weight:500;padding:10px 0 10px 18px;}
 .akl .shipping-delivery-list-item {font-size:14px;}
 .akl .shipping-delivery-item-label {font-weight:500}
@@ -1234,7 +1234,8 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 }
 
 @media (max-width: 768px) {
-    .filebox .upload-display { display: inline-block; margin-right: 5px; margin-bottom: 0; }
+	.akl .shipping-delivery-summary {width:100%;}
+	.filebox .upload-display { display: inline-block; margin-right: 5px; margin-bottom: 0;}
 	.akl .add_to_cart_form.akl-btton button {width:96% !important}
 	.akl .eect-comme dt {width:30%;}
 	.akl .eect-comme dd {width:70%;}

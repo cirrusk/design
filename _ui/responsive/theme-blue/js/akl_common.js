@@ -94,27 +94,25 @@ function orderSummaryFixed(){
 		//재설정 위치값
 		var compareTop = targetWrap_btm - targetObj_H; //1063
 		var targetReTOP = compareTop - targetWrap_top + headerHeight;
-
-		if( wScrollTop > compareTop){
-			$('.shipping-delivery-summary').css({
-				'position':'absolute',
-				'top':targetReTOP,
-				'right':'12px'
-			});
-		} else if( wScrollTop > topAreaHeight ){
-			$('.shipping-delivery-summary').css({
-				'position':'fixed',
-				'top': headerHeight,
-				'right':positionRight
-			});
-			console.log('top2 : '+ wScrollTop);
-		} 
-		else {
-			$('.shipping-delivery-summary').attr('style','');
-			console.log('top3 : '+ wScrollTop);
+		
+		if( winWidth > 768 ){
+			if( wScrollTop > compareTop){
+				$('.shipping-delivery-summary').css({
+					'position':'absolute',
+					'top':targetReTOP,
+					'right':'12px'
+				});
+			} else if( wScrollTop > topAreaHeight ){
+				$('.shipping-delivery-summary').css({
+					'position':'fixed',
+					'top': headerHeight,
+					'right':positionRight
+				});
+			} else {
+				$('.shipping-delivery-summary').attr('style','');
+			}
 		}
 	}
-
 	$(window).scroll(function(){
 		fixedBox();
 	});
