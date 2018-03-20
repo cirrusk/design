@@ -70,22 +70,22 @@ $(function() {
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
 	function fixedBox(){
-		//target top
+		//target position : top
 		var wScrollTop = $(window).scrollTop();
-		var headerHeight = 138;
-		var headerBtmSpace = 66;
+		var headerHeight = 137;
+		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var topAreaHeight = headerHeight + headerBtmSpace;
 		
-		//target right
-		var winWidth = $(window).width(); //윈도우 width
-		var conWidth = $('.shipping-delivery .row').width(); //컨텐츠 width
+		//target position : right 
+		var winWidth = $(window).width();
+		var conWidth = $('.shipping-delivery .row').width(); //content width
 		var positionRight = (winWidth - conWidth)/2;
 		
 		/* -- 중간 멈춤 지점 찾기 -- */
 		//주문결제 div
 		var targetWrapper = $('.shipping-delivery');
 		var targetWrap_top = targetWrapper.offset().top;
-		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //주문결제 div Bottom : 1750
+		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom : 1750
 		
 		//주문회원정보 (floating div)
 		var targetObj = $('.shipping-delivery-summary');

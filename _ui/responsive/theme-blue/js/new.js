@@ -44,7 +44,9 @@ function orderSummary() {
 				order.css({"position":"relative", "top": "auto", "right": "auto", "margin-right": "auto"});
 			}
 		} else {
+
 		}
+
 	});
 }
 */
