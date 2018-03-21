@@ -144,6 +144,8 @@ Editor : eunmyoung Noh
 .akl .bt-akl-white.small, .akl .bt-akl-blue.small {min-width:74px;padding:5px 10px 7px;text-align:center;}
 .akl a.bt-akl-white.small, .akl a.bt-akl-blue.small {min-width:74px;padding:8px 20px 7px;text-align:center;}
 
+.akl .btn-area {text-align:left;}
+
 /* common > button > quick view */
 .akl .product-list__thum { display:block; position: relative;}
 .akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px;}
@@ -194,7 +196,7 @@ Editor : eunmyoung Noh
 .akl [type="checkbox"]:checked+label::before  { width: 20px;height: 20px;}
 .akl .amway-theme .amw-radio-overlay { width: 20px;height: 20px;}
 .akl .amway-theme input.amw-global-radio:checked +  .amw-radio-overlay:before { width:12px; height:12px; background:#0075a4;}
-.akl .account-profile__label {font-weight: 500;}
+
 .phone-group .control-group { float:left; width:40%}
 .phone-group .form-group { float:right; width:60%; padding-left: 8px;}
 .phone-group:after {content:""; display:block;  clear:both; width: 0; height: 0;}
@@ -245,7 +247,7 @@ Editor : eunmyoung Noh
 .akl .cart-popup__content {padding:0 0;}
 .akl .cart-popup__item-info {height:auto !important;padding:36px 30px 10px;}
 .akl .cart-popup__item-info h3.type2 {font-size:16px;font-weight:500;padding:0 0 13px;margin:0 0;}
-.akl .cbox .cart-popup__dialog .cart-popup__content .cart-popup__item-link {padding:20px 30px 20px;background:#fff;margin-top: 0}
+.akl .cart-popup__item-link {padding:20px 30px 20px;background:#fff;margin:0 auto;text-align:center;}
 .akl .cbox .cart-popup__dialog.bg-white {height:auto;background:#fff;border:1px solid #c0c0c0}
 .akl .cbox .cart-popup__dialog.bg-white .cart-popup__close { padding:0 0; top:10px; right:20px;}
 .akl .cart-popup__close { padding:0 10px; top:12px; right:10px;}
@@ -471,39 +473,41 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .mini-cart-list .first-price {font-weight:500;}
 .akl .mini-cart-list {font-weight: 500;}
 
- /* header > navigation */
-.akl .overlay-menu {font-family:'Noto Sans KR', sans-serif; font-weight:400}
-.akl .main-menu__arrow-down {  margin-top: 4px; }
+  /* header > navigation */ 
+.akl header.main-header .amway-theme .overlay-menu-container {max-width: 1388px;}
+.overlay-menu-container .search-results-close {text-indent: -9999px;width: 18px;height: 18px;position: absolute !important; right:5px; top:5px;border: 0;background: url(../images/close@2x.png) no-repeat 50% 50%; background-size:18px 18px;  }
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-component-desktop-wrapper a.overlay-menu-toggle-desktop .button-text {font-size: 18px;font-weight:500; font-family:'Noto Sans KR', sans-serif}
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-search .site-search .ui-front { padding:8px 0;  }
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-search .site-search .ui-front .input-group .form-control {height: 44px;}
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-component-desktop-wrapper a.overlay-menu-toggle-desktop { padding: 19px 32px 19px 0; }
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item > a { font-weight:500; font-size: 16px;}
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item h6 a {padding: 0px; font-size: 14px; font-weight:500; }
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .category-links a {  padding: 0px; font-size: 14px; display: block; margin-bottom:5px; font-weight:400; }
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-search .site-search .ui-front .input-group { font-weight:400;}
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-search .site-search .ui-front .input-group .input-group-btn .btn .icon-search {margin-top: 6px;}
+ 
+ /* header > navigation > 1depth */  
 .akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:15px 0 15px 40px !important;}
 .akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-image { width:40px;}
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-title { font-weight: 500;font-size: 14px; }
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .tab-content .overlay-menu-tab .overlay-menu-tab-categories .tab__category ul.category-links li:last-of-type a { font-weight:400;}
-.akl .overlay-menu-tab { margin-right: 240px;}
-.akl .overlay-menu-tab-row h5 { font-size:16px; margin-bottom:20px;} 
-.akl .overlay-menu-tab-categories { width:33.333%; float:left;}
-.akl .overlay-menu-tab-categories.brand-shop { width:100%; }
-.akl .overlay-menu-tab-categories .col-sm-3 { width:100%; float:none}
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .tab-content .overlay-menu-tab .overlay-menu-tab-categories {padding-top:0;}
-.akl .overlay-menu-tab .margin-bot { margin-bottom: 30px;}
+.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-title { font-weight: 700;font-size: 14px; } 
+
+ /* header > navigation > 2depth,3depth */ 
+.akl .gnb-nav { padding:40px 240px 0 20px; height:390px; overflow:hidden;font-family:'Noto Sans KR', sans-serif; font-weight:400 }
+.akl .gnb-nav h5 { font-size:16px; margin-bottom:20px;} 
+ 
+.akl .overlay-menu-tab-categories .col-sm-3 { width:100%; float:none}  
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a {padding: 0px; font-size: 14px; font-weight:500; display: block; margin-bottom:33px }
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a + .depth3-links { margin-top: -25px; margin-bottom:30px}
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth3-links a {  padding: 0px; font-size: 14px; display: block; margin-bottom:5px; font-weight:400; }
+
+.brand-shop {padding:40px 0 0 20px; }  
+.brand-shop .depth2-links ul {margin-bottom:10px;}
+.brand-shop .depth2-links li { float:left; margin-right:25px;}
+.brand-shop .depth2-links strong {  display:block;font-family:'Noto Sans KR', sans-serif; margin-bottom:5px; font-size: 14px; font-weight:500; color:#002f5f}
+ 
+.brand-shop .depth2-links.oneforone li { margin-right:7px;}
+.brand-shop .category-brand-shop { overflow: hidden;}
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .brand-shop .depth2-links a {padding: 0px; font-size: 14px; font-weight:500; display: block; margin-bottom:0}
+ 
 .akl .overlay-menu-tab-left { position:absolute; right:0; top:0;  width:240px; padding:40px 0 0 30px;}
-.akl .overlay-menu-tab-left:after { content:""; position:absolute; top:40px; bottom:38px; left:0; border-left:1px solid #ccc}
-.akl .overlay-menu-tab-left h6{ font-size:14px;color:#56565a; margin-bottom: 15px; } 
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-tab-left ul { margin-bottom: 30px;}
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-tab-left a {font-size:14px;font-weight:400; color:#56565a;padding:2px 0;}
-.overlay-menu-container .search-results-close {text-indent: -9999px;width: 18px;height: 18px;position: absolute !important;right:-5px; top: 20px;border: 0;background: url(../images/close@2x.png) no-repeat; background-size:18px 18px}
-.category-brand-shop { overflow:hidden; margin-bottom: 15px;}
-.category-brand-shop li { float:left; margin-right:25px;}
-.category-brand-shop.oneforone li { margin-right:7px;}
-.category-brand-shop li a{ padding: 0 !important;}
+.akl .overlay-menu-tab-left ul { margin-bottom: 35px}
+.akl .overlay-menu-tab-left ul li a {font-size: 14px; font-weight:500; display:block; margin-bottom:4px }
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-tab-left a {padding: 0px; font-size: 14px; font-weight:500;}
+.akl .overlay-menu-tab-left:after { content:""; position:absolute; top:0; bottom:0; left:0; border-left:1px solid #ccc}
+.akl .overlay-menu-tab-left h5{ font-size:14px!important; color:#56565a; margin-bottom: 11px; } 
 
  /*** footer ***/
 .akl footer { margin-top:0; padding-top:40px;}
@@ -776,7 +780,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .modify .confirm-password dt { font-size:16px; font-weight: 500; letter-spacing: -1px; margin-bottom:25px;}
 .akl .modify .confirm-password dd .form-group { margin: 0}
 .akl .modify .confirm-password dd .form-group label, .confirm-password dd .form-group div {line-height: 40px}
-.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:30px;  }
+.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:30px;text-align: center;}
 
 /* 마이페이지 > 회원정보변경 */
  .noti-suc { font-size:16px; font-weight:500; padding-left: 22px; font-size:16px; font-weight:500; color:#20893d; background:url('../images/icons/success.png') no-repeat left 3px;}
@@ -785,15 +789,18 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .modify #terms h3 { font-size: 16px; font-weight:500; margin-bottom:20px }
 .akl .modify .col-md-2, .akl .modify .col-md-3, .akl .modify .col-md-4,.akl .modify .col-md-5,.akl .modify .col-md-5, .akl .modify .col-md-7, .akl .modify .col-md-8, .akl .modify .col-md-9,
 .akl .modify .col-md-10{padding-left: 0;}
-.akl .account-profile__panel .icon-minus:before {font-size:22px; font-weight:700;line-height:20px; }
+.akl .account-profile__panel .icon-minus:before {font-size:28px; font-weight:700;line-height:20px;font-family:'Noto Sans KR', sans-serif;}
 .akl .account-profile__panel .text-uppercase { font-size:18px; font-weight:500; letter-spacing:-2px}
 .akl .account-profile__panel .panel-heading a  { display: block; padding: 30px 30px 30px 5px }
 .akl .account-profile__panel .icon-user-new:before,
 .akl .account-profile__panel .icon-shield:before,
 .akl .account-profile__panel .icon-mail:before { color: #008fc5; margin-right: 5px}
 .akl .account-profile .account-profile__label { text-transform:capitalize;}
-.akl .account-profile {font-size: 14px ;font-family:'Noto Sans KR', sans-serif; padding: 0 1.75em 4.5em;}
-.akl .account-profile .account-profile__value, .akl .account-profile .account-profile__editor .form-group {font-size: 14px ;}
+.akl .account-profile {font-size: 14px;font-family:'Noto Sans KR', sans-serif; padding: 0 1.75em 4.5em;}
+.akl .account-profile .account-profile__value, .akl .account-profile .account-profile__editor .form-group {font-size: 14px;}
+.akl .account-profile__label {font-weight: 500;vertical-align:middle}
+.akl .account-profile__value {vertical-align:middle}
+
 .akl .help-block span { font-size: 13px; color: #e11e45; font-weight: 500}
 .akl .account-profile .mobile-phone-form-group .input-part-2 , .account-profile .alternate-phone-form-group .input-part-2 {width:17.2% !important;}
 .akl .address-form-group { margin-bottom:20px}
@@ -815,8 +822,9 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .modify-radio {padding: 30px 0; border-bottom: 1px solid #e3e3e3}
 .akl .modify-form-group {padding: 25px 0 30px;}
 .akl .modify-form-group .form-group{max-width: 400px}
+.akl .modify-form-group .form-group label {font-size:14px;}
 .akl .modify-form-group .form-group label, .akl .modify-form-group .form-group div {line-height: 40px}
-.email-send .bt-akl-blue { margin-bottom:30px}
+.email-send button {vertical-align:middle;}
 .email-send + .list-type5 { padding-top:15px}
 .list-type-wrap { padding-top:20px}
 .sponsor-certification {position:relative; overflow:hidden; margin-top:15px; padding:20px 0; border-top: 1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
@@ -833,8 +841,22 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 #terms .col .line { bottom: 0}
 .akl .icon-user-new02:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}
 .akl .icon-user-new03:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}  
-.akl .account-profile .account-profile__value { padding-top:0;}
-.akl .account-profile .account-profile__editor { padding-top:7px!important;}
+
+.akl .account-profile__value { padding-top:0;vertical-align:middle;}
+.akl .account-profile__editor { padding-top:0;vertical-align:middle;}
+
+.akl .account-profile__editor .form-group .col-md-4.email-id {vertical-align:middle;padding-right:0;}
+.akl .account-profile__editor .form-group .email-id span {display:inline-block;font-size:14px;width:43%;}
+.akl .account-profile__editor .form-group .email-id span input {vertical-align:middle;}
+.akl .account-profile__editor .form-group .email-id span select {vertical-align:middle;}
+.akl .account-profile__editor .form-group .email-id span.at {width:auto;padding:0 3px;}
+.akl .account-profile__editor .form-group span.txt {line-height:2.3em;vertical-align:middle;font-size:14px;}
+.akl .account-profile__editor .form-group button {vertical-align:middle}
+.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-left:-10px;}
+.akl .account-profile__editor .form-group .email-dotcom select {width:43%;margin-right:5px;text-transform:lowercase}
+
+.preferred-name-form-group, .mobile-phone-form-group, .gender-form-group, .date-of-birth-form-group, .name-form-group, .preferred-name-form-group, 
+.email-form-group, .alternate-phone-form-group, .address-form-group, .preferred-langauge-form-group, .date-of-birth-form-group {padding:5px 0 0}
 
 /* 검색 > 검색어  */
 .popoverword { display: none; position: absolute; top:138px;left: 0;z-index: 1050; width:100%; padding: 1px; text-align: left;background-color:#fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
@@ -1255,52 +1277,56 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .address-form-group .bt-akl-white {right:0;}
 	.akl .account-profile.modify .name-form-group { position: relative;}
 	.akl .account-profile.modify .name-form-group label { position: absolute; left:0; width:200px }
-	.akl .account-profile.modify .name-form-group .account-profile__value { margin-left:100px}
+	.akl .account-profile.modify .name-form-group .account-profile__value { margin-left:100px;}
 
 	.akl .account-profile.modify .mobile-phone-form-group { position: relative;}
 	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0; width:200px }
 	.akl .account-profile.modify .mobile-phone-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .preferred-name-form-group { position: relative;}
-	.akl .account-profile.modify .preferred-name-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .preferred-name-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .preferred-name-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .alternate-phone-form-group { position: relative;}
-	.akl .account-profile.modify .alternate-phone-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .alternate-phone-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .alternate-phone-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .email-form-group { position: relative;}
-	.akl .account-profile.modify .email-form-group label { position: absolute; left:0; width:200px }
-	.akl .account-profile.modify .email-form-group .account-profile__value { margin-left:100px}
+	.akl .account-profile.modify .email-form-group label { position: absolute; left:0;width:200px }
+	.akl .account-profile.modify .email-form-group .account-profile__value {margin-top:25px}
 
 	.akl .account-profile.modify .date-of-birth-form-group { position: relative;}
-	.akl .account-profile.modify .date-of-birth-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .date-of-birth-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .date-of-birth-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .preferred-langauge-form-group { position: relative;}
-	.akl .account-profile.modify .preferred-langauge-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .preferred-langauge-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .preferred-langauge-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .mobile-phone-form-group { position: relative;}
-	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .mobile-phone-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .renewal-form-group { position: relative;}
-	.akl .account-profile.modify .renewal-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .renewal-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .renewal-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .gender-form-group { position: relative;}
-	.akl .account-profile.modify .gender-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .gender-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .gender-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .account-profile__editor.mobile { margin-left:100px}
-	.akl .account-profile.modify .account-profile__editor.mobile .form-group { margin-top: 7px;}
 
-	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{ margin-top: 40px}
+	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{margin-top:30px}
 	.akl .account-profile .mobile-phone-form-group .input-part-1 .form-control,
 	.akl .account-profile .alternate-phone-form-group .input-part-1 .form-control  { width:35%; min-width:40%; float: left}
 	.akl .account-profile .mobile-phone-form-group .input-part-2,
 	.akl .account-profile .alternate-phone-form-group .input-part-2 { width:58% !important; float:right}
+
+	.akl .account-profile__editor .form-group span.txt {margin:0;padding:0;font-size:14px;vertical-align:top;line-height:1.5}
+	.akl .email-form-group .account-profile__editor.mobile {margin-left:0 !important;margin-top:30px}
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-top:10px;margin-left:0}
+	
 
 	/* 검색 > 결과  */
 	.pagination-bar { border-top:0;}

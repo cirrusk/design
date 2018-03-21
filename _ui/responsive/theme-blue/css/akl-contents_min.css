@@ -31,6 +31,14 @@ html.scrollLock body {overflow:hidden;}
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
 .akl .layerWrapper.active #videobox {opacity:1;}
 
+/* 메인-어드민 제어용 (작업중) */
+.layer-content-wrapper {}
+.layer-bottom-wrapper {overflow:hidden; padding:10px;}
+.layer-bottom-wrapper .left-box {float:left;}
+.layer-bottom-wrapper .right-box {float:right;}
+.layer-bottom-wrapper [type="checkbox"]:checked+label,
+.layer-bottom-wrapper [type="checkbox"]:not(:checked)+label {color:#777; vertical-align:middle;}
+
 /* jquery.msgbox 관련 */
 .jMsgbox-overlay {background-color:rgba(0,0,0,.4)}
 .jMsgbox-wrap {border:1px solid #999;}
