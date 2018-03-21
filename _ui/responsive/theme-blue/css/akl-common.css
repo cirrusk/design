@@ -144,7 +144,7 @@ Editor : eunmyoung Noh
 .akl .bt-akl-white.small, .akl .bt-akl-blue.small {min-width:74px;padding:5px 10px 7px;text-align:center;}
 .akl a.bt-akl-white.small, .akl a.bt-akl-blue.small {min-width:74px;padding:8px 20px 7px;text-align:center;}
 
-.akl .btn-area {text-align:center;margin:0 auto;}
+.akl .btn-area {text-align:left;}
 
 /* common > button > quick view */
 .akl .product-list__thum { display:block; position: relative;}
@@ -841,17 +841,19 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 #terms .col .line { bottom: 0}
 .akl .icon-user-new02:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}
 .akl .icon-user-new03:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}  
-.akl .account-profile .account-profile__value { padding-top:0;vertical-align:middle;}
-.akl .account-profile .account-profile__editor { padding-top:0;vertical-align:middle;}
-.account-profile__editor .form-group .col-md-4.email-id {vertical-align:middle;padding-right:0;}
-.account-profile__editor .form-group .email-id span {display:inline-block;font-size:14px;width:40%;}
-.account-profile__editor .form-group .email-id span input {vertical-align:middle;}
-.account-profile__editor .form-group .email-id span select {vertical-align:middle;}
-.account-profile__editor .form-group .email-id span.at {width:auto;padding:0 3px;}
-.account-profile__editor .form-group span.txt {line-height:2.3em;vertical-align:middle;}
-.account-profile__editor .form-group button {vertical-align:middle}
-.account-profile__editor .form-group .email-dotcom {}
-.account-profile__editor .form-group .email-dotcom select {width:40%;margin-right:5px;text-transform:lowercase}
+
+.akl .account-profile__value { padding-top:0;vertical-align:middle;}
+.akl .account-profile__editor { padding-top:0;vertical-align:middle;}
+
+.akl .account-profile__editor .form-group .col-md-4.email-id {vertical-align:middle;padding-right:0;}
+.akl .account-profile__editor .form-group .email-id span {display:inline-block;font-size:14px;width:43%;}
+.akl .account-profile__editor .form-group .email-id span input {vertical-align:middle;}
+.akl .account-profile__editor .form-group .email-id span select {vertical-align:middle;}
+.akl .account-profile__editor .form-group .email-id span.at {width:auto;padding:0 3px;}
+.akl .account-profile__editor .form-group span.txt {line-height:2.3em;vertical-align:middle;font-size:14px;}
+.akl .account-profile__editor .form-group button {vertical-align:middle}
+.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-left:-10px;}
+.akl .account-profile__editor .form-group .email-dotcom select {width:43%;margin-right:5px;text-transform:lowercase}
 
 .preferred-name-form-group, .mobile-phone-form-group, .gender-form-group, .date-of-birth-form-group, .name-form-group, .preferred-name-form-group, 
 .email-form-group, .alternate-phone-form-group, .address-form-group, .preferred-langauge-form-group, .date-of-birth-form-group {padding:5px 0 0}
@@ -1291,7 +1293,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 
 	.akl .account-profile.modify .email-form-group { position: relative;}
 	.akl .account-profile.modify .email-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .email-form-group .account-profile__value { margin-left:100px}
+	.akl .account-profile.modify .email-form-group .account-profile__value {margin-top:25px}
 
 	.akl .account-profile.modify .date-of-birth-form-group { position: relative;}
 	.akl .account-profile.modify .date-of-birth-form-group label { position: absolute; left:0;width:200px }
@@ -1315,12 +1317,16 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 
 	.akl .account-profile.modify .account-profile__editor.mobile { margin-left:100px}
 
-	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{ margin-top:40px}
+	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{margin-top:30px}
 	.akl .account-profile .mobile-phone-form-group .input-part-1 .form-control,
 	.akl .account-profile .alternate-phone-form-group .input-part-1 .form-control  { width:35%; min-width:40%; float: left}
 	.akl .account-profile .mobile-phone-form-group .input-part-2,
 	.akl .account-profile .alternate-phone-form-group .input-part-2 { width:58% !important; float:right}
-	.akl .account-profile__editor .form-group span.txt {margin-top:0;padding:0;line-height:0;font-size:14px;}
+
+	.akl .account-profile__editor .form-group span.txt {margin:0;padding:0;font-size:14px;vertical-align:top;line-height:1.5}
+	.akl .email-form-group .account-profile__editor.mobile {margin-left:0 !important;margin-top:30px}
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-top:10px;margin-left:0}
+	
 
 	/* 검색 > 결과  */
 	.pagination-bar { border-top:0;}

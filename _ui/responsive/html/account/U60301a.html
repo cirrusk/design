@@ -56,7 +56,7 @@
 										</div>
 										<div class="user-info">
 											<span class="user-name">홍길동&김길동</span>
-											<span class="user-id">ConnectID: bogum_park@amway.com</span>
+											<span class="user-id">ABO : 7480002</span>
 										</div>
 									</div>
 									<div class="go-block col-sm-6">
@@ -143,30 +143,20 @@
 								</a>
 							</div>
 
-
 							<div id="collapsePI" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPI" style="height: 0px;">
 								<div class="panel-body">
+									<!-- 마크업수정 2018.03.21 -->
 									<div class="row amway-theme">
 										<div class="col-md-12">
 											<fieldset>
 												<legend class="legend-tit">개인정보</legend>
-												<div class="row name-form-group">
-													<label class="col-md-2 account-profile__label">ConnectID</label>
-													<div class="col-md-10 account-profile__value">bogum_park@amway.com </div>
-
-													<div class="col-md-10 account-profile__editor mobile">
-														<div class="form-group">
-														   bogum_park@amway.com <button type="button" class="bt-akl-white mini">ConnectID 변경</button>
-														</div>
-													</div>
-												</div>
 												<div class="row preferred-name-form-group">
 													<label class="col-md-2 account-profile__label">한글성명</label>
 													<div class="col-md-10 account-profile__value">박보검</div>
 
 													<div class="col-md-10 account-profile__editor mobile">
 														<div class="form-group">
-																	박보검
+															<span class="txt">박보검</span>
 														</div>
 													</div>
 												</div>
@@ -176,7 +166,7 @@
 
 													<div class="col-md-10 account-profile__editor mobile">
 														<div class="form-group">
-															Bogum Park
+															<span class="txt">Bogum Park</span>
 														</div>
 													</div>
 												</div>
@@ -186,7 +176,7 @@
 
 													<div class="col-md-10 account-profile__editor mobile">
 														<div class="form-group">
-																	남성
+															<span class="txt">남성</span>
 														</div>
 													</div>
 
@@ -197,41 +187,28 @@
 
 													<div class="col-md-10 account-profile__editor mobile">
 														<div class="form-group">
-															1970-01-01
+															<span class="txt">1970-01-01</span>
 														</div>
 													</div>
 												</div>
 											 </fieldset>
 
-											<fieldset>
+											 <fieldset>
 												<legend class="legend-tit">연락처</legend>
-												<div class="row email-form-group">
-													<label class="col-md-2 account-profile__label">이메일</label>
-													<div class="col-md-10 account-profile__value">bogum_park@amway.com</div>
-
-													<div class="col-md-10 account-profile__editor has-error mobile">
-														<div class="form-group">
-															bogum_park@amway.com
-															<div class="help-block"><span>ConnectID와 이메일은 같습니다. 이메일 변경을 원하시면 ConnectID변경을 클릭하세요.</span></div>
-														</div>
-													</div>
-												</div>
 												<div class="row mobile-phone-form-group">
 													<label class="col-md-2 account-profile__label">휴대폰 번호</label>
 													<div class="col-md-10 account-profile__value">010-1234-5678</div>
 
 													<div class="col-md-10 account-profile__editor has-error">
-														<div class="col-md-4 account-profile__editor input-part-1">
-															<div class="control-group">
-																<select id="profile.mobileCountryCode" name="mobileCountryCode" class="form-control" title="휴대전화번호 앞자리 선택">
+														<div class="form-group">
+															<div class="col-md-4 input-part-1">
+																<select id="profile.mobileCountryCode" name="mobileCountryCode" class="form-control" title="휴대전화번호 앞자리 선택"><!-- title 속성추가 -->
 																	<option value="1" selected="selected">010</option>
 																	<option value="509">011</option>
 																</select>
 															</div>
-														</div>
-														<div class="col-md-8 account-profile__editor input-part-2">
-															<div class="form-group">
-																<input id="profile.mobilePhoneNumber" name="mobilePhoneNumber" type="text" class="text form-control" minlength="1"  value="" placeholder="12345678" maxlength="8" title="휴대전화번호 입력">
+															<div class="col-md-8 input-part-2">
+																<input id="profile.mobilePhoneNumber" name="mobilePhoneNumber" type="text" class="text form-control" minlength="1"  value="" placeholder="&acute;-&acute;없이 입력" maxlength="8" title="휴대전화번호 입력">
 															</div>
 														</div>
 													</div>
@@ -241,17 +218,36 @@
 													<div class="col-md-10 account-profile__value">070-1234-5678</div>
 
 													<div class="col-md-10 account-profile__editor">
-														<div class="col-md-4 account-profile__editor input-part-1">
-															<div class="control-group">
+														<div class="form-group">
+															<div class="col-md-4 input-part-1">
 																<select id="profile.alternateCountryCode" name="alternateCountryCode" class="form-control" title="전화번호 앞자리 선택">
 																	<option value="1" selected="selected">070</option>
 																	<option value="509">02</option>
-																 </select>
+																</select>
+															</div>
+															<div class="col-md-8 input-part-2">
+																<input id="profile.alternatePhoneNumber" type="text" name="alternatePhoneNumber" class="text form-control" minlength="1" value="" placeholder="&acute;-&acute;없이 입력" maxlength="8" title="전화번호 입력">
 															</div>
 														</div>
-														<div class="col-md-8 account-profile__editor input-part-2">
-															<div class="form-group">
-																<input id="profile.alternatePhoneNumber" type="text" name="alternatePhoneNumber" class="text form-control" minlength="1" value="" placeholder="12345678" maxlength="8" title="전화번호 입력">
+													</div>
+												</div>
+												<div class="row email-form-group">
+													<label class="col-md-2 account-profile__label">이메일</label>
+													<div class="col-md-10 account-profile__value">bogum_park@amway.com</div>
+
+													<div class="col-md-10 account-profile__editor has-error mobile">
+														<div class="form-group">
+															<div class="col-md-4 email-id">
+																<span><input id="" name="" type="text" class="text form-control" value="" title="아이디 입력"></span>
+																<span class="at">@</span>
+																<span><input id="" name="" type="text" class="text form-control" value="" title="주소 입력"></span>
+															</div>
+															<div class="col-md-4 email-dotcom">
+																<select id="" name="mobileCountryCode" class="form-control" title="주소 선택">
+																	<option value="1" selected="selected">직접입력</option>
+																	<option value="509">naver.com</option>
+																</select>
+																<button type="button" class="bt-akl-white" id="">이메일 인증</button>
 															</div>
 														</div>
 													</div>
@@ -285,7 +281,8 @@
 												<div><input name="CSRFToken" value="b86a7fe2-cff1-444e-8054-d410f311f5c1" type="hidden"></div>
 											</fieldset>
 										 </div>
-									 </div>
+									</div>
+									<!-- //마크업수정 2018.03.21 -->
 								 </div>
 							 </div>
 						 </div>
@@ -293,7 +290,7 @@
 						 <div class="panel panel-default account-profile__panel">
 							<div class="panel-heading active" role="tab" id="headingPI">
 								<h2 class="hidden">부사업자 정보</h2>
-								<a href="#collapsePI02" class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" aria-expanded="true" aria-controls="collapsePI" >
+								<a href="#collapsePI02" class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" aria-expanded="true" aria-controls="collapsePI">
 									<div class="panel-title">
 										<span class="icon-personal-info icon-user-new03"></span>
 										<span class="text-uppercase">부사업자 정보</span>
@@ -302,30 +299,21 @@
 								</a>
 							</div>
 
-
+						
 							<div id="collapsePI02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPI" style="height: 0px;">
 								<div class="panel-body">
 									<div class="row amway-theme">
+										<!-- 마크업수정 2018.03.21 -->
 										<div class="col-md-12">
 											<fieldset>
 												<legend class="legend-tit">개인정보</legend>
-												<div class="row name-form-group">
-													<label class="col-md-2 account-profile__label">ConnectID</label>
-													<div class="col-md-10 account-profile__value">bogum_park@amway.com</div>
-
-													<div class="col-md-10 account-profile__editor mobile">
-														<div class="form-group">
-														   bogum_park@amway.com <button type="button" class="bt-akl-white mini">ConnectID 변경</button>
-														</div>
-													</div>
-												</div>
 												<div class="row preferred-name-form-group">
 													<label class="col-md-2 account-profile__label">한글성명</label>
 													<div class="col-md-10 account-profile__value">박보검</div>
 
 													<div class="col-md-10 account-profile__editor mobile">
 														<div class="form-group">
-																	박보검
+															<span class="txt">박보검</span>
 														</div>
 													</div>
 												</div>
@@ -335,28 +323,7 @@
 
 													<div class="col-md-10 account-profile__editor mobile">
 														<div class="form-group">
-															Bogum Park
-														</div>
-													</div>
-												</div>
-												<div class="row gender-form-group">
-													<label class="col-md-2 account-profile__label">성별</label>
-													<div class="col-md-10 account-profile__value">남성</div>
-
-													<div class="col-md-10 account-profile__editor mobile">
-														<div class="form-group">
-																	남성
-														</div>
-													</div>
-
-												</div>
-												<div class="row date-of-birth-form-group">
-													<label class="col-md-2 account-profile__label">생년월일</label>
-													<div class="col-md-10 account-profile__value">1970-01-01</div>
-
-													<div class="col-md-10 account-profile__editor mobile">
-														<div class="form-group">
-															1970-01-01
+															<span class="txt">Bogum Park</span>
 														</div>
 													</div>
 												</div>
@@ -364,68 +331,20 @@
 
 											<fieldset>
 												<legend class="legend-tit">연락처</legend>
-												<div class="row email-form-group">
-													<label class="col-md-2 account-profile__label">이메일</label>
-													<div class="col-md-10 account-profile__value">bogum_park@amway.com</div>
-
-													<div class="col-md-10 account-profile__editor has-error mobile">
-														<div class="form-group">
-															bogum_park@amway.com
-															<div class="help-block"><span>ConnectID와 이메일은 같습니다. 이메일 변경을 원하시면 ConnectID변경을 클릭하세요.</span></div>
-														</div>
-													</div>
-												</div>
 												<div class="row mobile-phone-form-group">
 													<label for="mobileCountryCode2" class="col-md-2 account-profile__label">휴대폰 번호</label>
 													<div class="col-md-10 account-profile__value">010-1234-5678</div>
 
 													<div class="col-md-10 account-profile__editor has-error">
-														<div class="col-md-4 account-profile__editor input-part-1">
-															<div class="control-group">
-																<select id="mobileCountryCode2" name="mobileCountryCode" class="form-control" title="휴대전화번호 앞자리 선택">
+														<div class="form-group">
+															<div class="col-md-4 input-part-1">
+																<select id="profile.mobileCountryCode" name="mobileCountryCode" class="form-control" title="휴대전화번호 앞자리 선택"><!-- title 속성추가 -->
 																	<option value="1" selected="selected">010</option>
 																	<option value="509">011</option>
 																</select>
 															</div>
-														</div>
-														<div class="col-md-8 account-profile__editor input-part-2">
-															<div class="form-group">
-																<input id="mobilePhoneNumber" name="mobilePhoneNumber" type="text" class="text form-control" minlength="1" value="" placeholder="12345678" maxlength="8" title="휴대전화번호 입력">
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="row alternate-phone-form-group">
-													<label  for="alternateCountryCode2" class="col-md-2 account-profile__label">전화번호</label>
-													<div class="col-md-10 account-profile__value">070-1234-5678</div>
-
-													<div class="col-md-10 account-profile__editor">
-														<div class="col-md-4 account-profile__editor input-part-1">
-															<div class="control-group">
-																<select id="alternateCountryCode2" name="alternateCountryCode" class="form-control" title="전화번호 앞자리 선택">
-																	<option value="1" selected="selected">070</option>
-																	<option value="509">02</option>
-																 </select>
-															</div>
-														</div>
-														<div class="col-md-8 account-profile__editor input-part-2">
-															<div class="form-group">
-																<input id="profile.alternatePhoneNumber" type="text" name="alternatePhoneNumber" class="text form-control" minlength="1" value="" placeholder="12345678" maxlength="8" title="전화번호 입력">
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="row address-form-group">
-													<label for="address2" class="col-md-2 account-profile__label">주소</label>
-													<div class="col-md-10 account-profile__value"> 서울 강남구 삼성동 159 아셈타워 27층</div>
-
-													<div class="col-md-10 account-profile__editor">
-														<div class="form-group">
-															<div class="col-md-5 col-xs-12 address">
-																<p><input type="text" id="address2" name="" class="form-control"></p>
-																<button type="button" class="bt-akl-white" id="U61000_lp1">주소찾기</button>
-																<input type="text" name="" class="form-control" title="나머지 주소1">
-																<input type="text" name="" class="form-control" title="나머지 주소2">
+															<div class="col-md-8 input-part-2">
+																<input id="profile.mobilePhoneNumber" name="mobilePhoneNumber" type="text" class="text form-control" minlength="1"  value="" placeholder="&acute;-&acute;없이 입력" maxlength="8" title="휴대전화번호 입력">
 															</div>
 														</div>
 													</div>
@@ -444,6 +363,7 @@
 												<div><input name="CSRFToken" value="b86a7fe2-cff1-444e-8054-d410f311f5c1" type="hidden"></div>
 											</fieldset>
 										</div>
+										<!-- //마크업수정 2018.03.21 -->
 									</div>
 								</div>
 							</div>
@@ -451,11 +371,11 @@
 
 						<div class="panel panel-default account-profile__panel">
 							<div class="panel-heading" role="tab" id="headingPassword">
-								<h2 class="hidden">ConnectID/비밀번호 변경</h2>
+								<h2 class="hidden">비밀번호 변경</h2>
 								<a href="#collapsePassword" class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" aria-expanded="false" aria-controls="collapsePassword">
 									<div class="panel-title">
 										<span class="icon-personal-info icon-shield"></span>
-										<span class="text-uppercase">ConnectID/비밀번호 변경</span>
+										<span class="text-uppercase">비밀번호 변경</span>
 										<span class="pull-right icon-minus"></span>
 									</div>
 								</a>
@@ -464,40 +384,38 @@
 								<div class="panel-body">
 									<div class="row password-security-container">
 										<div class="col-md-12">
-											<div class="amway-theme modify-radio">
-												 <label class="amw-radio-wrap radio-label">
-													<input type="radio" name="radio-1" checked="checked" class="amw-global-radio">
-													<span class="amw-radio-overlay"></span>
-													<span class="amw-label-radio-text">ConnectID 변경</span>
-												</label>
-												<label class="amw-radio-wrap radio-label">
-													<input type="radio" name="radio-1" class="amw-global-radio" checked="checked">
-													<span class="amw-radio-overlay"></span>
-													<span class="amw-label-radio-text">비밀번호 변경</span>
-												</label>
-											</div>
-											 <div class="modify-form-group">
-												 <div class="row form-group">
-													<label class="col-md-4 col-xs-12">ConnectID</label>
-													<div class="col-md-8 col-xs-12">Way_Am@amway.com</div>
+											<!-- 마크업수정 2018.03.21 -->
+											<p>안전한 개인정보보호를 위해 비밀번호를 정기적으로 변경하세요.</p>
+											<div class="modify-form-group">
+												<div class="row form-group">
+													<label class="col-md-4 col-xs-12">현재 비밀번호</label>
+													<div class="col-md-8 col-xs-12">
+														<input type="text" name="" class="form-control" title="현재 비밀번호 입력">
+													</div>
 												</div>
 												<div class="row form-group">
-													<label class="col-md-4 col-xs-12">ConnectID</label>
+													<label class="col-md-4 col-xs-12">새 비밀번호</label>
 													<div class="col-md-8 col-xs-12">
-														<input type="text" name="" class="form-control" title="ConnectID 입력">
+														<input type="text" name="" class="form-control" title="새 비밀번호 입력" placeholder="영문/숫자 조합 6~8자리">
+													</div>
+												</div>
+												<div class="row form-group">
+													<label class="col-md-4 col-xs-12">새 비밀번호 확인</label>
+													<div class="col-md-8 col-xs-12">
+														<input type="text" name="" class="form-control" title="새 비밀번호 확인 입력">
 													</div>
 												</div>
 											</div>
+											<!-- //마크업수정 2018.03.21 -->
 											<div class="row email-send">
-												 <button type="button" class="bt-akl-blue">인증메일 보내기</button>
-												 <p class="noti-suc">인증메일이 발송되었습니다.</p>
-												 <p class="noti-error">변경이 불가한 이메일 주소입니다.</p>
+												 <button type="button" class="bt-akl-blue">비밀번호 변경</button>
+												 <button type="button" class="bt-akl-txt">취소</button>
 											</div>
 											<ul class="list-type5">
-												<li>ConnectID 변경을 원하시면 변경하실 이메일을 입력 후＇인증메일 보내기’를 클릭하세요.</li>
-												<li>비밀번호 변경을 원하시면 ConnectID를 확인 후 ‘인증메일 보내기를 클릭하세요. </li>
-												<li>인증메일을 받으신 후 비밀번호를 입력 하시면 ConnectID와 비밀번호가 변경됩니다.</li>
-												<li>인증메일을 못 받으신 분은 스팸 혹은 정크 메일함을 확인하시기 바랍니다.</li>
+												<li>회원님의 안전한 비밀번호로 영문/숫자 조합 6 ~ 8자리 사이로 설정해주세요</li>
+												<li>비밀번호 재설정의 경우 최근에 사용한 4개의 비밀번호는 사용이 불가합니다.</li>
+												<li>4번 이상 반복되는 문자나 숫자, 아이디, 생년월일, 전화번호는 사용이 불가합니다.</li>
+												<li>타 사이트와는 다른 비밀번호를 사용하고, 비밀번호는 주기적으로 변경해 주세요.</li>
 											</ul>
 										</div>
 
@@ -639,8 +557,10 @@
 													</div>
 												</li>
 											</ul>
-											<button type="button" class="bt-akl-blue">저장</button>
-											<button type="button" class="bt-akl-txt">취소</button>
+											<div class="btn-area"><!-- 2018.3.20 버튼 정렬로 div 추가 -->
+												<button type="button" class="bt-akl-blue">저장</button>
+												<button type="button" class="bt-akl-txt">취소</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -656,10 +576,11 @@
 		<div id="footer"></div>
 	</main>
 
-
+	
+	
 	<!-- 후원자 정정 팝업 -->
-	<div class="layerWrapper U60301a_lp1"><!--2018.03.05  div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidM"><!--2018.03.05  .layerBox 추가 -->
+	<div class="layerWrapper U60301a_lp1"><!-- 2018.03.05 div.layerWrapper 추가 -->
+		<div class="cbox layerBox popWidM"><!-- 2018.03.05 .layerBox 추가 -->
 			<div class="cart-popup__dialog">
 				<div class="cart-popup__header">
 					<span class="cart-popup__header-text">후원자 정정
@@ -670,20 +591,43 @@
 				</div>
 				<div class="cart-popup__content payment">
 					<div class="cart-popup__item-info">
-						<p>후원자 번호를 입력하신 후 조회 버튼을 눌러 주세요.</p>
-						<div class="form-wrapper sponsor-pop">
-							<div class="form-group">
-								<label for="num01" class="col-md-3 account-profile__label">후원자 번호</label>
-								<div class="col-md-9 account-profile__value">
-									<p><input type="text" id="num01" name="" placeholder="7480002" value=""></p>
-									<button type="submit" class="bt-akl-blue" >
-										<span>조회</span>
-									</button>
-								</div>
-							</div>
+						<div class="step-wrap">
+							<ul class="checkout-steps num03 clearfix">
+								<li class="checkout-step checkout-steps-active">
+									<span class="checkout-steps-circleactive">1</span>
+									<span class="checkout-steps-text">정정 신청 요청</span>
+								</li>
+								<li class="checkout-step">
+									<span class="checkout-steps-circle">2</span>
+									<span class="checkout-steps-text">정정 승인 중</span>
+								</li>
+								<li class="checkout-step">
+									<span class="checkout-steps-circle">3</span>
+									<span class="checkout-steps-text">정정 완료</span>
+								</li>
+							</ul>
+						 </div>
+						<p class="h4-txt">본인확인</p>
+						<p>후원자 정정 승인은 본인확인을 통해 계속 진행할 수 있습니다.</p>
+						<div class="sponsor-certification">
+							<dl>
+								<dt>휴대폰번호로 본인확인</dt>
+								<dd>고객님 명의로 된 휴대폰을 통해 본인을 확인합니다.</dd>
+								<dd> <button type="button" class="bt-akl-blue">휴대폰번호로 본인확인</button></dd>
+							</dl>
+							<dl>
+								<dt>아이핀으로 본인확인</dt>
+								<dd>고객님의 아이핀과 패스워드를 통해 본인을 확인합니다. </dd>
+								<dd> <button type="button" class="bt-akl-blue">아이핀으로 본인확인</button></dd>
+							</dl>
 						</div>
-						<p class="h4-txt">조회결과</p>
-						<p>아래 후원자로 정정하시려면 로그인 비밀번호 입력 후 저장 버튼을 눌러주세요.</p>
+
+						<div class="certification-complete">
+							<p><span class="noti-suc">본인확인이 완료되었습니다.</span></p>
+							<button type="button" class="bt-akl-blue">확인</button>
+						</div>
+
+						<p class="h4-txt">후원자 정정</p>
 						<div class="table-content">
 							<div class="table-wrapper">
 								<table class="tbl-type1">
@@ -707,24 +651,122 @@
 							</div>
 						</div>
 
-						<div class="form-group">
-							<label for="passWord" class="col-md-5 account-profile__label">로그인 비밀번호</label>
-							<div class="col-md-7 account-profile__value">
-								<input type="password" id="passWord" name="" placeholder="******" value="" class="form-control">
+						<p>변경하실 후원자 번호를 입력하신 입력하신 후 조회 </p>
+						<div class="form-wrapper sponsor-pop">
+							<form action="" method="POST">
+								<div class="form-group">
+									<label for="num01" class="col-md-3 account-profile__label">후원자 번호</label>
+									<div class="col-md-9 account-profile__value">
+										<p><input type="text" id="num01" name="" placeholder="7480002" value=""></p>
+										<button type="submit" class="bt-akl-blue" >
+											<span>조회</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- 2018.03.21 추가 -->
+						<p class="h4-txt">조회결과</p>
+						<!-- //2018.03.21 추가 -->
+						<div class="table-content">
+							<div class="table-wrapper">
+								<table class="tbl-type1">
+									<caption>후원자 정정 : 후원자 번호,후원자 이름 정정 </caption>
+									<colgroup>
+										<col style="width:50%" span="2">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">후원자 번호</th>
+											<th scope="col">후원자 이름</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7480002</td>
+											<td>암**&암**</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- 2018.03.21 추가 -->
+								<div class="search-no-result">조회결과가 없습니다.</div>
+								<!-- //2018.03.21 추가 -->
 							</div>
 						</div>
+					   <!-- 스탭 2단계 정정 승인 중 일때 버튼
+						<p class="h4-txt">변경 할 후원자 정보</p>
+						<div class="table-content">
+							<div class="table-wrapper">
+								<table class="tbl-type1">
+									<caption>변경 할 후원자 정보 : 후원자 번호,후원자 이름 정정 </caption>
+									<colgroup>
+										<col style="width:50%" span="2">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">후원자 번호</th>
+											<th scope="col">후원자 이름</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7480002</td>
+											<td>암**&암**</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						-->
 
-						<ul class="list-type2">
-							<li>이번 달에 주문이 있는 경우는 후원자 정정 및 ABO 전환이 불가능하오니 다음 달에 신청해주시기 바랍니다.</li>
-							<li>후원자 정정 및 ABO 전환을 신청하시면 신청 즉시 정정 및 전환이 완료됩니다.</li>
-							<li>3개월 이내 월 1회만 정정 가능합니다.</li>
-						</ul>
+						<!-- 스탭 3단계 정정 승인 중 일때 버튼
+						<p class="h4-txt">변경 할 후원자 정보</p>
+						<div class="table-content">
+							<div class="table-wrapper">
+								<table class="tbl-type1">
+									<caption>변경 할 후원자 정보 : 후원자 번호,후원자 이름 정정 </caption>
+									<colgroup>
+										<col style="width:50%" span="2">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">후원자 번호</th>
+											<th scope="col">후원자 이름</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7480002</td>
+											<td>암**&암**</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						-->
+						<div class="list-type-wrap">
+							<ul class="list-type2">
+								<li>후원자 정정은 ABO가입 후 3개월 이내에 1회만 하실 수 있습니다.</li>
+								<li>그룹 누적실적 100만 PV이내에서 신청 하실 수 있습니다.</li>
+								<li>정정후원자는 동일 다이아몬드 그룹에서 정정 가능합니다.</li>
+								<li>후원자 정정 신청 절차는 1. 후원자 정정 신청 요청>2. 후원자 정정 승인 중>3. 후원자 정정 완료로 진행 됩니다.</li>
+								<li>ABO님이 후원자 정정 요청을 하시면, 기존 후원자의 승인을 거쳐야만 후원자가 정정됩니다.</li>
+								<li>기존 후원자 승인 가능 기간은 신청자ABO 가입시점을 기준으로 3개월 이내에 완료되어야 합니다.</li>
+								<li>기존 후원자가 후원자 정정 요청을 거절하면 신청자의 후원자 정정 요청은 취소됩니다.</li>
+								<li>요청 이후 현재 스폰서가 승인 전까지 그룹 실적 100만 PV 초과 시 후원자 정정이 취소됩니다.</li>
+								<li>후원자 정정 완료후 익일 ABN Losmap에서 확인 가능 합니다.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<!-- 2018.03.05 위치변경 -->
 				<div class="cart-popup__item-link">
-					<button type="button" class="bt-akl-blue">저장</button>
+					<button type="button" class="bt-akl-blue">정정 신청</button>
 					<button type="button" class="bt-akl-txt">취소</button>
+					<!-- 스탭 2단계 정정 승인 중 일때 버튼
+					<button type="button" class="bt-akl-blue">신청확인</button>
+					<button type="button" class="bt-akl-txt">정정취소</button>
+					-->
 				</div>
 				<!--// 2018.03.05 위치변경 -->
 			</div>
