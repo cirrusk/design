@@ -81,7 +81,7 @@ function orderSummaryFixed(){
 		var conWidth = $('.shipping-delivery .row').width(); //content width
 		var positionRight = (winWidth - conWidth)/2;
 		
-		/* -- 중간 멈춤 지점 찾기 -- */
+		/* -- 중간 멈춤 위치 찾기 -- */
 		//주문결제 div
 		var targetWrapper = $('.shipping-delivery');
 		var targetWrap_top = targetWrapper.offset().top;
@@ -255,6 +255,18 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					'margin-top':'0',
 					'margin-left':'0',
 					'margin-bottom':'12px'
+				});
+			} else if( targetHeight > _winHeight ){
+				$layerContentBox.css({
+					'display':'block',
+					'position':'absolute',
+					'top':'3%',
+					'left':'0',
+					'right':'0',
+					'max-width':'98%',
+					'height':'auto',
+					'margin':'0 auto',
+					'margin-bottom':'3%'
 				});
 			} else {
 				$layerContentBox.css({

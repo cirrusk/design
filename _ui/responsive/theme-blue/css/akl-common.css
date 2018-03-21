@@ -144,6 +144,8 @@ Editor : eunmyoung Noh
 .akl .bt-akl-white.small, .akl .bt-akl-blue.small {min-width:74px;padding:5px 10px 7px;text-align:center;}
 .akl a.bt-akl-white.small, .akl a.bt-akl-blue.small {min-width:74px;padding:8px 20px 7px;text-align:center;}
 
+.akl .btn-area {text-align:center;margin:0 auto;}
+
 /* common > button > quick view */
 .akl .product-list__thum { display:block; position: relative;}
 .akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px;}
@@ -194,7 +196,7 @@ Editor : eunmyoung Noh
 .akl [type="checkbox"]:checked+label::before  { width: 20px;height: 20px;}
 .akl .amway-theme .amw-radio-overlay { width: 20px;height: 20px;}
 .akl .amway-theme input.amw-global-radio:checked +  .amw-radio-overlay:before { width:12px; height:12px; background:#0075a4;}
-.akl .account-profile__label {font-weight: 500;}
+
 .phone-group .control-group { float:left; width:40%}
 .phone-group .form-group { float:right; width:60%; padding-left: 8px;}
 .phone-group:after {content:""; display:block;  clear:both; width: 0; height: 0;}
@@ -245,7 +247,7 @@ Editor : eunmyoung Noh
 .akl .cart-popup__content {padding:0 0;}
 .akl .cart-popup__item-info {height:auto !important;padding:36px 30px 10px;}
 .akl .cart-popup__item-info h3.type2 {font-size:16px;font-weight:500;padding:0 0 13px;margin:0 0;}
-.akl .cbox .cart-popup__dialog .cart-popup__content .cart-popup__item-link {padding:20px 30px 20px;background:#fff;margin-top: 0}
+.akl .cart-popup__item-link {padding:20px 30px 20px;background:#fff;margin:0 auto;text-align:center;}
 .akl .cbox .cart-popup__dialog.bg-white {height:auto;background:#fff;border:1px solid #c0c0c0}
 .akl .cbox .cart-popup__dialog.bg-white .cart-popup__close { padding:0 0; top:10px; right:20px;}
 .akl .cart-popup__close { padding:0 10px; top:12px; right:10px;}
@@ -778,7 +780,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .modify .confirm-password dt { font-size:16px; font-weight: 500; letter-spacing: -1px; margin-bottom:25px;}
 .akl .modify .confirm-password dd .form-group { margin: 0}
 .akl .modify .confirm-password dd .form-group label, .confirm-password dd .form-group div {line-height: 40px}
-.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:30px;  }
+.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:30px;text-align: center;}
 
 /* 마이페이지 > 회원정보변경 */
  .noti-suc { font-size:16px; font-weight:500; padding-left: 22px; font-size:16px; font-weight:500; color:#20893d; background:url('../images/icons/success.png') no-repeat left 3px;}
@@ -787,15 +789,18 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .modify #terms h3 { font-size: 16px; font-weight:500; margin-bottom:20px }
 .akl .modify .col-md-2, .akl .modify .col-md-3, .akl .modify .col-md-4,.akl .modify .col-md-5,.akl .modify .col-md-5, .akl .modify .col-md-7, .akl .modify .col-md-8, .akl .modify .col-md-9,
 .akl .modify .col-md-10{padding-left: 0;}
-.akl .account-profile__panel .icon-minus:before {font-size:22px; font-weight:700;line-height:20px; }
+.akl .account-profile__panel .icon-minus:before {font-size:28px; font-weight:700;line-height:20px;font-family:'Noto Sans KR', sans-serif;}
 .akl .account-profile__panel .text-uppercase { font-size:18px; font-weight:500; letter-spacing:-2px}
 .akl .account-profile__panel .panel-heading a  { display: block; padding: 30px 30px 30px 5px }
 .akl .account-profile__panel .icon-user-new:before,
 .akl .account-profile__panel .icon-shield:before,
 .akl .account-profile__panel .icon-mail:before { color: #008fc5; margin-right: 5px}
 .akl .account-profile .account-profile__label { text-transform:capitalize;}
-.akl .account-profile {font-size: 14px ;font-family:'Noto Sans KR', sans-serif; padding: 0 1.75em 4.5em;}
-.akl .account-profile .account-profile__value, .akl .account-profile .account-profile__editor .form-group {font-size: 14px ;}
+.akl .account-profile {font-size: 14px;font-family:'Noto Sans KR', sans-serif; padding: 0 1.75em 4.5em;}
+.akl .account-profile .account-profile__value, .akl .account-profile .account-profile__editor .form-group {font-size: 14px;}
+.akl .account-profile__label {font-weight: 500;vertical-align:middle}
+.akl .account-profile__value {vertical-align:middle}
+
 .akl .help-block span { font-size: 13px; color: #e11e45; font-weight: 500}
 .akl .account-profile .mobile-phone-form-group .input-part-2 , .account-profile .alternate-phone-form-group .input-part-2 {width:17.2% !important;}
 .akl .address-form-group { margin-bottom:20px}
@@ -817,8 +822,9 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .modify-radio {padding: 30px 0; border-bottom: 1px solid #e3e3e3}
 .akl .modify-form-group {padding: 25px 0 30px;}
 .akl .modify-form-group .form-group{max-width: 400px}
+.akl .modify-form-group .form-group label {font-size:14px;}
 .akl .modify-form-group .form-group label, .akl .modify-form-group .form-group div {line-height: 40px}
-.email-send .bt-akl-blue { margin-bottom:30px}
+.email-send button {vertical-align:middle;}
 .email-send + .list-type5 { padding-top:15px}
 .list-type-wrap { padding-top:20px}
 .sponsor-certification {position:relative; overflow:hidden; margin-top:15px; padding:20px 0; border-top: 1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
@@ -835,8 +841,20 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 #terms .col .line { bottom: 0}
 .akl .icon-user-new02:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}
 .akl .icon-user-new03:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}  
-.akl .account-profile .account-profile__value { padding-top:0;}
-.akl .account-profile .account-profile__editor { padding-top:7px!important;}
+.akl .account-profile .account-profile__value { padding-top:0;vertical-align:middle;}
+.akl .account-profile .account-profile__editor { padding-top:0;vertical-align:middle;}
+.account-profile__editor .form-group .col-md-4.email-id {vertical-align:middle;padding-right:0;}
+.account-profile__editor .form-group .email-id span {display:inline-block;font-size:14px;width:40%;}
+.account-profile__editor .form-group .email-id span input {vertical-align:middle;}
+.account-profile__editor .form-group .email-id span select {vertical-align:middle;}
+.account-profile__editor .form-group .email-id span.at {width:auto;padding:0 3px;}
+.account-profile__editor .form-group span.txt {line-height:2.3em;vertical-align:middle;}
+.account-profile__editor .form-group button {vertical-align:middle}
+.account-profile__editor .form-group .email-dotcom {}
+.account-profile__editor .form-group .email-dotcom select {width:40%;margin-right:5px;text-transform:lowercase}
+
+.preferred-name-form-group, .mobile-phone-form-group, .gender-form-group, .date-of-birth-form-group, .name-form-group, .preferred-name-form-group, 
+.email-form-group, .alternate-phone-form-group, .address-form-group, .preferred-langauge-form-group, .date-of-birth-form-group {padding:5px 0 0}
 
 /* 검색 > 검색어  */
 .popoverword { display: none; position: absolute; top:138px;left: 0;z-index: 1050; width:100%; padding: 1px; text-align: left;background-color:#fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
@@ -1257,52 +1275,52 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .address-form-group .bt-akl-white {right:0;}
 	.akl .account-profile.modify .name-form-group { position: relative;}
 	.akl .account-profile.modify .name-form-group label { position: absolute; left:0; width:200px }
-	.akl .account-profile.modify .name-form-group .account-profile__value { margin-left:100px}
+	.akl .account-profile.modify .name-form-group .account-profile__value { margin-left:100px;}
 
 	.akl .account-profile.modify .mobile-phone-form-group { position: relative;}
 	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0; width:200px }
 	.akl .account-profile.modify .mobile-phone-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .preferred-name-form-group { position: relative;}
-	.akl .account-profile.modify .preferred-name-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .preferred-name-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .preferred-name-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .alternate-phone-form-group { position: relative;}
-	.akl .account-profile.modify .alternate-phone-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .alternate-phone-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .alternate-phone-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .email-form-group { position: relative;}
-	.akl .account-profile.modify .email-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .email-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .email-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .date-of-birth-form-group { position: relative;}
-	.akl .account-profile.modify .date-of-birth-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .date-of-birth-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .date-of-birth-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .preferred-langauge-form-group { position: relative;}
-	.akl .account-profile.modify .preferred-langauge-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .preferred-langauge-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .preferred-langauge-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .mobile-phone-form-group { position: relative;}
-	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .mobile-phone-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .renewal-form-group { position: relative;}
-	.akl .account-profile.modify .renewal-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .renewal-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .renewal-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .gender-form-group { position: relative;}
-	.akl .account-profile.modify .gender-form-group label { position: absolute; left:0; width:200px }
+	.akl .account-profile.modify .gender-form-group label { position: absolute; left:0;width:200px }
 	.akl .account-profile.modify .gender-form-group .account-profile__value { margin-left:100px}
 
 	.akl .account-profile.modify .account-profile__editor.mobile { margin-left:100px}
-	.akl .account-profile.modify .account-profile__editor.mobile .form-group { margin-top: 7px;}
 
-	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{ margin-top: 40px}
+	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{ margin-top:40px}
 	.akl .account-profile .mobile-phone-form-group .input-part-1 .form-control,
 	.akl .account-profile .alternate-phone-form-group .input-part-1 .form-control  { width:35%; min-width:40%; float: left}
 	.akl .account-profile .mobile-phone-form-group .input-part-2,
 	.akl .account-profile .alternate-phone-form-group .input-part-2 { width:58% !important; float:right}
+	.akl .account-profile__editor .form-group span.txt {margin-top:0;padding:0;line-height:0;font-size:14px;}
 
 	/* 검색 > 결과  */
 	.pagination-bar { border-top:0;}
