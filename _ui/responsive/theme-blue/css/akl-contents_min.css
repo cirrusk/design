@@ -71,7 +71,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .wrapper-memb-join #terms h3 .icon-exports {position:static; display:inline-block;}
 .akl .wrapper-memb-join .action {text-align:right;}
 .akl .wrapper-memb-join .action .radio-wrapper { display: inline-block; margin-left: 20px;}
-.akl .wrapper-memb-join .next-control {margin:0 12px;}
+.akl .wrapper-memb-join .next-control {margin:0 12px; text-align:center;}
 .akl #terms .agreement-para-box>p {color:#e11e45; margin-bottom:0}
 .akl #terms .agreement-para-box>p+p {margin-top:5px;}
 .akl .wrapper-memb-join #terms p.bold {font-size:16px;}
@@ -188,17 +188,14 @@ html.scrollLock body {overflow:hidden;}
 .akl .box-agreement-detail {padding-bottom:35px;}
 .akl .box-agreement-detail .space-list-top {margin-top:30px;}
 .akl .box-agreement-detail .form-sub-txt {color:#002f5f;font-weight:500;}
-.akl .box-agreement-detail .form-sub-title + p {margin-top:-5px;margin-bottom:20px}
+.akl .box-agreement-detail .form-sub-title + p {margin-top:-5px;margin-bottom:20px;}
 
-.akl .form-set-email {border:1px solid red}
-.akl .form-set-email>input[type=text] {vertical-align:middle;}
-.akl .form-set-email>.email-input-txt {display:inline-block; vertical-align:middle; padding:0 8px;}
-.akl .form-set-email .email-input1 {}
-.akl .form-set-email .email-input2 {}
-.akl .form-set-email .email-select {}
-.akl .form-set-email .email-btn {}
-
-.akl .form-group.password {border:1px solid blue}
+.akl .form-set-email>span {display:inline-block; width:330px;}
+.akl .form-set-email input[type=text], .akl .form-set-email input[type=password] {width:148px;vertical-align:middle;}
+.akl .form-set-email .email-input-txt {display:inline-block; vertical-align:middle; padding:0 8px; width:33px; box-sizing:border-box; text-align:center;}
+.akl .form-set-email .email-select.form-control, 
+.akl #register-step-page .email-select.form-control {width:148px; margin-left:8px;}
+.akl .form-group.password {}
 
 /* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
 .wrapper-memb-join.prev-step-fold .btn-fold-conts {position:relative; display:block; padding:0 12px; margin-top:-29px;}
@@ -252,9 +249,17 @@ html.scrollLock body {overflow:hidden;}
 	.akl #register-step-page .form-group.overseas-abo .form-control {margin-bottom:10px;}
 	.akl #register-step-page .label-paddingLeft15 .control-label {padding-left:0; margin-bottom:10px;}
 	.akl .wrapper-memb-join #terms h3 a.show-terms2 {display:none;width:0;height:0;}
-
+	.akl #register-step-page #confirm {margin-left:0;}
+		
 	/* 정보입력 */
 	.akl #register-step-page .form-control + .bt-akl-white {margin:10px 0 0 0;}
+	.akl .form-set-email>span {display:block; width:100%; margin-bottom:10px; overflow:hidden;}
+	.akl .form-set-email input[type=text]{float:left; width:45%;}
+	.akl .form-set-email input[type=password] {float:right; width:45%;}
+	.akl .form-set-email .email-input-txt {float:left;display:block; width:10%; box-sizing:border-box; text-align:center; line-height:38px;}
+	.akl .form-set-email .email-select.form-control, 
+	.akl #register-step-page .email-select.form-control {width:45%; margin-left:0;}
+	.akl #register-step-page .form-set-email .form-control + .bt-akl-white {margin:0 0 0 10px;}
 
 	/* 필수-선택 상세(div-table) */
 	.box-conts-tableset .conditions {border: none;}
