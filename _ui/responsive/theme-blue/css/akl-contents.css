@@ -155,6 +155,7 @@ Editor : minjung Koo
 .akl .pdp-info .product-details .item-code,.akl .lip-color-choose-message {font-size:14px;}
 .akl .pdp-info .product-main-info .product-details .price {font-size:34px;letter-spacing:-2px; font-weight:500}
 .akl .lip-color-choose-message { font-weight:500;}
+
 .akl .description-cost {font-size:14px;font-weight:500;margin-left:0;}
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .js-qty-selector label {font-size:14px;font-weight:500;}
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .js-qty-selector input {text-align:center;color:#002f5f;font-size:14px;}
@@ -194,6 +195,9 @@ Editor : minjung Koo
 .akl #pdpCarousel .flex-viewport li {margin-left: 0 !important;}
 .akl .flexslider .flex-direction-nav .flex-next {right: 25px; }
 .akl .flexslider .flex-direction-nav li.flex-nav-prev { left: 10px;}
+
+.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(1){}
+.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(3){display:none;}
 
 /* common > 수량 */
 .akl .opt-quantity {position:relative;display:inline-block;width:130px;}
@@ -304,8 +308,8 @@ Editor : minjung Koo
 /* 제품상세 > 위시리스트 */
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container .dropdown-menu {top:48px !important;}
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container .dropdown-menu ul {max-height:180px;}
-.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container .dropdown-menu ul li {padding:10px 0 10px;line-height:20px;}
-.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container .dropdown-menu ul li label {top:0;font-size:14px;font-weight:500}
+.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container .dropdown-menu ul li {padding:10px 10px 10px 0;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container .dropdown-menu ul li label {top:0;font-size:14px;font-weight:500;}
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions .add-to-shopping-list-container.open:before {height:5px;bottom:-5px;}
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions button {font-size:14px;font-weight:500;padding:0 5px;}
 .akl .add-button-wrap .icon-add-shopping-list, .akl .add-button-wrap.open .icon-add-shopping-list {background:url("../images/akl_common/ico_heart.png") no-repeat;}
@@ -1373,6 +1377,9 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .flexslider .flex-direction-nav .flex-next {right: 10px; }
 	.akl .flexslider .flex-direction-nav li.flex-nav-prev { left: -25px;}
 	
+	.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(1){display:none;}
+	.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(3){display:inline-block;}
+
     /* 제품상세 > button */
     .akl .add_to_cart_form {padding-bottom:20px;}
     .akl .add_to_cart_form a {padding:6px 0;text-align:center;margin:0 0;}
