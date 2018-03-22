@@ -127,7 +127,7 @@
 			self.section_title.text(title_text.join(''));
 			self.section_title.click(function() {
 				self.content.slideToggle(450);
-				
+
 				//수정: 2018.03.13
 				var findParent = $(this).parent();
 				findParent.siblings().removeClass('open');
@@ -225,7 +225,7 @@
 			$('.showHideBtn').hide();
 			$('.noneHideBtn').show();
 		});
-		
+
 		/* 수정: 2018.03.13 (self.section_title 이동)
 		$('.section .title').click(function(){
 			var findParent = $(this).parent('.section');
@@ -272,31 +272,28 @@
 			<a href="publishing_guide_migration.html" class="link-btn2">Migration</a>
 			<a href="publishing_guide_pos.html" class="link-btn3">pos</a>
 		</div>
-		 
+
 	</div>
 </div>
-<div class="body"> 
+<div class="body">
 <!-- ##  가이드  -->
 	<div class="section open"><!-- 열림상태 : open -->
 		  <h2 class="title">Guide</h2>
 		<div class="content">
 			<table border="1">
 				 <colgroup>
-					<col width="8%" /><col width="9%" /><col width="9%" /><col width="6%" /><col width="10%" /> 
-					<col width="3%" /><col width="3%" /><col width="4%" /><col width="3%" /><col width="7%" /> 
-					<col width="7%" /><col width="5%" /><col width="10%" /><col width="*" />
+					<col width="10%" /><col width="10%" />
+					<col width="8%" /><col width="8%" /><col width="8%" /><col width="4%" /><col width="7%" />
+					<col width="7%" /><col width="5%" /><col width="13%" /><col width="*" />
 				</colgroup>
 				<thead>
 					<tr>
 						<th scope="col">1depth</th>
 						<th scope="col">2depth</th>
 						<th scope="col">3depth</th>
-						<th scope="col">화면[TAB/POP]</th> 
-						<th scope="col">File Name(html)</th> 
-						<th scope="col">IE10</th>
-						<th scope="col">IE11</th>
+						<th scope="col">화면[TAB/POP]</th>
+						<th scope="col">File Name(html)</th>
 						<th scope="col">Chrome</th>
-						<th scope="col">Safari</th> 
 						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing tatus</th>
 						<th scope="col">Check Status</th>
 						<th scope="col">담당자</th>
@@ -304,29 +301,95 @@
 						<th scope="col">note</th>
 					</tr>
 				</thead>
-				<tbody> 
-					<tr>
-						<td>&nbsp;</td>
+				<tbody>
+					<!-- <tr>
+						<td class="tit">예시</td>
 						<td></td>
-						<td>&nbsp;</td>
-						<td class="taCenter">&nbsp;</td>
-						<td>&nbsp;</td>
-						<td class="file"><a href="work/component.html" target="_blank"></a></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td> 
-						<td class="statD"></td>
-						<td class="stat"> </td>
-						<td class="taCenter">&nbsp;</td>
-						<td class="taCenter"><!-- 완료날짜 --></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/_ui/pos/html/shop/U10102a.html" target="_blank">U10102a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter">김하나</td>
+						<td class="taCenter">2018.03.21 /<span style="color: #914698;font-weight:bold">2018.00.00</span></td>
 						<td class="note">
-							<p style="color:#ff0000"></p>
+							<p style="color:#ff0000">팝업 U101000_lp 포함</p>
+							<ul class="modify-date">
+								 <li><strong>2018.03.16</strong> 스크립트 정리</li>
+							</ul>
+							<span style="color:#0e000c; font-weight:900; display:block;">태깅ID 추가 완료</span>
 						</td>
+					</tr> -->
+					<tr>
+						<td class="tit">Dash-board</td>
+						<td>캐셔화면</td>
+						<td>메인 (로그인 전)</td>
+						<td></td>
+						<td class="file"><a href="/_ui/pos/html/dsboard/U10001.html" target="_blank">U10001.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter">김하나</td>
+						<td class="taCenter">2018.03.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>메인 (로그인 후)</td>
+						<td></td>
+						<td class="file"><a href="/_ui/pos/html/dsboard/U10002.html" target="_blank">U10002.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter">김하나</td>
+						<td class="taCenter">2018.03.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>키보드 레이어 팝업 Lp</td>
+						<td class="file"><a href="/_ui/pos/html/dsboard/U10003.html" target="_blank">U10003.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter">김하나</td>
+						<td class="taCenter">2018.03.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>고객화면</td>
+						<td>일반결제 메인</td>
+						<td></td>
+						<td class="file"><a href="/_ui/pos/html/dsboard/U10004.html" target="_blank">U10004.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter">김하나</td>
+						<td class="taCenter">2018.03.22</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td>그룹결제 메인</td>
+						<td></td>
+						<td class="file"><a href="/_ui/pos/html/dsboard/U10005.html" target="_blank">U10005.html</a></td>
+						<td class="taCenter"></td>
+						<td class="statD"></td>
+						<td class="stat"></td>
+						<td class="taCenter">김하나</td>
+						<td class="taCenter">2018.03.22</td>
+						<td class="note"></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-	</div> 
+	</div>
 </div>
 </body>
 </html>
