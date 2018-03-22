@@ -173,6 +173,144 @@
 											</script>
 										</div>
 									</div>
+									
+									<!-- 수정 : 2018.03.22 ( #ingredientsBody 위치 이동 > #detailsBody 에 포함) -->
+									<div id="ingredientsBody"  class="abo-multiple-business accordion-panel-collapse panel-collapse collapse" role="tabpanel" aria-labelledby="ingredients">
+										<div class="panel-body">
+											<div class="form-group">
+												<label class="col-md-2 control-label">선택</label>
+												<div class="col-md-10 col-xs-12">
+													<div class="radio-wrapper international-sponsor-content-radio">
+														<label class="amw-radio-wrap radio-label" for="selectOverseasSponsor">
+															<input type="radio" name="radio-21" class="amw-global-radio" id="selectOverseasSponsor">
+															<span class="amw-radio-overlay"></span>
+															<span class="amw-label-radio-text">국제후원자</span>
+														</label>
+													</div>
+													<div class="radio-wrapper international-sponsor-content-radio">
+														<label class="amw-radio-wrap radio-label" for="selectOverseasBiz">
+															<input type="radio" name="radio-21" class="amw-global-radio" checked="checked"  id="selectOverseasBiz">
+															<span class="amw-radio-overlay"></span>
+															<span class="amw-label-radio-text">국제사업자</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-md-2 control-label" for="countryCode">국가코드</label>
+												<div class="col-md-10 col-xs-12">
+													<select class="form-control" id="countryCode">
+														<option>선택</option>
+														<option>Brazil</option>
+														<option>Chinese</option>
+													</select>
+												</div>
+											</div>
+	
+											<!-- 국제후원자 선택시 노출 -->
+											<div id="overseasSponsorhiddenArea" style="display:none"><!-- id는 노출컨텐츠 스크립트 제어용. 개발시 변경가능 -->
+												<div class="form-group overseas-abo">
+													<label class="col-md-2 control-label" for="checkSponsorABO">국제후원자 ABO번호</label>
+													<div class="col-md-8 col-xs-12 ">
+														<input type="text" class="form-control" id="checkSponsorABO">
+														<button class="bt-akl-white">확인</button>
+														<p class="confirm-sucees col-space-top">후원자 정보가 정상적으로 확인되었습니다.</p>
+														<div class="help-block" style="display:block"><span>등록된 후원자와 일치하는 번호가 없습니다. 확인 후 다시 입력해주세요</span></div>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">국제후원자 성명</label>
+													<div class="col-md-10 col-xs-12">최길동
+														<!-- <input type="text" class="form-control"> -->
+													</div>
+												</div>
+												<div class="radio-checklist-group">
+													<p><strong class="st-text">본인은 국제 후원자와 대리 후원자(국내 후원자)를 상단에 가입하였으며, 하기 내용이 사실임을 확인합니다.</strong></p>
+													<p class="st-text-sub">아래 내용을 읽고 확인하신 후, 체크박스 안에 V표시를 하시기 바라며, 이는 자필로 기재하고 서명 또는 기명날인 하신 것과 동일한 효력을 갖습니다.</p>
+													<ul>
+														<li>
+															<input id="overseas-abo-check1" type="checkbox" ng-checked="">
+															<label for="overseas-abo-check1" class="normal inline-label checklabel">본인의 국제 후원자를 개인적으로 알고 있습니다.</label>
+														</li>
+														<li>
+															<input id="overseas-abo-check2" type="checkbox" ng-checked="">
+															<label for="overseas-abo-check2" class="normal inline-label checklabel">국제 후원자로부터 직접 암웨이 사업에 대해 소개를 받았습니다.</label>
+														</li>
+														<li>
+															<input id="overseas-abo-check3" type="checkbox" ng-checked="">
+															<label for="overseas-abo-check3" class="normal inline-label checklabel">본인의 사업을 운영함에 있어 국제 후원자는 국외에서, 대리 후원자는 국내에서 지원을 제공함을 인지합니다.</label>
+														</li>
+														<li>
+															<input id="overseas-abo-check4" type="checkbox" ng-checked="">
+														<label for="overseas-abo-check4" class="normal inline-label checklabel">본인은 명시된 국제 후원자와 지정한 대리 후원자로부터 후원을 받는 것에 동의합니다.</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- //국제후원자 선택시 노출 -->
+	
+											<!-- 국제사업자 선택시 노출 -->
+											<div id="overseasBizhiddenArea" style="display:none"><!-- id는 노출컨텐츠 스크립트 제어용. 개발시 변경가능 -->
+												<div class="form-group overseas-abo">
+													<label class="col-md-2 control-label" for="checkBizABO">국제사업자 ABO번호</label>
+													<div class="col-md-8 col-xs-12 ">
+														<input type="text" class="form-control" id="checkBizABO">
+														<button class="bt-akl-white">확인</button>
+														<p class="confirm-sucees col-space-top">후원자 정보가 정상적으로 확인되었습니다.</p>
+														<div class="help-block" style="display:block"><span>등록된 후원자와 일치하는 번호가 없습니다. 확인 후 다시 입력해주세요</span></div>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">국제사업자 성명</label>
+													<div class="col-md-10 col-xs-12">최길동
+														<!-- <input type="text" class="form-control"> -->
+													</div>
+												</div>
+												<div class="radio-checklist-group">
+													<p><strong class="st-text">본인은 국제 사업을 등록 및 진행함에 있어 하기 내용에 동의함을 확인합니다.</strong></p>
+													<p class="st-text-sub">아래 내용을 읽고 확인하신 후, 체크박스 안에 V표시를 하시기 바라며, 이는 자필로 기재하고 서명 또는 기명날인 하신 것과 동일한 효력을 갖습니다.</p>
+													<ul>
+														<li>
+															<input id="overseas-biz-check1" type="checkbox" ng-checked="">
+															<label for="overseas-biz-check1" class="normal inline-label checklabel">본인은 한국암웨이 윤리강령 및 행동지침과 국내 각종 정책 및 제반 법규를 준수하겠습니다.</label>
+														</li>
+														<li>
+															<input id="overseas-biz-check2" type="checkbox" ng-checked="">
+															<label for="overseas-biz-check2" class="normal inline-label checklabel">현재 등록하는 국내 사업을 본인이 국제 후원해야 하며, 국내에서는 대리 후원자로부터 후원을 받습니다.</label>
+														</li>
+														<li>
+															<input id="overseas-biz-check3" type="checkbox" ng-checked="">
+															<label for="overseas-biz-check3" class="normal inline-label checklabel">본인은 한국암웨이의 ABO 등록 자격 요건을 충족하며, 대한민국에서 암웨이 사업운영이 가능합니다.</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- //국제후원자 선택시 노출 -->
+	
+											<script>
+												$(function(){
+													if( $('#selectOverseasSponsor').prop("checked", true)){
+														$('#overseasSponsorhiddenArea').show();
+														$('#overseasBizhiddenArea').hide();
+													}
+													if( $('#selectOverseasBiz').prop("checked", true)){
+														$('#overseasSponsorhiddenArea').hide();
+														$('#overseasBizhiddenArea').show();
+													}
+	
+													$('#selectOverseasSponsor').click(function(){
+														$('#overseasSponsorhiddenArea').show();
+														$('#overseasBizhiddenArea').hide();
+													});
+													$('#selectOverseasBiz').click(function(){
+														$('#overseasSponsorhiddenArea').hide();
+														$('#overseasBizhiddenArea').show();
+													});
+												});
+											</script>
+										</div>
+									</div>
+									<!-- //수정 : 2018.03.22 ( #ingredientsBody 위치 이동 > #detailsBody 에 포함) -->
 								</div>
 
 							<!-- 사용안함
@@ -193,141 +331,7 @@
 									//tag 수정 : 웹접근성 이슈
 								</div> -->
 
-								<div id="ingredientsBody"  class="abo-multiple-business accordion-panel-collapse panel-collapse collapse" role="tabpanel" aria-labelledby="ingredients">
-									<div class="panel-body">
-										<div class="form-group">
-											<label class="col-md-2 control-label">선택</label>
-											<div class="col-md-10 col-xs-12">
-												<div class="radio-wrapper international-sponsor-content-radio">
-													<label class="amw-radio-wrap radio-label" for="selectOverseasSponsor">
-														<input type="radio" name="radio-21" class="amw-global-radio" id="selectOverseasSponsor">
-														<span class="amw-radio-overlay"></span>
-														<span class="amw-label-radio-text">국제후원자</span>
-													</label>
-												</div>
-												<div class="radio-wrapper international-sponsor-content-radio">
-													<label class="amw-radio-wrap radio-label" for="selectOverseasBiz">
-														<input type="radio" name="radio-21" class="amw-global-radio" checked="checked"  id="selectOverseasBiz">
-														<span class="amw-radio-overlay"></span>
-														<span class="amw-label-radio-text">국제사업자</span>
-													</label>
-												</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-2 control-label" for="countryCode">국가코드</label>
-											<div class="col-md-10 col-xs-12">
-												<select class="form-control" id="countryCode">
-													<option>선택</option>
-													<option>Brazil</option>
-													<option>Chinese</option>
-												</select>
-											</div>
-										</div>
-
-										<!-- 국제후원자 선택시 노출 -->
-										<div id="overseasSponsorhiddenArea" style="display:none"><!-- id는 노출컨텐츠 스크립트 제어용. 개발시 변경가능 -->
-											<div class="form-group overseas-abo">
-												<label class="col-md-2 control-label" for="checkSponsorABO">국제후원자 ABO번호</label>
-												<div class="col-md-8 col-xs-12 ">
-													<input type="text" class="form-control" id="checkSponsorABO">
-													<button class="bt-akl-white">확인</button>
-													<p class="confirm-sucees col-space-top">후원자 정보가 정상적으로 확인되었습니다.</p>
-													<div class="help-block" style="display:block"><span>등록된 후원자와 일치하는 번호가 없습니다. 확인 후 다시 입력해주세요</span></div>
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-md-2 control-label">국제후원자 성명</label>
-												<div class="col-md-10 col-xs-12">최길동
-													<!-- <input type="text" class="form-control"> -->
-												</div>
-											</div>
-											<div class="radio-checklist-group">
-												<p><strong class="st-text">본인은 국제 후원자와 대리 후원자(국내 후원자)를 상단에 가입하였으며, 하기 내용이 사실임을 확인합니다.</strong></p>
-												<p class="st-text-sub">아래 내용을 읽고 확인하신 후, 체크박스 안에 V표시를 하시기 바라며, 이는 자필로 기재하고 서명 또는 기명날인 하신 것과 동일한 효력을 갖습니다.</p>
-												<ul>
-													<li>
-														<input id="overseas-abo-check1" type="checkbox" ng-checked="">
-														<label for="overseas-abo-check1" class="normal inline-label checklabel">본인의 국제 후원자를 개인적으로 알고 있습니다.</label>
-													</li>
-													<li>
-														<input id="overseas-abo-check2" type="checkbox" ng-checked="">
-														<label for="overseas-abo-check2" class="normal inline-label checklabel">국제 후원자로부터 직접 암웨이 사업에 대해 소개를 받았습니다.</label>
-													</li>
-													<li>
-														<input id="overseas-abo-check3" type="checkbox" ng-checked="">
-														<label for="overseas-abo-check3" class="normal inline-label checklabel">본인의 사업을 운영함에 있어 국제 후원자는 국외에서, 대리 후원자는 국내에서 지원을 제공함을 인지합니다.</label>
-													</li>
-													<li>
-														<input id="overseas-abo-check4" type="checkbox" ng-checked="">
-													<label for="overseas-abo-check4" class="normal inline-label checklabel">본인은 명시된 국제 후원자와 지정한 대리 후원자로부터 후원을 받는 것에 동의합니다.</label>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<!-- //국제후원자 선택시 노출 -->
-
-										<!-- 국제사업자 선택시 노출 -->
-										<div id="overseasBizhiddenArea" style="display:none"><!-- id는 노출컨텐츠 스크립트 제어용. 개발시 변경가능 -->
-											<div class="form-group overseas-abo">
-												<label class="col-md-2 control-label" for="checkBizABO">국제사업자 ABO번호</label>
-												<div class="col-md-8 col-xs-12 ">
-													<input type="text" class="form-control" id="checkBizABO">
-													<button class="bt-akl-white">확인</button>
-													<p class="confirm-sucees col-space-top">후원자 정보가 정상적으로 확인되었습니다.</p>
-													<div class="help-block" style="display:block"><span>등록된 후원자와 일치하는 번호가 없습니다. 확인 후 다시 입력해주세요</span></div>
-												</div>
-											</div>
-											<div class="form-group">
-												<label class="col-md-2 control-label">국제사업자 성명</label>
-												<div class="col-md-10 col-xs-12">최길동
-													<!-- <input type="text" class="form-control"> -->
-												</div>
-											</div>
-											<div class="radio-checklist-group">
-												<p><strong class="st-text">본인은 국제 사업을 등록 및 진행함에 있어 하기 내용에 동의함을 확인합니다.</strong></p>
-												<p class="st-text-sub">아래 내용을 읽고 확인하신 후, 체크박스 안에 V표시를 하시기 바라며, 이는 자필로 기재하고 서명 또는 기명날인 하신 것과 동일한 효력을 갖습니다.</p>
-												<ul>
-													<li>
-														<input id="overseas-biz-check1" type="checkbox" ng-checked="">
-														<label for="overseas-biz-check1" class="normal inline-label checklabel">본인은 한국암웨이 윤리강령 및 행동지침과 국내 각종 정책 및 제반 법규를 준수하겠습니다.</label>
-													</li>
-													<li>
-														<input id="overseas-biz-check2" type="checkbox" ng-checked="">
-														<label for="overseas-biz-check2" class="normal inline-label checklabel">현재 등록하는 국내 사업을 본인이 국제 후원해야 하며, 국내에서는 대리 후원자로부터 후원을 받습니다.</label>
-													</li>
-													<li>
-														<input id="overseas-biz-check3" type="checkbox" ng-checked="">
-														<label for="overseas-biz-check3" class="normal inline-label checklabel">본인은 한국암웨이의 ABO 등록 자격 요건을 충족하며, 대한민국에서 암웨이 사업운영이 가능합니다.</label>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<!-- //국제후원자 선택시 노출 -->
-
-										<script>
-											$(function(){
-												if( $('#selectOverseasSponsor').prop("checked", true)){
-													$('#overseasSponsorhiddenArea').show();
-													$('#overseasBizhiddenArea').hide();
-												}
-												if( $('#selectOverseasBiz').prop("checked", true)){
-													$('#overseasSponsorhiddenArea').hide();
-													$('#overseasBizhiddenArea').show();
-												}
-
-												$('#selectOverseasSponsor').click(function(){
-													$('#overseasSponsorhiddenArea').show();
-													$('#overseasBizhiddenArea').hide();
-												});
-												$('#selectOverseasBiz').click(function(){
-													$('#overseasSponsorhiddenArea').hide();
-													$('#overseasBizhiddenArea').show();
-												});
-											});
-										</script>
-									</div>
-								</div>
+								<!-- 수정 : 2018.03.22 ( #ingredientsBody 위치 이동 > #detailsBody 에 포함) -->
 							</div>
 						</div>
 					</div>
@@ -464,27 +468,17 @@
 
 						<!-- 수정: 2018.03.22 (이메일주소 추가, ConnectID 삭제로 설계변경) -->
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="mainOperatorEmail">이메일 주소</label>
+							<label class="col-md-2 control-label" for="mainOperatorEmail">이메일 주소<span class="ico-must-astar">필수</span></label>
 							<div class="col-md-10 col-xs-12">
 								<div class="row">
 									<div class="form-set-email">
-										<input type="text" class="email-input1" id="mainOperatorEmail" title="이메일 아이디 ">
-										<span class="email-input-txt">@</span>
-										<input type="text" class="email-input2" title="직접 이메일 주소 입력">
+										<span>
+											<input type="text" class="email-input1" id="mainOperatorEmail" title="이메일 아이디 "><em class="email-input-txt">@</em><input type="text" class="email-input2" title="직접 이메일 주소 입력">
+										</span>
+										
 										<select class="email-select form-control" title="이메일 주소 선택">
 											<option value="" selected="selected">직접입력</option>
-											<option value="">hanmail.net</option>
-											<option value="">yahoo.co.kr</option>
-											<option value="">hotmail.com</option>
 											<option value="">naver.com</option>
-											<option value="">paran.com</option>
-											<option value="">nate.com</option>
-											<option value="">lycos.co.kr</option>
-											<option value="">dreamwiz.com</option>
-											<option value="">empal.com</option>
-											<option value="">netian.com</option>
-											<option value="">korea.com</option>
-											<option value="">freechal.com</option>
 											<option value="">gmail.com</option>
 										</select>
 										<button type="button" class="email-btn bt-akl-white">이메일 인증</button>
@@ -525,14 +519,13 @@
 							</div>
 						</div>
 
-
 						<!-- 수정: 2018.03.22 (비밀번호 추가, ConnectID 삭제로 설계변경) -->
 						<div class="divider"></div>
 						<h3 class="form-sub-title">비밀번호</h3>
 						<div class="form-group password">
-							<label class="col-md-2 control-label" for="passwordSet">비밀번호<span class="ico-must-astar">필수</span></label>
+							<label class="col-md-2 control-label" for="passwordInput">비밀번호<span class="ico-must-astar">필수</span></label>
 							<div class="col-md-10 col-xs-12">
-								<input type="text" class="form-control" id="passwordSet">
+								<input type="password" class="form-control" id="passwordInput">
 								<p class="txt-input-guide">회원님의 안전한 비밀번호로 영문/숫자 조합 6~8자리 사이로 설정해주세요.</p>
 
 								<ul class="list-type2">
@@ -542,13 +535,12 @@
 							</div>
 						</div>
 						<div class="form-group password">
-							<label class="col-md-2 control-label" for="passwordSet">비밀번호 확인<span class="ico-must-astar">필수</span></label>
+							<label class="col-md-2 control-label" for="passwordRecheck">비밀번호 확인<span class="ico-must-astar">필수</span></label>
 							<div class="col-md-10 col-xs-12">
-								<input type="text" class="form-control" id="passwordSet">
+								<input type="password" class="form-control" id="passwordRecheck">
 							</div>
 						</div>
 						<!-- //수정: 2018.03.22 (비밀번호 추가, ConnectID 삭제로 설계변경) -->
-
 
 						<!-- 사용안함
 						<div class="form-group">
@@ -746,7 +738,7 @@
 						<div class="divider"></div>
 						<div class="box-agreement-detail">
 							<h3 class="form-sub-title">[선택] 마케팅/홍보 목적의 개인정보 수집 및 이용 동의</h3>
-							<p>마케팅/홍보를 위하여 귀하의 개인정보를 이용하는데 동의 하십니까? 동의 거부 시 제품 소개, 프로모션, 이벤트 안내 등의 마케팅/홍보 정보 제공이 제한됩니다.</p>
+							<p>마케팅/홍보를 위하여 귀하의 개인정보를 이용하는데 동의 하십니까? 동의 거부 시 제품 소개, 프로모션, 이벤트 안내 등의 마케팅/홍보 정보 제공이 제한됩니다.</p>
 
 							<div class="box-conts-tableset">
 								<!-- 수정: 2018.03.12 -->
