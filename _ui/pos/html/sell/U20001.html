@@ -31,15 +31,21 @@
     <div id="container">
         <!-- 좌측영역 -->
         <div class="m_cont">
-            <div class="section01">
-                <!-- 고객리스트 -->
-                <div class="name">
+            <!-- 고객리스트 -->
+            <div class="member_list">
+                <span>
+                    <button type="button" class="ico_comm prev02">이전</button>
+                    <button type="button" class="ico_comm next02">다음</button>
+                </span>
+                <span>
                     <a href="#" class="on">홍길동</a>
                     <a href="#">박보검</a>
                     <a href="#">조쉬하트넷</a>
-                </div>
-                <!-- //고객리스트 -->
-                <!-- 상품리스트 -->
+                </span>
+            </div>
+            <!-- //고객리스트 -->
+            <!-- 상품리스트 -->
+            <div class="section01">
                 <div class="list_wrap">
                     <!-- 상품이 10개가 넘을 시 노출  -->
                     <div class="paging">
@@ -129,9 +135,10 @@
                         </table>
                     </div>
                 </div>
-                <!-- //상품리스트 -->
             </div>
+            <!-- //상품리스트 -->
 
+            <!-- 회원정보 및 계산 -->
             <div class="section02">
                 <div class="left">
                     <!-- 검색영역 -->
@@ -154,31 +161,31 @@
                     <!-- 회원정보 -->
                     <div class="member_info">
                         <div class="info_top">
-                            <!-- 비회원시 삭제 -->
+                            <!-- 비회원시 삭제1 -->
                             <em>김*영 회원님</em>
                             <span class="t01">KR2345****</span>
                             <span class="t02">일반결제(복합)</span>
-                            <!-- //비회원시 삭제 -->
+                            <!-- //비회원시 삭제1 -->
                         </div>
                         <div class="info_cont">
                             <div class="ic01">
-                                <!-- 비회원시 삭제 -->
+                                <!-- 비회원시 삭제2 -->
                                 <dl>
                                     <dt>A 포인트</dt>
                                     <dd>100,000P</dd>
                                 </dl>
-                                <!-- //비회원시 삭제 -->
+                                <!-- //비회원시 삭제2 -->
                             </div>
                             <div class="ic02">
-                                <!-- 비회원시 삭제 -->
+                                <!-- 비회원시 삭제3 -->
                                 <dl>
                                     <dt>A/R 금액</dt>
                                     <dd>100,000원</dd>
                                 </dl>
-                                <!-- //비회원시 삭제 -->
+                                <!-- //비회원시 삭제3 -->
                             </div>
                             <div class="ic03">
-                                <!-- 비회원시 삭제 -->
+                                <!-- 비회원시 삭제4 -->
                                 <ul>
                                     <li>
                                         <span>신용카드</span>
@@ -201,7 +208,7 @@
                                         <em>12,000</em>
                                     </li>
                                 </ul>
-                                <!-- //비회원시 삭제 -->
+                                <!-- //비회원시 삭제4 -->
                             </div>
                         </div>
                     </div>
@@ -238,8 +245,23 @@
                     </ul>
                 </div>
             </div>
+            <!-- //회원정보 및 계산 -->
+
+            <!-- 공지사항 -->
+            <div class="notice">
+                <em class="tag01">공지사항</em>
+                <div class="bx_notice">
+                    <ul>
+                        <li>1. 3월 26일  시스템 점검 시스템 점검 시스템이 예정되어 있으니 업부에 착오 없으시길 바랍니다. 문의: 1588 - 0000</li>
+                        <li>2. 3월 26일  시스템 점검 시스템 점검 시스템이 예정되어 있으니 업부에 착오 없으시길 바랍니다. 문의: 1588 - 0000</li>
+                        <li>3. 3월 26일  시스템 점검 시스템 점검 시스템이 예정되어 있으니 업부에 착오 없으시길 바랍니다. 문의: 1588 - 0000</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //공지사항 -->
         </div>
         <!-- //좌측영역 -->
+
         <!-- 우측영역 -->
         <div class="m_right">
             <div class="nav">
@@ -273,11 +295,19 @@
 
 <script type="text/javascript">
 $(function(){
-//bxSlider
+//bxSlider 프로모션
 $('.slide_type01 .inner').bxSlider({
     auto: true,
 	speed: 500,
   });
+
+//bxSlider 공지사항
+$('.bx_notice ul').bxSlider({
+    mode:'vertical',
+    auto: true,
+	speed: 500,
+  });
+
 });
 
 </script>
