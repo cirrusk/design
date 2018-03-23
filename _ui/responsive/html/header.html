@@ -1887,62 +1887,7 @@
 </script>
 <script>
 $(function(){
-
-	//메뉴 정렬용 : 높이값 구하기
-	GNB_gridSize();
-
-	//메뉴 정렬용 플러그인 실행
-	$('.dep2-grid').isotope({
-		layoutMode: 'fitColumns',
-		itemSelector: '.dep2-grid>li'
-	});
-
-	//브랜드샵 클릭시 우측 메뉴 사라짐
-	GNB_sideMenu();
-	//gnbSideMenu();
+	//GNB 메뉴위치 조정하기 2018.03.23
+	GNB_SubDepth_Control();
 });
-function GNB_sideMenu(){
-	var $gnb_depth1 = $('.tab-header-item').find('.tab-toggle');
-	$gnb_depth1.each(function(){
-		$(this).on('click',function(){
-			if($(this).hasClass('itemBrandShop')){
-				$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
-			} else {
-				$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
-
-				gnbSideMenu();
-			}
-		});
-	});
-	$(window).resize(function(){
-		gnbSideMenu();
-	});
-}
-
-function gnbSideMenu(){
-	if($(window).width() < 1101){
-		$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
-	} else if ($(window).width() > 1100){
-		$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
-	}
-}
-function GNB_gridSize(){
-	var gridItem = $('.gnb-nav .dep2-grid').find('>li');
-	gridItem.each(function(){
-		if( $(this).find('.depth3-links').length ){
-			//3차메뉴 높이
-			var dep3Nums = $(this).find('.depth3-links>li').length;
-			var dep3Size = (dep3Nums * 29) + 25;
-
-			//2차메뉴 높이
-			var dep2_Anchor = 24;
-			var dep2Size = dep2_Anchor + dep3Size;
-			$(this).css({ height : dep2Size });
-
-		} else {
-			var dep2BoxSize = 48;
-			$(this).css({ height : dep2BoxSize });
-		}
-	});
-}
 </script>

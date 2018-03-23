@@ -31,7 +31,7 @@ $(function() {
 
 	//약관 더보기 (768이하)
 	terms_ViewAll();
-	
+
 	//주문결제 : floating box
 	orderSummaryFixed();
 
@@ -67,6 +67,68 @@ $(function() {
 	var accordion = new Accordion($('#accordion'), false);
 });
 
+
+
+/* GNB : 메뉴위치 조정하기 */
+function GNB_SubDepth_Control(){
+	//메뉴 정렬용 : 높이값 구하기
+	GNB_gridSize();
+	function GNB_gridSize(){
+		var gridItem = $('.gnb-nav .dep2-grid').find('>li');
+		gridItem.each(function(){
+			if( $(this).find('.depth3-links').length ){
+				//3차메뉴 높이
+				var dep3Nums = $(this).find('.depth3-links>li').length;
+				var dep3Size = (dep3Nums * 29) + 25;
+
+				//2차메뉴 높이
+				var dep2_Anchor = 24;
+				var dep2Size = dep2_Anchor + dep3Size;
+				$(this).css({ height : dep2Size });
+
+			} else {
+				var dep2BoxSize = 48;
+				$(this).css({ height : dep2BoxSize });
+			}
+		});
+	}
+
+	//브랜드샵 클릭시 우측 메뉴 사라짐
+	gnbSideMenu();
+	function gnbSideMenu(){
+		if($(window).width() < 1101){
+			$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
+		} else if ($(window).width() > 1100){
+			$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
+		}
+	}
+
+	GNB_sideMenu();
+	function GNB_sideMenu(){
+		var $gnb_depth1 = $('.tab-header-item').find('.tab-toggle');
+		$gnb_depth1.each(function(){
+			$(this).on('click',function(){
+				if($(this).hasClass('itemBrandShop')){
+					$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
+				} else {
+					$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
+
+					gnbSideMenu();
+				}
+			});
+		});
+		$(window).resize(function(){
+			gnbSideMenu();
+		});
+	}
+
+	//메뉴 정렬용 플러그인 실행
+	$('.dep2-grid').isotope({
+		layoutMode: 'fitColumns',
+		itemSelector: '.dep2-grid>li'
+	});
+}
+
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
 	if (! $('.shipping-delivery-summary').length){ return;}
@@ -76,26 +138,26 @@ function orderSummaryFixed(){
 		var headerHeight = 137;
 		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var topAreaHeight = headerHeight + headerBtmSpace;
-		
-		//target position : right 
+
+		//target position : right
 		var winWidth = $(window).width();
 		var conWidth = $('.shipping-delivery .row').width(); //content width
 		var positionRight = (winWidth - conWidth)/2;
-		
+
 		/* -- 중간 멈춤 위치 찾기 -- */
 		//주문결제 div
 		var targetWrapper = $('.shipping-delivery');
 		var targetWrap_top = targetWrapper.offset().top;
 		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom : 1750
-		
+
 		//주문회원정보 (floating div)
 		var targetObj = $('.shipping-delivery-summary');
 		var targetObj_H = targetObj.outerHeight(true);
-		
+
 		//재설정 위치값
 		var compareTop = targetWrap_btm - targetObj_H; //1063
 		var targetReTOP = compareTop - targetWrap_top + headerHeight;
-		
+
 		if( winWidth > 768 ){
 			if( wScrollTop > compareTop){
 				$('.shipping-delivery-summary').css({
