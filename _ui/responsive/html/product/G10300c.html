@@ -23,15 +23,11 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 	<style>
-		/*가이드임시
+		/*가이드임시*/
 		.amway-theme h1.h1Tit { padding:15px 20px 15px; margin:0 0 20px; border-top: 1px solid #eee; background:#014286; font-size:36px; color:#fff;}
 		.amway-theme h1.h1Tit .s-txt{font-size:16px;font-weight:300;text-transform:capitalize;letter-spacing:-1px;}
-		*/
-		.title-h6,
-		 h1.h1Tit{display:none;}
-		@media (max-width: 768px) {
-			.product-detail-view .title-h6 + .product-advantage{margin-top:25px;padding-top:22px;border-top:1px solid #e3e3e3;}
-			.product-detail-view .product-visual + .title-h6 + .product-advantage{margin-top:22px;padding-top:0;border-top:none;}
+			@media (max-width: 768px) {
+			.product-detail-view .title-h6 {margin-bottom:5px !important;}
 		}
 	</style>
 </head>
@@ -495,89 +491,134 @@
 								<div class="accordion-collapse-wrapper">
 									<div class="product-body-photo">
 										
-										<!-- 제품상세 가이드 : typeC -->
-										<div class="product-detail-view typeC">
-											<h1 class="h1Tit">상품별 타입 구분 : Type C <span class="s-txt">(class typeC로 구분)</span></h1>
-											<p class="title-h6" style="color:#a7240e;padding:20px 0 10px;">Type C 비주얼 bg 이미지 bottom 정렬 : class="bottom" 추가</p> 
-											<!-- visual 영역 -->
-											<div class="product-visual">
-												<div class="visual-bg">
-													<img src="/_ui/responsive/theme-blue/images//akl_product/prod05_bg01.png" class="bottom" alt="">
+										<!-- 제품상세 가이드 : typeA -->
+										<h1 class="h1Tit">제품구성</h1>
+										<div class="product-detail-view typeA">
+
+											<p class="title-h6" style="color:#a7240e;padding:20px 0 10px;">제품구성 갯수 : defalut 4개 </p> 
+											<!-- 제품 구성요소 : 4개일때 -->
+											<div class="product-setup">
+												<div class="detail-title">
+													<strong class="detail-tit">제품<em>구성</em></strong>
+													<p class="detail-info-etc">현대인의 기초 건강을 위한 뉴트리라이트 파운데이션 트리오 번들팩은 뉴트리 파이토 푸로틴 1개, 새몬 오메가 -3 1개, 더블엑스 리필 1개로 구성되어 있으며, <br>번들팩으로 주문 시 뉴트리라이트 쇼핑백(대) 1개가 함께 제공됩니다.</p>
 												</div>
-												<div class="visual-info">
-													<div class="txt-area">
-														<div class="visual-logo">
-															<img src="/_ui/responsive/theme-blue/images//akl_product/logo_artistry.png" alt="NUTRILITE">
+												<ul class="setup-list"><!-- 제품개수 default 4개 4개이하일때 class추가 -->
+													<li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img01.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">뉴트리 파이토 푸로틴</strong>
+															<span class="setup-txt">뉴트리 파이토 푸로틴 순식물성 단백질로 9가지 필수 아미노산 포함 20여 가지 양질의 아미노산 함유</span>
 														</div>
-														<p class="logo-txt">순수함을 지키고 더욱 강력해진 비타민 C 항산화 케어의 시작</p>
-														<div class="visual-tit">인텐시브 스킨케어 <br><strong>어드밴스드 비타민 C + 히알루론산 트리트먼트</strong></div>
-														<div class="visual-txt">한 번의 터치로 시작하는 더블 비타민 C의 강력한 항산화와 더블 히알루로산의 수분으로 탱탱하게 차오르는 탄력 쉐이핑. <br>
-전문적인 피부 관리에서 영감을 받아 탄생한 홈더마 스킨케어 라인 인텐시브에서 아티스트리 최고 스테디셀러의 <br>
-또 한번의 혁신을 직접 만나보세요.</div>
-													</div>
-													<div class="visual-img"><span><img src="/_ui/responsive/theme-blue/images//akl_product/prod14_img01.png" alt=""></span></div>
-												</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li><li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img02.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">새몬 오메가 -3</strong>
+															<span class="setup-txt">새몬 오메가 -3 해양생태계를 고려해 엄선된 원재료와 첨단과학이 만나 자연에 근접한 오메가 -3 제공</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li><li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img03.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">더블엑스 리필</strong>
+															<span class="setup-txt">14가지 비타민, 9가지 무기질은 물론 20여 가지 과일,  채소에서 얻은 식물영양소(부원료) 제공</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li><li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img01.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">뉴트리 파이토 푸로틴</strong>
+															<span class="setup-txt">뉴트리 파이토 푸로틴 순식물성 단백질로 9가지 필수 아미노산 포함 20여 가지 양질의 아미노산 함유</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li>
+												</ul>
 											</div>
-											<!-- //visual 영역 -->
-
-											<!-- 제품장점 -->
-											<p class="title-h6" style="color:#a7240e;padding:70px 0 0;margin:0 auto -10px;">제품상세 Style 6 : 왼쪽(비주얼 이미지) + 오른쪽(텍스트 특징) class에 reverse 추가</p> 
-											<div class="product-advantage">
-												<div class="advantage-box">
-													<strong class="detail-tit">35% 더욱 더 강력해진 <br>항산화력 더블 비타민 C</strong>
-													<p class="advantage-txt">더블 비타민 C가 지친 치부에 집중적인 항산화 작용으로 외부 <br>유해 환경에 의한 손상으로부터 피부 보호에 도움을 줍니다.</p>
-													<ul>
-														<li class="advantage-txt-etc">순수 비타민C  파우더 100% (2제)</li>
-														<li class="advantage-txt-etc">뉴트리라이트 아세로라  체리로부터 온 비타민 C (1제)</li>
-													</ul>
-												</div>
-												<div class="advantage-img"><span class="detail-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod15_img01.png" alt=""></div></span>
-											</div>
+											<!-- //제품 구성요소 : 4개일때 -->
 											
-											<p class="title-h6" style="color:#a7240e;padding:50px 0 0;margin:0 auto -10px;">제품상세 Style 5 : 왼쪽(텍스트 특징) + 오른쪽(비주얼 이미지)</p> 
-											<div class="product-advantage reverse">
-												<div class="advantage-box">
-													<strong class="detail-tit">피부 겉과 속을 케어하는 <br>더블 히알루론산 블렌드</strong>
-													<p class="advantage-txt">자기 무게의 1,000배가량의 수분을 끌어당기는 것으로 알려진 <br>
-피보 속 보습인자 히알루론산을 함유하여 수분력과 탄력도를 <br>
-증진시켜 줍니다.</p>
+											<p class="title-h6" style="color:#a7240e;padding:50px 0 10px;">제품구성 갯수 : 3개일때 class에 divid03 추가</p> 
+											<!-- 제품 구성요소 : 3개일때 -->
+											<div class="product-setup">
+												<div class="detail-title">
+													<strong class="detail-tit">제품<em>구성</em></strong>
+													<p class="detail-info-etc">현대인의 기초 건강을 위한 뉴트리라이트 파운데이션 트리오 번들팩은 뉴트리 파이토 푸로틴 1개, 새몬 오메가 -3 1개, 더블엑스 리필 1개로 구성되어 있으며, <br>번들팩으로 주문 시 뉴트리라이트 쇼핑백(대) 1개가 함께 제공됩니다.</p>
 												</div>
-												<div class="advantage-img"><span class="detail-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod15_img02.png" alt=""></div></span>
+												<ul class="setup-list divid03"><!-- 제품개수 1개일때 divid01 / 제품개수 2개일때 divid02 / 제품개수 3개일때 divid03 -->
+													<li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img01.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">뉴트리 파이토 푸로틴</strong>
+															<span class="setup-txt">뉴트리 파이토 푸로틴 순식물성 단백질로 9가지 필수 아미노산 포함 20여 가지 양질의 아미노산 함유</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li><li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img02.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">새몬 오메가 -3</strong>
+															<span class="setup-txt">새몬 오메가 -3 해양생태계를 고려해 엄선된 원재료와 첨단과학이 만나 자연에 근접한 오메가 -3 제공</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li><li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img03.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">더블엑스 리필</strong>
+															<span class="setup-txt">14가지 비타민, 9가지 무기질은 물론 20여 가지 과일,  채소에서 얻은 식물영양소(부원료) 제공</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li>
+												</ul>
 											</div>
-											<!-- //제품장점 -->
-
-												<p class="title-h6" style="color:#a7240e;padding:50px 0 0;margin:0 auto -30px;">사용순서 : step에 갯수에 따라 넓이를 위해 class에 step05추가</p> 
-												<!-- 박스형 내용 -->
-											<div class="product-process">
-												<strong class="detail-tit">사용순서</strong>
-												<div id="productProcess" class="product-process-step step05">
-													<div class="step-flow">
-														<span class="step-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod16_img01.png" alt=""></span>
-														<span class="step-num">STEP 1</span>
-														<span class="step-txt">스포이드 뚜껑을 열고 함께 동봉되어 있는 비타민 C 캡으로 교체해서 끼워줍니다.</span>
-													</div><div class="step-flow">
-														<span class="step-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod16_img02.png" alt=""></span>
-														<span class="step-num">STEP 2</span>
-														<span class="step-txt">비타민 C 캡을 닫은 후, 상단을 눌러 비타민 C 파우더가 액체에 들어갈 수 있도록 해줍니다.</span>
-													</div><div class="step-flow">
-														<span class="step-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod16_img03.png" alt=""></span>
-														<span class="step-num">STEP 3</span>
-														<span class="step-txt">순수 비타민 C 파우더가 액체에 잘 녹을 수 있도록 30초간 잘 흔들어줍니다.</span>
-													</div><div class="step-flow">
-														<span class="step-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod16_img04.png" alt=""></span>
-														<span class="step-num">STEP 4</span>
-														<span class="step-txt">비타민 C 캡을 제거하고 스포이드 뚜껑을 다시 끼워 줍니다.</span>
-													</div><div class="step-flow">
-														<span class="step-img"><img src="/_ui/responsive/theme-blue/images//akl_product/prod16_img05.png" alt=""></span>
-														<span class="step-num">STEP 5</span>
-														<span class="step-txt">아침/저녁으로 내용물을 충분히 2스포이드 취하여 손바닥에 떨어 뜨린 후 얼굴에 골고루 펴바릅니다.</span>
-													</div>
+											<!-- //제품 구성요소 : 3개일때 -->
+											
+											<p class="title-h6" style="color:#a7240e;padding:50px 0 10px;">제품구성 갯수 : 2개일때 class에 divid02 추가</p> 
+											<!-- 제품 구성요소 : 2개일때 -->
+											<div class="product-setup">
+												<div class="detail-title">
+													<strong class="detail-tit">제품<em>구성</em></strong>
+													<p class="detail-info-etc">현대인의 기초 건강을 위한 뉴트리라이트 파운데이션 트리오 번들팩은 뉴트리 파이토 푸로틴 1개, 새몬 오메가 -3 1개, 더블엑스 리필 1개로 구성되어 있으며, <br>번들팩으로 주문 시 뉴트리라이트 쇼핑백(대) 1개가 함께 제공됩니다.</p>
 												</div>
+												<ul class="setup-list divid02"><!-- 제품개수 1개일때 divid01 / 제품개수 2개일때 divid02 / 제품개수 3개일때 divid03 -->
+													<li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img01.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">뉴트리 파이토 푸로틴</strong>
+															<span class="setup-txt">뉴트리 파이토 푸로틴 순식물성 단백질로 9가지 필수 아미노산 포함 20여 가지 양질의 아미노산 함유</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li><li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img02.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">새몬 오메가 -3</strong>
+															<span class="setup-txt">새몬 오메가 -3 해양생태계를 고려해 엄선된 원재료와 첨단과학이 만나 자연에 근접한 오메가 -3 제공</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li>
+												</ul>
 											</div>
-											<!-- //박스형 내용 -->
-
+											<!-- //제품 구성요소 : 2개일때 -->
+											
+											<p class="title-h6" style="color:#a7240e;padding:50px 0 10px;">제품구성 갯수 : 1개일때 class에 divid01 추가</p> 
+											<!-- 제품 구성요소 : 2개일때 -->
+											<div class="product-setup">
+												<div class="detail-title">
+													<strong class="detail-tit">제품<em>구성</em></strong>
+													<p class="detail-info-etc">현대인의 기초 건강을 위한 뉴트리라이트 파운데이션 트리오 번들팩은 뉴트리 파이토 푸로틴 1개, 새몬 오메가 -3 1개, 더블엑스 리필 1개로 구성되어 있으며, <br>번들팩으로 주문 시 뉴트리라이트 쇼핑백(대) 1개가 함께 제공됩니다.</p>
+												</div>
+												<ul class="setup-list divid01"><!-- 제품개수 1개일때 divid01 / 제품개수 2개일때 divid02 / 제품개수 3개일때 divid03 -->
+													<li>
+														<div class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/prod09_img01.png" alt=""></div>
+														<div class="setup-info">
+															<strong class="setup-tit">뉴트리 파이토 푸로틴</strong>
+															<span class="setup-txt">뉴트리 파이토 푸로틴 순식물성 단백질로 9가지 필수 아미노산 포함 20여 가지 양질의 아미노산 함유</span>
+														</div>
+														<div class="btn-box"><a href="#" class="bt-akl-blue">제품 자세히 보기</a></div>
+													</li>
+												</ul>
+											</div>
+											<!-- //제품 구성요소 : 1개일때 -->
+											
 										</div>
-										<!-- //제품상세 가이드 : typeC -->
+										<!-- //제품상세 가이드 : typeA -->
 										
 									</div>
 								</div>
@@ -1887,28 +1928,9 @@
 				}
 			}
 		});
-		
-		//상품상세 슬라이드
-		$('#productProcess').owlCarousel({
-			loop: true,
-			nav: true,
-			dots: false,
-			margin: 0,
-			items: 2,
-			responsiveClass: true,
-			responsive: {
-				768 : {
-					items: 2
-				},
-				1200 : {
-					items: 5
-				}
-			}
-		});
 
 	});
 	</script>
-	
 </body>
 
 </html>
