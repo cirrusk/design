@@ -1,6 +1,17 @@
 /**
  *
+
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a {padding: 0px; font-size: 14px; font-weight:500; display: block; margin-bottom:;}
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a + .depth3-links { margin:0px;}
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth3-links a {  padding: 0px; font-size: 14px; display: block; margin-bottom:5px; font-weight:400;}
+.tab-pane.gnb-nav .depth2-links>ul {}
+.tab-pane.gnb-nav .depth2-links>ul {display:inline-flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-moz-flex; display:-webkit-flex; display:flex; flex-flow:column wrap; height:330px;}
+.tab-pane.gnb-nav .depth2-links>ul>li{min-height:50px; margin:0; padding:0; width:228px; -webkit-order: 0;-ms-flex-order: 0; order:0;-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;justify-content: space-between;}
+.tab-pane.gnb-nav .depth2-links>ul>li>a {display:block; width:100%; font-size:14px;}
+.tab-pane.gnb-nav .depth2-links>ul>li .depth3-links {padding-bottom:20px;}
+.tab-pane.gnb-nav .depth2-links>ul>li .depth3-links li {display:block;}
  */
+
 /* ----- core css 리셋 ----- */
 #business-page-accordion .panel-title a {padding: 2em 0; display:block;}
 #business-page-accordion .panel-title a span {font-size: 1.25em;font-weight: 600;}
@@ -86,6 +97,8 @@ html.scrollLock body {overflow:hidden;}
 .akl #register-step-page .amway-theme * {font-size:14px;}
 .akl #register-step-page .amway-theme h2.tit-h2 {font-size:18px;}
 
+/* 회원가입 제목 */
+.akl .product-list-page-title >h1 {font-size: 32px; letter-spacing: -2px; margin:0;}
 
 /* 본인확인 > 본인확인 방법 선택 */
 .wrapper-memb-join.step-validation .tit-h2+div {margin-top:36px;}
@@ -193,7 +206,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .form-set-email>span {display:inline-block; width:330px;}
 .akl .form-set-email input[type=text], .akl .form-set-email input[type=password] {width:148px;vertical-align:middle;}
 .akl .form-set-email .email-input-txt {display:inline-block; vertical-align:middle; padding:0 8px; width:33px; box-sizing:border-box; text-align:center;}
-.akl .form-set-email .email-select.form-control, 
+.akl .form-set-email .email-select.form-control,
 .akl #register-step-page .email-select.form-control {width:148px; margin-left:8px;}
 .akl .form-group.password {}
 
@@ -250,14 +263,14 @@ html.scrollLock body {overflow:hidden;}
 	.akl #register-step-page .label-paddingLeft15 .control-label {padding-left:0; margin-bottom:10px;}
 	.akl .wrapper-memb-join #terms h3 a.show-terms2 {display:none;width:0;height:0;}
 	.akl #register-step-page #confirm {margin-left:0;}
-		
+
 	/* 정보입력 */
 	.akl #register-step-page .form-control + .bt-akl-white {margin:10px 0 0 0;}
 	.akl .form-set-email>span {display:block; width:100%; margin-bottom:10px; overflow:hidden;}
 	.akl .form-set-email input[type=text]{float:left; width:45%;}
 	.akl .form-set-email input[type=password] {float:right; width:45%;}
 	.akl .form-set-email .email-input-txt {float:left;display:block; width:10%; box-sizing:border-box; text-align:center; line-height:38px;}
-	.akl .form-set-email .email-select.form-control, 
+	.akl .form-set-email .email-select.form-control,
 	.akl #register-step-page .email-select.form-control {width:45%; margin-left:0;}
 	.akl #register-step-page .form-set-email .form-control + .bt-akl-white {margin:0 0 0 10px;}
 
