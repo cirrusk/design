@@ -1,16 +1,25 @@
 /**
  *
-
+ */
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a {padding: 0px; font-size: 14px; font-weight:500; display: block; margin-bottom:;}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a + .depth3-links { margin:0px;}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth3-links a {  padding: 0px; font-size: 14px; display: block; margin-bottom:5px; font-weight:400;}
-.tab-pane.gnb-nav .depth2-links>ul {}
-.tab-pane.gnb-nav .depth2-links>ul {display:inline-flex; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-moz-flex; display:-webkit-flex; display:flex; flex-flow:column wrap; height:330px;}
-.tab-pane.gnb-nav .depth2-links>ul>li{min-height:50px; margin:0; padding:0; width:228px; -webkit-order: 0;-ms-flex-order: 0; order:0;-webkit-flex: 0 0 auto;-ms-flex: 0 0 auto;flex: 0 0 auto;justify-content: space-between;}
+
+.akl header.main-header .nav-list-item .dep2-grid>li>a {margin-bottom:0 !important; line-height:1.5;}
+.akl header.main-header .nav-list-item .depth2-links a + .depth3-links {margin:5px 0 0 !important;}
+.akl .gnb-nav h5 {margin-bottom:23px}
+
+.tab-pane.gnb-nav .depth2-links>ul {height:320px;}
+.tab-pane.gnb-nav .depth2-links>ul>li {margin:0; padding:0; width:200px; min-height:48px;}
+.tab-pane.gnb-nav.shop-oneForOne .depth2-links>ul>li {width:160px;}
 .tab-pane.gnb-nav .depth2-links>ul>li>a {display:block; width:100%; font-size:14px;}
 .tab-pane.gnb-nav .depth2-links>ul>li .depth3-links {padding-bottom:20px;}
 .tab-pane.gnb-nav .depth2-links>ul>li .depth3-links li {display:block;}
- */
+
+@media (max-width: 1100px) {
+	.tab-pane.gnb-nav .depth2-links>ul>li {width:180px;}
+	.tab-pane.gnb-nav.shop-oneForOne .depth2-links>ul>li {width:140px;}
+}
 
 /* ----- core css 리셋 ----- */
 #business-page-accordion .panel-title a {padding: 2em 0; display:block;}
