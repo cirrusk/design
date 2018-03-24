@@ -15,16 +15,18 @@
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.flexslider.js"></script><!-- 상품상세 전용 : 2018.03.14 (core에서 추가) -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 </head>
-<body class="akl"> 
+<body class="akl">
 <div class="layerWrapper pop-sample"><!-- div.layerWrapper 추가 -->
-	<div class="cbox layerBox popWidM"><!-- popWidS, popWidM, popWidL .layerBox 추가 --> 
+	<div class="cbox layerBox popWidM"><!-- popWidS, popWidM, popWidL .layerBox 추가 -->
 	    <div class="cart-popup__dialog">
 	        <div class="cart-popup__header">
 	            <span class="cart-popup__header-text">팝업 타이틀
@@ -36,18 +38,18 @@
 	        <div class="cart-popup__content payment">
 	            <div class="cart-popup__item-info">팝업 내용
 	            	<p><a href="#" onclick="layerPopOver(this,'.alert-sample');">알럿열기</a></p>
-	            </div> 
+	            </div>
 	        </div>
-	        <div class="cart-popup__item-link"> 
-	            <button type="button" class="bt-akl-blue">주소입력</button> 
-	            <button type="button" class="btn-cancel">취소</button> 
-	        </div> 
+	        <div class="cart-popup__item-link">
+	            <button type="button" class="bt-akl-blue">주소입력</button>
+	            <button type="button" class="btn-cancel">취소</button>
+	        </div>
 	    </div>
 	</div>
 </div>
- 
+
 <!-- alert -->
-<div class="layerWrapper alert-sample"> 
+<div class="layerWrapper alert-sample">
 	<div class="cbox layerBox popWidS">
 		<div class="akl-alt-wrap">
 			<a href="#" class="cart-popup__close">
@@ -57,16 +59,16 @@
 				<p>URL 복사를 완료하였습니다. </p>
 			</div>
 			<div class="cart-popup__item-link commpete">
-				<button type="button" class="bt-akl-blue">확인</button> 
+				<button type="button" class="bt-akl-blue">확인</button>
 			</div>
 		</div>
 	</div>
-</div> 
- 
- 
-<script type="text/javascript"> 
+</div>
+
+
+<script type="text/javascript">
     $(function() {
-    	layerPopOver('','.pop-sample'); 
+    	layerPopOver('','.pop-sample');
     });
 
 </script>
