@@ -1,4 +1,4 @@
-$(function() {
+$(function(){
 	//계좌관리 자동이체계좌 등록 팝업
 	function close_accordion_section() {
 		$('.akl-accordion .accordion-section-title').removeClass('active');
@@ -66,68 +66,6 @@ $(function() {
 
 	var accordion = new Accordion($('#accordion'), false);
 });
-
-
-
-/* GNB : 메뉴위치 조정하기 */
-function GNB_SubDepth_Control(){
-	//메뉴 정렬용 : 높이값 구하기
-	GNB_gridSize();
-	function GNB_gridSize(){
-		var gridItem = $('.gnb-nav .dep2-grid').find('>li');
-		gridItem.each(function(){
-			if( $(this).find('.depth3-links').length ){
-				//3차메뉴 높이
-				var dep3Nums = $(this).find('.depth3-links>li').length;
-				var dep3Size = (dep3Nums * 29) + 25;
-
-				//2차메뉴 높이
-				var dep2_Anchor = 24;
-				var dep2Size = dep2_Anchor + dep3Size;
-				$(this).css({ height : dep2Size });
-
-			} else {
-				var dep2BoxSize = 48;
-				$(this).css({ height : dep2BoxSize });
-			}
-		});
-	}
-
-	//브랜드샵 클릭시 우측 메뉴 사라짐
-	gnbSideMenu();
-	function gnbSideMenu(){
-		if($(window).width() < 1101){
-			$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
-		} else if ($(window).width() > 1100){
-			$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
-		}
-	}
-
-	GNB_sideMenu();
-	function GNB_sideMenu(){
-		var $gnb_depth1 = $('.tab-header-item').find('.tab-toggle');
-		$gnb_depth1.each(function(){
-			$(this).on('click',function(){
-				if($(this).hasClass('itemBrandShop')){
-					$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
-				} else {
-					$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
-
-					gnbSideMenu();
-				}
-			});
-		});
-		$(window).resize(function(){
-			gnbSideMenu();
-		});
-	}
-
-	//메뉴 정렬용 플러그인 실행
-	$('.dep2-grid').isotope({
-		layoutMode: 'fitColumns',
-		itemSelector: '.dep2-grid>li'
-	});
-}
 
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
@@ -201,6 +139,7 @@ function popupGalleryIMG(){
 		});
 	});
 }
+
 /* 제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정 */
 function videodSize(){
 	var _video = $('.flexslider#pdpImg').find('.video-wrapper');
@@ -218,22 +157,6 @@ function videodSize(){
 		vdSize();
 	});
 }
-
-/* 퀵링크 */
-function quickLinks(){
-	var $qLinkBTN = $('.brand-btn');
-	$qLinkBTN.on('click',function(){
-		var $anchorList = $(this).next();
-
-		if( $anchorList.is(':hidden')){
-			$(this).addClass('selected');
-			$anchorList.slideDown(200);
-		} else {
-			$(this).removeClass('selected');
-			$anchorList.hide();
-		}
-	});
-};
 
 /* 약관 더보기 (768이하) */
 function terms_ViewAll(){
@@ -261,6 +184,172 @@ function loadingLayer(){
 function loadingLayerClose(){
 	$('#loading').remove();
 	return false;
+}
+
+/** ------------------------------------------
+ *  @GNB_SubDepth_Control
+ *  - 메뉴에 따른 사이드 메뉴 노출 컨트롤
+ *  - Depth2 높이에 따라 위치(absolute) 지정 : 플러그인(isotope) 실행
+ * -------------------------------------------
+ */
+function GNB_SubDepth_Control(){
+	if(! $('#overlay-menu-wrapper')){ return; }
+
+	var $SubDepthBox = $('#gnbSubDepthBox');
+	var $2DepthPanel = $SubDepthBox.find('.tab-pane'); //depth2 공통 class
+	var $2Dep_sideMenu = $SubDepthBox.find('.js-gnbSide-menu'); //오른쪽 메뉴
+	var $2Dep_brandShop = $SubDepthBox.find(".tab-pane.brand-shop"); //브랜드샵
+
+	/* Depth2 메뉴 클릭 시 */
+	var $menuLeftTab = $('#overlay-menu-wrapper .tab-header-list').find('a.tab-toggle');
+	$menuLeftTab.each(function(){
+		var _MenuID = $(this).attr('href');
+
+		$(this).on('click', function(e){
+			e.preventDefault();
+
+			//서브메뉴 열기
+			$2DepthPanel.removeClass('active');
+			$SubDepthBox.find(_MenuID).addClass('active');
+
+			//브랜드샵 클릭 시, 오른쪽 메뉴 숨김
+			if($(this).hasClass('itemBrandShop')){
+				$2Dep_sideMenu.hide();
+			} else {
+				$2Dep_sideMenu.show();
+				gnbSideMenu();
+			}
+		});
+	});
+
+	/* 오른쪽 메뉴 숨기기 */
+	gnbSideMenu();
+	function gnbSideMenu(){
+		//메뉴영역 확보위해 메뉴 숨김
+		var _winWidth = $(window).width();
+		if( _winWidth < 1051){
+			$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
+		} else if ( _winWidth > 1050){
+			$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
+		}
+	}
+	$(window).resize(function(){
+		gnbSideMenu();
+
+		//브랜드샵 활성화상태에서 resize 되면 숨김
+		if ($2Dep_brandShop.hasClass('active')){
+			$2Dep_sideMenu.hide();
+		}
+	});
+
+	/* 메뉴 정렬용 : 높이값 구하기*/
+	GNB_gridSize();
+	function GNB_gridSize(){
+		var gridItem = $('.gnb-nav .dep2-grid').find('>li');
+		gridItem.each(function(){
+			if( $(this).find('.depth3-links').length ){
+				//3차메뉴 높이
+				var dep3Nums = $(this).find('.depth3-links>li').length;
+				var dep3Size = (dep3Nums * 29) + 25;
+
+				//2차메뉴 높이
+				var dep2_Anchor = 24;
+				var dep2Size = dep2_Anchor + dep3Size;
+				$(this).css({ height : dep2Size });
+			} else {
+				var dep2BoxSize = 48;
+				$(this).css({ height : dep2BoxSize });
+			}
+		});
+	}
+
+	/* 메뉴 높이에 따라 메뉴위치 변경(플러그인 실행) */
+	$('.dep2-grid').isotope({
+		layoutMode: 'fitColumns',
+		itemSelector: '.dep2-grid>li'
+	});
+}
+
+/** ------------------------------------------
+ *  퀵링크
+ *  - 바로가기 컨트롤(.footerShotcut.pc)
+ *  - qkLinkAlign()
+ * -------------------------------------------
+ */
+function quickLinks(){
+	var $qLinkBTN = $('.brand-btn');
+	$qLinkBTN.on('click',function(){
+		var $anchorList = $(this).next();
+
+		if( $anchorList.is(':hidden')){
+			$(this).addClass('selected');
+			$anchorList.slideDown(200);
+		} else {
+			$(this).removeClass('selected');
+			$anchorList.hide();
+		}
+	});
+
+	//#accordion 메뉴위치 정렬하기
+	qkLinkAlign();
+};
+
+function qkLinkAlign(){
+	function qkLink_getSize(){
+		var qLinkWrapper = $('#accordion');
+		var qLinkWrapper_width = qLinkWrapper.outerWidth();
+		var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
+
+		qLinkWrapper.css({width:qLinkWrapper_width, height:qLinkWrapper_height});
+
+		var qLinkItem = qLinkWrapper.find('.quick-links-item');
+		qLinkItem.each(function(){
+			var itemWidth = $(this).width();
+			var itemHeight = $(this).outerHeight(true);
+
+			var qHeader = $(this).find('.quick-links-header');
+			var qHeaderHeight = qHeader.outerHeight(true);
+			var qPanel  = $(this).find('.panel-collapse');
+
+			if(qPanel.length){
+				$(this).css({width:itemWidth, height:itemHeight});
+			} else {
+				$(this).css({width:itemWidth, height:qHeaderHeight});
+			}
+		});
+	}
+
+	function qkLink_sizeReset(){
+		var qLinkWrapper = $('#accordion');
+		qLinkWrapper.attr('style','');
+		qLinkWrapper.find('.quick-links-item').attr('style','');
+	}
+
+	function qLinkItem_Align(){
+		/* 메뉴 높이에 따라 메뉴위치 변경(플러그인 실행)*/
+		$('#accordion').isotope({
+			layoutMode: 'fitColumns',
+			itemSelector: '.quick-links-item'
+		});
+	}
+
+	function qLinkItem_Align_Destroy(){
+		$('#accordion').isotope('destroy'); //플러그인 해제
+	}
+
+	$(window).resize(function(){
+		var _winWidth = $(window).width();
+		if( _winWidth > 768 ){
+			qkLink_getSize();
+			setTimeout(function(){
+				qLinkItem_Align();
+			},300)
+		}
+		else if( _winWidth < 769 ){
+			qkLink_sizeReset();
+			qLinkItem_Align_Destroy();
+		}
+	});
 }
 
 /** ------------------------------------------
