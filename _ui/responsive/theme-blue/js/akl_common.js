@@ -337,7 +337,8 @@ function qkLinkAlign(){
 		$('#accordion').isotope('destroy'); //플러그인 해제
 	}
 
-	$(window).resize(function(){
+	run_qLinkAlign();
+	function run_qLinkAlign(){
 		var _winWidth = $(window).width();
 		if( _winWidth > 768 ){
 			qkLink_getSize();
@@ -345,10 +346,14 @@ function qkLinkAlign(){
 				qLinkItem_Align();
 			},300)
 		}
-		else if( _winWidth < 769 ){
+		else {
 			qkLink_sizeReset();
 			qLinkItem_Align_Destroy();
 		}
+	}
+
+	$(window).resize(function(){
+		run_qLinkAlign();
 	});
 }
 
