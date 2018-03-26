@@ -269,7 +269,7 @@
 														<div class="add_to_cart_form type3"><!-- 2018.03.06 form태그를 div로 변경 -->
 															<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
 															<input type="hidden" name="productCodePost" value="119889" />
-															<button id="" class="bt-akl-blue large">설치주문</button>
+															<button id="sns-notice" class="bt-akl-blue large">설치주문</button><!-- sns공유알림 팝업 2018.03.26 -->
 														</div>
 
 														<div class="add_to_cart_form type3"><!-- 2018.03.06 form태그를 div로 변경 -->
@@ -1376,6 +1376,27 @@
 	</div>
 	<!-- //장바구니 담기 팝업 -->
 
+	<!-- SNS 공유 알림 팝업 2018.03.26 -->
+	<div class="layerWrapper sns_pop">
+		<div class="cbox layerBox popWidS">
+			<div class="cart-popup__dialog bg-white">
+				<div class="cart-popup__header-text2">SNS 공유 알림
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기">
+					</a>
+				</div>
+				<div class="cart-popup__content">
+					<div class="cart-popup__item-info">
+						<p>한국암웨이 ABN에서 서비스되는 일체의 콘텐츠에 대한 지적 재산권은 한국암웨이㈜에 있으며, 임의로 자료를 수정/변경하여 사용하거나, 기타 개인의 영리 목적으로 사용할 경우에는 지적 재산권 침해에 해당하는 사안으로, 그 모든 법적 책임은 콘텐츠를 불법으로 남용한 개인 또는 단체에 있습니다.</p>
+
+						<p>모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //SNS 공유 알림 팝업 -->
+
 	<!-- 위시리스트 추가 팝업 -->
 	<div class="cbox wishListAdd popWidM">
 		<div class="cart-popup__dialog">
@@ -1752,6 +1773,11 @@
 		$('.quick-view-btn').click(function(event) {
 			event.preventDefault();
 			layerPopOver(this,'.QUICK_VIEW_pop');
+		});
+
+		$('#sns-notice').click(function(event) {
+			event.preventDefault();
+			layerPopOver(this,'.sns_pop');
 		});
 		
 		//상단 제품이미지 롤링
