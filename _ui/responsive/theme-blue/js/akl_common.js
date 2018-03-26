@@ -300,21 +300,25 @@ function qkLinkAlign(){
 		var qLinkWrapper_width = qLinkWrapper.outerWidth();
 		var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
 
-		qLinkWrapper.css({width:qLinkWrapper_width, height:qLinkWrapper_height});
+		qLinkWrapper.css({width:'880px', height:qLinkWrapper_height});
 
 		var qLinkItem = qLinkWrapper.find('.quick-links-item');
 		qLinkItem.each(function(){
-			var itemWidth = $(this).width();
-			var itemHeight = $(this).outerHeight(true);
-
 			var qHeader = $(this).find('.quick-links-header');
-			var qHeaderHeight = qHeader.outerHeight(true);
 			var qPanel  = $(this).find('.panel-collapse');
 
-			if(qPanel.length){
+			var qHeaderHeight = 31; // p
+			var qPanel_li_Num = qPanel.find('li').length;
+			var qPanel_li_Height = 28
+			var itemWidth = 200;
+			var itemHeight;
+
+			if ( qPanel.length ){
+				itemHeight = qHeaderHeight + (qPanel_li_Num * qPanel_li_Height); //헤더 p + 서브링크 ul
 				$(this).css({width:itemWidth, height:itemHeight});
 			} else {
-				$(this).css({width:itemWidth, height:qHeaderHeight});
+				itemHeight = qHeaderHeight;
+				$(this).css({width:itemWidth, height:itemHeight});
 			}
 		});
 	}
