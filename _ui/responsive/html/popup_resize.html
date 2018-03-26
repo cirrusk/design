@@ -53,27 +53,28 @@
 				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
 				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
 				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
 				</div>
 				<!-- //팝업내용 -->
 
 			</div>
+
+			<!-- 버튼 영역
 			<div class="cart-popup__item-link">
 				<button type="button" class="bt-akl-blue">확인</button>
 				<button type="button" class="btn-cancel">취소</button>
-			</div>
+			</div> -->
+
+			<!-- 오늘 하루 그만 열기 -->
 			<div class="layer-bottom-wrapper">
 				<div class="left-box">
-					<input id="notOpen_days" type="checkbox"><label for="notOpen_days" class="normal inline-label checklabel">7일동안 열지 않기</label>
+					<input id="notOpen_ndays" type="checkbox"><label for="notOpen_ndays" class="normal inline-label checklabel">7일동안 보이지 않음</label>
 				</div>
 				<div class="right-box">
-					<input id="notOpen_today" type="checkbox"><label for="notOpen_today" class="normal inline-label checklabel">오늘 하루 보지 않기</label>
+					<button type="button" class="not-open-today">오늘 하루 그만 열기</button>
 				</div>
 			</div>
+			<!-- //오늘 하루 그만 열기 -->
+
 		</div>
 	</div>
 </div>
@@ -82,7 +83,6 @@
 	$(function() {
 		layerPopOver('','.pop-sample');
 	});
-
 </script>
 </body>
 
