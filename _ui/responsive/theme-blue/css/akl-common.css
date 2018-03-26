@@ -258,7 +258,7 @@ Editor : eunmyoung Noh
 .akl #videobox #cboxTitle .headline {font-size: 22px;line-height: 22px; font-weight:500; font-family:'Noto Sans KR', sans-serif; color:#002f5f; letter-spacing: -1px;}
 .akl .video-pop { background:#fff; display:block; margin:0 auto; width:100%; height:600px; border:1px solid #c0c0c0; }
 .akl .popup-video-preview__content { padding:112px 40px 0}
-.akl #videobox .popup-video-preview__content .video-cont { display: table; position: relative; }
+.akl #videobox .popup-video-preview__content .video-cont { display: table; position: relative; width: 100%; }
 .akl #videobox .popup-video-preview__content .video-cont span { display:table-cell; height:396px; vertical-align: middle;}
 .akl .popup-video-preview__content .video-preview__img { height:100%;}
 .akl .popup-video-preview__content .video-preview__play {position:absolute;top:50%;left:50%;margin-left:-50px;margin-top:-50px;}
@@ -267,6 +267,8 @@ Editor : eunmyoung Noh
 .akl .view-sns div {display:inline-block;width:25px;height:25px;margin-left:8px;}
 .akl .view-sns div img {width:100%;}
 .akl .view-sns div:first-child {margin-left:0;}
+ .video-wrapper { position: relative;padding-bottom: 56.25%; height: 0;width: 100%;}
+.video-wrapper iframe{ position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 
 /* cmmon > popup > QUICK VIEW 팝업 */
 .QUICK_VIEW_pop .cart-popup__header-text { text-transform:none; letter-spacing: -1px; }
