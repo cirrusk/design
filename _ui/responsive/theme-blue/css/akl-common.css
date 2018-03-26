@@ -571,13 +571,8 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 /* 퀵리스트 수정 : 2018.03.26 (시작) */
 .akl .container .row.footer-quick {overflow:visible;}
 .akl .qlink-left-box {float:left; width:880px; padding-right:15px;}
-.akl .quick-links-item {width:200px;}
 .akl .qlink-right-box {float:left; width:420px;}
-@media (max-width: 768px) {
-	.akl .qlink-left-box, .akl .qlink-right-box {float:none; width:auto;}
-	.akl .quick-links-item {width:100%;}
-}
-/* 퀵리스트 수정 : 2018.03.26 (끝) */
+.akl .quick-links-item {width:200px;}
 
 /*** main ***/
 .akl .category-success-story .col-sm-12:nth-of-type(1),
@@ -1183,17 +1178,29 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .akl .footerShotcut.mob { display:block;}
     .akl .footerShotcut.mob .form-control { width: 100%}
 
+	/* 사용안함 2018.03.26
 	.quick-links-header.akl-foot { padding-left: 15px;margin-bottom:0; }
 	.panel-collapse + .quick-links-header.akl-foot { margin-top:0; }
 	.quick-links-header.akl-foot.mob1 { padding-top:10px ;  border-top: 1px solid rgba(218, 218, 218, 0.8);}
 	.quick-links-header.akl-foot.mob2 { padding-top:10px ;padding-bottom:10px ; border-top: 1px solid rgba(218, 218, 218, 0.8);}
-	.quick-links-header.akl-foot.mob4 { padding-top:10px; padding-bottom:10px ;border-top: 1px solid rgba(218, 218, 218, 0.8);}
+	.quick-links-header.akl-foot.mob4 { padding-top:10px; padding-bottom:10px ;border-top: 1px solid rgba(218, 218, 218, 0.8);} */
+
+	/* 퀵리스트 수정  2018.03.26 */
+	.akl .container .row.footer-quick {overflow:initial;}
+	.akl .qlink-left-box {padding-right:0;}
+	.akl .qlink-left-box, .akl .qlink-right-box {float:initial; width:auto;}
+	.akl .quick-links-header {padding:12px 15px 2px;}
+	.akl .quick-links-header:before {padding-left:7px;}
+	.akl .quick-links-misc { display:block; clear:both;float:initial; padding:30px 15px 0;}
 	.akl .quick-links ul ul{ padding-bottom: 10px;}
-	.quick-links-header.akl-foot:before { display:none}
+	.akl .quick-links-item {width:100%;}
+	.akl .quick-links-item ul {padding-left:37px;}
+	.quick-links-header.akl-foot {padding-left:37px;}
+	.quick-links-header.akl-foot:before {display:none}
 
 	.certification { text-align:center}
 	.certification a {display:none}
-	.certification a:last-child {display:inline-block; }
+	.certification a:last-child {display:inline-block;}
 
     /*** main ***/
     .akl .category-success-story .col-sm-12:nth-of-type(1),
