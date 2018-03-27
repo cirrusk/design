@@ -212,6 +212,49 @@ html.scrollLock body {overflow:hidden;}
 .form-group .select-gender .radio-wrapper {display:inline-block;}
 .form-group .select-gender .radio-wrapper + .radio-wrapper {margin-left:40px;}
 
+/* 마이페이지 - 맞춤메시지 */
+.akl .message-center-wrapper {padding:30px 30px 0; font-family:'Noto Sans KR', sans-serif;}
+.akl .message-title {position:relative;padding:0;font-size:18px;letter-spacing:-2px;font-weight:500;}
+.akl .message-title:after {position:absolute; top:3px; left:-30px; content:''; display:block; width:20px; height:20px; background:#88cbe4 url('../images/akl_common/ico_message_center.png') no-repeat left top;}
+.akl .message-title-description {margin-bottom:0; padding:12px 0 36px;font-size:14px;}
+.akl .message-center-list {padding:0 30px; margin-top:10px;}
+.akl .message-center-wrapper .messages-numb {margin-bottom:27px; color:#0075a4;font-size:14px;font-weight:500;}
+.akl a.type-tel {color:#002f5f;font-weight:500; cursor:default;}
+.akl .list-type2.tline {padding-top:20px; border-top:1px solid #dadada;}
+
+.akl .tbl-list-board .all-ak-check {margin:0;}
+.tbl-list-board {display:table; width:100%; box-sizing:border-box;}
+.tbl-list-board .list-tr {display:table-row;}
+.tbl-list-board .list-tr:nth-of-type(odd){ background:#f4f4f4}
+.tbl-list-board .list-tr>div{display:table-cell; padding:23px 15px 20px; box-sizing:border-box; vertical-align:middle; font-size:14px;}
+.tbl-list-board .list-tr>div>span {display:inline-block;}
+.tbl-list-board .list-tr.type-thead>div {padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; border:1px solid #e3e3e3; border-width:1px 0;}
+
+.tbl-list-board .field-name {width:30%}
+.tbl-list-board .field-memo .th-txt.tt-title {width:80%;}
+.tbl-list-board .field-memo {width:70%}
+
+@media (max-width: 768px) {
+	.tbl-list-board {display:block;}
+	.tbl-list-board .list-tr {display:block;border-bottom:1px solid #e3e3e3;}
+	.tbl-list-board .list-tr:nth-of-type(odd){ background:none}
+	.tbl-list-board .list-tr>div{display:block;}
+	.tbl-list-board .list-tr>div>span {vertical-align:middle;}	
+	
+	.tbl-list-board .list-tr.type-thead {overflow:hidden; border:1px solid #e3e3e3; border-width:1px 0; background:#f4f4f4;}
+	.tbl-list-board .list-tr.type-thead>div {width:auto;float:left;border:0}
+	.tbl-list-board .list-tr.type-thead .th-txt.tt-title {display:inline-block; width:auto;}
+	.tbl-list-board .list-tr:not(.type-thead)>.field-memo {padding-top:0;}
+	
+	.tbl-list-board .field-name, .tbl-list-board .field-memo {width:100%;}
+	.tbl-list-board .field-name .th-txt {display:inline-block;}
+	.tbl-list-board .field-memo .th-txt.tt-title {display:block;width:100%}
+}
+
+
+
+
+
 @media (min-width: 769px) {
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox {padding:30px !important;}
@@ -287,6 +330,22 @@ html.scrollLock body {overflow:hidden;}
 	.akl .wrapper-memb-join.prev-step-fold .btn-fold-conts h2.tit-h2 {padding:30px 10px 28px;}
 	.akl .wrapper-memb-join.prev-step-fold #register-step-page .form-control + .bt-akl-white {margin-left:0 !important;}
 	.akl .wrapper-memb-join.prev-step-fold .new-ibo-reg.fold-hiddenbox .boxtype-form-sponsor {border-top:1px solid #e3e3e3;}
+	
+	/* 마이페이지 - 맞춤메시지 */
+	.akl .message-center-wrapper {padding:30px 0 0;}
+	.akl .message-title:after {left:0;}
+	.akl .message-title, .akl .message-title-description {padding-left:30px;}
+	.akl .message-center-wrapper .messages-numb {margin-bottom:20px;}
+	.akl .message-center-list {padding:0; margin-top:0;}
+	.akl .message-center-list .shipping-top {margin:0 0 10px}
+	.akl .message-center-wrapper .shipping-top p {margin:0}
+	
+	/* 마이페이지 - 맞춤메시지 > 검색 - select+input */
+	.form-s.type-board {display:table;width:100%;}
+	.form-s.type-board>span {display:table-cell;box-sizing:border-box;}
+	.form-s.type-board>span * {vertical-align:top}
+	.form-s.type-board .box-select {width:40%; padding-right:12px;}
+	.form-s.type-board .box-submit {width:60%; position:relative;}
 }
 
 @media (max-width: 320px) {
