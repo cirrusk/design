@@ -582,9 +582,14 @@ Editor : minjung Koo
 .po-list {padding:10px 0 0}
 .po-list p.po-timag {font-size:14px;padding:30px 0 5px;margin:0 0;font-weight:500}
 .point-management .form-group {padding:15px 0 0}
-.point-management .form-group .date-range-select {width:247px !important;margin-top:10px !important;}
+.point-management .form-group .date-range-select {/*width:247px !important;*/margin-top:10px !important;}
 .point-management .date-form-group {padding:10px 0 0}
-.point-management .date-form-group button {margin-left:10px;}
+.point-management .date-form-group button {margin-left:10px; min-width: 95px}
+.point-management .form-group .box-date-select {width:200px ;} 
+.point-management .form-group .box-date-select input{width:100% ;} 
+.point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 0 10px;}
+.akl .datepicker-dropdown:before,
+.akl .datepicker-dropdown:after { display: none}
 
 .table-point-wrapper {width:100%;padding:28px 0 0}
 .table-point-wrapper ul {width:100%;border-top:1px solid #e3e3e3;}
@@ -1535,7 +1540,9 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	/* 포인트관리 */
 	.point-management .form-group {padding:0 0 10px}
 	.point-management .form-group .date-range-select {width:100% !important;margin-top:5px !important;}
-	.point-management .date-form-group button {margin-left:0;margin-top:10px;}
+	.point-management .date-form-group button {margin-left:0;margin-top:10px;} 
+	.point-management .form-group .box-date-select {width:100% ;}  
+    .point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 10px auto}
 
 	.table-point-wrapper ul li.thead-tit {display:none;}
 	.table-point-wrapper ul li.tbody div {display:block;}
