@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/_ui/pos/css/common.css">
+    <script type="text/javascript" src="/_ui/pos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/_ui/pos/js/common.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+$(function(){
+    pop_open("#lay1"); // 레이어팝업 호출 함수
+    // pop_close("#lay1"); 레이어팝업 닫기 함수
+});
+</script>
+<div class="pop_wrap pop_l" id="lay1">
+    <div class="pop_header">
+        <h1>결제</h1>
+        <button type="button" class="ico_comm pop_close01">닫기</button>
+    </div>
+    <!-- pop_container -->
+    <div class="pop_container">
+        <div class="pop_content">
+            <div class="chc_wrap">
+                <!-- 결제수단 선택시 on클래스 추가 -->
+                <a href="#" class="chc_type01 on"><span>신용카드</span><i class="ico_comm pay01"></i></a>
+                <a href="#" class="chc_type01"><span>현금IC카드</span><i class="ico_comm pay02"></i></a>
+                <a href="#" class="chc_type02"><span>A포인트</span><i class="ico_comm pay03"></i></a>
+                <a href="#" class="chc_type02"><span>Member<br>포인트</span><i class="ico_comm pay04"></i></a>
+                <a href="#" class="chc_type03"><span>현금</span><i class="ico_comm pay05"></i></a>
+                <a href="#" class="chc_type04"><span>수표</span><i class="ico_comm pay06"></i></a>
+                <a href="#" class="chc_type04"><span>자동이체</span><i class="ico_comm pay07"></i></a>
+                <a href="#" class="chc_type04"><span>A/R</span><i class="ico_comm pay08"></i></a>
+                <a href="#" class="chc_type02"><span>쿠폰</span><i class="ico_comm pay09"></i></a>
+            </div>
+            <dl class="caution">
+                <dt><span class="tag01">주의</span></dt>
+                <dd>A포인트와 Member포인트는 동시에 활성화되지 않습니다.</dd>
+                <dd>수표는 바코드로 스캐닝해주세요.</dd>
+                <dd>쿠폰은 단독으로 사용이 불가능 합니다.</dd>
+            </dl>
+        </div>
+    </div>
+    <!-- //pop_container -->
+    <div class="pop_footer clearfix">
+        <span class="fl">취소 ESC</span>
+    </div>
+</div>
+</body>
+</html>
