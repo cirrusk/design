@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SNS-popup</title>
+    <title>URL-popup</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -26,20 +26,18 @@
 </head>
 <body class="akl">
 <!-- Confirm -->
-<div class="layerWrapper sns_pop">
-	<div class="cbox layerBox popWidS">
-		<div class="cart-popup__dialog bg-white">
-			<div class="cart-popup__header-text2">SNS 공유 알림
-				<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
-					<img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기">
-				</a>
-			</div>
-			<div class="cart-popup__content">
-				<div class="cart-popup__item-info">
-					<p>한국암웨이 ABN에서 서비스되는 일체의 콘텐츠에 대한 지적 재산권은 한국암웨이㈜에 있으며, 임의로 자료를 수정/변경하여 사용하거나, 기타 개인의 영리 목적으로 사용할 경우에는 지적 재산권 침해에 해당하는 사안으로, 그 모든 법적 책임은 콘텐츠를 불법으로 남용한 개인 또는 단체에 있습니다.</p>
-
-					<p>모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.</p>
-				</div>
+<div class="url_pop">
+	<div class="cart-popup-area">
+		<div class="pop-area-header">
+			<a href="#dfde" class="cart-popup-close">
+				<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+			</a>
+		</div>
+		<div class="pop-area-body">
+			<p>주소가 복사되었습니다.<br>
+			원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+			<div class="form-group">
+				<input type="text" class="form-control" value="https://goo.gl/Pjy3en" aria-label="https://goo.gl/Pjy3en">
 			</div>
 		</div>
 	</div>
@@ -48,7 +46,7 @@
 
 <script type="text/javascript">
    $(function() {
-   	layerPopOver('','.sns_pop');
+   	layerPopOver('','.url_pop');
    });
 </script>
 </body>
