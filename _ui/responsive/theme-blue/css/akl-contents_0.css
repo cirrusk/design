@@ -113,10 +113,10 @@ Version : AKL Hybris UIUX 1.0
 .akl .product-list-page-title {  font-size: 32px; letter-spacing: -2px;}
 
 /* common > h1 type2 */
-.akl .bonus-payment .bonus-payment__title {padding:0 0;position:relative;font-size:18px;letter-spacing:-2px;font-weight:500}
-.akl .bonus-payment .bonus-payment__title:after {position:absolute;top:3px;left:-28px;content:'';display:block;background:url('../images/akl_common/ico_note.png') no-repeat left top;width:17px;height:21px;}
+.akl .bonus-payment .bonus-payment__title {padding:0;position:relative;font-size:18px;letter-spacing:-2px;font-weight:500}
+.akl .bonus-payment .bonus-payment__title:after {position:absolute;top:3px;left:-30px;content:'';display:block;background:url('../images/akl_common/ico_note.png') no-repeat left top;width:17px;height:21px;}
 .akl .bonus-payment .bonus-payment__title.shipping:after {top:5px; background:url('../images/akl_common/ico_ship.png') no-repeat left top; }
-.akl .bonus-payment .bonus-payment__title.member-pointe:after {top:4px;left:-33px;background:url('../images/akl_common/ico-point-management.png') no-repeat left top;width:24px;height:20px;}
+.akl .bonus-payment .bonus-payment__title.member-pointe:after {top:4px;left:-30px;background:url('../images/akl_common/ico-point-management.png') no-repeat left top;width:24px;height:20px;}
 
 /* common > form */
 .akl label {font-weight: 500;}
@@ -1357,10 +1357,11 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.col-search-tab ul li:nth-of-type(8) a{  border-right:0;  }
 	.col-search-tab ul li a span { font-weight:500px; }
 	.col-search-tab ul li.active a:before { content:""; position:absolute; top:auto; bottom:-1px; left:-1px; right:-1px;  border-top: 4px solid #008fc5; }
-    .col-search-right .plp-add-to-ditto button { position:static; margin-left:11px;  margin-top: 10px; }
+    .col-search-right .plp-add-to-ditto button { position:static; margin-left:6px;  margin-top: 10px; }
     .col-search-right .plp-add-to-ditto button .wish-list {padding: 0 ;}
     .plp-add-to-ditto .dropdown-menu {left:0!important;}
     .akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list { margin-bottom: 40px;}
+    .akl .col-search-right .plp-add-to-shopping-list .product-list__item-link-text { margin-left: 6px;}
     .akl .search-list-page-right-result-list-slot .pagination-bar {  margin-top: 40px;}
     .popoverword .popover-content-akl { padding: 55px 20px 20px;}
     .form-control + .primary { margin:10px 0 0}
@@ -1369,9 +1370,14 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .akl .product-list__item-link { padding:0 0 0 10px;}
 	.akl .plp-add-to-shopping-list { padding-left:72px;}
 	.akl .plp-add-to-ditto  { padding-left:72px;}
-	.akl .plp-add-to-shopping-list .dropdown-menu { width: auto; margin-right: 10px; border-top:1px solid #ccc}
-	.akl .plp-add-to-ditto .dropdown-menu {  width: auto; margin-right: 10px;  border-top:1px solid #ccc; top:62px ;}
-	
+	.akl .plp-add-to-shopping-list .dropdown-menu { width: auto; margin-right: 10px; border-top:1px solid #ccc;top:30px;}
+	.akl .plp-add-to-ditto .dropdown-menu {  width: auto; margin-right: 10px;  border-top:1px solid #ccc; top:63px;}
+	.col-search-right .new-product__listing .product-list__item-link-ditto {
+    
+    background: url(../images/ditto_2.svg) no-repeat 0 0 !important;
+    background-size: 22px 22px;
+}
+	 
     /* 로그인 > connectedID  */ 
 	.akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper th, .akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper td {display: block;}
 	.pop-U30000-lp3 strong { display: block; margin-left:0}
