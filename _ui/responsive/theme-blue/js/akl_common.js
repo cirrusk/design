@@ -132,7 +132,9 @@ function popupGalleryIMG(){
 
 	//이미지 클릭시
 	$listIMG.each(function(){
-		$(this).on('click',function(){
+		$(this).on('click',function(e){
+			e.preventDefault();
+
 			var _SRC = $(this).attr('src');
 			var _ALT = $(this).attr('alt');
 			$IMG.attr({'src':_SRC, 'alt':_ALT});
@@ -207,6 +209,10 @@ function GNB_SubDepth_Control(){
 
 		$(this).on('click', function(e){
 			e.preventDefault();
+
+			//클릭 메뉴 활성화
+			var $tabItem = $(this).parents('li.tab-header-item');
+			$tabItem.addClass('active').siblings().removeClass('active');
 
 			//서브메뉴 열기
 			$2DepthPanel.removeClass('active');
