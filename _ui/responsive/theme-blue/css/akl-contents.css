@@ -197,8 +197,8 @@ Editor : minjung Koo
 .akl .flexslider .flex-direction-nav .flex-next {right: 25px; }
 .akl .flexslider .flex-direction-nav li.flex-nav-prev { left: 10px;}
 
-.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(1){}
-.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(3){display:none;}
+.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div.print {display:inline-block;}
+.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div.kokaotalk {display:none;}
 
 /* common > 수량 */
 .akl .opt-quantity {position:relative;display:inline-block;width:130px;}
@@ -378,6 +378,15 @@ Editor : minjung Koo
 .akl .prover-add-qty {display:inline-block;width:33%;}
 .akl .prover-all-qty {display:inline-block;width:33%;}
 .akl .duplicate-txt {padding:35px 0 0}
+
+/* 제품상세 > URL 팝업 */
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div {position:relative;}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop {display:none;position: absolute;top:45px;left:-15px;width:250px;z-index:10000}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area {display:block;position: relative;}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area:after {content:'';position: absolute;top:-6px;left:20px;border-right: 10px solid transparent;border-left: 10px solid transparent;border-bottom:10px solid #56565a;}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-body {display:block;padding:14px 0 0;margin:0 20px 0;position: relative;text-align:left;}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-header {display:block;padding:0 0 0 !important;}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-header a.cart-popup-close {position: absolute;top:3px;right:8px;display:block;padding:0 0;margin:0;}
 
 /*** 장바구니 ***/
 .product-list-page-title {font-family:'Noto Sans KR', sans-serif;}
@@ -1399,8 +1408,8 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .flexslider .flex-direction-nav .flex-next {right: 10px; }
 	.akl .flexslider .flex-direction-nav li.flex-nav-prev { left: -25px;}
 	
-	.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(1){display:none;}
-	.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div:nth-child(3){display:inline-block;}
+	.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div.print {display:none;}
+	.akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div.kokaotalk {display:inline-block;}
 
     /* 제품상세 > button */
     .akl .add_to_cart_form {padding-bottom:20px;}
@@ -1449,6 +1458,9 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .prover-add-qty {display:inline-block;width:48%;}
 	.akl .prover-all-qty {display:block;width:100%;}
 
+	/* 제품상세 > URL 팝업 */
+	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop {display:none;position: absolute;top:45px;left:-8px;}
+	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area:after {content:'';position: absolute;top:-6px;left:12px;}
 	/*** 장바구니 ***/
 	.akl .visible-xs, .akl .visible-sm, .akl .visible-md, .akl .visible-lg {display:block !important;}
 	.akl .list-header .list-item-quantity, .akl .list-header .list-item-set-price, .akl .list-header .list-item-price, .akl .list-header .list-item-total, .akl span.all-txt {display:none !important;}

@@ -269,7 +269,7 @@
 														<div class="add_to_cart_form type3"><!-- 2018.03.06 form태그를 div로 변경 -->
 															<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
 															<input type="hidden" name="productCodePost" value="119889" />
-															<button id="sns-notice" class="bt-akl-blue large">설치주문</button><!-- sns공유알림 팝업 2018.03.26 -->
+															<button id="" class="bt-akl-blue large">설치주문</button>
 														</div>
 
 														<div class="add_to_cart_form type3"><!-- 2018.03.06 form태그를 div로 변경 -->
@@ -366,20 +366,39 @@
  
 														<div class="row add-to-cart-extra-actions col-xs-12 col-sm-12 col-md-12 js-add-to-actions-wrapper link-line">
 															<!--  2018.03.15 태깅 아이디 추가 -->
-															<div>
+															<div class="print"><!-- class 추가 2018.03.27 -->
 																<a href="#" id="PDP_Print"><img src="/_ui/responsive/theme-blue/images/new_Print.png" alt="Print"></a>
 															</div>
-															<div>
-																<a href="#" id="PDP_URL"><img src="/_ui/responsive/theme-blue/images/new_ie_URL.png" alt="ie_URL"></a>
+															<div class="url-copy">
+																<a href="#dfd" id="PDP_URL"><img src="/_ui/responsive/theme-blue/images/new_ie_URL.png" alt="ie_URL"></a>
+																<!-- URL 복사 팝업 2018.03.27 -->
+																<div class="url_pop">
+																	<div class="cart-popup-area">
+																		<div class="pop-area-header">
+																			<a href="#dfde" class="cart-popup-close">
+																				<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+																			</a>
+																		</div>
+																		<div class="pop-area-body">
+																			<p>주소가 복사되었습니다.<br>
+																			원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+																			<div class="form-group">
+																				<input type="text" class="form-control" value="https://goo.gl/Pjy3en" aria-label="https://goo.gl/Pjy3en">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- //URL 복사 팝업 2018.03.27 -->	
 															</div>
-															<div>
+															
+															<div class="kokaotalk"><!-- class 추가 2018.03.27 -->
 																<a href="#" id="PDP_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="talk"></a>
 															</div>
 															<div>
 																<a href="#" id="PDP_Kakaostory"><img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory"></a>
 															</div>
 															<div>
-																<a href="#" id="PDP_Facebook"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
+																<a href="#" id="PDP_Facebook" class="sns-notice"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
 															</div> 
 															<div>
 																<a href="#" id="PDP_Band"><img src="/_ui/responsive/theme-blue/images/new-Band.png" alt="Band"></a>
@@ -389,7 +408,6 @@
 															</div> 
 															<!-- // 2018.03.15 태깅 아이디 추가 -->
 														</div>
-
 													</div>
 												</div>
 											</div>
@@ -1774,12 +1792,23 @@
 			event.preventDefault();
 			layerPopOver(this,'.QUICK_VIEW_pop');
 		});
-
-		$('#sns-notice').click(function(event) {
+		
+		//03.26 추가
+		$('.sns-notice').click(function(event) {
 			event.preventDefault();
 			layerPopOver(this,'.sns_pop');
 		});
 		
+		$(".url-copy").click(function(){
+			$(".url_pop").toggle();
+		});
+		
+		$(".cart-popup-close").click(function(){
+			$(".url_pop").fadeOut();
+			$(".url_pop").fadeOut("slow");
+			$(".url_pop").fadeOut(3000);
+		});
+
 		//상단 제품이미지 롤링
 		$('#pdpImg').flexslider({
 			animation: "slide",
