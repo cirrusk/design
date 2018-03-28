@@ -25,72 +25,114 @@ $(function(){
     <div class="pop_container">
         <div class="pop_content">
             <p class="txt01">회원 정보 조회 시 아래의 타입으로 조회 가능합니다.</p>
-            <label class="inp_rd" for="ps1">휴대폰번호/전화번호<input type="radio" name="ps1" id="ps1" checked><span class="checkmark"></span></label>
+            <label class="inp_rd type01" for="ps1">휴대폰번호/전화번호<input type="radio" name="ps1" id="ps1" checked><span class="checkmark"></span></label>
             <!-- 회원검색영역 -->
             <div class="mbinfo_search">
                 <select title="회원구분">
                     <option>ABO회원</option>
                 </select>
-                <input type="text" style="width:483px">
+                <input type="text" style="width:480px">
                 <button type="button" class="btn01_blue">확인</button>
             </div>
             <!-- //회원검색영역 -->
 
             <!-- 검색결과 영역 : 검색 후-->
-            <div class="mbinfo_list">
+            <div class="mbinfo_list type02">
                 <span class="tab_type01">
                     <span class="on">일반결제</span>
                     <span>그룹결제</span>
                 </span>
                 <p class="txt"><strong>총 <span class="fc_red">35</span>건</strong>이 검색되었습니다.</p>
                 <span class="btn_wrap">
-                    <!-- 이전,다음 리스트가 있을때 active클래스 추가 -->
+                    <!-- 이전,다음 리스트가 있을때 on클래스 추가 -->
                     <a href="#" class="ico_comm prev03">이전</a>
-                    <a href="#" class="ico_comm next03 active">다음</a>
-                    <!-- //이전,다음 리스트가 있을때 active클래스 추가 -->
+                    <a href="#" class="ico_comm next03 on">다음</a>
+                    <!-- //이전,다음 리스트가 있을때 on클래스 추가 -->
                 </span>
-                <!-- 검색결과 : 있음 -->
-                <ul class="list">
-                    <!-- 회원 선택시 on클래스 추가 -->
-                    <li>
-                        <a href="#">
-                            <em>김*희</em>
-                            <span class="bg_bar"><span>741212</span><span>19881212</span><span>010 - *** - 1234</span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="on">
-                            <em>김*희</em>
-                            <span class="bg_bar"><span>741212</span><span>19881212</span><span>010 - *** - 1234</span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>김*희</em>
-                            <span class="bg_bar"><span>741212</span><span>19881212</span><span>010 - *** - 1234</span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>김*희</em>
-                            <span class="bg_bar"><span>741212</span><span>19881212</span><span>010 - *** - 1234</span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>김*희</em>
-                            <span class="bg_bar"><span>741212</span><span>19881212</span><span>010 - *** - 1234</span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>김*희</em>
-                            <span class="bg_bar"><span>741212</span><span>19881212</span><span>010 - *** - 1234</span></span>
-                        </a>
-                    </li>
-                    <!-- //회원 선택시 on클래스 추가 -->
-                </ul>
-                <!-- //검색결과 : 있음 -->
+                <!-- 검색결과 : 있음(페이지당 회원 최대 수 10개) -->
+                <div class="tbl_col clearfix">
+                    <!-- 왼쪽테이블 -->
+                    <table>
+                        <caption>회원조회결과</caption>
+                        <colgroup>
+                            <col>
+                            <col style="width:80px">
+                            <col style="width:85px">
+                            <col style="width:125px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">회원명</th>
+                                <th scope="col">회원번호</th>
+                                <th scope="col">생년월일</th>
+                                <th scope="col">전화번호</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 회원 선택시 tr에 on클래스 추가 -->
+                            <tr class="on">
+                                <td class="tit"><span class="elips">김*나나희</span></td>
+                                <td><span class="bg_bar none">748002</span></td>
+                                <td><span class="bg_bar">19981212</span></td>
+                                <td><span class="bg_bar">010 - **** - 8888</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tit"><span class="elips">김*나나나나희</span></td>
+                                <td><span class="bg_bar none">748002</span></td>
+                                <td><span class="bg_bar">19981212</span></td>
+                                <td><span class="bg_bar">010 - **** - 8888</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tit"><span class="elips">김*희</span></td>
+                                <td><span class="bg_bar none">748002</span></td>
+                                <td><span class="bg_bar">19981212</span></td>
+                                <td><span class="bg_bar">010 - **** - 8888</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tit"><span class="elips">김*희</span></td>
+                                <td><span class="bg_bar none">748002</span></td>
+                                <td><span class="bg_bar">19981212</span></td>
+                                <td><span class="bg_bar">010 - **** - 8888</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tit"><span class="elips">김*희</span></td>
+                                <td><span class="bg_bar none">748002</span></td>
+                                <td><span class="bg_bar">19981212</span></td>
+                                <td><span class="bg_bar">010 - **** - 8888</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- //왼쪽테이블 -->
+                    <!-- 오른쪽테이블 -->
+                    <table>
+                        <caption>회원조회결과</caption>
+                        <colgroup>
+                            <col>
+                            <col style="width:80px">
+                            <col style="width:85px">
+                            <col style="width:125px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">회원명</th>
+                                <th scope="col">회원번호</th>
+                                <th scope="col">생년월일</th>
+                                <th scope="col">전화번호</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 회원 선택시 tr에 on클래스 추가 -->
+                            <tr>
+                                <td class="tit"><span class="elips">김*희</span></td>
+                                <td><span class="bg_bar none">748002</span></td>
+                                <td><span class="bg_bar">19981212</span></td>
+                                <td><span class="bg_bar">010 - **** - 8888</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- //오른쪽테이블 -->
+                </div>
+                <!-- // 검색결과 : 있음(페이지당 회원 최대 수 10개) -->
 
                 <!-- 검색결과 : 없음
                  <p class="no_data">해당 하는 검색 결과가 없습니다. 다시 검색해 주세요.</p>

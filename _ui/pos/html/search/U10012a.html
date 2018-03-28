@@ -18,38 +18,42 @@ $(function(){
 </script>
 <div class="pop_wrap pop_l" id="lay1">
     <div class="pop_header">
-        <h1>회원정보조회</h1>
+        <h1>상품정보조회</h1>
         <button type="button" class="ico_comm pop_close01">닫기</button>
     </div>
     <!-- pop_container -->
     <div class="pop_container">
         <div class="pop_content">
-            <p class="txt01">회원 정보 조회 시 아래의 타입으로 조회 가능합니다.</p>
-            <label class="inp_rd type01" for="ps1">휴대폰번호/전화번호<input type="radio" name="ps1" id="ps1" checked><span class="checkmark"></span></label>
-            <!-- 회원검색영역 -->
+            <p class="txt01">상품 정보 조회 시 아래의 바코드 스캐닝 또는 직접 입력을 선택하여 조회 가능합니다.</p>
+            <!-- 바코드 스캐닝 -->
+            <label class="inp_rd type01" for="bs">바코드 스캐닝<input type="radio" name="jb" id="bs" checked><span class="checkmark"></span></label>
             <div class="mbinfo_search">
-                <select title="회원구분">
-                    <option>ABO회원</option>
-                </select>
                 <input type="text" style="width:480px">
                 <button type="button" class="btn01_blue">확인</button>
             </div>
-            <!-- //회원검색영역 -->
+            <!-- //바코드 스캐닝 -->
+            <!-- 직접 입력 -->
+            <div class="mgt12">
+                <label class="inp_rd type01" for="jb1">상품코드 (SKU ID)<input type="radio" name="jb" id="jb1"><span class="checkmark"></span></label>
+                <label class="inp_rd type01" for="jb2">VPS 코드<input type="radio" name="jb" id="jb2"><span class="checkmark"></span></label>
+                <label class="inp_rd type01" for="jb3">상품명<input type="radio" name="jb" id="jb3"><span class="checkmark"></span></label>
+            </div>
+            <div class="mbinfo_search">
+                <input type="text" style="width:480px">
+                <button type="button" class="btn01_blue">확인</button>
+            </div>
+            <!-- //직접 입력 -->
 
             <!-- 검색결과 영역 : 검색 전 -->
-            <div class="mbinfo_list type02">
-                <span class="tab_type01">
-                    <span class="on">일반결제</span>
-                    <span>그룹결제</span>
-                </span>
+            <div class="mbinfo_list">
                 <p class="txt"><strong>총 <span class="fc_red">0</span>건</strong>이 검색되었습니다.</p>
                 <span class="btn_wrap">
                     <a href="#" class="ico_comm prev03">이전</a>
-                    <a href="#" class="ico_comm next03">다음</a>
+                    <a href="#" class="ico_comm next03 on">다음</a>
                 </span>
                 <p class="no_data"></p>
             </div>
-            <!-- //검검색결과 영역 : 검색 전 -->
+            <!-- //검색결과 영역 : 검색 전 -->
         </div>
     </div>
     <!-- //pop_container -->
