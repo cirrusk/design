@@ -4,7 +4,7 @@ Date : 2018-01-25
 Editor : minjung Koo
 *************************************************/
 /*** common > 검색결과 ***/
-.search-no-result p {font-size:14px;line-height:22px;padding:30px 0 0;margin:0 0 0;}
+.quick-area .search-no-result p {font-size:14px;line-height:22px;padding:30px 0 0;margin:0 0 0;}
 
 /*** 마이페이지 ***/
 .akl .breadcrumb {letter-spacing:-1px;}
@@ -1269,6 +1269,11 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 
 /* 중개판매관리 */
 .product-list-page-title.brokerage {margin:0 0;}
+.intermediary-sales {clear:both;display:block;margin:0 0;padding:40px 0 0;}
+.intermediary-sales .account-section-content {border-bottom:0 none;}
+.intermediary-sales [role="button"] {white-space:normal;display:block;text-align:left;}
+.intermediary-sales .panel-heading {position:relative;}
+.intermediary-sales .panel-heading .pull-right {position: absolute; top:23px;right:20px;}
 
 /* 중개판매관리 > 견적서 */
 .estimate-area {}
@@ -1286,17 +1291,44 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .tit-producer {float:left;height:160px;width:6%;background:#f4f4f4;text-align:center;writing-mode:tb-rl;padding-right:20px;font-size:13px;color:#002f5f;font-weight:500;margin:0 0;letter-spacing:1px}
 .info-producer {float:left;height:160px;width:94%;border-left:1px solid #e3e3e3;}
 .info-producer ul {width:100%;}
-.info-producer ul li {clear:both;display:block;height:40px;padding:0 0;margin:0 0;border-top:1px solid #e3e3e3;overflow:hidden}
+.info-producer ul li {clear:both;display:block;height:40px;margin:0 0;border-top:1px solid #e3e3e3;overflow:hidden}
 .info-producer ul li:first-child {border-top:0 none;}
-.info-producer ul li dl {text-align:left;display:table;width:100%;table-layout:fixed;height:40px;}
+.info-producer ul li dl {text-align:left;display:table;width:100%;table-layout:fixed;height:40px}
 .info-producer ul li dl dt {background:#f4f4f4;font-size:13px;display:table-cell;vertical-align:middle;padding:0 10px;font-weight:500;color:#002f5f;}
-.info-producer ul li dl dd {font-size:14px;display:table-cell;vertical-align:middle;padding:0 10px;font-weight:400}
+.info-producer ul li dl dd {font-size:14px;display:table-cell;vertical-align:middle;font-weight:400;padding:0 10px;}
 .info-producer ul li dl.type1 dt {width:15%;}
 .info-producer ul li dl.type1 dd {width:85%;}
 .info-producer ul li .fl50 {float:left;width:50%;}
 .info-producer ul li dl.type2 dt {width:30%;}
 .info-producer ul li dl.type2 dd {width:70%;}
 .divisio-pen {float:left;width:50%;}
+
+/* 중개판매관리 > 견적목록 */
+.est-prod-list-box {}
+.est-prod-head {clear:both;position:relative;}
+.est-prod-head:after {content:'';clear:both;display:block;}
+.est-prod-head h3 {font-size:18px;color:#002f5f;padding:0 0 10px;letter-spacing:-2px;}
+.est-prod-head p {float:left;font-size:14px;font-weight:400;}
+.est-prod-head .ep-btn {float:right;vertical-align:top;}
+
+.est-prod-conts {clear:both;display:block;padding:20px 0 0}
+.est-total-price {font-size:16px;color:#002f5f;font-weight:400}
+.est-total-price span {font-weight:500}
+
+.est-prod-list .list-header .all-txt {font-size:13px;font-weight:500;}
+.est-prod-list .list-header .list-item-name, .est-prod-list .list-header .list-item-quantity, .est-prod-list .list-header .list-item-price, .est-prod-list .list-header .list-item-total 
+{font-size:13px;font-weight:500;position:relative;padding:13px 0;text-align:left;}
+
+.est-prod-list .value-wrapper {font-size:14px;font-weight:400;text-align:right;}
+.est-prod-list .product-item-element.list-item-info {display:table-cell;width:100%;vertical-align:top;}
+.est-prod-list .product-item-element .est-product-codename {display:table;width:100%;}
+.est-prod-list .shopping-cart-item-list .product-list-item .list-item-info .product-code {display:table-cell;width:29%;padding-left:10px}
+.est-prod-list .shopping-cart-item-list .product-list-item .list-item-info .product-name {display:table-cell;width:70%;font-weight:400}
+.est-prod-list .shopping-cart-item-list .product-list-item .list-item-toggle .checkbox-element-wrapper {margin-top:6px;}
+.est-prod-list .shopping-cart-item-list .product-list-item .list-item-toggle .checkbox-element-wrapper {vertical-align:0;}
+.est-prod-list .list-item-quantity2 {position:relative;}
+.est-prod-list .list-item-quantity2.col-md-2 {padding-left:0}
+.est-prod-list .shopping-cart-item-list .product-list-item {padding:1.2em 0 0.8em}
 
 
 @media (max-width: 990px) {
@@ -1874,13 +1906,9 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 1px 0;}
 
 	.tit-producer {width:100%;height:40px;text-align:center;writing-mode:rl;padding-right:0;padding-top:10px;letter-spacing:-1px;border-bottom:1px solid #e3e3e3;}
-	.info-producer {display:block;height:160px;width:100%;border-left:0 none;}
-	.info-producer ul {width:100%;}
-	.info-producer ul li {clear:both;display:block;min-height:40px;padding:0 0;margin:0 0;border-top:1px solid #e3e3e3;overflow:hidden}
-	.info-producer ul li:first-child {border-top:0 none;}
-	.info-producer ul li dl {text-align:left;display:table;width:100%;table-layout:fixed;min-height:40px;}
-	.info-producer ul li dl dt {background:#f4f4f4;font-size:13px;display:table-cell;vertical-align:middle;padding:5px 10px;font-weight:500;color:#002f5f;}
-	.info-producer ul li dl dd {font-size:14px;display:table-cell;vertical-align:middle;padding:5px 10px;font-weight:400;line-height:18px;}
+	.info-producer {display:block;height:auto;width:100%;border-left:0 none;}
+	.info-producer ul li.address {height:60px}
+	.info-producer ul li.address dl {height:60px}
 	.info-producer ul li dl.type1 dt {width:30%;}
 	.info-producer ul li dl.type1 dd {width:70%;}
 	.info-producer ul li dl.type2 dt {width:30%;}
