@@ -16,8 +16,6 @@ Editor : sookkyung Han
 .typeB .product-visual{background-color:#c0def4;}
 .typeD .product-visual{background-color:#ffeaea;}
 
-.product-detail-view .mrt50{margin-top:50px}
-
 .product-detail-view .product-visual{position:relative;overflow:hidden;}
 .product-visual .visual-bg img{position:absolute;display:inline-block;bottom:0;}
 .product-visual .visual-bg .top{top:0;bottom:auto;}
@@ -135,6 +133,7 @@ Editor : sookkyung Han
 .age-group{display:table-cell;padding-left:20px;vertical-align:middle;}
 .age-group-tit{display:block;font-size:16px;color:#56565a;font-weight:500;letter-spacing:-1px;}
 .age-group-txt{display:block;margin-top:2px;font-size:13px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px;}
+.age-group-txt br{line-height:0;}
 
 .effect-info .info-graph{margin-top:30px;}
 .info-graph li{width:50%;padding:0 0 0 8px;}
@@ -161,6 +160,8 @@ Editor : sookkyung Han
 .product-advantage .advantage-txt-etc:first-child{margin-top:20px;}
 .product-advantage .advantage-img{float:right;text-align:left;padding:0 0 0 50px;}
 .product-advantage.reverse .advantage-img{float:left;text-align:left;padding:0 50px 0 0;}
+
+.product-detail-view .effect-info .img-wrap{margin-top:50px}
 
 .product-detail-view .product-process{padding:26px 50px 23px;margin-top:50px;border:10px solid #eff0f1;}
 .product-process .detail-tit{font-size:36px;color:#444;}
@@ -198,8 +199,8 @@ Editor : sookkyung Han
 .product-rank .detail-tit{font-size:26px;color:#56565a;font-weight:400;text-align:left;letter-spacing:-2px;}
 .product-detail-view .product-rank{margin-top:50px;}
 .product-rank .dot-list{margin-top:20px;}
-.product-rank .rank-img{display:table-cell;max-width:147px;padding-right:85px;vertical-align:middle;}
-.product-rank .rank-img .img-box{display:inline-block;max-width:140px;}
+.product-rank .rank-img{display:table-cell;vertical-align:middle;}
+.product-rank .rank-img .img-box{display:inline-block;}
 .product-rank .rank-box{display:table-cell;vertical-align:middle;}
 
 
@@ -242,7 +243,7 @@ Editor : sookkyung Han
 	
 	.product-detail-view .product-info-box{margin-top:25px;padding:26px 10px 0;}
 	.product-detail-view .detail-tit.small{font-size:18px;line-height:1.3;}
-	.product-detail-view .detail-info-etc{font-size:14px;}
+	.product-detail-view .detail-info-etc{font-size:13px;}
 	.product-detail-view .detail-info-etc.big{margin-top:9px;font-size:13px;letter-spacing:-1px;}
 	
 	.akl .product-detail-view .product-setup{margin-top:18px;}
@@ -262,14 +263,13 @@ Editor : sookkyung Han
 	.feature-list{margin-top:8px;}
 	.feature-list > li{padding:15px 10px;}
 	.feature-list .detail-bullet{display:none;}
-	.feature-list .detail-txt{padding:0 0 10px 0;font-size:19px;line-height:1.4;}
-	.feature-list .detail-img{width:35%;}
-	.product-feature .detail-dot{margin:8px 0 0 0;font-size:14px;}
+	.feature-list .detail-txt{padding:0 15px 10px 0;font-size:14px;line-height:1.4;}
+	.feature-list .detail-img{width:30%;}
+	.product-feature .detail-dot{margin:8px 0 0 0;font-size:13px;padding-left:10px;}
+	.detail-dot:after{top:8px;}
 	
 	.product-detail-view .product-notice{margin-top:25px;padding:0;}
-	.product-effect-info{margin-top:26px;}
-	.effect-info{padding:10px;}
-	
+
 	.product-notice .detail-tit{display:block;font-size:18px;}
 	.product-notice .detail-list{display:block;margin:6px 0 0;font-size:13px;line-height:1.4;}
 	.product-notice .detail-list li{display:block;margin-left:12px;text-indent:-12px;font-size:13px;line-height:1.4;}
@@ -299,24 +299,47 @@ Editor : sookkyung Han
 	.akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:5px;}
 	
 	.product-feature02 .detail-tit{line-height:1;}
+	.product-feature02 .feature-txt{width:100%;}
+	.product-feature02 .feature-img{width:100%;margin-top:5px;}
+	.feature-txt p{padding-left:10px;font-size:14px;}
 	
 	.product-detail-view .product-effect-info{margin-top:30px;}
-	.product-effect-info .effect-info{padding:10px;}
+	.product-effect-info .effect-info{padding:18px 25px;}
+	.product-detail-view .detail-img{text-align:center;}
 	.effect-info-wrap{display:block;width:100%;}
-	.effect-info-wrap .effect-info-box{display:block;width:100%;}
+	.product-effect-info .effect-info-box{display:block;width:100%;font-size:14px;line-height:1.6;}
+	.effect-info-wrap > div:first-child{padding:0;}
 	.effect-info-wrap .effect-info-img{display:block;width:100%;padding:0;text-align:center;}
+	.effect-info-wrap .effect-info-img, 
+	.effect-info-wrap .effect-info-right{margin-top:15px;}
 	.effect-info-wrap .effect-info-right{display:block;width:100%;padding:0;}
 	.product-effect-info .effect-info .effect-info-list .detail-img,
 	.product-effect-info .effect-info .effect-info-list .age-group{vertical-align:top;}
 	.product-effect-info .detail-tit{padding:10px 0 12px;}
-	.product-effect-info .effect-info .effect-info-tit{font-size:20px;}
-	.product-effect-info .effect-info .effect-info-list li{width:100%;}
+	.product-effect-info .effect-info .effect-info-tit{margin-bottom:8px;font-size:18px;}
+	.product-effect-info .effect-info .effect-info-list li{width:100%;padding-right:0;}
 	.product-effect-info .effect-info .info-graph li{width:100%;margin-top:20px;text-align:center;}
 	.product-effect-info .effect-info .info-graph li:first-child{margin-top:0;}
-
-
-
-
+	.effect-info-list .detail-img{max-width:60px;}
+	.age-group-tit{font-size:14px;}
+	.age-group{padding-left:10px;}
+	.effect-info .info-graph{margin-top:15px;text-align:center;}
+	.product-effect-info .dot-list{margin-top:15px;}
+	.dot-list .dot-tit{font-size:13px;}
+	.dot-list .dot-txt{font-size:13px;}
+	.dot-list li{margin-top:10px;}
+	.product-detail-view .tit-blue-s{font-size:14px;}
+	.effect-info .tit-blue-b{margin-top:15px;font-size:16px;}
+	.product-effect-info .effect-info-box dd{font-size:14px;line-height:1.6;}
+	.product-detail-view .effect-info-step{margin-top:21px;}
+	.effect-info-step li{display:block;padding:40px 0 0;}
+	.effect-info-step li:first-child{padding:0;}
+	.effect-info-step li:before{top:12px;left:50%;margin:0 0 0 -5px;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg);}
+	.effect-info-step .effect-step-txt{margin-top:15px;}
+	.product-detail-view .effect-info .img-wrap{margin:15px 0 0 0;text-align:center;}
+	.bor-img-list{width:calc(100% + 15px);margin:-15px 0 0 -15px;}
+	.bor-img-list li{width:33.33%;margin-top:15px;padding:0 0 0 15px;}
+	.effect-part li{display:block;margin-top:8px;}
 
 
 
@@ -327,7 +350,11 @@ Editor : sookkyung Han
 	.product-detail-view .info-img-list span br,
 	.product-detail-view .detail-info-etc br,
 	.product-detail-view .advantage-txt br,
-	.product-effect-info .effect-info .info-txt br{display:none;}
+	.product-effect-info .effect-info .info-txt br,
+	.product-effect-info .effect-info-box br,
+	.effect-info-step .effect-step-txt br,
+	.age-group-txt br,
+	.feature-txt p br{display:none;}
 	
 	
 	
