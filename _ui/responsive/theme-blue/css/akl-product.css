@@ -16,8 +16,6 @@ Editor : sookkyung Han
 .typeB .product-visual{background-color:#c0def4;}
 .typeD .product-visual{background-color:#ffeaea;}
 
-.product-detail-view .mrt50{margin-top:50px}
-
 .product-detail-view .product-visual{position:relative;overflow:hidden;}
 .product-visual .visual-bg img{position:absolute;display:inline-block;bottom:0;}
 .product-visual .visual-bg .top{top:0;bottom:auto;}
@@ -63,8 +61,8 @@ Editor : sookkyung Han
 .product-info-box .detail-img{margin-top:36px;}
 
 .product-detail-view .product-notice{padding:5px 0 60px;margin-top:50px;border:solid #e3e3e3;border-width:1px 0;}
-.product-notice .notice-list > li{display:table;width:100%;padding-top:27px;}
-.product-notice .detail-tit{display:table-cell;width:200px;font-size:26px;color:#444;font-weight:500;text-align:left;vertical-align:top;letter-spacing:-2px;}
+.product-notice .notice-list > li{float:none;display:table;padding-top:27px;}
+.product-notice .detail-tit{display:table-cell;float:none;font-size:26px;color:#444;font-weight:500;text-align:left;vertical-align:top;letter-spacing:-2px;}
 .product-notice .detail-list{display:table-cell;padding-top:7px;font-size:16px;color:#666;font-weight:300;vertical-align:top;letter-spacing:-1px;}
 .product-notice .detail-list li{padding-top:2px;margin-left:17px;text-indent:-17px;font-size:16px;color:#666;font-weight:300;letter-spacing:-1px;}
 .product-notice .detail-list li:first-child{padding-top:0;}
@@ -75,16 +73,17 @@ Editor : sookkyung Han
 .feature-list > li:first-child{border-width:1px 0;}
 .feature-list .detail-bullet{display:table-cell;width:36px;vertical-align:middle;}
 .feature-list .detail-txt{display:table-cell;padding:0 50px 0 20px;font-size:20px;color:#57565b;vertical-align:middle;text-align:left;letter-spacing:-2px;}
-.feature-list .detail-img{display:table-cell;width:20%;vertical-align:middle;text-align:right;}
+.feature-list .detail-img{width:20%;display:table-cell;vertical-align:middle;text-align:right;}
 
 .detail-dot{position:relative;padding-left:15px;font-size:16px;text-align:left;color:#808285;letter-spacing:-1px;}
 .product-feature .detail-dot{margin:15px 0 0 94px;}
 .detail-dot:after{position:absolute;top:10px;left:0;display:inline-block;width:5px;height:5px;border-radius:50%;background-color:#c9c9c9;content:"";}
 
-.product-detail-view .product-setup{margin-top:36px;}
+.akl .product-detail-view .product-setup{margin-top:36px;overflow:hidden;}
 .product-setup{text-align:center;}
 .setup-list{width:100%;margin-top:16px;padding-bottom:50px;border:solid #e3e3e3;border-width:1px 0;text-align:center;}
-.setup-list li{display:inline-block;width:25%;padding:30px 30px 0;text-align:center;}
+.akl .accordion-collapse-wrapper .col-lg-12.setup-list{padding-bottom:50px;}
+.setup-list li{display:inline-block;float:none;padding:30px 30px 0;text-align:center;}
 .setup-list.divid01 li{width:100%;}
 .setup-list.divid02 li{width:50%;}
 .setup-list.divid03 li{width:33.3%;}
@@ -99,9 +98,9 @@ Editor : sookkyung Han
 .product-feature02 .feature-box{margin-top:15px;}
 
 .feature-box, 
-.feature-txt li{display:table;width:100%;table-layout:fixed;}
-.product-feature02 .feature-txt{display:inline-block;width:49%;vertical-align:middle;}
-.product-feature02 .feature-img{display:inline-block;width:49%;max-width:538px;text-align:right;vertical-align:middle;}
+.feature-txt li{display:table;float:none;overflow:hidden;padding:0;table-layout:fixed;}
+.product-feature02 .feature-txt{padding:0;vertical-align:middle;}
+.product-feature02 .feature-img{padding:0;max-width:538px;text-align:right;vertical-align:middle;}
 .product-feature02 .feature-img span{display:inline-block;}
 .feature-txt li{padding:10px 0;}
 .feature-txt .ico-box{display:table-cell;width:80px;height:80px;border-radius:50%;text-align:center;vertical-align:middle;background-color:#ffeaea;}
@@ -119,24 +118,25 @@ Editor : sookkyung Han
 .effect-info .effect-info-tit{display:block;margin-bottom:15px;font-size:30px;color:#56565a;font-weight:400;letter-spacing:-2px;}
 .effect-info-wrap > div{padding-left:20px;}
 .effect-info-wrap > div:first-child{padding:0 20px 0 0;}
-.effect-info-box{font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;line-height:1.7;}
-.effect-info-wrap{display:table;width:100%;table-layout:fixed;}
-.effect-info-box{display:table-cell;vertical-align:top;}
+.effect-info-box{float:none;display:table-cell;vertical-align:top;font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;line-height:1.7;}
+.effect-info-wrap{float:none;display:table;padding:0;table-layout:fixed;}
+.effect-info.effect-info-wrap{padding:30px 92px;}
 .effect-info-wrap .effect-info-img,
-.effect-info-wrap .effect-info-right{display:table-cell;width:50%;vertical-align:top;text-align:right;}
+.effect-info-wrap .effect-info-right{float:none;display:table-cell;width:50%;padding-right:0;vertical-align:top;text-align:right;}
 .effect-info-wrap .effect-info-right{text-align:left;}
 .mid .effect-info-box,
 .mid .effect-info-img{vertical-align:middle;}
 
 .effect-info .effect-info-list{margin-top:-6px;}
-.effect-info-list li{display:inline-block;width:50%;padding:20px 5% 0 0;vertical-align:top;}
+.effect-info-list li{float:none;display:inline-block;width:50%;padding:20px 5% 0 0;vertical-align:top;}
 .effect-info-list .detail-img{display:table-cell;width:81px;vertical-align:middle;}
 .age-group{display:table-cell;padding-left:20px;vertical-align:middle;}
 .age-group-tit{display:block;font-size:16px;color:#56565a;font-weight:500;letter-spacing:-1px;}
 .age-group-txt{display:block;margin-top:2px;font-size:13px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px;}
+.age-group-txt br{line-height:0;}
 
 .effect-info .info-graph{margin-top:30px;}
-.info-graph li{display:inline-block;width:50%;padding-left:8px;}
+.info-graph li{width:50%;padding:0 0 0 8px;}
 .info-graph li:first-child{padding:0 8px 0 0;}
 .effect-info .tit-blue-s{display:block;margin-bottom:7px;}
 .effect-info .tit-blue-b{margin-top:30px;}
@@ -150,17 +150,18 @@ Editor : sookkyung Han
 .dot-list .dot-txt.dot:after{position:absolute;top:8px;left:0;display:inline-block;width:5px;height:5px;border-radius:50%;background-color:#c9c9c9;content:"";}
 .dot-list .dot-txt{display:block;margin-top:1px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 
-.product-detail-view .product-advantage{margin-top:40px;}
+.product-detail-view .product-advantage{overflow:hidden;margin-top:40px;}
 .product-detail-view .product-advantage + .product-advantage{margin-top:70px;}
 .product-advantage .detail-tit{text-align:left;line-height:1.3;}
-.product-advantage:after{content:""; display:block;  clear:both; width: 0; height: 0;}
-.advantage-box{float:left;width:50%;text-align:left;}
+.advantage-box{text-align:left;padding:0;}
 .reverse .advantage-box{float:right;}
 .product-advantage .advantage-txt{margin-top:18px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.6;}
 .product-advantage .advantage-txt-etc{font-size:16px;color:#008fc5;letter-spacing:-1px;}
 .product-advantage .advantage-txt-etc:first-child{margin-top:20px;}
-.product-advantage .advantage-img{float:right;width:50%;text-align:left;padding-left:50px;}
+.product-advantage .advantage-img{float:right;text-align:left;padding:0 0 0 50px;}
 .product-advantage.reverse .advantage-img{float:left;text-align:left;padding:0 50px 0 0;}
+
+.product-detail-view .effect-info .img-wrap{margin-top:50px}
 
 .product-detail-view .product-process{padding:26px 50px 23px;margin-top:50px;border:10px solid #eff0f1;}
 .product-process .detail-tit{font-size:36px;color:#444;}
@@ -176,21 +177,21 @@ Editor : sookkyung Han
 .akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:-22px;}
 	
 .product-detail-view .effect-info-step{margin-top:47px;}
-.effect-info-step{display:table;width:100%;}
-.effect-info-step li{position:relative;display:table-cell;padding:0 10px;}
+.effect-info-step{display:table;float:none;padding:0;}
+.effect-info-step li{float:none;position:relative;display:table-cell;padding:0 15px;text-align:center;}
 .effect-info-step li:before{display:inline-block;position:absolute;top:50%;left:-5px;width:10px;height:17px;margin-top:-8px;background:url('../images/akl_product/ico_arr_right.png') no-repeat 0 0;content:"";}
 .effect-info-step li:first-child:before{display:none;}
 .effect-info-step.divid03 li{width:33.33%;text-align:center;} 
 .effect-info-step .effect-step-txt{display:block;margin-top:30px;font-size:14px;color:#56565a;font-weight:300;letter-spacing:-1px;}
 
 .bor-img-list{width:calc(100% + 30px);margin:-30px 0 20px -30px;}
-.bor-img-list li{display:inline-block;width:25%;padding-left:30px;margin-top:30px;text-align:center;vertical-align:top;}
+.bor-img-list li{float:none;display:inline-block;padding:0 0 0 30px;margin-top:30px;text-align:center;vertical-align:top;}
 .bor-img-list .img-txt{display:block;margin-top:8px;font-size:14px;color:#56565a;line-height:1;letter-spacing:-1px;}
 .bor-img-list .img-box{display:inline-block;border:2px solid #c7cdd1;border-radius:50%;}
 .bor-img-list br{line-height:1.3;}
 
 .effect-part{margin:0 0 0 -30px;}
-.effect-part li{display:inline-block;width:33.33%;margin-top:15px;padding-left:30px;vertical-align:top;}
+.effect-part li{float:none;display:inline-block;margin-top:15px;padding:0 0 0 30px;vertical-align:top;}
 .effect-part .part-tit{display:inline-block;width:75px;padding:2px 2px 3px;font-size:14px;letter-spacing:-1px;text-align:center;color:#fff;background-color:#20893d;border-radius:20px;}
 .effect-part .part-txt{display:block;margin-top:6px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 
@@ -198,11 +199,21 @@ Editor : sookkyung Han
 .product-rank .detail-tit{font-size:26px;color:#56565a;font-weight:400;text-align:left;letter-spacing:-2px;}
 .product-detail-view .product-rank{margin-top:50px;}
 .product-rank .dot-list{margin-top:20px;}
-.product-rank .rank-img{display:table-cell;max-width:147px;padding-right:85px;vertical-align:middle;}
-.product-rank .rank-img .img-box{display:inline-block;max-width:140px;}
+.product-rank .rank-img{display:table-cell;vertical-align:middle;}
+.product-rank .rank-img .img-box{display:inline-block;}
 .product-rank .rank-box{display:table-cell;vertical-align:middle;}
 
 
+.effect-info .effect-difference{display:inline-block;width:50%;margin-top:28px;}
+.effect-difference:after{content:'';display:block;clear:both;}
+.effect-difference .img-box{float:left;}
+.effect-difference .difference-box{float:left;margin:10px 0 0 30px;}
+.difference-box .difference-tit{font-size:20px;color:#222;font-weight:400;letter-spacing:-2px;}
+.difference-box .difference-txt{font-size:16px;color:#666;font-weight:300;letter-spacing:-1px;}
+.difference-box ul{padding-top:9px;}
+.difference-box li{margin-top:4px;}
+.difference-box .list-bar{position:relative;padding-left:10px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
+.difference-box .list-bar:before{position:absolute;display:inline-block;width:4px;height:1px;top:10px;left:0;background-color:#808285;content:"";}
 
 
 @media (max-width: 768px) {
@@ -232,10 +243,10 @@ Editor : sookkyung Han
 	
 	.product-detail-view .product-info-box{margin-top:25px;padding:26px 10px 0;}
 	.product-detail-view .detail-tit.small{font-size:18px;line-height:1.3;}
-	.product-detail-view .detail-info-etc{font-size:14px;}
+	.product-detail-view .detail-info-etc{font-size:13px;}
 	.product-detail-view .detail-info-etc.big{margin-top:9px;font-size:13px;letter-spacing:-1px;}
 	
-	.product-detail-view .product-setup{margin-top:18px;}
+	.akl .product-detail-view .product-setup{margin-top:18px;}
 	.product-setup .detail-tit em{color:#57565b;}
 	.setup-list{margin-top:8px;}
 	.setup-list li{width:100%;margin-top:25px;border-top:1px solid #e3e3e3;}
@@ -252,14 +263,13 @@ Editor : sookkyung Han
 	.feature-list{margin-top:8px;}
 	.feature-list > li{padding:15px 10px;}
 	.feature-list .detail-bullet{display:none;}
-	.feature-list .detail-txt{padding:0 0 10px 0;font-size:19px;line-height:1.4;}
-	.feature-list .detail-img{width:35%;}
-	.product-feature .detail-dot{margin:8px 0 0 0;font-size:14px;}
+	.feature-list .detail-txt{padding:0 15px 10px 0;font-size:14px;line-height:1.4;}
+	.feature-list .detail-img{width:30%;}
+	.product-feature .detail-dot{margin:8px 0 0 0;font-size:13px;padding-left:10px;}
+	.detail-dot:after{top:8px;}
 	
 	.product-detail-view .product-notice{margin-top:25px;padding:0;}
-	.product-effect-info{margin-top:26px;}
-	.effect-info{padding:10px;}
-	
+
 	.product-notice .detail-tit{display:block;font-size:18px;}
 	.product-notice .detail-list{display:block;margin:6px 0 0;font-size:13px;line-height:1.4;}
 	.product-notice .detail-list li{display:block;margin-left:12px;text-indent:-12px;font-size:13px;line-height:1.4;}
@@ -269,7 +279,7 @@ Editor : sookkyung Han
 	.product-detail-view .product-advantage + .product-advantage{border-top:1px solid #e3e3e3;}
 	.product-detail-view .advantage-box{width:100%;padding:0;}
 	.product-advantage .advantage-img, 
-	.product-advantage.reverse .advantage-img{width:100%;padding:0;margin-top:25px;text-align:center;}
+	.product-advantage.reverse .advantage-img{padding:0;margin-top:25px;text-align:center;}
 	
 	.product-advantage .detail-tit{line-height:1.1;}
 	.product-advantage .advantage-txt{font-size:14px;}
@@ -289,98 +299,67 @@ Editor : sookkyung Han
 	.akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:5px;}
 	
 	.product-feature02 .detail-tit{line-height:1;}
+	.product-feature02 .feature-txt{width:100%;}
+	.product-feature02 .feature-img{width:100%;margin-top:5px;}
+	.feature-txt p{padding-left:10px;font-size:14px;}
 	
 	.product-detail-view .product-effect-info{margin-top:30px;}
-	.product-effect-info .effect-info{padding:10px;}
+	.product-effect-info .effect-info{padding:18px 25px;}
+	.product-detail-view .detail-img{text-align:center;}
 	.effect-info-wrap{display:block;width:100%;}
-	.effect-info-wrap .effect-info-box{display:block;width:100%;}
+	.product-effect-info .effect-info-box{display:block;width:100%;font-size:14px;line-height:1.6;}
+	.effect-info-wrap > div:first-child{padding:0;}
 	.effect-info-wrap .effect-info-img{display:block;width:100%;padding:0;text-align:center;}
+	.effect-info-wrap .effect-info-img, 
+	.effect-info-wrap .effect-info-right{margin-top:15px;}
 	.effect-info-wrap .effect-info-right{display:block;width:100%;padding:0;}
 	.product-effect-info .effect-info .effect-info-list .detail-img,
 	.product-effect-info .effect-info .effect-info-list .age-group{vertical-align:top;}
 	.product-effect-info .detail-tit{padding:10px 0 12px;}
-	.product-effect-info .effect-info .effect-info-tit{font-size:20px;}
-	.product-effect-info .effect-info .effect-info-list li{width:100%;}
+	.product-effect-info .effect-info .effect-info-tit{margin-bottom:8px;font-size:18px;}
+	.product-effect-info .effect-info .effect-info-list li{width:100%;padding-right:0;}
 	.product-effect-info .effect-info .info-graph li{width:100%;margin-top:20px;text-align:center;}
 	.product-effect-info .effect-info .info-graph li:first-child{margin-top:0;}
-	
-		
+	.effect-info-list .detail-img{max-width:60px;}
+	.age-group-tit{font-size:14px;}
+	.age-group{padding-left:10px;}
+	.effect-info .info-graph{margin-top:15px;text-align:center;}
+	.product-effect-info .dot-list{margin-top:15px;}
+	.dot-list .dot-tit{font-size:13px;}
+	.dot-list .dot-txt{font-size:13px;}
+	.dot-list li{margin-top:10px;}
+	.product-detail-view .tit-blue-s{font-size:14px;}
+	.effect-info .tit-blue-b{margin-top:15px;font-size:16px;}
+	.product-effect-info .effect-info-box dd{font-size:14px;line-height:1.6;}
+	.product-detail-view .effect-info-step{margin-top:21px;}
+	.effect-info-step li{display:block;padding:40px 0 0;}
+	.effect-info-step li:first-child{padding:0;}
+	.effect-info-step li:before{top:12px;left:50%;margin:0 0 0 -5px;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg);}
+	.effect-info-step .effect-step-txt{margin-top:15px;}
+	.product-detail-view .effect-info .img-wrap{margin:15px 0 0 0;text-align:center;}
+	.bor-img-list{width:calc(100% + 15px);margin:-15px 0 0 -15px;}
+	.bor-img-list li{width:33.33%;margin-top:15px;padding:0 0 0 15px;}
+	.effect-part li{display:block;margin-top:8px;}
 
+
+
+
+	/*br 삭제*/
 	.product-detail-view .txt-area .visual-txt br,
 	.product-detail-view .detail-info-txt br,
 	.product-detail-view .info-img-list span br,
 	.product-detail-view .detail-info-etc br,
 	.product-detail-view .advantage-txt br,
-	.product-effect-info .effect-info .info-txt br{display:none;}
-	
-	
-	
-	/*임시 레이아웃*/
-	
-	
-}
-
-/*
-
-@media (max-width: 990px) {
-	.product-detail-view .product-setup .setup-list li{width:50%;}
-	.product-detail-view .product-feature .feature-list > li{padding:20px 20px 21px;}
-	.product-detail-view .product-feature .detail-txt{padding-right:20px;}
+	.product-effect-info .effect-info .info-txt br,
+	.product-effect-info .effect-info-box br,
+	.effect-info-step .effect-step-txt br,
+	.age-group-txt br,
 	.feature-txt p br{display:none;}
-	.step05.product-process-step{margin-top:0;}
-	.step05.product-process-step li{width:33.33%;margin-top:30px;}
+	
+	
+	
 }
 
 
-
-@media (max-width: 768px) {
-	.product-detail-view > div{margin:0 12px;}
-	.product-visual .visual-info{padding:0 120px;}
-	.product-visual .txt-area .visual-tit{margin-top:10px;font-size:50px;}
-	.product-visual .txt-area .visual-tit strong{font-size:50px;line-height:1.0;}
-	.product-visual .txt-area .visual-txt br, 
-	.product-info .info-txt br, 
-	.product-setup .detail-title .detail-s-tit br{display:none;}
-	.product-visual .txt-area .logo-txt{font-size:22px;}
-	.product-detail-view .detail-tit,
-	.product-detail-view .detail-tit em{font-size:36px;}
-	.product-info .info-txt{font-size:16px;letter-spacing:-1px;}
-	.product-info .img-list li{width:25%;}
-	.product-feature .detail-bullet{width:5%;} 
-	.product-feature .detail-txt{padding:0 5% 0 2%;font-size:16px;}
-	.product-feature .detail-dot{margin:15px 0 0 20px;}
-	.product-effect-info .effect-info{padding:30px 50px}
-	.product-effect-info .effect-info .effect-info-list .detail-img,
-	.product-effect-info .effect-info .effect-info-list .age-group{vertical-align:top;}
-	.product-effect-info .detail-tit{padding:10px 0 12px;}
-	.product-effect-info .effect-info .effect-info-tit{font-size:20px;}
-	.product-effect-info .effect-info .effect-info-list li{width:100%;}
-	.product-effect-info .effect-info .info-graph li{width:100%;margin-top:20px;text-align:center;}
-	.product-effect-info .effect-info .info-graph li:first-child{margin-top:0;}
-	.product-effect-info .effect-info .info-txt br{display:none;}
-	.product-feature02 .tit{font-size:36px;}
-	.product-feature02 .feature-list{width:100%;}
-	.product-feature02 .feature-img{width:100%;max-width:100%;text-align:center;margin-top:20px;}
-	.product-feature02 .feature-img img{width:50%;}
-	.product-detail-view .product-process .detail-tit{font-size:30px;}
-	.product-detail-view .product-advantage + .product-advantage{margin-top:50px;}
-	.product-advantage .advantage-img,
-	.product-advantage.reverse .advantage-img{width:100%;text-align:center;padding:0;}
-	.product-advantage .advantage-box{width:100%;text-align:center;}
-	.product-advantage .detail-tit{text-align:center;}
-	.product-detail-view .product-process{padding:26px 25px 23px;}
-	.step05.product-process-step{margin-top:20px;}
-	.step05.product-process-step li{width:100%;margin-top:30px;text-align:left;overflow:hidden;}
-	.step05.product-process-step li:first-child{margin-top:0;}
-	.product-process-step .step-img{float:left;width:30%;padding-right:30px;}
-	.product-process-step .step-num{float:left;margin-top:10px;}
-	.product-process-step .step-txt{float:left;width:70%;}
-
-}
-
-@media (max-width: 420px) {
-
-}
-*/
 
 
