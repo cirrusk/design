@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/_ui/pos/css/common.css">
+    <script type="text/javascript" src="/_ui/pos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/_ui/pos/js/common.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+$(function(){
+    pop_open("#lay1"); // 레이어팝업 호출 함수
+    // pop_close("#lay1"); 레이어팝업 닫기 함수
+});
+</script>
+<div class="pop_wrap pop_m" id="lay1">
+    <div class="pop_header">
+        <h1>화면풀림</h1>
+        <button type="button" class="ico_comm pop_close01">닫기</button>
+    </div>
+    <!-- pop_container -->
+    <div class="pop_container">
+        <div class="pop_content">
+            <div class="in_form">
+                <label for="pw" class="lb">비밀번호</label>
+                <input type="password" id="pw" style="width:365px">
+            </div>
+            <p class="login_txt type02">
+                <span class="txt_info01">비밀번호 분실 시,  IT서비스 데스크(<em class="fc_red">02-3468-6119</em>)로 문의하세요</span>
+            </p>
+        </div>
+    </div>
+    <!-- //pop_container -->
+    <div class="pop_footer line02 clearfix">
+        <span class="fl">취소 ESC</span>
+        <span class="fr">
+            <a href="#" class="btn01_blue">확인</a>
+            <a href="#" class="btn01_white">취소</a>
+        </span>
+    </div>
+</div>
+</body>
+</html>

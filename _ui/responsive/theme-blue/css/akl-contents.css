@@ -80,7 +80,7 @@ Editor : minjung Koo
 .akl .terms-and-conditions-management .next-control button.btn-blue-white {color:#fff !important;}
 
 /* 마이페이지 > 계좌관리 */
-.bonus-payment-wrapper {border-bottom:0 none;margin:0;border-top:0 none;}
+.bonus-payment-wrapper {border-bottom:0 none;margin:0; padding:0 30px;border-top:0 none;}
 .akl .bonus-payment__title:after {position:absolute;top:5px;left:-28px;content:'';display:block;background:url('../images/akl_common/ico_note.png') no-repeat left top;width:17px;height:21px;}
 .akl .bonus-payment__description {font-size:14px;padding:7px 0;}
 .akl .bonus-payment-content {font-family:'Noto Sans KR', sans-serif;padding:30px 0;}
@@ -800,10 +800,9 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .facet__list.category li a:hover {text-decoration:underline !important;color:#000}
 
 .akl .product__facet .facet .facet__list {padding:0 20px;}
-.akl .product-list-right-component .pagination-wrapper .filter-facet-button-container .filter-facet-button {padding:9px 0;font-size:16px;font-weight:500;color:#0075a4;letter-spacing:-1px;}
-
-.akl .plp-add-to-shopping-list .dropdown-menu {top:40px;}
-.akl .plp-add-to-ditto .dropdown-menu {top:40px;left:21px;}
+.akl .product-list-right-component .pagination-wrapper .filter-facet-button-container .filter-facet-button {padding:9px 0;font-size:16px;font-weight:500;color:#0075a4;letter-spacing:-1px;} 
+ 
+.akl .new-plp .new-product-list-right-slot #product-facet.active {display:none;}
 
 /*** 제품 카테고리  > 2차 제품분류 ***/
 .akl .product-list__item-link-text button,
@@ -1125,7 +1124,6 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .cartlist-mbleft {font-weight:500}
 .akl .cartlist-mbright {color:#55565a;font-weight:400;}
 
-
 /* 주문결제 > 주문불가제품알림 팝업 */
 .pop-prot-body {padding:20px 0;border-style:solid;border-color:#e3e3e3;border-width:1px 0 1px;overflow:hidden;}
 .pop-prot-body .cartlist-image {margin-top:0;}
@@ -1146,7 +1144,6 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .pop-prot-form {clear:both;display:block;padding:20px 0 0}
 .pop-prot-form > .form-group {padding:10px 0 0}
 .pop-prot-form label {font-size:14px;font-weight:400;letter-spacing:-1px;}
-
 
 /* 주문결제 > 사업자등록증관리 팝업 */
 .business-pop {border-bottom:1px solid #e3e3e3;padding:15px 0 30px;margin-bottom:26px}
@@ -1252,7 +1249,10 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .insta-area .detail-content .col-md-4 {padding:5px 0;}
 .insta-area .detail-content .form-group input {margin-left:0;width:auto;}
 .insta-area .detail-content .box-date-select {width:60%}
-.akl .datepicker .datepicker-days .table-condensed thead tr th {color:#fff;}
+.akl .datepicker .datepicker-days .table-condensed thead tr th {color:#fff; vertical-align: middle; }
+.akl .datepicker .datepicker-days .table-condensed thead tr th.prev { font-size:22px; padding-top:0px; }
+.akl .datepicker .datepicker-days .table-condensed thead tr th.next { font-size:22px; padding-top:0px; }
+.akl .datepicker .datepicker-days .table-condensed thead tr th.atepicker-switch { padding-top:7px;}
 
 /* 주문결제 > 주문완료 */
 .akl .confirm-box {padding:34px 0 34px;}
@@ -1264,6 +1264,13 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .order-preview-value strong {font-weight:500;}
 .akl .shipping-delivery-address-name {font-size:14px;font-weight:400;letter-spacing:-0.05em;}
 
+/* 중개판매관리 */
+.product-list-page-title.brokerage {margin:0 0;}
+.estimate-area {}
+.estimate-area:after {content:'';clear:both;display:block;}
+.estimate-area p.est-tit {font-size:18px;font-weight:500;color:#002f5f;text-align:center;letter-spacing:-1px;}
+.estimate-form {float:left;border:1px solid #e3e3e3;width:25%;height:163px;padding:20px}
+.estimate-producer {float:left;border:1px solid #e3e3e3;height:163px;width:75%;}
 
 @media (max-width: 990px) {
 	/* 카테고리 */
@@ -1334,16 +1341,18 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .form-uplod-txt li {font-size:12px;}
 	.akl #terms .terms-title span.visition {display:none;}
 	.akl .bonus-payment-content #terms .terms-title span.visition {display:block; padding:5px 0 0 0;}
+	.akl .bonus-payment-content .bonus-payment__description {padding-left:30px;}
 	.akl #terms .show-terms2 {display:none;}
 	.akl #terms .text-btn {margin-top:0;padding:0 10px;}
-	.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {padding:0 20px;}
-
+	.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {padding:0;/* padding:0 20px; */}
+	.akl .page-bonus-payment .bonus-payment .bonus-payment__description {padding-left:30px;}
 
 	/* 마이페이지  > 계좌관리 */
 	.akl .bonus-payment .bonus-payment-content {clear:both;padding:35px 0}
-	.akl .bonus-payment .bonus-payment-wrapper {margin:0 0;padding:0 25px;}
+	.akl .bonus-payment .bonus-payment-wrapper {margin:0 0;padding:0;/* padding:0 25px; */}
 	.akl .bonus-payment__items {margin:0 0;}
-	.akl .bonus-payment .bonus-payment__title:after {position:absolute;top:6px;left:-25px;content:'';display:block;background:#008fc5 none;width:17px;height:17px;}
+	.akl .bonus-payment .bonus-payment__title {padding-left:30px;}
+	.akl .bonus-payment .bonus-payment__title:after {position:absolute;top:3px;left:0;content:''; display:block;/* background:#008fc5 none; width:17px;height:17px;*/}
 	.akl .bonus-payment__item-info {width:100%;margin:20px 0 20px;}
 	.akl .bonus-payment__item-info dt{width:26%;}
 	.akl .bonus-payment__item-info.bonus dt{width:26%;}
@@ -1461,6 +1470,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	/* 제품상세 > URL 팝업 */
 	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop {display:none;position: absolute;top:45px;left:-8px;}
 	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area:after {content:'';position: absolute;top:-6px;left:12px;}
+	
 	/*** 장바구니 ***/
 	.akl .visible-xs, .akl .visible-sm, .akl .visible-md, .akl .visible-lg {display:block !important;}
 	.akl .list-header .list-item-quantity, .akl .list-header .list-item-set-price, .akl .list-header .list-item-price, .akl .list-header .list-item-total, .akl span.all-txt {display:none !important;}
@@ -1609,6 +1619,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .easy-join .form-group .form-item-row .col-xs-4 {padding:0 0;}
 	.btn-cacao {display:inline-block;vertical-align:middle;height:40px;width:40px;}
 	.btn-cacao img {height:40px;width:40px;}
+	.akl .bonus-payment .bonus-payment__title.member-pointe:after {left:0;}
 
 	/* 나의 위시리스트 > 리스트 */
 	.list-headers .field-memo {display:none;}
@@ -1651,7 +1662,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .product-suggest.best-pro .amway-suggest {padding:10px 0 0;margin:0 0;}
 	.akl .simpleimagecomponent.pcp-banner {padding-bottom:30px;}
 	.akl .simpleimagecomponent .carousel-title {margin:40px auto;font-size:26px}
-
+	
 	/* 카테고리 > 솔루션 */
 	.akl .product-category-page .product-categories {margin-bottom:0;}
 	.akl .full-width-banner-component.banner-left-align.solution {height:300px;margin-top:60px}
@@ -1670,16 +1681,20 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.jumpto-solution-wrapper .jump-to-wrapper input {vertical-align:top;}
 	.jumpto-solution-wrapper .jump-to-wrapper input.js-jump-to-selection-btn {background:#002f5f;font-size:14px;font-weight:500;color:#fff;}
 
-	.akl .category-soultion .product-list__item-link-text {background:url("../images/akl_common/ico_heart.png") no-repeat 0 center;background-size:20px 20px;padding-left:30px;}
+	.akl .category-soultion .product-list__item-link-text {background:url("../images/akl_common/ico_heart.png") no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
 	.akl .category-soultion .product-list__item-content {height:270px}
 	.akl .category-soultion .product-list__item {height:400px;}
-	.akl .category-soultion .plp-add-to-shopping-list {padding-left:0}
-	.akl .category-soultion .plp-add-to-ditto {padding-left:0}
-
+	.akl .category-soultion .plp-add-to-shopping-list {padding-left:0;}
+	.akl .category-soultion .plp-add-to-ditto {padding-left:0;}
+	.akl .category-soultion .product-list__item-link-common {margin-top:10px;}
+	.akl .category-soultion .ditto-changeTo-sop .product-list__item-link-ditto {text-align:left;padding:0 0 0 0;}
+	.akl .category-soultion .new-product__listing .product-list__item-link-ditto:before {width:0;height:0;}
+	
 	.product-solition-top {padding:0 0 0}
 
 	/* 카테고리 > 2차분류 왼쪽메뉴 */
 	.panel.aisde .sub-cateogry {margin:0 20px;}
+	.akl .new-plp .new-product-list-right-slot #product-facet.active {display:block;}
 
 	/* 주문결제 */
 	.akl .shipping-delivery {margin-top:0;}
