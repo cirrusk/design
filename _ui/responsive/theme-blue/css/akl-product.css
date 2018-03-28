@@ -195,14 +195,15 @@ Editor : sookkyung Han
 .effect-part .part-tit{display:inline-block;width:75px;padding:2px 2px 3px;font-size:14px;letter-spacing:-1px;text-align:center;color:#fff;background-color:#20893d;border-radius:20px;}
 .effect-part .part-txt{display:block;margin-top:6px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 
-.product-rank{display:table;width:100%;padding:40px 86px;background-color:#f2f8ec;}
+.akl .accordion-collapse-wrapper .col-lg-12.product-rank{padding:40px 86px;}
+.product-rank{display:table;padding:40px 86px;background-color:#f2f8ec;}
 .product-rank .detail-tit{font-size:26px;color:#56565a;font-weight:400;text-align:left;letter-spacing:-2px;}
-.product-detail-view .product-rank{margin-top:50px;}
+.product-detail-view .product-rank{float:none;margin-top:50px;}
 .product-rank .dot-list{margin-top:20px;}
 .product-rank .rank-img{display:table-cell;vertical-align:middle;}
 .product-rank .rank-img .img-box{display:inline-block;}
-.product-rank .rank-box{display:table-cell;vertical-align:middle;}
-
+.product-rank .rank-box{display:table-cell;padding-left:20px;vertical-align:middle;}
+.product-rank .rank-box .effect-info-tit{font-size:26px;font-weight:400;color:#56565a;letter-spacing:-2px;}
 
 .effect-info .effect-difference{display:inline-block;width:50%;margin-top:28px;}
 .effect-difference:after{content:'';display:block;clear:both;}
@@ -340,8 +341,13 @@ Editor : sookkyung Han
 	.bor-img-list{width:calc(100% + 15px);margin:-15px 0 0 -15px;}
 	.bor-img-list li{width:33.33%;margin-top:15px;padding:0 0 0 15px;}
 	.effect-part li{display:block;margin-top:8px;}
-
-
+	.product-detail-view .product-rank{margin-top:30px;}
+	.akl .accordion-collapse-wrapper .col-lg-12.product-rank{width:100%;padding:20px 30px;}
+	.product-rank .rank-img{display:block;text-align:center;}
+	.product-rank .rank-box{display:block;padding:15px 0 0 0;}
+	.product-rank .dot-list{margin-top:10px;}
+	.product-rank .rank-box .effect-info-tit{font-size:18px;}
+	
 
 
 	/*br 삭제*/
