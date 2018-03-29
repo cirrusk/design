@@ -50,22 +50,10 @@
 					</div>
 					<div>
 						<h1 class="product-list-page-title mb25">위시리스트 01
-							<a href="#">
-								<span class="edit-name">수정하기</span>
-							</a>
+							<!-- <a href="#"><span class="edit-name">수정하기</span></a> 수정 : 2018.03.29 (버튼삭제) -->
 						</h1>
 						<span class="list-product">
-							<a href="#">
-								<span class="share-list">저장</span>
-							</a>
-							<span class="divider">|</span>
-							<a href="#">
-								<span class="Delete-list">삭제</span>
-							</a>
-							<span class="divider">|</span>
-							<a href="#">
-								<span class="Cancel-list">취소</span>
-							</a>
+							<a href="#"><span class="Delete-list">삭제</span></a><!-- 수정 : 2018.03.29 (저장,취소 버튼 삭제) -->
 						</span>
 					</div>
 					<div class="row cart-content-wrapper">
@@ -75,7 +63,7 @@
 									<div id="shoppingListDetailAccordion" class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
 										<div class="panel">
 											<div class="panel-heading" role="tab" id="ShopListDetail">
-												<a role="button" data-toggle="collapse" data-parent="#shoppingListDetailAccordion" href="#ShopListDetailBody" aria-controls="ShopListDetailBody" class="collapsed"><!-- 태그변경 h4 > a -->
+												<a role="button" data-toggle="collapse" data-parent="#shoppingListDetailAccordion" href="#ShopListDetailBody" aria-controls="ShopListDetailBody"><!-- 수정 : 2018.03.29 기본 열림상태로 변경  (.collapsed 삭제) --> <!-- 태그변경 h4 > a -->
 													<div  class="panel-title">
 														<img src="/_ui/responsive/theme-blue/images/MICRO_SITE_PAGE.png" alt="cart" class="cart-header__cart-icon" />
 														<span class="text-uppercase accordion-header-text">위시리스트 상세보기</span>
@@ -83,7 +71,8 @@
 													</div>
 												</a>
 											</div>
-											<div id="ShopListDetailBody" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" style="height: 0px;">
+
+											<div id="ShopListDetailBody" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne"><!-- 수정 : 2018.03.29 (.in 추가) -->
 												<div class="panel-body row">
 													<div id="ShopListDetailForm" class="col-xs-12 col-md-12 col-lg-12 txt-detail-wish"><!-- txt-detail-wish 추가 -->
 														<div class="detail-content col-xs-12 col-lg-8"><!--  col-md-6 col-lg-6 삭제, col-lg-8 변경 -->
@@ -105,9 +94,18 @@
 															</div>
 														</div>
 													</div>
+
 													<!-- //상단에 수정하기 눌렀을 경우 보이는 화면 -->
 												</div>
+
+												<!-- 수정: 2018.03.29 버튼 위치 이동 -->
+												<div class="btn-wrapper">
+													<button type="button" class="bt-akl-blue">저장</button>
+													<button type="button" class="bt-akl-white">취소</button>
+												</div>
+												<!-- //수정: 2018.03.29 버튼 위치 이동 -->
 											</div>
+
 										</div>
 									</div>
 								</div>
@@ -264,7 +262,7 @@
 																								<a href="#" class="btnPlus">수량하나더하기</a>
 																							</div>
 																						</div>
-																					 </div>
+																					</div>
 																				</div>
 																				<div class="amway-suggest__item-link">
 																					<a href="#" class="btn-blue-white" id="Wishlist_QuickSearchAdd">위시리스트</a><!-- 2018.03.13 태깅 아이디 추가 -->
@@ -624,8 +622,8 @@
 									<!-- 2013.03.23 추가 -->
 									<li class="product-list-item  js-shopping-cart-list-item">
 										<div class="search-no-result">
-					                    	<p> 위시리스트에 담긴 상품이 없습니다. </p>
-					                    </div>
+											<p> 위시리스트에 담긴 상품이 없습니다. </p>
+										</div>
 									</li>
 									<!--// 2013.03.23 추가 -->
 								</ul>
