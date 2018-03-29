@@ -1273,7 +1273,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .order-preview-value strong {font-weight:500;}
 .akl .shipping-delivery-address-name {font-size:14px;font-weight:400;letter-spacing:-0.05em;}
 
-/* 중개판매관리 */
+/* 중개판매관리 > 견적서 작성 */
 .product-list-page-title.brokerage {margin:0 0;}
 .intermediary-sales {clear:both;display:block;margin:0 0;padding:40px 0 0;}
 .intermediary-sales .account-section-content {border-bottom:0 none;}
@@ -1281,7 +1281,11 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .intermediary-sales .panel-heading {position:relative;}
 .intermediary-sales .panel-heading .pull-right {position: absolute; top:23px;right:20px;}
 
-/* 중개판매관리 > 견적서 */
+.brokerage-sales-guide {padding:5px 0 10px;}
+.akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 30px}
+.akl .cart-popup__content .form-horizontal .form-group {margin:0 0;}
+
+/* 중개판매관리 > 견적서 작성 > 견적서 */
 .estimate-area {}
 .estimate-area:after {content:'';clear:both;display:block;}
 .estimate-area p.est-tit {font-size:18px;font-weight:500;color:#002f5f;text-align:center;letter-spacing:-1px;}
@@ -1309,7 +1313,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .info-producer ul li dl.type2 dd {width:70%;}
 .divisio-pen {float:left;width:50%;}
 
-/* 중개판매관리 > 견적목록 */
+/* 중개판매관리 > 견적서 작성 > 견적목록 */
 .est-prod-list-box {}
 .est-prod-head {clear:both;position:relative;}
 .est-prod-head:after {content:'';clear:both;display:block;}
@@ -1362,8 +1366,68 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .es-prod-move .wish-del {display:inline-block;vertical-align:top;padding:10px 0 0}
 
 .est-txt-area {clear:both;display:block;padding:30px 0 30px;border-bottom:1px solid #e3e3e3;}
+.est-txt-area.type2 {border-top:1px solid #e3e3e3;border-bottom:0 none;padding:30px 0 0;}
+.est-txt-area.type3 {border-bottom:0 none;padding:30px 0 0;}
 .akl .btnArea-center {clear:both;display:block;margin:40px auto 60px;text-align:center;}
 
+/* 중개판매관리 > 중개판매 견적내역 */
+.esthistory-box {clear:both;display:block;border-bottom:1px solid #e3e3e3;padding:20px 0}
+.esthistory-box p {font-size:14px;font-weight:400;}
+.estimate-conts {clear:both;display:block;padding:30px 0 0}
+.estimate-conts p {font-size:14px;font-weight:400;}
+.estimate-conts p strong {color:#002f5e;font-weight:700;font-size:14px;}
+.estmlist-area {clear:both;display:block;}
+.estmlist-area:after {content:'';clear:both;display:block;}
+.estmlist-th {display:block;background:#f4f4f4;padding:10px 0;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.estmlist-th span {color:#002f5f;font-size:13px;font-weight:500;}
+
+.estmlist-tbody {clear:both;display:block;}
+.estmlist-tbody ul li {clear:both;display:block;padding:20px 0;overflow:hidden;vertical-align:middle;}
+.estmlist-tbody ul li button {vertical-align:middle;}
+.estmlist-tbody ul li:nth-child(even) {background:#f4f4f4}
+.estmlist-tbody ul li span {font-size:14px}
+.estmlist-tbody .mob-tit {display:none;}
+.esylist-num {display:inline-block;width:40%;}
+.esylist-subject {display:inline-block;width:50%;}
+.esylist-subject em {display:none;}
+.esylist-no {font-size:14px}
+.search-no-result.line {border-bottom:1px solid #e3e3e3;}
+
+.pop-est-example {width:100%;height:auto;}
+.pop-est-example img {width:100%;height:auto;}
+
+.akl .cart-popup__header.white {background:#fff}
+.akl .cart-popup__header.white .cart-popup__header-text {color:#002f5f;}
+
+
+/* 중개판매관리 > 사업자등록증 관리 */
+.estcompany-search {padding:30px 0 20px}
+.esthistory-detail-box {padding:30px 0 30px;border-bottom:1px solid #e3e3e3;overflow:hidden;}
+.est-detail-header {padding:10px 0 30px}
+.est-detail-header h3 {display:inline-block;font-size:16px;font-weight:500;color:#56565a;letter-spacing:-1px;}
+.est-detail-header p {font-size:13px;font-weight:400;padding:7px 0 0;margin:0 0;}
+.est-btn-del {display:inline-block;padding-left:10px;}
+.est-detail-conts {}
+.est-detail-conts .col-md-2, .est-detail-conts .col-md-3,.est-detail-conts .col-md-6 {padding-left:0}
+.cellphone-group {}
+.cellphone-group .col-md-4 {padding:0 0;}
+.cellphone-group .col-md-8 {padding-right:0;}
+.group-txt {clear:both;display:block;padding:5px 0 0;}
+.group-txt span {display:inline-block;font-size:14px;font-weight:400;}
+.group-txt span.txt {padding-right:5px;}
+.email-group {clear:both;display:block;width:100%;}
+.email-group .col-md-6 {padding:0 0;} 
+.email-group .col-md-3 {padding:0 0;} 
+.email-group .email-id span {display:inline-block;width:43%;}
+.email-group .email-id span.at {width:auto;padding:0 3px;}
+.txt-star {color:#e11e45;}
+
+.business-regis {}
+.business-regis li {clear:both;display:block;padding:12px 0;}
+.business-regis li span {font-size:14px;}
+.business-regis li .col-md-2, .business-regis li .col-md-3 {padding:0 0;}
+.business-regis li span.in-tit {font-weight:500;color:#002f5f;}
+.business-regis li span.in-txt {font-weight:400;}
 
 @media (max-width: 990px) {
 	/* 카테고리 */
@@ -1938,8 +2002,12 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	/* 주문결제 > 오른쪽 */
 	.akl .shipping-delivery-summary {width:100%;max-width:100%;}
 
-
-	/* 중개판매관리 > 견적서 */
+	
+	/* 중개판매관리 > 견적서 작성 */
+	.est-prod-head .ep-btn {float:left;}
+	.akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 5px}
+	
+	/* 중개판매관리 > 견적서 작성 > 견적서 */
 	.estimate-form-box {border-right:1px solid #e3e3e3;width:100%;}
 	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 1px 0;}
 
@@ -1953,7 +2021,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.info-producer ul li dl.type2 dd {width:70%;}
 	.divisio-pen {float:left;width:100%;}
 
-	/* 중개판매관리 > 견적제품목록 */
+	/* 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
 	.est-prod-list .product-item-element.list-item-info {display:block;padding:0 0;}
 	.est-prod-list .shopping-cart-item-list .product-list-item .list-item-info .product-code {display:block;width:100%;padding-left:0}
@@ -1971,6 +2039,34 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.es-prod-move .wish-del {display:inline-block;float:left;vertical-align:top;padding:20px 0 0;margin:0 0;}
 	.est-prod-list .est-delv-txt {text-align:left;font-size:14px;font-weight:500}
 	.est-prod-list .est-delv-tit {float:left;display:block;font-size:14px;color:#002f5f;letter-spacing:-1px;font-weight:500;}
-	.est-prod-list .est-delv-num {float:right;}
+	.est-prod-list .est-delv-num {float:right;padding:0 0}
+
+
+	/* 중개판매관리 > 중개판매 견적내역 */
+	.esthistory-box.mob {display:none;}
+	.estmlist-th {display:none;}
+	.estmlist-tbody {display:block;border-top:1px solid #e3e3e3;}
+	.estmlist-tbody ul li {clear:both;display:block;padding:20px 15px;}
+	.estmlist-tbody .mob-tit {display:inline-block;font-size:14px;color:#002f5f;font-weight:500}
+	.esylist-num {display:inline-block;width:auto;}
+	.esylist-subject {display:inline-block;width:auto;}
+	.esylist-subject em {display:inline-block;}
+	.esylist-no {display:none;}
+
+	.akl .cart-popup__header.white {background:#fff;border-bottom:1px solid #e3e3e3;}
+
+	/* 중개판매관리 > 사업장등록증 관리 */
+	.esthistory-detail-box {padding:15px 0 20px;}
+	.cellphone-group .col-md-4 {width:33.33333333%}
+	.cellphone-group .col-md-8 {width:66.66666667%;padding-left:10px}
+	
+	.email-group .email-id span {width:44%;}
+	.email-group .email-dotcom {margin-top:10px}
+	.est-txt-area.type3 {padding:10px 0 0}
+	.est-detail-header {padding:0 0 10px;}
+
+	.business-regis li {padding:5px 0;}
+	.business-regis li .col-md-2 {width:100%;}
+	.business-regis li .col-md-3 {display:block;width:100%;}
 
 }
