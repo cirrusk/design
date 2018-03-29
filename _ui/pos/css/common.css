@@ -101,6 +101,7 @@ input:checked + .checkmark:after {display:block;}
 .mgl10 {margin-left:10px}
 
 .w110 {width:110px}
+.w200 {width:200px}
 
 /* font */
 .fc_red {color:#f34242}
@@ -115,6 +116,7 @@ input:checked + .checkmark:after {display:block;}
 ::placeholder {color:#808080 !important; font-family:'NSR'; font-size:15px;}
 .elips {text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
 button {-webkit-tap-highlight-color: rgba(0,0,0,0.1);}
+.break {display:inline-block;}
 
 select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [class*='btn01'] {margin-left:2px}
 
@@ -138,6 +140,14 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .ico_comm.prom01 {background-position-x:-150px}
 .ico_comm.prom02 {background-position-x:-200px}
 .ico_comm.prom03 {background-position-x:-250px}
+.ico_comm[class*='etc'] {width:35px; height:35px; background-position-y:-335px}
+.ico_comm.etc01 {background-position-x:-200px}
+.ico_comm.etc02 {background-position-x:-250px}
+.ico_comm.etc03 {background-position-x:-300px}
+.ico_comm.etc04 {background-position-x:-350px}
+.ico_comm[class*='ecp'] {width:35px; height:35px; background-position-y:-395px}
+.ico_comm.ecp01 {background-position-x:-200px}
+.ico_comm.ecp02 {background-position-x:-250px}
 
 .ico_comm.prev01, .ico_comm.next01 {width:40px; height:40px; background-position:-87px 8px; border:1px solid #414e71; background-color:rgba(255,255,255,0.8)}
 .ico_comm.prev01:active, .ico_comm.next01:active {background-position:-138px 10px; border:1px solid #1763c3; background-color:rgba(41,116,209,1.0) !important}
@@ -168,8 +178,6 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .txt_info01 {margin-left:-22px; text-indent:-22px; font-size:13px; font-family:'NSR'; text-align:left;}
 .txt_info01:before {content:''; display:inline-block; width:16px; height:16px; margin:-3px 5px 0 0; vertical-align:middle; background:url(/_ui/pos/images/common/ico_common.png) -252px -40px no-repeat;}
 .txt01 {font-size:13px; font-family:'NSR';}
-
-
 
 /* login */
 .login_wrap {text-align:center; padding:11px 25px 0}
@@ -224,6 +232,10 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .pop_wrap.pop_new .pop_header .pop_close01 {display:none;}
 .pop_wrap.pop_new .pop_container {overflow:visible; max-height:none;}
 
+/* loading */
+.loading_wrap .loading_dim {position:fixed; left:0; right:0; top:0; bottom:0; background-color:#000; opacity:0; z-index:9999;}
+.loading_wrap .loading_img {position:fixed; left:50%; top:50%; margin:-65px 0 0 -80px; display:block; border-radius:5px; padding:5px; background-color:#fff; box-shadow: 0px 3px 8px 0px rgba(5,11,60,0.1); z-index:10000; }
+
 /* tbl */
 table input[type='text'] {font-family:'NSM';}
 
@@ -245,13 +257,20 @@ table input[type='text'] {font-family:'NSM';}
 .tbl_col tbody tr.on [class*='tag0'] {border:1px solid #fff}
 .tbl_col tbody tr.on .elips {font-family:'NSM';}
 .tbl_col tbody td {text-align:center;}
+.tbl_col tbody td.name span {text-align:center;}
 .tbl_col tbody td .elips {display:block; box-sizing:border-box; text-align:left; font-family:'NSB'}
-.tbl_col tbody td .bg_bar {position:relative; display:block; font-family:'NSR'; font-size:13px}
-.tbl_col tbody td .bg_bar:before {content:''; position:absolute; top:6px; left:0; display:inline-block; width:1px; height:12px; background-color:#cfd3dc}
-.tbl_col tbody td .bg_bar.none:before {content:''; display:none}
+.tbl_col tbody td .bg_bar, .tbl_col.bg_bar td > span {position:relative; display:block; font-family:'NSR'; font-size:13px}
+.tbl_col tbody td .bg_bar:before, .tbl_col.bg_bar td > span:before {content:''; position:absolute; top:6px; left:0; display:inline-block; width:1px; height:12px; background-color:#cfd3dc}
+.tbl_col tbody td .bg_bar.none:before, .tbl_col.bg_bar td:first-child > span:before {content:''; display:none}
+.tbl_col tbody td .elips.bg_bar, .tbl_col.bg_bar td > .elips {padding-left:15px}
+.tbl_col tbody td .elips.mx90 {max-width:90px}
+.tbl_col tbody td .elips.mx110 {max-width:110px}
+.tbl_col tbody td .elips.mx270 {max-width:270px}
+.tbl_col tbody td .elips.mx315 {max-width:315px}
+.tbl_col tbody td .elips.mx420 {max-width:420px}
 
  /* 회원정보조회 */
-.mbinfo_search {margin-top:8px}
+.mbinfo_search {margin-top:8px; width:740px}
 .mbinfo_search .btn01_blue {min-width:88px}
 
 .mbinfo_list {position:relative; margin:20px -30px 0; padding:20px 30px; background-color:#f2f2f5}
@@ -264,13 +283,17 @@ table input[type='text'] {font-family:'NSM';}
 .mbinfo_list .tbl_col .elips {max-width:350px;}
 .mbinfo_list [class*='tag0'] {min-width:39px}
 
-.mbinfo_list.type02 {}
+.mbinfo_list.type02 {} /* 회원정보 조회 */
 .mbinfo_list.type02 .txt {height:60px; line-height:57px;}
 .mbinfo_list.type02 .btn_wrap > * {top:75px;}
+.mbinfo_list.type02 .tbl_col {width:740px}
 .mbinfo_list.type02 .tbl_col table {float:left; width:368px}
 .mbinfo_list.type02 .tbl_col table + table {float:right}
 .mbinfo_list.type02 .tbl_col .elips {max-width:85px; padding-left:20px}
 
+.mbinfo_list.type03 {} /* 보류내역 조회 */
+.mbinfo_list.type03 {margin-top:-30px; padding-bottom:0}
+.mbinfo_list.type03 .tbl_col{padding-bottom:20px}
 
 /* .mbinfo_list .list {display:flex; flex-flow:column wrap; height:225px; margin:-5px 0 0 -5px}
 .mbinfo_list .list li {margin:5px 0 0 5px; width:368px; height:40px}
@@ -279,6 +302,18 @@ table input[type='text'] {font-family:'NSM';}
 .mbinfo_list .list li a em {font-family:'NSB';}
 .mbinfo_list .list li a .bg_bar {margin-left:42px}
 .mbinfo_list .list li a .bg_bar span {font-family:'NSR'; font-size:13px} */
+
+/* 구매제한안내 */
+.limit {position:relative; min-height:200px; box-sizing:border-box; padding:18px 0  0 240px}
+.limit .img {position:absolute; top:0; left:0; display:inline-block; width:200px; height:200px; box-sizing:border-box; border:1px solid #ccc}
+.limit .img img {width:100%; height:100%}
+.limit .txt_info01 {font-family:'NSM';}
+.limit .kind {margin-top:15px}
+.limit .kind dt, .limit .kind dd {display:inline-block; font-family:'NSR'; font-size:13px}
+.limit .kind dt {font-family:'NSB';}
+.limit .kind dd {line-height:20px}
+.limit .kind dd span:after {content:' / '}
+.limit .kind dd span:last-child:after {content:''}
 
 /* 결제 */
 .pn_wrap {position:relative; padding:0 94px}

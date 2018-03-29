@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>POS Korea</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/_ui/pos/css/common.css">
+    <script type="text/javascript" src="/_ui/pos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/_ui/pos/js/common.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+$(function(){
+    pop_open("#lay1"); // 레이어팝업 호출 함수
+    // pop_close("#lay1"); 레이어팝업 닫기 함수
+});
+</script>
+<div class="pop_wrap pop_m" id="lay1">
+    <div class="pop_header">
+        <h1>구매 제한 안내</h1>
+        <button type="button" class="ico_comm pop_close01">닫기</button>
+    </div>
+    <!-- pop_container -->
+    <div class="pop_container">
+        <div class="pop_content">
+            <div class="limit">
+                <span class="img"><img src="/_ui/pos/images/temp/198x198.jpg" alt=""></span>
+                <span class="txt_info01">휴지류 또는 라면류 중 1개를 구입하고 XS드링크(6캔)를 함께 구입시, XS드링크(6캔)/최대 2paxk(12캔)까지만 구매가 가능합니다</span>
+                <dl class="kind">
+                    <dt>라면류</dt>
+                    <dd><span class="break">뉴트리 라면(259334K)</span> <span class="break">뉴트리 라면(259334K)</span> <span class="break">뉴트리(259336K)</span></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- //pop_container -->
+    <div class="pop_footer clearfix">
+        <span class="fl">취소 ESC</span>
+    </div>
+</div>
+</body>
+</html>

@@ -14,6 +14,19 @@ function click_add(){
 	});
 }
 
+// loading open & close
+function loading_open(){
+	var loading_wrap = $("<div class='loading_wrap'><div class='loading_dim'></div><span class='loading_img'><img src='/_ui/pos/images/common/loading.gif' alt='통신중'></span></div>");
+	$("body").css({overflow:"hidden"}).after(loading_wrap);
+}
+
+function loading_close(){
+	$(".loading_wrap").remove();
+	$("body").removeAttr("style");
+}
+
+
+
 //Layer popup open & close
 function pop_open(pop_name){
 
