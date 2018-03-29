@@ -61,84 +61,81 @@
 						</div>
 					</div>
 				</div>
-				 
+
 				<div class="img-product">
 					<div class="col-sm-12 col-md-6 product-image-gallery js-product-image-gallery v-m-pros new-product-image-gallery" style="opacity: 1;">
 						<!-- 2018.03.14 마크업 수정  -->
-						<div id="pdpImg" class=" flexslider">
+						<div id="pdpImg" class="ui-snap-big"><!-- 수정 : 2018.03.29 (class 변경) -->
 							<ul class="slides">
 								<li>
-									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></div>
+									<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
 								</li>
 								<li>
-									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></div>
+									<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
 								</li>
-								<li>
+								<li class="type-video"><!-- 수정 : 2018.03.29 (동영상 구분 class) -->
 									<!-- 유튜브 영상 예시 2018.03.14 추가
-									<div class="video-wrapper"><!-- 2018.03.14 마크업 수정 ( .video-wrapper 추가) 
-										<video width="100%" height="100%" controls autoplay><!-- height 100% 수정 
+									<div class="video-wrapper"><!-- 2018.03.14 마크업 수정 ( .video-wrapper 추가)
+										<video width="100%" height="100%" controls autoplay><!-- height 100% 수정
 											<source src="/_ui/responsive/theme-blue/images/WeChatSight969.mp4" type="video/mp4">
 											<source src="movie.ogg" type="video/ogg">
 											<source src="movie.webm" type="video/webm">
 										</video>
 									</div>
 									-->
-									 
 									<div class="video-wrapper">
 										<iframe width="100%" height="100%" title="아티스트리 하이드라-브이 1분 스토리" src="http://www.youtube.com/embed/7CKdgdVhrwU?rel=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
 									</div>
-									 
 								</li>
 								<li>
 									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></div>
+									<img src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
 								</li>
 								<li>
 									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></div>
+									<img src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
 								</li>
 								<li>
 									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></div>
+									<img src="/_ui/responsive/theme-blue/images/no-border-images/cleanser.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
 								</li>
 								<li>
 									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></div>
+									<img src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
 								</li>
 							</ul>
 						</div>
-						<div id="pdpCarousel" class="flexslider">
-							<ul class="slides">
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_s.png"></a></li>
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/protein-powder.png"></a></li>
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png"></a></li>
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/protein-powder.png"></a></li>
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/protein-powder.png"></a></li>
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/protein-powder.png"></a></li>
-								<li><a href="#"><img src="/_ui/responsive/theme-blue/images/protein-powder.png"></a></li>
-							</ul>
+
+						<!-- 수정 : 2018.03.29 (기존 .flexslider 사용안함) -->
+						<div class="product-recentlyviewed__imagelist ui-snap-item" id="uiPrdViewDetail">
+							<div><button type="button" data-n="0" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></button></div>
+							<div><button type="button" data-n="1" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></button></div>
+							<div><button type="button" data-n="2" class="ui-snap-btn type-video"><img src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png" alt="동영상"></button></div>
+							<div><button type="button" data-n="3" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></button></div>
+							<div><button type="button" data-n="4" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt=""></button></div>
+							<div><button type="button" data-n="5" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/cleanser.png" alt=""></button></div>
+							<div><button type="button" data-n="6" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt=""></button></div>
 						</div>
-						<!-- 2018.03.14 마크업 수정  -->
+						<!-- //수정 : 2018.03.29 (.flexslider 사용안함) -->
+
 					</div>
 					<div class="clearfix hidden-sm hidden-md hidden-lg print-hide"></div>
 					<div class="col-sm-12 col-md-6 pdp-info new-pdp-info">
@@ -364,7 +361,7 @@
 																</div>
 															</div>
 														</div>
- 
+
 														<div class="row add-to-cart-extra-actions col-xs-12 col-sm-12 col-md-12 js-add-to-actions-wrapper link-line">
 															<!--  2018.03.15 태깅 아이디 추가 -->
 															<div class="print"><!-- class 추가 2018.03.27 -->
@@ -389,9 +386,9 @@
 																		</div>
 																	</div>
 																</div>
-																<!-- //URL 복사 팝업 2018.03.27 -->	
+																<!-- //URL 복사 팝업 2018.03.27 -->
 															</div>
-															
+
 															<div class="kokaotalk"><!-- class 추가 2018.03.27 -->
 																<a href="#" id="PDP_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="talk"></a>
 															</div>
@@ -400,13 +397,13 @@
 															</div>
 															<div>
 																<a href="#" id="PDP_Facebook" class="sns-notice"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
-															</div> 
+															</div>
 															<div>
 																<a href="#" id="PDP_Band"><img src="/_ui/responsive/theme-blue/images/new-Band.png" alt="Band"></a>
 															</div>
 															<div>
 																<a href="#" id="PDP_Twitter"><img src="/_ui/responsive/theme-blue/images/new-twitter2.png" alt="twitter"></a>
-															</div> 
+															</div>
 															<!-- // 2018.03.15 태깅 아이디 추가 -->
 														</div>
 													</div>
@@ -450,7 +447,7 @@
 															<p class="product__title">조인트 가드 관절건강<br>프로모션</p>
 															<p class="product__subtitle">기간: 1월 25일(목) 오전 10시 ~ 한정수량</p><!-- a link 삭제 2018.03.15 -->
 														</div>
-													</a> 
+													</a>
 													<!--// 2018.03.15 a 태그 위치 변경 및 태깅ID추가 -->
 												</div>
 											</div>
@@ -459,9 +456,9 @@
 												<div class="news-result-prom">
 													<!-- 2018.03.15 a 태그 위치 변경 및 태깅ID추가 -->
 													<a href="#" id="PDP_PromoBnr">
-														<img src="/_ui/responsive/theme-blue/images/promotions/Promotion_Landing_02.png" class="featured-product__thumnail" alt="new_announcement"><!-- a link 삭제 2018.03.13 --> 
+														<img src="/_ui/responsive/theme-blue/images/promotions/Promotion_Landing_02.png" class="featured-product__thumnail" alt="new_announcement"><!-- a link 삭제 2018.03.13 -->
 														<div class="news-result-prom-text">
-															<p class="product__title"><a href="#">뉴트리라이트 비타민 디 출시 프로모션</p> 
+															<p class="product__title"><a href="#">뉴트리라이트 비타민 디 출시 프로모션</p>
 															<p class="product__subtitle">기간: 1월 25일(목) 오전 10시 ~ 한정수량</p><!-- a link 삭제 2018.03.13 -->
 														</div>
 													</a><!--// 2018.03.15 a 태그 위치 변경 및 태깅ID추가 -->
@@ -472,9 +469,9 @@
 												<div class="news-result-prom">
 													<!-- 2018.03.15 a 태그 위치 변경 및 태깅ID추가 -->
 													<a href="#" id="PDP_PromoBnr">
-														<img src="/_ui/responsive/theme-blue/images/promotions/Promotion_Landing_03.png" class="featured-product__thumnail" alt="new_announcement"><!-- a link 삭제 2018.03.13 --> 
+														<img src="/_ui/responsive/theme-blue/images/promotions/Promotion_Landing_03.png" class="featured-product__thumnail" alt="new_announcement"><!-- a link 삭제 2018.03.13 -->
 														<div class="news-result-prom-text">
-															<p class="product__title">자동이체 서비스 10% PV UP 행사 자동이체 서비스 10% PV UP 행사</a></p><!-- a link 삭제 2018.03.13 --> 
+															<p class="product__title">자동이체 서비스 10% PV UP 행사 자동이체 서비스 10% PV UP 행사</a></p><!-- a link 삭제 2018.03.13 -->
 															<p class="product__subtitle">기간: 1월 25일(목) 오전 10시 ~ 한정수량</p>
 														</div>
 													</a><!--// 2018.03.15 a 태그 위치 변경 및 태깅ID추가 -->
@@ -809,7 +806,7 @@
 													</div>
 												</div>
 												<div class="item">
-													<div class="full-width-item second-option"> 
+													<div class="full-width-item second-option">
 														<div class="item-image-wrap">
 															<span class="primary-link">
 																<img class="desktop-image" src="/_ui/responsive/theme-blue/images/product-learning2.png" alt="">
@@ -820,7 +817,7 @@
 															<div class="carousel-link-wrap">
 																<p  class="primary-link"><span>엣모스피어 드라이브 가이드 영상 - 설치</span></p>
 															</div>
-														</div> 
+														</div>
 													</div>
 												</div>
 												<div class="item">
@@ -1146,7 +1143,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- 이미지 확대보기 : 2018.03.16 (akl 사용안함)
 		<div class="cart-popup modal fade" id="product-zoom-image-panel" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true" style="display:block; border:1px solid red">
 			<div class="product-description__super-zoom">
@@ -1517,7 +1514,7 @@
 							</div>
 							<!--// 2018.02.13 수정 -->
 						</div>
-					 
+
 						<div class="view-sns right">
 							<!-- 2018.03.05 : 수정 (img에서  href="#" 삭제, html syntax error) 2018.03.13 태깅 아이디 추가 -->
 							<div>
@@ -1534,13 +1531,13 @@
 							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Facebook"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
-							</div> 
+							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Band"><img src="/_ui/responsive/theme-blue/images/new-Band.png" alt="Band"></a>
 							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Twitter"><img src="/_ui/responsive/theme-blue/images/new-twitter2.png" alt="twitter"></a>
-							</div> 
+							</div>
 							<!-- //2018.03.05 : 수정 (img에서  href="#" 삭제, html syntax error) 2018.03.13 태깅 아이디 추가 -->
 						</div>
 						<!-- //layer conts -->
@@ -1563,21 +1560,19 @@
 				<div class="popop-tbody">
 					<div class="pop-gallery" id="largeImgView"><!-- 2018.03.14 마크업 수정: #largeImgView 추가  -->
 						<span><img src="/_ui/responsive/theme-blue/images/heart-health.png" alt="heart health pack"></span>
+						<div class="video-wrapper"></div>
 					</div>
 					<div class="popup-img-list">
 						<div class="product-recentlyviewed__imagelist" id="recentlyViewedListTab2">
-							<!-- 2018.03.14 마크업 수정  -->
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/vitamin-c.png" alt="vitamin-c 테스트용"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/lip-gloss.png" alt="lip-gloss"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/protein-powder-sm.png" alt="protein-powder-sm"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt="truvivity"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt="perfect-pack"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/cleanser.png" alt="cleanser"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt="blush"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt="blush"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt="perfect-pack"></a></div>
-							<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/lip-gloss.png" alt="lip-gloss"></a></div>
-							<!-- // 2018.03.14 마크업 수정  -->
+							<!-- 수정 : 218.03.29 --><!-- 2018.03.14 마크업 수정  -->
+							<div><a href="#" data-n="0"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/no_img_s.png" alt=""></a></div>
+							<div><a href="#" data-n="1"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></a></div>
+							<div><a href="#" data-n="2" class="type-video"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png" alt="동영상"></a></div>
+							<div><a href="#" data-n="3"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></a></div>
+							<div><a href="#" data-n="4"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/perfect-pack.png" alt=""></a></div>
+							<div><a href="#" data-n="5"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/cleanser.png" alt=""></a></div>
+							<div><a href="#" data-n="6"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/blush.png" alt=""></a></div>
+							<!-- //수정 : 218.03.29 --><!-- // 2018.03.14 마크업 수정  -->
 						</div>
 					</div>
 				</div>
@@ -1663,7 +1658,7 @@
 				</div>
 				<div class="cart-popup__item-link">
 					<div class="cart-popup__item-link-content">
-	                    <button id="PopupQuickView_DirectPurchase" class="bt-akl-blue" onclick="openDialog();">바로구매</button> <!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 --> 
+	                    <button id="PopupQuickView_DirectPurchase" class="bt-akl-blue" onclick="openDialog();">바로구매</button> <!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 -->
 	                    <button id="PopupQuickView_AddCart" class="bt-akl-white" onclick="openDialog();">장바구니</button><!-- 클래스 변경 --><!-- 2018.03.15 태깅 아이디 추가 -->
 	                </div>
 				</div>
@@ -1675,7 +1670,7 @@
 	<script type="text/javascript">
 	$(function(){
 		//위시리스트
-		//add to shopping list event 
+		//add to shopping list event
 		$(".js-add-list-shopping-button").click(function(){
 			if($(".add-to-shopping-list-component-container").hasClass("display-none")){
 				$(".add-to-shopping-list-component-container").removeClass("display-none");
@@ -1687,7 +1682,7 @@
 		$("#addToLIST").click(function(){
 			$(".add-to-shopping-list-container").removeClass('open');
 		});
-		
+
 		//최근 본 제품
 		$('#recentlyViewedListTab').owlCarousel({
 			loop: true,
@@ -1711,7 +1706,7 @@
 				}
 			}
 		});
-		
+
 		//함께하면 좋은 제품
 		$('#productSuggestListTabs').owlCarousel({
 			loop: true,
@@ -1735,7 +1730,7 @@
 				}
 			}
 		});
-		
+
 		//온라인 교육자료
 		$('#productLearningListTabs').owlCarousel({
 			loop: true,
@@ -1793,23 +1788,25 @@
 			event.preventDefault();
 			layerPopOver(this,'.QUICK_VIEW_pop');
 		});
-		
+
 		//03.26 추가
 		$('.sns-notice').click(function(event) {
 			event.preventDefault();
 			layerPopOver(this,'.sns_pop');
 		});
-		
+
 		$(".url-copy").click(function(){
 			$(".url_pop").toggle();
 		});
-		
+
 		$(".cart-popup-close").click(function(){
 			$(".url_pop").fadeOut();
 			$(".url_pop").fadeOut("slow");
 			$(".url_pop").fadeOut(3000);
 		});
 
+
+		/* 2018.03.29 사용안함 : $.uiSnapImg 로 대체
 		//상단 제품이미지 롤링
 		$('#pdpImg').flexslider({
 			animation: "slide",
@@ -1827,8 +1824,7 @@
 			itemMargin: 5,
 			asNavFor: '#pdpImg'
 		});
-		
-		/* 크게보기-레이어 */
+		//크게보기-레이어
 		$('#recentlyViewedListTab2').owlCarousel({
 			loop: true,
 			nav: true,
@@ -1847,7 +1843,111 @@
 					items: 5
 				}
 			}
-		});
+		}); */
+
+
+		// 2018.03.29 추가 : START
+		// 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정
+		$.uiSnapImg = {
+			owl: function(opt){
+				var popidx = 0;
+
+				$('#pdpImg').find('li').removeClass('on').eq(opt.current).addClass('on');
+				$('#uiPrdViewDetail').owlCarousel({
+					loop: true,
+					nav: true,
+					dots: false,
+					margin: 0,
+					items: 3,
+					startPosition: opt.current,
+					responsive: {
+						480 : {
+							items: 3
+						},
+						768 : {
+							items: 3
+						},
+						960 : {
+							items: 4
+						},
+						1200 : {
+							items: 5
+						}
+					}
+				});
+
+				$(document).off('click.snapimg').on('click.snapimg', '.ui-snap-btn', function(){
+					//popidx = $(this).closest('.owl-item').index();
+					popidx = $(this).data('n');
+					$('#pdpImg').find('li').removeClass('on').eq(popidx).addClass('on');
+				});
+
+				$('.G10300_lp1_btn').click(function(event) {
+					event.preventDefault();
+					layerPopOver('this','.G10300_lp1_pop');
+					popidx = $(this).closest('.on').index();
+
+					$('#recentlyViewedListTab2').owlCarousel({
+						startPosition:popidx,
+						loop: true,
+						nav: true,
+						dots: false,
+						margin: 0,
+						items: 3,
+						responsiveClass: true,
+						responsive: {
+							480 : {
+								items: 3
+							},
+							768 : {
+								items: 3
+							},
+							960 : {
+								items: 4
+							},
+							1200 : {
+								items: 5
+							}
+						}
+					});
+					$('#largeImgView img').attr('src', $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').find('img').attr('src'));
+
+
+					var $IMG = $('#largeImgView.pop-gallery').find('img');
+					var $listIMG = $('#recentlyViewedListTab2').find('img');
+
+					//동영상 주소 가져오기
+					var $video = $('#largeImgView.pop-gallery').find('.type-video');
+					var findVideo = $('#pdpImg').find('li.type-video .video-wrapper').html();
+					var imageWrapper = $('#largeImgView.pop-gallery').find('span');
+					var videoWrapper = $('#largeImgView.pop-gallery').find('.video-wrapper');
+					$(findVideo).appendTo( videoWrapper );
+
+					//이미지 클릭시
+					$listIMG.each(function(){
+						$(this).on('click',function(e){
+							e.preventDefault();
+
+							var _SRC = $(this).attr('src');
+							var _ALT = $(this).attr('alt');
+							$IMG.attr({'src':_SRC, 'alt':_ALT});
+
+							//비디오 이미지 클릭 시
+							var _parent =  $(this).parent();
+							if( _parent.hasClass('type-video')){
+								$(imageWrapper).hide();
+								$(videoWrapper).show();
+							} else{
+								$(imageWrapper).show();
+								$(videoWrapper).hide();
+							}
+						});
+					});
+				});
+			}
+		}
+		$.uiSnapImg.owl({ current:0 });
+		// 2018.03.29 추가 : END
 
 	});
 	</script>
