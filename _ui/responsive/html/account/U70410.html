@@ -166,7 +166,7 @@
 																	<div class="amway-suggest col-md-12">
 																		<div id="productSuggestListTabs" class="amway-suggest__list">
 																			<div class="amway-suggest__item-container">
-																				<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																				<div class="amway-suggest__item sort">
 																					<div class="amway-suggest__item-content amwahover">
 																						<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="amway-suggest__thumbnail" alt="product1">
 																						<div class="amway-suggest__item-detail quick-search">
@@ -191,7 +191,7 @@
 																				</div>
 																			</div>
 																			<div class="amway-suggest__item-container">
-																				<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																				<div class="amway-suggest__item sort">
 																					<div class="amway-suggest__item-content amwahover">
 																						<img src="/_ui/responsive/theme-blue/images/product_list_item2.png" class="amway-suggest__thumbnail" alt="product2">
 																						<div class="amway-suggest__item-detail quick-search">
@@ -216,7 +216,7 @@
 																				</div>
 																			</div>
 																			<div class="amway-suggest__item-container">
-																				<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																				<div class="amway-suggest__item sort">
 																					<div class="amway-suggest__item-content amwahover">
 																						<img src="/_ui/responsive/theme-blue/images/product_list_item3.png" class="amway-suggest__thumbnail" alt="product3">
 																						<div class="amway-suggest__item-detail quick-search">
@@ -241,7 +241,7 @@
 																				</div>
 																			</div>
 																			<div class="amway-suggest__item-container">
-																				<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																				<div class="amway-suggest__item sort">
 																					<div class="amway-suggest__item-content amwahover">
 																						<img src="/_ui/responsive/theme-blue/images/product_list_item4.png" class="amway-suggest__thumbnail" alt="product4">
 																						<div class="amway-suggest__item-detail quick-search">
@@ -266,7 +266,7 @@
 																				</div>
 																			</div>
 																			<div class="amway-suggest__item-container">
-																				<div class="amway-suggest__item sort"><!-- sort 추가 -->
+																				<div class="amway-suggest__item sort">
 																					<div class="amway-suggest__item-content amwahover">
 																						<img src="/_ui/responsive/theme-blue/images/product_list_item4.png" class="amway-suggest__thumbnail" alt="product5">
 																						<div class="amway-suggest__item-detail quick-search">
@@ -306,7 +306,6 @@
 												</div>
 											</div>
 										</div>
-										<!-- //마크업 수정 -->
 									</div>
 								</div>
 
@@ -499,12 +498,13 @@
 														<span class="value-wrapper">350,000,000</span>
 													</div>
 												</li>
-												<li class="product-list-item js-shopping-cart-list-item">
+												<li class="product-list-item js-shopping-cart-list-item shipping-fee">
 													<div class="col-xs-12 col-md-6 product-details print-col-6">
-														<div class="">배송비</div>
+														<span class="est-delv-txt">배송비</span>
 													</div>
 													<div class="col-xs-12 col-md-2 product-item-element list-item-quantity2 print-col-6">
-														<div class="">0</div>
+														<span class="est-delv-tit">수량</span>
+														<span class="est-delv-num">0</span>
 													</div>
 													<div class="col-xs-12 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
 														<span class="price-label">단가</span>
@@ -523,6 +523,18 @@
 														<span class="value-wrapper">350,000,000</span>
 													</div>
 												</li>
+												<li class="product-list-item js-shopping-cart-list-item supply-price">
+													<div class="col-xs-12">
+														<span class="col-md-6 est-label">공급가액<em>(부가세 포함)(원)</em></span>
+														<span class="col-md-6 est-num">111,000</span>
+													</div>
+												</li>
+												<li class="product-list-item js-shopping-cart-list-item supply-price">
+													<div class="col-xs-12">
+														<span class="col-md-6 est-label">총계<em>(원)</em></span>
+														<span class="col-md-6 est-num">101,211,000</span>
+													</div>
+												</li>
 												<li class="product-list-item  js-shopping-cart-list-item">
 													<div class="search-no-result">
 														<p>견적 제품목록이 없습니다.</p>
@@ -530,6 +542,62 @@
 												</li>
 
 											</ul>
+										</div>
+
+										<div class="es-prod-move">
+											<div class="wish-num">
+												<span>선택한 제품 : <strong>3</strong>개</span>
+											</div>
+											<div class="add-wish-warp2">
+												<div class="add-button-wrap add-to-shopping-list-container new-add-to-shopping-list-container">
+													<button type="button" class="btn btn-link btn-block js-add-list-shopping-button" data-toggle="dropdown" id="">
+														<span class="icon-add-shopping-list"></span>
+														<span class="shopping-list-button-text">위시리스트 등록</span>
+													</button>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio3" id="radio1" value="radio1" checked="" />
+																<label for="radio1">예</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio3" id="radio2" value="radio2" checked="" />
+																<label for="radio2">예</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio3" id="radio3" value="radio3" checked="" />
+																<label for="radio3">예</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio3" id="radio4" value="radio4" checked="" />
+																<label for="radio4">예</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio3" id="radio5" value="radio5" checked="" />
+																<label for="radio5">예</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST" class="btn btn-primary">담기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="wish-del">
+												<button type="button" class="link-btn" id="Cart_Delete2">선택 항목 삭제</button>
+											</div>
+
+										</div>
+										
+										<div class="est-txt-area">
+											<ul class="list-type2">
+												<li>본 견적서는 발행 후 일주일간 유효합니다.</li>
+											</ul>
+										</div>
+
+										<div class="btnArea-center">
+											 <button type="button" id="" class="bt-akl-blue">저장</button>
 										</div>
 									</div>
 								</div>
@@ -559,12 +627,67 @@
 		<div id="footer"></div>
 	</main>
 
+	<!-- 위시리스트 추가 팝업 -->
+	<div class="layerWrapper wishListAdd">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">위시리스트 추가
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+				</div>
+				<div class="cart-popup__content wish-list">
+					<div class="cart-popup__item-info">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-4 account-profile__label" for="wishlist-name">위시리스트 명</label>
+								<div class="col-md-8 account-profile__value">
+									<input type="text" class="form-control" id="wishlist-name">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+					<a class="bt-akl-txt">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //위시리스트 추가 팝업 -->
+
 	<script type="text/javascript">
 		$(function() {
 			$(".select2-hidden-accessible").select2();
 			$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
-		})
+		});
 		
+		//add to shopping list event
+		$(".js-add-list-shopping-button").click(function(){
+
+			if($(".add-to-shopping-list-component-container").hasClass("display-none")){
+				$(".add-to-shopping-list-component-container").removeClass("display-none");
+			}else{
+				$(".add-to-shopping-list-component-container").addClass("display-none");
+			}
+		});
+
+		$("#addToLIST").click(function(){
+			$(".add-to-shopping-list-container").removeClass('open');
+		});
+
+		$(".cart-detail__dropdown-menu").on("click",function(e){
+			e.stopPropagation();
+		});
+
+		$('.btn-add-wish').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.wishListAdd');
+		});
+
 		$('#productSuggestListTabs').owlCarousel({
 			loop: true,
 			nav: true,

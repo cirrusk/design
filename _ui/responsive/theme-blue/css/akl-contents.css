@@ -477,7 +477,7 @@ Editor : minjung Koo
 .akl .add-wish-warp .add-button-wrap button {border:0 none}
 .akl .add-wish-warp .add-button-wrap button.btn-primary {border:2px solid #002F5F;font-weight:500}
 .akl .add-wish-warp .add-button-wrap button.btn-primary:hover {color:#002F5F;border:2px solid #002F5F;}
-.akl .add-wish-warp .dropdown-menu-bottom .btn-add-wish {padding-left:10px;}
+.akl .dropdown-menu-bottom .btn-add-wish {padding-left:10px;font-size:14px;color:#002F5F;font-weight:400}
 
 /* 장바구니 > tool tip */
 .akl .list-item-quantity {position:relative;}
@@ -1319,7 +1319,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .est-prod-list .list-header .list-item-name, .est-prod-list .list-header .list-item-quantity, .est-prod-list .list-header .list-item-price, .est-prod-list .list-header .list-item-total 
 {font-size:13px;font-weight:500;position:relative;padding:13px 0;text-align:left;}
 
-.est-prod-list .value-wrapper {font-size:14px;font-weight:400;text-align:right;}
+.est-prod-list .value-wrapper {font-size:14px;font-weight:400;}
 .est-prod-list .product-item-element.list-item-info {display:table-cell;width:100%;vertical-align:top;}
 .est-prod-list .product-item-element .est-product-codename {display:table;width:100%;}
 .est-prod-list .shopping-cart-item-list .product-list-item .list-item-info .product-code {display:table-cell;width:29%;padding-left:10px}
@@ -1329,6 +1329,34 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .est-prod-list .list-item-quantity2 {position:relative;}
 .est-prod-list .list-item-quantity2.col-md-2 {padding-left:0}
 .est-prod-list .shopping-cart-item-list .product-list-item {padding:1.2em 0 0.8em}
+.est-prod-list .shopping-cart-item-list .product-list-item.shipping-fee {padding:1.2em 0 1.2em}
+.est-prod-list .shopping-cart-item-list .product-list-item.supply-price {padding:1.2em 0 1.2em;background:#f4f4f4}
+.est-prod-list .est-delv-txt {font-size:14px;font-weight:400;text-align:center;padding:8px 0 0;}
+.est-prod-list .est-delv-num {font-size:14px;font-weight:400;padding:8px 0 0;}
+.est-prod-list .est-label {font-size:13px;font-weight:700;color:#002f5f;}
+.est-prod-list .est-label em {font-weight:400}
+.est-prod-list .est-num {font-size:14px;font-weight:700;color:#002f5f;text-align:right;}
+.est-prod-list .est-delv-tit {display:none;}
+
+.es-prod-move {clear:both;display:block;padding:15px 0 0;height:auto;}
+.es-prod-move .wish-num {display:inline-block;vertical-align:top;padding:10px 0 0}
+.es-prod-move .wish-num span {font-size:14px;}
+.es-prod-move .add-wish-warp2 {display:inline-block;vertical-align:top;position:relative;margin-left:5px}
+.es-prod-move .add-wish-warp2 .add-button-wrap {padding:0 0 !important}
+.es-prod-move .add-wish-warp2 .add-button-wrap.open {border-top:1px solid #dadada !important}
+.es-prod-move .add-wish-warp2 button {padding:0 10px;margin:0 0;}
+.es-prod-move .add-wish-warp2 button .shopping-list-button-text {font-size:14px;color:#0075a4;}
+.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu {z-index:9999999 !important;position: absolute;left:0;right:auto;top:41px;border-top:1px solid #dadada}
+.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu:after {content:'';position: absolute;top:-2px;left:0;width:148px;height:4px;background:#fff}
+.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu ul {padding:10px 15px;height:150px;overflow:auto;}
+.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu ul li {padding:10px 0;border-top:1px solid #e3e3e3;}
+.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu ul li:first-child {border-top:0 none;}
+.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu ul li label {top:0;font-size:14px;height:18px;font-weight:500;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.es-prod-move .add-wish-warp2 .dropdown-menu-bottom {border-top:1px solid #ccc;padding:10px 20px;}
+.es-prod-move .wish-del {display:inline-block;vertical-align:top;padding:10px 0 0}
+
+.est-txt-area {clear:both;display:block;padding:30px 0 30px;border-bottom:1px solid #e3e3e3;}
+.akl .btnArea-center {clear:both;display:block;margin:40px auto 60px;text-align:center;}
 
 
 @media (max-width: 990px) {
@@ -1914,6 +1942,25 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.info-producer ul li dl.type2 dt {width:30%;}
 	.info-producer ul li dl.type2 dd {width:70%;}
 	.divisio-pen {float:left;width:100%;}
+	
+	/* 중개판매관리 > 견적제품목록 */
+	.akl .amway-theme .navigation-tabs-container {display:block;}
+	.est-prod-list .product-item-element.list-item-info {display:block;padding:0 0;}
+	.est-prod-list .shopping-cart-item-list .product-list-item .list-item-info .product-code {display:block;width:100%;padding-left:0}
+	.est-prod-list .shopping-cart-item-list .product-list-item .list-item-info .product-name {display:block;width:100%}
+	.est-prod-list .shopping-cart-item-list .product-list-item .product-item-element {margin:5px 0 0}
+	.est-prod-list .shopping-cart-item-list .product-list-item .product-item-element .price-label {padding:0 0;}
 
+	.est-prod-list .shopping-cart-item-list .product-list-item.supply-price {padding:1.2em 1em;}
+	.est-prod-list .shopping-cart-item-list .product-list-item.supply-price .est-label {float:left;}
+	.est-prod-list .shopping-cart-item-list .product-list-item.supply-price .est-num {float:right;}
+	
+	.es-prod-move .wish-num {display:block;}
+	.es-prod-move .add-wish-warp2 {display:block;float:left;margin-left:0;margin-top:10px;}
+	.es-prod-move .add-wish-warp2 .cart-detail__dropdown-menu {width:250px;}
+	.es-prod-move .wish-del {display:inline-block;float:left;vertical-align:top;padding:20px 0 0;margin:0 0;}
+	.est-prod-list .est-delv-txt {text-align:left;font-size:14px;font-weight:500}
+	.est-prod-list .est-delv-tit {float:left;display:block;font-size:14px;color:#002f5f;letter-spacing:-1px;font-weight:500;}
+	.est-prod-list .est-delv-num {float:right;}
 
 }
