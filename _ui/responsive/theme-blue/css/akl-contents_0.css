@@ -13,6 +13,14 @@ Version : AKL Hybris UIUX 1.0
 .loading .loading-wrap {display:table-cell; width:100%; height:100%;vertical-align:middle;text-align:center; }
 
 /*** common ***/
+::-webkit-input-placeholder {color: #808285; opacity:.6;}
+:-ms-input-placeholder {color:#808285;}
+:-moz-placeholder {color:#808285;}
+::-moz-placeholder {color:#808285;}
+.form-control::-webkit-input-placeholder {color:#808285; opacity:.6;}
+.form-control::-moz-placeholder {color:#808285; opacity:1;}
+.form-control:-ms-input-placeholder {color:#808285;}
+
 .akl {font-family:'Noto Sans KR', sans-serif; font-weight:normal; }
 .akl .amway-theme * {font-size:14px; letter-spacing:-1px; outline:initial;}
 .akl button {font-family:'Noto Sans KR', sans-serif !important}
@@ -122,12 +130,12 @@ Version : AKL Hybris UIUX 1.0
 
 /* common > form */
 .akl label {font-weight: 500;}
-.akl .form-control {box-shadow:0 0 0 rgba(0,0,0,0.075) inset;color:#808285;font-size:14px;margin:0 0;}
+.akl .form-control {box-shadow:0 0 0 rgba(0,0,0,0.075) inset;/* color:#808285; */font-size:14px;margin:0 0;}
 .akl input[type="text"],.akl input[type="password"] { height:40px; border: solid 1px #dadada;padding:0 15px; }
 .akl select.form-control {padding:0 30px 0 15px; }
-.akl input:-ms-input-placeholder { color: #808285; }
+/* .akl input:-ms-input-placeholder { color: #808285; }
 .akl input::-webkit-input-placeholder { color: #808285; }
-.akl input::-moz-placeholder { color: #808285; }
+.akl input::-moz-placeholder { color: #808285; } */
 .akl button:disabled  { background: #bbb !important;border-color:#bbb !important; white-space:nowrap; font-weight: 400; color:#fff }
 .akl input[disabled],.akl select[disabled],.akl input[readonly],.akl select[readonly]{ background:#f4f4f4 !important;border-color:#bbb !important; white-space:nowrap; font-weight: 400; color:#bbb;  }
 .akl .amway-theme label {padding-top:0; font-size: 14px;}
@@ -664,8 +672,8 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .shipping-form-wrapper .button-group button { background:none; color: #002f5f; font-family:'SNoto Sans KR'; font-weight:500; font-size: 14px; padding:0; height:auto;  color:#0075a4}
 .shipping-form-wrapper .button-group button img { width:14px; vertical-align: middle;}
 .shipping-form-wrapper .button-group button:before { content:"|"; display:inline-block; padding-right:10px;color:#55565a }
-.shipping-form-wrapper .button-group button:nth-of-type(1) {color:#55565a}
 .shipping-form-wrapper .button-group button:nth-of-type(1):before {display:none;}
+.shipping-form-wrapper .button-group button.on {color:#55565a;}
 .shipping-form-wrapper .ico-bg-sky { margin-left:5px }
 
 .shipping-top { clear:both; overflow: hidden; margin: 10px 0 5px}
@@ -967,7 +975,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .plp-add-to-ditto .dropdown-menu .dropdown-menu-bottom a { float:none; top: auto; left: 10px;}
 .form-wrapper.address-pop02 form input {margin-right:0;}
 
-.akl .plp-add-to-shopping-list .dropdown-menu {top:40px;} 
+.akl .plp-add-to-shopping-list .dropdown-menu {top:40px;}
 .akl .plp-add-to-shopping-list .dropdown-menu li {line-height:18px;border-bottom: 1px solid #dadada; padding:18px 0 8px}
 .akl .plp-add-to-shopping-list .dropdown-menu li label {top:0;height:21px;font-size:14px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-wieght:400}
 .akl .plp-add-to-shopping-list .dropdown-menu li:last-child {border-bottom:0;}
@@ -1376,12 +1384,12 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .plp-add-to-shopping-list .dropdown-menu { width: auto; margin-right: 10px; border-top:1px solid #ccc;top:30px;}
 	.akl .plp-add-to-ditto .dropdown-menu {  width: auto; margin-right: 10px;  border-top:1px solid #ccc; top:63px;}
 	.col-search-right .new-product__listing .product-list__item-link-ditto {
-    
+
     background: url(../images/ditto_2.svg) no-repeat 0 0 !important;
     background-size: 22px 22px;
 }
-	 
-    /* 로그인 > connectedID  */ 
+
+    /* 로그인 > connectedID  */
 	.akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper th, .akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper td {display: block;}
 	.pop-U30000-lp3 strong { display: block; margin-left:0}
 
