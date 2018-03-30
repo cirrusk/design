@@ -25,8 +25,6 @@ function loading_close(){
 	$("body").removeAttr("style");
 }
 
-
-
 //Layer popup open & close
 function pop_open(pop_name){
 
@@ -44,5 +42,25 @@ function pop_close(pop_name){
 
 	$(pop_name).remove();
 	$(".dim_box").remove();
+
+}
+
+//alert open & close
+function alert_open(pop_name){
+
+	var dim_box = $("<div class='dim_box02'></div>");
+	$(pop_name).after(dim_box);
+
+	var pop_wid = $(pop_name).width();
+	var pop_hei = $(pop_name).height();
+
+	$(pop_name).css({marginLeft:-(pop_wid/2), marginTop:-(pop_hei/2)});
+
+}
+
+function alert_close(pop_name){
+
+	$(pop_name).remove();
+	$(".dim_box02").remove();
 
 }
