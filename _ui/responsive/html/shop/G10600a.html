@@ -63,7 +63,8 @@
 									<li>AP 픽업 예약 주문 후, 찾아가지 않은 물품에 대해서는 매 익월 20일에 자동반품과 환불 및 실적차감 처리가 이루어집니다.</li>
 								</ul>
 							</div>
-
+							
+							<!-- 마크업 수정 2018.04.02 -->
 							<div class="panel">
 								<input class="amwa-radio" type="radio" name="optradio" id="radio1">
 								<label for="radio1">배달주문(ABN에서 주문하시고 택배로 제품을 인수하는 방법)</label>
@@ -125,7 +126,7 @@
 																				</ul>
 																			</div>
 																		</div>
-																</div>
+																	</div>
 																</div>
 															</div>
 
@@ -451,8 +452,10 @@
 									</div>
 								</div>
 							</div>
+							<!-- //마크업 수정 2018.04.02 -->
 						</div>
-
+						
+						<!-- 마크업 수정 2018.04.02 -->
 						<div id="selectPay" class="shipping-delivery-ship method">
 							<p class="shipping-delivery-shipping-header">결제방법 선택</p>
 							<div class="panel">
@@ -514,12 +517,12 @@
 													</select>
 													<div class="card-kinds">
 														<span class="col-xs-12 col-md-6">
-															<input class="amwa-radio" type="radio" name="optradio" id="radio4" />
-															<label for="radio4" class="collapsed" data-toggle="collapse" href="#gaeincard" data-parent="#shippingdiv">개인카드</label><!-- 마크업수정 2018.04.02-->
+															<input class="amwa-radio" type="radio" name="optradio" id="individual" />
+															<label for="individual">개인카드</label><!-- 마크업수정 2018.04.02-->
 														</span>
 														<span class="col-xs-12 col-md-6">
-															<input class="amwa-radio" type="radio" name="optradio" id="radiod" />
-															<label for="radiod" class="collapsed" data-toggle="collapse" href="#bubincard" data-parent="#shippingdiv">법인카드</label><!-- 마크업수정 2018.04.02-->
+															<input class="amwa-radio" type="radio" name="optradio" id="corporation" />
+															<label for="corporation">법인카드</label><!-- 마크업수정 2018.04.02-->
 														</span>
 													</div>
 													<div class="card-favor">
@@ -528,7 +531,7 @@
 												</div>
 											</div>
 											<!-- 마크업수정 2018.04.02-->
-											<div id="gaeincard" class="shipping-delivery-radio-body card panel-collapse collapse">
+											<div id="gaeincard" class="card-sort panel-collapse collapse">
 												<div class="form-group">
 													<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
 													<div class="col-xs-12 col-md-8">
@@ -587,7 +590,7 @@
 													</div>
 												</div>
 											</div>
-											<div id="bubincard" class="shipping-delivery-radio-body card panel-collapse collapse">
+											<div id="bubincard" class="card-sort panel-collapse collapse">
 												<div class="form-group">
 													<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
 													<div class="col-xs-12 col-md-8">
@@ -885,6 +888,8 @@
 								</div>
 							</div>
 						</div>
+						<!-- //마크업 수정 2018.04.02 -->
+
 						<div class="shipping-delivery-ship">
 							<div class="col-xs-12 pay-transaction">
 								<p class="shipping-delivery-setup-title col-md-3">거래내역 증빙신청</p>
@@ -3301,7 +3306,6 @@ $(function(){
 	//배송방법 선택
 	var radioDelivery = $('#shippingdiv').find('.amwa-radio');
 
-
 	$(radioDelivery).each(function(){
 		$(this).click(function(){
 
@@ -3317,14 +3321,32 @@ $(function(){
 	var radioPay = $('#selectPay').find('.amwa-radio');
 	$(radioPay).each(function(){
 		$(this).click(function(){
+			
 			var $panel = $(this).parent('.panel');
 			if( $(this).prop("checked", false) ){
 				$(this).prop("checked", true).attr('checked', 'checked');
-				$panel.find('.panel-collapse').removeClass('collapse');
-				$panel.siblings().find('.panel-collapse').addClass('collapse');
+				$panel.find('.shipping-delivery-radio-body.panel-collapse').removeClass('collapse');
+				$panel.siblings().find('.shipping-delivery-radio-body.panel-collapse').addClass('collapse');
 			}
 		})
 	});
+
+	$('#individual').click(function(){
+		if( $(this).prop("checked", false) ){
+			$(this).prop("checked", true).attr('checked', 'checked');
+			$('#bubincard').addClass('collapse');
+			$('#gaeincard').removeClass('collapse');
+		}
+	});
+
+	$('#corporation').click(function(){
+		if( $(this).prop("checked", false) ){
+			$(this).prop("checked", true).attr('checked', 'checked');
+			$('#gaeincard').addClass('collapse');
+			$('#bubincard').removeClass('collapse');
+		}
+	});
+
 });
 </script>
 </body>

@@ -410,6 +410,8 @@ Editor : minjung Koo
 /*** 장바구니 ***/
 .product-list-page-title {font-family:'Noto Sans KR', sans-serif;}
 .akl .cart-content-wrapper .account-section-content {margin-bottom:30px;}
+.akl .cart-content-wrapper .account-section-content .panel-group .panel-heading + .panel-collapse > .panel-body {border-top: 0;}
+.akl .cart-content-wrapper .account-section-content .panel-body { padding-top: 0;} 
 .akl .cart-top-totals {font-size:18px;font-weight:500;letter-spacing:-2px; margin-top:12px}
 .akl .row.shop-cart-conts .col-md-9 {padding-left:0;}
 .akl .row.shop-cart-conts .col-md-3 {padding-right:0;}
@@ -883,9 +885,11 @@ span.btn-business {display:inline-block;}
 /* 주문결제 > 단일 */
 .single-body {position:relative;}
 .btn-adress-list {position: absolute;top:-51px;left:160px;}
+.btn-adress-list.mounting {position: relative;top:0;left:0;}
 
 /* 주문결제 > 단일 > 기본배송지 */
-.default-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
+.default-shipping-address {clear:both;display:block;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
+.default-shipping-address.no-botm {border-bottom:0 none;}
 .address-tit {font-size:16px;font-weight:500;letter-spacing:-1px;}
 .default-shipping-address .detail-content {margin:0 0;padding:0 0;letter-spacing:-1px;width:100%;}
 .default-shipping-address .detail-content .col-xs-12 {margin:0 0 10px;padding:0 0;}
@@ -1284,6 +1288,8 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .datepicker .datepicker-days .table-condensed thead tr th.prev { font-size:22px; padding-top:0px; }
 .akl .datepicker .datepicker-days .table-condensed thead tr th.next { font-size:22px; padding-top:0px; }
 .akl .datepicker .datepicker-days .table-condensed thead tr th.atepicker-switch { padding-top:7px;}
+.akl .panel.shop-install {margin-bottom:0;}
+.akl .panel.shop-install .default-shipping-address, .akl .panel.shop-install .new-shipping-address {border-bottom:0 none;}
 
 /* 주문결제 > 주문완료 */
 .akl .confirm-box {padding:34px 0 34px;}
@@ -1394,19 +1400,24 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 
 /* common > 제품리스트 */
 .shopping-tbl-list {clear:both;display:block;width:100%;}
-.tbl-thead {display:table;width:100%;table-layout:fixed;background:#f4f4f4;padding:9px 10px 0;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
-.tbl-thead > div {display:table-cell;font-size:13px;vertical-align:top;color:#002f5f;font-weight:500}
-.tbl-thead > div.item-info {width:15%;}
-.tbl-thead > div.item-name {width:20%;}
-.tbl-thead > div.item-quantity {width:10%}
-.tbl-thead > div.item-price {}
-.tbl-thead > div.item-total {}
+.shopping-th {display:table;width:100%;table-layout:fixed;background:#f4f4f4;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.shopping-th .th-chk, .shopping-th .th-tit {float:left;}
+.shopping-th .th-chk {width:5%;text-align:center;vertical-align:top;}
+.shopping-th .th-tit {width:95%;text-align:left;vertical-align:top;}
+.shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;}
+.shopping-th .th-tit.th-head > div {display:table-cell;font-size:13px;font-weight:500;color:#002f5f;}
+.shopping-th .item-number {width:15%;}
+.shopping-th .item-subject {width:26%;}
+.shopping-th .item-quantity {width:15%;}
+.shopping-th .item-price {width:10%;}
+.shopping-th .item-total {width:10%;}
 
-.tbl-thead span.all-txt {font-size:13px;vertical-align:top !important;color:#002f5f;font-weight:500}
-ul.tbl-tbody {clear:both;display:block;}
-ul.tbl-tbody {display:table;width:100%;table-layout:fixed}
-
-
+.shopping-tbody {clear:both;display:block;}
+.shopping-tbody ul {}
+.shopping-tbody ul li {clear:both;display:block;display:table;position:relative;padding:11px 0;width:100%;}
+.shopping-tbody .td-chk, .shopping-td .td-info {float:left;}
+.shopping-tbody .td-chk {width:5%;text-align:center;vertical-align:top;}
+.shopping-tbody .td-info {width:95%;text-align:left;vertical-align:top;}
 
 /* 중개판매관리 > 중개판매 견적내역 */
 .esthistory-box {clear:both;display:block;border-bottom:1px solid #e3e3e3;padding:20px 0}
