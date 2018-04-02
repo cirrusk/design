@@ -344,7 +344,7 @@ function qkLinkAlign(){
 	}
 
 	function qLinkItem_Align_Destroy(){
-		$('#accordion').isotope('destroy'); //플러그인 해제
+		$('#accordion').isotope().isotope('destroy'); //플러그인 해제
 	}
 
 	run_qLinkAlign();
