@@ -483,6 +483,9 @@
 												</select>
 												<button type="button" class="bt-akl-blue">확인</button>
 											</div>
+											<!-- 2018.04.02 추가 -->
+											<p class="ads-sm">주소 : 경기도 성남시 분당구 구미동 159번지 베어캐슬 1,2층 한국암웨이브랜드 체험 센터</p>
+											<!-- //2018.04.02 추가 -->
 										</div>
 									</div>
                                 </div>
@@ -550,11 +553,11 @@
 													<div class="card-kinds">
 														<span class="col-xs-12 col-md-6">
 															<input class="amwa-radio" type="radio" name="optradio" id="radio4" />
-															<label for="radio4">개인카드</label>
+															<label for="radio4" class="collapsed" data-toggle="collapse" href="#gaeincard" data-parent="#shippingdiv">개인카드</label><!-- 마크업수정 2018.04.02-->
 														</span>
 														<span class="col-xs-12 col-md-6">
 															<input class="amwa-radio" type="radio" name="optradio" id="radiod" />
-															<label for="radiod">법인카드</label>
+															<label for="radiod" class="collapsed" data-toggle="collapse" href="#bubincard" data-parent="#shippingdiv">법인카드</label><!-- 마크업수정 2018.04.02-->
 														</span>
 													</div>
 													<div class="card-favor">
@@ -562,63 +565,126 @@
 													</div>
 												</div>
 											</div>
-											<div class="form-group">
-												<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
-												<div class="col-xs-12 col-md-8">
-													<div class="pay-system">
-														<span class="col-xs-12 col-md-2">
-															<input class="amwa-radio" type="radio" name="optradio" id="p-1" />
-															<label for="p-1">안심결제</label>
-														</span>
-														<span class="col-xs-12 col-md-2">
-															<input class="amwa-radio" type="radio" name="optradio" id="p-2" />
-															<label for="p-2">일반결제</label>
-														</span>
-														<span class="col-xs-12 col-md-2">
-															<input class="amwa-radio" type="radio" name="optradio" id="p-3" />
-															<label for="p-3">PayShot</label>
-														</span>
-													</div>
-
-													<div class="pay-line">
-														<div class="form-group row">
-															<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
-															<span class="col-md-10 col-xs-12">
-																<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
-																<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
-																<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
-																<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+											<!-- 마크업수정 2018.04.02-->
+											<div id="gaeincard" class="shipping-delivery-radio-body card panel-collapse collapse">
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
+													<div class="col-xs-12 col-md-8">
+														<div class="pay-system">
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-1" />
+																<label for="p-1">안심결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-2" />
+																<label for="p-2">일반결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-3" />
+																<label for="p-3">PayShot</label>
 															</span>
 														</div>
-														<div class="form-group row">
-															<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
-															<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
-															<div class="payment-forms-back-slash">/</div>
-															<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
-														</div>
-														<div class="form-group row">
-															<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
-															<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
-															<div class="payment-forms-txt">비밀번호 앞 2자리</div>
-														</div>
-														<div class="form-group row">
-															<label for="month" class="col-md-2 col-xs-12">생년월일</label>
-															<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
-															<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+
+														<div class="pay-line">
+															<div class="form-group row">
+																<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																<span class="col-md-10 col-xs-12">
+																	<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																</span>
+															</div>
+															<div class="form-group row">
+																<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
+																<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
+																<div class="payment-forms-back-slash">/</div>
+																<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+															</div>
+															<div class="form-group row">
+																<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
+																<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+															</div>
+															<div class="form-group row">
+																<label for="month" class="col-md-2 col-xs-12">생년월일</label>
+																<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
+																<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="form-group">
-												<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
-												<div class="col-xs-12 col-md-8">
-													<select class="shipping-delivery-size" id="installment">
-														<option selected="">일시불</option>
-														<option>Tokyo-to</option>
-														<option>Tokyo-to</option>
-													</select>
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
+													<div class="col-xs-12 col-md-8">
+														<select class="shipping-delivery-size" id="installment">
+															<option selected="">일시불</option>
+															<option>Tokyo-to</option>
+															<option>Tokyo-to</option>
+														</select>
+													</div>
 												</div>
 											</div>
+											<div id="bubincard" class="shipping-delivery-radio-body card panel-collapse collapse">
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
+													<div class="col-xs-12 col-md-8">
+														<div class="pay-system">
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-1" />
+																<label for="p-1">안심결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-2" />
+																<label for="p-2">일반결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-3" />
+																<label for="p-3">PayShot</label>
+															</span>
+														</div>
+
+														<div class="pay-line">
+															<div class="form-group row">
+																<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																<span class="col-md-10 col-xs-12">
+																	<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																</span>
+															</div>
+															<div class="form-group row">
+																<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
+																<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
+																<div class="payment-forms-back-slash">/</div>
+																<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+															</div>
+															<div class="form-group row">
+																<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
+																<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+															</div>
+															<div class="form-group row">
+																<label for="bussnum" class="col-md-2 col-xs-12">사업자등록번호</label>
+																<input name="bussnum" type="text" id="bussnum" class="card-inp4" />
+																<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
+													<div class="col-xs-12 col-md-8">
+														<select class="shipping-delivery-size" id="installment">
+															<option selected="">일시불</option>
+															<option>Tokyo-to</option>
+															<option>Tokyo-to</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!-- //마크업수정 2018.04.02-->
 										</div>
                                     </div>
                                 </div>
