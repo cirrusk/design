@@ -22,9 +22,10 @@ $(function(){
 			$('.akl-accordion ' + currentAttrValue).slideDown(400).addClass('open');
 		}
 	});
-
+	
+	//사용안함 : 상품상세 페이지로 이동 2018.03.29
 	//제품상세 > 크게보기 레이어 : 이미지보기
-	popupGalleryIMG();
+	//popupGalleryIMG();
 
 	//제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정
 	videodSize();
@@ -119,7 +120,8 @@ function orderSummaryFixed(){
 	});
 }
 
-/* 제품상세 > 크게보기 레이어 : 이미지보기 */
+/* 제품상세 > 크게보기 레이어 : 이미지보기
+//사용안함 : 상품상세 페이지로 이동 2018.03.29
 function popupGalleryIMG(){
 	var $IMG = $('#largeImgView.pop-gallery').find('img');
 	var $listIMG = $('#recentlyViewedListTab2').find('img');
@@ -140,7 +142,7 @@ function popupGalleryIMG(){
 			$IMG.attr({'src':_SRC, 'alt':_ALT});
 		});
 	});
-}
+} */
 
 /* 제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정 */
 function videodSize(){
