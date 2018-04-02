@@ -9,35 +9,30 @@
     <script type="text/javascript" src="/_ui/pos/js/common.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-
-$(function(){
-    pop_open("#lay1"); // 레이어팝업 호출 함수
-    // pop_close("#lay1"); 레이어팝업 닫기 함수
-});
-</script>
-<div class="pop_wrap pop_m" id="lay1">
-    <div class="pop_header02">
-        <button type="button" class="ico_comm pop_close02">닫기</button>
-    </div>
-    <!-- pop_container -->
-    <div class="pop_container">
-        <div class="pop_content">
-            <div class="login_wrap">
-                <img src="/_ui/pos/images/common/pop_logo.png" alt="Amway">
-                <span class="id"><input type="text" title="AD계정" placeholder="AD계정"></span>
-                <span class="pw"><input type="password" title="비밀번호" placeholder="비밀번호"></span>
-                <a href="#" class="btn02_blue">근무시작</a>
-                <a href="#" class="btn02_white">취소</a>
-            </div>
-            <p class="login_txt">
-                <span class="txt_info01">비밀번호 분실 시,  IT서비스 데스크(<em class="fc_red">02-3468-6119</em>)로 문의하세요</span>
-            </p>
+<div class="layer_pop">
+    <div class="pop_wrap pop_m">
+        <div class="pop_header02">
+            <button type="button" class="ico_comm pop_close02">닫기</button>
         </div>
-    </div>
-    <!-- //pop_container -->
-    <div class="pop_footer clearfix">
-        <span class="fl">취소 ESC</span>
+        <!-- pop_container -->
+        <div class="pop_container">
+            <div class="pop_content">
+                <div class="login_wrap">
+                    <img src="/_ui/pos/images/common/pop_logo.png" alt="Amway">
+                    <span class="id"><input type="text" title="AD계정" placeholder="AD계정"></span>
+                    <span class="pw"><input type="password" title="비밀번호" placeholder="비밀번호"></span>
+                    <a href="#" class="btn02_blue">근무시작</a>
+                    <a href="#" class="btn02_white">취소</a>
+                </div>
+                <p class="login_txt">
+                    <span class="txt_info01">비밀번호 분실 시,  IT서비스 데스크(<em class="fc_red">02-3468-6119</em>)로 문의하세요</span>
+                </p>
+            </div>
+        </div>
+        <!-- //pop_container -->
+        <div class="pop_footer clearfix">
+            <span class="fl">취소 ESC</span>
+        </div>
     </div>
 </div>
 </body>
