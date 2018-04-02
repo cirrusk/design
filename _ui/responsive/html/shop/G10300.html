@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
-	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script> 
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
@@ -1870,7 +1870,7 @@
 							items: 4
 						},
 						1200 : {
-							items: 5 
+							items: 5
 						},
 						1457 : {
 							items: 6
@@ -1878,10 +1878,21 @@
 					}
 				});
 
+				//2018.04.02  수정 (setTimeout 추가)
+				//선택된 이미지 표시
+				setTimeout(function(){
+					$('#uiPrdViewDetail').find('.owl-item.active').eq(0).addClass('on');
+				},300);
+				
 				$(document).off('click.snapimg').on('click.snapimg', '.ui-snap-btn', function(){
 					//popidx = $(this).closest('.owl-item').index();
 					popidx = $(this).data('n');
 					$('#pdpImg').find('li').removeClass('on').eq(popidx).addClass('on');
+					
+					//2018.04.02  수정 (_owlItem 추가)
+					//선택된 이미지 표시
+					var _owlItem = $(this).parents('.owl-item');
+					_owlItem.addClass('on').siblings().removeClass('on');
 				});
 
 				$('.G10300_lp1_btn').click(function(event) {
@@ -1908,7 +1919,7 @@
 								items: 5
 							},
 							1100 : {
-								items: 6 
+								items: 6
 							},
 							1457 : {
 								items: 6
@@ -1916,7 +1927,11 @@
 						}
 					});
 					$('#largeImgView img').attr('src', $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').find('img').attr('src'));
-
+					
+					//2018.04.02  수정 (_owlItemIdx 추가)
+					//선택된 이미지 표시
+					var _owlItemIdx = $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').parents('.owl-item');
+					_owlItemIdx.addClass('on');
 
 					var $IMG = $('#largeImgView.pop-gallery').find('img');
 					var $listIMG = $('#recentlyViewedListTab2').find('img');
@@ -1932,6 +1947,11 @@
 					$listIMG.each(function(){
 						$(this).on('click',function(e){
 							e.preventDefault();
+							
+							//2018.04.02  수정 (_owlItemIdx 추가)
+							//선택된 이미지 표시
+							var _owlItem = $(this).parents('.owl-item');
+							_owlItem.addClass('on').siblings().removeClass('on');
 
 							var _SRC = $(this).attr('src');
 							var _ALT = $(this).attr('alt');
