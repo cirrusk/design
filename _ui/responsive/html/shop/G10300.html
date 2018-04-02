@@ -1883,12 +1883,12 @@
 				setTimeout(function(){
 					$('#uiPrdViewDetail').find('.owl-item.active').eq(0).addClass('on');
 				},300);
-				
+
 				$(document).off('click.snapimg').on('click.snapimg', '.ui-snap-btn', function(){
 					//popidx = $(this).closest('.owl-item').index();
 					popidx = $(this).data('n');
 					$('#pdpImg').find('li').removeClass('on').eq(popidx).addClass('on');
-					
+
 					//2018.04.02  수정 (_owlItem 추가)
 					//선택된 이미지 표시
 					var _owlItem = $(this).parents('.owl-item');
@@ -1898,6 +1898,9 @@
 				$('.G10300_lp1_btn').click(function(event) {
 					event.preventDefault();
 					layerPopOver('this','.G10300_lp1_pop');
+
+					//$(this).find('.owl-item').removeClass('.on');
+					//$('#recentlyViewedListTab2').find('.owl-item').removeClass('.on');
 					popidx = $(this).closest('.on').index();
 
 					$('#recentlyViewedListTab2').owlCarousel({
@@ -1931,6 +1934,8 @@
 					//2018.04.02  수정 (_owlItemIdx 추가)
 					//선택된 이미지 표시
 					var _owlItemIdx = $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').parents('.owl-item');
+					var _owlItemAll = _owlItemIdx.parents('#recentlyViewedListTab2').find('.owl-item');
+					_owlItemAll.removeClass('on');
 					_owlItemIdx.addClass('on');
 
 					var $IMG = $('#largeImgView.pop-gallery').find('img');
