@@ -402,9 +402,11 @@ table input[type='text'] {font-family:'NSM';}
 #header {position:relative; height:50px; background-color:#fff; box-shadow: 0px 3px 8px 0px rgba(5,11,60,0.1);}
 #header .left {margin-left:26px; padding-top:12px}
 #header .left > * {display:inline-block; vertical-align:middle;}
-#header .left img {}
-#header .left em {margin-left:25px; color:#21243d}
+#header .left > img {}
+#header .left > em {margin-left:25px; color:#21243d}
 #header .left span {margin-left:7px; font-size:10px; font-style: italic; font-family:'NSB'; color:#808080; letter-spacing:0.05em}
+#header .left span em {color:#4c4c4c; font-style: italic;}
+#header .left span + span {margin-left:4px;}
 #header .right {position:absolute; top:0; right:0; font-size:0}
 #header .right .type01 {height:50px; font-family:'NSB'; font-size:11px; line-height:1.4em; color:#21243d; box-sizing:border-box; vertical-align:middle;}
 #header .right .type01.dp01 {padding-right:20px}
@@ -414,6 +416,7 @@ table input[type='text'] {font-family:'NSM';}
 #header .right .type02 {width:95px; height:50px; font-size:14px; box-sizing:border-box; border-left:1px solid #ccc; font-family:'NSB'; color:#1a1a1a; vertical-align:middle;}
 
 #container {position:relative; padding-right:190px}
+#container.customer {padding-right:0}
 .m_cont {position:relative; width:100%; height:718px; padding:45px 25px 0; box-sizing:border-box;}
 .m_cont .member_list {position:absolute; top:0; left:0; width:100%; height:40px; padding:15px 51px 0; box-sizing:border-box; font-size:0; overflow:hidden}
 .m_cont .member_list button {position:absolute; top:17px}
@@ -436,23 +439,24 @@ table input[type='text'] {font-family:'NSM';}
 .m_cont .section01 .list_wrap .list table td {height:31px; padding:0 10px; box-sizing:border-box; font-size:12px; color:#1a1a1a; text-align:center;}
 .m_cont .section01 .list_wrap .list table td .elips {display:block; max-width:230px}
 .m_cont .section01 .list_wrap .list table td:nth-child(2) {font-size:11px}
-.m_cont .section01 .list_wrap .list table tr.add_act {border-top-color:#ebf2f7}
-.m_cont .section01 .list_wrap .list table tr.add_act + tr {border-top-color:#ebf2f7}
-.m_cont .section01 .list_wrap .list table tr.add_act td {font-family:'NSB'; font-size:12px; color:#11224e; background-color:#ebf2f7}
-.m_cont .section01 .list_wrap .list table tr:last-child.add_act {border-bottom:1px solid #ebf2f7}
+.m_cont .section01 .list_wrap .list table tr.on {border-top-color:#ebf2f7}
+.m_cont .section01 .list_wrap .list table tr.on + tr {border-top-color:#ebf2f7}
+.m_cont .section01 .list_wrap .list table tr.on td {font-family:'NSB'; font-size:12px; color:#11224e; background-color:#ebf2f7}
+.m_cont .section01 .list_wrap .list table tr:last-child.on {border-bottom:1px solid #ebf2f7}
+.customer .m_cont .section01 .list_wrap .list table td .elips {max-width:440px}
 
 .m_cont .section02 {margin-top:17px}
 .m_cont .section02:after {content:''; display:block; clear:both;}
 .m_cont .section02 > div {background-color:#fff; box-shadow: 0px 8px 10px 2px rgba(0, 19, 50, 0.1)}
-.m_cont .section02 .left {float:left; width:388px}
+.m_cont .section02 .left {float:left; width:calc(50% - 5px)}
 .m_cont .section02 .left .search_wrap {position:relative; padding-right:98px; height:80px; border-bottom:1px solid #e6e6e6; box-sizing:border-box;}
 .m_cont .section02 .left .search_wrap button {-webkit-tap-highlight-color:transparent;}
 .m_cont .section02 .left .search_wrap .inner {height:80px; box-sizing:border-box; border-right:1px solid #e6e6e6}
 .m_cont .section02 .left .search_wrap .inner .tab {height:24px; font-size:0}
 .m_cont .section02 .left .search_wrap .inner .tab button {width:50%; height:24px; font-size:14px; color:#fff; background-color:#b8bec2}
 .m_cont .section02 .left .search_wrap .inner .tab .on {color:#21243d; font-family:'NSB'; background-color:#fff}
-.m_cont .section02 .left .search_wrap .inner .search {position:relative; padding:10px 0 0 15px}
-.m_cont .section02 .left .search_wrap .inner .search input {width:259px; height:35px; padding-right:35px; background-color:#eaeef1; border:0}
+.m_cont .section02 .left .search_wrap .inner .search {position:relative; padding:10px 15px 0 15px}
+.m_cont .section02 .left .search_wrap .inner .search input {width:100%; height:35px; padding-right:35px; background-color:#eaeef1; border:0}
 .m_cont .section02 .left .search_wrap .inner .search button {position:absolute; top:20px; right:25px}
 .m_cont .section02 .left .search_wrap .btn {position:absolute; top:0; right:0; width:98px; height:79px; font-size:15px; font-family:'NSB'; color:#21243d}
 .m_cont .section02 .left .search_wrap .btn.on {background-color:#ebf2f7}
@@ -463,31 +467,43 @@ table input[type='text'] {font-family:'NSM';}
 .m_cont .section02 .left .member_info .info_top .t02 {float:right; margin-top:3px; font-family:'NSR'; font-size:11px; color:#21243d}
 .m_cont .section02 .left .member_info .info_cont {position:relative; margin-top:5px}
 .m_cont .section02 .left .member_info .info_cont > * {position:absolute; padding:9px 15px; box-sizing:border-box;}
-.m_cont .section02 .left .member_info .info_cont dl dt {font-family:'NSB'; font-size:12px; color:#fff}
+.m_cont .section02 .left .member_info .info_cont dl dt {font-size:12px; color:#fff}
 .m_cont .section02 .left .member_info .info_cont dl dd {font-family:'NSB'; font-size:19px; color:#fff; text-align:right;}
-.m_cont .section02 .left .member_info .info_cont .ic01 {top:0; left:0; width:176px; height:68px; background-color:#5867c3}
-.m_cont .section02 .left .member_info .info_cont .ic02 {top:73px; left:0; width:176px; height:68px; background-color:#3d4daf}
-.m_cont .section02 .left .member_info .info_cont .ic03 {top:0; right:0; padding-top:11px; width:177px; height:141px; background-color:#47b8f2}
+.m_cont .section02 .left .member_info .info_cont .ic01 {top:0; left:0; width:calc(50% - 3px); height:68px; background-color:#5867c3}
+.m_cont .section02 .left .member_info .info_cont .ic02 {top:73px; left:0; width:calc(50% - 3px); height:68px; background-color:#3d4daf}
+.m_cont .section02 .left .member_info .info_cont .ic03 {top:0; right:0; padding-top:11px; width:calc(50% - 2px); height:141px; background-color:#47b8f2}
 .m_cont .section02 .left .member_info .info_cont .ic03 li {height:20px; color:#fff; font-size:0}
-.m_cont .section02 .left .member_info .info_cont .ic03 li:first-child {height:33px}
+.m_cont .section02 .left .member_info .info_cont .ic03 li.credit {height:33px}
 .m_cont .section02 .left .member_info .info_cont .ic03 li + li {border-top:1px solid #91d4f7}
 .m_cont .section02 .left .member_info .info_cont .ic03 li > * {display:inline-block; vertical-align:middle; margin-top:-4px;}
-.m_cont .section02 .left .member_info .info_cont .ic03 li > span {width:47px; font-size:11px}
-.m_cont .section02 .left .member_info .info_cont .ic03 li > em {width:100px; font-family:'NSB'; font-size:13px; text-align:right;}
+.m_cont .section02 .left .member_info .info_cont .ic03 li > span {width:37%; font-size:11px}
+.m_cont .section02 .left .member_info .info_cont .ic03 li > em {width:63%; font-family:'NSB'; font-size:13px; text-align:right;}
 .m_cont .section02 .left .member_info .info_cont .ic03 li > em span {display:block; margin-top:-8px; font-family:'NSM'; font-size:11px}
-.m_cont .section02 .right {float:right; width:386px}
+.customer .m_cont .section02 .left .member_info .info_top {margin-top:6px; height:31px}
+.customer .m_cont .section02 .left .member_info {height:274px}
+.customer .m_cont .section02 .left .member_info .info_cont > * {padding:15px 20px}
+.customer .m_cont .section02 .left .member_info .info_cont dd {margin-top:20px}
+.customer .m_cont .section02 .left .member_info .info_cont .ic01 {height:103px}
+.customer .m_cont .section02 .left .member_info .info_cont .ic02 {top:108px; height:103px}
+.customer .m_cont .section02 .left .member_info .info_cont .ic03 {height:211px; padding:25px 20px 20px}
+.customer .m_cont .section02 .left .member_info .info_cont .ic03 li {height:33px;}
+.customer .m_cont .section02 .left .member_info .info_cont .ic03 li > * {height:33px; line-height:38px;}
+.customer .m_cont .section02 .left .member_info .info_cont .ic03 li.credit em {line-height:26px}
+.customer .m_cont .section02 .left .member_info .info_cont .ic03 li.credit em span {margin-top:-12px}
+
+.m_cont .section02 .right {float:right; width:calc(50% - 5px)}
 .m_cont .section02 .right li:after {content:''; display:block; clear:both;}
 .m_cont .section02 .right span, .m_cont .section02 .right em {display:inline-block; float:left; vertical-align:middle; box-sizing:border-box;}
 .m_cont .section02 .right .calc01 {height:79px; padding-top:5px; color:#21243d; box-sizing:border-box; }
-.m_cont .section02 .right .calc01 span {width:112px; height:22px; padding-left:30px; font-size:14px}
+.m_cont .section02 .right .calc01 span {width:30%; height:22px; padding-left:30px; font-size:14px}
 .m_cont .section02 .right .calc01 span.t01 {font-family:'NSB';}
-.m_cont .section02 .right .calc01 em {width:274px; height:22px; padding-right:30px; text-align:right; font-size:17px}
+.m_cont .section02 .right .calc01 em {width:70%; height:22px; padding-right:30px; text-align:right; font-size:17px}
 .m_cont .section02 .right .calc01 em.sale {color:#de0736}
 .m_cont .section02 .right .calc02 {height:195px; color:#fff; background-color:#11224e}
 .m_cont .section02 .right .calc02 li {height:64px}
 .m_cont .section02 .right .calc02 li + li {border-top:1px solid #293960}
-.m_cont .section02 .right .calc02 span {width:112px; height:64px; line-height:60px; padding-left:30px; font-size:17px}
-.m_cont .section02 .right .calc02 em {width:274px; height:64px; line-height:60px; padding-right:30px; text-align:right; font-size:23px}
+.m_cont .section02 .right .calc02 span {width:30%; height:64px; line-height:60px; padding-left:30px; font-size:17px}
+.m_cont .section02 .right .calc02 em {width:70%; height:64px; line-height:60px; padding-right:30px; text-align:right; font-size:23px}
 
 .m_cont .notice {margin-top:12px; position:relative;}
 .m_cont .notice dt {display:inline-block; width:61px; height:20px;}
