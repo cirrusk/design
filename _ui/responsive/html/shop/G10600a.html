@@ -65,8 +65,8 @@
 							</div>
 
 							<div class="panel">
-								<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1" />
-								<label for="radio1" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">배달주문(ABN에서 주문하시고 택배로 제품을 인수하는 방법)</label>
+								<input class="amwa-radio" type="radio" name="optradio" id="radio1">
+								<label for="radio1">배달주문(ABN에서 주문하시고 택배로 제품을 인수하는 방법)</label>
 								<div id="collapseOne" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="amway-theme order-payment">
 										<div class="navigation-tabs-container order-history-container js-order-history-container">
@@ -429,7 +429,7 @@
 							</div>
 							<div class="panel col-panel">
 								<input class="amwa-radio" type="radio" name="optradio" id="radio2" />
-								<label for="radio2" class="collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">픽업주문(ABN에서 주문하시고 AP에서 제품을 인수하는 방법)</label>
+								<label for="radio2">픽업주문(ABN에서 주문하시고 AP에서 제품을 인수하는 방법)</label>
 								<div id="collapseTwo" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="pickup-order-body">
 										<div class="pickup-ap">
@@ -453,11 +453,11 @@
 							</div>
 						</div>
 
-						<div class="shipping-delivery-ship method">
+						<div id="selectPay" class="shipping-delivery-ship method">
 							<p class="shipping-delivery-shipping-header">결제방법 선택</p>
 							<div class="panel">
 								<input class="amwa-radio" type="radio" name="optradio" id="radio3" />
-								<label for="radio3" class="collapsed" data-toggle="collapse" href="#collapseThree" data-parent="#shippingdiv">신용카드</label>
+								<label for="radio3">신용카드</label>
 								<div id="collapseThree" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
 										<div class="card-promotion">
@@ -652,8 +652,8 @@
 								</div>
 							</div>
 							<div class="panel">
-								<input class="amwa-radio" type="radio" name="optradio" id="radio4" />
-								<label for="radio4" class="collapsed" data-toggle="collapse" href="#collapseFour" data-parent="#shippingdiv">무통장입금</label>
+								<input class="amwa-radio" type="radio" name="optradio" id="radio40" />
+								<label for="radio40">무통장입금</label>
 								<div id="collapseFour" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
 										<div class="card-promotion">
@@ -707,7 +707,7 @@
 							</div>
 							<div class="panel">
 								<input class="amwa-radio" type="radio" name="optradio" id="radio5" />
-								<label for="radio5" class="collapsed" data-toggle="collapse" href="#collapseFive" data-parent="#shippingdiv">자동이체</label>
+								<label for="radio5">자동이체</label>
 								<div id="collapseFive" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
 										<div class="card-promotion">
@@ -792,7 +792,7 @@
 							</div>
 							<div class="panel">
 								<input class="amwa-radio" type="radio" name="optradio" id="radio6" />
-								<label for="radio6" class="collapsed" data-toggle="collapse" href="#collapseSix" data-parent="#shippingdiv">자동이체예약</label>
+								<label for="radio6">자동이체예약</label>
 								<div id="collapseSix" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
 										<div class="card-promotion">
@@ -848,7 +848,7 @@
 							</div>
 							<div class="panel">
 								<input class="amwa-radio" type="radio" name="optradio" id="radio7" />
-								<label for="radio7" class="collapsed" data-toggle="collapse" href="#collapseSeven" data-parent="#shippingdiv">A포인트</label>
+								<label for="radio7">A포인트</label>
 								<div id="collapseSeven" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt-point">
 										<div class="row card-method">
@@ -2928,8 +2928,8 @@
 							</ul>
 						</div>
 					</div>
-					
-					<div class="paging">  
+
+					<div class="paging">
 		                <a href="#" class="prev">맨 처음 페이지</a>
 		                <a href="#" class="before">이전 페이지</a>
 		                <ul>
@@ -2937,12 +2937,12 @@
 		                    <li class="on"><a href="#">2</a></li>
 		                    <li><a href="#">3</a></li>
 		                    <li><a href="#">4</a></li>
-		                    <li><a href="#">5</a></li> 
+		                    <li><a href="#">5</a></li>
 		                </ul>
 		                <a href="#" class="after">다음페이지</a>
 		                <a href="#" class="next">맨 마지막 페이지</a>
 		            </div>
-				
+
 				</div>
 			</div>
 			<div class="cart-popup__item-link">
@@ -3294,6 +3294,37 @@ $(function(){
 		layerPopOver(this,'.G10600_lp1_pop');
 	});
 
+});
+</script>
+<script>
+$(function(){
+	//배송방법 선택
+	var radioDelivery = $('#shippingdiv').find('.amwa-radio');
+
+
+	$(radioDelivery).each(function(){
+		$(this).click(function(){
+
+			var $panel = $(this).parent('.panel');
+			if( $(this).prop("checked", false) ){
+				$(this).prop("checked", true).attr('checked', 'checked');
+				$panel.find('.panel-collapse').removeClass('collapse');
+				$panel.siblings().find('.panel-collapse').addClass('collapse');
+			}
+		})
+	});
+
+	var radioPay = $('#selectPay').find('.amwa-radio');
+	$(radioPay).each(function(){
+		$(this).click(function(){
+			var $panel = $(this).parent('.panel');
+			if( $(this).prop("checked", false) ){
+				$(this).prop("checked", true).attr('checked', 'checked');
+				$panel.find('.panel-collapse').removeClass('collapse');
+				$panel.siblings().find('.panel-collapse').addClass('collapse');
+			}
+		})
+	});
 });
 </script>
 </body>
