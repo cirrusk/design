@@ -1394,9 +1394,16 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 
 /* common > 제품리스트 */
 .shopping-tbl-list {clear:both;display:block;width:100%;}
-.tbl-thead {display:table;width:100%;table-layout:fixed;}
-.tbl-thead > div{font-size:13px;vertical-align:middle;}
-.tbl-thead span.all-txt {font-size:13px;vertical-align:top !important;}
+.tbl-thead {display:table;width:100%;table-layout:fixed;background:#f4f4f4;padding:9px 10px 0;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.tbl-thead > div {display:table-cell;font-size:13px;vertical-align:top;color:#002f5f;font-weight:500}
+.tbl-thead > div.item-info {width:15%;}
+.tbl-thead > div.item-name {width:20%;}
+.tbl-thead > div.item-quantity {width:10%}
+.tbl-thead > div.item-price {}
+.tbl-thead > div.item-total {}
+
+.tbl-thead span.all-txt {font-size:13px;vertical-align:top !important;color:#002f5f;font-weight:500}
+ul.tbl-tbody {clear:both;display:block;}
 ul.tbl-tbody {display:table;width:100%;table-layout:fixed}
 
 
