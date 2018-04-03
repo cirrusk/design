@@ -98,13 +98,10 @@ Version : AKL Hybris UIUX 1.0
 .akl .bt-akl-white.small, .akl .bt-akl-blue.small {min-width:74px;padding:5px 10px 7px;text-align:center;}
 .akl a.bt-akl-white.small, .akl a.bt-akl-blue.small {min-width:74px;padding:8px 20px 7px;text-align:center;}
 
-.akl .bt-akl-white.middle, .akl .bt-akl-blue.middle {min-width:95px;padding:5px 10px 7px;text-align:center;}
-.akl a.bt-akl-white.middle, .akl a.bt-akl-blue.middle {min-width:95px;padding:8px 20px 7px;text-align:center;}
-
 .akl .btn-area {text-align:left;}
 
 /* common > button > quick view */
-.akl .product-list__thum { display:block; position: relative;}
+.akl .product-list__thum { display:block; position: relative;  } 
 .akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px;}
 .akl .amwahover .product-list__thum img { transition: all 0.3s !important; -webkit-transition: all 0.3s !important;}
 
@@ -855,7 +852,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .account-profile__editor .form-group .email-id span select {vertical-align:middle;}
 .akl .account-profile__editor .form-group .email-id span.at {width:auto;padding:0 3px;}
 .akl .account-profile__editor .form-group span.txt {line-height:2.3em;vertical-align:middle;font-size:14px;}
-.akl .account-profile__editor .form-group button {vertical-align:middle}
+.akl .account-profile__editor .form-group button {vertical-align:top}
 .akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-left:-10px;}
 .akl .account-profile__editor .form-group .email-dotcom select {width:43%;margin-right:5px;text-transform:lowercase}
 
@@ -926,7 +923,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .search-list-page-right-result-list-slot .pagination-bar .pagination-bar-results span {font-weight:700;}
 .akl .product-list__item { height: 640px;}
 .akl .product-list__item-content {height: 549px;}
-.akl .product-list__thumbnail {height:auto; max-width:240px;}
+.akl .product-list__thumbnail {height:auto;  }
 .akl .product-list__item-content.amwahover .checkbox-element-wrapper {top: 15px; right: 11px;}
 .akl .product-list__item .btn-blue-white {margin-bottom:5px;}
 .akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list { margin:0;}
@@ -1005,7 +1002,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .pop-U30000-lp3 strong { display:inline-block; color:#e11e46; margin-left: 20px}
 
 /* 회원가입 > 가입안내 */
-.akl .company-banner { height:400px; overflow:hidden; margin-bottom:80px; display:block;}
+.akl .company-banner { max-height:400px; overflow:hidden; margin-bottom:80px; display:block;}
 .akl .company-banner .banner_wrapper h1 {font-family: 'Noto Sans KR', sans-serif; font-size: 40px; line-height: 140%; font-weight:500!important; margin-bottom: 20px;}
 .company-banner .banner_wrapper .text p {font-size: 18px;  }
 .akl .company-banner img { width:100%}
@@ -1046,7 +1043,12 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .helping-people li span { position:relative;display:block; margin-top: 15px; height:45px}
 .helping-people li span:before {content: "";position: absolute;left: 0;top: 50%;height: 30px; margin-top: -15px;border-left: 1px solid #dadada;}
 .helping-people li:first-child span:before {display:none;}
-.helping-people li span img { vertical-align: middle;}
+.helping-people li span img { vertical-align: middle;} 
+ 
+@media (max-width: 1024px) { 
+	.akl .account-profile__editor .form-group .col-md-4.email-id { width:50%} 
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom { width:50%}
+}
 
 @media (max-width: 768px) {
 	.disNone-m { display:none}
@@ -1346,8 +1348,14 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .account-profile__editor .form-group span.txt {margin:0;padding:0;font-size:14px;vertical-align:top;line-height:1.5}
 	.akl .email-form-group .account-profile__editor.mobile {margin-left:0 !important;margin-top:30px}
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-top:10px;margin-left:0}
-
-
+	
+	.akl .account-profile__editor .form-group .col-md-4.email-id { width:100%} 
+	.akl .account-profile__editor .form-group .col-md-4.email-id span:nth-of-type(1){ width:40%; } 
+	.akl .account-profile__editor .form-group .col-md-4.email-id span:nth-of-type(3){ width:50%; float:right} 
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom { width:100%}
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom button {  }
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom select { width:40%}
+	
 	/* 검색 > 결과  */
 	.pagination-bar { border-top:0;}
 	.akl .col-search-right .hidden-sm {display:block!important;}
