@@ -1290,7 +1290,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .datepicker .datepicker-days .table-condensed thead tr th.atepicker-switch { padding-top:7px;}
 .akl .panel.shop-install {margin-bottom:0;}
 .akl .panel.shop-install .default-shipping-address, .akl .panel.shop-install .new-shipping-address {border-bottom:0 none;}
-.shipping-delivery-shipping-header span.txt-sm {font-size:13px;font-weight:400}
+.text-sm {font-size:13px;font-weight:400}
 
 /* 주문결제 > 주문완료 */
 .akl .confirm-box {padding:34px 0 34px;}
@@ -1415,10 +1415,15 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 
 .shopping-tbody {clear:both;display:block;}
 .shopping-tbody ul {}
-.shopping-tbody ul li {clear:both;display:block;display:table;position:relative;padding:11px 0;width:100%;}
+.shopping-tbody ul li {clear:both;display:block;display:table;position:relative;padding:11px 0;width:100%;table-layout:fixed;}
 .shopping-tbody .td-chk, .shopping-td .td-info {float:left;}
 .shopping-tbody .td-chk {width:5%;text-align:center;vertical-align:top;}
 .shopping-tbody .td-info {width:95%;text-align:left;vertical-align:top;}
+
+.shop-product-code {float:left;display:table;width:41%;}
+.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px;padding:10px 0 0}
+.shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;padding:10px 0 0}
+.shop-product-info {float:left;display:table;width:59%;font-size:14px;}
 
 /* 중개판매관리 > 중개판매 견적내역 */
 .esthistory-box {clear:both;display:block;border-bottom:1px solid #e3e3e3;padding:20px 0}
