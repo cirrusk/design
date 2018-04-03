@@ -7,13 +7,13 @@ Editor : sookkyung Han
 .product-detail-view{padding-bottom:40px;}
 .product-detail-view > div{max-width:1100px;margin:0 auto;}
 .product-detail-view > .product-visual{max-width:100%;padding:78px 0 70px;}
-.typeA .product-visual,
-.typeC .product-visual{background-color:#eeede3;}
-.typeB .product-visual{background-color:#c0def4;}
-.typeD .product-visual{background-color:#e9bab8;}
 
-.color01.product-detail-view .product-visual{background-color:#faffee;}/* 연두 */
-.color02.product-detail-view .product-visual{background-color:#ffeaea;} /* 레드 */
+.color01 .product-visual{background-color:#eeede3;}/* 어두운 그린 */
+.color02 .product-visual{background-color:#faffee;}/* 밝은 그린 */
+.color03 .product-visual{background-color:#c0def4;}/* 블루 */
+.color04 .product-visual{background-color:#ffeaea;}/* 밝은 레드 */
+.color05 .product-visual{background-color:#e9bab8;}/* 어두운 레드 */
+.color06 .product-visual{}/* 갈색 */
 
 .product-detail-view .product-visual{position:relative;overflow:hidden;}
 .product-visual .visual-bg img{position:absolute;display:inline-block;bottom:0;}
@@ -24,11 +24,12 @@ Editor : sookkyung Han
 .product-visual .logo-txt{display:block;margin-top:12px;font-size:26px;color:#56565a;letter-spacing:-2px}
 .product-visual .visual-tit{margin-top:24px;font-size:60px;color:#56565a;font-weight:400;line-height:0.9;letter-spacing:-2px;}
 .product-visual .visual-tit strong{font-size:60px;font-weight:500;}
-.typeA .product-visual .visual-tit strong,
-.typeC .product-visual .visual-tit strong{color:#20893d;}
-.typeB .product-visual .visual-tit strong{color:#0075a4;}
-.typeD .product-visual .visual-tit strong,
-.color02 .product-visual .visual-tit strong{color:#c4133f;}
+.color01 .product-visual .visual-tit strong,
+.color02 .product-visual .visual-tit strong{color:#20893d;}
+.color03 .product-visual .visual-tit strong{color:#0075a4;}
+.color04 .product-visual .visual-tit strong,
+.color05 .product-visual .visual-tit strong{color:#c4133f;}
+
 .product-visual .txt-area .visual-txt{margin-top:9px;font-size:16px;color:#444;font-weight:300;line-height:1.6;letter-spacing:-1px}
 .product-visual .visual-img{width:100%;margin-top:65px;text-align:center;}
 .product-visual .visual-img span{display:inline-block;}
@@ -36,15 +37,16 @@ Editor : sookkyung Han
 .product-detail-view .detail-tit{display:block;font-size:44px;color:#57565b;font-weight:400;letter-spacing:-2px;text-align:center;}
 .product-detail-view .detail-tit.small{font-size:30px;color:#57565b;font-weight:500;}
 .product-detail-view .detail-tit em{font-size:44px;color:#20893d;font-weight:400;letter-spacing:-2px;}
+.color04.product-detail-view .detail-tit em,
+.color05.product-detail-view .detail-tit em{color:#c4133f;}
 .product-detail-view .detail-info-txt{font-size:20px;color:#57565b;font-weight:300;letter-spacing:-2px;}
 .product-detail-view .detail-info-etc{display:block;font-size:16px;color:#818286;font-weight:300;letter-spacing:-1px;}
 .product-detail-view .detail-info-etc.big{font-size:18px;letter-spacing:-2px;}
 .product-detail-view .tit-blue-s{font-size:16px;color:#0090c5;font-weight:400;letter-spacing:-1px;}
 .product-detail-view .tit-blue-b{font-size:18px;color:#0075a4;font-weight:400;letter-spacing:-2px;}
-.typeA.product-detail-view .detail-tit em,
-.typeC.product-detail-view  .detail-tit em{color:#20893d;}
-.color02.product-detail-view  .detail-tit em,
-.typeD.product-detail-view  .detail-tit em{color:#c4133f;}
+.color01.product-detail-view .detail-tit em,
+.color02.product-detail-view  .detail-tit em{color:#20893d;}
+
 .product-detail-view .detail-img{display:inline-block;}
 .product-detail-view .mt0{margin-top:0;}
 
@@ -163,13 +165,15 @@ Editor : sookkyung Han
 .advantage-box{text-align:left;padding:0;}
 .reverse .advantage-box{float:right;}
 .product-advantage .advantage-txt{margin-top:18px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.6;}
-.product-advantage .advantage-txt-etc{font-size:16px;color:#008fc5;letter-spacing:-1px;}
+.product-advantage .advantage-txt-etc{font-size:16px;letter-spacing:-1px;}
+.color03 .product-advantage .advantage-txt-etc{color:#008fc5;}
 .product-advantage .advantage-txt-etc:first-child{margin-top:20px;}
 .product-advantage .advantage-img{float:right;text-align:left;padding:0 0 0 50px;}
 .product-advantage.reverse .advantage-img{float:left;text-align:left;padding:0 50px 0 0;}
 .product-advantage .detail-tit + .advantage-list{margin-top:-5px;}
 .product-advantage .advantage-list .list-box{margin-top:23px;}
-.product-advantage .advantage-list .list-tit{display:block;font-size:16px;color:#0075a4;font-weight:400;letter-spacing:-1px;}
+.product-advantage .advantage-list .list-tit{display:block;font-size:16px;font-weight:400;letter-spacing:-1px;}
+.color03 .product-advantage .advantage-list .list-tit{color:#0075a4;}
 .product-advantage .advantage-list .list-txt{display:block;font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;}
 .product-advantage .advantage-list .detail-dot{margin-top:20px;padding-left:10px;font-size:14px;color:#000;font-weight:300;}
 .product-advantage .advantage-list .detail-dot:after{top:8px;}
@@ -185,9 +189,9 @@ Editor : sookkyung Han
 .advantage-step .program-list .program-tit{display:block;padding-left:15px;margin-top:10px;font-size:16px;color:#56565a;font-weight:400;letter-spacing:-1px;}
 .advantage-step .program-list .program-txt{display:block;padding-left:15px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 
-.color02 .product-advantage .advantage-list .list-tit,
-.color02 .product-advantage .advantage-list .advantage-list-tit{color:#ad9172;}
-.color02 .advantage-step .step-tit em{color:#ad9172;}
+.color06 .product-advantage .advantage-list .list-tit,
+.color06 .product-advantage .advantage-list .advantage-list-tit{color:#ad9172;}
+.color06 .advantage-step .step-tit em{color:#ad9172;}
 
 .product-detail-view .effect-info .img-wrap{margin-top:50px}
 
@@ -328,7 +332,7 @@ Editor : sookkyung Han
 	.feature-list{margin-top:8px;}
 	.feature-list > li{padding:15px 10px;}
 	.feature-list .detail-bullet{display:none;}
-	.feature-list .detail-txt{padding:0 15px 10px 0;font-size:14px;line-height:1.4;letter-spacing:-1px;}
+	.feature-list .detail-txt{padding:0 15px 0 0;font-size:14px;line-height:1.4;letter-spacing:-1px;}
 	.feature-list .detail-txt strong{font-size:14px;}
 	.feature-list .detail-img{width:30%;}
 	.product-feature .detail-dot{margin:8px 0 0 0;font-size:13px;padding-left:10px;}
