@@ -967,11 +967,10 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .terms-and-conditions-management .action { text-align:right }
 .akl .terms-and-conditions-management .action .radio-wrapper { display: inline-block; margin-left: 20px;}
 .col-search-right .product-list__item-link-common {font-weight: 500; margin-top:5px; font-size:14px; letter-spacing: -1px; text-align:left; }
-.col-search-right .amway-theme button { height:24px; padding: 0 0 0 30px; color: #0075a4; white-space:nowrap;}
-.col-search-right .plp-add-to-shopping-list .product-list__item-link-text { float:left ; margin-left:10px; background: url(../images/plus_circle.png) no-repeat 0 0; background-size: 24px 24px; }
-.col-search-right .plp-add-to-ditto > button { display:block; position:absolute; right:0; height:auto; font-size:14px;color: #0075a4;margin-right:5px;}
-.col-search-right .plp-add-to-ditto button .wish-list { padding: 0 }
-.col-search-right .new-product__listing .product-list__item-link-ditto {padding-left:30px; background: url(../images/ditto_2.svg) no-repeat 0 0; background-size: 22px 22px}
+.col-search-right .amway-theme button { height:24px; padding: 0; color: #0075a4; white-space:nowrap;}
+.col-search-right .plp-add-to-shopping-list .product-list__item-link-text { float:left ; margin-left:10px; height:25px; background: url(../images/plus_circle.png) no-repeat 0 0; background-size: 24px 24px; } 
+.col-search-right .new-product__listing .product-list__item-link-ditto {background:none; display:block; position:absolute; right:0; height:auto; font-size:14px;color: #0075a4;margin-right:5px;} 
+.col-search-right .new-product__listing .product-list__item-link-ditto button{padding-left:30px; background: url(../images/ditto_2.svg) no-repeat 0 0; background-size: 22px 22px}
 .col-search-right .plp-add-to-ditto .dropdown-menu { left: auto; right: 0; }
 .akl .plp-add-to-shopping-list .dropdown-menu .dropdown-menu-bottom a {  float:none; font-size:14px; ;top: auto;left: 10px; display:inline-block;}
 .plp-add-to-ditto .dropdown-menu .dropdown-menu-bottom { height:60px; overflow:hidden;}
@@ -1392,7 +1391,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .col-search-right .plp-add-to-ditto button .wish-list {padding: 0 ;}
     .plp-add-to-ditto .dropdown-menu {left:0!important;}
     .akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list { margin-bottom: 40px;}
-    .akl .col-search-right .plp-add-to-shopping-list .product-list__item-link-text { margin-left: 6px;}
+    .akl .col-search-right .plp-add-to-shopping-list .product-list__item-link-text { margin-left: 6px; margin-top:15px; padding-left:25px}
     .akl .search-list-page-right-result-list-slot .pagination-bar {  margin-top: 40px;}
     .popoverword .popover-content-akl { padding: 55px 20px 20px;}
     .form-control + .primary { margin:10px 0 0}
@@ -1402,9 +1401,12 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .plp-add-to-shopping-list { padding-left:72px;}
 	.akl .plp-add-to-ditto  { padding-left:72px;}
 	.akl .plp-add-to-shopping-list .dropdown-menu { width: auto; margin-right: 10px; border-top:1px solid #ccc;top:30px;}
-	.akl .plp-add-to-ditto .dropdown-menu {  width: auto; margin-right: 10px;  border-top:1px solid #ccc; top:63px;}
-	.col-search-right .new-product__listing .product-list__item-link-ditto {background: url(../images/ditto_2.svg) no-repeat 0 0 !important;background-size: 22px 22px;}
-
+	.akl .plp-add-to-ditto .dropdown-menu {  width: auto; margin-right: 10px;  border-top:1px solid #ccc; top:43px;}   
+	.col-search-right .plp-add-to-shopping-list .product-list__item-link-text { float:none ; margin-left:0; height:25px; } 
+	.col-search-right .new-product__listing .product-list__item-link-ditto { background:none !important;  position: static; right:0; height:auto; font-size:14px;color: #0075a4;margin-right:5px; margin-left: 0} 
+	.col-search-right .new-product__listing .product-list__item-link-ditto button{padding-left:30px; background: url(../images/ditto_2.svg) no-repeat 0 0; background-size: 22px 22px}
+	 
+.new-product__listing .product-list__item-link-ditto:before { display: none}
     /* 로그인 > connectedID  */
 	.akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper th, .akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper td {display: block;}
 	.pop-U30000-lp3 strong { display: block; margin-left:0}
