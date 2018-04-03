@@ -114,6 +114,7 @@ button {-webkit-tap-highlight-color: rgba(0,0,0,0.1);}
 .blck {display:block;}
 
 select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [class*='btn01'] {margin-left:2px}
+[class*='btn03'] + [class*='btn03'] {margin-left:5px}
 
 [class*='ico_comm'] {display:inline-block; vertical-align:middle; text-indent:-999px; overflow:hidden; background:url(/assests/images/common/ico_common.png) no-repeat; box-sizing:border-box;}
 .ico_comm.pop_close01 {width:20px; height:20px; background-position:0 0}
@@ -156,12 +157,21 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .ico_comm.prev {width:16px; height:14px; background-position:-412px 0; margin:-2px 0 0 8px}
 
 [class*='btn0'] {display:inline-block; box-sizing:border-box; text-align:center; vertical-align:middle;}
-[class*='btn01'] {min-width:120px; height:35px; padding:0 20px; line-height:32px; font-family:'NSB'; font-size:16px; box-sizing:border-box;}
-.btn01_white {color:#21243d; background-color:#fff; border:1px solid #21243d}
-.btn01_blue {color:#fff; background-color:#11224e}
+[class*='btn01'] {min-width:120px; height:35px; padding:0 20px; line-height:32px; font-family:'NSB'; font-size:16px;}
+.btn01_white {color:#999; background-color:#fff; border:1px solid #999}
+.btn01_white:active {color:#21243d; border-color:#21243d}
+.btn01_blue {color:#fff; background-color:#11224e;}
+.btn01_blue:active {background-color:#0c1836}
 [class*='btn02'] {min-width:220px; font-family:'NSB'; font-size:16px; border-radius:1px}
-.btn02_white {color:#21243d; background-color:#fff; border:1px solid #21243d}
-.btn02_blue {color:#fff; background-color:#11224e}
+.btn02_white {color:#999; background-color:#fff; border:1px solid #999; height:30px; line-height:27px}
+.btn02_white:active {color:#21243d; border-color:#21243d}
+.btn02_blue {color:#fff; background-color:#11224e; height:40px; line-height:37px}
+.btn02_blue:active {background-color:#0c1836}
+[class*='btn03'] {min-width:60px; height:23px; padding:0 15px; line-height:20px; font-family:'NSR'; font-size:12px;}
+.btn03_gray {color:#fff; background-color:#999}
+.btn03_gray:active {background-color:#666}
+.btn03_blue {color:#fff; background-color:#11224e}
+.btn03_blue:active {background-color:#0c1836}
 
 [class*='tag0'] {display:inline-block; box-sizing:border-box; text-align:center;}
 .tag01 {position:relative; padding:0 8px; font-size:12px; line-height:18px; background-color:#f34242; color:#fff;}
@@ -176,7 +186,7 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .txt_info02 {font-size:15px; font-family:'NSR'; text-align:center;}
 .txt_info02:before {content:''; display:inline-block; width:16px; height:16px; margin:-3px 5px 0 0; vertical-align:middle; background:url(/assests/images/common/ico_common.png) -252px -40px no-repeat;}
 .txt_info02.ok:before {background-position:-302px -84px}
-.txt01 {font-size:13px; font-family:'NSR';}
+.txt01 {font-size:13px; font-family:'NSR'; margin-bottom:1px}
 .txt02 {font-size:14px; font-family:'NSR';}
 .txt03 {text-align:center; padding-bottom:25px; font-family:'NSR';}
 
@@ -190,8 +200,8 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .login_wrap .id:after {right:118px; width:15px; height:14px; background-position:0 -90px}
 .login_wrap .pw {margin-top:10px}
 .login_wrap .pw:after {right:120px; width:12px; height:15px; background-position:-45px -90px}
-.login_wrap .btn02_blue {margin-top:13px; height:40px; line-height:37px}
-.login_wrap .btn02_white {margin-top:8px; height:30px; line-height:27px}
+.login_wrap .btn02_blue {margin-top:13px;}
+.login_wrap .btn02_white {margin-top:8px;}
 .login_txt {margin:17px 0 0 22px; text-align:center; letter-spacing:-0.05em}
 .login_txt.type02 {margin-left:42px}
 .login_wrap .txt01 {padding:50px 0 30px; font-size:15px; font-family:'NSR';}
@@ -229,6 +239,7 @@ select + input, input + input, input + [class*='btn01'], [class*='btn01'] + [cla
 .pop_header02 .pop_close02 {position:absolute; right:30px; top:20px}
 
 .txt_alert {padding:20px 0 50px; font-size:15px; font-family:'NSR'; text-align:center;}
+.txt_alert .blck {margin-top:15px}
 
 .pop_wrap.pop_new {position:static; left:auto; top:auto; width:auto; margin-left:0;}
 .pop_wrap.pop_new .pop_header {position:fixed; z-index:1;}
@@ -274,6 +285,7 @@ table input[type='text'] {font-family:'NSM';}
 .tbl_col tbody td .bg_bar:before, .tbl_col.bg_bar td > span:before {content:''; position:absolute; top:6px; left:0; display:inline-block; width:1px; height:12px; background-color:#cfd3dc}
 .tbl_col tbody td .bg_bar.none:before, .tbl_col.bg_bar td:first-child > span:before {content:''; display:none}
 .tbl_col tbody td .elips.bg_bar, .tbl_col.bg_bar td > .elips {padding-left:15px}
+.tbl_col tbody td .elips.mx70 {max-width:70px}
 .tbl_col tbody td .elips.mx90 {max-width:90px}
 .tbl_col tbody td .elips.mx110 {max-width:110px}
 .tbl_col tbody td .elips.mx150 {max-width:150px}
@@ -380,12 +392,20 @@ table input[type='text'] {font-family:'NSM';}
 .scroll_tbl table thead tr th:nth-of-type(2) {}
 .scroll_tbl table thead tr th:nth-of-type(3) {width:70px}
 .scroll_tbl table thead tr th:nth-of-type(4) {width:30px}
-.scroll_tbl table thead tr th:nth-of-type(5) {width:86px}
+.scroll_tbl table thead tr th:nth-of-type(5) {width:88px}
 .scroll_tbl table tr td {padding:4px 2px; vertical-align:top;}
 .scroll_tbl table tr td:nth-of-type(1) {text-align:center;}
 .scroll_tbl table tr td:nth-of-type(3) {text-align:right;}
 .scroll_tbl table tr td:nth-of-type(4) {text-align:center;}
 .scroll_tbl table tr td:nth-of-type(5) {text-align:right;}
+
+.m_cont.type02 {background-color:#fff}
+.m_cont.type02 .tit_h1 {padding-bottom:19px; margin-bottom:14px; font-family:'NSR'; font-size:25px; color:#000; border-bottom:1px solid #b3b3b3}
+.m_cont.type02 .srch_wrap {padding:0 67px}
+.m_cont.type02 .mbinfo_list {height:467px; padding:20px 92px}
+.m_cont.type02 .mbinfo_list .prev03 {left:92px}
+.m_cont.type02 .mbinfo_list .next03 {right:92px}
+.m_cont.type02 .btn_bottom {height:75px; padding:20px 0}
 
 /* tab */
 .tab_type01 {display:block; text-align:center; font-size:0}
@@ -400,7 +420,7 @@ table input[type='text'] {font-family:'NSM';}
 /* layout */
 #wrap {height:768px; overflow:hidden; background-color:#f2f2f5}
 
-#header {position:relative; height:50px; background-color:#fff; box-shadow: 0px 3px 8px 0px rgba(5,11,60,0.1);}
+#header {position:relative; height:50px; background-color:#fff; box-shadow: 0px 3px 8px 0px rgba(5,11,60,0.1); z-index:1}
 #header .left {margin-left:26px; padding-top:12px}
 #header .left > * {display:inline-block; vertical-align:middle;}
 #header .left > img {}
