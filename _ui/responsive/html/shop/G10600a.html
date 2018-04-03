@@ -63,18 +63,21 @@
 									<li>AP 픽업 예약 주문 후, 찾아가지 않은 물품에 대해서는 매 익월 20일에 자동반품과 환불 및 실적차감 처리가 이루어집니다.</li>
 								</ul>
 							</div>
-							
+
 							<!-- 마크업 수정 2018.04.02 -->
 							<div class="panel">
-								<input class="amwa-radio" type="radio" name="optradio" id="radio1">
-								<label for="radio1">배달주문 <span class="text-sm">(ABN에서 주문하시고 택배로 제품을 인수하는 방법)</span></label>
+								<input class="amwa-radio" type="radio" name="optradio" id="shippingDelivery-type01"><label for="shippingDelivery-type01">배달주문 <span class="text-sm">(ABN에서 주문하시고 택배로 제품을 인수하는 방법)</span></label>
+
 								<div id="collapseOne" class="shipping-delivery-radio-body panel-collapse collapse">
+
+									<!-- order-payment -->
 									<div class="amway-theme order-payment">
 										<div class="navigation-tabs-container order-history-container js-order-history-container">
+											<!-- 단일/복수 (내용) -->
 											<div class="outer-border-bottom">
 												<ul class="tabs-toggles">
-													<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#single"> <span class="toggle-text">단일</span></a></li>
-													<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#revenge"> <span class="toggle-text">복수</span></a></li>
+													<li class="tab-toggle-wrap active"><a class="tab-toggle" href="#single"> <span class="toggle-text">단일</span></a></li>
+													<li class="tab-toggle-wrap"><a class="tab-toggle" href="#revenge"> <span class="toggle-text">복수</span></a></li>
 												</ul>
 											</div>
 											<div class="tab-content tabs-content-blocks">
@@ -84,15 +87,14 @@
 														<div class="btn-adress-list G10600_lp3">
 															<a class="link-btn" href="#">배송지목록<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 														</div>
+
+														<!-- 수정 : 2018.04.03 (기본배송지 전체) -->
 														<div class="shipping-list-order">
-															<span>
-																<input class="amwa-radio" type="radio" name="abnAdress" id="radio100" value="M" />
-																<label for="radio100" >기본 배송지</label>
-															</span>
-															
-															<div id="changeTextArea">
+															<!-- 기본배송지 -->
+															<span><input class="amwa-radio" type="radio" name="abnAdress" id="address-basic" value="M"  checked="checked"/><label for="address-basic" >기본 배송지</label></span>
+															<div class="shipping-detail-div" id="changeTextArea-basic" style="display:block">
 																<div class="default-shipping-address" id="changeM"><!-- 기본 배송지 클릭했을 때 나오는 화면 -->
-																	<p class="address-tit">배송지 정보</p>
+																	<!-- <p class="address-tit">배송지 정보</p> -->
 																	<div class="detail-content">
 																		<div class="col-xs-12">
 																			<span class="col-md-2 left-content">받는분</span>
@@ -121,15 +123,13 @@
 																	</div>
 																</div>
 															</div>
-															
-															<span>
-																<input class="amwa-radio" type="radio" name="abnAdress" id="radio101" value="I" />
-																<label for="radio101" >최근 등록배송지1</label>
-															</span>
-															
-															<div id="changeTextArea"> 
+															<!-- //기본배송지 -->
+
+															<!-- 최근배송지 -->
+															<span><input class="amwa-radio" type="radio" name="abnAdress" id="address-lately" value="I" /><label for="address-lately" >최근 등록배송지1</label></span>
+															<div class="shipping-detail-div" id="changeTextArea-lately" style="display:none">
 																<div class="default-shipping-address" id="changeI"><!-- 최근배송지 클릭했을 때 나오는 화면 -->
-																	<p class="address-tit">배송지 정보</p>
+																	<!-- <p class="address-tit">배송지 정보</p> -->
 																	<div class="detail-content">
 																		<div class="col-xs-12">
 																			<span class="col-md-2 left-content">받는분</span>
@@ -158,15 +158,13 @@
 																	</div>
 																</div>
 															</div>
-															
-															<span>
-																<input class="amwa-radio" type="radio" name="abnAdress" id="radio200" value="H" />
-																<label for="radio200" >새 배송지</label>
-															</span>
-															
-															<div id="changeTextArea">  
+															<!-- //최근배송지 -->
+
+															<!-- 새배송지 -->
+															<span><input class="amwa-radio" type="radio" name="abnAdress" id="address-new" value="H" /><label for="address-new" >새 배송지</label></span>
+															<div class="shipping-detail-div" id="changeTextArea-new" style="display:none">
 																<div class="new-shipping-address" id="changeH"><!-- 새 배송지 클릭했을 때 나오는 화면 -->
-																	<p class="address-tit">배송지 정보</p>
+																	<!-- <p class="address-tit">배송지 정보</p> -->
 																	<div class="new-message-shop">
 																		<ul class="list-type2">
 																			<li>배송지 주소는 최대 999개까지 등록 관리가 가능합니다.</li>
@@ -191,7 +189,7 @@
 																					<input type="text" id="" name="" class="form-control" title="나머지 주소 2" readonly="readonly">
 																				</div>
 																			</div>
-	
+
 																			<div class="form-group">
 																				<label  for="sellNum1" class="col-md-3 control-label">휴대폰 번호 <strong class="pot">*</strong></label>
 																				<div class="phone-group col-md-9 col-xs-12">
@@ -210,7 +208,7 @@
 																					</div>
 																				</div>
 																			</div>
-	
+
 																			<div class="new-shipping-agree">
 																				<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
 																				<div class="form-group">
@@ -230,9 +228,9 @@
 																	</div>
 																</div>
 															</div>
-														
-														
-														</div> 
+															<!-- //새배송지 -->
+														</div>
+														<!-- //수정 : 2018.04.03 (기본배송지 전체) -->
 													</div>
 												</div>
 												<div class="tab-pane content-block" id="revenge">
@@ -432,13 +430,14 @@
 													</div>
 												</div>
 											</div>
+											<!-- //단일/복수 (내용) -->
 										</div>
 									</div>
+									<!-- //order-payment -->
 								</div>
 							</div>
 							<div class="panel col-panel">
-								<input class="amwa-radio" type="radio" name="optradio" id="radio2" />
-								<label for="radio2">픽업주문 <span class="text-sm">(ABN에서 주문하시고 AP에서 제품을 인수하는 방법)</span></label>
+								<input class="amwa-radio" type="radio" name="optradio" id="shippingDelivery-type02"><label for="shippingDelivery-type02">픽업주문 <span class="text-sm">(ABN에서 주문하시고 AP에서 제품을 인수하는 방법)</span></label>
 								<div id="collapseTwo" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="pickup-order-body">
 										<div class="pickup-ap">
@@ -462,7 +461,7 @@
 							</div>
 							<!-- //마크업 수정 2018.04.02 -->
 						</div>
-						
+
 						<!-- 마크업 수정 2018.04.02 -->
 						<div id="selectPay" class="shipping-delivery-ship method">
 							<p class="shipping-delivery-shipping-header">결제방법 선택</p>
@@ -3315,25 +3314,24 @@ $(function(){
 </script>
 <script>
 $(function(){
-	//배송방법 선택
-	var radioDelivery = $('#shippingdiv').find('.amwa-radio');
-
-	$(radioDelivery).each(function(){
-		$(this).click(function(){
-
-			var $panel = $(this).parent('.panel');
-			if( $(this).prop("checked", false) ){
-				$(this).prop("checked", true).attr('checked', 'checked');
-				$panel.find('.panel-collapse').removeClass('collapse');
-				$panel.siblings().find('.panel-collapse').addClass('collapse');
-			}
-		})
+	/* ----- 배송방법 선택 (수정 2018.04.03) ----- */
+	//배달주문
+	$('#shippingDelivery-type01').on('click', function(){
+		$(this).prop("checked", true).attr('checked', 'checked');
+		$('#collapseOne').removeClass('collapse');
+		$('#collapseTwo').addClass('collapse');
+	});
+	//픽업주문
+	$('#shippingDelivery-type02').on('click', function(){
+		$(this).prop("checked", true).attr('checked', 'checked');
+		$('#collapseOne').addClass('collapse');
+		$('#collapseTwo').removeClass('collapse');
 	});
 
 	var radioPay = $('#selectPay').find('.amwa-radio');
 	$(radioPay).each(function(){
 		$(this).click(function(){
-			
+
 			var $panel = $(this).parent('.panel');
 			if( $(this).prop("checked", false) ){
 				$(this).prop("checked", true).attr('checked', 'checked');
@@ -3343,6 +3341,8 @@ $(function(){
 		})
 	});
 
+	/* ----- 결제방법 선택 ----- */
+	//개인카드
 	$('#individual').click(function(){
 		if( $(this).prop("checked", false) ){
 			$(this).prop("checked", true).attr('checked', 'checked');
@@ -3350,7 +3350,7 @@ $(function(){
 			$('#gaeincard').removeClass('collapse');
 		}
 	});
-
+	//법인카드
 	$('#corporation').click(function(){
 		if( $(this).prop("checked", false) ){
 			$(this).prop("checked", true).attr('checked', 'checked');
@@ -3359,6 +3359,39 @@ $(function(){
 		}
 	});
 
+	/* ----- 배송지 선택 단일/복수 (2018.04.03)  ----- */
+	var $shippingAddress = $('.order-payment');
+	var $toggleBTN = $shippingAddress.find('.tabs-toggles .tab-toggle');
+	$toggleBTN.each(function(){
+		$(this).on('click',function(e){
+			e.preventDefault();
+
+			//버튼활성화
+			var _li = $(this).parent();
+			_li.addClass('active').siblings().removeClass('active');
+
+			//탭활성화
+			var tabID = $(this).attr('href');
+			var tabContent = $(this).parents().find('.tabs-content-blocks .content-block');
+			tabContent.removeClass('active');
+
+			$(this).parents('.order-payment').find('.tabs-content-blocks .content-block').removeClass('active');
+			$(this).parents('.order-payment').find(tabID).addClass('active');
+		});
+	});
+
+	/* ----- 배송지목록 (기본,최근,새배송지)----- */
+	var $shippingList = $('.shipping-list-order');
+	var $shippingListRadio = $shippingList.find('.amwa-radio');
+	$shippingListRadio.each(function(){
+		$(this).on('click',function(){
+			$(this).prop("checked", true).attr('checked', 'checked');
+			var _RadioContent = $(this).parents('.shipping-list-order').find('.shipping-detail-div');
+			var _RadioNext = $(this).parent().next('.shipping-detail-div');
+			_RadioContent.hide();
+			_RadioNext.show();
+		});
+	});
 });
 </script>
 </body>
