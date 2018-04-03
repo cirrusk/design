@@ -69,11 +69,46 @@ html.scrollLock body {overflow:hidden;}
 .tbl-list-view .tbody {display:table-row-group; font-size:14px;}
 .tbl-list-view .thead .tr>strong {display:table-cell; padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 .tbl-list-view .tbody .tr>strong {display:none;}
-
 .tbl-list-view .tr {display:table-row;}
 .tbl-list-view .tr>strong {font-size:13px;color:#002f5f;font-weight:500;}
 .tbl-list-view .tr>div {display:table-cell; vertical-align:middle; padding:10px 15px; box-sizing:border-box; border-top:1px solid #e3e3e3;}
 .tbl-list-view.terms .tbody .tr>div {vertical-align:top;}
+
+/* ----- 로그인 ----- */
+.login-page { width:360px; margin:0 auto;box-sizing:border-box;}
+.login-page .login-title {margin-top:0; padding-top:0; font-size:24px;}
+.login-page .login-form__owner {font-size:14px;}
+.login-page input {margin:15px 0;}
+.login-page input[type=text], .login-page input[type=password] {width:100%;}
+
+/* ----- ID/PW 찾기 ----- */
+.akl .seek-login-data {position:relative; min-height:400px; max-width:1400px; margin:0 auto; padding:0 12px; box-sizing:border-box;}
+.akl .seek-login-data.amway-theme h2 {padding:initial;margin:initial;text-align:left;}
+.akl .seek-login-data.wrapper-memb-join h2.tit-h2 {padding:0;}
+.akl .seek-login-data .product-list-page-title {margin:0 0 40px; padding:0 0 34px; border-bottom:1px solid #dadada;}
+
+/* 회원유형 선택 */
+.akl .choose-seeking-type {padding:10px 0 40px;}
+.akl .choose-seeking-type>span {display:block; margin-top:20px;}
+
+/* 인증방법 선택 */
+.akl .seek-login-data .navigation-tabs-container {margin-left:0; margin-right:0; box-sizing:border-box;}
+.akl .seek-login-data .outer-border-bottom {margin:0 0 40px;}
+.akl .seek-login-data.amway-theme .tabs-toggles {margin-right:0; margin-left:0;}
+.akl .seek-login-data input[type="radio"].amwa-radio:checked+label {color:#002f5f;}
+
+/* 본인확인 정보입력 */
+.akl .author-content .validation-wrapper {padding-top:0;}
+.akl .author-content .validation-wrapper.simpleABO {padding-bottom:15px;}
+.akl .author-content .validation-wrapper.subBiz {height:190px;}
+.akl .author-content .author-tit {font-size:16px;}
+.akl .author-content .author-text em {color:#002f5f;font-weight:500;}
+.akl .amway-theme .author-content .author-text { margin-top:10px;}
+.akl .amway-theme .author-text, .akl .amway-theme .author-text * {font-size:14px;}
+.akl .wrapper-memb-join .author-content+.next-control {margin-top:35px;}
+.akl .author-content .validation-box-simple .ty-input-name input[type=text],
+.akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
+.akl .validation-wrapper.simpleMember {padding-bottom:20px;}
 
 /* ----- 회원가입----- */
 .akl .wrapper-memb-join {max-width: 1400px; margin: 0 auto;}
@@ -364,6 +399,18 @@ html.scrollLock body {overflow:hidden;}
 	.akl .wrapper-memb-join.prev-step-fold #reg-confirm-info.reg-confirm-txt {padding-left:15px;}
 }
 @media (max-width: 768px) {
+	/* 로그인 */
+	.login-page {padding:0 35px; width:auto;}
+
+	/* ID/PW 찾기 */
+	.akl .seek-login-data.amway-theme .tabs-toggles {padding-left:0; margin-left:;}
+	.akl .seek-login-data .outer-border-bottom {position:relative;border-bottom:0;}
+	.akl .seek-login-data .outer-border-bottom:after {content:'';position:absolute; z-index:-1; bottom:0; right:-12px; left:-12px; width:100%; height:1px; background:#e3e3e3; box-sizing:content-box; padding-left:12px; padding-right:12px;}
+	.akl .seek-login-data .outer-border-bottom .tabs-toggles .tab-toggle-wrap {margin-bottom:0 !important;}
+	.akl .author-content .validation-box-simple .ty-input-name input[type=text],
+	.akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:100%;}
+	.akl .author-content .validation-wrapper.subBiz {height:auto;}
+
 	/* table : view */
 	.tbl-list-view .thead {display:none;}
 	.tbl-list-view .tbody {display:block;}
@@ -385,10 +432,12 @@ html.scrollLock body {overflow:hidden;}
 
 	/* 본인확인 > 본인확인 방법 선택 */
 	.validation-wrapper {padding:0; margin-top:0; margin-bottom:20px; border-top:0;}
-	.validation-wrapper>div[class^=valid-type]{padding:30px 0; border-top:0;}
+	.validation-wrapper>div[class^=valid-type]{padding:35px 0 30px; border-top:0;}
 	.validation-wrapper>div[class^=valid-type]>p {position:static; width:auto;border-left:0;}
 	.validation-wrapper .validation-para {margin-bottom:20px;}
 	.validation-wrapper .valid-progress .box-input-details {padding-top:0;border-top:1px solid #dadada;}
+	.validation-wrapper>div {border-bottom:1px solid #e3e3e3;}
+	.validation-wrapper>div:nth-last-child(1) {border-bottom:0;}
 
 	.validation-box-simple {padding-right:0; margin-top:30px;}
 	.validation-box-simple .ty-input-name input[type=text],
