@@ -1103,11 +1103,11 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
 .akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
 .akl .panel.cash-receipts label {display:inline-block;}
-.akl .panel.cash-receipts .cash-type {display:table-cell;width:75%;text-align:right;}
-.akl .panel.cash-receipts .cash-type .cash-phone {display:block;text-align:right;}
+.akl .panel.cash-receipts .cash-type {display:table;width:75%;text-align:right;}
+.akl .panel.cash-receipts .cash-type .cash-phone {display:block;text-align:right;width:100%;}
 .akl .panel.cash-receipts .cash-phone select.form-control {width:110px;display:inline-block;vertical-align:middle;margin-right:8px}
 .akl .panel.cash-receipts .cash-phone input.form-control {width:55%;display:inline-block;vertical-align:middle;}
-.akl .panel.cash-receipts .receipt-type {display:block;text-align:right;padding:10px 0 0}
+.akl .panel.cash-receipts .receipt-type {display:block;text-align:right;padding:10px 0 0;width:100%;}
 .receipt-type label {font-size:14px;width:110px;display:inline-block;vertical-align:middle;text-align:right;margin-right:8px}
 .receipt-type select.form-control {font-size:14px;width:55%;display:inline-block;vertical-align:middle;}
 
@@ -1417,15 +1417,25 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 
 .shopping-tbody {clear:both;display:block;}
 .shopping-tbody ul {}
-.shopping-tbody ul li {clear:both;display:block;display:table;position:relative;padding:11px 0;width:100%;table-layout:fixed;}
+.shopping-tbody ul li {clear:both;display:table;position:relative;padding:15px 0;width:100%;border-bottom:1px solid #e3e3e3;}
 .shopping-tbody .td-chk, .shopping-td .td-info {float:left;}
-.shopping-tbody .td-chk {width:5%;text-align:center;vertical-align:top;}
-.shopping-tbody .td-info {width:95%;text-align:left;vertical-align:top;}
+.shopping-tbody .td-chk {width:5%;text-align:center;vertical-align:middle;}
+.shopping-tbody .td-chk label.checkbox-element-wrapper {padding:9px 0 0}
+.shopping-tbody .td-info {width:95%;text-align:left;display:table;vertical-align:middle;}
 
-.shop-product-code {float:left;display:table;width:41%;}
-.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px;padding:10px 0 0}
-.shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;padding:10px 0 0}
-.shop-product-info {float:left;display:table;width:59%;font-size:14px;}
+.shop-product-code {display:table-cell;width:43%;margin:0;}
+.shop-product-code .shop-ptit {display:table;width:100%;}
+.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px;}
+.shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;}
+.shop-product-info {display:table-cell;width:58%;font-size:14px;margin:0;padding:0;}
+.shop-product-info .shop-plist {display:table;width:100%;text-align:left;}
+.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:15%;font-size:14px;}
+.shop-product-info .shop-plist .list-price {display:table-cell;width:10%;}
+
+.shop-product-info .shop-plist .qty-label {display:none;}
+.shop-product-info .shop-plist .price-label {display:none;}
+.shop-product-info .shop-plist .total-price-label {display:none;}
+.shop-product-info .shop-plist span {font-size:14px;}
 
 /* 중개판매관리 > 중개판매 견적내역 */
 .esthistory-box {clear:both;display:block;border-bottom:1px solid #e3e3e3;padding:20px 0}
@@ -1576,9 +1586,9 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .account-btn .btn-primary.res-num {padding:8px 0;}
 	.akl .bonus-payment__items .account-btn .btn-primary.res-num {padding:0;}
 	.akl .account-btn .bt-akl-white.mobile  {width:98%;}
-	.akl .account-btn.refund .btn-primary {width:48%;text-align:center;padding:8px 0 6px;}
-	.akl .account-btn.refund .bt-akl-white {width:48%;text-align:center;padding:8px 0 6px;}
-	.akl .account-btn .btn-primary.no-accon {width:98%;padding:8px 0 6px;}
+	.akl .account-btn.refund .btn-primary {width:48%;text-align:center;}
+	.akl .account-btn.refund .bt-akl-white {width:48%;text-align:center;}
+	.akl .account-btn .btn-primary.no-accon {width:98%;text-align:center;}
 	.akl .cart-popup__content.payment .account-profile__value span.admi-num {display:block;clear:both;}
 	.akl .automatic-ars {padding:10px 0 20px 20px;}
 
