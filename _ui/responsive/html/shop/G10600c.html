@@ -577,33 +577,37 @@
 								<div class="col-md-9">
 									<div class="panel">
 										<input class="amwa-radio" type="radio" name="optradio3" id="radio31" value="radio31" checked="" />
-										<label for="radio31">신청안함</label>
+										<label for="radio31"><span class="text-regul">신청안함</span></label><!-- class 추가 2018.04.03 -->
 									</div>
 									<div class="panel">
 										<input class="amwa-radio" type="radio" name="optradio3" id="radio32" value="radio32" />
-										<label for="radio32" class="tax-bill">세금계산서(중개판매 신청) : 123456789 명품서천특산품</label>
+										<label for="radio32" class="tax-bill"><span class="text-regul">세금계산서(중개판매 신청) :</span> 123456789 명품서천특산품</label><!-- class 추가 2018.04.03 -->
 										<span class="btn-business G10600_lp5"><a href="#" class="bt-akl-white mini">사업자등록증 선택</a></span>
 									</div>
 									<div class="panel cash-receipts">
 										<div class="col-xs-12 col-md-3">
 											<input class="amwa-radio" type="radio" name="optradio3" id="radio33" value="radio33" />
-											<label for="radio33">현금영수증</label>
+											<label for="radio33"><span class="text-regul">현금영수증</span></label><!-- class 추가 2018.04.03 -->
 										</div>
 										<div style="col-xs-12 col-md-9">
-											<div class="cash-phone">
-												<select class="form-control" title="구분번호를 선택하세요">
-													<option>010</option>
-													<option>011</option>
-												</select>
-												<input type="text" class="form-control" placeholder="‘-’없이 입력" title="핸드폰 번호 뒷자리 6~8자리를 입력하세요 ">
+											<!-- 마크업 수정 2018.04.03 -->
+											<div class="cash-type">
+												<div class="cash-phone">
+													<select class="form-control" title="구분번호를 선택하세요">
+														<option>010</option>
+														<option>011</option>
+													</select>
+													<input type="text" class="form-control" placeholder="‘-’없이 입력" title="핸드폰 번호 뒷자리 6~8자리를 입력하세요 ">
+												</div>
+												<div class="receipt-type">
+													<label for="re-type">영수증 유형</label>
+													<select class="form-control" id="re-type">
+														<option>소득공제용(개인)</option>
+														<option>소득공제용(법인)</option>
+													</select>
+												</div>
 											</div>
-											<div class="receipt-type">
-												<label for="re-type">영수증 유형</label>
-												<select class="form-control" id="re-type">
-													<option>소득공제용(개인)</option>
-													<option>소득공제용(법인)</option>
-												</select>
-											</div>
+											<!-- //마크업 수정 2018.04.03 -->
 										</div>
 									</div>
 								</div>

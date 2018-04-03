@@ -1103,11 +1103,12 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
 .akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
 .akl .panel.cash-receipts label {display:inline-block;}
-.akl .panel.cash-receipts .cash-phone {display:block;text-align:right;}
-.akl .panel.cash-receipts .cash-phone select.form-control {width:80px;display:inline-block;vertical-align:middle;}
+.akl .panel.cash-receipts .cash-type {display:table-cell;width:75%;text-align:right;}
+.akl .panel.cash-receipts .cash-type .cash-phone {display:block;text-align:right;}
+.akl .panel.cash-receipts .cash-phone select.form-control {width:110px;display:inline-block;vertical-align:middle;margin-right:8px}
 .akl .panel.cash-receipts .cash-phone input.form-control {width:55%;display:inline-block;vertical-align:middle;}
-.akl .panel.cash-receipts .receipt-type {display:block;padding:10px 0 0 0;text-align:right;}
-.receipt-type label {font-size:14px;display:inline-block;vertical-align:middle;text-align:left;}
+.akl .panel.cash-receipts .receipt-type {display:block;text-align:right;padding:10px 0 0}
+.receipt-type label {font-size:14px;width:110px;display:inline-block;vertical-align:middle;text-align:right;margin-right:8px}
 .receipt-type select.form-control {font-size:14px;width:55%;display:inline-block;vertical-align:middle;}
 
 .akl .shipping-delivery .panel label {font-size:14px;color:#56565a;font-weight:500;}
@@ -1291,6 +1292,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .panel.shop-install {margin-bottom:0;}
 .akl .panel.shop-install .default-shipping-address, .akl .panel.shop-install .new-shipping-address {border-bottom:0 none;}
 .text-sm {font-size:13px;font-weight:400}
+.text-regul {font-weight:400}
 
 /* 주문결제 > 주문완료 */
 .akl .confirm-box {padding:34px 0 34px;}
@@ -1990,12 +1992,13 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.transfer-resver-guide .guid-box {width:100%;}
 
 	/* 주문결제 > 거래내역증빙신청 */
-	.akl .panel.cash-receipts .cash-phone {display:block;text-align:left;padding:30px 0 0 30px}
-	.akl .panel.cash-receipts .cash-phone select.form-control {width:80px;}
-	.akl .panel.cash-receipts .cash-phone input.form-control {width:63%;}
-	.akl .panel.cash-receipts .receipt-type {display:block;text-align:left;padding:10px 0 0 30px}
-	.akl .panel.cash-receipts .receipt-type label {padding-right:12px;}
-	.akl .panel.cash-receipts .receipt-type select.form-control {width:100%;}
+	.akl .panel.cash-receipts .cash-type {width:90%;text-align:left;padding:8px 0 0 30px}
+	.akl .panel.cash-receipts .cash-type .cash-phone {text-align:left;}
+	.akl .panel.cash-receipts .cash-phone select.form-control {width:30%;margin-right:4px}
+	.akl .panel.cash-receipts .cash-phone input.form-control {width:65%;}
+	.akl .panel.cash-receipts .receipt-type {display:block;text-align:left;padding:10px 0 0}
+	.receipt-type label {width:100%;text-align:left;margin-right:0}
+	.receipt-type select.form-control {width:98%;}
 
 	/* 주문결제 > 쿠폰선택 팝업 */
 	.pop-coupon-list ul li.thead-tit {display:none;}
