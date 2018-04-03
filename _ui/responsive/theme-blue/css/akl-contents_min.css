@@ -85,7 +85,9 @@ html.scrollLock body {overflow:hidden;}
 .akl .seek-login-data {position:relative; min-height:400px; max-width:1400px; margin:0 auto; padding:0 12px; box-sizing:border-box;}
 .akl .seek-login-data.amway-theme h2 {padding:initial;margin:initial;text-align:left;}
 .akl .seek-login-data.wrapper-memb-join h2.tit-h2 {padding:0;}
-.akl .seek-login-data .product-list-page-title {margin:0 0 40px; padding:0 0 34px; border-bottom:1px solid #dadada;}
+.akl .seek-login-data .product-list-page-title {margin:0; padding:0 0 34px;}
+.akl .seek-login-data .divide-line {padding:0; margin:0 0 40px; border-top:1px solid #dadada;}
+.akl .wrapper-seek-result .form-sub-title-gray + .divide-line {margin-top:40px;}
 
 /* 회원유형 선택 */
 .akl .choose-seeking-type {padding:10px 0 40px;}
@@ -99,16 +101,43 @@ html.scrollLock body {overflow:hidden;}
 
 /* 본인확인 정보입력 */
 .akl .author-content .validation-wrapper {padding-top:0;}
-.akl .author-content .validation-wrapper.simpleABO {padding-bottom:15px;}
+.akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;}
 .akl .author-content .validation-wrapper.subBiz {height:190px;}
-.akl .author-content .author-tit {font-size:16px;}
+.akl .author-content .validation-wrapper.simpleMember {padding-bottom:30px;}
+.akl .author-content .author-tit {display:block;font-size:16px;}
+.akl .author-content.member .author-tit {padding-top:40px; border-top:1px solid #dadada;}
 .akl .author-content .author-text em {color:#002f5f;font-weight:500;}
-.akl .amway-theme .author-content .author-text { margin-top:10px;}
+.akl .amway-theme .author-content .author-text {margin-top:10px;}
 .akl .amway-theme .author-text, .akl .amway-theme .author-text * {font-size:14px;}
-.akl .wrapper-memb-join .author-content+.next-control {margin-top:35px;}
 .akl .author-content .validation-box-simple .ty-input-name input[type=text],
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
-.akl .validation-wrapper.simpleMember {padding-bottom:20px;}
+.akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
+
+/* 결과보기 : 공통 */
+.akl .wrapper-seek-result .form-sub-title-gray {margin-bottom:20px; font-size:16px; color:#56565a;}
+.akl .wrapper-seek-result .form-group {margin:0;padding:40px 0; border:1px solid #dadada; border-width:1px 0;}
+.akl .wrapper-seek-result .form-group p {margin-bottom:0;}
+.akl .wrapper-seek-result .form-group+.info-txt-btm {margin-top:20px;}
+.akl .wrapper-seek-result .form-group>strong {color:#002f5f;}
+.akl .wrapper-memb-join .wrapper-seek-result .next-control {margin:35px 0 0;}
+.akl .wrapper-seek-result .message-box {padding:0 0 30px; margin-bottom:40px; border-bottom:1px solid #dadada;}
+.akl .wrapper-seek-result .message-box .form-sub-title-gray {margin-bottom:15px;}
+
+/* 결과보기 : member */
+.akl .result-form-list>li {padding:40px 0; border-top:1px solid #dadada;}
+.akl .result-form-list>li * {font-size:14px;}
+.akl .result-form-list {margin-bottom:20px; border-bottom:1px solid #dadada;}
+.akl .result-form-list .form-group {padding:0;border:0;}
+.akl .result-form-list .form-group+.form-group {margin-top:17px;}
+.akl .result-form-list .form-group [class^="col-"]{padding-left:0; padding-right:0;}
+.akl .result-form-list .form-group + .list-type2 {margin-top:36px;}
+.akl .result-form-list .form-group span.txt+button{margin-left:10px;}
+.akl .result-form-list .form-group span.txt {display:inline-block; min-width:327px}
+.akl .result-form-list .form-group.mobile-certifi {margin-top:12px;}
+.akl .result-form-list .certifi-input-box {width:490px; margin-top:10px}
+.akl .result-form-list .col-btn button {margin-left:12px;}
+
+
 
 /* ----- 회원가입----- */
 .akl .wrapper-memb-join {max-width: 1400px; margin: 0 auto;}
@@ -184,17 +213,16 @@ html.scrollLock body {overflow:hidden;}
 .akl .termsWrapper .mgtM{margin-top:20px !important;}
 .akl .termsWrapper .mgtL{margin-top:30px !important;}
 .akl .termsWrapper .mgtL2{margin-top:45px !important;}
-
 .akl .termsWrapper .mgbNone{margin-bottom:0 !important;}
 .akl .termsWrapper .mgbS{margin-bottom:10px !important;}
 .akl .termsWrapper .mgbM{margin-bottom:20px !important;}
 .akl .termsWrapper .mgbL{margin-bottom:30px !important;}
 .akl .termsWrapper .mgbL2{margin-bottom:40px !important;}
 
-.mgtbSs{margin:5px 0 !important;}
-.mgtbS{margin:10px 0 !important;}
-.mgtbM{margin:20px 0 !important;}
-.mgtbL{margin:30px 0 !important;}
+.akl .termsWrapper .mgtbSs{margin:5px 0 !important;}
+.akl .termsWrapper .mgtbS{margin:10px 0 !important;}
+.akl .termsWrapper .mgtbM{margin:20px 0 !important;}
+.akl .termsWrapper .mgtbL{margin:30px 0 !important;}
 
 .akl .termsWrapper .mglNone{margin-left:0 !important;}
 
@@ -410,6 +438,11 @@ html.scrollLock body {overflow:hidden;}
 	.akl .author-content .validation-box-simple .ty-input-name input[type=text],
 	.akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:100%;}
 	.akl .author-content .validation-wrapper.subBiz {height:auto;}
+
+	.akl .result-form-list .form-group span.txt {margin-top:10px;}
+	.akl .result-form-list .form-group span.txt+button{margin:12px 0 0;}
+	.akl .result-form-list .form-group.mobile-certifi {margin-top:12px;}
+	.akl .result-form-list .certifi-input-box {width:auto;}
 
 	/* table : view */
 	.tbl-list-view .thead {display:none;}
