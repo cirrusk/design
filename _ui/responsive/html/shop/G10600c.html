@@ -102,146 +102,153 @@
 										<div class="btn-adress-list mounting">
 											<a class="link-btn G10600_lp3" href="#">배송지목록<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 										</div>
+										<!-- 수정 : 2018.04.04 (기본배송지 전체) -->
 										<div class="shipping-list-order">
-											<span>
-												<input class="amwa-radio" type="radio" name="abnAdress" id="radio100" value="M" />
-												<label for="radio100" >기본 배송지</label>
-											</span>
-											<span>
-												<input class="amwa-radio" type="radio" name="abnAdress" id="radio101" value="I" />
-												<label for="radio101" >최근 등록배송지1</label>
-											</span>
-											<span>
-												<input class="amwa-radio" type="radio" name="abnAdress" id="radio200" value="H" />
-												<label for="radio200" >새 배송지</label>
-											</span>
-										</div>
-
-										<div id="changeTextArea">
-											<div class="default-shipping-address" id="changeM"><!-- 기본 배송지 클릭했을 때 나오는 화면 -->
-												<p class="address-tit">설치주소 정보</p>
-												<div class="detail-content">
-													<div class="col-xs-12">
-														<span class="col-md-2 left-content">받는분</span>
-														<span class="col-md-10 right-info">홍길동</span>
-													</div>
-													<div class="col-xs-12">
-														<span class="col-md-2 left-content">주소</span>
-														<span class="col-md-10 right-info">[07583] 서울 강서구 강서로 56가길 45,.(등촌동)</span>
-													</div>
-													<div class="col-xs-12">
-														<span class="col-md-2 left-content">휴대폰 번호</span>
-														<span class="col-md-10 right-info">010-1234-5678</span>
-													</div>
-													<div class="form-group col-xs-12">
-														<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
-														<div class="col-md-10 col-xs-12">
-															<input type="text" id="remess2" class="form-control">
-															<div class="message-shop">
-																<ul class="list-type2">
-																	<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
-																	<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
-																</ul>
+											<!-- 기본배송지 -->
+											<span><input class="amwa-radio" type="radio" name="abnAdress" id="address-basic" value="M"  checked="checked"/><label for="address-basic" >기본 배송지</label></span>
+											<div class="shipping-detail-div" id="changeTextArea-basic" style="display:block">
+												<div class="default-shipping-address" id="changeM"><!-- 기본 배송지 클릭했을 때 나오는 화면 -->
+													<!-- <p class="address-tit">배송지 정보</p> -->
+													<div class="detail-content">
+														<div class="col-xs-12">
+															<span class="col-md-2 left-content">받는분</span>
+															<span class="col-md-10 right-info">홍길동</span>
+														</div>
+														<div class="col-xs-12">
+															<span class="col-md-2 left-content">주소</span>
+															<span class="col-md-10 right-info">[07583] 서울 강서구 강서로 56가길 45,.(등촌동)</span>
+														</div>
+														<div class="col-xs-12">
+															<span class="col-md-2 left-content">휴대폰 번호</span>
+															<span class="col-md-10 right-info">010-1234-5678</span>
+														</div>
+														<div class="form-group col-xs-12">
+															<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+															<div class="col-md-10 col-xs-12">
+																<input type="text" id="remess2" class="form-control">
+																<div class="message-shop">
+																	<ul class="list-type2">
+																		<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																		<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
+																	</ul>
+																</div>
 															</div>
 														</div>
-												   </div>
+													</div>
 												</div>
 											</div>
+											<!-- //기본배송지 -->
 
-											<div class="default-shipping-address" id="changeI"><!-- 최근배송지 클릭했을 때 나오는 화면 -->
-												<p class="address-tit">설치주소 정보</p>
-												<div class="detail-content">
-													<div class="col-xs-12">
-														<span class="col-md-2 left-content">받는분</span>
-														<span class="col-md-10 right-info">김길동</span>
-													</div>
-													<div class="col-xs-12">
-														<span class="col-md-2 left-content">주소</span>
-														<span class="col-md-10 right-info">[07583] 서울 강서구 강서로 56가길 45,.(등촌동)</span>
-													</div>
-													<div class="col-xs-12">
-														<span class="col-md-2 left-content">휴대폰 번호</span>
-														<span class="col-md-10 right-info">010-1234-5678</span>
-													</div>
-													<div class="form-group col-xs-12">
-														<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
-														<div class="col-md-10 col-xs-12">
-															<input type="text" id="remess2" class="form-control">
-															<div class="message-shop">
-																<ul class="list-type2">
-																	<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
-																	<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
-																</ul>
+											<!-- 최근배송지 -->
+											<span><input class="amwa-radio" type="radio" name="abnAdress" id="address-lately" value="I" /><label for="address-lately" >최근 등록배송지1</label></span>
+											<div class="shipping-detail-div" id="changeTextArea-lately" style="display:none">
+												<div class="default-shipping-address" id="changeI"><!-- 최근배송지 클릭했을 때 나오는 화면 -->
+													<!-- <p class="address-tit">배송지 정보</p> -->
+													<div class="detail-content">
+														<div class="col-xs-12">
+															<span class="col-md-2 left-content">받는분</span>
+															<span class="col-md-10 right-info">김길동</span>
+														</div>
+														<div class="col-xs-12">
+															<span class="col-md-2 left-content">주소</span>
+															<span class="col-md-10 right-info">[07583] 서울 강서구 강서로 56가길 45,.(등촌동)</span>
+														</div>
+														<div class="col-xs-12">
+															<span class="col-md-2 left-content">휴대폰 번호</span>
+															<span class="col-md-10 right-info">010-1234-5678</span>
+														</div>
+														<div class="form-group col-xs-12">
+															<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
+															<div class="col-md-10 col-xs-12">
+																<input type="text" id="remess2" class="form-control">
+																<div class="message-shop">
+																	<ul class="list-type2">
+																		<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
+																		<li>특수문자는 ( ) . 를 제외하고 입력이 불가합니다.</li>
+																	</ul>
+																</div>
 															</div>
 														</div>
-												   </div>
+													</div>
 												</div>
 											</div>
+											<!-- //최근배송지 -->
 
-											<div class="new-shipping-address" id="changeH"><!-- 새 배송지 클릭했을 때 나오는 화면 -->
-												<p class="address-tit">설치주소 정보</p>
-												<div class="new-message-shop">
-													<ul class="list-type2">
-														<li>배송지 주소는 최대 999개까지 등록 관리가 가능합니다.</li>
-														<li>정확하고 빠른 배송을 위해 정확한 주소지와 전화번호 등록을 확인해 주십시오.</li>
-													</ul>
-												</div>
-												<div class="detail-content">
-													<div class="new-cart">
-														<div class="form-group">
-															<label for="receiver2" class="col-md-3 control-label">받는분</label>
-															<div class="col-md-9 col-xs-12">
-																<input type="text" id="receiver2" class="form-control">
-															</div>
-														</div>
-														<div class="form-group">
-															<label for="address2" class="col-md-3 control-label">주소</label>
-															<div class="col-md-9 col-xs-12 address">
-																<p><input type="text" id="address2" name="" class="form-control" readonly="readonly"></p>
-																<button type="button" class="bt-akl-white" id="U61000_lp1">주소찾기</button>
-																<input type="text" id="" name="" class="form-control" title="나머지 주소 1" readonly="readonly">
-																<input type="text" id="" name="" class="form-control" title="나머지 주소 2" readonly="readonly">
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label  for="sellNum1" class="col-md-3 control-label">휴대폰 번호</label>
-															<div class="phone-group col-md-9 col-xs-12">
-																<div class="control-group">
-																	<select id="sellNum1" name="" class="form-control" title="휴대전화번호 앞자리 선택">
-																		<option value="1" selected="selected">010</option>
-																		<option value="509">011</option>
-																	</select>
+											<!-- 새배송지 -->
+											<span><input class="amwa-radio" type="radio" name="abnAdress" id="address-new" value="H" /><label for="address-new" >새 배송지</label></span>
+											<div class="shipping-detail-div" id="changeTextArea-new" style="display:none">
+												<div class="new-shipping-address" id="changeH"><!-- 새 배송지 클릭했을 때 나오는 화면 -->
+													<!-- <p class="address-tit">배송지 정보</p> -->
+													<div class="new-message-shop">
+														<ul class="list-type2">
+															<li>배송지 주소는 최대 999개까지 등록 관리가 가능합니다.</li>
+															<li>정확하고 빠른 배송을 위해 정확한 주소지와 전화번호 등록을 확인해 주십시오.</li>
+														</ul>
+														<p><strong class="pot">*</strong> 는 필수입력 항목입니다.</p>
+													</div>
+													<div class="detail-content">
+														<div class="new-cart">
+															<!-- 마크업 수정 2018.04.04 -->
+															<div class="delv-shopbox">
+																<div class="form-group">
+																	<label for="receiver2" class="col-md-3 control-label">받는분 <strong class="pot">*</strong></label>
+																	<div class="col-md-9 col-xs-12">
+																		<input type="text" id="receiver2" class="form-control">
+																	</div>
 																</div>
 																<div class="form-group">
-																	<input type="text" name="" class="form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
+																	<label for="address2" class="col-md-3 control-label">주소 <strong class="pot">*</strong></label>
+																	<div class="col-md-9 col-xs-12 address">
+																		<p><input type="text" id="address2" name="" class="form-control" readonly="readonly"></p>
+																		<button type="button" class="bt-akl-white" id="U61000_lp1">주소찾기</button>
+																		<input type="text" id="" name="" class="form-control" title="나머지 주소 1" readonly="readonly">
+																		<input type="text" id="" name="" class="form-control" title="나머지 주소 2" readonly="readonly">
+																	</div>
 																</div>
-																<div class="clearfix">
-																	<input id="remember5" type="checkbox">
-																	<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
-																</div>
-															</div>
-														</div>
 
-														<div class="new-shipping-agree">
-															<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
-															<div class="form-group">
-																<input class="amwa-radio" type="radio" name="abnAdress" id="radio500" value="yes" />
-																<label for="radio500">예</label>
-																<input class="amwa-radio" type="radio" name="abnAdress" id="radio501" value="no" />
-																<label for="radio501">아니오</label>
+																<div class="form-group">
+																	<label  for="sellNum1" class="col-md-3 control-label">휴대폰 번호 <strong class="pot">*</strong></label>
+																	<div class="phone-group col-md-9 col-xs-12">
+																		<div class="control-group">
+																			<select id="sellNum1" name="" class="form-control" title="휴대전화번호 앞자리 선택">
+																				<option value="1" selected="selected">010</option>
+																				<option value="509">011</option>
+																			</select>
+																		</div>
+																		<div class="form-group">
+																			<input type="text" name="" class="form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
+																		</div>
+																		<div class="clearfix">
+																			<input id="remember5" type="checkbox">
+																			<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
+																		</div>
+																	</div>
+																</div>
 															</div>
-														</div>
-														<div class="new-shipping-btnw">
-															<ul class="list-type2">
-																<li>기본배송지의 전화번호 수정은 <span class="pot-basic">마이페이지 > 개인정보수정</span> 에서 가능합니다.</li>
-															</ul>
-															<button type="button" class="bt-akl-blue">확인</button>
+															<!-- 마크업 수정 2018.04.04 -->
+
+															<div class="new-shipping-agree">
+																<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
+																<div class="form-group">
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio500" value="yes" />
+																	<label for="radio500">예</label>
+																	<input class="amwa-radio" type="radio" name="abnAdress" id="radio501" value="no" />
+																	<label for="radio501">아니오</label>
+																</div>
+															</div>
+															<div class="new-shipping-btnw">
+																<ul class="list-type2">
+																	<li>기본배송지의 전화번호 수정은 <span class="pot-basic">마이페이지 > 개인정보수정</span> 에서 가능합니다.</li>
+																</ul>
+																<button type="button" class="bt-akl-blue">확인</button>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
+											<!-- //새배송지 -->
 										</div>
+										<!-- //수정 : 2018.04.04 (기본배송지 전체) -->
 									</div>
                                 </div>
                             </div>
@@ -1108,12 +1115,12 @@
 </div>
 <!--// 주소찾기 팝업 -->
 
-<!-- 배송지 목록(단일) 팝업 -->
+<!-- 배송지 목록 팝업 -->
 <div class="layerWrapper G10600_lp3_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
-				<span class="cart-popup__header-text">배송지 목록(단일)
+				<span class="cart-popup__header-text">배송지 목록
 					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
 					   <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
 					</a>
@@ -1184,279 +1191,6 @@
 	</div>
 </div>
 <!--//배송지 목록(단일) 팝업 -->
-
-<!-- 배송지 목록(복수) 팝업 -->
-<div class="layerWrapper G10600_lp4_pop">
-	<div class="cbox layerBox popWidL">
-		<div class="cart-popup__dialog">
-			<div class="cart-popup__header">
-				<span class="cart-popup__header-text">배송지 목록(복수)
-					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
-					   <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
-					</a>
-				</span>
-			</div>
-			<div class="cart-popup__content payment">
-				<div class="cart-popup__item-info">
-					<div class="pop-revenge-web">
-						<div class="form-wrapper address-book">
-							<input type="text" id="" name="" placeholder="받는 분,  주소명 입력" value="" title="검색할 주소 입력">
-							<span class="btn-book">
-								<button type="submit" class="btn btn-primary">
-									<span>검색</span>
-								</button>
-								<button type="button" class="link-btn">전체보기</button>
-							</span>
-						</div>
-						<div class="row po-revlist-body">
-							<div class="col-xs-12 col-md-5">
-								<div class="po-rev-title">
-									<input id="remember3" name="aall" type="checkbox">
-									<label for="remember3" class="normal inline-label checklabel">전체선택</label>
-								</div>
-								<div class="table-wrapper my-revenge-list">
-									<table class="tbl-type1">
-										<caption>이름, 주소, 선택항목 제공</caption>
-										<colgroup>
-											<col style="width:20%">
-											<col style="width:80%">
-										</colgroup>
-										<tbody>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" name="global-class" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="no-data">내역이 없습니다.</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="my-Shipping-info">
-									<ul class="list-type2">
-										<li>배송지 수정/삭제 등의 관리는 <span class="pot-basic">마이페이지 > 배송지관리</span> 에서 하실 수 있습니다.</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-2">
-								<p><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/btn-arrow-prev.png" alt="왼쪽으로 옮기기"></a></p>
-								<p><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/btn-arrow-next.png" alt="오른쪽으로 옮기기"></a></p>
-							</div>
-							<div class="col-xs-12 col-md-5">
-								<div class="po-rev-title">
-									<span>선택 배송지 (<strong class="color-blue">2</strong>개)</span>
-								</div>
-								<div class="table-wrapper my-revenge-list">
-									<table class="tbl-type1">
-										<caption>이름, 주소, 선택항목 제공</caption>
-										<colgroup>
-											<col style="width:20%">
-											<col style="width:80%">
-										</colgroup>
-										<tbody>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="no-data">내역이 없습니다.</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="my-Shipping-info">
-									<ul class="list-type2">
-										<li>배송지 선택은 최대 100개까지 가능합니다.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="pop-revenge-mob">
-						<div class="form-wrapper address-book">
-							<input type="text" id="" name="" placeholder="받는 분,  주소명 입력" value="" title="검색할 주소 입력">
-							<span class="btn-book">
-								<button type="submit" class="btn btn-primary">
-									<span>검색</span>
-								</button>
-								<button type="button" class="link-btn">전체보기</button>
-							</span>
-						</div>
-						<div class="row po-revlist-body">
-							<div class="col-xs-12">
-								<div class="po-rev-title">
-									<span>나의 배송지(999)</span>
-								</div>
-								<div class="table-wrapper my-revenge-list">
-									<table class="tbl-type1">
-										<caption>이름, 주소, 선택항목 제공</caption>
-										<colgroup>
-											<col style="width:20%">
-											<col style="width:80%">
-										</colgroup>
-										<tbody>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" name="global-class" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td class="center">
-													<label class="checkbox-element-wrapper">
-														<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" type="checkbox" title="선택">
-														<span class="_checkbox-element-global-span"></span>
-													</label>
-												</td>
-												<td>
-													<p>현빈<span>(기본배송지)</span></p>
-													<p>[000-000] 서울특별시 강남구 삼성동 00-00</p>
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="no-data">내역이 없습니다.</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="my-Shipping-info">
-									<ul class="list-type2">
-										<li>배송지 선택은 최대 100개까지 가능합니다.</li>
-										<li>배송지 수정/삭제 등의 관리는 <span class="pot-basic">마이페이지 > 배송지관리</span> 에서 하실 수 있습니다.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="cart-popup__item-link">
-				<button type="button" class="bt-akl-blue">확인</button>
-				<button type="button" class="bt-akl-txt">취소</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!--//배송지 목록(복수)팝업 -->
 
 <!-- AP안내 팝업 -->
 <div class="layerWrapper G10600_lp8_pop">
@@ -3014,6 +2748,8 @@ $(function(){
 		})
 	});
 
+	/* ----- 결제방법 선택 ----- */
+	//개인카드
 	$('#individual').click(function(){
 		if( $(this).prop("checked", false) ){
 			$(this).prop("checked", true).attr('checked', 'checked');
@@ -3021,7 +2757,7 @@ $(function(){
 			$('#gaeincard').removeClass('collapse');
 		}
 	});
-
+	//법인카드
 	$('#corporation').click(function(){
 		if( $(this).prop("checked", false) ){
 			$(this).prop("checked", true).attr('checked', 'checked');
@@ -3029,7 +2765,21 @@ $(function(){
 			$('#bubincard').removeClass('collapse');
 		}
 	});
-
+	
+	/* ----- 배송지목록 (기본,최근,새배송지)----- */
+	var $shippingList = $('.shipping-list-order');
+	var $shippingListRadio = $shippingList.find('.amwa-radio');
+	$shippingListRadio.each(function(){
+		$(this).on('click',function(){
+			$(this).prop("checked", true).attr('checked', 'checked');
+			var _RadioContent = $(this).parents('.shipping-list-order').find('.shipping-detail-div');
+			var _RadioNext = $(this).parent().next('.shipping-detail-div');
+			_RadioContent.hide();
+			_RadioNext.show();
+		});
+	});
+	
+	
 });
 </script>
 </body>

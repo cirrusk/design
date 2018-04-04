@@ -866,7 +866,7 @@ span.btn-business {display:inline-block;}
 .default-shipping-address {clear:both;display:block;border-bottom:1px solid #e3e3e3;overflow:hidden;}
 .default-shipping-address.no-botm {border-bottom:0 none;}
 .address-tit {font-size:16px;font-weight:500;letter-spacing:-1px;}
-.default-shipping-address .detail-content {margin:0 0;padding:0 0;letter-spacing:-1px;width:100%;}
+.default-shipping-address .detail-content {margin:0 0;padding:0 30px;letter-spacing:-1px;width:100%;}
 .default-shipping-address .detail-content .col-xs-12 {margin:0 0 10px;padding:0 0;}
 .default-shipping-address .detail-content .col-xs-12 .col-md-2.left-content {padding:0 0;font-size:14px;font-weight:500;color:#002f5f;}
 .default-shipping-address .detail-content .form-group label {margin-right:0;}
@@ -876,7 +876,7 @@ span.btn-business {display:inline-block;}
 .default-shipping-address .message-shop {padding:15px 30px 0 10px;}
 
 /* 주문결제 > 단일 > 새배송지 */
-.new-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
+.new-shipping-address {border-bottom:1px solid #e3e3e3;overflow:hidden;padding:20px 30px 0}
 .new-message-shop {padding:0 0 10px;}
 .new-message-shop > p {font-size:13px; font-weight:400;letter-spacing:-1px;}
 .new-message-shop > p span {vertical-align:middle;}
@@ -885,11 +885,12 @@ span.btn-business {display:inline-block;}
 .new-shipping-address .detail-content .col-md-9 {padding:0 0 0 10px;margin:0 0;}
 .new-shipping-address .detail-content .col-xs-12 {padding:0 0;margin:0 0;}
 .new-shipping-address .detail-content .new-cart {width:100%;text-align:left;}
-.new-shipping-address .detail-content .new-cart label {text-align:left;}
-.new-shipping-address .detail-content .new-cart .form-group {width:60%;}
-.new-shipping-address .detail-content .new-cart label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
-.new-shipping-address .detail-content .new-cart .form-group .address p {margin-right:105px}
-.new-shipping-address .detail-content .new-cart .form-group .address input[type="text"] {width:98%;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox {width:600px;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox label {text-align:left;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group {width:100%;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:98%;}
 .new-shipping-address .new-shipping-agree .form-group {width:100%;padding:10px 0 0;}
 .new-shipping-address .new-shipping-agree p {font-size:14px;font-weight:500;}
 .new-shipping-address .new-shipping-agree .form-group > label {padding-top:0 !important;}
@@ -918,11 +919,11 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 
 /* 주문결제 > 복수 */
 .pay-sender {border-bottom:1px solid #e3e3e3;padding:10px 0 30px}
-.pay-sender .form-group .col-md-2 {padding:0 0;}
-.pay-sender .form-group .col-md-2 label {font-size:14px;font-weight:500;color:#002f5f !important;}
+.pay-sender .form-group .col-md-3 {padding:0 0;}
+.pay-sender .form-group .col-md-3 label {font-size:14px;font-weight:500;color:#002f5f !important;}
 .pay-sender .form-group .col-md-8 {padding:0 0;}
-.pay-sender .form-group .col-md-8 input {margin-left:0;width:45%;}
-.pay-sender .form-group .col-md-8 select.form-control {width:15%;}
+.pay-sender .form-group .col-md-8 input {margin-left:0;width:50%;}
+.pay-sender .form-group .col-md-8 select.form-control {width:20%;}
 .pay-sender .form-group .col-md-8.send-phone input {margin-left:0;width:29.5%;}
 
 .revenge-shipping-info {margin-top:30px}
@@ -949,7 +950,7 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 
 .reven-ship-box {position:relative}
 .reven-ship-box .p-delect {position: absolute;top:0;right:5px;}
-.reven-ship-box p {margin:0;padding:5px 0 0;font-size:14px;font-weight:400;letter-spacing:-1px;line-height:22px;}
+.reven-ship-box p {margin:0;padding:5px 20px 0 0;font-size:14px;font-weight:400;letter-spacing:-1px;line-height:22px;}
 .form-group.ship-messige {}
 .form-group.ship-messige label {display:block;}
 .form-group.ship-messige input {display:block;width:60%;margin-left:0;}
@@ -984,16 +985,18 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 .table-wrapper.my-revenge-list .tbl-type1 p:first-child {padding:0 0 0;}
 
 /* 주문결제 > 복수 > 새배송지 */
-.new-shipp-info .panel-body .new-cart {width:100%;}
-.new-shipp-info .panel-body .new-cart .col-md-2 {padding:0 0;margin:0 0;}
-.new-shipp-info .panel-body .new-cart .col-md-7 {padding:0 0 0 10px;margin:0 0;}
-.new-shipp-info .panel-body .new-cart .col-xs-12 {padding:0 0;margin:0 0;}
-.new-shipp-info .panel-body .form-group .address p {margin-right:115px;}
-.new-shipp-info .panel-body .phone-group {width:70%;margin:0 0;padding:0;}
-.new-shipp-info .panel-body .phone-group .control-group {margin-left:10px;width:25%}
-.new-shipp-info .panel-body .phone-group .form-group {width:70%;padding-left:0;margin:0;float:left;}
-.new-shipp-info .panel-body .phone-group .form-group input {width:81%;}
-.new-shipp-info .panel-body .phone-group .clearfix {margin-left:10px;}
+
+.new-shipp-info .detail-content {width:100%;}
+.new-shipp-info .detail-content .col-md-3 {padding:0 0;margin:0 0;}
+.new-shipp-info .detail-content .col-md-9 {padding:0 0 0 10px;margin:0 0;}
+.new-shipp-info .detail-content .col-xs-12 {padding:0 0;margin:0 0;}
+.new-shipp-info .detail-content .new-cart {width:100%;text-align:left;}
+.new-shipp-info .detail-content .new-cart .delv-shopbox {width:600px;}
+.new-shipp-info .detail-content .new-cart .delv-shopbox label {text-align:left;}
+.new-shipp-info .detail-content .new-cart .delv-shopbox label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
+.new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px}
+.new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:98%;}
+.new-shipp-info .detail-content .new-cart .delv-shopbox .phone-group {margin-left:10px;}
 
 /* 주문결제 > 픽업주문 */
 .pickup-order-body {}
@@ -1934,12 +1937,17 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.default-shipping-address .detail-content .right-info {display:block;}
 
 	/* 주문결제 > 단일 > 새배송지 */
-	.new-shipping-address .detail-content .new-cart .form-group {width:100%;}
-	.new-shipping-address .phone-group {padding-left:0 !important;}
-	.new-shipping-address .phone-group > .form-group {width:68%;padding-left:10px}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox {width:100%;}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group {width:100%;}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:0;}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox .phone-group {padding-left:0 !important;}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox .phone-group > .form-group {width:68%;padding-left:10px}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address button {margin-top:10px;}
+	
 	.new-shipping-address .new-shipping-agree {padding-top:20px}
 	.new-shipping-btnw .list-type2 {padding:0 0 20px}
 	.shipping-delivery .form-group input {width:100%;}
+	
 
 	/* 주문결제 > 복수 */
 	.pay-sender .form-group .col-md-8 input {width:100%;}
@@ -1951,7 +1959,15 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.new-shipp-info .new-cart .form-group input {width:100%;}
 	.reven-ship-title .right {float:left;padding:10px 0 0}
 	.btn-defult-list {margin-left:15px;}
-
+	
+	.reven-ship-box p {padding:5px 50px 0 0}
+	.reven-ship-box .p-delect {position: absolute;top:3px;right:0;} 
+	
+	.new-shipp-info .detail-content .new-cart .delv-shopbox {width:100%;}
+	.new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:0;}
+	.new-shipp-info .detail-content .new-cart .delv-shopbox .phone-group {margin-left:0;}
+	.new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:100%;}
+	
 	/* 주문결제 > 복수 > 배송지 목록(복수)*/
 	.pop-revenge-web {display:none;}
 	.pop-revenge-mob {display:block;}
