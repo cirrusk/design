@@ -1411,10 +1411,10 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .shop-product-info .shop-plist .total-price-label {display:none;}
 .shop-product-info .shop-plist span {font-size:14px;font-weight:400;}
 
-.shopp-fee .td-chk {width:46%;}
-.shopp-fee .td-chk span {font-size:14px;font-weight:400;letter-spacing:-1px;}
-.shopp-fee .td-info {width:54%;}
-.shopp-fee .td-info .list-item-quatiy .value-wrapper {text-align:center;width:100px;font-weight:400;}
+.shopping-tbody .td-chk.fee {width:46%;}
+.shopping-tbody .td-chk.fee span {font-size:14px;font-weight:400;letter-spacing:-1px;}
+.shopping-tbody .td-info.fee {width:54%;}
+.shopping-tbody .td-info.fee .list-item-quatiy .value-wrapper {text-align:center;width:100px;font-weight:400;}
 .shopping-tbody .supply-price {background:#f4f4f4;}
 .shopping-tbody .supply-price span {font-weight:700;color:#002f5f}
 .shopping-tbody .supply-price span.est-label {font-size:13px;}
@@ -2078,10 +2078,10 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 
 	.shop-product-info {display:table;width:100%;padding:10px 0 0;}
 	.shop-product-info .shop-plist {display:block;width:100%;text-align:left;}
-
-	.shop-product-info .shop-plist .qty-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500}
+	
+	.shop-product-info .shop-plist .qty-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500;vertical-align:top;padding:10px 0 0;}
 	.shop-product-info .shop-plist .list-item-quatiy {display:table;width:100%;font-size:14px;}
-
+	
 	.shop-product-info .shop-plist .list-price {display:table;width:100%;padding:8px 0;}
 	.shop-product-info .shop-plist .price-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500}
 	.shop-product-info .shop-plist .total-price-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500}
@@ -2092,6 +2092,7 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.shopping-tbody .td-chk.fee span {font-size:14px;font-weight:500;}
 	.shopping-tbody .td-info.fee {display:block;width:100%;text-align:left;padding:0 20px 0 50px}
 	.shopping-tbody .td-info.fee .list-item-quatiy .value-wrapper {text-align:right;width:50%;font-weight:400;}
+	.shopping-tbody .td-info.fee .list-item-quatiy .qty-label {padding:0 0 0;}
 	
 	.shopping-tbody .supply-price {background:#f4f4f4;}
 	.shopping-tbody .supply-price div {padding:0 15px;display:table}
