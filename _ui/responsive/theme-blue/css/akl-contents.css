@@ -803,23 +803,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .jumpto-solution-wrapper .jump-to-wrapper {position:relative;max-width:1367px;margin:0 auto;text-align:right;padding:0 50px;}
 .jumpto-solution-wrapper .jump-to-wrapper select {vertical-align:top;font-size:14px;font-weight:500;color:#002f5f;}
 .jumpto-solution-wrapper .jump-to-wrapper input {vertical-align:top;}
-.jumpto-solution-wrapper .jump-to-wrapper input.js-jump-to-selection-btn {background:#002f5f;font-size:14px;font-weight:500;color:#fff;}
-
-.akl .category-soultion .product-list__item {height:626px;}
-.akl .category-soultion .product-list__item-title {font-size:14px;font-weight:500;line-height:18px;}
-.akl .category-soultion .product-list__item-count, .akl .category-soultion .product-list__item-number {font-size:13px;font-weight:400;margin-bottom:10px}
-.akl .category-soultion .product-list__item-aboprice {height:30px;}
-.akl .category-soultion .product-list__item-retailprice {font-size:13px;font-weight:400;margin-bottom:10px;}
-.akl .category-soultion .product-list__item-retailprice.quantity {font-size:14px;font-weight:500;}
-.akl .category-soultion .product-list__item-content {height:535px;}
-.product-list__item-link-text {background:url("../images/akl_common/ico_heart.png") no-repeat 8px center;background-size:20px 20px;}
-.plp-add-to-ditto {right:0;}
-.product-list__item-link .product-list__item-link-ditto {padding:0 0 0 25px;display:inline-block;text-align:left;float:right;}
-.search-list-page-right-result-list-component {padding:0 0;}
-.product-list__item-link-common {font-weight:500;font-size:14px;}
-
-.product-allchoice {clear:both;display:block;background:#f4f4f4;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;padding:0 20px;height:48px;}
-.product-solition-top {padding:40px 0 0}
+.jumpto-solution-wrapper .jump-to-wrapper input.js-jump-to-selection-btn {background:#002f5f;font-size:14px;font-weight:500;color:#fff;} 
 
 /* 카테고리 > 2차 제품분류 */
 .akl .accordion-custom.pro-category .panel-title {padding:20px 0;font-size:14px;font-weight:500}
@@ -842,14 +826,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .product__facet .facet .facet__list {padding:0 20px;}
 .akl .product-list-right-component .pagination-wrapper .filter-facet-button-container .filter-facet-button {padding:9px 0;font-size:16px;font-weight:500;color:#0075a4;letter-spacing:-1px;}
 
-.akl .new-plp .new-product-list-right-slot #product-facet.active {display:none;}
-
-/*** 제품 카테고리  > 2차 제품분류 ***/
-.akl .product-list__item-link-text button,
-.akl .product-list__item-link-ditto button { background-color:#fff; white-space:nowrap;color:#0075a4;letter-spacing:-1px;font-weight:500}
-.akl .product-list__item-link-ditto { background:none !important; }
-.akl .product-list__item-link-ditto button {  padding: 0 15px 0 35px; display: inline-block; background: url(../images/ditto_2.svg) no-repeat 10px center !important; background-size:20px 20px !important;}
-.akl .product-list__item-link .plp-add-to-shopping-list .product-list__item-link-common { position: absolute; left: 0; top:0 } 
+.akl .new-plp .new-product-list-right-slot #product-facet.active {display:none;} 
 
 /* 카테고리 > 2차 제품분류 왼쪽메뉴 */
 .list-group.aisde {margin-bottom:0;}
@@ -1001,6 +978,7 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 /* 주문결제 > 복수 > 배송지 목록(복수)*/
 .pop-revenge-mob {display:none;}
 .pop-revenge-web {display:block;width:100%;}
+
 .row.po-revlist-body {padding:0 0;}
 .row.po-revlist-body .col-md-5 {padding:0 0;width:46%;}
 .row.po-revlist-body .col-md-2 {padding:130px 0 0;width:8%;text-align:center;}
@@ -1504,8 +1482,13 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .amway-theme .full-width-banner-component.banner-left-align .banner-content-wrap {width:100%;}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) { 
+	/* 위시리스트 */
+	.akl #ShopListDetailForm .col-md-12 {width: 88%;}
+	.akl #ShopListDetailBody .btn-wrapper { top:0;}
+}
 
+@media (max-width: 768px) { 
 	.filebox .upload-display { display: inline-block; margin-right: 5px; margin-bottom: 0;}
 	.akl .add_to_cart_form.akl-btton button {width:96% !important}
 	.akl .eect-comme dt {width:30%;}
@@ -1862,7 +1845,8 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .cart-content-wrapper {display:block;clear:both;}
 	.my-wishlist-detail button {display:block;width:100%;}
 	.my-wishlist-detail a.bt-akl-white {width:100%;margin-top:5px;}
-
+	
+	#ShopListDetailForm .detail-content div {padding-right: 0;}	
 	.akl .txt-detail-wish .detail-content span.col-xs-3.left-content {display:block;width:100%}
 	.akl .txt-detail-wish .detail-content span.col-xs-9.right-content {display:block;width:100%}
 	.akl .txt-detail-wish .detail-content .memo-mobile  span.col-xs-3.left-content {display:block;padding-top:20px}
@@ -1915,19 +1899,8 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.jumpto-solution-wrapper .jump-to-wrapper select {vertical-align:top;font-size:14px;font-weight:500;color:#002f5f;width:70%;}
 	.jumpto-solution-wrapper .jump-to-wrapper input {vertical-align:top;}
 	.jumpto-solution-wrapper .jump-to-wrapper input.js-jump-to-selection-btn {background:#002f5f;font-size:14px;font-weight:500;color:#fff;}
-
-	.akl .product-list__item-link-text {background:url("../images/akl_common/ico_heart.png") no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
-	.akl .category-soultion .product-list__item-content {height:270px}
-	.akl .category-soultion .product-list__item {height:400px;}
-	.plp-add-to-shopping-list {padding-left:0;}
-	.plp-add-to-ditto {padding-left:0;}
-	.product-list__item-link-common {margin-top:10px;}
-	.ditto-changeTo-sop .product-list__item-link-ditto {text-align:left;padding:0 0 0 0;float:none;}
-	.new-product__listing .product-list__item-link-ditto:before {width:0;height:0;}
-
-	.product-solition-top {padding:0 0 0}
-	
-	.akl .plp-add-to-shopping-list .product-list__item-link-common {position: static;}
+	.product-solition-top {padding:0 0 0} 
+	 
 
 	/* 카테고리 > 2차분류 왼쪽메뉴 */
 	.panel.aisde .sub-cateogry {margin:0 20px;}
