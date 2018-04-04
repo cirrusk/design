@@ -136,8 +136,13 @@ html.scrollLock body {overflow:hidden;}
 .akl .result-form-list .form-group.mobile-certifi {margin-top:12px;}
 .akl .result-form-list .certifi-input-box {width:490px; margin-top:10px}
 .akl .result-form-list .col-btn button {margin-left:12px;}
+.akl .result-form-box {margin:40px 0 20px; padding:40px 0; border:1px solid #dadada; border-width:1px 0;}
+.akl .wrapper-seek-result .result-form-box .form-group {margin:0; padding:0; border:0;}
+.akl .wrapper-seek-result .result-form-box .form-group + .form-group {margin-top:10px;}
 
-
+/* 결과보기 : 비밀번호 재설정 */
+.akl .wrapper-seek-result.reset-password input[type=text],
+.akl .wrapper-seek-result.reset-password input[type=password]{width:283px}
 
 /* ----- 회원가입----- */
 .akl .wrapper-memb-join {max-width: 1400px; margin: 0 auto;}
@@ -431,10 +436,12 @@ html.scrollLock body {overflow:hidden;}
 	.login-page {padding:0 35px; width:auto;}
 
 	/* ID/PW 찾기 */
+	/*
 	.akl .seek-login-data.amway-theme .tabs-toggles {padding-left:0; margin-left:;}
 	.akl .seek-login-data .outer-border-bottom {position:relative;border-bottom:0;}
 	.akl .seek-login-data .outer-border-bottom:after {content:'';position:absolute; z-index:-1; bottom:0; right:-12px; left:-12px; width:100%; height:1px; background:#e3e3e3; box-sizing:content-box; padding-left:12px; padding-right:12px;}
-	.akl .seek-login-data .outer-border-bottom .tabs-toggles .tab-toggle-wrap {margin-bottom:0 !important;}
+	.akl .seek-login-data .outer-border-bottom .tabs-toggles .tab-toggle-wrap {margin-bottom:0 !important;} */
+
 	.akl .author-content .validation-box-simple .ty-input-name input[type=text],
 	.akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:100%;}
 	.akl .author-content .validation-wrapper.subBiz {height:auto;}
@@ -443,6 +450,10 @@ html.scrollLock body {overflow:hidden;}
 	.akl .result-form-list .form-group span.txt+button{margin:12px 0 0;}
 	.akl .result-form-list .form-group.mobile-certifi {margin-top:12px;}
 	.akl .result-form-list .certifi-input-box {width:auto;}
+
+	/* 결과보기 : 비밀번호 재설정 */
+	.akl .wrapper-seek-result.reset-password input[type=text],
+	.akl .wrapper-seek-result.reset-password input[type=password]{width:100%}
 
 	/* table : view */
 	.tbl-list-view .thead {display:none;}
