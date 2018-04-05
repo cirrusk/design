@@ -864,10 +864,10 @@ span.btn-business {display:inline-block;}
 .btn-adress-list.mounting {position: relative;top:0;left:0;}
 
 /* 주문결제 > 단일 > 기본배송지 */
-.default-shipping-address {clear:both;display:block;border-bottom:1px solid #e3e3e3;overflow:hidden;}
+.default-shipping-address {clear:both;display:block;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
 .default-shipping-address.no-botm {border-bottom:0 none;}
 .address-tit {font-size:16px;font-weight:500;letter-spacing:-1px;}
-.default-shipping-address .detail-content {margin:0 0;padding:0 30px;letter-spacing:-1px;width:100%;}
+.default-shipping-address .detail-content {margin:0 0;padding:0 0;letter-spacing:-1px;width:100%;}
 .default-shipping-address .detail-content .col-xs-12 {margin:0 0 10px;padding:0 0;}
 .default-shipping-address .detail-content .col-xs-12 .col-md-2.left-content {padding:0 0;font-size:14px;font-weight:500;color:#002f5f;}
 .default-shipping-address .detail-content .form-group label {margin-right:0;}
@@ -877,7 +877,7 @@ span.btn-business {display:inline-block;}
 .default-shipping-address .message-shop {padding:15px 30px 0 10px;}
 
 /* 주문결제 > 단일 > 새배송지 */
-.new-shipping-address {border-bottom:1px solid #e3e3e3;overflow:hidden;padding:20px 30px 0}
+.new-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;overflow:hidden;margin-top:30px;padding:20px 0 0}
 .new-message-shop {padding:0 0 10px;}
 .new-message-shop > p {font-size:13px; font-weight:400;letter-spacing:-1px;}
 .new-message-shop > p span {vertical-align:middle;}
@@ -897,6 +897,8 @@ span.btn-business {display:inline-block;}
 .new-shipping-address .new-shipping-agree .form-group > label {padding-top:0 !important;}
 .new-shipping-address .new-shipping-btnw .list-type2 li span {display:inline-block;vertical-align:top;margin:0 0;padding:0 0;}
 .new-shipping-address .new-shipping-btnw .list-type2 li {vertical-align:top;}
+.new-shipping-address .new-shipping-agree .form-group {width:100%;padding:10px 0 0;}
+.new-shipping-address .new-shipping-agree .form-group > label {padding-top:0 !important;}
 
 .pot-basic {color:#0075a4;font-size:13px;}
 .new-shipping-address .new-shipping-btnw {padding-bottom:20px}
@@ -986,18 +988,20 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 .table-wrapper.my-revenge-list .tbl-type1 p:first-child {padding:0 0 0;}
 
 /* 주문결제 > 복수 > 새배송지 */
-
 .new-shipp-info .detail-content {width:100%;}
 .new-shipp-info .detail-content .col-md-3 {padding:0 0;margin:0 0;}
 .new-shipp-info .detail-content .col-md-9 {padding:0 0 0 10px;margin:0 0;}
 .new-shipp-info .detail-content .col-xs-12 {padding:0 0;margin:0 0;}
+.akl .new-shipp-info .detail-content .form-group > label {padding-top:0;}
 .new-shipp-info .detail-content .new-cart {width:100%;text-align:left;}
 .new-shipp-info .detail-content .new-cart .delv-shopbox {width:600px;}
 .new-shipp-info .detail-content .new-cart .delv-shopbox label {text-align:left;}
 .new-shipp-info .detail-content .new-cart .delv-shopbox label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
 .new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px}
 .new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:98%;}
-.new-shipp-info .detail-content .new-cart .delv-shopbox .phone-group {margin-left:10px;}
+.new-shipp-info .phone-group {padding-left:10px !important;}
+.new-shipp-info .phone-group > .control-group {width:30%;margin:0 0;padding:0 0;float:none;display:table-cell;vertical-align:top;}
+.new-shipp-info .phone-group > .form-group {width:70%;margin:0 0;padding:0 0;float:none;display:table-cell;vertical-align:top;}
 
 /* 주문결제 > 픽업주문 */
 .pickup-order-body {}
@@ -1100,7 +1104,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .panel.cash-receipts label {display:inline-block;}
 .akl .panel.cash-receipts .cash-type {display:table;width:75%;text-align:right;}
 .akl .panel.cash-receipts .cash-type .cash-phone {display:block;text-align:right;width:100%;}
-.akl .panel.cash-receipts .cash-phone select.form-control {width:110px;display:inline-block;vertical-align:middle;margin-right:8px}
+.akl .panel.cash-receipts .cash-phone select.form-control {width:170px;display:inline-block;vertical-align:middle;margin-right:8px}
 .akl .panel.cash-receipts .cash-phone input.form-control {width:55%;display:inline-block;vertical-align:middle;}
 .akl .panel.cash-receipts .receipt-type {display:block;text-align:right;padding:10px 0 0;width:100%;}
 .receipt-type label {font-size:14px;width:110px;display:inline-block;vertical-align:middle;text-align:right;margin-right:8px}
@@ -2042,10 +2046,10 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.transfer-resver-guide .guid-box {width:100%;}
 
 	/* 주문결제 > 거래내역증빙신청 */
-	.akl .panel.cash-receipts .cash-type {width:90%;text-align:left;padding:8px 0 0 30px}
+	.akl .panel.cash-receipts .cash-type {width:100%;text-align:left;padding:8px 0 0 30px}
 	.akl .panel.cash-receipts .cash-type .cash-phone {text-align:left;}
-	.akl .panel.cash-receipts .cash-phone select.form-control {width:30%;margin-right:4px}
-	.akl .panel.cash-receipts .cash-phone input.form-control {width:65%;}
+	.akl .panel.cash-receipts .cash-phone select.form-control {width:44%;margin-right:4px;padding-left:5px;font-size:12px;letter-spacing:-1px;}
+	.akl .panel.cash-receipts .cash-phone input.form-control {width:52%;}
 	.akl .panel.cash-receipts .receipt-type {display:block;text-align:left;padding:10px 0 0}
 	.receipt-type label {width:100%;text-align:left;margin-right:0}
 	.receipt-type select.form-control {width:98%;}
