@@ -22,7 +22,7 @@ $(function(){
 			$('.akl-accordion ' + currentAttrValue).slideDown(400).addClass('open');
 		}
 	});
-	
+
 	//사용안함 : 상품상세 페이지로 이동 2018.03.29
 	//제품상세 > 크게보기 레이어 : 이미지보기
 	//popupGalleryIMG();
@@ -446,6 +446,38 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					'margin-left':-(targetWidth/2)
 				});
 			}
+
+			//맞춤메시지 (모바일 전체화면)
+			if ( $layerContentBox.is('.typeMessageCenter') ){
+				if( _winWidth < 769 ){
+					$layerContentBox.css({
+						'display':'block',
+						'position':'absolute',
+						'top':'0',
+						'left':'0',
+						'right':'0',
+						'width':'100%',
+						'max-width':'100%',
+						'height':'auto',
+						'margin-top':'0',
+						'margin-left':'0',
+						'margin-bottom':'0'
+					});
+				} else {
+					$layerContentBox.css({
+						'display':'block',
+						'position':'absolute',
+						'top':'20px',
+						'left':'0',
+						'right':'0',
+						'max-width':'1200px',
+						'height':'auto',
+						'margin':'0 auto',
+						'margin-bottom':'20px'
+					});
+				}
+			}
+			//맞춤메시지 : 끝
 		}
 
 		/* TYPE 2 : 제품상세-크게보기 (모바일 전체화면) */

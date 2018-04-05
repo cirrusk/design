@@ -92,20 +92,11 @@
 
 			<div class="row amway-theme message-center-wrapper">
 				<h1 class="message-title">맞춤메시지 </h1>
-				<p class="message-title-description">한국암웨이에서 회원님에게 전달하는 주요 메시지 모음입니다. 제품, 프로모션, 사업, 교육 및 각종 이벤트에 대한 정보를 확인하실 수 있습니다.</p>
 
-				<p class="messages-numb">읽지 않음 : 3개 / 총 : 999개 </p>
-				<div class="form-s type-board">
-					<span class="box-select">
-						<select class="form-control width185" tabindex="-1" aria-hidden="true">
-							<option value="">제목</option>
-							<option value="">내용</option>
-						</select>
-					</span>
-					<span class="box-submit">
-						<input type="text" id="" name="" placeholder="" value="" class="input-st" title="검색어 입력">
-						<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
-					</span>
+				<p class="messages-numb">읽지 않음 : <a href="#">3</a>개 / 총 : <a href="#">999</a>개 </p>
+				<div class="form-s">
+					<input type="text" class="input-st" placeholder="제목, 내용을 입력하세요" value="">
+					<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
 				</div>
 
 				<!-- 사용안함
@@ -150,50 +141,48 @@
 					<p><button type="button" class="link-btn">선택 메시지 삭제</button></p>
 				</div>
 
-				<ul class="tbl-list-board">
-					<li class="list-tr type-thead">
-						<div class="field-name">
-							<label class="amw-checkbox-wrap all-ak-check">
-								<input id="select1" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
-								<span class="amw-checkbox-overlay"></span>
-							</label>
-							<span class="th-txt tt-numb">번호</span>
-							<span class="th-txt tt-view">확인</span>
+				<div class="tbl-list-board tbl-customMessage">
+					<div class="thead">
+						<div class="tr">
+							<strong class="cell-label">
+								<label class="amw-checkbox-wrap all-ak-check" for="select_all">
+									<input type="checkbox" id="select_all" class="amw-global-checkbox js-list-selectall-checkbox" title="전체선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</strong>
+							<strong class="mob-hide cell-num">번호</strong>
+							<strong class="mob-hide cell-confirm">확인</strong>
+							<strong class="mob-hide cell-date">수신일</strong>
+							<strong class="mob-block cell-title">제목</strong>
 						</div>
-						<div class="field-memo">
-							<span class="th-txt tt-title">제목</span>
-							<span class="th-txt tt-date">수신일</span>
+					</div>
+					<div class="tbody">
+						<div class="tr">
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<div class="cell-num mob-hide">3224224</div>
+							<div class="cell-confirm"><em class="ico-message-unconfirmed">미확인</em></div>
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다제목 영역입니다제목 영역입니다</a></div>
 						</div>
-					</li>
-					<li class="list-tr">
-						<div class="field-name">
-							<label class="amw-checkbox-wrap">
-								<input id="select1" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
-								<span class="amw-checkbox-overlay"></span>
-							</label>
-							<span class="th-txt tt-numb">3224224</span>
-							<span class="th-txt tt-view"><em class="ico-message-check">확인</em></span>
+						<div class="tr">
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<div class="cell-num mob-hide">3224224</div>
+							<div class="cell-confirm"><em class="ico-message-confirmed">확인</em></div>
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다 제목 영역입니다제목 영역입니다</a></div>
 						</div>
-						<div class="field-memo">
-							<span class="th-txt tt-title"><a href="#">제목 영역입니다 제목 영역입니다제목 영역입니다제목 영역입니다.</a></span>
-							<span class="th-txt tt-date">2018-01-05(월)</span>
-						</div>
-					</li>
-					<li class="list-tr">
-						<div class="field-name">
-							<label class="amw-checkbox-wrap">
-								<input id="select1" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox">
-								<span class="amw-checkbox-overlay"></span>
-							</label>
-							<span class="th-txt tt-numb">3224224</span>
-							<span class="th-txt tt-view"><em class="ico-message-check">확인</em></span>
-						</div>
-						<div class="field-memo">
-							<span class="th-txt tt-title"><a href="#">제목 영역입니다 제목 영역입니다제목 영역입니다제목 영역입니다.</a></span>
-							<span class="th-txt tt-date">2018-01-05(월)</span>
-						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 
 				<!-- paging-->
 				<div class="paging-wrap">
@@ -217,8 +206,8 @@
 					<li>수신된 맞춤메시지는 2년간 보관됩니다.</li>
 					<li>더욱 자세한 문의는 한국암웨이 고객센터 <a href="tel:1588-0080" class="type-tel">1588-0080</a> 으로 문의 바랍니다.</li>
 				</ul>
-				
-				
+
+
 				<!-- 사용안함 (구조가 다름)
 				<div class="row message-center-list-title">
 					<div class="col-xs-1">
