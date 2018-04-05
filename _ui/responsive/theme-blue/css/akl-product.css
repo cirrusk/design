@@ -47,7 +47,7 @@ Editor : sookkyung Han
 .color01.product-detail-view .detail-tit em,
 .color02.product-detail-view  .detail-tit em{color:#20893d;}
 
-.product-detail-view .detail-img{display:inline-block;}
+.product-detail-view .detail-img{position:relative;display:inline-block;}
 .product-detail-view .mt0{margin-top:0;}
 
 .product-detail-view .product-info{padding-top:56px;border-top:1px solid #e3e3e3;text-align:center;}
@@ -129,6 +129,7 @@ Editor : sookkyung Han
 .effect-info-wrap > div{padding-left:20px;}
 .effect-info-wrap > div:first-child{padding:0 20px 0 0;}
 .effect-info-box{float:none;display:table-cell;vertical-align:top;font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;line-height:1.7;}
+.effect-info > .effect-info-img{float:none;margin-top:47px;text-align:center;}
 .effect-info-wrap{float:none;display:table;padding:0;table-layout:fixed;}
 .effect-info.effect-info-wrap{padding:30px 92px;}
 .effect-info-wrap .effect-info-img,
@@ -151,6 +152,51 @@ Editor : sookkyung Han
 .effect-info .tit-blue-s{display:block;margin-bottom:7px;}
 .effect-info .tit-blue-b{margin-top:30px;}
 .effect-info .tit-blue-b:first-child{margin-top:0;}
+
+.detail-img .effect-comment{position:absolute;display:inline-block;font-size:14px;color:#666;font-weight:300;line-height:1.2;text-align:left;letter-spacing:-1px;}
+.detail-img .effect-comment br{line-height:0;}
+.detail-img .effect-comment span{display:inline-block;padding-left:5px;font-size:14px;color:#666;font-weight:300;line-height:1.2;vertical-align:middle;letter-spacing:-1px;}
+.detail-img .effect-comment.color{color:#20893d;}
+.detail-img .comment .color span{color:#20893d;}
+.detail-img .comment .arr span:before{display:inline-block;position:absolute;top:50%;left:10%;width:10px;height:17px;margin-top:-8px;background:url('../images/akl_product/ico_arr_right.png') no-repeat 0 0;content:"";}
+.detail-img .comment .bar span:before{display:inline-block;position:absolute;top:50%;left:10%;width:1px;height:42px;margin-top:-21px;background-color:#e2e2e2;content:"";}
+
+.effect-img01 .effect-comment img{width:23px;height:23px;}
+.effect-img02 .effect-comment img{width:37px;height:42px;}
+.effect-img01 .comment01-01{top:0;left:64%;}
+.effect-img01 .comment01-02{top:11%;left:64%;}
+.effect-img01 .comment01-03{top:18.5%;left:64%;}
+.effect-img01 .comment01-04{top:26%;left:64%;}
+.effect-img01 .comment02-01{top:35%;left:64%;}
+.effect-img01 .comment02-02{top:39%;left:64%;}
+.effect-img01 .comment02-03{top:43%;left:64%;}
+
+.effect-img02{padding-bottom:70px;}
+.effect-img02 .comment{width:100%;display:table;bottom:0;left:0%;text-align:center;}
+.effect-img02 .comment li{display:table-cell;position:relative;width:auto;padding-left:10%;}
+.effect-img02 .comment li:first-child{padding:0;}
+
+.effect-img03 .comment01,
+.effect-img03 .comment02{bottom:4%;left:0%;}
+.effect-img03 .comment03{top:12%;left:66%;}
+
+.effect-img04 .comment01{top:40%;left:10%;text-align:center;}
+.effect-img04 .comment02{bottom:-7%;left:0%;}
+.effect-img04 .comment03{bottom:13%;right:3%;text-align:right;}
+.effect-img04 .comment04{top:17%;left:10%;text-align:center;}
+.effect-img04 .comment05{bottom:-7%;left:66%;}
+
+.effect-img05 .comment01{top:21%;left:81%;}
+.effect-img05 .comment02{top:49%;left:81%;}
+.effect-img05 .comment03{top:80%;left:81%;}
+
+.effect-img06 .effect-comment{line-height:1.5;letter-spacing:-1px;}
+.effect-img06 .effect-comment strong{display:block;font-size:14px;color:#56565a;font-weight:400;}
+.effect-img06 .comment01{top:6%;left:66%;}
+.effect-img06 .comment02{bottom:9%;left:66%;}
+
+
+
 
 .product-effect-info .dot-list{margin-top:36px;}
 .dot-list li{position:relative;padding-left:14px;margin-top:15px;}
@@ -329,6 +375,22 @@ Editor : sookkyung Han
 	.setup-list .btn-box{margin-top:18px;}
 	.setup-list .bt-akl-blue{height:45px;font-size:16px;font-weight:600;}
 	
+	.akl .product-body-photo .effect-img01{text-align:left;}
+	.akl .product-body-photo .effect-img01 img{width:80%;}
+	.detail-img.effect-img01 .effect-comment{left:53%;}
+	.detail-img.effect-img01 .effect-comment,
+	.detail-img.effect-img01 .effect-comment span{font-size:11px;line-height:1;}
+	
+	.akl .product-body-photo .effect-img01 .comment02-01 img,
+	.akl .product-body-photo .effect-img01 .comment02-02 img,
+	.akl .product-body-photo .effect-img01 .comment02-03 img{width:15px;height:15px;}
+	.detail-img.effect-img01 .effect-comment br{display:none;}
+	
+	
+	.product-effect-info .effect-info .effect-img02 .comment li{width:33%;padding-left:6%;}
+	.effect-img02 .effect-comment img{width:25px;height:auto;}
+	.detail-img .effect-comment span{font-size:12px;}
+	
 	.product-detail-view .product-feature{margin-top:22px;}
 	.feature-list{margin-top:8px;}
 	.feature-list > li{padding:15px 10px;}
@@ -407,7 +469,7 @@ Editor : sookkyung Han
 	.product-detail-view .tit-blue-s{font-size:14px;}
 	.effect-info .tit-blue-b{margin-top:15px;font-size:16px;}
 	.product-effect-info .effect-info-box dd{font-size:14px;line-height:1.6;}
-	.product-detail-view .effect-info-step{margin-top:21px;}
+	.product-detail-view .effect-info-step{margin:21px 0 0;width:100%;}
 	.effect-info-step li{display:block;width:100%;padding:40px 0 0;}
 	.effect-info-step li:first-child{padding:0;}
 	.effect-info-step li:before{top:12px;left:50%;margin:0 0 0 -5px;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg);}
