@@ -353,6 +353,7 @@
 									</div>
 									<div class="est-prod-conts">
 										<p class="est-total-price">금액 : <span>일십일만일천원 정(111,000)</span></p>
+
 										<div class="shopping-tbl-list">
 											<div class="shopping-th">
 												<div class="th-chk">
@@ -740,98 +741,6 @@
 		</div>
 	</div>
 	<!-- //위시리스트 추가 팝업 -->
-
-	<script type="text/javascript">
-		$(function() {
-			$(".select2-hidden-accessible").select2();
-			$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
-		});
-		
-		//add to shopping list event
-		$(".js-add-list-shopping-button").click(function(){
-
-			if($(".add-to-shopping-list-component-container").hasClass("display-none")){
-				$(".add-to-shopping-list-component-container").removeClass("display-none");
-			}else{
-				$(".add-to-shopping-list-component-container").addClass("display-none");
-			}
-		});
-
-		$("#addToLIST").click(function(){
-			$(".add-to-shopping-list-container").removeClass('open');
-		});
-
-		//add to shopping list event
-		(function ($) {
-			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
-				var tag = $(this).siblings('.dropdown-menu');
-				var flag=true;
-				if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
-					e.stopPropagation();
-					$(".plp-add-to-shopping-list ").removeClass("open");
-					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
-					$(tag).show();
-					$(".plp-add-to-ditto").removeClass("open");
-				}else{
-					$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
-					$(tag).hide();
-				}
-				$(document).bind("click",function(e){
-					var target = $(e.target);
-					if(target.closest(tag).length == 0 && flag == true){
-						$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
-						$(tag).hide();
-						flag = false;
-					}
-				});
-			});
-		})(jQuery);
-
-		$(".cart-detail__dropdown-menu").on("click",function(e){
-			e.stopPropagation();
-		});
-
-		$('.btn-add-wish').click(function(event) {
-			event.preventDefault();
-			layerPopOver('this','.wishListAdd');
-		});
-
-		$('#U70410_lp2').click(function(event) {
-			event.preventDefault();
-			layerPopOver(this,'.U70410_lp2_pop');
-		});
-
-		$('#productSuggestListTabs').owlCarousel({
-			loop: true,
-			nav: true,
-			dots: false,
-			margin: 0,
-			items: 1,
-			responsiveClass: true,
-			responsive: {
-				480 : {
-					items: 1
-				},
-				768 : {
-					items: 2
-				},
-				960 : {
-					items: 3
-				},
-				1200 : {
-					items: 5
-				}
-			}
-		});
-
-		$('#Cart_Search').click(function(event){ 
-			event.preventDefault();
-			$(".shoping-cart-search").show();
-		});
-		$(".btnClosed").click(function() {
-			$(".shoping-cart-search").hide();
-		});
-	</script>
 
 </body>
 </html>
