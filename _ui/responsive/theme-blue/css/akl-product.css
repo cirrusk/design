@@ -199,6 +199,7 @@ Editor : sookkyung Han
 
 
 .product-effect-info .dot-list{margin-top:36px;}
+.product-effect-info dl + .dot-list{margin-top:25px;}
 .dot-list li{position:relative;padding-left:14px;margin-top:15px;}
 .dot-list li:first-child{margin-top:0;}
 .dot-list .dot-tit{display:block;font-size:14px;color:#56565a;font-weight:300;letter-spacing:-1px;}
@@ -289,10 +290,10 @@ Editor : sookkyung Han
 .product-rank .rank-box{display:table-cell;padding-left:20px;vertical-align:middle;}
 .product-rank .rank-box .effect-info-tit{font-size:26px;font-weight:400;color:#56565a;letter-spacing:-2px;}
 
-.effect-info .effect-difference{display:inline-block;width:50%;margin-top:28px;}
+.effect-info .effect-difference{display:inline-block;float:none;padding:0;margin:28px 0 0;vertical-align:top;}
 .effect-difference:after{content:'';display:block;clear:both;}
-.effect-difference .img-box{float:left;}
-.effect-difference .difference-box{float:left;margin:10px 0 0 30px;}
+.effect-difference .img-box{display:table-cell;vertical-align:top;}
+.effect-difference .difference-box{display:table-cell;padding:10px 0 0 30px;vertical-align:top;}
 .difference-box .difference-tit{font-size:20px;color:#222;font-weight:400;letter-spacing:-2px;}
 .difference-box .difference-txt{font-size:16px;color:#666;font-weight:300;letter-spacing:-1px;}
 .difference-box ul{padding-top:9px;}
@@ -462,7 +463,8 @@ Editor : sookkyung Han
 	.age-group-tit{font-size:14px;}
 	.age-group{padding-left:10px;}
 	.effect-info .info-graph{margin-top:15px;text-align:center;}
-	.product-effect-info .dot-list{margin-top:15px;}
+	.product-effect-info .dot-list,
+	.product-effect-info dl + .dot-list{margin-top:15px;}
 	.dot-list .dot-tit{font-size:13px;}
 	.dot-list .dot-txt{font-size:13px;}
 	.dot-list li{margin-top:10px;}
@@ -501,6 +503,14 @@ Editor : sookkyung Han
 	.advantage-step .program-list .program-step{width:130px;height:30px;line-height:30px;font-size:16px;}
 	.advantage-step .program-list .program-tit{margin-top:5px;}
 	.advantage-step .program-list .program-img{padding:0;text-align:right;}
+	
+	.effect-info .effect-difference{margin-top:8px;}
+	.effect-difference .img-box{display:block;text-align:center;}
+	.effect-difference .difference-box{display:block;padding:10px 0 0;}
+	.difference-box .difference-tit{font-size:16px;}
+	.difference-box .difference-txt{font-size:14px;margin-bottom:0;}
+	.difference-box ul{padding-top:0;}
+	.difference-box .list-bar{margin-top:0;font-size:14px;}
 
 	/* br 삭제 */
 	.product-detail-view .txt-area .visual-txt br,
