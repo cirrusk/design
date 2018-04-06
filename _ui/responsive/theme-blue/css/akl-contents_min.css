@@ -401,20 +401,86 @@ html.scrollLock body {overflow:hidden;}
 
 /* 마이페이지 - 맞춤메시지 팝업 */
 .akl .popup_dialog {height:100%;padding:24px 40px 40px; background:#fff;}
-.akl .popup_dialog .custom-message-header {position:relative; padding-bottom:18px; border-bottom:1px solid #e3e3e3; color:#002f5f; font-size:24px; font-weight:500; letter-spacing:-0.05em;}
-.akl .popup_dialog .custom-message-header>p {font-size:24px;letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
-.akl .popup_dialog .custom-message-body {margin-top:40px; padding-bottom:50px; background-color:#f2f9fc;}
-.akl .popup_dialog .custom-message-body .message-detail { margin:20px 50px 0; padding:0 80px 50px; box-sizing:border-box; background:#fff;}
-
-.akl .popup_dialog .custom-message-body .top-image>img {width:100%; height:auto;}
-.akl .popup_dialog .custom-message-body .top-image +.message-detail {margin-top:50px}
 .akl .popup_dialog .popup__close {position:absolute; top:-2px; right:0;}
-.custom-message-body .message-detail .next-control {padding-top:38px; margin-top:38px; text-align:center; border-top:1px solid #dadada;}
-.custom-message-body .message-detail .box-top-text h2 { padding:75px 0 40px; margin-bottom:40px; color:#002f5f; font-size:28px; font-weight:500; text-align:center; border-bottom:2px solid #333;}
-#terms.custom-message h3 {font-size:16px;}
-#terms.custom-message>li{margin-top:40px; border-top:1px solid #e3e3e3;}
+.custom-message-header {position:relative; padding-bottom:18px; border-bottom:1px solid #e3e3e3; color:#002f5f; font-size:24px; font-weight:500; letter-spacing:-0.05em;}
+.custom-message-header>p {font-size:24px;letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
+.custom-message-body {margin-top:40px; padding-bottom:50px; background-color:#f2f9fc;}
+.custom-message-body .message-detail { margin:20px 50px 0; padding:0 80px 50px; box-sizing:border-box; background:#fff;}
+.custom-message-body .top-image>img {width:100%; height:auto;}
+.custom-message-body .top-image +.message-detail {margin-top:50px;}
+.message-detail .nca-footer-image {margin-top:35px;}
+.message-detail .nca-footer-image>img {width:100%; height:auto;}
+.message-detail .next-control {padding-top:38px; margin-top:38px; text-align:center; border-top:1px solid #dadada;}
+.message-detail .box-top-text h2 { padding:75px 0 40px; margin-bottom:40px; color:#002f5f; font-size:28px; font-weight:500; text-align:center; border-bottom:2px solid #333;}
+.message-detail .box-top-text.small-txt {padding-bottom:30px;margin-bottom:0; border-bottom:2px solid #333;}
+.message-detail .box-top-text.small-txt h2{padding-bottom:0; margin-bottom:10px; font-size:18px;border-bottom:0;}
+.message-detail .box-top-text.small-txt p {text-align:center;}
+
 #terms.custom-message .action {padding:0;margin:0;text-align:right;border:0;}
 #terms.custom-message .action .radio-wrapper {display:inline-block; margin-left:15px;}
+.custom-message h3 {font-size:16px;}
+.custom-message>li{margin-top:40px; border-top:1px solid #e3e3e3;}
+.custom-message>li.start {margin-top:0; border-top:0;}
+.custom-message.trip-detail h3 {margin:0}
+.custom-message.trip-detail>li{position:relative; padding-top:40px;}
+.custom-message.trip-detail .btn-print-it {position:absolute; top:40px; right:0;}
+.custom-message.trip-detail .box-trip-notice {margin-top:20px;}
+
+.form-group.mobile-nca {display:table; margin:25px 0 25px;}
+.form-group.mobile-nca > span {display:table-cell; vertical-align:top; padding-left:10px}
+.form-group.mobile-nca .form-tel-1 {width:90px; padding-left:0;}
+.form-group.mobile-nca .form-tel-2 {width:180px;}
+.form-group.mobile-nca .form-btn {width:100px;}
+
+.tbl-list-dl {overflow:hidden;}
+.tbl-list-dl>dt, .tbl-list-dl>dd {float:left; margin-top:20px;}
+.tbl-list-dl>dt {width:15%; color:#002f5f;}
+.tbl-list-dl>dd {width:85%;}
+
+/* NCA 항공메시지 */
+.nca-passenger {margin-top:25px; color:#333; font-weight:500;}
+.nca-sub-title {position:relative; margin-top:18px; padding-left:10px; font-weight:500;}
+.nca-sub-title:before {content:''; position:absolute; top:50%; left:0; margin-top:-2px; width:3px; height:3px; background:#5a5a5e;}
+.nca-flight-data {display:table; width:100%;}
+.nca-flight-data>li {display:table-cell;box-sizing:border-box;}
+.nca-flight-data.type-domestic>li {width:50%;}
+.nca-flight-data.type-domestic .box-left {padding-right:10px;}
+.nca-flight-data.type-domestic .box-right {padding-left:10px;}
+
+.nca-flight-data.type-abroad>li {width:32%;}
+.nca-flight-data.type-abroad .box-left {padding-right:10px;}
+.nca-flight-data.type-abroad .box-center {width:34%; padding-left:10px; padding-right:10px;}
+.nca-flight-data.type-abroad .box-right {padding-left:10px;}
+
+
+/* NCA 항공메시지 - 비행정보 */
+.flight-info.state-waiting .txt-reserve-details ol>li>span { color:#bbb;}
+.flight-info .txt-reserve-details {padding:25px 20px;}
+.flight-info .txt-reserve-details ol {overflow:hidden;}
+.flight-info .txt-reserve-details ol>li {float:right; text-align:right;}
+.flight-info .txt-reserve-details ol>li:first-child {float:left; text-align:left;}
+.flight-info .txt-reserve-details ol>li>span{display:block;}
+.flight-info .txt-reserve-details .flight-city {padding-bottom:6px;font-size:14px; color:#56565a;}
+.flight-info .txt-reserve-details .flight-date,
+.flight-info .txt-reserve-details .flight-time {margin-top:6px;font-size:16px; color:#222;}
+
+.type-abroad .flight-info .txt-reserve-details {padding:20px 20px;}
+.type-abroad .flight-info .txt-reserve-details .flight-date,
+.type-abroad .flight-info .txt-reserve-details .flight-time {font-size:14px;}
+
+/* NCA 항공메시지 - Tag */
+.flight-info {border:1px solid #e3e3e3;}
+.flight-info>p {position:relative; padding:16px 20px; text-align:right; background:#f4f4f4;}
+.flight-info>p>span {display:inline-block;}
+.flight-info>p .tag-txt {position:absolute; top:14px; left:20px;}
+.flight-info .tag-txt {display:inline-block;padding:0 8px;border-radius:2px;color:#fff;line-height:20px; font-size:11px;}
+.flight-info .tag-txt.start {background:#2a6df0;}
+.flight-info .tag-txt.finish {background:#f02a2a;}
+.flight-info .tag-txt.start {background:#2a6df0;}
+.flight-info .tag-txt.via {background:#666;}
+.flight-info .tag-txt.arrival {background:#222;}
+.flight-info .txt-reserve-num { margin-right:7px;}
+.flight-info .txt-airplane { margin-left:7px;}
 
 /* 삭제예정
 .tbl-mob-type1 {padding:5px 0 0;}
@@ -582,12 +648,47 @@ html.scrollLock body {overflow:hidden;}
 	.akl .popup_dialog .custom-message-body {margin-top:20px; padding-bottom:12px;}
 	.akl .popup_dialog .custom-message-body .message-detail { margin:12px 12px 0; padding:20px;}
 	.akl .popup_dialog  #terms .text{padding:20px 0 0;}
-
-	.custom-message-body .message-detail .box-top-text h2 { padding:0 0 30px; margin-bottom:30px; font-size:21px; }
+	.message-detail .box-top-text h2 { padding:0 0 30px; margin-bottom:30px; font-size:21px;}
 
 	.akl #terms.custom-message .conditions .text-btn.view-all {margin-top:25px; padding:0;}
 	.akl #terms.custom-message p.more-info {margin-top:25px;}
+	.custom-message.trip-detail h3 {margin:0}
+	.custom-message.trip-detail>li{position:relative; padding-top:30px;}
+	.custom-message.trip-detail .btn-print-it {display:none;}
+	.custom-message.trip-detail .box-trip-notice {margin-top:20px;}
 
+	.tbl-list-dl {overflow:hidden;}
+	.tbl-list-dl>dt, .tbl-list-dl>dd {margin-top:13px;}
+	.tbl-list-dl>dt {width:35%;}
+	.tbl-list-dl>dd {width:65%;}
+	.form-group.mobile-nca {display:table; margin:25px 0 25px;}
+	.form-group.mobile-nca > span {display:table-cell; vertical-align:top; padding-left:10px}
+	.form-group.mobile-nca .form-tel-1 { display:inline-block;width:35%; padding-left:0;}
+	.form-group.mobile-nca .form-tel-2 { display:inline-block;width:65%;}
+	.form-group.mobile-nca .form-btn {display:block; width:auto; margin-top:10px; padding-left:0;}
+
+	/* NCA 항공메시지 */
+	.nca-flight-data {display:block;}
+	.nca-flight-data>li {display:block;box-sizing:border-box;}
+	.nca-flight-data.type-domestic>li {width:auto;}
+	.nca-flight-data.type-domestic .box-left {padding-right:0;}
+	.nca-flight-data.type-domestic .box-right {padding-left:0; margin-top:10px;}
+
+	.nca-flight-data.type-abroad>li {width:auto;}
+	.nca-flight-data.type-abroad .box-left {padding-right:0;}
+	.nca-flight-data.type-abroad .box-center {width:auto; padding-left:0; padding-right:0; margin-top:10px;}
+	.nca-flight-data.type-abroad .box-right {padding-left:0; margin-top:10px;}
+
+	/* NCA 항공메시지 - 비행정보 */
+	.flight-info .txt-reserve-details {padding:8px 10px 13px;}
+	.flight-info .txt-reserve-details ol {overflow:hidden;}
+	.flight-info .txt-reserve-details ol>li {float:right; text-align:right;}
+	.flight-info .txt-reserve-details ol>li:first-child {float:left; text-align:left;}
+	.flight-info .txt-reserve-details ol>li>span{display:block;}
+	.flight-info .txt-reserve-details .flight-city {padding-bottom:0;}
+	.flight-info .txt-reserve-details .flight-date,
+	.flight-info .txt-reserve-details .flight-time {margin-top:6px;font-size:16px; color:#222;}
+	.flight-info>p {position:relative; padding-left:90px;  background:#f4f4f4;}
 }
 
 @media (max-width: 320px) {
