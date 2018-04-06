@@ -1455,7 +1455,6 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .cart-popup__header.white {background:#fff}
 .akl .cart-popup__header.white .cart-popup__header-text {color:#002f5f;}
 
-
 /* 중개판매관리 > 사업자등록증 관리 */
 .estcompany-search {padding:30px 0 20px}
 .esthistory-detail-box {padding:30px 0 30px;border-bottom:1px solid #e3e3e3;overflow:hidden;}
@@ -1491,10 +1490,11 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .list-content .list-row-title {background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
 .akl .list-content .list-row-title > div {display:table-cell;font-size:13px;color:#002f5f;font-weight:500;}
-.akl .list-content .content-list {position: relative;z-index: 2;padding: 20px 0;background: #fff;display: table;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
+.akl .list-content .content-list {position: relative;clear:both;z-index: 2;padding: 20px 0;background: #fff;display: table;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;}
 
+.akl .content-list .con-list-item > div {display:table-cell;float:left;}
 .akl .con-list-item span.txte-wrap strong {color:#0075a4;font-weight:500;font-size:14px !important;}
 .akl .con-list-item span.txte-wrap strong a {font-weight:500;}
 .akl .con-list-item span.tite-label {display:none;}
@@ -1504,7 +1504,6 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .con-list-item .pur-day span.txte-wrap {width:50%;display:table;word-break:break-all;}
 .akl .con-list-item span.txte-wrap em {display:block;font-size:14px}
 .akl .con-list-item span.txte-wrap em a {font-weight:500;font-size:14px}
-.akl .con-list-item > div {display:table-cell;}
 .akl .con-list-item div.search-no-result {display:table}
 
 .akl .col-ak-10 {width:100%;}
@@ -1529,6 +1528,16 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 .akl .pur-day-use {width:10%;}
 .akl .pur-condition {width:10%;}
 .akl .pur-btn2 {width:10%;}
+
+/* 구매권한 양도 결과 안내 */
+.akl .pop-authority .list-content {margin:0;padding:0 0 30px}
+.akl .pop-purname {width:30%;padding:0 20px}
+.akl .pop-assign {width:15%;padding:0 10px}
+.akl .pop-success {width:10%;padding:0 10px}
+.akl .pop-fail {width:10%;padding:0 10px}
+.akl .pop-fail-reason {width:35%;padding:0 0}
+
+.akl .con-list-item .pop-fail-reason {width:35%;padding:0 0;}
 
 @media (max-width: 990px) {
 	/* 카테고리 */
@@ -2260,6 +2269,26 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.akl .con-list-item .pur-condition {width:90%;padding:5px 0 5px 60px;}
 	.akl .con-list-item .pur-btn2 {width:90%;padding:5px 0 5px 60px;}
 	.akl .con-list-item .pur-condition span.txte-wrap em {display:block;padding:0 0}
+
+	
+	/* 구매권한 양도 결과 안내 */
+	.akl .pop-authority .list-content .list-row-title {border-bottom:0 none;padding:0 0;}
+	.akl .pop-authority .list-content .list-row-title .pop-purname {display:none;}
+	.akl .pop-authority .list-content .list-row-title .pop-assign {display:none;}
+	.akl .pop-authority .list-content .list-row-title .pop-success {display:none;}
+	.akl .pop-authority .list-content .list-row-title .pop-fail {display:none;}
+	.akl .pop-authority .list-content .list-row-title .pop-fail-reason {display:none;}
+
+	.akl .con-list-item .pop-purname {width:100%;padding:0 0}
+	.akl .con-list-item .pop-assign {width:100%;padding:5px 0}
+	.akl .con-list-item .pop-success {width:100%;padding:5px 0}
+	.akl .con-list-item .pop-fail {width:100%;padding:5px 0}
+	.akl .con-list-item .pop-fail-reason {width:100%;padding:5px 0;}
+
+	.akl .pop-authority .con-list-item {padding:0 15px;}
+	.akl .pop-authority .con-list-item span.tite-label {float:left;width:35%;}
+	.akl .pop-authority .con-list-item span.txte-wrap {float:right;width:65%;}
+	.akl .pop-authority .con-list-item .pop-purname span.txte-wrap {float:left;width:100%;}
 
 
 }
