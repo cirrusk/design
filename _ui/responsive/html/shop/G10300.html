@@ -65,11 +65,13 @@
 					<div class="col-sm-12 col-md-6 product-image-gallery js-product-image-gallery v-m-pros new-product-image-gallery" style="opacity: 1;">
 						<!-- 2018.03.14 마크업 수정  -->
 						<div id="pdpImg" class="ui-snap-big"><!-- 수정 : 2018.03.29 (class 변경) -->
+							<!-- 2018.04.09 위치변경 -->
+							<div class="plp-item-label bg-red">일시품절</div> 
+							<div class="plp-item-label bg-green lsize02">신제품</div>
+							<div class="plp-item-label bg-blue lsize03">스마트오더</div>
+							<!-- //2018.04.09 위치변경 -->
 							<ul class="slides">
 								<li>
-									<div class="plp-item-label bg-red">일시품절</div> 
-									<div class="plp-item-label bg-green lsize02">신제품</div>
-									<div class="plp-item-label bg-blue lsize03">스마트오더</div>
 									<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
@@ -405,8 +407,8 @@
 																<!-- //URL 복사 팝업 2018.03.27 -->
 															</div>
 
-															<div class="kokaotalk"><!-- class 추가 2018.03.27 -->
-																<a href="#" id="PDP_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="talk"></a>
+															<div class="kakaotalk"><!-- class 추가 2018.03.27 -->
+																<a href="#" id="PDP_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="kakaotalk"></a>
 															</div>
 															<div>
 																<a href="#" id="PDP_Kakaostory"><img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory"></a>
@@ -1428,6 +1430,11 @@
 						<p>모든 자료는 원저작자의 요청이나 한국암웨이의 사정에 따라 예고 없이 삭제될 수 있습니다.</p>
 					</div>
 				</div>
+				<!-- 확인 버튼 추가 2018.04.09 -->
+				<div class="cart-popup__item-link commpete">
+					<button type="button" class="bt-akl-blue">확인</button>
+				</div>
+				<!-- //확인 버튼 추가 2018.04.09 -->
 			</div>
 		</div>
 	</div>
@@ -1537,14 +1544,32 @@
 
 						<div class="view-sns right">
 							<!-- 2018.03.05 : 수정 (img에서  href="#" 삭제, html syntax error) 2018.03.13 태깅 아이디 추가 -->
-							<div>
+							<div class="print"><!-- class 추가 2018.04.09 -->
 								<a href="#" id="PopupPlayMovie_Print"><img src="/_ui/responsive/theme-blue/images/new_Print.png" alt="Print"></a>
 							</div>
-							<div>
+							<div class="url-copy"><!-- class 추가 2018.04.09 -->
 								<a href="#" id="PopupPlayMovie_URL"><img src="/_ui/responsive/theme-blue/images/new_ie_URL.png" alt="ie_URL"></a>
+								<!-- URL 복사 팝업 2018.04.09 -->
+								<div class="url_pop">
+									<div class="cart-popup-area">
+										<div class="pop-area-header">
+											<a href="#dfde" class="cart-popup-close">
+												<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+											</a>
+										</div>
+										<div class="pop-area-body">
+											<p>주소가 복사되었습니다.<br>
+											원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+											<div class="form-group">
+												<input type="text" class="form-control" value="https://goo.gl/Pjy3en" aria-label="https://goo.gl/Pjy3en">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //URL 복사 팝업 2018.04.09 -->
 							</div>
-							<div>
-								<a href="#" id="PopupPlayMovie_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="talk"></a>
+							<div class="kakaotalk"><!-- class 추가 2018.04.09 -->
+								<a href="#" id="PopupPlayMovie_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="kakaotalk"></a>
 							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Kakaostory"><img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory"></a>

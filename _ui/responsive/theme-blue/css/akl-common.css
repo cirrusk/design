@@ -275,6 +275,7 @@ Editor : eunmyoung Noh
 .pop-area-header a.cart-popup-close {position: absolute;top:5px;right:10px;display:block;padding:0 0;margin:0;}
 .pop-area-header a.cart-popup-close img {width:12px;height:12px;}
 .pop-area-body {padding:10px 0 0;margin:0 20px 0;position: relative;text-align:left;}
+.pop-area-body:after {content: '';position: absolute;top: -6px;left: 20px;border-right: 10px solid transparent;border-left: 10px solid transparent; border-bottom: 10px solid #56565a;}
 .pop-area-body p {color:#fff;font-size:13px;letter-spacing:-1px;font-weight:400;}
 .pop-area-body .form-group {padding:0 0 !important;margin:0 0 !important;}
 
@@ -291,11 +292,16 @@ Editor : eunmyoung Noh
 .akl .popup-video-preview__content .video-preview__play {position:absolute;top:50%;left:50%;margin-left:-50px;margin-top:-50px;}
 .akl .view-sns {padding:20px 40px 0}
 .akl .view-sns.right {text-align:right;}
-.akl .view-sns div {display:inline-block;width:25px;height:25px;margin-left:8px;}
+.akl .view-sns > div {display:inline-block;width:25px;height:25px;margin-left:8px;}
 .akl .view-sns div img {width:100%;}
 .akl .view-sns div:first-child {margin-left:0;}
- .video-wrapper { position: relative;padding-bottom: 56.25%; height: 0;width: 100%;}
+.video-wrapper { position: relative;padding-bottom: 56.25%; height: 0;width: 100%;}
 .video-wrapper iframe{ position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.akl .view-sns div.url-copy {position: relative;}
+.akl .view-sns div.url-copy div.url_pop {display:block;position: absolute;top:32px;left:-17px;width:250px;z-index:9999;}
+.akl .view-sns div.url-copy div.url_pop div.cart-popup-area {width:100%;}
+.akl .view-sns div.url-copy div.url_pop div.cart-popup-area .pop-area-body:after {content: '';position: absolute;top: -6px;left:0px;}
+.akl .view-sns div.kakaotalk {display:none;}
 
 /* cmmon > popup > QUICK VIEW 팝업 */
 .QUICK_VIEW_pop .cart-popup__header-text { text-transform:none; letter-spacing: -1px; }
@@ -1005,10 +1011,13 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.quick-links-header.akl-foot {padding-left:37px;}
 	.quick-links-header.akl-foot:before {display:none}
 
-	.certification { text-align:center}
+	.certification {text-align:center}
 	.certification a {display:none}
 	.certification a:last-child {display:inline-block;}
 
+	/* 동영상 재생 팝업 */
+	.akl .view-sns div.print {display:none;}
+	.akl .view-sns div.kakaotalk {display:inline-block;}
 
 	/* 상품목록 */
 	.akl .product-list__item { height:320px;}
