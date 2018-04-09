@@ -372,16 +372,23 @@ html.scrollLock body {overflow:hidden;}
 .akl .message-center-wrapper {padding:30px 30px 0; font-family:'Noto Sans KR', sans-serif;}
 .akl .message-center-wrapper .next-control {text-align:center;}
 .akl .message-title {position:relative;padding:0 0 40px;font-size:18px;letter-spacing:-2px;font-weight:500;}
-.akl .message-title:after {position:absolute; top:3px; left:-30px; content:''; display:block; width:20px; height:20px; background:#88cbe4 url('../images/akl_common/ico_message_center.png') no-repeat left top;}
+.akl .message-title:after {position:absolute; top:3px; left:-30px; content:''; display:block; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
 .akl .message-title-description {margin-bottom:0; padding:12px 0 36px;font-size:14px;}
 .akl .message-center-list {padding:0 30px; margin-top:10px;}
 .akl .message-center-wrapper .messages-numb {margin-bottom:27px; color:#0075a4;font-size:14px;font-weight:500;}
 .akl .message-center-wrapper .messages-numb a {text-decoration:underline; font-weight:inherit; display:inline-block; padding:0 3px;}
 
 /* 마이페이지 - 맞춤메시지 목록 - col width */
+.amway-theme .state-notyet>div a {font-weight:500;}
+.tbl-list-board.tbl-customMessage a {color:#56565a; font-weight:400;}
+.tbl-list-board.tbl-customMessage .tr>div {border-top:0}
+.tbl-list-board.tbl-customMessage .state-notyet>div {font-weight:500;}
+.tbl-list-board.tbl-customMessage .thead .tr>strong {border-bottom:1px solid #e3e3e3;}
 .tbl-list-board.tbl-customMessage .cell-label{width:5%;}
 .tbl-list-board.tbl-customMessage .cell-num{width:10%;}
 .tbl-list-board.tbl-customMessage .cell-confirm{width:10%;}
+.tbl-list-board.tbl-customMessage .cell-confirm>em[class^=ico-message]{display:inline-block; width:20px; height:22px; text-indent:-999px; margin-top:3px; overflow:hidden; background:url(../images/akl_common/ico_message_read.png) 0 5px no-repeat;}
+.tbl-list-board.tbl-customMessage .cell-confirm em.ico-message-read {background-position:0 -59px;}
 .tbl-list-board.tbl-customMessage .cell-date{width:15%;}
 .tbl-list-board.tbl-customMessage .cell-title{width:60%;}
 
@@ -411,7 +418,7 @@ html.scrollLock body {overflow:hidden;}
 .message-detail .nca-footer-image {margin-top:35px;}
 .message-detail .nca-footer-image>img {width:100%; height:auto;}
 .message-detail .next-control {padding-top:38px; margin-top:38px; text-align:center; border-top:1px solid #dadada;}
-.message-detail .box-top-text h2 { padding:75px 0 40px; margin-bottom:40px; color:#002f5f; font-size:28px; font-weight:500; text-align:center; border-bottom:2px solid #333;}
+.message-detail .box-top-text h2 { padding:75px 0 40px; margin-bottom:40px; color:#002f5f; font-size:28px; line-height:1.4; font-weight:500; text-align:center; border-bottom:2px solid #333;}
 .message-detail .box-top-text.small-txt {padding-bottom:30px;margin-bottom:0; border-bottom:2px solid #333;}
 .message-detail .box-top-text.small-txt h2{padding-bottom:0; margin-bottom:10px; font-size:18px;border-bottom:0;}
 .message-detail .box-top-text.small-txt p {text-align:center;}
@@ -454,7 +461,7 @@ html.scrollLock body {overflow:hidden;}
 
 
 /* NCA 항공메시지 - 비행정보 */
-.flight-info.state-waiting .txt-reserve-details ol>li>span { color:#bbb;}
+.flight-info .txt-reserve-details {background:url(../images/akl_common/bg_nca_airplane_pc.png) no-repeat 50% 50%;}
 .flight-info .txt-reserve-details {padding:25px 20px;}
 .flight-info .txt-reserve-details ol {overflow:hidden;}
 .flight-info .txt-reserve-details ol>li {float:right; text-align:right;}
@@ -462,11 +469,13 @@ html.scrollLock body {overflow:hidden;}
 .flight-info .txt-reserve-details ol>li>span{display:block;}
 .flight-info .txt-reserve-details .flight-city {padding-bottom:6px;font-size:14px; color:#56565a;}
 .flight-info .txt-reserve-details .flight-date,
-.flight-info .txt-reserve-details .flight-time {margin-top:6px;font-size:16px; color:#222;}
-
-.type-abroad .flight-info .txt-reserve-details {padding:20px 20px;}
+.flight-info .txt-reserve-details .flight-time {margin-top:6px; font-size:16px; color:#222;}
+.type-abroad .flight-info .txt-reserve-details {padding:20px 20px; background:url(../images/akl_common/bg_nca_airplane_pc2.png) no-repeat 50% 22px;}
 .type-abroad .flight-info .txt-reserve-details .flight-date,
 .type-abroad .flight-info .txt-reserve-details .flight-time {font-size:14px;}
+
+/* 대기상태 */
+.flight-info.state-waiting .txt-reserve-details ol>li>span {color:#bbb;}
 
 /* NCA 항공메시지 - Tag */
 .flight-info {border:1px solid #e3e3e3;}
@@ -479,8 +488,9 @@ html.scrollLock body {overflow:hidden;}
 .flight-info .tag-txt.start {background:#2a6df0;}
 .flight-info .tag-txt.via {background:#666;}
 .flight-info .tag-txt.arrival {background:#222;}
-.flight-info .txt-reserve-num { margin-right:7px;}
-.flight-info .txt-airplane { margin-left:7px;}
+.flight-info .txt-reserve-num {}
+.flight-info .txt-airplane {position:relative; margin-left:7px; padding-left:14px;}
+.flight-info .txt-airplane:before {content:'/'; position:absolute; top:0; left:0;}
 
 /* 삭제예정
 .tbl-mob-type1 {padding:5px 0 0;}
@@ -492,9 +502,6 @@ html.scrollLock body {overflow:hidden;}
 .tbl-mob-type2 dt {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;background:#f4f4f4;font-size:12px;color:#002f5f;font-weight:500}
 .tbl-mob-type2 dd {font-size:12px;line-height:18px;}
 */
-
-
-
 
 @media (min-width: 769px) {
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
@@ -673,22 +680,25 @@ html.scrollLock body {overflow:hidden;}
 	.nca-flight-data.type-domestic>li {width:auto;}
 	.nca-flight-data.type-domestic .box-left {padding-right:0;}
 	.nca-flight-data.type-domestic .box-right {padding-left:0; margin-top:10px;}
-
 	.nca-flight-data.type-abroad>li {width:auto;}
 	.nca-flight-data.type-abroad .box-left {padding-right:0;}
 	.nca-flight-data.type-abroad .box-center {width:auto; padding-left:0; padding-right:0; margin-top:10px;}
 	.nca-flight-data.type-abroad .box-right {padding-left:0; margin-top:10px;}
 
 	/* NCA 항공메시지 - 비행정보 */
-	.flight-info .txt-reserve-details {padding:8px 10px 13px;}
+	.flight-info>p {position:relative; padding-left:90px;  background:#f4f4f4;}
+	.flight-info .txt-reserve-details, .type-abroad .flight-info .txt-reserve-details {padding:8px 10px 13px; background:url(../images/akl_common/bg_nca_airplane_mob.png) no-repeat 50% 10px; background-size:25px auto;}
 	.flight-info .txt-reserve-details ol {overflow:hidden;}
 	.flight-info .txt-reserve-details ol>li {float:right; text-align:right;}
 	.flight-info .txt-reserve-details ol>li:first-child {float:left; text-align:left;}
 	.flight-info .txt-reserve-details ol>li>span{display:block;}
 	.flight-info .txt-reserve-details .flight-city {padding-bottom:0;}
 	.flight-info .txt-reserve-details .flight-date,
-	.flight-info .txt-reserve-details .flight-time {margin-top:6px;font-size:16px; color:#222;}
-	.flight-info>p {position:relative; padding-left:90px;  background:#f4f4f4;}
+	.flight-info .txt-reserve-details .flight-time {font-size:15px;}
+	.type-abroad .flight-info .txt-reserve-details .flight-date,
+	.type-abroad .flight-info .txt-reserve-details .flight-time {font-size:15px;}
+
+
 }
 
 @media (max-width: 320px) {

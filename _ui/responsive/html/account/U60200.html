@@ -157,7 +157,8 @@
 						</div>
 					</div>
 					<div class="tbody">
-						<div class="tr">
+						<!-- 미확인 메시지 -->
+						<div class="tr state-notyet"><!-- .state-notyet 미확인 시 -->
 							<div class="cell-label">
 								<label class="amw-checkbox-wrap" for="select001">
 									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
@@ -165,10 +166,24 @@
 								</label>
 							</div>
 							<div class="cell-num mob-hide">3224224</div>
-							<div class="cell-confirm"><em class="ico-message-unconfirmed">미확인</em></div>
+							<div class="cell-confirm"><em class="ico-message-not-read">미확인</em></div><!-- .ico-message-not-read 미확인 시 -->
 							<div class="cell-date">2018-01-05(월)</div>
 							<div class="cell-title mob-block"><a href="#">제목 영역입니다제목 영역입니다제목 영역입니다</a></div>
 						</div>
+						<div class="tr state-notyet"><!-- .state-notyet 미확인 시 -->
+							<div class="cell-label">
+								<label class="amw-checkbox-wrap" for="select001">
+									<input type="checkbox" id="select001" class="amw-global-checkbox" title="선택">
+									<span class="amw-checkbox-overlay"></span>
+								</label>
+							</div>
+							<div class="cell-num mob-hide">3224224</div>
+							<div class="cell-confirm"><em class="ico-message-not-read">미확인</em></div><!-- .ico-message-not-read 미확인 시 -->
+							<div class="cell-date">2018-01-05(월)</div>
+							<div class="cell-title mob-block"><a href="#">제목 영역입니다제목 영역입니다제목 영역입니다</a></div>
+						</div>
+
+						<!-- 확인 메시지 -->
 						<div class="tr">
 							<div class="cell-label">
 								<label class="amw-checkbox-wrap" for="select001">
@@ -177,7 +192,7 @@
 								</label>
 							</div>
 							<div class="cell-num mob-hide">3224224</div>
-							<div class="cell-confirm"><em class="ico-message-confirmed">확인</em></div>
+							<div class="cell-confirm"><em class="ico-message-read">확인</em></div><!-- .ico-message-read 확인 시 -->
 							<div class="cell-date">2018-01-05(월)</div>
 							<div class="cell-title mob-block"><a href="#">제목 영역입니다 제목 영역입니다제목 영역입니다</a></div>
 						</div>
