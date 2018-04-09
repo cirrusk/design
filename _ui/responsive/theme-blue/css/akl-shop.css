@@ -1,0 +1,111 @@
+/************************************************
+Version : AKL Hybris UIUX 1.0
+shop 옮김 : 2018.04.10
+*************************************************/  
+/* 검색 > 검색어  */
+.popoverword { display: none; position: absolute; top:138px;left: 0;z-index: 1050; width:100%; padding: 1px; text-align: left;background-color:#fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+.popoverword .popover-content-akl { max-width:1376px; margin:0 auto; position:relative; padding:35px 105px; }
+.popover-content-akl:after{ content:""; position:absolute; right:95px; top:-10px; display: block;width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 10px; border-top-width: 0;border-bottom-color: #fff;}
+.search-results-close { top:25px; right: 30px;}
+.popoverword .popover-content-akl .popover-btn { overflow:hidden; border-top:1px solid #dadada; padding-top:12px; }
+.popoverword .popover-content-akl .popover-btn button:frist-child { float:left;}
+.popoverword .popover-content-akl .popover-btn button:last-child { float:right;}
+.search-results-akl { margin-bottom: 25px;}
+.search-results-akl li { overflow:hidden; position: relative; height:40px; }
+.search-results-akl li:hover {background:#f4f4f4}
+.search-results-akl li a {display:block; font-size: 16px; color:#55565a; line-height:40px; height:40px;  margin-right:48px;  padding-left: 20px;}
+.search-results-akl li span:frist-child { float:left;}
+.search-results-akl li span:last-child { float:right;}
+.search-results-akl li button { position: absolute; right:0; top:0; text-indent:-1000px; width:48px; height:40px;  overflow:hidden;background: url(../images/akl_common/ico_x_red02.png) no-repeat 50% 50%;  border:0;  background-size: 11px auto; }
+
+/* 검색 > 자동완성  */
+.akl .auto-suggestion-popover { top: 128px; }
+.akl .auto-suggestion-popover .owl-carousel {   }
+.akl .auto-suggestion-popover .main-container { padding: 0 0;}
+.akl .auto-suggestion-popover .owl-carousel .owl-stage-outer {overflow:hidden; width:99% }
+.akl .auto-suggestion-popover .quick-area .owl-theme .owl-controls .owl-nav .owl-next { right:-5px !important;}
+.popover-content-akl { max-width:1376px; margin:0 auto; position:relative; }
+.popover-content-akl:after{ content:""; position:absolute; right:95px; top:-10px; display: block;width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 10px; border-top-width: 0;border-bottom-color: #fff;}
+.akl .auto-suggestion-popover .popover-content ul {padding: 30px 70px;}
+.popover-content-akl .ui-menu-item a {color: #55565a; font-size:16px; display:block; padding:3px 0; font-weight: 400;}
+.popover-content-akl .ui-menu-item a .bold {font-weight:500;}
+.akl .amway-suggest__pvbv { font-size: 13px;line-height: 18px;color: #808285;  font-weight: 400;}
+
+/* 검색 > 결과  */
+.popular-searches { padding:30px 127px; margin-bottom:40px; border-bottom: 1px solid #dadada; border-top: 1px solid #dadada  }
+.popular-searches dl { position:relative; margin-bottom:0; }
+.popular-searches dt{ position:absolute; left:0; top:0; width:100px; font-size: 16px; letter-spacing: -1px; color: #002f5f }
+.popular-searches dt:after { content:""; position:absolute; right:0; border-left:2px solid #002f5f; height:20px; top:50%; margin-top: -10px;}
+.popular-searches dd { position:relative; margin-left:100px; }
+.popular-searches dd button {position:absolute; right:0; top:0; }
+.popular-searches dd ul {margin-right:100px; }
+.popular-searches dd ul li {position:relative; display: inline-block; padding: 0 28px; font-size: 16px;}
+.popular-searches dd ul li:after { content:""; position:absolute; right:0; border-left:1px solid #dadada; height:12px; top:50%; margin-top: -6px;}
+.popular-searches dd ul li:last-child:after { display: none}
+
+.col-search-tab { margin: 0 0 50px; padding: 0; }
+.col-search-tab ul { display: -webkit-flex; display: -moz-flex;  display: -ms-flex; display: flex; margin: 0; padding: 0; border-bottom: 1px solid #dadada;}
+.col-search-tab ul li { margin-bottom: -1px; width:12%}
+.col-search-tab ul li a { font-weight:500px; width:100%; border: 1px solid #dadada; color: #55565a; padding:15px 0; text-align:center;  border-right: none; background: #f4f4f4;  display:block}
+.col-search-tab ul li:nth-of-type(7){ width:16%}
+.col-search-tab ul li:nth-of-type(8) a{  border-right: 1px solid #dadada;  }
+.col-search-tab ul li a span { font-weight:500px; }
+.col-search-tab ul li.active a { background: #fff; border-bottom: none; position:relative;}
+.col-search-tab ul li.active a:before { content:""; position:absolute; top:-1px; left:-1px; right:-1px;  border-top: 4px solid #008fc5; } 
+.col-search-tab ul li { display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flex; display: inline-flex; }  
+ 
+@media (max-width: 768px) {  
+	
+	/* 검색 > 결과  */
+	.pagination-bar { border-top:0;}
+	.akl .col-search-right .hidden-sm {display:block!important;}
+	.akl .col-search-right .pagination-toolbar .col-xs-12 {width:auto;}
+	.akl .search-list-page-right-result-list-component {padding:0 0;}
+	.akl .col-search-right .search-list-page-right-result-list-component .sort-wrapper { float:right!important; margin-top: -5px;}
+	.akl .col-search-right .search-list-page-right-result-list-component .pagination-wrapper {float:right ;width:auto;}
+	.akl .auto-suggestion-popover .popover-content ul { padding: 30px 20px;}
+	.popular-searches { padding:18px 0; }
+	.popular-searches dl { position:relative; margin-bottom:0; }
+	.popular-searches dt{ position:static; width:auto;  margin-bottom:15px; text-align:center;}
+	.popular-searches dt:after { display:none}
+	.popular-searches dd { position:relative; margin-left:0; text-align:center; }
+	.popular-searches dd button {position:static; }
+	.popular-searches dd ul {margin-right:0; margin-bottom: 20px }
+	.akl .product-list-page-title {font-size: 24px;}
+	.col-search-tab { margin: 0 -20px 30px; height:55px;  overflow-x:auto; overflow-y:hidden;}
+	.col-search-tab ul { width:990px;}
+	.col-search-tab ul li { width:auto}
+	.col-search-tab ul li a {  padding:15px 20px; background:none; border: 0}
+	.col-search-tab ul li:nth-of-type(7){ width:auto}
+	.col-search-tab ul li:nth-of-type(8) a{  border-right:0;  }
+	.col-search-tab ul li a span { font-weight:500px; }
+	.col-search-tab ul li.active a:before { content:""; position:absolute; top:auto; bottom:-1px; left:-1px; right:-1px;  border-top: 4px solid #008fc5; }
+    .col-search-right .plp-add-to-ditto button { position:static;  }  
+ 
+    .akl .search-list-page-right-result-list-slot .pagination-bar {  margin-top: 40px;}
+    .popoverword .popover-content-akl { padding: 55px 20px 20px;}
+    .form-control + .primary { margin:10px 0 0}  
+	.akl .product__list + .text-center { margin-top: -40px;}
+	.akl .text-center.show-more-products-wrapper .btn{ font-size: 14px;}
+	.akl .product__list.basic .content-list-item .item-footer,
+	.akl .product__list.basic .content-list-item .item-description { padding-left:0}
+	.akl .item-header { margin-bottom:15px; }
+	.akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-header .header-image-wrapper {  margin-right:0; }
+	.akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-header .header-date { font-size:13px;}
+	.akl .item-header .header-image-wrapper img{ width:20px; }
+	.akl .item-footer a { font-size:14px;font-weight:500;}
+	.product-results-list {margin:30px 0 20px; overflow:hidden;}
+	.product-results-list .col-lg-12 {padding:0 }
+	.product-results-list .col-md-4 { padding:0 7px 10px;}
+	.product-results-list .news-result-prom {margin-bottom:6px;}
+	.akl-no-results h1 { text-align:center}
+	.akl-no-results p { text-align:center; margin-bottom:30px; margin-top:-10px}
+	.akl-no-results .ui-front { padding: 12px 0 300px; z-index: 100; width:280px; margin:0 auto}
+	.akl-no-results .input-group { width: auto; border-radius: 4px; font-weight:400; min-height: 38px; border: 1px solid #dadada; }
+	.akl-no-results input[type="text"] { border:0;}
+	.akl-no-results .icon-check-bold { background: transparent !important; }
+	.akl-no-results .btn {width: 40px;padding: 0;  max-height: 38px; background-color:transparent !important; color:navy;; }
+	.akl #show-more { font-size: 14px;  font-weight:500;font-family:'Noto Sans KR', sans-serif; }  
+}
+ 
+
