@@ -27,11 +27,11 @@
 
 	<!-- 동영상 재생 팝업 : 제품상세와 동일 -->
 	<div class="layerWrapper G10000_lp2_pop"><!-- div.layerWrapper 추가 -->
-		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView"><!-- .typeVideoView 추가 -->
+		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
 			<div class="video-pop">
 				<div id="cboxTitle">
 					<div class="headline">
-						<span class="headline-text">뉴트리라이트 스토리 15 건강수명편</span>
+						<span class="headline-text">뉴트리라이트 스토리 15 건강수면편</span>
 					</div>
 				</div>
 				<div id="bonusPaymentDirectDeposit">
@@ -40,34 +40,49 @@
 						<div class="popup-video-preview__content">
 							<!-- 2018.02.13 수정 -->
 							<div class="video-cont">
-								<!-- 유튜브 영상 예시 2018.03.26 추가-->
-								<div class="video-wrapper">
-									<iframe width="100%" height="100%" title="아티스트리 하이드라-브이 1분 스토리" src="http://www.youtube.com/embed/7CKdgdVhrwU?rel=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
-								</div>
-								 
+								<span>
+									<img class="video-preview__img" src="/_ui/responsive/theme-blue/images/video_preview_swatches.png" alt="videoPC2">
+									<img class="video-preview__img-mob" src="/_ui/responsive/theme-blue/images/video_preview_swatches_mobile2.png" alt="videoMO2">
+								</span>
+								<a href="#" id="PopupPlayMovie_PlayMovie"><img class="video-preview__play G10000_lp2" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></a><!-- 2018.03.13 a 태그, 태깅 아이디 추가 -->
 							</div>
-							<!--// 2018.03.26 수정 -->
+							<!--// 2018.02.13 수정 -->
 						</div>
 
 						<div class="view-sns right">
 							<!-- 2018.03.05 : 수정 (img에서  href="#" 삭제, html syntax error) 2018.03.13 태깅 아이디 추가 -->
-							<div>
+							<div class="print"><!-- class 추가 2018.04.09 -->
 								<a href="#" id="PopupPlayMovie_Print"><img src="/_ui/responsive/theme-blue/images/new_Print.png" alt="Print"></a>
 							</div>
-							<div>
+							<div class="url-copy"><!-- class 추가 2018.04.09 -->
 								<a href="#" id="PopupPlayMovie_URL"><img src="/_ui/responsive/theme-blue/images/new_ie_URL.png" alt="ie_URL"></a>
+								<!-- URL 복사 팝업 2018.04.09 -->
+								<div class="url_pop">
+									<div class="cart-popup-area">
+										<div class="pop-area-header">
+											<a href="#dfde" class="cart-popup-close">
+												<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+											</a>
+										</div>
+										<div class="pop-area-body">
+											<p>주소가 복사되었습니다.<br>
+											원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+											<div class="form-group">
+												<input type="text" class="form-control" value="https://goo.gl/Pjy3en" aria-label="https://goo.gl/Pjy3en">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //URL 복사 팝업 2018.04.09 -->
 							</div>
-							<div>
-								<a href="#" id="PopupPlayMovie_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="talk"></a>
+							<div class="kakaotalk"><!-- class 추가 2018.04.09 -->
+								<a href="#" id="PopupPlayMovie_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="kakaotalk"></a>
 							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Kakaostory"><img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory"></a>
 							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Facebook"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
-							</div>
-							<div>
-								<a href="#" id="PopupPlayMovie_Instagram"><img src="/_ui/responsive/theme-blue/images/new-Instagram.png" alt="Instagram"></a>
 							</div>
 							<div>
 								<a href="#" id="PopupPlayMovie_Band"><img src="/_ui/responsive/theme-blue/images/new-Band.png" alt="Band"></a>
@@ -82,7 +97,6 @@
 				</div>
 				<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
 			</div>
-		</div>
 
 	</div>
 	<!-- //동영상 재생 팝업 : 제품상세와 동일 -->
