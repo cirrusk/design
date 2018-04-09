@@ -1,0 +1,32 @@
+@media print{
+	@page {margin:1cm .6cm .6cm;}/* ie는 적용안됨 */
+
+	#header {display:none;}
+	#quick {display:none;}
+	#footer {display:none;}
+
+	html {max-width:32cm; min-width:29cm; margin:0; font-size:11px; box-sizing:border-box;}
+	body {width:auto; margin:0; padding:12px 0 0 0; box-sizing:border-box;}
+
+	/* 공통영역 */
+	main{margin:0; padding:0; box-sizing:border-box;}
+	.breadcrumb-section {display:none;}
+	.main-container{padding:0;margin:0;}
+	.container-fluid.main-container {padding:0;margin:0;}
+	.container-fluid.main-container#contents {display:none;}
+	.container-fluid.my-count {display:none;}
+
+	/* 마이페이지 */
+	.akl .message-center-wrapper .message-title {display:none;}
+	.akl .message-center-wrapper {padding:0;border:1px solid red}
+	.akl .message-center-list {padding:0;}
+	.board-view-head {padding:14px 0 12px;}
+	.board-view-head h2.txt-title {font-size:20px;}
+	.board-view-foot, .next-control {display:none;}
+	.tbl-list-board .tr>div {padding:10px 0 10px 10px;}
+	.set_printArea {padding:0;}
+
+	/* 상품상세 */
+	#productSuggestListTabs {width:28cm; padding:0; margin:0;}
+	.carousel-title-container,.amway-recentlyviewed,.amway-suggest {max-width:32cm; min-width:29cm; padding:0; box-sizing:border-box;}
+}
