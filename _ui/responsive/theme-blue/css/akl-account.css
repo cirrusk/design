@@ -427,8 +427,9 @@ Version : AKL Hybris UIUX 1.0
 .point-management .form-group .date-range-select {/*width:247px !important;*/margin-top:10px !important;}
 .point-management .date-form-group {padding:10px 0 0}
 .point-management .date-form-group button {margin-left:10px; min-width: 95px}
-.point-management .form-group .box-date-select {width:200px ;}
-.point-management .form-group .box-date-select input{width:100% ;}
+.point-management .form-group .box-date-select {width:200px;}
+.point-management .form-group .box-date-select input{width:100%;}
+
 .point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 0 10px;}
 .akl .datepicker-dropdown:before,
 .akl .datepicker-dropdown:after { display: none}
@@ -562,6 +563,10 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 30px}
 .akl .cart-popup__content .form-horizontal .form-group {margin:0 0;}
 
+.estimate-area .point-date-range .box-date-select span.slp-year {display:inline-block;width:30%}
+.estimate-area .point-date-range .box-date-select span.slp-month {display:inline-block;width:25%}
+.estimate-area .point-date-range .box-date-select span.slp-day {display:inline-block;width:25%}
+
 /* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적서 */
 .estimate-area {}
 .estimate-area:after {content:'';clear:both;display:block;}
@@ -627,7 +632,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .est-txt-area.type3 {border-bottom:0 none;padding:30px 0 0;}
 .akl .btnArea-center {clear:both;display:block;margin:40px auto 60px;text-align:center;}
 
-/* 나의 쇼핑정보 > common > 제품리스트 */
+/* 나의 쇼핑정보 > 중개판매 > 제품리스트 */
 .shopping-tbl-list {clear:both;display:block;width:100%;}
 .shopping-th {display:table;width:100%;table-layout:fixed;background:#f4f4f4;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .shopping-th .th-chk, .shopping-th .th-tit {float:left;}
@@ -784,6 +789,11 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .pop-fail-reason {width:35%;padding:0 0}
 .akl .con-list-item .pop-fail-reason {width:35%;padding:0 0;}
  
+ /* 나의 쇼핑정보 > 구매권한 양도 팝업 */
+
+
+
+
 @media (max-width: 1024px) { 
 	.akl .account-profile__editor .form-group .col-md-4.email-id { width:50%} 
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom { width:50%}
