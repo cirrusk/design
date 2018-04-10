@@ -29,6 +29,9 @@
 <a href="#" class="bt-akl-blue jmb jmb-confirm">confirm (.jmb-confirm)</a>
 <button type="button" class="bt-akl-white jmb jmb-confirm-abc1">button 클릭</button>
 
+<div id="testBox" style="margin:20px 0">알럿 if else 테스트</div>
+
+
 <script type="text/javascript">
 	$(function() {
 		$(".jmb-confirm").msgbox({
@@ -51,6 +54,31 @@
 			type: 'alert',
 			content: 'URL 복사를 완료하였습니다.'
 		});
+
+
+
+
+
+		if( $('#testBox').length){
+			$.msgbox({
+				id: '02',
+				type: 'confirm',
+				content: '<strong class="color-red big">#testBox 있음</strong>',
+				onClose: function(){
+					alert(!!this.val());
+				}
+			});
+		} else {
+			$.msgbox({
+				id: '01',
+				type: 'confirm',
+				content: '<strong class="color-red big">없음</strong>',
+				onClose: function(){
+					alert(!!this.val());
+				}
+			});
+		}
+
 	});
 </script>
 
