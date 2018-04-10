@@ -59,25 +59,25 @@
 
 
 
-		if( $('#testBox').length){
-			$.msgbox({
-				id: '02',
-				type: 'confirm',
-				content: '<strong class="color-red big">#testBox 있음</strong>',
-				onClose: function(){
-					alert(!!this.val());
-				}
-			});
-		} else {
-			$.msgbox({
-				id: '01',
-				type: 'confirm',
-				content: '<strong class="color-red big">없음</strong>',
-				onClose: function(){
-					alert(!!this.val());
-				}
-			});
+if( $('#testBox').length){
+	$.msgbox({
+		id: '02', //숫자,문자 상관없음
+		type: 'confirm',
+		content: '<strong class="color-red big">#testBox 있음</strong>',
+		onClose: function(){
+			alert(!!this.val());
 		}
+	});
+} else {
+	$.msgbox({
+		id: '01', //숫자,문자 상관없음
+		type: 'confirm',
+		content: '<strong class="color-red big">없음</strong>',
+		onClose: function(){
+			alert(!!this.val());
+		}
+	});
+}
 
 	});
 </script>
