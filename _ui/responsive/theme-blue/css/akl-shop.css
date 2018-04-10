@@ -573,8 +573,8 @@ shop 옮김 : 2018.04.10
 .akl .accordion-custom.pro-category .panel-title {padding:20px 0;font-size:14px;font-weight:500}
 .akl .accordion-custom.pro-category .panel-title a {color:#002f5f;}
 .akl .accordion-custom.pro-category .panel-title a:hover {color:#0075a4}
-.akl .accordion-custom.pro-category .icon-minus {font-size:14px;top:0;line-height:14px;}
-.akl .accordion-custom.pro-category .icon-minus:before {font-size:14px;top:0;line-height:14px;padding-right:6px;}
+.akl .accordion-custom.pro-category .icon-minus {font-size:14px;top:0;line-height:14px; font-weight: 500}
+.akl .accordion-custom.pro-category .icon-minus:before {font-size:14px;top:0;line-height:14px;padding-right:6px; font-weight: 500}
 
 .product-solition-top.type2 {padding:0 0 0}
 .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;}
@@ -595,10 +595,8 @@ shop 옮김 : 2018.04.10
 /* 제품카테고리 > 2차 제품분류 왼쪽메뉴 */
 .list-group.aisde {margin-bottom:0;}
 .panel.aisde {box-shadow:0 0 0 rgba(0, 0, 0, 0.05);margin-bottom:0;border-top:1px solid #ddd}
-.panel.aisde .list-group-item {border:0 none;color:#002f5f;background:transparent}
-.akl .panel.aisde .list-group-item .icon-minus {font-size:24px;font-weight:bold;line-height:20px;content:"\ea79";color:#0075a4}
-.akl .panel.aisde .list-group-item .icon-minus:before {font-size:28px;}
-
+.panel.aisde .list-group-item {border:0 none;color:#002f5f;background:transparent}  
+ 
 .panel.aisde a.list-group-item:hover, .panel.aisde a.list-group-item:focus {background:transparent}
 
 .panel.aisde .sub-cateogry {margin:0 10px;}
@@ -620,10 +618,13 @@ shop 옮김 : 2018.04.10
 .category-titbox .ce-title a {color:#002f5f;font-weight:500}
 .category-titbox .ce-title a:hover {color:#0075a4}
 .category-titbox .ce-title a.active {color:#0075a4}
-.category-titbox .ce-btn {display:table-cell;width:30%;text-align:right;vertical-align:top;}
+.category-titbox .ce-btn {display:table-cell;width:30%;text-align:right;vertical-align:middle;}
+.category-titbox .ce-btn a { display: block; height:40px; padding-top:10px; padding-right:18px }
+.category-titbox .ce-btn a .pull-right.icon-minus{ margin-top:10px;} 
+.category-titbox .ce-btn .collapsed .icon-minus:before {content: "\ea79" !important;}
+.category-titbox .ce-btn .icon-minus:before {content: "\ea78" !important;color: #0075a4;}
 .category-titbox.sub {border-top:1px solid #ddd}
-
-
+ 
 @media (max-width: 768px) {  
 	
 	/* 검색 > 결과  */
