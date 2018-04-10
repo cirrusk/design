@@ -106,19 +106,21 @@ a:hover, a:hover span {
   background-color: #0075a4;
   border-color: #0075a4;
 }
-[type="checkbox"]:checked + label::after {
-  background: url("../images/checkbox_check.png") no-repeat scroll 0 0 / contain;
-  content: "";
-  font-size: 1.3em;
-  height: 20px;
-  left: 0;
-  line-height: 0.8;
-  position: absolute;
-  top: 0;
-  transition: all 0.2s ease 0s;
-  width: 20px;
-  opacity: 1;
-  transform: scale(1);
+[type="checkbox"]:checked + label::after {/*akl 수정*/
+  	font-family: 'AmwayIcons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e909";
+    color: white;
+    position:absolute;
+    top: 4px;
+    left: 4px; 
+    font-size:9px; 
 }
 .tips {
   display: inline-block;
@@ -2031,7 +2033,7 @@ table td {
   top: 2px;
   cursor: pointer;
 }
-._checkbox-element-global-class ~ span._checkbox-element-global-span:before {
+._checkbox-element-global-class ~ span._checkbox-element-global-span:before {/*akl 수정*/
   font-family: 'AmwayIcons' !important;
   speak: none;
   font-style: normal;
@@ -2044,10 +2046,10 @@ table td {
   content: "\e909";
   color: white;
   position: relative;
-  top: 2px;
-  left: 2px;
+  top: 4px;
+  left: 3px;
   float: left;
-  font-size: 12px;
+  font-size: 9px; 
 }
 ._checkbox-element-global-class:checked:not(:disabled) ~ span._checkbox-element-global-span {
   background: #0075a4;
@@ -22935,10 +22937,10 @@ select.form-control option {
     top: 24px;
   }
 }
-.product-list__item-content.amwahover ._checkbox-element-global-class ~ span._checkbox-element-global-span:before {
-  left: 2px;
-  top: 0;
-  font-size: 12px;
+.product-list__item-content.amwahover ._checkbox-element-global-class ~ span._checkbox-element-global-span:before { /*akl수정*/
+  left: 3px;/*akl수정*/
+  top: 3px;/*akl수정*/
+  font-size: 9px;/*akl수정*/
 }
 .quick-view-btn {
   position: absolute;
