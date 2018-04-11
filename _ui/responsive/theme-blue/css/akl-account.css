@@ -740,7 +740,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .list-content {clear:both;display:table;width:100%;table-layout:fixed;padding:40px 0 0}
 .akl .list-content .list-row-title {background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
-.akl .list-content .list-row-title > div {display:table-cell;font-size:13px;color:#002f5f;font-weight:500;}
+.akl .list-content .list-row-title > div {display:table-cell;float:left;font-size:13px;color:#002f5f;font-weight:500;}
 .akl .list-content .content-list {position: relative;clear:both;z-index: 2;padding: 20px 0;background: #fff;display: table;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;}
@@ -749,8 +749,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .con-list-item span.txte-wrap strong {color:#0075a4;font-weight:500;font-size:14px !important;}
 .akl .con-list-item span.txte-wrap strong a {font-weight:500;}
 .akl .con-list-item span.tite-label {display:none;}
-.akl .con-list-item .txte-btn button {margin:0 5px}
-.akl .con-list-item .txte-btn button:first-child {margin-left:0}
+.akl .con-list-item .txte-btn button {margin-right:8px;}
 .akl .con-list-item .txte-btn button.bt-akl-blue.mini {padding:1px 15px 4px}
 .akl .con-list-item .pur-day span.txte-wrap {width:50%;display:table;word-break:break-all;}
 .akl .con-list-item span.txte-wrap em {display:block;font-size:14px}
@@ -789,10 +788,62 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .pop-fail-reason {width:35%;padding:0 0}
 .akl .con-list-item .pop-fail-reason {width:35%;padding:0 0;}
  
- /* 나의 쇼핑정보 > 구매권한 양도 팝업 */
+/* 나의 쇼핑정보 > 구매권한 양도 팝업 */
+.cart-popup__content.trans-purchase {max-height:initial;}
+.poo-ass-product {clear:both;display:block;border-bottom:1px solid #dadada;}
+.poo-prdlist {border-top:1px solid #dadada;padding:20px 0;}
+.poo-prdlist p {font-size:14px;font-weight:400}
+.poo-prdlist ul li {display:table;width:100%;table-layout:fixed;padding:8px 0;}
+.poo-prdlist ul li span {display:table-cell;font-size:14px}
+.poo-prdlist ul li span.op-tit {width:85px;font-weight:500;color:#002f5f;}
+.poo-prdlist ul li span.op-sub-info {font-weight:400;text-align:left;}
+.poo-prdlist ul li span.op-label {width:85px;font-weight:500;color:#002f5f;}
+.poo-prdlist ul li span.op-wap {font-weight:400;text-align:right;}
+.poo-prdlist ul li > div {display:table-cell;}
+.poo-prdlist ul li > div.a-pvbv {width:50%;}
+.poo-prdlist ul li > div.a-price {width:50%;}
 
+.poo-ass-search {clear:both;display:block;padding:38px 0 0}
+.poo-ass-search .form-group {width:100%;}
+.poo-ass-search .form-group input {vertical-align:top;}
+.poo-ass-search .form-group input.input-st {width:81%;margin-right:6px}
+.poo-ass-search .form-group button {vertical-align:top;min-width:85px;}
 
+.poo-asslist-title {clear:both;display:block;margin:0;padding:15px 0 0;}
+.poo-asslist-title .a-left {float:left;}
+.poo-asslist-title .a-right {float:right;padding:5px 0 0}
+.poo-asslist-title .a-right strong {font-weight:500;font-size:14px;}
+.poo-asslist-title .a-right span {font-size:14px;font-weight:400}
 
+.akl .poo-asslist-box .con-list-item .all-ceek {padding:6px 20px}
+
+.akl .poo-asslist-box {clear:both; display:block;padding:10px 0 0;}
+.akl .poo-asslist-box .pop-list-detail {max-height:370px;overflow-x: hidden;overflow-y:auto;}
+.akl .poo-asslist-box .pop-list-detail .list-content {padding:0 0}
+.akl .poo-asslist-box .list-content .content-list {padding:13px 0;}
+
+.akl .list-row-title .pop-ass-num {width:25%;padding:3px 20px}
+.akl .list-row-title .pop-ass-name {width:30%;padding:3px 10px}
+.akl .list-row-title .pop-ass-quay {width:35%;padding:3px 10px;}
+
+.akl .con-list-item  .pop-ass-num {width:25%;padding:6px 20px}
+.akl .con-list-item  .pop-ass-name {width:30%;padding:6px 10px}
+.akl .con-list-item  .pop-ass-quay {width:35%;padding:0 10px;}
+.pop-moreArea {display:none;}
+
+/* 나의 쇼핑정보 > 구매권한 양도 > 복수선택 팝업 */
+.poo-prdlist ul li span.op-sub-num {font-weight:400;text-align:left;}
+.poo-prdlist ul li span.op-sub-num div.opt-quantity {display:inline-block;vertical-align:middle;}
+.poo-prdlist ul li span.op-sub-num span.que-num {display:inline-block;vertical-align:middle;}
+
+.akl .list-row-title .pop-ass-num2 {width:30%;padding:3px 20px}
+.akl .list-row-title .pop-ass-name2 {width:55%;padding:3px 10px}
+.akl .list-row-title .pop-ass-btn {width:15%;padding:3px 10px;}
+
+.akl .con-list-item  .pop-ass-num2 {width:30%;padding:6px 20px}
+.akl .con-list-item  .pop-ass-name2 {width:55%;padding:6px 10px}
+.akl .con-list-item  .pop-ass-btn {width:15%;padding:0 10px;text-align:right;}
+.akl .list-content .content-list.revenge:nth-child(odd) {background:#fff}
 
 @media (max-width: 1024px) { 
 	.akl .account-profile__editor .form-group .col-md-4.email-id { width:50%} 
@@ -1256,6 +1307,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.cont-inarea .d-left {display:table;width:100%;}
 	.cont-inarea .d-right {display:table;width:100%;text-align:left;padding:10px 0 0}
 	.cont-inarea .d-right .list-type2 {float:none;}
+
 	
 	/* 나의 쇼핑정보 > 구매권한 양도/양수 > 사용내역 */
 	.akl .list-content .list-row-title .pur-assignee {display:none;}
@@ -1272,7 +1324,47 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .con-list-item .pur-btn2 {width:90%;padding:5px 0 5px 60px;}
 	.akl .con-list-item .pur-condition span.txte-wrap em {display:block;padding:0 0}
 
+	/* 나의 쇼핑정보 > 구매권한 양도하기 팝업 */
+	.cart-popup__content.trans-purchase {max-height:500px;}
+	.poo-prdlist ul li > div.a-pvbv {display:table;width:100%;}
+	.poo-prdlist ul li > div.a-price {display:table;width:100%;padding:12px 0 0}
+
+	.poo-prdlist ul li span.op-tit {display:table;width:100%;}
+	.poo-prdlist ul li span.op-sub-info {display:table;width:100%;text-align:left;padding:6px 0 0}
+
+	.poo-ass-search .form-group input.input-st {width:100%;margin-right:0;margin-bottom:10px;font-size:13px;}
+
+	.akl .list-content .list-row-title > div.pop-ass-num {display:none;}
+	.akl .list-content .list-row-title > div.pop-ass-name {display:none;}
+	.akl .list-content .list-row-title > div.pop-ass-quay {display:none;}
 	
+	.akl .poo-asslist-box .pop-list-detail {max-height:initial;overflow-x: hidden;overflow-y:auto;}
+
+	.akl .con-list-item  .pop-ass-num {width:90%;padding:5px 0 5px 50px;vertical-align:top;margin-top:-32px}
+	.akl .con-list-item  .pop-ass-name {width:90%;padding:5px 0 5px 50px;}
+	.akl .con-list-item  .pop-ass-quay {width:90%;padding:5px 0 5px 50px;}
+	.akl .con-list-item  .pop-ass-quay span.tite-label {padding:10px 0 0}
+
+	.akl .con-list-item  .pop-ass-num span.txte-wrap, .akl .con-list-item  .pop-ass-name span.txte-wrap {text-align:right;}
+
+	.akl .poo-asslist-box .pop-list-detail .list-content .con-list-item span.tite-label {float:left;width:35%;}
+	.akl .poo-asslist-box .pop-list-detail .list-content .con-list-item span.txte-wrap {float:right;width:60%;}
+	.pop-moreArea {display:block;text-align:center;padding:20px 0 0}
+
+	/* 나의 쇼핑정보 > 구매권한 양도 > 복수선택 팝업 */
+	.poo-prdlist ul li span.op-sub-num {width:65%;text-align:right;}
+	.poo-prdlist ul li span.op-sub-num div.opt-quantity.mini {float:none;}
+	
+	.akl .list-row-title.revenge {display:none;}
+	.akl .content-list.revenge {border-top:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3}
+	.akl .con-list-item  .pop-ass-num2 {width:100%;padding:6px 15px}
+	.akl .con-list-item  .pop-ass-name2 {width:100%;padding:6px 15px}
+	.akl .con-list-item  .pop-ass-btn {width:100%;padding:0 15px;text-align:left;}
+	.akl .con-list-item  .pop-ass-num2 span.tite-label {}
+	.akl .con-list-item  .pop-ass-num2 span.txte-wrap {text-align:right;}
+	.akl .con-list-item  .pop-ass-name2 span.tite-label {}
+	.akl .con-list-item  .pop-ass-name2 span.txte-wrap {text-align:right;}
+
 	/* 나의 쇼핑정보 > 구매권한 양도 결과 안내 */
 	.akl .pop-authority .list-content .list-row-title {border-bottom:0 none;padding:0 0;}
 	.akl .pop-authority .list-content .list-row-title .pop-purname {display:none;}
@@ -1291,6 +1383,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .pop-authority .con-list-item span.tite-label {float:left;width:35%;}
 	.akl .pop-authority .con-list-item span.txte-wrap {float:right;width:65%;}
 	.akl .pop-authority .con-list-item .pop-purname span.txte-wrap {float:left;width:100%;}
+
 	
 }
 
