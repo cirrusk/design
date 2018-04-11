@@ -387,4 +387,14 @@ $(function(){
 		layerPopOver(this,'.U70611_lp1_pop');
 	});
 
+	$('#U70610_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.U70610_lp1_pop');
+	});
+
+	$('#U70610_lp2').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.U70610_lp2_pop');
+	});
+
 });
