@@ -41,6 +41,9 @@ $(function(){
 		$('.tooltip-wrap').slideToggle(0);
 	});
 
+	//인쇄하기 : 작업중
+	printPage();
+
 	//2018.03.12 카테고리 왼쪽메뉴
 	var Accordion = function(el, multiple) {
 		this.el = el || {};
@@ -179,7 +182,7 @@ function terms_ViewAll(){
 
 /* 로딩 */
 function loadingLayer(){
-	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="images/akl_common/img_loading.gif" alt="로딩중"></div></div>');
+	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="/_ui/responsive/theme-blue/images/akl_common/img_loading.gif" alt="로딩중"></div></div>');
 	if (loadImg.length){
 		$('#loading').remove();
 	}
@@ -188,6 +191,25 @@ function loadingLayer(){
 function loadingLayerClose(){
 	$('#loading').remove();
 	return false;
+}
+
+/* 인쇄하기  : 작업중 */
+function printPage(){
+	var $btnPrint_layer = $('.layerWrapper .btn-print-it'); //레이어에서 프린트 버튼 클릭 시
+	$btnPrint_layer.each(function(){
+		$(this).on('click',function(){
+			$('html').addClass('printReady_layer');
+			$(this).parent('.print-section').addClass('set_printArea');
+			print();
+		});
+	});
+
+	function print() {
+		window.print();
+	}
+
+	var btn_PrintPage = $('.btn-printPage'); //전체 인쇄버튼
+	var set_PrintArea = $('.set_printArea'); //인쇄영역 설정
 }
 
 /** ------------------------------------------
