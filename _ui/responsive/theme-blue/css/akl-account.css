@@ -634,11 +634,11 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 /* 나의 쇼핑정보 > 중개판매 > 제품리스트 */
 .shopping-tbl-list {clear:both;display:block;width:100%;}
-.shopping-th {display:table;width:100%;table-layout:fixed;background:#f4f4f4;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.shopping-th {display:table;width:100%;table-layout:fixed;background:#f4f4f4;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;box-sizing:border-box;}
 .shopping-th .th-chk, .shopping-th .th-tit {float:left;}
 .shopping-th .th-chk {width:5%;text-align:center;vertical-align:top;}
 .shopping-th .th-tit {width:95%;text-align:left;vertical-align:top;}
-.shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;}
+.shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;box-sizing:border-box;}
 .shopping-th .th-tit.th-head > div {display:table-cell;font-size:13px;font-weight:500;color:#002f5f;}
 .shopping-th .item-number {width:15%;}
 .shopping-th .item-subject {width:26%;}
@@ -654,7 +654,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .shopping-tbody .td-chk label.checkbox-element-wrapper {padding:9px 0 0}
 .shopping-tbody .td-info {width:95%;text-align:left;display:table;vertical-align:middle;}
 
-.shop-product-code {display:table-cell;width:43%;margin:0;}
+.shop-product-code {display:table-cell;width:43%;margin:0;vertical-align:middle;box-sizing:border-box;}
 .shop-product-code .shop-ptit {display:table;width:100%;}
 .shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px;}
 .shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;}
@@ -761,8 +761,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 .akl .col-ak-10 {width:100%;}
 .akl .all-ceek {width:5%;text-align:center;}
-.akl .pur-name {width:22%;padding:0 10px;}
-.akl .pur-prod {width:16%;padding:0 10px;}
+.akl .pur-name {width:20%;padding:0 10px;}
+.akl .pur-prod {width:18%;padding:0 0px;}
 .akl .pur-quitey {width:10%;text-align:center;}
 .akl .pur-day {width:14%;}
 .akl .pur-grantor {width:12%;}
