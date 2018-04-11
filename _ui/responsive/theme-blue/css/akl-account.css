@@ -563,6 +563,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 30px}
 .akl .cart-popup__content .form-horizontal .form-group {margin:0 0;}
 
+.estimate-area { position:relative;}
 .estimate-area .point-date-range .box-date-select span.slp-year {display:inline-block;width:30%}
 .estimate-area .point-date-range .box-date-select span.slp-month {display:inline-block;width:25%}
 .estimate-area .point-date-range .box-date-select span.slp-day {display:inline-block;width:25%}
@@ -571,7 +572,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .estimate-area {}
 .estimate-area:after {content:'';clear:both;display:block;}
 .estimate-area p.est-tit {font-size:18px;font-weight:500;color:#002f5f;text-align:center;letter-spacing:-1px;}
-.estimate-form-box {float:left;border:1px solid #e3e3e3;width:25%;height:162px;padding:20px;border-right:0 none}
+.estimate-form-box { border:1px solid #e3e3e3;width:300px;height:162px;padding:20px 0 20px 20px;border-right:0 none; position:absolute;}
 .estimate-form-box .box-date-select input {width:82%;font-size:14px;}
 .estimate-form-box .box-date-select .form_datetime {min-width:auto;}
 .estimate-form-box p {font-size:14px;font-weight:400;}
@@ -579,9 +580,9 @@ ul li.tbody div.mob-ttoy {display:none;}
 .p-nameing input {width:82%;font-size:14px;}
 .p-nameing span {padding-left:5px;}
 .p-nameing span label {font-size:14px;font-weight:400;color:#56565a;}
-.estimate-producer-box {float:left;height:162px;width:75%;border-style:solid;border-color:#e3e3e3;border-width:1px 1px 1px 1px;}
-.tit-producer {float:left;height:160px;width:6%;background:#f4f4f4;text-align:center;writing-mode:tb-rl;padding:0 20px 0 10px;font-size:13px;color:#002f5f;font-weight:500;margin:0 0;letter-spacing:1px}
-.info-producer {float:left;height:160px;width:94%;border-left:1px solid #e3e3e3;}
+.estimate-producer-box {margin-left:300px; height:160px; border-style:solid;border-color:#e3e3e3;border-width:1px 1px 1px 1px; display:table; }
+.tit-producer { height:160px;width:5%;background:#f4f4f4;text-align:center; padding:0 20px; font-size:13px;color:#002f5f;font-weight:500;margin:0 0;letter-spacing:1px; display:table-cell; vertical-align: middle;}
+.info-producer { height:160px;width:95%;border-left:1px solid #e3e3e3; display:table-cell;}
 .info-producer ul {width:100%;}
 .info-producer ul li {clear:both;display:block;height:40px;margin:0 0;border-top:1px solid #e3e3e3;overflow:hidden}
 .info-producer ul li:first-child {border-top:0 none;}
@@ -1226,10 +1227,10 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 5px}
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적서 */
-	.estimate-form-box {border-right:1px solid #e3e3e3;width:100%;}
-	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 1px 0;}
+	.estimate-form-box {border-right:1px solid #e3e3e3;width:100%; position:static;}
+	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 1px 0; margin-left:0;}
 
-	.tit-producer {width:100%;height:40px;text-align:center;writing-mode:rl;padding-right:0;padding-top:10px;letter-spacing:-1px;border-bottom:1px solid #e3e3e3;}
+	.tit-producer {width:100%;height:40px; padding-top:10px; border-bottom:1px solid #e3e3e3;display:block;}
 	.info-producer {display:block;height:auto;width:100%;border-left:0 none;}
 	.info-producer ul li.address {height:60px}
 	.info-producer ul li.address dl {height:60px}
