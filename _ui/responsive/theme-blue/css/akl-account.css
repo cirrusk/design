@@ -817,7 +817,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 .akl .poo-asslist-box .con-list-item .all-ceek {padding:6px 20px}
 
-.akl .poo-asslist-box {clear:both; display:block;padding:10px 0 0;}
+.akl .poo-asslist-box {clear:both; display:block;padding:10px 0 35px;}
 .akl .poo-asslist-box .pop-list-detail {max-height:370px;overflow-x: hidden;overflow-y:auto;}
 .akl .poo-asslist-box .pop-list-detail .list-content {padding:0 0}
 .akl .poo-asslist-box .list-content .content-list {padding:13px 0;}
@@ -842,8 +842,9 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 .akl .con-list-item  .pop-ass-num2 {width:30%;padding:6px 20px}
 .akl .con-list-item  .pop-ass-name2 {width:55%;padding:6px 10px}
-.akl .con-list-item  .pop-ass-btn {width:15%;padding:0 10px;text-align:right;}
-.akl .list-content .content-list.revenge:nth-child(odd) {background:#fff}
+.akl .con-list-item  .pop-ass-btn {width:15%;padding:0 15px;text-align:right;}
+.akl .list-content.revenge .content-list {border-bottom:1px solid #d3d3d3;}
+.akl .list-content.revenge .content-list:nth-child(odd) {background:#fff}
 
 
 @media (max-width: 1024px) { 
@@ -852,7 +853,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 }
 
 @media (max-width: 768px) {  
-	  
+	 
     /* 로그인 > connectedID  */
 	.akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper th, .akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper td {display: block;}
 	.pop-U30000-lp3 strong { display: block; margin-left:0}
@@ -1339,6 +1340,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .list-content .list-row-title > div.pop-ass-name {display:none;}
 	.akl .list-content .list-row-title > div.pop-ass-quay {display:none;}
 	
+	.akl .poo-asslist-box {padding:20px 0 20px}
 	.akl .poo-asslist-box .pop-list-detail {max-height:initial;overflow-x: hidden;overflow-y:auto;}
 
 	.akl .con-list-item  .pop-ass-num {width:90%;padding:5px 0 5px 50px;vertical-align:top;margin-top:-32px}
@@ -1356,15 +1358,16 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.poo-prdlist ul li span.op-sub-num {width:65%;text-align:right;}
 	.poo-prdlist ul li span.op-sub-num div.opt-quantity.mini {float:none;}
 	
-	.akl .list-row-title.revenge {display:none;}
-	.akl .content-list.revenge {border-top:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3}
-	.akl .con-list-item  .pop-ass-num2 {width:100%;padding:6px 15px}
-	.akl .con-list-item  .pop-ass-name2 {width:100%;padding:6px 15px}
-	.akl .con-list-item  .pop-ass-btn {width:100%;padding:0 15px;text-align:left;}
+	.akl .list-content.revenge .list-row-title {display:none;}
+	.akl .list-content.revenge .content-list {border-top:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3}
+	.akl .con-list-item  .pop-ass-num2 {width:100%;padding:6px 10px}
+	.akl .con-list-item  .pop-ass-name2 {width:100%;padding:6px 10px}
+	.akl .con-list-item  .pop-ass-btn {width:100%;padding:0 10px;text-align:left;}
 	.akl .con-list-item  .pop-ass-num2 span.tite-label {}
 	.akl .con-list-item  .pop-ass-num2 span.txte-wrap {text-align:right;}
 	.akl .con-list-item  .pop-ass-name2 span.tite-label {}
 	.akl .con-list-item  .pop-ass-name2 span.txte-wrap {text-align:right;}
+	.poo-ass-search {padding:20px 0 0}
 
 	/* 나의 쇼핑정보 > 구매권한 양도 결과 안내 */
 	.akl .pop-authority .list-content .list-row-title {border-bottom:0 none;padding:0 0;}
