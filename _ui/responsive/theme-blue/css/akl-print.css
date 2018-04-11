@@ -1,30 +1,49 @@
 @media print{
 	@page {margin:1cm .6cm .6cm;}/* ie는 적용안됨 */
 
+	/* 공통영역 */
 	#header {display:none;}
 	#quick {display:none;}
 	#footer {display:none;}
+	.breadcrumb-section {display:none;}
 
 	html {max-width:32cm; min-width:29cm; margin:0; font-size:11px; box-sizing:border-box;}
-	body {width:auto; margin:0; padding:12px 0 0 0; box-sizing:border-box;}
+	body {position:relative; width:auto; height:auto;max-width:32cm; min-height:100%; overflow-y:scroll; overflow:visible; margin:0; padding:12px 0 0 0; box-sizing:border-box;}
+	.akl main{margin:0; padding:0; box-sizing:border-box;}
+	.akl .layerWrapper.active {position:static; width:100%; height:auto !important;}
+	.container-fluid.main-container,.main-container {padding:0;margin:0;}
 
-	/* 공통영역 */
-	main{margin:0; padding:0; box-sizing:border-box;}
-	.breadcrumb-section {display:none;}
-	.main-container{padding:0;margin:0;}
-	.container-fluid.main-container {padding:0;margin:0;}
-	.container-fluid.main-container#contents {display:none;}
+	/* ----- 마이페이지 ----- */
 	.container-fluid.my-count {display:none;}
+	.container-fluid.main-container#contents {display:none;}
+	.board-view-foot, .next-control {display:none;}
 
-	/* 마이페이지 */
+	/* 맞춤메시지 레이어 인쇄 */
+	.printReady_layer main,
+	.printReady_layer .top-image,
+	.printReady_layer .nca-footer-image,
+	.printReady_layer .custom-message-header .popup__close,
+	.printReady_layer .message-detail.type-agreement,
+	.printReady_layer .message-detail .box-top-text.small-txt {display:none;}
+
+	.printReady_layer .custom-message-body {margin:0 !important; padding:0;}
+	.printReady_layer .custom-message-body .message-detail{margin:0 !important; padding:0 !important;}
+	.printReady_layer .message-detail .custom-message>li {margin-top:0;}
+
+	/* 동의 후 : .trip-detail */
+	.printReady_layer .custom-message.trip-detail>li {display:none;}
+	.printReady_layer .custom-message.trip-detail .print-section.set_printArea {display:block; border-top:0;}
+	.printReady_layer .custom-message.trip-detail .print-section.set_printArea .btn-print-it {display:none;}
+
+	/*
 	.akl .message-center-wrapper .message-title {display:none;}
-	.akl .message-center-wrapper {padding:0;border:1px solid red}
+	.akl .message-center-wrapper {padding:0;}
 	.akl .message-center-list {padding:0;}
 	.board-view-head {padding:14px 0 12px;}
 	.board-view-head h2.txt-title {font-size:20px;}
 	.board-view-foot, .next-control {display:none;}
 	.tbl-list-board .tr>div {padding:10px 0 10px 10px;}
-	.set_printArea {padding:0;}
+	.set_printArea {padding:0;} */
 
 	/* 상품상세 */
 	#productSuggestListTabs {width:28cm; padding:0; margin:0;}
