@@ -34,10 +34,15 @@
 <style>
 .codeField { margin:20px;}
 .codeField code {display:block; padding:20px;}
+.codeField>p {padding:20px; margin-top:10px;font-size:14px; background:#f2f2f2; font-family:"Courier New", monospace;}
 </style>
 <div class="codeField">
-	<code>msgboxCommon('alert','alert 메시지 넣기 ');</code>
-	<code>msgboxCommon('confirm','confirm 메시지 넣기 ');</code>
+	<code>function msgboxCommon( msgboxType, msgboxContent , functionName )</code>
+
+	<p>
+		alert : msgboxCommon('alert','메시지자리');<br>
+		confirm : msgboxCommon('confirm','메시지자리', 콜백function);
+	</p>
 </div>
 
 <script type="text/javascript">
@@ -65,16 +70,13 @@ $(function() {
 });
 
 
+
 function callback_TEST_01(){
-	alert('callback 콜백01')
-}
-function callback_TEST_02(){
-	alert('callback 콜백02')
+	alert(!!this.val());
 }
 
-msgboxCommon('alert','<strong class="color-red big">알럿입니다.</strong> <br> 알럿 <br> 알럿 ');
-msgboxCommon('confirm', '컨펌창 테스트 <br> 사용하시겠습니까??', callback_TEST_02 );
-
+msgboxCommon('alert', '<strong class="color-blue">alert 테스트</strong><br> 문구들어갑니다 <br> 문구들어갑니다 ');
+msgboxCommon('confirm', '<strong class="color-blue">confirm 테스트</strong><br> 문구들어갑니다 <br> 문구들어갑니다', callback_TEST_01 );
 </script>
 
 
