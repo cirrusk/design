@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico"> 
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
 	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
@@ -31,64 +31,56 @@
 <a href="#" class="bt-akl-blue jmb jmb-confirm">confirm (.jmb-confirm)</a>
 <button type="button" class="bt-akl-white jmb jmb-confirm-abc1">button 클릭</button>
 
-<div id="testBox" style="margin:20px 0">알럿 if else 테스트</div>
-
+<style>
+.codeField { margin:20px;}
+.codeField code {display:block; padding:20px;}
+</style>
+<div class="codeField">
+	<code>msgboxCommon('alert','alert 메시지 넣기 ');</code>
+	<code>msgboxCommon('confirm','confirm 메시지 넣기 ');</code>
+</div>
 
 <script type="text/javascript">
-	$(function() {
-		$(".jmb-confirm").msgbox({
-			type: 'confirm',
-			content: 'confirm 내용 자리 <br> 등록하시겠습니까?',
-			onClose: function(){
-				alert(!!this.val());
-			}
-		});
-
-		$(".jmb-confirm-abc1").msgbox({
-			type: 'confirm',
-			content: '<strong class="color-red big">내용 자리</strong> <br>.jmb-confirm-abc1<br> 등록하시겠습니까?',
-			onClose: function(){
-				alert(!!this.val());
-			}
-		});
-
-		$(".jmb-alert").msgbox({
-			type: 'alert',
-			content: 'URL 복사를 완료하였습니다.'
-		});
-
-
-
-
-
-if( $('#testBox').length){
-	$.msgbox({
-		id: '02', //숫자,문자 상관없음
+$(function() {
+	$(".jmb-confirm").msgbox({
 		type: 'confirm',
-		content: '<strong class="color-red big">#testBox 있음</strong>',
+		content: 'confirm 내용 자리 <br> 등록하시겠습니까?',
 		onClose: function(){
 			alert(!!this.val());
 		}
 	});
-} else {
-	$.msgbox({
-		id: '01', //숫자,문자 상관없음
+
+	$(".jmb-confirm-abc1").msgbox({
 		type: 'confirm',
-		content: '<strong class="color-red big">없음</strong>',
+		content: '<strong class="color-red big">내용 자리</strong> <br>.jmb-confirm-abc1<br> 등록하시겠습니까?',
 		onClose: function(){
 			alert(!!this.val());
 		}
 	});
+
+	$(".jmb-alert").msgbox({
+		type: 'alert',
+		content: 'URL 복사를 완료하였습니다.'
+	});
+});
+
+
+function callback_TEST_01(){
+	alert('callback 콜백01')
+}
+function callback_TEST_02(){
+	alert('callback 콜백02')
 }
 
-	});
+msgboxCommon('alert','<strong class="color-red big">알럿입니다.</strong> <br> 알럿 <br> 알럿 ');
+msgboxCommon('confirm', '컨펌창 테스트 <br> 사용하시겠습니까??', callback_TEST_02 );
+
 </script>
 
 
 
 
 <!-- 기존 레이어 alert 사용안함 : 2018.03.12
-
 <div class="layerWrapper sample01">sample01 임시 클래스 개발에서 용도에 맞게 변경하세요
 	<div class="cbox layerBox popWidS">
 		<div class="akl-alt-wrap">
@@ -110,7 +102,6 @@ if( $('#testBox').length){
 	});
 </script>
 -->
-
 
 
 </body>

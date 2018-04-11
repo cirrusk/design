@@ -675,6 +675,17 @@ function layerPopOver( btnOpenLayer , targetLayer ){
  * -------------------------------------------
  */
 
+var msgboxCounter = 0;
+function msgboxCommon( msgboxType, msgboxContent , functionName ){
+	msgboxCounter++;
+	$.msgbox({
+		id: msgboxCounter,
+		type: msgboxType,
+		content: msgboxContent,
+		onClose: functionName
+	});
+}
+
 /**
  * jquery.msgbox v8.0
  * http://jmsgbox.com
@@ -2162,3 +2173,4 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	});
 
 })(jQuery, undefined);
+
