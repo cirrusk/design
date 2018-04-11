@@ -107,6 +107,7 @@ Editor : eunmyoung Noh
 .dis-block { display: block;}
 .dis-inline-block { display: block;}/*모바일용*/
 .akl .amway-theme [role="button"] input[type="submit"], .akl .amway-theme input[type="reset"], .akl .amway-theme input[type="button"], .akl .amway-theme button, .akl .amway-theme .btn {font-weight:500;}
+input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 
 /* common > Alert & Confirm  */
 .akl-alt-wrap { background:#fff; height: auto; border: 1px solid #c0c0c0; position:relative;}
@@ -192,7 +193,7 @@ Editor : eunmyoung Noh
 .akl label {font-weight: 500;}
 .akl .form-control {box-shadow:0 0 0 rgba(0,0,0,0.075) inset;/* color:#808285; */font-size:14px;margin:0 0;}
 .akl input[type="text"],.akl input[type="password"]  { height:40px; border: solid 1px #dadada;padding:0 15px; }
-.akl input[type="date"] { height:40px; border: solid 1px #dadada; padding-left: 10px;}
+.akl input[type="date"] { height:40px; border: solid 1px #dadada; padding-left: 10px; background:#fff}
 .akl select.form-control {padding:0 30px 0 15px; }
 /* .akl input:-ms-input-placeholder { color: #808285; }
 .akl input::-webkit-input-placeholder { color: #808285; }
@@ -819,8 +820,8 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .outer-border-bottom {margin-left: 0;margin-right:0; position:relative;}
 	.akl .outer-border-bottom .tabs-toggles { margin-left: 0;margin-right: 0; }
 	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap { margin-bottom: 0 !important;}
-	.akl .outer-border-bottom:after{ content:""; position:absolute; right:-15px;  bottom:-1px; width:15px; border-bottom: 1px solid #dadada;}
-	.akl .outer-border-bottom:before { content:""; position:absolute; left:-15px; bottom:-1px; width:15px; border-bottom: 1px solid #dadada;}
+	/* .akl .outer-border-bottom:after{ content:""; position:absolute; right:-15px;  bottom:-1px; width:15px; border-bottom: 1px solid #dadada;}
+	.akl .outer-border-bottom:before { content:""; position:absolute; left:-15px; bottom:-1px; width:15px; border-bottom: 1px solid #dadada;}*/
 
 	/* common > form */
 	.form-group .address p { margin-right:0; }
