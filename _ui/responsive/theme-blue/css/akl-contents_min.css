@@ -164,6 +164,40 @@ html.scrollLock body {overflow:hidden;}
 .akl .wrapper-seek-result.reset-password input[type=text],
 .akl .wrapper-seek-result.reset-password input[type=password]{width:283px}
 
+/* ----- 마이페이지 ----- */
+.akl .message-center-wrapper,
+.akl .authorization-step-wrapper {padding:30px 30px 0; font-family:'Noto Sans KR', sans-serif;}
+
+/* 아이콘 제목 */
+.akl .icon-sub-title {position:relative; padding:0 0 40px; font-size:18px;letter-spacing:-2px; font-weight:500;}
+.icon-sub-title:after {content:''; display:block; position:absolute; top:0; left:-30px; width:20px; height:20px;}
+.icon-sub-title.message-title:after {top:7px; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
+.icon-sub-title.author-title:after {top:1px; width:22px; height:22px; background:#008fc5 url('../images/akl_common/ico_author_person.png') no-repeat left top;}
+
+.icon-title-description {padding:0 0 38px; font-size:14px;}
+.icon-title-description>p {margin:0; font-size:14px;}
+
+/* 마이페이지 > 본인인증 */
+.akl .icon-sub-title.author-title {padding-bottom:10px;}
+.authorization-step-wrapper .icon-title-description {padding-bottom:10px;}
+.authorization-step-wrapper .validation-wrapper {border-bottom:0; margin-bottom:0;}
+.authorization-step-wrapper .valid-result-box {padding:30px 0 40px; margin-bottom:0; border-bottom:1px solid #dadada;}
+.authorization-step-wrapper .next-control {text-align:center; margin-top:40px;}
+
+.result-failure-details {border-bottom:1px solid #dadada;}
+.result-failure-details .sub-title-gray {margin-bottom:20px; font-size:16px; color:#56565a;}
+.result-failure-details >div {padding:40px 0 37px;}
+.result-failure-details .box-line {border-top:1px solid #dadada;}
+.result-failure-details .st-text+p {margin-top:17px;}
+.result-failure-details>li * {font-size:14px;}
+
+.tbl-list-board.authorization {margin-bottom:20px;}
+.tbl-list-board.authorization .tr:nth-of-type(even)>div {background:#f4f4f4;}
+.tbl-list-board.authorization .mob-block>strong {display:none;}
+.tbl-list-board.authorization .tbody .mob-block>p{margin-bottom:0}
+.tbl-list-board.authorization .tbody .tr>div {border-top:0}
+
+
 /* ----- 회원가입----- */
 .akl .wrapper-memb-join {max-width: 1400px; margin: 0 auto;}
 .akl .wrapper-memb-join h2.tit-h2 {font-size:18px; color:#002f5f; padding:0 12px;}
@@ -274,7 +308,8 @@ html.scrollLock body {overflow:hidden;}
 .validation-wrapper .validation-para strong {position:relative; display:inline-block; padding-left:38px; line-height:25px; color:#002f5f; font-size:16px;}
 .validation-wrapper .validation-para strong:before {content:''; position:absolute; top:0; left:0; width:25px; height:25px; background-color:#ddd;}
 .validation-wrapper .validation-para span {display:block; margin:12px 0 20px;}
-.validation-wrapper>div.valid-type-phone .validation-para strong:before {background:url(../images/akl_common/icon_validation_mobile.png) 0 0 no-repeat;}
+.validation-wrapper>div.valid-type-phone .validation-para strong {padding-left:32px;}
+.validation-wrapper>div.valid-type-phone .validation-para strong:before {background:url(../images/akl_common/icon_validation_mobile.png) 0 0 no-repeat; top:2px; left:3px; width:22px;}
 .validation-wrapper>div.valid-type-ipin .validation-para strong:before {background:url(../images/akl_common/icon_validation_ipin.png) 0 0 no-repeat;}
 .validation-wrapper>div.valid-type-simple .validation-para strong:before {background:url(../images/akl_common/icon_validation_simple.png) 0 0 no-repeat;}
 
@@ -371,14 +406,11 @@ html.scrollLock body {overflow:hidden;}
 .form-group .select-gender .radio-wrapper + .radio-wrapper {margin-left:40px;}
 
 /* 마이페이지 - 맞춤메시지 */
-.akl .message-center-wrapper {padding:30px 30px 0; font-family:'Noto Sans KR', sans-serif;}
 .akl .message-center-wrapper .next-control {text-align:center;}
-.akl .message-title {position:relative;padding:0 0 40px;font-size:18px;letter-spacing:-2px;font-weight:500;}
-.akl .message-title:after {position:absolute; top:3px; left:-30px; content:''; display:block; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
-.akl .message-title-description {margin-bottom:0; padding:12px 0 36px;font-size:14px;}
 .akl .message-center-list {padding:0 30px; margin-top:10px;}
-.akl .message-center-wrapper .messages-numb {margin-bottom:27px; color:#0075a4;font-size:14px;font-weight:500;}
-.akl .message-center-wrapper .messages-numb a {text-decoration:underline; font-weight:inherit; display:inline-block; padding:0 3px;}
+.akl .message-center-wrapper .messages-numb {margin-bottom:27px;font-size:14px;font-weight:500;}
+.akl .message-center-wrapper .messages-numb a {text-decoration:underline; font-weight:inherit; display:inline-block; padding:0 3px; color:#0075a4;}
+.akl .amway-theme.message-center-wrapper .messages-numb a:hover{text-decoration:underline !important;}
 
 /* 마이페이지 - 맞춤메시지 목록 - col width */
 .amway-theme .state-notyet>div a {font-weight:500;}
@@ -454,12 +486,10 @@ html.scrollLock body {overflow:hidden;}
 .nca-flight-data.type-domestic>li {width:50%;}
 .nca-flight-data.type-domestic .box-left {padding-right:10px;}
 .nca-flight-data.type-domestic .box-right {padding-left:10px;}
-
 .nca-flight-data.type-abroad>li {width:32%;}
 .nca-flight-data.type-abroad .box-left {padding-right:10px;}
 .nca-flight-data.type-abroad .box-center {width:34%; padding-left:10px; padding-right:10px;}
 .nca-flight-data.type-abroad .box-right {padding-left:10px;}
-
 
 /* NCA 항공메시지 - 비행정보 */
 .flight-info .txt-reserve-details {background:url(../images/akl_common/bg_nca_airplane_pc.png) no-repeat 50% 50%;}
@@ -531,6 +561,7 @@ html.scrollLock body {overflow:hidden;}
 	.akl .tbl-list-board .amw-checkbox-wrap {margin:0 10px 0 0;}
 	.tbl-list-board, .tbl-list-board .tr, .tbl-list-board .thead, .tbl-list-board .tbody {display:block;}
 	.tbl-list-board .thead .tr>strong {display:inline-block; padding-right:0; border:0; background:none; vertical-align:middle;}
+	.tbl-list-board.tbl-customMessage .thead .tr>strong {border-bottom:0;}
 	.tbl-list-board .thead .tr {background:#f4f4f4;}
 	.tbl-list-board .thead .cell-label>label {padding-bottom:2px;}
 	.tbl-list-board .thead .cell-label label>span {top:-1px !important;}
@@ -626,10 +657,24 @@ html.scrollLock body {overflow:hidden;}
 	.akl .wrapper-memb-join.prev-step-fold #register-step-page .form-control + .bt-akl-white {margin-left:0 !important;}
 	.akl .wrapper-memb-join.prev-step-fold .new-ibo-reg.fold-hiddenbox .boxtype-form-sponsor {border-top:1px solid #e3e3e3;}
 
-	/* 마이페이지 - 맞춤메시지 */
-	.akl .message-center-wrapper {padding:30px 0 0;}
+	/* 마이페이지 - 공통 */
+	.akl .message-center-wrapper, .akl .authorization-step-wrapper {padding:30px 0 0;}
 	.akl .message-title:after {left:0;}
 	.akl .message-title, .akl .message-title-description {padding-left:30px;}
+	.akl .icon-sub-title {padding-left:30px;}
+	.icon-title-description {padding-left:30px;}
+	.icon-sub-title:after {left:0;}
+
+	/* 마이페이지 - 본인인증 */
+	.tbl-list-board.authorization .tbody .mob-block {overflow:hidden;}
+	.tbl-list-board.authorization .tbody .mob-block>strong{display:block;float:left; width:35%;}
+	.tbl-list-board.authorization .tbody .mob-block>p{float:left; width:65%; margin-bottom:0}
+	.tbl-list-board.authorization .tr>div.mob-block:first-child {padding-top:17px}
+	.tbl-list-board.authorization .tr>div.mob-block {padding:0 20px 15px;}
+	.tbl-list-board.authorization .tr {border-top:0;}
+	.tbl-list-board.authorization .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
+
+	/* 마이페이지 - 맞춤메시지 */
 	.akl .message-center-wrapper .messages-numb {margin-bottom:20px;}
 	.akl .message-center-list {padding:0; margin-top:0;}
 	.akl .message-center-list .shipping-top {margin:0 0 10px}
