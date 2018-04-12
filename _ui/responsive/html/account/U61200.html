@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>구매권한 양도/양수</title>
+	<title>쿠폰관리</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -36,8 +36,8 @@
 			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
 					<li><a href="homepage-logged-in.html">홈</a></li>
-					<li><a href="#">나의 쇼핑정보</a></li>
-					<li>구매권한 양도/양수</li>
+					<li><a href="#">마이페이지</a></li>
+					<li>쿠폰관리</li>
 				</ol>
 			</div>
 		</div>
@@ -55,7 +55,7 @@
 											</div>
 										</div>
 										<div class="user-info">
-											<span class="user-name">홍길동&김길동(디자인 임시)</span>
+											<span class="user-name">홍길동&김길동</span>
 											<span class="user-id">회원번호 : 7480002</span>
 										</div>
 									</div>
@@ -63,7 +63,7 @@
 										<div class="amway-theme">
 											<div class="jump-to-wrapper">
 												<select class="js-jump-to-selection form-control no-uppercase-form-control" aria-hidden="true" title="간편가입 선택">
-													<option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize" selected>간편가입</option>
+													<option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize" selected>개인정보수정</option>
 												</select>
 												<input type="button" class="js-jump-to-selection-btn" value="이동">
 											</div>
@@ -77,577 +77,114 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="title-box">
-				<div class="product-list-page-title"><h1>구매권한 양도/양수</h1></div>
-			</div>
+			<h1 class="page-title">
+				<i class="fas fa-percent"></i>
+				<span>쿠폰관리</span>
+			</h1>
 
-			<div class="amway-theme">
-				<div class="navigation-tabs-container order-history-container js-order-history-container">
-					<div class="outer-border-bottom">
-						<ul class="tabs-toggles case01">
-							<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#order-right"> <span class="toggle-text">구매권한 양도/사용</span> </a> </li>
-							<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#order-right-list"> <span class="toggle-text">구매권한 양도/사용내역</span> </a> </li>
+			<div class="mypage-cupon-managment">
+				<p class="num-cupon">총 쿠폰 수 :  <strong>999</strong>개</p>
+				<div class="list-content mycupon">
+					<div class="row list-row-title">
+						<div class="col-ak-10 mycupon-num">쿠폰번호</div>
+						<div class="col-ak-10 mycupon-name">쿠폰명</div>
+						<div class="col-ak-10 mycupon-day">사용기간</div>
+						<div class="col-ak-10 mycupon-way">상태</div>
+					</div>
+					<div class="row content-list">
+						<div class="row con-list-item">
+							<div class="col-ak-10 mycupon-num">
+								<span class="txte-wrap">11803080015159</span>
+							</div>
+							<div class="col-ak-10 mycupon-name">
+								<span class="txte-wrap">엣모스피어 드라이브 필터 할인 쿠폰</span>
+							</div>
+							<div class="col-ak-10 mycupon-day">
+								<span class="tite-label">사용기간</span>
+								<span class="txte-wrap">2018-04-01 ~ 2018-08-31</span>
+							</div>
+							<div class="col-ak-10 mycupon-way">
+								<span class="txte-wrap">사용가능</span>
+							</div>
+						</div>
+					</div>
+					<div class="row content-list">
+						<div class="row con-list-item">
+							<div class="col-ak-10 mycupon-num">
+								<span class="txte-wrap">00000000000000</span>
+							</div>
+							<div class="col-ak-10 mycupon-name">
+								<span class="txte-wrap">쿠폰명 쿠폰명 쿠폰명 쿠폰명 쿠폰명</span>
+							</div>
+							<div class="col-ak-10 mycupon-day">
+								<span class="tite-label">사용기간</span>
+								<span class="txte-wrap">2018-02-01 ~ 2018-05-30</span>
+							</div>
+							<div class="col-ak-10 mycupon-way">
+								<span class="txte-wrap">사용가능</span>
+							</div>
+						</div>
+					</div>
+					<div class="row content-list">
+						<div class="row con-list-item">
+							<div class="col-ak-10 mycupon-num">
+								<span class="txte-wrap">00000000000000</span>
+							</div>
+							<div class="col-ak-10 mycupon-name">
+								<span class="txte-wrap">10만원 이상 1만원 할인</span>
+							</div>
+							<div class="col-ak-10 mycupon-day">
+								<span class="tite-label">사용기간</span>
+								<span class="txte-wrap">2018-02-01 ~ 2018-06-02</span>
+							</div>
+							<div class="col-ak-10 mycupon-way">
+								<span class="txte-wrap">사용완료</span>
+							</div>
+						</div>
+					</div>
+					<div class="row content-list">
+						<div class="row con-list-item">
+							<div class="col-ak-10 mycupon-num">
+								<span class="txte-wrap">00000000000000</span>
+							</div>
+							<div class="col-ak-10 mycupon-name">
+								<span class="txte-wrap">스킨 리피니셔 출시 프로모션</span>
+							</div>
+							<div class="col-ak-10 mycupon-day">
+								<span class="tite-label">사용기간</span>
+								<span class="txte-wrap">2017-11-01 ~ 2018-04-01</span>
+							</div>
+							<div class="col-ak-10 mycupon-way">
+								<span class="txte-wrap">만료</span>
+							</div>
+						</div>
+					</div>
+					<div class="search-no-result line">
+						<p>쿠폰 내역이 없습니다.</p>
+					</div>
+				</div>
+
+				<div class="cont-inarea">
+					<ul class="list-type2">
+						<li>한번 사용한 구매권한은 반품 시 복구되지 않습니다.</li>
+					</ul>
+				</div>
+
+				<div class="paging-wrap">
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
 						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
 					</div>
-					<div class="tab-content tabs-content-blocks">
-						<div class="tab-pane content-block active" id="order-right">
-							<h2 class="hidden">구매권한 양도/사용</h2>
-							<div class="total-transfer">총 양도/사용 가능 구매권한 <span>(210)</span></div>
-							<div class="shipping-form-wrapper purchase">
-								<div class="form-s">
-									<input type="text" id="" name="" placeholder="구매권한명, 양도인 회원번호를 입력하세요." value="" class="input-st" title="구매권한명, 양도인 회원번호 입력">
-									<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
-								</div>
-							</div>
-
-							<div class="list-content">
-								<div class="row list-row-title">
-									<div class="col-ak-10 all-ceek">
-										<label class="checkbox-element-wrapper">
-											<input id="selectAll" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-											<span class="_checkbox-element-global-span"></span>
-										</label>
-									</div>
-									<div class="col-ak-10 pur-name">구매권한명</div>
-									<div class="col-ak-10 pur-prod">적용제품</div>
-									<div class="col-ak-10 pur-quitey">수량</div>
-									<div class="col-ak-10 pur-day">사용가능기간</div>
-									<div class="col-ak-10 pur-day">양도가능기간</div>
-									<div class="col-ak-10 pur-grantor">양도인</div>
-									<div class="col-ak-10 pur-btn"></div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name">
-											<span class="txte-wrap">
-												시그니처 셀렉트 프로３<br>
-												<em>(양도대상: 유자격DIA미만)</em>
-											</span>
-										</div>
-										<div class="col-ak-10 pur-prod">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1634] 286362L<br><strong><a href="#">시그니처 셀렉트 수분광채잡티 키트 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-quitey">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">50</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">사용가능기간</span>
-											<span class="txte-wrap">2018-02-26 ~ 2018-03-05</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">양도가능기간</span>
-											<span class="txte-wrap">2018-03-05</span>
-										</div>
-										<div class="col-ak-10 pur-grantor">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">Amway</span>
-										</div>
-										<div class="col-ak-10 pur-btn">
-											<span class="txte-btn">
-												<button type="button" id="OrderRight_AddCart" class="bt-akl-blue mini">장바구니</button>
-												<button type="button" id="U70610_lp1" class="bt-akl-blue mini">양도하기</button>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name">
-											<span class="txte-wrap">
-												시그니처 셀렉트 프로1<br>
-												<em>(양도대상: 유자격DIA미만)</em>
-											</span>
-										</div>
-										<div class="col-ak-10 pur-prod">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1632] 286360L<br><strong><a href="#">시그니처 셀렉트 주름탄력잡티 키트 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-quitey">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">100</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">사용가능기간</span>
-											<span class="txte-wrap">2018-02-07 ~ 2018-02-20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">양도가능기간</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-grantor">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">Amway</span>
-										</div>
-										<div class="col-ak-10 pur-btn">
-											<div class="txte-btn">
-												<button type="button" id="OrderRight_AddCart" class="bt-akl-blue mini">장바구니</button>
-												<button type="button" id="U70610_lp1" class="bt-akl-blue mini">양도하기</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name">
-											<span class="txte-wrap">
-												뉴트리라이트 비타민 젤리 양도양수
-											</span>
-										</div>
-										<div class="col-ak-10 pur-prod">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1234] 280223L<br><strong><a href="#">뉴트리라이트 비타민 젤리 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-quitey">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">사용가능기간</span>
-											<span class="txte-wrap">2018-02-07 ~ 2018-02-20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">양도가능기간</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-grantor">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">7480001<em>김태희</em></span>
-										</div>
-										<div class="col-ak-10 pur-btn">
-											<div class="txte-btn">
-												<button type="button" id="OrderRight_AddCart" class="bt-akl-blue mini">장바구니</button>
-												<button type="button" id="" class="bt-akl-blue mini" disabled>양도하기</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name">
-											<span class="txte-wrap">
-												뉴트리라이트 비타민 젤리 양도양수
-											</span>
-										</div>
-										<div class="col-ak-10 pur-prod">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1234] 280223L<br><strong><a href="#">뉴트리라이트 비타민 젤리 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-quitey">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">사용가능기간</span>
-											<span class="txte-wrap">2018-02-07 ~ 2018-02-20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">양도가능기간</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-grantor">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">7480005<br>오순희</span>
-										</div>
-										<div class="col-ak-10 pur-btn">
-											<div class="txte-btn">
-												<button type="button" id="OrderRight_AddCart" class="bt-akl-blue mini G10000_lp3">장바구니</button>
-												<button type="button" id="" class="bt-akl-blue mini" disabled>양도하기</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name">
-											<span class="txte-wrap">
-												뉴트리키즈프로모션양도양수
-											</span>
-										</div>
-										<div class="col-ak-10 pur-prod">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1234] 278627L<br><strong><a href="#">뉴트리키즈 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-quitey">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">사용가능기간</span>
-											<span class="txte-wrap">2018-02-07 ~ 2018-02-20</span>
-										</div>
-										<div class="col-ak-10 pur-day">
-											<span class="tite-label">양도가능기간</span>
-											<span class="txte-wrap">2018-03-05</span>
-										</div>
-										<div class="col-ak-10 pur-grantor">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">Amway</span>
-										</div>
-										<div class="col-ak-10 pur-btn">
-											<div class="txte-btn">
-												<button type="button" id="OrderRight_AddCart" class="bt-akl-blue mini G10000_lp3">장바구니</button>
-												<button type="button" id="" class="bt-akl-blue mini" disabled>양도하기</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="search-no-result line">
-									<p>사용 가능한 구매권한이 없습니다.</p>
-								</div>
-								<div class="search-no-result line">
-									<p>검색 결과가 없습니다.<br>
-									구매권한명 또는 양도인 회원번호를 확인하신 후 다시 검색해 주세요.</p>
-								</div>
-							</div>
-
-							<div class="cont-inarea">
-								<div class="d-left">
-									<a href="#" id="U70610_lp2" class="bt-akl-blue">선택 구매권한 양도</a>
-								</div>
-
-								<div class="d-right">
-									<ul class="list-type2">
-										<li>한번 사용한 구매권한은 반품 시 복구되지 않습니다.</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="paging-wrap">
-								<div class="paging">
-									<a href="#" class="prev">맨 처음 페이지</a>
-									<a href="#" class="before">이전 페이지</a>
-									<ul>
-										<li><a href="#">1</a></li>
-										<li class="on"><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-									</ul>
-									<a href="#" class="after">다음페이지</a>
-									<a href="#" class="next">맨 마지막 페이지</a>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="tab-pane content-block" id="order-right-list">
-							<h2 class="hidden">구매권한 양도/사용내역</h2>
-							<div class="total-transfer">총 양도/사용 구매권한 <span>(210)</span></div>
-
-							<div class="shipping-form-wrapper purchase">
-								<div class="form-s">
-									<input type="text" id="" name="" placeholder="구매권한명, 양수인 회원번호를 입력하세요." value="" class="input-st" title="구매권한명, 양수인 회원번호 입력">
-									<button type="submit" class="btn btn-primary"><span class="hidden-sm hidden-xs">검색</span></button>
-								</div>
-								<div class="button-group">
-									<button type="button" class="on">최신순</button>
-									<button type="button">사용</button>
-									<button type="button">미사용</button>
-								</div>
-							</div>
-							
-							<div class="list-content history">
-								<div class="row list-row-title">
-									<div class="col-ak-10 all-ceek2">
-										<label class="checkbox-element-wrapper">
-											<input id="selectAll" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-											<span class="_checkbox-element-global-span"></span>
-										</label>
-									</div>
-									<div class="col-ak-10 pur-name2">구매권한명</div>
-									<div class="col-ak-10 pur-prod2">적용제품</div>
-									<div class="col-ak-10 pur-assignee">양수인</div>
-									<div class="col-ak-10 pur-transferer">양도인</div>
-									<div class="col-ak-10 pur-transfer-date">양도일</div>
-									<div class="col-ak-10 pur-day-use">사용일</div>
-									<div class="col-ak-10 pur-condition">상태</div>
-									<div class="col-ak-10 pur-btn2"></div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek2">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name2">
-											<span class="txte-wrap">시그니처 셀렉트 프로３</span>
-										</div>
-										<div class="col-ak-10 pur-prod2">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1634] 286362L<br><strong><a href="#">시그니처 셀렉트 수분광채 잡티 키트 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-assignee">
-											<span class="tite-label">양수인</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-transferer">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">Amway</span>
-										</div>
-										<div class="col-ak-10 pur-transfer-date">
-											<span class="tite-label">양도일</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-day-use">
-											<span class="tite-label">사용일</span>
-											<span class="txte-wrap">2018-02-26</span>
-										</div>
-										<div class="col-ak-10 pur-condition">
-											<span class="tite-label">상태</span>
-											<span class="txte-wrap">사용<em><a href="#" title="상세화면 이동">232275428</a></em></span>
-										</div>
-										<div class="col-ak-10 pur-btn2">
-											<span class="txte-btn">
-												<button type="button" id="" class="bt-akl-blue mini">양도취소</button>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek2">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name2">
-											<span class="txte-wrap">시그니처 셀렉트 프로１</span>
-										</div>
-										<div class="col-ak-10 pur-prod2">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1634] 286360L<br><strong><a href="#">시그니처 셀렉트 주름탄력잡티 키트 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-assignee">
-											<span class="tite-label">양수인</span>
-											<span class="txte-wrap">7480005<em>양수인</em></span>
-										</div>
-										<div class="col-ak-10 pur-transferer">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">7480001<em>본인</em></span>
-										</div>
-										<div class="col-ak-10 pur-transfer-date">
-											<span class="tite-label">양도일</span>
-											<span class="txte-wrap">2018-02-26</span>
-										</div>
-										<div class="col-ak-10 pur-day-use">
-											<span class="tite-label">사용일</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-condition">
-											<span class="tite-label">상태</span>
-											<span class="txte-wrap">미사용</span>
-										</div>
-										<div class="col-ak-10 pur-btn2">
-											<span class="txte-btn">
-												<button type="button" id="" class="bt-akl-blue mini">양도취소</button>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek2">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name2">
-											<span class="txte-wrap">
-												뉴트리라이트 비타민 젤리 양도양수
-											</span>
-										</div>
-										<div class="col-ak-10 pur-prod2">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1234] 280223L<br><strong><a href="#">뉴트리라이트 비타민 젤리 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-assignee">
-											<span class="tite-label">양수인</span>
-											<span class="txte-wrap">7480002<em>양수인</em></span>
-										</div>
-										<div class="col-ak-10 pur-transferer">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">7480001<em>본인</em></span>
-										</div>
-										<div class="col-ak-10 pur-transfer-date">
-											<span class="tite-label">양도일</span>
-											<span class="txte-wrap">2018-02-07</span>
-										</div>
-										<div class="col-ak-10 pur-day-use">
-											<span class="tite-label">사용일</span>
-											<span class="txte-wrap">2018-02-09</span>
-										</div>
-										<div class="col-ak-10 pur-condition">
-											<span class="tite-label">상태</span>
-											<span class="txte-wrap">사용</span>
-										</div>
-										<div class="col-ak-10 pur-btn2">
-											<span class="txte-btn">
-												<button type="button" id="" class="bt-akl-blue mini">양도취소</button>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek2">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name2">
-											<span class="txte-wrap">뉴트리키즈프로모션양도양수</span>
-										</div>
-										<div class="col-ak-10 pur-prod2">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1234] 280223L<br><strong><a href="#">뉴트리라이트 비타민 젤리 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-assignee">
-											<span class="tite-label">양수인</span>
-											<span class="txte-wrap">7480001<em>본인</em></span>
-										</div>
-										<div class="col-ak-10 pur-transferer">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">7480005<em>양도인</em></span>
-										</div>
-										<div class="col-ak-10 pur-transfer-date">
-											<span class="tite-label">양도일</span>
-											<span class="txte-wrap">2018-01-15</span>
-										</div>
-										<div class="col-ak-10 pur-day-use">
-											<span class="tite-label">사용일</span>
-											<span class="txte-wrap">2018-01-15</span>
-										</div>
-										<div class="col-ak-10 pur-condition">
-											<span class="tite-label">상태</span>
-											<span class="txte-wrap">사용<em><a href="#" title="상세화면 이동">232275428</a></em></span>
-										</div>
-										<div class="col-ak-10 pur-btn2">
-											<span class="txte-btn">
-												<button type="button" id="" class="bt-akl-blue mini" disabled>양도취소</button>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 all-ceek2">
-											<label class="checkbox-element-wrapper">
-												<input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
-												<span class="_checkbox-element-global-span"></span>
-											</label>
-										</div>
-										<div class="col-ak-10 pur-name2">
-											<span class="txte-wrap">뉴트리키즈프로모션양도양수</span>
-										</div>
-										<div class="col-ak-10 pur-prod2">
-											<span class="tite-label">적용제품</span>
-											<span class="txte-wrap">[1234] 280223L<br><strong><a href="#">뉴트리키즈 프로모션</a></strong></span>
-										</div>
-										<div class="col-ak-10 pur-assignee">
-											<span class="tite-label">양수인</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-transferer">
-											<span class="tite-label">양도인</span>
-											<span class="txte-wrap">Amway</span>
-										</div>
-										<div class="col-ak-10 pur-transfer-date">
-											<span class="tite-label">양도일</span>
-											<span class="txte-wrap">-</span>
-										</div>
-										<div class="col-ak-10 pur-day-use">
-											<span class="tite-label">사용일</span>
-											<span class="txte-wrap">2018-01-09</span>
-										</div>
-										<div class="col-ak-10 pur-condition">
-											<span class="tite-label">상태</span>
-											<span class="txte-wrap">사용<em><a href="#" title="상세화면 이동">232275428</a></em></span>
-										</div>
-										<div class="col-ak-10 pur-btn2">
-											
-										</div>
-									</div>
-								</div>
-								<div class="search-no-result line">
-									<p>구매권한 양도/사용 내역이 없습니다.</p>
-								</div>
-								<div class="search-no-result line">
-									<p>검색 결과가 없습니다.<br>
-									구매권한명 또는 양수인 회원번호를 확인하신 후 다시 검색해 주세요.</p>
-								</div>
-							</div>
-
-							<div class="cont-inarea">
-								<div class="d-left">
-									<a href="#" class="bt-akl-blue">선택 구매권한 양도취소</a>
-								</div>
-
-								<div class="d-right">
-									<ul class="list-type2">
-										<li>한번 사용한 구매권한은 반품 시 복구되지 않습니다.</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="paging-wrap">
-								<div class="paging">
-									<a href="#" class="prev">맨 처음 페이지</a>
-									<a href="#" class="before">이전 페이지</a>
-									<ul>
-										<li><a href="#">1</a></li>
-										<li class="on"><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
-										<li><a href="#">5</a></li>
-									</ul>
-									<a href="#" class="after">다음페이지</a>
-									<a href="#" class="next">맨 마지막 페이지</a>
-								</div>
-							</div>
-
-
-
-						</div>
-
-					</div>
-				 </div>
+				</div>
 			</div>
 		</div>
 
