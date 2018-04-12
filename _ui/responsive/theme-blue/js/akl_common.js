@@ -41,6 +41,9 @@ $(function(){
 		$('.tooltip-wrap').slideToggle(0);
 	});
 
+	//마이페이지 메인 : li 여백처리
+	mypageIndex_list();
+
 	//인쇄하기 : 작업중
 	printPage();
 
@@ -193,7 +196,7 @@ function loadingLayerClose(){
 	return false;
 }
 
-/* 인쇄하기  : 작업중 */
+/* 마이페이지  > 맞춤메시지 : 인쇄하기 (작업중) */
 function printPage(){
 	var $btnPrint_layer = $('.layerWrapper .btn-print-it'); //레이어에서 프린트 버튼 클릭 시
 	$btnPrint_layer.each(function(){
@@ -210,6 +213,18 @@ function printPage(){
 
 	var btn_PrintPage = $('.btn-printPage'); //전체 인쇄버튼
 	var set_PrintArea = $('.set_printArea'); //인쇄영역 설정
+}
+
+/* 마이페이지 메인 : li 여백처리 */
+function mypageIndex_list(){
+	var  mypageBlockList = $('.mypage-block-list');
+	if (!mypageBlockList.length) {return;}
+	mypageBlockList.each(function(){
+		var winWidth = $(window).width();
+		var _ul = $(this).find('>ul');
+		_ul.find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
+		_ul.find('li').filter(':nth-of-type(-n+3)').addClass('nth-3n');
+	});
 }
 
 /** ------------------------------------------
