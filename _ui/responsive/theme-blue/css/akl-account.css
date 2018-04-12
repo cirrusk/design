@@ -564,13 +564,13 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 
 .akl .list-content .list-row-title > div.mycupon-num {width:20%;padding:0 0 0 20px;}
 .akl .list-content .list-row-title > div.mycupon-name {width:45%;padding:0 10px 0 0;}
-.akl .list-content .list-row-title > div.mycupon-day {width:20%;}
-.akl .list-content .list-row-title > div.mycupon-way {width:15%;}
+.akl .list-content .list-row-title > div.mycupon-day {width:23%;}
+.akl .list-content .list-row-title > div.mycupon-way {width:12%;}
 
 .akl .content-list .con-list-item > div.mycupon-num {width:20%;padding:0 0 0 20px;}
 .akl .content-list .con-list-item > div.mycupon-name {width:45%;padding:0 10px 0 0;}
-.akl .content-list .con-list-item > div.mycupon-day {width:20%;}
-.akl .content-list .con-list-item > div.mycupon-way {width:15%;}
+.akl .content-list .con-list-item > div.mycupon-day {width:23%;}
+.akl .content-list .con-list-item > div.mycupon-way {width:12%;}
 
 /* common > table list */
 .akl .col-ak-10 {width:100%;}
@@ -582,7 +582,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;}
 
-.akl .content-list .con-list-item {display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;}
+.akl .content-list .con-list-item {display:table;width:100%;vertical-align:middle;box-sizing:border-box;}
 .akl .content-list .con-list-item > div {display:table-cell;vertical-align:middle;box-sizing:border-box;word-break: break-all;}
 .akl .con-list-item span.txte-wrap strong {color:#0075a4;font-weight:500;font-size:14px !important;}
 .akl .con-list-item span.txte-wrap strong a {font-weight:500;}
@@ -880,6 +880,10 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 @media (max-width: 1024px) { 
 	.akl .account-profile__editor .form-group .col-md-4.email-id { width:50%} 
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom { width:50%}
+	
+	/* 쿠폰괸리 */
+	h1.page-title span {padding-left:25px;}
+	h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px;}
 }
 
 @media (max-width: 768px) {  
@@ -1211,16 +1215,20 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 	.refund-box {padding:18px 20px;}
 	
 	/* 마이페이지 > 쿠폰관리 */
+	h1.page-title span {padding-left:25px;}
+	h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px;}
+
 	.akl .list-content.mycupon .list-row-title {padding:0 0;height:1px;border-bottom:0 none;}
 	.akl .list-content .list-row-title > div.mycupon-num {display:none}
 	.akl .list-content .list-row-title > div.mycupon-name {display:none}
 	.akl .list-content .list-row-title > div.mycupon-day {display:none}
 	.akl .list-content .list-row-title > div.mycupon-way {display:none}
 
-	.akl .content-list .con-list-item > div.mycupon-num {width:100%;padding:0 15px;}
-	.akl .content-list .con-list-item > div.mycupon-name {width:100%;padding:0 15px;}
-	.akl .content-list .con-list-item > div.mycupon-day {width:100%;padding:0 15px;}
-	.akl .content-list .con-list-item > div.mycupon-way {width:100%;padding:0 15px;}
+	.akl .content-list .con-list-item > div.mycupon-num {width:100%;padding:0 15px;text-align:left;}
+	.akl .content-list .con-list-item > div.mycupon-name {width:100%;padding:0 15px;text-align:left;}
+	.akl .list-content .content-list .con-list-item > div.mycupon-name span.txte-wrap {color:#002f5f;font-weight:500}
+	.akl .content-list .con-list-item > div.mycupon-day {width:100%;padding:0 15px;text-align:left;}
+	.akl .content-list .con-list-item > div.mycupon-way {width:100%;padding:0 15px;text-align:left;}
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 제품리스트 */
 	.shopping-th .th-tit.th-head {display:none;}
