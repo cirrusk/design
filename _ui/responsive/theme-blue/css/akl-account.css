@@ -78,6 +78,143 @@ Version : AKL Hybris UIUX 1.0
 .helping-people li:first-child span:before {display:none;}
 .helping-people li span img { vertical-align: middle;} 
 
+/*** 회원가입 > 포인트관리  ***/
+.pointe-body {padding:30px 0;}
+.poit-contents {padding:25px 0;}
+.point-title {clear:both;display:block;padding:0 0 10px}
+.point-title:after {clear:both;display:block;content:''}
+.point-title .tit {float:left;color:#002f5f;font-size:14px;font-weight:500;}
+.point-title .money {float:left;color:#56565a;font-size:14px;padding-left:30px;}
+.po-list {padding:10px 0 0}
+.po-list p.po-timag {font-size:14px;padding:30px 0 5px;margin:0 0;font-weight:500}
+.point-management .form-group {padding:15px 0 0}
+.point-management .form-group .date-range-select {/*width:247px !important;*/margin-top:10px !important;}
+.point-management .date-form-group {padding:10px 0 0}
+.point-management .date-form-group button {margin-left:10px; min-width: 95px}
+.point-management .form-group .box-date-select {width:200px;}
+.point-management .form-group .box-date-select input{width:100%;}
+
+.point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 0 10px;}
+.akl .datepicker-dropdown:before,
+.akl .datepicker-dropdown:after { display: none}
+
+.table-point-wrapper {width:100%;padding:28px 0 0}
+.table-point-wrapper ul {width:100%;border-top:1px solid #e3e3e3;}
+.table-point-wrapper ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;}
+.table-point-wrapper ul li.thead-tit span {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;}
+span.day-txt, div.day-txt {width:15%;text-align:left;}
+span.order-return-txt, div.order-divison {width:18%;text-align:center;}
+span.division-txt, div.division-txt {width:34%;text-align:center;}
+span.tobe-earned, span.earning-used,span.available-point {width:11%;}
+div.tobe-earned, div.earning-used, div.available-point {width:11%;}
+
+.table-point-wrapper ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;}
+.table-point-wrapper ul li.tbody div {display:table-cell;vertical-align:middle;font-size:14px;}
+.table-point-wrapper ul li.tbody span {font-size:14px;vertical-align:middle;}
+.table-point-wrapper ul li.tbody:nth-child(odd) {background:#f4f4f4;}
+.table-point-wrapper.mpoint ul li.tbody {border-bottom:1px solid #dadada;}
+.table-point-wrapper.mpoint ul li.tbody:nth-child(odd) {background:#fff;}
+.table-point-wrapper ul li.tbody.no-data {padding:16px 0;border-bottom:1px solid #dadada;}
+.table-point-wrapper ul li.tbody.no-data div.no-list {display:table-cell;text-align:center;width:100%;}
+ul li.tbody div.tobe-earned {text-align:right;padding:0 2% 0 0;}
+ul li.tbody div.earning-used {text-align:right;padding:0 2% 0 0;}
+ul li.tbody div.available-point {text-align:right;padding:0 2% 0 0;}
+.mob-earned-txt,.mob-earning-txt,.mob-available-txt,.mob-order-txt {display:none;}
+
+span.name-txt {text-align:center;width:19%;}
+span.m-point-look {text-align:center;width:26%;}
+span.apply-conver {text-align:center;width:30%;}
+span.request-conver {text-align:center;width:25%;}
+
+ul li.tbody div.name-txt {text-align:center;width:19%;}
+ul li.tbody div.no-point-txt {text-align:center;width:81%;font-size:14px;line-height:18px;}
+ul li.tbody div.m-point-look {text-align:center;width:26%;}
+ul li.tbody div.apply-conver {text-align:center;width:30%;}
+ul li.tbody div.request-conver {text-align:center;width:25%;}
+
+.mob-business, .mob-look-txt, .mob-apply-txt, .mob-request-txt {display:none;}
+ul li.tbody div.mob-ttoy {display:none;}
+.member-point-body {border-top:1px solid #dadada;margin-top:30px}
+.paging.pointer {padding:30px 0;}
+
+.table-point-wrapper.member span.order-return-txt {width:15%;}
+.table-point-wrapper.member span.division-txt {width:26%;}
+.table-point-wrapper.member ul li.tbody div.order-divison {width:15%;text-align:center;}
+.table-point-wrapper.member ul li.tbody div.division-txt {width:26%;text-align:center;}
+
+.akl .datepicker .datepicker-days .table-condensed tbody tr td.day.active {color:#fff;}
+
+/* 회원가입 > M포인트 전환 popup */
+.pop-switch-logo {text-align:right;}
+.pop-switch-points-list {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;padding:20px 0 10px;margin-top:10px;}
+.pop-switch-poconts {padding:25px 0;}
+.pop-switch-poconts .form-group {padding:10px 0 0}
+.pop-switch-poconts .form-group span {display:inline-block;padding-left:5px;}
+.pop-switch-poconts .form-group span:first-child {padding-left:0;}
+
+.pop-switch-poconts .form-group.pop-cardnum span {width:22%;}
+.pop-switch-poconts .form-group.pop-cvv span:first-child {width:22%;}
+.pop-switch-poconts .form-group.pop-password span:first-child {width:22%;}
+
+/* 회원가입 > 간편가입 */
+.akl .easy-join {width:100%;padding:20px 0 0}
+.akl .easy-join .form-group .form-item-row {width:70%;}
+.akl .easy-join .form-group .form-item-row.telephone select {width:30%;vertical-align:top}
+.akl .easy-join .form-group .form-item-row.telephone input {width:68%;vertical-align:top}
+.akl .easy-join .form-group .form-item-row.commurl input {width:98.8%;}
+.akl .easy-join .form-group .form-item-row .col-xs-8 {padding:0 0;}
+.akl .easy-join .form-group .form-item-row .col-xs-4 {padding:0 0;}
+.btn-cacao {display:none;}
+
+.body-alert-txt {clear:both;display:block;font-size:14px;font-weight:500;letter-spacing:-1px;padding:5px 0 0}
+
+
+/* 회원가입 > 나의 위시리스트 > 리스트 */
+.akl .create-new-shopping-list-container {margin-bottom:0 !important;}
+.akl .create-new-shopping-list-container .create-shopping-list-form .new-shopping-list-row .description {padding:0 0 10px;font-size:14px !important;}
+.akl .create-new-shopping-list-container .create-shopping-list-form .new-shopping-list-row label {font-size:14px !important;}
+.akl .cart-content-wrapper .amway-theme .accordion-element {margin-bottom:30px !important;}
+.akl .create-new-shopping-list-container .create-shopping-list-form .shopping-list-input {font-size:14px !important;}
+.akl .shopping-list-row-button-wrapper {padding:0 0 20px !important;}
+.akl .create-new-shopping-list-container .create-shopping-list-form h6 {font-weight:500;}
+
+.wish-list-item {clear:both;display:block;}
+.wish-list-item:after {clear:both;display:block;content:''}
+.list-headers {clear:both;display:block;background:#f4f4f4;padding:0px 0;font-size:13px;color:#002f5f;font-weight:500;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.field-name {display:inline-block;vertical-align:middle;width:30%;}
+.field-name label {vertical-align:middle;}
+.field-memo {display:inline-block;vertical-align:middle;width:65%;}
+.list-details {clear:both;display:block;padding:20px 14px;vertical-align:middle;}
+.list-details:nth-child(odd) {background:#f4f4f4}
+.wisth-name {vertical-align:top;font-weight:500;padding-left:15px}
+.wisth-name strong {color:#0075a4;font-weight:500;font-size:14px;}
+.wisth-name em {color:#56565a;}
+.wisth-info {vertical-align:top;font-weight:500;padding:0 0;font-size:14px;line-height:22px;}
+
+/* 회원가입 > 나의 위시리스트 > 상세보기 */
+.akl .new-shopping-list-detail .product-list-page-title span {font-family:'Noto Sans KR', sans-serif;font-weight:500;letter-spacing:-0.05em}
+.akl .txt-detail-wish .detail-content span {font-weight:500;font-size:14px;}
+.akl .txt-detail-wish .detail-content.col-xs-12 {padding:0 0;}
+.akl .txt-detail-wish .detail-content label {font-weight:500;font-size:14px;padding:10px 0 0;}
+.akl .txt-detail-wish .detail-content input {font-weight:400;}
+.akl  #ShopListDetailForm .left-content {font-weight:500;font-size:14px;}
+.akl .amway-theme .accordion-element .accordion-panel-title .title-element.accordion-header-icon {top:-1px;}
+.akl .amway-theme .accordion-element .accordion-panel-title .title-element .icon-minus {font-size:16px;line-height:0;}
+
+/* 회원가입 > 위시리스트  상세보기 (아코디언 영역) */
+.akl #ShopListDetailBody {position:relative;}
+.akl #ShopListDetailBody .btn-wrapper {position:absolute; top:15px; right:30px; width:100px;}
+.akl #ShopListDetailBody .btn-wrapper>button+button {margin-top:6px;}
+.akl .shopping-cart-quick-shop-wrapper .quick-shop-container .bt-akl-white {background:#fff;}
+
+.my-wisth-list {width:100%;}
+.my-wisth-list .item-name-container input.form-contorl {width:60%;}
+.wish-del.mywish-list a.bt-akl-txt {padding:0 0;min-width:auto;text-align:left;}
+.top-location {padding:0 0 10px;}
+.top-location p {color:#002f5f;font-size:14px;font-weight:500}
+.btn-wishlist-go {display:inline-block;width:19px;height:14px;background:url("../images/akl_common/top-arrow.png") no-repeat left center;font-size:0;text-indent:-999999px;vertical-align:middle;margin-right:10px;}
+ 
+
 /* 마이페이지 > 배송지 관리*/
 .form-s:after {content:""; display:block;  clear:both; width: 0; height: 0;}
 .form-s input.input-st { width: 280px; vertical-align:top; margin-right:8px; font-size: 14px;}
@@ -414,144 +551,51 @@ Version : AKL Hybris UIUX 1.0
 .consent-agree label {font-size:14px;font-weight:500;vertical-align:middle;}
  
  
- /*** 회원가입 > 포인트관리  ***/
-.pointe-body {padding:30px 0;}
-.poit-contents {padding:25px 0;}
-.point-title {clear:both;display:block;padding:0 0 10px}
-.point-title:after {clear:both;display:block;content:''}
-.point-title .tit {float:left;color:#002f5f;font-size:14px;font-weight:500;}
-.point-title .money {float:left;color:#56565a;font-size:14px;padding-left:30px;}
-.po-list {padding:10px 0 0}
-.po-list p.po-timag {font-size:14px;padding:30px 0 5px;margin:0 0;font-weight:500}
-.point-management .form-group {padding:15px 0 0}
-.point-management .form-group .date-range-select {/*width:247px !important;*/margin-top:10px !important;}
-.point-management .date-form-group {padding:10px 0 0}
-.point-management .date-form-group button {margin-left:10px; min-width: 95px}
-.point-management .form-group .box-date-select {width:200px;}
-.point-management .form-group .box-date-select input{width:100%;}
+/* 마이페이지 > 쿠폰관리  */
+h1.page-title {position:relative;margin:10px 0;padding:0 0;}
+h1.page-title span {font-size:18px;font-weight:500;color:#002f5f;}
+h1.page-title > i {width:25px;color:#0075a4;font-weight:500;}
+h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:25px;background:url('../images/akl_common/ico-cupon.png') no-repeat left center;width:18px;height:16px;}
+.mypage-cupon-managment {margin:0;padding:0;}
+.akl .mypage-cupon-managment p {margin:0 0;}
+.akl .mypage-cupon-managment p.num-cupon {font-size:14px;font-weight:400;letter-spacing:-1px;}
+.akl .mypage-cupon-managment p.num-cupon strong {font-weight:700;color:#002f5e}
+.akl .mypage-cupon-managment .list-content {padding:10px 0 0}
 
-.point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 0 10px;}
-.akl .datepicker-dropdown:before,
-.akl .datepicker-dropdown:after { display: none}
+.akl .list-content .list-row-title > div.mycupon-num {width:20%;padding:0 0 0 20px;}
+.akl .list-content .list-row-title > div.mycupon-name {width:45%;padding:0 10px 0 0;}
+.akl .list-content .list-row-title > div.mycupon-day {width:20%;}
+.akl .list-content .list-row-title > div.mycupon-way {width:15%;}
 
-.table-point-wrapper {width:100%;padding:28px 0 0}
-.table-point-wrapper ul {width:100%;border-top:1px solid #e3e3e3;}
-.table-point-wrapper ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;}
-.table-point-wrapper ul li.thead-tit span {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;}
-span.day-txt, div.day-txt {width:15%;text-align:left;}
-span.order-return-txt, div.order-divison {width:18%;text-align:center;}
-span.division-txt, div.division-txt {width:34%;text-align:center;}
-span.tobe-earned, span.earning-used,span.available-point {width:11%;}
-div.tobe-earned, div.earning-used, div.available-point {width:11%;}
+.akl .content-list .con-list-item > div.mycupon-num {width:20%;padding:0 0 0 20px;}
+.akl .content-list .con-list-item > div.mycupon-name {width:45%;padding:0 10px 0 0;}
+.akl .content-list .con-list-item > div.mycupon-day {width:20%;}
+.akl .content-list .con-list-item > div.mycupon-way {width:15%;}
 
-.table-point-wrapper ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;}
-.table-point-wrapper ul li.tbody div {display:table-cell;vertical-align:middle;font-size:14px;}
-.table-point-wrapper ul li.tbody span {font-size:14px;vertical-align:middle;}
-.table-point-wrapper ul li.tbody:nth-child(odd) {background:#f4f4f4;}
-.table-point-wrapper.mpoint ul li.tbody {border-bottom:1px solid #dadada;}
-.table-point-wrapper.mpoint ul li.tbody:nth-child(odd) {background:#fff;}
-.table-point-wrapper ul li.tbody.no-data {padding:16px 0;border-bottom:1px solid #dadada;}
-.table-point-wrapper ul li.tbody.no-data div.no-list {display:table-cell;text-align:center;width:100%;}
-ul li.tbody div.tobe-earned {text-align:right;padding:0 2% 0 0;}
-ul li.tbody div.earning-used {text-align:right;padding:0 2% 0 0;}
-ul li.tbody div.available-point {text-align:right;padding:0 2% 0 0;}
-.mob-earned-txt,.mob-earning-txt,.mob-available-txt,.mob-order-txt {display:none;}
+/* common > table list */
+.akl .col-ak-10 {width:100%;}
+.akl .list-content {clear:both;display:table;width:100%;padding:40px 0 0}
+.akl .list-content .list-row-title {background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
+.akl .list-content .list-row-title > div {display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
+.akl .list-content .content-list {padding: 20px 0;background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
+.akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
+.akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;}
 
-span.name-txt {text-align:center;width:19%;}
-span.m-point-look {text-align:center;width:26%;}
-span.apply-conver {text-align:center;width:30%;}
-span.request-conver {text-align:center;width:25%;}
-
-ul li.tbody div.name-txt {text-align:center;width:19%;}
-ul li.tbody div.no-point-txt {text-align:center;width:81%;font-size:14px;line-height:18px;}
-ul li.tbody div.m-point-look {text-align:center;width:26%;}
-ul li.tbody div.apply-conver {text-align:center;width:30%;}
-ul li.tbody div.request-conver {text-align:center;width:25%;}
-
-.mob-business, .mob-look-txt, .mob-apply-txt, .mob-request-txt {display:none;}
-ul li.tbody div.mob-ttoy {display:none;}
-.member-point-body {border-top:1px solid #dadada;margin-top:30px}
-.paging.pointer {padding:30px 0;}
-
-.table-point-wrapper.member span.order-return-txt {width:15%;}
-.table-point-wrapper.member span.division-txt {width:26%;}
-.table-point-wrapper.member ul li.tbody div.order-divison {width:15%;text-align:center;}
-.table-point-wrapper.member ul li.tbody div.division-txt {width:26%;text-align:center;}
-
-.akl .datepicker .datepicker-days .table-condensed tbody tr td.day.active {color:#fff;}
-
-/* 회원가입 > M포인트 전환 popup */
-.pop-switch-logo {text-align:right;}
-.pop-switch-points-list {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;padding:20px 0 10px;margin-top:10px;}
-.pop-switch-poconts {padding:25px 0;}
-.pop-switch-poconts .form-group {padding:10px 0 0}
-.pop-switch-poconts .form-group span {display:inline-block;padding-left:5px;}
-.pop-switch-poconts .form-group span:first-child {padding-left:0;}
-
-.pop-switch-poconts .form-group.pop-cardnum span {width:22%;}
-.pop-switch-poconts .form-group.pop-cvv span:first-child {width:22%;}
-.pop-switch-poconts .form-group.pop-password span:first-child {width:22%;}
-
-/* 회원가입 > 간편가입 */
-.akl .easy-join {width:100%;padding:20px 0 0}
-.akl .easy-join .form-group .form-item-row {width:70%;}
-.akl .easy-join .form-group .form-item-row.telephone select {width:30%;vertical-align:top}
-.akl .easy-join .form-group .form-item-row.telephone input {width:68%;vertical-align:top}
-.akl .easy-join .form-group .form-item-row.commurl input {width:98.8%;}
-.akl .easy-join .form-group .form-item-row .col-xs-8 {padding:0 0;}
-.akl .easy-join .form-group .form-item-row .col-xs-4 {padding:0 0;}
-.btn-cacao {display:none;}
-
-.body-alert-txt {clear:both;display:block;font-size:14px;font-weight:500;letter-spacing:-1px;padding:5px 0 0}
-
-
-/* 회원가입 > 나의 위시리스트 > 리스트 */
-.akl .create-new-shopping-list-container {margin-bottom:0 !important;}
-.akl .create-new-shopping-list-container .create-shopping-list-form .new-shopping-list-row .description {padding:0 0 10px;font-size:14px !important;}
-.akl .create-new-shopping-list-container .create-shopping-list-form .new-shopping-list-row label {font-size:14px !important;}
-.akl .cart-content-wrapper .amway-theme .accordion-element {margin-bottom:30px !important;}
-.akl .create-new-shopping-list-container .create-shopping-list-form .shopping-list-input {font-size:14px !important;}
-.akl .shopping-list-row-button-wrapper {padding:0 0 20px !important;}
-.akl .create-new-shopping-list-container .create-shopping-list-form h6 {font-weight:500;}
-
-.wish-list-item {clear:both;display:block;}
-.wish-list-item:after {clear:both;display:block;content:''}
-.list-headers {clear:both;display:block;background:#f4f4f4;padding:0px 0;font-size:13px;color:#002f5f;font-weight:500;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
-.field-name {display:inline-block;vertical-align:middle;width:30%;}
-.field-name label {vertical-align:middle;}
-.field-memo {display:inline-block;vertical-align:middle;width:65%;}
-.list-details {clear:both;display:block;padding:20px 14px;vertical-align:middle;}
-.list-details:nth-child(odd) {background:#f4f4f4}
-.wisth-name {vertical-align:top;font-weight:500;padding-left:15px}
-.wisth-name strong {color:#0075a4;font-weight:500;font-size:14px;}
-.wisth-name em {color:#56565a;}
-.wisth-info {vertical-align:top;font-weight:500;padding:0 0;font-size:14px;line-height:22px;}
-
-/* 회원가입 > 나의 위시리스트 > 상세보기 */
-.akl .new-shopping-list-detail .product-list-page-title span {font-family:'Noto Sans KR', sans-serif;font-weight:500;letter-spacing:-0.05em}
-.akl .txt-detail-wish .detail-content span {font-weight:500;font-size:14px;}
-.akl .txt-detail-wish .detail-content.col-xs-12 {padding:0 0;}
-.akl .txt-detail-wish .detail-content label {font-weight:500;font-size:14px;padding:10px 0 0;}
-.akl .txt-detail-wish .detail-content input {font-weight:400;}
-.akl  #ShopListDetailForm .left-content {font-weight:500;font-size:14px;}
-.akl .amway-theme .accordion-element .accordion-panel-title .title-element.accordion-header-icon {top:-1px;}
-.akl .amway-theme .accordion-element .accordion-panel-title .title-element .icon-minus {font-size:16px;line-height:0;}
-
-/* 회원가입 > 위시리스트  상세보기 (아코디언 영역) */
-.akl #ShopListDetailBody {position:relative;}
-.akl #ShopListDetailBody .btn-wrapper {position:absolute; top:15px; right:30px; width:100px;}
-.akl #ShopListDetailBody .btn-wrapper>button+button {margin-top:6px;}
-.akl .shopping-cart-quick-shop-wrapper .quick-shop-container .bt-akl-white {background:#fff;}
-
-.my-wisth-list {width:100%;}
-.my-wisth-list .item-name-container input.form-contorl {width:60%;}
-.wish-del.mywish-list a.bt-akl-txt {padding:0 0;min-width:auto;text-align:left;}
-.top-location {padding:0 0 10px;}
-.top-location p {color:#002f5f;font-size:14px;font-weight:500}
-.btn-wishlist-go {display:inline-block;width:19px;height:14px;background:url("../images/akl_common/top-arrow.png") no-repeat left center;font-size:0;text-indent:-999999px;vertical-align:middle;margin-right:10px;}
+.akl .content-list .con-list-item {display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;}
+.akl .content-list .con-list-item > div {display:table-cell;vertical-align:middle;box-sizing:border-box;word-break: break-all;}
+.akl .con-list-item span.txte-wrap strong {color:#0075a4;font-weight:500;font-size:14px !important;}
+.akl .con-list-item span.txte-wrap strong a {font-weight:500;}
+.akl .con-list-item span.tite-label {display:none;}
+.akl .con-list-item .txte-btn button {display:inline-block;margin-right:6px;}
+.akl .con-list-item .txte-btn button:last-child {margin-right:0;}
+.akl .con-list-item .txte-btn button.bt-akl-blue.mini {padding:1px 15px 4px}
+.akl .con-list-item .pur-day span.txte-wrap {width:50%;display:table;word-break:break-all;}
+.akl .con-list-item span.txte-wrap em {display:block;font-size:14px}
+.akl .con-list-item span.txte-wrap em a {font-weight:500;font-size:14px}
+.akl .con-list-item div.search-no-result {display:table;width:100%;}
  
- 
- /* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 */
+/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 */
 .product-list-page-title.brokerage {margin:0 0;}
 .intermediary-sales {clear:both;display:block;margin:0 0;padding:40px 0 0;}
 .intermediary-sales .account-section-content {border-bottom:0 none;}
@@ -739,28 +783,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 /* 나의 쇼핑정보 > 구매양도/양수 > 사용 */
 .total-transfer {font-size:18px;font-weight:500;color:#002f5f;letter-spacing:-2px;margin:0 0;padding:0 0;}
 .shipping-form-wrapper.purchase {padding:22px 0 0}
-.akl .list-content {clear:both;display:table;width:100%;padding:40px 0 0}
-.akl .list-content .list-row-title {background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
-.akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
-.akl .list-content .list-row-title > div {display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
-.akl .list-content .content-list {padding: 20px 0;background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
-.akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
-.akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;}
 
-.akl .content-list .con-list-item {display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;}
-.akl .content-list .con-list-item > div {display:table-cell;vertical-align:middle;box-sizing:border-box;word-break: break-all;}
-.akl .con-list-item span.txte-wrap strong {color:#0075a4;font-weight:500;font-size:14px !important;}
-.akl .con-list-item span.txte-wrap strong a {font-weight:500;}
-.akl .con-list-item span.tite-label {display:none;}
-.akl .con-list-item .txte-btn button {display:inline-block;margin-right:6px;}
-.akl .con-list-item .txte-btn button:last-child {margin-right:0;}
-.akl .con-list-item .txte-btn button.bt-akl-blue.mini {padding:1px 15px 4px}
-.akl .con-list-item .pur-day span.txte-wrap {width:50%;display:table;word-break:break-all;}
-.akl .con-list-item span.txte-wrap em {display:block;font-size:14px}
-.akl .con-list-item span.txte-wrap em a {font-weight:500;font-size:14px}
-.akl .con-list-item div.search-no-result {display:table}
-
-.akl .col-ak-10 {width:100%;}
 .akl .all-ceek {width:5%;text-align:center;}
 .akl .pur-name {width:20%;padding:0 10px;}
 .akl .pur-prod {width:18%;padding:0 0px;}
@@ -892,6 +915,90 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.register-step-foot .product-recentlyviewed__imagelist div em.col05 {color:#56565a}
 	.register-step-foot .product-recentlyviewed__imagelist div em { display:block; margin-bottom:0; }
 	
+	/* 회원가입 > 포인트관리 */
+	.point-management .form-group {padding:0 0 10px}
+	.point-management .form-group .date-range-select {width:100% !important;margin-top:5px !important;}
+	.point-management .date-form-group button {margin-left:0;margin-top:10px;}
+	.point-management .form-group .box-date-select {width:100% ;}
+    .point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 10px auto}
+
+	.table-point-wrapper ul li.thead-tit {display:none;}
+	.table-point-wrapper ul li.tbody div {display:block;}
+	.table-point-wrapper ul li.tbody div.day-txt {float:left;}
+	.table-point-wrapper ul li.tbody div.order-divison {float:right;}
+	.table-point-wrapper ul li.tbody div.order-divison span {display:inline-block;}
+	.table-point-wrapper ul li.tbody div.division-txt {display:none;}
+	.table-point-wrapper ul li.tbody div span.mob-order-txt {display:inline-block;}
+
+	div.tobe-earned,div.earning-used,div.available-point {clear:both;display:block;padding:5px 0 0}
+
+	span.mob-earned-txt, span.mob-earning-txt, span.mob-available-txt {float:left;display:block;color:#002f5f;font-weight:500}
+	span.earned-money, span.earning-money, span.available-money {float:right;}
+
+	div.day-txt {width:50%;}
+	div.order-divison {width:50%;text-align:right !important;}
+	div.tobe-earned, div.earning-used, div.available-point {width:100%;}
+	ul li.tbody div.tobe-earned {text-align:right;padding:0 0 0 0;}
+	ul li.tbody div.earning-used {text-align:right;padding:0 0 0 0;}
+	ul li.tbody div.available-point {text-align:right;padding:0 0 0 0;}
+
+	ul li.tbody div.name-txt {clear:both;display:block;width:100%;}
+	ul li.tbody div.no-point-txt {clear:both;display:block;width:100%;text-align:left;padding:10px 0 0}
+	ul li.tbody div.m-point-look {clear:both;display:block;width:100%;padding:8px 0 0}
+	ul li.tbody div.apply-conver {clear:both;display:block;width:100%;padding:5px 0 0}
+	ul li.tbody div.request-conver {clear:both;display:block;width:100%;padding:10px 0 0}
+
+	span.mob-business, span.mob-look-txt, span.mob-apply-txt, span.mob-request-txt {float:left;display:block;color:#002f5f;font-weight:500;text-align:left;}
+	span.mob-look-txt {padding:3px 0 0}
+	span.mob-apply-txt {padding:8px 0 0;width:50%;}
+	span.mob-request-txt {padding:5px 0 0;width:50%;}
+	ul li.tbody div span.bus-name {float:right;text-align:right;}
+	ul li.tbody div span.look-money {float:right;text-align:right;}
+	ul li.tbody div span.apply-money {float:right;text-align:right;width:50%;}
+	ul li.tbody div span.request-money {float:right;text-align:right;}
+	span.min-btn {display:block;}
+	div.mob-ttoy {display:block;}
+	.member.table-point-wrapper ul li.tbody div.order-divison {width:50%;}
+
+	/* 회원가입 > M포인트 전환 popup */
+	.pop-switch-poconts .form-group.pop-conver .col-md-4 {width: 33.33333333%;}
+	.pop-switch-poconts .form-group.pop-conver .col-md-8 {width: 66.66666667%}
+
+	/* 회원가입 > 간편가입 */
+	.akl .easy-join {width:100%;padding:20px 0 0}
+	.akl .easy-join .form-group .form-item-row {width:100%;}
+	.akl .easy-join .form-group .form-item-row .col-xs-8 {display:block;width:100%;padding:0 0 10px}
+	.akl .easy-join .form-group .form-item-row .col-xs-4 {display:block;width:100%;}
+	.akl .easy-join .form-group .form-item-row.telephone select {width:30%;vertical-align:top}
+	.akl .easy-join .form-group .form-item-row.telephone input {width:68%;vertical-align:top}
+	.akl .easy-join .form-group .form-item-row.commurl input {width:98.8%;}
+	.akl .easy-join .form-group .form-item-row .col-xs-4 {padding:0 0;}
+	.btn-cacao {display:inline-block;vertical-align:middle;height:40px;width:40px;}
+	.btn-cacao img {height:40px;width:40px;}
+	.akl .bonus-payment .bonus-payment__title.member-pointe:after {left:0;}
+
+	/* 회원가입 > 나의 위시리스트 > 리스트 */
+	.list-headers .field-memo {display:none;}
+	.list-details .field-name {display:block;width:100%;}
+	.list-details .field-memo {display:block;padding-left:44px;width:100%;}
+
+	/* 회원가입 > 나의 위시리스트 > 상세보기 */
+	.akl .new-shopping-list-detail span.list-product {top:0;}
+	.akl .cart-content-wrapper {display:block;clear:both;}
+	.my-wishlist-detail button {display:block;width:100%;}
+	.my-wishlist-detail a.bt-akl-white {width:100%;margin-top:5px;}
+	
+	#ShopListDetailForm .detail-content div {padding-right: 0;}	
+	.akl .txt-detail-wish .detail-content span.col-xs-3.left-content {display:block;width:100%}
+	.akl .txt-detail-wish .detail-content span.col-xs-9.right-content {display:block;width:100%}
+	.akl .txt-detail-wish .detail-content .memo-mobile  span.col-xs-3.left-content {display:block;padding-top:20px}
+
+	.top-location {padding:10px 0 5px;}
+	
+	/* 회원가입 > 위시리스트  상세보기 (아코디언 영역) */
+	.akl #ShopListDetailBody .btn-wrapper {position:initial; width:auto; padding:10px 0 20px 15px;}
+	.akl #ShopListDetailBody .btn-wrapper>button+button {margin-top:0; margin-left:5px;}
+
 	/* 마이페이지 > 배송지 관리*/
     .form-s { position:relative; height:40px; margin-bottom:10px }
     .form-s input.input-st {width:100%; }
@@ -1103,89 +1210,17 @@ ul li.tbody div.mob-ttoy {display:none;}
 	/* 마이페이지  > 반품환불계좌 */
 	.refund-box {padding:18px 20px;}
 	
-	/* 회원가입 > 포인트관리 */
-	.point-management .form-group {padding:0 0 10px}
-	.point-management .form-group .date-range-select {width:100% !important;margin-top:5px !important;}
-	.point-management .date-form-group button {margin-left:0;margin-top:10px;}
-	.point-management .form-group .box-date-select {width:100% ;}
-    .point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 10px auto}
+	/* 마이페이지 > 쿠폰관리 */
+	.akl .list-content.mycupon .list-row-title {padding:0 0;height:1px;border-bottom:0 none;}
+	.akl .list-content .list-row-title > div.mycupon-num {display:none}
+	.akl .list-content .list-row-title > div.mycupon-name {display:none}
+	.akl .list-content .list-row-title > div.mycupon-day {display:none}
+	.akl .list-content .list-row-title > div.mycupon-way {display:none}
 
-	.table-point-wrapper ul li.thead-tit {display:none;}
-	.table-point-wrapper ul li.tbody div {display:block;}
-	.table-point-wrapper ul li.tbody div.day-txt {float:left;}
-	.table-point-wrapper ul li.tbody div.order-divison {float:right;}
-	.table-point-wrapper ul li.tbody div.order-divison span {display:inline-block;}
-	.table-point-wrapper ul li.tbody div.division-txt {display:none;}
-	.table-point-wrapper ul li.tbody div span.mob-order-txt {display:inline-block;}
-
-	div.tobe-earned,div.earning-used,div.available-point {clear:both;display:block;padding:5px 0 0}
-
-	span.mob-earned-txt, span.mob-earning-txt, span.mob-available-txt {float:left;display:block;color:#002f5f;font-weight:500}
-	span.earned-money, span.earning-money, span.available-money {float:right;}
-
-	div.day-txt {width:50%;}
-	div.order-divison {width:50%;text-align:right !important;}
-	div.tobe-earned, div.earning-used, div.available-point {width:100%;}
-	ul li.tbody div.tobe-earned {text-align:right;padding:0 0 0 0;}
-	ul li.tbody div.earning-used {text-align:right;padding:0 0 0 0;}
-	ul li.tbody div.available-point {text-align:right;padding:0 0 0 0;}
-
-	ul li.tbody div.name-txt {clear:both;display:block;width:100%;}
-	ul li.tbody div.no-point-txt {clear:both;display:block;width:100%;text-align:left;padding:10px 0 0}
-	ul li.tbody div.m-point-look {clear:both;display:block;width:100%;padding:8px 0 0}
-	ul li.tbody div.apply-conver {clear:both;display:block;width:100%;padding:5px 0 0}
-	ul li.tbody div.request-conver {clear:both;display:block;width:100%;padding:10px 0 0}
-
-	span.mob-business, span.mob-look-txt, span.mob-apply-txt, span.mob-request-txt {float:left;display:block;color:#002f5f;font-weight:500;text-align:left;}
-	span.mob-look-txt {padding:3px 0 0}
-	span.mob-apply-txt {padding:8px 0 0;width:50%;}
-	span.mob-request-txt {padding:5px 0 0;width:50%;}
-	ul li.tbody div span.bus-name {float:right;text-align:right;}
-	ul li.tbody div span.look-money {float:right;text-align:right;}
-	ul li.tbody div span.apply-money {float:right;text-align:right;width:50%;}
-	ul li.tbody div span.request-money {float:right;text-align:right;}
-	span.min-btn {display:block;}
-	div.mob-ttoy {display:block;}
-	.member.table-point-wrapper ul li.tbody div.order-divison {width:50%;}
-
-	/* 회원가입 > M포인트 전환 popup */
-	.pop-switch-poconts .form-group.pop-conver .col-md-4 {width: 33.33333333%;}
-	.pop-switch-poconts .form-group.pop-conver .col-md-8 {width: 66.66666667%}
-
-	/* 회원가입 > 간편가입 */
-	.akl .easy-join {width:100%;padding:20px 0 0}
-	.akl .easy-join .form-group .form-item-row {width:100%;}
-	.akl .easy-join .form-group .form-item-row .col-xs-8 {display:block;width:100%;padding:0 0 10px}
-	.akl .easy-join .form-group .form-item-row .col-xs-4 {display:block;width:100%;}
-	.akl .easy-join .form-group .form-item-row.telephone select {width:30%;vertical-align:top}
-	.akl .easy-join .form-group .form-item-row.telephone input {width:68%;vertical-align:top}
-	.akl .easy-join .form-group .form-item-row.commurl input {width:98.8%;}
-	.akl .easy-join .form-group .form-item-row .col-xs-4 {padding:0 0;}
-	.btn-cacao {display:inline-block;vertical-align:middle;height:40px;width:40px;}
-	.btn-cacao img {height:40px;width:40px;}
-	.akl .bonus-payment .bonus-payment__title.member-pointe:after {left:0;}
-
-	/* 회원가입 > 나의 위시리스트 > 리스트 */
-	.list-headers .field-memo {display:none;}
-	.list-details .field-name {display:block;width:100%;}
-	.list-details .field-memo {display:block;padding-left:44px;width:100%;}
-
-	/* 회원가입 > 나의 위시리스트 > 상세보기 */
-	.akl .new-shopping-list-detail span.list-product {top:0;}
-	.akl .cart-content-wrapper {display:block;clear:both;}
-	.my-wishlist-detail button {display:block;width:100%;}
-	.my-wishlist-detail a.bt-akl-white {width:100%;margin-top:5px;}
-	
-	#ShopListDetailForm .detail-content div {padding-right: 0;}	
-	.akl .txt-detail-wish .detail-content span.col-xs-3.left-content {display:block;width:100%}
-	.akl .txt-detail-wish .detail-content span.col-xs-9.right-content {display:block;width:100%}
-	.akl .txt-detail-wish .detail-content .memo-mobile  span.col-xs-3.left-content {display:block;padding-top:20px}
-
-	.top-location {padding:10px 0 5px;}
-	
-	/* 회원가입 > 위시리스트  상세보기 (아코디언 영역) */
-	.akl #ShopListDetailBody .btn-wrapper {position:initial; width:auto; padding:10px 0 20px 15px;}
-	.akl #ShopListDetailBody .btn-wrapper>button+button {margin-top:0; margin-left:5px;}
+	.akl .content-list .con-list-item > div.mycupon-num {width:100%;padding:0 15px;}
+	.akl .content-list .con-list-item > div.mycupon-name {width:100%;padding:0 15px;}
+	.akl .content-list .con-list-item > div.mycupon-day {width:100%;padding:0 15px;}
+	.akl .content-list .con-list-item > div.mycupon-way {width:100%;padding:0 15px;}
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 제품리스트 */
 	.shopping-th .th-tit.th-head {display:none;}
@@ -1239,7 +1274,6 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.info-producer ul li dl.type2 dt {width:30%;}
 	.info-producer ul li dl.type2 dd {width:70%;}
 	.divisio-pen {float:left;width:100%;}
-	
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
@@ -1261,7 +1295,6 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.est-prod-list .est-delv-txt {text-align:left;font-size:14px;font-weight:500}
 	.est-prod-list .est-delv-tit {float:left;display:block;font-size:14px;color:#002f5f;letter-spacing:-1px;font-weight:500;}
 	.est-prod-list .est-delv-num {float:right;padding:0 0}
-
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 중개판매 견적내역 */
 	.esthistory-box.mob {display:none;}
@@ -1318,7 +1351,6 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.cont-inarea .d-left {display:table;width:100%;}
 	.cont-inarea .d-right {display:table;width:100%;text-align:left;padding:10px 0 0}
 	.cont-inarea .d-right .list-type2 {float:none;}
-
 	
 	/* 나의 쇼핑정보 > 구매권한 양도/양수 > 사용내역 */
 	.akl .list-content .list-row-title .all-ceek2 {width:15%;text-align:right;}
@@ -1369,6 +1401,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 	.akl .poo-asslist-box .pop-list-detail .list-content .con-list-item span.txte-wrap {float:right;width:60%;}
 	.pop-moreArea {display:block;text-align:center;padding:20px 0 0}
 
+
 	/* 나의 쇼핑정보 > 구매권한 양도 > 복수선택 팝업 */
 	.poo-prdlist ul li span.op-sub-num {width:65%;text-align:right;}
 	.poo-prdlist ul li span.op-sub-num div.opt-quantity.mini {float:none;}
@@ -1405,6 +1438,3 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 	
 }
-
- 
-
