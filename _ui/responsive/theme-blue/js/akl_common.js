@@ -44,8 +44,11 @@ $(function(){
 	//마이페이지 메인 : li 여백처리
 	mypageIndex_list();
 
-	//인쇄하기 : 작업중
-	printPage();
+	//인쇄 - 게시판 하단 인쇄버튼
+	print_pageBoard();
+
+	//인쇄 - 레이어 영역지정
+	print_layerSection();
 
 	//2018.03.12 카테고리 왼쪽메뉴
 	var Accordion = function(el, multiple) {
@@ -196,24 +199,6 @@ function loadingLayerClose(){
 	return false;
 }
 
-/* 마이페이지  > 맞춤메시지 : 인쇄하기 (작업중) */
-function printPage(){
-	var $btnPrint_layer = $('.layerWrapper .btn-print-it'); //레이어에서 프린트 버튼 클릭 시
-	$btnPrint_layer.each(function(){
-		$(this).on('click',function(){
-			$('html').addClass('printReady_layer');
-			$(this).parent('.print-section').addClass('set_printArea');
-			print();
-		});
-	});
-
-	function print() {
-		window.print();
-	}
-
-	var btn_PrintPage = $('.btn-printPage'); //전체 인쇄버튼
-	var set_PrintArea = $('.set_printArea'); //인쇄영역 설정
-}
 
 /* 마이페이지 메인 : li 여백처리 */
 function mypageIndex_list(){
@@ -224,6 +209,36 @@ function mypageIndex_list(){
 		var _ul = $(this).find('>ul');
 		_ul.find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
 		_ul.find('li').filter(':nth-of-type(-n+3)').addClass('nth-3n');
+	});
+}
+
+/** ------------------------------------------
+ *  인쇄하기
+ *  - 맞춤메시지, 게시판
+ *   ------------------------------------------
+ */
+
+/* 인쇄 - 레이어 인쇄 버튼 */
+function print_layerSection(){
+	var $btnPrint_layer = $('.layerWrapper .btn-print-it');
+	$btnPrint_layer.each(function(){
+		$(this).on('click',function(){
+			$('html').addClass('printReady_layer');
+			$(this).parent('.print-section').siblings().removeClass('set_printArea');
+			$(this).parent('.print-section').addClass('set_printArea');
+			print();
+		});
+	});
+	function print() {
+		window.print();
+	}
+}
+
+/* 인쇄 - 게시판 하단 인쇄버튼 */
+function print_pageBoard(){
+	var $btn_PrintPage = $('.btn-printPage');
+	$btn_PrintPage.on('click',function(){
+		window.print();
 	});
 }
 
@@ -427,7 +442,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		}
 	}
 	var scroll_RESET = function(){
-		$('html').removeClass('scrollLock');
+		$('html').removeClass('scrollLock printReady_layer'); //.printReady_layer : 레이어 팝업 인쇄용
 
 		/* 제품상세 크게보기 레이어인 경우 */
 		if( $layerPrdtDetail.length){
