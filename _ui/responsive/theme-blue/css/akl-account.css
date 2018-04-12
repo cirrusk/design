@@ -582,7 +582,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;}
 
-.akl .content-list .con-list-item {display:table;width:100%;vertical-align:middle;box-sizing:border-box;}
+.akl .content-list .con-list-item {display:table;width:100%;vertical-align:middle;box-sizing:border-box;table-layout:fixed;}
 .akl .content-list .con-list-item > div {display:table-cell;vertical-align:middle;box-sizing:border-box;word-break: break-all;}
 .akl .con-list-item span.txte-wrap strong {color:#0075a4;font-weight:500;font-size:14px !important;}
 .akl .con-list-item span.txte-wrap strong a {font-weight:500;}
@@ -730,20 +730,17 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .estimate-conts p strong {color:#002f5e;font-weight:700;font-size:14px;}
 .estmlist-area {clear:both;display:block;}
 .estmlist-area:after {content:'';clear:both;display:block;}
-.estmlist-th {display:block;background:#f4f4f4;padding:10px 0;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
-.estmlist-th span {color:#002f5f;font-size:13px;font-weight:500;}
+.akl .estmlist-area .list-content {padding:0 0}
 
-.estmlist-tbody {clear:both;display:block;}
-.estmlist-tbody ul li {clear:both;display:block;padding:20px 0;overflow:hidden;vertical-align:middle;}
-.estmlist-tbody ul li button {vertical-align:middle;}
-.estmlist-tbody ul li:nth-child(even) {background:#f4f4f4}
-.estmlist-tbody ul li span {font-size:14px}
-.estmlist-tbody .mob-tit {display:none;}
-.esylist-num {display:inline-block;width:40%;}
-.esylist-subject {display:inline-block;width:50%;}
+.akl div.esylist-no {width:8%;text-align:left;padding:0 20px;}
+.akl div.esylist-numname {width:58%;padding:0 10px;}
+.akl div.esylist-date {width:18%;padding:0 0px;}
+.akl div.esylist-condition {width:16%;}
+
+.esylist-num {display:inline-block;width:30%;font-size:14px}
+.esylist-subject {display:inline-block;width:65%;font-size:14px}
 .esylist-subject em {display:none;}
 .esylist-no {font-size:14px}
-.search-no-result.line {border-bottom:1px solid #e3e3e3;}
 
 .pop-est-example {width:100%;height:auto;}
 .pop-est-example img {width:100%;height:auto;}
@@ -758,6 +755,16 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .est-detail-header h3 {display:inline-block;font-size:16px;font-weight:500;color:#56565a;letter-spacing:-1px;}
 .est-detail-header p {font-size:13px;font-weight:400;padding:7px 0 0;margin:0 0;}
 .est-btn-del {display:inline-block;padding-left:10px;}
+
+.akl div.esylist-company {width:50%;text-align:left;padding:0 20px;}
+.akl div.esylist-delegate {width:16%;padding:0 10px;}
+.akl div.esylist-regdate {width:18%;padding:0 0px;}
+.akl div.esylist-view {width:16%;}
+
+.akl div.esylist-company span.esylist-subject {width:50%;}
+.akl div.esylist-company span.esylist-num {width:40%;}
+.akl div.esylist-company span.esylist-num em {display:none;}
+
 .est-detail-conts {}
 .est-detail-conts .col-md-2, .est-detail-conts .col-md-3,.est-detail-conts .col-md-6 {padding-left:0}
 .cellphone-group {}
@@ -766,6 +773,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .group-txt {clear:both;display:block;padding:5px 0 0;}
 .group-txt span {display:inline-block;font-size:14px;font-weight:400;}
 .group-txt span.txt {padding-right:5px;}
+
 .email-group {clear:both;display:block;width:100%;}
 .email-group .col-md-6 {padding:0 0;} 
 .email-group .col-md-3 {padding:0 0;} 
@@ -784,13 +792,21 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .total-transfer {font-size:18px;font-weight:500;color:#002f5f;letter-spacing:-2px;margin:0 0;padding:0 0;}
 .shipping-form-wrapper.purchase {padding:22px 0 0}
 
-.akl .all-ceek {width:5%;text-align:center;}
-.akl .pur-name {width:20%;padding:0 10px;}
-.akl .pur-prod {width:18%;padding:0 0px;}
-.akl .pur-quitey {width:10%;text-align:center;}
-.akl .pur-day {width:14%;}
-.akl .pur-grantor {width:12%;}
-.akl .pur-btn {width:21%;text-align:left;}
+.akl .list-content .list-row-title > div.all-ceek {width:5%;text-align:center;}
+.akl .list-content .list-row-title > div.pur-name {width:20%;padding:0 10px;}
+.akl .list-content .list-row-title > div.pur-prod {width:18%;padding:0 0px;}
+.akl .list-content .list-row-title > div.pur-quitey {width:10%;text-align:center;}
+.akl .list-content .list-row-title > div.pur-day {width:14%;}
+.akl .list-content .list-row-title > div.pur-grantor {width:13%;}
+.akl .list-content .list-row-title > div.pur-btn {width:20%;text-align:left;}
+
+.akl .content-list .con-list-item > div.all-ceek {width:5%;text-align:center;}
+.akl .content-list .con-list-item > div.pur-name {width:20%;padding:0 10px;}
+.akl .content-list .con-list-item > div.pur-prod {width:18%;padding:0 0px;}
+.akl .content-list .con-list-item > div.pur-quitey {width:10%;text-align:center;}
+.akl .content-list .con-list-item > div.pur-day {width:14%;}
+.akl .content-list .con-list-item > div.pur-grantor {width:13%;}
+.akl .content-list .con-list-item > div.pur-btn {width:20%;text-align:left;}
 
 .cont-inarea {clear:both;display:table;width:100%;table-layout:fixed;padding:35px 0 0;box-sizing:border-box;}
 .cont-inarea:after {content:'';clear:both;display:block;}
@@ -819,7 +835,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 .akl .con-list-item .pop-fail-reason {width:35%;padding:0 0;}
  
 /* 나의 쇼핑정보 > 구매권한 양도 팝업 */
-.cart-popup__content.trans-purchase {max-height:initial;}
+.cart-popup__content.trans-purchase {max-height:initial;max-height:none}
 .poo-ass-product {clear:both;display:block;border-bottom:1px solid #dadada;}
 .poo-prdlist {border-top:1px solid #dadada;padding:20px 0;}
 .poo-prdlist p {font-size:14px;font-weight:400}
@@ -1305,19 +1321,51 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:-25px;top:
 	.est-prod-list .est-delv-num {float:right;padding:0 0}
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 중개판매 견적내역 */
-	.esthistory-box.mob {display:none;}
-	.estmlist-th {display:none;}
-	.estmlist-tbody {display:block;border-top:1px solid #e3e3e3;}
-	.estmlist-tbody ul li {clear:both;display:block;padding:20px 15px;}
-	.estmlist-tbody .mob-tit {display:inline-block;font-size:14px;color:#002f5f;font-weight:500}
-	.esylist-num {display:inline-block;width:auto;}
-	.esylist-subject {display:inline-block;width:auto;}
-	.esylist-subject em {display:inline-block;}
-	.esylist-no {display:none;}
+	.estmlist-area {clear:both;display:block;}
+	.estmlist-area:after {content:'';clear:both;display:block;}
+	
+	.akl .estmlist-area .list-content .list-row-title {padding:0 0;border-bottom:0 none;}
+	.akl .list-content .list-row-title > div.esylist-no {display:none;}
+	.akl .list-content .list-row-title > div.esylist-numname {display:none;}
+	.akl .list-content .list-row-title > div.esylist-date {display:none;}
+	.akl .list-content .list-row-title > div.esylist-condition {display:none;}
+
+	.akl .content-list .con-list-item > div.esylist-no {display:none;}
+	.akl .content-list .con-list-item > div.esylist-numname {width:100%;padding:0 20px;}
+	.akl .content-list .con-list-item > div.esylist-date {width:100%;padding:0 20px;}
+	.akl .content-list .con-list-item > div.esylist-condition {width:100%;padding:0 20px;}
+	
+	.akl .content-list .con-list-item > div.esylist-numname span.esylist-num {display:inline-block;width:auto;}
+	.akl .content-list .con-list-item > div.esylist-numname span.esylist-subject {display:inline-block;width:auto;}
+	.akl .content-list .con-list-item > div.esylist-numname span.esylist-subject em {display:inline-block;}
+
+	.akl .content-list .con-list-item > div.esylist-date span.tite-label {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-date span.txte-wrap {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-condition span.tite-label {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-condition span.txte-wrap {display:inline-block;}
 
 	.akl .cart-popup__header.white {background:#fff;border-bottom:1px solid #e3e3e3;}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 사업장등록증 관리 */
+	.akl .list-content .list-row-title > div.esylist-company {display:none;}
+	.akl .list-content .list-row-title > div.esylist-delegate {display:none;}
+	.akl .list-content .list-row-title > div.esylist-regdate {display:none;}
+	.akl .list-content .list-row-title > div.esylist-view {display:none;}
+
+	.akl div.esylist-company {width:100%;text-align:left;padding:0 20px;}
+	.akl div.esylist-delegate {width:100%;padding:0 20px;}
+	.akl div.esylist-regdate {width:100%;padding:0 20px;}
+	.akl div.esylist-view {width:100%;padding:0 20px;}
+
+	.akl div.esylist-company span.esylist-subject {display:inline-block;width:auto;}
+	.akl div.esylist-company span.esylist-num {display:inline-block;width:auto;}
+	.akl div.esylist-company span.esylist-num em {display:inline-block;}
+
+	.akl .content-list .con-list-item > div.esylist-delegate span.tite-label {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-delegate span.txte-wrap {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-regdate span.tite-label {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-regdate span.txte-wrap {display:inline-block;}
+
 	.esthistory-detail-box {padding:15px 0 20px;}
 	.cellphone-group .col-md-4 {width:33.33333333%}
 	.cellphone-group .col-md-8 {width:66.66666667%;padding-left:10px}
