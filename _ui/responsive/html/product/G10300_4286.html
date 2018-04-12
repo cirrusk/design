@@ -149,6 +149,52 @@
 												<div class="col-sm-12 col-md-6 advantage-img"><span class="detail-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_06.png" alt=""></span></div>
 											</div>
 
+											<div class="product-process">
+												<h5 class="detail-tit">사용순서</h5>
+												<div id="productProcess" class="product-process-step step05">
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_07.png" alt=""></span>
+														<span class="step-num">STEP 1</span>
+														<span class="step-txt">어드밴스드<br> 클렌징 크림</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_08.png" alt=""></span>
+														<span class="step-num">STEP 2</span>
+														<span class="step-txt">리치<br> 클렌징 폼</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_09.png" alt=""></span>
+														<span class="step-num">STEP 3</span>
+														<span class="step-txt">소프트닝<br> 로션</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_10.png" alt=""></span>
+														<span class="step-num">STEP 4</span>
+														<span class="step-txt">인텐시브 스킨케어<br> 어드밴스드 비타민C +<br> 히알루론산 트리트먼트<br>[주름 개선 기능성 화장품]</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_11.png" alt=""></span>
+														<span class="step-num">STEP 5</span>
+														<span class="step-txt">시그니처 셀렉트<br>[피부집중고민<br>해결]</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_12.png" alt=""></span>
+														<span class="step-num">STEP 6</span>
+														<span class="step-txt">인리칭<br> 아이 크림<br>[주름 개선<br> 기능성 화장품]</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_13.png" alt=""></span>
+														<span class="step-num">STEP 7</span>
+														<span class="step-txt">리치<br> 밀키 에멀젼<br>[주름 개선<br> 기능성 화장품]</span>
+													</div>
+													<div class="step-flow">
+														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/AR_4286_10_Youth_Xtend_Enrich_Eye_Cream_14.png" alt=""></span>
+														<span class="step-num">STEP 8</span>
+														<span class="step-txt">인리칭<br> 크림<br>[주름 개선<br> 기능성 화장품]</span>
+													</div>
+												</div>
+											</div>
+
 											<!-- <div class="product-notice">
 												<ul class="notice-list">
 													<li class="col-sm-12">
@@ -203,6 +249,33 @@
 
 		</div>
 	</main>
+
+	<script type="text/javascript">
+	$(function(){
+
+		//상품상세 슬라이드
+		$('#productProcess').owlCarousel({
+			loop: true,
+			nav: true,
+			dots: true,
+			margin: 0,
+			items: 2,
+			responsiveClass: true,
+			responsive: {
+				320 : {
+					items: 1
+				},
+				768 : {
+					items: 2
+				},
+				1200 : {
+					items: 5
+				}
+			}
+		});
+
+	});
+	</script>
 
 </body>
 
