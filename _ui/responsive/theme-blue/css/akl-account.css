@@ -1294,18 +1294,17 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적서 */
 	.estimate-form-box {border-right:1px solid #e3e3e3;width:100%; position:static;}
-	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 1px 0; margin-left:0;}
+	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 0 0; margin-left:0; overflow: hidden;}
 
-	.tit-producer {width:100%;height:40px; padding-top:10px; border-bottom:1px solid #e3e3e3;display:block;}
+	.tit-producer {width:100%;height:46px; padding-top:14px; border-bottom:1px solid #e3e3e3;display:block;}
 	.info-producer {display:block;height:auto;width:100%;border-left:0 none;}
-	.info-producer ul li { overflow: visible;border-top:0; }
-	.info-producer ul li dl { border-bottom:1px solid #e3e3e3;} 
-	 
-	.info-producer ul li dl.type1 dt {width:30%;}
-	.info-producer ul li dl.type1 dd {width:70%;}
-	.info-producer ul li dl.type2 dt {width:30%;}
-	.info-producer ul li dl.type2 dd {width:70%;}
-	.divisio-pen {float:left; width:100%; height: 40px;  }
+	.info-producer ul li { overflow: visible;border-top:0; height: 46px;}
+	.info-producer ul li dl { border-bottom:1px solid #e3e3e3;}   
+	.info-producer ul li dl.type1 dt {width:30%; height: 45px; }
+	.info-producer ul li dl.type1 dd {width:70%; height: 45px;  line-height: 130%}
+	.info-producer ul li dl.type2 dt {width:30%; height: 45px; }
+	.info-producer ul li dl.type2 dd {width:70%; height: 45px; }
+	.divisio-pen {float:left; width:100%; height: 46px;  }
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
