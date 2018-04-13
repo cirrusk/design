@@ -600,9 +600,9 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 
 /* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 */
 .product-list-page-title.brokerage {margin:0 0;}
-.intermediary-sales {clear:both;display:block;margin:0 0;padding:40px 0 0;}
-.intermediary-sales .account-section-content {border-bottom:0 none;}
+.intermediary-sales {clear:both;display:block;margin:0 0;padding:40px 0 0;}  
 .intermediary-sales [role="button"] {white-space:normal;display:block;text-align:left;}
+.intermediary-sales  .accordion-custom .panel-title { border-top:1px solid #e3e3e3} 
 .intermediary-sales .panel-heading {position:relative;}
 .intermediary-sales .panel-heading .pull-right {position: absolute; top:23px;right:20px;}
 
@@ -1296,13 +1296,14 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 
 	.tit-producer {width:100%;height:40px; padding-top:10px; border-bottom:1px solid #e3e3e3;display:block;}
 	.info-producer {display:block;height:auto;width:100%;border-left:0 none;}
-	.info-producer ul li.address {height:60px}
-	.info-producer ul li.address dl {height:60px}
+	.info-producer ul li { overflow: visible;border-top:0; }
+	.info-producer ul li dl { border-bottom:1px solid #e3e3e3;} 
+	 
 	.info-producer ul li dl.type1 dt {width:30%;}
 	.info-producer ul li dl.type1 dd {width:70%;}
 	.info-producer ul li dl.type2 dt {width:30%;}
 	.info-producer ul li dl.type2 dd {width:70%;}
-	.divisio-pen {float:left;width:100%;}
+	.divisio-pen {float:left; width:100%; height: 40px;  }
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
