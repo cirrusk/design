@@ -76,10 +76,10 @@
                         <tbody>
                             <!-- 선택시 on클래스 추가 -->
                             <tr class="on">
-                                <td>9999</td>
+                                <!-- 20180413수정 : 수량 1000 → 1,000 --><td>9,999</td><!-- //20180413수정 : 수량 1000 → 1,000 -->
                                 <td class="al">13213K122</td>
                                 <td class="al"><span class="elips">글리스터 리후레셔 스프레이 리후레셔 스프레이 스프레이 리후레셔 스프레이</span></td>
-                                <td>9999</td>
+                                <td>9,999</td>
                                 <td class="ar">999,999,999</td>
                                 <td class="ar">999,999,999</td>
                                 <td>프로모션프로모션</td><!-- 비고 내용 최대 8자 -->
@@ -240,10 +240,12 @@
                             <span>내신금액</span>
                             <em>3,579,800</em>
                         </li>
+                        <!-- 20180413 수정 : 거스름 → 거스름돈  -->
                         <li>
-                            <span>거스름</span>
+                            <span>거스름돈</span>
                             <em>2,000</em>
                         </li>
+                        <!-- //20180413 수정 : 거스름 → 거스름돈  -->
                     </ul>
                 </div>
             </div>
@@ -260,16 +262,19 @@
 
         <!-- 우측영역 -->
         <div class="m_right">
+            <!-- 20180413수정 : 메뉴변경 -->
             <div class="nav">
                 <!-- 선택시 class="on" -->
                 <button type="button" class="blue on">일반결제</button>
-                <button type="button">그룹결제</button>
-                <button type="button">픽업주문</button>
+                <button type="button" class="blue">복합결제</button>
+                <button type="button">그룹주문</button>
+                <button type="button" class="disabled">픽업주문</button><!-- 픽업주문 비활성화시 class="disabled" -->
                 <!-- //선택시 class="on" -->
                 <button type="button">주문취소</button>
                 <button type="button" class="purple">프로모션 상품</button>
                 <button type="button">기타</button>
             </div>
+            <!-- //20180413수정 : 메뉴변경 -->
             <div class="promotion">
                 <ul class="img">
                     <!-- 현재 활성화 이미지 on클래스 추가 -->
