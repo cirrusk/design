@@ -1,6 +1,5 @@
 /************************************************
 Version : AKL Hybris UIUX 1.0
-기존 akl-common.css 그대로 옮김 : 2018.03.27
 *************************************************/ 
 .akl .banner__shop-now {font-weight:500; font-size:16px;}
 .akl .sub_banner .banner__message--main {font-family:'Noto Sans KR', sans-serif; font-weight:500; letter-spacing: -2px;}
@@ -579,7 +578,8 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .cont-inarea.cupon {padding:15px 0 0;}
 
 /* common > table list > sp3,4 */
-.akl .list-content {clear:both;display:table;width:100%;padding:40px 0 0}
+.akl .col-ak-10 {width:100%;}
+.akl .list-content {clear:both;display:table;width:100%;padding:40px 0 0;table-layout:fixed;}
 .akl .list-content .list-row-title {background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
 .akl .list-content .list-row-title > div {display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
@@ -866,8 +866,6 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .poo-asslist-title .a-right strong {font-weight:500;font-size:14px;}
 .poo-asslist-title .a-right span {font-size:14px;font-weight:400}
 
-.akl .poo-asslist-box .con-list-item .all-ceek {padding:6px 20px}
-
 .akl .poo-asslist-box {clear:both; display:block;padding:10px 0 35px;}
 .akl .poo-asslist-box .pop-list-detail {max-height:370px;overflow-x: hidden;overflow-y:auto;}
 .akl .poo-asslist-box .pop-list-detail .list-content {padding:0 0}
@@ -877,9 +875,11 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .akl .list-row-title .pop-ass-name {width:30%;padding:3px 10px}
 .akl .list-row-title .pop-ass-quay {width:35%;padding:3px 10px;}
 
-.akl .con-list-item  .pop-ass-num {width:25%;padding:6px 20px}
-.akl .con-list-item  .pop-ass-name {width:30%;padding:6px 10px}
-.akl .con-list-item  .pop-ass-quay {width:35%;padding:0 10px;}
+.akl .poo-asslist-box .con-list-item .all-ceek {padding:6px 0}
+.akl .content-list .con-list-item > div.pop-ass-num {width:25%;padding:6px 20px}
+.akl .content-list .con-list-item > div.pop-ass-name {width:30%;padding:6px 10px}
+.akl .content-list .con-list-item > div.pop-ass-quay {width:35%;padding:0 10px;}
+
 .pop-moreArea {display:none;}
 
 /* 나의 쇼핑정보 > 구매권한 양도 > 복수선택 팝업 */
@@ -1294,17 +1294,18 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적서 */
 	.estimate-form-box {border-right:1px solid #e3e3e3;width:100%; position:static;}
-	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 0 0; margin-left:0; overflow: hidden;}
+	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 1px 0; margin-left:0;}
 
-	.tit-producer {width:100%;height:46px; padding-top:14px; border-bottom:1px solid #e3e3e3;display:block;}
+	.tit-producer {width:100%;height:40px; padding-top:10px; border-bottom:1px solid #e3e3e3;display:block;}
 	.info-producer {display:block;height:auto;width:100%;border-left:0 none;}
-	.info-producer ul li { overflow: visible;border-top:0; height: 46px;}
-	.info-producer ul li dl { border-bottom:1px solid #e3e3e3;}   
-	.info-producer ul li dl.type1 dt {width:30%; height: 45px; }
-	.info-producer ul li dl.type1 dd {width:70%; height: 45px;  line-height: 130%}
-	.info-producer ul li dl.type2 dt {width:30%; height: 45px; }
-	.info-producer ul li dl.type2 dd {width:70%; height: 45px; }
-	.divisio-pen {float:left; width:100%; height: 46px;  }
+	.info-producer ul li { overflow: visible;border-top:0; }
+	.info-producer ul li dl { border-bottom:1px solid #e3e3e3;} 
+	 
+	.info-producer ul li dl.type1 dt {width:30%;}
+	.info-producer ul li dl.type1 dd {width:70%;}
+	.info-producer ul li dl.type2 dt {width:30%;}
+	.info-producer ul li dl.type2 dd {width:70%;}
+	.divisio-pen {float:left; width:100%; height: 40px;  }
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
@@ -1390,22 +1391,22 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	.shipping-form-wrapper.purchase {padding:18px 0 0}
 	.akl .list-content {padding:20px 0 0}
 	
-	.akl .list-content .list-row-title .all-ceek {width:15%;text-align:right;}
-	.akl .list-content .list-row-title .pur-name {display:none;}
-	.akl .list-content .list-row-title .pur-prod {display:none;}
-	.akl .list-content .list-row-title .pur-quitey {display:none;}
-	.akl .list-content .list-row-title .pur-grantor {display:none;}
-	.akl .list-content .list-row-title .pur-day {display:none;}
+	.akl .list-content .list-row-title > div.all-ceek {width:15%;text-align:left;float:left;padding:0 20px;}
+	.akl .list-content .list-row-title > div.pur-name {display:none;}
+	.akl .list-content .list-row-title > div.pur-prod {display:none;}
+	.akl .list-content .list-row-title > div.pur-quitey {display:none;}
+	.akl .list-content .list-row-title > div.pur-grantor {display:none;}
+	.akl .list-content .list-row-title > div.pur-day {display:none;}
 	
 	.akl .con-list-item span.tite-label {display:block;color:#002f5f;font-size:14px;font-weight:500}
-	.akl .con-list-item .all-ceek {width:15%;text-align:right;}
-	.akl .con-list-item .pur-name {display:table-cell;width:85%;padding:0 20px 5px;vertical-align:top;}
-	.akl .con-list-item .pur-prod {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-quitey {width:90%;text-align:left;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-grantor {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-day {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-btn {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-day span.txte-wrap {width:100%;word-break:break-all;}
+	.akl .content-list .con-list-item > div.all-ceek {text-align:left;float:left;padding:0 20px;}
+	.akl .content-list .con-list-item > div.pur-name {float:left;width:85%;padding:0 20px 5px;vertical-align:top;}
+	.akl .content-list .con-list-item > div.pur-prod {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-quitey {clear:both;display:block;width:90%;text-align:left;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-grantor {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-day {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-btn {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-day span.txte-wrap {width:100%;word-break:break-all;}
 	.akl .con-list-item span.txte-wrap em {display:inline-block;padding-left:5px;}
 	.akl .con-list-item .pur-name span.txte-wrap em {padding-left:0;}
 
@@ -1416,7 +1417,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	.cont-inarea .d-right .list-type2 {float:none;}
 	
 	/* 나의 쇼핑정보 > 구매권한 양도/양수 > 사용내역 */
-	.akl .list-content .list-row-title .all-ceek2 {width:15%;text-align:right;}
+	.akl .list-content .list-row-title > div.all-ceek2 {width:15%;text-align:left;float:left;padding:0 20px;}
 	.akl .list-content .list-row-title .pur-name2 {display:none;}
 	.akl .list-content .list-row-title .pur-prod2 {display:none;}
 	.akl .list-content .list-row-title .pur-assignee {display:none;}
@@ -1425,16 +1426,16 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	.akl .list-content .list-row-title .pur-day-use {display:none;}
 	.akl .list-content .list-row-title .pur-condition {display:none;}
 	
-	.akl .con-list-item .all-ceek2 {width:15%;text-align:right;}
-	.akl .con-list-item .pur-name2 {display:table-cell;width:85%;padding:0 20px 5px;vertical-align:top;}
-	.akl .con-list-item .pur-prod2 {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-assignee {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-transferer {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-transfer-date {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-day-use {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-condition {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-btn2 {width:90%;padding:5px 0 5px 60px;}
-	.akl .con-list-item .pur-condition span.txte-wrap em {display:block;padding:0 0}
+	.akl .content-list .con-list-item > div.all-ceek2 {text-align:left;float:left;padding:0 20px;}
+	.akl .content-list .con-list-item > div.pur-name2 {float:left;width:85%;padding:0 20px 5px;vertical-align:top;}
+	.akl .content-list .con-list-item > div.pur-prod2 {width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-assignee {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-transferer {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-transfer-date {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-day-use {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-condition {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-btn2 {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
+	.akl .content-list .con-list-item > div.pur-condition span.txte-wrap em {display:block;padding:0 0}
 
 	/* 나의 쇼핑정보 > 구매권한 양도하기 팝업 */
 	.cart-popup__content.trans-purchase {max-height:500px;}
@@ -1469,15 +1470,19 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	.poo-prdlist ul li span.op-sub-num {width:65%;text-align:right;}
 	.poo-prdlist ul li span.op-sub-num div.opt-quantity.mini {float:none;}
 	
-	.akl .list-content.revenge .list-row-title {display:none;}
-	.akl .list-content.revenge .content-list {border-top:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3}
-	.akl .con-list-item  .pop-ass-num2 {width:100%;padding:6px 10px}
-	.akl .con-list-item  .pop-ass-name2 {width:100%;padding:6px 10px}
-	.akl .con-list-item  .pop-ass-btn {width:100%;padding:0 10px;text-align:left;}
-	.akl .con-list-item  .pop-ass-num2 span.tite-label {}
-	.akl .con-list-item  .pop-ass-num2 span.txte-wrap {text-align:right;}
-	.akl .con-list-item  .pop-ass-name2 span.tite-label {}
-	.akl .con-list-item  .pop-ass-name2 span.txte-wrap {text-align:right;}
+	.akl .list-content.revenge .list-row-title {padding:0 0;border-top:1px solid #d3d3d3;border-bottom:0 none;height:1px;}
+	.akl .list-content.revenge .list-row-title .pop-ass-num2 {display:none;}
+	.akl .list-content.revenge .list-row-title .pop-ass-name2 {display:none;}
+	.akl .list-content.revenge .list-row-title .pop-ass-btn {display:none;}
+
+	.akl .list-content.revenge .content-list {border-bottom:1px solid #d3d3d3}
+	.akl .con-list-item .pop-ass-num2 {display:block;width:100%;padding:6px 10px}
+	.akl .con-list-item .pop-ass-name2 {display:block;width:100%;padding:6px 10px}
+	.akl .con-list-item .pop-ass-btn {display:block;width:100%;padding:0 10px;text-align:left;}
+	.akl .con-list-item .pop-ass-num2 span.tite-label {}
+	.akl .con-list-item .pop-ass-num2 span.txte-wrap {text-align:right;}
+	.akl .con-list-item .pop-ass-name2 span.tite-label {}
+	.akl .con-list-item .pop-ass-name2 span.txte-wrap {text-align:right;}
 	.poo-ass-search {padding:20px 0 0}
 
 	/* 나의 쇼핑정보 > 구매권한 양도 결과 안내 */
@@ -1499,8 +1504,6 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	.akl .pop-authority .con-list-item span.txte-wrap {float:right;width:65%;}
 	.akl .pop-authority .con-list-item .pop-purname span.txte-wrap {float:left;width:100%;}
 
-
-	
 
 	
 }
