@@ -44,11 +44,17 @@ $(function(){
 	//마이페이지 메인 : li 여백처리
 	mypageIndex_list();
 
+	//마이페이지 > 맞춤메시지 - 신규 ABO 프로모션: 목록 정렬
+	message_newABO_state();
+
 	//인쇄 - 게시판 하단 인쇄버튼
 	print_pageBoard();
 
 	//인쇄 - 레이어 영역지정
 	print_layerSection();
+
+	//테이블 결과없음 : resize
+	tbl_colspan();
 
 	//2018.03.12 카테고리 왼쪽메뉴
 	var Accordion = function(el, multiple) {
@@ -209,6 +215,54 @@ function mypageIndex_list(){
 		var _ul = $(this).find('>ul');
 		_ul.find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
 		_ul.find('li').filter(':nth-of-type(-n+3)').addClass('nth-3n');
+	});
+}
+
+/* 마이페이지 > 맞춤메시지 - 신규 ABO 프로모션 : 목록 정렬 */
+function message_newABO_state(){
+	if(! $('.state-new-abo').length ){ return; }
+
+	var stateList = $('.state-new-abo').find('ul');
+	stateList.each(function(){
+		var subNum = $(this).find('li').length;
+		if (subNum === 1){
+			$(this).addClass('list-num1');
+		} else if (subNum === 2){
+			$(this).addClass('list-num2');
+		} else if (subNum === 3){
+			$(this).addClass('list-num3');
+			$(this).find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
+		} else if (subNum === 4){
+			$(this).addClass('list-num4');
+			$(this).find('li').filter(':nth-of-type(1)').addClass('first');
+		} else if(subNum === 5 || subNum > 5){
+			$(this).addClass('list-num5');
+			$(this).find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
+		}
+	});
+}
+
+/* 테이블 결과없음 : resize */
+function tbl_colspan(){
+	var winWidth = $(window).width();
+	if( winWidth > 768 ){
+		colspanResize();
+	}
+	function colspanResize(){
+		var colspanTbl = '.tbl-list-board';
+		if(! colspanTbl.length){return;}
+
+		$(colspanTbl).each(function(){
+			var _tblWidth =  $(this).width();
+			var _noResult = $(this).find('.tr.no-result');
+			if (_noResult.length){
+				_noResult.find('.search-no-result').width(_tblWidth);
+			}
+		});
+	}
+
+	$(window).resize(function(){
+		colspanResize();
 	});
 }
 
