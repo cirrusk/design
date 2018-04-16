@@ -220,7 +220,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 /* 마이페이지 > 배송지 관리*/
 .form-s:after {content:""; display:block;  clear:both; width: 0; height: 0;}
 .form-s input.input-st { width: 280px; vertical-align:top; margin-right:8px; font-size: 14px;}
-.akl .main-container.shipping { padding: 0 62px 80px;}
+.akl .main-container.shipping { padding-bottom:80px; padding-left: 40px;}
 .akl .main-container.shipping form input[type="text"] { vertical-align:top; margin-right:8px}
 .shipping-form-wrapper { overflow: hidden}
 .shipping-form-wrapper .form-s { float:left}
@@ -264,14 +264,14 @@ ul li.tbody div.mob-ttoy {display:none;}
 .shipping-list-head [type="checkbox"]:checked+label::after,
 .shipping-list [type="checkbox"]:checked+label::after {  top: -10px !important; }
 
-.shipping-modfiy { padding: 20px 20px 30px 60px; position: relative; border-bottom:1px solid #e3e3e3; clear:both;}
+.shipping-modfiy { padding: 20px 0 30px 60px; position: relative; border-bottom:1px solid #e3e3e3; clear:both;}
 .shipping-modfiy .form-group .col-md-2,
 .shipping-modfiy .form-group .col-md-10,
 .shipping-modfiy .form-group .col-xs-12 {padding-left: 0 !important; padding-right: 0 !important; width: 75%;}
 .shipping-modfiy-top {margin-bottom:18px;}
 .shipping-modfiy-top span{font-size: 14px; }
 .shipping-modfiy-top span:nth-of-type(2) {margin-left:40px;}
-.shipping-modfiy-body { margin-right:145px; margin-left: 67px; }
+.shipping-modfiy-body { margin-right:125px; margin-left: 67px; }
 .shipping-modfiy-body .form-group {overflow: hidden; margin-bottom:10px;}
 .shipping-modfiy-left { max-width:520px}
 .shipping-modfiy-left .form-group .case01 { margin-top:3px}
@@ -418,8 +418,8 @@ ul li.tbody div.mob-ttoy {display:none;}
  
  /*** 마이페이지 > header ***/
 .akl .breadcrumb {letter-spacing:-1px;}
-.akl .user-account-header .user-block {padding-left:60px;}
-.akl .user-account-header .go-block {padding-right:60px;}
+.akl .user-account-header .user-block {padding-left:0;}
+.akl .user-account-header .go-block {padding-right:0;}
 .akl .user-account-header .user-block .user-info .user-name {font-size:34px;letter-spacing:-2px;}
 .akl .user-account-header .user-block .user-info .user-id {font-size:14px;letter-spacing:0;}
 .akl .user-account-header .go-block select {margin-right:0;height:38px;}
@@ -429,8 +429,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 /* 마이페이지 > 개인정보 활용동의 관리 */
 .akl .page-bonus-payment .bonus-payment .bonus-payment-content {padding:0 0;font-family:'Noto Sans KR', sans-serif;}
-.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {margin:33px 0;border-top:0 none;padding:0 50px;}
-.akl .page-bonus-payment .bonus-payment .bonus-payment__description {font-size:14px;padding:7px 0;}
+.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {margin:33px 0;border-top:0 none;padding:0;}
+.akl .page-bonus-payment .bonus-payment .bonus-payment__description {font-size:14px;padding:7px 0; margin-left: 30px;}
 .akl .user-account-header, .akl .user-account-header .user-block .user-info .user-name {font-family:'Noto Sans KR', sans-serif;}
 
 .akl #terms .terms-title {font-size:14px;color:#55565a !important;font-weight:500; position: relative; letter-spacing:-1px;}
@@ -1057,6 +1057,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
     .shipping-modfiy-left { width:auto}
     .shipping-modfiy-left input[type="text"],
     .shipping-modfiy-left .form-group .case02 input[type="text"]{ width:100%}
+    .shipping-modfiy .form-group .col-xs-12 {width: 100%;} 
     .shipping-modfiy-btnw { position:  static; width: auto; text-align:left;border-top:1px solid #e3e3e3; padding-top: 20px; margin-top: 20px;}
     .paging-wrap {  margin-top:20px}
     .paging-wrap > span {  position:static; margin-bottom: 20px;}
@@ -1213,8 +1214,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 	.akl .bonus-payment-content .bonus-payment__description {padding-left:30px;}
 	.akl #terms .show-terms2 {display:none;}
 	.akl #terms .text-btn {margin-top:0;padding:0 10px;}
-	.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {padding:0;/* padding:0 20px; */}
-	.akl .page-bonus-payment .bonus-payment .bonus-payment__description {padding-left:30px;}
+	.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {padding:0;/* padding:0 20px; */} 
 
 	/* 마이페이지  > 계좌관리 */
 	.akl .bonus-payment .bonus-payment-content {clear:both;padding:35px 0}
