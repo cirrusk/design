@@ -435,22 +435,24 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 /* 주문결제 > 쿠폰선택 팝업 */
 .popTable-list {width:100%;padding:0 0 0}
 .popTable-list ul {width:100%;border-top:1px solid #e3e3e3;}
-.popTable-list ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;}
+.popTable-list ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;box-sizing:border-box;}
 .popTable-list ul li.thead-tit span {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;text-align:left;}
 .popTable-list ul li.thead-tit span.pcupon-number {width:40%;padding-left:10%;}
 .popTable-list ul li.thead-tit span.pcupon-name {width:30%;}
 .popTable-list ul li.thead-tit span.pcupon-period {width:30%;}
 
-.popTable-list ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;}
-.popTable-list ul li.tbody div {display:table-cell;font-size:14px;vertical-align:middle;}
+.popTable-list ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;box-sizing:border-box;}
+.popTable-list ul li.tbody > div {display:table-cell;font-size:14px;vertical-align:middle;box-sizing:border-box;word-break: break-all;}
 .popTable-list ul li.tbody button {vertical-align:middle;}
 .popTable-list ul li.tbody span {font-size:14px;vertical-align:middle;}
 .popTable-list ul li.tbody:nth-child(odd) {background:#f4f4f4;}
 
-div.pcupon-check {width:10%;margin:0;padding:15px 0 0;vertical-align:top;}
-div.pcupon-number {width:30%;vertical-align:middle;}
-div.pcupon-name {width:30%;vertical-align:middle;}
-div.pcupon-period {width:30%;vertical-align:middle;}
+.popTable-list ul li.tbody > div.pcupon-check {width:10%;vertical-align:top;padding:12px 0 0}
+.popTable-list ul li.tbody > div.pcu-group {width:90%;vertical-align:middle;letter-spacing:-1px;}
+.popTable-list ul li.tbody > div.pcu-group div.pcupon-number {display:inline-block;width:32%;vertical-align:middle;}
+.popTable-list ul li.tbody > div.pcu-group div.pcupon-name {display:inline-block;width:32%;vertical-align:middle;padding:0 10px 0 0;}
+.popTable-list ul li.tbody > div.pcu-group div.pcupon-period {display:inline-block;width:34%;vertical-align:middle;}
+
 .popTable-list .mob-txt {display:none;}
 
 /* 주문결제 > 설치주문 */
@@ -599,14 +601,16 @@ div.pcupon-period {width:30%;vertical-align:middle;}
 	.receipt-type select.form-control {width:98%;}
 
 	/* 주문결제 > 쿠폰선택 팝업 */
-	.pop-coupon-list ul li.thead-tit {display:none;}
+	.popTable-list ul li.thead-tit {display:none;}
 	.pop-coupon-list ul li.tbody div {display:inline-block;vertical-align:top;}
-	div.pcupon-check {width:15%;padding:5px 0 0}
-	div.pcu-group {width:75%;}
-	div.pcupon-number {width:100%;}
-	div.pcupon-name {width:100%;padding:8px 0 0}
-	div.pcupon-period {width:100%;padding:8px 0 0}
-	.pop-coupon-list .pcu-group .mob-txt {display:block;font-size:14px;color:#002f5f;font-weight:500;letter-spacing:-1px}
+
+	.popTable-list ul li.tbody > div.pcupon-check {width:15%;vertical-align:top;padding:10px 0 0}
+	.popTable-list ul li.tbody > div.pcu-group {width:85%;vertical-align:middle;letter-spacing:-1px;}
+	.popTable-list ul li.tbody > div.pcu-group span.mob-txt {display:block;font-size:14px;color:#002f5f;font-weight:500;letter-spacing:-1px}
+	.popTable-list ul li.tbody > div.pcu-group div.pcupon-number {clear:both;display:block;width:100%;vertical-align:middle;padding:5px 0 0 0;}
+	.popTable-list ul li.tbody > div.pcu-group div.pcupon-name {display:block;width:100%;vertical-align:middle;padding:5px 0 0 0;}
+	.popTable-list ul li.tbody > div.pcu-group div.pcupon-period {display:block;width:100%;vertical-align:middle;padding:5px 0 0 0;}
+
 
 	/* 주문결제 > 사업자등록증관리 팝업 */
 	.business-pop label {padding:0 0 0 0}
