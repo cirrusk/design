@@ -347,31 +347,48 @@ $(function() {
 
 
 //중개판매관리 add to shopping list event
-(function ($) {
-	$(".js-add-list-shopping-button,.addToLIST").click(function(e){
-		var tag = $(this).siblings('.dropdown-menu');
-		var flag=true;
-		if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
-			e.stopPropagation();
-			$(".plp-add-to-shopping-list ").removeClass("open");
-			$(this).parent(".plp-add-to-shopping-list ").addClass("open");
-			$(tag).show();
-			$(".plp-add-to-ditto").removeClass("open");
-		}else{
-			$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
-			$(tag).hide();
-		}
-		$(document).bind("click",function(e){
-			var target = $(e.target);
-			if(target.closest(tag).length == 0 && flag == true){
-				$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
-				$(tag).hide();
-				flag = false;
-			}
-		});
+$(function() {
+	
+	$('#U70410_lp2').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.U70410_lp2_pop');
 	});
-})(jQuery);
 
+	$('.btn-add-wish').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.wishListAdd');
+	});
+
+	$('#U70410_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.U70410_lp1_pop');
+	});
+
+	(function ($) {
+			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
+				var tag = $(this).siblings('.dropdown-menu');
+				var flag=true;
+				if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
+					e.stopPropagation();
+					$(".plp-add-to-shopping-list ").removeClass("open");
+					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
+					$(tag).show();
+					$(".plp-add-to-ditto").removeClass("open");
+				}else{
+					$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
+					$(tag).hide();
+				}
+				$(document).bind("click",function(e){
+					var target = $(e.target);
+					if(target.closest(tag).length == 0 && flag == true){
+						$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
+						$(tag).hide();
+						flag = false;
+					}
+				});
+			});
+		})(jQuery);
+});
 
 
 //구매권한 양도/양수 2018.04.05
