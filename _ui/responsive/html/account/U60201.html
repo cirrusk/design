@@ -807,7 +807,7 @@
 								<h3>일정선택</h3>
 								<div>
 									<span><input class="amwa-radio" type="radio" name="optradio1" id="radio1"> <label for="radio1">서울 워커힐 호텔 - 4월 6일(수) ~ 8일(금)</label></span>
-									<span><input class="amwa-radio" type="radio" name="optradio1" id="radio2" readonly="readonly"> <label for="radio2">부산 조선 웨스턴 호텔 - 4월 14일(목) ~ 16일(토) <b class="color-red ">[마감]</b></label></span>
+									<span><input class="amwa-radio" type="radio" name="optradio1" id="radio2" disabled="disabled"><label for="radio2">부산 조선 웨스턴 호텔 - 4월 14일(목) ~ 16일(토) <b class="color-red ">[마감]</b></label></span>
 									<span><input class="amwa-radio" type="radio" name="optradio1" id="radio3"> <label for="radio3">불참</label></span>
 								</div>	
 								<ul class="list-type5">
@@ -819,35 +819,33 @@
 								<h3>참석자선택</h3>
 								<div class="panel">
 									<input class="amwa-radio" type="radio" name="optradio1" id="radio21"> <label for="radio21">이영희 리더님 1명</label>
-									<div id="" class="">
-										<select class="form-control" id="SMS_Send">
-											<option>010</option>
-											<option>0012</option>
+									<div id="" class="plat-sel">
+										<select class="form-control" title="선택1">
+											<option>선택</option> 
 										</select>
 									</div>
 								</div>
-								<div class="panel"> 
-									<input class="amwa-radio" type="radio" name="optradio1" id="radio22"> <label for="radio22">박철수 리더님 1명</strong>
-									<div id="" class="">
-										<select class="form-control" id="SMS_Send">
-											<option>010</option>
-											<option>0012</option>
+								<div class="panel">
+									<input class="amwa-radio" type="radio" name="optradio1" id="radio22"> <label for="radio22">박철수  리더님 1명</label>
+									<div id="" class="plat-sel">
+										<select class="form-control" title="선택2">
+											<option>선택</option> 
 										</select>
 									</div>
 								</div>
 								<div class="panel"> 
 									<input class="amwa-radio" type="radio" name="optradio1" id="radio23"> <label for="radio23">이영희 리더님 + 박철수 리더님 2명</label>
-									<div id="" class="">
+									<div id="" class="plat-sel">
 										<span>
-											<select class="form-control" id="SMS_Send">
-												<option>010</option>
-												<option>0012</option>
+											<label for="select1">이영희 리더님</label>
+											<select class="form-control" id="select1">
+												<option>선택</option> 
 											</select>
 										</span>
 										<span>
-											<select class="form-control" id="SMS_Send">
-												<option>010</option>
-												<option>0012</option>
+											<label for="select2">박철수 리더님</label>
+											<select class="form-control" id="select2">
+												<option>선택</option> 
 											</select>
 										</span>
 									</div>
@@ -911,10 +909,11 @@
 						 <div class="box-top-text platinum">
 							<p class="name-title">참가신청 완료</h2>
 							<p class="sub-text">뉴 플래티늄 세미나 신청이 완료되었습니다.</p>
+							<button type="button" class="bt-akl-white mini btn-print-it">인쇄</button>
 						</div>
 						 
-						<ul class="custom-message trip-detail">
-							<li class="print-section"><!-- 인쇄영역 --> 
+						<ul class="custom-message">
+							<li class="print-section start"><!-- 인쇄영역 --> 
 								<dl class="tbl-list-dl">
 									<dt>ABO 번호</dt>
 									<dd>7480000</dd>
@@ -926,7 +925,7 @@
 									<dd>010-1234-1234 <span class="form-btn"><button type="button" class="bt-akl-white">문자 발송</button></span></dd>
 									 
 								</dl>
-								<button type="button" class="bt-akl-white mini btn-print-it">인쇄</button>
+								 
 							</li>
 						</ul>
 						<ul class="list-type2">

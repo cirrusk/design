@@ -334,7 +334,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 /* common > list style */
 .list-style-cont {padding:37px 0 0;}
 .list-type1 > li {background:url('../images/akl_common/ico_arr_line.png') no-repeat left 10px;padding:0 0 3px 10px; font-size:14px;}
-.list-type2 > li {background:url('../images/akl_common/ico_star.png') no-repeat left 5px;padding:0 0 4px 10px;font-size:13px;color:#808285;line-height:18px;font-style: italic; font-size:14px;}
+.list-type2 > li {background:url('../images/akl_common/ico_star.png') no-repeat left 5px;padding:0 0 4px 10px;font-size:13px;color:#808285;line-height:18px;font-style: italic; font-size:13px;}
 .list-type3 {margin:0;padding:0;}
 .list-type3 > li {list-style:none;padding:0 0 10px;}
 .list-type3 span {display:inline-block;width:28px;height:28px;text-align:center;border:1px solid #5e5e62;border-radius:50%;background:#fff;vertical-align:middle;line-height:25px;margin-right:10px;}
@@ -755,11 +755,20 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .subTitle .featured-product__link {margin-top:0;}  
 
 /* NPTS - 플래티늄 */
-.message-detail .box-top-text.platinum { text-align: center; border-bottom:2px solid #333 }
+.message-detail .box-top-text.platinum {  text-align: center; border-bottom:2px solid #333; position:relative; }
 .message-detail .box-top-text.platinum .name-title {padding: 65px 0 5px; color: #002f5f; font-size: 28px; line-height: 1.4; font-weight:700; margin-bottom: 0; letter-spacing: -1px }
 .message-detail .box-top-text.platinum .sub-text {font-size: 16px; padding-bottom:35px; margin-bottom: 0 }
-.message-detail .custom-message.type-platinum li h3 {padding-bottom: 20px; }
+.message-detail .box-top-text.platinum button { position: absolute; right: 0; bottom:10px}
+.message-detail .custom-message.type-platinum li:first-child { margin-top:20px; border:0}
+.message-detail .custom-message.type-platinum li h3 {padding: 20px 0; }
 .message-detail .custom-message.type-platinum li div label { font-size:14px; }
+.message-detail .custom-message.type-platinum li div > span { display: block; margin-bottom:20px }
+.message-detail .custom-message.type-platinum li div input[disabled] + label,
+.message-detail .custom-message.type-platinum li div input[readonly] + label { color: #bbb; }
+.message-detail .custom-message.type-platinum li div.panel { border:0;border-radius: 0; -webkit-box-shadow: none;box-shadow:none;}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel { margin: 15px 0 0 30px;}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel label  { margin-right:20px}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel span {  margin-bottom:10px }
 
 @media (max-width: 768px) {
 	/*** loading ***/ 
@@ -968,6 +977,16 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
  	.form-group-mob { display:block;} 
  	.form-group-mob > div input[ type="date"] { width:100%; margin-bottom: 5px;  }
  	.form-group-mob .bt-akl-blue { min-width:95px;  }
+ 	
+ 	/* NPTS - 플래티늄 */ 
+	.message-detail .box-top-text.platinum .name-title {padding: 25px 0 5px;  }
+	.message-detail .box-top-text.platinum .sub-text {  padding-bottom:27px; }
+	.message-detail .box-top-text.platinum button {display:none} 
+	.message-detail .custom-message.type-platinum li div label { line-height: 130%}
+	.message-detail .custom-message.type-platinum li div > span { margin-bottom:18px } 
+	.message-detail .custom-message.type-platinum li div.panel .plat-sel { margin: 10px 0 0 30px;} 
+	.message-detail .custom-message.type-platinum li div.panel .plat-sel select{  width: 100%}
+	.message-detail .custom-message.type-platinum li div.panel .plat-sel span {  margin-bottom:10px }
 }
 
 
