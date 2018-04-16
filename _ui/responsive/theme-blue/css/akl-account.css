@@ -635,12 +635,11 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .info-producer ul {width:100%;}
 .info-producer ul li {clear:both;display:block;height:40px;margin:0 0;border-top:1px solid #e3e3e3;overflow:hidden}
 .info-producer ul li:first-child {border-top:0 none;}
-.info-producer ul li dl {text-align:left;display:table;width:100%;table-layout:fixed;height:40px}
-.info-producer ul li dl dt {background:#f4f4f4;font-size:13px;display:table-cell;vertical-align:middle;padding:0 10px;font-weight:500;color:#002f5f;}
-.info-producer ul li dl dd {font-size:14px;display:table-cell;vertical-align:middle;font-weight:400;padding:0 10px;}
+.info-producer ul li dl {text-align:left;display:table;width:100%;table-layout:fixed;height:40px; margin-bottom: 0}
+.info-producer ul li dl dt {background:#f4f4f4;font-size:13px;display:table-cell;vertical-align:middle;padding:0 10px;font-weight:500;color:#002f5f; line-height:130%;}
+.info-producer ul li dl dd {font-size:14px;display:table-cell;vertical-align:middle;font-weight:400;padding:0 10px; line-height:130%;}
 .info-producer ul li dl.type1 dt {width:15%;}
-.info-producer ul li dl.type1 dd {width:85%;}
-.info-producer ul li .fl50 {float:left;width:50%;}
+.info-producer ul li dl.type1 dd {width:85%;} 
 .info-producer ul li dl.type2 dt {width:30%;}
 .info-producer ul li dl.type2 dd {width:70%;}
 .divisio-pen {float:left;width:50%;}
@@ -1302,14 +1301,17 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 
 	.tit-producer {width:100%;height:40px; padding-top:10px; border-bottom:1px solid #e3e3e3;display:block;}
 	.info-producer {display:block;height:auto;width:100%;border-left:0 none;}
-	.info-producer ul li { overflow: visible;border-top:0; }
-	.info-producer ul li dl { border-bottom:1px solid #e3e3e3;} 
-	 
+	.info-producer ul li { overflow: visible;border-top:0; height: auto }
+	.info-producer ul li dl { border-bottom:1px solid #e3e3e3; }  
 	.info-producer ul li dl.type1 dt {width:30%;}
-	.info-producer ul li dl.type1 dd {width:70%;}
+	.info-producer ul li dl.type1 dd {width:70%; }
 	.info-producer ul li dl.type2 dt {width:30%;}
 	.info-producer ul li dl.type2 dd {width:70%;}
-	.divisio-pen {float:left; width:100%; height: 40px;  }
+	.divisio-pen {float:none; width:100%; }
+	.info-producer ul li.address dl,
+	.info-producer ul li.address dl.type1 dt,
+	.info-producer ul li.address dl.type1 dd {height:50px; }
+	
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
