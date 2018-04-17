@@ -10,7 +10,7 @@
 <div class="layer_pop">
     <div class="pop_wrap pop_m">
         <div class="pop_header">
-            <h1>체크카드</h1>
+            <h1>쿠폰결제</h1>
             <button type="button" class="ico_comm pop_close01">닫기</button>
         </div>
         <!-- pop_container -->
@@ -19,47 +19,35 @@
                 <!-- 결제내역 -->
                 <div class="tbl_row">
                     <table>
-                        <caption>체크카드 결제내역</caption>
+                        <caption>쿠폰결제</caption>
                         <colgroup>
+                            <col style="width:110px">
+                            <col style="width:140px">
                             <col style="width:110px">
                             <col>
                         </colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">결제금액</th>
-                                <td><span class="won">100,000,000</span></td>
+                                <td colspan="3"><span class="won">100,000,000</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">쿠폰번호</th>
+                                <td colspan="3"><input type="text" class="w200" title="쿠폰번호"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">사용 금액</th>
+                                <td colspan="3">
+                                    <input type="text" class="w110 ar" title="할부개월">
+                                    <label class="inp_rd mgl10" for="sg1">전체금액<input type="radio" name="sg" id="sg1" checked><span class="checkmark"></span></label>
+                                    <label class="inp_rd mgl10" for="sg2">일부금액<input type="radio" name="sg" id="sg2"><span class="checkmark"></span></label>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">잔액</th>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">할부개월</th>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">비밀번호</th>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">카드번호</th>
-                                <td>941116******7834</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">카드사명</th>
-                                <td>현대카드</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">유효기간</th>
-                                <td>2010.02</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">승인번호</th>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">원매출일자</th>
-                                <td></td>
+                                <td><span class="won">100</span></td>
+                                <th scope="row">원 금액</th>
+                                <td><span class="won">100</span></td>
                             </tr>
                         </tbody>
                     </table>
