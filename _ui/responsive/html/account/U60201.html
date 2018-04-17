@@ -90,14 +90,23 @@
 				<!-- 게시글 상세보기 -->
 				<div class="message-center-details">
 					<div class="board-view-head">
-						<h2 class="txt-title"> 2016 다이아몬드 인비테이셔널</h2>
-						<p class="txt-date">수신일 : 2016-01-06(수)</p>
+						<h2 class="txt-title">여행점수 컨설팅 관련 안내</h2>
+						<p class="txt-date">수신일 : 2018-01-06(화)</p>
 					</div>
 					<div class="board-view-body">
 						<!-- 내용영역 -->
 						<div>
-							내용<br>내용<br>내용<br>내용<br>내용<br>
-							내용<br>내용<br>내용<br>내용<br>내용<br><br><br>
+							<p>
+							본 맞춤메시지는 한국암웨이 '첫 번째 리더십 세미나, 가즈아~!'대상자로 선정되신 다운 파트너의 업라인 다이아몬드 리더님께 발송됩니다.<br>
+							2018 첫 리더십 세미나 참가를 위해 도전중인 리더님께 3월19일(월)부터 3월 22일(목)까지 1:1 컨설팅을 지원해 드릴 예정이오니 많은 관심을 부탁드립니다.<br><br>
+
+							첫 번째 리더십 세미나, 가즈아~! (3-3-3 첫 여행 컨설팅)<br>
+							- 신청기간: 3월 14일(수) 오전 10시 ~ 3월 16일(금) 자정까지<br>
+							- 대상자: 첫 리더십 세미나 도전자 中 맞춤메시지를 수신한 분에 한해 선착순 접수<br>
+							* 이와 관련하여 궁금하신 부분이 있으실 경우 1588-0080으로 연락을 부탁 드립니다.<br>
+							감사합니다.
+							</p>
+							<br><br><br><br>
 							<p>
 								<a href="#" class="bt-akl-white" onclick="layerPopOver(this,'.U60201_lp2');">NCA 항공메시지</a>
 								<a href="#" class="bt-akl-white" onclick="layerPopOver(this,'.U60201_lp3');">NPTS</a>
@@ -137,7 +146,7 @@
 	<!-- NCA항공메시지   -->
 	<div class="layerWrapper U60201_lp2">
 		<div class="cbox layerBox typeMessageCenter">
-			<div class="popup_dialog">
+			<div class="popup-dialog box-NCA"><!-- box-NCA -->
 				<div class="custom-message-header">
 					<span>2016 다이아몬드 인비테이셔널</span>
 					<a href="#" class="popup__close"><img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기"></a>
@@ -789,15 +798,16 @@
 	<!-- NPTS 뉴 플래티늄 세미나 신청  -->
 	<div class="layerWrapper U60201_lp3">
 		<div class="cbox layerBox typeMessageCenter">
-			<div class="popup_dialog">
+			<div class="popup-dialog box-NPTS"><!-- .box-NPTS -->
 				<div class="custom-message-header">
-					<span>2016 다이아몬드 인비테이셔널</span>
+					<span>뉴 플래티늄 세미나 신청</span>
 					<a href="#" class="popup__close"><img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기"></a>
 				</div>
 				<div class="custom-message-body">
 					<div class="top-image"><img src="/_ui/responsive/theme-blue/images/akl_common/@img-message-nca02.jpg" alt="New Platinum Seminar 한국 암웨이 뉴 플래티늄 세미나에 ABO 리더님을 초대합니다"></div>
+
 					<!-- 참가신청 -->
-					<div class="message-detail">
+					<div class="message-detail apply-seminar">
 						<div class="box-top-text platinum">
 							<p class="name-title">7480000 홍길동</p>
 							<p class="sub-text">리더님의 뉴 플래티늄 세미나 일정을 선택해 주세요.</p>
@@ -905,7 +915,7 @@
 					<!--// 참가신청 -->
 
 					<!-- 참가신청 완료 -->
-					<div class="message-detail">
+					<div class="message-detail print-section"><!-- 인쇄영역 -->
 						<div class="box-top-text platinum">
 							<p class="name-title">참가신청 완료</p>
 							<p class="sub-text">뉴 플래티늄 세미나 신청이 완료되었습니다.</p>
@@ -923,7 +933,6 @@
 									<dd>이영희 리더님(선택한 옵션명) 1명</dd>
 									<dt>연락처 </dt>
 									<dd>010-1234-1234 <span class="form-btn"><button type="button" class="bt-akl-white">문자 발송</button></span></dd>
-
 								</dl>
 
 							</li>
@@ -949,7 +958,7 @@
 	<!-- 신규 프로모션 -->
 	<div class="layerWrapper U60201_lp4">
 		<div class="cbox layerBox typeMessageCenter">
-			<div class="popup_dialog">
+			<div class="popup-dialog box-newABO"><!-- .box-newABO -->
 				<div class="custom-message-header">
 					<span>2016년 3월 신규 ABO 프로모션</span>
 					<a href="#" class="popup__close"><img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기"></a>
@@ -1003,6 +1012,52 @@
 
 					<!-- 대상자 조회 -->
 					<div class="message-detail search-area">
+						<div class="targetInquiry">
+							<div class="clearfix">
+								<div class="form-group target">
+									<div>
+										<label for="promotionTarget">대상자 조회</label>
+										<span class="select-type">
+											<select class="form-control" id="promotionTarget">
+												<option value="select_type1" selected="selected">신규 ABO 가입일자</option>
+												<option value="select_type2">신규 ABO 성명</option>
+												<option value="select_type3">신규 ABO 번호</option>
+												<option value="select_type4">스폰서 ABO 번호</option>
+												<option value="select_type5">스폰서 ABO 성명</option>
+											</select>
+										</span>
+									</div>
+									<div class="valueBox">
+										<span class="joinDate" id="object1">
+											<em>2016년 3월</em>
+											<select class="form-control" title="신규ABO 가입일자">
+												<option value="">1</option>
+												<option value="">2</option>
+											</select>
+										</span>
+										<input type="text" id="object2" title="신규ABO 성명"  placeholder="성명을 입력해주세요" value="" style="display:none">
+										<input type="text" id="object3" title="신규ABO 번호"  placeholder="ABO번호를 입력해주세요" value="" style="display:none">
+										<input type="text" id="object4" title="스폰서ABO 번호" placeholder="ABO번호를 입력해주세요" value="" style="display:none">
+										<input type="text" id="object5" title="스폰서ABO 성명" placeholder="성명을 입력해주세요" value="" style="display:none">
+									</div>
+								</div>
+								<div class="form-group take-part">
+									<label for="">프로모션 참여</label>
+									<span class="select-type">
+										<select class="form-control" id="promotion">
+											<option value="" selected="selected">전체</option>
+											<option value="">참여</option>
+											<option value="">미참여</option>
+										</select>
+									</span>
+								</div>
+							</div>
+							<div class="btns">
+								<button type="button" class="bt-akl-blue">조회</button>
+								<button type="button" class="bt-akl-txt">전체보기</button>
+							</div>
+						</div>
+
 						<p class="tbl-top-total">총 :<strong>20</strong>명</p>
 						<div class="tbl-list-board type-tbody-th">
 							<div class="thead mob-hide">
@@ -1045,14 +1100,6 @@
 								</div>
 							</div>
 						</div>
-<script>
-$(function(){
-
-});
-
-
-
-</script>
 
 						<!-- paging-->
 						<div class="paging-wrap">
@@ -1072,6 +1119,15 @@ $(function(){
 						</div>
 						<!--// paging-->
 
+						<div class="list-wrapper-notice">
+							<h3 class="title">알아두세요!</h3>
+							<ul class="list-type5">
+								<li>전일 마감 기준이며, 신규 ABO의 탈퇴 및 반품을 고려한 수입니다.</li>
+								<li>본 데이터는 <strong class="color-blue">4월 5일 마감 분</strong>까지 반영됩니다.</li>
+								<li><strong class="color-blue">본 프로모션의 수혜자는 관련 법규와 한국암웨이 윤리강령 및 행동지침을 철저히 준수하신 ABO분들에 한합니다.</strong></li>
+							</ul>
+						</div>
+
 					</div>
 					<!-- //대상자 조회 -->
 
@@ -1082,7 +1138,6 @@ $(function(){
 	<!-- //신규 프로모션 -->
 
 <script>
-layerPopOver('','.U60201_lp4');
 </script>
 </body>
 </html>

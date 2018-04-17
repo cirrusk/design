@@ -55,6 +55,12 @@ $(function(){
 
 	//테이블 결과없음 : resize
 	tbl_colspan();
+	$(window).resize(function(){
+		tbl_colspan();
+	});
+
+	//신규ABO - 대상자 조회
+	event_NewABO_select();
 
 	//2018.03.12 카테고리 왼쪽메뉴
 	var Accordion = function(el, multiple) {
@@ -244,25 +250,72 @@ function message_newABO_state(){
 
 /* 테이블 결과없음 : resize */
 function tbl_colspan(){
-	var winWidth = $(window).width();
-	if( winWidth > 768 ){
-		colspanResize();
-	}
-	function colspanResize(){
-		var colspanTbl = '.tbl-list-board';
-		if(! colspanTbl.length){return;}
+	var colspanTbl = '.tbl-list-board';
+	if (!colspanTbl.length){return;}
 
-		$(colspanTbl).each(function(){
-			var _tblWidth =  $(this).width();
-			var _noResult = $(this).find('.tr.no-result');
-			if (_noResult.length){
-				_noResult.find('.search-no-result').width(_tblWidth);
+	var _winWidth = $(window).width();
+	var colspanResize = {
+			init : function(){
+				$(colspanTbl).each(function(){
+					var _tblWidth =  $(this).width();
+					var _noResult = $(this).find('.tr.no-result');
+					if (_noResult.length){
+						_noResult.find('.search-no-result').width('')
+					}
+				});
+			},
+			reSize : function(){
+				$(colspanTbl).each(function(){
+					var _tblWidth =  $(this).width();
+					var _noResult = $(this).find('.tr.no-result');
+					if (_noResult.length){
+						_noResult.find('.search-no-result').width(_tblWidth);
+					}
+				});
 			}
-		});
 	}
 
-	$(window).resize(function(){
-		colspanResize();
+	if( _winWidth > 768 ){
+		colspanResize.reSize();
+	} else if(_winWidth < 769) {
+		colspanResize.init();
+	}
+}
+
+/* 신규ABO - 대상자 조회 */
+function event_NewABO_select(){
+	var _wrapper = $('.targetInquiry'),
+		_targetO = _wrapper.find('#promotionTarget'),
+		_boxForm = _wrapper.find('.valueBox'),
+		_inputAll = _boxForm.find('input[type=text]');
+
+	var obj1 = _boxForm.find('#object1'),
+		obj2 = _boxForm.find('#object2'),
+		obj3 = _boxForm.find('#object3'),
+		obj4 = _boxForm.find('#object4'),
+		obj5 = _boxForm.find('#object5');
+
+	_targetO.change(function(){
+		if($(this).val() === 'select_type1'){
+			_inputAll.hide();
+			obj1.show();
+		} else if($(this).val() === 'select_type2'){
+			_inputAll.hide();
+			obj1.hide();
+			obj2.show();
+		} else if($(this).val() === 'select_type3'){
+			_inputAll.hide();
+			obj1.hide();
+			obj3.show();
+		} else if($(this).val() === 'select_type4'){
+			_inputAll.hide();
+			obj1.hide();
+			obj4.show();
+		} else if($(this).val() === 'select_type5'){
+			_inputAll.hide();
+			obj1.hide();
+			obj5.show();
+		}
 	});
 }
 

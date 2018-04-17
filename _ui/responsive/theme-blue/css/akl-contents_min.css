@@ -576,8 +576,8 @@ html.scrollLock body {overflow:hidden;}
 .board-view-foot li>p {width:86%; padding:20px 0 18px;}
 
 /* 마이페이지 - 맞춤메시지 팝업 */
-.akl .popup_dialog {padding:24px 40px 40px; background:#fff;}
-.akl .popup_dialog .popup__close {position:absolute; top:-2px; right:0;}
+.akl .popup-dialog {padding:24px 40px 40px; background:#fff;}
+.akl .popup-dialog .popup__close {position:absolute; top:-2px; right:0;}
 .custom-message-header {position:relative; padding-bottom:18px; border-bottom:1px solid #e3e3e3; color:#002f5f; font-size:24px; font-weight:500; letter-spacing:-0.05em;}
 .custom-message-header>p {font-size:24px;letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
 .custom-message-body {margin-top:40px; padding-bottom:50px; background-color:#f2f9fc;}
@@ -709,8 +709,29 @@ html.scrollLock body {overflow:hidden;}
 .message-detail.search-area .tbl-top-total strong {display:inline-block; padding:0 3px 0 5px; color:#002f5f;}
 .message-detail.search-area .tbl-list-board.type-tbody-th {margin-top:17px;}
 .message-detail.search-area .tbl-list-board.type-tbody-th .tbody .new-abo-th1 {padding-left:25px;}
+.message-detail.search-area .list-wrapper-notice {padding-top:40px;border-top:1px solid #e3e3e3;}
+.message-detail.search-area .list-wrapper-notice .title {position:relative; padding-left:24px; font-size:14px;}
+.message-detail.search-area .list-wrapper-notice .title:before {content:'';position:absolute; top:0; left:0; display:block; width:20px; height:20px; background:url(../images/akl_common/icon_mem.png) no-repeat;}
+.message-detail.search-area .list-wrapper-notice>ul {margin-left:24px;}
+.message-detail.search-area .list-wrapper-notice strong {font-weight:500;}
 
-
+/* 신규 ABO 프로모션 : 대상자 조회 */
+.akl .form-group .joinDate select.form-control {width:auto; min-width:80px;}
+.targetInquiry {padding-bottom:40px; margin-bottom:36px;border-bottom:1px solid #dadada;}
+.targetInquiry .form-group {overflow:hidden; float:left;}
+.targetInquiry .form-group * {font-size:14px;}
+.targetInquiry .form-group label {min-width:95px; box-sizing:border-box; padding-right:30px;}
+.targetInquiry .form-group>div {display:block; float:left;}
+.targetInquiry .form-group>div>* {display:inline-block;}
+.targetInquiry .joinDate>em {display:inline-block; padding-right:10px;}
+.targetInquiry .joinDate {width:190px;}
+.targetInquiry .valueBox input[type=text] {width:190px;}
+.targetInquiry .form-group.target {margin-right:30px;}
+.targetInquiry .form-group.target .select-type {width:180px; margin-right:20px;}
+.targetInquiry .form-group.take-part .select-type {width:180px;}
+.targetInquiry .form-group.take-part > * {display:inline-block}
+.targetInquiry .btns button {min-width:70px;}
+.targetInquiry .btns:before {content:''; display:table; width:100%;}
 
 /* 삭제예정
 .tbl-mob-type1 {padding:5px 0 0;}
@@ -946,11 +967,11 @@ html.scrollLock body {overflow:hidden;}
 	.tbl-list-board.tbl-customMessage .cell-title {padding-top:0; padding-left:60px;}
 
 	/* 마이페이지 - 맞춤메시지 팝업 */
-	.akl .popup_dialog {padding:18px 20px 20px;}
-	.akl .popup_dialog .custom-message-header {font-size:18px; padding-bottom:18px;}
-	.akl .popup_dialog .custom-message-body {margin-top:20px; padding-bottom:12px;}
-	.akl .popup_dialog .custom-message-body .message-detail { margin:12px 12px 0; padding:20px;}
-	.akl .popup_dialog  #terms .text{padding:20px 0 0;}
+	.akl .popup-dialog {padding:18px 20px 20px;}
+	.akl .popup-dialog .custom-message-header {font-size:18px; padding-bottom:18px;}
+	.akl .popup-dialog .custom-message-body {margin-top:20px; padding-bottom:12px;}
+	.akl .popup-dialog .custom-message-body .message-detail { margin:12px 12px 0; padding:20px;}
+	.akl .popup-dialog  #terms .text{padding:20px 0 0;}
 	.message-detail .box-top-text h2 { padding:0 0 30px; margin-bottom:30px; font-size:21px;}
 
 	.akl #terms.custom-message .conditions .text-btn.view-all {margin-top:25px; padding:0;}
@@ -1006,6 +1027,8 @@ html.scrollLock body {overflow:hidden;}
 	.message-detail .custom-message.type-platinum li div.panel .plat-sel span {margin-bottom:10px }
 
 	/* 신규 ABO 프로모션 */
+	.akl .popup-dialog .custom-message-body .message-detail.new-abo {padding-top:40px;}
+	.message-detail.new-abo .box-top-text {padding-bottom:20px;}
 	.state-new-abo>h3 {line-height:1.4;}
 	.state-new-abo>h3>span {display:block;}
 	.state-new-abo>ul>li {float:none;}
@@ -1022,6 +1045,18 @@ html.scrollLock body {overflow:hidden;}
 	.state-new-abo .list-num5>li.nth-3n-1 {width:auto; padding:0;}
 	.message-detail.search-area {padding-top:30px;}
 	.message-detail.search-area .tbl-list-board.type-tbody-th .tbody .new-abo-th1 {padding-left:20px;}
+
+	/* 신규 ABO 프로모션 : 대상자 조회 */
+	.targetInquiry {padding-bottom:40px; margin-bottom:0;border-bottom:0;}
+	.targetInquiry .form-group {position:relative; float:none;}
+	.targetInquiry .form-group>div {float:none;}
+	.targetInquiry .valueBox {margin-top:12px;}
+	.targetInquiry .valueBox input[type=text]{width:100%;}
+	.targetInquiry .form-group.target {margin-right:0}
+	.targetInquiry .form-group.target .select-type {width:100%; margin-right:0;}
+	.targetInquiry .form-group.target .joinDate {width:100%;}
+	.targetInquiry .form-group.take-part {margin-top:25px;}
+	.targetInquiry .form-group.take-part .select-type {width:100%;}
 }
 
 @media (max-width: 320px) {
