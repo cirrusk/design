@@ -294,7 +294,7 @@ html.scrollLock body {overflow:hidden;}
 
 /* 아이콘 제목 */
 .akl .message-center-wrapper, .akl .authorization-step-wrapper {padding:30px 30px 0; font-family:'Noto Sans KR', sans-serif;}
-.akl .icon-sub-title {position:relative; padding:0 0 40px; font-size:18px;letter-spacing:-2px; font-weight:500;}
+.akl .icon-sub-title {position:relative; padding:0 0 36px; font-size:18px;letter-spacing:-2px; font-weight:500;}
 .icon-sub-title:after {content:''; display:block; position:absolute; top:0; left:-30px; width:20px; height:20px;}
 .icon-sub-title.message-title:after {top:7px; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
 .icon-sub-title.author-title:after {top:1px; width:22px; height:22px; background:#008fc5 url('../images/akl_common/ico_author_person.png') no-repeat left top;}
@@ -562,18 +562,27 @@ html.scrollLock body {overflow:hidden;}
 .tbl-list-board.tbl-customMessage .cell-title{width:70%;}
 
 /* 마이페이지 - 맞춤메시지 상세내용 */
+.message-center-details {position:relative; padding-top:43px;}
+.message-center-details .btn-prev-page {position:absolute; top:0; left:0; display:inline-block; padding-left:16px; font-size:14px; font-weight:500; background:url(../images/akl_common/ico_msg_arrw.png) 0 50% no-repeat;}
 .message-center-details * {font-size:14px;}
 .message-center-details .next-control {margin-top:40px;}
 .message-center-details .next-control .bt-akl-txt {min-width:0;}
-.board-view-head {padding:30px 0 27px; border:1px solid #e3e3e3; border-width:1px 0;}
-.board-view-head .txt-title {text-align:left; margin:0; padding:0 0 10px;}
+.board-view-head {position:relative; padding:26px 160px 27px 0; border:1px solid #e3e3e3; border-width:1px 0;}
+.board-view-head .txt-title {text-align:left; margin:0; padding:0 0 10px; line-height:1.4;}
 .board-view-head .txt-date {margin-bottom:0; font-size:14px;}
+.board-view-head .btn-box {position:absolute; top:30px; right:0;}
+.board-view-head .btn-box button {width:40px; height:20px; padding:0; margin-left:10px; color:#0075a4; font-size:14px; background:transparent;}
+.board-view-head .btn-box .btn-ico-print {width:60px; padding-left:25px; margin-left:0; background:url(../images/akl_common/ico_btn_print.png) no-repeat;}
 .board-view-body {margin:30px 0 60px;}
-.board-view-foot {border-top:1px solid #e3e3e3;}
+.board-view-foot {overflow:hidden; padding-top:30px; border-top:1px solid #e3e3e3;}
+.board-view-foot .btn_prev {float:left;}
+.board-view-foot .btn_next {float:right;}
+
+/* 사용안함 : 2018.04.17
 .board-view-foot li {display:table;width:100%; border-bottom:1px solid #e3e3e3;}
 .board-view-foot li>* {display:table-cell;vertical-align:middle;}
 .board-view-foot li>strong {width:14%; padding:20px 0 18px; font-weight:normal;}
-.board-view-foot li>p {width:86%; padding:20px 0 18px;}
+.board-view-foot li>p {width:86%; padding:20px 0 18px;} */
 
 /* 마이페이지 - 맞춤메시지 팝업 */
 .akl .popup-dialog {padding:24px 40px 40px; background:#fff;}
@@ -591,9 +600,6 @@ html.scrollLock body {overflow:hidden;}
 .message-detail .box-top-text.small-txt {padding-bottom:30px;margin-bottom:0; border-bottom:2px solid #333;}
 .message-detail .box-top-text.small-txt h2{padding-bottom:0; margin-bottom:10px; font-size:18px;border-bottom:0;}
 .message-detail .box-top-text.small-txt p {text-align:center;}
-
-
-
 .message-detail.new-abo .box-top-text {padding-bottom:30px;margin-bottom:0; border-bottom:2px solid #333;}
 .message-detail.new-abo .box-top-text h2{margin:0 0 10px; padding-bottom:0; font-size:28px;border-bottom:0;}
 .message-detail.new-abo .box-top-text p {font-size:18px;text-align:center;}
@@ -668,6 +674,7 @@ html.scrollLock body {overflow:hidden;}
 .message-detail .box-top-text.platinum {  text-align: center; border-bottom:2px solid #333; position:relative; }
 .message-detail .box-top-text.platinum .name-title {padding: 65px 0 5px; color: #002f5f; font-size: 28px; line-height: 1.4; font-weight:700; margin-bottom: 0; letter-spacing: -1px }
 .message-detail .box-top-text.platinum .sub-text {font-size: 16px; padding-bottom:35px; margin-bottom: 0 }
+.message-detail .txt-tel {display:inline-block; padding-right:15px;}
 .message-detail .box-top-text.platinum button { position: absolute; right: 0; bottom:10px}
 .message-detail .custom-message.type-platinum li:first-child { margin-top:20px; border:0}
 .message-detail .custom-message.type-platinum li h3 {padding: 20px 0; }
@@ -949,7 +956,11 @@ html.scrollLock body {overflow:hidden;}
 	.akl .message-center-wrapper .messages-numb {margin-bottom:20px;}
 	.akl .message-center-list {padding:0; margin-top:0;}
 	.akl .message-center-list .shipping-top {margin:0 0 10px}
-	.akl .message-center-wrapper .shipping-top p {margin:0}
+	.akl .message-center-wrapper .shipping-top p {margin:0;}
+	.board-view-head {padding-right:50px;}
+	.board-view-head .btn-box {top:21px;}
+	.board-view-head .btn-box button {padding:10px; width:auto; height:auto;}
+	.board-view-head .btn-box .btn-ico-print {display:none;}
 
 	/* 마이페이지 - 맞춤메시지 > 검색 - select+input
 	.form-s.type-board {display:table;width:100%;}
@@ -1020,6 +1031,7 @@ html.scrollLock body {overflow:hidden;}
 	.message-detail .box-top-text.platinum .name-title {padding: 25px 0 5px;}
 	.message-detail .box-top-text.platinum .sub-text {padding-bottom:27px;}
 	.message-detail .box-top-text.platinum button {display:none}
+	.message-detail .txt-tel {display:inline-block; padding:0 10px 10px 0;}
 	.message-detail .custom-message.type-platinum li div label { line-height: 130%}
 	.message-detail .custom-message.type-platinum li div > span { margin-bottom:18px }
 	.message-detail .custom-message.type-platinum li div.panel .plat-sel { margin: 10px 0 0 30px;}

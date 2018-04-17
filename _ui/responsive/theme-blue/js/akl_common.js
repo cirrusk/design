@@ -341,10 +341,11 @@ function print_layerSection(){
 	}
 }
 
-/* 인쇄 - 게시판 하단 인쇄버튼 */
+/* 인쇄 - 게시판 상세 페이지 */
 function print_pageBoard(){
-	var $btn_PrintPage = $('.btn-printPage');
-	$btn_PrintPage.on('click',function(){
+	var  btnClass = '.btn-printPage , .btn-ico-print';
+	var _btn_PrintPage = $(btnClass);
+	_btn_PrintPage.on('click', function(){
 		window.print();
 	});
 }
@@ -547,6 +548,9 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		if( $layerPrdtDetail.length){
 			$('html').addClass('activeFullSizeView');
 		}
+
+		/* 맞춤메시지  .search-no-result */
+		tbl_colspan();
 	}
 	var scroll_RESET = function(){
 		$('html').removeClass('scrollLock printReady_layer'); //.printReady_layer : 레이어 팝업 인쇄용

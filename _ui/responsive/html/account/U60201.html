@@ -89,9 +89,16 @@
 
 				<!-- 게시글 상세보기 -->
 				<div class="message-center-details">
+					<a href="#" class="btn-prev-page">맞춤메시지 목록</a>
+
 					<div class="board-view-head">
 						<h2 class="txt-title">여행점수 컨설팅 관련 안내</h2>
 						<p class="txt-date">수신일 : 2018-01-06(화)</p>
+
+						<span class="btn-box">
+							<button type="button" class="btn-ico-print">인쇄</button>
+							<button type="button" class="btn-txt-delete">삭제</button>
+						</span>
 					</div>
 					<div class="board-view-body">
 						<!-- 내용영역 -->
@@ -108,29 +115,17 @@
 							</p>
 							<br><br><br><br>
 							<p>
-								<a href="#" class="bt-akl-white" onclick="layerPopOver(this,'.U60201_lp2');">NCA 항공메시지</a>
-								<a href="#" class="bt-akl-white" onclick="layerPopOver(this,'.U60201_lp3');">NPTS</a>
-								<a href="#" class="bt-akl-white" onclick="layerPopOver(this,'.U60201_lp4');">신규 ABO 프로모션</a>
+								<a href="#" class="bt-akl-blue" onclick="layerPopOver(this,'.U60201_lp2');">NCA 항공메시지</a>
+								<a href="#" class="bt-akl-blue" onclick="layerPopOver(this,'.U60201_lp3');">NPTS</a>
+								<a href="#" class="bt-akl-blue" onclick="layerPopOver(this,'.U60201_lp4');">신규 ABO 프로모션</a>
 							</p>
 						</div>
 						<!-- //내용영역 -->
 					</div>
+
 					<div class="board-view-foot">
-						<ul>
-							<li>
-								<strong>이전</strong>
-								<p><a href="#">제목 영역입니다 제목 영역입니다제목 영역입니다 제목 영역입니다제목 영역입니다 제목 영역입니다</a></p>
-							</li>
-							<li>
-								<strong>다음</strong>
-								<p><a href="#">제목 영역입니다 제목 영역입니다</a></p>
-							</li>
-						</ul>
-					</div>
-					<div class="next-control">
-						<button type="button" class="bt-akl-blue">목록</button>
-						<button type="button" class="bt-akl-white btn-printPage" onclick="">인쇄</button><!-- .btn-print-wrapper 게시판 상세 인쇄 -->
-						<button type="button" class="bt-akl-txt">삭제</button>
+						<button type="button" class="bt-akl-white btn_prev">이전</button>
+						<button type="button" class="bt-akl-white btn_next">다음</button>
 					</div>
 				</div>
 				<!-- //게시글 상세보기 -->
@@ -932,7 +927,7 @@
 									<dt>참석자 </dt>
 									<dd>이영희 리더님(선택한 옵션명) 1명</dd>
 									<dt>연락처 </dt>
-									<dd>010-1234-1234 <span class="form-btn"><button type="button" class="bt-akl-white">문자 발송</button></span></dd>
+									<dd><em class="txt-tel">010-1234-1234</em><span class="form-btn"><button type="button" class="bt-akl-white">문자 발송</button></span></dd>
 								</dl>
 
 							</li>
