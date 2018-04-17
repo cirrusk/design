@@ -9,13 +9,13 @@ Editor : sookkyung Han
 .product-detail-view > .product-visual{max-width:100%;padding:78px 0 70px;}
 .product-detail-view dl{margin:0;}
 
-.color01 .product-visual{background-color:#eeede3;}/* 어두운 그린 */
-.color02 .product-visual{background-color:#faffee;}/* 밝은 그린 */
-.color03 .product-visual{}/* 이미지 : 그레이txt */
-.color04 .product-visual{background-color:#ffeaea;}/* 밝은 레드 */
-.color05 .product-visual{background-color:#e9bab8;}/* 어두운 레드 */
-.color06 .product-visual{}/* 갈색 */
-.color07 .product-visual{}/* 이미지 : 화이트txt */
+.NU01 .product-visual{background-color:#f3f2eb;}/* 뉴트리라이트 - 그린 */
+.NU02 .product-visual{background-color:#eeede3;}/* 뉴트리라이트 - 어두운그린 */
+.NU-RED .product-visual{background-color:#ffeaea;}/* 뉴트리라이트 - 레드 */
+.AR-IS01 .product-visual{}/* ARTISTRY - 밝은 하늘색 */
+.AR-IS02 .product-visual{}/* ARTISTRY - 어두운 하늘색 */
+.AR-YX01 .product-visual{background-color:#e9bab8;}/* ARTISTRY - 밝은 빨간 */
+.AR-YX02 .product-visual{}/* ARTISTRY - 밝은 갈색 */
 
 .product-detail-view .product-visual{position:relative;overflow:hidden;}
 .product-visual .visual-bg img{position:absolute;display:inline-block;bottom:0;}
@@ -25,36 +25,37 @@ Editor : sookkyung Han
 .product-visual .txt-area{text-align:center;}
 .product-visual .visual-logo{display:inline-block;}
 .product-visual .logo-txt{display:block;margin-top:12px;font-size:26px;color:#56565a;letter-spacing:-2px}
-.product-visual .visual-tit{margin-top:38px;font-size:60px;color:#56565a;font-weight:400;line-height:0.9;letter-spacing:-2px;}
+.product-visual .visual-tit{margin-top:32px;font-size:60px;color:#56565a;font-weight:400;line-height:1.2;letter-spacing:-2px;}
 .product-visual .visual-tit strong{font-size:60px;font-weight:500;line-height:1;}
-.color01 .product-visual .visual-tit strong,
-.color02 .product-visual .visual-tit strong{color:#20893d;}
-.color04 .product-visual .visual-tit strong,
-.color05 .product-visual .visual-tit strong{color:#c4133f;}
-.color03 .product-visual .visual-tit .type01{color:#0075a4;} /* 블루1 */
+.NU01 .product-visual .visual-tit strong,
+.NU02 .product-visual .visual-tit strong{color:#20893d;}
+.AR-IS01 .product-visual .visual-tit strong{color:#0075a4;}
 .color07 .product-visual .visual-tit .type01{color:#9ef9da} /* 스카이1 */
-.color07 .product-visual .visual-tit .type02{color:#1ef1d9} /* 스카이2 */
-.color07 .product-visual .visual-tit .type03{color:#e7c099} /* 스카이2 */
+.AR-IS02 .product-visual .visual-tit strong{color:#1ef1d9} /* 스카이2 */
+.NU-RED .product-visual .visual-tit strong,
+.AR-YX01 .product-visual .visual-tit strong{color:#c4133f;}/* 레드 */
+.AR-YX02 .product-visual .visual-tit strong{color:#e7c099} /* 스카이2 */
 
-.product-visual .txt-area .visual-txt{margin:24px 10% 0;font-size:16px;color:#444;font-weight:300;line-height:1.6;letter-spacing:-1px;}
+.product-visual .txt-area .visual-txt{margin:20px 10% 0;font-size:16px;color:#444;font-weight:300;line-height:1.6;letter-spacing:-1px;}
 .product-visual .txt-area .visual-etc{margin:20px 10% 0;font-size:14px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px}
 
 .product-visual .visual-img{width:100%;margin-top:65px;text-align:center;}
 .product-visual .visual-img span{display:inline-block;}
-.color07 .product-visual .txt-area *{color:#fff}
+.AR-IS02 .product-visual .txt-area *,
+.AR-YX02 .product-visual .txt-area *{color:#fff}
 
 .product-detail-view .detail-tit{display:block;font-size:44px;color:#57565b;font-weight:400;letter-spacing:-2px;text-align:center;}
 .product-detail-view .detail-tit.small{font-size:30px;color:#57565b;font-weight:500;}
 .product-detail-view .detail-tit em{font-size:44px;color:#20893d;font-weight:400;letter-spacing:-2px;}
-.color04.product-detail-view .detail-tit em,
-.color05.product-detail-view .detail-tit em{color:#c4133f;}
+.NU-RED.product-detail-view .detail-tit em,
+.AR-YX01.product-detail-view .detail-tit em{color:#c4133f;}
 .product-detail-view .detail-info-txt{font-size:20px;color:#57565b;font-weight:300;letter-spacing:-2px;}
 .product-detail-view .detail-info-etc{display:block;font-size:16px;color:#818286;font-weight:300;letter-spacing:-1px;}
 .product-detail-view .detail-info-etc.big{font-size:18px;letter-spacing:-2px;}
 .product-detail-view .tit-blue-s{font-size:16px;color:#0090c5;font-weight:400;letter-spacing:-1px;}
 .product-detail-view .tit-blue-b{font-size:18px;color:#0075a4;font-weight:400;letter-spacing:-2px;}
-.color01.product-detail-view .detail-tit em,
-.color02.product-detail-view  .detail-tit em{color:#20893d;}
+.NU01.product-detail-view  .detail-tit em,
+.NU02.product-detail-view  .detail-tit em{color:#20893d;}
 
 .product-detail-view .detail-img{position:relative;display:inline-block;}
 .product-detail-view .mt0{margin-top:0;}
@@ -234,9 +235,24 @@ Editor : sookkyung Han
 .effect-img2029_02 .comment02{bottom:0;left:26%;margin-bottom:0;}
 .effect-img2029_02 .comment03{bottom:0;left:72%;margin-bottom:0;}
 
+.effect-img01{margin-top:30px;}
+.effect-img01 .effect-comment{max-width:125px;font-size:14px;font-weight:300;text-align:center;line-height:1.5;}
+.effect-img01 .effect-comment p{margin-bottom:1px;}
+.effect-img01 .comment01{top:52%;left:0;}
+.effect-img01 .comment01 p{color:#7cbf49;}
+.effect-img01 .comment02{top:52%;left:32%;}
+.effect-img01 .comment02 p{color:#fdb813;}
+.effect-img01 .comment03{top:52%;left:70%;}
+.effect-img01 .comment03 p{color:#f58220;}
 
-
-
+.effect-img02 .effect-comment, .effect-img02 .effect-comment em{font-size:18px;color:#56565a;text-align:center;font-weight:400;}
+.effect-img02 .comment01{top:56%;left:-7px;width:100%;font-size:16px;}
+.effect-img02 .comment02{top:-2%;left:-7px;width:100%;}
+.effect-img02 .comment02 em{color:#7cbf49;}
+.effect-img02 .comment03{top:91%;left:0;}
+.effect-img02 .comment03 em{color:#fdb918;}
+.effect-img02 .comment04{top:91%;left:55%;}
+.effect-img02 .comment04 em{color:#f58424;}
 
 
 .product-effect-info .dot-list{margin-top:36px;}
@@ -256,14 +272,14 @@ Editor : sookkyung Han
 .reverse .advantage-box{float:right;}
 .product-advantage .advantage-txt{margin-top:18px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.6;}
 .product-advantage .advantage-txt-etc{font-size:16px;letter-spacing:-1px;}
-.color03 .product-advantage .advantage-txt-etc{color:#008fc5;}
+.AR-IS01 .product-advantage .advantage-txt-etc{color:#008fc5;}
 .product-advantage .advantage-txt-etc:first-child{margin-top:20px;}
 .product-advantage .advantage-img{float:right;text-align:left;padding:0 0 0 50px;}
 .product-advantage.reverse .advantage-img{float:left;text-align:left;padding:0 50px 0 0;}
 .product-advantage .detail-tit + .advantage-list{margin-top:-5px;}
 .product-advantage .advantage-list .list-box{margin-top:23px;}
 .product-advantage .advantage-list .list-tit{display:block;font-size:16px;font-weight:400;letter-spacing:-1px;}
-.color03 .product-advantage .advantage-list .list-tit, .color07 .product-advantage .advantage-list .list-tit{color:#0075a4;}
+.AR-IS01 .product-advantage .advantage-list .list-tit, .AR-IS02 .product-advantage .advantage-list .list-tit{color:#0075a4;}
 .product-advantage .advantage-list .list-txt{display:block;font-size:16px;color:#808285;font-weight:300;letter-spacing:-1px;}
 .product-advantage .advantage-list .detail-dot{margin-top:20px;padding-left:10px;font-size:14px;color:#000;font-weight:300;}
 .product-advantage .advantage-list .detail-dot:after{top:8px;}
@@ -279,12 +295,12 @@ Editor : sookkyung Han
 .advantage-step .program-list .program-tit{display:block;padding-left:15px;margin-top:10px;font-size:16px;color:#56565a;font-weight:400;letter-spacing:-1px;}
 .advantage-step .program-list .program-txt{display:block;padding-left:15px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 
-.color06 .product-advantage .advantage-list .list-tit,
-.color06 .product-advantage .advantage-list .advantage-list-tit{color:#ad9172;}
-.color07 .product-advantage .advantage-list .list-tit,
-.color07 .product-advantage .advantage-list .advantage-list-tit{color:#ad9172;}
-.color06 .advantage-step .step-tit em, .color07 .advantage-step .step-tit em{color:#ad9172;}
-
+.AR-YX02 .product-advantage .advantage-list .advantage-list-tit{color:#ad9172;}
+.AR-YX02 .advantage-step .step-tit em{color:#ad9172;}
+/*
+.AR-IS02 .product-advantage .advantage-list .list-tit,
+.AR-IS02 .product-advantage .advantage-list .advantage-list-tit{color:#ad9172;}
+*/
 .product-detail-view .effect-info .img-wrap{margin-top:50px}
 
 .product-detail-view .product-process{padding:26px 50px 23px;margin-top:50px;border:10px solid #eff0f1;}
@@ -354,7 +370,8 @@ Editor : sookkyung Han
 
 .round-list{width:-webkit-calc(100% + 30px);width:-moz-calc(100% + 30px);width:-ms-calc(100% + 30px);width:calc(100% + 30px);margin:0 0 0 -30px;float:none;padding:0;}
 .effect-info .round-list{margin-top:-20px;}
-.round-list li{float:none;display:inline-block;padding:30px 0 0 30px;vertical-align:middle;}
+.round-list li{float:none;display:inline-block;padding:30px 0 0 30px;vertical-align:top;}
+.round-list .round-list-box{display:table-cell;width:80px;}
 .round-list .round-list-tit{display:table-cell;width:80px;height:80px;color:#fff;font-size:14px;font-weight:400;text-align:center;vertical-align:middle;letter-spacing:-1px;border-radius:50%;}
 .yellow.round-list .round-list-tit{background-color:#f3be0f;}
 .orange.round-list .round-list-tit{background-color:#f37427;}
@@ -382,7 +399,7 @@ Editor : sookkyung Han
 	.product-detail-view .product-visual{padding:40px 0 35px}
 	.product-visual .logo-txt{margin-top:8px;font-size:18px;line-height:1.3;}
 	.product-visual .visual-logo img{width:50%;}
-	.product-visual .visual-tit{margin-top:12px;font-size:30px;line-height:1;}
+	.product-visual .visual-tit{margin-top:12px;font-size:30px;line-height:1.1;}
 	.product-visual .visual-tit strong{font-size:30px;line-height:1;}
 	.product-visual .txt-area .visual-txt{margin-top:17px;font-size:14px;}
 	.product-visual .txt-area .visual-etc{margin-top:15px;font-size:13px;}
@@ -422,11 +439,9 @@ Editor : sookkyung Han
 	.setup-list .btn-box{margin-top:18px;}
 	.setup-list .bt-akl-blue{height:45px;font-size:16px;font-weight:600;}
 
-	.akl .product-body-photo .effect-img01{text-align:left;}
-	.akl .product-body-photo .effect-img01 img{width:80%;}
-	.detail-img.effect-img01 .effect-comment{left:53%;}
-	.detail-img.effect-img01 .effect-comment,
-	.detail-img.effect-img01 .effect-comment span{font-size:11px;line-height:1;}
+	.effect-img2041 .effect-comment, 
+	.effect-img2076 .effect-comment{font-size:12px;}
+	.effect-img2041 .effect-comment img, .effect-img2076 .effect-comment img{width:18px;height:18px;}
 
 	.detail-img.effect-img1480 .effect-comment {top:45%;font-size:11px;}
 	.detail-img.effect-img1480 .effect-comment em{font-size:12px;}
@@ -436,15 +451,18 @@ Editor : sookkyung Han
 
 	.detail-img.effect-img4523 .effect-comment {font-size:12px}
 
-	.akl .product-body-photo .effect-img01 .comment02-01 img,
-	.akl .product-body-photo .effect-img01 .comment02-02 img,
-	.akl .product-body-photo .effect-img01 .comment02-03 img{width:15px;height:15px;}
-	.detail-img.effect-img01 .effect-comment br{display:none;}
-
-
 	.product-effect-info .effect-info .effect-img02 .comment li{width:auto;padding-left:6%;}
 	.effect-img02 .effect-comment img{width:25px;height:auto;}
 	.detail-img .effect-comment span{font-size:12px;}
+	
+	.product-detail-view .detail-img.effect-img01{display:block;max-width:418px;margin:15px auto 0;}
+	.effect-img01 .effect-comment,
+	.effect-img01 .effect-comment p{font-size:12px;}
+	.effect-img02 .effect-comment, 
+	.effect-img02 .effect-comment em{font-size:13px;}
+	.effect-img02 .comment02{top:0;}
+	.effect-img02 .comment03{left:3%;}
+	.effect-img02 .comment04{left:59%;}
 
 	.product-detail-view .product-feature{margin-top:22px;}
 	.feature-list{margin-top:8px;}
@@ -567,6 +585,10 @@ Editor : sookkyung Han
 	.difference-box .difference-txt{font-size:14px;margin-bottom:0;}
 	.difference-box ul{padding-top:0;}
 	.difference-box .list-bar{margin-top:0;font-size:14px;}
+	
+	
+	
+	
 
 	/* br 삭제 */
 	.product-detail-view .detail-info-txt br,
@@ -581,7 +603,9 @@ Editor : sookkyung Han
 	.setup-list .setup-txt br,
 	.product-advantage .detail-tit br,
 	.advantage-step .step-tit br,
-	.feature-list .detail-txt br{display:none;}
+	.feature-list .detail-txt br,
+	.effect-img2041 .effect-comment br, 
+	.effect-img2076 .effect-comment br{display:none;}
 
 
 
