@@ -152,7 +152,7 @@
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
 	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -175,8 +175,8 @@
 	                                                        </li> 
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -239,7 +239,7 @@
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
 	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -262,8 +262,8 @@
 	                                                        </li> 
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -326,7 +326,7 @@
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
 	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -349,8 +349,8 @@
 	                                                        </li> 
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -412,7 +412,7 @@
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
 	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -435,8 +435,8 @@
 	                                                        </li> 
 	                                                    </ul>
 	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="">위시리스트추가</a>
+	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -925,6 +925,36 @@
 	    </div>
     </div>
     <!-- QUICK VIEW 팝업 --> 
+    
+    <!-- 위시리스트 추가 팝업 -->
+	<div class="cbox wishListAdd popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">위시리스트 추가
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+					<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+					</a>
+				</span>
+			</div>
+			<div class="cart-popup__content wish-list">
+				<div class="cart-popup__item-info">
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label class="col-md-4 account-profile__label" for="wishlist-name">위시리스트 명</label>
+							<div class="col-md-8 account-profile__value">
+								<input type="text" class="form-control" id="wishlist-name">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-popup__item-link">
+				<a href="javascript:void(0)" class="btn-blue-white">확인</a>
+				<a class="bt-akl-txt">취소</a>
+			</div>
+		</div>
+	</div>
+	<!-- //위시리스트 추가 팝업 -->
 	 
    	<!--  2018.03.16 스크립트 정리 -->
     <script type="text/javascript">
