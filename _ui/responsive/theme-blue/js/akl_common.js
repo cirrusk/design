@@ -888,7 +888,7 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 		transition: "swing",// the transition, only jquery-build transitions supported (swing, linear)
 		speed: 300,			// the speed of the animation of open and close
 		opacity: .9,		// the opacity of the overlay, you can use !important to override this in css
-		zIndex:1100,			// the initial z-index of overlay and wrap. Just in case some other elements in document have greater z-index
+		zIndex: 12000,		// the initial z-index of overlay and wrap. Just in case some other elements in document have greater z-index
 		lang: 'en',			// the language, jquery.msgbox.i18n.js need
 		minPos: 'top',		// or bottom, the position of the "task bar"
 		minWidth: 200,		// the width of minimized msgbox, height is titleHeight
