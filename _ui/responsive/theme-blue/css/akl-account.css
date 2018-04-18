@@ -585,6 +585,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .intermediary-sales  .accordion-custom .panel-title { border-top:1px solid #e3e3e3} 
 .intermediary-sales .panel-heading {position:relative;}
 .intermediary-sales .panel-heading .pull-right {position: absolute; top:23px;right:20px;}
+.intermediary-sales .sort-order-qty .opt-quantity.mini .inpNum {margin-left:0;}
 
 .brokerage-sales-guide {padding:5px 0 10px;}
 .akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 30px}
@@ -670,7 +671,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .shopping-th .th-chk {width:5%;text-align:center;vertical-align:top;}
 .shopping-th .th-tit {width:95%;text-align:left;vertical-align:top;}
 .shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;box-sizing:border-box;}
-.shopping-th .th-tit.th-head > div {display:table-cell;font-size:13px;font-weight:500;color:#002f5f;}
+.shopping-th .th-tit.th-head > div {display:table-cell;font-size:13px;font-weight:500;color:#002f5f;box-sizing:border-box;}
 .shopping-th .item-number {width:15%;}
 .shopping-th .item-subject {width:26%;}
 .shopping-th .item-quantity {width:15%;}
@@ -680,7 +681,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .shopping-tbody {clear:both;display:block;}
 .shopping-tbody ul {}
 .shopping-tbody ul li {clear:both;display:table;position:relative;padding:15px 0;width:100%;border-bottom:1px solid #e3e3e3;}
-.shopping-tbody .td-chk, .shopping-td .td-info {float:left;}
+.shopping-tbody .td-chk, .shopping-tbody .td-info {float:left;}
 .shopping-tbody .td-chk {width:5%;text-align:center;vertical-align:middle;}
 .shopping-tbody .td-chk label.checkbox-element-wrapper {padding:9px 0 0}
 .shopping-tbody .td-info {width:95%;text-align:left;display:table;vertical-align:middle;}
@@ -689,17 +690,17 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 .shop-product-code .shop-ptit {display:table;width:100%;}
 .shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px;}
 .shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;}
-.shop-product-info {display:table-cell;width:57%;font-size:14px;margin:0;padding:0;}
-.shop-product-info .shop-plist {display:table;width:100%;text-align:left;}
-.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:15%;font-size:14px;}
-.shop-product-info .shop-plist .list-price {display:table-cell;width:10%;text-align:right;padding:0 30px;}
+.shop-product-info {display:table-cell;width:57%;font-size:14px;margin:0;padding:0;box-sizing:border-box;}
+.shop-product-info .shop-plist {display:table;width:100%;text-align:left;table-layout:fixed;box-sizing:border-box;}
+.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:15%;font-size:14px;box-sizing:border-box;}
+.shop-product-info .shop-plist .list-price {display:table-cell;width:21.25%;text-align:right;padding:0 20px;box-sizing:border-box;}
 
 .shop-product-info .shop-plist .qty-label {display:none;}
 .shop-product-info .shop-plist .price-label {display:none;}
 .shop-product-info .shop-plist .total-price-label {display:none;}
 .shop-product-info .shop-plist span {font-size:14px;font-weight:400;}
 
-.shopping-tbody .td-chk.fee {width:46%;}
+.shopping-tbody .td-chk.fee {width:46%;text-align:left;padding-left:275px;}
 .shopping-tbody .td-chk.fee span {font-size:14px;font-weight:400;letter-spacing:-1px;}
 .shopping-tbody .td-info.fee {width:54%;}
 .shopping-tbody .td-info.fee .list-item-quatiy .value-wrapper {text-align:center;width:100px;font-weight:400;}
@@ -1258,7 +1259,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px
 
 	.shopping-tbody .td-chk.fee {display:block;width:100%;text-align:left;padding-left:50px}
 	.shopping-tbody .td-chk.fee span {font-size:14px;font-weight:500;}
-	.shopping-tbody .td-info.fee {display:block;width:100%;text-align:left;padding:0 20px 0 50px}
+	.shopping-tbody .td-info.fee {display:block;width:100%;text-align:left;padding:0 10px 0 50px}
 	.shopping-tbody .td-info.fee .list-item-quatiy .value-wrapper {text-align:right;width:50%;font-weight:400;}
 	.shopping-tbody .td-info.fee .list-item-quatiy .qty-label {padding:0 0 0;}
 	
