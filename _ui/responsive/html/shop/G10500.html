@@ -1192,32 +1192,6 @@
 			$(".shoping-cart-search").hide();
 		});
 		
-		
-		//add to shopping list event 2018.04.04
-		(function ($) {
-			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
-				var tag = $(this).siblings('.dropdown-menu');
-				var flag=true;
-				if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
-					e.stopPropagation();
-					$(".plp-add-to-shopping-list ").removeClass("open");
-					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
-					$(tag).show();
-					$(".plp-add-to-ditto").removeClass("open");
-				}else{
-					$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
-					$(tag).hide();
-				}
-				$(document).bind("click",function(e){
-					var target = $(e.target);
-					if(target.closest(tag).length == 0 && flag == true){
-						$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
-						$(tag).hide();
-						flag = false;
-					}
-				});
-			});
-		})(jQuery);
 
 	})
 </script>
