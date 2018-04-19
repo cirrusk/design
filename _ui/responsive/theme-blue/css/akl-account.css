@@ -495,11 +495,12 @@ ul li.tbody div.mob-ttoy {display:none;}
 /* 마이페이지 > 계좌관리 */
 .bonus-payment-wrapper {border-bottom:0 none;margin:0; padding:0 30px;border-top:0 none;}
 .akl .bonus-payment__title:after {position:absolute;top:5px;left:-28px;content:'';display:block;background:url('../images/akl_common/ico_note.png') no-repeat left top;width:17px;height:21px;}
-.akl .bonus-payment__description {font-size:14px;padding:7px 0;}
+.akl .bonus-payment__description {font-size:14px;padding:7px 0 0; margin-bottom:28px}
+.akl .bonus-payment__title .bonus-payment__description { margin-bottom: 0}
 .akl .bonus-payment-content {font-family:'Noto Sans KR', sans-serif;padding:30px 0;}
 .akl .bonus-payment__items .col-md-6 {padding-left:0}
 .akl .bonus-payment__items .col-md-6:last-child {padding-right:0}
-.akl .bonus-payment .bonus-payment__item {padding:25px 30px;border:1px solid #f2f2f2}
+.akl .bonus-payment .bonus-payment__item {padding:25px 30px;border:1px solid #f2f2f2;margin:30px 0 0;}
 .akl .bonus-payment .bonus-payment__item-description {padding:0 0 12px;border-bottom:1px solid #dadada;font-size:14px;}
 .akl .bonus-payment__item-info {box-sizing:border-box;width:100%;margin:20px 30px;padding:0;}
 .akl .bonus-payment__item-info dl {padding:0 0;display:table;width:100%;box-sizing: border-box;margin:0;}
@@ -507,7 +508,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .bonus-payment__item-info dt {width:20%;color:#002f5f;}
 .akl .no-account {text-align:center;font-size:14px;padding:26px 0 21px;}
 .akl .account-btn {display:block;text-align:center;}
-.akl .account-btn .btn {margin-top:5px;}
+.akl .account-btn .btn {margin-top:5px;} 
+.akl .bonus-payment__description + .bonus-payment__items { margin-top: -25px}
 
 /* 마이페이지 > 계좌관리 layer popup */
 .akl .cart-popup__content.payment {padding:0 0;height:100%;}
