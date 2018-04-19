@@ -74,7 +74,7 @@ a:hover,a:hover span{text-decoration:none;}
 [type=checkbox]:checked{position:absolute;left:-9999px;}
 [type=checkbox]:checked+label{position:relative;padding-left:1.95em;font-size:15px;font-weight:100;cursor:pointer;text-align:left;color:#55565a;}
 [type=checkbox]:checked+label::before{position:absolute;top:0;left:0;width:1.25em;height:1.25em;content:'';border:1px solid #dadada;border-color:#0075a4;background:#ffffff;background-color:#0075a4;}
-[type=checkbox]:checked+label::after{position:absolute;top:4px;left:4px;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;}
+[type=checkbox]:checked+label::after{position:absolute;top:4px;left:4px;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;}/*akl 수정*/
 .tips{position:relative;display:inline-block;}
 .tips .toolTips{position:absolute;z-index:1001;bottom:100%;left:-8px;display:none;width:260px;margin-bottom:10px;padding:15px 25px;font-size:14px;font-style:normal;color:#ffffff;border-radius:4px;background:#55565a;}
 @media (max-width: 420px){
@@ -92,7 +92,7 @@ a:hover,a:hover span{text-decoration:none;}
 .icon-youtube:before{content:'\e906';}
 .icon-tumblr:before{content:'\e907';}
 .icon-instagram:before{content:'\e908';}
-
+.icon-check-bold:before{content:'\e909';}
 .icon-downleg:before{content:'\e90a';}
 .icon-events:before{content:'\e90b';}
 .icon-suitcase:before{content:'\e90c';}
@@ -172,7 +172,7 @@ a:hover,a:hover span{text-decoration:none;}
 .icon-back-in-time-new:before{content:'\e956';}
 .icon-reset:before{content:'\e957';}
 .icon-ccw:before{content:'\e958';}
-
+.icon-arrow-dropdown:before{content:'\e959';}
 .icon-check:before{content:'\e95a';}
 .icon-chevron-down:before{content:'\e95b';}
 .icon-chevron-left:before{content:'\e95c';}
@@ -197,7 +197,7 @@ a:hover,a:hover span{text-decoration:none;}
 .icon-circle-with-minus:before{content:'\e96f';}
 .icon-circle-with-plus:before{content:'\e970';}
 .icon-code:before{content:'\e971';}
-
+.icon-add-shoppinglist:before{content:'\e972';}
 .icon-add-ditto:before{content:'\e973';}
 .icon-circle:before{content:'\e974';}
 .icon-clapperboard:before{content:'\e975';}
@@ -323,7 +323,7 @@ a:hover,a:hover span{text-decoration:none;}
 .icon-loop:before{content:'\e9ed';}
 .icon-magnet:before{content:'\e9ee';}
 .icon-magnifying-glass:before{content:'\e9ef';}
-
+.icon-search:before{content:'\e9f0';}
 .icon-zoom-out:before{content:'\e9f1';}
 .icon-zoom-in:before{content:'\e9f2';}
 .icon-squared-minus:before{content:'\e9f3';}
@@ -690,7 +690,7 @@ table td{padding:24px 10px;vertical-align:top;}
   td.visible-sm,th.visible-sm{display:table-cell!important;}
 }
 ._checkbox-element-global-class~span._checkbox-element-global-span{position:relative;top:2px;display:inline-block;width:20px;height:20px;margin-right:5px;cursor:pointer;border:1px solid #dadada;background:#ffffff;}
-._checkbox-element-global-class~span._checkbox-element-global-span:before{position:relative;top:4px;left:3px;float:left;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+._checkbox-element-global-class~span._checkbox-element-global-span:before{position:relative;top:4px;left:3px;float:left;font-family:'AmwayIcons'!important;font-size:9px;font-weight:normal;font-style:normal;font-variant:normal;line-height:1;content:'\e909';text-transform:none;color:#ffffff;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}/*akl 수정*/
 ._checkbox-element-global-class:checked:not(:disabled)~span._checkbox-element-global-span{border-color:#0075a4;background:#0075a4;}
 a{cursor:pointer;color:#0075a4;}
 a:hover{color:#002f5f;}
@@ -3381,7 +3381,7 @@ a.product__listing .product__listing--promo:hover{color:#2e4160;}
   .product__listing.product__grid .product-item{float:left;width:25%;}
 }
 .product-list-right-slot{margin:0 0 .5em;padding-top:0;}
-
+.product-list-right-slot .product-list-right-component{padding-top:0;}
 .product-list-right-slot .product-list-right-component .product__list{margin-right:-12px;margin-left:-12px;font-size:16px;}
 .product-list-right-slot .product-list-right-component .product__list .product__list--item{padding:12px;font-family:SourceSansPro;border-top:none;background-color:#ffffff;}
 .product-list-right-slot .product-list-right-component .product__list .product__list--item .list-item-wrapper{padding:0;border:1px solid #e3e3e3;}
@@ -3620,7 +3620,7 @@ a.product__listing .product__listing--promo:hover{color:#2e4160;}
 .content-search .search-list-page-right-result-list-slot .product__list--wrapper .product__list{margin-right:0;margin-left:0;}
 #show-more{font-family:SourceSansPro;text-decoration:none;color:#002f5f;}
 #show-more:hover *{color:#0075a4;}
-
+#show-more:focus{text-decoration:none;color:#002f5f;}
 #show-more .icon{position:relative;bottom:1px;font-size:.75em;vertical-align:middle;}
 @media (max-width: 768px){
   .search-list-page-right-result-list-slot{padding-top:2em;}
@@ -3938,8 +3938,8 @@ a.product__listing .product__listing--promo:hover{color:#2e4160;}
 #product-facet .panel-body .facet .facet__values{display:block;}
 #product-facet .accordion-custom{padding:0;}
 #product-facet .accordion-custom .panel .panel-heading{padding-right:0;}
-
-
+#product-facet .accordion-custom .panel .panel-heading .panel-title div{padding:1em 0;color:#002f5f;}
+#product-facet .accordion-custom .panel .panel-heading .panel-title div span{font-size:1em;font-weight:700;}
 #product-facet .accordion-custom .panel .panel-heading .panel-title div span.icon-minus{font-size:.625em;font-weight:100;line-height:2em;color:#002f5f;}
 #product-facet .accordion-custom .panel .panel-heading .panel-title div span.icon-minus:hover{color:#008fc5;}
 #product-facet .accordion-custom .panel .panel-heading .panel-title div span.icon-minus:before{margin-right:16px;}
@@ -5379,7 +5379,7 @@ select.form-control option{float:left;width:100%;padding:6px 10px;border:none;}
 @media (max-width: 768px){
   .product-list__item-content.amwahover .checkbox-element-wrapper{top:24px;}
 }
-.product-list__item-content.amwahover ._checkbox-element-global-class~span._checkbox-element-global-span:before{top:3px;left:3px;font-size:9px;}
+.product-list__item-content.amwahover ._checkbox-element-global-class~span._checkbox-element-global-span:before{top:3px;left:3px;font-size:9px;}/*akl수정*/
 .quick-view-btn{position:absolute;z-index:999;top:-160px;left:143px;display:none;width:158px;margin-left:-79px;padding:8px 0;color:#002f5f;border:1px solid #002f5f;background:rgba(255, 255, 255, .8);}
 #createShoppingListAccordion .accordion-toggle .title-element.accordion-header-icon:before{content:'';}
 #createShoppingListAccordion .icon-minus:before{content:'\ea78';}
@@ -5521,11 +5521,11 @@ select.form-control option{float:left;width:100%;padding:6px 10px;border:none;}
 .account-popover__pv-display{cursor:pointer;}
 .nav-cart-wrapper .mini-cart-items-container .mini-cart .mini-cart-body .summary-block span.bold{margin-right:5px;}
 .product-category__filter-div{display:none;}
-
-
-
+.business-info #mission-statement-textarea{display:none;min-height:100px;}
+.business-photo .photo-edit{position:absolute;z-index:999;bottom:0;display:none;width:100%;height:40%;padding-bottom:40px;text-align:center;opacity:.8;color:#ffffff;border:none;background-color:#002f5f;}
+.business-photo .photo-edit span{position:relative;top:8px;}
 .business-photo .photo-edit span:before{content:'\e9aa';}
-
+.businees-action-btn:hover{border:2px solid #002f5f!important;}
 .amway-theme .full-width-banner-component .banner-image-wrap img{width:100%;}
 @media (max-width: 768px){
   .hidden-sm{display:none;}
@@ -6051,7 +6051,7 @@ select.form-control option{float:left;width:100%;padding:6px 10px;border:none;}
   .new-recommendation .recommendation__message{margin-top:0;}
   .new-advice{display:block;margin-top:60px;margin-top:0;padding-top:0;border-top:none;}
   .new-amway-competitive table tr:nth-child(2){color:#20883e;background-color:#f4f4f4;}
-  .new-amway-competitive table tr:nth-child(4){}
+  .new-amway-competitive table tr:nth-child(4){background-color:#f4f4f4;}
   .new-hot-brand{overflow-x:hidden;}
   .new-hot-brand .amway-theme{margin:0 15px;}
   .new-create-new-shopping-list-container .pull-right{display:block;}
@@ -6292,7 +6292,7 @@ select.no-uppercase-form-control{text-transform:initial;}
 select.form-control.create-a-receipt-select{width:116px;}
 select.form-control.city-select{width:100%;}
 select.form-control.width-auto{width:auto;}
-
+select.form-control.width125{width:125px;}
 select.form-control.width167{width:167px;}
 select.form-control.width100{width:100px;}
 select.form-control.width125{width:125px;}
@@ -7407,8 +7407,8 @@ select.form-control#mailingAddressRegionIso{width:auto;}
   .bonus-payment-method #bonus-payment-form.bonus-payment-method-form .select2-container{min-width:100%;}
 }
 .bonus-payment-method #bonus-payment-form.bonus-payment-method-form .bonus-payment-method-form__agreement{width:100%;}
-
-
+.bonus-payment-method #bonus-payment-form.bonus-payment-method-form .bonus-payment-method-form__cancel{color:#0075a4;}
+.bonus-payment-method #bonus-payment-form.bonus-payment-method-form .bonus-payment-method-form__cancel:hover{color:#002f5f;}
 .bonus-payment-method #bonus-payment-form.bonus-payment-method-form input[type=checkbox]{position:relative;left:auto;margin-right:5px;margin-bottom:10px;}
 @media (max-width: 768px){
   .page-bonus-payment .bonus-payment .bonus-payment-content{padding:30px 0;padding:0;}
@@ -7431,7 +7431,7 @@ select.form-control#mailingAddressRegionIso{width:auto;}
 #cboxWrapper{max-width:none;}
 #cboxOverlay{position:fixed;width:100%;height:100vh;}
 #cboxContent{display:table;width:100%;}
-
+#cboxLoadedContent{max-height:calc(90vh - 160px);}
 #cboxLoadedContent .step_02{display:none;}
 .wrap{max-width:1400px;padding:0 40px;}
 .page .btn{height:auto!important;padding:7px 12px;line-height:normal;}
