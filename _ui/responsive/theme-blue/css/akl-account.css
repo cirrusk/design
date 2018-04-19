@@ -581,7 +581,12 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .cont-inarea.cupon {padding:15px 0 0;}
 
 /* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 */
-.product-list-page-title.brokerage {margin:0 0;}
+.account-area {padding:0 50px;}
+.title-box .product-list-page-title {position:relative;margin:30px 0 0}
+.title-box .product-list-page-title h1.brokerage {position:relative;font-size:18px;padding:0 0 5px;}
+.title-box .product-list-page-title h1.brokerage:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_Intermediary.png') no-repeat left center;width:21px;height:21px;}
+.title-box .bonus-payment__description {margin-bottom:0;}
+
 .intermediary-sales {clear:both;display:block;margin:0 0;padding:40px 0 0;}  
 .intermediary-sales [role="button"] {white-space:normal;display:block;text-align:left;}
 .intermediary-sales  .accordion-custom .panel-title { border-top:1px solid #e3e3e3} 
@@ -589,7 +594,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .intermediary-sales .panel-heading .pull-right {position: absolute; top:23px;right:20px;}
 .intermediary-sales .sort-order-qty .opt-quantity.mini .inpNum {margin-left:0;}
 
-.brokerage-sales-guide {padding:5px 0 10px;}
+.brokerage-sales-guide {padding:0 0 10px;margin:0;}
 .akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 30px}
 .akl .cart-popup__content .form-horizontal .form-group {margin:0 0;}
 
@@ -630,11 +635,11 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 /* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적목록 */
 .est-prod-list-box {}
-.est-prod-head {clear:both;position:relative;}
+.est-prod-head {clear:both;position:relative;display:block;width:100%;}
 .est-prod-head:after {content:'';clear:both;display:block;}
-.est-prod-head h3 {font-size:18px;color:#002f5f;padding:0 0 10px;letter-spacing:-2px;}
-.est-prod-head p {float:left;font-size:14px;font-weight:400;}
-.est-prod-head .ep-btn {position: absolute;top:24px;right:0;}
+.est-prod-head h3 {display:block;width:100%;font-size:18px;color:#002f5f;padding:0 0 10px;letter-spacing:-2px;}
+.est-prod-head p {float:left;width:50%;font-size:14px;font-weight:400;vertical-align:top;margin:0 0;padding:5px 0 0;}
+.est-prod-head .ep-btn {float:right;width:50%;text-align:right;vertical-align:top;margin:0;padding:0 0;}
 
 .est-prod-conts {clear:both;display:block;padding:20px 0 0}
 .est-total-price {font-size:16px;color:#002f5f;font-weight:400}
@@ -778,6 +783,10 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .business-regis li span.in-txt {font-weight:400;}
 
 /* 나의 쇼핑정보 > 구매양도/양수 > 사용 */
+.title-box .product-list-page-title h1.purchase {position:relative;font-size:18px;padding:0 0 5px;}
+.title-box .product-list-page-title h1.purchase:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_purchase.png') no-repeat left center;width:21px;height:21px;}
+
+.assignment-conts {clear:both;display:block;padding:32px 0 0}
 .total-transfer {font-size:18px;font-weight:500;color:#002f5f;letter-spacing:-2px;margin:0 0;padding:0 0;}
 .shipping-form-wrapper.purchase {padding:22px 0 0}
 
@@ -1251,18 +1260,24 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 	.akl .list-content .content-list .con-list-item > div.mycupon-name span.txte-wrap {color:#002f5f;font-weight:500}
 	.akl .content-list .con-list-item > div.mycupon-day {display:block;width:100%;padding:8px 20px;}
 	.akl .content-list .con-list-item > div.mycupon-way {display:block;width:100%;padding:0 20px;}
+	
+	/* 나의 쇼핑정보 > 중개판매관리 */
+	.account-area {padding:0 10px;}
+	.title-box .product-list-page-title h1.brokerage {position:relative;font-size:18px;padding:0 0 5px 28px;}
+	.title-box .product-list-page-title h1.brokerage:before {content: "";position: absolute;top:3px;left:0;display:inline-block;background:url('../images/akl_common/ico_Intermediary.png') no-repeat left center;width:21px;height:21px;}
+	.title-box .bonus-payment__description {padding:7px 10px 0 28px}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 제품리스트 */
 	.shopping-th .th-tit.th-head {display:none;}
 
-	.shopping-tbody .td-chk {float:left;width:50px;padding:0 12px;}
-	.shopping-tbody .td-info {float:left;width:84%;padding:0 0;}
+	.shopping-tbody .td-chk {float:left;width:5%;padding:0 12px;vertical-align:top;box-sizing:border-box;}
+	.shopping-tbody .td-info {float:left;width:90%;padding:0 0 0 20px;vertical-align:top;box-sizing:border-box;margin:0 0;}
 
-	.shop-product-code {display:table;width:100%;padding:10px 0 0}
+	.shop-product-code {display:table;width:100%;padding:10px 0 0;table-layout:fixed}
 	.shop-product-code .pro-code {display:block;width:100%;}
 	.shop-product-code .pro-name {display:block;width:100%;}
 
-	.shop-product-info {display:table;width:100%;padding:10px 0 0;}
+	.shop-product-info {display:table;width:100%;padding:10px 0 0;table-layout:fixed}
 	.shop-product-info .shop-plist {display:block;width:100%;text-align:left;}
 	
 	.shop-product-info .shop-plist .qty-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500;vertical-align:top;padding:10px 0 0;}
@@ -1276,7 +1291,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 	.shopping-tbody .td-chk.fee {display:block;width:100%;text-align:left;padding-left:50px}
 	.shopping-tbody .td-chk.fee span {font-size:14px;font-weight:500;}
-	.shopping-tbody .td-info.fee {display:block;width:100%;text-align:left;padding:0 10px 0 50px}
+	.shopping-tbody .td-info.fee {display:block;width:100%;text-align:left;padding:0 15px 0 50px;margin:0 0;}
 	.shopping-tbody .td-info.fee .list-item-quatiy .value-wrapper {text-align:right;width:50%;font-weight:400;}
 	.shopping-tbody .td-info.fee .list-item-quatiy .qty-label {padding:0 0 0;}
 	
@@ -1288,7 +1303,8 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 	.shopping-tbody .supply-price span.est-num {display:table-cell;width:50%;font-size:14px;text-align:right;padding-right:6px;}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 */
-	.est-prod-head .ep-btn {position: relative;top:0px;left::0;}
+	.est-prod-head p {width:100%;}
+	.est-prod-head .ep-btn {float:left;width:100%;text-align:left;padding:0 0;}
 	.akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 5px}
 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적서 */
