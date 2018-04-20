@@ -42,13 +42,14 @@ Editor : sookkyung Han
 .AR-YX01 .product-visual .visual-tit strong{color:#c4133f;}/* 레드 */
 .AR-YX02 .product-visual .visual-tit strong{color:#e7c099} /* 스카이2 */
 .NU-ENERGY-01 .product-visual .logo-txt{color:#999;}
-.NU-ENERGY-01 .product-visual .visual-tit{color:#fff;}
+.NU-ENERGY-01 .product-visual .visual-tit,
+.NU-ENERGY-02 .product-visual .visual-tit{color:#fff;}
 .NU-ENERGY-01 .product-visual .visual-tit strong{color:#e82332;}
-
-
-
+.NU-ENERGY-02 .product-visual .logo-txt{color:#bbb;}
+.NU-ENERGY-02 .product-visual .visual-tit strong{color:#a6f82a}
 .product-visual .txt-area .visual-txt{margin:20px 10% 0;font-size:16px;color:#444;font-weight:300;line-height:1.6;letter-spacing:-1px;}
 .product-visual .txt-area .visual-etc{margin:20px 10% 0;font-size:14px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px}
+.NU-ENERGY-02 .product-visual .txt-area .visual-txt{color:#fff;}
 
 .product-visual .visual-img{width:100%;margin-top:65px;text-align:center;}
 .product-visual .visual-img span{display:inline-block;}
@@ -412,6 +413,23 @@ Editor : sookkyung Han
 
 .product-detail-view .product-video{margin-top:50px;}
 
+.product-detail-view .product-gum{margin-top:50px;padding:40px;text-align:center;background:url('../images/akl_product/NU_5984_10_Energy_Gum_02.png') no-repeat 0 0;background-size:100% auto;background-size:cover;}
+.product-gum .gum-title{position:relative;display:inline-block;text-align:center;}
+.product-gum .gum-title:before{display:inline-block;width:100%;height:100%;position:absolute;top:0;left:0;content:"";background:#a1e33e;opacity:0.4;-webkit-transform:skewX(-20deg);-moz-transform:skewX(-20deg);-ms-transform:skewX(-20deg);transform:skewX(-20deg);}
+.product-gum .gum-title span{position:relative;display:inline-block;padding:5px 34px 8px;font-size:30px;color:#fff;letter-spacing:-2px;}
+.product-gum .gum-img{display:inline-block;}
+.product-gum .gum-img-box{position:relative;margin-top:27px;}
+.product-gum .gum-img-box li{position:absolute;left:47%;font-size:16px;font-weight:300;color:#ddd;text-align:left;line-height:1;letter-spacing:-1px;}
+.product-gum .gum-img-box li em{font-size:16px;font-weight:300;color:#a1e33e;line-height:1;}
+.product-gum .gum-img-box .gum-txt01{top:15%;}
+.product-gum .gum-img-box .gum-txt02{top:45%;}
+.product-gum .gum-img-box .gum-txt03{top:76%;}
+
+
+
+
+
+
 @media (max-width: 768px) {
 	.product-detail-view{padding-bottom:25px;}
 	.product-detail-view .visual-info{padding:0 20px;}
@@ -614,6 +632,12 @@ Editor : sookkyung Han
 	
 	.product-detail-view .product-video{margin-top:25px;}
 	
+	.product-detail-view .product-gum{margin-top:25px;padding:35px 20px;}
+	.product-gum .gum-title span{padding:5px 20px 8px;font-size:18px;}
+	.product-gum .gum-img-box{margin-top:15px;}
+	.product-gum .gum-img{display:none;}
+	.product-gum .gum-img-box li{position:static;margin-top:10px;font-size:14px;text-align:center;}
+	.product-gum .gum-img-box li em{font-size:14px;}
 
 	/* br 삭제 */
 	.product-detail-view .detail-info-txt br,
