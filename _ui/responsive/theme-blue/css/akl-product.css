@@ -13,10 +13,14 @@ Editor : sookkyung Han
 .NU02 .product-visual{background-color:#eeede3;}/* 뉴트리라이트 - 어두운그린 */
 .NU-RED .product-visual{background-color:#ffeaea;}/* 뉴트리라이트 - 레드 */
 .NU-KID .product-visual{background-color:#a9d4d7;}/* 뉴트리라이트 - 어린이 */
+.NU-ENERGY-01 .product-visual{background-color:#000;}/* 뉴트리라이트 - XS에너지 */
+
 .AR-IS01 .product-visual{}/* ARTISTRY - 밝은 하늘색 */
 .AR-IS02 .product-visual{}/* ARTISTRY - 어두운 하늘색 */
 .AR-YX01 .product-visual{background-color:#e9bab8;}/* ARTISTRY - 밝은 빨간 */
 .AR-YX02 .product-visual{}/* ARTISTRY - 밝은 갈색 */
+
+
 
 .product-detail-view .product-visual{position:relative;overflow:hidden;}
 .product-visual .visual-bg img{position:absolute;display:inline-block;bottom:0;}
@@ -37,6 +41,11 @@ Editor : sookkyung Han
 .NU-RED .product-visual .visual-tit strong,
 .AR-YX01 .product-visual .visual-tit strong{color:#c4133f;}/* 레드 */
 .AR-YX02 .product-visual .visual-tit strong{color:#e7c099} /* 스카이2 */
+.NU-ENERGY-01 .product-visual .logo-txt{color:#999;}
+.NU-ENERGY-01 .product-visual .visual-tit{color:#fff;}
+.NU-ENERGY-01 .product-visual .visual-tit strong{color:#e82332;}
+
+
 
 .product-visual .txt-area .visual-txt{margin:20px 10% 0;font-size:16px;color:#444;font-weight:300;line-height:1.6;letter-spacing:-1px;}
 .product-visual .txt-area .visual-etc{margin:20px 10% 0;font-size:14px;color:#808285;font-weight:300;line-height:1.6;letter-spacing:-1px}
@@ -84,9 +93,12 @@ Editor : sookkyung Han
 .product-notice .detail-list li{padding-top:2px;font-size:16px;color:#666;font-weight:300;letter-spacing:-1px;}
 .product-notice .detail-list.num li{margin-left:14px;text-indent:-14px;}
 .product-notice .detail-list li:first-child{padding-top:0;}
+.product-notice .detail-list li br{line-height:0;}
 .product-notice .detail-list .detail-list-box{margin-top:24px;}
 .product-notice .detail-list .detail-list-box p{margin:0;}
 .product-notice .detail-list .detail-list-box:first-child{margin-top:0;}
+.product-notice .notice-ap{margin:39px 0 -30px;padding:15px 20px 17px;font-size:18px;color:#56565a;text-align:center;font-weight:300;letter-spacing:-2px;background-color:#f4f4f4;}
+
 
 .product-detail-view .product-feature{margin-top:36px;text-align:center;}
 .feature-list{margin-top:18px;}
@@ -392,11 +404,13 @@ Editor : sookkyung Han
 .round-list .round-list-tit sub{font-size:10px;bottom:0;}
 .round-list .round-list-txt{display:table-cell;padding-left:20px;font-size:14px;font-weight:300;color:#808285;vertical-align:middle;letter-spacing:-1px;}
 
+.product-detail-view .product-component{margin-top:46px;}
+.component-list{overflow:hidden;float:none;padding:0;width:-webkit-calc(100% + 15px);width:-moz-calc(100% + 15px);width:calc(100% + 15px);margin:30px 0 0 -15px;}
+.component-list li{padding:40px 0 38px;text-align:center;border-left:15px solid #fff;background-color:#f4f4f4;}
+.component-list .list-icon{display:inline-block;}
+.component-list .list-txt{display:block;margin-top:15px;font-size:16px;color:#56565a;font-weight:300;letter-spacing:-1px;}
 
-
-
-
-
+.product-detail-view .product-video{margin-top:50px;}
 
 @media (max-width: 768px) {
 	.product-detail-view{padding-bottom:25px;}
@@ -490,6 +504,7 @@ Editor : sookkyung Han
 	.product-notice .detail-list.num li{margin-left:11px;text-indent:-11px;}
 	.product-notice .notice-list{padding:3px 0 22px;}
 	.product-notice .notice-list > li{padding-top:23px;}
+	.product-notice .notice-ap{font-size:15px;margin:0 0 25px;}
 
 	.product-detail-view .product-advantage + .product-advantage{border-top:1px solid #e3e3e3;}
 	.product-detail-view .advantage-box{width:100%;padding:0;}
@@ -592,8 +607,12 @@ Editor : sookkyung Han
 	.difference-box ul{padding-top:0;}
 	.difference-box .list-bar{margin-top:0;font-size:14px;}
 	
+	.component-list{margin-top:12px}
+	.component-list li{padding:20px 0 19px;margin-top:3px;}
+	.component-list .list-icon img{width:70%}
+	.component-list .list-txt{margin-top:10px;font-size:14px;}
 	
-	
+	.product-detail-view .product-video{margin-top:25px;}
 	
 
 	/* br 삭제 */
