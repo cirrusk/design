@@ -378,15 +378,16 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .popTable-list.busim span.company-sel {width:9%;}
 .popTable-list.busim span.company-view {width:13%;}
 
+.popTable-list.busim  ul li.tbody {display:table;table-layout:fixed;box-sizing:border-box;}
 .popTable-list.busim  ul li.tbody div.com-inof {float:left;display:table;width:78%;}
 .popTable-list.busim  ul li.tbody div.com-btn {float:right;display:table;width:22%;}
-.popTable-list.busim  ul li.tbody div.company-name {width:23%;}
-.popTable-list.busim  ul li.tbody div.company-num {width:24%;}
-.popTable-list.busim  ul li.tbody div.company-exponent {width:15%;}
-.popTable-list.busim  ul li.tbody div.company-day {width:18%;}
+.popTable-list.busim  ul li.tbody div.company-name {width:23%;display:table-cell;}
+.popTable-list.busim  ul li.tbody div.company-num {width:24%;display:table-cell;}
+.popTable-list.busim  ul li.tbody div.company-exponent {width:15%;display:table-cell;}
+.popTable-list.busim  ul li.tbody div.company-day {width:18%;display:table-cell;}
 
-.popTable-list.busim  ul li.tbody div.company-sel {width:40%;}
-.popTable-list.busim  ul li.tbody div.company-view {width:auto;}
+.popTable-list.busim  ul li.tbody div.company-sel {width:40%;display:table-cell;}
+.popTable-list.busim  ul li.tbody div.company-view {width:auto;display:table-cell;}
 
 /* 주문결제 > 사업자등록증 상세보기 팝업 */
 .cart-popup__item-info .busine-tit {font-size:16px;line-height:24px;font-weight:500;margin:0;padding:34px 0 17px;letter-spacing:-1px;}
@@ -629,8 +630,8 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.popTable-list.busim ul li.tbody div.com-btn {clear:both;display:block;width:100%;padding:10px 0 0}
 	.popTable-list.busim ul li.tbody div.company-name {display:inline-block;width:auto;}
 	.popTable-list.busim ul li.tbody div.company-num {display:inline-block;width:auto;}
-	.popTable-list.busim ul li.tbody div.company-exponent {clear:both;display:block;width:100%;}
-	.popTable-list.busim ul li.tbody div.company-day {clear:both;display:block;width:100%;}
+	.popTable-list.busim ul li.tbody div.company-exponent {clear:both;display:block;width:100%;padding:5px 0}
+	.popTable-list.busim ul li.tbody div.company-day {clear:both;display:block;width:100%;padding:5px 0 0}
 	.popTable-list.busim ul li.tbody div.company-exponent .mob-txt {float:left;color:#002f5f;font-weight:500;}
 	.popTable-list.busim ul li.tbody div.company-exponent .mob-right {float:right;}
 
