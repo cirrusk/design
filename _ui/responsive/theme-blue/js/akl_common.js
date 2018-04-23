@@ -482,7 +482,8 @@ function qkLinkAlign(){
 			var itemHeight;
 
 			if ( qPanel.length ){
-				itemHeight = qHeaderHeight + (qPanel_li_Num * qPanel_li_Height); //헤더 p + 서브링크 ul
+				//itemHeight = qHeaderHeight + (qPanel_li_Num * qPanel_li_Height); //헤더 p + 서브링크 ul
+				itemHeight = $(this).outerHeight(true);
 				$(this).css({width:itemWidth, height:itemHeight});
 			} else {
 				itemHeight = qHeaderHeight;
