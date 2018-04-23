@@ -460,17 +460,27 @@ function quickLinks(){
 
 	//#accordion 메뉴위치 정렬하기
 	qkLinkAlign();
+	$(window).resize(function(){
+		qkLinkAlign();
+	});
 };
 
 function qkLinkAlign(){
-	function qkLink_getSize(){
-		var qLinkWrapper = $('#accordion');
-		var qLinkWrapper_width = qLinkWrapper.outerWidth();
-		var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
+	var _winWidth = $(window).width();
+	var qLinkWrapper = $('#accordion');
+	var qLinkWrapper_width = qLinkWrapper.outerWidth();
+	var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
+	var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
-		qLinkWrapper.css({width:'880px', height:qLinkWrapper_height});
+	if( _winWidth < 769 ){
+		qLinkWrapper.attr('style','');
+		qLinkWrapper.find('.quick-links-item').attr('style','');
 
-		var qLinkItem = qLinkWrapper.find('.quick-links-item');
+		//플러그인 해제
+		$('#accordion').isotope().isotope('destroy');
+
+	} else if( _winWidth > 768 ){
+		qLinkWrapper.css({height:qLinkWrapper_height});
 		qLinkItem.each(function(){
 			var qHeader = $(this).find('.quick-links-header');
 			var qPanel  = $(this).find('.panel-collapse');
@@ -482,53 +492,24 @@ function qkLinkAlign(){
 			var itemHeight;
 
 			if ( qPanel.length ){
-				//itemHeight = qHeaderHeight + (qPanel_li_Num * qPanel_li_Height); //헤더 p + 서브링크 ul
-				itemHeight = $(this).outerHeight(true);
+				//헤더 p + 서브링크 ul
+				itemHeight = qHeaderHeight + qPanel.outerHeight(true) + 5;
 				$(this).css({width:itemWidth, height:itemHeight});
 			} else {
 				itemHeight = qHeaderHeight;
 				$(this).css({width:itemWidth, height:itemHeight});
 			}
 		});
-	}
 
-	function qkLink_sizeReset(){
-		var qLinkWrapper = $('#accordion');
-		qLinkWrapper.attr('style','');
-		qLinkWrapper.find('.quick-links-item').attr('style','');
+		setTimeout(function(){
+			$('#accordion').isotope({
+				layoutMode: 'fitColumns',
+				itemSelector: '.quick-links-item'
+			});
+		},300);
 	}
-
-	function qLinkItem_Align(){
-		/* 메뉴 높이에 따라 메뉴위치 변경(플러그인 실행)*/
-		$('#accordion').isotope({
-			layoutMode: 'fitColumns',
-			itemSelector: '.quick-links-item'
-		});
-	}
-
-	function qLinkItem_Align_Destroy(){
-		$('#accordion').isotope().isotope('destroy'); //플러그인 해제
-	}
-
-	run_qLinkAlign();
-	function run_qLinkAlign(){
-		var _winWidth = $(window).width();
-		if( _winWidth > 768 ){
-			qkLink_getSize();
-			setTimeout(function(){
-				qLinkItem_Align();
-			},300)
-		}
-		else {
-			qkLink_sizeReset();
-			qLinkItem_Align_Destroy();
-		}
-	}
-
-	$(window).resize(function(){
-		run_qLinkAlign();
-	});
 }
+
 
 /** ------------------------------------------
  *  @layerPopOver
