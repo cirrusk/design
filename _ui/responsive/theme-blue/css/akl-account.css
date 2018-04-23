@@ -897,6 +897,49 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .content-list .con-list-item span.txte-wrap  span {font-size:14px;vertical-align:middle;padding:5px 0 0}
 
 /* 나의 쇼핑정보 > 제품구매 예약 > 상세보기 */
+.assignment-view {padding:5px 0;margin:0 0;}
+.assignment-view .bod-view-head {text-align:left;padding:20px 0 18px;border-bottom:1px solid #d3d3d3}
+.assignment-view .bod-view-head h2.head-title {padding:0 0;margin:0 0;}
+.assignment-view .wcms-content {margin:0 0 30px;padding:30px 0;overflow:hidden;border-bottom:1px solid #d3d3d3}
+
+p.txt-reserv-num {padding:0 0;font-size:14px;font-weight:400;letter-spacing:-1px;}
+.shopping-item-area {clear:both;display:block;}
+.shop-list-content {display:block;}
+.shop-list-content.type2 {margin-top:40px}
+.product-item-header {display:table;width:100%;box-sizing:border-box;table-layout:fixed;padding:10px 0;background:#f4f4f4;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3}
+.product-item-header > div {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;box-sizing:border-box;}
+.shop-prod {padding:0 20px;width:54%;}
+.shop-quantity {padding:0 20px;width:20%;}
+.shop-price {padding:0 20px;width:13%;}
+.shop-total {padding:0 20px;width:13%;}
+
+.product-item-list {clear:both;display:block;}
+.product-item-list li {display:table;width:100%;box-sizing:border-box;table-layout:fixed;padding:35px 0;font-size:14px;border-bottom:1px solid #e3e3e3;}
+
+.product-item-list li .shop-prod {padding:0 20px;width:54%;}
+.product-item-list li .shop-quantity {padding:0 20px;width:20%;}
+.product-item-list li .shop-price {padding:0 40px;width:13%;text-align:right;}
+.product-item-list li .shop-total {padding:0 40px;width:13%;text-align:right;}
+.product-item-list li .shop-prod, .product-item-list li .shop-quantity, 
+.product-item-list li .shop-price, .product-item-list li .shop-total {display:table-cell;box-sizing:border-box;vertical-align:middle;}
+
+.product-item-list li .col-ak-10 {display:table;width:100%;box-sizing:border-box;table-layout:fixed;}
+
+.product-item-list li .txt-label {display:none;}
+.product-item-list li .txt-warp {font-size:14px;}
+.product-item-list li .txt-warp p.txt-im {padding:8px 0 0;margin:0;font-size:13px;color:#808285;}
+.list-item-prod {display:table-cell;width:80px;vertical-align:top;box-sizing:border-box;}
+.list-item-prod img {width:65px;height:65px;border:1px solid #dcdcdc;}
+.list-item-info {display:table-cell;vertical-align:top;text-align:left;box-sizing:border-box;}
+.list-item-info .product-name {font-size:14px;font-weight:500;}
+.list-item-info .product-code {padding:8px 0 0}
+.list-item-info .product-code span {display:block;font-size:13px;font-weight:400;color:#808285;}
+.shop-btn {clear:both;display:block;text-align:center;padding:30px 0 0}
+.shop-btn button {vertical-align:top;margin:0 5px;}
+.shop-btn a.bt-akl-white {vertical-align:top;margin:0 0;}
+.shop-txt-info {clear:both;display:table;width:100%;margin-top:15px}
+
+
 
 @media (max-width: 1024px) { 
 	.akl .account-profile__editor .form-group .col-md-4.email-id { width:50%} 
@@ -1531,5 +1574,28 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 	.akl .con-list-item .rese-subje {display:block;width:100%;padding:5px 20px;}
 	.akl .con-list-item .rese-period {display:block;width:100%;padding:5px 20px;}
 	.akl .con-list-item .rese-period span.tite-label {display:block;}
+
+
+	/* 나의 쇼핑정보 > 제품구매 예약 > 상세보기 */
+	.product-item-header .shop-prod {padding:0 20px;width:54%;}
+	.product-item-header .shop-quantity {display:none}
+	.product-item-header .shop-price {display:none}
+	.product-item-header .shop-total {display:none}
+
+	.product-item-list li .shop-prod {display:table;padding:0 20px;width:100%;}
+	.product-item-list li .shop-quantity {clear:both;display:table;padding:20px 20px 0 100px;width:100%;}
+	.product-item-list li .shop-price {clear:both;display:table;padding:15px 20px 0 100px;width:100%;text-align:left;}
+	.product-item-list li .shop-total {clear:both;display:table;padding:15px 20px 0 100px;width:100%;text-align:left;}
+
+	.product-item-list li .shop-quantity .txt-label {padding:10px 0 0}
+	.product-item-list li .txt-label {display:table-cell;width:40%;font-size:14px;color:#002f5f;font-weight:500;vertical-align:top;text-align:left;}
+	.product-item-list li .txt-warp {display:table-cell;width:60%;font-size:14px;vertical-align:top;}
+	.product-item-list li .txt-warp .txt-quan {padding:8px 0 0;text-align:right;}
+	.product-item-list li .txt-warp p.txt-im {clear:both;display:block;padding:8px 0 0;margin:0;font-size:13px;color:#808285;text-align:right;}
+	.product-item-list li .shop-price {text-align:right;}
+	.product-item-list li .shop-total {text-align:right;}
+	.shop-btn a.bt-akl-white {min-width:85px}
+	.shop-btn button.bt-akl-txt {min-width:85px}
+
 	
 }
