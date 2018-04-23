@@ -478,7 +478,7 @@ function qkLinkAlign(){
 			var qHeaderHeight = 31; // p
 			var qPanel_li_Num = qPanel.find('li').length;
 			var qPanel_li_Height = 28
-			var itemWidth = 200;
+			var itemWidth = 220;
 			var itemHeight;
 
 			if ( qPanel.length ){
