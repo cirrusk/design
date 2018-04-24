@@ -320,24 +320,28 @@ $(function() {
 				items: 3
 			},
 			1200 : {
-				items: 5
+				items: 4
 			}
 		}
 	});
 
-	$('#Cart_Search').click(function(event){ 
-		event.preventDefault();
+	$('#Cart_Search').click(function(e){
+		e.preventDefault();
 		$(".shoping-cart-search").show();
+
+		$(".btnClosed").click(function(e) {
+			e.preventDefault();
+			$(this).parents('.panel-body').find('.shoping-cart-search').hide();
+			//$(".shoping-cart-search").hide();
+		});
 	});
-	$(".btnClosed").click(function() {
-		$(".shoping-cart-search").hide();
-	});
+
 
 	$('#U70410_lp1').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.U70410_lp1_pop');
 	});
-	
+
 	$('#U70410_lp2').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.U70410_lp2_pop');
@@ -348,7 +352,7 @@ $(function() {
 
 //중개판매관리 add to shopping list event
 $(function() {
-	
+
 	$('#U70410_lp2').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.U70410_lp2_pop');
