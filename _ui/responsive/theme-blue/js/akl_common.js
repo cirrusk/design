@@ -343,9 +343,10 @@ function print_layerSection(){
 
 /* 인쇄 - 게시판 상세 페이지 */
 function print_pageBoard(){
-	var  btnClass = '.btn-printPage , .btn-ico-print';
+	var  btnClass = '.btn-printPage , .btn-ico-print, #PDP_Print';
 	var _btn_PrintPage = $(btnClass);
-	_btn_PrintPage.on('click', function(){
+	_btn_PrintPage.on('click', function(e){
+		e.preventDefault();
 		window.print();
 	});
 }
