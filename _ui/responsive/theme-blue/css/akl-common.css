@@ -263,6 +263,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .cbox.popWidM {width: 600px; }
 .akl .cbox.popWidL {width: 800px }
 .akl .cbox.popWidXL {width: 1000px }
+.akl .cbox.typeFullSizeView.RD-View {width:960px;}
 .akl .popup-title {font-size:16px;letter-spacing:-1px;padding:0;margin:0;font-weight:500;}
 .akl .cart-popup__dialog {padding:0 0;height:auto;background:#fff;}
 .akl .cart-popup__header {padding:17px 30px 0;height:70px;}
@@ -658,7 +659,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .container .row.footer-quick {overflow:visible;}
 .akl .qlink-left-box {float:left; width:870px; padding-right:10px;}
 .akl .qlink-right-box {float:right; width:420px; padding-right:12px;}
-.akl .quick-links-item {width:200px;} 
+.akl .quick-links-item {width:200px;}
 .akl .quick-links-item > ul {padding-bottom:20px !important;}
 
 /* 상품목록 > 카드형 */
@@ -847,6 +848,12 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .cbox .cart-popup__dialog .cart-popup__content .cart-popup__item-link {padding:20px 20px;}
 	.akl .cart-popup__item-link {padding:20px 0 20px;}
 	.akl .cart-popup__dialog .cart-popup__item-link .btn-blue-white {padding:10px 20px !important;}
+
+	/* RD화면 */
+	.cbox.typeFullSizeView.RD-View .cart-popup__dialog {margin:0; width:auto;}
+    .cbox.typeFullSizeView.RD-View .tbl-list-view {border:0;}
+    .cbox.typeFullSizeView.RD-View .tbl-list-view .tr>div {padding:0; border-top:0;}
+
 
     /* common > poppup > 동영상 크게보기 팝업 */
     .akl #videobox { top: 15px;width:auto; left:15px; right:15px; height: auto;transform: none;}
