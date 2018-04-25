@@ -689,6 +689,38 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					'transition':'left .5s'
 				});
 			}
+
+			//RD화면 (모바일 전체화면)
+			if ( $layerPrdtDetail.is('.RD-View') ){
+				if( _winWidth < 769 ){
+					$layerContentBox.css({
+						'display':'block',
+						'position':'absolute',
+						'top':'0',
+						'left':'0',
+						'right':'0',
+						'width':'100%',
+						'max-width':'100%',
+						'height':'auto',
+						'margin-top':'0',
+						'margin-left':'0',
+						'margin-bottom':'0'
+					});
+				} else {
+					$layerContentBox.css({
+						'display':'block',
+						'position':'absolute',
+						'top':'20px',
+						'left':'0',
+						'right':'0',
+						'max-width':'960px',
+						'height':'auto',
+						'margin':'0 auto',
+						'margin-bottom':'20px'
+					});
+				}
+			}
+			//맞춤메시지 : 끝
 		}
 
 		/* TYPE 3 : 동영상보기 */
