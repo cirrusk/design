@@ -62,6 +62,24 @@ $(function(){
 	//신규ABO - 대상자 조회
 	event_NewABO_select();
 
+	//온라인 FAX 주문 - 검색영역 열고 닫기
+	$('.btn-faxOrder-serch').on('click', function(e){
+		e.preventDefault();
+
+		var parentsO = $(this).parents('.faxOrder-search-box');
+		var _srchResult = parentsO.find('.shoping-cart-search');
+		var _closeBtn   = parentsO.find('.btnClosed');
+
+		if(_srchResult.is(':hidden')){
+			_srchResult.show();
+		}
+
+		_closeBtn.on('click',function(e){
+			e.preventDefault();
+			_srchResult.hide();
+		});
+	});
+
 	//2018.03.12 카테고리 왼쪽메뉴
 	var Accordion = function(el, multiple) {
 		this.el = el || {};

@@ -302,7 +302,31 @@ $(function() {
 		layerPopOver(this,'.U70410_lp2_pop');
 	});
 
+	/* ID 중복사용으로 사용안함 : 2018.04.25
 	$('#productSuggestListTabs').owlCarousel({
+		loop: true,
+		nav: true,
+		dots: false,
+		margin: 0,
+		items: 1,
+		responsiveClass: true,
+		responsive: {
+			480 : {
+				items: 1
+			},
+			768 : {
+				items: 2
+			},
+			960 : {
+				items: 3
+			},
+			1200 : {
+				items: 4
+			}
+		}
+	});*/
+
+	$('[id^=productSuggestListTabs]').owlCarousel({
 		loop: true,
 		nav: true,
 		dots: false,
