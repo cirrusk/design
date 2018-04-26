@@ -486,19 +486,22 @@ function quickLinks(){
 
 function qkLinkAlign(){
 	var _winWidth = $(window).width();
-	var qLinkWrapper = $('#accordion');
+	var qLinkWrapper = $('#accordionQuick');
 	var qLinkWrapper_width = qLinkWrapper.outerWidth();
 	var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
 	var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
 	if( _winWidth < 769 ){
 		qLinkWrapper.attr('style','');
-		qLinkWrapper.find('.quick-links-item').attr('style','');
+		qLinkItem.attr('style','');
 
 		//플러그인 해제
-		$('#accordion').isotope().isotope('destroy');
+		setTimeout(function(){
+			$('#accordionQuick').isotope().isotope('destroy');
+		},300);
+	}
 
-	} else if( _winWidth > 768 ){
+	if( _winWidth > 768 ){
 		qLinkWrapper.css({height:qLinkWrapper_height});
 		qLinkItem.each(function(){
 			var qHeader = $(this).find('.quick-links-header');
@@ -521,7 +524,7 @@ function qkLinkAlign(){
 		});
 
 		setTimeout(function(){
-			$('#accordion').isotope({
+			$('#accordionQuick').isotope({
 				layoutMode: 'fitColumns',
 				itemSelector: '.quick-links-item'
 			});

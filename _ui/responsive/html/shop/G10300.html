@@ -67,8 +67,8 @@
 						<div id="pdpImg" class="ui-snap-big"><!-- 수정 : 2018.03.29 (class 변경) -->
 							<!-- 2018.04.09 위치변경 -->
 							<div class="plp-item-label bg-red">일시품절</div> 
-							<div class="plp-item-label bg-green lsize02">신제품</div>
-							<div class="plp-item-label bg-blue lsize03">스마트오더</div>
+							<div class="plp-item-label bg-green lsize04">신제품</div>
+							<div class="plp-item-label bg-blue lsize04">스마트오더</div>
 							<!-- //2018.04.09 위치변경 -->
 							<ul class="slides">
 								<li>
@@ -220,6 +220,12 @@
 															<span class="text text-uppercase">구매가능</span>
 														</span>
 														<span class="pro-detail"><button id="G10300_lp2" class="bt-akl-white mini">재고현황</button></span>
+														<!-- 구매불가일 경우 사용 2018.04.26 -->
+														<span class="red">
+															<span class="icon icon-x-red"></span>
+															<span class="text text-no-uppercase">구매불가</span>
+														</span>
+														<!-- //구매불가일 경우 사용 2018.04.26 -->
 													</span>
 												</div>
 											</div>
@@ -267,6 +273,12 @@
 																<input type="hidden" name="CSRFToken" value="1bcd7a5f-3229-4b1e-8f3f-1cbfa88e4768" />
 															</div>
 														</div>
+														<!-- dim button 추가 2018.04.26 -->
+														<div class="add_to_cart_form type2">
+															<button id="" class="bt-akl-blue large dim">바로구매</button>
+															<button id="" class="bt-akl-white large dim">장바구니</button>
+														</div>
+														<!-- dim button 추가 2018.04.26 -->
 
 														<div class="add_to_cart_form type3"><!-- 2018.03.06 form태그를 div로 변경 -->
 															<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">

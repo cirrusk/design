@@ -21,6 +21,7 @@ shop 옮김 : 2018.04.10
 .search-list-page-right-result-list-component .header-text a:hover { color: #0075a4; text-decoration: underline;} 
 .search-list-page-right-result-list-component .product-results-list { margin-top: 40px;}
 .search-list-page-right-result-list-component .header-text .item-description { color: #55565a;}
+
 /* 검색 > 자동완성  */
 .akl .auto-suggestion-popover { top: 128px; }
 .akl .auto-suggestion-popover .owl-carousel {   }
@@ -73,7 +74,7 @@ shop 옮김 : 2018.04.10
 #uiPrdViewDetail .owl-item button.ui-snap-btn img {opacity:1; width:100%; margin:0 auto; }
 #uiPrdViewDetail .owl-item.on button.ui-snap-btn, #recentlyViewedListTab2 .owl-item.on .no-border-image {border-color:#002f5f;}
 .akl .zoom-center {padding-bottom: 15px; padding-top:20px }
-.akl .product-recentlyviewed__imagelist {max-width:1200px;margin:0 auto;padding:0 45px;}
+.akl .amway-recentlyviewed .product-recentlyviewed__imagelist {max-width:1200px;margin:0 auto;padding:0 45px;}
 .akl .product-recentlyviewed__imagelist .owl-item img {max-width:100%;}
 .img-product .owl-theme .owl-controls .owl-nav .owl-prev { left:20px; }
 .img-product .owl-theme .owl-controls .owl-nav .owl-next { right:20px; }
@@ -114,7 +115,8 @@ shop 옮김 : 2018.04.10
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .stock-wrapper {font-family:'Noto Sans KR', sans-serif;font-weight:500;margin:0 0 25px;}
 .akl .stock-wrapper .product-stock .product-availability .pro-detail {display:inline-block;vertical-align:middle;margin-left:10px}
 .akl .add_to_cart_form {padding-bottom:20px;}
-.akl .add_to_cart_form button {padding:0 0;text-align:center;margin:0 0;}
+.akl .add_to_cart_form button {padding:0 0;text-align:center;margin:0 0;margin-right:3px;}
+.akl .add_to_cart_form button:last-child {margin-right:0;}
 .akl .add_to_cart_form.type1 button {display:inline-block;width:32%;}
 .akl .add_to_cart_form.type2 button {display:inline-block;width:32%;}
 .akl .add_to_cart_form.type3 button {display:inline-block;width:32%;}
@@ -217,9 +219,7 @@ shop 옮김 : 2018.04.10
 .akl .amway-suggest__item-title.amway-suggest__item-aboprice {font-size:14px;height:30px;}
 .akl .amway-suggest__item-retailprice {font-size:13px;height:auto;}
 .akl .amway-suggest__item .ico-solid-out {position:absolute;top:12px;left:12px;}
-
-.akl .product-recentlyviewed__imagelist {max-width:1200px;margin:0 auto;padding:0 45px;}
-.akl .product-recentlyviewed__imagelist .owl-item img {max-width:100%;}
+ 
 .akl h2.amway-learning__title {font-size:32px;color:#002f5f;font-weight:700;letter-spacing:-2px;font-family:'Noto Sans KR', sans-serif;line-height:38px;margin:55px auto 57px;}
 .akl .product-suggest .owl-theme .owl-controls .owl-nav .owl-next {right:-15px !important;}
 .akl .product-suggest .owl-theme .owl-controls .owl-nav .owl-prev {left:-15px !important;}
@@ -399,8 +399,8 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .product-list-item .list-item-ibo-price {line-height:20px;}
 
 .akl .product-status-value {display:block;}
-.akl .icon-x-red { display: inline-block; width:14px;height:24px;background:url("../images/akl_common/ico_x_red.png") no-repeat left 7px;vertical-align:middle;}
-.akl .icon-x-red:before {content:''}
+.akl .icon-x-red {display: inline-block;width:14px;height:24px;vertical-align:middle;background:url("../images/akl_common/ico_x_red.png") no-repeat left 7px;}
+.akl .icon-x-red:before {content:'';}
 .akl .text-no-uppercase {color:#e11e45;vertical-align:middle;}
 .akl .shop-list-right {display:block;clear:both;height:80px;margin-top:15px}
 .akl .akl-toggle-wrap.sort-order .accordion-custom { border-top:0;}

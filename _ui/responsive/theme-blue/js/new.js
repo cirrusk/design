@@ -80,37 +80,49 @@ $(function(){
 	$("#footer").load("/_ui/responsive/html/footer.html");
 
 	registerABO();
+
+
+	/** ---------------------------------
+	 *  배송지 정보
+	 *  ---------------------------------
+	 */
+	// DOM 생성 완료 시 화면 숨김 (파라미터로 전달되는 id는 제외)
+	hideExclude("changeM");
+	// radio change 이벤트
+	$("input[name=abnAdress]").change(function() {
+		var radioValue = $(this).val();
+		if (radioValue == "M") {
+			hideExclude("changeM");
+		} else if (radioValue == "I") {
+			hideExclude("changeI");
+		} else if (radioValue == "H") {
+			hideExclude("changeH");
+		}
+	});
+
+	// 체크 되어 있는지 확인
+	var checkCnt = $("input[name=abnAdress]:checked").size();
+	if (checkCnt == 0) {
+		// default radio 체크 (첫 번째)
+		$("input[name=abnAdress]").eq(0).attr("checked", true);
+	}
+
+	// text area 숨김
+	function hideExclude(excludeId) {
+		$("#changeTextArea").children().each(function() {
+			$(this).hide();
+		});
+		// 파라미터로 넘겨 받은 id 요소는 show
+		$("#" + excludeId).show();
+	}
+
 });
 
 
-// (function () {
-//     var SPEED = 'slow';
-//     function showSearchResults() {
-//         var $this = $(this);
-//
-//         var $searchResult = $('.auto-suggestion-popover');
-//         if ($this.val().length >= 3) {
-//             $searchResult.fadeIn(SPEED);
-//         } else {
-//             $searchResult.fadeOut(SPEED);
-//         }
-//     }
-//
-//     function closeSearchResults() {
-//         var $searchResult = $('.auto-suggestion-popover').fadeOut(SPEED);
-//         $('.ui-autocomplete-input').val('');
-//     }
-//
-//     function registerEvents() {
-//         $('.ui-autocomplete-input').on('keyup', showSearchResults);
-//         $('.search-results-close').on('click', closeSearchResults);
-//     }
-//
-//     function init() {
-//         registerEvents();
-//     }
-//     init();
-// })();
+
+
+
+
 
 (function () {
 	'use strict';

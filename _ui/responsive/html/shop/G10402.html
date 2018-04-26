@@ -78,12 +78,12 @@
 						<!-- //주문 ABO -->
 
 
-						<!-- 주문서/결제 선택 -->
+						<!-- 주문/결제 선택 -->
 						<div class="panel">
 							<div class="panel-heading" role="tab">
 								<a href="#faxOrder_selectType" data-toggle="collapse">
 									<div class="panel-title">
-										<p class="accordion-header-text"><strong>주문서/결제 선택</strong></p>
+										<p class="accordion-header-text"><strong>주문/결제 선택</strong></p>
 										<span class="pull-right icon-minus"></span>
 									</div>
 								</a>
@@ -91,12 +91,12 @@
 							<div id="faxOrder_selectType" class="panel-collapse collapse in" role="tabpanel">
 								<div class="panel-body">
 									<div class="form-group">
-										<label class="col-md-2 control-label">주문서 선택</label>
+										<label class="col-md-2 control-label">주문 선택</label>
 										<div class="col-md-10 col-xs-12">
 											<div class="clearfix">
 												<span class="amw-radio-wrap">
 													<input class="amwa-radio" type="radio" name="faxOrderType" id="type_onlineFax">
-													<label for="type_onlineFax">온라인 팩스 주문</label>
+													<label for="type_onlineFax">일반 주문</label>
 												</span>
 												<span class="amw-radio-wrap">
 													<input class="amwa-radio" type="radio" name="faxOrderType" id="type_brokerage">
@@ -132,7 +132,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- //주문서/결제 선택 -->
+						<!-- //주문/결제 선택 -->
 
 
 						<!-- 배송지 정보 -->
@@ -1034,7 +1034,19 @@
 
 
 									<!-- 회원추가 -->
-									<div class="faxOrder-add-buyer">sddfddf</div>
+									<div class="faxOrder-add-buyer">
+										<div class="form-group">
+											<label class="col-md-2 control-label" for="aboNumb">회원번호</label>
+											<div class="col-md-10 col-xs-12">
+												<input type="text" id="aboNumb" value="" class="" placeholder="회원번호 입력 후 ABO 추가 버튼을 눌러주세요">
+												<button type="submit" class="bt-akl-blue">ABO 추가</button>
+											</div>
+										</div>
+
+										<ul class="list-type2">
+											<li>그룹 주문을 원하실 경우 [ABO 추가]를 통해 최대 10조까지 가능합니다.</li>
+										</ul>
+									</div>
 									<!-- //회원추가 -->
 
 
@@ -1132,7 +1144,7 @@
 
 
 
-<!-- 배송지 목록(단일) 팝업 -->
+<!-- 배송지 목록 팝업 -->
 <div class="layerWrapper G10600_lp3_pop">
 	<div class="cbox layerBox popWidM">
 		<div class="cart-popup__dialog">
@@ -1158,38 +1170,6 @@
 </div>
 <!--//배송지 목록(단일) 팝업 -->
 
-<script type="text/javascript">
-$(document).ready(function() {
-	// DOM 생성 완료 시 화면 숨김 (파라미터로 전달되는 id는 제외)
-	hideExclude("changeM");
-	// radio change 이벤트
-	$("input[name=abnAdress]").change(function() {
-		var radioValue = $(this).val();
-		if (radioValue == "M") {
-			hideExclude("changeM");
-		} else if (radioValue == "I") {
-			hideExclude("changeI");
-		} else if (radioValue == "H") {
-			hideExclude("changeH");
-		}
-	});
 
-	// 체크 되어 있는지 확인
-	var checkCnt = $("input[name=abnAdress]:checked").size();
-	if (checkCnt == 0) {
-		// default radio 체크 (첫 번째)
-		$("input[name=abnAdress]").eq(0).attr("checked", true);
-	}
-
-	// text area 숨김
-	function hideExclude(excludeId) {
-		$("#changeTextArea").children().each(function() {
-			$(this).hide();
-		});
-		// 파라미터로 넘겨 받은 id 요소는 show
-		$("#" + excludeId).show();
-	}
-});
-</script>
 </body>
 </html>
