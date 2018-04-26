@@ -100,6 +100,8 @@ Version : AKL Hybris UIUX 1.0
 .bod-view-txt {clear:both;display:block;padding:25px 0 0;}
 .bod-correction-guide {clear:both;display:block;margin-top:30px}
 .bod-correction-guide p.txt-tit {font-size:16px;font-weight:500;letter-spacing:-1px;margin:0 0;}
+.bod-view-thumnail {margin:0 auto;text-align:center;padding:10px 0 20px}
+.bod-view-thumnail img {width:auto;height:436px;margin:0 auto}
 
 .akl .list-row-title div.corr-prev {width:40%;padding-left:20px;}
 .akl .list-row-title div.corr-next {width:40%;padding-left:20px;}
@@ -130,6 +132,61 @@ Version : AKL Hybris UIUX 1.0
 
 .akl .con-list-item div.news-subje a {color:#56565a}
 .akl .con-list-item div.news-subje a:hover {color:#0075a4;}
+
+/* 사회공헌뉴스 */
+.fa-news {position: relative;top:0;left:0;display:inline-block;}
+.fa-news:before {content:'';position: absolute;top:-15px;left:0;background: url("../images/akl_common/ico_news.png") no-repeat left center;width:20px;height:16px;}
+
+.akl .new-social-list {margin:0 -10px;padding:0 0;}
+.akl .new-social-list .option-item-container {padding:10px;height:auto;}
+.akl .thumnail-box {width:100%;height:230px;overflow: hidden;}
+.akl .thumnail-box .featured-product__thumnail {width:100%;cursor:pointer;margin:0 0;height:100%;}
+.akl .news-result-item-text {display:block;min-height: 110px;padding:15px 20px 0;background-color: #F4F4F4;cursor: pointer;letter-spacing:-0.05em;}
+.akl .news-result-item-text .featured-product__title {font-size:16px;margin-bottom: 10px;font-weight:500;line-height:24px;margin:0 0;height:50px;word-break:break-all;overflow: hidden;color:#002f5f;}
+.akl .news-result-item-text .featured-product__title:hover {color:#0075a4;}
+.akl .news-result-item-text .featured-product__title strong {font-weight:500;}
+.akl .news-result-item-text .featured-product__subtitle {font-size:14px;font-weight:400;color:#56565a;margin:0 0;padding:5px 0 0}
+
+.btn-more-pagination {clear:both;display:block;text-align:center;margin:0 auto;padding:20px 0;}
+.btn-more-pagination .text-btn {font-size:14px;font-weight:500;letter-spacing:-1px;}
+.press-releases {padding:10px 0 0;width:100%;height:auto;word-break:break-all;}
+
+/* 신제품 > 목록 */
+.fa-new-product {position: relative;top:0;left:0;display:inline-block;}
+.fa-new-product:before {content:'';position: absolute;top:-15px;left:0;background: url("../images/akl_common/ico_new_product.png") no-repeat left center;width:16px;height:20px;}
+
+.new-product-txt {}
+.new-product-head {display:table;width:100%;margin:0 0;padding:20px 0 15px;box-sizing: border-box;table-layout:fixed}
+.new-product-head .announcement-search-result {display:table-cell;width:50%;padding:0 0;margin:0;vertical-align:middle;box-sizing: border-box;}
+.new-product-head .cuton-sel {display:table-cell;width:50%;text-align:right;vertical-align:middle;box-sizing: border-box;}
+.new-product-head .cuton-sel label {font-size:14px;font-weight:500;padding-right:10px;letter-spacing:-0.05em;}
+
+/* 신제품 > 상세보기 */
+.bod-view-txt .wcms-content {margin:0;padding:30px 0;overflow:hidden;border-bottom:1px solid #d3d3d3;}
+.new-product-box {}
+.new-product-box h3 {font-size:32px;font-weight:700;letter-spacing:-2px;text-align:center;color:#002f5f;padding:0}
+
+.product-item-header div.new-all-ceek {width:5%;text-align:center;}
+.product-item-header div.shop-pro-prod {width:55%;}
+.product-item-header div.shop-pro-price {width:15%;}
+.product-item-header div.shop-pro-pvbv {width:15%;}
+.product-item-header div.shop-pro-btn {width:10%;text-align:center;}
+
+.new-product-box .product-item-list li {border-bottom:0 none;border-top:1px solid #e3e3e3;}
+.new-product-box .product-item-list li:first-child {border-top:0 none;}
+.product-item-list div.new-all-ceek {width:5%;text-align:center;}
+.product-item-list div.shop-pro-prod {width:50%;}
+.product-item-list div.shop-pro-price {width:15%;text-align:right;padding:0 20px;}
+.product-item-list div.shop-pro-pvbv {width:17%;text-align:right;padding:0 10px;}
+.product-item-list div.shop-pro-btn {width:13%;text-align:center;}
+
+.product-item-list div.new-all-ceek, .product-item-list div.shop-pro-prod, .product-item-list div.shop-pro-price, 
+.product-item-list div.shop-pro-pvbv, .product-item-list div.shop-pro-btn {display:table-cell;vertical-align:middle;box-sizing: border-box;}
+
+.product-item-list div.shop-pro-prod .list-item-info {vertical-align:middle;}
+.product-item-list div.shop-pro-btn button.bt-akl-blue.mini {line-height:1px;}
+.new-sle-top {padding:15px 0 10px}
+
 
 @media (max-width: 768px) { 
     
@@ -173,5 +230,41 @@ Version : AKL Hybris UIUX 1.0
 	.akl .content-list .con-list-item > div.news-num {display:block;width:100%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-subje {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-date {display:block;width:90%;padding:5px 20px;}
+	
+	/* 사회공헌뉴스 */
+	.akl .news-result-item-text {display:block;min-height:auto;padding:15px 20px 15px;}
+	.akl .news-result-item-text .featured-product__title {height:auto;}
+	.akl .news-result-item-text .featured-product__subtitle {padding:15px 0 0}
+	.akl .thumnail-box {height:auto;overflow:hidden;}
+	.akl .thumnail-box .featured-product__thumnail {width:100%;height:auto;margin-bottom:0;}
+	.bod-view-thumnail img {width:100%;height:auto;margin:0 auto}
+	.akl .news-result-item-text {min-height:auto;padding:15px 20px;}
+
+	/* 신제품 > 목록 */
+	.new-product-head .announcement-search-result {display:block;width:100%;}
+	.new-product-head .cuton-sel {display:block;width:100%;text-align:left;padding:15px 0 0}
+	.new-product-head .cuton-sel label {padding-right:0;}
+	.new-product-head .cuton-sel select {display:block; width:100%;}
+	
+	/* 신제품 > 상세보기 */
+	.product-item-header div.new-all-ceek {width:100% !important;text-align:left;padding-left:20px}
+	.product-item-header div.shop-pro-prod {display:none;}
+	.product-item-header div.shop-pro-price {display:none;}
+	.product-item-header div.shop-pro-pvbv {display:none;}
+	.product-item-header div.shop-pro-btn {display:none;}
+
+	.product-item-list div.new-all-ceek {display:block;width:100%;text-align:left;padding-left:20px}
+	.product-item-list div.shop-pro-prod {display:block;width:100%;padding:10px 0px 0 20px;}
+	.product-item-list div.shop-pro-price {clear:both;display:block;width:100%;padding:10px 0px 0 100px;}
+	.product-item-list div.shop-pro-pvbv {clear:both;display:block;width:100%;padding:10px 0px 0 100px;}
+	.product-item-list div.shop-pro-btn {clear:both;display:block;width:100%;padding:10px 0px 0 100px;text-align:left;}
+
+	.product-item-list div.shop-pro-price .txt-label {display:inline-block;float:left;font-size:14px;color:#002f5f;font-weight:500;vertical-align:top;text-align:left;}
+	.product-item-list div.shop-pro-price .txt-warp {display:inline-block;float:right;font-size:14px;vertical-align:top;text-align:right;}
+
+	.product-item-list div.shop-pro-pvbv .txt-label {display:inline-block;float:left;font-size:14px;color:#002f5f;font-weight:500;vertical-align:top;text-align:left;}
+	.product-item-list div.shop-pro-pvbv .txt-warp {display:inline-block;float:right;font-size:14px;vertical-align:top;text-align:right;}
+	.product-item-list div.shop-pro-btn .txt-warp {width:100%;}
+
 
 } 
