@@ -186,7 +186,6 @@ html.scrollLock body {overflow:hidden;}
 .akl .amway-theme.fax-order-wrapper .panel-body * {font-size:14px;}
 .akl .amway-theme.fax-order-wrapper .bt-akl-white.mini {font-size:12px;}
 .akl .amway-theme.fax-order-wrapper .ico-bg-sky {font-size:11px;}
-
 .akl .amway-theme.fax-order-wrapper .accordion-header-text {position:relative;}
 .akl .amway-theme.fax-order-wrapper .accordion-header-text:before {content:''; position:absolute; top:50%; left:-30px; width:26px; height:26px; margin-top:-13px; border:1px solid #0074a3;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading {padding:0 20px 0 50px;}
@@ -219,28 +218,24 @@ html.scrollLock body {overflow:hidden;}
 
 /* 그룹주문 */
 .faxOrder-group-order {margin:40px 0 10px;}
-/* .faxOrder-group-order ul {border-bottom:1px solid #dadada;}
-.faxOrder-group-order ul>li {display:table; width:100%; border-top:1px solid #dadada;}
-.faxOrder-group-order ul>li>div {display:table-cell; width:33%; vertical-align:middle;}
-.faxOrder-group-order ul>li>div:first-child {width:34%;} */
-
-
-.faxOrder-group-order .order-save {width:36%}
+.faxOrder-group-order .tbl-list-board {margin-bottom:0;}
 .faxOrder-group-order .tbl-list-board .tr>div {padding:0 0 0 20px;}
 .faxOrder-group-order .tbl-list-board .tr .td {text-align:right; padding-right:20px;}
 .faxOrder-group-order .tbl-list-board .tr .order-save {padding-bottom:;}
-.faxOrder-group-order .tbl-list-board .th, .faxOrder-group-order .order-save li>strong {color:#002f5f; font-weight:500; font-size:13px !important;}
+.faxOrder-group-order .tbl-list-board .th,
+.faxOrder-group-order .order-save li>strong,
+.faxOrder-group-order .order-total>strong {color:#002f5f; font-weight:500; font-size:13px !important;}
 .faxOrder-group-order .tbl-list-board .th span {color:#56565a; font-weight:normal;}
-.faxOrder-group-order .order-save ul {display:table;width:100%;}
+.faxOrder-group-order .order-save {width:36%}
+.faxOrder-group-order .order-save ul {display:table; width:100%;}
 .faxOrder-group-order .order-save li {display:table-row;}
-.faxOrder-group-order .order-save li>strong{display:table-cell; width:40%; padding:0 10px 10px 0;}
-.faxOrder-group-order .order-save li>span{display:table-cell; width:60%; padding-right:20px; text-align:right; background:#fff;}
+.faxOrder-group-order .order-save li>strong {display:table-cell; width:40%; padding:0 10px 10px 0;}
+.faxOrder-group-order .order-save li>span {display:table-cell; width:60%; padding-right:20px; text-align:right; background:#fff;}
 .faxOrder-group-order .order-save li:first-child>strong {padding-top:10px;}
-
-/* .order-sum >strong {display:block; height:100%;}
-.order-cost {}
-.order-save {} */
-
+.faxOrder-group-order .order-total {display:table; width:100%; padding:20px; border-bottom:1px solid #e3e3e3; background:#f4f4f4;}
+.faxOrder-group-order .order-total>strong {display:table-cell; width:40%; padding:0;}
+.faxOrder-group-order .order-total>span { display:table-cell; width:60%; text-align:right;}
+.faxOrder-group-order .confirm-check{margin-top:15px;}
 
 /* -- 제품주문 정보 -- */
 .akl .amway-theme .accordion-element.prdt-order-info .accordion-toggle {padding:0;}
@@ -1211,10 +1206,10 @@ html.scrollLock body {overflow:hidden;}
 
 	.faxOrder-group-order .order-save {width:auto;}
 	.faxOrder-group-order .tbl-list-board .tr {overflow:hidden; background:#f4f4f4;}
-	.faxOrder-group-order .tbl-list-board .tr>div {display:bolck; width:auto; padding:0 0 0 20px;}
+	.faxOrder-group-order .tbl-list-board .tr>div {display:bolck; width:auto; padding:12px 0 0 20px;}
 	.faxOrder-group-order .tbl-list-board .tr .th {float:left; width:40%;}
 	.faxOrder-group-order .tbl-list-board .tr .td {float:left; width:60%; background:none;}
-	.faxOrder-group-order .tbl-list-board .tr .th.order-save {width:100%;}
+	.faxOrder-group-order .tbl-list-board .tr .th.order-save {width:100%; padding-top:0;}
 	.faxOrder-group-order .order-save li>span { background:none;}
 /*
 	.faxOrder-group-order .tbl-list-board .tr .td {text-align:right; padding-right:20px;}
