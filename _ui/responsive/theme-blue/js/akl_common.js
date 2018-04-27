@@ -80,6 +80,12 @@ $(function(){
 		});
 	});
 
+	//온라인 FAX 주문 - 툴팁
+	toolTips();
+
+	//온라인 FAX 주문 - 안내글 토글
+	toggleBox_Guide();
+
 	//2018.03.12 카테고리 왼쪽메뉴
 	var Accordion = function(el, multiple) {
 		this.el = el || {};
@@ -334,6 +340,54 @@ function event_NewABO_select(){
 			obj1.hide();
 			obj5.show();
 		}
+	});
+}
+
+/* 온라인 FAX 주문 - 툴팁 */
+function toolTips(){
+	var tooltipBox = $('.toolTip-wrapper');
+	var tooltipBTN =  tooltipBox.find('.btn-tooltip');
+	tooltipBTN.each(function(){
+		$(this).on('click',function(e){
+			e.preventDefault();
+			var _tipContent = $(this).parent().find('.tooltip-content');
+			var _closeBTN = $(this).parent().find('.btn-tooltip-close');
+
+			if(_tipContent.is(':hidden')){
+				_tipContent.show();
+			} else if(_tipContent.is(':visible')){
+				_tipContent.hide();
+			}
+
+			_closeBTN.on('click',function(){
+				_tipContent.hide();
+			});
+		});
+	})
+}
+
+/* 온라인 FAX 주문 - 안내글 토글 */
+function toggleBox_Guide(){
+	var guideboxToggle = $('.js-guidebox-toggle');
+	if (! guideboxToggle.length){return}
+
+	guideboxToggle.each(function(){
+		var _titBtn = $(this).find('a.title');
+		var _hiddenBox = $(this).find('.tgg-hidden-area');
+
+		_hiddenBox.hide();
+		_titBtn.on('click',function(e){
+			e.preventDefault();
+			if(_hiddenBox.is(':hidden')){
+				$(this).parent().addClass('on');
+				$(this).find('span').text('닫기');
+				_hiddenBox.show();
+			} else if(_hiddenBox.is(':visible')){
+				$(this).parent().removeClass('on');
+				$(this).find('span').text('열기');
+				_hiddenBox.hide();
+			}
+		});
 	});
 }
 
