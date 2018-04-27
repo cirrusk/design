@@ -510,3 +510,28 @@ $(function() {
 	});
 
 });
+
+//나의 주문내역
+$(function(){
+	//mob filter
+	$(".filter-facet-button2").click(function(e){
+		e.preventDefault();
+		if(!$(".new-plp .pagination-wrapper .product__facet").hasClass("active")){
+			$(".new-plp .filter-facet-button").addClass("active");
+			$(".new-plp .pagination-wrapper .product__facet").addClass("active");
+		}else{
+			$(".new-plp .pagination-wrapper .product__facet").removeClass("active");
+			$(".new-plp .filter-facet-button").removeClass("active");
+		}
+	});
+
+	$(".js-order-history-search2").click(function(){
+		$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+		if($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')){
+			$(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+		}else{
+			$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+		}
+	});
+
+});
