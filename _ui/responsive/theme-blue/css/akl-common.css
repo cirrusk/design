@@ -452,8 +452,10 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .layerWrapper .checkout-steps { padding: 0 0;}
 .akl .step-wrap .checkout-steps { margin-bottom:30px !important; padding:0 !important;  }
 
-/* common > product label */
-.akl .plp-item-label {position: relative; padding-top:4px; padding-left:16px;padding-right:10px; display:inline-block; height:25px; color:#fff; text-align:center; font-weight:500; font-size:13px; line-height:1.3; margin-right:-2px; width:auto }
+/* common > product label */ 
+.akl .plp-item-label-wrap { position:absolute; left:0; top:0}
+.ui-snap-big .plp-item-label-wrap {  top:-30px }
+.akl .plp-item-label {position: relative; padding-top:4px; padding-left:16px;padding-right:10px; display:inline-block; height:25px; color:#fff; text-align:center; font-weight:500; font-size:13px; line-height:1.3; margin-right:-3px; width:auto }
 .akl .plp-item-label.bg-red { background-color:#e11e45; }                       /*배경 빨강 라벨*/
 .akl .plp-item-label.bg-green { background-color: #20893d;}  /*배경 초록 라벨*/
 .akl .plp-item-label.bg-navy {background-color: #002f5f;}   /*배경 남색 라벨*/
@@ -464,9 +466,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .plp-item-label.bg-green:after { background: url(../images/icon_bg_green.png) no-repeat;background-size: 9px 25px;}
 .akl .plp-item-label.bg-navy:after { background: url(../images/icon_bg_navy.png) no-repeat;background-size: 9px 25px;}
 .akl .plp-item-label.bg-blue:after { background: url(../images/icon_bg_blue.png) no-repeat;background-size: 9px 25px;}
-.akl .plp-item-label.bg-purple:after { background: url(../images/icon_bg_purple.png) no-repeat;background-size: 9px 25px;}
-
- 
+.akl .plp-item-label.bg-purple:after { background: url(../images/icon_bg_purple.png) no-repeat;background-size: 9px 25px;} 
 
 .akl .plp-item-label:nth-of-type(1) {z-index:99;padding-left:13px;}
 .akl .plp-item-label:nth-of-type(2) {z-index:98;}
@@ -670,7 +670,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .quick-links-item > ul {padding-bottom:20px !important;}
 
 /* 상품목록 > 카드형 */
-.akl .product-list__item { height: 640px;}
+.akl .product-list__item { height: 640px; position: relative;} 
 .akl .product-list__item-content {height: 549px;}
 .akl .product-list__item-content .product-list__thum { height:218px; max-width:218px; margin:0 auto 20px; }
 .akl .product-list__thumbnail { height:100% }
