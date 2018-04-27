@@ -112,7 +112,7 @@ html.scrollLock body {overflow:hidden;}
 .jMsgbox-prompt-input {display:block; padding:6px 6px; margin-bottom:10px; color:#555; vertical-align:middle; background-color:#FFF; border:1px solid #ccc;}
 .jMsgbox-loading {background:url(../img/loading.gif) center center no-repeat transparent;}
 .jMsgbox-loaded {padding:15px;}
-.jMsgbox-foot {height:80px !important;background:#fff; margin:0 auto; padding:0 20px; border-top:1px solid #dadada;text-align:center;}
+.jMsgbox-foot {height:80px !important; background:#fff; margin:0 auto; padding:20px 20px 0; border-top:1px solid #dadada;text-align:center; box-sizing:border-box;}
 .jMsgbox-foot input {display:inline-block; min-width:120px; height:40px; padding:4px 12px; border:0; font-size:14px; line-height:20px;color:#fff; background:#002F5F;}
 .jMsgbox-foot input:hover {color:#002F5F; background:#fff;}
 .jMsgbox-foot input.jMsgbox-ok {color:#fff; background:#002F5F;}
@@ -193,7 +193,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .wrapper-seek-result.reset-password input[type=password]{width:283px;}
 
 /* ----- 온라인 팩스 주문 ----- */
-.akl .amway-theme.fax-order-wrapper .panel-title {font-size:18px;}
+.akl .amway-theme.fax-order-wrapper .panel-title * {font-size:18px;}
 .akl .amway-theme.fax-order-wrapper .panel-body * {font-size:14px;}
 .akl .amway-theme.fax-order-wrapper .panel-body .form-group .list-type2 li {font-size:13px;}
 .akl .amway-theme.fax-order-wrapper .bt-akl-white.mini {font-size:12px;}
@@ -207,6 +207,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-wrapper .accordion-custom .panel-body {padding:0 30px 30px 50px; border-top:0;}
 .akl .fax-order-wrapper .accordion-custom .panel-title {position:relative; padding:28px 0 27px;}
 .akl .fax-order-wrapper .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px;}
+.akl .fax-order-wrapper .accordion-custom .panel-title .order-cases {display:inline-block; margin-left:10px}
 
 /* 결제정보 */
 .info-texts-paymentType { padding-bottom:30px; margin-bottom:20px; border-bottom:1px solid #dadada;}
@@ -257,10 +258,35 @@ html.scrollLock body {overflow:hidden;}
 /* 결제방법 */
 .accordion-custom .panel.noline {border-bottom:0 ;}
 .akl .faxOrder-payment-wrapper .shipping-delivery-ship {padding:0; border-bottom:0;}
+.akl .faxOrder-payment-wrapper hr.divide {margin:40px 0 40px; border-top:1px solid #e3e3e3;}
+.akl .accordion-custom .evidence-paper .panel{ border:0}
+.akl .accordion-custom .evidence-paper .shipping-delivery-setup-title {padding-left:0;}
 .shipping-delivery-ship.method .panel:first-child {margin-top:0}
 
-.akl .fax-order-wrapper .shipping-delivery-radio-body {margin:0;}
-.akl .fax-order-wrapper .accordion-custom .shipping-delivery-radio-body .panel-body {padding:0 0 30px 0;}
+label + .btn-business {margin-left:10px}
+
+/* 주문결제 > 거래내역증빙신청 */
+.akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
+.akl .shipping-delivery-setup-title.col-md-3 {padding:0 12px 0 0;font-size:14px;font-weight:500;}
+.akl .pay-transaction .amwa-radio + label {font-size:14px;font-weight:500;}
+.akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
+.akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
+.akl .evidence-paper .cash-type {padding-left:30px;}
+.akl .evidence-paper .cash-receipts label {display:inline-block;}
+
+.akl .evidence-paper .cash-type .cash-phone, .akl .evidence-paper .receipt-type {display:block; text-align:left;}
+.akl .evidence-paper .cash-phone select.form-control {width:170px; margin-right:8px; vertical-align:top;}
+.akl .evidence-paper .cash-phone input.form-control {width:200px; vertical-align:top;}
+.akl .evidence-paper .receipt-type {margin-top:10px;}
+.akl .evidence-paper .receipt-type label {width:170px; margin-right:8px; text-align:left;}
+.akl .evidence-paper .receipt-type select.form-control {width:200px;}
+.akl .evidence-paper .pay-transaction + .pay-transaction {padding-top:40px; margin-top:40px; border-top:1px solid #e3e3e3;}
+
+
+
+.akl .fax-order-wrapper .shipping-delivery-radio-body {margin:0 0 0 30px;}
+.akl .fax-order-wrapper .accordion-custom .shipping-delivery-radio-body .panel-body {padding:0;}
+.akl .fax-order-wrapper .card-method {padding-top:15px;}
 .akl .fax-order-wrapper .card-method .card-tit{padding-left:0;}
 .akl .fax-order-wrapper .card-method .a-point {margin-top:8px;}
 .akl .fax-order-wrapper .card-sort .pay-line .form-group .col-md-10 {padding-left:12px !important;}
@@ -268,6 +294,8 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-wrapper .card-sort .pay-line input.card-inp2,
 .akl .fax-order-wrapper .card-sort .pay-line input.card-inp3,
 .akl .fax-order-wrapper .card-sort .pay-line input.card-inp4 {width:90px !important;}
+.akl .fax-order-wrapper .card-promotion {margin-bottom:0;}
+.akl .fax-order-wrapper .card-promotion+div {margin-top:20px}
 
 .faxOrder-payment-wrapper .transfer-resver-guide .guid-box {width:auto;}
 .transfer-resver-guide .guid-box a.title {position:relative; display:block; padding:8px 0; color:#002f5f; font-weight:500;}
@@ -292,6 +320,11 @@ html.scrollLock body {overflow:hidden;}
 .fax-order-wrapper .panel-body.product-detail .shopping-cart-top {padding-top:25px;}
 .fax-order-wrapper .shopping-cart-item-list .product-list-item {border-bottom:0; border-top:1px solid #e3e3e3;}
 .fax-order-wrapper .shopping-cart-item-list .visible-md+.product-list-item {border-top:0 !important;}
+
+.faxOrder-cart-wrapper .paymemt-type-group .shipping-delivery-radio-body {margin:0;}
+.akl .amway-theme .panel-body.faxOrder-cart-wrapper strong.sub-title {display:block; margin:37px 0 27px; font-size:16px !important; font-weight:500; letter-spacing:-0.05em;}
+
+.shipping-delivery-ship {}
 
 /* 제품검색 */
 .akl .fax-order-wrapper .panel-body.product-detail .quickShopForm {padding:0 0 25px; border-bottom:1px solid #e3e3e3;}
@@ -1243,6 +1276,7 @@ html.scrollLock body {overflow:hidden;}
 	.fax-order-wrapper .accordion-element.prdt-order-info .accordion-panel-collapse .accordion-collapse-wrapper {padding-left:30px;}
 	.fax-order-wrapper .panel-body.product-detail .row .container-fluid,
 	.fax-order-wrapper .panel-body.product-detail .row>div[class^=col] {padding:0;}
+	.akl .fax-order-wrapper .shipping-delivery-radio-body {margin:0;}
 
 	.faxOrder-sum-box {margin-left:30px; padding:15px;}
 	.faxOrder-sum-box>p {float:none; overflow:hidden;}
