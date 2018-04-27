@@ -913,6 +913,9 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 		id: msgboxCounter,
 		type: msgboxType,
 		content: msgboxContent,
+		onOpen : function(){
+			this.$buttons.OK.focus();
+		},
 		onClose: functionName
 	});
 }
@@ -1259,8 +1262,8 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 
 			this.$foot = createElement('div', this.options.prefix + '-foot', {
 				position: 'relative',
-				height: this.options.footHeight,
-				'line-height': this.options.footHeight
+				height: this.options.footHeight
+				//,'line-height': this.options.footHeight
 			});
 			if (this.options.buttons!==null) {
 				var x = 0;
@@ -1975,7 +1978,7 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 
 			if (this.options.footHeight > 0) {
 				this.options.footHeight = this.$foot.outerHeight(true);
-				this.$foot.css({'line-height': this.options.footHeight + 'px'});
+				//this.$foot.css({'line-height': this.options.footHeight + 'px'});
 			}
 
 			this.$content.height (this.$wrap.height() - this.options.titleHeight - this.options.footHeight);
