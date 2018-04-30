@@ -2,7 +2,7 @@
 Version : AKL Hybris UIUX 1.0
 Date : 2018-01-25
 Editor : eunmyoung Noh
-*************************************************/
+*************************************************/ 
 @import url("shop-finder.css");
 @import url("select2.css");
 @import url("register.css");
@@ -208,6 +208,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .title-h5 {font-size: 20px; letter-spacing: -2px; line-height: 100%; font-weight:500}
 .title-h6 {font-size: 16px; letter-spacing: -1px; line-height: 100%; font-weight:500}
 .akl .product-list-page-title {  font-size: 32px; letter-spacing: -2px;}
+.akl .product-list-page-title + .product-list-page-sub-title  { margin-top:-5px;}
 
 /* common > h1 type2 */
 .akl .bonus-payment .bonus-payment__title {padding:0;position:relative;font-size:18px;letter-spacing:-2px;font-weight:500;  }
@@ -815,7 +816,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.disNone-m { display:none}
 	.dis-inline-block { display:inline;}/*모바일용*/
 
-	.search-no-result {padding:40px 0;}
+	.search-no-result {padding:20px 0 30px;}
 	.search-no-result p {padding:0 20px;}
 
 	/* common > Alert & Confirm  */
@@ -834,7 +835,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .button-type4 button:nth-of-type(1) {width:49.5%; float:left; }
     .button-type4 button:nth-of-type(2) {width:49.5%; float:right;}
     .button-type4 button:nth-of-type(3) {width:49.5%; }
-
+	 
     /* common > list style */
     .list-style-cont {padding:15px 0 0;}
 
@@ -897,7 +898,8 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .list-content .list-row-title {border-bottom:0 none;padding:0 0;}
 	.akl .content-list .con-list-item {display:block;}
 	.akl .content-list .list-content .con-list-item span.tite-label {font-size:14px;font-weight:500;color:#002f5f;}
-
+	
+	.akl .accordion-custom .panel-title {padding:25px 10px ; }
 
     /*** header ***/
     .akl .breadcrumb-section { margin: 0 0 0;}
@@ -938,8 +940,11 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .akl .footer ul li a {font-size: 14px; padding-right: 7px; padding-left: 7px;}
     .akl .footerShotcut.pc { display: none}
     .akl .footerShotcut.mob { display:block;}
-    .akl .footerShotcut.mob .form-control { width: 100%}
-
+    .akl .footerShotcut.mob .form-control { width: 100%} 
+	
+	 /*** 레이아웃 ***/
+	.main-container {padding: 0 15px;} 
+	 
 	/* 퀵리스트 */
 	.akl .container .row.footer-quick {overflow:initial;}
 	.akl .qlink-left-box {padding-right:0;}
