@@ -142,7 +142,13 @@ function orderSummaryFixed(){
 		var compareTop = targetWrap_btm - targetObj_H; //1063
 		var targetReTOP = compareTop - targetWrap_top + headerHeight;
 
+		var $cartContent = targetObj.parent().find('.cart-items-wrapper');
+
 		if( winWidth > 768 ){
+			if( $cartContent.length && targetObj_H > 400){
+				$cartContent.css({'min-height':'700px'});
+			}
+
 			if( wScrollTop > compareTop){
 				$('.shipping-delivery-summary').css({
 					'position':'absolute',
