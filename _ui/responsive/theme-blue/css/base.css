@@ -5193,15 +5193,15 @@ p{margin:0 0 10px;}
 .product-list__item-retailprice{display:table;width:100%;margin-bottom:3px;font-size:14px;font-weight:100;line-height:1.3;}
 .cartlist-instock{font-weight:600;text-align:left;color:#20883e;}
 .cartlist-instock img{margin-right:5px;}
-.product-list__thumbnail{display:block; margin-right:auto;margin-bottom:18px;margin-left:auto;cursor:pointer;}
+.product-list__thumbnail{display:block; margin-right:auto; cursor:pointer;}/*2018.04.30 수정*/
 @media (max-width: 990px){
   .product-list__thumbnail{width:100%;height:auto;}
 }
 .product-list__item-link{padding:5px 0;border-top:1px solid #dadada;}
-.product-list__item-link .btn-blue-white{display:block;width:97%;margin:0 auto;padding:13px 20px 12px;text-align:center;}
+.product-list__item-link .btn-blue-white{display: block; width:97%;margin:0 auto;padding:13px 20px 12px;text-align:center;}/*2014.04.30 수정*/
 .product-list__item-link .btn-blue-white:hover{border:2px solid #002f5f;background:#ffffff;}
 .product-list__item-link-btn{display:block;width:98%;height:44px;margin:0 auto;text-transform:uppercase;color:#ffffff;border-radius:1px;background-color:#002f5f;}
-.product-list__item-link-common{margin-top:10px;padding-left:9px;font-size:14px;font-weight:600;line-height:1.45;letter-spacing:.1px;color:#0075a4;}
+.product-list__item-link-common{margin-top:15px;padding-left:9px;font-size:14px;font-weight:600;line-height:1.45;letter-spacing:.1px;color:#0075a4;}
 .product-list__item-link-common:hover{color:#002f5f;}
 .product-list__item-link-common:before{display:block;float:left;margin-right:10px;}
 .product-list__item-link-text{display:block;padding-left:28px;background:url(../images/plus_circle.png) 3px center no-repeat;background-size:auto 100%;}
@@ -5972,15 +5972,15 @@ select.form-control option{float:left;width:100%;padding:6px 10px;border:none;}
   .amway-suggest .slick-slider{margin-bottom:0;}
   .amway-suggest__item-container{min-width:auto;}
   .product-list__item{height:380px;margin:20px 0;}
-  .product-list__item-content{height:248px;padding:45px 5% 15px 4%;}
-  .product-list__item-detail{display:block;float:left;width:77%;height:auto;}
+  .product-list__item-content{height:248px; }/*2018.04.30 수정*/
+  .product-list__item-detail{display:block; height:auto;}/*2018.04.30 수정*/
   .product-category-page.amway-theme{padding:0;}
   .product-categories .amway-theme{padding:0;}
   .product-list__thumbnail{float:left; height:auto;margin-right:3%;}/*2018.04.30 수정*/
-  .product-list__item-link{padding:0 5% 15px 4%;border:none;}
-  .product-list__item-link .btn-blue-white{width:60%;margin-top:5px;margin-bottom:15px;margin-left:23%;}
+  .product-list__item-link{padding:0 5% 15px 4%; }/*2018.04.30 수정*/
+  .product-list__item-link .btn-blue-white{ margin-top:5px; }/*2018.04.30 수정*/
   .product-list__item-link-btn{width:60%;margin-left:23%;}
-  .product-list__item-link-common{width:70%;margin-left:23%;padding-left:0;font-size:16px;}
+  .product-list__item-link-common{ padding-left:0;font-size:16px;}/*2018.04.30 수정*/
   .product-list__item-link-text{padding-left:32px;background-position:left center;}
   .product-list__item-link-ditto{display:block;}
   .product-category__bg{display:block;float:left;width:36%;height:44px;text-align:center;border:1px solid #dadada;border-radius:4px;background-color:#ffffff;}
@@ -6767,8 +6767,8 @@ h3.primary-address{margin-top:37px;}
   .homepage .owl-theme .owl-controls .owl-nav .owl-prev{left:0;}
   .homepage .owl-theme .owl-controls .owl-nav .owl-next{right:0;}
   #shopping-list-content .ditto-action-panel{padding-left:0;}
-  .plp-add-to-ditto .dropdown-menu{top:68px;left:155px!important;}
-  .plp-add-to-shopping-list .dropdown-menu{left:155px;}
+  .plp-add-to-ditto .dropdown-menu{top:68px; right:0;}/*2018.04.30 수정*/
+  .plp-add-to-shopping-list .dropdown-menu{left:0}/*2018.04.30 수정*/
   .amway-theme .ditto-schedule-table-content.mob-btn-table-content .ditto-panel-element .amw-checkbox-wrap{width:150px;height:40px;line-height:38px;text-align:center;border:2px solid #002f5f;background-color:#002f5f;}
   .amway-theme .ditto-schedule-table-content.mob-btn-table-content .ditto-panel-element .amw-checkbox-wrap:hover{background-color:#ffffff;}
   .amway-theme .ditto-schedule-table-content.mob-btn-table-content .ditto-panel-element .amw-checkbox-wrap:hover .checkbox-text{color:#002f5f;}
