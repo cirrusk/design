@@ -115,7 +115,7 @@ $(function(){
 
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
-	if (! $('.shipping-delivery-summary').length){ return;}
+	if (! $('.shipping-delivery .shipping-delivery-summary').length){ return;}
 	function fixedBox(){
 		//target position : top
 		var wScrollTop = $(window).scrollTop();

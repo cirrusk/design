@@ -34,7 +34,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 .tbl-list-view {display:table; width:100%; table-layout:fixed; margin-bottom:10px; box-sizing:border-box; border-bottom:1px solid #e3e3e3; word-break: break-all;}
 .tbl-list-view .thead {display:table-header-group;}
 .tbl-list-view .tbody {display:table-row-group; font-size:14px;}
-.tbl-list-view .thead .tr>strong {display:table-cell; padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; background:#f4f4f4; border-top:1px solid #e3e3e3;}
+.tbl-list-view .thead .tr>strong , .tbl-list-view .tr>.th {display:table-cell; padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 .tbl-list-view .tbody .tr>strong {display:none;}
 .tbl-list-view .tr {display:table-row;}
 .tbl-list-view .tr>strong {font-size:13px;color:#002f5f;font-weight:500;}
@@ -257,13 +257,18 @@ html.scrollLock body {overflow:hidden;}
 
 /* 결제방법 */
 .accordion-custom .panel.noline {border-bottom:0 ;}
-.akl .faxOrder-payment-wrapper .shipping-delivery-ship {padding:0; border-bottom:0;}
 .akl .faxOrder-payment-wrapper hr.divide {margin:40px 0 40px; border-top:1px solid #e3e3e3;}
-.akl .accordion-custom .evidence-paper .panel{ border:0}
+.akl .faxOrder-payment-wrapper .divide.no-line {border-top:0;margin:40px 0 0;}
+.akl .faxOrder-payment-wrapper .shipping-delivery-ship {padding:0; border-bottom:0;}
+.akl .faxOrder-payment-wrapper .shipping-delivery-ship.method .panel:first-child {margin-top:0;}
+.akl .accordion-custom .evidence-paper .panel{border:0}
+.akl .accordion-custom .evidence-paper .pay-transaction {overflow:hidden;}
+.akl .accordion-custom .evidence-paper .pay-transaction>p {margin-bottom:0;}
+.akl .accordion-custom .evidence-paper .deli-introduction {margin:40px 0 40px; padding-top:40px; border-top:1px solid #e3e3e3;}
 .akl .accordion-custom .evidence-paper .shipping-delivery-setup-title {padding-left:0;}
-.shipping-delivery-ship.method .panel:first-child {margin-top:0}
-
-label + .btn-business {margin-left:10px}
+.akl .accordion-custom .evidence-paper .pay-transaction .txt-tye > p {margin-bottom:8px;}
+.akl .accordion-custom .evidence-paper .pay-transaction .txt-tye .setup-info {padding:0;}
+.akl .accordion-custom .shipping-delivery-ship.agreement {margin:0; padding-top:40px; border-top:1px solid #e3e3e3;}
 
 /* 주문결제 > 거래내역증빙신청 */
 .akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
@@ -271,9 +276,9 @@ label + .btn-business {margin-left:10px}
 .akl .pay-transaction .amwa-radio + label {font-size:14px;font-weight:500;}
 .akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
 .akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
+.akl .evidence-paper label + .btn-business {margin-left:10px;}
 .akl .evidence-paper .cash-type {padding-left:30px;}
 .akl .evidence-paper .cash-receipts label {display:inline-block;}
-
 .akl .evidence-paper .cash-type .cash-phone, .akl .evidence-paper .receipt-type {display:block; text-align:left;}
 .akl .evidence-paper .cash-phone select.form-control {width:170px; margin-right:8px; vertical-align:top;}
 .akl .evidence-paper .cash-phone input.form-control {width:200px; vertical-align:top;}
@@ -282,26 +287,30 @@ label + .btn-business {margin-left:10px}
 .akl .evidence-paper .receipt-type select.form-control {width:200px;}
 .akl .evidence-paper .pay-transaction + .pay-transaction {padding-top:40px; margin-top:40px; border-top:1px solid #e3e3e3;}
 
-
-
 .akl .fax-order-wrapper .shipping-delivery-radio-body {margin:0 0 0 30px;}
-.akl .fax-order-wrapper .accordion-custom .shipping-delivery-radio-body .panel-body {padding:0;}
+.akl .fax-order-wrapper .accordion-custom .shipping-delivery-radio-body .panel-body {padding:0 0 30px;}
+.akl .fax-order-wrapper .accordion-custom .shipping-delivery-radio-body .panel-body.paymemnt-point {padding:0;}
 .akl .fax-order-wrapper .card-method {padding-top:15px;}
 .akl .fax-order-wrapper .card-method .card-tit{padding-left:0;}
 .akl .fax-order-wrapper .card-method .a-point {margin-top:8px;}
 .akl .fax-order-wrapper .card-sort .pay-line .form-group .col-md-10 {padding-left:12px !important;}
 .akl .fax-order-wrapper .card-sort .pay-line input.card-inp {width:90px !important; margin-right:12px;}
 .akl .fax-order-wrapper .card-sort .pay-line input.card-inp2,
-.akl .fax-order-wrapper .card-sort .pay-line input.card-inp3,
-.akl .fax-order-wrapper .card-sort .pay-line input.card-inp4 {width:90px !important;}
+.akl .fax-order-wrapper .card-sort .pay-line input.card-inp3 {width:90px !important;}
+.akl .fax-order-wrapper .card-sort .pay-line input.card-inp4 {width:200px !important;}
 .akl .fax-order-wrapper .card-promotion {margin-bottom:0;}
 .akl .fax-order-wrapper .card-promotion+div {margin-top:20px}
+
 
 .faxOrder-payment-wrapper .transfer-resver-guide .guid-box {width:auto;}
 .transfer-resver-guide .guid-box a.title {position:relative; display:block; padding:8px 0; color:#002f5f; font-weight:500;}
 .transfer-resver-guide .guid-box a.title:before{position:absolute; top:4px; right:0; content:'\2212'; font-size:18px;}
 .transfer-resver-guide .guid-box.on a.title:before{content:'\002b'!important;}
 .transfer-resver-guide .guid-box .tgg-hidden-area {display:none;}
+.akl .fax-order-wrapper .use-agreement {border:0;padding:0;}
+.akl .fax-order-wrapper .use-agreement .tbl-list-view.terms .th {width:30%;}
+.akl .fax-order-wrapper .use-agreement .tbl-list-view.terms .td {width:70%;}
+.akl .fax-order-wrapper .amwa-btnbar {padding:40px 0 0;}
 
 
 /* -- 제품주문 정보 -- */
@@ -322,6 +331,8 @@ label + .btn-business {margin-left:10px}
 .fax-order-wrapper .shopping-cart-item-list .visible-md+.product-list-item {border-top:0 !important;}
 
 .faxOrder-cart-wrapper .paymemt-type-group .shipping-delivery-radio-body {margin:0;}
+.faxOrder-cart-wrapper .paymemt-type-group .payment-forms-txt, .faxOrder-cart-wrapper .paymemt-type-group .payment-forms-txt2 {vertical-align:top;}
+
 .akl .amway-theme .panel-body.faxOrder-cart-wrapper strong.sub-title {display:block; margin:37px 0 27px; font-size:16px !important; font-weight:500; letter-spacing:-0.05em;}
 
 .shipping-delivery-ship {}
@@ -335,7 +346,7 @@ label + .btn-business {margin-left:10px}
 .fax-order-wrapper .faxOrder-search-box {}
 .fax-order-wrapper .faxOrder-prdt-list {}
 .fax-order-wrapper .accordion-panel-heading {position:relative;}
-.fax-order-wrapper .accordion-panel-heading .bt-akl-txt.btn-delete {position:absolute; top:15px; right:0; min-width:10px; padding:2px 15px; height:auto;}
+.fax-order-wrapper .accordion-panel-heading .bt-akl-txt {position:absolute; top:15px; right:5px; min-width:10px; padding:2px 15px; height:auto;}
 
 /* 합계(소계) */
 .akl .amway-theme.fax-order-wrapper .panel-body .faxOrder-sum-box * {font-size:13px; font-weight:500; color:#002f5f;}
@@ -346,6 +357,50 @@ label + .btn-business {margin-left:10px}
 .faxOrder-sum-box>p>span {display:inline-block;}
 .faxOrder-sum-box .sum-benefit-value {}
 .faxOrder-sum-box .sum-benefit-total {float:right; text-align:right;}
+
+/* -- 주문결제 완료 -- */
+.akl .fax-order-finished * {font-size:14px;}
+.akl .fax-order-finished .list-type2>li {font-size:13px;}
+.akl .fax-order-finished .confirm-box-message,
+.akl .fax-order-finished .noti-error,
+.akl .fax-order-finished .shipping-delivery-shipping-header {font-size:16px;}
+.akl .fax-order-finished .confirm-box {padding:0; border-bottom:0;}
+.akl .fax-order-finished .confirm-box>.continue {padding-bottom:30px;}
+.akl .fax-order-finished .shipping-delivery-ship {padding:0;}
+.akl .fax-order-finished .shipping-delivery-summary {margin-top:0;}
+.akl .fax-order-finished .faxOrder-title {margin:37px 0 0; padding-bottom:17px; font-size:16px; font-weight:500; color:#56565a; letter-spacing:-0.05em; border-bottom:1px solid #e3e3e3;}
+.akl .fax-order-finished .faxOrder-title span {display:inline-block; margin-left:20px;}
+.akl .fax-order-finished .faxOrder-title em{display:inline-block;color:#002f5f;}
+
+.fax-order-finished .fax-order-details {padding:40px 0; border:1px solid #dadada; border-width:1px 0;}
+.fax-order-finished .faxOrder-sum-box {margin-right:20px; color:#002f5f;}
+.fax-order-finished .cartlist-tbody.container-fluid {padding:0;}
+.fax-order-finished .cartlist-tbody>.row {padding:40px 0 35px; border-bottom:0; border-top:1px solid #e3e3e3}
+.fax-order-wrapper .fax-order-finished .accordion-element.prdt-order-info .panel-body {padding-right:20px;}
+.akl .fax-order-finished .cartlist-image {margin:0; padding-left:12px;}
+.akl .fax-order-finished .cartlist-text {margin:0;}
+.akl .fax-order-finished .cartlist-th {border-top:1px solid #ddd; border-bottom:0;}
+
+
+
+.fax-order-finished .order-case-success {border-bottom:1px solid #e3e3e3;}
+.fax-order-finished .order-case-fail {border-top:1px solid #e3e3e3;}
+.fax-order-finished .order-case-success .order-case-title {color:#002f5f; font-weight:500; padding:15px 0 15px 50px; margin-bottom:0;}
+.fax-order-finished .order-case-success .order-case-title span>em {display:inline-block ;margin-right:18px;}
+.fax-order-finished .order-case-success+.order-case-fail{border-top:0;}
+
+
+.akl .amway-theme .fax-order-finished .title-element.title-text * {font-size:14px;}
+.akl .amway-theme .fax-order-finished .order-case-fail>ul>li .accordion-panel:first-child{ border-top:0;}
+.akl .amway-theme .fax-order-finished .accordion-element.prdt-order-info {margin:0}
+
+.fax-order-wrapper .guide-info-bottom {margin-top:40px;}
+
+/* 결과실패 - 레이어 */
+.akl .cart-popup__item-link.no-line {border-top:0; padding-top:0;}
+.result-fail-reason {padding-top:20px}
+.result-fail-reason .err-msg {padding:30px 0; border:1px solid #dadada; border-width:1px 0;}
+.result-fail-reason .noti-error{ margin-bottom:15px;}
 
 
 /* ----- 마이페이지 ----- */
@@ -531,7 +586,7 @@ label + .btn-business {margin-left:10px}
 
 /* 약관 (기존 css 사용) */
 .akl .termsWrapper * , .akl .termsWrapper p , .akl #terms .termsWrapper p {font-size:13px;}
-.akl .termsWrapper.privacyInfo *, .akl .termsWrapper.privacyInfo p, .akl #terms .termsWrapper.privacyInfo p , .akl .privacyInfo .tbl-list-view .thead .tr>strong {font-size:16px;}
+.akl .termsWrapper.privacyInfo *, .akl .termsWrapper.privacyInfo p, .akl #terms .termsWrapper.privacyInfo p , .akl .privacyInfo .tbl-list-view .thead .tr>strong {font-size:16px !important;}
 
 .akl .termsWrapper .refer, .akl .termsWrapper p.listWarning {text-indent:-18px;padding-left:18px;}
 .akl .termsWrapper .colorM {color:#0a70d3 !important;}
@@ -565,6 +620,7 @@ label + .btn-business {margin-left:10px}
 .akl .termsWrapper > strong.titH1.titH1st{padding-top:0; border-top:none; margin-top:0;}
 .akl .termsWrapper .titH1{display:block; padding:35px 0 10px; color:#444; font-size:15px;}
 .akl .termsWrapper .titH2{display:block; margin:16px 0 8px 0; padding-left:10px; color:#444; font-size:14px; font-weight:500; background:url(../images/akl_common/bul_arr_terms_h2.gif) 0 4px no-repeat;}
+.akl .termsWrapper > .titH2:first-child {margin-top:0;}
 .akl .termsWrapper .titH2.bgNone{background-image:none; padding-left:0}
 .akl .termsWrapper .titH3{display:block; margin:10px 0 8px 0; padding-left:10px; font-weight:bold; background:url(/_ui/desktop/images/common/bul_dot_terms_h3.gif) 0 3px no-repeat;}
 .akl .termsWrapper .titH3.bul{display:inline-block; margin:0}
@@ -968,6 +1024,8 @@ label + .btn-business {margin-left:10px}
 	.tbl-list-view .tr>.mob-tit {position:relative;padding:0 10px 10px 15px; font-weight:500; border-top:0;color:#555;}
 	.tbl-list-view .tr>.mob-tit:before {content:'';position:absolute; top:7px; left:0; background:#888; width:4px; height:4px;}
 	.tbl-list-view .tbody .tr .mob-hide {display:none;}
+	.tbl-list-view .mob-block,
+	.tbl-list-view .tr>.th.mob-block {display:block;}
 
 	/* table : list */
 	.akl .tbl-list-board .amw-checkbox-wrap {margin:0 10px 0 0;}
@@ -1305,6 +1363,28 @@ label + .btn-business {margin-left:10px}
 	.akl .fax-order-wrapper .faxOrder-payment-wrapper  .card-sort .pay-line .form-group .col-md-10 {padding-left:0 !important;}
 	.akl .fax-order-wrapper .card-sort .pay-line input.card-inp {width:60px !important; margin-right:5px;}
 	.akl .fax-order-wrapper .card-sort .pay-line input.card-inp4 {width:100% !important;}
+	.akl .fax-order-wrapper #terms .text {padding:20px 0 0;}
+	.akl .fax-order-wrapper .use-agreement .tbl-list-view.terms .th,
+	.akl .fax-order-wrapper .use-agreement .tbl-list-view.terms .td {width:auto;}
+
+
+	.akl .evidence-paper .cash-phone select.form-control {width:100%; margin:0 0 10px;}
+	.akl .evidence-paper .cash-phone input.form-control {width:100%;}
+	.akl .evidence-paper .receipt-type select.form-control {width:100%;}
+
+	.akl .accordion-custom .evidence-paper .pay-transaction>p {margin-bottom:12px;}
+
+	.akl .fax-order-finished .shipping-delivery-summary {margin-top:40px;}
+
+	.akl .fax-order-finished .cartlist-image {margin:0 5% 0 0; padding-left:0;}
+	.akl .fax-order-finished .cartlist-text {margin:0;}
+	.fax-order-finished .cartlist-tbody>.row {padding:20px 10px 20px 0;}
+	.fax-order-finished .faxOrder-sum-box {margin-right:0;}
+
+
+	.akl .amway-theme .fax-order-finished .accordion-element .accordion-panel {}
+	.fax-order-wrapper .accordion-panel-heading .bt-akl-txt { padding:8px 0;}
+
 }
 
 @media (max-width: 320px) {
