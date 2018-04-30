@@ -136,8 +136,7 @@ ul li.tbody div.request-conver {text-align:center;width:25%;}
 
 .mob-business, .mob-look-txt, .mob-apply-txt, .mob-request-txt {display:none;}
 ul li.tbody div.mob-ttoy {display:none;}
-.member-point-body {border-top:1px solid #dadada;margin-top:30px}
-.paging.pointer {padding:30px 0;}
+.member-point-body {border-top:1px solid #dadada;margin-top:30px} 
 
 .table-point-wrapper.member span.order-return-txt {width:15%;}
 .table-point-wrapper.member span.division-txt {width:26%;}
@@ -1256,10 +1255,12 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 	.akl #terms .show-terms2 {display:none;}
 	.akl #terms .text-btn {margin-top:0;padding:0 10px;}
 	.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {padding:0;/* padding:0 20px; */}  
-	.akl .page-bonus-payment .bonus-payment .bonus-payment-content {padding:0 3px 0 33px;font-family:'Noto Sans KR', sans-serif;}
+	.akl .page-bonus-payment .bonus-payment .bonus-payment-content {padding:0 3px ;font-family:'Noto Sans KR', sans-serif;}
+	.akl .page-bonus-payment .bonus-payment .bonus-payment__description { padding-left:33px; }
+	.akl .page-bonus-payment .bonus-payment .bonus-payment__description + .terms-and-conditions-management {padding-left:33px; }
 	
 	/* 마이페이지  > 계좌관리 */
-	.akl .bonus-payment .bonus-payment-content {clear:both;padding:35px 0}
+	.akl .bonus-payment .bonus-payment-content {clear:both;padding:35px 0 0}
 	.akl .bonus-payment .bonus-payment-wrapper {margin:0 0;padding:0;/* padding:0 25px; */}
 	.akl .bonus-payment__items {margin:0 0;}
 	.akl .bonus-payment .bonus-payment__title {padding-left:30px;}
@@ -1277,7 +1278,12 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 	.akl .account-btn .btn-primary.no-accon {width:98%;text-align:center;}
 	.akl .cart-popup__content.payment .account-profile__value span.admi-num {display:block;clear:both;}
 	.akl .automatic-ars {padding:10px 0 20px 20px;}
-
+	
+	/* 마이페이지  > 포인트관리 */
+	.pointe-body {padding: 30px 0 0;}
+	.poit-contents { padding: 25px 0 0}
+	.poit-contents .point-management,  
+	.poit-contents .po-list{ padding-left:15px; padding-right:15px;} 
 	/* 마이페이지  > 반품환불계좌 */
 	.refund-box {padding:18px 20px;}
 	
