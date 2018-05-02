@@ -2050,6 +2050,10 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 						that.opened = false;
 						that.$wrap.hide();
 						that.$overlay.hide();
+						//창닫은 후 remove 추가 2018.05.02 : 시작
+						that.$overlay.remove();
+						that.$wrap.remove();
+						//창닫은 후 remove 추가 2018.05.02 : 끝
 
 						if (callback) callback.apply(that);
 						if (that.options.onClose) that.options.onClose.apply(that);
