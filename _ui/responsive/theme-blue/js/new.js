@@ -535,3 +535,18 @@ $(function(){
 	});
 
 });
+
+//비즈니스
+$(function() {
+
+	$('#G20203b_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20203b_lp1_pop');
+	});
+	
+	$('#G20203b_lp2').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20203b_lp2_pop');
+	});
+
+});
