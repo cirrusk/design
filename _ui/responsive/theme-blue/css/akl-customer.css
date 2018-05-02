@@ -39,13 +39,14 @@ Version : AKL Hybris UIUX 1.0
 .akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-next { right: 10px;}  
  
 /* 공지사항 */
-.customer-wrap {padding:0 50px;}
+.customer-area {padding:0 50px;}
+.customer-wrap {clear:both;display:block;padding:30px 0 0}
 .my-count-page-wrap {padding:0;}
 .akl .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
 .akl .order-history-container .order-history-search-wrapper .form-wrapper .cuton-sel { text-align: right;}
-.fa, .fas, .far {display:inline-block;}
-.fa-notice {position: relative;top:0;left:0;display:inline-block;}
-.fa-notice:before {content:'';position: absolute;top:-15px;left:0;background: url("../images/akl_common/ico_notice.png") no-repeat left center;width:20px;height:20px;}
+
+.title-box .product-list-page-title h1.notice {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.notice:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_notice.png") no-repeat left center;width:20px;height:20px;}
 
 .page-title.customer span {padding:0 0 0 0;}
 .akl .announcement-search-result {font-size:14px;font-weight:400;letter-spacing:-1px;padding:15px 0 0}
@@ -122,6 +123,9 @@ Version : AKL Hybris UIUX 1.0
 .container-custom h1 {margin:0 auto;text-align:center;padding:20px 0 0}
 
 /* 뉴스룸 > 목록 */
+.title-box .product-list-page-title h1.newsroom {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.newsroom:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_notice.png") no-repeat left center;width:20px;height:20px;}
+
 .akl .list-row-title div.news-num {width:12%;padding-left:20px;}
 .akl .list-row-title div.news-subje {width:73%;padding-left:20px;}
 .akl .list-row-title div.news-date {width:15%;padding-left:20px;}
@@ -134,8 +138,8 @@ Version : AKL Hybris UIUX 1.0
 .akl .con-list-item div.news-subje a:hover {color:#0075a4;}
 
 /* 사회공헌뉴스 */
-.fa-news {position: relative;top:0;left:0;display:inline-block;}
-.fa-news:before {content:'';position: absolute;top:-15px;left:0;background: url("../images/akl_common/ico_news.png") no-repeat left center;width:20px;height:16px;}
+.title-box .product-list-page-title h1.social {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.social:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_news.png") no-repeat left center;width:20px;height:20px;}
 
 .akl .new-social-list {margin:0 -10px;padding:0 0;}
 .akl .new-social-list .option-item-container {padding:10px;height:auto;}
@@ -152,8 +156,8 @@ Version : AKL Hybris UIUX 1.0
 .press-releases {padding:10px 0 0;width:100%;height:auto;word-break:break-all;}
 
 /* 신제품 > 목록 */
-.fa-new-product {position: relative;top:0;left:0;display:inline-block;}
-.fa-new-product:before {content:'';position: absolute;top:-15px;left:0;background: url("../images/akl_common/ico_new_product.png") no-repeat left center;width:16px;height:20px;}
+.title-box .product-list-page-title h1.new-product {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.new-product:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_new_product.png") no-repeat left center;width:20px;height:20px;}
 
 .new-product-txt {}
 .new-product-head {display:table;width:100%;margin:0 0;padding:20px 0 15px;box-sizing: border-box;table-layout:fixed}
@@ -191,9 +195,13 @@ Version : AKL Hybris UIUX 1.0
 @media (max-width: 768px) { 
     
 	/* 공지사항 */
+	.customer-area {padding:0 0;}
+	.title-box .product-list-page-title h1.notice {padding:0 0 5px 25px;}
+	.title-box .product-list-page-title h1.notice:before {left:0;}
+
 	.akl .customer-wrap .order-history-search-wrapper {border:0 none;}
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .toggle-buttons-container button {border:1px solid #d3d3d3;width:48%;margin-right:12px;}
-	.akl .customer-wrap .order-history-container .order-history-search-wrapper .toggle-buttons-container button:last-child {margin-right:0;width:47%;}
+	.akl .customer-wrap .order-history-container .order-history-search-wrapper .toggle-buttons-container button:last-child {margin-right:0;width:48%;}
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper {border:0 none;padding:20px 0 0;}
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper input[type="text"].input-st {width:100%;padding-right:50px;}
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {padding:20px 0 0;}
@@ -227,11 +235,17 @@ Version : AKL Hybris UIUX 1.0
 	.easy-wrap .customer-wrap {padding:0 15px;}
 
 	/* 뉴스룸 > 목록 */
+	.title-box .product-list-page-title h1.newsroom {padding:0 0 5px 25px;}
+	.title-box .product-list-page-title h1.newsroom:before {left:0;}
+
 	.akl .content-list .con-list-item > div.news-num {display:block;width:100%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-subje {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-date {display:block;width:90%;padding:5px 20px;}
 	
 	/* 사회공헌뉴스 */
+	.title-box .product-list-page-title h1.social {padding:0 0 5px 25px;}
+	.title-box .product-list-page-title h1.social:before {left:0;}
+
 	.akl .news-result-item-text {display:block;min-height:auto;padding:15px 20px 15px;}
 	.akl .news-result-item-text .featured-product__title {height:auto;}
 	.akl .news-result-item-text .featured-product__subtitle {padding:15px 0 0}
@@ -241,6 +255,9 @@ Version : AKL Hybris UIUX 1.0
 	.akl .news-result-item-text {min-height:auto;padding:15px 20px;}
 
 	/* 신제품 > 목록 */
+	.title-box .product-list-page-title h1.new-product {padding:0 0 5px 25px;}
+	.title-box .product-list-page-title h1.new-product:before {left:0;}
+
 	.new-product-head .announcement-search-result {display:block;width:100%;}
 	.new-product-head .cuton-sel {display:block;width:100%;text-align:left;padding:15px 0 0}
 	.new-product-head .cuton-sel label {padding-right:0;}
