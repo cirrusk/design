@@ -1,8 +1,24 @@
-@media (max-width: 768px) {
+.akl .main-container.business .filter-search .label-sel {margin-right:15px;font-size:14px;font-weight:500;color:#002f5f}
+.akl .main-container.business .cuton-sel select.w150 {width:150px !important}
+.akl .main-container.business .losmap-wrap {position:relative;overflow:hidden;height:350px;margin-top:20px}
+.akl .main-container.business .est-txt-area a {font-weight:500}
 
-	/* 공지사항 */
-	.akl .main-container.business {border:0 none;}
-	.akl .main-container.business .toggle-buttons-container button {border:1px solid #d3d3d3;width:48%;margin-right:12px;}
-	.akl .main-container.business .toggle-buttons-container button:last-child {margin-right:0;width:47%;}
+@media (max-width: 992px) {
+
+	/* 비즈니스 */
+	.akl .main-container.business .filter-search {border:0 none;}
+	.akl .main-container.business .filter-search .toggle-buttons-container button {float:left;border:1px solid #d3d3d3;width:calc(50% - 6px)}
+	.akl .main-container.business .filter-search .toggle-buttons-container button + button {float:left;border:1px solid #d3d3d3;width:calc(50% - 6px);margin-left:12px;}
+    .akl .main-container.business .filter-search .form-wrapper {width:100%;}
+    .akl .main-container.business .filter-search .cuton-form-wrapper .form-s input.input-st {width:100%;padding-right:50px;}
+	.akl .main-container.business .filter-search .cuton-form-wrapper .form-s button {border:0 none;}
+	.akl .main-container.business .filter-search .cuton-form-wrapper .form-s .btn-primary span {display:none}
+	.akl .main-container.business .filter-search .form-s {position:relative;}
+	.akl .main-container.business .filter-search .form-s .btn.btn-primary { position: absolute;right:0; top:0; width:40px; padding:0; border:0;  background: url(../images/search@2x_mobile.png) no-repeat 50% 50% !important; background-size: 15px auto !important; }
+	.akl .main-container.business .filter-search .form-s .bt-akl-txt {display:none;}
+	.akl .main-container.business .filter-search .col-md-12 {padding:0}
+	.akl .main-container.business .filter-search .cuton-sel select.w150 {width:calc(50% - 6px) !important; float:left; margin-right:0 !important}
+	.akl .main-container.business .filter-search .cuton-sel select.w150 + select {margin-left:12px}
+	.akl .main-container.business .filter-search .label-sel {display:none}
 
 }
