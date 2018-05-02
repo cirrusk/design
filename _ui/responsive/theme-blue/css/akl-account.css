@@ -557,11 +557,15 @@ p + .modify-form-group {padding: 15px 0 30px !important;}
 
 
 /* 마이페이지 > 쿠폰관리  */
+.title-box .product-list-page-title h1.icon-coupon {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.icon-coupon:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico-cupon.png') no-repeat left center;width:21px;height:21px;}
+
 h1.page-title {position:relative;margin:10px 0;padding:0 0;}
 h1.page-title span {font-size:18px;font-weight:500;color:#002f5f;padding:0 20px}
 h1.page-title > i {width:25px;color:#0075a4;font-weight:500;}
 h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:25px;background:url('../images/akl_common/ico-cupon.png') no-repeat left center;width:18px;height:16px;}
-.mypage-cupon-managment {margin:0;padding:0 50px;}
+.mypage-cupon-managment {margin:0;padding:32px 0 0;}
+
 .akl .mypage-cupon-managment p {margin:0 0;}
 .akl .mypage-cupon-managment p.num-cupon {font-size:14px;font-weight:400;letter-spacing:-1px;}
 .akl .mypage-cupon-managment p.num-cupon strong {font-weight:700;color:#002f5e}
@@ -943,6 +947,69 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .shop-btn a.bt-akl-white {vertical-align:top;margin:0 0;}
 .shop-txt-info {clear:both;display:table;width:100%;margin-top:15px}
 
+/* 나의 쇼핑정보 > 나의 주문내역 */
+.title-box .product-list-page-title h1.myorder {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.myorder:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_order.png') no-repeat left center;width:21px;height:21px;}
+.myorder-history {padding:32px 0 0}
+.akl .filters-header span {font-size:13px;font-weight:500}
+.akl .filters-header button {font-size:13px;font-weight:500;color:#0075a4 !important;}
+.akl .filters-header button:hover span {color:#002f5f !important;}
+
+.order-info-type {padding:0 0 20px;border-bottom:1px solid #e3e3e3}
+.order-conts {padding:30px 0;margin:0 0;width:100%;}
+.order-conts .col-xs-3 {padding-left:0;}
+.order-conts .col-md-9 {padding-right:0;}
+.akl .form-item-row {display:table;width:100%;table-layout:fixed;}
+.akl .form-item-row select.form-control {width:100%;}
+.akl .form-item-row .col-xs-4 {padding:0 5px 0 0;}
+.akl .form-item-row .col-xs-4:last-child {padding:0 0 0;}
+
+.dateRange-area {clear:both;display:block;padding:0 0 30px;overflow:hidden;}
+.akl .dateSel select.form-control {width:100%;}
+.dateStart-end p {display:block;font-size:13px;font-weight:500;margin:0 0;padding:20px 0 10px;}
+.dateStart-end .box-date-select input {width:100%;}
+.akl .product-list-left-refinements-slot .accordion-custom .panel-title {padding:15px 0 20px;}
+.akl .product-list-left-refinements-slot .accordion-custom .panel-title span.text-uppercase {font-size:14px;letter-spacing:-1px;}
+
+.toggle-buttons-container.myorder button {border:1px solid #dadada;margin-right:5px;width:48.5%;}
+.toggle-buttons-container.myorder button:last-child {margin-right:0;margin-left:5px;width:48%;}
+.mob-product-facet {display:none}
+.myorder-search .cuton-sel {display:inline-block;width:188px;margin-right:10px;}
+.myorder-search .cuton-sel select.form-control {width:100%;}
+.myorder-search .cuton-form-wrapper {display:inline-block;}
+
+.myorder-list-area {}
+.myorder-list-num {position:relative;margin:35px 0 0;padding:0;}
+.myorder-list-num p strong {font-weight:700;color:#002f5e;}
+.myorder-list-num .hype-btn {position: absolute;right:0;top:0;}
+
+.akl .myorder-list .ord-num {width:13%;padding-left:15px;}
+.akl .myorder-list .ord-date {width:13%;padding-left:10px;}
+.akl .myorder-list .ord-price {width:14%;padding-right:10px;}
+.akl .myorder-list .ord-pvbv {width:12%;}
+.akl .myorder-list .ord-chnnel {width:14%;}
+.akl .myorder-list .ord-type {width:12%;}
+.akl .myorder-list .ord-cond {width:12%;}
+.akl .myorder-list .ord-btn {width:10%;}
+
+.akl .myorder-list .con-list-item .ord-num a {color:#0075a4 !important;}
+.akl .myorder-list .con-list-item .ord-num a:hover {color:#002f5f !important;}
+
+.mob-in {display:none}
+.akl span.txte-wrap em.od-way {display:inline-block !important;}
+
+.akl .myorder-list .sub-list {clear:both;display:block;margin:20px 0 0 30px;}
+.akl .myorder-list .sub-list .con-list-item {padding:0 0 10px;border-left:2px solid #dadada;}
+.akl .myorder-list .sub-list .con-list-item .ord-num {width:11%;padding-left:10px;}
+.akl .myorder-list .sub-list .con-list-item .ord-date {width:12%;padding-left:0;}
+.akl .myorder-list .sub-list .con-list-item .ord-price {width:15%;padding:0 0;}
+.akl .myorder-list .sub-list .con-list-item .ord-pvbv {width:12%;}
+.akl .myorder-list .sub-list .con-list-item .ord-chnnel {width:15%;}
+.akl .myorder-list .sub-list .con-list-item .ord-type {width:12%;}
+.akl .myorder-list .sub-list .con-list-item .ord-cond {width:13%;}
+.akl .myorder-list .sub-list .con-list-item .ord-btn {width:10%;}
+
+.btn-require .bt-akl-blue {width:100%;}
 
 
 @media (max-width: 1024px) { 
@@ -1286,14 +1353,14 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 	.poit-contents { padding: 25px 0 0}
 	.poit-contents .point-management,  
 	.poit-contents .po-list{ padding-left:15px; padding-right:15px;} 
+
 	/* 마이페이지  > 반품환불계좌 */
 	.refund-box {padding:18px 20px;}
 	
 	/* 마이페이지 > 쿠폰관리 */
-	.mypage-cupon-managment {margin:0;padding:0 0;}
-	h1.page-title {padding: 0 0;}
-	h1.page-title > i {width:22px;}
-	h1.page-title span {padding-left:0;}
+	.title-box .product-list-page-title h1.icon-coupon {padding:0 0 5px 25px;}
+	.title-box .product-list-page-title h1.icon-coupon:before {content: "";position: absolute;top:3px;left:0;}
+	.mypage-cupon-managment {padding:22px 0 0;}
 	
 	.akl .list-content .list-row-title > div.mycupon-num {display:none}
 	.akl .list-content .list-row-title > div.mycupon-name {display:none}
@@ -1609,6 +1676,69 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 	.product-item-list li .shop-total {text-align:right;}
 	.shop-btn a.bt-akl-white {min-width:85px}
 	.shop-btn button.bt-akl-txt {min-width:85px}
+
+
+	/* 나의 주문내역 */
+	.akl .title-box .product-list-page-title h1.myorder {padding:0 0 5px 28px;}
+	.akl .title-box .product-list-page-title h1.myorder:before {top:3px;left:0;}
+	.mob-product-facet {display:block} 
+	.myorder-search .cuton-sel {display:block;width:100%;margin-right:0;margin-bottom:10px;}
+	.myorder-search .cuton-sel select.form-control {width:100%;}
+	.myorder-search .cuton-form-wrapper {display:block;}
+	.myorder-list-area .myorder-search {display:none;}
+	
+	.akl .panel-group.accordion-custom.myorder .panel-title {position:relative;padding:5px 0 15px;}
+	.akl .panel-group.accordion-custom.myorder .panel-title a {cursor:pointer;}
+	.akl .panel-group.accordion-custom.myorder .panel-title span.text-uppercase {font-size:14px;letter-spacing:-1px;color:#002f5f;font-weight:500;padding-left:15px}
+	.akl .panel-group.accordion-custom.myorder .panel-title [role=button] {white-space:normal}
+	.akl .panel-group.accordion-custom.myorder .panel-title span.pull-right {position: absolute;right:10px;top:5px;}
+	.akl .panel-group.accordion-custom.myorder .panel-title span.icon-minus {}
+
+	.myorder-list-num {}
+	.myorder-list-num p {position:relative;left:0;top:30px;}
+	.myorder-list-num .hype-btn {position:relative;left:0;top:-35px;}
+
+	.pc-in {display:none}
+	.mob-in {display:block}
+	
+	.myorder-list {}
+	.akl .myorder-list .list-row-title .ord-num {display:none;}
+	.akl .myorder-list .list-row-title .ord-date {display:none;}
+	.akl .myorder-list .list-row-title .ord-price {display:none;}
+	.akl .myorder-list .list-row-title .ord-pvbv {display:none;}
+	.akl .myorder-list .list-row-title .ord-chnnel {display:none;}
+	.akl .myorder-list .list-row-title .ord-type {display:none;}
+	.akl .myorder-list .list-row-title .ord-cond {display:none;}
+	.akl .myorder-list .list-row-title .ord-btn {display:none;}
+	
+	.akl .myorder-list .con-list-item .ord-num {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-date {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-price {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-pvbv {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-chnnel {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-type {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-cond {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .con-list-item .ord-btn {clear:both;display:block;width:100%;padding:5px 20px;}
+	
+	.akl .myorder-list .sub-list .con-list-item .ord-num {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-date {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-price {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-pvbv {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-chnnel {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-type {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-cond {clear:both;display:block;width:100%;padding:5px 20px;}
+	.akl .myorder-list .sub-list .con-list-item .ord-btn {clear:both;display:block;width:100%;padding:5px 20px;}
+
+	.akl .myorder-list .con-list-item span.tite-label {float:left;display:block;}
+	.akl .myorder-list .con-list-item span.txte-wrap {float:right;display:block;text-align:right;}
+	
+	.akl span.txte-wrap em.price-way {display:none !important;}
+	.akl em.price-bv {display:inline-block !important;}
+	.akl .mob-in p {clear:both;display:block;margin:0 0;}
+	.akl .mob-in p.bab {padding-top:10px}
+	.akl .myorder-list .con-list-item .ord-btn span.txte-wrap {float:left;display:block;}
+
+	.akl span.txte-wrap em.shipping-name {padding:5px 0 0;text-align:left;}
 
 	
 }
