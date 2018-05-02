@@ -78,8 +78,8 @@
 						<div class="navigation-tabs-container order-history-container js-order-history-container">
 							<div class="outer-border-bottom">
 								<ul class="tabs-toggles">
-									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#promoStart"> <span class="toggle-text">진행중인 프로모션</span> </a> </li>
-									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#promoEnd"> <span class="toggle-text">종료된 프로모션</span> </a> </li> 
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#promoStart"> <span class="toggle-text">진행중인 프로모션</span> </a> </li>
+									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#promoEnd"> <span class="toggle-text">종료된 프로모션</span> </a> </li> 
 								</ul>
 							</div> 
 							<div class="promotion-list01">
@@ -91,11 +91,11 @@
 								</ul>
 							</div>
 							<div class="tab-content tabs-content-blocks">
-								<div class="tab-pane content-block active" id="promoStart">
+								<div class="tab-pane content-block" id="promoStart">
 									<div class="promotion-top">
 										<div class="announcement-search-result">총 (<strong>18</strong>)</div>
 										<div class="cuton-sel">
-											<label for="type">카테고리 선택 보기</label>
+											<label for="">카테고리 선택 보기</label>
 											<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
 												<option value="Latest-date">전체</option> 
 											</select>
@@ -186,12 +186,19 @@
 										</div>
 									</div>
 								</div>
-								
-								<div class="tab-pane content-block" id="promoEnd">
+								<div class="form-wrapper">
+										<div class="cuton-form-wrapper">
+											<div class="form-s">
+												<input type="text" id="" name="" placeholder="내용을 입력하세요" value="" class="input-st" title="내용을 입력">
+												<button type="submit" class="btn btn-primary" id="NotificationBoard_Search"><span class="hidden-sm hidden-xs">검색</span></button>
+											</div>
+										</div>
+									</div>
+								<div class="tab-pane content-block active" id="promoEnd">
 									<div class="promotion-top">
 										<div class="announcement-search-result">총 (<strong>18</strong>)</div>
 										<div class="cuton-sel">
-											<label for="">카테고리 선택 보기</label>
+											<label for="type">카테고리 선택 보기</label>
 											<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
 												<option value="Latest-date">전체</option> 
 											</select>

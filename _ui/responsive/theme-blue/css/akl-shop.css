@@ -640,6 +640,16 @@ shop 옮김 : 2018.04.10
 .category-titbox .ce-btn .icon-minus:before {content: "\ea78" !important;color: #0075a4;}
 .category-titbox.sub {border-top:1px solid #ddd}
 
+/* 제품카테고리 > 2차 제품분류 왼쪽메뉴 */
+.product-list-page-title h1.promotion:before {content: "";position: absolute; top: 3px;left: -30px;display: inline-block;background: url(../images/akl_common/ico_promotion.png) no-repeat left center;width: 20px;height: 20px;}
+.promotion-top { margin-bottom:10px;}
+.promotion-top:after {content:""; clear:both; display:block;}
+.promotion-top .announcement-search-result { float:left;}
+.promotion-top .cuton-sel { float:right;}
+.promotion-top .cuton-sel label { margin-right:15px;}
+.promotion-list01 { padding:20px 0}
+.new-social-list .plp-item-label-wrap { padding:8px 10px 10px;}
+
 @media (max-width: 768px) {
 
 	/* 검색 > 결과  */
@@ -947,6 +957,11 @@ shop 옮김 : 2018.04.10
 
 	/* 카드혜택보기 */
 	.card-benefit-box>img {width:100%; height:auto;}
+	
+	/* 프로모션 */
+	.promotion-top .announcement-search-result {float:none; margin-bottom: 20px}
+	.promotion-top .cuton-sel {float:none;}
+	.promotion-top .cuton-sel select.form-control { width: 100% }
 
 }
 
