@@ -145,10 +145,10 @@ function orderSummaryFixed(){
 		var $cartContent = targetObj.parent().find('.cart-items-wrapper');
 
 		if( winWidth > 768 ){
+			//기본높이 부여
 			if( $cartContent.length && targetObj_H > 400){
 				$cartContent.css({'min-height':'700px'});
 			}
-
 			if( wScrollTop > compareTop){
 				$('.shipping-delivery-summary').css({
 					'position':'absolute',
@@ -918,7 +918,7 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 	$.msgbox({
 		id: msgboxCounter,
 		type: msgboxType,
-		content: msgboxContent,
+		content: (msgboxContent+"").replace(/[\n|\r]/g,"<br/>"),
 		onOpen : function(){
 			this.$buttons.OK.focus();
 		},
