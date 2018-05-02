@@ -769,7 +769,12 @@ html.scrollLock body {overflow:hidden;}
 .akl .amway-theme.fax-order-wrapper .toolTip-wrapper .tooltip-content p {margin-bottom:6px;}
 .akl .amway-theme.fax-order-wrapper .ico-bg-sky {font-size:11px;}
 .akl .amway-theme.fax-order-wrapper .accordion-header-text {position:relative;}
-.akl .amway-theme.fax-order-wrapper .accordion-header-text:before {content:''; position:absolute; top:50%; left:-30px; width:26px; height:26px; margin-top:-13px; border:1px solid #0074a3;}
+.akl .amway-theme.fax-order-wrapper .accordion-header-text:before {content:''; position:absolute; top:50%; left:-30px; width:26px; height:24px; margin-top:-12px; background:url(../images/akl_common/ico_fax_order.png) no-repeat;}
+.akl .amway-theme.fax-order-wrapper .accordion-header-text.icon01-abo:before {background-position:0 2px;}
+.akl .amway-theme.fax-order-wrapper .accordion-header-text.icon02-order:before {background-position:0 -38px;}
+.akl .amway-theme.fax-order-wrapper .accordion-header-text.icon03-delivery:before {background-position:0 -77px;}
+.akl .amway-theme.fax-order-wrapper .accordion-header-text.icon04-prdt:before {background-position:0 -118px;}
+.akl .amway-theme.fax-order-wrapper .accordion-header-text.icon05-pay:before {background-position:0 -155px;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading {padding:0 20px 0 50px;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading>a {display:block;}
 .akl .fax-order-wrapper .accordion-custom .panel-body {padding:0 30px 30px 50px; border-top:0;}
@@ -899,10 +904,7 @@ html.scrollLock body {overflow:hidden;}
 
 .faxOrder-cart-wrapper .paymemt-type-group .shipping-delivery-radio-body {margin:0;}
 .faxOrder-cart-wrapper .paymemt-type-group .payment-forms-txt, .faxOrder-cart-wrapper .paymemt-type-group .payment-forms-txt2 {vertical-align:top;}
-
 .akl .amway-theme .panel-body.faxOrder-cart-wrapper strong.sub-title {display:block; margin:37px 0 27px; font-size:16px !important; font-weight:500; letter-spacing:-0.05em;}
-
-.shipping-delivery-ship {}
 
 /* 제품검색 */
 .akl .fax-order-wrapper .panel-body.product-detail .quickShopForm {padding:0 0 25px; border-bottom:1px solid #e3e3e3;}
@@ -922,7 +924,6 @@ html.scrollLock body {overflow:hidden;}
 .faxOrder-sum-box>p{float:left;}
 .faxOrder-sum-box>p>strong {display:inline-block; margin-right:20px;}
 .faxOrder-sum-box>p>span {display:inline-block;}
-.faxOrder-sum-box .sum-benefit-value {}
 .faxOrder-sum-box .sum-benefit-total {float:right; text-align:right;}
 
 /* -- 주문결제 완료 -- */
@@ -940,6 +941,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-finished .faxOrder-title em{display:inline-block;color:#002f5f;}
 
 .fax-order-finished .fax-order-details {padding:40px 0; border:1px solid #dadada; border-width:1px 0;}
+.akl .fax-order-finished .fax-order-details .shipping-delivery-shipping-header {margin-bottom:20px;}
 .fax-order-finished .faxOrder-sum-box {margin-right:20px; color:#002f5f;}
 .fax-order-finished .cartlist-tbody.container-fluid {padding:0;}
 .fax-order-finished .cartlist-tbody>.row {padding:40px 0 35px; border-bottom:0; border-top:1px solid #e3e3e3}
@@ -947,20 +949,14 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-finished .cartlist-image {margin:0; padding-left:12px;}
 .akl .fax-order-finished .cartlist-text {margin:0;}
 .akl .fax-order-finished .cartlist-th {border-top:1px solid #ddd; border-bottom:0;}
-
-
-
 .fax-order-finished .order-case-success {border-bottom:1px solid #e3e3e3;}
 .fax-order-finished .order-case-fail {border-top:1px solid #e3e3e3;}
 .fax-order-finished .order-case-success .order-case-title {color:#002f5f; font-weight:500; padding:15px 0 15px 50px; margin-bottom:0;}
 .fax-order-finished .order-case-success .order-case-title span>em {display:inline-block ;margin-right:18px;}
 .fax-order-finished .order-case-success+.order-case-fail{border-top:0;}
-
-
 .akl .amway-theme .fax-order-finished .title-element.title-text * {font-size:14px;}
 .akl .amway-theme .fax-order-finished .order-case-fail>ul>li .accordion-panel:first-child{ border-top:0;}
 .akl .amway-theme .fax-order-finished .accordion-element.prdt-order-info {margin:0}
-
 .fax-order-wrapper .guide-info-bottom {margin-top:40px;}
 
 /* 결과실패 - 레이어 */
@@ -970,29 +966,17 @@ html.scrollLock body {overflow:hidden;}
 .result-fail-reason .noti-error{ margin-bottom:15px;}
 
 /* 주문불가 제품 알림 */
+.akl .amway-theme .order-impossible-list .pop-prot-body .cartlist-text * {font-size:14px;}
+.akl .order-impossible-list .cartlist-text {width:auto;}
+.order-impossible-confirm {font-size:14px; padding:0 0 28px;}
 .order-impossible-list {margin-bottom:40px;}
 .order-impossible-list .order-person {padding:0 0 17px; margin-bottom:0; font-size:16px; font-weight:500; color:#56565a;}
 .order-impossible-list .com-ttile {margin-right:20px;}
-
 .order-impossible-list .pop-prot-body {position:relative; overflow:hidden; padding:20px 0 20px 120px; border-style:solid; border-color:#e3e3e3; border-width:1px 0 1px;}
 .order-impossible-list .pop-prot-body+.pop-prot-body{border-top:0}
 .order-impossible-list .pop-prot-body .amw-checkbox-wrap {position:absolute; top:20px; left:0;}
 .order-impossible-list .pop-prot-body .cartlist-image {position:absolute; top:20px; left:36px; margin:0;}
 .order-impossible-list .pop-prot-body .cartlist-text {float:left; margin:0; padding:0;}
-
-.order-impossible-confirm {font-size:14px;padding:37px 0 28px;}
-
-.akl .order-impossible-list .cartlist-text {width:auto;}
-.akl .amway-theme .order-impossible-list .pop-prot-body .cartlist-text * {font-size:14px;}
-.order-impossible-list .pop-prot-body .cartlist-text .cartlist-small2 {color:#808285;padding:8px 0 0;margin:0 0;}
-.order-impossible-list .pop-prot-body .cart-popup__item-head {clear:both;display:table;width:100%;}
-
-
-.order-impossible-list .cartlist-image {width:67px;}
-
-.order-impossible-confirm {padding:0 0 28px;}
-
-
 
 @media (min-width: 769px){
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
@@ -1381,38 +1365,25 @@ html.scrollLock body {overflow:hidden;}
 	.akl .fax-order-wrapper .use-agreement .tbl-list-view.terms .th,
 	.akl .fax-order-wrapper .use-agreement .tbl-list-view.terms .td {width:auto;}
 
-
-	.akl .cart-popup__content.height-auto {max-height:none;}
-
-
 	.akl .evidence-paper .cash-phone select.form-control {width:100%; margin:0 0 10px;}
 	.akl .evidence-paper .cash-phone input.form-control {width:100%;}
 	.akl .evidence-paper .receipt-type select.form-control {width:100%;}
-
 	.akl .accordion-custom .evidence-paper .pay-transaction>p {margin-bottom:12px;}
 
 	.akl .fax-order-finished .shipping-delivery-summary {margin-top:40px;}
-
 	.akl .fax-order-finished .cartlist-image {margin:0 5% 0 0; padding-left:0;}
 	.akl .fax-order-finished .cartlist-text {margin:0;}
 	.fax-order-finished .cartlist-tbody>.row {padding:20px 10px 20px 0;}
 	.fax-order-finished .faxOrder-sum-box {margin-right:0;}
 
-
-	.akl .amway-theme .fax-order-finished .accordion-element .accordion-panel {}
 	.fax-order-wrapper .accordion-panel-heading .bt-akl-txt { padding:8px 0;}
-
-
-	.cart-popup__item-info>.order-impossible-list:first-child {margin-top:20px;}
 	.order-impossible-list .com-ttile {margin-right:0;}
-	.pop-prot-body {padding:60px 0 20px 80px;}
+	.order-impossible-list .pop-prot-body {padding:60px 0 20px 80px}
+	.order-impossible-list .pop-prot-body .cartlist-image {top:60px; left:0; width:67px; margin:0;}
+	.order-impossible-confirm {padding:0 0 28px;}
 
-	.pop-prot-body .cartlist-image {top:60px; left:0; margin:0;}
-
-
-
-
-
+	.akl .cart-popup__content.height-auto {max-height:none;}
+	.cart-popup__item-info>.order-impossible-list:first-child {margin-top:20px;}
 }
 
 @media (max-width: 320px) {
