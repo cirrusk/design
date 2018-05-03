@@ -18,8 +18,8 @@ Editor : sookkyung Han
 .NU-KID .product-visual{background-color:#a9d4d7;}/* 뉴트리라이트 - 어린이 */
 .NU-ENERGY-01 .product-visual{}/* 뉴트리라이트 - XS에너지 */
 
-.AR-IS01 .product-visual{}/* ARTISTRY - 밝은 하늘색 */
-.AR-IS02 .product-visual{}/* ARTISTRY - 어두운 하늘색 */
+.AR-IS01 .product-visual{background-color:#c9e3f6;}/* ARTISTRY - 밝은 하늘색 */
+.AR-IS02 .product-visual{background-color:#2e555b;}/* ARTISTRY - 어두운 하늘색 */
 .AR-YX01 .product-visual{background-color:#e9bab8;}/* ARTISTRY - 밝은 빨간 */
 .AR-YX02 .product-visual{}/* ARTISTRY - 밝은 갈색 */
 
@@ -75,6 +75,7 @@ Editor : sookkyung Han
 .product-visual .visual-img span{display:inline-block;}
 .AR-IS02 .product-visual .txt-area *,
 .AR-YX02 .product-visual .txt-area *{color:#fff}
+.AR-IS02 .product-visual .txt-area .visual-etc{color:#dadada;}
 
 .product-detail-view .detail-tit{display:block;font-size:44px;color:#57565b;font-weight:400;letter-spacing:-2px;text-align:center;}
 .product-detail-view .detail-tit.small{font-size:30px;color:#57565b;font-weight:500;}
@@ -112,6 +113,7 @@ Editor : sookkyung Han
 .product-notice .notice-list > li{float:none;display:table;padding:30px 0 0;}
 .product-notice .detail-tit{display:table-cell;float:none;width:18%;padding:0;font-size:26px;color:#444;font-weight:500;text-align:left;vertical-align:top;letter-spacing:-2px;}
 .product-notice .detail-list{display:table-cell;padding-top:7px;font-size:16px;color:#666;font-weight:300;vertical-align:top;letter-spacing:-1px;}
+.product-notice .detail-list .detail-list{padding-top:0;}
 .product-notice .detail-list li{padding-top:2px;font-size:16px;color:#666;font-weight:300;letter-spacing:-1px;}
 .product-notice .detail-list.num li{margin-left:14px;text-indent:-14px;}
 .product-notice .detail-list li:first-child{padding-top:0;}
@@ -318,13 +320,16 @@ Editor : sookkyung Han
 .product-detail-view .product-advantage.no-line{padding-top:10px;border-top:0}
 .product-advantage .detail-tit{text-align:left;line-height:1.2;}
 .advantage-box{text-align:left;padding:0;}
-.reverse .advantage-box{float:right;}
+.product-advantage .advantage-box{float:left;padding-right:12%;}
+.reverse .advantage-box{float:right;padding-right:13%;}
 .product-advantage .advantage-txt{margin-top:18px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.6;}
 .product-advantage .advantage-txt-etc{font-size:16px;letter-spacing:-1px;}
 .AR-IS01 .product-advantage .advantage-txt-etc{color:#008fc5;}
 .product-advantage .advantage-txt-etc:first-child{margin-top:20px;}
-.product-advantage .advantage-img{float:right;text-align:left;padding:0 0 0 50px;}
-.product-advantage.reverse .advantage-img{float:left;text-align:left;padding:0 50px 0 0;}
+.product-advantage .advantage-img{float:right;text-align:center;padding:0;}
+.product-advantage .advantage-img.right{text-align:right;}
+.product-advantage.reverse .advantage-img{float:left;text-align:left;}
+.product-advantage.reverse .advantage-img.center{text-align:center;}
 .product-advantage .detail-tit + .advantage-list{margin-top:-5px;}
 .product-advantage .advantage-list .list-box{margin-top:23px;}
 .product-advantage .advantage-list .list-tit{display:block;font-size:16px;font-weight:400;letter-spacing:-1px;}
@@ -352,15 +357,15 @@ Editor : sookkyung Han
 */
 .product-detail-view .effect-info .img-wrap{margin-top:50px}
 
-.product-detail-view .product-process{padding:26px 50px 23px;margin-top:50px;border:10px solid #eff0f1;}
+.product-detail-view .product-process{padding:37px 50px 35px;margin-top:50px;border:10px solid #eff0f1;}
 .product-detail-view .product-process .owl-stage{margin:0 auto;}
 .product-process .detail-tit{font-size:36px;color:#444;}
-.product-process .product-process-step{margin-top:36px;}
+.product-process .product-process-step{margin-top:44px;}
 .product-process-step .owl-item,
 .product-process-step > .step-flow{display:inline-block;padding:0 10px;vertical-align:top;text-align:center;}
 .step05.product-process-step .owl-item,
 .step05.product-process-step > .step-flow{width:20%;}
-.product-process-step .step-img{display:inline-block; /*width:180px;*/height:160px; text-align:center;vertical-align:middle;}
+.product-process-step .step-img{display:inline-block; /*width:180px;height:160px; */text-align:center;vertical-align:middle;}
 .product-process-step .step-img img{max-width:100%;max-height:100%;width:auto;height:auto;margin:0 auto;}
 .product-process-step .step-num{display:block;max-width:60px;margin:15px auto 0;padding:0px 10px;border-radius:10px;font-size:14px;color:#fff;letter-spacing:-1px;font-weight:300;background-color:#bbb;}
 .product-process-step .step-txt{display:block;margin-top:7px;font-size:14px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.7;}
@@ -638,8 +643,8 @@ Editor : sookkyung Han
 
 	.product-detail-view .product-notice{margin-top:25px;padding:0;}
 
-	.product-notice .detail-tit{display:block;font-size:18px;}
-	.product-notice .detail-list{display:block;margin:6px 0 0;font-size:13px;line-height:1.4;}
+	.product-notice .detail-tit{display:block;width:100%;font-size:18px;}
+	.product-notice .detail-list{display:block;width:100%;margin:6px 0 0;font-size:13px;line-height:1.4;}
 	.product-notice .detail-list .detail-list-box{margin-top:13px;}
 	.product-notice .detail-list li,
 	.product-notice .detail-list .detail-list-box p{display:block;font-size:13px;line-height:1.4;}
@@ -650,7 +655,7 @@ Editor : sookkyung Han
 	.product-notice .notice-ap{padding:10px 20px 12px;font-size:15px;margin:0 0 25px;}
 
 	.product-detail-view .product-advantage + .product-advantage{border-top:1px solid #e3e3e3;}
-	.product-detail-view .advantage-box{width:100%;padding:0;}
+	.product-detail-view .advantage-box{float:none;width:100%;padding:0;}
 	.product-advantage .advantage-img,
 	.product-advantage.reverse .advantage-img{float:none;padding:0;margin-top:25px;text-align:center;}
 
