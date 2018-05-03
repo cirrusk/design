@@ -100,362 +100,542 @@
                             <div class="product__listing product__list row js-query-result new-product__listing">  
                                 <!-- 제품 -->
                                 <div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
-                                    <div class="list-item-wrapper">
-                                        <div class="product-list__item"> 
-                                           	<div class="plp-item-label-wrap">
+									<div class="list-item-wrapper">
+										<div class="product-list__item">
+											<div class="plp-item-label-wrap">
 	                                            <div class="plp-item-label bg-green">출시예정</div>
 	                                            <div class="plp-item-label bg-purple">프로모션</div>
 	                                            <div class="plp-item-label bg-red">일시품절</div>
                                             </div> 
-                                            <div class="product-list__item-content amwahover"> 
-                                                <a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
-                                                    <img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
-                                                    <button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
-                                                </a>
-                                                <div class="product-list__item-detail">
-                                                    <p class="product-list__item-title">
-                                                        <a class="product-list__item-title" target="_self" href="artistry-lip-gloss-product-detail-page.html">시그니처 컬러 블러셔 리필</a></p>
-                                                    <p class="product-list__item-count">30 Count</p>
-                                                    <p class="product-list__item-number">VPS 1234  SKU 118400D</p>
-                                                    <div class="product-list__item-title product-list__item-aboprice">
-                                                        <span class="product-list__item-abolabel">가격:</span>
-                                                        <span class="product-list__item-abovalue">20,000원</span>
-                                                    </div> 
-                                                    <div class="product-list__item-retailprice">
-                                                        <span class="product-list__item-abolabel">PV / BV:</span>
-                                                        <span class="product-list__item-abovalue">11,670 / 18,200</span>
-                                                    </div>
-                                                    <div class="qty-selector-container amsuggt">
-														<label class="control-label" for="pdpAddtoCartInput1">수량</label>
-														<div class="opt-quantity mini">
-															<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput1">
-															<a href="#" class="btnMinus">수량하나빼기</a>
-															<a href="#" class="btnPlus">수량하나더하기</a>
-														</div>
+											<div class="product-list__item-content amwahover">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+
+												<a class="product-list__thum" target="_self" href="#">
+													<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
+													<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+												</a>
+												<div class="product-list__item-detail">
+													<p class="product-list__item-title">
+														<a class="product-list__item-title" target="_self" href="#">시그니처 컬러 블러셔 리필</a>
+													</p>
+													<p class="product-list__item-count">30 Count</p>
+													<p class="product-list__item-number">VPS 1234  SKU 118400D</p>
+													<div class="product-list__item-title product-list__item-aboprice">
+														<span class="product-list__item-abolabel">가격:</span>
+														<span class="product-list__item-abovalue">20,000원</span>
 													</div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list__item-link col-md-12">
-			                                    <a href="#" class="btn-blue-white" id="IntegratedSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 --> 
-	                                            <div class="plp-add-to-shopping-list">
-	                                                <div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button" ><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_Wishlist">위시리스트</button>
-	                                                </div> 
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu" style="display: none;">
-	                                                    <ul>
-	                                                        <li>
+													<div class="product-list__item-retailprice">
+														<span class="product-list__item-abolabel">PV / BV:</span>
+														<span class="product-list__item-abovalue">11,670 / 18,200</span>
+													</div>
+													<div class="product-list__item-retailprice quantity">
+														<span class="product-list__item-abolabel">수량:</span>
+														<span class="product-list__item-abovalue">
+															<div class="opt-quantity mini">
+																<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																<a href="#" class="btnMinus">수량하나빼기</a>
+																<a href="#" class="btnPlus">수량하나더하기</a>
+															</div>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="product-list__item-link col-md-12">
+												<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+
+												<div class="plp-add-to-shopping-list">
+													<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
 																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
-																<label for="radio1">November November November November</label> 
-	                                                        </li>
-	                                                        <li>
+																<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
+															</li>
+															<li>
 																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
-																<label for="radio2">November</label> 
-	                                                        </li>
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                             
-	                                            <div class="plp-add-to-ditto"> 
-	                                                <div class="product-list__item-link-ditto product-list__item-link-common"><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_SmartOrder">스마트오더</button>
-	                                                </div>
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
-	                                                    <ul>
-	                                                        <li>
-	                                                            <input class="" id="toDitto11" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPJeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer JonesCreated for Jenifer Jones</p>
-	                                                        </li>
-	                                                        <li>
-	                                                            <input class="" id="toDitto12" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li> 
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+																<label for="radio2">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+												<div class="plp-add-to-ditto">
+													<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="" id="toDitto11" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+																<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto12" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto13" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto13"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto14" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto14"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto15" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto15"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto16" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto16"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto17" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto17"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
 															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                        </div>
-                                        </div>
-                                    </div>
-                                </div> 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
                                 <!--// 제품 -->
                                 
                                 <!-- 제품 -->
                                 <div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
-                                    <div class="list-item-wrapper">
-                                        <div class="product-list__item"> 
-                                            <div class="plp-item-label-wrap">
+									<div class="list-item-wrapper">
+										<div class="product-list__item">
+											<div class="plp-item-label-wrap">
 	                                            <div class="plp-item-label bg-green">출시예정</div>
 	                                            <div class="plp-item-label bg-purple">프로모션</div>
 	                                            <div class="plp-item-label bg-red">일시품절</div>
                                             </div> 
-                                            <div class="product-list__item-content amwahover"> 
-                                                <a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
-                                                    <img src="/_ui/responsive/theme-blue/images/akl_common/no_img_s.png" class="product-list__thumbnail" alt="product">
-                                                    <button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
-                                                </a>
-                                                <div class="product-list__item-detail">
-                                                    <p class="product-list__item-title">
-                                                        <a class="product-list__item-title" target="_self" href="artistry-lip-gloss-product-detail-page.html">시그니처 컬러 블러셔 리필</a></p>
-                                                    <p class="product-list__item-count">30 Count</p>
-                                                    <p class="product-list__item-number">VPS 1234  SKU 118400D</p>
-                                                    <div class="product-list__item-title product-list__item-aboprice">
-                                                        <span class="product-list__item-abolabel">가격:</span>
-                                                        <span class="product-list__item-abovalue">20,000원</span>
-                                                    </div> 
-                                                    <div class="product-list__item-retailprice">
-                                                        <span class="product-list__item-abolabel">PV / BV:</span>
-                                                        <span class="product-list__item-abovalue">11,670 / 18,200</span>
-                                                    </div>
-                                                    <div class="qty-selector-container amsuggt">
-														<label class="control-label" for="pdpAddtoCartInput2">수량</label>
-														<div class="opt-quantity mini">
-															<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2">
-															<a href="#" class="btnMinus">수량하나빼기</a>
-															<a href="#" class="btnPlus">수량하나더하기</a>
+											<div class="product-list__item-content amwahover">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+
+												<a class="product-list__thum" target="_self" href="#">
+													<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
+													<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+												</a>
+												<div class="product-list__item-detail">
+													<p class="product-list__item-title">
+														<a class="product-list__item-title" target="_self" href="#">시그니처 컬러 블러셔 리필</a>
+													</p>
+													<p class="product-list__item-count">30 Count</p>
+													<p class="product-list__item-number">VPS 1234  SKU 118400D</p>
+													<div class="product-list__item-title product-list__item-aboprice">
+														<span class="product-list__item-abolabel">가격:</span>
+														<span class="product-list__item-abovalue">20,000원</span>
+													</div>
+													<div class="product-list__item-retailprice">
+														<span class="product-list__item-abolabel">PV / BV:</span>
+														<span class="product-list__item-abovalue">11,670 / 18,200</span>
+													</div>
+													<div class="product-list__item-retailprice quantity">
+														<span class="product-list__item-abolabel">수량:</span>
+														<span class="product-list__item-abovalue">
+															<div class="opt-quantity mini">
+																<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																<a href="#" class="btnMinus">수량하나빼기</a>
+																<a href="#" class="btnPlus">수량하나더하기</a>
+															</div>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="product-list__item-link col-md-12">
+												<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+
+												<div class="plp-add-to-shopping-list">
+													<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 														</div>
 													</div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list__item-link col-md-12">
-			                                    <a href="#" class="btn-blue-white" id="IntegratedSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 --> 
-	                                            <div class="plp-add-to-shopping-list">
-	                                                <div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button" ><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_Wishlist">위시리스트</button>
-	                                                </div>  
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu" style="display: none;">
-	                                                    <ul>
-	                                                         <li>
-																<input class="amwa-radio" type="radio" name="optradio" id="radio21" value="">
-																<label for="radio21">November</label> 
-	                                                        </li>
-	                                                        <li>
-																<input class="amwa-radio" type="radio" name="optradio" id="radio22" value="">
-																<label for="radio22">November</label> 
-	                                                        </li> 
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                             
-	                                            <div class="plp-add-to-ditto">  
-	                                                <div class="product-list__item-link-ditto product-list__item-link-common"><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_SmartOrder">스마트오더</button>
-	                                                </div>
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
-	                                                    <ul>
-	                                                        <li>
-	                                                            <input class="" id="toDitto11" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li>
-	                                                        <li>
-	                                                            <input class="" id="toDitto12" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li> 
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+												</div>
+												<div class="plp-add-to-ditto">
+													<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="" id="toDitto11" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+																<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto12" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto13" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto13"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto14" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto14"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto15" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto15"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto16" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto16"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto17" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto17"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
 															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                        </div>
-                                        </div>
-                                    </div>
-                                </div> 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
                                 <!--// 제품 -->
                                 
                                 <!-- 제품 -->
                                 <div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
-                                    <div class="list-item-wrapper">
-                                        <div class="product-list__item">  
-                                           <div class="plp-item-label-wrap">
-	                                            <div class="plp-item-label bg-blue">출시예정</div>
-	                                            <div class="plp-item-label bg-navy">프로모션</div>
-	                                            <div class="plp-item-label bg-red">일시품절</div>
-                                            </div> 
-                                            <div class="product-list__item-content amwahover"> 
-                                                <a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
-                                                    <img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
-                                                    <button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
-                                                </a>
-                                                <div class="product-list__item-detail">
-                                                    <p class="product-list__item-title">
-                                                        <a class="product-list__item-title" target="_self" href="artistry-lip-gloss-product-detail-page.html">시그니처 컬러 블러셔 리필</a></p>
-                                                    <p class="product-list__item-count">30 Count</p>
-                                                    <p class="product-list__item-number">VPS 1234  SKU 118400D</p>
-                                                    <div class="product-list__item-title product-list__item-aboprice">
-                                                        <span class="product-list__item-abolabel">가격:</span>
-                                                        <span class="product-list__item-abovalue">20,000원</span>
-                                                    </div> 
-                                                    <div class="product-list__item-retailprice">
-                                                        <span class="product-list__item-abolabel">PV / BV:</span>
-                                                        <span class="product-list__item-abovalue">11,670 / 18,200</span>
-                                                    </div>
-                                                    <div class="qty-selector-container amsuggt">
-														<label class="control-label" for="pdpAddtoCartInput3">수량</label>
-														<div class="opt-quantity mini">
-															<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput3">
-															<a href="#" class="btnMinus">수량하나빼기</a>
-															<a href="#" class="btnPlus">수량하나더하기</a>
-														</div>
-													</div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list__item-link col-md-12">
-			                                    <a href="#" class="btn-blue-white" id="IntegratedSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 --> 
-	                                            <div class="plp-add-to-shopping-list">
-	                                                <div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button" ><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_Wishlist">위시리스트</button>
-	                                                </div> 
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu" style="display: none;">
-	                                                    <ul>
-	                                                        <li>
-																<input class="amwa-radio" type="radio" name="optradio" id="radio31" value="">
-																<label for="radio31">November</label> 
-	                                                        </li>
-	                                                        <li>
-																<input class="amwa-radio" type="radio" name="optradio" id="radio32" value="">
-																<label for="radio32">November</label> 
-	                                                        </li>
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                             
-	                                            <div class="plp-add-to-ditto"> 
-	                                                <div class="product-list__item-link-ditto product-list__item-link-common"><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_SmartOrder">스마트오더</button>
-	                                                </div>
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
-	                                                    <ul>
-	                                                        <li>
-	                                                            <input class="" id="toDitto11" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li>
-	                                                        <li>
-	                                                            <input class="" id="toDitto12" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li> 
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
-															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                        </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <!--// 제품 -->
-                                
-                                <!-- 제품 -->
-                                <div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
-                                    <div class="list-item-wrapper">
-                                        <div class="product-list__item"> 
-                                        	<div class="plp-item-label-wrap">
+									<div class="list-item-wrapper">
+										<div class="product-list__item">
+											<div class="plp-item-label-wrap">
 	                                            <div class="plp-item-label bg-green">출시예정</div>
 	                                            <div class="plp-item-label bg-purple">프로모션</div>
 	                                            <div class="plp-item-label bg-red">일시품절</div>
                                             </div> 
-                                            <div class="product-list__item-content amwahover"> 
-                                                <a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
-                                                    <img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
-                                                    <button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
-                                                </a>
-                                                <div class="product-list__item-detail">
-                                                    <p class="product-list__item-title">
-                                                        <a class="product-list__item-title" target="_self" href="artistry-lip-gloss-product-detail-page.html">시그니처 컬러 블러셔 리필</a></p>
-                                                    <p class="product-list__item-count">30 Count</p>
-                                                    <p class="product-list__item-number">VPS 1234  SKU 118400D</p>
-                                                    <div class="product-list__item-title product-list__item-aboprice">
-                                                        <span class="product-list__item-abolabel">가격:</span>
-                                                        <span class="product-list__item-abovalue">20,000원</span>
-                                                    </div> 
-                                                    <div class="product-list__item-retailprice">
-                                                        <span class="product-list__item-abolabel">PV / BV:</span>
-                                                        <span class="product-list__item-abovalue">11,670 / 18,200</span>
-                                                    </div>
-                                                    <div class="qty-selector-container amsuggt">
-														<label class="control-label" for="pdpAddtoCartInput4">수량</label>
-														<div class="opt-quantity mini">
-															<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput4">
-															<a href="#" class="btnMinus">수량하나빼기</a>
-															<a href="#" class="btnPlus">수량하나더하기</a>
+											<div class="product-list__item-content amwahover">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+
+												<a class="product-list__thum" target="_self" href="#">
+													<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
+													<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+												</a>
+												<div class="product-list__item-detail">
+													<p class="product-list__item-title">
+														<a class="product-list__item-title" target="_self" href="#">시그니처 컬러 블러셔 리필</a>
+													</p>
+													<p class="product-list__item-count">30 Count</p>
+													<p class="product-list__item-number">VPS 1234  SKU 118400D</p>
+													<div class="product-list__item-title product-list__item-aboprice">
+														<span class="product-list__item-abolabel">가격:</span>
+														<span class="product-list__item-abovalue">20,000원</span>
+													</div>
+													<div class="product-list__item-retailprice">
+														<span class="product-list__item-abolabel">PV / BV:</span>
+														<span class="product-list__item-abovalue">11,670 / 18,200</span>
+													</div>
+													<div class="product-list__item-retailprice quantity">
+														<span class="product-list__item-abolabel">수량:</span>
+														<span class="product-list__item-abovalue">
+															<div class="opt-quantity mini">
+																<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																<a href="#" class="btnMinus">수량하나빼기</a>
+																<a href="#" class="btnPlus">수량하나더하기</a>
+															</div>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="product-list__item-link col-md-12">
+												<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+
+												<div class="plp-add-to-shopping-list">
+													<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 														</div>
 													</div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list__item-link col-md-12">
-			                                    <a href="#" class="btn-blue-white" id="IntegratedSearch_addtoCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->  
-	                                            <div class="plp-add-to-shopping-list">
-	                                                <div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button" ><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_Wishlist">위시리스트</button>
-	                                                </div> 
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu" style="display: none;">
-	                                                    <ul>
-	                                                        <li>
-																<input class="amwa-radio" type="radio" name="optradio" id="radio41" value="">
-																<label for="radio41">November</label> 
-	                                                        </li>
-	                                                        <li>
-																<input class="amwa-radio" type="radio" name="optradio" id="radio42" value="">
-																<label for="radio42">November</label> 
-	                                                        </li>
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-	                                                        <a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                             
-	                                            <div class="plp-add-to-ditto"> 
-	                                                <div class="product-list__item-link-ditto product-list__item-link-common"><!--2018.03.15 태깅 아이디 추가 2018.04.03 태그 수정 --> 
-		                                                <button type="button" id="IntegratedSearch_SmartOrder">스마트오더</button>
-	                                                </div>
-	                                                <div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
-	                                                    <ul>
-	                                                        <li>
-	                                                            <input class="" id="toDitto11" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li>
-	                                                        <li>
-	                                                            <input class="" id="toDitto12" name="toDitto" type="checkbox">
-	                                                            <label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
-	                                                            <p>Created for Jenifer Jones</p>
-	                                                        </li> 
-	                                                    </ul>
-	                                                    <div class="dropdown-menu-bottom">
-	                                                        <button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+												</div>
+												<div class="plp-add-to-ditto">
+													<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="" id="toDitto11" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+																<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto12" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto13" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto13"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto14" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto14"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto15" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto15"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto16" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto16"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto17" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto17"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
 															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                        </div>
-                                        </div>
-                                    </div>
-                                </div> 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
+                                <!--// 제품 -->
+                                
+                                <!-- 제품 -->
+                                <div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
+									<div class="list-item-wrapper">
+										<div class="product-list__item">
+											<div class="plp-item-label-wrap">
+	                                            <div class="plp-item-label bg-green">출시예정</div>
+	                                            <div class="plp-item-label bg-purple">프로모션</div>
+	                                            <div class="plp-item-label bg-red">일시품절</div>
+                                            </div> 
+											<div class="product-list__item-content amwahover">
+												<label class="checkbox-element-wrapper">
+													<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+													<span class="_checkbox-element-global-span"></span>
+												</label>
+
+												<a class="product-list__thum" target="_self" href="#">
+													<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="product-list__thumbnail" alt="product">
+													<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+												</a>
+												<div class="product-list__item-detail">
+													<p class="product-list__item-title">
+														<a class="product-list__item-title" target="_self" href="#">시그니처 컬러 블러셔 리필</a>
+													</p>
+													<p class="product-list__item-count">30 Count</p>
+													<p class="product-list__item-number">VPS 1234  SKU 118400D</p>
+													<div class="product-list__item-title product-list__item-aboprice">
+														<span class="product-list__item-abolabel">가격:</span>
+														<span class="product-list__item-abovalue">20,000원</span>
+													</div>
+													<div class="product-list__item-retailprice">
+														<span class="product-list__item-abolabel">PV / BV:</span>
+														<span class="product-list__item-abovalue">11,670 / 18,200</span>
+													</div>
+													<div class="product-list__item-retailprice quantity">
+														<span class="product-list__item-abolabel">수량:</span>
+														<span class="product-list__item-abovalue">
+															<div class="opt-quantity mini">
+																<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" title="수량 입력" />
+																<a href="#" class="btnMinus">수량하나빼기</a>
+																<a href="#" class="btnPlus">수량하나더하기</a>
+															</div>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="product-list__item-link col-md-12">
+												<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+
+												<div class="plp-add-to-shopping-list">
+													<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+																<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+																<label for="radio2">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+																<label for="radio3">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+																<label for="radio4">선택</label>
+															</li>
+															<li>
+																<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+																<label for="radio5">선택</label>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
+															<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
+														</div>
+													</div>
+												</div>
+												<div class="plp-add-to-ditto">
+													<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+														<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+													</div>
+													<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+														<ul>
+															<li>
+																<input class="" id="toDitto11" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+																<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto12" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto12"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto13" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto13"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto14" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto14"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto15" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto15"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto16" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto16"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+															<li>
+																<input class="" id="toDitto17" name="toDitto" type="checkbox">
+																<label class="cart-detail__addto-options" for="toDitto17"></label><span>JeniferJones'First SOP</span>
+																<p>Created for Jenifer Jones</p>
+															</li>
+														</ul>
+														<div class="dropdown-menu-bottom">
+															<button id="addToDitto1" class="btn btn-primary addToDitto">ADD TO SOP</button>
+															<a class="creatNewDitto" href="javascript:void(0);">Create New SOP</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
                                 <!--// 제품 -->
                             </div> 
                             <p class="text-center show-more-products-wrapper">
