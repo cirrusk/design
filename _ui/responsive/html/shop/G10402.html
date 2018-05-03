@@ -104,7 +104,7 @@
 												</span>
 											</div>
 											<ul class="list-type2">
-												<li> 중개판매 신청서 및 사업자등록증은 FAX (02-564-6760) 또는 AP방문을 통해 접수하여 주시기 바랍니다.</li>
+												<li>중개판매 신청서 및 사업자등록증은 FAX (02-564-6760) 또는 AEC방문을 통해 접수하여 주시기 바랍니다.</li>
 											</ul>
 										</div>
 									</div>
@@ -235,7 +235,7 @@
 												<div class="new-message-shop">
 													<ul class="list-type2">
 														<li>배송지 주소는 최대 999개까지 등록 관리가 가능합니다.</li>
-														<li>정확하고 빠른 배송을 위해 정확한 주소지와 전화번호 등록을 확인해 주십시오.</li>
+														<li>정확하고 빠른 배송을 위해 정확한 주소지와 휴대폰 번호 등록을 확인해 주십시오.</li>
 													</ul>
 													<p><strong class="pot">*</strong> 는 필수입력 항목입니다.</p>
 												</div>
@@ -819,6 +819,148 @@
 													</p>
 												</div>
 												<!-- //주문합계 -->
+
+												<!-- 그룹결제 -->
+												<div class="paymemt-type-group">
+													<strong class="sub-title">그룹결제 (ABO별 신용카드결제)</strong>
+													<div class="shipping-delivery-radio-body">
+														<div class="panel-body paymemnt">
+															<div class="card-promotion">
+																<span><img src="/_ui/responsive/theme-blue/images/akl_common/card-p.png" alt=""></span>
+																<dl>
+																	<dt>자동이체 10% PV UP 프로모션</dt>
+																	<dd>자동이체로 결제시 10 PV 추가 적용</dd>
+																</dl>
+															</div>
+															<div class="row card-method">
+																<div class="form-group">
+																	<div class="col-xs-12 col-md-2 card-tit"><label for="cardfecture_01">카드종류</label></div>
+																	<div class="col-xs-12 col-md-10">
+																		<select class="shipping-delivery-size" id="cardfecture_01">
+																			<option>선택하세요</option>
+																			<option>현대카드</option>
+																			<option>KB국민카드</option>
+																		</select>
+																		<div class="card-kinds">
+																			<span class="col-xs-12 col-md-6">
+																				<input class="amwa-radio" type="radio" name="paymentGroup_card_1" id="paymentGroup_personal_01"><label for="paymentGroup_personal_01">개인카드</label>
+																			</span>
+																			<span class="col-xs-12 col-md-6">
+																				<input class="amwa-radio" type="radio" name="paymentGroup_card_1" id="paymentGroup_corporate_01"><label for="paymentGroup_corporate_01">법인카드</label>
+																			</span>
+																		</div>
+																		<div class="card-favor">
+																			<span><a href="#" class="bt-akl-white mini" onclick="layerPopOver(this,'.G10600_lp2_pop');">카드사 혜택보기</a></span>
+																		</div>
+																	</div>
+																</div>
+
+																<!-- 그룹결제,개인카드 -->
+																<div id="group_personalCard_01" class="card-sort panel-collapse collapse">
+																	<div class="form-group">
+																		<div class="pay-line">
+																			<div class="form-group row">
+																				<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																				<span class="col-md-10 col-xs-12">
+																					<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																				</span>
+																			</div>
+																			<div class="form-group row">
+																				<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
+																					<div class="payment-forms-back-slash">/</div>
+																					<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																					<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="month" class="col-md-2 col-xs-12">생년월일</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
+																					<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div  class="col-xs-12 col-md-2 card-tit"><label for="installment">할부기간</label></div>
+																		<div class="col-xs-12 col-md-10">
+																			<select class="shipping-delivery-size" id="installment">
+																				<option>일시불</option>
+																				<option>Tokyo-to</option>
+																				<option>Tokyo-to</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<!-- //그룹결제,개인카드 -->
+
+																<!-- 그룹결제,법인카드 -->
+																<div id="group_bizCard_01" class="card-sort panel-collapse collapse">
+																	<div class="form-group">
+																		<div class="pay-line">
+																			<div class="form-group row">
+																				<label for="card-num-biz" class="col-md-2 col-xs-12">카드번호</label>
+																				<span class="col-md-10 col-xs-12">
+																					<input name="card-num" id="card-num-biz" type="text" class="card-inp" title="첫번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																				</span>
+																			</div>
+																			<div class="form-group row">
+																				<label for="expDate-biz" class="col-md-2 col-xs-12">유효기간</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="expDate" type="text" placeholder="월" id="expDate-biz" class="card-inp2" />
+																					<div class="payment-forms-back-slash">/</div>
+																					<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="card-pw-biz" class="col-md-2 col-xs-12">카드비밀번호</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="card-pw-biz" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																					<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="bussnum" class="col-md-2 col-xs-12">사업자등록번호</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="bussnum" type="text" id="bussnum" class="card-inp4" />
+																					<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="form-group">
+																		<div  class="col-xs-12 col-md-2 card-tit"><label for="installment-biz">할부기간</label></div>
+																		<div class="col-xs-12 col-md-10">
+																			<select class="shipping-delivery-size" id="installment-biz">
+																				<option>일시불</option>
+																				<option>Tokyo-to</option>
+																				<option>Tokyo-to</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<!-- //그룹결제,법인카드 -->
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- //그룹결제 -->
 											</div>
 										</li>
 										<li class="accordion-element prdt-order-info" aria-multiselectable="true"><!-- 주문정보  ABO 2 -->
@@ -1065,153 +1207,154 @@
 													</p>
 												</div>
 												<!-- //주문합계 -->
+
+												<!-- 그룹결제 -->
+												<div class="paymemt-type-group">
+													<strong class="sub-title">그룹결제 (ABO별 신용카드결제)</strong>
+													<div class="shipping-delivery-radio-body">
+														<div class="panel-body paymemnt">
+															<div class="card-promotion">
+																<span><img src="/_ui/responsive/theme-blue/images/akl_common/card-p.png" alt=""></span>
+																<dl>
+																	<dt>자동이체 10% PV UP 프로모션</dt>
+																	<dd>자동이체로 결제시 10 PV 추가 적용</dd>
+																</dl>
+															</div>
+															<div class="row card-method">
+																<div class="form-group">
+																	<div class="col-xs-12 col-md-2 card-tit"><label for="cardfecture_02">카드종류</label></div>
+																	<div class="col-xs-12 col-md-10">
+																		<select class="shipping-delivery-size" id="cardfecture_02">
+																			<option>선택하세요</option>
+																			<option>현대카드</option>
+																			<option>KB국민카드</option>
+																		</select>
+																		<div class="card-kinds">
+																			<span class="col-xs-12 col-md-6">
+																				<input class="amwa-radio" type="radio" name="paymentGroup_card_2" id="paymentGroup_personal_02"><label for="paymentGroup_personal_02">개인카드</label>
+																			</span>
+																			<span class="col-xs-12 col-md-6">
+																				<input class="amwa-radio" type="radio" name="paymentGroup_card_2" id="paymentGroup_corporate_02"><label for="paymentGroup_corporate_02">법인카드</label>
+																			</span>
+																		</div>
+																		<div class="card-favor">
+																			<span><a href="#" class="bt-akl-white mini" onclick="layerPopOver(this,'.G10600_lp2_pop');">카드사 혜택보기</a></span>
+																		</div>
+																	</div>
+																</div>
+
+																<!-- 그룹결제,개인카드 -->
+																<div id="group_personalCard_02" class="card-sort panel-collapse collapse">
+																	<div class="form-group">
+																		<div class="pay-line">
+																			<div class="form-group row">
+																				<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																				<span class="col-md-10 col-xs-12">
+																					<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																				</span>
+																			</div>
+																			<div class="form-group row">
+																				<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
+																					<div class="payment-forms-back-slash">/</div>
+																					<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																					<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="month" class="col-md-2 col-xs-12">생년월일</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
+																					<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div  class="col-xs-12 col-md-2 card-tit"><label for="installment">할부기간</label></div>
+																		<div class="col-xs-12 col-md-10">
+																			<select class="shipping-delivery-size" id="installment">
+																				<option>일시불</option>
+																				<option>Tokyo-to</option>
+																				<option>Tokyo-to</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<!-- //그룹결제,개인카드 -->
+
+																<!-- 그룹결제,법인카드 -->
+																<div id="group_bizCard_02" class="card-sort panel-collapse collapse">
+																	<div class="form-group">
+																		<div class="pay-line">
+																			<div class="form-group row">
+																				<label for="card-num-biz" class="col-md-2 col-xs-12">카드번호</label>
+																				<span class="col-md-10 col-xs-12">
+																					<input name="card-num" id="card-num-biz" type="text" class="card-inp" title="첫번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
+																					<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																				</span>
+																			</div>
+																			<div class="form-group row">
+																				<label for="expDate-biz" class="col-md-2 col-xs-12">유효기간</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="expDate" type="text" placeholder="월" id="expDate-biz" class="card-inp2" />
+																					<div class="payment-forms-back-slash">/</div>
+																					<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="card-pw-biz" class="col-md-2 col-xs-12">카드비밀번호</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="card-pw-biz" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																					<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+																				</div>
+																			</div>
+																			<div class="form-group row">
+																				<label for="bussnum" class="col-md-2 col-xs-12">사업자등록번호</label>
+																				<div class="col-md-10 col-xs-12">
+																					<input name="bussnum" type="text" id="bussnum" class="card-inp4" />
+																					<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="form-group">
+																		<div  class="col-xs-12 col-md-2 card-tit"><label for="installment-biz">할부기간</label></div>
+																		<div class="col-xs-12 col-md-10">
+																			<select class="shipping-delivery-size" id="installment-biz">
+																				<option>일시불</option>
+																				<option>Tokyo-to</option>
+																				<option>Tokyo-to</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<!-- //그룹결제,법인카드 -->
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- //그룹결제 -->
 											</div>
 										</li>
 									</ul>
 									<!-- //ABO 주문정보 목록  -->
 
-									<!-- 그룹결제 -->
-									<div class="paymemt-type-group">
 
-										<strong class="sub-title">그룹결제 (ABO별 신용카드결제)</strong>
-										<div class="shipping-delivery-radio-body">
-											<div class="panel-body paymemnt">
-												<div class="card-promotion">
-													<span><img src="/_ui/responsive/theme-blue/images/akl_common/card-p.png" alt=""></span>
-													<dl>
-														<dt>자동이체 10% PV UP 프로모션</dt>
-														<dd>자동이체로 결제시 10 PV 추가 적용</dd>
-													</dl>
-												</div>
-												<div class="row card-method">
-													<div class="form-group">
-														<div class="col-xs-12 col-md-2 card-tit"><label for="cardfecture">카드종류</label></div>
-														<div class="col-xs-12 col-md-10">
-															<select class="shipping-delivery-size" id="cardfecture">
-																<option>선택하세요</option>
-																<option>현대카드</option>
-																<option>KB국민카드</option>
-															</select>
-															<div class="card-kinds">
-																<span class="col-xs-12 col-md-6">
-																	<input class="amwa-radio" type="radio" name="paymentGroup_card" id="paymentGroup_personal"><label for="paymentGroup_personal">개인카드</label>
-																</span>
-																<span class="col-xs-12 col-md-6">
-																	<input class="amwa-radio" type="radio" name="paymentGroup_card" id="paymentGroup_corporate"><label for="paymentGroup_corporate">법인카드</label>
-																</span>
-															</div>
-															<div class="card-favor">
-																<span><a href="#" class="bt-akl-white mini" onclick="layerPopOver(this,'.G10600_lp2_pop');">카드사 혜택보기</a></span>
-															</div>
-														</div>
-													</div>
-
-													<!-- 그룹결제,개인카드 -->
-													<div id="group_personalCard" class="card-sort panel-collapse collapse">
-														<div class="form-group">
-															<div class="pay-line">
-																<div class="form-group row">
-																	<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
-																	<span class="col-md-10 col-xs-12">
-																		<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
-																	</span>
-																</div>
-																<div class="form-group row">
-																	<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
-																	<div class="col-md-10 col-xs-12">
-																		<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
-																		<div class="payment-forms-back-slash">/</div>
-																		<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
-																	<div class="col-md-10 col-xs-12">
-																		<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
-																		<div class="payment-forms-txt">비밀번호 앞 2자리</div>
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label for="month" class="col-md-2 col-xs-12">생년월일</label>
-																	<div class="col-md-10 col-xs-12">
-																		<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
-																		<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="form-group">
-															<div  class="col-xs-12 col-md-2 card-tit"><label for="installment">할부기간</label></div>
-															<div class="col-xs-12 col-md-10">
-																<select class="shipping-delivery-size" id="installment">
-																	<option>일시불</option>
-																	<option>Tokyo-to</option>
-																	<option>Tokyo-to</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<!-- //그룹결제,개인카드 -->
-
-													<!-- 그룹결제,법인카드 -->
-													<div id="group_bizCard" class="card-sort panel-collapse collapse">
-														<div class="form-group">
-															<div class="pay-line">
-																<div class="form-group row">
-																	<label for="card-num-biz" class="col-md-2 col-xs-12">카드번호</label>
-																	<span class="col-md-10 col-xs-12">
-																		<input name="card-num" id="card-num-biz" type="text" class="card-inp" title="첫번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
-																	</span>
-																</div>
-																<div class="form-group row">
-																	<label for="expDate-biz" class="col-md-2 col-xs-12">유효기간</label>
-																	<div class="col-md-10 col-xs-12">
-																		<input name="expDate" type="text" placeholder="월" id="expDate-biz" class="card-inp2" />
-																		<div class="payment-forms-back-slash">/</div>
-																		<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label for="card-pw-biz" class="col-md-2 col-xs-12">카드비밀번호</label>
-																	<div class="col-md-10 col-xs-12">
-																		<input name="card-pw-biz" type="text" placeholder="**" id="card-pw" class="card-inp3" />
-																		<div class="payment-forms-txt">비밀번호 앞 2자리</div>
-																	</div>
-																</div>
-																<div class="form-group row">
-																	<label for="bussnum" class="col-md-2 col-xs-12">사업자등록번호</label>
-																	<div class="col-md-10 col-xs-12">
-																		<input name="bussnum" type="text" id="bussnum" class="card-inp4" />
-																		<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<div  class="col-xs-12 col-md-2 card-tit"><label for="installment-biz">할부기간</label></div>
-															<div class="col-xs-12 col-md-10">
-																<select class="shipping-delivery-size" id="installment-biz">
-																	<option>일시불</option>
-																	<option>Tokyo-to</option>
-																	<option>Tokyo-to</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<!-- //그룹결제,법인카드 -->
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- //그룹결제 -->
 
 									<!-- 회원추가 -->
 									<div class="faxOrder-add-buyer">
@@ -1622,7 +1765,7 @@
 																			</li>
 																		</ul>
 																	</li>
-																	<li>SC제일은행, 농협, 우리은행, 하나은행, 신한은행, 기업은행, 씨티은행, 우체국 : 한도없음</li>
+																	<li>SC제일은행, 농협, 우리은행, KEB하나은행, 신한은행, 기업은행, 씨티은행, 우체국 : 한도없음</li>
 																	<li>유안타증권 : 1일 1,000만원 한도</li>
 																	<li>KEB하나은행 : 1거래당 1,000만원 한도</li>
 																	<li>국민은행 : 1거래당 600만원 한도</li>
@@ -1672,27 +1815,27 @@
 															<a href="#" class="title">자동이체 예약안내 <span class="hidden">열기</span></a><!-- 수정 : 2018.04.26 (수정) -->
 
 															<ul class="list-type5">
-																<li><span class="color-red">자동이체 가능은행</span> : SC제일, 유안타증권, 외환, 농협, 우리, 하나, 신한, 기업, 씨티, 국민 은행, 우체국</li>
+																<li><span class="color-red">자동이체 가능은행</span> : SC제일, 유안타증권, 농협, 우리, KEB하나은행, 신한, 기업, 씨티, 국민 은행, 우체국</li>
 															</ul>
 															<div class="tgg-hidden-area">
 																<ul class="list-type5">
-																<li><strong>거래가능시간</strong>
-																	<ul>
-																		<li>한도금액을 초과하는 주문 시에는 주문을 나누어 주십시오.</li>
-																		<li>자동이체는 주문 해당 월에 결제되지 않으면 당월 실적으로 인정되지 않으므로 예약이체 시에 주의하시기 바랍니다.</li>
-																		<li>자동이체는 은행에 따라 새벽시간(00시 ~ 00시 30분) 거래가 불안정할 수 있습니다.
-																			<p>또한, 월말에는 거래 가능 시간에도 불구하고 은행에 따라 은행영업시간(오후 4시) 이후에 거래가 되지 않을 수 있으니 자동이체 이외의 타 결제 수단을 이용하시기 바랍니다.</p>
-																		</li>
-																	</ul>
-																</li>
-																<li>SC제일은행, 농협, 우리은행, 하나은행, 신한은행, 기업은행, 씨티은행, 우체국 : 한도없음</li>
-																<li>유안타증권 : 1일 1,000만원 한도</li>
-																<li>KEB하나은행 : 1거래당 1,000만원 한도</li>
-																<li>국민은행 : 1거래당 600만원 한도</li>
-															</ul>
-															<ul class="list-type2">
-																<li>자동이체계좌는 주사업자(A&B인 경우 A)의 주민등록번호로 개설된 계좌만 가능합니다. </li>
-															</ul>
+																	<li><strong>거래가능시간</strong>
+																		<ul>
+																			<li>한도금액을 초과하는 주문 시에는 주문을 나누어 주십시오.</li>
+																			<li>자동이체는 주문 해당 월에 결제되지 않으면 당월 실적으로 인정되지 않으므로 예약이체 시에 주의하시기 바랍니다.</li>
+																			<li>자동이체는 은행에 따라 새벽시간(00시 ~ 00시 30분) 거래가 불안정할 수 있습니다.
+																				<p>또한, 월말에는 거래 가능 시간에도 불구하고 은행에 따라 은행영업시간(오후 4시) 이후에 거래가 되지 않을 수 있으니 자동이체 이외의 타 결제 수단을 이용하시기 바랍니다.</p>
+																			</li>
+																		</ul>
+																	</li>
+																	<li>SC제일은행, 농협, 우리은행, KEB하나은행, 신한은행, 기업은행, 씨티은행, 우체국 : 한도없음</li>
+																	<li>유안타증권 : 1일 1,000만원 한도</li>
+																	<li>KEB하나은행 : 1거래당 1,000만원 한도</li>
+																	<li>국민은행 : 1거래당 600만원 한도</li>
+																</ul>
+																<ul class="list-type2">
+																	<li>자동이체계좌는 주사업자(A&B인 경우 A)의 주민등록번호로 개설된 계좌만 가능합니다. </li>
+																</ul>
 															</div>
 														</div>
 
@@ -1733,7 +1876,7 @@
 															</div>
 														</div>
 														<div class="form-group">
-															<div  class="col-xs-12 col-md-2 card-tit">
+															<div class="col-xs-12 col-md-2 card-tit">
 																<label for="recashApply_apoint_recash">Re-Cash</label>
 																<!-- 툴팁 -->
 																<div class="toolTip-wrapper">
@@ -1876,8 +2019,8 @@
 																<div class="tbl-list-view terms">
 																	<div class="thead">
 																		<div class="tr">
-																			<strong style="width:50%">목적</strong>
-																			<strong style="width:50%">항목</strong>
+																			<strong style="width:30%">목적</strong>
+																			<strong style="width:70%">항목</strong>
 																		</div>
 																	</div>
 																	<div class="tbody">
@@ -1981,7 +2124,7 @@
 					<div class="info-texts-paymentType">
 						<ul class="list-type5">
 							<li><strong class="tit">단일결제</strong>
-								또는 본인 포함 2인 이상의 ABO번호로  각각 주문생성이 가능하고, 결제는 로그인한 ABO만 결제가 가능한 방식
+								본인 또는 본인 포함 2인 이상의 ABO번호로  각각 주문생성이 가능하고, 결제는 로그인한 ABO만 결제가 가능한 방식
 							</li>
 							<li><strong class="tit">그룹결제(ABO별 카드결제만 가능)</strong>
 								본인 포함 2인 이상의 ABO번호로 각각 주문 생성 및 ABO별 각각 결제하는 방식
@@ -2097,23 +2240,29 @@ $(function(){
 		}
 	});
 
-	/* ---------- 단일결제 ---------- */
-	//초기세팅 - 개인카드 활성화
-	$('#paymentGroup_personal').prop("checked", true).attr('checked', 'checked');
-	$('#group_personalCard').removeClass('collapse');
-	$('#group_bizCard').addClass('collapse');
+	/* ---------- 그룹결제 ---------- */
+	var $group_personalCard  = $('#paymentGroup_personal_01,  #paymentGroup_personal_02');
+	var $group_corporateCard = $('#paymentGroup_corporate_01, #paymentGroup_corporate_02');
 
-	//그룹결제,개인카드
-	$('#paymentGroup_personal').on('click',function(){
+	var $divPersonalCard = $('#group_personalCard_01, #group_personalCard_02');
+	var $divBizCard = $('#group_bizCard_01, #group_bizCard_02');
+
+	//개인카드 활성화
+	$group_personalCard.prop("checked", true).attr('checked', 'checked');
+	$divPersonalCard.removeClass('collapse');
+	$divBizCard.addClass('collapse');
+
+	//개인카드
+	$group_personalCard.on('click',function(){
 		$(this).prop("checked", true).attr('checked', 'checked');
-		$('#group_personalCard').removeClass('collapse');
-		$('#group_bizCard').addClass('collapse');
+		$divPersonalCard.removeClass('collapse');
+		$divBizCard.addClass('collapse');
 	});
-	//그룹결제,법인카드
-	$('#paymentGroup_corporate').on('click',function(){
+	//법인카드
+	$group_corporateCard.on('click',function(){
 		$(this).prop("checked", true).attr('checked', 'checked');
-		$('#group_personalCard').addClass('collapse');
-		$('#group_bizCard').removeClass('collapse');
+		$divPersonalCard.addClass('collapse');
+		$divBizCard.removeClass('collapse');
 	});
 });
 </script>
