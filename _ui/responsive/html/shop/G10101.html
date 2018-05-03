@@ -95,8 +95,11 @@
 						<div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
 							<div class="list-item-wrapper">
 								<div class="product-list__item">
-									<div class="plp-item-label bg-purple lsize04">10개월무이자</div>
-                                    <div class="plp-item-label bg-blue lsize03">스마트오더</div>
+									<div class="plp-item-label-wrap">
+                                           <div class="plp-item-label bg-green">출시예정</div>
+                                           <div class="plp-item-label bg-purple">프로모션</div>
+                                           <div class="plp-item-label bg-red">일시품절</div>
+                                          </div> 
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -134,50 +137,51 @@
 										</div>
 									</div>
 									<div class="product-list__item-link col-md-12">
-										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="CategorySolution_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+
 										<div class="plp-add-to-shopping-list">
-											<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-6 js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button type="button" id="CategorySolution_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+											<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
 														<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
-														<label for="radio1">선택</label>
+														<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
-														 <label for="radio2">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+														<label for="radio2">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
-														 <label for="radio3">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+														<label for="radio3">선택</label>
 													</li>
 													<li>
 														<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
-														 <label for="radio4">선택</label>
+														<label for="radio4">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
-														 <label for="radio5">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+														<label for="radio5">선택</label>
 													</li>
 												</ul>
 												<div class="dropdown-menu-bottom">
 													<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-													<a href="javascript:void(0);" id="">위시리스트 추가</a>
+													<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 												</div>
 											</div>
 										</div>
 										<div class="plp-add-to-ditto">
-											<div class="product-list__item-link-ditto product-list__item-link-common col-xs-6 col-md-6" href="#"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button class="wish-list" id="CategorySolution_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+											<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
 														<input class="" id="toDitto11" name="toDitto" type="checkbox">
-														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-														<p>Created for Jenifer Jones</p>
+														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+														<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
 													</li>
 													<li>
 														<input class="" id="toDitto12" name="toDitto" type="checkbox">
@@ -224,9 +228,11 @@
 						<div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
 							<div class="list-item-wrapper">
 								<div class="product-list__item">
-									<div class="plp-item-label bg-red">일시품절</div>
-                                    <div class="plp-item-label bg-purple lsize04">10개월무이자</div>
-                                    <div class="plp-item-label bg-green">출시예정</div>
+									<div class="plp-item-label-wrap">
+                                           <div class="plp-item-label bg-green">출시예정</div>
+                                           <div class="plp-item-label bg-purple">프로모션</div>
+                                           <div class="plp-item-label bg-red">일시품절</div>
+                                          </div> 
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -264,50 +270,51 @@
 										</div>
 									</div>
 									<div class="product-list__item-link col-md-12">
-										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="CategorySolution_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+
 										<div class="plp-add-to-shopping-list">
-											<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-6 js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button type="button" id="CategorySolution_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+											<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
-														<input class="amwa-radio" type="radio" name="optradio" id="radio6" value="">
-														<label for="radio6">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+														<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio7" value="">
-														 <label for="radio7">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+														<label for="radio2">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio8" value="">
-														 <label for="radio8">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+														<label for="radio3">선택</label>
 													</li>
 													<li>
-														<input class="amwa-radio" type="radio" name="optradio" id="radio9" value="">
-														 <label for="radio9">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+														<label for="radio4">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio10" value="">
-														 <label for="radio10">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+														<label for="radio5">선택</label>
 													</li>
 												</ul>
 												<div class="dropdown-menu-bottom">
 													<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-													<a href="javascript:void(0);" id="">위시리스트 추가</a>
+													<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 												</div>
 											</div>
 										</div>
 										<div class="plp-add-to-ditto">
-											<div class="product-list__item-link-ditto product-list__item-link-common col-xs-6 col-md-6" href="#"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button class="wish-list" id="CategorySolution_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+											<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
 														<input class="" id="toDitto11" name="toDitto" type="checkbox">
-														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-														<p>Created for Jenifer Jones</p>
+														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+														<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
 													</li>
 													<li>
 														<input class="" id="toDitto12" name="toDitto" type="checkbox">
@@ -354,9 +361,11 @@
 						<div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
 							<div class="list-item-wrapper">
 								<div class="product-list__item">
-									<div class="plp-item-label bg-purple">추후배송</div>
-                                    <div class="plp-item-label bg-blue lsize03">스마트오더</div>
-                                    <div class="plp-item-label bg-green">출시예정</div>
+									<div class="plp-item-label-wrap">
+                                           <div class="plp-item-label bg-green">출시예정</div>
+                                           <div class="plp-item-label bg-purple">프로모션</div>
+                                           <div class="plp-item-label bg-red">일시품절</div>
+                                          </div> 
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -394,51 +403,51 @@
 										</div>
 									</div>
 									<div class="product-list__item-link col-md-12">
-										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="CategorySolution_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
 
 										<div class="plp-add-to-shopping-list">
-											<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-6 js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button type="button" id="CategorySolution_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+											<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
-														<input class="amwa-radio" type="radio" name="optradio" id="radio11" value="">
-														<label for="radio11">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+														<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio12" value="">
-														 <label for="radio12">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+														<label for="radio2">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio13" value="">
-														 <label for="radio13">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+														<label for="radio3">선택</label>
 													</li>
 													<li>
-														<input class="amwa-radio" type="radio" name="optradio" id="radio14" value="">
-														 <label for="radio14">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+														<label for="radio4">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio15" value="">
-														 <label for="radio15">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+														<label for="radio5">선택</label>
 													</li>
 												</ul>
 												<div class="dropdown-menu-bottom">
 													<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-													<a href="javascript:void(0);" id="">위시리스트 추가</a>
+													<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 												</div>
 											</div>
 										</div>
 										<div class="plp-add-to-ditto">
-											<div class="product-list__item-link-ditto product-list__item-link-common col-xs-6 col-md-6" href="#"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button class="wish-list" id="CategorySolution_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+											<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
 														<input class="" id="toDitto11" name="toDitto" type="checkbox">
-														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-														<p>Created for Jenifer Jones</p>
+														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+														<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
 													</li>
 													<li>
 														<input class="" id="toDitto12" name="toDitto" type="checkbox">
@@ -481,13 +490,14 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="product__list--item col-sm-12 col-md-3 js-query-result-item">
 							<div class="list-item-wrapper">
 								<div class="product-list__item">
-									<div class="plp-item-label bg-green lsize02">신제품</div>
-                                    <div class="plp-item-label bg-blue">간편선물</div>
-                                    <div class="plp-item-label bg-navy">배달예정</div>
+									<div class="plp-item-label-wrap">
+                                           <div class="plp-item-label bg-green">출시예정</div>
+                                           <div class="plp-item-label bg-purple">프로모션</div>
+                                           <div class="plp-item-label bg-red">일시품절</div>
+                                          </div> 
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -525,51 +535,51 @@
 										</div>
 									</div>
 									<div class="product-list__item-link col-md-12">
-										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="CategorySolution_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
+										<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id=" PlusShopBrand_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 -->
 
 										<div class="plp-add-to-shopping-list">
-											<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-6 js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button type="button" id="CategorySolution_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
+											<div class="product-list__item-link-text product-list__item-link-common js-add-list-shopping-button"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button type="button" id="PlusShopBrand_AddWishlist">위시리스트</button><!-- 2018.03.15 태깅 아이디 추가, 버튼태그 추가-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
-														<input class="amwa-radio" type="radio" name="optradio" id="radio16" value="">
-														<label for="radio16">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio1" value="">
+														<label for="radio1">아티스트리 하이드라-브이 1분 아티스트리</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio17" value="">
-														 <label for="radio17">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio2" value="">
+														<label for="radio2">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio18" value="">
-														 <label for="radio18">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio3" value="">
+														<label for="radio3">선택</label>
 													</li>
 													<li>
-														<input class="amwa-radio" type="radio" name="optradio" id="radio19" value="">
-														 <label for="radio19">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio4" value="">
+														<label for="radio4">선택</label>
 													</li>
 													<li>
-														 <input class="amwa-radio" type="radio" name="optradio" id="radio20" value="">
-														 <label for="radio20">선택</label>
+														<input class="amwa-radio" type="radio" name="optradio" id="radio5" value="">
+														<label for="radio5">선택</label>
 													</li>
 												</ul>
 												<div class="dropdown-menu-bottom">
 													<button id="addToLIST1" class="btn btn-primary addToLIST">담기</button>
-													<a href="javascript:void(0);" id="">위시리스트 추가</a>
+													<a href="javascript:void(0);" id="" class="btn-add-wish">위시리스트 추가</a>
 												</div>
 											</div>
 										</div>
 										<div class="plp-add-to-ditto">
-											<div class="product-list__item-link-ditto product-list__item-link-common col-xs-6 col-md-6" href="#"><!-- 2018.03.16 : class 변경 (col-md-6) -->
-												<button class="wish-list" id="CategorySolution_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
+											<div class="product-list__item-link-ditto product-list__item-link-common"><!-- 2018.03.16 : class 변경 (col-md-6) 2018.04.03 수정 -->
+												<button id="PlusShopBrand_SmartOrder"> 스마트오더</button><!-- 2018.03.15 태깅 아이디 추가, 태그변경-->
 											</div>
 											<div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
 												<ul>
 													<li>
 														<input class="" id="toDitto11" name="toDitto" type="checkbox">
-														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOP</span>
-														<p>Created for Jenifer Jones</p>
+														<label class="cart-detail__addto-options" for="toDitto11"></label><span>JeniferJones'First SOPCreated for Jenifer Jones</span>
+														<p>Created for Jenifer JonesCreated for Jenifer Jones</p>
 													</li>
 													<li>
 														<input class="" id="toDitto12" name="toDitto" type="checkbox">
