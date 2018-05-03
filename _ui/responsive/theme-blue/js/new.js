@@ -548,5 +548,20 @@ $(function() {
 		event.preventDefault();
 		layerPopOver(this,'.G20203b_lp2_pop');
 	});
+	
+	$('#G20205_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20205_lp1_pop');
+	});
+	
+	$('#G20205_lp2').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20205_lp2_pop');
+	});
+	
+	$('#G20206_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20206_lp_pop');
+	});
 
 });
