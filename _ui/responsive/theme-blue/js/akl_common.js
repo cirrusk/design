@@ -47,6 +47,9 @@ $(function(){
 	//마이페이지 > 맞춤메시지 - 신규 ABO 프로모션: 목록 정렬
 	message_newABO_state();
 
+	//마이페이지 상단 - 메뉴 list
+	jumpMenuList();
+
 	//인쇄 - 게시판 하단 인쇄버튼
 	print_pageBoard();
 
@@ -275,6 +278,58 @@ function message_newABO_state(){
 			$(this).addClass('list-num5');
 			$(this).find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
 		}
+	});
+}
+
+/* 마이페이지 상단 - 메뉴 list */
+function jumpMenuList(){
+	$('.jump-menu').each(function(){
+		var $this = $(this);
+
+		var _menuBox = $this.find('.select-wrapper');
+		var _menuBtn = $this.find('.currentTxt');
+		var _menuBtnText = _menuBtn.find('>a');
+		var _initText = _menuBox.find('.current').text();
+
+		_menuBtnText.html(_initText);
+		_menuBtn.on('click',function(){
+			if( _menuBox.is(':hidden')){
+				_menuBox.slideDown('fast');
+				$(this).addClass('active');
+			} else if( _menuBox.is(':visible')){
+				_menuBox.hide();
+				$(this).removeClass('active');
+			}
+		});
+
+		//서브메뉴 열기
+		var _listSelect = $(this).find('.select-list');
+		var _depth1 = _listSelect.find('.menu-dep1');
+
+		_depth1.each(function(){
+			var subAll = $(this).parents().find('.select-depth2');
+			var mySub = $(this).parent().find('.select-depth2');
+
+			if(mySub.length){
+				$(this).addClass('hasSub');
+			}
+
+			$(this).on('click',function(e){
+				if(mySub.length){
+					e.preventDefault();
+
+					if(mySub.is(':hidden')){
+						$(this).parent().addClass('on');
+						$(this).parent().siblings().removeClass('on');
+						subAll.hide();
+						mySub.slideDown('fast');
+					}
+					else if(mySub.is(':visible')){
+						mySub.hide();
+					}
+				}
+			});
+		});
 	});
 }
 
