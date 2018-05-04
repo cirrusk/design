@@ -116,6 +116,11 @@ $(function(){
 	var accordion = new Accordion($('#accordion'), false);
 });
 
+//테스트용 추가
+function findTarget(){
+	$('body').click(function(e){ console.log(e.target); });
+}
+
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
 	if (! $('.shipping-delivery .shipping-delivery-summary').length){ return;}
@@ -606,43 +611,73 @@ function qkLinkAlign(){
 	var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
 	var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
-	if( _winWidth < 769 ){
-		qLinkWrapper.attr('style','');
-		qLinkItem.attr('style','');
+	var qLinkItemRun = {
+		reStore : function(){
+			function resetMOB(){
+				var _winWidth = $(window).width();
+				var qLinkWrapper = $('#accordionQuick');
+				var qLinkWrapper_width = qLinkWrapper.outerWidth();
+				var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
+				var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
-		//플러그인 해제
+				qLinkWrapper.attr('style','');
+				qLinkItem.attr('style','');
+				//$('#accordionQuick').isotope().isotope('destroy');
+			}
+
+			resetMOB();
+			setTimeout(function(){
+				resetMOB();
+			},300);
+		},
+		setPC : function(){
+			function settingPC(){
+				var _winWidth = $(window).width();
+				var qLinkWrapper = $('#accordionQuick');
+				var qLinkWrapper_width = qLinkWrapper.outerWidth();
+				var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
+				var qLinkItem = qLinkWrapper.find('.quick-links-item');
+
+				qLinkWrapper.css({height:qLinkWrapper_height});
+				qLinkItem.each(function(){
+					var qHeader = $(this).find('.quick-links-header');
+					var qPanel  = $(this).find('.panel-collapse');
+
+					var qHeaderHeight = 31; // p
+					var qPanel_li_Num = qPanel.find('li').length;
+					var qPanel_li_Height = 28
+					var itemWidth = 210;
+					var itemHeight;
+
+					if ( qPanel.length ){
+						//헤더 p + 서브링크 ul
+						itemHeight = qHeaderHeight + qPanel.outerHeight(true) + 5;
+						$(this).css({width:itemWidth, height:itemHeight});
+					} else {
+						itemHeight = qHeaderHeight;
+						$(this).css({width:itemWidth, height:itemHeight});
+					}
+				});
+				//$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
+			}
+
+			settingPC();
+			setTimeout(function(){
+				settingPC();
+			},300);
+		}
+	}
+
+	if(_winWidth < 769) {
+		qLinkItemRun.reStore();
 		setTimeout(function(){
 			$('#accordionQuick').isotope().isotope('destroy');
 		},300);
 	}
-
 	if( _winWidth > 768 ){
-		qLinkWrapper.css({height:qLinkWrapper_height});
-		qLinkItem.each(function(){
-			var qHeader = $(this).find('.quick-links-header');
-			var qPanel  = $(this).find('.panel-collapse');
-
-			var qHeaderHeight = 31; // p
-			var qPanel_li_Num = qPanel.find('li').length;
-			var qPanel_li_Height = 28
-			var itemWidth = 210;
-			var itemHeight;
-
-			if ( qPanel.length ){
-				//헤더 p + 서브링크 ul
-				itemHeight = qHeaderHeight + qPanel.outerHeight(true) + 5;
-				$(this).css({width:itemWidth, height:itemHeight});
-			} else {
-				itemHeight = qHeaderHeight;
-				$(this).css({width:itemWidth, height:itemHeight});
-			}
-		});
-
+		qLinkItemRun.setPC();
 		setTimeout(function(){
-			$('#accordionQuick').isotope({
-				layoutMode: 'fitColumns',
-				itemSelector: '.quick-links-item'
-			});
+			$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
 		},300);
 	}
 }
