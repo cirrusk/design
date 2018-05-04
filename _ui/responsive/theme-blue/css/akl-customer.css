@@ -1,7 +1,7 @@
 /************************************************
 Version : AKL Hybris UIUX 1.0
 암웨이 플라자 옮김 : 2018.04.10
-*************************************************/   
+*************************************************/
 /*** 암웨이 플라자 ***/
 .akl .shop-finder-container .order-history-container .order-history-search-wrapper .form-wrapper form button{ }
 .akl .shop-finder-main-content-body-area-left { padding-left: 0;}
@@ -36,8 +36,8 @@ Version : AKL Hybris UIUX 1.0
 .akl .shop-finder-container .owl-theme .owl-dots .owl-dot span { opacity: 0.9;  background: #fff;}
 .akl .shop-finder-container .owl-theme .owl-dots .owl-dot.active span { opacity: 0.6; background: #685d52;}
 .akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-prev { left: 10px;}
-.akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-next { right: 10px;}  
- 
+.akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-next { right: 10px;}
+
 /* 공지사항 */
 .customer-area {padding:0 50px;}
 .customer-wrap {clear:both;display:block;padding:30px 0 0}
@@ -97,11 +97,11 @@ Version : AKL Hybris UIUX 1.0
 .bod-view-sns > div img {width:25px;height:auto;}
 .bod-view-sns > div.url-copy .url_pop {top:32px}
 .bod-view-sns .kakaotalk {display:none;}
-.bod-view-txt {clear:both;display:block;padding:25px 0 0;}
+.bod-view-txt {clear:both; display:block; padding:25px 0 0;}
 .bod-correction-guide {clear:both;display:block;margin-top:30px}
 .bod-correction-guide p.txt-tit {font-size:16px;font-weight:500;letter-spacing:-1px;margin:0 0;}
-.bod-view-thumnail {margin:0 auto;text-align:center;padding:10px 0 20px}
-.bod-view-thumnail img {width:auto; margin:0 auto}
+.bod-view-thumnail {position:relative; margin:10px auto 0; text-align:center; padding:0 0 20px;}
+.bod-view-thumnail .img>img {width:auto; margin:0 auto}
 
 .akl .list-row-title div.corr-prev {width:40%;padding-left:20px;}
 .akl .list-row-title div.corr-next {width:40%;padding-left:20px;}
@@ -180,7 +180,7 @@ Version : AKL Hybris UIUX 1.0
 .product-item-list div.shop-pro-pvbv {width:14%;text-align:right;padding:0 60px 0 0;}
 .product-item-list div.shop-pro-btn {width:12%;text-align:center;}
 
-.product-item-list div.new-all-ceek, .product-item-list div.shop-pro-prod, .product-item-list div.shop-pro-price, 
+.product-item-list div.new-all-ceek, .product-item-list div.shop-pro-prod, .product-item-list div.shop-pro-price,
 .product-item-list div.shop-pro-pvbv, .product-item-list div.shop-pro-btn {display:table-cell;vertical-align:middle;box-sizing: border-box;}
 
 .product-item-list div.shop-pro-prod .list-item-info {vertical-align:middle;}
@@ -188,8 +188,8 @@ Version : AKL Hybris UIUX 1.0
 .new-sle-top {padding:15px 0 10px}
 
 
-@media (max-width: 768px) { 
-    
+@media (max-width: 768px) {
+
 	/* 공지사항 */
 	.customer-area {padding:0 0;}
 	.title-box .product-list-page-title h1.notice:before {left:0;}
@@ -203,25 +203,25 @@ Version : AKL Hybris UIUX 1.0
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper button {border:0 none;}
 	.akl .cuton-form-wrapper .form-s input.input-st {width:100%;padding-right:50px;}
 	.akl .cuton-form-wrapper .form-s button {border:0 none;}
-	
+
 
 	/* 공지사항 > 목록 */
 	.akl .bod-customer .list-content .list-row-title {padding:0 0;border-bottom:0 none;}
 	.akl .bod-customer .list-content .list-row-title > div {display:none;}
-	.akl .bod-customer .con-list-item span.tite-label {display:block;} 
+	.akl .bod-customer .con-list-item span.tite-label {display:block;}
 
 	.akl .content-list .con-list-item > div.cuo-num {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.cuo-subje {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.cuo-cate {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.cuo-autho {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.cuo-date {display:block;width:90%;padding:5px 20px;}
-	
+
 	/* 공지사항 > 상세보기 */
 	.customer-wrap {padding:0 10px;}
 	.akl .content-list .con-list-item > div.corr-prev {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.corr-next {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.corr-remarks {display:block;width:90%;padding:5px 20px;}
-	
+
 	.bod-view-sns .print {display:none;}
 	.bod-view-sns .kakaotalk {display:inline-block;}
 	.bod-view-sns > div.url-copy .url_pop {top:32px;left:-45px;}
@@ -235,7 +235,7 @@ Version : AKL Hybris UIUX 1.0
 	.akl .content-list .con-list-item > div.news-num {display:block;width:100%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-subje {display:block;width:90%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-date {display:block;width:90%;padding:5px 20px;}
-	
+
 	/* 사회공헌뉴스 */
 	.title-box .product-list-page-title h1.social:before {left:0;}
 
@@ -254,7 +254,7 @@ Version : AKL Hybris UIUX 1.0
 	.new-product-head .cuton-sel {display:block;width:100%;text-align:left;padding:15px 0 0}
 	.new-product-head .cuton-sel label {padding-right:0;}
 	.new-product-head .cuton-sel select {display:block; width:100%;}
-	
+
 	/* 신제품 > 상세보기 */
 	.product-item-header div.new-all-ceek {width:100% !important;text-align:left;padding-left:15px}
 	.product-item-header div.shop-pro-prod {display:none;}
@@ -274,7 +274,7 @@ Version : AKL Hybris UIUX 1.0
 	.product-item-list div.shop-pro-pvbv .txt-label {display:inline-block;float:left;font-size:14px;color:#002f5f;font-weight:500;vertical-align:top;text-align:left;}
 	.product-item-list div.shop-pro-pvbv .txt-warp {display:inline-block;float:right;font-size:14px;vertical-align:top;text-align:right;}
 	.product-item-list div.shop-pro-btn .txt-warp {width:100%;}
-	
+
 	.btn-more-pagination {padding: 20px 0 0;}
 
-} 
+}
