@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -67,7 +67,7 @@
 						<div id="pdpImg" class="ui-snap-big"><!-- 수정 : 2018.03.29 (class 변경) -->
 							<!-- 2018.04.09 위치변경 -->
 							<div class="plp-item-label-wrap">
-								<div class="plp-item-label bg-red">일시품절</div> 
+								<div class="plp-item-label bg-red">일시품절</div>
 								<div class="plp-item-label bg-green lsize04">신제품</div>
 								<div class="plp-item-label bg-blue lsize04">스마트오더</div>
 							</div>
@@ -170,8 +170,8 @@
 								</div>
 								<hr class="description__line">
 								<div class="product-details">
-									<p class="price retail-price-discount">27,000원
-										<span class="description-cost">가격</span>
+									<p class="price retail-price-discount">
+										<span class="description-cost">가격</span> 27,000원<!-- 수정 : 2018.05.04 (가격 text 위치이동)  -->
 									</p>
 									<span class="additional-price">
 										<ul>
@@ -293,8 +293,8 @@
 															<input type="hidden" name="productCodePost" value="119889" />
 															<button id="PDP_SmartOrder" class="bt-akl-blue large">스마트오더만들기</button><!-- 2018.03.15 태깅 아이디 추가 -->
 														</div>
-														
-														<!-- 2018.04.04 수정 --> 
+
+														<!-- 2018.04.04 수정 -->
 														<div class="addetail-extra-action">
 															<div class="plp-add-to-shopping-list">
 																<div class="product-list__item-link-text product-list__item-link-common col-xs-6 col-md-8 js-add-list-shopping-button">
@@ -393,7 +393,7 @@
 
 														</div>
 														<!--// 2018.04.04 수정 -->
-														
+
 														<div class="row add-to-cart-extra-actions col-xs-12 col-sm-12 col-md-12 js-add-to-actions-wrapper link-line">
 															<!--  2018.03.15 태깅 아이디 추가 -->
 															<div class="print"><!-- class 추가 2018.03.27 -->
@@ -905,7 +905,7 @@
 
 				</div>
 			</div>
-		
+
 			<!-- 2018.05.02 구조 변경 삽입 -->
 
 			<!-- brand banner -->
@@ -916,8 +916,8 @@
 							<div class="wrapper sub-banner">
 								<div class="img-area"><!--  2018.04.04 수정 -->
 									<img src="/_ui/responsive/theme-blue/images/experience-brands-bg.jpg" alt="">
-								</div> 
-								<div class="banner-content"> 
+								</div>
+								<div class="banner-content">
 									<div class="banner-title-wrapper">
 										<h2 class="banner-title">
 											<span>아티스트리 글로우<br>페이셜 오일 출시</span>
@@ -929,7 +929,7 @@
 											</span>
 										</div>
 									</div>
-									 
+
 									<div class="banner-button-wrap">
 										<a href="#" class="banner-button-link">
 											<div class="btn-blue-white">
@@ -1137,7 +1137,7 @@
 				</div>
 			</div>
 			<!-- //함께하면 좋은 제품 -->
-			
+
 			<!-- 최근 본 제품 2018.05.02 마크업 변경 -->
 			<div class="row product-recentlyviewed">
 				<div class="col-sm-12 column product-description__section">
@@ -1161,12 +1161,12 @@
 				</div>
 			</div>
 			<!-- //최근 본 제품 -->
-			
+
 			<!-- //2018.05.02 구조 변경 삽입 -->
 
 		</div>
 
-		
+
 
 		<!-- 이미지 확대보기 : 2018.03.16 (akl 사용안함)
 		<div class="cart-popup modal fade" id="product-zoom-image-panel" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true" style="display:block; border:1px solid red">
@@ -1965,7 +1965,7 @@
 						}
 					});
 					$('#largeImgView img').attr('src', $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').find('img').attr('src'));
-					
+
 					//2018.04.02  수정 (_owlItemIdx 추가)
 					//선택된 이미지 표시
 					var _owlItemIdx = $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').parents('.owl-item');
@@ -1987,7 +1987,7 @@
 					$listIMG.each(function(){
 						$(this).on('click',function(e){
 							e.preventDefault();
-							
+
 							//2018.04.02  수정 (_owlItemIdx 추가)
 							//선택된 이미지 표시
 							var _owlItem = $(this).parents('.owl-item');
