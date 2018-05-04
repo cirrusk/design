@@ -821,7 +821,18 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.akl .qlink-left-box {width:800px; padding-right:0;}
 	.akl .qlink-right-box {float:left; padding-left:15px;}
 }
+@media (min-width: 769px) {
+	/* 암웨이플라자 shopfinder F10000 */
+	.mob-view-box {display:none;}
+}
+@media (min-width: 769px) and (max-width:1024px) {
+	/* headr */
+	.header-element-content {max-width:none !important; width:100% !important; box-sizing:border-box;}
+	header.main-header .amway-theme .header-container .header-wrapper{margin:0; max-width:none !important; width:100% !important;}
+	header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container{margin:0; max-width:none !important; width:100% !important;}
+}
 @media (max-width: 768px) {
+
 	/*** loading ***/
 	.loading .loading-wrap img { width:55px }
 	img.loader-size {width:35px;} /* 개발 ajax */
@@ -1047,6 +1058,9 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 
 	.akl .success-story__item:first-child { margin-bottom: 30px;}
 	.akl .recommendation {margin-top: 40px;}
+
+	/* 암웨이플라자 shopfinder F10000 */
+	.mob-view-box {display:block;}
 
      /* 중개판매관리 account.css 이동예정 */
      .estimate-form-box { height: auto;padding: 20px 20px 5px;}
