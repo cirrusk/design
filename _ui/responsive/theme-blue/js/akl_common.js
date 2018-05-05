@@ -30,6 +30,12 @@ $(function(){
 	//제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정
 	videodSize();
 
+	//제품상세 상단 동영상 위치조정
+	videoWrapperSize();
+	$(window).resize(function(){
+		videoWrapperSize();
+	});
+
 	//약관 더보기 (768이하)
 	terms_ViewAll();
 
@@ -155,7 +161,7 @@ function orderSummaryFixed(){
 		if( winWidth > 768 ){
 			//기본높이 부여
 			if( $cartContent.length && targetObj_H > 400){
-				$cartContent.css({'min-height':'700px'});
+				$cartContent.css({'min-height':targetObj_H});
 			}
 			if( wScrollTop > compareTop){
 				$('.shipping-delivery-summary').css({
@@ -203,18 +209,46 @@ function popupGalleryIMG(){
 	});
 } */
 
+/* 제품상세 상단 동영상 위치조정 */
+function videoWrapperSize(){
+	if(! $('.typeFullSizeView .pop-gallery').length){return}
+	var topSpace;
+	var _winWidth = $(window).width();
+
+	if( _winWidth > 768 ){
+		topSpace = ($('.pop-gallery').width()*0.4375)/2;
+		$('.pop-gallery .video-wrapper').css({
+			top:topSpace
+		});
+	}
+	if( _winWidth < 769 ){
+		var imgBox = _winWidth;
+		topSpace = (imgBox*0.4375)/2;
+
+		$('.pop-gallery').css({
+			width:imgBox,
+			height:imgBox
+		});
+		$('.pop-gallery .video-wrapper').css({
+			width:'90%',
+			margin:'0 auto',
+			top:topSpace
+		});
+	}
+}
+
 /* 제품상세 상단 이미지영역(#pdpImg) 동영상 사이즈 조정 */
 function videodSize(){
-	var _video = $('.flexslider#pdpImg').find('.video-wrapper');
+	var _video = $('.ui-snap-big#pdpImg').find('.video-wrapper');
 	if(! _video.length ){ return;}
 
 	vdSize();
 	function vdSize(){
-		var WD = $('.flexslider#pdpImg').width();
-		var HT = $('.flexslider#pdpImg').height();
+		var WD = $('.ui-snap-big#pdpImg').width();
+		var HT = $('.ui-snap-big#pdpImg').height();
 		var boxHT = WD*0.5625; //16:9 비율
-		var mgt = boxHT*.20;
-		_video.css({'height':boxHT+80,'margin-top':mgt});
+		var mgt = (WD*0.4375)/2;
+		_video.css({'height':boxHT,'top':mgt});
 	}
 	$(window).resize(function(){
 		vdSize();
