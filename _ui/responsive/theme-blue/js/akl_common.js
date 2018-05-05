@@ -288,16 +288,29 @@ function message_newABO_state(){
 
 /* 마이페이지 상단 - 메뉴 list */
 function jumpMenuList(){
-	$('.jump-menu').each(function(){
-		var $this = $(this);
+	var $jumpMenu = $('.jump-menu');
+	if(! $jumpMenu.length){return;}
 
+	//body 클릭시 열린 메뉴 닫음
+	$jumpMenu.click(function(e){
+		e.stopPropagation();
+	});
+	$('html').click(function() {
+		$jumpMenu.find('.select-wrapper').hide();
+		$jumpMenu.find('.currentTxt').removeClass('active');
+	});
+
+	$jumpMenu.each(function(){
+		var $this = $(this);
 		var _menuBox = $this.find('.select-wrapper');
 		var _menuBtn = $this.find('.currentTxt');
 		var _menuBtnText = _menuBtn.find('>a');
 		var _initText = _menuBox.find('.current').text();
 
 		_menuBtnText.html(_initText);
-		_menuBtn.on('click',function(){
+		_menuBtn.on('click',function(e){
+			e.preventDefault();
+
 			if( _menuBox.is(':hidden')){
 				_menuBox.slideDown('fast');
 				$(this).addClass('active');
@@ -606,18 +619,11 @@ function quickLinks(){
 
 function qkLinkAlign(){
 	var _winWidth = $(window).width();
-	var qLinkWrapper = $('#accordionQuick');
-	var qLinkWrapper_width = qLinkWrapper.outerWidth();
-	var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
-	var qLinkItem = qLinkWrapper.find('.quick-links-item');
-
 	var qLinkItemRun = {
 		reStore : function(){
 			function resetMOB(){
 				var _winWidth = $(window).width();
 				var qLinkWrapper = $('#accordionQuick');
-				var qLinkWrapper_width = qLinkWrapper.outerWidth();
-				var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
 				var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
 				qLinkWrapper.attr('style','');
@@ -630,11 +636,10 @@ function qkLinkAlign(){
 				resetMOB();
 			},300);
 		},
-		setPC : function(){
-			function settingPC(){
+		setupAlign : function(){
+			function desktopView(){
 				var _winWidth = $(window).width();
 				var qLinkWrapper = $('#accordionQuick');
-				var qLinkWrapper_width = qLinkWrapper.outerWidth();
 				var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
 				var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
@@ -645,9 +650,13 @@ function qkLinkAlign(){
 
 					var qHeaderHeight = 31; // p
 					var qPanel_li_Num = qPanel.find('li').length;
-					var qPanel_li_Height = 28
-					var itemWidth = 210;
+					var qPanel_li_Height = 28;
 					var itemHeight;
+					var itemWidth = 210;
+
+					if(_winWidth < 851){
+						itemWidth = 195;
+					}
 
 					if ( qPanel.length ){
 						//헤더 p + 서브링크 ul
@@ -661,9 +670,9 @@ function qkLinkAlign(){
 				//$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
 			}
 
-			settingPC();
+			desktopView();
 			setTimeout(function(){
-				settingPC();
+				desktopView();
 			},300);
 		}
 	}
@@ -675,7 +684,7 @@ function qkLinkAlign(){
 		},300);
 	}
 	if( _winWidth > 768 ){
-		qLinkItemRun.setPC();
+		qLinkItemRun.setupAlign();
 		setTimeout(function(){
 			$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
 		},300);
