@@ -514,14 +514,14 @@ $(function() {
 //나의 주문내역
 $(function(){
 	//mob filter
-	$(".filter-facet-button2").click(function(e){
+	$(".filter-facet-button").click(function(e){
 		e.preventDefault();
-		if(!$(".new-plp .pagination-wrapper .product__facet").hasClass("active")){
-			$(".new-plp .filter-facet-button").addClass("active");
-			$(".new-plp .pagination-wrapper .product__facet").addClass("active");
+		if(!$(".pagination-wrapper .product__facet").hasClass("active")){
+			$(".order-conts .filter-facet-button").addClass("active");
+			$(".order-conts .pagination-wrapper .product__facet").addClass("active");
 		}else{
-			$(".new-plp .pagination-wrapper .product__facet").removeClass("active");
-			$(".new-plp .filter-facet-button").removeClass("active");
+			$(".order-conts .pagination-wrapper .product__facet").removeClass("active");
+			$(".order-conts .filter-facet-button").removeClass("active");
 		}
 	});
 
