@@ -42,6 +42,9 @@ $(function(){
 	//주문결제 : floating box
 	orderSummaryFixed();
 
+	//장바구니 : floating box
+	cartSummaryFixed();
+
 	//header login tooltip
 	$('.tooltip-btn').click(function() {
 		$('.tooltip-wrap').slideToggle(0);
@@ -177,6 +180,69 @@ function orderSummaryFixed(){
 				});
 			} else {
 				$('.shipping-delivery-summary').attr('style','');
+			}
+		}
+	}
+	$(window).scroll(function(){
+		fixedBox();
+	});
+}
+
+/* 장바구니 : floating box */
+function cartSummaryFixed(){
+	if (! $('.cart-content-wrapper .shopping-cart-total-wrapper').length){ return;}
+
+	function fixedBox(){
+		//target position : top
+		var wScrollTop = $(window).scrollTop();
+		var headerHeight = 137;
+		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
+		var quickSrchbox = $('.account-section-content').outerHeight(true);
+		var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
+
+		//target position : right
+		var winWidth = $(window).width();
+		var conWidth = $('.cart-content-wrapper').width(); //content width
+		var positionRight = (winWidth - conWidth)/2;
+
+		/* -- 중간 멈춤 위치 찾기 -- */
+		//주문결제 div
+		var targetWrapper = $('.cart-content-wrapper');
+		var targetWrap_top = targetWrapper.offset().top;
+		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom
+
+		//주문회원정보 (floating div)
+		var targetObj = $('.shopping-cart-total-wrapper');
+		var targetObj_W = targetObj.outerWidth();
+		var targetObj_H = targetObj.outerHeight(true);
+
+		//재설정 위치값
+		var compareTop = targetWrap_btm - targetObj_H; //1063
+		var targetReTOP = compareTop - targetWrap_top + headerHeight - quickSrchbox;
+
+		var $cartContent = targetObj.parents('.shop-cart-conts').find('.cart-items-wrapper');
+
+		if( winWidth > 768 ){
+			//기본높이 부여
+			$(targetObj).width(targetObj_W);
+			if( $cartContent.length && targetObj_H > 400){
+				$cartContent.css({'min-height':targetObj_H});
+			}
+
+			if( wScrollTop > compareTop){
+				targetObj.css({
+					'position':'absolute',
+					'top':targetReTOP-25, // -25px은 border-bottom 맞추기 위한 보정값
+					'right':'0'
+				});
+			 } else if( wScrollTop > topAreaHeight ){
+				targetObj.css({
+					'position':'fixed',
+					'top': headerHeight+15, //상단 여백용 보정값
+					'right':positionRight
+				});
+			} else {
+				targetObj.attr('style','');
 			}
 		}
 	}
