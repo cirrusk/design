@@ -975,14 +975,12 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .akl .product-list-left-refinements-slot .accordion-custom .panel-title {padding:15px 0 20px;}
 .akl .product-list-left-refinements-slot .accordion-custom .panel-title span.text-uppercase {font-size:14px;letter-spacing:-1px;}
 
-.toggle-buttons-container.myorder button {border:1px solid #dadada;margin-right:5px;width:48.5%;}
-.toggle-buttons-container.myorder button:last-child {margin-right:0;margin-left:5px;width:48%;}
 .mob-product-facet {display:none}
 .myorder-search .cuton-sel {display:inline-block;width:188px;margin-right:10px;}
 .myorder-search .cuton-sel select.form-control {width:100%;}
 .myorder-search .cuton-form-wrapper {display:inline-block;}
 
-.myorder-list-area {}
+.myorder-list-area {width:100%;}
 .myorder-list-num {position:relative;margin:35px 0 0;padding:0;}
 .myorder-list-num p strong {font-weight:700;color:#002f5e;}
 .myorder-list-num .hype-btn {position: absolute;right:0;top:0;}
@@ -1335,6 +1333,13 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 쿠폰괸리 */ 
 	h1.page-title .fa-percent:before {content: "";position: absolute;left:0;top:25px;}
 
+	/* 나의 주문내역 */
+	.account-area {padding:0 10px 0 0;}
+	.title-box .product-list-page-title h1.myorder {padding:0 0 5px 28px;}
+	.title-box .product-list-page-title h1.myorder:before {top:3px;left:0;}
+	.order-conts .col-md-9 {width:100%;}
+	.akl .btn.btn-primary span {color:#fff !important;}
+
 }
 
 @media (max-width: 768px) {  
@@ -1348,7 +1353,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .company-banner { height:auto; margin-bottom:40px; display:table;}
 	.akl .company-banner .banner_wrapper h1 {font-size: 28px; margin-bottom:5px }
 	.akl .company-banner .banner_wrapper .text {display:block; max-width: 100%;  }
-	.akl .company-banner .banner_wrapper .text p{  font-size:16px; max-width: 100%; font-weight:400!important;}
+	.akl .company-banner .banner_wrapper .text p{  font-size:16px; max-width: 100%; font-weight:400 !important;}
 	.akl .reg-ques-box .form-group {margin-left: 0;}
 	.akl .company-banner .banner_wrapper .text p {  max-width: 800px; }
 	.akl .involved-ways02 {margin: 0 0;padding: 40px 0 0;}
@@ -2003,6 +2008,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 나의 주문내역 */
 	.title-box .product-list-page-title h1.myorder {padding:0 0 5px 28px;}
 	.title-box .product-list-page-title h1.myorder:before {top:3px;left:0;}
+	
+	.toggle-buttons-container.myorder {width:100%;display:table;table-layout:fixed;box-sizing:border-box;}
+	.toggle-buttons-container.myorder button {display:table-cell;border:1px solid #dadada;width:48%;margin-right:10px;box-sizing:border-box;}
+	.toggle-buttons-container.myorder button:last-child {margin-right:0px;}
 
 	.mob-product-facet {display:block} 
 	.myorder-search .cuton-sel {display:block;width:100%;margin-right:0;margin-bottom:10px;}
