@@ -105,11 +105,11 @@ Version : AKL Hybris UIUX 1.0
 .table-point-wrapper ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;}
 .table-point-wrapper ul li.thead-tit span {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;}
 
-span.day-txt, div.day-txt {width:15%;text-align:left;}
-span.order-return-txt, div.order-divison {width:18%;text-align:center;}
-span.division-txt, div.division-txt {width:34%;text-align:center;}
-span.tobe-earned, span.earning-used,span.available-point {width:11%;}
-div.tobe-earned, div.earning-used, div.available-point {width:11%;}
+span.day-txt, div.day-txt {width:25%;text-align:left;}
+span.order-return-txt, div.order-divison {width:20%;text-align:left;}
+span.division-txt, div.division-txt {width:25%;text-align:center;}
+span.tobe-earned, span.earning-used, span.available-point {width:15%;}
+div.tobe-earned, div.earning-used, div.available-point {width:15%;}
 
 .table-point-wrapper ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;}
 .table-point-wrapper ul li.tbody div {display:table-cell;vertical-align:middle;font-size:14px;}
@@ -119,9 +119,9 @@ div.tobe-earned, div.earning-used, div.available-point {width:11%;}
 .table-point-wrapper.mpoint ul li.tbody:nth-child(odd) {background:#fff;}
 .table-point-wrapper ul li.tbody.no-data {padding:16px 0;border-bottom:1px solid #dadada;}
 .table-point-wrapper ul li.tbody.no-data div.no-list {display:table-cell;text-align:center;width:100%;}
-ul li.tbody div.tobe-earned {text-align:right;padding:0 2% 0 0;}
-ul li.tbody div.earning-used {text-align:right;padding:0 2% 0 0;}
-ul li.tbody div.available-point {text-align:right;padding:0 2% 0 0;}
+ul li.tbody div.tobe-earned {text-align:right;padding:0 4.5% 0 0;}
+ul li.tbody div.earning-used {text-align:right;padding:0 4.5% 0 0;}
+ul li.tbody div.available-point {text-align:right;padding:0 3% 0 0;}
 .mob-earned-txt,.mob-earning-txt,.mob-available-txt,.mob-order-txt {display:none;}
 
 span.name-txt {text-align:center;width:19%;}
@@ -1597,17 +1597,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom button,
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom select { margin-top:9px}
 
-
-
 	.akl .account-profile .mobile-phone-form-group .input-part-1,.account-profile .alternate-phone-form-group .input-part-1 { width:41% !important;}
 	.akl .account-profile .mobile-phone-form-group .input-part-2 , .account-profile .alternate-phone-form-group .input-part-2 {width:55% !important;}
 
-
-
 	.akl .account-profile__editor .form-group .col-md-4.email-id { width:100%;}
 	.akl .account-profile__editor .form-group .col-md-5.address {width:100%;}
-
-
 
 	/* 마이페이지 > table common */
 	.tbl-mob-type1 {padding:5px 0 0}
@@ -1785,6 +1779,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.info-producer ul li.address dl.type1 dt,
 	.info-producer ul li.address dl.type1 dd {height:50px; }
 
+	.form-group-mob > div.point-date-range input[type="date"] {width:calc(100% - 40px) !important;}
+	.p-nameing input { width:calc(100% - 40px);}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
