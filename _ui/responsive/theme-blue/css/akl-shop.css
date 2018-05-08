@@ -67,18 +67,20 @@ shop 옮김 : 2018.04.10
 .akl-no-results { text-align: center}
 
  /*** 제품상세 ***/
-.ui-snap-big{position:relative;   z-index:0; height:526px}
-.ui-snap-big li{position: static; top:0; left:0; display:none; width:100%; height:100%}
-.ui-snap-big li.on{display:block}
+.ui-snap-big{position:relative; z-index:0;/* height:526px */}
+.ui-snap-big li{position: static; top:0; left:0; display:none; width:100%; height:100%;}
+.ui-snap-big li.on{display:block;}
 .ui-snap-item{position:relative; z-index:1}
 .akl .v-m-pros {padding:0 50px;}
-.akl .v-m-pros .image-gallery {margin:50px auto 50px; max-width:68%}
+.akl .v-m-pros .image-gallery {margin:50px auto 50px; padding-top:4%; max-width:68%;}
 .image-gallery.js-gallery img {width:100%;}
+
 #uiPrdViewDetail .owl-item button.ui-snap-btn {overflow:hidden; padding:0; max-width:78px; max-height:78px; border:1px solid #dadada; background:#fff; margin:5px;}
 #uiPrdViewDetail .owl-item button.ui-snap-btn img {opacity:1; width:100%; margin:0 auto; }
 #uiPrdViewDetail .owl-item.on button.ui-snap-btn, #recentlyViewedListTab2 .owl-item.on .no-border-image {border-color:#002f5f;}
-.akl .zoom-center {padding-bottom: 15px; padding-top:20px }
+.akl .zoom-center {padding-top:15px; padding-bottom:0;}
 .akl .amway-recentlyviewed .product-recentlyviewed__imagelist {max-width:1200px;margin:0 auto;padding:0 45px;}
+.akl .product-recentlyviewed__imagelist {margin-top:0;}
 .akl .product-recentlyviewed__imagelist .owl-item img {max-width:100%;}
 .img-product .owl-theme .owl-controls .owl-nav .owl-prev { left:20px; }
 .img-product .owl-theme .owl-controls .owl-nav .owl-next { right:20px; }
@@ -300,8 +302,9 @@ shop 옮김 : 2018.04.10
 .akl .popop-tbody {text-align:center;}
 .akl .pop-gallery { width:600px; height:600px; margin:30px auto 20px; overflow:hidden; display: table;}
 .akl .pop-gallery span{ display: table-cell; vertical-align: middle;}
-.akl .pop-gallery img {width:auto;height:90%;}
-.akl .popup-img-list {padding:15px 0 0; margin:0 auto; width:600px}
+.akl .pop-gallery img {width:auto;height:100%; max-height:600px;}
+.akl .pop-gallery .video-wrapper {width:90%;}
+.akl .popup-img-list {padding:0; margin:0 auto; width:600px}
 .akl .popup-img-list .product-recentlyviewed__imagelist .owl-item a {display:block; max-width: 78px; max-height: 78px;}
 .akl .popup-img-list .product-recentlyviewed__imagelist .owl-item img { width:100%}
 .akl .layer-pop-type2 .cClose {position:absolute;top:24px;right:40px;}
@@ -804,7 +807,7 @@ shop 옮김 : 2018.04.10
 	.akl .popop-title {height:58px;margin:0 20px;}
 	.akl .popop-title p {font-size:18px;font-weight:500;color:#002f5f;letter-spacing:-2px;padding:20px 0 0}
 	.akl .pop-gallery { width:100%; height:230px; margin:30px auto 30px;}
-	.akl .pop-gallery img {width:90%;height:auto;}
+	.akl .pop-gallery img {width:90%;height:auto;max-height:none;}
 	.akl .layer-pop-type2 { height:100%; border:0;  }
 	.akl .layer-pop-type2 .cClose {position:absolute;top:24px;right:20px;}
 	.akl .popup-img-list { width:350px; margin-bottom: 20px; padding-top:0;}
