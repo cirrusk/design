@@ -192,9 +192,9 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .btn-center {text-align:center;margin:40px auto 0;}
 
 /* common > button > quick view */
-.akl .product-list__thum { display:block; position: relative; padding:0 9% 82%; height: 0; width:82%;margin: 0 auto; }
-.akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px; left:50%;}
-.akl .amwahover .product-list__thum img { position:absolute;top: 0;left: 0;width: 100%; height: 100%; transition: all 0.3s !important; -webkit-transition: all 0.3s !important; }
+.akl .product-list__thum { display:block; position: relative; padding:0 9% 82%; height: 0; width:82%;margin: 0 auto; text-align: center;}
+.akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px; left:50%;} 
+.akl .amwahover .product-list__thum img { position:absolute;top: 0; left:0; height: 100%; width:100%; transition: all 0.3s !important; -webkit-transition: all 0.3s !important; }
 
 /* common > color */
 .color-red {color:#ed174c !important;}
@@ -1076,8 +1076,9 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
  	.form-group-mob { display:block;}
  	.form-group-mob > div input[ type="date"] { width:100%; margin-bottom: 5px;  }
  	.form-group-mob .bt-akl-blue { min-width:95px;  }
-
- 	.akl .product-list__item-content .product-list__thum {height: 240px; max-width:none; margin: 0 auto 20px; text-align: center}
+	
+	.akl .product-list__item-content {height:auto;} 
+ 	.akl .product-list__item-content .product-list__thum {  margin: 0 auto 20px; text-align: center}
  	.akl .product-list__thumbnail {float: none;  margin-right: 0;width:auto; display:inline-block;}
 
  	/* common > owl */
@@ -1085,6 +1086,10 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 	.img-product .owl-theme .owl-controls .owl-nav .owl-next {right:-35px;}
 }
 
+
+@media screen and (max-width:800px) and (min-width:415px) {
+	.akl .product-list__thum { padding: 0;height:240px;width:240px;margin: 0 auto;}
+}
 
 @media (min-width: 1025px) {
 	.akl .datepicker {width: auto !important;}
