@@ -80,8 +80,9 @@ html.scrollLock body {overflow:hidden;}
 .akl .layerWrapper.active .cbox.layerBox {opacity:1;}
 
 /* TYPE 2 : 제품상세 > 크게보기 */
-.akl .layerWrapper #colorbox {top:0; display:block; left:0; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
+.akl .layerWrapper #colorbox {top:0; display:block; left:0; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0; max-width:960px; background:#fff;}
 .akl .layerWrapper.active #colorbox {opacity:1;}
+.akl .layerWrapper #colorbox.typeFullSizeView {overflow-y:auto;}
 /* RD화면 */
 .akl .layerWrapper .layer-content-wrapper.RD-Viewer {position:relative; max-width:1000px; height:700px; overflow:auto;}
 
