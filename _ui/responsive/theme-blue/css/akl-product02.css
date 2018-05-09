@@ -70,7 +70,7 @@ Editor : ji-min Park
 .advan-right .ingre-list{padding-top:20px}
 .skin-care .advan-br{border-bottom:0}
 .skin-care .ingre-list-wrap{overflow:hidden;box-sizing:border-box;}
-.skin-care .ingre-list{overflow:hidden;margin-left:-12px;margin-top:10px;}
+.skin-care .ingre-list{overflow:hidden;margin-left:-12px;margin-top:30px;}
 .skin-care .ingre-list li{position:relative;float:left;width:33.33333333333333%;min-width:172px;padding-bottom:30px;box-sizing:border-box;}
 .skin-care .ingre-list li:before{content:"";position:absolute;bottom: 50%;left:-6px;width:12px;height:12px;margin-bottom: 6px;border-radius:100%;background-color:#e3e3e3;}
 .skin-care .ingre-list li > span{display:block;text-align:center;}
@@ -121,21 +121,36 @@ Editor : ji-min Park
 
 
 
-@media (min-width: 769px) and (max-width: 1144px) {
-	.skin-care .ingre-list li{width:50%;min-width:auto}
-	
-}
+
+
+
+
+
 
 @media (max-width: 768px) {
-	.skin-care .txt-info-visual .v-tit strong{font-size: 35px;}
+	.skin-care .visual-area .v-logo{padding: 34px 0 0;}
+	.skin-care .visual-area .v-logo img{width:50%;}
+	.skin-care .visual-area.type02 .txt-info-visual .v-logo-txt{font-size:18px;}
+	.skin-care .txt-info-visual .v-tit{padding:19px 0 0;}
+	.skin-care .txt-info-visual .v-tit strong, 
+	.skin-care .txt-info-visual .v-tit strong span{font-size:35px;}
 	.skin-care .ingre-btm-wrap{text-align:center;}
 	.skin-care .ingre-btm-wrap .ingre-btm-img {display:block;text-align: center;}
 	.skin-care .ingre-btm-wrap .ingre-btm-img img{width:100%;}
-		
+	.skin-care .ingestion-usage.line{margin:40px 0 0;padding: 6px 0 14px;}
+	.skin-care .advantage-area{padding: 0 0 20px;}
 	.special-care-box .special-care-item{width:100%;}
-	.special-care-item + .special-care-item{margin-top:40px;}	
-	.skin-care .ingre-list{margin-top:0;}
+	.special-care-item + .special-care-item{margin-top:40px;}
+	.skin-care .ingre-list li:last-child{padding-bottom:10px;}
+	/*.skin-care .ingre-list{margin-top:0;}*/
+	
+}
 
+
+<!-- 다단 대응 디자인 확정시 삭제! -->
+
+@media (min-width: 769px) and (max-width: 1144px) {
+	.skin-care .ingre-list li{width:50%;min-width:auto}	
 }
 
 @media (max-width: 576px) {
