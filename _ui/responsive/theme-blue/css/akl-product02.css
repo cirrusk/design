@@ -114,6 +114,25 @@ Editor : ji-min Park
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd{font-weight: 300;color: #808285;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size: 14px;color: #808285;margin-top: 19px;}
 
+.product-body-view .product-process{padding:37px 50px 35px;margin-top:50px;border:10px solid #eff0f1;}
+.product-body-view .product-process .owl-stage{margin:0 auto;}
+.product-process .detail-tit{font-size:36px;color:#444;}
+.product-process .product-process-step{margin-top:44px;}
+.product-process-step .owl-item,
+.product-process-step > .step-flow{display:inline-block;padding:0 10px;vertical-align:top;text-align:center;}
+.step05.product-process-step .owl-item,
+.step05.product-process-step > .step-flow{width:20%;}
+.product-process-step .step-img{display:inline-block; /*width:180px;height:160px; */text-align:center;vertical-align:middle;}
+.product-process-step .step-img img{max-width:100%;max-height:100%;width:auto;height:auto;margin:0 auto;}
+.product-process-step .step-num{display:block;max-width:60px;margin:15px auto 0;padding:0px 10px;border-radius:10px;font-size:14px;color:#fff;letter-spacing:-1px;font-weight:300;background-color:#bbb;}
+.product-process-step .step-txt{display:block;margin-top:7px;font-size:14px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.7;}
+.akl .product-process .owl-theme .owl-controls .owl-nav .owl-prev{left:-22px;}
+.akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:-22px;}
+.product-process .owl-theme .owl-dots .owl-dot{padding:0 5px;}
+.product-process .owl-theme .owl-dots .owl-dot span{width:15px;height:15px;margin:0 0;background-color:#eff0f1;}
+.product-process .owl-theme .owl-dots .owl-dot.active span{margin:0;background-color:#bbb;}
+
+
 
 /* 주의사항 */
 .ingestion-usage.line{clear: both;display: block;margin: 80px 0 0;padding: 12px 0 28px;border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;overflow: hidden;}
@@ -128,21 +147,36 @@ Editor : ji-min Park
 
 
 @media (max-width: 768px) {
+	
+	/* 비주얼 텍스트 영역 공통에서 처리해야함 임시 */
 	.skin-care .visual-area .v-logo{padding: 34px 0 0;}
+	.skin-care .visual-area .v-logo img {width: 50%;}
 	.skin-care .visual-area .v-logo img{width:50%;}
 	.skin-care .visual-area.type02 .txt-info-visual .v-logo-txt{font-size:18px;}
 	.skin-care .txt-info-visual .v-tit{padding:19px 0 0;}
 	.skin-care .txt-info-visual .v-tit strong, 
 	.skin-care .txt-info-visual .v-tit strong span{font-size:35px;}
+		
+	/* 뷰티 전용 비주얼 bg */
+	.visual-area.type02.hydrav{min-height:595px;/*height:965px;*/}
+		
+	/* 스페셜 케어 */
 	.skin-care .ingre-btm-wrap{text-align:center;}
 	.skin-care .ingre-btm-wrap .ingre-btm-img {display:block;text-align: center;}
 	.skin-care .ingre-btm-wrap .ingre-btm-img img{width:100%;}
 	.skin-care .ingestion-usage.line{margin:40px 0 0;padding: 6px 0 14px;}
-	.skin-care .advantage-area{padding: 0 0 20px;}
+	.skin-care .advantage-area{/*padding: 0 0 20px;*/}
 	.special-care-box .special-care-item{width:100%;}
 	.special-care-item + .special-care-item{margin-top:40px;}
 	.skin-care .ingre-list li:last-child{padding-bottom:10px;}
 	/*.skin-care .ingre-list{margin-top:0;}*/
+	
+	/* 하이드라v */
+	.visual-area.type02.hydrav{min-height:595px;/*height:965px;*/}
+	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: block;text-align: center;overflow: hidden;width: 100%;padding: 0;margin-bottom: 12px;}
+	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{width: auto;height: auto;}
+	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: block;}
+	
 	
 }
 
