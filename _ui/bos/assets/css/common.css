@@ -129,7 +129,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .ico_comm.plus {width:10px; height:10px; background-position:-200px 0; margin:-5px 5px 0 0}
 .ico_comm.minus {width:10px; height:10px; background-position:-150px 0; margin:-5px 5px 0 0}
 .ico_comm.search {width:18px; height:18px; background-position:-50px 0; margin:-5px 7px 0 0}
-.ico_comm.edit {width:32px; height:32px; background-position:-93px 7px; margin:-5px 7px 0 0; background-color:#fff; border-radius:16px}
+.ico_comm.edit {width:32px; height:32px; background-position:-91px 7px; margin:-5px 7px 0 0; background-color:#fff; border-radius:16px}
 .ico_comm[class*='aci'] {width:21px; height:21px; background-position-y:-50px; margin:-5px 7px 0 0}
 .ico_comm.aci01 {background-position-x:0}
 .ico_comm.aci02 {background-position-x:-50px}
@@ -205,7 +205,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .list_accordion > li > a {position:relative; display:block; height:81px; padding:28px 20px 0; box-sizing:border-box; font-size:18px; color:#002f5f}
 .list_accordion > li > a:after {content:''; display:block; position:absolute; top:35px; right:20px; width:10px; height:10px; background:url(/assets/images/ico_comm.png) -200px 0 no-repeat;}
 .list_accordion > li > div {display:none; padding-bottom:35px}
-.list_accordion > li.open > div {display:block}
+.list_accordion > li.open > div {display:block; padding:0 30px 20px 50px}
 .list_accordion > li.open > a:after {background-position:-150px 0;}
 .list_accordion .tbl_row table, .list_accordion .tbl_row table tr {border:0}
 
@@ -215,7 +215,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .tbl_row td .won {display:inline-block; width:110px; padding-right:10px; box-sizing:border-box; text-align:right;}
 .tbl_row td .txt_inp01 {display:inline-block; margin-left:13px; box-sizing:border-box; vertical-align:middle; line-height:18px; font-family:'NSR'; font-size:13px}
 .tbl_row tr input[type='text'] {font-size:14px}
-.tbl_row th, .tbl_row td {text-align:left; padding:0 20px; box-sizing:border-box;}
+.tbl_row th, .tbl_row td {text-align:left; padding:0 20px 0 0; box-sizing:border-box;}
 .tbl_row th {color:#002f5f}
 .tbl_row td {font-family:'NSR'}
 
@@ -270,16 +270,16 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 /* box type */
 .box_type01 {padding:30px 40px; box-sizing:border-box; background-color:#f4f4f4; border:1px solid #dbdbdb}
 .box_type01 .tbl_row tr {height:35px;}
-.box_type01 .tbl_row th, .box_type01 .tbl_row td {vertical-align:top; padding-top:10px}
+.box_type01 .tbl_row .th_top {vertical-align:top; padding-top:10px}
 .box_type01 .line {border-top:1px solid #e3e3e3}
+.box_type01 .tbl_row.line {padding-top:10px}
 
 .info_default {display:table; width:100%; margin-top:40px}
-.info_default .left {display:table-cell; width:150px}
+.info_default .left {display:table-cell; position:relative; width:150px}
 .info_default .left .img {display:block; width:120px; height:120px; box-sizing:border-box; overflow:hidden; border-radius:50%; background-color:#dadada; padding:4px}
 .info_default .left .img img{width:100%; border-radius:50%}
-.info_default .left .txt {}
-.info_default .left .link_txt {}
-.info_default .left .edit {}
+.info_default .left .txt {display:block; width:120px; text-align:center; margin-top:7px}
+.info_default .left .edit {position:absolute; right:25px; top:95px; box-shadow:0px 3px 8px 0px rgba(5,11,60,0.1)}
 .info_default .right {display:table-cell}
 .info_default .right .top {}
 .info_default .right .tbl_row {width:100%}
@@ -289,35 +289,18 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .loading_wrap .loading_img {position:fixed; left:50%; top:50%; margin:-65px 0 0 -80px; display:block; border-radius:5px; padding:2px; background-color:#fff; border:3px solid #47b8f2; z-index:10000; }
 
 /* layout */
-header {position:relative; height:75px; background-color:#fff; box-shadow: 0px 3px 8px 0px rgba(5,11,60,0.1); z-index:1}
+header {position:relative; height:75px; padding-left:40px; box-sizing:border-box; background-color:#fff; box-shadow: 0px 3px 8px 0px rgba(5,11,60,0.1); z-index:1}
 header img {margin-top:20px}
 header h1 {display:inline-block; height:34px; margin:21px 0 0 28px; padding:5px 0 0 10px; border-left:1px solid #dedddd; box-sizing:border-box; font-family:'NSM'; font-size:16px; color:#002f5f}
 header .right {position:absolute; right:40px; top:25px}
 header .right > * {color:#002f5f}
 header .right a {margin-left:40px}
 
-#container {min-width:1500px; max-width:1700px;}
-.location {height:94px; padding-top:35px; box-sizing:border-box; color:#56565a; font-size:13px}
+#container {}
+.location {margin:0 auto; min-width:1200px; max-width:1400px; height:94px; padding-top:35px; box-sizing:border-box; color:#56565a; font-size:13px}
 .location span + span:before {content:'/'; font-family:'NSR'; margin:-2px 3px 0 1px}
-.content {display:table; width:100%; box-sizing:border-box}
-.content nav {display:table-cell; width:250px; padding-right:50px}
-.content nav * {box-sizing:border-box}
-.content nav .menu {}
-.content nav .menu h2 {height:40px; padding:7px 0 0 19px; border-top:1px solid #dadada; border-bottom:1px solid #dadada; font-size:13px; font-family:'NSB'; color:#002f5f; background-color:#f4f4f4}
-.content nav .menu > ul {}
-.content nav .menu > ul > li {border-bottom:1px solid #dadada}
-.content nav .menu > ul > li > a {display:block; height:50px; padding:12px 0 0 19px; font-family:'NSM'; color:#002f5f}
-.content nav .menu > ul > li > a .ico_comm {width:10px; height:10px; background-position:-200px 0; margin:7px 20px 0 0; float:right}
-.content nav .menu ul ul {display:none; padding-left:30px; margin-top:-5px}
-.content nav .menu ul ul li {}
-.content nav .menu ul ul li a {display:block; height:40px; font-family:'NSR'; color:#56565a}
-.content nav .menu > ul > li.open > a {}
-.content nav .menu > ul > li.open ul {display:block}
-.content nav .menu > ul > li.open > a .ico_comm {background-position:-150px 0;}
-.content nav .menu + .menu {margin-top:30px}
-
-.content .section {display:table-cell; vertical-align:top}
-.content .section h3 {margin:-3px 0 20px; font-size:18px; color:#002f5f}
+.content {margin:0 auto; min-width:1200px; max-width:1400px;}
+.content h3 {margin:-3px 0 20px; font-size:18px; color:#002f5f}
 
 footer {height:90px; margin-top:100px; text-align:center; padding-top:32px; box-sizing:border-box; font-size:12px; font-family:'NSR'; color:#fff; letter-spacing:0; background-color:#002f5f}
 
