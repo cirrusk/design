@@ -123,7 +123,7 @@
 																	<div class="form-group col-xs-12">
 																		<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
 																		<div class="col-md-10 col-xs-12">
-																			<input type="text" id="remess2" class="form-control">
+																			<input type="text" id="remess2" class="form-control m-message"><!-- 간격조정으로 class 추가 2018.05.10 -->
 																			<div class="message-shop">
 																				<ul class="list-type2">
 																					<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
@@ -153,7 +153,7 @@
 																	<div class="form-group col-xs-12">
 																		<label for="remess2" class="col-md-2 col-xs-12 control-label">배송메시지</label>
 																		<div class="col-md-10 col-xs-12">
-																			<input type="text" id="remess2" class="form-control">
+																			<input type="text" id="remess2" class="form-control m-message"><!-- 간격조정으로 class 추가 2018.05.10 -->
 																			<div class="message-shop">
 																				<ul class="list-type2">
 																					<li>택배기사님께 전달하는 메시지는 배송 시 참고하는 내용으로 배송상황 및 요청내용에 따라 반영되지 않을 수 있습니다. 배송일 및 배송시각은 지정하셔도 반영되지 않습니다.</li>
@@ -161,7 +161,7 @@
 																				</ul>
 																			</div>
 																		</div>
-																</div>
+																	</div>
 																</div>
 															</div>
 
@@ -179,7 +179,7 @@
 																		<div class="delv-shopbox">
 																			<div class="form-group">
 																				<label for="receiver2" class="col-md-3 control-label">받는분 <strong class="pot">*</strong></label>
-																				<div class="col-md-9 col-xs-12">
+																				<div class="col-md-9 col-xs-12 receiver"><!-- 간격조정으로 class 추가 2018.05.10 -->
 																					<input type="text" id="receiver2" class="form-control">
 																				</div>
 																			</div>
@@ -193,6 +193,7 @@
 																				</div>
 																			</div>
 
+																			<!-- 2018.05.10 수정 배송지 관리 위치 변경 -->
 																			<div class="form-group">
 																				<label  for="sellNum1" class="col-md-3 control-label">휴대폰 번호 <strong class="pot">*</strong></label>
 																				<div class="phone-group col-md-9 col-xs-12">
@@ -203,14 +204,17 @@
 																						</select>
 																					</div>
 																					<div class="form-group">
-																						<input type="text" name="" class="form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
-																					</div>
-																					<div class="clearfix">
-																						<input id="remember5" type="checkbox">
-																						<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
-																					</div>
+																						<input type="text" name="" class="text form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
+																					</div> 
 																				</div>
 																			</div>
+																			<div class="form-group def-ship_new">
+																				<div class="clearfix Defaul-taddr">
+																					<input id="remember5" type="checkbox">
+																					<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
+																			   </div>
+																			</div>
+																			<!--// 2018.05.10 수정 배송지 관리 위치 변경 -->
 																		</div>
 																		<div class="new-shipping-agree">
 																			<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>

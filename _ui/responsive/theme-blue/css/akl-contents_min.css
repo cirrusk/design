@@ -429,7 +429,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .termsWrapper > strong.titH1{display:block; padding:0; color:#0a70d3; font-size:12px; padding-top:30px; border-top:1px solid #d5d5d5; margin-top:26px;}
 .akl .termsWrapper > strong.titH1.titH1st{padding-top:0; border-top:none; margin-top:0;}
 .akl .termsWrapper .titH1{display:block; padding:35px 0 10px; color:#444; font-size:15px;}
-.akl .termsWrapper .titH2{display:block; margin:16px 0 8px 0; padding-left:10px; color:#444; font-size:14px; font-weight:500; background:url(../images/akl_common/bul_arr_terms_h2.gif) 0 4px no-repeat;}
+.akl .termsWrapper .titH2{display:block; margin:16px 0 8px 0; padding-left:0; color:#444; font-size:14px; font-weight:500;}
 .akl .termsWrapper > .titH2:first-child {margin-top:0;}
 .akl .termsWrapper .titH2.bgNone{background-image:none; padding-left:0}
 .akl .termsWrapper .titH3{display:block; margin:10px 0 8px 0; padding-left:10px; font-weight:bold; background:url(/_ui/desktop/images/common/bul_dot_terms_h3.gif) 0 3px no-repeat;}
@@ -780,10 +780,10 @@ html.scrollLock body {overflow:hidden;}
 .targetInquiry .btns:before {content:''; display:table; width:100%;}
 
 /* ----- 온라인 팩스 주문 ----- */
-.akl .amway-theme.fax-order-wrapper .panel-title * {font-size:18px;}
+.akl .amway-theme.fax-order-wrapper .panel-title * {font-size:18px;font-weight:500}
 .akl .amway-theme.fax-order-wrapper .panel-body * {font-size:14px;}
 .akl .amway-theme.fax-order-wrapper .panel-body .form-group .list-type2 li {font-size:13px;}
-.akl .amway-theme.fax-order-wrapper .form-group > label {padding-left:0;}
+.akl .amway-theme.fax-order-wrapper .form-group > label {padding-left:0;padding-top:0;}
 .akl .amway-theme.fax-order-wrapper .bt-akl-white.mini {font-size:12px;}
 .akl .amway-theme.fax-order-wrapper .toolTip-wrapper .tooltip-content * {font-size:13px; letter-spacing:normal;}
 .akl .amway-theme.fax-order-wrapper .toolTip-wrapper .tooltip-content p {margin-bottom:6px;}
@@ -798,9 +798,15 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading {padding:0 20px 0 50px;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading>a {display:block;}
 .akl .fax-order-wrapper .accordion-custom .panel-body {padding:0 30px 30px 50px; border-top:0;}
-.akl .fax-order-wrapper .accordion-custom .panel-title {position:relative; padding:28px 0 27px;}
+.akl .fax-order-wrapper .accordion-custom .panel-title {position:relative; padding:18px 0 16px;}
 .akl .fax-order-wrapper .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px;}
 .akl .fax-order-wrapper .accordion-custom .panel-title .order-cases {display:inline-block; margin-left:10px}
+
+.akl .fax-order-wrapper .accordion-custom .icon-minus:before {line-height:15px;}
+.akl .amway-theme.fax-order-wrapper .dev-agree p {font-size:13px;}
+.akl .fax-order-wrapper p {letter-spacing:-1px;}
+.akl .fax-order-wrapper p.address-tit {padding:10px 0 10px;font-size:16px !important;}
+
 
 /* 결제정보 */
 .info-texts-paymentType { padding-bottom:30px; margin-bottom:20px; border-bottom:1px solid #dadada;}
@@ -817,9 +823,14 @@ html.scrollLock body {overflow:hidden;}
 .fax-order-wrapper .new-shipping-address .new-shipping-btnw {padding-bottom:0;margin-bottom:0;}
 .fax-order-wrapper .new-shipping-address .phone-group {padding-left:0 !important;}
 .fax-order-wrapper .new-shipping-address .form-group {padding-left:10px;}
-.fax-order-wrapper .new-shipping-address .form-group+div {margin-top:8px;}
 .fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:100%;}
-.fax-order-wrapper .detail-content .new-shipping-agree .form-group > label {margin-bottom:15px;}
+.fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px;}
+.fax-order-wrapper .detail-content .new-shipping-agree .form-group > label {margin-bottom:15px;padding-left:25px}
+.fax-order-wrapper .amw-btn {display:block;margin-bottom:5px;}
+.fax-order-wrapper .new-shipping-address .form-group.def-ship_new {padding-left:0;margin-top:-20px;}
+.fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .receiver input[type="text"] {width:100%;}
+.fax-order-wrapper .new-shipping-address .phone-group .form-group input {width:100%;}
+.akl .fax-order-wrapper .new-shipping-address .phone-group > .form-group {width:calc(100% - 100px);}
 
 /* 회원추가 */
 .faxOrder-add-buyer {padding:40px 0 20px; border-bottom:1px solid #dadada;}
@@ -847,6 +858,7 @@ html.scrollLock body {overflow:hidden;}
 .faxOrder-group-order .order-total>strong {display:table-cell; width:40%; padding:0;}
 .faxOrder-group-order .order-total>span { display:table-cell; width:60%; text-align:right;}
 .faxOrder-group-order .confirm-check{margin-top:15px;}
+.faxOrder-group-order .confirm-check label.normal {color:#56565a;font-wieght:400;letter-spacing:-1px;}
 
 /* 결제방법 */
 .accordion-custom .panel.noline {border-bottom:0 ;}
@@ -879,6 +891,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .evidence-paper .receipt-type label {width:170px; margin-right:8px; text-align:left;}
 .akl .evidence-paper .receipt-type select.form-control {width:200px;}
 .akl .evidence-paper .pay-transaction + .pay-transaction {padding-top:40px; margin-top:40px; border-top:1px solid #e3e3e3;}
+.akl .evidence-paper .pay-transaction + .pay-transaction .list-type2 li {font-size:13px;}
 
 .akl .fax-order-wrapper .shipping-delivery-radio-body {margin:0 0 0 30px;}
 .akl .fax-order-wrapper .accordion-custom .shipping-delivery-radio-body .panel-body {padding:0 0 30px;}
@@ -900,6 +913,8 @@ html.scrollLock body {overflow:hidden;}
 .transfer-resver-guide .guid-box.on a.title:before{content:'\002b'!important;}
 .transfer-resver-guide .guid-box .tgg-hidden-area {display:none;}
 .akl .fax-order-wrapper .amwa-btnbar {padding:40px 0 0;}
+
+.akl .fax-order-wrapper .pay-transaction .list-type2 .color-blue {font-weight:400}
 
 /* -- 제품주문 정보 -- */
 .akl .amway-theme .accordion-element.prdt-order-info .accordion-toggle {padding:0;}
@@ -1043,9 +1058,9 @@ html.scrollLock body {overflow:hidden;}
 	.tbl-list-view .tr {display:block; border-top:0;}
 	.tbl-list-view .tr>strong {display:block; padding:7px 15px; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 	.tbl-list-view .tr>div {display:block; padding:13px 15px 15px;}
-	.tbl-list-view .tr>.mob-tit {position:relative;padding:0 10px 10px 15px; font-weight:500; border-top:0;color:#555;}
-	.tbl-list-view .tr>.mob-tit:before {content:'';position:absolute; top:7px; left:0; background:#888; width:4px; height:4px;}
-	.tbl-list-view .tbody .tr .mob-hide {display:none;}
+	.tbl-list-view .tr>.mob-tit {position:relative;padding:10px 10px 10px 15px; font-weight:500; border-top:0;color:#555;}
+	.tbl-list-view .tr>.mob-tit:before {content:'';/* position:absolute; top:7px; left:0; background:#888; width:4px; height:4px; */}
+	.tbl-list-view .tbody .tr .mob-hide {display:block;border-bottom:1px solid #e3e3e3;}
 	.tbl-list-view .mob-block,
 	.tbl-list-view .tr>.th.mob-block {display:block;}
 
@@ -1363,7 +1378,13 @@ html.scrollLock body {overflow:hidden;}
 	/* ----- 온라인 팩스 주문 ----- */
 	.akl .fax-order-wrapper .accordion-custom .panel .panel-heading {padding:0 10px 0 35px;}
 	.akl .fax-order-wrapper .accordion-custom .panel-body {padding:0 5px 35px 35px;}
-
+	.akl .evidence-paper label + .btn-business {margin-left:0px;}
+	.akl .fax-order-wrapper .conditions {padding:0 20px;}
+	.akl .amway-theme.fax-order-wrapper .form-group > label {margin-bottom:8px}
+	.akl .fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address button {right:0;}
+	.fax-order-wrapper .new-shipping-address .form-group.def-ship_new {padding-left:10px;}
+	.akl .faxOrder-cart-wrapper .card-kinds {margin:10px 0;}
+	
 	/* 제품주문 정보 */
 	.akl .amway-theme .accordion-element.prdt-order-info .accordion-toggle {padding:0;}
 	.akl .amway-theme .accordion-element.prdt-order-info .accordion-panel-title .title-element {font-size:inherit;}
@@ -1383,7 +1404,10 @@ html.scrollLock body {overflow:hidden;}
 	.faxOrder-sum-box>p>strong {display:block; float:left; margin-right:0;}
 	.faxOrder-sum-box>p>span {display:block; float:right;}
 	.faxOrder-sum-box .sum-benefit-total {float:none; text-align:left; margin-top:8px;}
-
+	.faxOrder-cart-wrapper .paymemt-type-group {margin-left:30px;}
+	.akl .fax-order-wrapper .card-sort .pay-line .form-group .col-md-10 {padding-left:0px !important}
+	.akl .fax-order-wrapper .card-sort .pay-line input.card-inp {width:49px !important;paddin-left:0;padding-right:0;}
+	
 	/* 제품검색 */
 	.akl .fax-order-wrapper .shopping-cart-item-list .product-list-item {padding-right:0;}
 
@@ -1434,4 +1458,6 @@ html.scrollLock body {overflow:hidden;}
 	/* 신규 ABO 프로모션 */
 	.state-new-abo>h3>span {display:inline;}
 	.message-detail.search-area .tbl-list-board.type-tbody-th .tr>div.mob-block {padding:8px 10px 10px;}
+	
+	.akl .evidence-paper label + .btn-business {margin-left:0px;}
 }

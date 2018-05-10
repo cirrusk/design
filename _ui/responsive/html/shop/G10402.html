@@ -120,7 +120,7 @@
 													<input class="amwa-radio" type="radio" name="faxOrderType_pay" id="type_payGroup">
 													<label for="type_payGroup">그룹결제 (ABO별 카드결제)</label>
 												</span>
-												<span>
+												<span class="amw-btn"><!-- 2018.05.10 class추가 -->
 													<button type="button" class="bt-akl-white mini" onclick="layerPopOver(this,'.G10402_lp1')">결제타입 가이드</button>
 												</span>
 											</div>
@@ -226,7 +226,7 @@
 																</ul>
 															</div>
 														</div>
-												</div>
+													</div>
 												</div>
 											</div>
 
@@ -244,7 +244,7 @@
 														<div class="delv-shopbox">
 															<div class="form-group">
 																<label for="receiver2" class="col-md-3 control-label">받는분 <strong class="pot">*</strong></label>
-																<div class="col-md-9 col-xs-12">
+																<div class="col-md-9 col-xs-12 receiver"><!-- 간격조정으로 class 추가 2018.05.10 -->
 																	<input type="text" id="receiver2" class="form-control">
 																</div>
 															</div>
@@ -257,7 +257,8 @@
 																	<input type="text" id="" name="" class="form-control" title="나머지 주소 2" readonly="readonly">
 																</div>
 															</div>
-
+															
+															<!-- 2018.05.10 수정 배송지 관리 위치 변경 -->
 															<div class="form-group">
 																<label  for="sellNum1" class="col-md-3 control-label">휴대폰 번호 <strong class="pot">*</strong></label>
 																<div class="phone-group col-md-9 col-xs-12">
@@ -268,17 +269,20 @@
 																		</select>
 																	</div>
 																	<div class="form-group">
-																		<input type="text" name="" class="form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
-																	</div>
-																	<div class="clearfix">
-																		<input id="remember5" type="checkbox">
-																		<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
-																	</div>
+																		<input type="text" name="" class="text form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
+																	</div> 
 																</div>
 															</div>
+															<div class="form-group def-ship_new">
+																<div class="clearfix Defaul-taddr">
+																	<input id="remember5" type="checkbox">
+																	<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
+															   </div>
+															</div>
+															<!--// 2018.05.10 수정 배송지 관리 위치 변경 -->
 														</div>
 														<div class="new-shipping-agree">
-															<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
+															<p>본인은 정보주체(배송 받는 사람)로부터 개인정보가 제3자인 한국 암웨이에 배송 목적으로 제공된다는 사실을 안내하고, 동의를 받으셨습니까?</p>
 															<div class="form-group">
 																<input class="amwa-radio" type="radio" name="abnAdress" id="radio500" value="yes" />
 																<label for="radio500">예</label>
@@ -1973,17 +1977,15 @@
 
 										<div class="pay-transaction">
 											<ul class="list-type2">
-												<li>세금계산서 발행일은 재화가 인도된 날 기준이므로, 배달 주문의 경우 출고 완료 기준으로 발행됩니다.
-													발행일 기준 익일 10시 이후부터 국세청 사이트에서 조회 가능합니다.
-													<br>
-													단, 월말/ 월초 등 물량 증가로 출고가 지연될 경우, 출고일 기준으로 세금계산서가 발행됩니다.
+												<li>세금계산서 발행일은 재화가 인도된 날 기준이므로, 배달 주문의 경우 출고 완료 기준으로 발행됩니다. 발행일 기준 익일 10시 이후부터 국세청 사이트에서 조회 가능합니다.<br>
+												단, 월말/ 월초 등 물량 증가로 출고가 지연될 경우, 출고일 기준으로 세금계산서가 발행됩니다.
 												</li>
 											</ul>
 											<div class="txt-tye">
 												<p class="setup-title">주문완료까지 시간이 지연될 수 있습니다. 조금만 기다려 주세요.</p>
 												<p class="setup-info"><strong>[결제요청]</strong> 버튼을 한 번만 누르세요. 여러 번 선택하시면 주문이 중복 생성될 수 있습니다.</p>
-												<ul class="list-type2">
-													<li> 주문합계금액이 6만원 미만일 경우 배송 수수료가 포함됩니다.</li>
+												<ul class="list-type2"><!-- 색상 class 추가 2018.05.10 -->
+													<li> 주문합계금액이 <span class="color-blue">6만원 미만</span>일 경우 <span class="color-blue">배송 수수료</span>가 포함됩니다.</li>
 												</ul>
 											</div>
 										</div>
