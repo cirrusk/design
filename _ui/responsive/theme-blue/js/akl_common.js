@@ -504,6 +504,7 @@ function jumpMenuList(){
 						mySub.slideDown('fast');
 					}
 					else if(mySub.is(':visible')){
+						$(this).parent().removeClass('on');
 						mySub.hide();
 					}
 				}
