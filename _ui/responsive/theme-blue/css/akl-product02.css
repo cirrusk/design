@@ -13,8 +13,16 @@ Editor : ji-min Park
 .txt-info-visual .v-tit{line-height:1.2;}
 .txt-info-visual .v-txt {word-break: keep-all;word-wrap: break-word;} /* 비주얼 영역에 단어단위로 줄내림 */
 .txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 14px;color: #dadada;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
-.fleft{float:left !important;}
+.fleft{float:left !important;padding: 40px 0 0;}
+.fleft .sie-box{padding-top:0}
 .fright{float:right !important;}
+
+.com-txt .point{font-weight:400} 
+.inge-lst04 li{font-size:14px;color:#808285;line-height:24px;letter-spacing:-1px;}
+.inge-lst05 {padding:20px 0 0}
+.inge-lst05 li {position:relative;font-size:14px;letter-spacing:-1px;font-weight:300;color: #808285;padding-left:10px;}
+.inge-lst05 li:after {position: absolute;top: 2px;left: 0;display: inline-block;width: 0;height: 0;border-radius: 50%;background-color: #808285;content: "*";font-size: 14px;}
+.ade-photo-txt{display:block;font-size:16px;color:#56565a;padding-top:20px} 
 
 /* 폰트컬러 값 */
 .txt-green, strong.green{color: #1ef1d9;}
@@ -53,7 +61,7 @@ Editor : ji-min Park
 .skin-care .ingredient-list{display: block;overflow:hidden;margin-top:10px;}
 .skin-care .ingredient-list li{width: 22%;display: inline-block;float: left;margin: 0 0 4% 4%;}
 .skin-care .ingredient-list li:first-child, .skin-care .ingredient-list li:nth-child(4n+1){margin-left:0;}
-.skin-care .ingredient-list li img{width:100%;}
+.skin-care .ingredient-list li img{max-width:100%;} 
 
 /* 4523 */
 .ade-photo{}
@@ -70,9 +78,9 @@ Editor : ji-min Park
 .advan-right .ingre-list{padding-top:20px}
 .skin-care .advan-br{border-bottom:0}
 .skin-care .ingre-list-wrap{overflow:hidden;box-sizing:border-box;}
-.skin-care .ingre-list{overflow:hidden;margin-left:-12px;margin-top:30px;}
-.skin-care .ingre-list li{position:relative;float:left;width:33.33333333333333%;min-width:172px;padding-bottom:30px;box-sizing:border-box;}
-.skin-care .ingre-list li:before{content:"";position:absolute;bottom: 50%;left:-6px;width:12px;height:12px;margin-bottom: 6px;border-radius:100%;background-color:#e3e3e3;}
+.skin-care .ingre-list{overflow:hidden;margin-left:-12px;} /* 수정 */
+.skin-care .ingre-list li{position:relative;float:left;width:33.33333333333333%;min-width:172px;margin-top:30px;box-sizing:border-box;}
+.skin-care .ingre-list li:before{content:"";position:absolute;top: 50%;left:-6px;width:12px;height:12px;margin-top:-6px;border-radius:100%;background-color:#e3e3e3;}
 .skin-care .ingre-list li > span{display:block;text-align:center;}
 .skin-care .ingre-list li .ingre-img{position:relative;padding-bottom:10px}
 .skin-care .ingre-list li .ingre-img
@@ -97,6 +105,7 @@ Editor : ji-min Park
 .intensivecare-box dd{width:33.33333%}
 .intensivecare-box dd strong{}
 
+.skin-care .ingre-list.ingre-list-n2 li{width:50%}
 
 /* 하이드라 브이 1323 */
 .ad-step-lst {width:100%;font-size: 16px;letter-spacing: -1px;}
@@ -114,6 +123,7 @@ Editor : ji-min Park
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd{font-weight: 300;color: #808285;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size: 14px;color: #808285;margin-top: 19px;}
 
+/* 롤링 박스 공통 옮겨갈거 */
 .product-body-view .product-process{padding:37px 50px 35px;margin-top:50px;border:10px solid #eff0f1;}
 .product-body-view .product-process .owl-stage{margin:0 auto;}
 .product-process .detail-tit{font-size:36px;color:#444;}
@@ -139,14 +149,16 @@ Editor : ji-min Park
 
 
 
-
-
+/* 아이디얼 래디언스 */
+.step-badge{display:inline-block;width:70px;font-size:16px;font-weight:400;color:#fff;padding:3px 0;border-radius:50px;text-align:center;margin-bottom:20px;background-color:#0075a4}
 
 
 
 
 
 @media (max-width: 768px) {
+	/* new 공통수정  구에 말하기 */
+	.ade-photo img{width:auto !important;max-width:100%}
 	
 	/* 비주얼 텍스트 영역 공통에서 처리해야함 임시 */
 	.skin-care .visual-area .v-logo{padding: 34px 0 0;}
@@ -181,16 +193,16 @@ Editor : ji-min Park
 }
 
 
-<!-- 다단 대응 디자인 확정시 삭제! -->
+/* 다단 대응 디자인 확정시 삭제 */
 
 @media (min-width: 769px) and (max-width: 1144px) {
-	.skin-care .ingre-list li{width:50%;min-width:auto}	
+	.skin-care .ingre-list-wrap .ingre-list li{width:50%;min-width:auto}	
 }
 
 @media (max-width: 576px) {
 	.skin-care .ingre-list li{width:50%;}
 }
 
-@media (max-width: 404px) {
-	.skin-care .ingre-list li{width:100%;}
+@media (max-width: 474px) {
+	.skin-care .ingre-list li{width:100% !important;}
 }
