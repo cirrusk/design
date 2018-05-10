@@ -1,7 +1,7 @@
 /************************************************
 Version : AKL Hybris UIUX 1.0
 암웨이 플라자 옮김 : 2018.04.10
-*************************************************/
+*************************************************/ 
 /*** 암웨이 플라자 ***/
 .akl .shop-finder-container .order-history-container .order-history-search-wrapper .form-wrapper form button{ }
 .akl .shop-finder-main-content-body-area-left { padding-left: 0;}
@@ -38,17 +38,23 @@ Version : AKL Hybris UIUX 1.0
 .akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-prev { left: 10px;}
 .akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-next { right: 10px;}
 
+/* 암웨이소식 공통 */
+.jump-to-amway { background:#f4f4f4; padding:20px 0;  margin-bottom:23px;  }
+.jump-to-amway:after {content:""; display:block; clear:both;}
+.jump-to-amway > div { max-width:1400px; margin:0 auto;position:relative; }
+.jump-to-amway > div > p { position:absolute; left:15px; top:10px; font-weight:500; color:#002f5f;  }
+.jump-to-amway > div .jump-to-wrapper { margin-left:85px;}
+.customer-area .title-box .product-list-page-title { margin-top:0} 
+
 /* 공지사항 */
-.customer-area {padding:0 50px;}
-.customer-wrap {clear:both;display:block;padding:25px 0 0}
+.customer-area {padding:0;}
+.customer-wrap {clear:both;display:block;padding:30px 0 0}
 .my-count-page-wrap {padding:0;}
 .akl .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
 .akl .order-history-container .order-history-search-wrapper .form-wrapper .cuton-sel { text-align: right;}
-
-.title-box .product-list-page-title h1.notice:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_notice.png") no-repeat left center;width:20px;height:20px;}
-
+.customer-area .order-history-container .order-history-search-wrapper .form-wrapper {padding: 20px 0 0}
 .page-title.customer span {padding:0 0 0 0;}
-.akl .announcement-search-result {font-size:14px;font-weight:400;letter-spacing:-1px;padding:15px 0 0}
+.akl .announcement-search-result {font-size:14px;font-weight:400;letter-spacing:-1px;padding:15px 0 0; margin-top:20px}
 .akl .announcement-search-result strong {font-size:14px;font-weight:700;color:#002f5e;}
 
 /* 공지사항 > tab */
@@ -121,9 +127,7 @@ Version : AKL Hybris UIUX 1.0
 .container-custom {width:100%;height:110px;background:url(../images/akl_common/bg_gray.png) repeat-x left bottom;text-align:center;margin-bottom:30px}
 .container-custom h1 {margin:0 auto;text-align:center;padding:20px 0 0}
 
-/* 뉴스룸 > 목록 */
-.title-box .product-list-page-title h1.newsroom:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_notice.png") no-repeat left center;width:20px;height:20px;}
-
+/* 뉴스룸 > 목록 */ 
 .akl .list-row-title div.news-num {width:12%;padding-left:20px;}
 .akl .list-row-title div.news-subje {width:73%;padding-left:20px;}
 .akl .list-row-title div.news-date {width:15%;padding-left:20px;}
@@ -135,9 +139,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .con-list-item div.news-subje a {color:#56565a}
 .akl .con-list-item div.news-subje a:hover {color:#0075a4;}
 
-/* 사회공헌뉴스 */
-.title-box .product-list-page-title h1.social:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_news.png") no-repeat left center;width:20px;height:20px;}
-
+/* 사회공헌뉴스 */ 
 .akl .new-social-list {margin:0 -10px;padding:0 0;}
 .akl .new-social-list .option-item-container {padding:10px;height:auto;}
 .akl .thumnail-box {width:100%;height:230px;overflow: hidden;}
@@ -152,9 +154,7 @@ Version : AKL Hybris UIUX 1.0
 .btn-more-pagination .text-btn {font-size:14px;font-weight:500;letter-spacing:-1px;}
 .press-releases {padding:10px 0 0;width:100%;height:auto;word-break:break-all;}
 
-/* 신제품 > 목록 */
-.title-box .product-list-page-title h1.new-product:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background: url("../images/akl_common/ico_new_product.png") no-repeat left center;width:20px;height:20px;}
-
+/* 신제품 > 목록 */ 
 .new-product-txt {}
 .new-product-head {display:table;width:100%;margin:0 0;padding:20px 0 15px;box-sizing: border-box;table-layout:fixed}
 .new-product-head .announcement-search-result {display:table-cell;width:50%;padding:0 0;margin:0;vertical-align:middle;box-sizing: border-box;}
@@ -185,7 +185,16 @@ Version : AKL Hybris UIUX 1.0
 
 .product-item-list div.shop-pro-prod .list-item-info {vertical-align:middle;}
 .product-item-list div.shop-pro-btn button.bt-akl-blue.mini {line-height:1px;}
-.new-sle-top {padding:15px 0 10px}
+.new-sle-top {padding:15px 0 10px} 
+
+/* 암웨이소식 > 프로모션 */
+.promotion-top { margin-bottom:10px; margin-top: 20px;}
+.promotion-top:after {content:""; clear:both; display:block;}
+.promotion-top .announcement-search-result { float:left;}
+.promotion-top .cuton-sel { float:right;}
+.promotion-top .cuton-sel label { margin-right:15px;}
+.promotion-list01 { padding:20px 0 0}
+.new-social-list .plp-item-label-wrap { padding:8px 10px 10px;}
 
 /* 일시품절/해지/단종 */
 .title-box .product-list-page-title h1.extin {font-size:32px !important;font-weight:700 !important;letter-spacing:-2px;}
