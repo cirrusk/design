@@ -570,13 +570,6 @@ $(function() {
 $(function() {
 	$('#UrlLink_Recruitment').click(function(event) { 
 		event.preventDefault(); 
-		layerPopOver(this,'.U60100_lp1_pop');
+		layerPopOver('','.U60100_lp1_pop');
 	}); 
-});
- 
-
-//프로모션
-$(function() {
-	layerPopOver('','.promotion_lp1');
-});
- 
+}); 
