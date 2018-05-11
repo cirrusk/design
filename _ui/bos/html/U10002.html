@@ -142,7 +142,7 @@
    			<!-- 회원상세정보 -->
    			<ul class="list_accordion mgt40">
    				<!-- 개인정보 -->
-   				<li class="open"><!-- 클릭시 오픈 class="open" -->
+   				<li><!-- 클릭시 오픈 class="open" -->
    					<a href="#"><i class="ico_comm aci01"></i>개인정보</a>
    					<div>
    						<!-- 기본정보 -->
@@ -175,9 +175,9 @@
 	    							<td>070-1234-5678</td>
 	    							<th scope="row">정보수신여부</th>
 	    							<td>
-	    								<label class="inp_ck" for="jbo1">메일<input type="checkbox" id="jbo1" checked><span class="checkmark"></span></label>
-	    								<label class="inp_ck" for="jbo2">SMS/카카오톡<input type="checkbox" id="jbo2" checked><span class="checkmark"></span></label>
-	    								<label class="inp_ck" for="jbo3">DM<input type="checkbox" id="jbo3" checked><span class="checkmark"></span></label>
+	    								<label class="inp_ck" for="jbo1_1">메일<input type="checkbox" id="jbo1_1" checked><span class="checkmark"></span></label>
+	    								<label class="inp_ck" for="jbo1_2">SMS/카카오톡<input type="checkbox" id="jbo1_2" checked><span class="checkmark"></span></label>
+	    								<label class="inp_ck" for="jbo1_3">DM<input type="checkbox" id="jbo1_3" checked><span class="checkmark"></span></label>
 	    							</td>
 	    						</tr>
 	    						<tr>
@@ -253,6 +253,53 @@
 	    					</div>
 	    				</div>
 	    				<!-- //부사업자 정보 -->
+	    				<!-- 부사업자 정보(외국인) -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">부사업자 정보(외국인)</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>부사업자 정보(외국인)</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">배우자이름</th>
+	    							<td>Michell lee</td>
+	    							<th scope="row">국가코드</th>
+	    							<td>101-1234-1234</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">외국인등록번호</th>
+	    							<td>100200311</td>
+	    							<th scope="row">휴대폰번호</th>
+	    							<td>010-1234-1234</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">성별</th>
+	    							<td>여</td>
+	    							<th scope="row">비자코드</th>
+	    							<td>65300200311</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">국가</th>
+	    							<td>미국</td>
+	    							<th scope="row">유효기간</th>
+	    							<td>12/24/2023</td>
+	    						</tr>
+	    						</tbody>
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">수정</a>
+	    						<a href="#" class="btn01_trans">삭제</a>
+	    						<a href="#" class="link_text">MDMS로 바로가기<i class="ico_comm go"></i></a>
+	    					</div>
+	    				</div>
+	    				<!-- //부사업자 정보(외국인) -->
 	    				<!-- 회원정보변경 -->
 	    				<div class="box_type01">
 		    				<div class="tbl_type">
@@ -284,9 +331,37 @@
 	    				<!-- //패스원드변경 -->
 	    				<!-- 주소지 정보 -->
    						<div class="box_type01">
-	   						<em class="tit_h4">기본정보</em>
+	   						<em class="tit_h4">주소지 정보</em>
 	   						<div class="division mgt15">
 	   							<div class="left">
+			   						<div class="tbl_row">
+			    						<table>
+			    						<caption>기본주소</caption>
+			    						<colgroup>
+			    							<col style="width:30%">
+			    							<col style="width:70%">
+			    						</colgroup>
+			    						<tbody>
+			    						<tr>
+			    							<th scope="row" class="th_top">기본주소</th>
+			    							<td>
+												<span class="in_form">
+													<input type="text" title="우편번호" style="width:229px"><a href="#" class="btn01_white">주소찾기</a>
+												</span>
+												<span class="in_form"><input type="text" title="기본주소" style="width:100%"></span>
+												<span class="in_form"><input type="text" title="상세주소" style="width:100%"></span>
+											</td>
+			    						</tr>
+			    						</tbody>
+			    						</table>
+			    					</div>
+			    					<div class="btn_wrap line">
+			    						<a href="#" class="btn01_blue">수정</a>
+			    						<a href="#" class="btn01_trans">삭제</a>
+			    					</div>
+			    				</div>
+			    				
+			    				<div class="right">
 			   						<div class="tbl_row">
 			    						<table>
 			    						<caption>배송지 주소</caption>
@@ -313,103 +388,509 @@
 			    						<a href="#" class="btn01_trans">삭제</a>
 			    					</div>
 			    				</div>
-			    				
-			    				<div class="right">
-			   						<div class="tbl_row">
-			    						<table>
-			    						<caption>우편물 주소</caption>
-			    						<colgroup>
-			    							<col style="width:30%">
-			    							<col style="width:70%">
-			    						</colgroup>
-			    						<tbody>
-			    						<tr>
-			    							<th scope="row" class="th_top">우편물 주소</th>
-			    							<td>
-												<span class="in_form">
-													<input type="text" title="우편번호" style="width:229px"><a href="#" class="btn01_white">주소찾기</a>
-												</span>
-												<span class="in_form"><input type="text" title="기본주소" style="width:100%"></span>
-												<span class="in_form"><input type="text" title="상세주소" style="width:100%"></span>
-											</td>
-			    						</tr>
-			    						</tbody>
-			    						</table>
-			    					</div>
-			    					<div class="btn_wrap line">
-			    						<a href="#" class="btn01_blue">수정</a>
-			    						<a href="#" class="btn01_trans">삭제</a>
-			    					</div>
-			    				</div>
 		    				</div>
 	    				</div>
 	    				<!-- //주소지 정보 -->
+	    				<!-- 자녀 정보 -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">자녀 정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>자녀 정보</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">자녀명 1</th>
+	    							<td>홍지영</td>
+	    							<th scope="row">자녀명 2</th>
+	    							<td>홍지석</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">생년월일</th>
+	    							<td>04/05/2011</td>
+	    							<th scope="row">생년월일</th>
+	    							<td>04/05/2011</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">성별</th>
+	    							<td>여</td>
+	    							<th scope="row">성별</th>
+	    							<td>남</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">학교/유치원</th>
+	    							<td>서울 강남유치원</td>
+	    							<th scope="row">학교/유치원</th>
+	    							<td>서울 강남어린이집</td>
+	    						</tr>
+	    						</tbody>
+	    						</table>
+	    					</div>
+	    				</div>
+	    				<!-- //자녀 정보 -->
    					</div>
    				</li>
    				<!-- //개인정보 -->
    				<!-- 사업자정보 -->
-   				<li class="open"><!-- 클릭시 오픈 class="open" -->
+   				<li><!-- 클릭시 오픈 class="open" -->
    					<a href="#"><i class="ico_comm aci02"></i>사업자정보</a>
    					<div>
-   						<div class="tbl_row">
-    						<table>
-    						<caption></caption>
-    						<colgroup>
-    							<col style="width:15%">
-    							<col style="width:85%">
-    						</colgroup>
-    						<tbody>
-    						<tr>
-    							<th scope="row"></th>
-    							<td></td>
-    						</tr>
-    						</tbody>
-    						</table>
-    					</div>
+   						<!-- 주사업자정보 -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">주사업자정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>주사업자정보</caption>
+	    						<colgroup>
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">회사명</th>
+	    							<td>데일리라이프</td>
+	    							<th scope="row">대표자</th>
+	    							<td>홍길동</td>
+	    							<th scope="row">사업자번호</th>
+	    							<td>10-344-123456</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">사업자등록증</th>
+	    							<td colspan="5"><a href="#" class="link_text">10-344-123456</a></td>
+	    						</tr>
+	    						</tbody>
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">부사업자로 변경</a>
+	    						<a href="#" class="btn01_blue">수정</a>
+	    						<a href="#" class="btn01_trans">삭제</a>
+	    					</div>
+	    				</div>
+	    				<!-- //주사업자정보 -->
+   						<!-- 부사업자정보 -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">부사업자정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>부사업자정보</caption>
+	    						<colgroup>
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">회사명</th>
+	    							<td>데일리라이프</td>
+	    							<th scope="row">대표자</th>
+	    							<td>홍길동</td>
+	    							<th scope="row">사업자번호</th>
+	    							<td>10-344-123456</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">사업자등록증</th>
+	    							<td colspan="5"><a href="#" class="link_text">10-344-123456</a></td>
+	    						</tr>
+	    						</tbody>
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">주사업자로 변경</a>
+	    						<a href="#" class="btn01_blue">수정</a>
+	    						<a href="#" class="btn01_trans">삭제</a>
+	    					</div>
+	    				</div>
+	    				<!-- //부사업자정보 -->
+	    				<!-- PIN 정보 -->
+	    				<div class="box_type01">
+		    				<div class="tbl_row">
+	    						<table>
+	    						<caption>PIN 정보</caption>
+	    						<colgroup>
+	    							<col style="width:13%">
+	    							<col style="width:9%">
+	    							<col style="width:14%">
+	    							<col style="width:17%">
+	    							<col style="width:12%">
+	    							<col style="width:19%">
+	    							<col style="width:16%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row" class="fs16">현재 PIN 정보</th>
+	    							<td>RUBY</td>
+	    							<td class="price">1000,000 점</td>
+	    							<th scope="row" class="fs16">하이 PIN 정보</th>
+	    							<td>DIAMOND까지</td>
+	    							<td>300,000 점 부족</td>
+	    							<td class="ar"><a href="#" class="link_text">MDMS로 바로가기<i class="ico_comm go"></i></a></td>
+	    						</tr>
+	    						</tbody>
+	    						</table>
+	    					</div>
+		    			</div>
+	    				<!-- //PIN 정보 -->
+	    				<!-- 상속여부 -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">상속여부</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>상속여부</caption>
+	    						<colgroup>
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">상속자</th>
+	    							<td>김미도/7813455</td>
+	    							<th scope="row">생년월일</th>
+	    							<td>03/01/1964</td>
+	    							<th scope="row">직업</th>
+	    							<td>사업자</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">휴대폰번호</th>
+	    							<td>010-1234-1234</td>
+	    							<th scope="row">Email</th>
+	    							<td>kimmido@mail.com</td>
+	    							<th scope="row">동의여부</th>
+	    							<td>
+	    								<label class="inp_rd" for="agr1">동의<input type="radio" name="agr" id="agr1" checked><span class="checkmark"></span></label>
+	    								<label class="inp_rd" for="agr2">동의안함<input type="radio" name="agr" id="agr2"><span class="checkmark"></span></label>
+	    							</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">동의서</th>
+	    							<td colspan="5"><a href="#" class="link_text">123456.jpg</a></td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">신청</a>
+	    						<a href="#" class="btn01_trans">삭제</a>
+	    					</div>
+	    				</div>
+	    				<!-- //상속여부 -->
+	    				<!-- 후원자정보 -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">후원자정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>후원자정보</caption>
+	    						<colgroup>
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">후원 ABO</th>
+	    							<td>김미도/7813455</td>
+	    							<th scope="row">그룹리더</th>
+	    							<td>홍길동</td>
+	    							<th scope="row">PT</th>
+	    							<td>김미도/7813455</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">DIA</th>
+	    							<td>김미도/7813455</td>
+	    							<th scope="row">최근 후원일자</th>
+	    							<td colspan="3">03/03/2018</td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="link_text">MDMS로 바로가기<i class="ico_comm go"></i></a>
+	    					</div>
+	    				</div>
+	    				<!-- //후원자정보 -->
+	    				<!-- 국제후원자정보  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">국제후원자정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>국제후원자정보</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">후원 ABO</th>
+	    							<td>Michell/78834565</td>
+	    							<th scope="row">국가코드</th>
+	    							<td>미국(01)</td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="link_text">MDMS로 바로가기<i class="ico_comm go"></i></a>
+	    					</div>
+	    				</div>
+	    				<!-- //국제후원자정보 -->
+	    				<!-- 계좌정보  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">계좌정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>계좌정보</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:85%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">보너스 계좌정보</th>
+	    							<td>신한은행 <span class="mgl30">110-3XXX-XXXXX</span> <span class="mgl30">정상</span></td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">수정</a>
+	    						<a href="#" class="btn01_trans">삭제</a>
+	    					</div>
+	    				</div>
+	    				<!-- //계좌정보 -->
+	    				<!-- AP정보  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">AP정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>AP정보</caption>
+	    						<colgroup>
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    							<col style="width:16%">
+	    							<col style="width:20%">
+	    							<col style="width:10%">
+	    							<col style="width:20%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">최근사용금액</th>
+	    							<td>100,000원</td>
+	    							<th scope="row">최근적립금액</th>
+	    							<td>100,000원</td>
+	    							<th scope="row">잔액</th>
+	    							<td>100,000원</td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="link_text">MDMS로 바로가기<i class="ico_comm go"></i></a>
+	    					</div>
+	    				</div>
+	    				<!-- //AP정보 -->
+	    				<!-- A포인트정보  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">A포인트정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>A포인트정보</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">가용포인트</th>
+	    							<td>100,000원</td>
+	    							<th scope="row">사용포인트</th>
+	    							<td>100,000원</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">최근사용이력</th>
+	    							<td colspan="3">포인트 결제포인트결제포인트결제포인트결제포인트결제포인트결제  <span class="mgl10">03/05/2018</span></td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="link_text">MDMS로 바로가기<i class="ico_comm go"></i></a>
+	    					</div>
+	    				</div>
+	    				<!-- //A포인트정보 -->
+	    				<!-- 쿠폰정보  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">쿠폰정보</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>쿠폰정보</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    							<col style="width:15%">
+	    							<col style="width:35%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">발급쿠폰</th>
+	    							<td><span class="fc_blue">3</span> 건</td>
+	    							<th scope="row">사용쿠폰</th>
+	    							<td><span class="fc_blue">2</span> 건</td>
+	    						</tr>
+	    						<tr>
+	    							<th scope="row">최근사용이력</th>
+	    							<td colspan="3">쿠폰결제 쿠폰결제 쿠폰결제 쿠폰결제 쿠폰결제 쿠폰결제 쿠폰결제    <span class="mgl10">03/05/2018</span></td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">발급/사용이력조회</a>
+	    						<a href="#" class="btn01_blue">쿠폰관리</a>
+	    					</div>
+	    				</div>
+	    				<!-- //쿠폰정보 -->
    					</div>
    				</li>
    				<!-- //사업자정보 -->
-   				<!-- 주문관련정보 -->
-   				<li class="open"><!-- 클릭시 오픈 class="open" -->
+   				<!-- 주문관련정보 삭제
+   				<li>
    					<a href="#"><i class="ico_comm aci03"></i>주문관련정보</a>
-   					<div>
-   						<div class="tbl_row">
-    						<table>
-    						<caption></caption>
-    						<colgroup>
-    							<col style="width:15%">
-    							<col style="width:85%">
-    						</colgroup>
-    						<tbody>
-    						<tr>
-    							<th scope="row"></th>
-    							<td></td>
-    						</tr>
-    						</tbody>
-    						</table>
-    					</div>
-   					</div>
+   					<div></div>
    				</li>
-   				<!-- //주문관련정보 -->
+   				 //주문관련정보 삭제 -->
    				<!-- 회원활동정보 -->
    				<li class="open"><!-- 클릭시 오픈 class="open" -->
    					<a href="#"><i class="ico_comm aci04"></i>회원활동정보</a>
    					<div>
-   						<div class="tbl_row">
-    						<table>
-    						<caption></caption>
-    						<colgroup>
-    							<col style="width:15%">
-    							<col style="width:85%">
-    						</colgroup>
-    						<tbody>
-    						<tr>
-    							<th scope="row"></th>
-    							<td></td>
-    						</tr>
-    						</tbody>
-    						</table>
-    					</div>
+   						<!-- 마케팅 정보 수신 여부 -->
+	    				<div class="box_type01">
+		    				<div class="tbl_type">
+		    					<em class="tit_h4 w150">마케팅 정보 수신 여부</em>
+		    					<div class="ar">
+		    						<label class="inp_ck" for="jbo2_1">메일<input type="checkbox" id="jbo2_1" checked><span class="checkmark"></span></label>
+    								<label class="inp_ck" for="jbo2_2">SMS/카카오톡<input type="checkbox" id="jbo2_2" checked><span class="checkmark"></span></label>
+		    					</div>
+		    				</div>
+		    			</div>
+	    				<!-- //마케팅 정보 수신 여부 -->
+	    				<!-- 약관, 개인정보 동의 여부  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">약관, 개인정보 동의 여부</em>
+	   						<div class="tbl_row type02 mgt15">
+	    						<table>
+	    						<caption>약관, 개인정보 동의 여부</caption>
+	    						<colgroup>
+	    							<col style="width:15%">
+	    							<col style="width:33%">
+	    							<col style="width:17%">
+	    							<col style="width:35%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">개인정보동의여부</th>
+	    							<td>
+	    								<div class="fs0">
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr1" id="pAgr1_1" checked><label for="pAgr1_1">동의</label></span>
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr1" id="pAgr1_2"><label for="pAgr1_2">동의안함</label></span>
+	    								</div>
+	    							</td>
+	    							<th scope="row">후원수당 산정 및 지급 기준<br>수신 방법</th>
+	    							<td>
+	    								<label class="inp_ck" for="jbo3_1">메일<input type="checkbox" id="jbo3_1" checked><span class="checkmark"></span></label>
+    									<label class="inp_ck" for="jbo3_2">SMS/카카오톡<input type="checkbox" id="jbo3_2" checked><span class="checkmark"></span></label>
+    									<label class="inp_ck" for="jbo3_3">DM<input type="checkbox" id="jbo3_3" checked><span class="checkmark"></span></label>
+	    							</td>
+	    						</tr> 
+	    						<tr>
+	    							<th scope="row">제3자이용동의여부</th>
+	    							<td>
+	    								<div class="fs0">
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr2" id="pAgr2_1" checked><label for="pAgr2_1">동의</label></span>
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr2" id="pAgr2_2"><label for="pAgr2_2">동의안함</label></span>
+	    								</div>
+	    							</td>
+	    							<th scope="row">이용약관동의여부</th>
+	    							<td>
+	    								<div class="fs0">
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr3" id="pAgr3_1" checked><label for="pAgr3_1">동의</label></span>
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr3" id="pAgr3_2"><label for="pAgr3_2">동의안함</label></span>
+	    								</div>
+	    							</td>
+	    						</tr> 
+	    						<tr>
+	    							<th scope="row">이용약관동의여부</th>
+	    							<td>
+	    								<div class="fs0">
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr4" id="pAgr4_1" checked><label for="pAgr4_1">동의</label></span>
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr4" id="pAgr4_2"><label for="pAgr4_2">동의안함</label></span>
+	    								</div>
+	    							</td>
+	    							<th scope="row">영상정보(초상권) 수집<br>및 이용동의</th>
+	    							<td>
+	    								<div class="fs0">
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr5" id="pAgr5_1" checked><label for="pAgr5_1">동의</label></span>
+		    								<span class="inp_rd_btn"><input type="radio" name="pAgr5" id="pAgr5_2"><label for="pAgr5_2">동의안함</label></span>
+	    								</div>
+	    							</td>
+	    						</tr> 
+	    						</table>
+	    					</div>
+	    					<div class="btn_wrap line">
+	    						<a href="#" class="btn01_blue">수정</a>
+	    					</div>
+	    				</div>
+	    				<!-- //약관, 개인정보 동의 여부 -->
+	    				<!-- 회원로그  -->
+   						<div class="box_type01">
+	   						<em class="tit_h4">회원로그</em>
+	   						<div class="tbl_row mgt15">
+	    						<table>
+	    						<caption>회원로그</caption>
+	    						<colgroup>
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    							<col style="width:12%">
+	    							<col style="width:22%">
+	    							<col style="width:12%">
+	    							<col style="width:21%">
+	    						</colgroup>
+	    						<tbody>
+	    						<tr>
+	    							<th scope="row">최근접속일자</th>
+	    							<td>03/20/2018</td>
+	    							<th scope="row">최근갱신일자</th>
+	    							<td>03/20/2018</td>
+	    							<th scope="row">회원가입일자</th>
+	    							<td>03/20/2018</td>
+	    						</tr>
+	    						</tbody> 
+	    						</table>
+	    					</div>
+	    				</div>
+	    				<!-- //회원로그 -->
    					</div>
    				</li>
    				<!-- //회원활동정보 -->

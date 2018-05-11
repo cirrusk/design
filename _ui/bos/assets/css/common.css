@@ -76,6 +76,10 @@ strong {font-family:'NSB'}
 .w80 {width:80px}
 .w150 {width:150px}
 
+.mgl10 {margin-left:10px}
+.mgl20 {margin-left:20px}
+.mgl30 {margin-left:30px}
+
 .mgt5 {margin-top:5px}
 .mgt10 {margin-top:10px}
 .mgt15 {margin-top:15px}
@@ -100,6 +104,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .inp_rd.single {padding-left:18px}
 .inp_rd + .inp_rd, .inp_ck + .inp_ck {margin-left:18px}
 .inp_rd .checkmark, .inp_ck .checkmark {position:absolute; top:3px; left:0; width:20px; height:20px; border:1px solid #9d9d9d; border-radius:9px; background-color:#fff; box-sizing:border-box;}
+.inp_rd .checkmark {width:18px; height:18px}
 .inp_rd .checkmark:after {top:3px; left:3px; width:10px; height:10px; background-color:#0075a4; border-radius:5px}
 .inp_ck .checkmark {border-radius:0}
 .inp_ck input:checked + .checkmark {background-color:#0075a4; border-color:#1265cc}
@@ -108,7 +113,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .inp_rd.type01 {font-family:'NSB'; font-size:13px}
 
 .inp_rd_btn {margin-left:-1px}
-.inp_rd_btn label {display:inline-block; height:40px; line-height:38px; padding:0 10px; box-sizing:border-box; font-size:14px; font-family:'NSB'; color:#bbb; border:1px solid #dadada; background-color:#f4f4f4}
+.inp_rd_btn label {display:inline-block; height:40px; line-height:38px; padding:0 19px; box-sizing:border-box; font-size:14px; font-family:'NSB'; color:#bbb; border:1px solid #dadada; background-color:#f4f4f4}
 .inp_rd_btn:first-child label {border-radius:3px 0 0 3px}
 .inp_rd_btn:last-child label {border-radius:0 3px 3px 0}
 .inp_rd_btn input:checked + label {color:#20893d; background-color:#fff}
@@ -128,7 +133,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .inp_date select {width:65px}
 .inp_date .year {width:90px}
 
-.inp_s {width:240px}
+.inp_s {width:240px !important}
 .inp_m {width:260px}
 .inp_l {width:280px}
 
@@ -152,6 +157,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .fw_b {font-family:'NSB'}
 
 .fs0 {font-size:0}
+.fs16 {font-size:16px}
 
 /* text */
 .txt_info01 {margin-left:-22px; text-indent:-22px; font-size:13px; font-family:'NSR'; text-align:left;}
@@ -262,6 +268,8 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .tbl_row th {color:#002f5f}
 .tbl_row td {font-family:'NSR'}
 .tbl_row th.th_top {vertical-align:top; padding-top:12px}
+.tbl_row td.price {text-align:right; padding-right:50px}
+.tbl_row td.price + th {padding-left:50px}
 
 .tbl_col table {width:100%;}
 .tbl_col thead tr {height:40px; box-sizing:border-box; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; background-color:#f4f4f4}
@@ -315,9 +323,10 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 /* tab */
 
 /* box type */
-.box_type01 {padding:25px 40px 20px; box-sizing:border-box; background-color:#f4f4f4; border:1px solid #dbdbdb}
+.box_type01 {padding:25px 40px; box-sizing:border-box; background-color:#f4f4f4; border:1px solid #dbdbdb}
 .box_type01 + .box_type01 {margin-top:30px}
 .box_type01 .tbl_row tr {height:35px;}
+.box_type01 .tbl_row.type02 tr {height:50px;}
 .box_type01 .line {border-top:1px solid #e3e3e3}
 .box_type01 .tbl_row.line {padding-top:10px}
 .box_type01 .btn_wrap {text-align:right; padding-top:20px; margin-top:20px}
