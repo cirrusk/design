@@ -84,7 +84,11 @@ strong {font-family:'NSB'}
 .mgt10 {margin-top:10px}
 .mgt15 {margin-top:15px}
 .mgt20 {margin-top:20px}
+.mgt25 {margin-top:25px}
+.mgt30 {margin-top:30px}
 .mgt40 {margin-top:40px}
+
+.no_pd {padding:0 !important}
 
 /* 간격 */
 input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {margin-left:7px}
@@ -252,7 +256,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .list_accordion > li > a {position:relative; display:block; height:81px; padding:28px 20px 0; box-sizing:border-box; font-size:18px; color:#002f5f}
 .list_accordion > li > a:after {content:''; display:block; position:absolute; top:35px; right:20px; width:10px; height:10px; background:url(/assets/images/ico_comm.png) -200px 0 no-repeat;}
 .list_accordion > li > div {display:none; padding-bottom:35px}
-.list_accordion > li.open > div {display:block; padding:0 30px 20px 50px}
+.list_accordion > li.open > div {display:block; padding:0 30px 40px 50px}
 .list_accordion > li.open > a:after {background-position:-150px 0;}
 .list_accordion .tbl_row table, .list_accordion .tbl_row table tr {border:0}
 
@@ -327,6 +331,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .box_type01 + .box_type01 {margin-top:30px}
 .box_type01 .tbl_row tr {height:35px;}
 .box_type01 .tbl_row.type02 tr {height:50px;}
+.box_type01 .tbl_row.line {margin-top:25px; padding-top:18px !important}
 .box_type01 .line {border-top:1px solid #e3e3e3}
 .box_type01 .tbl_row.line {padding-top:10px}
 .box_type01 .btn_wrap {text-align:right; padding-top:20px; margin-top:20px}
@@ -345,7 +350,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .info_default .right .top .condi span {}
 .info_default .right .top .condi em {margin-left:20px}
 .info_default .right .top .btn01_blue {position:absolute; top:0; right:10px}
-.info_default .right .tbl_row {width:100%; margin-top:17px}
+.info_default .right .tbl_row {width:100%; margin-top:17px; padding-top:10px !important}
 
 .division:after {content:''; display:block; clear:both}
 .division .left {float:left; width:calc(50% - 20px)}
