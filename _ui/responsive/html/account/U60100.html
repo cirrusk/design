@@ -179,17 +179,30 @@
 		</div> 
 	</div> 
 	
-	<script type="text/javascript">
-	    $(function () {
-			
-			//akl 추가 : 팝업  
-	        $('#UrlLink_Recruitment').click(function(event) { <!-- 2018.03.13 수정 -->
-				event.preventDefault(); 
-				layerPopOver(this,'.U60100_lp1_pop');
-			}); 
-
-	    })
-	</script>
+	 <!-- 간편가입 프로모션 2018.05.11 추가 -->
+	<div class="layerWrapper promotion_lp1">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">
+						신규 ABO 프로모션
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+					</span>
+				</div>
+				<div class="cart-popup__content height-auto"> 
+					<div class="new-promotion-pop">
+						<p>간편 가입 고객은 10월 안에 10만원 이상 구매 시 사은품 증정</p>
+					</div> 
+				</div>
+				<div class="cart-popup__item-link">
+					<button type="button" class="bt-akl-blue">프로모션확인</button>
+					<button type="button" class="bt-akl-txt">취소</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //간편가입 프로모션 --> 
+ 
 </body>
 
 </html>
