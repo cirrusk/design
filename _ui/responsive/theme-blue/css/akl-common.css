@@ -792,9 +792,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .featured-product__thumnail {margin-bottom: 20px }
 .akl .item-content-wrap h2 { font-size: 28px; margin-top: 0;letter-spacing: -1px; line-height:1; }
 .akl .item-content-wrap h4 { font-size: 36px;letter-spacing: -2px; line-height:1;}
-.akl .video-preview__content button{ background:none; margin: 0; display:inline-block; height: 112px; width: 112px;}
-
-/* main > 슬라이드 배너 */
+.akl .video-preview__content button{ background:none; margin: 0; display:inline-block; height: 112px; width: 112px;} 
 .akl .homepage_banner { height:400px; margin-top:0;  }
 .akl .homepage_banner .wrapper .banner__wrapper { height:400px; display:block;  max-width:1367px; margin: 0 auto;}
 .akl .homepage_banner .banner__message {  margin-top: 30px; margin-left:auto; display:inline-table; }
@@ -811,6 +809,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .featured-product__title,
 .akl .featured-product__subtitle,
 .akl .featured-product__link { font-size: 14px; font-weight:500 }
+.akl .featured-product__subtitle {max-height:84px;overflow: hidden; margin-bottom: 0}
 .akl .recommendation { height:400px; margin-top:110px;}
 .akl .recommendation__message-main {font-size: 34px;font-family:'Noto Sans KR'; font-weight:400; letter-spacing: -2px; line-height:1.2; }
 .akl .recommendation__image { display: block; height:400px; margin-top:0; margin-left:72px; padding-left: 0; }
@@ -832,7 +831,10 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 .akl .full-width-title-component.notice p:after { content:""; position: absolute; right:0; top:4px; height:16px;  border-left:1px solid #dadada}
 .akl .full-width-title-component.notice p:first-child a{ padding-left:0;}
 .akl .full-width-title-component.notice p:last-child:after { display:none}
-.akl .subTitle .featured-product__link {margin-top:0;}
+.akl .subTitle .featured-product__link {margin-top:0;} 
+.main-promotion .featured-product__item {height: 374px;}
+.main-promotion .featured-product__subtitle {max-height:64px; }
+.main-promotion .text-promotion { display:block;color:#ed174c !important;} 
 
 .paging.pointer {padding:30px 0 0;}
 
@@ -1037,9 +1039,7 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
     .akl .category-success-story .col-sm-6:nth-of-type(2),
     .akl .category-success-story .col-sm-12:nth-of-type(2) {padding-right:0; padding-left:0;}
     .akl .featured_brands .owl-theme .owl-controls .owl-nav .owl-prev{ left:0}
-    .akl .featured_brands .owl-theme .owl-controls .owl-nav .owl-next{right:0}
-
-    /* main > 슬라이드 배너 */
+    .akl .featured_brands .owl-theme .owl-controls .owl-nav .owl-next{right:0} 
 	.akl .homepage_banner { height:auto; margin-top:0;  }
 	.akl .homepage_banner .wrapper .banner__wrapper { height:auto;  }
 	.akl .homepage_banner .banner__message {  margin-top: 30px; width: 228px; }
@@ -1079,6 +1079,9 @@ background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; back
 
 	.akl .success-story__item:first-child { margin-bottom: 30px;}
 	.akl .recommendation {margin-top: 40px;}
+	.akl .featured-product__subtitle {max-height:none; }
+	.main-promotion .featured-product__subtitle {max-height:none;}
+	.main-promotion .featured-product__item {height:auto;}
 
 	/* 암웨이플라자 shopfinder F10000 */
 	.mob-view-box {display:block;}
