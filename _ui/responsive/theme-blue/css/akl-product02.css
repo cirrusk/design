@@ -13,22 +13,24 @@ Editor : ji-min Park
 .txt-info-visual .v-tit{line-height:1.2;}
 .txt-info-visual .v-txt {word-break: keep-all;word-wrap: break-word;} /* 비주얼 영역에 단어단위로 줄내림 */
 .txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 14px;color: #dadada;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
-.fleft{/*float:left !important;*/padding: 40px 0 0;}
-.fleft .sie-box{padding-top:0}
+.fleft{float:left !important;padding: 40px 0 0;}  /* 20180510 - float:left !important; 주석 해제 */
+.fleft .sie-box{padding-top:0;}
 .fright{float:right !important;}
 
-.com-txt .point{font-weight:400} 
+.com-txt .point{font-weight:400;} 
 .skin-care .inge-lst04 li{font-size:14px;color:#808285;line-height:24px;letter-spacing:-1px;font-weight:300;}
-.skin-care .inge-lst05 {padding:20px 0 0}
+.skin-care .inge-lst05 {padding:20px 0 0;}
 .skin-care .inge-lst05 li {position:relative;font-size:14px;letter-spacing:-1px;font-weight:300;color: #808285;padding-left:10px;}
 .skin-care .inge-lst05 li:after {position: absolute;top: 2px;left: 0;display: inline-block;width: 0;height: 0;border-radius: 50%;background-color: #808285;content: "*";font-size: 14px;}
-.ade-photo-txt{display:block;font-size:16px;color:#56565a;padding-top:20px} 
+.ade-photo-txt{display:block;font-size:16px;color:#56565a;padding-top:20px;} 
 
 /* 폰트컬러 값 */
 .txt-green, strong.green{color: #1ef1d9;}
 .txt-white{color:#ffffff;}
 .txt-cobalt{color:#0075a4;}
 .space, .advantage-area.space{padding:30px 0 40px;}
+.txt-gold{color:#f1c192;}
+.txt-jahong{color:#c4133f !important;}
 
 
 /**************************************************
@@ -40,7 +42,7 @@ Editor : ji-min Park
 .visual-area.type02.intensive-restore{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_night_restore.png) no-repeat top center;height:1098px;} /*01 인텐시브 리스토어 프로그램*/
 .visual-area.type02.youth-xtend{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:1085px;}   /* 02 Youth_Xtend*/
 .visual-area.type02.youth-xtend-set{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_set.png) no-repeat top center;height:1090px;}  /* 02 Youth_Xtend set*/
-.visual-area.type02.ultra-lifting{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting.png) no-repeat top center;height:1189px;}  /*03 Youth Xtend lifting */
+.visual-area.type02.ultra-lifting{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting.png) no-repeat top center;height:1189px;} /*03 Youth Xtend lifting */
 .visual-area.type02.ideal{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience.png) no-repeat top center;height:1100px;} /* 4. 아이디얼 */
 .visual-area.type02.ideal-uv{background: #f8f8f8 url(../images/akl_product/beauty/bg_ideal_radience_uv_protect.png) no-repeat top center;height:1064px;}/* 4. 아이디얼 프로덱트 */
 .visual-area.type02.zone-patch{background: #f8f8f8 url(../images/akl_product/beauty/bg_zone_patch.png) no-repeat top center;height:904px;} /* 4. 아이디얼 존패치 */
@@ -65,48 +67,48 @@ Editor : ji-min Park
 .skin-care .ingredient-list li img{max-width:100%;} 
 
 /* 4523 */
-.ade-photo{}
+.ade-photo{;}
 .ade-photo .reposom-wrap{position: relative;margin:40px auto 0;}
 .ade-photo .reposom-wrap img{text-align:center;max-width:100%;width:auto;}
 .ade-photo .reposom-wrap em{position:absolute;display:inline-block;padding-left:5px;font-size:14px;color:#20893d;font-weight:300;line-height:1.2;vertical-align:middle;letter-spacing:-1px;text-align:left;}
 .ade-photo .reposom-wrap em br{line-height:0;}
-.ade-photo .reposom-wrap .point-txt{text-indent:-9999px}
+.ade-photo .reposom-wrap .point-txt{text-indent:-9999px;}
 
 
 /* 스페셜케어 */
-.visual-area.type02 .txt-info-visual .v-tit span.cobalt{display:inline;color:#0075a4}
+.visual-area.type02 .txt-info-visual .v-tit span.cobalt{display:inline;color:#0075a4;}
 
-.advan-right .ingre-list{padding-top:20px}
-.skin-care .advan-br{border-bottom:0}
+.advan-right .ingre-list{padding-top:20px;}
+.skin-care .advan-br{border-bottom:0;}
 .skin-care .ingre-list-wrap{overflow:hidden;box-sizing:border-box;}
-.skin-care .ingre-list{overflow:hidden;margin-left:-12px;} /* 수정 */
+.skin-care .ingre-list{overflow:hidden;margin-left:-12px;}
 .skin-care .ingre-list li{position:relative;float:left;width:33.33333333333333%;min-width:172px;margin-top:30px;box-sizing:border-box;}
 .skin-care .ingre-list li:before{content:"";position:absolute;top: 50%;left:-6px;width:12px;height:12px;margin-top:-6px;border-radius:100%;background-color:#e3e3e3;}
 .skin-care .ingre-list li > span{display:block;text-align:center;}
-.skin-care .ingre-list li .ingre-img{position:relative;padding-bottom:10px}
+.skin-care .ingre-list li .ingre-img{position:relative;padding-bottom:10px;}
 .skin-care .ingre-list li .ingre-img
-.skin-care .ingre-list li .ingre-img img{max-width:100%}
-.skin-care .ingre-list li .ingre-txt{font-weight:300}
+.skin-care .ingre-list li .ingre-img img{max-width:100%;}
+.skin-care .ingre-list li .ingre-txt{font-weight:300;}
 .skin-care .ingre-btm-img{padding: 20px 15% 0;}
 .ingre-btm-wrap .ingre-btm-img{display:block;text-align: center;}
 .ingre-btm-wrap .ingre-btm-img img{width:100%;}
 
 .special-care-box{padding: 40px 2%;border:1px solid #e3e3e3;overflow:hidden;}
 .special-care-box .special-care-item{float:left;padding: 0 15px;box-sizing:border-box;}
-.special-care-box dl{position:relative;display:table;width:100%;height:235px;margin-bottom:0;background-color:#f4f4f4}
+.special-care-box dl{position:relative;display:table;width:100%;height:235px;margin-bottom:0;background-color:#f4f4f4;}
 .special-care-box dt{position:absolute;top:-20px;left:0;width:100%;text-align:center;}
 .special-care-box dt span{display:inline-block;font-weight:400;color:#fff;padding:9px 20px;border-radius:50px;background-color:#999;}
 .special-care-box dd{display:table-cell;vertical-align:bottom;text-align:center;padding-bottom:20px;color: #808285;}
 .special-care-item dd span{display:block;line-height: 1.1;font-size: 14px;min-height: 43px;margin-top: 8px;}
 
 .special-care-box .cleansing-box{width: 43%;}
-.cleansing-box dd{width:25%}
+.cleansing-box dd{width:25%;}
 .special-care-box .turnover-box{width: 22%;}
 .special-care-box .intensivecare-box{width: 34%;}
-.intensivecare-box dd{width:33.33333%}
-.intensivecare-box dd strong{}
+.intensivecare-box dd{width:33.33333%;}
+.intensivecare-box dd strong{;}
 
-.skin-care .ingre-list.ingre-list-n2 li{width:50%}
+.skin-care .ingre-list.ingre-list-n2 li{width:50%;}
 
 /* 하이드라 브이 1323 */
 .ad-step-lst {width:100%;font-size: 16px;letter-spacing: -1px;}
@@ -114,11 +116,11 @@ Editor : ji-min Park
 .ad-step-lst li strong{display:inline-block;margin-right:5px;color: #0075a4;font-weight: 400;}
 
 .hydra-list-wrap{margin-top: 20px;}
-.hydra-list-wrap ul{}
+.hydra-list-wrap ul{;}
 .hydra-list-wrap ul > li{margin-bottom: 30px;overflow: hidden;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap{display: table;width: 100%;overflow: hidden;}
-.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: table-cell;width: 12%;vertical-align: middle;padding-right: 15px;}
-.hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{}
+.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: table-cell;width: 140px;vertical-align: middle;padding-right: 15px;} /* 20180510 - j  width: 12%; 수정 */
+.hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: table-cell;vertical-align: middle;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dt{color: #0075a4;font-weight: 400;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd{font-weight: 300;color: #808285;}
@@ -159,15 +161,49 @@ Editor : ji-min Park
 
 
 /* 아이디얼 래디언스 */
-.step-badge{display:inline-block;width:70px;font-size:16px;font-weight:400;color:#fff;padding:3px 0;border-radius:50px;text-align:center;margin-bottom:20px;background-color:#0075a4}
+.step-badge{display:inline-block;width:70px;font-size:16px;font-weight:400;color:#fff;padding:3px 0;border-radius:50px;text-align:center;margin-bottom:20px;background-color:#0075a4;}
 
 
+/* 다시확인 할 페이지 
+	- AR_4523_10_Intensive_14_Night_Restore.html (비쥬얼 영역 작은 글씨 흰색으로 안되어 있음)
+*/
 
+
+/*  20180510 - 유스 익스텐드 울트라 리프팅 크림  */
+	
+/* new 공통수정  구에 말하기 */
+.ade-photo img{max-width:100% !important;}
+.beauty-list-wrap{margin-top: 20px;}
+.beauty-list-wrap ul > li{margin-bottom: 30px;overflow: hidden;}
+.beauty-list-wrap ul > li > .beauty-thum-wrap{display: table;width: 100%;overflow: hidden;}
+.beauty-list-wrap ul > li > .beauty-thum-wrap .thum{display: table-cell;width: 100px;vertical-align: middle;padding-right: 15px;}
+.beauty-list-wrap ul > li > .beauty-thum-wrap .txt{display: table-cell;vertical-align: middle;}
+.beauty-list-wrap ul > li > .beauty-thum-wrap .txt dt{color: #0075a4;font-weight: 400;}
+.beauty-list-wrap ul > li > .beauty-thum-wrap .txt dd{font-weight: 300;color: #808285;}
+
+.youth_xtend_relative{position:relative;width:469px;height:197px;margin: auto;}
+.youth_xtend_relative .youth_xtend_txt01, .youth_xtend_relative .youth_xtend_txt02, .youth_xtend_relative .youth_xtend_right{position:absolute;width:100%;}
+.youth_xtend_relative .youth_xtend_txt01,
+.youth_xtend_relative .youth_xtend_txt02{top:0;left:0;text-align:left;display:table;width:100%;height:88px;margin:0;}
+.youth_xtend_relative .youth_xtend_txt01 dt,
+.youth_xtend_relative .youth_xtend_txt02 dt{display:table-cell;color:#fff;font-weight:400;width:98px;line-height:20px;letter-spacing:-1px;vertical-align:middle;text-align:center;}
+.youth_xtend_relative .youth_xtend_txt01 dd,
+.youth_xtend_relative .youth_xtend_txt02 dd{display:table-cell;vertical-align:middle;padding-left:15px;}
+.youth_xtend_relative dd p{font-weight:300;color:#808285;line-height:20px;letter-spacing:-1px;}
+.youth_xtend_relative dd p span{display:block;color:#56565a;}
+.youth_xtend_relative .youth_xtend_txt02{top:109px;}
+
+.youth_xtend_relative .youth_xtend_right{top:40px;right:0;display:table;width:130px;height:117px;text-align:center;}
+.youth_xtend_relative .youth_xtend_right span{display:table-cell;vertical-align:middle;font-size:24px;line-height:34px;color:#fff;font-weight:500;}
+
+/* step flow */
+.skin-care .step04.product-process-step{text-align:center;}
+.skin-care .step04.product-process-step > .step-flow{width:22%;}
 
 
 @media (max-width: 768px) {
 	/* new 공통수정  구에 말하기 */
-	.ade-photo img{width:auto !important;max-width:100%}
+	.ade-photo img{width:auto !important;}
 	.pcomp-list.deaf04 div.comp-info .free-gift{right:50%;margin-right:-130px;}
 	
 	/* 비주얼 텍스트 영역 공통에서 처리해야함 임시 */
@@ -180,14 +216,14 @@ Editor : ji-min Park
 	.skin-care .txt-info-visual .v-tit strong span{font-size:35px;}
 		
 	/* 뷰티 전용 비주얼 bg */
-	.visual-area.type02.hydrav{min-height:595px;/*height:965px;*/}
+	.visual-area.type02.hydrav{min-height:595px;/*height:965px;*/;}
 		
 	/* 스페셜 케어 */
 	.skin-care .ingre-btm-wrap{text-align:center;}
 	.skin-care .ingre-btm-wrap .ingre-btm-img {display:block;text-align: center;}
 	.skin-care .ingre-btm-wrap .ingre-btm-img img{width:100%;}
 	.skin-care .ingestion-usage.line{margin:40px 0 0;padding: 6px 0 14px;}
-	.skin-care .advantage-area{/*padding: 0 0 20px;*/}
+	.skin-care .advantage-area{/*padding: 0 0 20px;*/;}
 	.special-care-box .special-care-item{width:100%;}
 	.special-care-item + .special-care-item{margin-top:40px;}
 	.skin-care .ingre-list li:last-child{padding-bottom:10px;}
@@ -202,6 +238,18 @@ Editor : ji-min Park
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{width: auto;height: auto;}
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: block;}
 	
+	/*  20180510 
+	유스 익스텐드 울트라 리프팅 크림  */
+	.visual-area.type02.ultra-lifting{height:inherit;}
+	.beauty-list-wrap ul > li > .beauty-thum-wrap .thum{display: block;text-align: center;overflow: hidden;width: 100%;padding: 0;margin-bottom: 12px;}
+	.beauty-list-wrap ul > li > .beauty-thum-wrap .thum img{width: auto;height: auto;}
+	.beauty-list-wrap ul > li > .beauty-thum-wrap .txt{display: block;}
+	.youth_xtend_relative .youth_xtend_right img.img-micro{width:70%;}
+	.youth_xtend_relative .youth_xtend_right span{font-weight:300;font-size:12px;}
+	.youth_xtend_relative .youth_xtend_txt01 dt, .youth_xtend_relative .youth_xtend_txt01 dd p, .youth_xtend_relative .youth_xtend_txt01 dd p span, 
+	.youth_xtend_relative .youth_xtend_txt02 dt, .youth_xtend_relative .youth_xtend_txt02 dd p, .youth_xtend_relative .youth_xtend_txt02 dd p span{font-size:12px;}
+	.ade-photo .youth_xtend_relative img.img-micro{max-width:60%;}
+	
 	/* 아이디얼 */
 	.visual-area.type02.ideal{height:inherit;}
 	.visual-area.ideal .v-logo.beauty img{height:30px;}
@@ -213,7 +261,7 @@ Editor : ji-min Park
 /* 다단 대응 디자인 확정시 삭제 */
 
 @media (min-width: 769px) and (max-width: 1144px) {
-	.skin-care .ingre-list-wrap .ingre-list li{width:50%;min-width:auto}	
+	.skin-care .ingre-list-wrap .ingre-list li{width:50%;min-width:auto;}	
 }
 
 @media (max-width: 576px) {
