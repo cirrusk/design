@@ -340,24 +340,15 @@ function videoWrapperSize(){
 	if(! $('.layerWrapper #colorbox .pop-gallery').length){ return; }
 
 	function layerPDP_gallery(){
-		var _winWidth = $(window).width();
-		var win_width = $(window).width();
-
 		var PortraiteSize = $(window).width();
 		var LandscapeSize = $(window).height();
-		if (LandscapeSize < PortraiteSize) {
-			PortraiteSize = LandscapeSize;
-		}
-		//console.log('실행1 : '+ PortraiteSize);
+		if (LandscapeSize < PortraiteSize){PortraiteSize = LandscapeSize;}
 
-		//이미지 최대 사이즈 600px 기준으로 분기
-		if( win_width < 601 ){
-			win_width = PortraiteSize;
-			//console.log('실행2 : '+ PortraiteSize);
-		}
-		if( win_width > 600){
-			win_width = 600;
-		}
+		var win_width = $(window).width();
+
+		//이미지 최대 사이즈 600px
+		if( win_width < 601 ){ win_width = PortraiteSize; }
+		if( win_width > 600 ){ win_width = 600;}
 
 		//이미지 컨텐츠
 		$('.popop-tbody').width(win_width);
@@ -365,14 +356,15 @@ function videoWrapperSize(){
 
 		//video-wrapper
 		var topSpace = (win_width*0.4375)/2;
-		var videoboxWidth =  win_width - 40; //박스 안쪽 사이즈 : 좌우 여백(20px*2) 제외한 크기
+		var videoboxWidth = win_width - 40; //박스 안쪽 사이즈 : 좌우 여백(20px*2) 제외한 크기
+		var carouselWidth = win_width;
 
 		$('.pop-gallery').find('span').width(win_width);
 		$('.pop-gallery').find('span>img').css({width:'100%', height:'auto', maxWidth:'none'});
-		$('.pop-gallery .video-wrapper').css({top: topSpace, width: videoboxWidth, margin: '0 auto'});
+		$('.pop-gallery').find('.video-wrapper').css({top: topSpace, width: videoboxWidth, margin: '0 auto'});
 
 		//썸네일 슬라이드
-		$('.popup-img-list').width(videoboxWidth);
+		$('.popup-img-list').width(carouselWidth);
 	}
 
 	layerPDP_gallery();

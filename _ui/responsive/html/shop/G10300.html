@@ -1882,6 +1882,12 @@
 
 		// 수정 : 2018.03.29 : START
 		// 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정
+		prdtDetails_IMG();
+	});
+
+	function prdtDetails_IMG(){
+		// 수정 : 2018.03.29
+		// 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정
 		$.uiSnapImg = {
 			owl: function(opt){
 				var popidx = 0;
@@ -2012,9 +2018,8 @@
 			}
 		}
 		$.uiSnapImg.owl({ current:0 });
-		// 수정 : 2018.03.29 : END
+	}
 
-	});
 
 	//add to ditto event
 	(function ($) {
