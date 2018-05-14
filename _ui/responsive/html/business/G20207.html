@@ -137,7 +137,7 @@
 				</div>
 			</div>
 			<div class="report-body">
-				<div class="list-content business-type01">
+				<div class="list-content business-type01 report">
 					<div class="list-row-title">
 						<div class="w40">회원님의 유 자격 핀</div>
 						<div class="w60">각 유 자격 핀 별 실적계산 기준 그룹</div> 
@@ -207,7 +207,7 @@
 					            <dt>회원정보</dt>
 					            <dd>
 						            <div class="business-img-area">
-						             이미지
+						            	<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report1.jpg" alt="회원정보"> 
 						           	</div>
 						           	 <ol class="decimal-list">
 						                <li>1. 본인의 핀레벨, 후원자 등의 정보를 제공합니다. 만일, 다운라인 중 PT 이상의 핀을 가진 ABO가 있다면, 그 ABO 이전까지를 본인의 PT 그룹으로 보아 이달의 사업현황을 분석합니다.</li>
@@ -219,7 +219,7 @@
 					            <dt>사업현황 - Business Volume : 표</dt>
 					            <dd>
 						            <div class="business-img-area">
-						             이미지
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report2.jpg" alt="사업현황 Business Volume 표"> 
 						           	</div>
 						           	 <ol class="decimal-list">
 						                <li>1. 위 표의 구분에 있는 항목은 비즈니스볼륨(매출액) 측면에서 사업현황을 잘 설명해 줄 수 있는 대표 변수들입니다. </li>
@@ -232,72 +232,89 @@
 					            <dt>사업현황 - Business Volume : 그래프</dt>
 					            <dd>
 						            <div class="business-img-area">
-						             이미지
-						           	</div>
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report3.jpg" alt="사업현황 Business Volume 그래프">
+					           		</div>
 						           	 <ol class="decimal-list">
 						                <li>1. 위 그래프는 테이블 내용 중 상위 20% 대비의 값을 표현하고 있습니다.</li>
 						                <li>2. 이를 통해 달성 비율이 가장 높은 항목과 가장 낮은 항목을 한번에 확인해 볼 수 있습니다.</li>
 						                <li>3. 우수한 타 사업자 대비 자신의 미약한 활동 영역을 확인할 수 있습니다.</li>
 						            </ol>
 					           	</dd>
-					           	<dd class="word-Description">
-					           		<p>용어설명</p>
-						            <div class="business-text-toggle"> 
-							           	 <ol class="decimal-list">
-							                <li>ⓐ 비즈니스 볼륨 : 매출액과 상관관계가 있는 값들</li>
-							                <li>ⓑ 총 매출금액 : 당월의 매출 금액을 합계한 금액으로 제품의 10%의 TAX와 하이퍼 주문액은 제외</li>
-							                <li>ⓒ 총 반품금액 : 당월의 반품 금액을 합계한 금액으로 제품의 10%의 TAX와 하이퍼 반품액은 제외</li>
-							                <li>ⓓ 주요제품(WTS/ATS/QCW/DX)을 구매한 신규 ABO 수 (6개월 평균) : 당월에 신규로 등록한 ABO 중 주요제품(정수기, 공기청정기, 퀸쿡웨어, 더블엑스)을 구매한 수의 합계, 이 합계의 최근 6개월 평균</li>
-							                <li>ⓔ 신규 ABO의 1인당 구매금액 : 당월에 신규로 등록한 ABO별 평균 신규 구매금액</li>
-							                <li>ⓕ 당월 총 반품 PV : 당월에 반품한 제품들의 PV 합계</li>
-							                <li>ⓖ 신규 ABO의 구매 횟수 (6개월 평균) : 당월에 신규로 등록한 ABO의 구매 횟수 합계, 이 합계의 최근 6개월 평균</li>
-							                <li>ⓗ 당월 총 반품 건수 : 당월에 반품한 건수의 합계</li>
-							                <li>ⓘ 당월 총 구매 건수 : 당월에 다운라인 그룹내의 주문 건수의 합계</li>
-							                <li>ⓙ 상위 20%의 값 : 본인과 같은 핀 자격의 ABO를 순서대로 정렬하여 상위 20% 위치에 있는 ABO의 실적 값</li>
-							                <li>ⓚ 상위 20% 대비 : 상위 20% 이상을 통상적으로 우수한 ABO로 인정하고 이 20% 위치에 있는 ABO와 같은 수준에 얼마나 달성했는지를 나타내는 비율</li>
-							            </ol>
-						            </div>
-					           	</dd>  
+					           	<dd class="word-Description"> 
+						            <div class="guid-box js-guidebox-toggle">
+										<a href="#" class="title">용어설명 <span class="hidden">열기</span></a>
+										<div class="tgg-hidden-area"> 
+	 										<ol class="decimal-list">
+								                <li>ⓐ 비즈니스 볼륨 : 매출액과 상관관계가 있는 값들</li>
+								                <li>ⓑ 총 매출금액 : 당월의 매출 금액을 합계한 금액으로 제품의 10%의 TAX와 하이퍼 주문액은 제외</li>
+								                <li>ⓒ 총 반품금액 : 당월의 반품 금액을 합계한 금액으로 제품의 10%의 TAX와 하이퍼 반품액은 제외</li>
+								                <li>ⓓ 주요제품(WTS/ATS/QCW/DX)을 구매한 신규 ABO 수 (6개월 평균) : 당월에 신규로 등록한 ABO 중 주요제품(정수기, 공기청정기, 퀸쿡웨어, 더블엑스)을 구매한 수의 합계, 이 합계의 최근 6개월 평균</li>
+								                <li>ⓔ 신규 ABO의 1인당 구매금액 : 당월에 신규로 등록한 ABO별 평균 신규 구매금액</li>
+								                <li>ⓕ 당월 총 반품 PV : 당월에 반품한 제품들의 PV 합계</li>
+								                <li>ⓖ 신규 ABO의 구매 횟수 (6개월 평균) : 당월에 신규로 등록한 ABO의 구매 횟수 합계, 이 합계의 최근 6개월 평균</li>
+								                <li>ⓗ 당월 총 반품 건수 : 당월에 반품한 건수의 합계</li>
+								                <li>ⓘ 당월 총 구매 건수 : 당월에 다운라인 그룹내의 주문 건수의 합계</li>
+								                <li>ⓙ 상위 20%의 값 : 본인과 같은 핀 자격의 ABO를 순서대로 정렬하여 상위 20% 위치에 있는 ABO의 실적 값</li>
+								                <li>ⓚ 상위 20% 대비 : 상위 20% 이상을 통상적으로 우수한 ABO로 인정하고 이 20% 위치에 있는 ABO와 같은 수준에 얼마나 달성했는지를 나타내는 비율</li>
+								            </ol> 
+										</div>
+									</div>
+					           	</dd> 
 				            </dl>
 				            
 				            <dl> 
 					            <dt>사업현황 - Network Size : 표</dt>
 					            <dd>
-						            <div class="business-img-area">
-						             이미지
-						           	</div>
+						           	<div class="business-img-area">
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report4.jpg" alt="사업현황 - Network Size 표">
+					           		</div>
 						           	 <ol class="decimal-list">
 						                <li>1. 위 표의 구분에 있는 항목은 네트워크 사이즈(구매활동 다운라인 수) 측면에서 사업현황을 잘 설명해 줄 수 있는 대표 변수들입니다.  </li>
 						                <li>2. 이 대표 변수들을 통해 현재의 활동실적 판단, 그리고 자신과 동일 핀 자격자들 중 상위 20% 위치에 있는 다른 분들과 비교했을 때 자신의 활동 상황을 비교 판단해 볼 수 있습니다. </li>
 						            </ol>
-					           	</dd>
-					           	<dd class="word-Description">
-					           		<p>용어설명</p>
-						            <div class="business-text-toggle"> 
-							           	 <ol class="decimal-list">
-							                <li>ⓐ 네트워크 사이즈 : 구매활동 다운라인 수와 상관관계가 있는 값들</li>
-							                <li>ⓑ 다운라인 수 : 당월의 모든 다운라인의 수</li>
-							                <li>ⓒ 신규 ABO 수 : 당월에 처음 ABO로 가입한 수</li>
-							                <li>ⓓ 사직자 수 : 당월에 사직한 ABO 수</li>
-							                <li>ⓔ 당월 구매 ABO 수 : 당월에 구매활동한 ABO 수</li>
-							                <li>ⓕ 당월 신규 ABO 금액 : 당월에 신규로 가입한 ABO 중 구매를 한 ABO 수</li>
-							                <li>ⓖ 구매 ABO의 1인당 구매 PV (3개월 평균) : 구매를 한 ABO의 1인당 구매 PV의 최근 3개월 평균</li>
-							                <li>ⓗ 당월 반품 ABO 수 (6개월 평균) : 당월에 반품을 한 ABO 수 합계, 이 합계의 최근 6개월 평균</li>
-							                <li>ⓘ 구매 ABO 비율 : 총 ABO 수 중에서 구매활동을 한 비율</li>
-							                <li>ⓙ 신규 ABO의 구매비율 : 총 신규 ABO 수 중에서 구매활동을 한 비율</li>
-							                <li>ⓚ 상위 20%의 값 : 본인과 같은 핀 자격의 ABO를 순서대로 정렬하여 상위 20% 위치에 있는 ABO의 실적 값</li>
-							                <li>ⓛ 상위 20% 대비 : 상위 20% 이상을 통상적으로 우수한 ABO로 인정하고 이 20% 위치에 있는 ABO와 같은 수준에 얼마나 달성했는지를 나타내는 비율</li>
-							            </ol>
-						            </div>
+					           	</dd> 
+					           	<dd class="word-Description"> 
+						            <div class="guid-box js-guidebox-toggle">
+										<a href="#" class="title">용어설명 <span class="hidden">열기</span></a>
+										<div class="tgg-hidden-area"> 
+	 										<ol class="decimal-list">
+								                <li>ⓐ 네트워크 사이즈 : 구매활동 다운라인 수와 상관관계가 있는 값들</li>
+								                <li>ⓑ 다운라인 수 : 당월의 모든 다운라인의 수</li>
+								                <li>ⓒ 신규 ABO 수 : 당월에 처음 ABO로 가입한 수</li>
+								                <li>ⓓ 사직자 수 : 당월에 사직한 ABO 수</li>
+								                <li>ⓔ 당월 구매 ABO 수 : 당월에 구매활동한 ABO 수</li>
+								                <li>ⓕ 당월 신규 ABO 금액 : 당월에 신규로 가입한 ABO 중 구매를 한 ABO 수</li>
+								                <li>ⓖ 구매 ABO의 1인당 구매 PV (3개월 평균) : 구매를 한 ABO의 1인당 구매 PV의 최근 3개월 평균</li>
+								                <li>ⓗ 당월 반품 ABO 수 (6개월 평균) : 당월에 반품을 한 ABO 수 합계, 이 합계의 최근 6개월 평균</li>
+								                <li>ⓘ 구매 ABO 비율 : 총 ABO 수 중에서 구매활동을 한 비율</li>
+								                <li>ⓙ 신규 ABO의 구매비율 : 총 신규 ABO 수 중에서 구매활동을 한 비율</li>
+								                <li>ⓚ 상위 20%의 값 : 본인과 같은 핀 자격의 ABO를 순서대로 정렬하여 상위 20% 위치에 있는 ABO의 실적 값</li>
+								                <li>ⓛ 상위 20% 대비 : 상위 20% 이상을 통상적으로 우수한 ABO로 인정하고 이 20% 위치에 있는 ABO와 같은 수준에 얼마나 달성했는지를 나타내는 비율</li>
+								            </ol>
+										</div>
+									</div>
 					           	</dd>   
+				            </dl>
+				            
+				            <dl> 
+					            <dt>사업현황 - Network Size : 표</dt>
+					            <dd>
+						           	<div class="business-img-area">
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report5.jpg" alt="사업현황 - Network Size 표">
+					           		</div>
+						           	 <ol class="decimal-list">
+						                <li>위 표의 구분에 있는 항목은 네트워크 사이즈(구매활동 다운라인 수) 측면에서 사업현황을 잘 설명해 줄 수 있는 대표 변수들입니다.</li> 
+						                <li>이 대표 변수들을 통해 현재의 활동실적 판단, 그리고 자신과 동일 핀 자격자들 중 상위 20% 위치에 있는 다른 분들과 비교했을 때 자신의 활동 상황을 비교 판단해 볼 수 있습니다. </li>
+						            </ol>
+					           	</dd>  
 				            </dl>
 				            
 				            <dl> 
 					            <dt>제품별 구매 및 반품현황 : 제품군별 구매 금액 & 비율</dt>
 					            <dd>
 						            <div class="business-img-area">
-						             이미지
-						           	</div>
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report6.jpg" alt="제품별 구매 및 반품현황 : 제품군별 구매 금액 &amp; 비율">
+					           		</div>
 						           	 <ol class="decimal-list">
 						                <li>1. 위 내용은 한국암웨이 전체 ABO를 대상으로 동일한 핀 별로 산출한 자료 입니다. 따라서 위 정보를 통해 자신의 사업현황이 동일 평균을 상회하고 있는지, 아니면 더 분발해야 하는지 파악할 수 있습니다. </li>
 						            </ol>
@@ -308,23 +325,25 @@
 					            <dt>제품별 구매 및 반품현황 : 제품군별 반품 금액 & 비율</dt>
 					            <dd>
 						            <div class="business-img-area">
-						             이미지
-						           	</div>
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab1_report7.jpg" alt="제품별 구매 및 반품현황 : 제품군별 반품 금액 &amp; 비율">
+						           	 </div>
 						           	 <ol class="decimal-list">
 						                <li>1. 위 내용은 한국암웨이 전체 ABO를 대상으로 동일한 핀 별로 산출한 자료 입니다. 따라서 위 정보를 통해 자신의 사업현황이 동일 평균을 상회하고 있는지, 아니면 더 분발해야 하는지 파악할 수 있습니다. </li>
 						            </ol>
-					           	</dd> 
-					           	<dd class="word-Description">
-					           		<p>용어설명</p>
-						            <div class="business-text-toggle"> 
-							           	 <ol class="decimal-list">
-							                <li>ⓐ 구매(반품)금액 : 본인 그룹의 해당 제품군 별 당월 구매(반품) 금액</li>
-							                <li>ⓑ 구매(반품)비율 : 본인 그룹의 6가지 제품군 별 각 제품군이 차지하는 비중</li>
-							                <li>ⓒ 동일 PIN 그룹의 평균 구매(반품)금액 : 본인과 같은 핀 자격자들의 제품군 별 해당 월 평균 구매(반품)금액</li>
-							                <li>ⓓ 동일 PIN 그룹의 평균 구매(반품)비율 : 본인과 같은 핀 자격자들의 제품군 별 해당 월 평균 구매(반품)비율</li>
-							            </ol>
-						            </div>
-					           	</dd>   
+					           	</dd>  
+					           	<dd class="word-Description"> 
+						            <div class="guid-box js-guidebox-toggle">
+										<a href="#" class="title">용어설명 <span class="hidden">열기</span></a>
+										<div class="tgg-hidden-area"> 
+	 										<ol class="decimal-list">
+								                <li>ⓐ 구매(반품)금액 : 본인 그룹의 해당 제품군 별 당월 구매(반품) 금액</li>
+								                <li>ⓑ 구매(반품)비율 : 본인 그룹의 6가지 제품군 별 각 제품군이 차지하는 비중</li>
+								                <li>ⓒ 동일 PIN 그룹의 평균 구매(반품)금액 : 본인과 같은 핀 자격자들의 제품군 별 해당 월 평균 구매(반품)금액</li>
+								                <li>ⓓ 동일 PIN 그룹의 평균 구매(반품)비율 : 본인과 같은 핀 자격자들의 제품군 별 해당 월 평균 구매(반품)비율</li>
+								            </ol>
+										</div>
+									</div>
+					           	</dd>     
 				            </dl>
 				            
 			            </div> 
@@ -340,9 +359,9 @@
 					            <dt>회원정보</dt>
 					            <dd>
 						            <div class="business-img-area">
-						             이미지
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab2_report1.jpg" alt="회원정보">
 						           	</div>
-						           	 <ol class="decimal-list">
+						           	<ol class="decimal-list">
 						                <li>1. 본인의 핀레벨, 후원자 등의 정보를 제공합니다</li>
 						            </ol>
 					           	</dd> 
@@ -351,54 +370,15 @@
 				             <dl> 
 					            <dt>Cut-off 정보</dt>
 					            <dd>
-						            <div class="business-img-area">
-						             이미지
+									<div class="business-img-area">
+										<img src="/_ui/responsive/theme-blue/images/akl_common/img_biz_statetab2_report3.jpg" alt="Q레그 사업현황 : 표">
 						           	</div>
-						           	 <ol class="decimal-list">
+						           	<ol class="decimal-list">
 						                <li>1. 직 다운라인 중 본인의 핀 이상이거나 예상 핀이 동일 이상인 ABO가 있다면, ABO 이전까지를 본인의 Q레그 그룹으로 보아 이달의 사업현황을 분석합니다. 이와 같은 조건의 직 다운라인의 회원번호, 성명, 유자격 핀 등이 조회 됩니다.</li>
 						            </ol>
 					           	</dd> 
-				            </dl>
-				            
-				             <dl> 
-					            <dt>Q레그 사업현황 : 표</dt>
-					            <dd>
-						            <div class="business-img-area">
-						             이미지
-						           	</div>
-						           	 <ol class="decimal-list">
-						                <li>1. 직 다운라인 중 지난 회기 6회 이상 SPQ를 달성했던 레그와 이번 회기 중SPQ 자격을 1번 이상 달성한 레그의 이번 달 그룹 총 매출액과 그룹 내 신규 ABO수를 보여 줍니다. 상위 20%의 값은 본인과 같은 다른 핀 자격자들의 Q레그 그룹들의 해당 값중 상위 20% 위치에 있는 타 사업자의 값입니다. </li>
-						            	<li>2. 이와 같이 상위 20%를 우수한 Q레그로 정의하고 본인의 Q레그가 타 사업자 대비 활동을 어느 정도 하였는지 비교 달성을 보입니다.</li>
-						            </ol>
-						             <ol class="list-type2">
-						                <li>파란색으로 음영 처리된 직 다운라인의 번호를 클릭하면 해당 Q레그의 보다 자세한 사업현황 조회하여 볼 수 있습니다. 만일, 위의 직 다운라인 중 ooooooo 번호를 클릭하면 해당 ABO 그룹간의 자세한 월간 비즈니스 현황을 조회할 수 있습니다.</li>
-						            </ol>
-					           	</dd> 
-				            </dl>
-				            
-				             <dl> 
-					            <dt>제품별 구매 및 반품현황 : 제품군별 구매 금액 & 비율</dt>
-					            <dd>
-						            <div class="business-img-area">
-						             이미지
-						           	</div>
-						           	 <ol class="decimal-list">
-						                <li>1. 위 내용은 한국암웨이 전체 ABO를 대상으로 동일한 핀 별로 산출한 자료 입니다. 따라서 위 정보를 통해 자신의 사업현황이 동일 평균을 상회하고 있는지, 아니면 더 분발해야 하는지 파악할 수 있습니다. </li>
-						            </ol>
-					           	</dd> 
-				            </dl>
-				            
-				             <dl> 
-					            <dt>Q레그 사업현황 : 그래프</dt>
-					            <dd>
-						            <div class="business-img-area">
-						             이미지
-						           	</div>
-						           	 <ol class="decimal-list">
-						                <li>1. 본인의 Q레그와 상위 20% 위치에 있는 다른 Q레그와의 대비를 보여주는 그래프 입니다.</li>
-						            </ol>
-					           	</dd> 
-				            </dl>
+				            </dl> 
+				             
 			            </div>
 					</div>
 		            

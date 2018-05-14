@@ -91,9 +91,14 @@
 .report-body dl {}
 .report-body dt { font-weight:500}
 .report-body dd { margin-bottom:30px; } 
-.report-body .business-img-area {border:1px solid #e3e3e3; margin:20px 0 20px 30px ; padding:20px; }
+.report-body .business-img-area {border:1px solid #e3e3e3; margin:20px 0 20px 30px ; padding:20px; display: inline-block; }
+.report-body .business-img-area img {  width:100%}
+
+.report-body .tab-content ol.decimal-list { margin-top:10px;}
 .report-body .tab-content ol.decimal-list li { text-indent:-20px; padding-left:20px; font-size:14px;}
 .report-body dd.word-Description {padding-bottom:30px; margin-bottom:30px; border-bottom:1px solid #e3e3e3;}
+.report-body dd.word-Description .guid-box a.title {font-size:14px;color:#0075a4;font-weight:500;background:url('../images/akl_common/ico_ars_down.png') no-repeat right center;padding-right:20px}
+.report-body dd.word-Description .guid-box.on a.title {background:url('../images/akl_common/ico_ars_up.png') no-repeat right center;}
 
 @media (max-width: 768px) {
 
@@ -123,7 +128,15 @@
 	.business .tbl-list-board {display:block; } 
  	.business .tbl-list-board .tr>div {display:block; float:left; padding-top:10px;padding-bottom:10px;}
 	.business .tbl-list-board .th { width:60%; color:#002f5f; padding-left:20px}
-	.business .tbl-list-board .td { width:40%; text-align: right; background: #f4f4f4; font-weight:500; padding-right:20px}   
+	.business .tbl-list-board .td { width:40%; text-align: right; background: #f4f4f4; font-weight:500; padding-right:20px} 
+	
+	/* 비즈니스 > 사업현황보고서 */ 
+	.report-top { padding: 20px 0 10px;}
+	.business .list-content.business-type01.report .con-list-item > div .tite-label + .txte-wrap {float:left; width:100%;}  
+	.business .list-content.business-type01.report .con-list-item span.txte-wrap em { display:inline;}
+	.list-type5 + dl { margin-top:20px; }
+	.report-body .business-img-area {margin: 20px 10px ;}
+	.akl .link-btn { margin-top: 15px}
 }
 
 @media (max-width: 992px) {
