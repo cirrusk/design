@@ -16,11 +16,11 @@ Version : AKL Hybris UIUX 1.0
 
 .txt-info-visual {position:relative;}
 .txt-info-visual .v-logo-txt {font-size:26px;font-weight:400;letter-spacing:-2px;padding: 21px 0 0;}
-.txt-info-visual .v-tit {font-size:60px;letter-spacing:-2px;font-weight:400;padding:18px 0 0}
+.txt-info-visual .v-tit {font-size:60px;letter-spacing:-2px;font-weight:400;padding:18px 0 0;line-height:1.2;}
 .txt-info-visual .v-tit strong{font-size: 60px;font-weight:400;line-height: 1;}
 .txt-info-visual .v-tit span {display:inline-block;font-weight:500;font-size:60px;}
-.txt-info-visual .v-txt {font-size:16px;line-height:24px;font-weight:300;margin: 30px 18.65%;letter-spacing:-1px;}
-.txt-info-visual .v-etc {margin: 20px 10% 0;font-size: 14px;color: #808285;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
+.txt-info-visual .v-txt {font-size:16px;line-height:24px;font-weight:300;margin: 30px 18.65%;letter-spacing:-1px;word-break: keep-all;word-wrap: break-word;}
+.txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 14px;color: #dadada;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
 .v-pro {margin-top:70px;width:100%;text-align:center;}
 .v-pro span {display:block;text-align:center;margin:0 auto;width:100%;}
 .v-pro span img {text-align:center;width:auto;height:auto;}
@@ -28,14 +28,20 @@ Version : AKL Hybris UIUX 1.0
 
 .visual-area.type02 .txt-info-visual .v-tit span {display:block;}
 
-
-.blue {color:#0075a4;}
+.blue, .cobalt02 {color:#0075a4;}
+.white, .txt-white{color:#ffffff !important;}
+.green, .txt-green, strong.green{color: #1ef1d9;}
+.space, .advantage-area.space{padding:30px 0 40px;}
+.gold{color:#f1c192;}
+.jahong{color:#c4133f !important;}
+.beige, dl.beige dt{color:#e7c099;}
 
 /* 怨듯넻 遺�遺� */
 .com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.2;}
 .com-tit span {display:inline-block;font-weight:400;font-size:44px;}
 .com-tit2 {font-size:30px;font-weight:400;letter-spacing:-2px;word-break:normal;line-height:1.3}
 .com-txt {font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;margin-top:21px;}
+.com-txt .point{font-weight:400;}
 .com-etc {font-size:16px;font-weight:300;margin-top:15px;letter-spacing:-1px;color:#818286}
 .po-tit {font-size:16px;font-weight:400;letter-spacing:-1px;}
 .po-txt {font-size:16px;letter-spacing:-1px;font-weight:300;}
@@ -76,6 +82,7 @@ Version : AKL Hybris UIUX 1.0
 .pcomp-list.deaf03 div.comp-info {width:33.3%;}
 .pcomp-list.deaf02 div.comp-info {width:50%;}
 .pcomp-list.deaf01 div.comp-info {width:100%;}
+.pcomp-list.deaf04 div.comp-info .free-gift{right:50%;margin-right:-130px;}
 
 .ingestion-usage {}
 .ingestion-usage dl {clear:both;display:block;width:100%;margin:20px 0 0;padding:0;}
@@ -99,9 +106,13 @@ Version : AKL Hybris UIUX 1.0
 .inge-lst04 {padding:0 0 0}
 .inge-lst04 li {font-size:16px;letter-spacing:-1px;font-weight:300;font-weight:400;color:#818286;} 
 
-.inge-lst05 {padding:0 0 0}
-.inge-lst05 li {position:relative;padding-left:10px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;} 
-.inge-lst05 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:10px;left:0;background-color:#808285;content:"";}
+.inge-lst05 {padding:20px 0 0;}
+.inge-lst05 li {position:relative;font-size:14px;letter-spacing:-1px;font-weight:300;color: #808285;padding-left:10px;}
+.inge-lst05 li:after {position: absolute;top: 2px;left: 0;display: inline-block;width: 0;height: 0;border-radius: 50%;background-color: #808285;content: "*";font-size: 14px;}
+
+.inge-lst06 {padding:0 0 0}
+.inge-lst06 li {position:relative;padding-left:10px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;} 
+.inge-lst06 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:10px;left:0;background-color:#808285;content:"";}
 
 .inge-numlst01 {}
 .inge-numlst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;}
@@ -124,11 +135,13 @@ div.feat-img img {text-align:center;}
 .special-feat .inge-lst03 li {font-size:16px;color:#818286;}
 
 /* type02 */
-.advantage-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-bottom:1px solid #e3e3e3;padding: 0 0 10px;}
+.advantage-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-bottom:1px solid #e3e3e3;padding: 0 0 30px;}
 .advan-left, .advan-right {display:table-cell;box-sizing: border-box;}
 .advan-left {width:50%;vertical-align:top;}
 .advan-right {width:50%;vertical-align:middle;}
 
+.advan-left.fright{float:right !important;max-width:auto;width:inherit;}
+.advan-right.fleft{float:left !important;width:auto;max-width:auto;width:inherit;}
 .advan-left.v-mid {vertical-align:middle;}
 .advan-right.v-top {vertical-align:top;}
 .ade-photo {margin:0 auto;text-align:center;}
@@ -197,6 +210,57 @@ dl.amo-txt dd br {line-height:18px}
 .effect-step-etc br{line-height:0;}
 
 
+.product-process .product-process-step{margin-top:44px;}
+.product-process-step .owl-item,
+.product-process-step > .step-flow{display:inline-block;padding:0 10px;vertical-align:top;text-align:center;}
+.step05.product-process-step .owl-item,
+.step05.product-process-step > .step-flow{width:20%;}
+.product-process-step .step-img{display:inline-block; text-align:center;vertical-align: bottom;min-height: 124px;}
+.product-process-step .step-img img{max-width:100%;max-height:100%;width:auto;height:auto;margin:0 auto;}
+.product-process-step .step-num{display:block;max-width:60px;margin:15px auto 0;padding:0px 10px;border-radius:10px;font-size:14px;color:#fff;letter-spacing:-1px;font-weight:300;background-color:#bbb;}
+.product-process-step .step-txt{display:block;margin-top:7px;font-size:14px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:1.7;}
+.akl .product-process .owl-theme .owl-controls .owl-nav .owl-prev{left:-22px;}
+.akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:-22px;}
+.product-process .owl-theme .owl-dots .owl-dot{padding:0 5px;}
+.product-process .owl-theme .owl-dots .owl-dot span{width:15px;height:15px;margin:0 0;background-color:#eff0f1;}
+.product-process .owl-theme .owl-dots .owl-dot.active span{margin:0;background-color:#bbb;}
+
+.ade-photo{}
+.ade-photo .reposom-wrap{position: relative;margin:0 auto 80px;}
+.ade-photo .reposom-wrap img{text-align:center;max-width:100%;width:auto;}
+.ade-photo .reposom-wrap em{position:absolute;display:inline-block;padding-left:5px;font-size:14px;color:#20893d;font-weight:300;line-height:1.2;vertical-align:middle;letter-spacing:-1px;text-align:left;}
+.ade-photo .reposom-wrap em.one{top:15px;right:21.6841%;width:91px;height:34px;}
+.ade-photo .reposom-wrap em.two{bottom:47px;right:21.9841%;width:91px;height:17px;}
+.ade-photo .reposom-wrap em br{line-height:0;}
+.ade-photo .reposom-wrap .point-txt{text-indent:-9999px;}
+
+
+/**************************************************
+			          뷰티	비주얼 영역 bg 공통 모음
+***************************************************/
+.visual-area.type02.ad-vitamin{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_advanced_1480.png) no-repeat top center;height:929px;} /*01 인텐시브 비타민 */
+.visual-area.type02.boosting-infusion{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_boosting_infusion.png) no-repeat top center;height:1039px;} /*01 인텐시브 부스팅 인퓨전  */
+.visual-area.type02.intensive-skin{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_skincare.png) no-repeat top center;height:1085px;}   /*01 인텐시브 스킨케어 */
+.visual-area.type02.intensive-restore{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_night_restore.png) no-repeat top center;height:1098px;} /*01 인텐시브 리스토어 프로그램*/
+.visual-area.type02.youth-xtend{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:1085px;}   /* 02 Youth_Xtend*/
+.visual-area.type02.youth-xtend.cream{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:900px;}   /* 02 Youth_Xtend*/
+.visual-area.type02.youth-xtend-set{background: #f3e8e6 url(../images/akl_product/beauty/bg_youth_xtend_set.png) no-repeat top center;height:1090px;}  /* 02 Youth_Xtend set*/
+.visual-area.type02.ultra-lifting{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting.png) no-repeat top center;height:auto;} /*03 Youth Xtend lifting */
+.visual-area.type02.ideal{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience.png) no-repeat top center;height:1100px;} /* 4. 아이디얼 */
+.visual-area.type02.ideal-uv{background: #f8f8f8 url(../images/akl_product/beauty/bg_ideal_radience_uv_protect.png) no-repeat top center;height:1064px;}/* 4. 아이디얼 프로덱트 */
+.visual-area.type02.zone-patch{background: #f8f8f8 url(../images/akl_product/beauty/bg_zone_patch.png) no-repeat top center;height:904px;} /* 4. 아이디얼 존패치 */
+.visual-area.type02.hydrav{background: #f8f8f8 url(../images/akl_product/beauty/bg_hydrav_refreshing.png) no-repeat top center;height:1189px;}  /*05 하이드라v */
+.visual-area.type02.hydrav-set{background: #f8f8f8 url(../images/akl_product/beauty/bg_hydrav_aqua_set.png) no-repeat top center;height:911px;}/*05 하이드라v 기프트세트 */
+.visual-area.type02.special-care{background: #f8f8f8 url(../images/akl_product/beauty/bg_special_care.png) no-repeat top center;height:1095px;}/*06 스페셜 케어 */
+.visual-area.type02.water-uv{background: #f8f8f8 url(../images/akl_product/beauty/bg_sun_protect_1416.png) no-repeat top center;height:1141px;}/*06 스페셜 케어 - 워터에센스 선 프로텍트 */
+.visual-area.type02.duma-sonic{background: #f8f8f8 url(../images/akl_product/beauty/bg_duma_sonic_4779.png) no-repeat top center;height:1036px;}/*06 스페셜 케어 더마 갈바닉 */
+
+
+
+
+
+
+
 @media (max-width: 1024px) {
 	.info-p-list ul li span img {width:100%;height:auto;}
 
@@ -209,7 +273,7 @@ dl.amo-txt dd br {line-height:18px}
 @media (max-width: 768px) {
 
 	.visual-area .v-logo.nutrition-health img {width:auto;height:18px;}	
-	.txt-info-visual .v-txt {font-size:14px;margin:20px 10%;}
+	.txt-info-visual .v-txt {font-size:14px;margin:20px 10%;word-break: keep-all;word-wrap: break-word;}
 	.txt-info-visual .v-tit {font-size:35px;}
 	.txt-info-visual .v-tit span{font-size:35px;}
 	.v-pro span img {text-align:center;width:auto;height:auto;}
