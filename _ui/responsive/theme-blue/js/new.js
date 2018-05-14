@@ -563,6 +563,16 @@ $(function() {
 		event.preventDefault();
 		layerPopOver(this,'.G20206_lp_pop');
 	});
+	
+	$('#G20207_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20207_lp_pop');
+	});
+	
+	$('#G20208_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20208_lp_pop');
+	});
 
 });
 

@@ -100,6 +100,11 @@
 .report-body dd.word-Description .guid-box a.title {font-size:14px;color:#0075a4;font-weight:500;background:url('../images/akl_common/ico_ars_down.png') no-repeat right center;padding-right:20px}
 .report-body dd.word-Description .guid-box.on a.title {background:url('../images/akl_common/ico_ars_up.png') no-repeat right center;}
 
+.report-date-area { position:relative; padding:40px 40px 15px}
+.akl .report-date-area .form-group select.form-control{ width:150px; margin-right: 5px;}
+.akl .report-date-area .bt-akl-blue { position: absolute; right:40px; top:40px; min-width:90px;}
+.akl .report-date-area .list-type2 { padding-top:20px; clear:both}
+
 @media (max-width: 768px) {
 
 	/* 비즈니스 */
@@ -137,6 +142,10 @@
 	.list-type5 + dl { margin-top:20px; }
 	.report-body .business-img-area {margin: 20px 10px ;}
 	.akl .link-btn { margin-top: 15px}
+	.report-date-area { position:relative; padding:20px 20px 5px}
+	.akl .report-date-area .form-group select.form-control{ float:left; width:49%; margin-right:0;}
+	.akl .report-date-area .form-group select.form-control + select.form-control{ float:right}
+	.akl .report-date-area .bt-akl-blue { display:none} 
 }
 
 @media (max-width: 992px) {
