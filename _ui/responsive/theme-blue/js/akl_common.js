@@ -1,27 +1,38 @@
 $(function(){
-	//계좌관리 자동이체계좌 등록 팝업
-	function close_accordion_section() {
-		$('.akl-accordion .accordion-section-title').removeClass('active');
-		$('.akl-accordion .accordion-section-content').slideUp(400).removeClass('open');
-	}
+/** ----- 공통 ----- */
 
-	$('.accordion-section-title').click(function(e) {
-		e.preventDefault();
-
-		// Grab current anchor value
-		var currentAttrValue = $(this).attr('href');
-
-		if(jQuery(e.target).is('.active')) {
-			close_accordion_section();
-		} else {
-			close_accordion_section();
-
-			// Add active class to section title
-			$(this).addClass('active');
-			// Open up the hidden content panel
-			$('.akl-accordion ' + currentAttrValue).slideDown(400).addClass('open');
-		}
+	//header login tooltip
+	$('.tooltip-btn').click(function() {
+		$('.tooltip-wrap').slideToggle(0);
 	});
+
+
+/** ----- SHOP ----- */
+
+	//2018.03.12 카테고리 왼쪽메뉴
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}
+	var accordion = new Accordion($('#accordion'), false);
+
 
 	//제품상세 상단 이미지 embed 영역  : #pdpImg
 	videoSize();
@@ -43,10 +54,17 @@ $(function(){
 	//장바구니 : floating box
 	cartSummaryFixed();
 
-	//header login tooltip
-	$('.tooltip-btn').click(function() {
-		$('.tooltip-wrap').slideToggle(0);
-	});
+	//온라인 FAX 주문 - 검색영역 열고 닫기
+	toggleBox_faxOrder_srch();
+
+	//온라인 FAX 주문 - 툴팁
+	toolTips();
+
+	//온라인 FAX 주문 - 안내글 토글
+	toggleBox_Guide();
+
+
+/** ----- 마이페이지 ----- */
 
 	//마이페이지 메인 : li 여백처리
 	mypageIndex_list();
@@ -72,64 +90,36 @@ $(function(){
 	//신규ABO - 대상자 조회
 	event_NewABO_select();
 
-	//온라인 FAX 주문 - 검색영역 열고 닫기
-	$('.btn-faxOrder-serch').on('click', function(e){
+	//계좌관리 자동이체계좌 등록 팝업
+	function close_accordion_section() {
+		$('.akl-accordion .accordion-section-title').removeClass('active');
+		$('.akl-accordion .accordion-section-content').slideUp(400).removeClass('open');
+	}
+	$('.accordion-section-title').click(function(e) {
 		e.preventDefault();
 
-		var parentsO = $(this).parents('.faxOrder-search-box');
-		var _srchResult = parentsO.find('.shoping-cart-search');
-		var _closeBtn   = parentsO.find('.btnClosed');
+		// Grab current anchor value
+		var currentAttrValue = $(this).attr('href');
 
-		if(_srchResult.is(':hidden')){
-			_srchResult.show();
+		if(jQuery(e.target).is('.active')) {
+			close_accordion_section();
+		} else {
+			close_accordion_section();
+
+			// Add active class to section title
+			$(this).addClass('active');
+			// Open up the hidden content panel
+			$('.akl-accordion ' + currentAttrValue).slideDown(400).addClass('open');
 		}
-
-		_closeBtn.on('click',function(e){
-			e.preventDefault();
-			_srchResult.hide();
-		});
 	});
 
-	//온라인 FAX 주문 - 툴팁
-	toolTips();
-
-	//온라인 FAX 주문 - 안내글 토글
-	toggleBox_Guide();
-
-	//2018.03.12 카테고리 왼쪽메뉴
-	var Accordion = function(el, multiple) {
-		this.el = el || {};
-		this.multiple = multiple || false;
-
-		// Variables privadas
-		var links = this.el.find('.link');
-		// Evento
-		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-	}
-
-	Accordion.prototype.dropdown = function(e) {
-		var $el = e.data.el;
-			$this = $(this),
-			$next = $this.next();
-
-		$next.slideToggle();
-		$this.parent().toggleClass('open');
-
-		if (!e.data.multiple) {
-			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-		};
-	}
-
-	var accordion = new Accordion($('#accordion'), false);
 });
 
-
-//테스트용 추가
+/* 테스트용 추가
 function findTarget(){
 	$('body').click(function(e){ console.log(e.target); });
 }
 
-/* 가로,세로 모드 확인
 var PortraiteSize = $(window).width();
 function doOnOrientationChange(){
 	switch(window.orientation){
@@ -147,7 +137,145 @@ function doOnOrientationChange(){
 			}
 			break;
 	}
-}*/
+}
+*/
+
+
+/** ------------------------------------
+ *  HEADER (코어 js 정리)
+ *  ------------------------------------
+ */
+/* body 클릭 시 열린 레이어 닫기 */
+function HEADER_stopPropagation(){
+	//event bubbling 막기
+	var stopPropagation_target = '.js-my-account-menu, .js-mini-cart-link, .auto-suggestion-popover, #overlay-menu-wrapper, #shoppingcar-drop-content, #login-drop-content';
+	$(stopPropagation_target).on('click', function (e){
+		e.stopPropagation();
+	});
+
+	//html 클릭시 열린 레이어 닫기
+	$(document).on('click',function(){
+		$('header').removeClass('userinfo-open mincart-open');
+		$(".auto-suggestion-popover").hide();
+
+		//쇼핑메뉴 레이어 숨기기
+		if( $('.overlay-menu-toggle-desktop').not('.collapsed') && $("#overlay-menu-wrapper").is('.in') ){
+			$("#overlay-menu-wrapper").removeClass("in");
+			$('.overlay-menu-toggle-desktop').addClass('collapsed');
+		}
+	});
+}
+
+/* 쇼핑메뉴 클릭이벤트 : .overlay-menu-toggle-desktop */
+function HEADER_MenuShop(){
+	var _btnSHOP = $('.overlay-menu-toggle-desktop');
+
+	_btnSHOP.addClass('collapsed');
+	_btnSHOP.on('click', function(){
+		$(this).addClass('collapsed');
+	});
+}
+
+/* 미니 대시보드 : #login-drop-content */
+function HEADER_miniDashboard(){
+	$('.js-my-account-menu').on('click',function(e){
+		e.preventDefault();
+
+		//쇼핑메뉴 layer
+		$("#overlay-menu-wrapper").removeClass("in");
+		$('.overlay-menu-toggle-desktop').addClass('collapsed');
+
+		//레이어: .nav-links
+		$('header').hasClass('userinfo-open') ? $('header').removeClass('userinfo-open') : $('header').addClass('userinfo-open');
+		$('header').removeClass('mincart-open');
+
+		//레이어: 검색
+		$(".auto-suggestion-popover").hide(); //추천검색어
+		$('.top-search').removeClass('search-open'); //검색어 입력영역
+	});
+}
+
+/* 미니 카트 : #shoppingcar-drop-content */
+function HEADER_miniCart(){
+	$('.js-mini-cart-link').on('click',function(e){
+		e.preventDefault();
+
+		//쇼핑메뉴 layer
+		$("#overlay-menu-wrapper").removeClass("in");
+		$('.overlay-menu-toggle-desktop').addClass('collapsed');
+
+		//레이어: .nav-links
+		$('header').hasClass('mincart-open') ? $('header').removeClass('mincart-open') : $('header').addClass('mincart-open');
+		$('header').removeClass('userinfo-open');
+
+		//레이어: 검색
+		$(".auto-suggestion-popover").hide(); //추천검색어
+		$('.top-search').removeClass('search-open'); //검색어 입력영역
+	});
+}
+
+/* 추천검색어 레이어 */
+function HEADER_topSearch_suggestion(){
+	var SPEED = 'slow';
+	function showSearchResults() {
+		var $this = $(this);
+		var $searchResult = $('.auto-suggestion-popover');
+		if ($this.val().length >= 3) {
+			$searchResult.fadeIn(SPEED);
+		} else {
+			$searchResult.fadeOut(SPEED);
+		}
+	}
+
+	function closeSearchResults() {
+		var $searchResult = $('.auto-suggestion-popover').fadeOut(SPEED);
+		$('.ui-autocomplete-input').val('');
+	}
+
+	registerEvents();
+	function registerEvents() {
+		$('.ui-autocomplete-input').on('keyup', showSearchResults);
+		$('.search-results-close').on('click', closeSearchResults);
+	}
+}
+
+/* MOB 쇼핑메뉴 */
+function navToggling() {
+	if (window.innerWidth < 768) {
+		$('.overlay-menu-mobile__panel__heading').click(function () {
+			if ($(this).hasClass('active')) {
+				$(this).removeClass('active');
+				$(this).next('.panel-collapse').removeClass('in');
+				$(this).parent('.panel').siblings('.panel').show();
+				$(this).parents('.nav-list-element').siblings('.nav-list-element').show();
+			} else {
+				$(this).addClass('active');
+				$(this).parent('.panel').siblings('.panel').hide();
+				$(this).parents('.nav-list-element').siblings('.nav-list-element').hide();
+			}
+		});
+	} else {
+	}
+}
+
+/* MOB 검색버튼 */
+function HEADER_MOB_search(){
+	$(".mobile-search-btn").click(function(){
+		//검색어 입력영역
+		$('.top-search').hasClass('search-open') ? $('.top-search').removeClass('search-open') : $('.top-search').addClass('search-open');
+		$('header').removeClass('userinfo-open mincart-open');
+		$(".dropdown").removeClass("open");
+	});
+	$(".mobile-popover-close").click(function () {
+		$('header').removeClass('userinfo-open');
+	});
+}
+
+
+/** ------------------------------------
+ *  쇼핑
+ *  ------------------------------------
+ */
 
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
@@ -388,20 +516,6 @@ function terms_ViewAll(){
 	});
 }
 
-/* 로딩 */
-function loadingLayer(){
-	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="/_ui/responsive/theme-blue/images/akl_common/img_loading.gif" alt="로딩중"></div></div>');
-	if (loadImg.length){
-		$('#loading').remove();
-	}
-	$('body').append(loadImg);
-}
-function loadingLayerClose(){
-	$('#loading').remove();
-	return false;
-}
-
-
 /* 마이페이지 메인 : li 여백처리 */
 function mypageIndex_list(){
 	var  mypageBlockList = $('.mypage-block-list');
@@ -575,6 +689,26 @@ function event_NewABO_select(){
 	});
 }
 
+/* 온라인 FAX 주문 - 검색영역 열고 닫기 */
+function toggleBox_faxOrder_srch(){
+	$('.btn-faxOrder-serch').on('click', function(e){
+		e.preventDefault();
+
+		var parentsO = $(this).parents('.faxOrder-search-box');
+		var _srchResult = parentsO.find('.shoping-cart-search');
+		var _closeBtn   = parentsO.find('.btnClosed');
+
+		if(_srchResult.is(':hidden')){
+			_srchResult.show();
+		}
+
+		_closeBtn.on('click',function(e){
+			e.preventDefault();
+			_srchResult.hide();
+		});
+	});
+}
+
 /* 온라인 FAX 주문 - 툴팁 */
 function toolTips(){
 	var tooltipBox = $('.toolTip-wrapper');
@@ -655,8 +789,9 @@ function print_pageBoard(){
 	});
 }
 
+
 /** ------------------------------------------
- *  @GNB_SubDepth_Control
+ *  GNB_SubDepth_Control
  *  - 메뉴에 따른 사이드 메뉴 노출 컨트롤
  *  - Depth2 높이에 따라 위치(absolute) 지정 : 플러그인(isotope) 실행
  * -------------------------------------------
@@ -855,7 +990,23 @@ function qkLinkAlign(){
 
 
 /** ------------------------------------------
- *  @layerPopOver
+ *  로딩
+ * -------------------------------------------
+ */
+function loadingLayer(){
+	var loadImg =$('<div class="loading" id="loading"><div class="loading-wrap"><img src="/_ui/responsive/theme-blue/images/akl_common/img_loading.gif" alt="로딩중"></div></div>');
+	if (loadImg.length){
+		$('#loading').remove();
+	}
+	$('body').append(loadImg);
+}
+function loadingLayerClose(){
+	$('#loading').remove();
+	return false;
+}
+
+/** ------------------------------------------
+ *  layerPopOver
  *  - btnOpenLayer : 레이어 열기 버튼
  *  - targetLayer  : 버튼 클릭시 열리는 레이어
  * -------------------------------------------
