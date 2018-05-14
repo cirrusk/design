@@ -117,25 +117,6 @@ $(function(){
 
 });
 
-/* 테스트용 추가
-function findTarget(){
-	$('body').click(function(e){ console.log(e.target); });
-}
-
-function doOnOrientationChange(){
-	switch(window.orientation){
-		case -90:
-		case 90:
-			{ console.log(' 가로모드 landscape');}
-			break;
-		default:
-			{ console.log(' 세로모드 portraite');}
-			break;
-	}
-}
-*/
-
-
 /** ------------------------------------
  *  HEADER (코어 js 정리)
  *  ------------------------------------
@@ -267,6 +248,23 @@ function HEADER_MOB_search(){
 	});
 }
 
+/* 테스트용 추가
+function findTarget(){
+	$('body').click(function(e){ console.log(e.target); });
+}
+
+function doOnOrientationChange(){
+	switch(window.orientation){
+		case -90:
+		case 90:
+			{ console.log(' 가로모드 landscape');}
+			break;
+		default:
+			{ console.log(' 세로모드 portraite');}
+			break;
+	}
+}
+*/
 
 /** ------------------------------------
  *  쇼핑
@@ -391,31 +389,6 @@ function cartSummaryFixed(){
 		fixedBox();
 	});
 }
-
-/* 제품상세 > 크게보기 레이어 : 이미지보기
-//사용안함 : 상품상세 페이지로 이동 2018.03.29
-function popupGalleryIMG(){
-	var $IMG = $('#largeImgView.pop-gallery').find('img');
-	var $listIMG = $('#recentlyViewedListTab2').find('img');
-
-	//첫 이미지 가져오기
-	var $imgFirst = $('#recentlyViewedListTab2').find('img').first();
-	var _firstSRC = $imgFirst.attr('src');
-	var _firstALT = $imgFirst.attr('alt');
-	$IMG.attr({'src':_firstSRC, 'alt':_firstALT});
-
-	//이미지 클릭시
-	$listIMG.each(function(){
-		$(this).on('click',function(e){
-			e.preventDefault();
-
-			var _SRC = $(this).attr('src');
-			var _ALT = $(this).attr('alt');
-			$IMG.attr({'src':_SRC, 'alt':_ALT});
-		});
-	});
-}
-*/
 
 /* 제품상세 상단 이미지 : 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정 */
 function prdtDetails_IMG(){
@@ -921,7 +894,6 @@ function print_pageBoard(){
 	});
 }
 
-
 /** ------------------------------------------
  *  GNB_SubDepth_Control
  *  - 메뉴에 따른 사이드 메뉴 노출 컨트롤
@@ -1119,7 +1091,6 @@ function qkLinkAlign(){
 		},300);
 	}
 }
-
 
 /** ------------------------------------------
  *  로딩
