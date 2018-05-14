@@ -64,10 +64,9 @@ Editor : ji-min Park
 /**************************************************
 				 뷰티 스킨케어 common
 ***************************************************/	
-.skin-care p, .skin-care div, p{word-break: keep-all;word-wrap: break-word;}
+/*.skin-care p, .skin-care div, p{word-break: keep-all;word-wrap: break-word;}*/
 .skin-care .txt-info-visual .v-tit{padding: 32px 0 0;}
-.skin-care .txt-info-visual .v-tit strong{font-size: 60px;font-weight: 500;line-height: 1;}
-.skin-care .txt-info-visual .v-tit strong.green{color: #1ef1d9;font-size: 60px;font-weight: 500;line-height: 1;}
+/*.skin-care .txt-info-visual .v-tit strong.green{color: #1ef1d9;font-size: 60px;font-weight: 500;line-height: 1;}*/
 .skin-care .txt-info-visual .inge-lst04 li{font-size:14px;color: #808285;}
 .skin-care .ingredient-list{display: block;overflow:hidden;margin-top:10px;}
 .skin-care .ingredient-list li{width: 22%;display: inline-block;float: left;margin: 0 0 4% 4%;}
@@ -91,9 +90,10 @@ Editor : ji-min Park
 /* 스페셜 케어 */
 .advan-right .ingre-list{padding-top:20px;}
 .skin-care .advan-br{border-bottom:0;}
-.skin-care .ingre-list-wrap{overflow:hidden;box-sizing:border-box;}
+.skin-care .ingre-list-wrap{overflow:hidden;padding: 0 5% 0;box-sizing:border-box;}
 .skin-care .ingre-list-wrap.sie-box{padding:30px 0 0;}
 .skin-care .ingre-list{overflow:hidden;margin-left:-12px;}
+.skin-care .ingre-list li:nth-child(3n+1):before{display:none;}
 .skin-care .ingre-list li{position:relative;float:left;width:33.33333333333333%;min-width:172px;margin-top:30px;box-sizing:border-box;}
 .skin-care .ingre-list li:before{content:"";position:absolute;top: 50%;left:-6px;width:12px;height:12px;margin-top:-6px;border-radius:100%;background-color:#e3e3e3;}
 .skin-care .ingre-list li > span{display:block;text-align:center;}
@@ -109,15 +109,15 @@ Editor : ji-min Park
 .special-care-box .special-care-item{float:left;padding: 0 15px;box-sizing:border-box;}
 .special-care-box dl{position:relative;display:table;width:100%;height:235px;margin-bottom:0;background-color:#f4f4f4;}
 .special-care-box dt{position:absolute;top:-20px;left:0;width:100%;text-align:center;}
-.special-care-box dt span{display:inline-block;font-weight:400;color:#fff;padding:9px 20px;border-radius:50px;background-color:#999;}
-.special-care-box dt span.brown{background:#e7c099;}
+.special-care-box dt span{display:inline-block;font-weight:400;color:#fff;padding: 5px 45px;border-radius:50px;background-color:#999;font-size: 20px;}
+.special-care-box dt span.brown{background: #ad9172;}
 .special-care-box dd{display:table-cell;vertical-align:bottom;text-align:center;padding-bottom:20px;color: #808285;}
 .special-care-item dd span{display:block;line-height: 1.1;font-size: 14px;min-height: 43px;margin-top: 8px;}
 
-.special-care-box .cleansing-box{width: 43%;}
+.special-care-box .cleansing-box{width: 40%;}
 .cleansing-box dd{width:25%;}
-.special-care-box .turnover-box{width: 22%;}
-.special-care-box .intensivecare-box{width: 34%;}
+.special-care-box .turnover-box{width:28%;}
+.special-care-box .intensivecare-box{width: 32%;}
 .intensivecare-box dd{width:33.33333%;}
 .intensivecare-box dd strong{;}
 
@@ -180,7 +180,7 @@ Editor : ji-min Park
 
 
 /* 주의사항 추가 */
-.ingestion-usage.line{display: block;margin: 80px 0 0;padding: 12px 0 28px;border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;overflow: hidden;clear: both;}
+.ingestion-usage.line{display: block;margin: 80px 0 0;padding: 12px 0 0;border-top: 1px solid #e3e3e3;/*border-bottom: 1px solid #e3e3e3;*/overflow: hidden;clear: both;}
 .line-top-gray{display: block;margin: 80px 0 0;padding: 12px 0 0x;border-top: 1px solid #e3e3e3;clear: both;}
 
 
@@ -315,12 +315,15 @@ Editor : ji-min Park
 	.skin-care .visual-area.type02 .v-logo.beauty img{height:30px;}	
 	.skin-care .visual-area .v-logo{padding: 34px 0 0;}
 	.skin-care .visual-area .v-logo img {height:30px;}
+	.skin-care .visual-area.type02.special-care .v-logo img {height:15px;}
 	.skin-care .visual-area .txt-info-visual .v-logo-txt{font-size:18px;}
 	.skin-care .visual-area .txt-info-visual .v-pro span img{width:auto;}
 	.skin-care .txt-info-visual .v-tit{padding:19px 0 0;}
 	.skin-care .txt-info-visual .v-tit strong, 
 	.skin-care .txt-info-visual .v-tit strong.green, 
 	.skin-care .txt-info-visual .v-tit strong span{font-size:35px;}
+	
+	.special-care-box dl dt span{font-size:16px;padding:5px 45px;font-weight:400;}
 				
     /* 인텐시브 */
     .ade-photo.sie-box{padding:15px 0 0 !important;;}
