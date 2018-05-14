@@ -33,6 +33,8 @@ $(function(){
 	}
 	var accordion = new Accordion($('#accordion'), false);
 
+	//제품상세 상단 이미지 : 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정
+	prdtDetails_IMG();
 
 	//제품상세 상단 이미지 embed 영역  : #pdpImg
 	videoSize();
@@ -120,21 +122,14 @@ function findTarget(){
 	$('body').click(function(e){ console.log(e.target); });
 }
 
-var PortraiteSize = $(window).width();
 function doOnOrientationChange(){
 	switch(window.orientation){
 		case -90:
 		case 90:
-			{
-				console.log(' 가로모드 landscape');
-				$('html').addClass('landscapeMode');
-			}
+			{ console.log(' 가로모드 landscape');}
 			break;
 		default:
-			{
-				//console.log(' 세로모드 portraite');
-				$('html').removeClass('landscapeMode');
-			}
+			{ console.log(' 세로모드 portraite');}
 			break;
 	}
 }
@@ -145,6 +140,7 @@ function doOnOrientationChange(){
  *  HEADER (코어 js 정리)
  *  ------------------------------------
  */
+
 /* body 클릭 시 열린 레이어 닫기 */
 function HEADER_stopPropagation(){
 	//event bubbling 막기
@@ -420,6 +416,142 @@ function popupGalleryIMG(){
 	});
 }
 */
+
+/* 제품상세 상단 이미지 : 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정 */
+function prdtDetails_IMG(){
+	// 수정 : 2018.03.29
+	// 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정
+	$.uiSnapImg = {
+		owl: function(opt){
+			var popidx = 0;
+
+			$('#pdpImg').find('li').removeClass('on').eq(opt.current).addClass('on');
+			$('#uiPrdViewDetail').owlCarousel({
+				loop: true,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 3,
+				startPosition: opt.current,
+				responsive: {
+					480 : {
+						items: 3
+					},
+					768 : {
+						items: 3
+					},
+					960 : {
+						items: 4
+					},
+					1200 : {
+						items: 5
+					},
+					1457 : {
+						items: 6
+					}
+				}
+			});
+
+			//2018.04.02  수정 (setTimeout 추가)
+			//선택된 이미지 표시
+			setTimeout(function(){
+				$('#uiPrdViewDetail').find('.owl-item.active').eq(0).addClass('on');
+			},300);
+
+			$(document).off('click.snapimg').on('click.snapimg', '.ui-snap-btn', function(){
+				//popidx = $(this).closest('.owl-item').index();
+				popidx = $(this).data('n');
+				$('#pdpImg').find('li').removeClass('on').eq(popidx).addClass('on');
+
+				//2018.04.02  수정 (_owlItem 추가)
+				//선택된 이미지 표시
+				var _owlItem = $(this).parents('.owl-item');
+				_owlItem.addClass('on').siblings().removeClass('on');
+			});
+
+			$('.G10300_lp1_btn').click(function(event) {
+				event.preventDefault();
+				layerPopOver('this','.G10300_lp1_pop');
+
+				//$(this).find('.owl-item').removeClass('.on');
+				//$('#recentlyViewedListTab2').find('.owl-item').removeClass('.on');
+				popidx = $(this).closest('.on').index();
+
+				$('#recentlyViewedListTab2').owlCarousel({
+					startPosition:popidx,
+					loop: true,
+					nav: true,
+					dots: false,
+					margin: 0,
+					items: 3,
+					responsiveClass: true,
+					responsive: {
+						480 : {
+							items: 3
+						},
+						768 : {
+							items: 5
+						},
+						960 : {
+							items: 5
+						},
+						1100 : {
+							items: 6
+						},
+						1457 : {
+							items: 6
+						}
+					}
+				});
+				$('#largeImgView img').attr('src', $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').find('img').attr('src'));
+
+				//2018.04.02  수정 (_owlItemIdx 추가)
+				//선택된 이미지 표시
+				var _owlItemIdx = $('#recentlyViewedListTab2 .owl-item [data-n="'+ popidx +'"]').parents('.owl-item');
+				var _owlItemAll = _owlItemIdx.parents('#recentlyViewedListTab2').find('.owl-item');
+				_owlItemAll.removeClass('on');
+				_owlItemIdx.addClass('on');
+
+				var $IMG = $('#largeImgView.pop-gallery').find('img');
+				var $listIMG = $('#recentlyViewedListTab2').find('img');
+
+				//동영상 주소 가져오기
+				var $video = $('#largeImgView.pop-gallery').find('.type-video');
+				var findVideo = $('#pdpImg').find('li.type-video .video-wrapper').html();
+				var imageWrapper = $('#largeImgView.pop-gallery').find('span');
+				var videoWrapper = $('#largeImgView.pop-gallery').find('.video-wrapper');
+				$(findVideo).appendTo( videoWrapper );
+
+				//이미지 클릭시
+				$listIMG.each(function(){
+					$(this).on('click',function(e){
+						e.preventDefault();
+
+						//2018.04.02  수정 (_owlItemIdx 추가)
+						//선택된 이미지 표시
+						var _owlItem = $(this).parents('.owl-item');
+						_owlItem.addClass('on').siblings().removeClass('on');
+
+						var _SRC = $(this).attr('src');
+						var _ALT = $(this).attr('alt');
+						$IMG.attr({'src':_SRC, 'alt':_ALT});
+
+						//비디오 이미지 클릭 시
+						var _parent =  $(this).parent();
+						if( _parent.hasClass('type-video')){
+							$(imageWrapper).hide();
+							$(videoWrapper).show();
+						} else{
+							$(imageWrapper).show();
+							$(videoWrapper).hide();
+						}
+					});
+				});
+			});
+		}
+	}
+	$.uiSnapImg.owl({ current:0 });
+}
 
 /* 제품상세 상단 이미지 embed 영역 : #pdpImg */
 function videoSize(){
