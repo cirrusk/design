@@ -152,6 +152,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .mgl20 {margin-left:20px}
 .mgl30 {margin-left:30px}
 
+.mgt0 {margin-top:0 !important}
 .mgt5 {margin-top:5px}
 .mgt8 {margin-top:8px}
 .mgt10 {margin-top:10px}
@@ -165,7 +166,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .no_pd {padding:0 !important}
 
 /* 간격 */
-input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {margin-left:7px}
+input + button, input + a, select + select, a + select, [class*='btn0'] + [class*='btn0'] {margin-left:7px}
 
 /* icon */
 [class*='ico_comm'] {display:inline-block; vertical-align:middle; text-indent:-999px; overflow:hidden; background:url(/assets/images/ico_comm.png) no-repeat; box-sizing:border-box;}
@@ -194,11 +195,6 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .btn01_blue {color:#fff; background-color:#002f5f;}
 .btn01_blue:active {background-color:#0c1836}
 .btn01_trans {color:#0075a4}
-[class*='btn02'] {width:300px; height:60px; margin:0 9px; line-height:58px; font-size:20px; font-family:'NSB'; color:#fff}
-.btn02_blue {background-color:#002f5f;}
-.btn02_blue:active {background-color:#0c1836}
-.btn02_red {background-color:#e11e45;}
-.btn02_red:active {background-color:c3183a}
 
 /* link */
 .link_text {color:#0075a4}
@@ -306,7 +302,7 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .tbl_col tbody tr {height:60px; font-family:'NSR'}
 .tbl_col tbody tr:nth-child(even) {background-color:#f4f4f4}
 .tbl_col tbody tr td {padding:0 20px;}
-.tbl_col tbody tr td a.name {display:block; height:50px; line-height:48px; color:#0075a4}
+.tbl_col tbody tr td a.link {display:block; height:50px; line-height:48px; color:#0075a4}
 .tbl_col tbody td.ar {padding-right:15px}
 .tbl_col tbody td .elips {display:block; box-sizing:border-box; text-align:left; font-family:'NSB'}
 .tbl_col tbody td .elips.mx70 {max-width:70px}
@@ -364,7 +360,7 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .box_type01 .btn_wrap .link_text {vertical-align:middle; margin:-2px 0 0 10px}
 
 .img_wrap {position:relative; width:120px}
-.img_wrap .img {display:block; width:120px; height:120px; box-sizing:border-box; overflow:hidden; border-radius:50%; background-color:#fafafa; border:4px solid #dadada}
+.img_wrap .img {display:block; width:120px; height:120px; box-sizing:border-box; overflow:hidden; border-radius:50%; background-color:#e3e3e3; border:4px solid #dadada}
 .img_wrap .img img {width:100%; border-radius:50%}
 .img_wrap .ico_comm {position:absolute; right:0; top:95px; box-shadow:0px 3px 8px 0px rgba(5,11,60,0.1)}
 .img_wrap.type02 {margin:0 auto}
@@ -397,6 +393,7 @@ p.txt_star:before, .txt_star li:before {content:'*'; display:inline-block; margi
 
 /* content */
 .intro {padding-top:355px; text-align:center;}
+.intro > * {width:250px}
 
 /* loading */
 .loading_wrap .loading_dim {position:fixed; left:0; right:0; top:0; bottom:0; background-color:#000; opacity:0; z-index:9999;}
