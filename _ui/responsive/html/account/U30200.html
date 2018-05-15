@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -202,7 +202,7 @@
 
 			<!-- Member 선택시 -->
 			<div id="choose-member" class="author-content member" style="display:none;">
-				<strong class="author-tit">간편확인</strong>
+				<strong class="author-tit">본인확인</strong><!-- 수정 : 2018.05.15 (text) -->
 				<p class="author-text">
 					회원정보에 등록된 아이디, 이름, 생년월일, 휴대폰 번호를 입력해주세요.
 				</p>
@@ -229,6 +229,8 @@
 								</div>
 							</div>
 
+							<!-- 수정 : 2018.05.15 (인증번호 입력 추가) -->
+							<!-- 휴대폰 번호+인증 -->
 							<div class="form-group mobile">
 								<label class="col-md-3 control-label" for="simpleMobile_member">휴대폰 번호</label>
 								<div class="col-md-6 col-xs-12">
@@ -244,7 +246,21 @@
 										</div>
 									</div>
 								</div>
+								<div class="col-md-3 col col-xs-12 col-space-top"><button type="button" class="bt-akl-white">인증번호 재전송</button></div>
 							</div>
+							<div class="form-group mobile-certifi">
+								<div class="col-md-3 col-empty"></div>
+								<div class="col-md-9 col-xs-12 certifi-input-box">
+									<label class="col-md-3 col-xs-12 certifi-label" for="simpleCertiNumber_member">인증번호 입력</label>
+									<div class="col-md-5 col-xs-8 certifi-input">
+										<input type="text" class="form-control" id="simpleCertiNumber_member">
+										<p class="txt-input-guide">남은시간:2분59초</p>
+									</div>
+									<div class="col-md-4 col-xs-4 col-btn"><button type="button" class="bt-akl-white">확인</button></div>
+								</div>
+							</div>
+							<!-- //휴대폰 번호+인증 -->
+							<!-- //수정 : 2018.05.15 (인증번호 입력 추가) -->
 						</div>
 					</div>
 					<!-- //간편확인 입력 전체 -->
