@@ -26,8 +26,8 @@ Editor : ji-min Park
 .visual-area.type02.water-uv{background: #f8f8f8 url(../images/akl_product/beauty/bg_sun_protect_1416.png) no-repeat top center;height:1141px;}/*06 스페셜 케어 - 워터에센스 선 프로텍트 */
 .visual-area.type02.duma-sonic{background: #f8f8f8 url(../images/akl_product/beauty/bg_duma_sonic_4779.png) no-repeat top center;height:1036px;}/*06 스페셜 케어 더마 갈바닉 */
 .visual-area.type02.essentials_by{background: #f8f8f8 url(../images/akl_product/beauty/bg_essentials_by.png) no-repeat top center;height:1100px;}/*09 에센셜 바이 */
-
-
+.visual-area.type02.supreme_lx{background: #000000 url(../images/akl_product/beauty/bg_supreme_lx_regenerating.png) no-repeat top center;height:1130px;}
+.visual-area.type02.artistry_men{background: #000000 url(../images/akl_product/beauty/bg_artistry_men.png) no-repeat top center;height:1024px;}
 
 
 .fleft{float:left !important;padding: 30px 0 0;}
@@ -147,6 +147,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 /* 주의사항 추가 */
 .ingestion-usage.line{display: block;margin: 80px 0 0;padding: 12px 0 0;border-top: 1px solid #e3e3e3;/*border-bottom: 1px solid #e3e3e3;*/overflow: hidden;clear: both;}
+.ingestion-usage.line.short{margin: 30px 0 0;}
 .line-top-gray{display: block;margin: 80px 0 0;padding: 12px 0 0x;border-top: 1px solid #e3e3e3;clear: both;}
 
 
@@ -326,13 +327,17 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.visual-area.ideal .v-logo.beauty img{height:30px;}
 	.pcomp-list.deaf04 div.comp-info {width: 100%;}
 	
+
+	
 }
 
 
 /* 다단 대응 디자인 확정시 삭제 */
 
+
+
 @media (min-width: 769px) and (max-width: 1144px) {
-	.skin-care .ingre-list-wrap .ingre-list li{width:50%;min-width:auto;}	
+	.skin-care .ingre-list-wrap .ingre-list li{width:33.333%;min-width:auto;}	
 }
 
 @media (max-width: 576px) {
@@ -356,3 +361,14 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 @media (max-width: 474px) {
 	.skin-care .ingre-list li{width:100% !important;}
 }
+
+
+@media (max-width: 324px) {
+	/* 에센셜 바잉 */
+	.ingre-list li:before{display:none;}
+}
+
+
+	
+	
+	
