@@ -111,8 +111,8 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .inp_date .year {width:90px}
 
 .inp_s {width:240px !important}
-.inp_m {width:260px}
-.inp_l {width:280px}
+.inp_m {width:260px !important}
+.inp_l {width:300px !important}
 
 /* Align */
 .ac {text-align:center !important;}
@@ -143,6 +143,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .hide {display:none !important; visibility:hidden;}
 .blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
 .bg_bar span + span:before {content:''; display:inline-block; width:1px; height:12px; margin:-3px 13px 0; vertical-align:middle; background-color:#cfd3dc}
+.hr {padding-top:35px; margin-top:35px; border-top:1px solid #e3e3e3}
 
 .w80 {width:80px}
 .w150 {width:150px}
@@ -158,6 +159,7 @@ input:disabled + .checkmark:after {display:block; background-color:#999}
 .mgt20 {margin-top:20px}
 .mgt25 {margin-top:25px}
 .mgt30 {margin-top:30px}
+.mgt35 {margin-top:35px}
 .mgt40 {margin-top:40px}
 
 .no_pd {padding:0 !important}
@@ -171,6 +173,7 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .ico_comm.plus {width:10px; height:10px; background-position:-200px 0; margin:-5px 5px 0 0}
 .ico_comm.minus {width:10px; height:10px; background-position:-150px 0; margin:-5px 5px 0 0}
 .ico_comm.search {width:18px; height:18px; background-position:-50px 0; margin:-5px 7px 0 0}
+.ico_comm.del02 {width:18px; height:18px; background-position:0 -100px; margin:-4px 0 0 6px}
 .ico_comm.edit {width:32px; height:32px; background-position:-91px 7px; margin:-5px 7px 0 0; background-color:#fff; border-radius:16px}
 .ico_comm.del {width:32px; height:32px; background-position:-241px -43px; margin:-5px 7px 0 0; background-color:#fff; border-radius:16px}
 .ico_comm.pop_close01 {width:20px; height:20px; background-position:-250px 0;}
@@ -184,7 +187,7 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .ico_comm.go {width:8px; height:8px; margin:-2px 0 0 5px; vertical-align:middle; border-left:2px solid #0075a4; border-bottom:2px solid #0075a4; transform:rotate(225deg); background:none}
 
 /* button*/
-[class*='btn0'] {display:inline-block; box-sizing:border-box; text-align:center; vertical-align:middle;}
+[class*='btn0'] {display:inline-block; box-sizing:border-box; text-align:center; font-family:'NSM'; vertical-align:middle;}
 [class*='btn01'] {height:40px; padding:0 20px; line-height:38px}
 .btn01_white {color:#11224e; background-color:#fff; border:1px solid #11224e}
 .btn01_white:active {background-color:#ebf2f7}
@@ -203,10 +206,13 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .link_prev:before {content:''; display:inline-block; margin:-2px 8px 0 0; vertical-align:middle; border-width:6px 6px 6px 0; border-color:transparent #0075a4 transparent transparent; border-style:solid}
 
 /* file box */
-.file_box {margin-top:30px; text-align:center}
 .file_box .upload_name {background-color:#fff !important}
 .file_box label {margin-left:7px}
 .file_txt {margin:20px auto 0 auto; width:380px}
+
+.file_box.type02 {position:relative; padding-right:100px}
+.file_box.type02 .upload_name {width:100%}
+.file_box.type02 label {position:absolute; top:0; right:0}
 
 /* tag */
 [class*='tag0'] {display:inline-block; box-sizing:border-box; text-align:center;}
@@ -222,6 +228,7 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .pop_wrap {position:relative; background-color:#fff; z-index:100;}
 .pop_container {}
 .pop_content {padding:40px; max-height:600px; overflow:auto;}
+.pop_content .tit_h2 {display:block; color:#56565a; font-size:16px}
 .pop_footer {height:80px; padding:20px 30px; text-align:center; box-sizing:border-box; border-top:1px solid #ccc}
 .pop_footer .btn01_blue {min-width:120px}
 
@@ -239,13 +246,21 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .txt_alert {padding:30px 0; font-size:16px; font-family:'NSR'; color:#002f5f; text-align:center;}
 .txt_alert .blck {margin-top:15px}
 
-.search_zip input[type='text'] {width:423px}
-.search_zip .btn01_blue {width:87px}
+.pop_content .search_wrap {position:relative; padding-right:93px}
+.pop_content .search_wrap input[type='text'] {width:100%}
+.pop_content .search_wrap .btn01_blue {position:absolute; top:0; right:0; width:87px}
 
-.list_zip {display:table}
+.zip_detail {margin-top:7px}
+.zip_detail .zip01 {position:relative; padding-left:160px}
+.zip_detail .zip01 .z1 {position:absolute; top:0; left:0; width:150px}
+.zip_detail .zip01 .z2 {width:100%}
+.zip_detail .zip02 input {width:100%}
+
+.tbl_col.zip {margin-top:16px}
+.tbl_col.zip th {padding-right:0}
+.list_zip {display:table; margin:10px 0 12px}
 .list_zip li {display:table-row}
-.list_zip li + li {padding-top:10px}
-.list_zip li span {display:table-cell; padding-left:10px; font-family:'NSR'}
+.list_zip li span {display:table-cell; padding:5px 0 5px 10px; line-height:18px; font-family:'NSR'}
 .list_zip li .st {width:30px; padding-left:0; font-family:'NSB'; color:#002f5f}
 .list_zip li .ch {width:30px; text-align:right}
 
@@ -266,15 +281,19 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .list_accordion > li.open > a:after {background-position:-150px 0;}
 .list_accordion .tbl_row table, .list_accordion .tbl_row table tr {border:0}
 
+.rd_accordion {}
+.rd_accordion > li {}
+.rd_accordion > li + li {margin-top:10px}
+.rd_accordion > li > div {display:none; margin:20px 0 30px 27px}
+.rd_accordion > li.open > div {display:block}
+
 /* table */
 .tbl_top {margin:37px 0 15px}
 
 .tbl_row table {width:100%;}
-.tbl_row tr {height:50px;}
 .tbl_row td .won {display:inline-block; width:110px; padding-right:10px; box-sizing:border-box; text-align:right;}
-.tbl_row td .txt_inp01 {display:inline-block; margin-left:13px; box-sizing:border-box; vertical-align:middle; line-height:18px; font-family:'NSR'; font-size:13px}
-.tbl_row tr input[type='text'] {font-size:14px}
-.tbl_row th, .tbl_row td {text-align:left; padding:0 20px 0 0; box-sizing:border-box;}
+.tbl_row td .txt_inp01 {display:inline-block; margin-top:4px; font-family:'NSR'; font-size:13px; color:#808285; font-style:italic}
+.tbl_row th, .tbl_row td {text-align:left; padding:5px 20px 5px 0; box-sizing:border-box;}
 .tbl_row th {color:#002f5f}
 .tbl_row td {font-family:'NSR'}
 .tbl_row th.th_top {vertical-align:top; padding-top:12px}
@@ -287,12 +306,12 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .tbl_col tbody tr {height:60px; font-family:'NSR'}
 .tbl_col tbody tr:nth-child(even) {background-color:#f4f4f4}
 .tbl_col tbody tr td {padding:0 20px;}
-.tbl_col tbody tr td a.name {display:block; height:50px; line-height:48px; }
+.tbl_col tbody tr td a.name {display:block; height:50px; line-height:48px; color:#0075a4}
 .tbl_col tbody td.ar {padding-right:15px}
 .tbl_col tbody td .elips {display:block; box-sizing:border-box; text-align:left; font-family:'NSB'}
-.tbl_col tbody td .bg_bar, .tbl_col.bg_bar td > span {position:relative; display:block; font-family:'NSR'; font-size:13px; height:23px}
-.tbl_col tbody td .bg_bar:before, .tbl_col.bg_bar td > span:before {content:''; position:absolute; top:6px; left:0; display:inline-block; width:1px; height:12px; background-color:#ccc}
 .tbl_col tbody td .elips.mx70 {max-width:70px}
+.tbl_col.type02 {border-bottom:1px solid #e3e3e3;}
+.tbl_col.type02 th, .tbl_col.type02 td {padding:0 40px}
 
 .paging {margin-top:30px; text-align:center}
 .paging a.prev {margin-right:10px}
@@ -328,7 +347,8 @@ input + button, input + a, select + select, [class*='btn0'] + [class*='btn0'] {m
 .scroll_tbl table tr td:nth-of-type(4) {text-align:center;}
 .scroll_tbl table tr td:nth-of-type(5) {text-align:right;}
 
-.no_data {height:94px; padding-top:32px; margin-top:40px; box-sizing:border-box; font-family:'NSR'; text-align:center; border-top:1px solid #dadada; border-bottom:1px solid #dadada;}
+.no_data {padding:32px 0 38px; margin-top:40px; box-sizing:border-box; font-family:'NSR'; text-align:center; border-top:1px solid #dadada; border-bottom:1px solid #dadada;}
+.no_data em {color:#002f5f}
 
 /* tab */
 
