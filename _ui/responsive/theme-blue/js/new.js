@@ -153,7 +153,13 @@ $(function(){
 			$("#cartlistContent").slideUp(300);
 		}
 
-	})
+	});
+
+	$(".cartlist-view").click(function(){
+        $(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
+    })
+
+
 })();
 
 
