@@ -807,7 +807,6 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-wrapper p {letter-spacing:-1px;}
 .akl .fax-order-wrapper p.address-tit {padding:10px 0 10px;font-size:16px !important;}
 
-
 /* 결제정보 */
 .info-texts-paymentType { padding-bottom:30px; margin-bottom:20px; border-bottom:1px solid #dadada;}
 .info-texts-paymentType>ul>li {margin-top:15px;}
@@ -1012,6 +1011,25 @@ html.scrollLock body {overflow:hidden;}
 .order-impossible-list .pop-prot-body .cartlist-image {position:absolute; top:20px; left:36px; margin:0;}
 .order-impossible-list .pop-prot-body .cartlist-text {float:left; width:100%; margin:0; padding:0;}
 
+/* ----- 여행점수 조회 ----- */
+.akl .amway-theme .rewards-program-wrapper * {font-size:14px;}
+.akl .amway-theme .rewards-program-wrapper h2 {font-size:18px;text-align:left;}
+.akl .amway-theme .rewards-program-wrapper h3 {font-size:16px;text-align:left;}
+.akl .amway-theme .rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
+
+.rewards-program-wrapper h2 {margin:initial; text-align:left;}
+.rewards-program-wrapper h3 {}
+.rewards-program-wrapper {padding:36px 0 0;}
+.rewards-program-wrapper .box-conts-summary>h2 {margin-bottom:28px;}
+.rewards-program-wrapper .box-conts-summary dl{overflow:hidden;}
+.rewards-program-wrapper .box-conts-summary dl>dt {float:left; width:20%; margin-top:13px; color:#002f5f;font-weight:500;}
+.rewards-program-wrapper .box-conts-summary dl>dd {float:left; width:80%; margin-top:13px;}
+.rewards-program-wrapper .box-conts-group {margin:37px 0 0; padding:37px 0; border-top:1px solid #dadada;}
+.rewards-program-wrapper .box-conts-group>h3 {margin-bottom:27px;}
+.rewards-program-wrapper .box-conts-group .imgbox {text-align:center;}
+.rewards-program-wrapper .box-conts-group .box-diagram {padding:40px 60px 37px; background:#fafafa;}
+
+
 @media (min-width: 769px){
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox {padding:30px !important;}
@@ -1058,9 +1076,9 @@ html.scrollLock body {overflow:hidden;}
 	.tbl-list-view .tr {display:block; border-top:0;}
 	.tbl-list-view .tr>strong {display:block; padding:7px 15px; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 	.tbl-list-view .tr>div {display:block; padding:13px 15px 15px;}
-	.tbl-list-view .tr>.mob-tit {position:relative;padding:10px 10px 10px 15px; font-weight:500; border-top:0;color:#555;}
-	.tbl-list-view .tr>.mob-tit:before {content:'';/* position:absolute; top:7px; left:0; background:#888; width:4px; height:4px; */}
-	.tbl-list-view .tbody .tr .mob-hide {display:block;border-bottom:1px solid #e3e3e3;}
+	.tbl-list-view .tr>.mob-tit {position:relative; padding:0 10px 10px 15px; font-weight:500; border-top:0;color:#555;}
+	.tbl-list-view .tr>.mob-tit:before {content:'';/* */ position:absolute; top:7px; left:0; background:#888; width:4px; height:4px;}
+	.tbl-list-view .tbody .tr .mob-hide {display:none; border-bottom:1px solid #e3e3e3;}
 	.tbl-list-view .mob-block,
 	.tbl-list-view .tr>.th.mob-block {display:block;}
 
@@ -1384,7 +1402,7 @@ html.scrollLock body {overflow:hidden;}
 	.akl .fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address button {right:0;}
 	.fax-order-wrapper .new-shipping-address .form-group.def-ship_new {padding-left:10px;}
 	.akl .faxOrder-cart-wrapper .card-kinds {margin:10px 0;}
-	
+
 	/* 제품주문 정보 */
 	.akl .amway-theme .accordion-element.prdt-order-info .accordion-toggle {padding:0;}
 	.akl .amway-theme .accordion-element.prdt-order-info .accordion-panel-title .title-element {font-size:inherit;}
@@ -1407,7 +1425,7 @@ html.scrollLock body {overflow:hidden;}
 	.faxOrder-cart-wrapper .paymemt-type-group {margin-left:30px;}
 	.akl .fax-order-wrapper .card-sort .pay-line .form-group .col-md-10 {padding-left:0px !important}
 	.akl .fax-order-wrapper .card-sort .pay-line input.card-inp {width:49px !important;paddin-left:0;padding-right:0;}
-	
+
 	/* 제품검색 */
 	.akl .fax-order-wrapper .shopping-cart-item-list .product-list-item {padding-right:0;}
 
@@ -1452,12 +1470,15 @@ html.scrollLock body {overflow:hidden;}
 
 	.akl .cart-popup__content.height-auto {max-height:none;}
 	.cart-popup__item-info>.order-impossible-list:first-child {margin-top:20px;}
+
+	/* ----- 여행점수 조회 ----- */
+	.rewards-program-wrapper .box-conts-group .imgbox>img {width:100%;}
 }
 
 @media (max-width: 320px) {
 	/* 신규 ABO 프로모션 */
 	.state-new-abo>h3>span {display:inline;}
 	.message-detail.search-area .tbl-list-board.type-tbody-th .tr>div.mob-block {padding:8px 10px 10px;}
-	
+
 	.akl .evidence-paper label + .btn-business {margin-left:0px;}
 }
