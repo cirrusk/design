@@ -312,7 +312,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: block;text-align: center;overflow: hidden;width: 100%;padding: 0;margin-bottom: 12px;}
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{width: auto;height: auto;}
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: block;}
-	.skin-care .ingre-list-wrap.sie-box{padding:15px 0 0;}	
+	.skin-care .ingre-list-wrap.sie-box{padding:15px 10% 0;}	
+	.advantage-area.hydra-spc{padding: 0 0 30px;}
 	
 	/*  유스 익스텐드 울트라 리프팅 크림  */
 	.beauty-list-wrap ul > li > .beauty-thum-wrap .thum{display: block;text-align: center;overflow: hidden;width: 100%;padding: 0;margin-bottom: 12px;}
@@ -328,6 +329,10 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.visual-area.type02.ideal{height:inherit;}
 	.visual-area.ideal .v-logo.beauty img{height:30px;}
 	.pcomp-list.deaf04 div.comp-info {width: 100%;}
+	.photo-ideal-uv .photo-txt01{top: -9px;right: -15px;}
+	.photo-ideal-uv .photo-txt02{top: 14px;left: -20px;}
+	.photo-ideal-uv .photo-txt03{bottom: 30px;right: -20px;}
+	.ade-photo-txt02{margin-top:10px;}
 	
 
 	
@@ -346,7 +351,9 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 @media (max-width: 576px) {
-	.skin-care .ingre-list li{width:50%;}
+	.skin-care .ingre-list-wrap .ingre-list li{width:33.333%;min-width:auto;}
+	.product-video{margin-bottom:40px;}
+	.advantage-area{padding: 0 0 0 !important;}
 	
 	/* 더마 소닉 4779 */
 	.ctrl-product{display:block;}
@@ -365,12 +372,17 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 @media (max-width: 474px) {
 	.skin-care .ingre-list li{width:100% !important;}
+	.ingre-list li:before{display:none;}
+	.product-video{margin-bottom:40px;}
+	.advantage-area{padding: 0 0 0 !important;}
 }
 
 
 @media (max-width: 324px) {
 	/* 에센셜 바잉 */
 	.ingre-list li:before{display:none;}
+	.product-video{margin-bottom:40px;}
+	.advantage-area{padding: 0 0 0 !important;}
 }
 
 
