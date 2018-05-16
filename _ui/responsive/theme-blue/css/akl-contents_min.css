@@ -18,6 +18,11 @@
 .akl a.type-tel {color:#002f5f;font-weight:500; cursor:default;}
 .akl .list-type2.tline {padding-top:20px; border-top:1px solid #dadada;}
 
+/* 참고 별표(asterisk) */
+.etc-required {position:relative;}
+.etc-required:after {content:'*'; color:#e11e45;}
+.etc-required>em {overflow: hidden; width: 0; height: 0; font-size:0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px;}
+
 /* 툴팁 */
 label + .toolTip-wrapper {margin-left:6px;}
 .toolTip-wrapper {display:inline-block; position:relative; vertical-align:middle;}
@@ -1012,23 +1017,71 @@ html.scrollLock body {overflow:hidden;}
 .order-impossible-list .pop-prot-body .cartlist-text {float:left; width:100%; margin:0; padding:0;}
 
 /* ----- 여행점수 조회 ----- */
+.akl .txt-required {font-size:13px !important;}
+.akl .amway-theme .etc-required>em {font-size:0;}
 .akl .amway-theme .rewards-program-wrapper * {font-size:14px;}
+.akl .amway-theme .rewards-program-wrapper .next-control {text-align:center;}
 .akl .amway-theme .rewards-program-wrapper h2 {font-size:18px;text-align:left;}
 .akl .amway-theme .rewards-program-wrapper h3 {font-size:16px;text-align:left;}
 .akl .amway-theme .rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
+.akl .amway-theme .rewards-program-wrapper .box-goal-point li>span {font-size:38px; letter-spacing:-0.025em}
 
-.rewards-program-wrapper h2 {margin:initial; text-align:left;}
-.rewards-program-wrapper h3 {}
 .rewards-program-wrapper {padding:36px 0 0;}
+.rewards-program-wrapper h2 {margin:initial; text-align:left;}
 .rewards-program-wrapper .box-conts-summary>h2 {margin-bottom:28px;}
 .rewards-program-wrapper .box-conts-summary dl{overflow:hidden;}
 .rewards-program-wrapper .box-conts-summary dl>dt {float:left; width:20%; margin-top:13px; color:#002f5f;font-weight:500;}
 .rewards-program-wrapper .box-conts-summary dl>dd {float:left; width:80%; margin-top:13px;}
-.rewards-program-wrapper .box-conts-group {margin:37px 0 0; padding:37px 0; border-top:1px solid #dadada;}
-.rewards-program-wrapper .box-conts-group>h3 {margin-bottom:27px;}
+.rewards-program-wrapper .box-conts-group {margin:37px 0 0; padding:37px 0 40px; border-top:1px solid #dadada;}
+.rewards-program-wrapper .box-conts-group>h2,
+.rewards-program-wrapper .box-conts-group>h3 {margin-bottom:28px;}
+.rewards-program-wrapper .box-conts-group+.box-conts-group {margin:0;}
 .rewards-program-wrapper .box-conts-group .imgbox {text-align:center;}
 .rewards-program-wrapper .box-conts-group .box-diagram {padding:40px 60px 37px; background:#fafafa;}
 
+/* 여행 점수 산출 diagram */
+.box-diagram {overflow:hidden;}
+.box-diagram .diag-calculation {float:left; width:60%; margin-right:3%; border-right:1px solid #dadada;}
+.box-diagram .diag-details {float:left; width:37%;}
+.diag-calculation>p {display:table; width:100%; height:102px;}
+.diag-calculation p>.math-txt:first-child {width:28%;}
+.diag-calculation .math-txt {position:relative;display:table-cell; width:28%; box-sizing:border-box; vertical-align:middle;}
+.diag-calculation .math-txt.plus {width:8%}
+.diag-calculation .math-txt.last {width:36%;}
+.diag-calculation .math-txt * {display:inline-block; vertical-align:middle;}
+.diag-calculation [class^=ico-type] {position:relative; display:inline-block; padding:15px 0 0 82px; height:72px;}
+.diag-calculation [class^=ico-type]:before {content:''; position:absolute; top:0; left:0; width:72px; height:72px; background:url(../images/akl_common/img_rewards_travel2_pc.png) no-repeat;}
+.diag-calculation .ico-type-equal {padding-left:100px; width:100%; height:100px;}
+.diag-calculation .ico-type-equal:before {width:100px; height:100px; background-position:0 0;}
+.diag-calculation .ico-type-equal:after {content:''; position:absolute; top:50%; left:50%; margin:-7px 0 0 40px; width:24px; height:14px; background:url(../images/akl_common/img_rewards_travel2_pc.png) no-repeat 0 -300px;}
+.diag-calculation .ico-type-a:before {background-position:50% -120px;}
+.diag-calculation .ico-type-a:after {display:none;}
+.diag-calculation .ico-type-b:before {right:30px; background-position:50% -210px;}
+.diag-calculation .ico-type-plus{width:20px; height:20px; padding:0;}
+.diag-calculation .ico-type-plus:before {width:20px; height:20px; background-position:0 -350px; top:50%; right:; margin-top:-10px;}
+.diag-details li>p{margin:0; padding-left:35px;}
+.diag-details .txt-required {color:#e11e45;}
+.diag-details .symbol-tit+.txt {font-size:13px;color:#808285;}
+.diag-details .symbol-tit {position:relative; padding-left:35px;}
+.diag-details .symbol-tit .symbol-round-txt {position:absolute; top:0; left:0}
+.symbol-round-txt {display:inline-block; background:#002f5f; color:#fff; font-size:16px; font-weight:500; border-radius:12px; width:24px; height:24px; text-align:center; line-height:22px;}
+
+/* 여행점수 확인 */
+.rewards-program-wrapper .status-travel-point {margin-bottom:15px;}
+.rewards-program-wrapper .status-travel-point em {font-weight:500; color:#002f5f;}
+.rewards-program-wrapper .txt-ty-month {font-weight:500;}
+.rewards-program-wrapper .mob-inline {display:block;}
+
+.box-goal-point {padding:30px 0 40px; background:#fafafa;}
+.box-goal-point>ul{overflow:hidden;}
+.box-goal-point>ul>li {display:block; float:left; width:33%; text-align:center; position:relative; padding-bottom:20px;}
+.box-goal-point li>span {display:block; font-weight:500; color:#002f5f;}
+.box-goal-point li>strong {display:block; position:absolute; bottom:0; left:0; right:0; width:100%;}
+
+.box-simulation label {padding-left:0; padding-right:0;}
+.point-simulation {}
+
+.box-diagram p.txt-required {margin-bottom:0;}
 
 @media (min-width: 769px){
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
@@ -1038,7 +1091,6 @@ html.scrollLock body {overflow:hidden;}
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox.open { border-top:1px solid #e3e3e3;}
 	.akl .wrapper-memb-join.prev-step-fold #reg-confirm-info.reg-confirm-txt {padding-left:15px;}
 }
-
 @media (max-width: 1250px){
 	/* 마이페이지 메인 */
 	.mypage-block-list li>div a {height:auto; padding:15px 15px 15px 65px;}
@@ -1046,9 +1098,31 @@ html.scrollLock body {overflow:hidden;}
 	.mypage-block-list li p>span {display:block; margin-left:0; padding-left:0; border-left:0;}
 	.mypage-block-list li p>span:first-child {margin-bottom:6px;}
 }
+@media (max-width: 1220px){
+	/* 여행 점수 산출 diagram */
+	.diag-calculation .math-txt.plus {width:6%;}
+	.diag-calculation .math-txt.last {width:38%;}
+}
+@media (max-width: 1148px){
+	/* 여행 점수 산출 diagram */
+	.box-diagram .diag-calculation {width:auto; padding-right:30px;}
+	.box-diagram .diag-details {width:auto;}
+	.diag-calculation>p {width:auto;}
+	.diag-calculation p>.math-txt:first-child {width:auto; min-width:150px}
+	.diag-calculation .math-txt em {display:none;}
+	.diag-calculation [class^=ico-type] {padding-left:72px}
+	.diag-calculation .ico-type-plus {padding-left:0;}
+	.diag-calculation .math-txt {width:auto; min-width:80px; text-align:center;}
+	.diag-calculation .math-txt.plus {width:auto; min-width:50px; text-align:center;}
+	.diag-calculation .math-txt.last {width:auto;}
+}
 @media (max-width:1024px){
-	/* 마이페이지 메인 */
-
+}
+@media (max-width:940px){
+	/* 여행 점수 산출 diagram */
+	.box-diagram .diag-calculation {float:none; width:100%; padding:0 0 30px; margin-bottom:35px; border-right:0; border-bottom:1px solid #dadada;}
+	.box-diagram .diag-details {float:none; width:;}
+	.diag-calculation>p {width:100%;}
 }
 @media (max-width: 768px){
 
@@ -1077,7 +1151,7 @@ html.scrollLock body {overflow:hidden;}
 	.tbl-list-view .tr>strong {display:block; padding:7px 15px; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 	.tbl-list-view .tr>div {display:block; padding:13px 15px 15px;}
 	.tbl-list-view .tr>.mob-tit {position:relative; padding:0 10px 10px 15px; font-weight:500; border-top:0;color:#555;}
-	.tbl-list-view .tr>.mob-tit:before {content:'';/* */ position:absolute; top:7px; left:0; background:#888; width:4px; height:4px;}
+	.tbl-list-view .tr>.mob-tit:before {content:''; position:absolute; top:7px; left:0; background:#888; width:4px; height:4px;}
 	.tbl-list-view .tbody .tr .mob-hide {display:none; border-bottom:1px solid #e3e3e3;}
 	.tbl-list-view .mob-block,
 	.tbl-list-view .tr>.th.mob-block {display:block;}
@@ -1203,25 +1277,9 @@ html.scrollLock body {overflow:hidden;}
 	.akl .wrapper-memb-join.prev-step-fold #register-step-page .form-control + .bt-akl-white {margin-left:0 !important;}
 	.akl .wrapper-memb-join.prev-step-fold .new-ibo-reg.fold-hiddenbox .boxtype-form-sponsor {border-top:1px solid #e3e3e3;}
 
-	/* ----- jump-menu ----- */
+	/* jump-menu */
 	.akl .go-block .jump-to-wrapper {display:block; margin-top:15px; padding:0 20px;}
 	.jump-menu {width:100%;}
-/* 	.jump-menu a {display:block; color:#002f5f; font-weight:500; padding-left:20px; font-size:14px !important;}
-	.jump-menu .currentTxt {display:block; height:40px; line-height:38px; box-sizing:border-box; border:1px solid #dadada;}
-	.jump-menu .menu-dep1 {height:40px; line-height:40px; padding-left:35px;}
-	.jump-menu .menu-dep2 {height:40px; line-height:40px;}
-	.jump-menu .current {background:#f4f4f4;}
-	.jump-menu .select-wrapper {display:none; position:absolute; top:40px; left:0; width:100%; height:auto; background:#fff; border:1px solid #dadada; border-top:0;}
-	.jump-menu .select-list>li {border-top:1px solid #dadada;}
-	.jump-menu .select-list>li:first-child {border-top:0;}
-	.jump-menu .select-list>li>ul {display:none;}
-	.jump-menu .currentTxt,
-	.jump-menu .hasSub {background:url(../images/akl_common/ico_jumpmenu_arrw.png) no-repeat 100% -55px;}
-	.jump-menu .currentTxt.active,
-	.jump-menu .on .hasSub {background-position: 100% -5px;}
-	.jump-menu .sub-main .menu-dep1 {padding-left:20px;}
-	.select-depth2 {margin-bottom:10px;}
-	.select-depth2 a {padding-left:50px; font-weight:normal;} */
 
 	/* 마이페이지 - 공통 */
 	.akl .message-center-wrapper, .akl .authorization-step-wrapper {padding:30px 0 0;}
@@ -1473,6 +1531,22 @@ html.scrollLock body {overflow:hidden;}
 
 	/* ----- 여행점수 조회 ----- */
 	.rewards-program-wrapper .box-conts-group .imgbox>img {width:100%;}
+	.rewards-program-wrapper .box-conts-group .box-diagram {padding:40px 30px;}
+
+	/* 여행 점수 산출 diagram */
+	.diag-calculation [class^=ico-type] {padding:15px 0 0 62px; height:52px;}
+	.diag-calculation [class^=ico-type]:before, .diag-calculation [class^=ico-type]:after {display:none;}
+	.box-diagram .diag-calculation>p {overflow:hidden; display:block; height:1px; padding:70px 0 0; margin:0; background:url(../images/akl_common/img_rewards_travel2_mob.png) 50% 0 no-repeat; background-size:auto 70px;}
+
+	/* 여행점수 확인 */
+	.rewards-program-wrapper .mob-inline {display:inline;}
+
+	.box-goal-point {padding:10px 0 20px;}
+	.box-goal-point>ul{overflow:hidden;}
+	.box-goal-point>ul>li {display:block; float:none; width:auto;}
+	.box-goal-point>ul>li+li{margin-top:20px;}
+
+
 }
 
 @media (max-width: 320px) {
