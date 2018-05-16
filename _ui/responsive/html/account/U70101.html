@@ -77,7 +77,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="account-area">
+			<div class="account-area amway-theme"><!-- class 추가 2018.05.15 -->
 				<div class="title-box order">
 					<div class="product-list-page-title">
 						<h1 class="myorder">주문내역 상세정보</h1>
@@ -173,20 +173,28 @@
 													<div class="col-md-6 col-xs-12 orderProof">
 														<div class="col-md-3 col-xs-12 txt-label">거래내역 증빙신청</div>
 														<div class="col-md-9 col-xs-12 txt-content">
+															<!-- 2018.05.15 마크업 수정 -->
 															<div class="pay-trans">
-																<input class="amwa-radio" type="radio" name="optradio3" id="radio31" value="radio31" checked="" />
-																<label for="radio31"><span class="text-regul">신청안함</span></label>
+																<span class="amw-radio-wrap">
+																	<input class="amwa-radio" type="radio" name="orderProof" id="no">
+																	<label for="no">신청안함</label>
+																</span>
 															</div>
 															<div class="pay-trans">
-																<input class="amwa-radio" type="radio" name="optradio3" id="radio32" value="radio32" />
-																<label for="radio32"><span class="text-regul">현금영수증</span></label>
+																<span class="amw-radio-wrap">
+																	<input class="amwa-radio" type="radio" name="orderProof" id="receip">
+																	<label for="receip">현금영수증</label>
+																</span>
 																<span class="btn-cash U70101_lp3"><a href="#" class="bt-akl-white mini">현금영수증 발급</a></span>
 															</div>
 															<div class="pay-trans">
-																<input class="amwa-radio" type="radio" name="optradio3" id="radio33" value="radio33" />
-																<label for="radio33"><span class="text-regul">세금계산서(중개판매 신청)</span></label>
+																<span class="amw-radio-wrap">
+																	<input class="amwa-radio" type="radio" name="orderProof" id="taxbill">
+																	<label for="taxbill">세금계산서(중개판매 신청)</label>
+																</span>
 																<span class="btn-business"><a href="#" class="bt-akl-white mini">세금계산서 선택</a></span>
 															</div>
+															<!-- //2018.05.15 마크업 수정 -->
 														</div>
 													</div>
 												</div>
@@ -332,10 +340,11 @@
 									</div>
 								</div>
 							</div>
-
+							
+							<!-- 쿠폰/프로모션 영역 삭제 2018.05.15
 							<div class="panel">
 								<div class="panel-heading" role="tab">
-									<a href="#down3" data-toggle="collapse"><!-- 펼쳤을때는  class="collapsed" 삭제 -->
+									<a href="#down3" data-toggle="collapse">
 										<div class="panel-title">
 											<span class="text-uppercase accordion-header-text icon-cupon">쿠폰/프로모션 적용 내역</span>
 											<span class="pull-right icon-minus"></span>
@@ -421,7 +430,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							
 							<!-- 배송정보 > 기본 -->
 							<div class="panel">
@@ -607,6 +616,12 @@
 																						<input id="remember5" type="checkbox">
 																						<label for="remember5" class="normal inline-label checklabel">기본 배송지</label>
 																				   </div>
+																				</div>
+																				<div class="form-group telephone">
+																					<label for="tele-phone" class="col-md-3 control-label">일반전화번호</label>
+																					<div class="col-md-9 col-xs-12 tele-phone">
+																						<input type="text" name="" id="tele-phone" class="text form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="숫자 입력">
+																					</div>
 																				</div>
 																				<!--// 2018.05.10 수정 배송지 관리 위치 변경 -->
 																			</div>
@@ -872,195 +887,825 @@
 							<div class="r-cond"><span>상태 :</span><span class="red">추후배송</span></div>
 						</div>
 
-						<div class="mylist-box">
-							<div class="list-content">
-								<div class="row list-row-title">
-									<div class="moy-prod">제품</div>
-									<div class="moy-qut">수량</div>
-									<div class="moy-opt">옵션</div>
-									<div class="moy-pre1">단가(원)</div>
-									<div class="moy-pre2">소계(원)</div>
-									<div class="moy-month">실적월</div>
-								</div>
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 moy-prod">
-											<span class="pl-image">
-												<img src="/_ui/responsive/theme-blue/images/heart-health.png" class="no-border-image" alt="pro-duct1" />
-											</span>
-											<span class="pl-conts">
-												<span class="spl-tit">아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스</span>
-												<span class="spl-code">1038 / 120435D</span>
-												<span class="spl-pvbv">PV 18,650 / BV 29,100</span>
-											</span>
+						<!-- 마크업 변경 2018.05.15 -->
+						<div class="myorder-promotion">
+							<div id="shopping-list-content">
+								<ul class="shopping-cart-item-list js-shopping-cart-item-list new-shopping-cart-item-list change-shopping-cart-item-list">
+									<li class="visible-md visible-lg">
+										<div class="col-xs-12 uppercase list-header change-list-header">
+											<div class="col-xs-5 list-item-info">제품</div>
+											<div class="col-xs-3 list-item-quantity">수량</div>
+											<div class="col-xs-2 list-item-set-price">옵션</div>
+											<div class="col-xs-1 list-item-price">단가(원)</div>
+											<div class="col-xs-1 list-item-total">소계(원)</div>
+											<div class="col-xs-1 list-item-month">실적월</div>
 										</div>
-										<div class="col-ak-10 moy-qut">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">2</span>
+									</li>
+									<li class="visible-xs">
+										<div class="col-xs-12 uppercase list-header change-list-header mob-list-header">
 										</div>
-										<div class="col-ak-10 moy-opt">
-											<span class="tite-label">옵션</span>
-											<span class="txte-wrap">
-												<span class="value-wrapper option">
-													<img src="/_ui/responsive/theme-blue/images/glitz-4.png" alt="color-4">
-													<span class="option-info">
-														<span>19번 코랄 선라이즈</span>
-													</span>
-												</span>
-											</span>
-										</div>
-										<div class="col-ak-10 moy-pre1">
-											<span class="tite-label">단가(원)</span>
-											<span class="txte-wrap">20,000</span>
-										</div>
-										<div class="col-ak-10 moy-pre2">
-											<span class="tite-label">소계(원)</span>
-											<span class="txte-wrap">40,000</span>
-										</div>
-										<div class="col-ak-10 moy-month">
-											<span class="tite-label">실적월</span>
-											<span class="txte-wrap">-</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="row content-list">
-									<div class="row con-list-item">
-										<div class="col-ak-10 moy-prod">
-											<span class="pl-image">
-												<img src="/_ui/responsive/theme-blue/images/no-border-images/heart-health_checkout.png" class="no-border-image" alt="pro-duct2" />
-											</span>
-											<span class="pl-conts">
-												<span class="spl-tit">아티스트리 시그니처 컬러 라잇업 립글로스 립글로스 립글로스  립글로스  립글로스</span>
-												<span class="spl-code">1038 / 120435D</span>
-												<span class="spl-pvbv">PV 18,650 / BV 29,100</span>
-											</span>
-										</div>
-										<div class="col-ak-10 moy-qut">
-											<span class="tite-label">수량</span>
-											<span class="txte-wrap">2</span>
-										</div>
-										<div class="col-ak-10 moy-opt">
-											<span class="tite-label">옵션</span>
-											<span class="txte-wrap">
-												<span class="value-wrapper option">
-													<img src="/_ui/responsive/theme-blue/images/glitz-4.png" alt="color-4">
-													<span class="option-info">
-														<span>19번 코랄 선라이즈</span>
-													</span>
-												</span>
-											</span>
-										</div>
-										<div class="col-ak-10 moy-pre1">
-											<span class="tite-label">단가(원)</span>
-											<span class="txte-wrap">20,000</span>
-										</div>
-										<div class="col-ak-10 moy-pre2">
-											<span class="tite-label">소계(원)</span>
-											<span class="txte-wrap">40,000</span>
-										</div>
-										<div class="col-ak-10 moy-month">
-											<span class="tite-label">실적월</span>
-											<span class="txte-wrap">-</span>
-										</div>
-									</div>
-
-									<div class="prod-composition">
-										<div class="guid-box js-guidebox-toggle">
-											<a href="#" class="title">상품 구성 <span class="hidden">열기</span></a>
-											<div class="tgg-hidden-area">
-												<div class="don-list-cont">
-													<div class="dod-list-item">
-														<div class="col-ak-10 comp-prod">
-															<span class="txte-wrap">
-																<span>[본품]</span> 
-																<span>시그니처 컬러 아이쉬머큐브</span>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션</div>
+										</div> 
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">신제품</span>
+												</div>
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="product-stock">
+													<div class="proabo-btn">
+														<span class="stock">
+															<span class="product-availability">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+																<span class="sto-blue">
+																	<button id="G10300_lp2" class="bt-akl-white mini">재고현황</button>
+																</span>
 															</span>
+														</span>
+													</div>
+												</div>
+												<div class="product-stock has-promotion-stock">
+													<div class="promotion">
+														<div class="lightBlue pointer promotion-tip">
+															<button type="button" class="tooltip-btn">프로모션 내용</button>
 														</div>
-														<div class="col-ak-10 comp-qut">
-															<span class="tite-label">수량</span>
-															<span class="txte-wrap">2</span>
-														</div>
-														<div class="col-ak-10 comp-opt">
-															<span class="tite-label">옵션</span>
-															<span class="txte-wrap">
-																<span class="value-wrapper option">-</span>
-															</span>
-														</div>
-														<div class="col-ak-10 comp-pre1">
-															<span class="tite-label">단가(원)</span>
-															<span class="txte-wrap">-</span>
-														</div>
-														<div class="col-ak-10 comp-pre2">
-															<span class="tite-label">소계(원)</span>
-															<span class="txte-wrap">40,000</span>
-														</div>
-														<div class="col-ak-10 comp-month">
-															<span class="tite-label">실적월</span>
-															<span class="txte-wrap">-</span>
+														<div class="promotion-tip-alert">
+															<div class="txt-wrap">
+																<p>아티스트리 워터 에센스 선 프로텍트</p>
+																<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																<p>에센스 선 프로텍트 미니 1개 증정</p>
+															</div>
+															<div class="txt-btn-detail" id="G10500_lp3"><a href="#"><span>프로모션 상세보기</span></a></div>
+															<div class="tip-close">
+																<button type="button" class="tooltip-closed">창닫기</button>
+															</div>
 														</div>
 													</div>
-													<div class="dod-list-item">
-														<div class="col-ak-10 comp-prod">
-															<span class="txte-wrap">[본품]  시그니처 컬러 아이쉬머큐브</span>
-														</div>
-														<div class="col-ak-10 comp-qut">
-															<span class="tite-label">수량</span>
-															<span class="txte-wrap">2</span>
-														</div>
-														<div class="col-ak-10 comp-opt">
-															<span class="tite-label">옵션</span>
-															<span class="txte-wrap">
-																<span class="value-wrapper option">-</span>
+													<div class="cartlist-instock">
+														<span class="green">
+															<a href="#">
+																<span class="icon icon-check-bold"></span>
+																<span class="text text-uppercase">적용</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/glitz-4.png" alt="color-4"></p>
+												<div class="option-info">
+													<span>19번 코랄 선라이즈</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>50,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>500,000</del></span>
+												<span class="red">300,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item gwp-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">증정품</span>
+												</div>
+												<span class="product-name">라잇업 립글로스 - 스윗멜론</span>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+											</div>
+										</div>
+
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>50,000</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>500,000</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션</div>
+										</div> 
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">신제품</span>
+												</div>
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="product-stock">
+													<div class="proabo-btn">
+														<span class="stock">
+															<span class="product-availability">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+																<span class="sto-blue">
+																	<button id="G10300_lp2" class="bt-akl-white mini">재고현황</button>
+																</span>
 															</span>
+														</span>
+													</div>
+												</div>
+												<div class="product-stock has-promotion-stock">
+													<div class="promotion">
+														<div class="lightBlue pointer promotion-tip">
+															<button type="button" class="tooltip-btn">프로모션 내용</button>
 														</div>
-														<div class="col-ak-10 comp-pre1">
-															<span class="tite-label">단가(원)</span>
-															<span class="txte-wrap">-</span>
-														</div>
-														<div class="col-ak-10 comp-pre2">
-															<span class="tite-label">소계(원)</span>
-															<span class="txte-wrap">40,000</span>
-														</div>
-														<div class="col-ak-10 comp-month">
-															<span class="tite-label">실적월</span>
-															<span class="txte-wrap">-</span>
+														<div class="promotion-tip-alert">
+															<div class="txt-wrap">
+																<p>아티스트리 워터 에센스 선 프로텍트</p>
+																<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																<p>에센스 선 프로텍트 미니 1개 증정</p>
+															</div>
+															<div class="txt-btn-detail"><a href="#"><span>프로모션 상세보기</span></a></div>
+															<div class="tip-close">
+																<button type="button" class="tooltip-closed">창닫기</button>
+															</div>
 														</div>
 													</div>
-													<div class="dod-list-item">
-														<div class="col-ak-10 comp-prod">
-															<span class="txte-wrap">[본품]  시그니처 컬러 아이쉬머큐브</span>
+													<div class="cartlist-instock">
+														<span class="green">
+															<a href="#">
+																<span class="icon icon-check-bold"></span>
+																<span class="text text-uppercase">적용</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/glitz-4.png" alt="color-4"></p>
+												<div class="option-info">
+													<span>19번 코랄 선라이즈</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>50,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>500,000</del></span>
+												<span class="red">300,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item gwp-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">증정품</span>
+												</div>
+												<span class="product-name">라잇업 립글로스 - 스윗멜론</span>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="gwp-gift-selections">
+													<div class="row wp-conts">
+														<div class="col-xs-12">
+															<div class="col-xs-9">핑크누드</div>
+															<div class="col-xs-3">
+																<span class="gwp-label">수량</span>
+																<span class="gwp-conts">2</span>
+															</div>
 														</div>
-														<div class="col-ak-10 comp-qut">
-															<span class="tite-label">수량</span>
-															<span class="txte-wrap">2</span>
+													</div>
+													<div class="row wp-conts">
+														<div class="col-xs-12">
+															<div class="col-xs-9">스윗멜론</div>
+															<div class="col-xs-3">
+																<span class="gwp-label">수량</span>
+																<span class="gwp-conts">4</span>
+															</div>
 														</div>
-														<div class="col-ak-10 comp-opt">
-															<span class="tite-label">옵션</span>
-															<span class="txte-wrap">
-																<span class="value-wrapper option">-</span>
-															</span>
+													</div>
+													<div class="row wp-conts">
+														<div class="col-xs-12">
+															<div class="col-xs-9">미스티모드</div>
+															<div class="col-xs-3">
+																<span class="gwp-label">수량</span>
+																<span class="gwp-conts">1</span>
+															</div>
 														</div>
-														<div class="col-ak-10 comp-pre1">
-															<span class="tite-label">단가(원)</span>
-															<span class="txte-wrap">-</span>
-														</div>
-														<div class="col-ak-10 comp-pre2">
-															<span class="tite-label">소계(원)</span>
-															<span class="txte-wrap">40,000</span>
-														</div>
-														<div class="col-ak-10 comp-month">
-															<span class="tite-label">실적월</span>
-															<span class="txte-wrap">-</span>
+													</div>
+													<div class="row wp-conts">
+														<div class="col-xs-12">
+															<div class="col-xs-9">쥬이시 핑크</div>
+															<div class="col-xs-3">
+																<span class="gwp-label">수량</span>
+																<span class="gwp-conts">3</span>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<div class="option-info">
+
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>50,000</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>500,000</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션</div>
+										</div> 
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">신제품</span>
+												</div>
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="product-stock">
+													<div class="proabo-btn">
+														<span class="stock">
+															<span class="product-availability">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+																<span class="sto-blue">
+																	<button id="G10300_lp2" class="bt-akl-white mini">재고현황</button>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+												<div class="product-stock has-promotion-stock">
+													<div class="promotion">
+														<div class="lightBlue pointer promotion-tip">
+															<button type="button" class="tooltip-btn">프로모션 내용</button>
+														</div>
+														<div class="promotion-tip-alert">
+															<div class="txt-wrap">
+																<p>아티스트리 워터 에센스 선 프로텍트</p>
+																<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																<p>에센스 선 프로텍트 미니 1개 증정</p>
+															</div>
+															<div class="txt-btn-detail"><a href="#3"><span>프로모션 상세보기</span></a></div>
+															<div class="tip-close">
+																<button type="button" class="tooltip-closed">창닫기</button>
+															</div>
+														</div>
+													</div>
+													<div class="cartlist-instock">
+														<span class="green">
+															<a href="#">
+																<span class="icon icon-check-bold"></span>
+																<span class="text text-uppercase">적용</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/glitz-4.png" alt="color-4"></p>
+												<div class="option-info">
+													<span>19번 코랄 선라이즈</span>
+													<a class="link-btn" href="#" id="G10500_lp2">변경하기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>269,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>538,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/glitz-4.png" alt="color-4"></p>
+												<div class="option-info">
+													<span>19번 코랄 선라이즈</span>
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>269,000</del></span>
+												<span class="red">134,500</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>269,000</del></span>
+												<span class="red">134,500</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션 세트</div>
+										</div> 
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">증정품</span>
+												</div>
+												<span class="product-name">아티스트리 시그니처 컬러 라잇업 립글로스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="product-stock cartlist-promotions cartlist-view"><a href="#1">프로모션 세트 구성<i class="fas fa-angle-down"></i></a></div>
+												<div class="view-bundle-contents">
+													<div class="col-xs-12">
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[본품] 아티스트리 인텐시브 스킨케어 부스팅 인퓨전</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[본품] 인텐시브 스킨케어 어드밴스t드 비타민 C + 히알루론산 트리트먼트</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[본품] 유스 익스텐드 인리칭 크림</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span></span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[추가구성품] 아티스트리 글로우 페이셜 오일</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">-</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 유스 익스텐드 리치 클렌징 폼 미니</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 인텐시브 스킨케어 리뉴잉 필 샘플 카드 (6개입)</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp sold-out">
+															 <div class="v-subject">[증정품] 스킨 배리어 프로텍션 리플릿</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span class="red">일시품절</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 라잇업 립글로스 - 핑크누드</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">1</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+														 <div class="row view-setcomp">
+															 <div class="v-subject">[증정품] 라잇업 립글로스 - 스윗멜론</div>
+															 <div class="v-number">
+																<span class="ve-label">수량</span>
+																<span class="ve-conts">2</span>
+															 </div>
+															 <div class="v-option"><span>&nbsp;</span></div>
+														 </div>
+													 </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+												<div class="option-info">
+
+												</div>
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>269,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>538,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="plp-item-label-wrap">
+											<div class="plp-item-label bg-blue">프로모션</div>
+										</div> 
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<span class="product-name">이스프링 정수기 (전환기)</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+												<div class="product-stock">
+													<div class="proabo-btn">
+														<span class="stock">
+															<span class="product-availability">
+																<span class="green">
+																	<span class="icon icon-check-bold"></span>
+																	<span class="text text-uppercase">재고있음</span>
+																</span>
+																<span class="sto-blue">
+																	<button id="G10300_lp2" class="bt-akl-white mini">재고현황</button>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+												<div class="product-stock has-promotion-stock">
+													<div class="promotion">
+														<div class="lightBlue pointer promotion-tip">
+															<button type="button" class="tooltip-btn">프로모션 내용</button>
+														</div>
+														<div class="promotion-tip-alert">
+															<div class="txt-wrap">
+																<p>아티스트리 워터 에센스 선 프로텍트</p>
+																<p>SPF50+ PA++++ 2개 구매 시, 아티스트리 워터</p>
+																<p>에센스 선 프로텍트 미니 1개 증정</p>
+															</div>
+															<div class="txt-btn-detail"><a href="#"><span>프로모션 상세보기</span></a></div>
+															<div class="tip-close">
+																<button type="button" class="tooltip-closed">창닫기</button>
+															</div>
+														</div>
+													</div>
+													<div class="cartlist-instock">
+														<span class="green">
+															<a href="#">
+																<span class="icon icon-check-bold"></span>
+																<span class="text text-uppercase">적용</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											<span class="total-price-label">옵션</span>
+											<span class="value-wrapper option">
+											</span>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>269,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span>538,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item gwp-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<div class="product-status-value">
+													<span class="ico-bg-sky">증정품</span>
+												</div>
+												<span class="product-name">더블엑스</span>
+												<div class="product-code">1038 / 120435D</div>
+												<div class="product-pvbv">PV 18,650 / BV 29,100</div>
+											</div>
+										</div>
+
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>50,000</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>500,000</del></span>
+												<span class="red">0</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+									<li class="product-list-item js-shopping-cart-list-item first-item">
+										<div class="col-xs-12 col-md-5 product-details print-col-6">
+											<div class="product-item-element list-item-image">
+												<div>
+													<a href="#">
+														<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser">
+													</a>
+												</div>
+												<div class="list-item-remove">
+													<a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">삭제</a>
+												</div>
+											</div>
+											<div class="product-item-element list-item-info">
+												<span class="product-name">더블엑스</span>
+												<div class="product-code">2074 / 100394K19</div>
+												<div class="product-pvbv">PV 75,455 / BV 117,700</div>
+											</div>
+										</div>
+
+										<div class="col-xs-9 col-md-3 product-item-element list-item-amount print-col-6">
+											<span class="qty-label">수량</span>
+											<span class="value-wrapper amount-wrapper">10</span>
+										</div>
+										<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+											
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
+											<span class="price-label">단가(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>83,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total print-col-6">
+											<span class="total-price-label">소계(원)</span>
+											<div class="value-wrapper new-value-wrapper">
+												<span><del>83,000</del></span>
+												<span class="red">30,000</span>
+											</div>
+										</div>
+										<div class="col-xs-9 col-md-1 product-item-element list-item-erformance print-col-6">
+											<span class="month-label">실직월</span>
+											<div class="value-wrapper month-value-wrapper">
+												<span>-</span>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
+						<!-- //마크업 변경 2018.05.15 -->
 					</div>
 				</div>
 
@@ -1775,7 +2420,7 @@
 				<div class="cart-popup__item-info">
 					<div class="group-order-detail">
 						<ul class="list-type5">
-							<li>그룹 주문 상세 정보는 주문 완료 후 최장 5문 이후에 조회 가능합니다.</li>
+							<li>그룹 주문 상세 정보는 주문 완료 후 최장 5분 이후에 조회 가능합니다.</li>
 							<li>온라인(ABN/sABN) 팩스 주문서비스를 이용한 경우에 조회 가능합니다.</li>
 						</ul>
 					</div>
@@ -1968,8 +2613,7 @@
 					<div class="perform-box">
 						<ul class="list-type5">
 							<li>올해 회계연도를 열심히 준비하시고 노력해주시어 진심으로 감사드립니다. </li>
-							<li>지난 말일 갑작스런 전산 장애로 인하여 월말 업무와 함께 불편을 드리게 되어 진심으로 사과의 말씀을 전합니다. </li>
-							<li>아래 신청해 주신 실적에 대해 전월 실적으로 변경이 될 예정입니다.</li>
+							<li>실적변경 신청 취소시 당월 실적으로 조정 됩니다.</li>
 						</ul>
 
 						<div class="perform-tit">신청내역</div>
@@ -2210,6 +2854,39 @@ $(function(){
 	$('.U70101_lp15').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.U70101_lp15_pop');
+	});
+
+
+	//프로모션 관련 2018.05.15 추가
+	$('.remove-item-btn').click(function(){
+		$(".delete-list-box,.overlay").show();
+	});
+	
+	$('.view-cart').click(function(){
+		$(".delete-list-box,.overlay").hide();
+		$('.delete-example,.delete-example-gift').hide();
+	});
+	
+	$(".cartlist-view").click(function(){
+		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
+	})
+	
+	$('.tooltip-btn').click(function() { 
+		$('.promotion-tip-alert').slideToggle(0);  
+	}); 
+
+	$('.tip-close').click(function() { 
+		$('.promotion-tip-alert').hide();
+	}); 
+
+	$('#G10000_lp9').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G10000_lp9_pop');
+	});
+
+	$('#G10500_lp3').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G10500_lp3_pop');
 	});
 
 });
