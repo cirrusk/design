@@ -66,7 +66,7 @@
 											<div class="v-logo beauty"><img src="/_ui/responsive/theme-blue/images/akl_product/common/logo_artistry_youth_xtend.png" alt=""></div>
 											<div class="txt-info-visual">
 												<div class="v-logo-txt txt-white">피부 속부터 차오르는 탄력</div>
-												<div class="v-tit txt-white">유스 익스텐드<br><strong class="gold">울트라 리프팅 크림</strong></div>
+												<div class="v-tit txt-white">유스 익스텐드 <br><strong class="gold">울트라 리프팅 크림</strong></div>
 												<p class="v-txt txt-white"> (주름개선기능성)
 												<br>매끄러운 피부결을 오래도록, 피부 교정을 도와주는 리프팅크림
 												<br>강력하고 풍부한 영양이 피부를 리프팅 해주어 깊은 피부속부터 차오르는 탄력으로 실루엣이 달라집니다.
@@ -170,7 +170,7 @@
 										<div class="advantage-area">
 											<div class="product-process">
 												<h5 class="detail-tit">사용순서</h5>
-												<div class="product-process-step step04">													
+												<div id="productProcess" class="product-process-step step04">													
 													<div class="step-flow">
 														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/using_step_hyaluronic_acid_treatment.png" alt=""></span>
 														<span class="step-num">STEP 1</span>
@@ -200,7 +200,7 @@
 											
 										</div>
 
-										<div class="ingestion-usage">
+										<div class="ingestion-usage minus-top">
 											<dl>
 												<dt>사용방법</dt>
 												<dd>
@@ -257,7 +257,34 @@
 
 		</div>
 	</main>
+<script type="text/javascript">
+	$(function(){
 
+		$('#productProcess').owlCarousel({
+			loop: true,
+			margin: 0,
+			nav: true,
+			dots: true,
+			loop: true,
+			responsiveClass: true,
+			responsive: {
+				0:{
+			        items:1,
+			        loop: false
+			    },
+			    500:{
+			        items:3,
+			        loop: false
+			    },
+			    1000:{
+			        items:5,
+			        loop: false			    
+			    }
+			}
+		});
+
+	});
+	</script> 
 </body>
 
 </html>

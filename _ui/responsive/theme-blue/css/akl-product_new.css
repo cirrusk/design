@@ -84,6 +84,7 @@ Version : AKL Hybris UIUX 1.0
 .pcomp-list.deaf04 div.comp-info .free-gift{right:50%;margin-right:-130px;}
 
 .ingestion-usage {border-top:1px solid #e3e3e3;margin-top:80px;}
+.ingestion-usage.minus-top{margin-top:50px;}/* 상단 div에 여백을 갖고 있어 여백 벌어짐이 심할경우 minus-top 추가 */
 .ingestion-usage dl {clear:both;display:block;width:100%;margin:20px 0 0;padding:0;}
 .ingestion-usage dl:after {content:'';clear:both;display:block;}
 .ingestion-usage dl dt, .ingestion-usage dl dd {float:left;box-sizing:border-box;}
@@ -241,7 +242,7 @@ dl.amo-txt dd br {line-height:18px}
 }
 
 @media (max-width: 768px) {
-
+	
 	.visual-area .v-logo.nutrition-health img {width:auto;height:18px;}	
 	.txt-info-visual .v-txt {font-size:14px;margin:20px 10%;word-break: keep-all;word-wrap: break-word;}
 	.txt-info-visual .v-tit {font-size:35px;}
@@ -263,8 +264,10 @@ dl.amo-txt dd br {line-height:18px}
 	.pcomp-list.deaf02 div.comp-info {clear:both;display:block;width:100%;}
 	.pcomp-list.deaf01 div.comp-info {clear:both;display:block;width:100%;}
 
+	.ingestion-usage {margin-top:40px;}
 	.ingestion-usage dl dt {width:100%;}
 	.ingestion-usage dl dd {width:100%;}
+	
 
 	.visual-area.type02 {background:#c9e3f6;min-height:619px;padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
 	

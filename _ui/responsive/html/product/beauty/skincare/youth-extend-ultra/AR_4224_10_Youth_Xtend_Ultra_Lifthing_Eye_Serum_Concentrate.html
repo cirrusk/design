@@ -66,7 +66,7 @@
 											<div class="v-logo beauty"><img src="/_ui/responsive/theme-blue/images/akl_product/common/logo_artistry_youth_xtend.png" alt=""></div>
 											<div class="txt-info-visual">
 												<div class="v-logo-txt txt-white">밝고 생기 있는 눈가</div>
-												<div class="v-tit txt-white">유스 익스텐드<br><strong class="gold">울트라 리프팅 아이씨럼 컨센트레이트</strong></div>
+												<div class="v-tit txt-white">유스 익스텐드 <br><strong class="gold">울트라 리프팅 아이씨럼 컨센트레이트</strong></div>
 												<p class="v-txt txt-white">더욱 탄탄하고 매끈하게, 탄력으로 조명을 켠 듯 밝고 생기 있는 눈가! (주름개선기능성)
 												<br>한번의 사용으로도 눈가에 더해진 탄력을 느낄 수 있는 영양분이 가득한 아이씨럼.
 												<br>민감한 눈가 피부를 밝게 하고 탄력을 더합니다.</p>												
@@ -170,7 +170,7 @@
 										<div class="advantage-area">
 											<div class="product-process">
 												<h5 class="detail-tit">사용순서</h5>
-												<div class="product-process-step step04">													
+												<div id="productProcess" class="product-process-step step04">													
 													<div class="step-flow">
 														<span class="step-img"><img src="/_ui/responsive/theme-blue/images/akl_product/beauty/using_step_hyaluronic_acid_treatment.png" alt=""></span>
 														<span class="step-num">STEP 1</span>
@@ -200,7 +200,7 @@
 											
 										</div>
 
-										<div class="ingestion-usage">
+										<div class="ingestion-usage minus-top">
 											<dl>
 												<dt>사용방법</dt>
 												<dd>
@@ -257,7 +257,34 @@
 
 		</div>
 	</main>
+<script type="text/javascript">
+	$(function(){
 
+		$('#productProcess').owlCarousel({
+			loop: true,
+			margin: 0,
+			nav: true,
+			dots: true,
+			loop: true,
+			responsiveClass: true,
+			responsive: {
+				0:{
+			        items:1,
+			        loop: false
+			    },
+			    500:{
+			        items:3,
+			        loop: false
+			    },
+			    1000:{
+			        items:5,
+			        loop: false			    
+			    }
+			}
+		});
+
+	});
+	</script> 
 </body>
 
 </html>
