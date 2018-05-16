@@ -732,7 +732,6 @@ function tbl_colspan(){
 	var colspanResize = {
 			init : function(){
 				$(colspanTbl).each(function(){
-					var _tblWidth =  $(this).width();
 					var _noResult = $(this).find('.tr.no-result');
 					if (_noResult.length){
 						_noResult.find('.search-no-result').width('')
@@ -750,11 +749,20 @@ function tbl_colspan(){
 			}
 	}
 
-	if( _winWidth > 768 ){
-		colspanResize.reSize();
-	} else if(_winWidth < 769) {
-		colspanResize.init();
+	function colWidth_check(){
+		var _winWidth = $(window).width();
+		if( _winWidth > 768 ){
+			colspanResize.init();
+			colspanResize.reSize();
+		} else if(_winWidth < 769) {
+			colspanResize.init();
+		}
 	}
+
+	colWidth_check();
+	$(window).resize(function(){
+		colWidth_check();
+	});
 }
 
 /* 신규ABO - 대상자 조회 */
@@ -990,16 +998,24 @@ function GNB_SubDepth_Control(){
  */
 function quickLinks(){
 	var $qLinkBTN = $('.brand-btn');
-	$qLinkBTN.on('click',function(){
-		var $anchorList = $(this).next();
+	$qLinkBTN.each(function(){
+		$(this).on('click',function(){
+			var $anchorList = $(this).next();
 
-		if( $anchorList.is(':hidden')){
-			$(this).addClass('selected');
-			$anchorList.slideDown(200);
-		} else {
-			$(this).removeClass('selected');
-			$anchorList.hide();
-		}
+			if( $anchorList.is(':hidden')){
+				//다른 리스트 닫기
+				var $orderList = $(this).parents('.footerShotcut').find('.brand-wrap');
+				$orderList.hide();
+				$orderList.siblings('.brand-btn').removeClass('selected');
+
+				//클릭한 리스트 열기
+				$(this).addClass('selected');
+				$anchorList.slideDown(200);
+			} else {
+				$(this).removeClass('selected');
+				$anchorList.hide();
+			}
+		});
 	});
 
 	//body 클릭시 열린 메뉴 닫음
