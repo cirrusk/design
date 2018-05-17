@@ -1132,6 +1132,7 @@ function loadingLayerClose(){
  */
 var layerCounter = 0;
 var openedLayerPrdt = false;
+var openedLayerCMS = false;
 function layerPopOver( btnOpenLayer , targetLayer ){
 	var $layerContentBox = $(targetLayer).find('.layerBox'); //기본 레이어 타입
 	var $layerPrdtDetail = $(targetLayer).find('.typeFullSizeView'); //제품 크게보기 레이어
@@ -1353,36 +1354,49 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			var targetWidth_admin = $layerAdminAdd.width();
 			var targetHeight_admin = $layerAdminAdd.height();
 
+			//CMS용 레이어 열린상태로 변경
+			openedLayerCMS = true;
+
 			if( _winWidth < 769 ){
 				$layerAdminAdd.css({
 					'display':'block',
 					'position':'absolute',
-					'top':'10px',
+					'top':'0',
 					'left':'0',
 					'right':'0',
 					'width':'100%',
 					'height':'auto',
-					'margin-top':'0',
+					'margin-top':'15px',
 					'margin-left':'0',
 					'margin-bottom':'12px'
 				});
+
+				var cnH = _winHeight*0.6;
+				$($layerAdminAdd).find('.layer-content-wrapper').addClass('overFlow').height(cnH);
+
 			} else {
 				$layerAdminAdd.css({
 					'display':'block',
 					'width':'600px',
-					'max-width':'600px',
-					'top':'3%',
-					'left':leftPosition,
+					'max-width':'none',
+					'top':'0',
+					'left':'0',
 					'margin-top':'0',
-					'margin-left':-(targetWidth_admin/2)
+					'margin-left':'0'
 				});
+
+				$($layerAdminAdd).find('.layer-content-wrapper').removeClass('overFlow').height('');
 			}
 
+
+
+
+			/* 2018.05.17
+			//탭 컨텐츠 높이 동일하게 고정 - 사용보류
 			var layerTabPanel = $layerAdminAdd.find('.layer-tabs-wrapper');
 			var subTabCon = layerTabPanel.find('.tab-pane.content-block');
 			var biggestHeight=0;
 			setTimeout(function(){
-				//탭 컨텐츠 높이 동일하게 고정
 				subTabCon.each(function(){
 					var contsHeight = $(this).outerHeight(true);
 					//console.log(contsHeight);
@@ -1392,6 +1406,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				}).height(biggestHeight);
 			},300)
 			//console.log('biggestHeight'+biggestHeight);
+			 */
 		}
 
 		_layerTypeBasic(); //기본형
@@ -1423,6 +1438,14 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		$(this).css('z-index',_thisIndex);
 		$(this).addClass('active');
 		$(this).attr('tabindex','0').show().focus();
+
+		//공통팝업(CMS)인 경우 mask 삭제
+		if (openedLayerCMS === true){
+			openedLayerCMS = false;
+			scroll_RESET();
+			$('#mask').remove();
+			$(this).addClass('admin');
+		}
 	});
 
 	/* 레이어 닫기 */

@@ -90,6 +90,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .layerWrapper #colorbox.typeFullSizeView {overflow-y:auto;}
 /* RD화면 */
 .akl .layerWrapper .layer-content-wrapper.RD-Viewer {position:relative; max-width:1000px; height:700px; overflow:auto;}
+.akl .layerWrapper .layer-content-wrapper.overFlow {overflow:auto;}
 
 /* TYPE 3 : 제품상세 > 동영상보기 */
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
@@ -97,6 +98,7 @@ html.scrollLock body {overflow:hidden;}
 
 /* TYPE 4 : 어드민 등록용 */
 .akl .layerWrapper .cbox.typeAdminAdd {top:0; left:0; display:block; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
+.akl .layerWrapper .cbox.typeAdminAdd .cart-popup__dialog {border:1px solid #555;}
 .akl .layerWrapper.active .cbox.typeAdminAdd {opacity:1;}
 
 /* 팝업(어드민 등록용) : 컨텐츠 높이제한 없음 */
@@ -107,7 +109,7 @@ html.scrollLock body {overflow:hidden;}
 .layer-bottom-wrapper [type="checkbox"]:not(:checked)+label {}
 .layer-bottom-wrapper button.not-open-today {color:#0075a4; background:transparent;}
 
-.layer-tabs-wrapper {padding:40px;}
+.layer-tabs-wrapper {padding:40px; height:524px; overflow-y:auto; overflow-x:hidden;}
 .col-equality-tab { margin: 0 0 40px; padding: 0; }
 .col-equality-tab ul {position:relative; overflow:hidden; margin:0; padding:0;}
 .col-equality-tab ul:after {content:''; position:absolute; bottom:0; left:0; width:100%; box-sizing:content-box; height:1px; background:#dadada;}
@@ -1122,6 +1124,9 @@ html.scrollLock body {overflow:hidden;}
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox .col-md-10 {width:82% !important;}
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox.open { border-top:1px solid #e3e3e3;}
 	.akl .wrapper-memb-join.prev-step-fold #reg-confirm-info.reg-confirm-txt {padding-left:15px;}
+
+	/* TYPE 4 : 어드민 등록용 */
+	.akl .layerWrapper.admin {position:fixed; left:0; top:0; width:600px; height:660px;}
 }
 @media (max-width: 1250px){
 	/* 마이페이지 메인 */
@@ -1157,6 +1162,8 @@ html.scrollLock body {overflow:hidden;}
 	.diag-calculation>p {width:100%;}
 }
 @media (max-width: 768px){
+	.akl .layerWrapper.admin {}
+
 	/* CMS 어드민 등록팝업 */
 	.layer-tabs-wrapper {padding:20px 0;}
 	.col-equality-tab { margin: 0 0 30px; height:55px;  overflow-x:auto; overflow-y:hidden;}
