@@ -1037,6 +1037,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .myview-info-type .txt-in-area {display:table;width:100%;padding:20px 0 0;overflow:hidden;}
 .txt-in-area .txt-label {font-size:14px;color:#002f5f;font-weight:500;letter-spacing:-1px;}
 .txt-in-area .txt-content {font-size:14px;font-weight:400;letter-spacing:-1px;text-align:left;}
+.txt-in-area .txt-content span {font-size:14px;}
 .txt-in-area .col-md-6 {padding:0 0;}
 .txt-in-area .col-md-3 {padding:0 0;}
 .txt-in-area .col-md-2 {padding:0 0;width:13.5%;}
@@ -1105,9 +1106,10 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 
 .view-info-delvery{clear:both;display:block;border-top:0 none;margin-top:0}
 .view-info-delvery .orderShipp {display:table;width:100%;table-layout:fixed;box-sizing:border-box;padding:10px 0;}
-.view-info-delvery .orderShipp .txt-label, .view-info-delvery .orderShipp .txt-content {display:table-cell;box-sizing:border-box;font-size:14px;}
-.view-info-delvery .orderShipp .txt-label {width:13.5%;font-weight:500;color:#002f5f}
-.view-info-delvery .orderShipp .txt-content {width:86.5%;font-weight:400;}
+.view-info-delvery .orderShipp .txt-label, .view-info-delvery .orderShipp .txt-content {display:table-cell;box-sizing:border-box;}
+.view-info-delvery .orderShipp .txt-label {width:13.5%;font-weight:500;color:#002f5f;font-size:14px;}
+.view-info-delvery .orderShipp .txt-content {width:86.5%;font-weight:400;letter-spacing:-0.05em;font-size:14px;}
+.view-info-delvery .orderShipp .txt-content span {font-size:14px;}
 
 .mychange-ship {width:100%;padding:10px 0}
 .mychange-ship .guid-box a.title {font-size:14px;color:#0075a4;font-weight:500;background:url('../images/akl_common/ico_ars_down.png') no-repeat right center;padding-right:20px}
@@ -1367,10 +1369,12 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {width:11%;font-size:14px;text-align:right;padding:0 20px 0 0}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1.list-item-erformance {text-align:center;padding:0 0;}
 .akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:450px;}
-.akl .myorder-promotion .shopping-cart-item-list .view-bundle-contents {width:700px;}
+.akl .myorder-promotion .shopping-cart-item-list .view-bundle-contents {width:660px;}
 .akl .myorder-promotion .shopping-cart-item-list .view-bundle-contents * {font-size:13px;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .plp-item-label-wrap {top:-2px}
-
+.akl .myorder-promotion .view-bundle-contents .view-setcomp .v-subject {width:52%;}
+.akl .myorder-promotion .view-bundle-contents .view-setcomp .v-number {width:23%;text-align:center;padding:0 40px;}
+.akl .myorder-promotion .view-bundle-contents .view-setcomp .v-option {width:25%;text-align:left;padding:0 0 0 40px;}
 .month-label {display:none;}
 .value-wrapper.month-value-wrapper {}
 
@@ -2368,21 +2372,28 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 나의 주문내역 > 프로모션 2018.05.15 */
 	.akl .myorder-promotion {clear:both;display:block;padding:0 0 30px;}
 	.akl .myorder-promotion .shopping-cart-item-list .list-header {height:35px;}
-	.akl .myorder-promotion .shopping-cart-item-list .product-list-item {padding:35px 0;}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item {padding:35px 15px;}
 	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-5 {clear:both;display:block;width:100%;}
-	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-3 {clear:both;display:block;width:calc(100% - 95px);}
-	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-2 {clear:both;display:block;width:calc(100% - 95px);}
-	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {clear:both;display:block;width:calc(100% - 95px);}
-
-	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .list-item-info  {float:left;margin-left:12;width:-webkit-calc(100% - 90px);width:-moz-calc(100% - 90px);width:calc(100% - 90px);}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-3 {clear:both;display:block;width:calc(100% - 82px);}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-2 {clear:both;display:block;width:calc(100% - 82px);}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {clear:both;display:block;width:calc(100% - 82px);}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {padding:0 0 0 0;}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .list-item-info  {float:left;margin-left:12px;width:-webkit-calc(100% - 90px);width:-moz-calc(100% - 90px);width:calc(100% - 90px);}
 	.akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:100%;}
 	.akl .myorder-promotion .shopping-cart-item-list .view-bundle-contents {width:100%;}
-
+	
 	.akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .list-item-image {padding-left:0;}
 	.akl .myorder-promotion .shopping-cart-item-list .product-list-item.gwp-item .list-item-info {float:left;margin-left:12px;width:-webkit-calc(100% - 90px);width:-moz-calc(100% - 90px);width:calc(100% - 90px);}
 	
-	.akl .shopping-cart-item-list .product-list-item .product-item-element.list-item-erformance {margin-top:8px;float:right;}
-	.month-label {display:inline-block;float:left;text-align:left;font-weight:500;color:#002f5f;}
+	.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1.list-item-erformance {margin-top:8px;float:right;padding:8px 0 0}
+	.akl .myorder-promotion .view-bundle-contents .view-setcomp .v-subject {width:100%;}
+	.akl .myorder-promotion .view-bundle-contents .view-setcomp .v-number {width:100%;text-align:left;padding:0 0;}
+	.akl .myorder-promotion .view-bundle-contents .view-setcomp .v-option {width:100%;text-align:right;padding:0 0 0 0;}
+
+	.akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:100%;margin-left:0;}
+	.akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections .col-xs-9 {padding:0 10px;}
+
+	.month-label {display:inline-block;float:left;font-size:14px;text-align:left;font-weight:500;color:#002f5f;}
 	.value-wrapper.month-value-wrapper {float:right;}
 
 		
