@@ -92,26 +92,6 @@
 							<strong class="txt-ty-month">2017년 08월</strong>까지  달성하신 여행점수는 <em>목표점수 20,000,000점</em>, <em>달성점수 24,702,073점</em> 입니다.
 						</p>
 					</div>
-<style>
-.akl label {font-weight: 500;}
-.akl .form-control {box-shadow:0 0 0 rgba(0,0,0,0.075) inset;/* color:#808285; */font-size:14px;margin:0 0;}
-.akl input[type="text"],.akl input[type="password"]  { height:40px; border: solid 1px #dadada;padding:0 15px; }
-.akl input[type="date"] { height:40px; border: solid 1px #dadada; padding-left: 10px; background:#fff}
-.akl select.form-control {padding:0 30px 0 15px; }
-
-.box-simulation>ul {width:500px; margin-top:30px;}
-.box-simulation .form-group .input-border {position:relative; width:280px; box-sizing:border-box; margin:0; padding-right:45px; text-align:right;}
-.box-simulation .form-group .input-border>em {position:absolute; top:0; right:0; display:block; padding-right:10px; line-height:38px;}
-.box-simulation .form-group .input-border>input{width:100%; padding-right:0;}
-.form-group .input-border { border: solid 1px #dadada;}
-.form-group .input-border>input {border:0;}
-.box-diagram .list-type2 > li.bg-none {background:none;padding-left:0}
-
-@media (max-width: 768px){
-	.box-simulation>ul {width:auto;}
-	.box-simulation .form-group .input-border{width:auto;}
-}
-</style>
 
 					<div class="box-conts-group">
 						<h2>여행점수 시뮬레이션 하기</h2>
@@ -122,7 +102,7 @@
 								<span class="mob-inline">개인그룹 총 PV 와 리더십보너스 금액을 입력하시면, 향후 달성 가능한 여행 점수를 시뮬레이션 하실 수 있습니다.</span>
 								해당 월 여행 점수는  후원 수당에 따른 여행 점수와 리더십 보너스에 따른 여행 점수 합산 값입니다.
 							</p>
-							<ul>
+							<ul class="form-list">
 								<li class="form-group">
 									<label class="col-md-4 col-xs-12 control-label" for="monthTotal_pv">1개월 개인그룹 총 PV <span class="mob-inline"></span>(21% 그룹 제외)</label>
 									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="monthTotal_pv"> <em>PV</em></p></div>
@@ -141,21 +121,24 @@
 								</li>
 							</ul>
 
-							<div>
+							<div class="calc-travel-point">
 								<h3>1개월 여행점수 계산법</h3>
 								<div class="box-diagram">
-									<span>1개월의 개인그룹 총 PV (21% 그룹제외)*보너스%*0.25</span>
-									<span>더하기</span>
-									<span>({리더십보너스+(대리후원 리더십 보너스*1.5)}*0.474)</span>
-
-									<ul class="list-type2">
-										<li class="bg-none"><p class="txt-required"><span class="etc-required"><em>0.474는</em></span>PV : BV 비율에 따라 가변적임</p></li>
-										<li>시뮬레이션 결과 값은 예상 여행점수로써, 실제 여행 점수와 차이가 날 수 있습니다.</li>
-									</ul>
+									<p>
+										<span><em>1개월의 개인그룹 총 PV<br>(21% 그룹제외)</em> <em>X 보너스%</em> <em>X 0.25</em></span>
+										<span>더하기</span>
+										<span>({리더십보너스+(대리후원 리더십 보너스*1.5)}*0.474)</span>
+									</p>
 								</div>
 							</div>
+							<ul class="list-type2">
+								<li class="bg-none color-red"><p class="txt-required"><span class="etc-required"><em>0.474는</em></span> PV : BV 비율에 따라 가변적임</p></li>
+								<li>시뮬레이션 결과 값은 예상 여행점수로써, 실제 여행 점수와 차이가 날 수 있습니다.</li>
+							</ul>
+							<div class="next-control">
+								<button type="button" class="bt-akl-blue">여행점수 시뮬레이션하기</button>
+							</div>
 						</div>
-
 
 						<!-- 결과 -->
 						<div class="box-simulation outcome">
@@ -163,13 +146,144 @@
 								<span class="mob-inline"><em>홍길동</em>님의 한달 여행점수 시뮬레이션 결과는 <em>12점</em> 입니다.</span>
 								향후 5개월간 매월 필요로 하는 여행점수는 <em>903,027점</em> 보다 낮습니다.
 							</p>
+<style>
+/* --- 시뮬레이션 Bar 차트 --- */
+.chartWrapper .goalPoint { margin-bottom:10px; text-align:right; line-height:1;}
+.chartWrapper .goalPoint span, .chartWrapper .goalPoint strong {display:inline-block; padding-bottom:2px;}
+.chartWrapper .goalPoint strong { padding-left:8px; color:#444;}
+.chartWrapper .colorBar {display:inline-block; width:14px; height:13px; margin:0 3px -1px 0; box-sizing:border-box; border-radius:3px; background:#4889f3;}
+.chartWrapper .colorBar>em {display:inline-block; position:absolute; left:-9999px; top:-9999px; width:0 !important; height:0 !important; font-size:0 !important; line-height:0 !important; margin:0; padding:0;}
+.chartWrapper .tblList .lineH th { padding:12px 0; letter-spacing:-1px;}
+
+/* 차트상자 */
+.barChartBox { position:relative; margin:0 0 30px; padding:0 0 0 80px; border:1px solid #e2e2e2;}
+.barChartBox>ul { height:200px; display:table; width:100%; }
+.barChartBox>ul>li { position:relative; display:table-cell; height:200px; box-sizing:border-box; vertical-align:bottom;}
+
+/* Y축 */
+.axisHorizontal {position:absolute; left:80px; bottom:60px; right:20px; height:100px; box-sizing:border-box; border-bottom:2px solid #3279ed;}
+.axisHorizontal>div {position:absolute; left:0; border-top:1px solid #ddd; width:100%;}
+.axisHorizontal>div>span {position:absolute; left:-75px; bottom:-6px; display:block; width:70px; text-align:right;}
+.axisHorizontal>div.yAxisMinimum {bottom:0; border:0;}
+.yAxisMaximum{top:0;}
+.yAxisHalf{top:50%;}
+
+/* X축 범례 */
+.chartLegend { position:absolute; bottom:30px; display:block; width:100%; text-align:center;}
+
+/* 막대 */
+.chartBar { position:absolute; bottom:60px; width:100%; height:140px; padding-top:20px; box-sizing:border-box; text-align:center;}
+.chartBar>span { position:absolute; bottom:2px; left:50%; display:block; vertical-align:bottom; width:46px; height:100px; margin-left:-23px; }
+.chartBar>span img {position:absolute; left:0; bottom:0; width:100%; min-height:3px; max-height:120px; border-radius:5px 5px 0 0;}
+.chartNum {position:absolute; width:100%; text-align:center;}
+
+@media (max-width: 768px){
+	.mob-block {display:block;}
+}
+</style>
+<script>
+$(function(){
+	/* 비즈니스 여행점수 시뮬레이션 */
+	BarChart();
+	function BarChart(){
+		if (!$('.barChartBox').length) return;
+		$('.barChartBox').each(function(){
+			//숫자 위치조정
+			var $chartLI = $(this).find('ul>li');
+			$chartLI.each(function(){
+				var barH = $(this).find('.chartBar>span>img').height()+5;
+				$(this).find('.chartNum').css({
+					position:'absolute',
+					left:'0',
+					bottom:barH
+				});
+			});
+		});
+	}
+});
+</script>
+
+							<div class="chartWrapper">
+								<p class="goalPoint">
+									<span class="colorBar"><em>여행점수목표</em></span>
+									<span>PF18 여행목표점수</span><strong>30,000,000 점</strong>
+								</p>
+
+								<!-- 차트 -->
+								<div class="barChartBox">
+									<div class="axisHorizontal">
+										<div class="yAxisMaximum"><span>30,000,000</span></div><!-- 목표점수 -->
+										<div class="yAxisHalf"><span>15,000,000</span></div><!-- 목표점수*1/2 -->
+										<div class="yAxisMinimum"><span>0</span></div><!-- 시작 -->
+									</div>
+									<ul>
+										<li>
+											<strong class="chartLegend">여행목표점수</strong>
+											<div class="chartBar"><em class="chartNum">30,000,000</em><span><img src="/_ui/responsive/theme-blue/images/akl_common/business/img_chartcolor_blank.gif" style="height:100%" alt="여행목표점수"></span></div>
+										</li>
+										<li>
+											<strong class="chartLegend">달성한 여행점수</strong>
+											<div class="chartBar"><em class="chartNum">19,000,000</em><span><img src="/_ui/responsive/theme-blue/images/akl_common/business/img_chartcolor_blank.gif" style="height:63.33%" alt="달성한 여행점수"></span></div>
+										</li>
+										<li>
+											<strong class="chartLegend">프로모션이<span class="mob-block"> 적용된 점수</span></strong>
+											<div class="chartBar"><em class="chartNum">800,452</em><span><img src="/_ui/responsive/theme-blue/images/akl_common/business/img_chartcolor_blank.gif" style="height:52%" alt="프로모션이 적용된 점수"></span></div>
+										</li>
+									</ul>
+								</div>
+								<!-- //차트 -->
+
+
+							</div>
+
+
+							<div class="tbl-list-board type-tbody-th">
+								<div class="thead mob-hide">
+									<div class="tr">
+										<strong class="mob-hide travel-simul-th1">구분</strong>
+										<strong class="mob-hide travel-simul-th2">달성한 여행점수</strong>
+										<strong class="mob-hide travel-simul-th3">월평균 여행점수</strong>
+										<strong class="mob-hide travel-simul-th4">목표점수 대비 달성율</strong>
+										<strong class="mob-hide travel-simul-th5">앞으로 달성해야 할 총 여행점수</strong>
+										<strong class="mob-hide travel-simul-th6">향후 5개월간 매월 달성해야 할 여행점수</strong>
+									</div>
+								</div>
+								<div class="tbody">
+									<div class="tr">
+										<div class="mob-block travel-simul-th1"><strong class="th">구분</strong><p>달성 여행점수</p></div>
+										<div class="mob-block travel-simul-th2"><strong class="th">달성한 여행점수</strong><p>15,484,862</p></div>
+										<div class="mob-block travel-simul-th3"><strong class="th">월평균 여행점수</strong><p>2,212,123</p></div>
+										<div class="mob-block travel-simul-th4"><strong class="th">목표점수 대비 달성율</strong><p>77.40%</p></div>
+										<div class="mob-block travel-simul-th5"><strong class="th">앞으로 달성해야 할 총 여행점수</strong><p>4,515,138</p></div>
+										<div class="mob-block travel-simul-th6"><strong class="th">향후 5개월간 매월 달성해야 할 여행점수</strong><p>903,027</p></div>
+									</div>
+									<div class="tr">
+										<div class="mob-block travel-simul-th1"><strong class="th">구분</strong><p>프로모션 적용 점수</p></div>
+										<div class="mob-block travel-simul-th2"><strong class="th">달성한 여행점수</strong><p>15,484,862</p></div>
+										<div class="mob-block travel-simul-th3"><strong class="th">월평균 여행점수</strong><p>2,212,123</p></div>
+										<div class="mob-block travel-simul-th4"><strong class="th">목표점수 대비 달성율</strong><p>77.40%</p></div>
+										<div class="mob-block travel-simul-th5"><strong class="th">앞으로 달성해야 할 총 여행점수</strong><p>4,515,138</p></div>
+										<div class="mob-block travel-simul-th6"><strong class="th">향후 5개월간 매월 달성해야 할 여행점수</strong><p>903,027</p></div>
+									</div>
+								</div>
+							</div>
+
+							<ul class="list-type2">
+								<li>시뮬레이션 결과 값은 예상 여행점수로써, 실제 여행 점수와 차이가 날 수 있습니다.</li>
+							</ul>
+
+							<div class="next-control">
+								<button type="button" class="bt-akl-blue">여행점수 시뮬레이션 다시하기</button>
+							</div>
 						</div>
 						<!-- //결과 -->
+
+						<div class="search-no-result">여행점수가 존재하지 않습니다.</div>
+
+
 					</div>
 
-					<div class="next-control">
-						<button type="button" class="bt-akl-blue">여행점수 시뮬레이션하기</button>
-					</div>
+
 				</div>
 				<!-- //여행점수 확인  -->
 			</div>

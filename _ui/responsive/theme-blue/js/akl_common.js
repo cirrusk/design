@@ -1136,6 +1136,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	var $layerContentBox = $(targetLayer).find('.layerBox'); //기본 레이어 타입
 	var $layerPrdtDetail = $(targetLayer).find('.typeFullSizeView'); //제품 크게보기 레이어
 	var $layerVideoView = $(targetLayer).find('.typeVideoView'); //동영상 레이어
+	var $layerAdminAdd = $(targetLayer).find('.typeAdminAdd'); //관리자 등록(CMS)
 
 	var scroll_LOCK = function(){
 		$('html').addClass('scrollLock');
@@ -1345,9 +1346,58 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			});
 		}
 
+		/* TYPE 4 : CMS용(어드민 등록) */
+		function _layerTypeCMS(){
+			var topPosition = (_winHeight/2);
+			var leftPosition = (_winWidth/2);
+			var targetWidth_admin = $layerAdminAdd.width();
+			var targetHeight_admin = $layerAdminAdd.height();
+
+			if( _winWidth < 769 ){
+				$layerAdminAdd.css({
+					'display':'block',
+					'position':'absolute',
+					'top':'10px',
+					'left':'0',
+					'right':'0',
+					'width':'100%',
+					'height':'auto',
+					'margin-top':'0',
+					'margin-left':'0',
+					'margin-bottom':'12px'
+				});
+			} else {
+				$layerAdminAdd.css({
+					'display':'block',
+					'width':'600px',
+					'max-width':'600px',
+					'top':'3%',
+					'left':leftPosition,
+					'margin-top':'0',
+					'margin-left':-(targetWidth_admin/2)
+				});
+			}
+
+			var layerTabPanel = $layerAdminAdd.find('.layer-tabs-wrapper');
+			var subTabCon = layerTabPanel.find('.tab-pane.content-block');
+			var biggestHeight=0;
+			setTimeout(function(){
+				//탭 컨텐츠 높이 동일하게 고정
+				subTabCon.each(function(){
+					var contsHeight = $(this).outerHeight(true);
+					//console.log(contsHeight);
+					if(contsHeight > biggestHeight){
+						biggestHeight = contsHeight;
+					}
+				}).height(biggestHeight);
+			},300)
+			//console.log('biggestHeight'+biggestHeight);
+		}
+
 		_layerTypeBasic(); //기본형
 		_layerTypeFullSize(); //제품상세 큰이미지 보기
 		_layerTypeVideoView(); //동영상
+		_layerTypeCMS(); //CMS
 	}
 
 	/* 레이어 위치잡기 */
