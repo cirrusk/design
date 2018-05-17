@@ -9,11 +9,11 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico"> 
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
 	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
@@ -32,10 +32,10 @@
 	 * @팝업 사이즈 : popWidS, popWidM, popWidL
 	 * @컨텐츠 영역 : layer-content-wrapper (높이제한 없음)
 	 * ----------------------------------------------------------------
- -->
+-->
 
 <div class="layerWrapper pop-sample"><!-- @레이어 이름 : pop-sample -->
-	<div class="cbox layerBox popWidM"><!-- @팝업 사이즈 : popWidS, popWidM, popWidL -->
+	<div class="cbox typeAdminAdd popWidM"><!-- @팝업 사이즈 600px : popWidM -->
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
 				<span class="cart-popup__header-text">
@@ -44,16 +44,47 @@
 				</span>
 			</div>
 			<div class="layer-content-wrapper"><!-- @컨텐츠 길이 : 높이 제한 없음 -->
-
 				<!-- 팝업내용 -->
-				<div>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-				내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+				<div class="layer-tabs-wrapper">
+					<div class="col-equality-tab">
+						<ul>
+							<li class="active"><a href="#tabContss1" data-toggle="tab"><span>제목1 들어갑니다 제목1 들어갑니다</span></a></li>
+							<li><a href="#tabContss2" data-toggle="tab"><span>제목2 들어갑니다 제목2 들어갑니다</span></a></li>
+							<li><a href="#tabContss3" data-toggle="tab"><span>제목3 들어갑니다 제목3 들어갑니다</span></a></li>
+						</ul>
+					</div>
+					<div class="tab-content tabs-content-blocks">
+						<div class="tab-pane content-block active" id="tabContss1">
+							<h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>
+							<div class="tb-box">
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+							</div>
+						</div>
+						<div class="tab-pane content-block" id="tabContss2">
+							<h2 class="hidden">Tab0222타이틀 (탭명과 동일)</h2>
+							<div class="tb-box">
+								<p  style="height:510px">
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane content-block" id="tabContss3">
+							<h2 class="hidden">Tab03 타이틀 (탭명과 동일)</h2>
+							<div class="tb-box">
+								<p  style="height:500px">
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
 				<!-- //팝업내용 -->
 
@@ -81,9 +112,9 @@
 </div>
 
 <script type="text/javascript">
-	$(function() {
-		layerPopOver('','.pop-sample');
-	});
+$(function() {
+	layerPopOver('','.pop-sample');
+});
 </script>
 </body>
 

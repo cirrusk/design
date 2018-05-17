@@ -95,6 +95,10 @@ html.scrollLock body {overflow:hidden;}
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
 .akl .layerWrapper.active #videobox {opacity:1;}
 
+/* TYPE 4 : 어드민 등록용 */
+.akl .layerWrapper .cbox.typeAdminAdd {top:0; left:0; display:block; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
+.akl .layerWrapper.active .cbox.typeAdminAdd {opacity:1;}
+
 /* 팝업(어드민 등록용) : 컨텐츠 높이제한 없음 */
 .layer-bottom-wrapper {overflow:hidden; padding:20px 20px 17px;border-top:1px solid #dadada;}
 .layer-bottom-wrapper .left-box {float:left;}
@@ -102,6 +106,18 @@ html.scrollLock body {overflow:hidden;}
 .layer-bottom-wrapper [type="checkbox"]:checked+label.checklabel {color:#002f5f; font-weight:500;}
 .layer-bottom-wrapper [type="checkbox"]:not(:checked)+label {}
 .layer-bottom-wrapper button.not-open-today {color:#0075a4; background:transparent;}
+
+.layer-tabs-wrapper {padding:40px;}
+.col-equality-tab { margin: 0 0 40px; padding: 0; }
+.col-equality-tab ul {position:relative; overflow:hidden; margin:0; padding:0;}
+.col-equality-tab ul:after {content:''; position:absolute; bottom:0; left:0; width:100%; box-sizing:content-box; height:1px; background:#dadada;}
+.col-equality-tab ul li {float:left;width:33%; margin-bottom: -1px;}
+.col-equality-tab ul li:first-child {width:34%;}
+.col-equality-tab ul li:first-child a {border-left:1px solid #dadada;}
+.col-equality-tab ul li a {display:block; font-weight:500; border:1px solid #dadada; color:#55565a;text-align:center;  border-left: none; background: #f4f4f4;}
+.col-equality-tab ul li a>span{display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; width:90%; padding:15px 18px;}
+.col-equality-tab ul li.active a {position:relative; z-index:2; height:51px; border-top:none; border-bottom:none; background:#fff;}
+.col-equality-tab ul li.active a:after { content:''; position:absolute; z-index:2; top:0; width:100%; left:0; border-top: 4px solid #008fc5;}
 
 /* 팝업(맞춤메시지) 팝업크기 추가 */
 .akl .cbox.typeMessageCenter { width:100%; max-width:1200px;}
@@ -1018,9 +1034,10 @@ html.scrollLock body {overflow:hidden;}
 
 /* ----- 여행점수 조회 ----- */
 .akl .txt-required {font-size:13px !important;}
+.akl p.txt-required {margin-bottom:0;}
 .akl .amway-theme .etc-required>em {font-size:0;}
 .akl .amway-theme .rewards-program-wrapper * {font-size:14px;}
-.akl .amway-theme .rewards-program-wrapper .next-control {text-align:center;}
+.akl .amway-theme .rewards-program-wrapper .next-control {text-align:center; margin-top:30px;}
 .akl .amway-theme .rewards-program-wrapper h2 {font-size:18px;text-align:left;}
 .akl .amway-theme .rewards-program-wrapper h3 {font-size:16px;text-align:left;}
 .akl .amway-theme .rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
@@ -1066,21 +1083,36 @@ html.scrollLock body {overflow:hidden;}
 .symbol-round-txt {display:inline-block; background:#002f5f; color:#fff; font-size:16px; font-weight:500; border-radius:12px; width:24px; height:24px; text-align:center; line-height:22px;}
 
 /* 여행점수 확인 */
-.rewards-program-wrapper .status-travel-point {margin-bottom:15px;}
+.rewards-program-wrapper .status-travel-point {margin-bottom:0;}
 .rewards-program-wrapper .status-travel-point em {font-weight:500; color:#002f5f;}
 .rewards-program-wrapper .txt-ty-month {font-weight:500;}
 .rewards-program-wrapper .mob-inline {display:block;}
 
-.box-goal-point {padding:30px 0 40px; background:#fafafa;}
+.box-goal-point {padding:30px 0 40px; margin-top:15px; background:#fafafa;}
 .box-goal-point>ul{overflow:hidden;}
 .box-goal-point>ul>li {display:block; float:left; width:33%; text-align:center; position:relative; padding-bottom:20px;}
 .box-goal-point li>span {display:block; font-weight:500; color:#002f5f;}
 .box-goal-point li>strong {display:block; position:absolute; bottom:0; left:0; right:0; width:100%;}
 
-.box-simulation label {padding-left:0; padding-right:0;}
-.point-simulation {}
+.akl .form-group .input-border {border:solid 1px #dadada;}
+.akl .form-group .input-border>input[type="text"] {border:0;}
+.box-simulation ul.form-list {width:500px; margin-top:30px;}
+.box-simulation .form-group label {padding-left:0; padding-right:0;}
+.box-simulation .form-group .input-border {position:relative; width:280px; box-sizing:border-box; margin:0; padding-right:45px; text-align:right;}
+.box-simulation .form-group .input-border>em {position:absolute; top:0; right:0; display:block; padding-right:10px; line-height:38px;}
+.box-simulation .form-group .input-border>input{width:100%; padding-right:0;}
+.box-simulation .list-type2 > li.bg-none {background:none; padding-left:0}
 
-.box-diagram p.txt-required {margin-bottom:0;}
+/* 1개월 여행점수 계산법 */
+.calc-travel-point {margin:30px 0 10px;}
+.calc-travel-point .box-diagram {margin-top:15px;}
+
+.calc-travel-point .box-diagram span>em{}
+
+/* 여행점수 시뮬레이션 결과 */
+.box-simulation .tbl-list-board {margin-top:40px;}
+.box-simulation .tbl-list-board .travel-simul-th6 {width:20%;}
+.box-simulation .tbl-list-board .travel-simul-th6>p {color:#731472;}
 
 @media (min-width: 769px){
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
@@ -1124,6 +1156,16 @@ html.scrollLock body {overflow:hidden;}
 	.diag-calculation>p {width:100%;}
 }
 @media (max-width: 768px){
+	/* CMS 어드민 등록팝업 */
+	.layer-tabs-wrapper {padding:20px 0;}
+	.col-equality-tab { margin: 0 0 30px; height:55px;  overflow-x:auto; overflow-y:hidden;}
+	.col-equality-tab ul { width:100%; padding:0 20px ;}
+	.col-equality-tab ul li {}
+	.col-equality-tab ul li a {background:none; border: 0}
+	.col-equality-tab ul li:first-child a {border-left:0;}
+	.col-equality-tab ul li.active a {height:50px;}
+	.col-equality-tab ul li.active a:after { content:""; position:absolute; z-index:2; top:auto; bottom:0; left:0; right:0;  border-top: 4px solid #008fc5;}
+	.akl .layerWrapper .cbox.typeAdminAdd .tb-box {padding:0 20px;}
 
 	/* ----- form-group ----- */
 	/* form-group basic 추가 */
@@ -1164,12 +1206,14 @@ html.scrollLock body {overflow:hidden;}
 	.tbl-list-board .thead .cell-label>label {padding-bottom:2px;}
 	.tbl-list-board .thead .cell-label label>span {top:-1px !important;}
 	.tbl-list-board .tbody .tr:nth-of-type(even) { background:none;}
-	.tbl-list-board .tr {border-top:1px solid #e3e3e3;}
+	.tbl-list-board .th { background:none;}
+	.tbl-list-board .tr {overflow:hidden; border-top:1px solid #e3e3e3;}
 	.tbl-list-board .tr>div {display:inline-block; padding-right:0; border:0;}
 	.tbl-list-board .tr .mob-hide {display:none !important;}
 	.tbl-list-board .tr .mob-block {display:block;}
 
 	/* table : tbody에서 th노출(모바일view) */
+	.tbl-list-board.type-tbody-th{float:none}
 	.tbl-list-board.type-tbody-th .tr {border-top:0;}
 	.tbl-list-board.type-tbody-th .tbody .mob-block {overflow:hidden;}
 	.tbl-list-board.type-tbody-th .tbody .mob-block>strong{display:block;float:left; width:50%; color:#002f5f; font-weight:500;}
@@ -1177,7 +1221,7 @@ html.scrollLock body {overflow:hidden;}
 	.tbl-list-board.type-tbody-th .tr>div.mob-block:first-child {padding-top:17px}
 	.tbl-list-board.type-tbody-th .tr>div.mob-block {padding:0 20px 15px;}
 	.tbl-list-board.type-tbody-th .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
-	.tbl-list-board.type-tbody-th .tbody .tr>div {width:auto;}
+	.tbl-list-board.type-tbody-th .tbody .tr>div {/* width:auto; */ width:100%;}
 
 	/* 툴팁 */
 	label + .toolTip-wrapper {margin-left:6px;}
@@ -1539,13 +1583,18 @@ html.scrollLock body {overflow:hidden;}
 
 	/* 여행점수 확인 */
 	.rewards-program-wrapper .mob-inline {display:inline;}
-
 	.box-goal-point {padding:10px 0 20px;}
 	.box-goal-point>ul{overflow:hidden;}
 	.box-goal-point>ul>li {display:block; float:none; width:auto;}
 	.box-goal-point>ul>li+li{margin-top:20px;}
 
-
+	/* 여행점수 시뮬레이션 */
+	.business .box-simulation .tbl-list-board .th {padding-left:0;}
+	.box-simulation ul.form-list {width:auto;}
+	.box-simulation .form-group .input-border {width:auto;}
+	.box-simulation .tbl-list-board {margin-top:;}
+	.box-simulation .tbl-list-board.type-tbody-th .tbody .mob-block>strong ,
+	.box-simulation .tbl-list-board.type-tbody-th .tbody .mob-block>p{float:none; width:auto; text-align:left;}
 }
 
 @media (max-width: 320px) {
