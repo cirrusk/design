@@ -252,7 +252,6 @@ function HEADER_MOB_search(){
 function findTarget(){
 	$('body').click(function(e){ console.log(e.target); });
 }
-
 function doOnOrientationChange(){
 	switch(window.orientation){
 		case -90:
@@ -1388,15 +1387,12 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				$($layerAdminAdd).find('.layer-content-wrapper').removeClass('overFlow').height('');
 			}
 
-
-
-
-			/* 2018.05.17
-			//탭 컨텐츠 높이 동일하게 고정 - 사용보류
+			/* 2018.05.17 사용보류
 			var layerTabPanel = $layerAdminAdd.find('.layer-tabs-wrapper');
 			var subTabCon = layerTabPanel.find('.tab-pane.content-block');
 			var biggestHeight=0;
 			setTimeout(function(){
+				//탭 컨텐츠 높이 동일하게 고정
 				subTabCon.each(function(){
 					var contsHeight = $(this).outerHeight(true);
 					//console.log(contsHeight);
@@ -1406,7 +1402,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				}).height(biggestHeight);
 			},300)
 			//console.log('biggestHeight'+biggestHeight);
-			 */
+			*/
 		}
 
 		_layerTypeBasic(); //기본형

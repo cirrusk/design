@@ -156,12 +156,12 @@
 .chartWrapper .tblList .lineH th { padding:12px 0; letter-spacing:-1px;}
 
 /* 차트상자 */
-.barChartBox { position:relative; margin:0 0 30px; padding:0 0 0 80px; border:1px solid #e2e2e2;}
+.barChartBox {position:relative; margin:0 0 30px; padding:0 0 0 80px; border:1px solid #e2e2e2;}
 .barChartBox>ul { height:200px; display:table; width:100%; }
 .barChartBox>ul>li { position:relative; display:table-cell; height:200px; box-sizing:border-box; vertical-align:bottom;}
 
 /* Y축 */
-.axisHorizontal {position:absolute; left:80px; bottom:60px; right:20px; height:100px; box-sizing:border-box; border-bottom:2px solid #3279ed;}
+.axisHorizontal {position:absolute; left:80px; bottom:0; right:20px; height:100px; box-sizing:border-box; border-bottom:2px solid #3279ed;}
 .axisHorizontal>div {position:absolute; left:0; border-top:1px solid #ddd; width:100%;}
 .axisHorizontal>div>span {position:absolute; left:-75px; bottom:-6px; display:block; width:70px; text-align:right;}
 .axisHorizontal>div.yAxisMinimum {bottom:0; border:0;}
@@ -169,12 +169,14 @@
 .yAxisHalf{top:50%;}
 
 /* X축 범례 */
-.chartLegend { position:absolute; bottom:30px; display:block; width:100%; text-align:center;}
+.chartLegend { position:absolute; bottom:-30px; display:block; width:100%; text-align:center; padding-top:30px;}
 
 /* 막대 */
-.chartBar { position:absolute; bottom:60px; width:100%; height:140px; padding-top:20px; box-sizing:border-box; text-align:center;}
-.chartBar>span { position:absolute; bottom:2px; left:50%; display:block; vertical-align:bottom; width:46px; height:100px; margin-left:-23px; }
+.chartBar { position:absolute; bottom:0; width:100%; height:150px; padding-top:20px; box-sizing:border-box; text-align:center;}
+.chartBar.barTarget strong {background:#42cbd3;}
+.chartBar>span { position:absolute; bottom:0; left:50%; display:block; vertical-align:bottom; width:100px; height:100px; margin-left:-23px;}
 .chartBar>span img {position:absolute; left:0; bottom:0; width:100%; min-height:3px; max-height:120px; border-radius:5px 5px 0 0;}
+.chartBar>span>strong{position:absolute; left:0; bottom:0; width:100%; min-height:3px; display:block;background:hotpink;}
 .chartNum {position:absolute; width:100%; text-align:center;}
 
 @media (max-width: 768px){
@@ -191,7 +193,7 @@ $(function(){
 			//숫자 위치조정
 			var $chartLI = $(this).find('ul>li');
 			$chartLI.each(function(){
-				var barH = $(this).find('.chartBar>span>img').height()+5;
+				var barH = $(this).find('.chartBar>span>strong').height()+8;
 				$(this).find('.chartNum').css({
 					position:'absolute',
 					left:'0',
@@ -219,15 +221,25 @@ $(function(){
 									<ul>
 										<li>
 											<strong class="chartLegend">여행목표점수</strong>
-											<div class="chartBar"><em class="chartNum">30,000,000</em><span><img src="/_ui/responsive/theme-blue/images/akl_common/business/img_chartcolor_blank.gif" style="height:100%" alt="여행목표점수"></span></div>
+											<div class="chartBar barTarget">
+												<em class="chartNum">30,000,000</em>
+												<span><strong style="height:100%">여행목표점수</strong></span>
+											</div>
 										</li>
 										<li>
 											<strong class="chartLegend">달성한 여행점수</strong>
-											<div class="chartBar"><em class="chartNum">19,000,000</em><span><img src="/_ui/responsive/theme-blue/images/akl_common/business/img_chartcolor_blank.gif" style="height:63.33%" alt="달성한 여행점수"></span></div>
+											<div class="chartBar">
+												<em class="chartNum">19,000,000</em>
+												<span><strong style="height:63%">달성한 여행점수</strong></span>
+											</div>
 										</li>
 										<li>
 											<strong class="chartLegend">프로모션이<span class="mob-block"> 적용된 점수</span></strong>
-											<div class="chartBar"><em class="chartNum">800,452</em><span><img src="/_ui/responsive/theme-blue/images/akl_common/business/img_chartcolor_blank.gif" style="height:52%" alt="프로모션이 적용된 점수"></span></div>
+
+											<div class="chartBar">
+												<em class="chartNum">800,452</em>
+												<span><strong style="height:50%">프로모션이 적용된 점수</strong></span>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -291,6 +303,96 @@ $(function(){
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+<div class="layerWrapper pop-sample"><!-- @레이어 이름 : pop-sample -->
+	<div class="cbox typeAdminAdd popWidM"><!-- @팝업 사이즈 600px : popWidM -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">
+					팝업 타이틀
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="layer-content-wrapper"><!-- @컨텐츠 길이 : 높이 제한 없음 -->
+				<!-- 팝업내용 -->
+				<div class="layer-tabs-wrapper">
+					<!-- 탭2개 -->
+					<div class="col-equality-tab num2">
+						<ul>
+							<li class="active"><a href="#tabContss1" data-toggle="tab"><span>제목1 들어갑니다 제목1 들어갑니다</span></a></li>
+							<li><a href="#tabContss2" data-toggle="tab"><span>제목2 들어갑니다 제목2 들어갑니다</span></a></li>
+						</ul>
+					</div>
 
+					<!-- 탭3개 -->
+					<div class="col-equality-tab num3">
+						<ul>
+							<li class="active"><a href="#tabContss1" data-toggle="tab"><span>제목1 들어갑니다 제목1 들어갑니다</span></a></li>
+							<li><a href="#tabContss2" data-toggle="tab"><span>제목2 들어갑니다 제목2 들어갑니다</span></a></li>
+							<li><a href="#tabContss3" data-toggle="tab"><span>제목3 들어갑니다 제목3 들어갑니다</span></a></li>
+						</ul>
+					</div>
+					<div class="tab-content tabs-content-blocks">
+						<div class="tab-pane content-block active" id="tabContss1">
+							<h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>
+							<div class="tb-box">
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+							</div>
+						</div>
+						<div class="tab-pane content-block" id="tabContss2">
+							<h2 class="hidden">Tab0222타이틀 (탭명과 동일)</h2>
+							<div class="tb-box">
+								<p  style="height:510px">
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane content-block" id="tabContss3">
+							<h2 class="hidden">Tab03 타이틀 (탭명과 동일)</h2>
+							<div class="tb-box">
+								<p  style="height:500px">
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- //팝업내용 -->
+
+			</div>
+
+			<!-- 버튼 영역
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+				<button type="button" class="btn-cancel">취소</button>
+			</div> -->
+
+			<!-- 오늘 하루 그만 열기 -->
+			<div class="layer-bottom-wrapper">
+				<div class="left-box">
+					<input id="notOpen_ndays" type="checkbox"><label for="notOpen_ndays" class="normal inline-label checklabel">7일동안 보이지 않음</label>
+				</div>
+				<div class="right-box">
+					<button type="button" class="not-open-today">오늘 하루 그만 열기</button>
+				</div>
+			</div>
+			<!-- //오늘 하루 그만 열기 -->
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	layerPopOver('','.pop-sample');
+});
+</script>
 </body>
 </html>
