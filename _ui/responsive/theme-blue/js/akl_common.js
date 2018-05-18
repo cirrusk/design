@@ -1371,7 +1371,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				});
 
 				var cnH = _winHeight*0.6;
-				$($layerAdminAdd).find('.layer-content-wrapper').addClass('overFlow').height(cnH);
+				$layerAdminAdd.find('.layer-content-wrapper').addClass('overFlow').height(cnH);
 
 			} else {
 				$layerAdminAdd.css({
@@ -1384,7 +1384,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					'margin-left':'0'
 				});
 
-				$($layerAdminAdd).find('.layer-content-wrapper').removeClass('overFlow').height('');
+				$layerAdminAdd.find('.layer-content-wrapper').removeClass('overFlow').height('');
 			}
 
 			/* 2018.05.17 사용보류
@@ -1435,12 +1435,13 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		$(this).addClass('active');
 		$(this).attr('tabindex','0').show().focus();
 
-		//공통팝업(CMS)인 경우 mask 삭제
-		if (openedLayerCMS === true){
-
+		//공통팝업(CMS)인 경우
+		if( $layerAdminAdd.length && openedLayerCMS === true){
 			scroll_RESET();
 			$('#mask').remove();
-			$(this).addClass('admin');
+			$layerAdminAdd.addClass('admin');
+			openedLayerCMS = false;
+		} else {
 			openedLayerCMS = false;
 		}
 	});
