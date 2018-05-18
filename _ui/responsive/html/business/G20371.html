@@ -139,6 +139,7 @@
 								<button type="button" class="bt-akl-blue">여행점수 시뮬레이션하기</button>
 							</div>
 						</div>
+						<!-- //입력 -->
 
 						<!-- 결과 -->
 						<div class="box-simulation outcome">
@@ -146,69 +147,10 @@
 								<span class="mob-inline"><em>홍길동</em>님의 한달 여행점수 시뮬레이션 결과는 <em>12점</em> 입니다.</span>
 								향후 5개월간 매월 필요로 하는 여행점수는 <em>903,027점</em> 보다 낮습니다.
 							</p>
-<style>
-/* --- 시뮬레이션 Bar 차트 --- */
-.chartWrapper .goalPoint { margin-bottom:10px; text-align:right; line-height:1;}
-.chartWrapper .goalPoint span, .chartWrapper .goalPoint strong {display:inline-block; padding-bottom:2px;}
-.chartWrapper .goalPoint strong { padding-left:8px; color:#444;}
-.chartWrapper .colorBar {display:inline-block; width:14px; height:13px; margin:0 3px -1px 0; box-sizing:border-box; border-radius:3px; background:#4889f3;}
-.chartWrapper .colorBar>em {display:inline-block; position:absolute; left:-9999px; top:-9999px; width:0 !important; height:0 !important; font-size:0 !important; line-height:0 !important; margin:0; padding:0;}
-.chartWrapper .tblList .lineH th { padding:12px 0; letter-spacing:-1px;}
-
-/* 차트상자 */
-.barChartBox {position:relative; margin:0 0 60px; padding:0 0 0 90px;}
-.barChartBox>ul { display:table; width:100%; height:150px;}
-.barChartBox>ul>li { position:relative; display:table-cell; height:100px; box-sizing:border-box; vertical-align:bottom; border:1px solid red}
-
-/* Y축 */
-.axisHorizontal {position:absolute; left:90px; bottom:0; right:0; height:100px; box-sizing:border-box; border-bottom:1px solid #dadada;}
-.axisHorizontal>div {position:absolute; left:0; border-top:1px solid #dadada; width:100%;}
-.axisHorizontal>div>span {position:absolute; left:-75px; bottom:-6px; display:block; width:70px; text-align:right;}
-.axisHorizontal>div.yAxisMinimum {bottom:0; border:0;}
-.yAxisMaximum{top:0;}
-.yAxisHalf{top:50%;}
-
-/* X축 범례 */
-.chartLegend { position:absolute; bottom:-30px; display:block; width:100%; text-align:center; padding-top:30px;}
-
-/* 막대 */
-.chartBar { position:absolute; bottom:0; width:100%; height:100px; box-sizing:border-box; text-align:center;}
-.chartBar.barTarget strong {background:#42cbd3;}
-.chartBar>span { position:absolute; bottom:0; left:50%; display:block; vertical-align:bottom; width:100px; height:100px; margin-left:-50px;}
-.chartBar>span img {position:absolute; left:0; bottom:0; width:100%; min-height:3px; max-height:120px; border-radius:5px 5px 0 0;}
-.chartBar>span>strong{position:absolute; left:0; bottom:0; width:100%; min-height:3px; display:block;background:hotpink;}
-.chartNum {position:absolute; width:100%; text-align:center;}
-
-@media (max-width: 768px){
-	.mob-block {display:block;}
-}
-</style>
-<script>
-$(function(){
-	/* 비즈니스 여행점수 시뮬레이션 */
-	BarChart();
-	function BarChart(){
-		if (!$('.barChartBox').length) return;
-		$('.barChartBox').each(function(){
-			//숫자 위치조정
-			var $chartLI = $(this).find('ul>li');
-			$chartLI.each(function(){
-				var barH = $(this).find('.chartBar>span>strong').height()+8;
-				$(this).find('.chartNum').css({
-					position:'absolute',
-					left:'0',
-					bottom:barH
-				});
-			});
-		});
-	}
-});
-</script>
 
 							<div class="chartWrapper">
 								<p class="goalPoint">
-									<span class="colorBar"><em>여행점수목표</em></span>
-									<span>PF18 여행목표점수</span><strong>30,000,000 점</strong>
+									<span class="colorBar">PF18 여행목표점수</span><strong>30,000,000 점</strong>
 								</p>
 
 								<!-- 차트 -->
@@ -222,32 +164,25 @@ $(function(){
 										<li>
 											<strong class="chartLegend">여행목표점수</strong>
 											<div class="chartBar barTarget">
-												<em class="chartNum">30,000,000</em>
-												<span><strong style="height:100%">여행목표점수</strong></span>
+												<em class="chartNum">30,000,000</em><span><strong style="height:100%">여행목표점수</strong></span>
 											</div>
 										</li>
 										<li>
 											<strong class="chartLegend">달성한 여행점수</strong>
-											<div class="chartBar">
-												<em class="chartNum">19,000,000</em>
-												<span><strong style="height:63%">달성한 여행점수</strong></span>
+											<div class="chartBar barAttainment">
+												<em class="chartNum">19,000,000</em><span><strong style="height:63%">달성한 여행점수</strong></span>
 											</div>
 										</li>
 										<li>
 											<strong class="chartLegend">프로모션이<span class="mob-block"> 적용된 점수</span></strong>
-
-											<div class="chartBar">
-												<em class="chartNum">800,452</em>
-												<span><strong style="height:50%">프로모션이 적용된 점수</strong></span>
+											<div class="chartBar barPromotion">
+												<em class="chartNum">800,452</em><span><strong style="height:50%">프로모션이 적용된 점수</strong></span>
 											</div>
 										</li>
 									</ul>
 								</div>
 								<!-- //차트 -->
-
-
 							</div>
-
 
 							<div class="tbl-list-board type-tbody-th">
 								<div class="thead mob-hide">
@@ -290,12 +225,13 @@ $(function(){
 						</div>
 						<!-- //결과 -->
 
-						<div class="search-no-result">여행점수가 존재하지 않습니다.</div>
-
+						<!-- 조회결과 없음 -->
+						<div class="box-simulation outcome">
+							<div class="search-no-result">여행점수가 존재하지 않습니다.</div>
+						</div>
+						<!-- //조회결과 없음 -->
 
 					</div>
-
-
 				</div>
 				<!-- //여행점수 확인  -->
 			</div>
