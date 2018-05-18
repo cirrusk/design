@@ -41,6 +41,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .clearfix:after {content:''; display:block; clear:both;}
 
 
+/* 공통 컬러 */
+.light-gold{color:#d7b472;}
+.linght-beige{color:#ad9172;}
+
+
+
 /* 스킨케어 예외 */
 .skin-care .visual-area.type02.youth-xtend-set .v-pro {margin-top:-40px !important;}
 .skin-care .txt-info-visual .v-tit{padding: 32px 0 0;}
@@ -184,6 +190,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .youth_xtend_relative .youth_xtend_right{top:40px;right:0;display:table;width:130px;height:117px;text-align:center;}
 .youth_xtend_relative .youth_xtend_right span{display:table-cell;vertical-align:middle;font-size:24px;line-height:34px;color:#fff;font-weight:500;}
 
+/* 리스트 공통 */
 .technology-step{padding:0 5% 0 0;margin-top:0;}
 .technology-step .step-tit{display:block;margin:0;font-size:30px;color:#808285;font-weight:300;letter-spacing:-2px;line-height:1;}
 .technology-step .step-tit em{display:block;font-size:30px;font-weight:400;letter-spacing:-2px;color: #ad9172;}
@@ -193,8 +200,67 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .technology-step .program-list .program-step{display:block;width:140px;height:40px;line-height:40px;font-size:18px;color:#fff;text-align:center;background-color:#ad9172;border-radius:20px;}
 .technology-step .program-list .program-tit{display:block;padding-left:15px;margin-top:10px;font-size:16px;color:#56565a;font-weight:400;letter-spacing:-1px;}
 .technology-step .program-list .program-txt{display:block;padding-left:15px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
+
 .technology-lst .tit{padding-top:0;margin-top:20px;font-size: 20px;color: #ad9172;font-weight: 400;}
 .technology-lst .ad-setp-lst dt{color: #ad9172;}
+
+/* 삼각 트라이앵글 도표 타입별 */
+.triangle{position: relative;max-width: 370px;max-height: 370px;margin: auto;}
+.triangle .tit{display: inline-block;position: absolute;top: 54%;left: 40%;color: #ffffff;font-weight:400;}
+.triangle img.chart{display: block;margin: auto;width: inherit;height: inherit;}
+.triangle span{display: inline-block;position: absolute;font-size:14px;line-height: 1.1;font-weight:300;letter-spacing:-1px;}
+.triangle span br, .triangle strong br{line-height:0 !important;}
+.triangle span em{font-size:14px;}
+
+/* 맨 */
+.triangle.men-type{max-width: 370px;max-height: 370px;}
+.triangle.men-type .tit{top: 54%;left: 35%;color: #ffffff;}
+.triangle.men-type span.comment01{top: 5%;left: 30%;}
+.triangle.men-type span.comment02{bottom: 5%;left: 4%;}
+.triangle.men-type span.comment03{bottom: 0;left: 71%;}
+
+/* 수퍼슈프림lx */
+.triangle.lx-tech{max-width:390px;max-height: 376px;}
+.triangle.lx-tech .tit{top: 51%;left:37.5%;color: #56565a;}
+.triangle.lx-tech span.comment01{top:0;left:35%;}
+.triangle.lx-tech span.comment02{bottom:0;left:2%;}
+.triangle.lx-tech span.comment03{bottom: 0;left: 62%;}
+
+/* 수퍼슈프림lx */
+.triangle.ingre-three{max-width:333px;max-height: 345px;}
+.triangle.ingre-three .tit{top: 51%;left: 36.3%;font-size: 14px;color: #808285;text-align: center;}
+.triangle.ingre-three .tit em{font-size:16px;font-weight:500;}
+.triangle.ingre-three span.comment01{top:0;left: 34.5%;}
+.triangle.ingre-three span.comment02{bottom: 0;left: 21%;}
+.triangle.ingre-three span.comment03{bottom: 0;left: 56%;}
+
+
+
+
+
+
+
+/* 도표 컴포넌트 모음 
+.sp_lx_tech{display:block;position:relative;margin:auto;width:auto;}
+.sp_lx_tech .tit{position:absolute;top:50%;left:50%;}
+.sp_lx_tech .chart{position:absolute;top:50%;left:50%;}
+.sp_lx_tech strong{position:absolute;top:50%;left:50%;}
+.sp_lx_tech strong br{line-height:0;}
+.sp_lx_tech strong em{}
+
+
+.triangle_three{display:block;position:relative;margin:auto;width:auto;}
+.triangle_three .tit{position:absolute;top:50%;left:50%;}
+.triangle_three .chart{position:absolute;top:50%;left:50%;}
+.triangle_three strong{position:absolute;top:50%;left:50%;}
+.triangle_three strong br{line-height:0;}
+.triangle_three strong em{}
+*/
+
+
+
+
+
 
 /* step flow */
 .skin-care .step04.product-process-step{text-align:center;}
@@ -275,6 +341,14 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
 	/* 스킨케어 뷰티 비주얼 영역 공통 */	
 	.skin-care .visual-area.type02{height:inherit;}	
@@ -298,7 +372,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 				
     /* 인텐시브 */
-    .ade-photo.sie-box{padding:15px 0 0 !important;;}
+    .ade-photo.sie-box{padding:15px 20px 0 !important;;}
     .ade-photo .reposom-wrap{margin:0 auto;}
     .ade-photo .reposom-wrap em.one{top: 8px;left: 74%;width:91px;height:34px;}
 	.ade-photo .reposom-wrap em.two{bottom: 29px;left: 73%;width:91px;height:17px;}	
@@ -388,6 +462,17 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.skin-care .ingre-list li{width:100% !important;}
 	.ingre-list li:before{display:none;}
 	.pro-video.type2{margin: 25px 0 0;padding: 25px 0 0;}
+	
+	.triangle{position: relative;max-width: 370px;max-height: 370px;margin: auto;}
+	.triangle .tit{display: inline-block;position: absolute;top: 54%;left: 40%;color: #ffffff;font-weight:400;}
+	.triangle img.chart{display: block;margin: auto;width: inherit;height: inherit;}
+	.triangle span{display: inline-block;position: absolute;font-size:14px;line-height: 1.1;font-weight:300;letter-spacing:-1px;}
+	.triangle span br, .triangle strong br{line-height:0 !important;}
+	.triangle span em{font-size:14px;}
+	
+	.triangle.lx-tech .tit{    top: 44%;    left: 50%;    margin-left: -47px;}
+	.triangle.lx-tech{padding-bottom:20px;margin-bottom: 20px;}
+	.triangle.lx-tech span.comment02{    bottom: 7%;    left: 0;}
 }
 
 
@@ -396,6 +481,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.ingre-list li:before{display:none;}
 	.product-video{margin-bottom:40px;}
 	.technology-step .program-list .program-img{display:none;clear:both;}
+	
+	.triangle.lx-tech{padding-bottom: 21px;margin-bottom: 20px;}
+	.triangle.lx-tech .tit{top: 44%;left: 29.5%;margin-left:0;}
+	.triangle.lx-tech span.comment01{top: -10px;left: 27%;}
+	.triangle.lx-tech span.comment02{bottom:1.5%;left: -10px;}
+	.triangle.lx-tech span.comment03{bottom: -7%;left: 58%;}
 	
 }
 
