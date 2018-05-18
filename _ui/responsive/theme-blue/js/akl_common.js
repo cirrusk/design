@@ -1437,10 +1437,11 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 
 		//공통팝업(CMS)인 경우 mask 삭제
 		if (openedLayerCMS === true){
-			openedLayerCMS = false;
+
 			scroll_RESET();
 			$('#mask').remove();
 			$(this).addClass('admin');
+			openedLayerCMS = false;
 		}
 	});
 
