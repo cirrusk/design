@@ -67,19 +67,23 @@ span.btn-business {display:inline-block;}
 .new-message-shop > p span {vertical-align:middle;}
 .new-shipping-address .detail-content {width:100%;}
 .new-shipping-address .detail-content .col-md-3 {padding:0 0;margin:0 0;}
-.new-shipping-address .detail-content .col-md-9 {padding:0 0 0 10px;margin:0 0;}
+.new-shipping-address .detail-content .col-md-9 {padding:0 0;margin:0 0;}
 .new-shipping-address .detail-content .col-xs-12 {padding:0 0;margin:0 0;}
 .new-shipping-address .detail-content .new-cart {width:100%;text-align:left;}
 .new-shipping-address .detail-content .new-cart .delv-shopbox {width:460px;}
 .new-shipping-address .detail-content .new-cart .delv-shopbox label {text-align:left;padding-top:0;}
 
 .new-shipping-address .detail-content .new-cart .delv-shopbox label.control-label {font-size:14px;font-weight:500;color:#002f5f;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox > .form-group {clear:both;display:block;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .col-md-9.col-xs-12.address {padding:0 0;margin:0 0;}
 .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px}
 .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p input[type="text"] {width:100%;}
-.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:97.2%;}
-.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .receiver input[type="text"] {width:97.2%;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:100%;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .col-md-9.col-xs-12.receiver {padding:0 0;margin:0 0;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .receiver input[type="text"] {width:100%;}
+.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group input {margin-left:0}
 
-.new-shipping-address .new-shipping-agree .form-group {width:100%;padding:10px 0 0;}
+.new-shipping-address .new-shipping-agree .form-group {width:100%;padding:10px 0 0;margin:0 0;}
 .new-shipping-address .new-shipping-agree p {font-size:14px;font-weight:500;}
 .new-shipping-address .new-shipping-agree .form-group > label {padding-top:0 !important;}
 .new-shipping-address .new-shipping-btnw .list-type2 li span {display:inline-block;vertical-align:top;margin:0 0;padding:0 0;}
@@ -90,12 +94,11 @@ span.btn-business {display:inline-block;}
 .pot-basic {color:#0075a4;font-size:13px;}
 .new-shipping-address .new-shipping-btnw {padding-bottom:20px}
 .new-shipping-address .new-shipping-btnw .list-type2 {padding:0;margin:0 0 20px;}
-.new-shipping-address .phone-group {padding-left:10px !important;}
+.new-shipping-address .phone-group {padding:0 0;margin-left:10px;}
 .new-shipping-address .phone-group > .control-group {display:inline-block;width:100px;vertical-align:top;}
-.new-shipping-address .phone-group > .form-group {display:inline-block;width:calc(100% - 110px);vertical-align:top;padding-left:0;float:none;}
+.new-shipping-address .phone-group > .form-group {display:inline-block;margin-left:12px;width:calc(100% - 112px);vertical-align:top;padding-left:0;float:none;}
 .new-shipping-address .phone-group > .form-group input.form-control {width:100%;}
 .new-shipping-address .def-ship_new .Defaul-taddr {padding-left:25%;}
-
 
 /* 주문결제 > 단일 > 배송지 목록 */
 .address-book {}
@@ -567,14 +570,10 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 	/* 주문결제 > 단일 > 새배송지 */
 	.new-shipping-address .detail-content .new-cart .delv-shopbox {width:100%;}
-	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group {width:100%;}
-	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:115px;}
+	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px;}
 	.new-shipping-address .detail-content .new-cart .delv-shopbox .phone-group {padding-left:0 !important;}
-	.new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address button {right:10px}
-
 	.new-shipping-address .new-shipping-agree {padding-top:20px}
 	.new-shipping-btnw .list-type2 {padding:0 0 20px}
-	.shipping-delivery .form-group input {width:100%;}
 	.new-shipping-address .def-ship_new .Defaul-taddr {padding-left:0;}
 
 	/* 주문결제 > 복수 */
