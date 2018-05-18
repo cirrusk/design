@@ -583,6 +583,18 @@ $(function() {
 		event.preventDefault();
 		layerPopOver(this,'.G20314_lp_pop');
 	});
+	$('#G20421_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20421_lp1_pop');
+	});
+	$('#G20421_lp2').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20421_lp2_pop');
+	});
+	$('#G20422_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20422_lp1_pop');
+	});
 
 });
 

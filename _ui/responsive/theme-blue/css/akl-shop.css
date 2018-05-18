@@ -886,7 +886,10 @@ shop 옮김 : 2018.04.10
 .akl .payment-promotion .view-bundle-contents .view-setcomp .v-number {width:10%;}
 .akl .payment-promotion .view-bundle-contents .view-setcomp .v-option {width:20%;}
 
-/* 사랑의 우수리 */
+/* 비즈니스 > 사랑의 우수리 */
+.blck {display:block}
+.blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
+
 .woosuri-area {padding-top:40px;}
 .woo-conts {margin-top:40px}
 .woo-top {display:block;width:100%;height:400px;background:#f4f4f4 url("../images/akl_common/bg_woosuri.png") no-repeat right bottom;}
@@ -899,8 +902,9 @@ shop 옮김 : 2018.04.10
 
 .woo-txt-info {clear:both;display:block;padding:0 35px;}
 .woo-txt-info dl {clear:both;display:block;padding:34px 0 36px;overflow:hidden;border-bottom:1px solid #e3e3e3;}
+.woo-txt-info dl:last-child {border-bottom:0}
 .woo-txt-info dl dt {font-size:16px;font-weight:500;letter-spacing:-1px;color:#002f5f}
-.woo-txt-info dl dd {padding:10px 0 0}
+.woo-txt-info dl dd {margin-top:10px}
 .woo-txt-info dl dd p {font-size:14px;font-weight:400;letter-spacing:-1px;line-height:22px;margin:0 0;}
 .woo-txt-info dl dd strong {font-weight:500;color:#002f5f;font-size:14px;}
 .woo-txt-info dl dd span {font-weight:500;font-size:14px;}
@@ -925,15 +929,94 @@ ul.woo-step-box li:last-child:before {background:none}
 .woosuri-apply {background:#fafafa;margin:0px auto 15px;}
 .woosuri-apply ul {padding:25px 20px 30px;}
 .woosuri-apply ul li {position:relative;display:inline-block;font-size:14px;font-weight:500;color:#002f5f;padding:0 28px 0 20px;}
-.woosuri-apply ul li:before {content:'';display:inline-block;position:absolute;top:10%;right:0;background:url("../images/akl_common/ico_arr_prev.png") no-repeat right center;width:13px;height:20px;}
-.woosuri-apply ul li:last-child:before {background:none}
+.woosuri-apply ul li:before {content:'';display:inline-block;position:absolute;top:4px;right:0;width:14px; height:14px; border-right:4px solid #033161; border-bottom:4px solid #033161; transform:rotate(-45deg)}
+.woosuri-apply ul li:last-child:before {display:none}
 
+.woo-ex {padding:40px 60px; background:#fafafa;}
+.woo-ex > * {display:inline-block; height:230px; vertical-align:middle}
+.woo-ex .left {width:450px}
+.woo-ex .left div {display:table}
+.woo-ex .left div + div {margin-top:30px}
+.woo-ex .left div > * {display:table-cell; vertical-align:middle;}
+.woo-ex .left div .tit {width:100px; height:100px; text-align:center; border-radius:50%; color:#fff; font-weight:500; background-color:#002f5f}
+.woo-ex .left div .tit span {display:block; font-weight:700}
+.woo-ex .left div .txt {position:relative; padding-left:70px; color:#002f5f; font-weight:500;}
+.woo-ex .left div .txt:before {content:''; position:absolute; top:50%; left:28px; margin-top:-8px; display:inline-block; width:15px; height:15px; border-right:4px solid #033161; border-bottom:4px solid #033161; transform:rotate(-45deg)}
+.woo-ex .left div .txt em {font-weight:900}
+.woo-ex .right {display:inline-block; padding:12px 0 0 30px; border-left:1px solid #dadada}
+.woo-ex .right li {font-weight:500; font-size:14px}
+.woo-ex .right li + li:before {content:''; display:block; width:12px; height:7px; margin:16px 0; border-width:7px 6px 0 6px; border-color:#002f5f transparent transparent transparent; border-style:solid}
+
+.woo-ex-price {margin-top:-10px !important}
+.woo-ex-price .sec {padding-left:20px; box-sizing:border-box}
+.woo-ex-price .sec:first-child {padding-left:0}
+.woo-ex-price table tbody tr {border-bottom:1px solid #dadada; background-color:#fff !important}
+.woo-ex-price table th {text-align:center; font-size:13px !important; font-weight:500 !important}
+.woo-ex-price table th + th, .woo-ex-price table td + td {border-left:1px solid #dadada}
+.woo-ex-price table tr > *:last-child {text-align:right}
+.woo-ex-price table tr > * {vertical-align:middle; padding-left:20px !important; padding-right:20px !important}
+
+@media (min-width: 992px) {
+	/* 비즈니스 > 사랑의 우수리 */
+	.woo-ex-price .sec {float:left; width:33.333333%;}
+}
+
+@media (max-width: 992px) {
+	/* 비즈니스 > 사랑의 우수리 */
+	.woo-top {background-size:60%}
+	
+	.woo-ex {padding:20px 10px 20px 30px}
+	.woo-ex .left {width:400px}
+	
+	.woo-ex-price .sec {padding:0}
+	
+}
 
 @media (max-width:850px) {
 	.akl .zoom-center button {margin-bottom:10px}
 }
 
 @media (max-width: 768px) {
+	
+	/* 비즈니스 > 사랑의 우수리 */
+	.woo-top {min-height:500px; padding:15px; background-size:contain}
+	.woo-top dl {width:100%; padding:0}
+	.woo-top dl dt {font-size:28px}
+	.woo-top dl dd {font-size:16px}
+	.woo-top dl dd p {margin-top:5px}
+	.woo-top dl dd span {font-size:16px}
+	.woo-top .woo-btn {padding-left:0; text-align:center}
+	
+	.woo-txt-info {padding:0}
+	
+	.woo-step-box li {padding-right:5px}
+	.woo-step-box li:last-child {padding-right:0}
+	.woo-step-box li + li {padding-left:2px}
+	.woo-step-box li:before {width:6px; height:10px; background-size:contain}
+	.woo-system {height:105px}
+	.woo-system.step01 {background-size:50px}
+	.woo-system.step02 {background-size:50px}
+	.woo-system.step03 {background-size:50px}
+	.woo-system p.step-tit {font-size:10px;}
+	.woo-system p.step-txt {font-size:11px; line-height:12px;}
+	.woo-system p.step-txt strong {font-size:11px}
+	
+	.woosuri-apply ul {text-align:center; padding:20px 10px}
+	.woosuri-apply ul li {padding:0; display:block}
+	.woosuri-apply ul li + li {margin-top:31px}
+	.woosuri-apply ul li:before {width:10px; height:10px; top:29px; left:50%; margin-left:-5px; border-width:3px; transform:rotate(45deg)}
+	
+	.woo-ex > * {height:auto}
+	.woo-ex .left {width:auto}
+	.woo-ex .left div .tit {width:70px; height:70px; font-size:12px}
+	.woo-ex .left div .tit span {font-size:12px}
+	.woo-ex .left div .txt {padding-left:33px; font-size:10px}
+	.woo-ex .left div .txt:before {width:10px; height:10px; border-width:3px; left:10px}
+	.woo-ex .left div .txt > * {font-size:10px}
+	.woo-ex .right {display:block; margin-top:20px; border-left:0; padding:0; text-align:center}
+	.woo-ex .right li + li:before {margin:16px auto}
+	.woo-ex .right li {font-size:13px}
+	
 
 	/* 검색 > 결과  */
 	.pagination-bar { border-top:0;}

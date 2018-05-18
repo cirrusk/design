@@ -152,7 +152,8 @@
 											<p>이에 뜻 깊은 활동을 암웨이 가족이신 ABO 여러분들과도 함께 하고자 &acute;ABO 사랑의 우수리 나눔&acute;을 실시합니다.</p>
 										</dd>
 									</dl>
-									<div class="woo-btn"><button type="button" class="bt-akl-blue">사랑의 우수리 신청</button></div>
+									<!-- 사랑의 우수리 신청 내역이 없는 경우 노출  --><div class="woo-btn"><button type="button" class="bt-akl-blue" id="G20421_lp1">사랑의 우수리 신청</button></div><!-- //사랑의 우수리 신청 내역이 없는 경우 노출  -->
+									<!-- 사랑의 우수리 신청 내역이 있는 경우 노출--><div class="woo-btn"><button type="button" class="bt-akl-blue">신청내역 조회</button></div><!-- //사랑의 우수리 신청 내역이 있는 경우 노출 -->
 								</div>
 
 								<div class="woo-txt-info">
@@ -227,15 +228,160 @@
 
 									<dl>
 										<dt>신청과 취소에 따른 후원수당에서의 기부금 차감 시점(예시)</dt>
-										<dd>
-											
+										<dd class="woo-ex">
+											<div class="left">
+												<div>
+													<em class="tit">6월2일<span>신청</span></em>
+													<span class="txt">7월14일 후원수당 지급 시 <em>차감</em><span class="blck">(6월 14일 지급 시는 우수리 차감되지 않음)</span></span>
+												</div>
+												<div>
+													<em class="tit">6월2일<span>취소</span></em>
+													<span class="txt">7월14일 후원수당 지급 시 <em>미 차감</em><span class="blck">(6월 14일 지급 시는 우수리 차감되지 않음)</span></span>
+												</div>
+											</div>
+											<ul class="right">
+												<li>6월2일 신청</li>
+												<li>6월2일 취소</li>
+												<li>7월2일 재신청</li>
+												<li>8월14일 후원수당 지급 시 차감</li>
+											</ul>
 										</dd>
 									</dl>
 
 									<dl>
 										<dt>우수리 금액 예시</dt>
 										<dd>
-											
+											<div class="woo-ex-price row">
+												<div class="sec">
+										             <table>
+										                <caption>후원수당금 예시-1</caption>
+										                <colgroup> 
+										                	<col span="3">
+										                </colgroup>
+										                <thead>
+										                	<tr>
+										                		<th scope="col" colspan="2">후원수당금 예시-1</th>
+										                		<th scope="col"><span class="blind">합계</span>14,900원</th>
+										                	</tr>
+										                </thead>
+										                <tbody>
+										                    <tr>
+										                        <td rowspan="2">1,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>900원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>14,000원</td>
+										                    </tr>
+										                    <tr>
+										                        <td rowspan="2">5,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>4,900원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>10,000원</td>
+										                    </tr>
+										                    <tr>
+										                        <td rowspan="2">10,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>4,900원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>10,000원</td>
+										                    </tr>
+										                </tbody>
+										            </table>
+										         </div>
+												<div class="sec">
+										             <table>
+										                <caption>후원수당금 예시-2</caption>
+										                <colgroup>
+										                	<col span="3">
+										                </colgroup>
+										                <thead>
+										                	<tr>
+										                		<th scope="col" colspan="2">후원수당금 예시-2</th>
+										                		<th scope="col"><span class="blind">합계</span>15,400원</th>
+										                	</tr>
+										                </thead>
+										                <tbody>
+										                    <tr>
+										                        <td rowspan="2">1,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>400원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>15,000원</td>
+										                    </tr>
+										                    <tr>
+										                        <td rowspan="2">5,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>400원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>15,000원</td>
+										                    </tr>
+										                    <tr>
+										                        <td rowspan="2">10,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>5,400원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>10,000원</td>
+										                    </tr>
+										                </tbody>
+										            </table>
+										         </div>
+												<div class="sec">
+										             <table>
+										                <caption>후원수당금 예시-3</caption>
+										                <colgroup>
+										                	<col span="3">
+										                </colgroup>
+										                <thead>
+										                	<tr>
+										                		<th scope="col" colspan="2">후원수당금 예시-3</th>
+										                		<th scope="col"><span class="blind">합계</span>16,500원</th>
+										                	</tr>
+										                </thead>
+										                <tbody>
+										                    <tr>
+										                        <td rowspan="2">1,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>500원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>16,000원</td>
+										                    </tr>
+										                    <tr>
+										                        <td rowspan="2">5,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>1,500원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>15,000원</td>
+										                    </tr>
+										                    <tr>
+										                        <td rowspan="2">10,000원<br>미만 신청 시</td>
+										                        <td class="text-center">우수리</td>
+										                        <td>6,500원</td>
+										                    </tr>
+										                    <tr>
+										                        <td class="text-center">지급액</td>
+										                        <td>10,000원</td>
+										                    </tr>
+										                </tbody>
+										            </table>
+										         </div>
+										     </div>
 										</dd>
 									</dl>
 
@@ -255,7 +401,7 @@
 	</main>
 	
 	<!-- 탑업타입 -->
-    <div class="layerWrapper G20205_lp1_pop business"><!-- div.layerWrapper 추가 -->
+    <div class="layerWrapper G20421_lp1_pop business"><!-- div.layerWrapper 추가 -->
 		<div class="cbox layerBox popWidM"><!-- .layerBox 추가 --> 
 	        <div class="cart-popup__dialog">
 	            <div class="cart-popup__header">
@@ -281,95 +427,5 @@
     </div>
     <!-- //탑업타입 --> 
 	
-	<!-- 탑업안내 -->
-    <div class="layerWrapper G20205_lp2_pop business"><!-- div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidM"><!-- .layerBox 추가 --> 
-	        <div class="cart-popup__dialog">
-	            <div class="cart-popup__header">
-	                <span class="cart-popup__header-text">탑업안내
-	                    <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close" >
-	                       <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
-	                    </a>
-	                </span>
-	            </div>
-	            <div class="cart-popup__content payment"> 
-		            <div class="cart-popup__item-info amway-theme">
-		            	<div class="navigation-tabs-container order-history-container js-order-history-container">
-			                <div class="outer-border-bottom">
-			                    <ul class="tabs-toggles">
-				                    <li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#All"><span class="toggle-text">5% 탑업</span></a></li>
-				                    <li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#General"><span class="toggle-text">반품탑업</span></a></li>
-				                </ul>
-			                </div>
-				            <div class="tab-content tabs-content-blocks">
-								<div class="tab-pane content-block active" id="All">
-								    <h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>
-									<div>
-								        <ul class="list-type5 type01">
-						            		<li>목적
-						            			<ol class="list-type-num">
-						            				<li>본 프로그램은 ABO의 핀 달성을 위한 인위적 구매를 방지하여 회사와 ABO 간의 발전적인 파트너 관계를 강화하기 위한 것입니다. 일정한 요건을 갖춘 ABO가 마감 월에 유자격 SP 이상의 자격 요건을 충족시키기 위한 실적이 부족한 경우, 5% 범위 내에서 부족한 실적을 다음 달 실적에서 미리 차용할 수 있도록 합니다.</li>
-						            			</ol>
-						            		</li>
-						            		<li>탑업 프로그램이 적용되는 사례
-						            			<ol class="list-type-num">
-						            				<li>어워드 그룹 PV가 950만 PV 이상 1,000만 PV 미만으로 마감된 경우.</li>
-						            				<li>한 그룹을 독립시키고 어워드 그룹 PV가 380만 PV 이상 400만 PV 미만으로 마감된 경우.</li>
-						            				<li>두 그룹을 독립시키고 어워드 그룹 PV가 380만 PV 이상 400만 PV 미만으로 마감되어 사파이어 유자격 월을 달성하지 못한 경우. (단, 당 회계연도 내에 사파이어 또는 파운더스 사파이어 자격 달성이 불가능한 경우 탑업 적용 제외, VE(Volume Equivalency) 볼륨에 의해 파운더스 사파이어 달성 조건을 충족시킨 경우 탑업 적용 제외)</li>
-						            				<li>루비 PV가 1,900만 PV 이상 2,000만 PV 미만으로 마감된 경우.</li>
-						            			</ol>
-						            		</li>
-						            		<li>유의사항
-						            			<ol class="list-type-num">
-						            				<li>월간 5% 탑업은 현재 유자격 SP 이상인 ABO에게만 적용됩니다. 따라서 신규 SP도전자 이거나 과거에 SP 이상을 달성한 적이 있더라도 현재 유자격 SP 이상이 아닌 경우 탑업 대상자에서 제외됩니다.</li>
-						            				<li>만일 탑업을 적용 받으신 분이 익월에 적용 받은 탑업 실적을 채우지 못했을 경우 마이너스 실적은 본인뿐만 아니라 상위 후원자의 개인 그룹 실적에 반영되어 익월의 자격 및 보너스 계산에 적용됩니다. 적용된 본인의 실적은 ABN 사이트의 실적 보기 화면에서 확인하실 수 있습니다.</li>
-						            			</ol>
-						            		</li>
-						            	</ul>
-									</div>
-							    </div>
-							    <div class="tab-pane content-block" id="General">
-							        <h2 class="hidden">Tab02 타이틀 (탭명과 동일)</h2>
-									<div>
-									        <ul class="list-type5 type01">
-						            		<li>반품탑업 대상
-						            			<ol class="list-type-num">
-						            				<li>반품탑업은 마감 월을 기준으로 지난 3 개월간 구매 월별 10% 미만 * 또는 100만 PV 이내의 반품으로 인하여 기 취득한 SP-Q 유자격 월 , 사파이어 유자격 월 및 루비 유자격 월을 상실하는 ABO를 대상으로 시행됩니다. ( 10%의 기준은 SP-Q / 사파이어 유자격 월 달성 PV 인 1,000만 PV / 400만 PV이며 , 이에 따라 구매 월별 반품 PV는 100만 PV / 40만 PV 이내가 되어야 반품탑업을 적용 받을 수 있습니다.)</li>
-						            			</ol>
-						            		</li>
-						            		<li>반품탑업 조건
-						            			<ol class="list-type-num">
-						            				<li>SP 유자격 월을 달성하였으나 100만 PV 이내의 반품으로 인하여 개인그룹 실적이 900만 PV 이상으로 하락한 경우.</li>
-						            				<li>1개의 그룹을 독립시키고 400만 PV 이상 개인그룹 실적을 달성하였으나, 40만 PV 이내의 반품으로 인하여 1 개의 그룹 독립에 개인그룹 실적 360만 PV 이상으로 하락한 경우.</li>
-						            				<li>2개의 그룹을 독립시키고 400만 PV 이상 개인그룹 실적을 달성하여 사파이어 유자격 월을 달성하였으나, 40만 PV 이내의 반품으로 인하여 2개의 그룹 독립에 개인그룹 실적 360만 PV 이상으로 하락한 경우. (단, 당 회계연도 내에 사파이어 또는 파운더스 사파이어 자격 달성이 불가능한 경우 반품탑업 적용 제외)</li>
-						            				<li>2,000만 PV 이상의 루비 PV를 달성하였으나 100만 PV 이내의 반품으로 인하여 루비 실적이 1,900만 PV 이상으로 하락한 경우.</li>
-						            				<li>최초의 SP 달성 월도 반품탑업의 적용대상이 됩니다.</li>
-						            			</ol>
-						            		</li>
-						            		<li>반품탑업 유의사항
-						            			<ol class="list-type-num">
-						            				<li>한 회계연도 내에 적용 받을 수 있는 반품탑업 실적의 총합은 600만 PV까지입니다.</li>
-						            				<li>해당 월 개인그룹에서 발생한 반품 발생 실적의 합이 100만 PV를 넘는 경우 자동으로 반품탑업 대상이 되지 않습니다.</li>
-						            				<li>반품으로 발생된 PV만큼 반품탑업 적용 후 익월에 마이너스 처리됩니다. 반품탑업을 받은 후 마이너스 개인 실적을 남겨 놓게 되면 같은 회계연도 내에 더 이상의 반품탑업의 기회가 주어지지 않습니다.</li>
-						            				<li>SP 유자격 월, 사파이어 유자격 월 및 루비 유자격 월에 영향을 미치는 경우를 제외한 GIP 보너스 (Q 레그 보너스, 에메랄드 Depth 보너스, 뉴핀 보너스, PAR 성장 보너스, Go FAA 보너스, GIP Q 레그 Month 보너스 , GIP 다이아몬드 어워드) 및 여행점수 달성과 관련해서는 반품탑업이 적용되지 않습니다.</li>
-						            			</ol>
-						            		</li>
-						            		<li>반품탑업 실적 확인하기
-						            			<ol class="list-type-num">
-						            				<li>반품탑업 받으신 본인과 해당자의 그 상위 플래티늄 ABO는 ABN 반품 탑업 현황보기 페이지에서 반품 탑업 실적 및 적용 월을 확인할 수 있습니다.</li>
-						            			</ol>
-						            		</li>
-						            	</ul>
-									</div>
-							    </div>
-				            </div>
-				         </div>
-					</div>
-	            </div> 
-	        </div>
-	    </div>
-    </div>
-    <!-- //탑업안내 --> 
-
 </body>
 </html>
