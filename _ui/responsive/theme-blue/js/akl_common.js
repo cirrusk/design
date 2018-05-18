@@ -859,7 +859,12 @@ function toggleBox_Guide(){
 		var _titBtn = $(this).find('a.title');
 		var _hiddenBox = $(this).find('.tgg-hidden-area');
 
-		_hiddenBox.hide();
+		if( $(this).is('.on')){
+			_hiddenBox.show();
+		} else{
+			_hiddenBox.hide();
+		}
+
 		_titBtn.on('click',function(e){
 			e.preventDefault();
 			if(_hiddenBox.is(':hidden')){
