@@ -127,20 +127,17 @@
 			<h1 class="title-h2">그룹내 총 반품</h1>
 			<!-- 검색영역 -->
 			<div class="row filter-search">
-				<div class="hidden-md hidden-lg col-md-12 toggle-buttons-container row cutomer">
-					<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span> </button>
-					<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span><span>검색</span></button>
-				</div>
-				<div class="form-wrapper search-form-wrapper col-md-7 js-search-form-wrapper">
+				 
+				<div class="form-wrapper search-form-wrapper col-md-7 busi-search">
 					<div class="cuton-form-wrapper">
 						<div class="form-s">
 							<input type="text" placeholder="성명, 회원 번호를 입력하세요" class="input-st" title="성명, 회원 번호">
 							<button type="submit" class="btn btn-primary" id="G20203b_lp1"><span>검색</span></button>
-							<button type="button" class="bt-akl-txt">검색초기화</button>
+							<span class="reset-btn-wrap"><button type="button" class="bt-akl-txt">검색초기화</button></span> 
 						</div>
 					</div>
 				</div>
-				<div class="new-select form-wrapper col-md-5 hidden-sm hidden-xs js-filter-form-wrapper">
+				<div class="new-select form-wrapper col-md-5">
 					<div class="cuton-sel text-right">
 						<span class="label-sel">기간선택</span>
 						<select class="form-control no-uppercase-form-control w150" title="년도" aria-hidden="true">
@@ -158,22 +155,8 @@
 			<div class="losmap-wrap">
 				LOS MAP AREA
 			</div>
-			<!-- //LOS MAP AREA -->
-
-			<div class="business-info-wrap no-line">
-				<!-- 합계 -->
-				<ul class="info-list-type01">
-					<li>
-						<span class="tit">Total 반품 PV 합계</span>
-						<span class="txt">12,092</span>
-					</li>
-					<li>
-						<span class="tit">Total 반품 BV 합계</span>
-						<span class="txt">12,092</span>
-					</li>
-				</ul>
-				<!-- //합계 -->
-			</div>
+			<!-- //LOS MAP AREA --> 
+			 
 
 			<div class="view-ch-area">
 				<!-- //반품 ABO목록 -->
@@ -236,8 +219,14 @@
 						<p>해당 년도/월에는 [F03에서 선택된 회원명] 님의 반품 내역이 없습니다.</p>
 					</div>
 				</div>
-				<!-- //반품 ABO목록 -->
-	
+				<div class="tbl-list-board">
+					<div class="tr">
+						<div class="th order-sum">Total 반품 PV 합계</div><div class="td">12,092</div> 
+						<div class="th order-sum">Total 반품 BV 합계</div><div class="td">12,092</div> 
+					</div>
+				</div>
+				<!-- //반품 ABO목록 --> 
+			
 				<div class="paging-wrap">
 					<div class="paging">
 						<a href="#" class="prev">맨 처음 페이지</a>
