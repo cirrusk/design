@@ -66,6 +66,12 @@ $(function(){
 	toggleBox_Guide();
 
 
+/** ----- 비즈니스 ----- */
+
+	//여행점수 시뮬레이션
+	BarChart();
+
+
 /** ----- 마이페이지 ----- */
 
 	//마이페이지 메인 : li 여백처리
@@ -866,6 +872,22 @@ function toggleBox_Guide(){
 				_hiddenBox.hide();
 			}
 		});
+	});
+}
+
+/** ------------------------------------
+ *  비즈니스
+ *  ------------------------------------
+ */
+
+/* 여행점수 시뮬레이션 */
+function BarChart(){
+	if (!$('.barChartBox').length) return;
+
+	var _chartBar = $('.barChartBox').find('ul>li');
+	_chartBar.each(function(){
+		var barH = $(this).find('.chartBar>span>strong').height()+8;
+		$(this).find('.chartNum').css({ position:'absolute', left:'0', bottom:barH });
 	});
 }
 
