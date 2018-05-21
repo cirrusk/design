@@ -344,7 +344,7 @@
 
 	<!-- 보너스계좌 등록 팝업  -->
 	<div class="layerWrapper U60501_lp2-1_pop"><!--2018.03.05 div.layerWrapper 추가 -->
-		<div class="cbox U60501_lp2-1 layerBox popWidM"><!--2018.03.05 .layerBox 추가 -->
+		<div class="cbox U60501_lp2-1 layerBox popWidL"><!--2018.05.21 클래스 명 변경 -->
 			<div class="cart-popup__dialog">
 				<div class="cart-popup__header">
 					<span class="cart-popup__header-text">보너스계좌 등록
@@ -374,13 +374,141 @@
 										입력하신 계좌의 소유주와 예금주는 반드시 동일하여야 합니다.
 									</div>
 								</div>
+							</div>  
+						</div>
+						
+						<div class="amway-theme bonus-account"> 
+							<div class="bonus-account-tit">
+								<span>자동이체 계좌를 등록합니다.</span>
+								<!-- 툴팁 -->
+								<div class="toolTip-wrapper">
+									<button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+									<div class="tooltip-content">
+										<button type="button" class="btn-tooltip-close"><span class="hidden">안내닫기</span></button>
+										<p>자동이체란?</p>
+										<ul>
+											<li>자동이체 서비스는 은행계좌를 결제계좌를 등록 하시면 비밀번호 입력만으로 편리한 결제가 가능  한 서비스 입니다. </li> 
+											<li>자동이체가 가능한 은행은 신한, KEB하나(외환), 한국씨티, 기업, 국민, 농혁, 우리, SC제일은행, 유안타증권, 우체국 입니다. </li>
+										</ul>
+									</div>
+								</div>
+								<!-- //툴팁 -->
+							</div>
+							<div class="radio-wrapper">
+								<label class="amw-radio-wrap radio-label" for="marketing_sub_Mobile_agree">
+									<input type="radio" name="radio-sub-1" checked="checked" class="amw-global-radio" id="marketing_sub_Mobile_agree">
+									<span class="amw-radio-overlay"></span>
+									<span class="amw-label-radio-text">동의함</span>
+								</label>
+							</div>
+							<div class="radio-wrapper">
+								<label class="amw-radio-wrap radio-label" for="marketing_sub_email_notAgree">
+									<input type="radio" name="radio-sub-2" class="amw-global-radio" id="marketing_sub_email_notAgree">
+									<span class="amw-radio-overlay"></span>
+									<span class="amw-label-radio-text">동의안함</span>
+								</label>
+							</div>
+						</div>
+						
+						<p class="popup-title">새 자동이체계좌 정보 입력</p>
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label  for="bank3" class="col-md-5 account-profile__label">거래은행</label>
+								<div class="col-md-7 account-profile__value">
+									<select id="bank3" class="form-control" aria-hidden="true" style="width:100%;"><!-- tabindex="-1" 삭제 -->
+										<option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">간편가입</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="account-number3" class="col-md-5 account-profile__label">계좌번호</label>
+								<div class="col-md-7 account-profile__value">
+									<input type="text" class="form-control" id="account-number3" placeholder="&acute;-&acute;없이 입력">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="account-number4" class="col-md-5 account-profile__label">자동이체 비밀번호</label>
+								<div class="col-md-7 account-profile__value">
+									<input type="text" class="form-control" id="account-number4" placeholder="6자리 숫자만 입력 가능">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="account-number5" class="col-md-5 account-profile__label">자동이체 비밀번호 확인</label>
+								<div class="col-md-7 account-profile__value">
+									<input type="text" class="form-control" id="account-number5">
+									<div class="pay-txt">
+										입력하신 계좌의 소유주와 예금주는 반드시 동일하여야 합니다.
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-5 account-profile__label">자동이체 계좌등록 ARS인증</label>
+								<div class="col-md-7 account-profile__value">
+									<div class="ars-num">
+										<span class="phone-num">010 - 1234 - 0000</span>
+										<span class="admi-num"><a href="#" class="bt-akl-white" id="U60501_lp5" onclick="layerPopOver(this,'.U60501_lp5_pop');">전화 승인요청</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="akl-accordion">
+							<div class="accordion-section">
+								<a class="accordion-section-title" href="#accordion">ARS인증 안내</a>
+								<div id="accordion" class="accordion-section-content">
+									<div class="cert-guide">
+										<ol class="list-type3">
+											<li>
+												<span>1</span>ARS 통화
+												<p><strong>자동이체 계좌등록 ARS 인증</strong>을 위해 회원정보에 등록된 휴대전화번호로 ARS 전화가 수신됩니다.</p>
+												<ul class="list-type2">
+													<li>잠시만 기다려 주세요.</li>
+												</ul>
+											</li>
+
+											<li>
+												<span>2</span>ARS 인증 안내
+												<p>ARS 전화를 받으신 후 <strong>안내 멘트</strong>를 청취합니다.</p>
+											</li>
+
+											<li>
+												<span>3</span>생년월일 입력
+												<p>ARS 안내 멘트에 따라 <strong>생년월일을 전화기에 입력</strong>해주세요.</p>
+												<ul class="list-type2">
+													<li>꼭 <strong>전화기</strong>에 입력하셔야 합니다.</li>
+												</ul>
+											</li>
+
+											<li>
+												<span>4</span>ARS 인증 완료
+												<p>ARS전화를 종료한 후, 아래의 <strong>전화승인완료</strong> 버튼을 눌러주시면 인증이 완료됩니다.</p>
+												<ul class="list-type2">
+													<li>반드시 <strong>전화승인완료</strong> 버튼을 눌러주세요.</li>
+													<li> 전화가 오지않은 경우 전화번호가 다르거나 착신이 정지되어 있는지  확인하시기 바랍니다.</li>
+												</ul>
+											</li>
+										</ol>
+									</div>
+								</div><!--end .accordion-section-content--> 
+								<div class="gui-txt">
+									<ul class="list-type2">
+										<li>이미 등록된 자동이체계좌가 해약된 계좌인 경우, ABN에서 변경 및 해지가 불가능합니다. AEC로 방문접수 바랍니다.</li><!-- 2018.04.16일  명칭변경 -->
+										<li>본인 확인을 위해 전화인증을 수행할 전화번호를 확인 후 [전화 승인요청] 버튼을 선택하여 주시기 바랍니다.</li>
+										<li>회원정보에 등록된 휴대폰 번호로만 인증이 가능하며, 전화번호가 변경된 경우 “회원정보 변경 > 기본정보 수정”에서 수정해 주시기 바랍니다.
+										</li>
+									</ul>
+									<div class="btn-guiee">
+										<a class="link-btn" href="#">회원정보 변경<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+									</div>
+								</div> 
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="cart-popup__item-link">
-					<button type="button" class="btn-blue-white">계좌등록</button>
-					<button type="button" class="bt-akl-txt">취소</button>
+					<button type="button" class="btn-blue-white">계좌 등록/변경</button> 
 				</div>
 			</div>
 		</div>
@@ -499,18 +627,20 @@
 											</li>
 										</ol>
 									</div>
-									<div class="gui-txt">
-										<ul class="list-type2">
-											<li>이미 등록된 자동이체계좌가 해약된 계좌인 경우, ABN에서 변경 및 해지가 불가능합니다. AEC로 방문접수 바랍니다.</li><!-- 2018.04.16일  명칭변경 -->
-											<li>본인 확인을 위해 전화인증을 수행할 전화번호를 확인 후 [전화 승인요청] 버튼을 선택하여 주시기 바랍니다.</li>
-											<li>회원정보에 등록된 휴대폰 번호로만 인증이 가능하며, 전화번호가 변경된 경우 “회원정보 변경 > 기본정보 수정”에서 수정해 주시기 바랍니다.
-											</li>
-										</ul>
-										<div class="btn-guiee">
-											<a class="link-btn" href="#">회원정보 변경<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
-										</div>
-									</div>
 								</div><!--end .accordion-section-content-->
+								<!-- 2018.05.21 위치변경 -->
+								<div class="gui-txt">
+									<ul class="list-type2">
+										<li>이미 등록된 자동이체계좌가 해약된 계좌인 경우, ABN에서 변경 및 해지가 불가능합니다. AEC로 방문접수 바랍니다.</li><!-- 2018.04.16일  명칭변경 -->
+										<li>본인 확인을 위해 전화인증을 수행할 전화번호를 확인 후 [전화 승인요청] 버튼을 선택하여 주시기 바랍니다.</li>
+										<li>회원정보에 등록된 휴대폰 번호로만 인증이 가능하며, 전화번호가 변경된 경우 “회원정보 변경 > 기본정보 수정”에서 수정해 주시기 바랍니다.
+										</li>
+									</ul>
+									<div class="btn-guiee">
+										<a class="link-btn" href="#">회원정보 변경<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+									</div>
+								</div>
+								<!--// 2018.05.21 위치변경 -->
 							</div><!--end .accordion-section-->
 						</div><!--end .accordion-->
 					</div>
