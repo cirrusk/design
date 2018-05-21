@@ -971,7 +971,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .woo-ex .right li {font-weight:500; font-size:14px}
 .woo-ex .right li + li:before {content:''; display:block; width:12px; height:7px; margin:16px 0; border-width:7px 6px 0 6px; border-color:#002f5f transparent transparent transparent; border-style:solid}
 
-.woo-ex-price {margin-top:-10px !important}
+.woo-ex-price {}
 .woo-ex-price .sec {padding-left:20px; box-sizing:border-box}
 .woo-ex-price .sec:first-child {padding-left:0}
 .woo-ex-price table tbody tr {border-bottom:1px solid #dadada; background-color:#fff !important}
@@ -979,6 +979,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .woo-ex-price table th + th, .woo-ex-price table td + td {border-left:1px solid #dadada}
 .woo-ex-price table tr > *:last-child {text-align:right}
 .woo-ex-price table tr > * {vertical-align:middle; padding-left:20px !important; padding-right:20px !important}
+.woo-ex-price table td[rowspan="2"] {border-right:1px solid #dadada}
 
 .list_woo_donate .row > * {padding:0}
 .list_woo_donate .title-h6 {margin-top:10px}
@@ -1007,7 +1008,8 @@ ul.woo-step-box li:last-child:before {background:none}
 	.woo-ex {padding:20px 10px 20px 30px}
 	.woo-ex .left {width:400px}
 	
-	.woo-ex-price .sec {padding:0}
+	.woo-ex-price .sec {padding:0;}
+	.woo-ex-price .sec + .sec {margin-top:20px}
 	
 	.list_woo_donate ul li {width:50%}
 	
