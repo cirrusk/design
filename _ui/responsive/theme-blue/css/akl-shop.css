@@ -888,18 +888,31 @@ shop 옮김 : 2018.04.10
 
 /* 비즈니스 > 사랑의 우수리 */
 .fs14 {font-size:14px}
+.fs16 {font-size:16px !important}
 .blck {display:block}
 .blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
-.hr {display:block; margin-top:35px; padding-top:35px; border-top:1px solid #dadada}
+.hr {display:block; margin-top:40px; padding-top:40px; border-top:1px solid #dadada}
+.layerWrapper .hr {margin-top:35px; padding-top:35px;}
+.mgt5 {margin-top:5px !important}
+.mgt10 {margin-top:10px}
+.mgt15 {margin-top:15px}
+.mgt20 {margin-top:20px}
 
-.layerWrapper {}
+.tbl_type {display:table; width:100%}
+.tbl_type > * {display:table-cell; vertical-align:middle}
+
+.confirm-box-message:before {font-weight:400}
+.radio-wrapper.type02 > div + div {margin-top:10px}
+.btn-center.line {border-top:1px solid #e3e3e3; padding-top:40px; margin-top:30px}
+.title-h6 {color:#56565a !important}
+
 .layerWrapper .title-h6 + p, .layerWrapper .title-h6 + ul {margin-top:15px}
 .layerWrapper .title-h6 + .radio-wrapper.type02 {margin-top:20px}
-.layerWrapper .validation-wrapper.pop {border-bottom:0}
+.layerWrapper .validation-wrapper.pop {border-bottom:0; margin-bottom:0}
 .layerWrapper .validation-wrapper.pop .valid-type-phone .validation-para {width:50%; margin:0 auto}
 .layerWrapper .validation-wrapper.pop .valid-type-ipin .validation-para {left:50%; width:50%; margin:0 auto}
-
-.radio-wrapper.type02 > div + div {margin-top:10px}
+.layerWrapper .validation-wrapper.pop .validation-para span {font-size:14px}	
+.layerWrapper .validation-wrapper.pop .validation-para span .blck {margin:0}	
 
 .woosuri-area {padding-top:40px;}
 .woo-conts {margin-top:40px}
@@ -967,6 +980,21 @@ ul.woo-step-box li:last-child:before {background:none}
 .woo-ex-price table tr > *:last-child {text-align:right}
 .woo-ex-price table tr > * {vertical-align:middle; padding-left:20px !important; padding-right:20px !important}
 
+.list_woo_donate .row > * {padding:0}
+.list_woo_donate .title-h6 {margin-top:10px}
+.list_woo_donate select {width:190px}
+.list_woo_donate ul {margin:-20px 0 0 -20px; font-size:0}
+.list_woo_donate ul:after {content:''; display:block; clear:both}
+.list_woo_donate ul li {float:left; width:16.66666667%; padding:20px 0 0 20px; box-sizing:border-box; }
+.list_woo_donate ul li > span {display:block; width:100%; height:90px; padding:15px 15px 0 15px; border:1px solid #dadada; box-sizing:border-box}
+.list_woo_donate ul li > span em {display:block; font-size:16px}
+.list_woo_donate ul li > span span {font-size:14px}
+.list_woo_donate .tbl_type {margin-top:10px !important; height:60px; box-sizing:border-box; border-top:1px solid #dadada; border-bottom:1px solid #dadada}
+.list_woo_donate .tbl_type > * {padding:0 15px; font-weight:500}
+.list_woo_donate .tbl_type span {width:20%; font-size:13px; background-color:#f4f4f4}
+.list_woo_donate .tbl_type em {}
+
+
 @media (min-width: 992px) {
 	/* 비즈니스 > 사랑의 우수리 */
 	.woo-ex-price .sec {float:left; width:33.333333%;}
@@ -981,7 +1009,8 @@ ul.woo-step-box li:last-child:before {background:none}
 	
 	.woo-ex-price .sec {padding:0}
 	
-}
+	.list_woo_donate ul li {width:50%}
+	
 
 @media (max-width:850px) {
 	.akl .zoom-center button {margin-bottom:10px}
@@ -1028,9 +1057,16 @@ ul.woo-step-box li:last-child:before {background:none}
 	.woo-ex .right li + li:before {margin:16px auto}
 	.woo-ex .right li {font-size:13px}
 	
+	.layerWrapper .validation-wrapper.pop > div[class^=valid-type] {padding-top:30px}
+	.layerWrapper .validation-wrapper.pop {margin:20px 0; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3}
 	.layerWrapper .validation-wrapper.pop .valid-type-phone .validation-para {width:auto}
 	.layerWrapper .validation-wrapper.pop .valid-type-ipin .validation-para {width:auto}
 	.layerWrapper .validation-wrapper.pop span {font-size:14px}
+	.layerWrapper .validation-wrapper.pop span {font-size:14px}
+	.layerWrapper .validation-wrapper.pop .blck {display:inline}	
+		
+	.list_woo_donate .tbl_type span {width:50%; padding-right:0; font-size:14px}
+	.list_woo_donate .tbl_type em {background-color:#f4f4f4}
 	
 
 	/* 검색 > 결과  */
