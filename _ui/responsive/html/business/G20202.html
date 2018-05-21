@@ -121,81 +121,7 @@
 				</div>
 			</div>
 		</div>
-<style>
-.qLegs-wrapper .table-scroll {position:relative; box-sizing:border-box;}
-.table-scroll {position:relative;}
-.table-wrap {width:100%;overflow:auto;}
-.table-scroll  {position:relative; border:0px solid blue;}
-.table-scroll table {width:100%;margin:auto;border-collapse:separate;border-spacing:0;}
-.table-scroll th, .table-scroll td {padding:5px 10px; white-space:nowrap;vertical-align:top;}
-.table-scroll thead, .table-scroll tfoot {background:#f9f9f9;}
-.clone {position:absolute;top:0;left:0;pointer-events:none;}
-.clone th, .clone td {visibility:hidden}
-.clone td, .clone th {border-color:transparent}
-.clone tbody th {visibility:visible;color:red;}
-.clone .fixed-side { visibility:visible;}
-.clone thead, .clone tfoot{background:transparent;}
 
-.scrollArrow {position:absolute; top:50%; right:20px; margin-top:-35px; width:70px; height:70px; background:#555;}
-.scrollArrow.toLeft {background:hotpink;}
-.scrollArrow.toRight {background:orange;}
-
-
-@media (max-width: 768px){
-	.table-scroll {position:relative; min-width:305px; margin:auto;overflow:hidden; margin-right:-15px;}
-	.table-scroll .tbl-list td {padding:15px 17px;}
-
-}
-</style>
-<script type="text/javascript">
-// requires jquery library
-$(function(){
-	function fixedTable_Scroll(){
-		$('.table-scroll').each(function(){
-			var _winWidth = $(window).width();
-			var obj_orignal = $(this).find('.main-table');
-			if( _winWidth < 769){
-				var cloneTable = $(this).find('.clone');
-				if( cloneTable.length ){
-					return;
-				} else {
-					obj_orignal.clone(true).appendTo(this).addClass('clone');
-				}
-
-			} else if( _winWidth > 768){
-				$(this).find('.clone').remove();
-			}
-
-			$(this).scroll(function(event){
-				var targetWrapperSize = $(this).width(); //wrapper size : 598
-				var actualContentSize = event.currentTarget.scrollWidth; //실제 컨텐츠 크기, 858
-				var scrolledPosition  = event.currentTarget.scrollLeft; //x좌표가 움직인 거리 , 최대 260
-				var scrollable_width  = actualContentSize - targetWrapperSize; // 260 (실제 테이블 width - 감싸는 DIV = 스크롤 가능 길이)
-
-				if (scrolledPosition < 10) {
-					//스크롤 시작
-					//console.log('스크롤 시작, 오른쪽으로 가기 >>');
-					$(this).next('.scrollArrow').removeClass('toLeft toRight');
-				}
-				else if ( scrollable_width === scrolledPosition ){
-					//비교거리 === 움직인 거리
-					//console.log('스크롤 끝, << 왼쪽으로 돌아가기');
-					$(this).next('.scrollArrow').removeClass('toRight').addClass('toLeft');
-				}
-				else {
-					//움직이는 중
-					$(this).next('.scrollArrow').addClass('toRight');
-				}
-			});
-
-		});
-	}
-	fixedTable_Scroll();
-	$(window).resize(function(){
-		fixedTable_Scroll();
-	});
-})
-</script>
 		<div class="container-fluid main-container amway-theme business">
 			<h1 class="title-h2">Q레그 현황</h1>
 
@@ -208,9 +134,7 @@ $(function(){
 					</p>
 				</div>
 
-
-
-				<div id="table-scroll" class="table-scroll">
+				<div class="table-scroll">
 					<div class="table-wrap tbl-wrapper-qLegs">
 						<table class="main-table tbl-list">
 							<caption>Q레그 현황</caption>
@@ -237,6 +161,12 @@ $(function(){
 								</tr>
 							</thead>
 							<tbody>
+								<tr>
+									<th class="fixed-side" scope="row">-</th>
+									<td class="fixed-side">-</td>
+									<td colspan="12" class="no-result">조회 결과가 없습니다.</td>
+								</tr>
+
 								<tr>
 									<th class="fixed-side" scope="row" rowspan="2">Q타입</th>
 									<td class="fixed-side">PF15</td>
@@ -395,15 +325,7 @@ $(function(){
 							</tbody>
 						</table>
 					</div>
-					<button type="button" class="scrollArrow">< ></button>
 				</div>
-
-
-
-
-
-
-
 
 				<div class="outer-border-bottom">
 					<ul class="tabs-toggles">
@@ -411,7 +333,7 @@ $(function(){
 						<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#qLegs_international"><span class="toggle-text">국제후원 프론트라인 Q레그 현황</span></a></li>
 					</ul>
 				</div>
-				<div class="tab-content tabs-content-blocks" style="display:none">
+				<div class="tab-content tabs-content-blocks">
 					<div class="tab-pane content-block active" id="qLegs_frontline">
 						<h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>
 
@@ -424,24 +346,24 @@ $(function(){
 							</div>
 						</div>
 
-						<div>
-							<div class="qLegScrollBox">
-								<table class="tblList lineLeft">
+						<div class="table-scroll">
+							<div class="table-wrap tbl-wrapper-qLegs">
+								<table class="main-table tbl-list">
 									<caption>회계년 국내후원 프론트라인 Q레그 현황</caption>
 									<colgroup>
 										<col style="width:9%">
-										<col style="width:auto">
-										<col style="width:4.5%" span="12">
+										<col style="width:9%">
+										<col style="width:5%" span="12">
 										<col style="width:7%">
 										<col style="width:6%">
 										<col style="width:9%">
 									</colgroup>
 									<thead>
 										<tr class="lineH2">
-											<th scope="col" colspan="2" rowspan="2">프론트라인</th>
-											<th scope="col" colspan="4">2015</th>
-											<th scope="col" colspan="8">2016</th>
-											<th scope="col" rowspan="2" class="divisionLine">년총계</th>
+											<th scope="col" colspan="2" rowspan="2" class="fixed-side">프론트라인</th>
+											<th scope="col" colspan="4">2017</th>
+											<th scope="col" colspan="8">2018</th>
+											<th scope="col" rowspan="2" class="colspan-line">년총계</th>
 											<th scope="col" rowspan="2">VE</th>
 											<th scope="col" rowspan="2">FAA<br>예상총계</th>
 										</tr>
@@ -457,207 +379,60 @@ $(function(){
 											<th scope="col">5월</th>
 											<th scope="col">6월</th>
 											<th scope="col">7월</th>
-											<th scope="col">8월</th>
+											<th scope="col" class="colspan-line">8월</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="fixed-side">7480002</td>
-											<td class="fixed-side">하지원</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td class="fixed-side bd-right0">7480002</td>
+											<td class="fixed-side">이경희</td>
+											<td>Q</td>
+											<td>F</td>
+											<td>RF</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
 											<td></td>
 											<td class="thisMonth"></td>
 											<td></td>
 											<td></td>
 											<td></td>
 											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
+											<td class="colspan-line">8</td>
+											<td>0</td>
+											<td>1.5</td>
 										</tr>
 										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td class="fixed-side bd-right0">791****</td>
+											<td class="fixed-side">이**</td>
+											<td>Q</td>
+											<td>Q</td>
+											<td>Q</td>
+											<td>Q</td>
+											<td>Q</td>
+											<td>Q</td>
+											<td>Q</td>
 											<td class="thisMonth"></td>
 											<td></td>
 											<td></td>
 											<td></td>
 											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
+											<td class="colspan-line">8</td>
+											<td>0</td>
+											<td>3</td>
 										</tr>
 										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-											<td></td>
+											<td class="fixed-side bd-right0">791****</td>
+											<td class="fixed-side">이**</td>
+											<td colspan="15" class="no-result">조회 결과가 없습니다.</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div class="qlegTotal">
-								<strong class="txtTit">국내 후원 프론트라인 FAA 총 합계</strong><!-- 2016.09.21 수정 -->
-								<strong class="numb">11</strong>
-							</div>
+						</div>
+						<div class="qlegTotal">
+							<strong class="txtTit">국내 후원 프론트라인 FAA 총 합계</strong><!-- 2018.09.21 수정 -->
+							<strong class="numb">11</strong>
 						</div>
 					</div>
 					<div class="tab-pane content-block" id="qLegs_international">
@@ -672,23 +447,22 @@ $(function(){
 							</div>
 						</div>
 
-						<div>
-							<div class="qLegScrollBox">
-								<table class="tblList lineLeft">
+						<div class="table-scroll">
+							<div class="table-wrap tbl-wrapper-qLegs">
+								<table class="main-table tbl-list">
 									<caption>회계년 국내후원 프론트라인 Q레그 현황</caption>
 									<colgroup>
-										<col style="width:10%">
-										<col style="width:auto">
+										<col style="width:11%">
+										<col style="width:11%">
 										<col style="width:5%" span="12">
-										<col style="width:7%">
-										<col style="width:9%">
+										<col style="width:8.5%" span="2">
 									</colgroup>
 									<thead>
 										<tr class="lineH2">
-											<th scope="col" colspan="2" rowspan="2">프론트라인</th>
-											<th scope="col" colspan="4">2015</th>
-											<th scope="col" colspan="8">2016</th>
-											<th scope="col" rowspan="2" class="divisionLine">년총계</th>
+											<th scope="col" colspan="2" rowspan="2" class="fixed-side">프론트라인</th>
+											<th scope="col" colspan="4">2017</th>
+											<th scope="col" colspan="8">2018</th>
+											<th scope="col" rowspan="2" class="colspan-line">년총계</th>
 											<th scope="col" rowspan="2">FAA<br>예상총계</th>
 										</tr>
 										<tr class="lineH2">
@@ -703,237 +477,68 @@ $(function(){
 											<th scope="col">5월</th>
 											<th scope="col">6월</th>
 											<th scope="col">7월</th>
-											<th scope="col">8월</th>
+											<th scope="col" class="colspan-line">8월</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="fixed-side">7480002</td>
-											<td class="fixed-side">하지원</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td class="fixed-side bd-right0">7480002</td>
+											<td class="fixed-side">홍길동</td>
+											<td>Q</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
 											<td class="thisMonth"></td>
 											<td></td>
 											<td></td>
 											<td></td>
 											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
+											<td class="colspan-line">8</td>
+											<td>1.5</td>
 										</tr>
 										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td class="fixed-side bd-right0">7480002</td>
+											<td class="fixed-side">홍길동</td>
+											<td>Q</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
+											<td>F</td>
 											<td class="thisMonth"></td>
 											<td></td>
 											<td></td>
 											<td></td>
 											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
+											<td class="colspan-line">8</td>
+											<td>1.5</td>
 										</tr>
 										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="fixed-side">748****</td>
-											<td class="fixed-side">정*성</td>
-											<td>1</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="thisMonth"></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td class="divisionLine"></td>
-											<td></td>
+											<td class="fixed-side bd-right0">7480002</td>
+											<td class="fixed-side">홍길동</td>
+											<td colspan="14" class="no-result">조회 결과가 없습니다.</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div class="qlegTotal">
-								<strong class="txtTit">국제 후원 프론트라인 FAA 예상 총 합계</strong>
-								<strong class="numb">11</strong>
-							</div>
 						</div>
+						<div class="qlegTotal ty-international">
+							<strong class="txtTit">국제 후원 프론트라인 FAA 예상 총 합계</strong>
+							<strong class="numb">11</strong>
+						</div>
+
 					</div>
 				</div>
 
+				<ul class="list-type2">
+					<li>데이터는 변동이 있을 수 있으니, 정확한 월 마감 데이터는  <a href="#" class="color-blue-sky" target="_blank"><b>성취보고서</b></a>를 참고하여 주시기 바랍니다.</li>
+					<li>국제후원 유 자격 레그는 <strong class="color-blue">한달 늦게 반영</strong> 됩니다.</li>
+					<li>VE는  <strong class="color-blue">Q10 이상</strong>이며  <strong class="color-blue">144,000,000PV</strong> 이상인 레그 입니다.</li>
+				</ul>
 			</div>
 		</div>
 		<div id="quick"></div>

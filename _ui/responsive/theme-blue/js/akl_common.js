@@ -71,6 +71,12 @@ $(function(){
 	//여행점수 시뮬레이션
 	BarChart();
 
+	//Q레그 현황
+	fixedTable_Scroll();
+	$(window).resize(function(){
+		fixedTable_Scroll();
+	});
+
 
 /** ----- 마이페이지 ----- */
 
@@ -893,6 +899,56 @@ function BarChart(){
 	_chartBar.each(function(){
 		var barH = $(this).find('.chartBar>span>strong').height()+8;
 		$(this).find('.chartNum').css({ position:'absolute', left:'0', bottom:barH });
+	});
+}
+
+/* Q레그 현황 */
+function fixedTable_Scroll(){
+	$('.table-scroll').each(function(){
+		var _winWidth = $(window).width();
+		var obj_orignal = $(this).find('.main-table');
+
+		if( _winWidth < 1025){
+			var cloneTable = $(this).find('.clone');
+			if( cloneTable.length ){
+				return;
+			} else {
+				obj_orignal.clone(true).appendTo(this).addClass('clone');
+				//스크롤 표시 이미지
+				//$('<button type="button" class="scrollArrow"\>').appendTo(this);
+			}
+
+		} else if( _winWidth > 1024){
+			$(this).find('.clone').remove();
+			//스크롤 표시 이미지
+			//$(this).find('.scrollArrow').remove();
+		}
+
+		/* 사용보류
+		//스크롤 표시 이미지
+		$(this).scroll(function(event){
+			var targetWrapperSize = $(this).width(); //wrapper size : 598
+			var actualContentSize = event.currentTarget.scrollWidth; //실제 컨텐츠 크기, 858
+			var scrolledPosition  = event.currentTarget.scrollLeft; //x좌표가 움직인 거리 , 최대 260
+			var scrollable_width  = actualContentSize - targetWrapperSize; // 260 (실제 테이블 width - 감싸는 DIV = 스크롤 가능 길이)
+
+			if (scrolledPosition < 10) {
+				//스크롤 시작
+				//console.log('스크롤 시작, 오른쪽으로 가기 >>');
+				$(this).next('.scrollArrow').removeClass('toLeft toRight');
+			}
+			else if ( scrollable_width === scrolledPosition ){
+				//비교거리 === 움직인 거리
+				//console.log('스크롤 끝, << 왼쪽으로 돌아가기');
+				$(this).next('.scrollArrow').removeClass('toRight').addClass('toLeft');
+			}
+			else {
+				//움직이는 중
+				$(this).next('.scrollArrow').addClass('toRight');
+			}
+		});
+		*/
+
 	});
 }
 

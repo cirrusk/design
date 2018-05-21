@@ -1042,24 +1042,49 @@ html.scrollLock body {overflow:hidden;}
 .list-type5.qlegs-info > li {float:left; width:50%;}
 
 .akl .amway-theme .qLegs-wrapper * {font-size:14px;}
-.qLegs-wrapper .tbl_top_info {margin:40px 0 0;}
 .akl .amway-theme .tbl_top_info>h2 {margin:40px 0 17px;font-size:16px; color:#56565a; text-align:left;}
-
+.qLegs-wrapper .tbl_top_info {margin:40px 0 0;}
 .qLegs-wrapper .outer-border-bottom {margin:80px 0 0;}
 .qLegs-wrapper .topup-search {margin:40px 0 20px;}
+.qLegs-wrapper .table-scroll {position:relative; box-sizing:border-box;}
+.qLegs-wrapper .qlegTotal {display:table; width:100%; margin-top:10px; border:1px solid #dadada; border-width:1px 0;}
+.qLegs-wrapper .qlegTotal>strong {display:table-cell; box-sizing:border-box; vertical-align:middle; padding:25px 25px 22px 22px;}
+.qLegs-wrapper .qlegTotal .txtTit {width:18%;background:#f4f4f4;}
+.qLegs-wrapper .qlegTotal .numb {width:auto; text-align:right;}
+.qLegs-wrapper .qlegTotal.ty-international .txtTit {width:22%;}
+.qLegs-wrapper .tbl_top_info .link-btn {margin:0 0 0 15px;}
+.qLegs-wrapper .tab-content+.list-type2 {margin-top:40px;}
 
 .akl .amway-theme .tbl-list {margin:0; border-top:1px solid #e3e3e3;}
-.akl .amway-theme .tbl-list td,
-.akl .amway-theme .tbl-list th {color:#55565a; font-weight:500; text-align:center; vertical-align:middle; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3; background:#fff;}
-.akl .amway-theme .tbl-list th,
-.akl .amway-theme .tbl-list tbody tr:nth-of-type(even) {background:#fff;}
-.akl .amway-theme .tbl-list thead tr th:last-child,
-.akl .amway-theme .tbl-list tr td:last-child {border-right:0;}
+.akl .amway-theme .tbl-list td, .akl .amway-theme .tbl-list th {color:#55565a; font-weight:500; text-align:center; vertical-align:middle; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3; background:#fff;}
+.akl .amway-theme .tbl-list th, .akl .amway-theme .tbl-list tbody tr:nth-of-type(even) {background:#fff;}
+.akl .amway-theme .tbl-list tr td:last-child,
+.akl .amway-theme .tbl-list thead tr th:last-child {border-right:0;}
+.akl .amway-theme .tbl-list .colspan-line,
+.akl .amway-theme .tbl-list tr td:last-child.colspan-line,
+.akl .amway-theme .tbl-list thead tr th:last-child.colspan-line {border-right:1px solid #e3e3e3}
 .akl .amway-theme .tbl-list thead th {background:#f4f4f4;}
-
 .akl .amway-theme .tbl-list thead .thisMonth {background:#007eb0; color:#fff;}
 .akl .amway-theme .tbl-list tbody .thisMonth {background:#f2f9fc;}
+.akl .amway-theme .tbl-wrapper-qLegs .tbl-list td,
+.akl .amway-theme .tbl-wrapper-qLegs .tbl-list th { min-width:60px !important;}
+.akl .amway-theme .tbl-list .bd-right0 {border-right:0;}
 
+.table-scroll {position:relative;}
+.table-wrap {width:100%;overflow:auto;}
+.table-scroll  {position:relative; border:0px solid blue;}
+.table-scroll table {width:100%;margin:auto;border-collapse:separate;border-spacing:0;}
+.table-scroll th, .table-scroll td {padding:5px 10px; white-space:nowrap;vertical-align:top;}
+.table-scroll thead, .table-scroll tfoot {background:#f9f9f9;}
+table.clone {position:absolute;top:0;left:0;pointer-events:none;}
+table.clone th, .clone td {visibility:hidden}
+table.clone td, .clone th {border-color:transparent}
+table.clone tbody th {visibility:visible;color:red;}
+table.clone .fixed-side { visibility:visible;}
+table.clone thead, .clone tfoot{background:transparent;}
+.table-scroll .scrollArrow {position:absolute; top:50%; right:20px; margin-top:-35px; width:70px; height:70px; background:#555;}
+.table-scroll .scrollArrow.toLeft {background:hotpink;}
+.table-scroll .scrollArrow.toRight {background:orange;}
 
 /* ----- 여행점수 조회 ----- */
 .akl .txt-required {font-size:13px !important;}
@@ -1223,6 +1248,10 @@ html.scrollLock body {overflow:hidden;}
 	.diag-calculation .math-txt.last {width:auto;}
 }
 @media (max-width:1024px){
+	.qLegs-wrapper .qlegTotal {background:#f4f4f4;}
+	.qLegs-wrapper .qlegTotal .txtTit {width:auto;}
+	.qLegs-wrapper .qlegTotal .numb {width:auto;text-align:right;}
+	.qLegs-wrapper .qlegTotal.ty-international .txtTit {width:auto;}
 }
 @media (max-width:940px){
 	/* 여행 점수 산출 diagram */
@@ -1684,6 +1713,18 @@ html.scrollLock body {overflow:hidden;}
 	.calc-travel-point .txt-math .math-left {width:100%; background-position: 50% 0;}
 	.calc-travel-point .txt-math .plus {width:100%; height:52px; background-position:50% -33px;}
 	.calc-travel-point .txt-math .math-right {width:100%; background-position:50% -85px;}
+
+	/* Q레그 현황 */
+	.table-scroll {position:relative; min-width:305px; margin:auto;overflow:hidden; margin-right:-15px;}
+	.table-scroll .tbl-list td {padding:15px 17px;}
+	.business .topup-search .cuton-sel select {margin:0}
+
+	.qLegs-wrapper .outer-border-bottom {margin-top:60px;}
+	.business .qLegs-wrapper .topup-search.type02 .cuton-sel select {margin:0}
+	.akl .business .qLegs-wrapper .topup-search.type02 .cuton-sel .link-btn {margin:5px 0 0 15px;}
+	.list-type5.qlegs-info {margin:30px 0;}
+
+	.akl .amway-theme .tbl-wrapper-qLegs .tbl-list td.no-result {text-align:left;}
 }
 
 @media (max-width: 320px) {
@@ -1692,4 +1733,5 @@ html.scrollLock body {overflow:hidden;}
 	.message-detail.search-area .tbl-list-board.type-tbody-th .tr>div.mob-block {padding:8px 10px 10px;}
 
 	.akl .evidence-paper label + .btn-business {margin-left:0px;}
+
 }
