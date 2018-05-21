@@ -908,7 +908,7 @@ function fixedTable_Scroll(){
 		var _winWidth = $(window).width();
 		var obj_orignal = $(this).find('.main-table');
 
-		if( _winWidth < 769){
+		if( _winWidth < 1025){
 			var cloneTable = $(this).find('.clone');
 			if( cloneTable.length ){
 				return;
@@ -918,7 +918,7 @@ function fixedTable_Scroll(){
 				//$('<button type="button" class="scrollArrow"\>').appendTo(this);
 			}
 
-		} else if( _winWidth > 768){
+		} else if( _winWidth > 1024){
 			$(this).find('.clone').remove();
 			//스크롤 표시 이미지
 			//$(this).find('.scrollArrow').remove();
