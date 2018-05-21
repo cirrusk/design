@@ -104,7 +104,7 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .form-control:-ms-input-placeholder {color:#808285;}
 
 .akl {font-family:'Noto Sans KR', sans-serif; font-weight:normal; }
-.akl .container{max-width:1400px;}
+.akl .container {max-width:1400px;}
 .akl .amway-theme * {font-size:14px; letter-spacing:-1px; outline:initial;}
 .akl button {font-family:'Noto Sans KR', sans-serif !important}
 .akl caption {font-size:0; overflow:hidden; text-indent:-9999999px; height:0; width:0; line-height:0; padding:0;}
@@ -123,8 +123,7 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .akl .hidden {  overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px;}
 .akl .link-btn { color: #0075a4 !important; display:inline-block; font-size: 14px; line-height: 2; font-weight:500}
 .akl .link-btn.off { color: #bbb !important; }
-.akl .pot { color:#e11e45}
-.akl label {text-transform:capitalize;}
+.akl .pot { color:#e11e45} 
 .akl .text-uppercase {text-transform:capitalize;}
 .akl .clearfix:after {content:""; display:block;  clear:both; width: 0; height: 0;}
 .akl .break { display:block;}/* pc에서는 줄바꿈,모바일에서는 줄바꿈이 없는경우 */
@@ -237,7 +236,8 @@ b,strong{font-weight:500; }
 .akl .bonus-payment .bonus-payment__title.member-pointe:after {top:4px;left:-30px;background:url('../images/akl_common/ico-point-management.png') no-repeat left top;width:24px;height:20px;}
 
 /* common > form */
-.akl label {font-weight: 500; font-size: 14px;}
+.akl label {font-weight: 500; font-size: 14px;text-transform:capitalize; margin-bottom: 0} 
+.akl .amwa-radio+label {line-height: 1.3;}
 .akl label .amw-label-radio-text{font-weight: 500; font-size: 14px;}
 .akl .form-control {box-shadow:0 0 0 rgba(0,0,0,0.075) inset;/* color:#808285; */font-size:14px;margin:0 0;}
 .akl input[type="text"],.akl input[type="password"]  { height:40px; border: solid 1px #dadada;padding:0 15px; }
@@ -500,7 +500,8 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .plp-item-label:nth-of-type(1) {z-index:99;padding-left:13px;}
 .akl .plp-item-label:nth-of-type(2) {z-index:98;}
 .akl .plp-item-label:nth-of-type(3) {z-index:97;}
-
+.akl .plp-item-label:nth-of-type(4) {z-index:96;}
+.akl .plp-item-label:nth-of-type(5) {z-index:95;}
 
 .akl .ico-bg-sky {display:inline-block;border:1px solid #007eb0;background:#e5f2f7;color:#007eb0;font-size:11px;padding:1px 8px;height:20px;}
 
@@ -551,7 +552,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .popover .login-form input[type="password"]{ width: 100%; height: 44px; font-weight: 400;}
 
 .akl .popover .login-form label { font-weight: 700; margin-bottom:20px !important;}
-.akl [type="checkbox"]:not(:checked)+label::before {top: 2px;}
+.akl [type="checkbox"]:not(:checked)+label::before {top:1px;}
 .akl .login-form__link {font-weight: 700; font-size: 13px !important; }
 .akl .login-form__owner { line-height: 1.5; }
 .akl .login-form__submit { font-size: 20px; font-weight:500; letter-spacing: -1px }
