@@ -29,7 +29,7 @@ Editor : ji-min Park
 .visual-area.type02.supreme_lx{background: #000000 url(../images/akl_product/beauty/bg_supreme_lx_regenerating.png) no-repeat top center;height:1130px;} /* 수프림 lx */
 .visual-area.type02.artistry_men{background: #000000 url(../images/akl_product/beauty/bg_artistry_men.png) no-repeat top center;height:1024px;} /* 아트스트리 맨 */
 
-.visual-area.type02.foundation_hydra_touch{background: #000000 url(../images/akl_product/beauty/bg_foundation_hydra_touch.png) no-repeat top center;height:1021px;} /* 베이스메이크업(파운데이션) */
+.visual-area.type02.foundation_hydra_touch{background: #000000 url(../images/akl_product/beauty/bg_foundation_hydra_touch.png) no-repeat top center;height:1010px;} /* 베이스메이크업(파운데이션) */
 .visual-area.type02.ex_fit_powder{background: #000000 url(../images/akl_product/beauty/bg_powder_refill_4931.png) no-repeat top center;height:798px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더 리필) */
 .visual-area.type02.ex_fit_loose_powder{background: #000000 url(../images/akl_product/beauty/bg_ex_fit_loose_powder_4231.png) no-repeat top center;height:847px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
 
@@ -348,6 +348,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 							     베이스 메이크업  
 *******************************************************************************/
 
+/* 비주얼 영역 공통 */
+.txt-info-visual .v-tit{padding: 18px 19% 0 !important;}
 
 /* 파운데이션  */
 .base-makeup .skin-care .txt-info-visual .v-tit{padding: 32px 19% 0;}
@@ -355,15 +357,16 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .beam-balance .txt-left, .beam-balance .txt-right{position:absolute;top:75%;} 
 .beam-balance .txt-left{left:0}
 .beam-balance .txt-right{left:68%}
-.triangle.circle-type .comment01,
-.triangle.circle-type .comment02,
-.triangle.circle-type .comment03{position:absolute;color:#ffffff}
 
-.triangle.circle-type{max-width:366px}
-.triangle.circle-type .comment01{top:0;left:0;width:100%;padding-top:30px}
-.triangle.circle-type .comment02{top:75%;left:0}
-.triangle.circle-type .comment03{top:77%}
-.triangle.circle-type .tit-child{padding-top:50px}
+.triangle.circle-type{padding: 0;display: block;}
+.triangle.circle-type .tit-child{color: #56565a;padding-top:50px;font-size:16px;font-weight:400;}
+.triangle.circle-type .tit-child em{font-size:16px !important;}
+.triangle.circle-type .txt-round{width:100%;position:absolute;color:#ffffff;}
+.triangle.circle-type .txt-round em{display:inline-block;min-width:100px;min-height:100px;padding-top: 22px;border:4px solid #ffff;background: #ad9172;box-sizing: border-box;border-radius: 100%;}
+.triangle.circle-type .comment01{width:100%;}
+.triangle.circle-type .comment02{width:50%;top: inherit;bottom: 0;left: 2%;}
+.triangle.circle-type .comment03{width:50%;top: inherit;bottom: 0;right: 2%;}
+.triangle.circle-type .comment02 em{padding-top:36px}
 
 
 
@@ -471,9 +474,11 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	
 	/* 베이스 메이크업 공통 */
-	
+	.base-makeup .visual-area .v-logo.beauty img{height:13px;}
+	.base-makeup .v-pro span img{width:inherit}
 	
 	/* 립메이크업 공통 */
+	.point-makeup .visual-area .v-logo.beauty img{height:13px;}
 	.point-makeup .visual-area.lipgloss .v-logo{width:auto;padding:38px 0 0;}
 	.point-makeup .visual-area.lipgloss .v-pro span img {width:auto;height:auto;}
 	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:20px;}
@@ -529,12 +534,27 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.triangle.circle-type .comment02{}
 	
 	/* 포인트 메이크업 립 */
-	.point-makeup .visual-area.lipgloss .v-logo{width:auto;padding:38px 0 0;}
+	.point-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
+	.point-makeup .visual-area .v-logo img{height:13px;}
+	.base-makeup .txt-info-visual .v-tit{padding: 18px 0 0 !important;}
+	
 	.point-makeup .visual-area.lipgloss .v-pro span img {width:90%;height:auto;}
 	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:13px;}
 	
-	/* 베이스 메이크업 */
 	
+	/* 베이스 메이크업 */
+	.base-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
+	.base-makeup .visual-area .v-logo img{height:13px;}
+	.base-makeup .txt-info-visual .v-tit{padding: 18px 0 0 !important;}
+	.base-makeup .v-pro span img{width:inherit;}
+	
+	.triangle .tit{font-size:14px;}
+	.triangle .tit em{font-size:14px !important;}
+	.triangle.circle-type .comment02{left:-10%;}
+	.triangle.circle-type .comment03{right:-10%;}
+
+
+
 }
 
 
@@ -550,5 +570,22 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.triangle br{line-height:18px !important;}
 	.triangle.circle-type .comment01, .triangle.circle-type .comment02, .triangle.circle-type .comment03{font-size:12px;}
 	.triangle.circle-type .comment01{padding-top:13px}
+	
+	/* 베이스 메이크업 */	
+	.triangle.circle-type .tit-child{font-size:14px;}
+	.triangle.circle-type .tit-child em{font-size:14px !important;}
+	.triangle.circle-type .txt-round em{display:inline-block;min-width:85px;min-height:85px;}
+	.triangle.circle-type .txt-round{letter-spacing:-1px;}
+	.triangle.circle-type .comment01{top:-20%;}
+	.triangle.circle-type .comment02{left:-15%;}
+	.triangle.circle-type .comment03{right:-15%;}
+	.triangle.circle-type .comment01 em, .triangle.circle-type .comment03 em{padding-top:17px;}
+	.triangle.circle-type .comment02 em{padding-top:28px}
+	
+	
+	
+	
+	
+	
 }
 
