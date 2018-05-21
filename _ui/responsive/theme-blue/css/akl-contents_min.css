@@ -847,6 +847,7 @@ html.scrollLock body {overflow:hidden;}
 .fax-order-wrapper .new-shipping-address .new-shipping-btnw {padding-bottom:0;margin-bottom:0;}
 .fax-order-wrapper .new-shipping-address .phone-group {padding-left:0 !important;}
 .fax-order-wrapper .new-shipping-address .form-group {padding-left:10px;}
+.fax-order-wrapper .new-shipping-address .phone-group > .form-group {margin-left:0}
 .fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:100%;}
 .fax-order-wrapper .new-shipping-address .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px;}
 .fax-order-wrapper .detail-content .new-shipping-agree .form-group > label {margin-bottom:15px;padding-left:25px}
@@ -1047,12 +1048,17 @@ html.scrollLock body {overflow:hidden;}
 .qLegs-wrapper .outer-border-bottom {margin:80px 0 0;}
 .qLegs-wrapper .topup-search {margin:40px 0 20px;}
 
-.akl .amway-theme .tbl_qlegs {margin:0; border-top:1px solid #e3e3e3;}
-.akl .amway-theme .tbl_qlegs td,
-.akl .amway-theme .tbl_qlegs th {color:#55565a; font-weight:500; border-bottom:1px solid #e3e3e3; border-left:1px solid #e3e3e3; background:#fff; text-align:center; vertical-align:middle;}
-.akl .amway-theme .tbl_qlegs th,
-.akl .amway-theme .tbl_qlegs tbody tr:nth-of-type(even) {background:#fff;}
-.akl .amway-theme .tbl_qlegs tr th:first-child {border-left:0;}
+.akl .amway-theme .tbl-list {margin:0; border-top:1px solid #e3e3e3;}
+.akl .amway-theme .tbl-list td,
+.akl .amway-theme .tbl-list th {color:#55565a; font-weight:500; text-align:center; vertical-align:middle; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3; background:#fff;}
+.akl .amway-theme .tbl-list th,
+.akl .amway-theme .tbl-list tbody tr:nth-of-type(even) {background:#fff;}
+.akl .amway-theme .tbl-list thead tr th:last-child,
+.akl .amway-theme .tbl-list tr td:last-child {border-right:0;}
+.akl .amway-theme .tbl-list thead th {background:#f4f4f4;}
+
+.akl .amway-theme .tbl-list thead .thisMonth {background:#007eb0; color:#fff;}
+.akl .amway-theme .tbl-list tbody .thisMonth {background:#f2f9fc;}
 
 
 /* ----- 여행점수 조회 ----- */
