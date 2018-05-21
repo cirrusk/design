@@ -122,7 +122,7 @@
 			</div>
 		</div>
 <style>
-.qLegs-wrapper .table-scroll {position:relative; box-sizing:border-box; margin-right:-15px;}
+.qLegs-wrapper .table-scroll {position:relative; box-sizing:border-box;}
 .table-scroll {position:relative;}
 .table-wrap {width:100%;overflow:auto;}
 .table-scroll  {position:relative; border:0px solid blue;}
@@ -139,18 +139,33 @@
 .scrollArrow {position:absolute; top:50%; right:20px; margin-top:-35px; width:70px; height:70px; background:#555;}
 .scrollArrow.toLeft {background:hotpink;}
 .scrollArrow.toRight {background:orange;}
+
+
 @media (max-width: 768px){
-	.table-scroll {position:relative; max-width:345px;margin:auto;overflow:hidden;}
+	.table-scroll {position:relative; min-width:305px; margin:auto;overflow:hidden; margin-right:-15px;}
+	.table-scroll .tbl-list td {padding:15px 17px;}
+
 }
 </style>
 <script type="text/javascript">
 // requires jquery library
 $(function(){
+	function fixedTable_Scroll(){
+		$('.table-scroll').each(function(){
+			var _winWidth = $(window).width();
+			var obj_orignal = $(this).find('.main-table');
+			if( _winWidth < 769){
+				var cloneTable = $(this).find('.clone');
+				if( cloneTable.length ){
+					return;
+				} else {
+					obj_orignal.clone(true).appendTo(this).addClass('clone');
+				}
 
-	if( $(window).width() < 769){
-		$(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
+			} else if( _winWidth > 768){
+				$(this).find('.clone').remove();
+			}
 
-		$('.table-wrap').each(function(){
 			$(this).scroll(function(event){
 				var targetWrapperSize = $(this).width(); //wrapper size : 598
 				var actualContentSize = event.currentTarget.scrollWidth; //실제 컨텐츠 크기, 858
@@ -172,10 +187,13 @@ $(function(){
 					$(this).next('.scrollArrow').addClass('toRight');
 				}
 			});
+
 		});
 	}
-
-
+	fixedTable_Scroll();
+	$(window).resize(function(){
+		fixedTable_Scroll();
+	});
 })
 </script>
 		<div class="container-fluid main-container amway-theme business">
@@ -194,7 +212,7 @@ $(function(){
 
 				<div id="table-scroll" class="table-scroll">
 					<div class="table-wrap tbl-wrapper-qLegs">
-						<table class="main-table tbl_qlegs">
+						<table class="main-table tbl-list">
 							<caption>Q레그 현황</caption>
 							<colgroup>
 								<col style="width:15%">
@@ -377,6 +395,7 @@ $(function(){
 							</tbody>
 						</table>
 					</div>
+					<button type="button" class="scrollArrow">< ></button>
 				</div>
 
 
