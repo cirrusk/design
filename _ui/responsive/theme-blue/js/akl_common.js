@@ -649,8 +649,9 @@ function myPage_EqualHeight(){
 	var _winWidth = $(window).width();
 	var colHeightResize = {
 			init : function(){
-				$(blockList).each(function(){
-					var _child_height = $(this).find('ul>li>div>a');
+				var _UL = $(blockList).find('ul');
+				_UL.each(function(){
+					var _child_height = $(this).find('li>div>a');
 
 					_child_height.each(function() {
 						$(this).css({height:''});
@@ -659,8 +660,9 @@ function myPage_EqualHeight(){
 			},
 			reSize : function(){
 				var maxHeight = 85;
-				$(blockList).each(function(){
-					var _child_height = $(this).find('ul>li>div>a');
+				var _UL = $(blockList).find('ul');
+				_UL.each(function(){
+					var _child_height = $(this).find('li>div>a');
 
 					_child_height.each(function() {
 						maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
