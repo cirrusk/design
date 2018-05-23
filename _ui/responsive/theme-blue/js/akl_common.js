@@ -83,6 +83,12 @@ $(function(){
 	//마이페이지 메인 : li 여백처리
 	mypageIndex_list();
 
+	//마이페이지 메인 : li 높이제어
+	myPage_EqualHeight();
+	$(window).resize(function(){
+		myPage_EqualHeight();
+	});
+
 	//마이페이지 > 맞춤메시지 - 신규 ABO 프로모션: 목록 정렬
 	message_newABO_state();
 
@@ -167,40 +173,32 @@ function HEADER_MenuShop(){
 
 /* 미니 대시보드 : #login-drop-content */
 function HEADER_miniDashboard(){
-	$('.js-my-account-menu').on('click',function(e){
-		e.preventDefault();
+	//쇼핑메뉴 layer
+	$("#overlay-menu-wrapper").removeClass("in");
+	$('.overlay-menu-toggle-desktop').addClass('collapsed');
 
-		//쇼핑메뉴 layer
-		$("#overlay-menu-wrapper").removeClass("in");
-		$('.overlay-menu-toggle-desktop').addClass('collapsed');
+	//레이어: .nav-links
+	$('header').hasClass('userinfo-open') ? $('header').removeClass('userinfo-open') : $('header').addClass('userinfo-open');
+	$('header').removeClass('mincart-open');
 
-		//레이어: .nav-links
-		$('header').hasClass('userinfo-open') ? $('header').removeClass('userinfo-open') : $('header').addClass('userinfo-open');
-		$('header').removeClass('mincart-open');
-
-		//레이어: 검색
-		$(".auto-suggestion-popover").hide(); //추천검색어
-		$('.top-search').removeClass('search-open'); //검색어 입력영역
-	});
+	//레이어: 검색
+	$(".auto-suggestion-popover").hide(); //추천검색어
+	$('.top-search').removeClass('search-open'); //검색어 입력영역
 }
 
 /* 미니 카트 : #shoppingcar-drop-content */
 function HEADER_miniCart(){
-	$('.js-mini-cart-link').on('click',function(e){
-		e.preventDefault();
+	//쇼핑메뉴 layer
+	$("#overlay-menu-wrapper").removeClass("in");
+	$('.overlay-menu-toggle-desktop').addClass('collapsed');
 
-		//쇼핑메뉴 layer
-		$("#overlay-menu-wrapper").removeClass("in");
-		$('.overlay-menu-toggle-desktop').addClass('collapsed');
+	//레이어: .nav-links
+	$('header').hasClass('mincart-open') ? $('header').removeClass('mincart-open') : $('header').addClass('mincart-open');
+	$('header').removeClass('userinfo-open');
 
-		//레이어: .nav-links
-		$('header').hasClass('mincart-open') ? $('header').removeClass('mincart-open') : $('header').addClass('mincart-open');
-		$('header').removeClass('userinfo-open');
-
-		//레이어: 검색
-		$(".auto-suggestion-popover").hide(); //추천검색어
-		$('.top-search').removeClass('search-open'); //검색어 입력영역
-	});
+	//레이어: 검색
+	$(".auto-suggestion-popover").hide(); //추천검색어
+	$('.top-search').removeClass('search-open'); //검색어 입력영역
 }
 
 /* 추천검색어 레이어 */
@@ -641,6 +639,51 @@ function mypageIndex_list(){
 		var _ul = $(this).find('>ul');
 		_ul.find('li').filter(':nth-of-type(3n-1)').addClass('nth-3n-1');
 		_ul.find('li').filter(':nth-of-type(-n+3)').addClass('nth-3n');
+	});
+}
+/* 마이페이지 메인 : li 높이제어 */
+function myPage_EqualHeight(){
+	var blockList = '.mypage-block-list';
+	if (!blockList.length){return;}
+
+	var _winWidth = $(window).width();
+	var colHeightResize = {
+			init : function(){
+				$(blockList).each(function(){
+					var _child_height = $(this).find('ul>li>div>a');
+
+					_child_height.each(function() {
+						$(this).css({height:''});
+					});
+				});
+			},
+			reSize : function(){
+				var maxHeight = 85;
+				$(blockList).each(function(){
+					var _child_height = $(this).find('ul>li>div>a');
+
+					_child_height.each(function() {
+						maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
+					});
+
+					_child_height.css({height:maxHeight + 'px'});
+				});
+			}
+	}
+
+	function colHeight_check(){
+		var _winWidth = $(window).width();
+		if( _winWidth > 768 ){
+			colHeightResize.init();
+			colHeightResize.reSize();
+		} else if(_winWidth < 769) {
+			colHeightResize.init();
+		}
+	}
+
+	colHeight_check();
+	$(window).resize(function(){
+		colHeight_check();
 	});
 }
 

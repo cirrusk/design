@@ -1730,11 +1730,17 @@ $(function(){
 	//쇼핑메뉴 클릭이벤트 (2018.05.14 추가)
 	HEADER_MenuShop();
 
-	//미니 대시보드 (2018.05.14 수정)
-	HEADER_miniDashboard();
+	//미니 대시보드 (2018.05.23 수정)
+	$('.js-my-account-menu').on('click',function(e){
+		e.preventDefault();
+		HEADER_miniDashboard();
+	});
 
-	//미니 카트 (2018.05.14 수정)
-	HEADER_miniCart();
+	//미니 카트 (2018.05.23 수정)
+	$('.js-mini-cart-link').on('click',function(e){
+		e.preventDefault();
+		HEADER_miniCart();
+	});
 
 	//추천검색어
 	HEADER_topSearch_suggestion();
