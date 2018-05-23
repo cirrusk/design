@@ -1425,7 +1425,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 
 @media (max-width: 1200px){
-	.akl .user-account-header {padding-left:36px; padding-right:32px;}
+	.akl .user-account-header {padding-left:36px; padding-right:34px;}
 	.akl .user-account-header .container {padding:0;}
 	.akl .user-account-header .user-block {padding-left:0;}
 	.akl .user-account-header .go-block {padding-right:0;}
@@ -1445,11 +1445,17 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .btn.btn-primary span {color:#fff !important;}
 
 }
+@media (max-width:940px){
+	.akl .go-block .jump-to-wrapper {padding-left:0;}
+	.akl .user-account-header .go-block .jump-to {display:block; padding-top:0; padding-bottom:0; margin-bottom:10px; text-align:left;}
+	.akl .user-account-header .go-block .jump-to span {display:block;}
+	.akl .user-account-header .go-block {padding-top:10px;}
+}
 
 @media (max-width: 768px) {
 	/* jump-menu */
 	.akl .go-block .jump-to-wrapper {display:block; margin-top:15px; padding:0 20px; left:0;}
-	.akl .user-account-header .go-block .jump-to {display:block; text-align:left;}
+	/* .akl .user-account-header .go-block .jump-to {display:block; text-align:left;} */
 	.jump-menu {display:block; width:100%;}
 
     /* 로그인 > connectedID  */
@@ -1736,7 +1742,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .account-landing-page {font-family:'Noto Sans KR', sans-serif;}
 	.akl .user-account-header .go-block {padding-right:0;}
 	.akl .user-account-header .user-block .user-image-container {display:none;}
-	.akl .user-account-header .user-block {display:block;padding-left:20px;}
+	.akl .user-account-header .user-block {display:block; padding-left:0;}
 	.akl .user-account-header .user-block.col-sm-6 {width:100%;}
 	.akl .user-account-header .user-block .user-info {margin-left:0;}
 	.akl .user-account-header .user-block .user-info span.user-email {font-size:12px;}
