@@ -189,10 +189,26 @@ div.feat-img img {text-align:center;}
 .box-tit {background:#eeefef;text-align:center;padding:15px 0 18px;}
 .box-tit h5 {font-size: 44px;color: #57565b;font-weight: 400;letter-spacing: -2px;text-align: center;}
 .box-tit h5 span {font-weight:400;font-size: 44px;}
-.effet-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;padding:30px 80px;}
-.siehe-box {padding:0 0;}
+.effet-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;padding:30px 0;}
+.siehe-box {padding:0 80px;}
 .siehe-box.midle {padding:0 30% 0 0}
 .siehe-box .com-txt {line-height:1.7;}
+.siehe-box.top-line {margin-top:30px;border-top:1px solid #e3e3e3;padding:30px 80px 0}
+
+.ad-setp-lst2 {clear:both;width:100%;} 
+.ad-setp-lst2:after {clear:both;display:block;}
+.ad-setp-lst2 li {float:left;width:25%;vertical-align:middle;margin:30px 0;}
+.ad-setp-lst2 li dl {display:table;width:100%;margin:0 auto;}
+.ad-setp-lst2 li dl dt, .ad-setp-lst2 li dl dd {display:inline-block;vertical-align:middle;letter-spacing:-1px;box-sizing: border-box;}
+.ad-setp-lst2 li dl dt {text-align:center;font-weight:500;margin:0 auto;}
+.ad-setp-lst2 li dl dt > div {margin:0 auto;width:82px;text-align:center;}
+.ad-setp-lst2 li dl dt p {display:table-cell;vertical-align:middle;color:#fff;text-align:center;}
+.ad-setp-lst2 li dl dt p span {border-bottom:1px solid #fff;}
+.ad-setp-lst2 li dl dd {display:table-cell;font-size:14px;font-weight:300;width:(100% - 82px);}
+.ad-setp-lst2 li dl dd p {box-sizing: border-box;width:100%;margin:0 0;vertical-align:middle;text-align:left;padding:0 20px;}
+
+.i-won {width:82px;height:82px;border-radius:50%;margin:0 auto;}
+.i-won.red {background:#e11e45;}
 
 .amount-list {display:block;width:100%;}
 .amount-list > li {clear:both;display:inline-block;width:49%;vertical-align:middle;padding-top:15px;}
@@ -286,7 +302,24 @@ dl.amo-txt dd br {line-height:18px}
 .system-lst3 ul li .lst-won p img {vertical-align:middle;border-radius:50%;}
 .system-lst3 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;}
 
-@media (max-width: 1024px) {
+/* 유스 익스텐드 울트라 리프팅 크림  */	
+.com-tit.youth_xtend {padding:0 30% 0 0;}
+.com-tit.youth_xtend span {display:block;}
+.youth_xtend-area {position:relative;width:469px;height:197px;margin:0 auto;}
+.youth_xtend_left dl {display:table;height:88px;margin-bottom:20px;table-layout:fixed;box-sizing: border-box;}
+.youth_xtend_left dl dt, .youth_xtend_left dl dd {display:table-cell;vertical-align:middle;letter-spacing:-1px;box-sizing: border-box;}
+.youth_xtend_left dl dt {background:url('../images/akl_product/common/icon_shape_gray.png') no-repeat left center;width:98px;height:88px;}
+.youth_xtend_left dl dt p {padding:0 0;color:#fff;font-weight:400;margin:0 0;font-size:14px;}
+.youth_xtend_left dl dd {height:88px;text-align:left;}
+.youth_xtend_left dl dd p {text-align:left;padding:0 10px;color:#808285;font-weight:300;margin:0 0;font-size:14px;}
+.youth_xtend_left dl dd span {display:block;}
+
+.youth_xtend-area .youth_xtend_right {position:absolute;top:50%;right:0;display:inline-block;background:url('../images/akl_product/common/icon_shape_gold.png') no-repeat left center;width:330px;height:117px;margin-top:-58px}
+.youth_xtend_right .youth_xtend-txt {float:right;display:table;width:130px;height:118px;table-layout:fixed;box-sizing: border-box;}
+.youth_xtend_right .youth_xtend-txt p {display:table-cell;width:100%;vertical-align:middle;margin:0 0;padding:0 0;box-sizing: border-box;}
+.youth_xtend_right .youth_xtend-txt p span {font-size:24px;color:#fff;letter-spacing:-2px;line-height:34px;}
+
+@media (max-width: 1073px) {
 	.info-p-list ul li span img {width:100%;height:auto;}
 
 	/*.pcomp-list div.comp-info {clear:both;display:block;width:100%;}*/
@@ -296,6 +329,11 @@ dl.amo-txt dd br {line-height:18px}
 	.ingestion-usage dl dt {width:75%;}
 
 	.system-lst2 {margin:0 auto;width:100%;}
+	.siehe-box.top-line {padding:15px 40px 0;}
+	
+	.ad-setp-lst2 li dl dt {display:block;margin:0 auto;}
+	.ad-setp-lst2 li dl dd {display:block;width:100%;height:82px;text-align:center;}
+	.ad-setp-lst2 li dl dd p {padding:10px 10px 0;text-align:center}
 
 }
 
@@ -352,7 +390,15 @@ dl.amo-txt dd br {line-height:18px}
 	.ade-photo img {width:auto;height:auto;}
 	
 	.inge-lst03 li:after {top:8px}
-	.effet-area {padding:30px 30px;}
+	.effet-area {padding:30px 0px;}
+	.siehe-box {padding:0 20px}
+	.siehe-box.top-line {padding:20px 20px 0;}
+	.ad-setp-lst2 li {width:50%;margin:15px auto;}
+	.ad-setp-lst2 li dl dt {width:100%;margin:0 auto;text-align:center;}
+	.ad-setp-lst2 li dl dt p {margin:0 auto;text-align:center;}
+	.ad-setp-lst2 li dl dd {width:100%;display:block;text-align:center}
+	.ad-setp-lst2 li dl dd p {margin:0 0 0;width:100%;padding:10px 20px 0;text-align:center}
+
 	.msm-info-graph {padding:0 0;}
 	.mtpt50{margin:23px 0 0;padding:25px 0 0;}
 	.mt50{margin:12px 0 0;padding:12px 0 0;}
@@ -378,6 +424,11 @@ dl.amo-txt dd br {line-height:18px}
 	.system-lst3 ul li .lst-won p {height:70px;}
 	.system-lst3 ul li .lst-won p img {width:100%;height:auto;}
 	.system-lst3 ul li .lst-won span  {font-size:12px;height:42px;line-height:14px;}
+
+	/* 유스 익스텐드 울트라 리프팅 크림  */	
+	.com-tit.youth_xtend {padding:0 0 0 0;}
+	.youth_xtend-area {width:100%;}
+	.youth_xtend_left dl dd p {font-size:13px;}
 
 
 }	
