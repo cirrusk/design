@@ -17,6 +17,27 @@ Version : AKL Hybris UIUX 1.0
 .akl .akl-btn-wrap { text-align: center}
 .akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px;padding: 13px 40px;}
 
+/* ----- 공통 ----- */
+/* jump-menu */
+.akl .user-account-header .go-block .jump-to {vertical-align:middle;}
+.jump-menu {position:relative; z-index:10; display:inline-block; width:300px; background:#fff; text-align:left;}
+.jump-menu a {display:block; color:#002f5f; font-weight:500; padding-left:20px; font-size:14px !important;}
+.jump-menu .currentTxt {display:block; height:40px; line-height:38px; box-sizing:border-box; border:1px solid #dadada;}
+.jump-menu .menu-dep1 {height:40px; line-height:40px; padding-left:35px;}
+.jump-menu .menu-dep2 {height:40px; line-height:40px;}
+.jump-menu .current {background:#f4f4f4;}
+.jump-menu .select-wrapper {display:none; position:absolute; top:40px; left:0; width:100%; height:auto; background:#fff; border:1px solid #dadada; border-top:0;}
+.jump-menu .select-list>li {border-top:1px solid #dadada;}
+.jump-menu .select-list>li:first-child {border-top:0;}
+.jump-menu .select-list>li>ul {display:none;}
+.jump-menu .currentTxt,
+.jump-menu .hasSub {background:url(../images/akl_common/ico_jumpmenu_arrw.png) no-repeat 100% -55px;}
+.jump-menu .currentTxt.active,
+.jump-menu .on .hasSub {background-position: 100% -5px;}
+.jump-menu .sub-main .menu-dep1 {padding-left:20px;}
+.select-depth2 {margin-bottom:10px;}
+.select-depth2 a {padding-left:50px; font-weight:normal;}
+
 /* 로그인 > connectedID  */
 .connectedID {border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3; padding: 20px 0 5px; overflow:hidden; margin: 30px 0 20px}
 .connectedID .form-group{ }
@@ -1426,6 +1447,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 }
 
 @media (max-width: 768px) {
+	/* jump-menu */
+	.akl .go-block .jump-to-wrapper {display:block; margin-top:15px; padding:0 20px; left:0;}
+	.akl .user-account-header .go-block .jump-to {display:block; text-align:left;}
+	.jump-menu {display:block; width:100%;}
 
     /* 로그인 > connectedID  */
 	.akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper th, .akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper td {display: block;}
