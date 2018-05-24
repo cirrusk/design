@@ -253,20 +253,32 @@
 												<legend class="legend-tit">연락처</legend>
 												<div class="row mobile-phone-form-group">
 													<label class="col-md-2 account-profile__label">휴대폰 번호</label>
-													<div class="col-md-10 account-profile__value">010-1234-5678</div>
-
+													<div class="col-md-10 account-profile__value">010-1234-5678</div> 
 													<div class="col-md-10 account-profile__editor has-error">
 														<div class="form-group">
 															<div class="col-md-4 input-part-1">
 																<select id="profile.mobileCountryCode" name="mobileCountryCode" class="form-control" title="휴대전화번호 앞자리 선택"><!-- title 속성추가 -->
 																	<option value="1" selected="selected">010</option>
 																	<option value="509">011</option>
-																</select>
+																</select> 
 															</div>
 															<div class="col-md-8 input-part-2">
 																<input id="profile.mobilePhoneNumber" name="mobilePhoneNumber" type="text" class="text form-control" minlength="1"  value="" placeholder="&acute;-&acute;없이 입력" maxlength="8" title="휴대전화번호 입력">
 															</div>
-														</div>
+															<div class="col-md-8 input-part-3"> 
+																<button type="button" class="bt-akl-white">인증번호 재전송</button>
+															</div> 
+															<div class="col-md-3 col-empty"></div>
+															<div class="col-md-7 col-xs-12 certifi-input-box">
+																<label class="col-xs-12 certifi-label" for="simpleCertiNumber_member">인증번호 입력</label>
+																<div class="col-xs-8 certifi-input">
+																	<input type="text" class="form-control" id="simpleCertiNumber_member">
+																	<p class="txt-input-guide">남은시간:2분59초</p>
+																</div>
+																<div class="col-xs-4 col-btn"><button type="button" class="bt-akl-white">확인</button></div>
+															</div>
+														</div> 
+														 
 													</div>
 												</div>
 												<div class="row alternate-phone-form-group">
