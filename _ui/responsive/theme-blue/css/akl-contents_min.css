@@ -23,16 +23,6 @@
 .etc-required:after {content:'*'; color:#e11e45;}
 .etc-required>em {overflow: hidden; width: 0; height: 0; font-size:0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px;}
 
-/* 툴팁 */
-label + .toolTip-wrapper {margin-left:6px;}
-.toolTip-wrapper {display:inline-block; position:relative; vertical-align:middle;}
-.toolTip-wrapper button {overflow:hidden; margin:0;}
-.toolTip-wrapper button>span{position:absolute; top:0;left:-100px;}
-.toolTip-wrapper .btn-tooltip {width:20px; height:20px; margin-top:3px; background:url(../images/akl_common/ico_tooltip_2.png) no-repeat;}
-.toolTip-wrapper .btn-tooltip-close {position:absolute; top:0; right:0; width:30px;height:30px; background:url(../images/akl_common/ico_tooltip_close.png) 50% 50% no-repeat;}
-.toolTip-wrapper .tooltip-content {display:none; position:absolute; top:35px; left:0; z-index:10; margin-left:-100px; min-width:300px; padding:15px; border-radius:5px; background:#56565a;}
-.toolTip-wrapper .tooltip-content * {font-size:13px; color:#fff;}
-.toolTip-wrapper .tooltip-content:before {content:''; position:absolute; top:-19px; left:100px; width:20px; height:19px; margin-left:0; background:url(../images/akl_common/ico_tooltip_arrow.png) 0 100% no-repeat;}
 
 /* ----- 공통사용  : 테이블(UL) ----- */
 /* table : view */
@@ -1381,17 +1371,6 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.tbl-list-board.type-tbody-th .tr>div.mob-block {padding:0 20px 15px;}
 	.tbl-list-board.type-tbody-th .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
 	.tbl-list-board.type-tbody-th .tbody .tr>div {/* width:auto; */ width:100%;}
-
-	/* 툴팁 */
-	label + .toolTip-wrapper {margin-left:6px;}
-	.toolTip-wrapper {display:inline-block; position:relative; vertical-align:middle;}
-	.toolTip-wrapper button {overflow:hidden; margin:0;}
-	.toolTip-wrapper button>span{position:absolute; top:0;left:-100px;}
-	.toolTip-wrapper .btn-tooltip {width:20px; height:20px; margin-top:3px; background:url(../images/akl_common/ico_tooltip_2.png) no-repeat;}
-	.toolTip-wrapper .btn-tooltip-close {position:absolute; top:0; right:0; width:30px;height:30px; background:url(../images/akl_common/ico_tooltip_close.png) 50% 50% no-repeat;}
-	.toolTip-wrapper .tooltip-content { margin-left:-80px; min-width:270px; box-sizing:border-box;}
-	.toolTip-wrapper .tooltip-content * {font-size:13px; color:#fff;}
-	.toolTip-wrapper .tooltip-content:before {content:''; position:absolute; top:-19px; left:80px; width:20px; height:19px; margin-left:0; background:url(../images/akl_common/ico_tooltip_arrow.png) 0 100% no-repeat;}
 
 	/* ----- 마이페이지, 회원가입 ----- */
 	/* 로그인 */
