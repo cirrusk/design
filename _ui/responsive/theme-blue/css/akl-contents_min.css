@@ -354,12 +354,13 @@ html.scrollLock body {overflow:hidden;}
 .form-sms-receive>span{display:inline-block; margin-right:20px;}
 
 /* 아이콘 제목 */
-.akl .message-center-wrapper, .akl .authorization-step-wrapper {padding:30px 50px 0; font-family:'Noto Sans KR', sans-serif;}
+.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal {padding:30px 50px 0; font-family:'Noto Sans KR', sans-serif;}
 .akl .icon-sub-title {position:relative; padding:0 0 36px; font-size:18px;letter-spacing:-2px; font-weight:500;}
 .icon-sub-title:after {content:''; display:block; position:absolute; top:0; left:-30px; width:20px; height:20px;}
 .icon-sub-title.message-title:after {top:7px; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
 .icon-sub-title.author-title:after {top:1px; width:22px; height:22px; background:url('../images/akl_common/ico_author_person.png') no-repeat left top;}
-.icon-title-description {padding:0 0 38px; font-size:14px;}
+.icon-sub-title.aboRenewal-title:after {content:'\e996'; top:1px; width:22px; height:22px; color:#0075a4; font-weight:normal;}
+.icon-title-description {padding:0 0 38px; font-size:14px; line-height:normal; font-family:'Noto Sans KR', sans-serif !important;}
 .icon-title-description>p {margin:0; font-size:14px;}
 
 .photo-managing-tool {background:#efefef;}
@@ -610,6 +611,7 @@ html.scrollLock body {overflow:hidden;}
 .akl .message-center-wrapper .messages-numb {margin-bottom:27px;font-size:14px;font-weight:500;}
 .akl .message-center-wrapper .messages-numb a {text-decoration:underline; font-weight:inherit; display:inline-block; padding:0 3px; color:#0075a4;}
 .akl .amway-theme.message-center-wrapper .messages-numb a:hover{text-decoration:underline !important;}
+.paging-wrap + .list-type2 {margin-top:40px;}
 
 /* 마이페이지 - 맞춤메시지 목록 - col width */
 .amway-theme .state-notyet>div a {font-weight:500;}
@@ -803,6 +805,22 @@ html.scrollLock body {overflow:hidden;}
 .targetInquiry .form-group.take-part > * {display:inline-block}
 .targetInquiry .btns button {min-width:70px;}
 .targetInquiry .btns:before {content:''; display:table; width:100%;}
+
+/* ----- ABO 갱신 ----- */
+.mypage-abo-renewal .outer-border-bottom {margin-bottom:37px;}
+.mypage-abo-renewal .info-txt-btm {margin-top:40px; padding-top:20px; border-top:1px solid #e3e3e3}
+.mypage-abo-renewal .info-txt-btm a {font-weight:500;}
+.mypage-abo-renewal p {margin-bottom:0;}
+.dl-form-group > dt {padding-bottom:10px; color:#56565a; font-size:16px; font-weight:500;}
+.dl-form-group .form-group {overflow:hidden; margin:18px 0 0;}
+.dl-form-group .form-group p {margin:0;}
+.dl-form-group .form-group .txt-label {float:left; display:block; width:16%; min-width:150px; color:#002f5f;}
+.dl-form-group .form-group .txt-value {float:left; width:84%;}
+
+.box-case-wrapper+.box-case-wrapper {margin-top:60px;}
+.box-case-wrapper .box-case-tit {display:block; margin-bottom:17px; font-size:16px; letter-spacing:-0.025em;}
+.box-case-wrapper .box-case-text {line-height:160%;}
+.box-case-wrapper .box-case-text + .dl-form-group {margin-top:40px; padding-top:36px; border-top:1px solid #e3e3e3; }
 
 /* ----- 온라인 팩스 주문 ----- */
 .akl .amway-theme.fax-order-wrapper .panel-title * {font-size:18px;font-weight:500}
@@ -1433,7 +1451,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.jump-menu {display:block; width:100%;} */
 
 	/* 마이페이지 - 공통 */
-	.akl .message-center-wrapper, .akl .authorization-step-wrapper {padding:30px 0 0;}
+	.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal{padding:30px 0 0;}
 	.akl .message-title:after {left:0;}
 	.akl .message-title, .akl .message-title-description {padding-left:30px;}
 	.akl .icon-sub-title {padding-left:30px;}
@@ -1718,14 +1736,17 @@ table.clone thead, .clone tfoot{background:transparent;}
 	/* Q레그 현황 */
 	.table-scroll {position:relative; min-width:305px; margin:auto;overflow:hidden; margin-right:-15px;}
 	.table-scroll .tbl-list td {padding:15px 17px;}
-	.business .topup-search .cuton-sel select {margin:0}
-
-	.qLegs-wrapper .outer-border-bottom {margin-top:60px;}
-	.business .qLegs-wrapper .topup-search.type02 .cuton-sel select {margin:0}
-	.akl .business .qLegs-wrapper .topup-search.type02 .cuton-sel .link-btn {margin:5px 0 0 15px;}
 	.list-type5.qlegs-info {margin:30px 0;}
-
+	.business .topup-search .cuton-sel select {margin:0}
+	.business .qLegs-wrapper .topup-search.type02 .cuton-sel select {margin:0}
+	.qLegs-wrapper .outer-border-bottom {margin-top:60px;}
+	.akl .business .qLegs-wrapper .topup-search.type02 .cuton-sel .link-btn {margin:5px 0 0 15px;}
 	.akl .amway-theme .tbl-wrapper-qLegs .tbl-list td.no-result {text-align:left;}
+
+	/* ----- ABO 갱신 ----- */
+	.dl-form-group {padding:0 7px;}
+	.dl-form-group .form-group .txt-label {width:35%; min-width:initial;}
+	.dl-form-group .form-group .txt-value {width:auto;}
 }
 
 @media (max-width: 320px) {
