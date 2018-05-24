@@ -108,7 +108,7 @@ html.scrollLock body {overflow:hidden;}
 .layer-bottom-wrapper [type="checkbox"]:checked+label.checklabel {color:#002f5f; font-weight:500;}
 .layer-bottom-wrapper [type="checkbox"]:not(:checked)+label {}
 .layer-bottom-wrapper button.not-open-today {color:#0075a4; background:transparent;}
-.akl .cbox.typeAdminAdd .tabcon-tit {font-size:16px; letter-spacing:-0.025em;}
+.akl .cbox.typeAdminAdd .tabcon-tit {font-size:16px; letter-spacing:-0.025em; font-weight:500;}
 
 .layer-tabs-wrapper {padding:40px; height:524px; overflow-y:auto; overflow-x:hidden;}
 .col-equality-tab { margin: 0 0 40px; padding: 0; }
@@ -186,6 +186,17 @@ html.scrollLock body {overflow:hidden;}
 .akl .author-content .validation-box-simple .ty-input-name input[type=text],
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
 .akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
+
+/* (레이어) 본인확인 box */
+.pop-authorization {padding:40px 0;}
+.pop-authorization .validation-wrapper {display:table; width:100%; padding:0; margin:0;border:0}
+.pop-authorization .validation-wrapper>div[class^=valid-type] {display:table-cell; width:50%; box-sizing:border-box;}
+.pop-authorization .validation-wrapper>div[class^=valid-type]>p {position:initial; width:auto;}
+.pop-authorization.result {padding:0 20px 20px;}
+.pop-authorization.result .valid-result-box {text-align:center; padding:40px 0; margin-bottom:20px; border-bottom:1px solid #e3e3e3;}
+.pop-authorization.result .valid-result-box+.txt-italic {margin:0;}
+.pop-authorization.result .end-control {padding-top:20px;}
+
 
 /* 결과보기 : 공통 */
 .akl .wrapper-seek-result .form-sub-title-gray {margin-bottom:20px; font-size:16px; color:#56565a;}
@@ -808,6 +819,7 @@ html.scrollLock body {overflow:hidden;}
 .targetInquiry .btns:before {content:''; display:table; width:100%;}
 
 /* ----- ABO 갱신 ----- */
+.layerBox .txt-ineligibility {padding:0 10px 10px;}
 .mypage-abo-renewal .outer-border-bottom {margin-bottom:37px;}
 .mypage-abo-renewal .info-txt-btm {margin-top:40px; padding-top:20px; border-top:1px solid #e3e3e3;}
 .mypage-abo-renewal .akl-toggle-wrap {margin-top:40px;}
@@ -816,6 +828,10 @@ html.scrollLock body {overflow:hidden;}
 .mypage-abo-renewal #terms p.terms-paragraph {padding-bottom:15px; line-height:150%;}
 .mypage-abo-renewal a {font-weight:500;}
 .mypage-abo-renewal p {margin-bottom:0;}
+
+.form-group.inline-child .amw-radio-wrap {display:inline-block;}
+.form-group.inline-child .amw-radio-wrap+.amw-radio-wrap {margin-left:25px;}
+
 
 .dl-form-group > dt {padding-bottom:10px; color:#56565a; font-size:16px; font-weight:500;}
 .dl-form-group .form-group {display:table; width:100%; margin:18px 0 0;}
@@ -835,9 +851,10 @@ html.scrollLock body {overflow:hidden;}
 .akl .mypage-abo-renewal .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px;}
 .akl .mypage-abo-renewal .accordion-custom .panel-body .control-label {padding-left:0;}
 .akl .mypage-abo-renewal .accordion-custom .panel-body .list-type2 {margin-top:30px;}
-.form-group.inline-child .amw-radio-wrap {display:inline-block;}
-.form-group.inline-child .amw-radio-wrap+.amw-radio-wrap {margin-left:20px;}
 
+.akl .mypage-abo-renewal .after-processing {margin:40px 0 0; padding:30px 20px 30px; border:1px solid #dadada; border-width:1px 0;}
+.akl .mypage-abo-renewal .after-processing .title {display:inline-block; margin-right:20px; color:#002f5f; font-size:18px; font-weight:500;}
+.akl .mypage-abo-renewal .after-processing .noti-suc {display:inline-block;}
 
 /* ----- 온라인 팩스 주문 ----- */
 .akl .amway-theme.fax-order-wrapper .panel-title * {font-size:18px;font-weight:500}
@@ -1409,6 +1426,12 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.validation-wrapper>div {border-bottom:1px solid #e3e3e3;}
 	.validation-wrapper>div:nth-last-child(1) {border-bottom:0;}
 
+	/* (레이어) 본인확인 box */
+	.pop-authorization {padding:0 20px;}
+	.pop-authorization .validation-wrapper {display:block;}
+	.pop-authorization .validation-wrapper>div[class^=valid-type] {display:block; width:auto;}
+	.pop-authorization .validation-wrapper>div[class^=valid-type]>p {position:initial; width:auto;}
+
 	.validation-box-simple {padding-right:0; margin-top:30px;}
 	.validation-box-simple .ty-input-name input[type=text],
 	.validation-box-simple .ty-input-birth input[type=text] {width:100%;}
@@ -1761,15 +1784,19 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .amway-theme .tbl-wrapper-qLegs .tbl-list td.no-result {text-align:left;}
 
 	/* ----- ABO 갱신 ----- */
-	.dl-form-group {padding:0 7px;}
-	.dl-form-group .form-group .txt-label {width:28%; min-width:initial;}
-	.dl-form-group .form-group .txt-value {width:auto;}
+	.layerBox .txt-ineligibility {padding:0 0 10px;}
 	.akl .mypage-abo-renewal #terms .text {padding:0 0 20px; margin-bottom:20px;}
 	.akl .mypage-abo-renewal #terms .text
 	.akl .mypage-abo-renewal #terms .text-btn {padding-left:0;}
-
+	.dl-form-group {padding:0 7px;}
+	.dl-form-group .form-group .txt-label {width:28%; min-width:initial;}
+	.dl-form-group .form-group .txt-value {width:auto;}
 	.form-group.inline-child .amw-radio-wrap {display:block;}
 	.form-group.inline-child .amw-radio-wrap+.amw-radio-wrap {margin:18px 0 0;}
+
+	.akl .mypage-abo-renewal .after-processing {padding:20px 10px;}
+	.akl .mypage-abo-renewal .after-processing .title {display:block; margin:0 0 10px;}
+	.akl .mypage-abo-renewal .after-processing .noti-suc {display:block;}
 }
 @media (max-width: 420px) {
 	/* ----- ABO 갱신 ----- */

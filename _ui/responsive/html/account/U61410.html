@@ -326,7 +326,7 @@
 											</ul>
 
 											<div class="end-control">
-												<button type="button" class="bt-akl-blue">본인 인증하기</button>
+												<button type="button" class="bt-akl-blue" onclick="layerPopOver(this,'.U61410_lp1');">본인 인증하기</button>
 											</div>
 										</div>
 									</div>
@@ -349,83 +349,74 @@
 	</main>
 
 
-
-<!-- (팝업) 전자(세금)계산서 수신정보 -->
-<div class="layerWrapper U60000a_lp1">
-	<div class="cbox layerBox popWidM">
+<!-- (팝업) 본인인증 -->
+<div class="layerWrapper U61410_lp1">
+	<div class="cbox layerBox popWidL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
 				<span class="cart-popup__header-text">
-					전자(세금)계산서 수신정보
+					본인 인증하기
 					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
 				</span>
 			</div>
 			<div class="cart-popup__content height-auto">
-				<div class="cart-popup__item-info">
-					<div class="tax-bill-sms">
-						<p>개정세법에 의거하여 한국암웨이는 매출(세금)계산서 이메일을 통해 발송 합니다. <br>(수신여부 체크시 SMS 발송)</p>
-
-						<div class="form-group basic">
-							<label class="control-label" for="mainOperatorEmail">이메일 주소</label>
-							<div class="form-block-box">
-								<div class="form-set-email">
-									<span>
-										<input type="text" class="email-input1" id="mainOperatorEmail" title="이메일 아이디 "><em class="email-input-txt">@</em><input type="text" class="email-input2" title="직접 이메일 주소 입력">
-									</span>
-									<select class="email-select form-control" title="이메일 주소 선택">
-										<option value="" selected="selected">직접입력</option>
-										<option value="">naver.com</option>
-										<option value="">gmail.com</option>
-									</select>
-								</div>
-							</div>
+				<!-- 인증방법 선택 -->
+				<div class="pop-authorization">
+					<div class="validation-wrapper">
+						<div class="valid-type-phone">
+							<p class="validation-para">
+								<strong>휴대폰 본인확인</strong>
+								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show">휴대폰 본인확인</a>
+							</p>
 						</div>
-
-						<div class="form-group basic">
-							<label class="control-label" for="mainOperatorMobile">수신 SMS</label>
-							<div class="form-block-box">
-								<div class="form-set-mobile">
-									<span class="form-phone-select">
-										<select class="form-control" id="mainOperatorMobile">
-											<option>010</option>
-											<option>012</option>
-										</select>
-									</span>
-									<span class="form-phone-input">
-										<input type="text" class="form-control" placeholder="‘-’없이 입력" title="주사업자 휴대폰번호 뒷자리 입력">
-									</span>
-								</div>
-							</div>
+						<div class="valid-type-ipin">
+							<p class="validation-para">
+								<strong>아이핀 본인확인</strong>
+								<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show">아이핀 본인확인</a>
+							</p>
 						</div>
-
-						<div class="form-group basic">
-							<label class="control-label">SMS 수신 여부 체크</label>
-							<div class="form-block-box">
-								<div class="form-sms-receive">
-									<span><input type="radio" name="smsReceive" class="amwa-radio" id="smsReceive_yes"><label for="smsReceive_yes">수신</label></span>
-									<span><input type="radio" name="smsReceive" class="amwa-radio" id="smsReceive_no"><label for="smsReceive_no">미수신</label></span>
-								</div>
-
-							</div>
-						</div>
-
 					</div>
-
-
 				</div>
-
-			</div>
-			<div class="cart-popup__item-link">
-				<button type="button" class="bt-akl-blue">저장</button>
+				<!-- //인증방법 선택 -->
 			</div>
 		</div>
 	</div>
 </div>
-<!-- //(팝업) 전자(세금)계산서 수신정보 -->
+<!-- //(팝업) 본인인증 -->
 
+<!-- (팝업) 갱신완료 -->
+<div class="layerWrapper U61410_lp2">
+	<div class="cbox layerBox popWidM">
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">
+					ABO 갱신완료
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="cart-popup__content height-auto">
+
+				<!-- 인증결과 -->
+				<div class="pop-authorization result">
+
+					<div class="valid-result-box"><strong class="noti-suc">ABO갱신이 성공적으로 완료되었습니다.</strong></div>
+					<p class="txt-italic">등록된 주사업자 휴대폰 번호로 갱신 완료 메시지가 전송되었습니다.</p>
+					<div class="end-control">
+						<button type="button" class="bt-akl-blue">확인</button>
+					</div>
+				</div>
+				<!-- //인증결과 -->
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- //(팝업) 갱신완료 -->
 <script type="text/javascript">
 $(function() {
-	//layerPopOver('','.U60000a_lp1');
+	layerPopOver('','.U61410_lp2');
 });
 </script>
 
