@@ -104,7 +104,7 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .form-control::-webkit-input-placeholder {color:#808285; opacity:.6;}
 .form-control::-moz-placeholder {color:#808285; opacity:1;}
 .form-control:-ms-input-placeholder {color:#808285;}
-.akl .has-error .form-control {border-color:#dadada; } 
+.akl .has-error .form-control {border-color:#dadada; }
 
 .akl {font-family:'Noto Sans KR', sans-serif; font-weight:normal; }
 .akl .container {max-width:1400px;clear:both;display:block;margin:0 auto;}
@@ -864,11 +864,11 @@ label + .toolTip-wrapper {margin-left:6px;}
 .toolTip-wrapper {display:inline-block; position:relative; vertical-align:middle;}
 .toolTip-wrapper button {overflow:hidden; margin:0;}
 .toolTip-wrapper button>span{position:absolute; top:0; left:0;}
-.toolTip-wrapper .btn-tooltip {width:20px; height:20px; margin-top:3px; background:url(../images/akl_common/ico_tooltip_2.png) no-repeat;}
+.toolTip-wrapper .btn-tooltip {position:relative; overflow:visible; width:20px; height:20px; margin-top:3px; background:url(../images/akl_common/ico_tooltip_2.png) no-repeat;}
+.toolTip-wrapper.open .btn-tooltip:after {content:''; position:absolute; top:20px; left:-2px; width:20px; height:9px; background:url(../images/akl_common/ico_tooltip_arrow.png) 0 0 no-repeat;}
 .toolTip-wrapper .btn-tooltip-close {position:absolute; top:0; right:0; width:30px;height:30px; background:url(../images/akl_common/ico_tooltip_close.png) 50% 50% no-repeat;}
-.toolTip-wrapper .tooltip-content {display:none; position:absolute; top:35px; left:0; z-index:10; margin-left:-15px; min-width:300px; padding:15px; border-radius:5px; background:#56565a;}
+.toolTip-wrapper .tooltip-content {display:none; position:absolute; top:32px; left:0; z-index:10; margin-left:-15px; min-width:300px; padding:15px; border-radius:5px; background:#56565a;}
 .toolTip-wrapper .tooltip-content * {font-size:13px; color:#fff;}
-.toolTip-wrapper .tooltip-content:before {content:''; position:absolute; top:-19px; left:15px; width:20px; height:19px; margin-left:0; background:url(../images/akl_common/ico_tooltip_arrow.png) 0 100% no-repeat;}
 
 @media (max-width:1270px) {
 	.akl .qlink-left-box {width:800px; padding-right:0;}
@@ -1144,7 +1144,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.toolTip-wrapper .btn-tooltip-close {position:absolute; top:0; right:0; width:30px;height:30px; background:url(../images/akl_common/ico_tooltip_close.png) 50% 50% no-repeat;}
 	.toolTip-wrapper .tooltip-content { margin-left:-135px; width:270px; box-sizing:border-box;}
 	.toolTip-wrapper .tooltip-content * {font-size:13px; color:#fff;}
-	.toolTip-wrapper .tooltip-content:before {content:''; position:absolute; top:-19px; left:80px; width:20px; height:19px; margin-left:0; background:url(../images/akl_common/ico_tooltip_arrow.png) 0 100% no-repeat;}
+
 	.toolTip-wrapper.type-mob-full {position:initial;}
 	.toolTip-wrapper.type-mob-full .tooltip-content {min-width:0;}
 	.toolTip-wrapper.type-mob-full .tipCont-wrapper {position:absolute; left:0; min-width:230px;}
