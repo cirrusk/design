@@ -1650,6 +1650,8 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .faxOrder-cart-wrapper .card-kinds {margin:10px 0;}
 
 	/* 제품주문 정보 */
+	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image {margin-right:15px;}
+
 	.akl .amway-theme .accordion-element.prdt-order-info .accordion-toggle {padding:0;}
 	.akl .amway-theme .accordion-element.prdt-order-info .accordion-panel-title .title-element {font-size:inherit;}
 	.akl .amway-theme .accordion-element.prdt-order-info .title-element>em {display:inline-block; margin-right:18px; letter-spacing:normal;}
@@ -1778,9 +1780,19 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .mypage-abo-renewal .after-processing .noti-suc {display:block;}
 }
 @media (max-width: 420px) {
-	/* ----- ABO 갱신 ----- */
+	/* ABO 갱신 */
 	.dl-form-group {padding:0;}
 	.dl-form-group .form-group .txt-label {width:35%;}
+
+	/* 온라인 팩스 주문 */
+	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image {margin-right:10px;}
+	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image img {max-width:67px;}
+	.akl .fax-order-wrapper .card-sort .pay-line input.card-inp {margin-right:6px;}
+}
+@media (max-width: 360px) {
+	/* 온라인 팩스 주문 */
+	.akl .fax-order-wrapper .accordion-custom .panel-body {padding:0 5px 35px 7px;}
+	.akl .amway-theme.fax-order-wrapper .accordion-element .accordion-panel-title .title-element.accordion-header-icon {top:-2px; left:2px;}
 }
 @media (max-width: 320px) {
 	/* 신규 ABO 프로모션 */
