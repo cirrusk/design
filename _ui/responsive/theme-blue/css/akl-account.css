@@ -456,14 +456,19 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 
 
  /*** 마이페이지 > header ***/
+.akl .user-account-header .container { position:relative;}
 .akl .breadcrumb {letter-spacing:-1px;}
-.akl .user-account-header .user-block {padding-left:75px;}
+.akl .user-account-header .user-block {padding-left:75px;display: flex;  align-items: center; }
 .akl .user-account-header .go-block {padding-right:50px;}
-.akl .user-account-header .user-block .user-info .user-name {font-size:34px;letter-spacing:-2px;}
+.akl .go-block .jump-to-wrapper { padding-left:0;}  
+.akl .user-account-header .user-block .user-info .user-name {font-size:34px;letter-spacing:-2px; line-height:110%; padding-bottom:3px;}
 .akl .user-account-header .user-block .user-info .user-id {font-size:14px;letter-spacing:0;}
 .akl .user-account-header .go-block select {margin-right:0;height:38px;}
 .akl .user-account-header .go-block input[type="button"] {font-size:14px;padding:0.5em 0.8em 1.5em;font-weight:400;height:40px;}
 .akl .go-block input[type="button"] {top:0;}
+.akl .user-block.col-sm-6 {width:auto; margin-right:460px;} 
+.akl .go-block.col-sm-6{ position:absolute; right:0; width:467px; } 
+
 @media screen and (-webkit-min-device-pixel-ratio:0) { .akl .go-block input[type="button"] {top:0px;} }
 
 /*** 마이페이지 > common ***/
@@ -1489,13 +1494,18 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 }
 @media (max-width:940px){
+	/* 마이페이지 > header  */
 	.akl .go-block .jump-to-wrapper {padding-left:0;}
 	.akl .user-account-header .go-block .jump-to {display:block; padding-top:0; padding-bottom:0; margin-bottom:10px; text-align:left;}
 	.akl .user-account-header .go-block .jump-to span {display:block;}
 	.akl .user-account-header .go-block {padding-top:10px;}
+	.akl .user-block.col-sm-6 {width:auto; margin-right:320px;} 
+	.akl .go-block.col-sm-6{width:300px; } 
 }
 
 @media (max-width: 768px) {
+	/* 마이페이지 > header  */
+	.akl .go-block.col-sm-6{ position:static; width:300px; } 
 	/* jump-menu */
 	.akl .go-block .jump-to-wrapper {display:block; margin-top:15px; padding:0 20px; left:0;}
 	/* .akl .user-account-header .go-block .jump-to {display:block; text-align:left;} */
