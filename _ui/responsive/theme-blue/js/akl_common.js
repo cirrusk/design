@@ -892,7 +892,7 @@ function toolTips_conSize(){
 	if (LandscapeSize < PortraiteSize){PortraiteSize = LandscapeSize;}
 
 	var tooltipBox = $('.toolTip-wrapper');
-	var tooltipBTN = tooltipBox.find('.btn-tooltip');
+	//var tooltipBTN = tooltipBox.find('.btn-tooltip');
 
 	function tipContWidth(){
 		tooltipBox.each(function(){
@@ -901,7 +901,15 @@ function toolTips_conSize(){
 				var $el = $(this).find('.tooltip-content');
 				$el.wrap('<div class="tipCont-wrapper"\>');
 			}
+/*
+			//화살표 위치 맞추기
+			var prevElement = $(this).prev();
+			var prevEl_Size = prevElement.width();
+			var left_position = prevEl_Size + 20; //버튼크기 20px
 
+			$(this).find('.tooltip-content').filter(':before').css('left', left_position);
+*/
+			// wrapper 추가 후
 			$(this).addClass('type-mob-full');
 			var tooltipBTN = $(this).find('.btn-tooltip');
 			var tooltipCon = $(this).find('.tipCont-wrapper');
@@ -940,12 +948,15 @@ function toolTips_open(){
 			var _closeBTN = $(this).parent().find('.btn-tooltip-close');
 
 			if(_tipContent.is(':hidden')){
+				$(this).parent().addClass('open'); //화살표
 				_tipContent.show();
 			} else if(_tipContent.is(':visible')){
+				$(this).parent().removeClass('open'); //화살표
 				_tipContent.hide();
 			}
 
 			_closeBTN.on('click',function(){
+				$(this).parents('.toolTip-wrapper').removeClass('open'); //화살표
 				_tipContent.hide();
 			});
 		});
