@@ -3,16 +3,18 @@ Version : AKL Hybris UIUX 1.0
 Date : 2018-01-25
 Editor : eunmyoung Noh
 *************************************************/
+/* 코어제공 */
 @import url("shop-finder.css");
 @import url("select2.css");
 @import url("register.css");
 @import url("sprint.css");
+/* akl */
 @import url("akl-customer.css");
 @import url("akl-shop.css");
 @import url("akl-account.css");
 @import url("akl-business.css");
 /*@import url("akl-contents_0.css");*/
-@import url("akl-contents.css");
+/*@import url("akl-contents.css");*/
 @import url("akl-contents_min.css");
 @import url("akl-product.css");
 @import url("akl-print.css");
@@ -102,10 +104,10 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .form-control::-webkit-input-placeholder {color:#808285; opacity:.6;}
 .form-control::-moz-placeholder {color:#808285; opacity:1;}
 .form-control:-ms-input-placeholder {color:#808285;}
-.akl .has-error .form-control {border-color:#dadada; }
+.akl .has-error .form-control {border-color:#dadada; } 
 
 .akl {font-family:'Noto Sans KR', sans-serif; font-weight:normal; }
-.akl .container {max-width:1400px;}
+.akl .container {max-width:1400px;clear:both;display:block;margin:0 auto;}
 .akl .amway-theme * {font-size:14px; letter-spacing:-1px; outline:initial;}
 .akl .amway-theme a {font-size:14px;}
 .akl button {font-family:'Noto Sans KR', sans-serif !important}
@@ -140,6 +142,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .col-disabled {color:#bbb;}
 .akl a:focus {outline:initial !important;}
 b,strong{font-weight:500; }
+.akl .title-box {clear:both;display:block;padding:10px 0 0}
 
 /* common > font-size  */
 .fsize16 {font-size:16px;}
