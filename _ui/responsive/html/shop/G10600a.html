@@ -205,7 +205,7 @@
 																					</div>
 																					<div class="form-group">
 																						<input type="text" name="" class="text form-control" minlength="1"  maxlength="8" value="" placeholder="12345678"  title="휴대전화번호 입력">
-																					</div> 
+																					</div>
 																				</div>
 																			</div>
 																			<div class="form-group def-ship_new">
@@ -1336,7 +1336,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1473,7 +1473,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1648,7 +1648,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1764,7 +1764,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션 세트</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1881,11 +1881,11 @@
 							</div>
 						</div>
 					</li>
-					
+
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1971,7 +1971,7 @@
 							<span class="value-wrapper amount-wrapper">10</span>
 						</div>
 						<div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
-							
+
 						</div>
 						<div class="col-xs-9 col-md-1 product-item-element list-item-ibo-price list-item-price print-col-6">
 							<span class="price-label">단가(원)</span>
@@ -3509,6 +3509,17 @@
 							</ul>
 						</div>
 					</div>
+					<script>
+						$(function(){
+							var allRadios = $('input[name=cupo]');
+							allRadios.each(function(){
+								$(this).on('click',function(){
+									allRadios.prop('checked', false).attr('checked',false);
+									$(this).prop('checked', true).attr('checked', 'checked');
+								});
+							});
+						});
+					</script>
 				</div>
 			</div>
 			<div class="cart-popup__item-link">
@@ -4104,23 +4115,23 @@ $(function(){
 	$('.remove-item-btn').click(function(){
 		$(".delete-list-box,.overlay").show();
 	});
-	
+
 	$('.view-cart').click(function(){
 		$(".delete-list-box,.overlay").hide();
 		$('.delete-example,.delete-example-gift').hide();
 	});
-	
+
 	$(".cartlist-view").click(function(){
 		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
 	})
-	
-	$('.tooltip-btn').click(function() { 
-		$('.promotion-tip-alert').slideToggle(0);  
-	}); 
 
-	$('.tip-close').click(function() { 
+	$('.tooltip-btn').click(function() {
+		$('.promotion-tip-alert').slideToggle(0);
+	});
+
+	$('.tip-close').click(function() {
 		$('.promotion-tip-alert').hide();
-	}); 
+	});
 
 	$('#G10000_lp9').click(function(event) {
 		event.preventDefault();
