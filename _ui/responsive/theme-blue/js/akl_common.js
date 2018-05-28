@@ -901,14 +901,7 @@ function toolTips_conSize(){
 				var $el = $(this).find('.tooltip-content');
 				$el.wrap('<div class="tipCont-wrapper"\>');
 			}
-/*
-			//화살표 위치 맞추기
-			var prevElement = $(this).prev();
-			var prevEl_Size = prevElement.width();
-			var left_position = prevEl_Size + 20; //버튼크기 20px
 
-			$(this).find('.tooltip-content').filter(':before').css('left', left_position);
-*/
 			// wrapper 추가 후
 			$(this).addClass('type-mob-full');
 			var tooltipBTN = $(this).find('.btn-tooltip');
@@ -939,25 +932,44 @@ function toolTips_conSize(){
 
 /* 온라인 FAX 주문 - 툴팁열기 */
 function toolTips_open(){
+	var _winWidth= $(window).width();
 	var _tooltipBTN = $('.toolTip-wrapper').find('.btn-tooltip');
 	_tooltipBTN.each(function(){
 		$(this).on('click',function(e){
 			e.preventDefault();
 
-			var _tipContent = $(this).parent().find('.tooltip-content');
-			var _closeBTN = $(this).parent().find('.btn-tooltip-close');
+			var tipContent = $(this).parent().find('.tooltip-content');
+			var tipConWidth = tipContent.width();
 
-			if(_tipContent.is(':hidden')){
-				$(this).parent().addClass('open'); //화살표
-				_tipContent.show();
-			} else if(_tipContent.is(':visible')){
-				$(this).parent().removeClass('open'); //화살표
-				_tipContent.hide();
+			if( _winWidth > 768){
+				var tooltipBtn_left = $(this).offset().left;
+				//alert(tooltipBtn_left)
+				if (tooltipBtn_left < 100 && tooltipBtn_left < tipConWidth){
+					tipContent.addClass('left');
+				}
 			}
 
+
+
+
+
+
+
+
+
+
+			if(tipContent.is(':hidden')){
+				$(this).parent().addClass('open'); //화살표
+				tipContent.show();
+			} else if(tipContent.is(':visible')){
+				$(this).parent().removeClass('open'); //화살표
+				tipContent.hide();
+			}
+
+			var _closeBTN = $(this).parent().find('.btn-tooltip-close');
 			_closeBTN.on('click',function(){
 				$(this).parents('.toolTip-wrapper').removeClass('open'); //화살표
-				_tipContent.hide();
+				tipContent.hide();
 			});
 		});
 	});
