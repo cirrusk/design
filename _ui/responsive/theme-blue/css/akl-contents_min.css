@@ -254,8 +254,8 @@ html.scrollLock body {overflow:hidden;}
 .mypage-main-wrapper .accordion-custom .panel-title p>* {display:inline-block; vertical-align:middle;}
 .mypage-main-wrapper .accordion-custom .panel-title p>strong {font-size:18px;}
 .mypage-main-wrapper .accordion-custom .panel-title p>span {margin-left:20px; color:#56565a; font-size:14px; font-weight:400;letter-spacing:normal;}
-.mypage-main-wrapper .akl-toggle-wrap {margin:40px;}
-.mypage-main-wrapper .always-show {padding:0 20px;}
+.mypage-main-wrapper .akl-toggle-wrap {margin:40px 20px;}
+.mypage-main-wrapper .always-show {padding:0 40px; box-sizing:border-box;}
 
 /* 배너형 링크 */
 .mypage-block-list p {margin-bottom:0; font-size:14px;}
@@ -832,7 +832,21 @@ html.scrollLock body {overflow:hidden;}
 
 .box-case-wrapper .box-case-tit {display:block; margin-bottom:17px; font-size:16px; letter-spacing:-0.025em;}
 .box-case-wrapper .box-case-text {line-height:160%;}
-.box-case-wrapper .box-case-text + .dl-form-group {margin-top:40px; padding-top:36px; border-top:1px solid #e3e3e3;}
+.box-case-wrapper .box-case-text + .dl-form-group {margin-top:40px;border-top:1px solid #e3e3e3;}
+.box-case-wrapper .box-case-text + .dl-form-group>dt { padding-top:36px;}
+.box-case-wrapper .dl-form-group>ul {margin-top:38px;}
+.box-case-wrapper .dl-form-group>ul>li.form-group:first-child {margin-top:0;}
+
+.box-case-wrapper .box-case-sub .box-case-tit {margin-bottom:5px; font-weight:normal;}
+.box-case-wrapper .box-case-sub .box-case-text .btn-box {display:block; padding-top:8px;}
+.akl .box-case-wrapper .box-case-sub .box-case-text{font-size:14px;color:#808285;}
+
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th1,
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th2,
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th3 {width:28%;}
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th4 {width:16%;}
+.tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
+.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding-left:30px;}
 
 .akl .mypage-abo-renewal .accordion-custom .panel .panel-heading {padding:0 20px;}
 .akl .mypage-abo-renewal .accordion-custom .panel .panel-heading>a {display:block;}
@@ -840,7 +854,8 @@ html.scrollLock body {overflow:hidden;}
 .akl .mypage-abo-renewal .accordion-custom .panel-title {position:relative; padding:27px 0 27px;}
 .akl .mypage-abo-renewal .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px;}
 .akl .mypage-abo-renewal .accordion-custom .panel-body .control-label {padding-left:0;}
-.akl .mypage-abo-renewal .accordion-custom .panel-body .list-type2 {margin-top:30px;}
+.akl .mypage-abo-renewal .accordion-custom .panel-body .list-type2,
+.akl .mypage-abo-renewal .accordion-custom .panel-body .list-type5 {margin-top:30px;}
 
 .akl .mypage-abo-renewal .after-processing {margin:40px 0 0; padding:30px 20px 30px; border:1px solid #dadada; border-width:1px 0;}
 .akl .mypage-abo-renewal .after-processing .title {display:inline-block; margin-right:20px; color:#002f5f; font-size:18px; font-weight:500;}
@@ -1778,11 +1793,20 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .mypage-abo-renewal .after-processing {padding:20px 10px;}
 	.akl .mypage-abo-renewal .after-processing .title {display:block; margin:0 0 10px;}
 	.akl .mypage-abo-renewal .after-processing .noti-suc {display:block;}
+
+	.akl .mypage-abo-renewal .accordion-custom .panel-body {padding-right:10px;}
+
+	.tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding-left:10px;}
+	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block {padding-right:0; }
+	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block>p {text-align:left;}
 }
 @media (max-width: 420px) {
 	/* ABO 갱신 */
 	.dl-form-group {padding:0;}
 	.dl-form-group .form-group .txt-label {width:35%;}
+
+	.box-case-wrapper .dl-form-group .form-group .txt-label {}
 
 	/* 온라인 팩스 주문 */
 	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image {margin-right:10px;}
