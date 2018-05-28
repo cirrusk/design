@@ -84,9 +84,17 @@ Editor : eunmyoung Noh
 .asm-header .general-header { top: 146px !important;}
 #_asm .collapseBtn.close {bottom: -110px !important; opacity:1;}
 .ui-front form { margin-bottom:0!important;}
-
-.error-wrap {display:table; position:fixed; left:0; top:0; bottom:0; height:100%; right:0; width:100%;}
-.error-wrap .error-inner{ display:table-cell; vertical-align:middle; text-align:center;}
+ 
+/*** 404error화면 ***/
+.error-wrap { display:flex; align-items:center; height:100%; width:100%; /*display:table; position:fixed; left:0; top:0; bottom:0;*/ } 
+.error-wrap .error-inner{  text-align:center; width:100%; padding:0 100px;/*display:table-cell; vertical-align:middle;*/ } 
+.error-wrap .error-inner h1 { text-indent: 0} 
+.error-wrap .error-inner .error-tit{font-size:32px; color:#002f5f; font-weight:500; margin-bottom:31px; }
+.error-wrap .error-inner .error-text{  }
+.error-wrap .error-inner dl{width:400px; margin:37px auto 70px; overflow:hidden; border-top:1px solid #e3e3e3; text-align:left;}
+.error-wrap .error-inner dt{ float:left; width:100px; height:40px; line-height:40px; border-bottom:1px solid #e3e3e3; background:#f4f4f4; color:#002f5f; padding-left: 20px;}
+.error-wrap .error-inner dd{ float:left; width:300px; height:40px; line-height:40px; border-bottom:1px solid #e3e3e3; border-left:1px solid #e3e3e3; padding-left: 20px;}
+.error-wrap .error-btn { padding-top: 40px; border-top:1px solid #e3e3e3;}
 
 /*** skipToContent ***/
 #skipToContent a {position:fixed; top:0; left:0; z-index:9999; width:100%; height:0; margin-top:-1px; display:block; background-color:#3875c1; font-size:14px; font-weight:bold; color:#fff; line-height:1; text-align:center; overflow:hidden; }
