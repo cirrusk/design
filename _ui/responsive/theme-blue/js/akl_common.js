@@ -892,7 +892,7 @@ function toolTips_conSize(){
 	if (LandscapeSize < PortraiteSize){PortraiteSize = LandscapeSize;}
 
 	var tooltipBox = $('.toolTip-wrapper');
-	//var tooltipBTN = tooltipBox.find('.btn-tooltip');
+	var tooltipBTN = tooltipBox.find('.btn-tooltip');
 
 	function tipContWidth(){
 		tooltipBox.each(function(){
@@ -905,21 +905,37 @@ function toolTips_conSize(){
 			// wrapper 추가 후
 			$(this).addClass('type-mob-full');
 			var tooltipBTN = $(this).find('.btn-tooltip');
-			var tooltipCon = $(this).find('.tipCont-wrapper');
+			var tooltipWrapper = $(this).find('.tipCont-wrapper');
+			var tooltipContent = tooltipWrapper.find('.tooltip-content');
 
 			var tooltipSize = PortraiteSize;
 			if( _winWidth < 361){
-				tooltipCon.css({
+				tooltipWrapper.css({
 					'width':tooltipSize,
 					'max-width':tooltipSize-50
 				});
 			} else if( _winWidth < 769){
-				tooltipCon.css({
+				tooltipWrapper.css({
 					'width':tooltipSize,
 					'max-width':tooltipSize-80
 				});
 			} else {
-				tooltipCon.css({ 'width':'', 'max-width':'none'});
+				tooltipWrapper.css({ 'width':'', 'max-width':'none'});
+			}
+		});
+
+		//버튼 위치 체크 후, 컨텐츠 위치조정
+		tooltipBTN.each(function(){
+			var leftPosition = $(this).offset().left;
+			var tipContent = $(this).parent().find('.tooltip-content');
+			var tipContentWidth = tipContent.width();
+
+			if( _winWidth > 768){
+				if( leftPosition < 100  &&  leftPosition < tipContentWidth/2){
+					tipContent.addClass('left');
+				}
+			} else {
+				tipContent.removeClass('left');
 			}
 		});
 	}
@@ -933,45 +949,34 @@ function toolTips_conSize(){
 /* 온라인 FAX 주문 - 툴팁열기 */
 function toolTips_open(){
 	var _winWidth= $(window).width();
-	var _tooltipBTN = $('.toolTip-wrapper').find('.btn-tooltip');
-	_tooltipBTN.each(function(){
+	var _btnToolTip = $('.toolTip-wrapper').find('.btn-tooltip');
+	var _btnTooltipClose = $('.toolTip-wrapper').find('.btn-tooltip-close');
+
+	_btnToolTip.each(function(){
 		$(this).on('click',function(e){
 			e.preventDefault();
 
-			var tipContent = $(this).parent().find('.tooltip-content');
-			var tipConWidth = tipContent.width();
-
-			if( _winWidth > 768){
-				var tooltipBtn_left = $(this).offset().left;
-				//alert(tooltipBtn_left)
-				if (tooltipBtn_left < 100 && tooltipBtn_left < tipConWidth){
-					tipContent.addClass('left');
-				}
-			}
-
-
-
-
-
-
-
-
-
-
-			if(tipContent.is(':hidden')){
+			//컨텐츠 노출
+			var _tipContent = $(this).parent().find('.tooltip-content');
+			if( _tipContent.is(':hidden')){
 				$(this).parent().addClass('open'); //화살표
-				tipContent.show();
-			} else if(tipContent.is(':visible')){
-				$(this).parent().removeClass('open'); //화살표
-				tipContent.hide();
+				_tipContent.show();
 			}
-
-			var _closeBTN = $(this).parent().find('.btn-tooltip-close');
-			_closeBTN.on('click',function(){
-				$(this).parents('.toolTip-wrapper').removeClass('open'); //화살표
-				tipContent.hide();
-			});
+			else if( _tipContent.is(':visible')){
+				$(this).parent().removeClass('open'); //화살표
+				_tipContent.hide();
+			}
 		});
+	});
+
+	//닫기 버튼
+	_btnTooltipClose.on('click',function(e){
+		e.preventDefault();
+
+		var tooltipWrapper = $(this).parents('.toolTip-wrapper');
+		var tooltipContent = tooltipWrapper.find('.tooltip-content');
+		tooltipWrapper.removeClass('open'); //화살표
+		tooltipContent.hide();
 	});
 }
 
