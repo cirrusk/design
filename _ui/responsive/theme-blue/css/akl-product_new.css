@@ -20,7 +20,7 @@ Version : AKL Hybris UIUX 1.0
 .txt-info-visual .v-tit {font-size:60px;letter-spacing:-2px;font-weight:400;padding:18px 0 0;line-height:1.2;}
 .txt-info-visual .v-tit strong{font-size: 60px;font-weight:400;line-height: 1;}
 .txt-info-visual .v-tit span {display:inline-block;font-weight:500;font-size:60px;line-height: 1.2;}
-.txt-info-visual .v-txt {font-size:16px;line-height:24px;font-weight:300;margin: 30px 18.65%;letter-spacing:-1px;word-break: keep-all;word-wrap: break-word;}
+.txt-info-visual .v-txt {font-size:18px;line-height:28px;font-weight:300;margin:30px 15% 0;letter-spacing:-1px;word-break: keep-all;word-wrap: break-word;}
 .txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 14px;color: #333333;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
 .v-pro {margin-top:70px;width:100%;text-align:center;}
 .v-pro span {display:block;text-align:center;margin:0 auto;width:100%;}
@@ -87,8 +87,8 @@ Version : AKL Hybris UIUX 1.0
 .comp-info dl {vertical-align:top;width:100%;text-align:center;margin:10px auto 0;}
 .comp-info dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
 .comp-info dl dt span.blue {display:block;}
-.comp-info dl dd {text-align:center;padding:10px 30px;}
-.comp-info dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px 0 10px;height:50px;}
+.comp-info dl dd {text-align:center;padding:10px 0;}
+.comp-info dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px 0 10px;height:50px;padding:0 50px;}
 .comp-info dl dd span.cc-btn {display:block;margin:0 auto;}
 
 .pcomp-list.deaf04 div.comp-info {width:25%;}
@@ -104,6 +104,7 @@ Version : AKL Hybris UIUX 1.0
 .ingestion-usage dl dt {width:15%;vertical-align:top;font-size:26px;font-weight:500;letter-spacing:-2px;}
 .ingestion-usage dl dd {width:80%;vertical-align:top;padding:8px 0 0}
 .ingestion-usage dl dd p {margin:0 0;font-size:16px;font-weight:300;letter-spacing:-1px;}
+.ingestion-usage.btm-line {border-bottom:1px solid #e3e3e3;padding:0 0 40px}
 
 ol, ul, dl{margin-bottom:0;}
 .inge-lst01 {}
@@ -143,7 +144,7 @@ ol, ul, dl{margin-bottom:0;}
 .inge-lst10 li:before{position:absolute;display:inline-block;top:0px;left:-17px;content:"※";}
 .inge-lst10 strong{font-size:14px;font-weight:400;color:#56565a;}
 
-.inge-numlst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;margin-left:15px;text-indent:-15px;}
+.inge-numlst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;margin-left:15px;text-indent:-15px;color:#808285;padding:2px 0;}
 .inge-numlst01 li ul {padding:0 0 0 0}
 .inge-numlst01 li ul li {text-indent:-20px;margin-left:20px;}
 
@@ -152,12 +153,12 @@ ol, ul, dl{margin-bottom:0;}
 ul.spc-list {display:block;width:100%;border-bottom:1px solid #e3e3e3;}
 ul.spc-list > li {display:table;width:100%;table-layout:fixed;box-sizing: border-box;padding:20px 50px;border-top:1px solid #e3e3e3;background: url(../images/akl_product/ico_bullet.png) no-repeat 8% 50%}
 ul.spc-list li > div {display:table-cell;box-sizing: border-box;vertical-align:middle;}
-div.feat-txt {width:65%;text-align:left;letter-spacing:-2px;padding:0 10%}
+div.feat-txt {width:55%;text-align:left;letter-spacing:-2px;padding:0 10%}
 div.feat-txt p {font-weight:400;font-size:20px;margin:0 0;}
 div.feat-txt span {font-weight:400;font-size:20px;}
 div.feat-txt ul.e {border-bottom:0 none;padding:0 0;margin:0 0;}
 div.feat-txt ul li {font-size:16px;letter-spacing:-1px;font-weight:300;background:none;padding:0 0 0;border-top:none;color:#818286;}
-div.feat-img {width:35%;text-align:middle;text-align:center;}
+div.feat-img {width:35%;vertical-align:middle;text-align:center;}
 div.feat-img img {text-align:center;}
 
 .special-feat .inge-lst03 {padding:10px 0 0 8%}
@@ -188,13 +189,15 @@ div.feat-img img {text-align:center;}
 
 /* type03 */
 .health-inform-box {display:block;margin-top:25px;border:1px solid #e3e3e3;overflow:hidden;}
+.health-inform-box.type2 {margin-top:80px;}
+
 .box-tit {background:#eeefef;text-align:center;padding:15px 0 18px;}
 .box-tit h5 {font-size: 44px;color: #57565b;font-weight: 400;letter-spacing: -2px;text-align: center;}
 .box-tit h5 span {font-weight:400;font-size: 44px;}
 .effet-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;padding:30px 80px;}
 .siehe-box {padding:0 0;}
-.siehe-box.midle {padding:0 30% 0 0}
-.siehe-box .com-txt {line-height:1.7;}
+.siehe-box.midle {padding:0 25% 0 0}
+.siehe-box .com-txt {line-height:26px;}
 .siehe-box.top-line {margin-top:30px;border-top:1px solid #e3e3e3;padding:30px 80px 0}
 
 .ad-setp-lst2 {clear:both;width:100%;} 
@@ -222,7 +225,7 @@ div.feat-img img {text-align:center;}
 .amo-info > dl.amo-txt {display:table-cell;vertical-align:middle;box-sizing: border-box;padding-left:10px;}
 dl.amo-txt dt {font-size:16px;font-weight:500;letter-spacing:-1px;}
 dl.amo-txt dd {letter-spacing:-1px;word-break:break-all;padding:3px 0 0;}
-dl.amo-txt dd p {font-size:13px;font-weight:300;line-height:18px;margin:0 0;color:#808285;}
+dl.amo-txt dd p {font-size:13px;font-weight:300;line-height:18px;margin:0 0;color:#808285;padding:0 30px 0 0;}
 dl.amo-txt dd br {line-height:18px}
 
 .graph-info-box {display:table;width:100%;table-layout:fixed;box-sizing: border-box;}
@@ -333,8 +336,8 @@ dl.amo-txt dd br {line-height:18px}
 	/*.pcomp-list div.comp-info {clear:both;display:block;width:100%;}*/
 	.ingestion-usage{margin-top:40px;}
 	.ingestion-usage.type2{border-top: none;margin-top:40px;padding-top: 0;}
-	.ingestion-usage dl dt {width:25%;}
-	.ingestion-usage dl dt {width:75%;}
+	.ingestion-usage dl dt {width:25%;font-size:18px;}
+	.ingestion-usage dl dd {width:75%;}
 
 	.system-lst2 {margin:0 auto;width:100%;}
 	.siehe-box.top-line {padding:15px 40px 0;}
@@ -361,6 +364,7 @@ dl.amo-txt dd br {line-height:18px}
 	.txt-info-visual .v-txt {font-size:14px;margin:20px 10%;word-break: keep-all;word-wrap: break-word;}
 	.txt-info-visual .v-tit {font-size:35px;}
 	.txt-info-visual .v-tit span{font-size:35px;}
+	.txt-info-visual .v-logo-txt {font-size:20px;}
 	
 	.v-pro span img {text-align:center;width:75%;height:auto;}
 	
@@ -374,6 +378,8 @@ dl.amo-txt dd br {line-height:18px}
 	.com-tit span {font-size:26px;}
 	
 	.com-tit.celleffect {padding:0 10% 0 0;}
+	.com-tit2 {font-size:18px;}
+	.com-txt {font-size:14px;}
 
 	.info-p-list ul li {float:left;width:25%;text-align:center;vertical-align:top;min-height:120px;}
 	.info-p-list ul li span img {width:100%;height:auto;}
@@ -385,8 +391,11 @@ dl.amo-txt dd br {line-height:18px}
 	.pcomp-list.deaf01 div.comp-info {clear:both;display:block;width:100%;}
 
 	.ingestion-usage {margin-top:40px;}
-	.ingestion-usage dl dt {width:100%;}
+	.ingestion-usage dl dt {width:100%;font-size:18px;}
 	.ingestion-usage dl dd {width:100%;}
+	
+	.inge-numlst01 li {font-size:13px;}
+
 	.advantage-area.bt-none{padding:25px 0 0 !important;}
 	.pro-video.video-type{margin: 25px 0 0;padding-top:25px;}
 	.line-gray-top{display: block;padding-top:25px;border-top: 1px solid #e3e3e3;clear: both;}
@@ -397,18 +406,23 @@ dl.amo-txt dd br {line-height:18px}
 	div.feat-txt p {font-size:14px;margin:0 0;}
 	div.feat-txt span {font-size:14px;}
 	div.feat-txt ul li {font-size:14px;}
+	div.feat-img {padding:0 20px}
 	div.feat-img img {width:100%;height:auto;}
 
 	.advan-left {display:block;width:100%;}
 	.advan-right {display:block;width:100%;}
 	.ade-photo {margin-top:10px}
 	.ade-photo img {width:auto;height:auto;}
+
+	dl.amo-txt dd p {padding:0 0 0 0;}
 	
 	.inge-lst03 li:after {top:8px}
 	.effet-area {padding:30px 30px;}
 	.siehe-box.midle {padding:0 0 0 0;}
-	.siehe-box {padding:0 20px}
+	.siehe-box {padding:0 0px}
 	.siehe-box.top-line {padding:20px 20px 0;}
+
+	.box-tit h5, .box-tit h5 span {font-size:26px}
 	.ad-setp-lst2 li {width:50%;margin:15px auto;}
 	.ad-setp-lst2 li dl dt {width:100%;margin:0 auto;text-align:center;}
 	.ad-setp-lst2 li dl dt p {margin:0 auto;text-align:center;}
@@ -421,6 +435,8 @@ dl.amo-txt dd br {line-height:18px}
 	.mt50{margin:12px 0 0;padding:12px 0 0;}
 	
 	.ingre-list-wrap {padding:0 0 0;}
+
+	.health-inform-box.type2 {margin-top:40px;}
 
 	.system-lst {width:100%;}
 	.system-lst ul li .lst-won {width:100px;height:100px;border-radius:50%;}

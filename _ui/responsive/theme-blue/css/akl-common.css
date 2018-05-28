@@ -88,8 +88,8 @@ Editor : eunmyoung Noh
 /*** 404error화면 ***/
 .error-wrap { display:flex; align-items:center; height:100%; width:100%; /*display:table; position:fixed; left:0; top:0; bottom:0;*/ }
 .error-wrap .error-inner{  text-align:center; width:100%; padding:0 100px;/*display:table-cell; vertical-align:middle;*/ }
-.error-wrap .error-inner h1 { text-indent: 0}
-.error-wrap .error-inner .error-tit{font-size:32px; color:#002f5f; font-weight:500; margin-bottom:31px; }
+.error-wrap .error-inner h1 { text-indent: 0; margin-top:0}
+.error-wrap .error-inner .error-tit{font-size:32px; color:#002f5f; font-weight:500; margin-bottom:31px; word-spacing:-2px}
 .error-wrap .error-inner .error-text{  }
 .error-wrap .error-inner dl{width:400px; margin:37px auto 70px; overflow:hidden; border-top:1px solid #e3e3e3; text-align:left;}
 .error-wrap .error-inner dt{ float:left; width:100px; height:40px; line-height:40px; border-bottom:1px solid #e3e3e3; background:#f4f4f4; color:#002f5f; padding-left: 20px;}
@@ -898,7 +898,18 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.new-plp .col-md-9 {width:100%;}
 }
 @media (max-width: 768px) {
-
+	/*** 404error화면 ***/
+	.error-wrap { display:flex; align-items:center; height:100%; width:100%; /*display:table; position:fixed; left:0; top:0; bottom:0;*/ }
+	.error-wrap .error-inner{  text-align:center; width:100%; padding:0 20px;/*display:table-cell; vertical-align:middle;*/ }
+	.error-wrap .error-inner h1 { text-indent: 0}
+	.error-wrap .error-inner .error-tit{font-size:24px; }
+	.error-wrap .error-inner .error-text{  }
+	.error-wrap .error-inner dl{width:100%; margin:37px auto 0; }
+	.error-wrap .error-inner dt{width:20%; }
+	.error-wrap .error-inner dd{width:80%; }
+	.error-wrap .error-btn { border-top:0;}
+	.error-wrap .error-btn .bt-akl-blue, .error-wrap .error-btn .bt-akl-white { max-width:200px; padding:0; width:47%; text-align: center; margin:0 1%;}
+	
 	/*** loading ***/
 	.loading .loading-wrap img { width:55px }
 	img.loader-size {width:35px;} /* 개발 ajax */
