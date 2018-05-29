@@ -1440,19 +1440,22 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 /* 마이페이지 > ABO 자녀정보등록 */
 .main-container.Info-regist { padding:30px 42px 80px}
-.main-container.Info-regist .account-landing-page > p{ padding-left:8px; font-size:14px}
-.main-container.Info-regist .account-landing-page .user-account-options .option-item-container .option-item {cursor: inherit;}
-.account-landing-page .user-account-options .option-item-container .option-item:hover {box-shadow:none;}
-.main-container.Info-regist  .user-account-options {padding: 0 0 35px;}
+.main-container.Info-regist > p{ padding-left:8px; font-size:14px}   
 .main-container.Info-regist .button-control { text-align:center;}
-.icon-regist01:before {content:'\e9d9'}
-.icon-regist02:before {content:'\ea5c'}
-.icon-regist03:before {content:'\e911'}
-.icon-regist04:before {content:'\ea68'}
-.icon-regist05:before {content:'\e9ab'}
-.icon-regist06:before {content:'\e95a'}
-.main-container.Info-regist .form-group {margin-bottom: 10px;}
-
+.Info-regist-list { padding:35px 0 20px; border-bottom:1px solid #e3e3e3; border-top:1px solid #e3e3e3; margin:15px 0 40px;}
+.Info-regist-list li { position:relative; padding-left: 80px; min-height:40px; margin-bottom:18px;}
+.Info-regist-list li:before { position:absolute; color: #0075a4;font-family: 'AmwayIcons'!important; }
+.Info-regist-list li:after { content:'';  position:absolute; left:0; top:2px; width:40px; height:40px; padding: 12px; border:1px solid #0075a4; border-radius:50%;}
+.Info-regist-list li mark { background: none; color:#1bb3f3; font-weight:700; display:block; padding:0; margin-bottom:3px; }
+.Info-regist-list li span { font-weight:500; display:block; }
+.Info-regist-list li .download-btn { margin-top:5px }
+.ico-regist01:before {content:'\e9d9'; font-size:20px; left:10px; top:7px;}
+.ico-regist02:before {content:'\ea5c'; font-size:20px; left:10px; top:8px;}
+.ico-regist03:before {content:'\e911'; font-size:20px; left:12px; top:8px;}
+.ico-regist04:before {content:'\ea68'; font-size:20px; left:10px; top:7px;}
+.ico-regist05:before {content:'\e9ab'; font-size:20px; left:10px; top:7px;}
+.ico-regist06:before {content:'\e909'; font-size:16px; left:10px; top:10px;}
+.main-container.Info-regist .form-group {margin-bottom: 10px;} 
 .form-regist-wrap { position:relative; padding:40px 0 30px; border-top:1px solid #e3e3e3}
 .form-regist-wrap.upload { border-bottom:1px solid #e3e3e3; margin-bottom:25px;}
 .form-regist-wrap .bt-akl-txt.reset{ position:absolute; right:-20px; top:10px}
@@ -2530,14 +2533,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.abo-cont dl dd span { display:inline-block;}
 
 	/* 마이페이지 > ABO 자녀정보등록 */
-	.main-container.Info-regist { padding:30px 22px 80px}
-	.main-container.Info-regist  .user-account-options {padding: 0 0 35px;}
-	.main-container.Info-regist .form-group {margin-bottom: 10px;}
-	.main-container.Info-regist .account-landing-page .user-account-options .option-item-container .option-item .icon {margin:26px 0 20px;}
-	.main-container.Info-regist .account-landing-page .user-account-options .option-item-container {float: left; }
-	.main-container.Info-regist .account-landing-page .user-account-options .option-item-container .option-item .option-title { font-size:14px; line-height:20px}
+	.main-container.Info-regist { padding:30px 22px 80px} 
+	.main-container.Info-regist .form-group {margin-bottom: 10px;} 
 	.form-regist-wrap { position:relative; padding:40px 0 30px; border-top:1px solid #e3e3e3}
-	.form-regist-wrap .form-group .control-label { margin-bottom:10px;}
+	.form-regist-wrap .form-group .control-label { margin-bottom:10px; display:block;}
+	.Info-regist-list li {padding-left: 60px;}
 
 
 }
