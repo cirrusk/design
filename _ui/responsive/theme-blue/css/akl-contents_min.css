@@ -818,10 +818,8 @@ html.scrollLock body {overflow:hidden;}
 .mypage-abo-renewal #terms p.terms-paragraph {padding-bottom:15px; line-height:150%;}
 .mypage-abo-renewal a {font-weight:500;}
 .mypage-abo-renewal p {margin-bottom:0;}
-
 .form-group.inline-child .amw-radio-wrap {display:inline-block;}
 .form-group.inline-child .amw-radio-wrap+.amw-radio-wrap {margin-left:25px;}
-
 
 .dl-form-group > dt {padding-bottom:10px; color:#56565a; font-size:16px; font-weight:500;}
 .dl-form-group .form-group {display:table; width:100%; margin:18px 0 0;}
@@ -856,10 +854,21 @@ html.scrollLock body {overflow:hidden;}
 .akl .mypage-abo-renewal .accordion-custom .panel-body .control-label {padding-left:0;}
 .akl .mypage-abo-renewal .accordion-custom .panel-body .list-type2,
 .akl .mypage-abo-renewal .accordion-custom .panel-body .list-type5 {margin-top:30px;}
-
 .akl .mypage-abo-renewal .after-processing {margin:40px 0 0; padding:30px 20px 30px; border:1px solid #dadada; border-width:1px 0;}
 .akl .mypage-abo-renewal .after-processing .title {display:inline-block; margin-right:20px; color:#002f5f; font-size:18px; font-weight:500;}
 .akl .mypage-abo-renewal .after-processing .noti-suc {display:inline-block;}
+
+.box-case-wrapper .list-type5 +.tbl-top-searchbox {margin-top:37px;}
+.box-case-wrapper .tbl-top-title {margin:37px 0 18px; font-weight:500; font-size:16px; color:#56565a; letter-spacing:-0.025em;}
+.box-case-wrapper .tbl-top-searchbox {overflow:hidden; margin-bottom:30px;}
+
+.box-case-wrapper .tbl-top-searchbox .tbl-top-title { float:left; margin:0; padding:16px 0 0;}
+.box-case-wrapper .tbl-top-searchbox .form-select {float:right;}
+
+
+.form-srch-btn {overflow:hidden; float:left;}
+.form-srch-btn select.form-control {margin-right:8px;}
+
 
 /* ----- 온라인 팩스 주문 ----- */
 .akl .amway-theme.fax-order-wrapper .panel-title * {font-size:18px;font-weight:500}
@@ -1793,8 +1802,16 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .mypage-abo-renewal .after-processing {padding:20px 10px;}
 	.akl .mypage-abo-renewal .after-processing .title {display:block; margin:0 0 10px;}
 	.akl .mypage-abo-renewal .after-processing .noti-suc {display:block;}
-
 	.akl .mypage-abo-renewal .accordion-custom .panel-body {padding-right:10px;}
+
+	.box-case-wrapper .tbl-top-title {margin:37px 0 18px; font-weight:500; font-size:16px; color:#56565a; letter-spacing:-0.025em;}
+	.box-case-wrapper .tbl-top-searchbox {overflow:hidden; margin-bottom:30px;}
+	.box-case-wrapper .tbl-top-searchbox .tbl-top-title { padding-top:0; margin-bottom:17px;}
+	.box-case-wrapper .tbl-top-searchbox .form-select {float:none; margin-top:10px;}
+	.form-srch-btn {float:none; position:relative; padding-right:100px;}
+	.form-srch-btn .bt-akl-blue  {position:absolute; top:0; right:0; width:90px;}
+	.akl .form-srch-btn .bt-akl-blue {min-width:0;}
+	.akl .tbl-top-searchbox select.form-control {width:100%;}
 
 	.tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
 	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding-left:10px;}
@@ -1805,8 +1822,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 	/* ABO 갱신 */
 	.dl-form-group {padding:0;}
 	.dl-form-group .form-group .txt-label {width:35%;}
-
-	.box-case-wrapper .dl-form-group .form-group .txt-label {}
+	.box-case-wrapper .dl-form-group .form-group .txt-label {width:45%;}
 
 	/* 온라인 팩스 주문 */
 	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image {margin-right:10px;}
