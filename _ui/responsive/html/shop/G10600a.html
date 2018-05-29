@@ -1201,16 +1201,15 @@
 									</li>
 								</ul>
 							</div>
+							<!-- 수정 : 2018.05.29 -->
 							<div class="shipping-delivery-coupon">
 								<div class="delivery-coupon-choice">
-									<input class="amwa-radio" type="radio" name="coupon" id="radio444" value="cpM" checked="checked" />
-									<label for="radio444">쿠폰선택</label>
-									<input class="amwa-radio" type="radio" name="coupon" id="radio555" value="cpI" />
-									<label for="radio555">쿠폰직접입력</label>
+									<input class="amwa-radio" type="radio" name="coupon" id="couponSelect" value="cpM" checked="checked" /><label for="couponSelect">쿠폰선택</label>
+									<input class="amwa-radio" type="radio" name="coupon" id="couponInput" value="cpI" /><label for="couponInput">쿠폰직접입력</label>
 								</div>
 
 								<!-- 쿠폰선택시 나오는 화면 -->
-								<div class="coupon-offer">
+								<div class="coupon-offer" style="display:none;">
 									<p>
 										<a href="#" class="shipping-delivery-summary-continue btn-blue-white" id="G10600_lp7">쿠폰 선택</a>
 									</p>
@@ -1256,6 +1255,41 @@
 								</div>
 								<!-- //쿠폰직접입력시 나오는 화면 -->
 							</div>
+
+							<!-- 수정: 2018.05.29 (추가) -->
+							<script>
+								$(function(){
+									var couponName = $('input[name=coupon]');
+
+									//기본 선택
+									$('#couponSelect').prop('checked', true).attr('checked', 'checked');
+									$('.shipping-delivery-coupon').find('.coupon-offer').show();
+
+									//클릭 시
+									$('#couponSelect').on('click',function(){
+										if($(this).prop('checked', false)){
+											couponName.prop('checked', false).attr('checked',false);
+											$(this).prop('checked', true).attr('checked', 'checked');
+
+											var $parents = $(this).parents('.shipping-delivery-coupon');
+											$parents.find('.coupon-offer').show();
+											$parents.find('.coupon-offer-direct').hide();
+										}
+									});
+									$('#couponInput').on('click',function(){
+										if($(this).prop('checked', false)){
+											couponName.prop('checked', false).attr('checked',false);
+											$(this).prop('checked', true).attr('checked', 'checked');
+
+											var $parents = $(this).parents('.shipping-delivery-coupon');
+											$parents.find('.coupon-offer').hide();
+											$parents.find('.coupon-offer-direct').show();
+										}
+									});
+								});
+							</script>
+							<!-- //수정: 2018.05.29 (추가) -->
+
 
 							<div class="shipping-delivery-summary-header">
 								<span>결제금액(원)</span><!-- 수정 : 2018.05.04 -->
