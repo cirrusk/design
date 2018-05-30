@@ -11,7 +11,7 @@ Version : AKL Hybris UIUX 1.0
 
 .visual-area .bg-top {position:absolute;top:0;left:0;width:100%;}
 .visual-area .bg-top img {width:100%;height:auto;}
-.visual-area .v-logo {padding: 77px 0 0;}
+.visual-area .v-logo {padding:80px 0 0;}
 .visual-area .v-logo.nutrition-health img {width:238px;height:25px;}
 .visual-area .v-logo.beauty img {width:auto;height:auto;}
 
@@ -190,6 +190,7 @@ div.feat-txt p span.next-sort {display:block;}
 .ade-photo {margin:0 auto;text-align:center;}
 .ade-photo.right {text-align:right;}
 .ade-photo.botm {vertical-align:bottom;}
+.ade-photo.vtop {vertical-align:top;}
 .ade-photo img {text-align:center;}
 .sie-box {padding:0 7% 0;word-break: keep-all;word-wrap: break-word;}
 .ad-setp-lst {width:100%;font-size: 16px;letter-spacing: -1px;}
@@ -422,6 +423,18 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 .visual-area.type03.I2GO {min-height:890px;background:#ffeaea}
 .visual-area.type03.I2GO .txt-info-visual .v-txt {margin:30px 20% 0;}
 
+/* 아세로라 C (100정) */
+.visual-area.type03.acerola_C {min-height:840px;}
+.health-inform-box.type2.acerola_C .advan-left {width:60%;}
+.health-inform-box.type2.acerola_C .advan-left .com-txt {width:80%;}
+.health-inform-box.type2.acerola_C .advan-right {width:40%;}
+
+/* 더블엑스 리필 */
+.visual-area.type01.doubleX_Refill {min-height:950px;}
+.visual-area.type01.doubleX_Refill .v-logo {padding:100px 0 0;}
+.visual-area.type01.doubleX_Refill .txt-info-visual .v-txt {margin:30px 23% 0;}
+.visual-area.type01.doubleX_Refill .txt-info-visual .v-etc {font-size:16px;color:#808285;}
+
 @media (min-width: 1074px) and (min-width: 1280px) {
 	.system-lst5 ul li .lst-won {margin:0 auto;width:120px;vertical-align:middle;}
 	.system-lst5 ul li .lst-won p {height:120px;}
@@ -526,7 +539,7 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 	.advan-left {display:block;width:100%;}
 	.advan-right {display:block;width:100%;}
 	.ade-photo {margin-top:10px}
-	.ade-photo img {width:auto;height:auto;}
+	.ade-photo img {width:inherit;height:auto;}
 
 	dl.amo-txt dd p {padding:0 0 0 0;}
 	
@@ -626,5 +639,10 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 
 	/* 아이투고 레드 */
 	.visual-area.type03.I2GO .txt-info-visual .v-txt {margin:30px 10% 0;}
+
+	/* 아세로라 C (100정) */
+	.health-inform-box.type2.acerola_C .advan-left {width:100%;}
+	.health-inform-box.type2.acerola_C .advan-left .com-txt {width:100%;}
+	.health-inform-box.type2.acerola_C .advan-right {width:100%;}
 
 }	
