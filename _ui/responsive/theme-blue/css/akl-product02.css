@@ -70,6 +70,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .avocado{color:#20893d !important;}
 .grapefruit{color:#e28379 !important;}
 .normal_gray{color:#56565a !important;}
+.water-blue{color:#008fc5 !important;}
 
 
 
@@ -137,8 +138,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 .point-wrap{text-align: center;padding: 0 0 0;}
 .point-wrap{line-height:1.2;}
-.point-wrap .tit span{color:#008fc5;font-weight:400;}
-.point-wrap .tit strong{display:block;color:#008fc5;font-weight:400;}
+.point-wrap .tit strong{color:#008fc5;font-weight:400;}
+.point-wrap .tit span{display:block;color:#008fc5;font-weight:400;}
 .point-wrap .desc{display: block;margin-top: 20px;font-size:16px;color:#808285;text-align:center;font-weight:400;line-height: 1.5;}
 .point-wrap.block{margin-top:40px;}
 
@@ -150,10 +151,20 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 .polymer{position: relative;display:inline-block;}
 .polymer img{width: auto; display: block;}
-.polymer p{position:absolute;letter-spacing:-1px;}
-.polymer .one{display: inline-block;top: 45%;left: 0;width: 50%;}
-.polymer .two{display: inline-block;top: 45%;right: 0;text-align: center;width: 50%;}
-.polymer p em{display: block;font-size: 16px;font-weight: 400;}
+.polymer p{position:absolute;letter-spacing:-1px;display: inline-block;top: 45%;text-align: center;}
+.polymer p em{display: block;font-size: 16px;font-weight: 400;color:#008fc5;}
+.polymer .one{left: 0;width: 50%;}
+.polymer .two{right: 0;width: 48%;padding-left: 2%;}
+
+.polymer.vita p{font-size: 18px;}
+.polymer.vita p em{font-size: 18px;}
+.polymer.vita .one{left: 0;width: 49%;font-size: 18px;margin-right: 12%;top: 53%;}
+.polymer.vita .two{right: 0;width: 39%;padding: 0 3%;font-size: 14px;top: 53%;text-align: center;}
+.polymer.vita .two em{font-size:16px;}
+
+
+
+
 
 .ade-photo{}
 .ade-photo .reposom-wrap{position: relative;margin:0 auto 0;}
@@ -166,8 +177,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 .separation{position: relative;display:inline-block;}
-.separation img{width: auto; display: block;}
-.separation p{display: inline-block;position: absolute;top: 67%;left: 14%;letter-spacing: 0;color: #808285;font-weight: 300;font-size: 14px;}
+.separation img{width: auto;display: block;}
+.separation p{position: absolute;top: 67%;left: 0;letter-spacing: 0;color: #808285;font-weight: 300;font-size: 14px;width: 50%;text-align: center;padding-left: 20px;}
 
 /*9622 라운드 썸네일 나열*/
 .ingredient-list{display: block;overflow:hidden;margin-top:10px;}
@@ -455,14 +466,18 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.t-big.point-wrap .tit{font-size:32px;}
 	.t-big.point-wrap .desc{font-size:16px;}
 	.t-small.point-wrap .tit{font-size:26px;}
-	.t-mini.point-wrap .tit{font-size:22px;}
+	.t-mini.point-wrap .tit{font-size:22px;}	
 	
-	.polymer{position: relative;display:inline-block;}
-	.polymer img{width: auto; display: block;}
-	.polymer p{position:absolute;letter-spacing:-1px;}
-	.polymer .one{display: inline-block;top: 45%;left: 0;width: 50%;font-size: 14px;padding: 0 10px;}
-	.polymer .two{display: inline-block;top: 45%;right: 0;width: 50%;font-size: 14px;padding: 0 10px;}
-	.polymer p em{display: block;font-size: 15px;font-weight: 400;}
+	.polymer{margin-top:20px;}
+	.polymer p{font-size:15px;}
+	.polymer p em{font-size: 15px;}
+	.polymer.vita p{font-size: 15px;}
+	.polymer.vita p em{font-size: 16px;}
+	.polymer.vita .one{font-size:16px;}
+	.polymer.vita .two{font-size: 13px;}
+	.polymer.vita .two em{font-size:16px;}
+
+	.skin-care .product-process .detail-tit{font-size:18px;}
 
     .ade-photo.sie-box{padding:15px 20px 0 !important;;}
     .ade-photo .reposom-wrap{margin:0 auto;}
@@ -567,6 +582,20 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.skin-care .ingre-list li{width:100% !important;}
 	.ingre-list li:before{display:none;}
 	.pro-video.type2{margin: 25px 0 0;padding: 25px 0 0;}
+	
+	.polymer{margin-top:20px;}
+	.polymer p, 
+	.polymer p em, 
+	.polymer.vita p, 
+	.polymer.vita p em{font-size: 13px;}
+	
+	.polymer.vita .one, 
+	.polymer.vita .two, 
+	.polymer.vita .two em{font-size:13px;}
+	
+	.polymer.vita .two{top:45%;font-size:12px;line-height:1.2;letter-spacing:-1.3px;}
+     
+	
 	.triangle{margin: 25px auto;}
 	.triangle .tit > span > span{font-size:14px}
 	.triangle.men-type .tit br{display:block;}
@@ -574,11 +603,10 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.triangle.men-type span.comment03{margin-right:0}
 	.triangle.lx-tech span.comment02{left: 4%;}
 	.triangle.lx-tech span.comment03{right:5%}
-	.triangle.lx-tech span.comment03 .linght-beige br{display:block;}
-	
+	.triangle.lx-tech span.comment03 .linght-beige br{display:block;}	
 	.triangle.ingre-three .tit .linght-beige{font-size:16px}
 	.beam-balance .txt-left, .beam-balance .txt-right{font-size:14px}
-	.triangle.circle-type .comment02{}
+	
 	
 	/* 포인트 메이크업 립 */
 	.point-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
@@ -620,12 +648,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.triangle.circle-type .comment01, .triangle.circle-type .comment02, .triangle.circle-type .comment03{font-size:12px;}
 	.triangle.circle-type .comment01{padding-top:13px}
 	
-	.polymer{position: relative;display:inline-block;}
-	.polymer img{width: auto; display: block;}
-	.polymer p{position:absolute;letter-spacing:-1px;}
-	.polymer .one{display: inline-block;top: 45%;left: 0;width: 50%;font-size: 11px;padding: 0 10px;}
-	.polymer .two{display: inline-block;top: 45%;right: 0;width: 50%;font-size: 11px;padding: 0 10px;}
-	.polymer p em{display: block;font-size: 11px;font-weight: 400;}
 	
 	/* 베이스 메이크업 */	
 	.triangle.circle-type .tit-child{font-size:14px;}
