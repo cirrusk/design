@@ -6,7 +6,7 @@ Version : AKL Hybris UIUX 1.0
 .visual-area {width:100%;position:relative;text-align:center;}
 .visual-area.type01 {background-color:#eeede3;background-url:url('../images/akl_product/bg_NU02_01.png') no-repeat top center;height:840px;}
 .visual-area.type02 {background-color:#c9e3f6;min-height:620px;padding:0 20px 30px;}
-.visual-area.type03 {background-color:#f3f2eb;min-height:840px;padding:0 20px 30px;}
+.visual-area.type03 {background-color:#f3f2eb;min-height:890px;padding:0 20px 30px;}
 .visual-area.type04 {background: url('../images/akl_product/beauty/bg_youth_xtend_set.png') no-repeat top center;min-height:840px;padding:0 20px 0;}
 
 .visual-area .bg-top {position:absolute;top:0;left:0;width:100%;}
@@ -140,7 +140,7 @@ ol, ul, dl{margin-bottom:0;}
 
 .inge-lst09 li {margin-left:17px;text-indent:-17px;font-size:14px;letter-spacing:-1px;line-height:1.7;font-weight:300;color:#808285;} 
 
-.inge-lst10{}
+.inge-lst10 {}
 .inge-lst10 li {display:inline-block;position:relative;margin-left:17px;font-size:14px;letter-spacing:-1px;line-height:1.7;font-weight:300;color:#808285;} 
 .inge-lst10 li:before{position:absolute;display:inline-block;top:0px;left:-17px;content:"※";}
 .inge-lst10 strong{font-size:14px;font-weight:400;color:#56565a;}
@@ -148,6 +148,8 @@ ol, ul, dl{margin-bottom:0;}
 .inge-numlst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;margin-left:15px;text-indent:-15px;color:#808285;padding:2px 0;}
 .inge-numlst01 li ul {padding:0 0 0 0}
 .inge-numlst01 li ul li {text-indent:-20px;margin-left:20px;}
+
+.inge-numlst02 li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;padding:2px 0;}
 
 /* special */
 .special-feat {clear:both;display:block;margin-top:20px;}
@@ -162,7 +164,8 @@ div.feat-txt ul li {font-size:16px;letter-spacing:-1px;font-weight:300;backgroun
 div.feat-img {width:30%;vertical-align:middle;text-align:center;}
 div.feat-img img {text-align:center;}
 
-.div.feat-txt.long {width:70%;}
+div.feat-txt.long {width:70%;}
+div.feat-txt p span.next-sort {display:block;}
 
 .special-feat .inge-lst03 {padding:10px 0 0 8%}
 .special-feat .inge-lst03 li {font-size:16px;color:#818286;}
@@ -454,6 +457,8 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 	
 	.v-pro span img {text-align:center;width:inherit;height:auto;}
 	
+	div.feat-txt p span.next-sort {display:inline-block;}
+
 	.description-area .cd-pro img {text-align:center;margin:0 auto;width:100%;height:auto;}
 	.advantage-area {margin-top: 25px;padding-top: 25px;}
 	.advantage-area.bt-none{margin-top:0 !important;padding-top: 25px !important;border-top:none;}
@@ -479,9 +484,11 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 	.ingestion-usage {margin-top:40px;}
 	.ingestion-usage dl dt {width:100%;font-size:18px;}
 	.ingestion-usage dl dd {width:100%;}
-	
-	.inge-numlst01 li {font-size:13px;}
-	.inge-lst01 li {font-size:13px;}
+	.ingestion-usage dl dd p {font-weight:400}
+
+	.inge-numlst01 li {font-size:14px;}
+	.inge-numlst02 li {font-size:14px;}
+	.inge-lst01 li {font-size:14px;}
 
 	.advantage-area.bt-none{padding:25px 0 0 !important;}
 	.pro-video.video-type{margin: 25px 0 0;padding-top:25px;}
@@ -555,6 +562,11 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 	.system-lst4 ul li:before {top:45%;left:-11px;right:0;}
 	
 	.system-lst5 ul li {display:block;width:100%;background:url('../images/akl_product/bath-body/ico_child_next_mobile.png') no-repeat center bottom;padding:10px 0;}
+		
+	.effet-area2 {padding:30px 0 30px 30px}
+	.effet-area2 .advan-left {padding-right:30px}
+	.effet-area2.botm {padding:30px 0 0 30px;}
+	.effet-area2.botm .advan-left {padding-right:30px}
 
 	/* 유스 익스텐드 울트라 리프팅 크림  */	
 	.com-tit.youth_xtend {padding:0 0 0 0;}
