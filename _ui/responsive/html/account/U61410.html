@@ -154,6 +154,13 @@
 
 					<!-- case1: 간편가입 회원 -->
 					<div class="box-case-wrapper">
+						<strong class="box-case-tit"><span class="color-blue">ABO 자격 갱신 절차</span>와 관련하여 안내의 말씀을 드립니다.</strong>
+						<p class="box-case-text">
+							갱신은 자격의 유효기간 이후에도 ABO로서 암웨이 사업을 지속시키는데 필요한 절차이며, 특별한 예외 규정이 없는 한 한국암웨이 모든 ABO의 자격 유효기간은 다음 해 2월 말까지입니다.<br>
+							따라서 한국암웨이의 모든 ABO께서는 매년 3월부터 5월까지 ABO자격의 갱신계약을 하셔야 합니다.<br>
+							자세한 내용은 갱신 기간 중 ABN 갱신 페이지를 참조하시거나 한국암웨이 고객센터(1588-0080)로 문의 바랍니다.
+						</p>
+
 						<dl class="dl-form-group">
 							<dt>ABO 정보확인</dt>
 							<dd>
@@ -172,7 +179,10 @@
 									</li>
 									<li class="form-group">
 										<strong class="txt-label">휴대폰번호</strong>
-										<div class="txt-value">010-0000-0000</div>
+										<div class="txt-value mobile-num">
+											<span>010-0000-0000</span>
+											<button type="button" class="bt-akl-white mini">본인인증</button>
+										</div>
 									</li>
 								</ul>
 							</dd>
@@ -325,9 +335,27 @@
 												<li>타인의 ABO자격을 본인의 의사에 반하여 임의로 갱신 시키는 경우, 임의 갱신시킨 ABO가 그에 따른 모든 책임을 집니다.</li>
 											</ul>
 
-											<div class="end-control">
-												<button type="button" class="bt-akl-blue" onclick="layerPopOver(this,'.U61410_lp1');">본인 인증하기</button>
+											<!-- 인증방법 선택 -->
+											<div class="renew-authorization">
+												<div class="validation-wrapper">
+													<div class="valid-type-phone">
+														<p class="validation-para">
+															<strong>휴대폰 본인확인</strong>
+															<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+															<a href="#" class="bt-akl-blue js-btn-show">휴대폰 본인확인</a>
+														</p>
+													</div>
+													<div class="valid-type-ipin">
+														<p class="validation-para">
+															<strong>아이핀 본인확인</strong>
+															<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+															<a href="#" class="bt-akl-blue js-btn-show">아이핀 본인확인</a>
+														</p>
+													</div>
+												</div>
 											</div>
+											<!-- //인증방법 선택 -->
+
 										</div>
 									</div>
 								</div>
@@ -349,43 +377,6 @@
 	</main>
 
 
-<!-- (팝업) 본인인증 -->
-<div class="layerWrapper U61410_lp1">
-	<div class="cbox layerBox popWidL">
-		<div class="cart-popup__dialog">
-			<div class="cart-popup__header">
-				<span class="cart-popup__header-text">
-					본인 인증하기
-					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-				</span>
-			</div>
-			<div class="cart-popup__content height-auto">
-				<!-- 인증방법 선택 -->
-				<div class="pop-authorization">
-					<div class="validation-wrapper">
-						<div class="valid-type-phone">
-							<p class="validation-para">
-								<strong>휴대폰 본인확인</strong>
-								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
-								<a href="#" class="bt-akl-blue js-btn-show">휴대폰 본인확인</a>
-							</p>
-						</div>
-						<div class="valid-type-ipin">
-							<p class="validation-para">
-								<strong>아이핀 본인확인</strong>
-								<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
-								<a href="#" class="bt-akl-blue js-btn-show">아이핀 본인확인</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- //인증방법 선택 -->
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //(팝업) 본인인증 -->
-
 <!-- (팝업) 갱신완료 -->
 <div class="layerWrapper U61410_lp2">
 	<div class="cbox layerBox popWidM">
@@ -399,7 +390,7 @@
 			<div class="cart-popup__content height-auto">
 
 				<!-- 인증결과 -->
-				<div class="pop-authorization result">
+				<div class="renew-authorization result">
 
 					<div class="valid-result-box"><strong class="noti-suc">ABO갱신이 성공적으로 완료되었습니다.</strong></div>
 					<p class="txt-italic">등록된 주사업자 휴대폰 번호로 갱신 완료 메시지가 전송되었습니다.</p>

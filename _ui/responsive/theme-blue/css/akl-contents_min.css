@@ -177,17 +177,16 @@ html.scrollLock body {overflow:hidden;}
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
 .akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
 
-/* (레이어) 본인확인 box */
- .end-control { text-align:center; padding-top:50px;}
-.pop-authorization {padding:40px 0;}
-.pop-authorization .validation-wrapper {display:table; width:100%; padding:0; margin:0;border:0}
-.pop-authorization .validation-wrapper>div[class^=valid-type] {display:table-cell; width:50%; box-sizing:border-box;}
-.pop-authorization .validation-wrapper>div[class^=valid-type]>p {position:initial; width:auto;}
-.pop-authorization.result {padding:0 20px 20px;}
-.pop-authorization.result .valid-result-box {text-align:center; padding:40px 0; margin-bottom:20px; border-bottom:1px solid #e3e3e3;}
-.pop-authorization.result .valid-result-box+.txt-italic {margin:0;}
-.pop-authorization.result .end-control {padding-top:20px;}
- 
+/* ABO갱신 - 본인확인 box */
+.renew-authorization .end-control { text-align:center; padding-top:50px;}
+.renew-authorization {padding:40px 0;}
+.renew-authorization .validation-wrapper {display:table; width:100%; padding:0; margin:0;border:0}
+.renew-authorization .validation-wrapper>div[class^=valid-type] {display:table-cell; width:50%; box-sizing:border-box;}
+.renew-authorization .validation-wrapper>div[class^=valid-type]>p {position:initial; width:auto;}
+.renew-authorization.result {padding:0 20px 20px;}
+.renew-authorization.result .valid-result-box {text-align:center; padding:40px 0; margin-bottom:20px; border-bottom:1px solid #e3e3e3;}
+.renew-authorization.result .valid-result-box+.txt-italic {margin:0;}
+.renew-authorization.result .end-control {padding-top:20px;}
 
 /* 결과보기 : 공통 */
 .akl .wrapper-seek-result .form-sub-title-gray {margin-bottom:20px; font-size:16px; color:#56565a;}
@@ -827,6 +826,7 @@ html.scrollLock body {overflow:hidden;}
 .dl-form-group .form-group * { font-size:14px;}
 .dl-form-group .form-group .txt-label {display:table-cell; width:16%; min-width:150px; color:#002f5f;}
 .dl-form-group .form-group .txt-value {display:table-cell; width:84%;}
+.dl-form-group .form-group .txt-value.mobile-num>span {display:inline-block; margin-right:10px;}
 .dl-form-group .txt-italic {margin:10px 0 0;}
 
 .box-case-wrapper .box-case-tit {display:block; margin-bottom:17px; font-size:16px; letter-spacing:-0.025em;}
@@ -1432,11 +1432,12 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.validation-wrapper>div {border-bottom:1px solid #e3e3e3;}
 	.validation-wrapper>div:nth-last-child(1) {border-bottom:0;}
 
-	/* (레이어) 본인확인 box */
-	.pop-authorization {padding:0 20px;}
-	.pop-authorization .validation-wrapper {display:block;}
-	.pop-authorization .validation-wrapper>div[class^=valid-type] {display:block; width:auto;}
-	.pop-authorization .validation-wrapper>div[class^=valid-type]>p {position:initial; width:auto;}
+	/* 본인확인 box */
+	.renew-authorization {padding:0 20px; margin-top:20px;}
+	.renew-authorization .validation-para>span {font-size:14px;}
+	.renew-authorization .validation-wrapper {display:block;}
+	.renew-authorization .validation-wrapper>div[class^=valid-type] {display:block; width:auto;}
+	.renew-authorization .validation-wrapper>div[class^=valid-type]>p {position:initial; width:auto;}
 
 	.validation-box-simple {padding-right:0; margin-top:30px;}
 	.validation-box-simple .ty-input-name input[type=text],
