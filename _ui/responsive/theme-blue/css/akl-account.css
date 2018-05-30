@@ -15,28 +15,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .featured_brands .product-recentlyviewed__imagelist .owl-item:before { content:""; position: absolute; left:0; top:50%; height:30px; margin-top:-15px; border-left:1px solid #dadada; z-index: 1}
 .akl .featured_brands .product-recentlyviewed__imagelist .owl-item:first-child:before { display:none}
 .akl .akl-btn-wrap { text-align: center}
-.akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px;padding: 13px 40px;}
-
-/* ----- 공통 ----- */
-/* jump-menu */
-.akl .user-account-header .go-block .jump-to {vertical-align:middle;}
-.jump-menu {position:relative; z-index:10; display:inline-block; width:300px; background:#fff; text-align:left;}
-.jump-menu a {display:block; color:#002f5f; font-weight:500; padding-left:20px; font-size:14px !important;}
-.jump-menu .currentTxt {display:block; height:40px; line-height:38px; box-sizing:border-box; border:1px solid #dadada;}
-.jump-menu .menu-dep1 {height:40px; line-height:40px; padding-left:35px;}
-.jump-menu .menu-dep2 {height:40px; line-height:40px;}
-.jump-menu .current {background:#f4f4f4;}
-.jump-menu .select-wrapper {display:none; position:absolute; top:40px; left:0; width:100%; height:auto; background:#fff; border:1px solid #dadada; border-top:0;}
-.jump-menu .select-list>li {border-top:1px solid #dadada;}
-.jump-menu .select-list>li:first-child {border-top:0;}
-.jump-menu .select-list>li>ul {display:none;}
-.jump-menu .currentTxt,
-.jump-menu .hasSub {background:url(../images/akl_common/ico_jumpmenu_arrw.png) no-repeat 100% -55px;}
-.jump-menu .currentTxt.active,
-.jump-menu .on .hasSub {background-position: 100% -5px;}
-.jump-menu .sub-main .menu-dep1 {padding-left:20px;}
-.select-depth2 {margin-bottom:10px;}
-.select-depth2 a {padding-left:50px; font-weight:normal;}
+.akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px;padding: 13px 40px;} 
 
 /* 로그인 > connectedID  */
 .connectedID {border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3; padding: 20px 0 5px; overflow:hidden; margin: 30px 0 20px}
@@ -689,6 +668,8 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .info-producer ul li dl.type2 dt {width:30%;}
 .info-producer ul li dl.type2 dd {width:70%;}
 .divisio-pen {float:left;width:50%;}
+
+.form-group-mob { display: none}
 
 /* 나의 쇼핑정보 > 중개판매관리 > 위시리스트 제품 가져오기 팝업 */
 .cart-popup__content.wish-list .cart-popup__item-link .btn-blue-white {min-width:120px;}
@@ -1477,7 +1458,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .form-regist-btn .link-btn span{display:block; float:left; margin-left:5px; margin-top:-3px}
 
 @media (max-width: 1200px){
-	.akl .user-account-header {padding-left:36px; padding-right:34px;}
+	.akl .user-account-header {padding-left:15px; padding-right:15px;}
 	.akl .user-account-header .container {padding:0;}
 	.akl .user-account-header .user-block {padding-left:0;}
 	.akl .user-account-header .go-block {padding-right:0;}
@@ -1510,10 +1491,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 @media (max-width: 768px) {
 	/* 마이페이지 > header  */
 	.akl .go-block.col-sm-6{ position:static; width:300px; } 
-	/* jump-menu */
-	.akl .go-block .jump-to-wrapper {display:block; margin-top:15px; padding:0 20px; left:0;}
-	/* .akl .user-account-header .go-block .jump-to {display:block; text-align:left;} */
-	.jump-menu {display:block; width:100%;}
+	 
 
     /* 로그인 > connectedID  */
 	.akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper th, .akl-toggle-wrap-pop .accordion-custom dl dd .table-wrapper td {display: block;}
@@ -1941,7 +1919,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .cart-popup__content .cart-popup__item-info p.pop-txt{padding:0 0 5px}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적서 */
-	.estimate-form-box {border-right:1px solid #e3e3e3;width:100%; position:static;}
+	.estimate-form-box {height: auto;padding: 20px 20px 5px; border-right:1px solid #e3e3e3;width:100%; position:static;}
 	.estimate-producer-box {display:block;height:auto;width:100%;margin-top:10px;border-width:1px 0 0 0; margin-left:0;}
 
 	.tit-producer {width:100%;height:40px; padding-top:10px; border-bottom:1px solid #e3e3e3;display:block;}
@@ -1956,10 +1934,13 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.info-producer ul li.address dl,
 	.info-producer ul li.address dl.type1 dt,
 	.info-producer ul li.address dl.type1 dd {height:50px; }
-
+	
+	.form-group-mob { display:block;} 
 	.form-group-mob > div.point-date-range input[type="date"] {width:calc(100% - 40px) !important;}
+	.form-group-mob > div input[ type="date"] { width:100%; margin-bottom: 5px;  }
 	.p-nameing input { width:calc(100% - 40px);}
-
+	.form-group-mob .bt-akl-blue { min-width:95px;  }   
+ 	
 	/* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 > 견적제품목록 */
 	.akl .amway-theme .navigation-tabs-container {display:block;}
 	.est-prod-list .product-item-element.list-item-info {display:block;padding:0 0;}

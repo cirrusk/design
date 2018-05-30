@@ -38,12 +38,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-prev { left: 10px;}
 .akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-next { right: 10px;}
 
-/* 암웨이소식 공통 */
-.jump-to-amway { background:#f4f4f4; padding:20px 0;  margin-bottom:23px;  }
-.jump-to-amway:after {content:""; display:block; clear:both;}
-.jump-to-amway > div { max-width:1400px; margin:0 auto;position:relative; }
-.jump-to-amway > div > p { position:absolute; left:15px; top:10px; font-weight:500; color:#002f5f; }
-.jump-to-amway > div .jump-to-wrapper { margin-left:85px;}
+/* 암웨이소식 공통 */ 
 .customer-area .title-box .product-list-page-title { margin-top:0} 
 
 /* 공지사항 */
@@ -224,13 +219,19 @@ Version : AKL Hybris UIUX 1.0
 
 #show-more .text-wrap {font-family:'Noto Sans KR', sans-serif;;letter-spacing:-0.05em;font-weight:500;font-size:14px;}
 
-@media (max-width: 1024px) {
-	
+@media (max-width: 1024px) { 
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
+	/* 암웨이플라자 shopfinder F10000 */
+	.mob-view-box {display:none;}
+}
 
+@media (max-width: 768px) { 
+	/* 암웨이플라자 shopfinder F10000 */
+	.mob-view-box {display:block;} 
+	
 	/* 공지사항 */
 	.customer-area {padding:0 0;}
 	.title-box .product-list-page-title h1.notice:before {left:0;}
@@ -243,8 +244,7 @@ Version : AKL Hybris UIUX 1.0
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {padding:20px 0 0;}
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper button {border:0 none;}
 	.akl .cuton-form-wrapper .form-s input.input-st {width:100%;padding-right:50px;}
-	.akl .cuton-form-wrapper .form-s button {border:0 none;}
-
+	.akl .cuton-form-wrapper .form-s button {border:0 none;} 
 
 	/* 공지사항 > 목록 */
 	.akl .bod-customer .list-content .list-row-title {padding:0 0;border-bottom:0 none;}
@@ -331,10 +331,5 @@ Version : AKL Hybris UIUX 1.0
 
 	.akl .extinction-list .product__list--item {margin-bottom:20px;}
 	.akl .extinction-list {margin-top:20px;margin-left:0px;}
-	.akl .extinction-list .product-list__item-detail {margin-top:10px}
-	
-	/* 암웨이소식 공통 */ 
-	.jump-to-amway > div > p {  display:none  }
-	.jump-to-amway > div .jump-to-wrapper { margin:0 15px;}
-
+	.akl .extinction-list .product-list__item-detail {margin-top:10px}  
 }	
