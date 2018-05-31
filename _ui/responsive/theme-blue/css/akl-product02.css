@@ -27,7 +27,9 @@ Editor : ji-min Park
 .visual-area.type02.duma-sonic{background: #f8f8f8 url(../images/akl_product/beauty/bg_duma_sonic_4779.png) no-repeat top center;height:1036px;}/*06 스페셜 케어 더마 갈바닉 */
 .visual-area.type02.essentials_by{background: #f8f8f8 url(../images/akl_product/beauty/bg_essentials_by.png) no-repeat top center;height:1100px;}/*09 에센셜 바이 */
 .visual-area.type02.supreme_lx{background: #000000 url(../images/akl_product/beauty/bg_supreme_lx_regenerating.png) no-repeat top center;height:1130px;} /* 수프림 lx */
+.visual-area.type02.supreme_lx{background: #000000 url(../images/akl_product/beauty/bg_supreme_lx_regenerating_01.png) no-repeat top center;height:1000px;} /* 수프림 lx set */
 .visual-area.type02.artistry_men{background: #000000 url(../images/akl_product/beauty/bg_artistry_men.png) no-repeat top center;height:1024px;} /* 아트스트리 맨 */
+.visual-area.type02.artistry_men_set{background: #000000 url(../images/akl_product/beauty/bg_artistry_men_set.png) no-repeat top center;height:904px;} /* 아트스트리 맨  세트*/
 .visual-area.type02.artistry_men_perfume{background: #000000 url(../images/akl_product/beauty/bg_men_perfume.png) no-repeat top center;height:945px;} /* 아트스트리 맨 퍼퓸 */
 .visual-area.indicator{background: url(../images/akl_product/beauty/bg_oil_indicator_1171.png) no-repeat top center;height:866px;} /* 유분 측전 인디케이터 */
 .visual-area.type02.foundation_hydra_touch{background: #000000 url(../images/akl_product/beauty/bg_foundation_hydra_touch.png) no-repeat top center;height:1010px;} /* 베이스메이크업(파운데이션) */
@@ -61,7 +63,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .pt30{padding-top:30px;}
 .space-top{margin-top:22px;}
 
-
 /* 공통 컬러 */
 .light-gold{color:#d7b472 !important;}
 .linght-beige{color:#ad9172 !important;}
@@ -72,9 +73,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .grapefruit{color:#e28379 !important;}
 .normal_gray{color:#56565a !important;}
 .water-blue{color:#008fc5 !important;}
-
-
-
 
 /* 스킨케어 예외 */
 .skin-care .visual-area.type02.youth-xtend-set .v-pro {margin-top:-40px !important;}
@@ -206,7 +204,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 /* 제품 구성 리스트 공통 */
 .pcomp-list div.comp-info{position:relative;}
 .pcomp-list div.comp-info .free-gift{display:table;position: absolute;top: 15px;right: 10px;border-radius: 50%;height: 66px;width: 66px;background: #bbbbbb;}
-.pcomp-list div.comp-info .free-gift em{display:table-cell;vertical-align:middle;font-size: 14px;line-height: 1;text-align: center;color: #ffffff;font-weight: 400;letter-spacing: -1px;}
+.pcomp-list div.comp-info .free-gift em{display:table-cell;vertical-align:middle;font-size: 14px;line-height: 1.5;text-align: center;color: #ffffff;font-weight: 400;letter-spacing: -1px;}
 .pcomp-list div.comp-info .free-gift br{line-height:1;}
 
 /* 롤링 박스 공통 옮겨갈거 */
@@ -240,6 +238,21 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .youth_xtend_relative .youth_xtend_right{top:40px;right:0;display:table;width:130px;height:117px;text-align:center;}
 .youth_xtend_relative .youth_xtend_right span{display:table-cell;vertical-align:middle;font-size:24px;line-height:34px;color:#fff;font-weight:500;}
 
+
+/*선물세트 3종 나열 
+.pcomp-list.deaf03.gift div.comp-info {display: inline-block;width: 21.3%;margin: 0 5%;vertical-align:top;text-align:center;position:relative;}
+.pcomp-list.gift .comp-info dl {vertical-align:top;width:100%;text-align:center;margin: 29px auto 0;}
+.pcomp-list.gift .comp-info dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding: 10px 0;}
+.pcomp-list.gift .comp-info dl dt span.blue {display:block;}
+.pcomp-list.gift .comp-info dl dd {text-align:center;padding:10px 0;}
+.pcomp-list.gift .comp-info dl dd p {font-size:14px;font-weight:300;color:#808285;margin: 11px 0 18px;height:50px;padding: 0 0;}
+.pcomp-list.gift .comp-info dl dd span.cc-btn {display:block;margin:0 auto;}*/	
+
+
+.skin-care .pro-composition .com-tit{font-size:44px;}
+.skin-care .pro-composition .com-tit span{display:inline-block;}
+
+
 /* 리스트 공통 */
 .technology-step{padding:0 5% 0 0;margin-top:0;}
 .technology-step .step-tit{display:block;margin:0;font-size:30px;color:#808285;font-weight:300;letter-spacing:-2px;line-height:1;}
@@ -250,8 +263,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .technology-step .program-list .program-step{display:block;width:140px;height:40px;line-height:40px;font-size:18px;color:#fff;text-align:center;background-color:#ad9172;border-radius:20px;}
 .technology-step .program-list .program-tit{display:block;padding-left:15px;margin-top:10px;font-size:16px;color:#56565a;font-weight:400;letter-spacing:-1px;}
 .technology-step .program-list .program-txt{display:block;padding-left:15px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
-.technology-step .program-list.ar_4285 .program-txt{padding: 0 30px 0 15px;}
-
+.ar_4285 .technology-step .program-list .program-txt{padding: 0 30px 0 15px;}
 
 .technology-lst .tit{padding-top:0;margin-top:20px;font-size: 20px;color: #ad9172;font-weight: 400;}
 .technology-lst .ad-setp-lst dt{color: #ad9172;}
@@ -487,6 +499,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.skin-care .ingre-list-wrap.sie-box{padding:15px 10% 0;}	
 	.advantage-area.bt-none{padding:50px 0 0 !important;}
 	.pro-video.video-type{margin: 25px 0 0;padding-top:25px;}
+	
+	
+	
+}
+	
+	
 	
 	/*  유스 익스텐드 울트라 리프팅 크림  */
 	.beauty-list-wrap ul > li > .beauty-thum-wrap .thum{display: block;text-align: center;overflow: hidden;width: 100%;padding: 0;margin-bottom: 12px;}
