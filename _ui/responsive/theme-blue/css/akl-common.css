@@ -152,8 +152,9 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .clearfix:after {content:""; clear:both; display:block;}
 .akl .col-disabled {color:#bbb;}
 .akl a:focus {outline:initial !important;}
-b,strong{font-weight:500; }
+ b,strong{font-weight:500; }
 .akl .title-box {clear:both;display:block;padding:10px 0 0}
+.akl label span { font-size:14px;}
 
 /* common > font-size  */
 .fsize16 {font-size:16px;}
@@ -318,14 +319,23 @@ b,strong{font-weight:500; }
 .akl .accordion-custom {font-family:'Noto Sans KR', sans-serif;}
 .akl .accordion-custom .panel-title {padding:25px 0 ;font-size:18px; letter-spacing:-2px; word-spacing:3px;}
 .akl .accordion-custom .panel-title .text-uppercase.accordion-header-text {font-size:18px;font-weight:500;letter-spacing:-2px;}
-.akl .accordion-custom .icon-minus {font-size:30px;font-weight:700;line-height:20px;}
-.akl .accordion-custom .icon-minus:before {font-size:30px;font-weight:700;line-height:20px;}
+.akl .accordion-custom .icon-minus:before {font-size:18px; }
+.akl .accordion-custom .collapsed .icon-minus:before {font-size:30px; font-weight:700;line-height:20px;}
 .akl .amway-theme .accordion-element a.accordion-toggle {display: block;}
+ 
+.akl .product-list-left-refinements-slot .accordion-custom .collapse-button.collapsed .icon-minus {font-size:20px; }
+.akl .product-list-left-refinements-slot .accordion-custom .collapse-button.collapsed .icon-minus:before {font-size:20px; }
+.akl .mob-product-facet.product__facet .accordion-custom .collapse-button.collapsed .icon-minus {font-size:20px; }  
+.akl .mob-product-facet.product__facet .accordion-custom .collapse-button.collapsed .icon-minus:before {font-size:20px; }
 
-.akl .product-list-left-refinements-slot .accordion-custom .icon-minus {font-size:20px; }
-.akl .product-list-left-refinements-slot .accordion-custom .icon-minus:before {font-size:20px; margin-right: 4px;}
-.akl .mob-product-facet.product__facet .accordion-custom .icon-minus {font-size:20px; }  
-.akl .mob-product-facet.product__facet .accordion-custom .icon-minus:before {font-size:20px; margin-right: 4px;}
+.akl .product-list-left-refinements-slot .accordion-custom .collapse-button .icon-minus:before {font-size:10px; }
+.akl .product-list-left-refinements-slot .accordion-custom .collapse-button .icon-minus:before {font-size:10px; margin-right: 4px;}
+.akl .mob-product-facet.product__facet .accordion-custom .collapse-button .icon-minus:before {font-size:10px; }  
+.akl .mob-product-facet.product__facet .accordion-custom .collapse-button .icon-minus:before {font-size:10px; margin-right: 4px;}
+
+.category-titbox .ce-btn .list-group-item.collapsed .icon-minus:before { font-size:20px; } 
+.category-titbox .ce-btn .list-group-item .icon-minus:before { font-size:10px ; font-weight:700; } 
+ 
 
 /* cmmon > popup */
 .akl .cbox.popWidS {width: 400px }
