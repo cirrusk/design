@@ -172,7 +172,7 @@ div.feat-txt p span.next-sort {display:block;}
 .special-feat .inge-lst03 li {font-size:16px;color:#818286;}
 
 /* type02 */
-.advantage-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;margin-top: 50px;padding-top: 50px;}
+.advantage-area {clear:both;display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;margin-top: 50px;padding-top: 50px;}
 .advantage-area.bt-none{margin-top:0 !important;padding-top:50px !important;border-top:none;}
 .advantage-area.bt-none{padding:50px 0 0 !important;}
 .pro-video.video-type{margin: 50px 0 0;padding-top:50px;}
@@ -477,9 +477,17 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 .akl .advantage-area.youth_xtend .product-process .owl-theme .owl-controls .owl-nav .owl-next {top:90px;}
 
 .adv-txt {clear:both;display:block;text-align:center;margin-top:30px}
-.adv-txt .t-tit {font-size:60px;font-weight:400px;letter-spacing:-2px;text-align:center;}
-.adv-txt .t-sm {font-size:18px;color:#808285;letter-spacing:-1px;text-align:center;}
+.adv-txt .t-tit {font-size:60px;font-weight:400;letter-spacing:-2px;text-align:center;line-height:70px;}
+.adv-txt .t-tit strong {font-size:60px;font-weight:400;letter-spacing:-2px;}
+.adv-txt p.t-sm {font-size:18px;font-weight:300;color:#808285;letter-spacing:-1px;text-align:center;padding:30px 0 0;margin:0;}
+.adv-txt .txt-next {display:block;}
 
+
+/* 유스 익스텐드 인리칭 크림 */
+.step-tit.youth_xtend {font-size:22px;}
+.step-tit.youth_xtend em {font-sizE:32px;}
+.step-tit.youth_xtend span {letter-spacing:0;color:#808285;} 
+.program-list.ar_4285 .program-txt {padding-right:30px}
 
 @media (min-width: 1074px) and (min-width: 1280px) {
 	.system-lst5 ul li .lst-won {margin:0 auto;width:120px;vertical-align:middle;}
@@ -727,5 +735,11 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 	/* 비타민 비 플러스 */
 	.visual-area.type03.vitaminB_Plus .txt-info-visual .v-txt {margin:30px 5% 0;}
 	.health-inform-box.type2.vitaminB_Plus .advan-left .siehe-box {padding:0 0 0 0}
+
+	/* 스킨케어 */
+	.adv-txt .t-tit {font-size:30px;line-height:40px;}
+	.adv-txt .t-sm {font-size:14px;}
+	.adv-txt .txt-next {display:inline-block;}
+
 
 }	
