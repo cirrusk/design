@@ -820,6 +820,7 @@ shop 옮김 : 2018.04.10
 .akl .accordion-custom.pro-category .panel-title a {color:#002f5f;}
 .akl .accordion-custom.pro-category .panel-title a:hover {color:#0075a4} 
 .akl .mob-product-facet.product__facet .accordion-custom .text-uppercase { font-size:14px}
+.akl .accordion-custom.pro-category .panel-title a:hover {color:#002f5f !important;}
 
 .product-solition-top.type2 {padding:0 0 0}
 .akl .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;padding-left:20px;}
@@ -846,30 +847,34 @@ shop 옮김 : 2018.04.10
 
 .panel.aisde a.list-group-item:hover, .panel.aisde a.list-group-item:focus {background:transparent}
 
-.panel.aisde .sub-cateogry {margin:0 10px;}
+.panel.aisde .sub-cateogry {position:relative; padding:0 20px 0 30px;}
+.panel.aisde .sub-cateogry:after { content:""; position:absolute; left:0; right:0; top:0; border-top:1px solid #ddd}
 .panel.aisde .list-group-item ul {border-bottom:1px solid #ddd;margin:0 10px;padding:0 0;}
-.panel.aisde .list-group-item li {padding:5px 20px;background:transparent;font-size:14px;letter-spacing:-1px;font-weight:500;}
+.panel.aisde .list-group-item li {padding:10px 20px;background:transparent;font-size:14px;letter-spacing:-1px;font-weight:500;}
 .panel.aisde .list-group-item li a {color:#56565a;}
-.panel.aisde .list-group-item li a:hover {color:#002f5f}
-.panel.aisde .list-group-item li a.active {color:#002f5f}
-.panel.aisde .list-group-submenu {border-top:1px solid #ddd;padding:10px 0;-webkit-transition: all 0.15s;-moz-transition: all 0.15s;-o-transition: all 0.15s;-ms-transition: all 0.15s;transition: all 0.15s;}
-.panel.aisde .list-group-submenu .list-group-item {padding:10px 0;color:#56565a;
+.panel.aisde .list-group-item li a:hover {color:#56565a;}
+.panel.aisde .list-group-item li a.active {color:#002f5f} 
+.panel.aisde .list-group-submenu {margin-bottom:15px;  padding:0  ;-webkit-transition: all 0.15s;-moz-transition: all 0.15s;-o-transition: all 0.15s;-ms-transition: all 0.15s;transition: all 0.15s;}
+.panel.aisde .list-group-submenu .list-group-item {padding:0;color:#56565a;
 	-webkit-transition: all 0.15s;-moz-transition: all 0.15s;-o-transition: all 0.15s;-ms-transition: all 0.15s;transition: all 0.15s;}
 .panel.aisde .list-group-menu {padding:0 0;}
-.panel.aisde .list-group-menu li {padding:15px 15px;border-top:1px solid #ddd;font-size:14px;letter-spacing:-1px;font-weight:500;}
+.panel.aisde .list-group-menu li {padding:15px 10px;border-top:1px solid #ddd;font-size:14px;letter-spacing:-1px;font-weight:500;}
 .panel.aisde .list-group-menu li a {color:#002f5f;}
 .panel.aisde .list-group-menu li a:hover {color:#0075a4}
 .panel.aisde .list-group-menu li a.active {color:#0075a4}
 .category-titbox {display:table;width:100%;padding:0 0 15px;table-layout:fixed;box-sizing:border-box;}
-.category-titbox .ce-title {display:table-cell;width:60%;padding:20px 0 0 15px;vertical-align:top;font-size:14px;letter-spacing:-1px;font-weight:500;box-sizing:border-box;}
+.category-titbox .ce-title {display:table-cell;width:60%;padding:20px 0 0 10px;vertical-align:top;font-size:14px;letter-spacing:-1px;font-weight:500;box-sizing:border-box;}
 .category-titbox .ce-title a {color:#002f5f;font-weight:500}
-.category-titbox .ce-title a:hover {color:#0075a4}
-.category-titbox .ce-title a.active {color:#0075a4}
+.category-titbox .ce-title a:hover {color:#002f5f;}
+.category-titbox .ce-title a.active {color:#0075a4} 
 .category-titbox .ce-btn {display:table-cell;width:30%;text-align:right;vertical-align:middle;box-sizing:border-box;}
 .category-titbox .ce-btn a { display:inline-block; height:38px; padding-top:10px; padding-right:18px }
-.category-titbox .ce-btn a .pull-right.icon-minus{ margin-top:10px;} 
-.category-titbox .sub-item .icon-minus:before { font-size:20px; font-weight:700; } 
+.category-titbox .ce-btn a .pull-right.icon-minus{ margin-top:10px;}  
+.category-titbox .list-group-item .icon-minus:before { font-size:20px; font-weight:700; } 
 .category-titbox.sub {border-top:1px solid #ddd}
+.category-titbox.sub:first-child {border-top:0}
+.product-list-left-refinements-slot .product__facet .facet .facet__list label {color: #56565a; }
+.product__facet .facet .facet__list label {color: #56565a;}
 
 /* 주문결제*/
 .akl .payment-promotion {clear:both;display:block;padding:50px 0 30px;}
