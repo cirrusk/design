@@ -1243,8 +1243,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .cartlist-td {margin-top:40px;font-size:14px;font-weight:400;}
 .akl .cartlist-mbweight {display:block;font-size:14px;margin-top:10px;overflow:hidden;}
 .akl .cartlist-mbleft {font-weight:500}
-.akl .cartlist-mbright {color:#55565a;font-weight:400;}
-
+.akl .cartlist-mbright {color:#55565a;font-weight:400;} 
 
 /* 주문결제 > 주문불가제품알림 팝업 */
 .pop-prot-body {padding:0 0;border-bottom:1px solid #e3e3e3;}
@@ -1938,12 +1937,19 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 	.new-shipp-info .detail-content .new-cart .delv-shopbox {width:100%;}
 	.new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:0;}
-	.new-shipp-info .detail-content .new-cart .delv-shopbox .phone-group {margin-left:0;}
+	.new-shipp-info .detail-content .new-cart .delv-shopbox .phone-group {margin-left:0; padding-left:0 !important;}
 	.new-shipp-info .detail-content .new-cart .delv-shopbox .form-group .address input[type="text"] {width:100%;}
 
 	/* 주문결제 > 복수 > 배송지 목록(복수)*/
 	.pop-revenge-web {display:none;}
 	.pop-revenge-mob {display:block;}
+	.new-shipp-info .panel-body .form-group.def-ship_new { margin-top:0}
+	.new-shipp-info .panel-body .form-group.def-ship_new .Defaul-taddr { padding-left:0; width:100%;}
+	.new-shipp-info .panel-body .new-shipp-info .phone-group {padding-left:0 !important;}
+	.new-shipp-info .panel-body .new-cart .form-group input {margin-left:0} 
+	.new-shipp-info .panel-body .detail-content .new-cart .delv-shopbox .form-group .address p {margin-right:105px;} 
+	.new-shipp-info .panel-body .phone-group > .control-group + .form-group { padding-right:10px} 
+	.new-shipp-info .panel-body .phone-group > .control-group + .form-group input {margin-left:10px; }  
 
 	/* 주문결제 > 픽업주문 */
 	.pickup-ap .btn-ap {display:block;padding-left:0;}
@@ -2054,5 +2060,6 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 @media (max-width: 360px) {
 	.akl .popup-img-list { width:100%;}
+
 }
 
