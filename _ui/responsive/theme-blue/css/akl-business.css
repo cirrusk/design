@@ -46,8 +46,8 @@
 .mgt25 {margin-top:25px !important}
 .mgt35 {margin-top:35px !important}
 
-.tbl_type {display:table; width:100%}
-.tbl_type > * {display:table-cell; vertical-align:middle}
+.tbl_type, .tbl-type {display:table; width:100%}
+.tbl_type > *, .tbl-type > * {display:table-cell; vertical-align:middle}
 
 /* 비즈니스 > 암웨이-현대 제휴카드 */
 .business .box-gray {padding:40px; background-color:#f4f4f4}
@@ -66,10 +66,23 @@
 .business .card-info .info .title-h6 {}
 .business .card-info .info.type01 .inner {min-height:240px;}
 .business .card-info .info.type02 .inner {min-height:214px;}
-.business .card-info .info .inner {margin-top:10px; padding:38px 37px 20px 37px; box-sizing:border-box; border:1px solid #dadada}
+.business .card-info .info .inner {margin-top:14px; padding:38px 37px 20px 37px; box-sizing:border-box; border:1px solid #dadada}
 .business .card-info .info .inner .txt {font-weight:500; color:#002f5f}
 .business .card-info .info .inner .list-type5 {}
 .business .card-info .info .inner .txt-italic {margin-top:5px}
+
+.business .card-receive {}
+.business .card-receive h3 {margin-top:38px}
+.business .card-receive .tbl-type {padding:40px;margin-top:15px; background-color:#fafafa}
+.business .card-receive .tbl-type li {width:34%; height:83px; text-align:center}
+.business .card-receive .tbl-type li + li {border-left:1px solid #e3e3e3}
+.business .card-receive .tbl-type li:nth-child(1) {padding-left:5%}
+.business .card-receive .tbl-type li:nth-child(2) {width:32%}
+.business .card-receive .tbl-type li:nth-child(3) {padding-right:5%}
+.business .card-receive .tbl-type li > span {display:inline-block; vertical-align:middle;}
+.business .card-receive .tbl-type li > .img {}
+.business .card-receive .tbl-type li > .txt {margin-left:20px; text-align:left; color:#002f5f; font-weight:500}
+.business .card-receive .tbl-type li > span span {display:block; margin-top:5px; color:#808285; font-weight:300; font-size:13px}
 
 /* 비즈니스 > 나의탑업 */
 .topup-search { margin-top:38px; margin-bottom:38px; }
@@ -361,6 +374,11 @@ ul.woo-step-box li:last-child:before {background:none}
 	
 	/* 암웨이-현대 제휴카드 */
 	.business .card-info .info.type02 .inner {min-height:250px;}
+	
+	.business .card-receive .tbl-type  {padding:40px 10px}
+	.business .card-receive .tbl-type li:nth-child(1) {width:26%; padding-left:0}
+	.business .card-receive .tbl-type li:nth-child(2) {width:43%}
+	.business .card-receive .tbl-type li:nth-child(3) {width:31%; padding-right:0}
 }
 @media (max-width: 1148px){
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
@@ -448,6 +466,15 @@ ul.woo-step-box li:last-child:before {background:none}
 	
 	.business .card-info .info + .info {margin-top:32px}
 	.business .card-info .info .inner {min-height:auto !important; padding:15px 17px;}
+	
+	.business .card-receive .tbl-type {display:block; padding:12px 22px}
+	.business .card-receive .tbl-type li {display:table; width:100% !important; height:auto; padding:20px 10px !important; text-align:left}
+	.business .card-receive .tbl-type li + li {border-top:1px solid #e3e3e3; border-left:0}
+	.business .card-receive .tbl-type li > span {display:table-cell}
+	.business .card-receive .tbl-type li > .img {width:57px; text-align:center}
+	.business .card-receive .tbl-type li:nth-child(2) > .img img {width:76%}
+	.business .card-receive .tbl-type li > .img img {width:98%}
+	.business .card-receive .tbl-type li > .txt {padding-left:25px}
 	
 	/*  비즈니스 > 그룹 내 총 반품 */ 
 	.list-content.business-type01 + .tbl-list-board {background: #f4f4f4 }
