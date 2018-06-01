@@ -33,6 +33,43 @@
 .business .list-content.business-type01 .w40 {width:40%}
 .business .list-content.business-type01 .w60 {width:60%} 
 
+.fs14 {font-size:14px}
+.fs16 {font-size:16px !important}
+.blck {display:block}
+.blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
+.hr {display:block; margin-top:40px; padding-top:40px ; border-top:1px solid #dadada}
+.layerWrapper .hr {margin-top:35px; padding-top:35px;}
+.mgt5 {margin-top:5px !important}
+.mgt10 {margin-top:10px !important}
+.mgt15 {margin-top:15px !important}
+.mgt20 {margin-top:20px !important}
+.mgt35 {margin-top:35px !important}
+
+.tbl_type {display:table; width:100%}
+.tbl_type > * {display:table-cell; vertical-align:middle}
+
+/* 비즈니스 > 암웨이-현대 제휴카드 */
+.business .box-gray {padding:40px; background-color:#f4f4f4}
+.business .box-gray.img-type01 .info {padding:0 40px 0 10px !important}
+.business .box-gray.img-type01 .info .tit {display:block; margin-top:35px; color:#002f5f; font-weight:500; font-size:40px; text-align:left; margin-bottom:0; text-transform:none}
+.business .box-gray.img-type01 .info .txt {margin-top:28px; font-size:16px; line-height:23px}
+.business .box-gray.img-type01 .info .txt em {display:block; font-size:16px; font-weight:500; color:#002f5f}
+.business .box-gray.img-type01 .info .btn-wrap {display:block; margin-top:32px}
+.business .box-gray.img-type01 .img img {box-shadow:12px 12px 20px rgba(0,0,0,0.05)}
+
+.business .card-info {margin-top:38px !important}
+.business .card-info + .card-info {margin-top:28px !important}
+.business .card-info .info {}
+.business .card-info .info:first-child {padding-left:0}
+.business .card-info .info:last-child {padding-right:0}
+.business .card-info .info .title-h6 {}
+.business .card-info .info.type01 .inner {min-height:240px;}
+.business .card-info .info.type02 .inner {min-height:214px;}
+.business .card-info .info .inner {margin-top:10px; padding:38px 37px 20px 37px; box-sizing:border-box; border:1px solid #dadada}
+.business .card-info .info .inner .txt {font-weight:500; color:#002f5f}
+.business .card-info .info .inner .list-type5 {}
+.business .card-info .info .inner .txt-italic {margin-top:5px}
+
 /* 비즈니스 > 나의탑업 */
 .topup-search { margin-top:38px; margin-bottom:38px; }
 .business .topup-search .cuton-sel select  {width:150px;  } 
@@ -80,7 +117,8 @@
 .report-body {}
 .report-body .title-h6 { margin-bottom:30px}
 .report-body .panel b{ font-size:14px;}
-.report-body .accordion-custom .icon-minus { margin-top:-5px;} 
+.report-body .accordion-custom .icon-minus { margin-top:-5px;}
+.report-body .accordion-custom .icon-minus:before {font-size: 20px !important;} 
 .report-body li { list-style:160%} 
 
 /*  비즈니스 > 사업현황보고서 */
@@ -108,7 +146,8 @@
 .col-search-tab.num04  ul li:nth-of-type(4) a{  border-right: 1px solid #dadada;  }
 
 /*  비즈니스 > 사업성장 특별보상 프로그램 */
-.akl .business .akl-toggle-wrap { margin-top:40px} 
+.akl .business .akl-toggle-wrap { margin-top:40px}
+.akl .business .accordion-custom .icon-minus:before { font-size: 20px; }
 .title-h2 + p { margin-top:10px }
 .akl .pin-statelist { overflow:hidden; margin-top:5px; margin-bottom:35px;text-align:center} 
 .akl .pin-statelist .pin-state { display:inline-block; height:204px; width:400px; padding-top:27px; border:1px solid #dadada}
@@ -219,20 +258,6 @@
 
 
 /* 비즈니스 > 사랑의 우수리 */
-.fs14 {font-size:14px}
-.fs16 {font-size:16px !important}
-.blck {display:block}
-.blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
-.hr {display:block; margin-top:40px; padding-top:40px; border-top:1px solid #dadada}
-.layerWrapper .hr {margin-top:35px; padding-top:35px;}
-.mgt5 {margin-top:5px !important}
-.mgt10 {margin-top:10px}
-.mgt15 {margin-top:15px}
-.mgt20 {margin-top:20px}
-
-.tbl_type {display:table; width:100%}
-.tbl_type > * {display:table-cell; vertical-align:middle}
-
 .confirm-box-message:before {font-weight:400}
 .radio-wrapper.type02 > div + div {margin-top:10px}
 .btn-center.line {border-top:1px solid #e3e3e3; padding-top:40px; margin-top:30px}
@@ -327,6 +352,73 @@ ul.woo-step-box li:last-child:before {background:none}
 .list_woo_donate .tbl_type span {width:20%; font-size:13px; background-color:#f4f4f4}
 .list_woo_donate .tbl_type em {}
 
+/* MAX */
+@media (max-width: 1220px){
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
+	.box-diagram02 .diag-calculation .math-txt.plus {width:6%;}
+	.box-diagram02 .diag-calculation .math-txt.last {width:38%;}
+	
+	/* 암웨이-현대 제휴카드 */
+	.business .card-info .info.type02 .inner {min-height:250px;}
+}
+@media (max-width: 1148px){
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
+	.box-diagram02 .diag-calculation {width:auto; padding-right:30px;} 
+	.box-diagram02 .diag-calculation>p {width:auto;}
+	.box-diagram02 .diag-calculation p>.math-txt:first-child {width:auto; min-width:150px} 
+	.box-diagram02 .diag-calculation [class^=ico-type] {padding-left:72px}
+	.box-diagram02 .diag-calculation .math-txt em { text-align:left; margin-left:10px }
+	.box-diagram02 .diag-calculation .ico-type-plus {padding-left:0;}
+	.box-diagram02 .diag-calculation .math-txt {width:auto; min-width:80px; text-align:center;}
+	.box-diagram02 .box-diagram02.diag-calculation .math-txt.plus {width:auto; min-width:50px; text-align:center;}
+	.box-diagram02 .diag-calculation .math-txt.last {width:auto;}  
+}
+
+@media (max-width:992px) {
+
+	/* 비즈니스 */
+	.business .filter-search {border:0 none;}
+	.business .filter-search .toggle-buttons-container button {float:left;border:1px solid #d3d3d3;width:calc(50% - 6px)}
+	.business .filter-search .toggle-buttons-container button + button {float:left;border:1px solid #d3d3d3;width:calc(50% - 6px);margin-left:12px;}
+    .business .filter-search .form-wrapper {width:100%;}
+    .business .filter-search .cuton-form-wrapper .form-s input.input-st {width:100%;padding-right:50px;}
+	.business .filter-search .cuton-form-wrapper .form-s button {border:0 none;}
+	.business .filter-search .cuton-form-wrapper .form-s .btn-primary span {display:none}
+	.business .filter-search .form-s {position:relative;}
+	.business .filter-search .form-s .btn.btn-primary { position: absolute;right:0; top:0; width:40px; padding:0; border:0;  background: url(../images/search@2x_mobile.png) no-repeat 50% 50% !important; background-size: 15px auto !important; }
+ 
+	.business .filter-search .col-md-12 {padding:0}
+	.business .filter-search .cuton-sel select.w150 {width:calc(50% - 6px) !important; float:left; margin-right:0 !important}
+	.business .filter-search .cuton-sel select.w150 + select {margin-left:12px}
+	.business .filter-search .label-sel {display:none} 
+	
+	.business .tbl-list-board .tr>div.th{     background: #f4f4f4;}
+	.business .form-wrapper.busi-search { padding-bottom:0}
+	.business .form-wrapper.busi-search .form-s { height: auto; margin-bottom:0;}
+	.business .reset-btn-wrap { padding:10px 0 0; display:block; text-align: center;}
+	
+	/* 암웨이-현대 제휴카드 */
+	.business .card-info .info.type01 .inner {min-height:260px;}
+	.business .card-info .info.type02 .inner {min-height:310px;}
+	
+	/* 비즈니스 > 사랑의 우수리 */ 
+	.woo-top {background-size:60%}
+	
+	.woo-ex {padding:20px 10px 20px 30px}
+	.woo-ex .left {width:400px}
+	
+	.woo-ex-price .sec {padding:0;}
+	.woo-ex-price .sec + .sec {margin-top:20px}
+	
+	.list_woo_donate ul li {width:50%}
+}
+
+@media (max-width:940px){
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
+	.box-diagram02 .diag-calculation {  width:100%; padding:0 ; } 
+	.box-diagram02 .diag-calculation>p {width:100%;}
+}
+
 @media (max-width: 768px) {
  
 	/* 비즈니스 */ 
@@ -343,7 +435,18 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business .list-content.business-type01 .thumb-type .con-list-item > div.thumb {padding-left:0}
 	.business .cart-popup__item-info {padding:25px 20px !important}
 	.business .m-hide {display:none !important} 
- 
+	
+	/* 비즈니스 > 암웨이-현대 제휴카드 */
+	.business .box-gray.img-type01 .info {text-align:center; padding:0 !important}
+	.business .box-gray.img-type01 .info .tit {margin-top:32px; font-size:28px; text-align:center}
+	.business .box-gray.img-type01 .info .txt {margin-top:20px;}
+	.business .box-gray.img-type01 .info .txt-italic {display:inline}
+	.business .box-gray.img-type01 .info .btn-wrap {margin-top:25px}
+	.business .box-gray.img-type01 .img {text-align:center}
+	.business .box-gray.img-type01 .img img {width:101px; box-shadow:6px 6px 6px rgba(0,0,0,0.04)}
+	
+	.business .card-info .info + .info {margin-top:32px}
+	.business .card-info .info .inner {min-height:auto !important; padding:15px 17px;}
 	
 	/*  비즈니스 > 그룹 내 총 반품 */ 
 	.list-content.business-type01 + .tbl-list-board {background: #f4f4f4 }
@@ -440,7 +543,7 @@ ul.woo-step-box li:last-child:before {background:none}
 	.popup-calculation { height:788px; background:url(../images/akl_common/business/img_pop_01_mob.png) no-repeat 50% 0; background-size:305px auto }
 	
 	/* 비즈니스 > 사랑의 우수리 */
-	.woo-top {min-height:500px; padding:15px; background-size:contain}
+	.woo-top {min-height:500px; padding:15px; background-size:contain !important}
 	.woo-top dl {width:100%; padding:0}
 	.woo-top dl dt {font-size:28px}
 	.woo-top dl dd {font-size:16px}
@@ -490,72 +593,6 @@ ul.woo-step-box li:last-child:before {background:none}
 	.list_woo_donate .tbl_type em {background-color:#f4f4f4} 
 }
 
-@media (min-width:992px){
-	/* 비즈니스 > 사랑의 우수리 */ 
-	.woo-ex-price .sec {float:left; width:33.333333%;} 
-}
-
-@media (max-width: 992px) {
-
-	/* 비즈니스 */
-	.business .filter-search {border:0 none;}
-	.business .filter-search .toggle-buttons-container button {float:left;border:1px solid #d3d3d3;width:calc(50% - 6px)}
-	.business .filter-search .toggle-buttons-container button + button {float:left;border:1px solid #d3d3d3;width:calc(50% - 6px);margin-left:12px;}
-    .business .filter-search .form-wrapper {width:100%;}
-    .business .filter-search .cuton-form-wrapper .form-s input.input-st {width:100%;padding-right:50px;}
-	.business .filter-search .cuton-form-wrapper .form-s button {border:0 none;}
-	.business .filter-search .cuton-form-wrapper .form-s .btn-primary span {display:none}
-	.business .filter-search .form-s {position:relative;}
-	.business .filter-search .form-s .btn.btn-primary { position: absolute;right:0; top:0; width:40px; padding:0; border:0;  background: url(../images/search@2x_mobile.png) no-repeat 50% 50% !important; background-size: 15px auto !important; }
- 
-	.business .filter-search .col-md-12 {padding:0}
-	.business .filter-search .cuton-sel select.w150 {width:calc(50% - 6px) !important; float:left; margin-right:0 !important}
-	.business .filter-search .cuton-sel select.w150 + select {margin-left:12px}
-	.business .filter-search .label-sel {display:none} 
-	
-	.business .tbl-list-board .tr>div.th{     background: #f4f4f4;}
-	.business .form-wrapper.busi-search { padding-bottom:0}
-	.business .form-wrapper.busi-search .form-s { height: auto; margin-bottom:0;}
-	.business .reset-btn-wrap { padding:10px 0 0; display:block; text-align: center;}
-	
-	/* 비즈니스 > 사랑의 우수리 */ 
-	.woo-top {background-size:60%}
-	
-	.woo-ex {padding:20px 10px 20px 30px}
-	.woo-ex .left {width:400px}
-	
-	.woo-ex-price .sec {padding:0;}
-	.woo-ex-price .sec + .sec {margin-top:20px}
-	
-	.list_woo_donate ul li {width:50%}
-}
-
-@media (max-width: 1220px){
-	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
-	.box-diagram02 .diag-calculation .math-txt.plus {width:6%;}
-	.box-diagram02 .diag-calculation .math-txt.last {width:38%;}
-}
-@media (max-width: 1148px){
-	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
-	.box-diagram02 .diag-calculation {width:auto; padding-right:30px;} 
-	.box-diagram02 .diag-calculation>p {width:auto;}
-	.box-diagram02 .diag-calculation p>.math-txt:first-child {width:auto; min-width:150px} 
-	.box-diagram02 .diag-calculation [class^=ico-type] {padding-left:72px}
-	.box-diagram02 .diag-calculation .math-txt em { text-align:left; margin-left:10px }
-	.box-diagram02 .diag-calculation .ico-type-plus {padding-left:0;}
-	.box-diagram02 .diag-calculation .math-txt {width:auto; min-width:80px; text-align:center;}
-	.box-diagram02 .box-diagram02.diag-calculation .math-txt.plus {width:auto; min-width:50px; text-align:center;}
-	.box-diagram02 .diag-calculation .math-txt.last {width:auto;}  
-}
-
-
-@media (max-width:940px){
-	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
-	.box-diagram02 .diag-calculation {  width:100%; padding:0 ; } 
-	.box-diagram02 .diag-calculation>p {width:100%;}
-}
- 
-
 @media (max-width: 360px) { 
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.box-ratio ul li.thead div span:nth-of-type(1),.box-ratio ul li.tbody div span:nth-of-type(1) { height:110px }
@@ -568,4 +605,13 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram .diag-calculation>p {background-size: auto 68px !important;}
 	.box-diagram02 .diag-calculation>p { background-size: auto 96px ;} 
 }
+
+/* MIN */
+@media (min-width: 768px) {
+	.box-gray.img-type01 .img {float:right}
+}
  
+@media (min-width:992px){
+	/* 비즈니스 > 사랑의 우수리 */ 
+	.woo-ex-price .sec {float:left; width:33.333333%;} 
+}
