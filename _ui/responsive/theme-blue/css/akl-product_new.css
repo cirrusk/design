@@ -84,19 +84,25 @@ Version : AKL Hybris UIUX 1.0
 .code-im  {position:relative;display:block;height:180px;width:100%;text-align:center;vertical-align:bottom;margin:0 auto;}
 .code-im span {position:absolute;bottom:0;left:0;right:0;text-align:center;}
 .code-im span img {display:block;text-align:center;margin:0 auto;}
-.pcomp-list div.comp-info {display:table-cell;vertical-align:top;text-align:center;position:relative;}
-.comp-info dl {vertical-align:top;width:100%;text-align:center;margin:10px auto 0;}
-.comp-info dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
-.comp-info dl dt span.blue {display:block;}
-.comp-info dl dd {text-align:center;padding:10px 0;}
-.comp-info dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px 0 10px;height:50px;padding:0 50px;}
-.comp-info dl dd span.cc-btn {display:block;margin:0 auto;}
+.pcomp-list div.comp-info {display:table-cell;vertical-align:top;text-align:center;box-sizing: border-box;padding:0 10px;}
+.pcomp-list div.comp-info .comp-box {position:relative;width:100%;}
+.comp-box dl {vertical-align:top;width:100%;text-align:center;margin:10px auto 0;}
+.comp-box dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
+.comp-box dl dt span.blue {display:block;}
+.comp-box dl dd {text-align:center;padding:10px 0;}
+.comp-box dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px auto 10px;height:50px;padding:0 0;width:100%;}
+.comp-box dl dd span.cc-btn {display:block;margin:0 auto;}
 
 .pcomp-list.deaf04 div.comp-info {width:25%;}
 .pcomp-list.deaf03 div.comp-info {width:33.3%;}
 .pcomp-list.deaf02 div.comp-info {width:50%;}
 .pcomp-list.deaf01 div.comp-info {width:100%;}
 .pcomp-list.deaf04 div.comp-info .free-gift{right:50%;margin-right:-130px;}
+
+/* 제품 구성 리스트 공통 */
+.pcomp-list div.comp-box .free-gift{display:table;position: absolute;top: 15px;right: 0;border-radius: 50%;height: 66px;width: 66px;background: #bbbbbb;}
+.pcomp-list div.comp-box .free-gift em{display:table-cell;vertical-align:middle;font-size: 14px;line-height: 1.5;text-align: center;color: #ffffff;font-weight: 400;letter-spacing: -1px;}
+.pcomp-list div.comp-box .free-gift br{line-height:1;}
 
 .ingestion-usage {border-top:1px solid #e3e3e3;margin-top:80px;}
 .ingestion-usage dl {clear:both;display:block;width:100%;margin:20px 0 0;padding:0;}
@@ -176,6 +182,7 @@ div.feat-txt p span.next-sort {display:block;}
 .advantage-area {clear:both;display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;margin-top: 50px;padding-top: 50px;}
 .advantage-area.bt-none{margin-top:0 !important;padding-top:50px !important;border-top:none;}
 .advantage-area.bt-none{padding:50px 0 0 !important;}
+.advantage-area.btm-line{padding-bottom:50px;border-bottom:1px solid #e3e3e3;}
 .pro-video.video-type{margin: 50px 0 0;padding-top:50px;}
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
 
