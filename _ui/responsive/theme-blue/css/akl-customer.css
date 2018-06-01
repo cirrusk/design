@@ -40,6 +40,17 @@ Version : AKL Hybris UIUX 1.0
 
 /* 암웨이소식 공통 */ 
 .customer-area .title-box .product-list-page-title { margin-top:0} 
+.akl .announcement-search-result {font-size:14px;font-weight:400;letter-spacing:-1px;padding:15px 0 0; margin-top:20px}
+.akl .announcement-search-result strong {font-size:14px;font-weight:700;color:#002f5e;}
+.customer-top { overflow:hidden; padding-bottom:20px;}
+.customer-top .announcement-search-result { float:left; margin-top:0; padding-top:0}
+.customer-top .button-group { float:right; }
+.customer-top .button-group button { background:none; color: #002f5f; font-family:'SNoto Sans KR'; font-weight:500; font-size: 14px; padding:0; height:auto;  color:#0075a4}
+.customer-top .button-group button img { width:14px; vertical-align: middle;}
+.customer-top .button-group button:before { content:"|"; display:inline-block; padding-right:10px;color:#55565a }
+.customer-top .button-group button:nth-of-type(1):before {display:none;}
+.customer-top .button-group button.on {color:#55565a;}
+.customer-top .ico-bg-sky { margin-left:5px }
 
 /* 공지사항 */
 .customer-area {padding:0;}
@@ -48,9 +59,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
 .akl .order-history-container .order-history-search-wrapper .form-wrapper .cuton-sel { text-align: right;}
 .customer-area .order-history-container .order-history-search-wrapper .form-wrapper {padding: 20px 0 0}
-.page-title.customer span {padding:0 0 0 0;}
-.akl .announcement-search-result {font-size:14px;font-weight:400;letter-spacing:-1px;padding:15px 0 0; margin-top:20px}
-.akl .announcement-search-result strong {font-size:14px;font-weight:700;color:#002f5e;}
+.page-title.customer span {padding:0 0 0 0;} 
 
 /* 공지사항 > tab */
 .akl .customer-wrap .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {min-width:148px;}
@@ -219,6 +228,32 @@ Version : AKL Hybris UIUX 1.0
 
 #show-more .text-wrap {font-family:'Noto Sans KR', sans-serif;;letter-spacing:-0.05em;font-weight:500;font-size:14px;}
 
+/* 온라인 고객센터 > 자주 묻는 질문 */
+.title-h2 + .outer-border-bottom{ margin-top:40px}
+.akl-toggle-wrap + .paging {margin-top:30px}
+.outer-border-bottom + .customer-conts{ margin-top:32px}
+.customer-form-wrapper {margin:25px 0 40px; overflow: hidden}
+.customer-form-wrapper p label{ margin-bottom: 0}
+.customer-form-wrapper .cote-s { float:left}
+.customer-form-wrapper .form-s { float:right}  
+
+/* 온라인 고객센터 > 이메일 문의 */
+.faq-login-guide { padding:18px 0;}
+.faq-login-guide p:first-child{color:#002f5f; font-weight:500; padding-bottom:5px}
+.faq-login-guide p a {color:#0075a4; font-weight:500} 
+.customer-conts p.realc + .akl-toggle-wrap{ margin-top:32px}
+.email-inquiry * { font-size:14px;}
+.email-inquiry a {color:#0075a4; font-weight:500}  
+.email-inquiry .button-control {text-align:center;}
+.form-email-inquiry { max-width:85%; margin-top:38px} 
+.form-email-inquiry .form-group select.form-control { max-width:200px; margin-right: 10px;color:#002f5f; font-weight:500 }
+.form-email-inquiry .form-group textarea { width:100%;border: solid 1px #dadada }
+.form-email-inquiry .form-group .control-label { float:left; width:15%;color:#002f5f; font-weight:500}
+.form-email-inquiry .form-group .form-item-row,.form-email-inquiry .form-group .form-file { float:left; width:85%;}
+.form-email-inquiry .form-group .form-item-row .sub-text-email { position:relative;  font-size:13px; margin-top:20px; padding-left: 10px; color:#808285}
+.form-email-inquiry .form-group .form-item-row .sub-text-email:before {content:""; position:absolute; width:3px; height:3px; background:#808285;left:0; top:8px;  }
+.form-email-inquiry .form-group .form-item-row .sub-text-email a { font-size:13px; }
+.form-email-inquiry .bouns-file-list p { max-width:100%;}
 @media (max-width: 1024px) { 
 
 }
