@@ -243,17 +243,62 @@ Version : AKL Hybris UIUX 1.0
 .faq-login-guide p a {color:#0075a4; font-weight:500} 
 .customer-conts p.realc + .akl-toggle-wrap{ margin-top:32px}
 .email-inquiry * { font-size:14px;}
+.email-inquiry textarea { width:100%;border: solid 1px #dadada; min-height: 145px; }
 .email-inquiry a {color:#0075a4; font-weight:500}  
+.email-inquiry p { margin-bottom:4px}  
+
 .email-inquiry .button-control {text-align:center;}
+.email-inquiry h3 { font-size:16px; margin:35px 0 25px }
 .form-email-inquiry { max-width:85%; margin-top:38px} 
-.form-email-inquiry .form-group select.form-control { max-width:200px; margin-right: 10px;color:#002f5f; font-weight:500 }
-.form-email-inquiry .form-group textarea { width:100%;border: solid 1px #dadada }
+.form-email-inquiry .form-group select.form-control { max-width:200px; margin-right:10px; color:#002f5f; font-weight:500 } 
 .form-email-inquiry .form-group .control-label { float:left; width:15%;color:#002f5f; font-weight:500}
-.form-email-inquiry .form-group .form-item-row,.form-email-inquiry .form-group .form-file { float:left; width:85%;}
-.form-email-inquiry .form-group .form-item-row .sub-text-email { position:relative;  font-size:13px; margin-top:20px; padding-left: 10px; color:#808285}
-.form-email-inquiry .form-group .form-item-row .sub-text-email:before {content:""; position:absolute; width:3px; height:3px; background:#808285;left:0; top:8px;  }
-.form-email-inquiry .form-group .form-item-row .sub-text-email a { font-size:13px; }
+.form-email-inquiry .form-group label.control-label { display: block; margin-top:7px;} 
+.form-email-inquiry .form-group .form-item-row,.form-email-inquiry .form-group .form-file { float:left; width:85%;} 
 .form-email-inquiry .bouns-file-list p { max-width:100%;}
+
+ 
+.akl .list-content-email {clear:both;display:table;width:100%;padding:10px 0 0;table-layout:fixed;}
+.akl .list-content-email + .paging {margin-top:30px}
+
+.akl .list-content-email .w01 { width:15%; padding:0 15px;}
+.akl .list-content-email .w02 { width:55%; padding:0 15px;}
+.akl .list-content-email .w03 { width:15%; padding:0 15px;}
+.akl .list-content-email .w04 { width:15%; padding:0 15px;}
+.akl .list-content-email .list-email-title { background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.akl .list-content-email .list-email-title:after, .list-content-email .content-list-email:after {content:'';display:table;}
+.akl .list-content-email .list-email-title > div {text-align:center; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
+.akl .list-content-email .content-list-email li {padding: 18px 0 22px;background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
+.akl .list-content-email .content-list-email .con-email-item:nth-child(even) {background:#f4f4f4;} 
+.akl .list-content-email .content-list-email .txte-wrap {display:block; font-size:14px;font-weight:400;line-height:22px;color:#56565a;letter-spacing:-0.05em;}
+.akl .list-content-email .content-list-email .txte-wrap a {display:block;  color:#56565a;font-weight:400;overflow:hidden; white-space: nowrap;text-overflow: ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-binding:url(/xe/ellipsis.xml#ellipsis)}
+.akl .list-content-email .content-list-email .txte-wrap a:hover {color:#0075a4;}
+.akl .list-content-email .content-list-email .txte-wrap.answer em{ display:inline-block; margin-right:20px; padding-left:20px; font-weight:500;color: #002f5f; background:url(../images/akl_common/ico_answer.png) no-repeat left 5px;}
+.akl .list-content-email .content-list-email .txte-wrap + .txte-wrap { margin-top:10px;}
+.akl .content-list-email .con-email-item {display:table;width:100%;vertical-align:middle;box-sizing:border-box;table-layout:fixed;}
+.akl .content-list-email .con-email-item > div {display:table-cell;vertical-align:middle;box-sizing:border-box;word-break: break-all;}
+ 
+.email-view-head {position: relative;margin-top:20px; border-bottom:1px solid #e3e3e3; padding:0 0 27px;}
+.email-view-head h2.head-title {font-size:32px;color:#002f5f; line-height:40px; font-weight: 500 }
+.email-view-head .btb-box {display:block; position:absolute; right:0; top:10px; }
+.email-view-head .btb-box button.bt-akl-txt { padding: 0; min-width:40px;s }
+.file-email-list li { color:#828282; margin-bottom:5px;}
+
+.ans-question {border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; padding:40px 0; margin:40px 0 40px}
+.ans-question .form-group { max-width:85%; }
+.ans-question .form-group .control-label { float:left; width:15%;color:#002f5f; font-weight:500} 
+.ans-question .form-group .form-item-row { float:left; width:85%;} 
+.answer-unregistered p { font-size:16px; font-weight:500}
+.answer-registration span{ color:#808285; font-size:13px; display:block;}
+.answer-registration .form-textarea { margin-top:40px}
+.answer-registration .button-control{ margin-top:20px}
+
+.add-inquiries-un { margin-top:40px; background:#f6f6f6; padding:40px}
+.add-question {border-bottom:1px solid #e3e3e3; padding-bottom:20px; margin-bottom:20px}
+.add-question p {  padding-left:30px; font-weight:500; color:#002f5e;background:url(../images/akl_common/ico_que.png) no-repeat left 0;}
+.add-question span{ color:#808285; font-size:13px; display:block; padding-left:30px}
+.add-answer p {  padding-left:30px; font-weight:500;background:url(../images/akl_common/ico_answer01.png) no-repeat left 0; }
+.add-answer span{ color:#808285; font-size:13px; display:block; padding-left:30px}
+
 @media (max-width: 1024px) { 
 
 }
