@@ -598,6 +598,14 @@ $(function() {
 
 });
 
+//고객센터
+$(function() {
+	$('#F50000_lp').click(function(event) { 
+		event.preventDefault(); 
+		layerPopOver(this,'.F50000_lp_pop');
+	}); 
+}); 
+
 //간편가입
 $(function() {
 	$('#UrlLink_Recruitment').click(function(event) { 
