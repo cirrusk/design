@@ -195,12 +195,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .hydra-list-wrap ul > li{margin-bottom: 30px;overflow: hidden;}
 .hydra-list-wrap ul > li:last-child{margin-bottom:0;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap{display: table;width: 100%;overflow: hidden;}
-.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: table-cell;width: 140px;vertical-align: middle;padding-right: 15px;} /* 20180510 - j  width: 12%; 수정 */
+.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: table-cell;width: 140px;vertical-align: middle;padding-right:20px;} /* 20180510 - j  width: 12%; 수정 */
 .hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: table-cell;vertical-align: middle;}
-.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dt{color: #0075a4;font-weight: 400;}
-.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd{font-weight: 300;color: #808285;}
-.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size: 14px;color: #808285;margin-top: 19px;}
+.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dt{color: #0075a4;font-weight: 400;font-size:16px;line-heihgt:1.5;}
+.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd{font-weight: 300;color: #808285;font-size:16px;}
+.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size: 14px;color: #808285;margin-top: 22px;}
 
 .ad-setp-lst.ar7227 dt{font-size:32px;color:#56565a;}
 .ar7227 dd strong{font-weight: 400;}
@@ -373,7 +373,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .photo-ideal-uv .photo-txt02{top: 25%;left: 0%;}
 .photo-ideal-uv .photo-txt03{bottom:14%;left: 82%;}
 
-.ideal .inge-lst04.key-vi{margin-top:19px;}
+.skin-care ul.inge-lst04.key-vi{margin-top:19px;}
 
 /* 아티스트리 트라이앵글존 패치 */
 .skin-care .com-icon span{display:inline-block;padding:9px;border:1px solid #e3e3e3;border-radius:100%;}
@@ -476,8 +476,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	/* 하이드라v */	
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum{display: block;text-align: center;overflow: hidden;width: 100%;padding: 0;margin-bottom: 12px;}
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .thum img{width: auto;height: auto;}
-	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: block;}
-	.skin-care .ingre-list-wrap.sie-box{padding:15px 10% 0;}	
+	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt{display: block;}	
+	.skin-care .ingre-list-wrap.sie-box{padding:15px 10% 0;}		
 	.advantage-area.bt-none{padding:50px 0 0 !important;}
 	.pro-video.video-type{margin: 25px 0 0;padding-top:25px;}
 	
@@ -513,7 +513,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	/*.ingre-list.ingre-list-n2 li .ingre-txt{font-weight: 300;position: absolute;top: inherit;left: inherit;margin-left: 0 !important;width: 100%;text-align: center;} 
 	.ingre-list.ingre-list-n2 li:nth-child(1) .ingre-txt{bottom:68px;}
 	.ingre-list.ingre-list-n2 li:nth-child(2) .ingre-txt{bottom:75px;}*/
-	.ideal .inge-lst04.key-vi li{font-size:12px;}	
+	.skin-care ul.inge-lst04.key-vi li{font-size:12px;}	
 	
 	/* 베이스 메이크업 공통 */
 	.base-makeup .visual-area .v-logo.beauty img{height:13px;}
@@ -620,6 +620,9 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 @media (max-width: 324px) {
+	/* 하이드라 */
+	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size:13px;}
+	
 	/* 에센셜 바잉 */
 	.ingre-list li:before{display:none;}
 	.product-video{margin-bottom:40px;}	
@@ -634,7 +637,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.ingre-list.ingre-list-n2 li .ingre-txt{font-weight: 300;position: absolute;top: inherit;left: inherit;margin-left: 0 !important;width: 100%;text-align: center;}
 	.ingre-list.ingre-list-n2 li:nth-child(1) .ingre-txt{bottom:55px;}
 	.ingre-list.ingre-list-n2 li:nth-child(2) .ingre-txt{bottom:65px;}
-	
+		
 	
 	/* 베이스 메이크업 */	
 	.triangle.circle-type .tit-child{font-size:14px;}
