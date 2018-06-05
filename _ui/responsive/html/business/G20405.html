@@ -124,16 +124,445 @@
 
 		<div class="container amway-theme business">
 			<h1 class="title-h2">암웨이 용어집</h1>
+<style>
+.glossary-wrapper {margin-top:40px;}
+.search-block {padding:40px 0 0;}
+.search-block .mobile-tip{display:none;color:#0075a4;}
+.search-block .total-glossary-terms-wrap {margin-top:36px; color:#002f5f;}
+.search-block .total-glossary-terms-wrap b {display:inline-block; padding:0 2px;font-weight:700;}
+/* 색인 */
+.sizer .sizer-row{display:table;width:100%; padding:22px 0 18px; border-bottom:1px solid #e3e3e3;}
+.sizer .sizer-row:first-child{border-top:1px solid #e3e3e3;}
+.sizer .sizer-row span{display:table-cell; width:68px; margin:0; font-size:16px; font-weight:500; vertical-align:top; color:#bbbbbb;}
+.sizer .sizer-row p {display:table-cell; vertical-align:middle;}
+.sizer .sizer-row p a {display:inline-block; min-width:35px; height:22px; font-size:19px; font-weight:400; line-height:100%; text-align:center; color:#56565a;}
+.sizer .sizer-row p a:hover{color:#0075a4;}
+.sizer .sizer-row p a:first-child{width:60px;}
+.sizer .sizer-row p a.active-label{color:#0075a4;}
+.sizer .sizer-row p a.active-label:hover{color:#002f5f;}
+.sizer .sizer-row.type-korean p a.btn-total {font-size:20px;}
+.sizer .sizer-row.type-korean p a {font-size:19px;}
+.sizer .sizer-row a.btn-total {text-align:left;}
+
+/* 용어목록 */
+.glossaryList>li {line-height:160%;}
+.glossaryList .listStar {position:relative; padding-left:10px;}
+.glossaryList .listStar:before {content:'*'; position:absolute; top:2px; left:0;}
+.alphabet .search-no-result {margin-top:40px; border:1px solid #dadada; border-width:1px 0;}
+.alphabet .search-no-result>p {margin:0;}
+.alphabet .row .search-no-result {margin:0; border-width:0 0 1px;}
+.alphabet .row>ul {display:table; width:100%;}
+.alphabet .row ul>li {display:table-row;}
+.alphabet .row ul>li>* {display:table-cell; padding:30px 0 0;vertical-align:top; box-sizing:border-box;}
+.alphabet .row ul>li>strong {width:30%; padding-left:60px; font-size:18px; font-weight:500; letter-spacing:-0.025em; color:#002f5f;}
+.alphabet .row ul>li>div {width:70%;}
+.alphabet .row+h2 {margin-top:20px;}
+.alphabet h2 {padding:40px 0; font-size:36px; font-weight:500; color:#002f5f; border-bottom:1px solid #e3e3e3;}
+.amway-theme .alphabet h2 {margin:0; text-align:left;}
+#alphabet-tip{position:fixed; z-index:100; top:50%;left:50%;width:110px;height:110px;margin-top:-55px;margin-left:-55px;font-size:40px;font-weight:500;line-height:110px;text-align:center;color:#ffffff;border-radius:50%;background:rgba(0,47,95,.8);}
+
+/* 모바일용 색인 */
+.alphabet-list {display:none;}
+
+@media (max-width:768px){
+	.glossaryList .inline {display:block;}
+	.sizer {display:none;}
+	.search-block {padding-top:0;}
+	.akl .search-block .form-s .btn>span{overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px;}
+	.show-more-products-wrapper {margin-top:30px;}
+
+	/* 용어목록 */
+	.alphabet .row>ul,
+	.alphabet .row ul>li {display:block;}
+	.alphabet .row ul>li>* {display:block; padding:0;}
+	.alphabet .row ul>li>strong {width:auto; padding-left:0; margin-bottom:12px;}
+	.alphabet .row ul>li>div {width:auto;}
+	.alphabet .row>ul>li {margin-top:40px;}
+	.alphabet .search-no-result {padding:30px;}
+
+	/* 모바일용 색인 */
+	.alphabet-list{display:block; position:fixed;z-index:99998; top:200px;right:0;overflow-y:scroll;width:40px;}
+	.alphabet-list a{position:relative;left:20px;display:block;width:20px;padding:2px 0;font-size:14px;font-weight:100;text-align:center;color:#bbbbbb;}
+	.alphabet-list a.touch-selected{font-size:18px;text-align:left;color:#ffffff;background:#002f5f;}
+	.alphabet-list a.touch-selected:before{position:absolute;top:0;bottom:0;left:-15px;width:15px;content:'';border-top-left-radius:30px;border-bottom-left-radius:30px;background:#002f5f;}
+
+}
+</style>
 			<div class="glossary-wrapper">
+				<!-- core : START -->
+				<div class="sizer">
+					<div class="sizer-row type-korean">
+						<span>한글</span>
+						<p>
+							<a href="#" class="btn-total">전체</a>
+							<a href="#">ㄱ</a>
+							<a href="#">ㄴ</a>
+							<a href="#">ㄷ</a>
+							<a href="#">ㄹ</a>
+							<a href="#">ㅁ</a>
+							<a href="#">ㅂ</a>
+							<a href="#">ㅅ</a>
+							<a href="#">ㅇ</a>
+							<a href="#">ㅈ</a>
+							<a href="#">ㅊ</a>
+							<a href="#">ㅋ</a>
+							<a href="#">ㅌ</a>
+							<a href="#">ㅍ</a>
+							<a href="#">ㅎ</a>
+						</p>
+					</div>
+					<div class="sizer-row type-english">
+						<span>ENG</span>
+						<p>
+							<a href="#" class="btn-total active-label">ALL</a>
+							<a href="#">A</a>
+							<a href="#">B</a>
+							<a href="#">C</a>
+							<a href="#">D</a>
+							<a href="#">E</a>
+							<a href="#">F</a>
+							<a href="#">G</a>
+							<a href="#">H</a>
+							<a href="#">I</a>
+							<a href="#">J</a>
+							<a href="#">K</a>
+							<a href="#">L</a>
+							<a href="#">M</a>
+							<a href="#">N</a>
+							<a href="#">O</a>
+							<a href="#">P</a>
+							<a href="#">Q</a>
+							<a href="#">R</a>
+							<a href="#">S</a>
+							<a href="#">T</a>
+							<a href="#">U</a>
+							<a href="#">V</a>
+							<a href="#">W</a>
+							<a href="#">X</a>
+							<a href="#">Y</a>
+							<a href="#">Z</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- 검색 -->
+				<div class="search-block">
+					<div class="js-search-form-wrapper">
+						<p class="form-s">
+							<input type="text" placeholder="용어를 입력하세요" class="input-st" title="검색어 입력">
+							<button type="submit" class="btn btn-primary" id="G20203b_lp1"><span>검색</span></button>
+						</p>
+					</div>
+					<div class="total-glossary-terms-wrap">총(<b>26</b>)</div>
+				</div>
+				<!-- //검색 -->
+
+				<!-- 목록 -->
+				<div class="alphabet">
+					<div class="search-no-result"><p>검색 결과가 없습니다.<p></div>
+					<h2 id="alphabet-list-a"><span>A</span></h2>
+					<div class="row">
+						<ul class="glossaryList">
+							<li>
+								<strong>ABN / sABN</strong>
+								<div>
+									ABN (Amway Business Network)
+									<span class="br">한국암웨이㈜의 ABO 위한 ABO 전용사이트입니다. ABO 전용사이트는 크게 주문과 암웨이소식, 사업지원, 나의 사무실, 자료실로 구성되어 있으며, ABO사업을 도와드리기 위한 공지사항 등이 서비스 되고 있습니다. </span>
+									<p class="listStar">
+										PC : <a href="http://www.abnkorea.co.kr" target="_blank" title="새창열림">http://www.abnkorea.co.kr,</a>
+										<span class="inline">
+										Smart phone : <a href="http://m.abnkorea.co.kr" target="_blank" title="새창열림">http://mobile.abnkorea.co.kr</a></span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<strong>ABO</strong>
+								<div>ABO (Amway Business Owner) <span class="br">암웨이 제품을 판매하고 다른 사람에게 암웨이 ABO 가입을 권유하는 암웨이 독립자영사업가를 의미한다.</span></div>
+							</li>
+							<li>
+								<strong>ABO 수첩</strong>
+								<div>신규 ABO에게 제공되는 수첩으로 암웨이에서 판매하는 제품과 사업에 필요한 전반적인 정보가 대략적으로 수록되어 있습니다. <span class="br">암웨이 ABO 등록증과 함께 암웨이에 등록되어 있는 주소지로 발송됩니다.</span></div>
+							</li>
+							<li>
+								<strong>ABO 등록증</strong>
+								<div>신규 ABO에게 암웨이에서 발송하여 드리는 ABO 등록증입니다. 암웨이 ABO수첩과 함께 암웨이에 등록되어 있는 주소지로 발송됩니다.</div>
+							</li>
+							<li>
+								<strong>Annual Sponsor</strong>
+								<div>Annual Sponsor(연간후원자) <span class="br">9월 30일 마감 기준의 후원자는 해당 회계년도 동안의 Annual Sponsor(연간후원자)이며 자격인정 계산을 위하여 변동없이 유지됩니다. 회계년도 중에 직다운라인의 탈퇴로 인하여 LOS가 변동되는 경우에도 자격인정 계산을 위한 LOS는 회계연도 시작시 9월 30일의 LOS를 기준으로 적용됩니다.</span></div>
+							</li>
+							<li>
+								<strong>AP (Amway Plaza)</strong>
+								<div>
+								AP (Amway Plaza) ABO의 사업에 필요한 제품 구매, 인수, 반품등의 서비스를 제공하며, ABO의 사업을 보다 효과적으로 지원하기 위하여 회원가입,
+								업관련 상담, 제품관련 상담 등의 서비스를 제공하는 ABO를 위한 종합적인 사업 지원센타입니다.
+								<p class="listStar">AP의 운영 형태에 따라 PUC type와 PSC type으로 구분할 수 있습니다.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h2 id="alphabet-list-b"><span>B</span></h2>
+					<div class="row">
+						<ul class="glossaryList">
+							<li>
+								<strong>BSM</strong>
+								<div>
+								BSM (Business Support Material) <span class="br">흔히 사업보조용품이라고 합니다.</span>
+								BSM의 종류에는 크게 책, 테이프 등과 같은 툴과 각종 미팅 등을 모두 포함합니다.
+								특히, 암웨이 회사가 공식적으로 발행하거나 주최하지 않은 비공식 자료나 미팅을 통칭하여 BSM이라고도 합니다.
+								</div>
+							</li>
+							<li>
+								<strong>BV</strong>
+								<div>BV (판매가격치 : Business Volume)
+								<span class="br">각 제품에 부여된 가격지수(가격의 등락에 따라 조정)로, 후원수당을 산정하는 기준 입니다. </span>
+								<p class="listStar"> PV 레벨 X  BV 점수 = 후원수당</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h2 id="alphabet-list-c"><span>C</span></h2>
+					<div class="row">
+						<div class="search-no-result"><p>검색 결과가 없습니다.<p></div>
+					</div>
 
 
+					<h2 id="alphabet-list-d"><span>D</span></h2>
+					<div class="row">
+					</div>
+
+
+					<h2 id="alphabet-list-e"><span>E</span></h2>
+					<div class="row">
+					</div>
+
+					<h2 id="alphabet-list-f"><span>F</span></h2>
+					<div class="row">
+						<ul class="glossaryList">
+							<li>
+								<strong>FC</strong>
+								<div>
+								FC는 Founder's Council의 약자로 ABO 정책위 기구를 의미합니다.
+								<span class="br">한국암웨이 탑리더로 구성되어 있으며, 한국암웨이 본사와 정기적인 미팅을 통해 암웨이 비즈니스의 정책 결정과 관련된 자문위원회의 역할을 수행합니다.</span>
+								</div>
+							</li>
+							<li>
+								<strong>FAA</strong>
+								<div>
+								FAA (Founders Achievement Award)
+								<span class="br">암웨이 세일즈 &amp; 마케팅 플랜에서 정한 보너스 지급 기준과는 달리 자국내 다이아몬드이상의 자격을 달성하고 암웨이의 윤리강령 및 행동지침을 엄격히 준수하고 윤리적이고 공정한 사업을 펼친 ABO를 위해 암웨이 공동 창업자 리치디보스·제이 밴 앤델 두분이 제공하는 특별 보너스입니다.</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<h2 id="alphabet-list-g"><span>G</span></h2>
+					<div class="row">
+						<ul class="glossaryList">
+							<li>
+								<strong>GBIS Link</strong>
+								<div>
+									GBIS Link (Global Business Information Station Link)
+									<span class="br">국제 사업에 관심이 있거나 현재 국제후원(사업)을 운영하는 ABO 리더 에게 암웨이가 진출해 있는 전세계 각 지사의 정보를 신속하게 제공해 드리고 국제(후원)사업을 보다 활성화 시키고
+									확대하는데 도움을 드릴 수 있도록 미국 본사에서 제공하는 인터넷 사이트입니다.</span>
+									접속 대상자는 국제후원 및 사업을 하는 플래티늄 이상 의 ABO입니다.
+									<ul>
+									<li>① 암웨이가 진출한 모든 국가의 세일즈 플랜 및 최신사업 정보 조회</li>
+									<li>② 국제후원하는 레그의 실적조회</li>
+									<li>③ LOS맵 확인 및 출력 (여러가지 조건으로 확인가능)</li>
+									<li>④ 레그별 자격현황 및 FAA점수 조회</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<strong>GIP</strong>
+								<div>
+								GIP (Growth Incentive Program)
+								<span class="br">암웨이 세일즈 &amp; 마케팅 플랜에 명시된 각종 보너스와는 별도로
+								매년 한국암웨이에서 ABO에 대한 노고를 보상하고자 마련하는 사업성장 특별보상 프로그램으로서 전 회계연도 총 매출액의 일정 비율분을 예산으로 별도 시행하는 특별보너스입니다.</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+
+					<h2 id="alphabet-list-h"><span>H</span></h2>
+					<div class="row">
+					</div>
+
+					<h2 id="alphabet-list-i"><span>I</span></h2>
+					<div class="row">
+					</div>
+
+					<h2 id="alphabet-list-j"><span>J</span></h2>
+					<div class="row">
+					</div>
+
+					<h2 id="alphabet-list-k"><span>K</span></h2>
+					<div class="row">
+					</div>
+
+					<h2 id="alphabet-list-l"><span>L</span></h2>
+					<div class="row">
+						<ul class="glossaryList">
+							<li>
+								<strong>LOS MAP</strong>
+								<div>
+									LOS MAP (Line Of Sponsorship Map)
+									<span class="br">본인으로부터 하위 다운라인을 볼 수 있는 리스트를 말하며, 각 지역 Amway Plaza에서 신청하여 받아보실 수 있습니다.</span>
+									<p class="listStar">LOS map에 나타나는 숫자는 자격레벨을 의미합니다. ('2'=Platinum이상, '4' = GP&amp;SP, '6'=SPS , '9'=일반ABO)</p>
+									</div>
+							</li>
+							<li>
+								<strong>LSP</strong>
+								<div>LSP (Local Sourcing Product) <span class="br">한국암웨이가 독자적으로 개발한 국내제품(One for One)을 의미합니다.</span></div>
+							</li>
+						</ul>
+					</div>
+
+
+					<h2 id="alphabet-list-m"><span>M</span></h2>
+					<div class="row">
+					</div>
+
+					<h2 id="alphabet-list-m"><span>N</span></h2>
+					<div class="row">
+						<ul class="glossaryList">
+							<li>
+								<strong>NCA</strong>
+								<div>
+									NCA (Non Cash Award)는 한국암웨이에서 제공하는 인센티브로서 주로 세미나 및 여행프로그램을 의미합니다.<span class="br">예를 들어 다음과 같습니다.</span>
+									<ul>
+									<li>1. 다이아몬드 인비테이셔널 </li>
+									<li>2. ADA/NPI 인센티브여행 </li>
+									<li>3. 리더십 세미나  </li>
+									<li>4. 다이아몬드 세미나  </li>
+									<li>5. 뉴 에메랄드 포럼 </li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<p class="text-center show-more-products-wrapper">
+					<a type="button" id="show-more" class="btn btn-link"><span class="text-wrap">더보기</span><span class="icon icon-arrow-dropdown"></span></a>
+				</p>
+				<!-- //목록 -->
+
+				<div class="alphabet-list">
+					<a href="#alphabet-list-a" id="a-label-1">A</a>
+					<a href="#alphabet-list-b" id="a-label-2">B</a>
+					<a href="#alphabet-list-c" id="a-label-3">C</a>
+					<a href="#alphabet-list-d" id="a-label-4">D</a>
+					<a href="#alphabet-list-e" id="a-label-5">E</a>
+					<a href="#alphabet-list-f" id="a-label-6">F</a>
+					<a href="#alphabet-list-g" id="a-label-7">G</a>
+					<a href="#alphabet-list-h" id="a-label-8">H</a>
+					<a href="#alphabet-list-i" id="a-label-9">I</a>
+					<a href="#alphabet-list-j" id="a-label-10">J</a>
+					<a href="#alphabet-list-k" id="a-label-11">K</a>
+					<a href="#alphabet-list-l" id="a-label-12">L</a>
+					<a href="#alphabet-list-m" id="a-label-13">M</a>
+					<a href="#alphabet-list-n" id="a-label-14">N</a>
+					<a href="#alphabet-list-o" id="a-label-15">O</a>
+					<a href="#alphabet-list-p" id="a-label-16">P</a>
+					<a href="#alphabet-list-q" id="a-label-17">Q</a>
+					<a href="#alphabet-list-r" id="a-label-18">R</a>
+					<a href="#alphabet-list-s" id="a-label-19">S</a>
+					<a href="#alphabet-list-t" id="a-label-20">T</a>
+					<a href="#alphabet-list-u" id="a-label-21">U</a>
+					<a href="#alphabet-list-v" id="a-label-22">V</a>
+					<a href="#alphabet-list-w" id="a-label-23">W</a>
+					<a href="#alphabet-list-x" id="a-label-24">X</a>
+					<a href="#alphabet-list-y" id="a-label-25">Y</a>
+					<a href="#alphabet-list-z" id="a-label-26">Z</a>
+				</div>
+				<!-- //core : END -->
 			</div>
 		</div>
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+<script type="text/javascript">
+$(function () {
+	/*
+	$(".alphabet .row > a").click(function (e) {
+		e.preventDefault();
+		var prev = $(this).prev(".col-md-8");
+		if (prev.hasClass("open")) {
+			prev.removeClass("open")
+		} else {
+			prev.addClass("open")
+		}
+	}); */
+
+	var aT;
+	var alphabetsTop = []; //색인 위치  array
+	var aL = $(".alphabet h2");
+	var H = $(document).height();
+	$(".alphabet-list").css("max-height", H - 80);
+
+	var headerHeight = $('#header').outerHeight(true); //60px
+	//console.log(headerHeight);
+
+	function arrayBuild(){
+		if (alphabetsTop.length == 0) {
+			for (var i = 0; i < aL.length; i++) {
+				alphabetsTop.push(aL.eq(i).offset().top - 100); //header 높이 60px + 여백 40px
+			}
+		}
+	}
+
+	$(document).on("touchstart touchmove", function () {
+		arrayBuild();
+	});
 
 
+	$(document).on("touchend", function () {
+		var cP = $(document).scrollTop()+45;
+		for( var i = 0; i< alphabetsTop.length; i++){
+			if(cP > alphabetsTop[i] && cP < alphabetsTop[i+1]){
+				$(".alphabet-list a").removeClass("touch-selected")
+				$("#"+"a-label-"+(i+1)).addClass("touch-selected");
+				return;
+			}
+			if(cP > alphabetsTop[alphabetsTop.length-1]){
+				$(".alphabet-list a").removeClass("touch-selected")
+				$("#"+"a-label-"+alphabetsTop.length).addClass("touch-selected");
+			}
+			if(cP < alphabetsTop[0]){
+				$(".alphabet-list a").removeClass("touch-selected")
+			}
+		}
+	});
 
+	$(".alphabet-list a").on("touchstart touchmove", function (e) {
+		e.stopPropagation();
+		aT = $(this).text();
+
+		if($(this).index()< aL.length){
+			$(this).addClass("touch-selected");
+			$(this).siblings().removeClass("touch-selected");
+			if ($("#alphabet-tip").length > 0) {
+				$("#alphabet-tip").text(aT);
+			} else {
+				$("body").append('<div id="alphabet-tip">' + aT + '</div>');
+			}
+			$("#alphabet-tip").show();
+		}
+
+	});
+
+	$(".alphabet-list a").on("touchend", function (e) {
+		e.stopPropagation();
+		$("#alphabet-tip").hide();
+	});
+
+});
+</script>
 </body>
 </html>
