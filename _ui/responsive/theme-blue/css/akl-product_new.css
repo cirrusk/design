@@ -20,7 +20,7 @@ Version : AKL Hybris UIUX 1.0
 .txt-info-visual .v-tit {font-size:60px;letter-spacing:-2px;font-weight:400;padding:18px 0 0;line-height:1.2;}
 .txt-info-visual .v-tit strong{font-size: 60px;font-weight:400;line-height: 1;}
 .txt-info-visual .v-tit span {display:inline-block;font-weight:500;font-size:60px;line-height: 1.2;}
-.txt-info-visual .v-txt {font-size:18px;line-height:28px;font-weight:300;margin:30px 15% 0;letter-spacing:-2px;word-break: keep-all;word-wrap: break-word;}
+.txt-info-visual .v-txt {font-size:18px;line-height:28px;font-weight:300;margin:30px 0 0;letter-spacing:-2px;word-break: keep-all;word-wrap: break-word;}
 .txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 16px;color: #808285;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
 .v-pro {margin-top:70px;width:100%;text-align:center;}
 .v-pro span {display:block;text-align:center;margin:0 auto;width:100%;}
@@ -231,15 +231,15 @@ div.feat-txt p span.next-sort {display:block;}
 
 .ad-setp-lst2 {clear:both;width:100%;} 
 .ad-setp-lst2:after {clear:both;display:block;}
-.ad-setp-lst2 li {float:left;width:25%;vertical-align:middle;margin:30px 0;}
+.ad-setp-lst2 li {float:left;width:25%;vertical-align:middle;margin:30px 0;box-sizing:border-box;padding:0 0;}
 .ad-setp-lst2 li dl {display:table;width:100%;margin:0 auto;}
-.ad-setp-lst2 li dl dt, .ad-setp-lst2 li dl dd {display:inline-block;vertical-align:middle;letter-spacing:-1px;box-sizing: border-box;}
-.ad-setp-lst2 li dl dt {text-align:center;font-weight:500;margin:0 auto;}
+.ad-setp-lst2 li dl dt, .ad-setp-lst2 li dl dd {display:table-cell;vertical-align:middle;letter-spacing:-1px;box-sizing: border-box;}
+.ad-setp-lst2 li dl dt {text-align:center;font-weight:500;margin:0 auto;width:82px;}
 .ad-setp-lst2 li dl dt > div {margin:0 auto;width:82px;text-align:center;}
 .ad-setp-lst2 li dl dt p {display:table-cell;vertical-align:middle;color:#fff !important;text-align:center;}
 .ad-setp-lst2 li dl dt p span {border-bottom:1px solid #fff;}
-.ad-setp-lst2 li dl dd {display:table-cell;font-size:14px;font-weight:300;width:(100% - 82px);}
-.ad-setp-lst2 li dl dd p {box-sizing: border-box;width:100%;margin:0 0;vertical-align:middle;text-align:left;padding:0 20px;}
+.ad-setp-lst2 li dl dd {text-align:left;width:calc(100% - 82px);}
+.ad-setp-lst2 li dl dd p {display:table-cell;vertical-align:middle;text-align:left;padding:0 10px;font-size:14px;font-weight:300;word-break:all;margin:0 0;}
 .ad-setp-lst2 li dl dt p sub{bottom:0;}
 
 .i-won {width:82px;height:82px;border-radius:50%;margin:0 auto;}
@@ -562,7 +562,7 @@ span.txt-next {display:block;}
 	.system-lst5 ul li {float:left;width:33.333%;padding:0 20px;}
 	.system-lst5 ul li .lst-won span {font-size:14px;height:120px;}
 
-	.siehe-box.top-line {padding:15px 40px 0;}
+	.siehe-box.top-line {padding:15px 20px 0;}
 	
 	.com-tit.celleffect {padding:0 0 0 0;}
 	
@@ -571,7 +571,7 @@ span.txt-next {display:block;}
 
 	.ad-setp-lst2 li dl dt {display:block;margin:0 auto;}
 	.ad-setp-lst2 li dl dd {display:block;width:100%;height:82px;text-align:center;}
-	.ad-setp-lst2 li dl dd p {padding:10px 10px 0;text-align:center}
+	.ad-setp-lst2 li dl dd p {display:block;padding:10px 10px 0;text-align:center}
 
 
 }
@@ -678,7 +678,7 @@ span.txt-next {display:block;}
 	.effet-area {padding:30px 30px;}
 	.siehe-box.midle {padding:0 0 0 0;}
 	.siehe-box {padding:0 0px}
-	.siehe-box.top-line {padding:20px 20px 0;}
+	.siehe-box.top-line {padding:20px 0 0;}
 
 	.box-tit h5, .box-tit h5 span {font-size:24px}
 	.ad-setp-lst2 li {width:50%;margin:15px auto;}
@@ -774,9 +774,6 @@ span.txt-next {display:block;}
 	.visual-area.type03.bundlepack .txt-info-visual .v-txt span {display:block;}
 
 	.pcomp-area.bundlepack {border-bottom:1px solid #e3e3e3;padding:20px 0 30px;margin-bottom:70px}
-	.pcomp-area.bundlepack .comp-info dl dt {height:20px}
-	.pcomp-area.bundlepack .comp-info dl dd {margin-top:10px}
-	.pcomp-area.bundlepack .comp-info dl dd p {height:70px;padding:0 0;width:100%;margin:0 auto}
 
 	/* 아이투고 레드 리필 */
 	.visual-area.type03.red_refill .txt-info-visual .v-txt {margin:30px 10% 0;}
