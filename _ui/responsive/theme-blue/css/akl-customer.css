@@ -78,17 +78,17 @@ Version : AKL Hybris UIUX 1.0
 .akl .bod-customer {padding:10px 0 0}
 .akl .bod-customer .search-no-result {border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3; padding:70px 0; clear:both;}
 .akl .bod-customer .content-list .con-list-item > div {font-size:14px;font-weight:400;letter-spacing:-0.05em;}
-.akl .list-row-title div.cuo-num {width:10%;padding-left:20px;}
+.akl .list-row-title div.cuo-num {width:10%;padding-left:20px}
 .akl .list-row-title div.cuo-subje {width:42%;padding-left:20px;}
 .akl .list-row-title div.cuo-cate {width:15%;padding-left:20px;}
 .akl .list-row-title div.cuo-autho {width:15%;padding-left:20px;}
 .akl .list-row-title div.cuo-date {width:18%;padding-left:20px;}
 
-.akl .con-list-item div.cuo-num {width:10%;padding-left:20px;}
+.akl .con-list-item div.cuo-num {width:10%;padding-left:20px; text-align:center}
 .akl .con-list-item div.cuo-subje {width:42%;padding:0 20px;}
-.akl .con-list-item div.cuo-cate {width:15%;padding-left:20px;}
-.akl .con-list-item div.cuo-autho {width:15%;padding-left:20px;}
-.akl .con-list-item div.cuo-date {width:18%;padding-left:20px;}
+.akl .con-list-item div.cuo-cate {width:15%;padding-left:20px; text-align:center}
+.akl .con-list-item div.cuo-autho {width:15%;padding-left:20px; text-align:center}
+.akl .con-list-item div.cuo-date {width:18%;padding-left:20px; text-align:center}
 
 .akl .con-list-item div.cuo-subje a {color:#56565a}
 .akl .con-list-item div.cuo-subje a:hover {color:#0075a4;}
@@ -134,13 +134,13 @@ Version : AKL Hybris UIUX 1.0
 .container-custom h1 {margin:0 auto;text-align:center;padding:20px 0 0}
 
 /* 뉴스룸 > 목록 */ 
-.akl .list-row-title div.news-num {width:12%;padding-left:20px;}
+.akl .list-row-title div.news-num {width:12%; }
 .akl .list-row-title div.news-subje {width:73%;padding-left:20px;}
-.akl .list-row-title div.news-date {width:15%;padding-left:20px;}
+.akl .list-row-title div.news-date {width:15%; }
 
-.akl .content-list .con-list-item div.news-num {width:12%;padding-left:20px;}
+.akl .content-list .con-list-item div.news-num {width:12%; text-align:center}
 .akl .content-list .con-list-item div.news-subje {width:73%;padding:0 20px;}
-.akl .content-list .con-list-item div.news-date {width:15%;padding-left:20px;}
+.akl .content-list .con-list-item div.news-date {width:15%; text-align:center}
 
 .akl .con-list-item div.news-subje a {color:#56565a}
 .akl .con-list-item div.news-subje a:hover {color:#0075a4;}
@@ -173,6 +173,7 @@ Version : AKL Hybris UIUX 1.0
 .new-product-box h3 {font-size:32px;font-weight:700;letter-spacing:-2px;text-align:center;color:#002f5f;padding:0}
 
 .product-item-header div.new-all-ceek {width:5%;text-align:center;}
+.product-item-header div.new-all-ceek label{ margin-bottom:0; margin-top:2px}
 .product-item-header div.shop-pro-prod {width:55%;}
 .product-item-header div.shop-pro-price {width:14%;}
 .product-item-header div.shop-pro-pvbv {width:14%;}
@@ -259,30 +260,30 @@ Version : AKL Hybris UIUX 1.0
 .form-email-inquiry .bouns-file-list p { max-width:100%;}
 
  
-.akl .list-content-email {clear:both;display:table;width:100%;padding:10px 0 0;table-layout:fixed;}
+.akl .list-content-email {clear:both; padding:10px 0 0; }
 .akl .list-content-email + .paging {margin-top:30px}
 
 .akl .list-content-email .list-email-title { background-color:#F4F4F4;padding:10px 0;display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
-.akl .list-content-email .list-email-title:after, .list-content-email .content-list-email:after {content:'';display:table;}
 .akl .list-content-email .list-email-title > div {text-align:center; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
 .akl .list-content-email .list-email-title .w01 { width:15%; padding:0 15px; }
 .akl .list-content-email .list-email-title .w02 { width:55%; padding:0 15px;}
 .akl .list-content-email .list-email-title .w03 { width:15%; padding:0 15px;}
 .akl .list-content-email .list-email-title .w04 { width:15%; padding:0 15px;} 
 
-.akl .list-content-email .content-list-email li {padding: 18px 0 ;background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;} 
-.akl .list-content-email .content-list-email .w01 { width:15%; padding:0 15px; float:left}
+.akl .list-content-email .content-list-email li {padding: 18px 0; background:#fff;display:table; box-sizing:border-box; vertical-align:middle; width:100%; margin:0; border-top:none;} 
+.akl .list-content-email .content-list-email .w01 { width:15%; padding:0 15px; float:left; text-align:center}
+.akl .list-content-email .content-list-email .w01 .txte-wrap {display:inline-block;  float:none;}
 .akl .list-content-email .content-list-email .w02 { width:85%; float:left}
 .akl .list-content-email .content-list-email .w02 >  div { overflow:hidden;}
 .akl .list-content-email .content-list-email .w02 .answer { margin-top:10px; }
 
 .akl .list-content-email .content-list-email .con-email-item:nth-child(even) {background:#f4f4f4;} 
-.akl .list-content-email .content-list-email .txte-wrap {display:block;  float:left; font-size:14px; font-weight:400;line-height:22px;color:#56565a;letter-spacing:-0.05em; }
+.akl .list-content-email .content-list-email .txte-wrap {display:inline-block;  float:left; font-size:14px; font-weight:400;line-height:22px; color:#56565a; letter-spacing:-0.05em; }
 .akl .list-content-email .content-list-email .txte-wrap:nth-of-type(1) {width:65%;}
-.akl .list-content-email .content-list-email .txte-wrap:nth-of-type(2) {width:20%; color:#808285}
-.akl .list-content-email .content-list-email .txte-wrap:nth-of-type(3) {width:15%;}
+.akl .list-content-email .content-list-email .txte-wrap:nth-of-type(2) {width:17.5%; color:#808285;text-align:center}
+.akl .list-content-email .content-list-email .txte-wrap:nth-of-type(3) {width:17.5%;text-align:center}
 
-.akl .list-content-email .content-list-email .txte-wrap a {display:block;  color:#56565a;font-weight:400;overflow:hidden; white-space: nowrap;text-overflow: ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-binding:url(/xe/ellipsis.xml#ellipsis)}
+.akl .list-content-email .content-list-email .txte-wrap a {display:block; color:#56565a; font-weight:400; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-binding:url(/xe/ellipsis.xml#ellipsis)}
 .akl .list-content-email .content-list-email .txte-wrap a:hover {color:#0075a4;}
 .akl .list-content-email .content-list-email .txte-wrap .mob { display:none}
 .akl .list-content-email .content-list-email .answer .txte-wrap em{ display:inline-block; margin-right:20px; padding-left:20px; font-weight:500;color: #002f5f; background:url(../images/akl_common/ico_answer.png) no-repeat left 5px;}
@@ -338,15 +339,16 @@ Version : AKL Hybris UIUX 1.0
 	.akl .cuton-form-wrapper .form-s button {border:0 none;} 
 
 	/* 공지사항 > 목록 */
+	.akl .bod-customer  .list-content .content-list { padding: 18px 0 16px;}
 	.akl .bod-customer .list-content .list-row-title {padding:0 0;border-bottom:0 none;}
 	.akl .bod-customer .list-content .list-row-title > div {display:none;}
-	.akl .bod-customer .con-list-item span.tite-label {display:block;}
-
-	.akl .content-list .con-list-item > div.cuo-num {display:block;width:90%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.cuo-subje {display:block;width:90%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.cuo-cate {display:block;width:90%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.cuo-autho {display:block;width:90%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.cuo-date {display:block;width:90%;padding:5px 20px;}
+	.akl .bod-customer .con-list-item span.tite-label {display:inline-block; float:left}
+	.akl .bod-customer .con-list-item span.txte-wrap {display:inline-block; float:right}
+	.akl .content-list .con-list-item > div.cuo-num {display:block;width:100%;padding:3px 20px; text-align:left}
+	.akl .content-list .con-list-item > div.cuo-subje {display:block;width:100%;padding:3px 20px;}
+	.akl .content-list .con-list-item > div.cuo-cate {display:block;width:100%;padding:3px 20px;}
+	.akl .content-list .con-list-item > div.cuo-autho {display:block;width:100%;padding:3px 20px;}
+	.akl .content-list .con-list-item > div.cuo-date {display:block;width:100%;padding:3px 20px;}
 
 	/* 공지사항 > 상세보기 */
 	.customer-wrap {padding:0 10px;}
@@ -357,6 +359,7 @@ Version : AKL Hybris UIUX 1.0
 	.bod-view-sns .print {display:none;}
 	.bod-view-sns .kakaotalk {display:inline-block;}
 	.bod-view-sns > div.url-copy .url_pop {top:32px;left:-45px;}
+	.bod-view-thumnail .img>img {width:100%; }
 
 	/* 공지사항 > 읽기화면 */
 	.easy-wrap .customer-wrap {padding:0 15px;}
@@ -364,9 +367,11 @@ Version : AKL Hybris UIUX 1.0
 	/* 뉴스룸 > 목록 */
 	.title-box .product-list-page-title h1.newsroom:before {left:0;}
 
-	.akl .content-list .con-list-item > div.news-num {display:block;width:100%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.news-subje {display:block;width:90%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.news-date {display:block;width:90%;padding:5px 20px;}
+	.akl .content-list .con-list-item > div.news-num {display:block;width:100%;padding:5px 20px; text-align:left}
+	.akl .content-list .con-list-item > div.news-subje {display:block;width:100%;padding:5px 20px;}
+	.akl .content-list .con-list-item > div.news-date {display:block;width:100%;padding:5px 20px;}
+	
+ 
 
 	/* 사회공헌뉴스 */
 	.title-box .product-list-page-title h1.social:before {left:0;}
@@ -388,14 +393,14 @@ Version : AKL Hybris UIUX 1.0
 	.new-product-head .cuton-sel select {display:block; width:100%;}
 
 	/* 신제품 > 상세보기 */
-	.product-item-header div.new-all-ceek {width:100% !important;text-align:left;padding-left:15px}
+	.product-item-header div.new-all-ceek {width:100% !important;text-align:left;padding-left:12px} 
 	.product-item-header div.shop-pro-prod {display:none;}
 	.product-item-header div.shop-pro-price {display:none;}
 	.product-item-header div.shop-pro-pvbv {display:none;}
 	.product-item-header div.shop-pro-btn {display:none;}
 
-	.product-item-list div.new-all-ceek {display:block;width:100%;text-align:left;padding-left:15px}
-	.product-item-list div.shop-pro-prod {display:block;width:100%;padding:10px 5px 0 10px;}
+	.product-item-list div.new-all-ceek {display:block;width:100%;text-align:left;padding-left:12px; padding-bottom:10px}
+	.product-item-list div.shop-pro-prod {display:block;width:100%;padding:0 5px 0 12px;}
 	.product-item-list div.shop-pro-price {clear:both;display:block;width:100%;padding:10px 5px 0 90px;}
 	.product-item-list div.shop-pro-pvbv {clear:both;display:block;width:100%;padding:10px 5px 0 90px;}
 	.product-item-list div.shop-pro-btn {clear:both;display:block;width:100%;padding:10px 5px 0 90px;text-align:left;}

@@ -344,14 +344,15 @@
 					<div id="shopping-list-content">
 						<div class="wish-promotion">
 							<ul class="shopping-cart-item-list js-shopping-cart-item-list new-shopping-cart-item-list change-shopping-cart-item-list">
-								<li class="visible-md visible-lg">
+								<!-- 수정 : 2018.06.05 (class 변경) -->
+								<li class="cart-item-header"><!-- .visible-md.visible-lg 삭제 -->
 									<div class="col-xs-12 uppercase list-header change-list-header">
 										<div class="col-xs-5 list-item-info">
 											<label class="checkbox-element-wrapper">
 												<input id="selectAllDitto" class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
 												<span class="_checkbox-element-global-span"></span>
 											</label>
-											제품
+											<em>제품</em>
 										</div>
 										<div class="col-xs-3 list-item-quantity">수량</div>
 										<div class="col-xs-2 list-item-set-price">옵션</div>
@@ -359,6 +360,9 @@
 										<div class="col-xs-1 list-item-total">소계(원)</div>
 									</div>
 								</li>
+								<!-- 수정 : 2018.06.05 (class변경) -->
+
+								<!-- 삭제 : 2018.06.05 (mob 사이즈  사용안함)
 								<li class="visible-xs">
 									<div class="col-xs-12 uppercase list-header change-list-header mob-list-header">
 										<label class="checkbox-element-wrapper">
@@ -366,11 +370,12 @@
 											<span class="_checkbox-element-global-span"></span>
 										</label>
 									</div>
-								</li>
+								</li> -->
+
 								<li class="product-list-item js-shopping-cart-list-item first-item">
 									<div class="plp-item-label-wrap">
 										<div class="plp-item-label bg-blue">프로모션</div>
-									</div> 
+									</div>
 									<div class="col-xs-12 col-md-5 product-details print-col-6">
 										<div class="product-item-element list-item-toggle">
 											<label class="checkbox-element-wrapper">
@@ -523,7 +528,7 @@
 								<li class="product-list-item js-shopping-cart-list-item first-item">
 									<div class="plp-item-label-wrap">
 										<div class="plp-item-label bg-blue">프로모션</div>
-									</div> 
+									</div>
 									<div class="col-xs-12 col-md-5 product-details print-col-6">
 										<div class="product-item-element list-item-toggle">
 											<label class="checkbox-element-wrapper">
@@ -712,7 +717,7 @@
 								<li class="product-list-item js-shopping-cart-list-item first-item">
 									<div class="plp-item-label-wrap">
 										<div class="plp-item-label bg-blue">프로모션</div>
-									</div> 
+									</div>
 									<div class="col-xs-12 col-md-5 product-details print-col-6">
 										<div class="product-item-element list-item-toggle">
 											<label class="checkbox-element-wrapper">
@@ -871,7 +876,7 @@
 								<li class="product-list-item js-shopping-cart-list-item first-item">
 									<div class="plp-item-label-wrap">
 										<div class="plp-item-label bg-blue">프로모션 세트</div>
-									</div> 
+									</div>
 									<div class="col-xs-12 col-md-5 product-details print-col-6">
 										<div class="product-item-element list-item-toggle">
 											<label class="checkbox-element-wrapper">
@@ -1016,11 +1021,11 @@
 										</div>
 									</div>
 								</li>
-								
+
 								<li class="product-list-item js-shopping-cart-list-item first-item">
 									<div class="plp-item-label-wrap">
 										<div class="plp-item-label bg-blue">프로모션</div>
-									</div> 
+									</div>
 									<div class="col-xs-12 col-md-5 product-details print-col-6">
 										<div class="product-item-element list-item-toggle">
 											<label class="checkbox-element-wrapper">
@@ -1117,7 +1122,7 @@
 								<li class="product-list-item js-shopping-cart-list-item first-item">
 									<div class="plp-item-label-wrap">
 										<div class="plp-item-label bg-blue">10개월무이자</div>
-									</div> 
+									</div>
 									<div class="col-xs-12 col-md-5 product-details print-col-6">
 										<div class="product-item-element list-item-toggle">
 											<label class="checkbox-element-wrapper">
@@ -1482,7 +1487,7 @@
 				<div class="item">
 					<div class="amway-suggest__item">
 						<div class="plp-item-label-wrap">
-							<div class="plp-item-label bg-navy">배달종료예정</div> 
+							<div class="plp-item-label bg-navy">배달종료예정</div>
 						</div>
 						<div class="amway-suggest__item-content amwahover">
 							<div class="thumnail-box">
@@ -1498,7 +1503,7 @@
 				<div class="item">
 					<div class="amway-suggest__item">
 						<div class="plp-item-label-wrap">
-							<div class="plp-item-label bg-red">종료</div> 
+							<div class="plp-item-label bg-red">종료</div>
 						</div>
 						<div class="amway-suggest__item-content amwahover">
 							<div class="thumnail-box">
@@ -1515,7 +1520,7 @@
 				<div class="item">
 					<div class="amway-suggest__item">
 						<div class="plp-item-label-wrap">
-							<div class="plp-item-label bg-navy">픽업종료예정</div> 
+							<div class="plp-item-label bg-navy">픽업종료예정</div>
 						</div>
 						<div class="amway-suggest__item-content amwahover">
 							<div class="thumnail-box">
@@ -1531,7 +1536,7 @@
 				<div class="item">
 					<div class="amway-suggest__item">
 						<div class="plp-item-label-wrap">
-							<div class="plp-item-label bg-navy">배달종료예정</div> 
+							<div class="plp-item-label bg-navy">배달종료예정</div>
 						</div>
 						<div class="amway-suggest__item-content amwahover">
 							<div class="thumnail-box">
@@ -1547,7 +1552,7 @@
 				<div class="item">
 					<div class="amway-suggest__item">
 						<div class="plp-item-label-wrap">
-							<div class="plp-item-label bg-navy">배달종료예정</div> 
+							<div class="plp-item-label bg-navy">배달종료예정</div>
 						</div>
 						<div class="amway-suggest__item-content amwahover">
 							<div class="thumnail-box">
@@ -2220,7 +2225,7 @@
 									<div class="col-ak-10 promtion-ware">
 										<span class="tite-label">제품</span>
 										<span class="txte-wrap">
-											라잇업 립글로스 
+											라잇업 립글로스
 										</span>
 									</div>
 									<div class="col-ak-10 promtion-quantity">
@@ -2413,28 +2418,28 @@
 		$(".btnClosed").click(function() {
 			$(".shoping-cart-search").hide();
 		});
-		
+
 	    //프로모션 관련 2018.05.16 추가
 		$('.remove-item-btn').click(function(){
 			$(".delete-list-box,.overlay").show();
 		});
-		
+
 		$('.view-cart').click(function(){
 			$(".delete-list-box,.overlay").hide();
 			$('.delete-example,.delete-example-gift').hide();
 		});
-		
+
 		$(".cartlist-view").click(function(){
 			$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
 		})
-		
-		$('.tooltip-btn').click(function() { 
-			$('.promotion-tip-alert').slideToggle(0);  
-		}); 
 
-		$('.tip-close').click(function() { 
+		$('.tooltip-btn').click(function() {
+			$('.promotion-tip-alert').slideToggle(0);
+		});
+
+		$('.tip-close').click(function() {
 			$('.promotion-tip-alert').hide();
-		}); 
+		});
 
 		$('#G10000_lp9').click(function(event) {
 			event.preventDefault();
@@ -2455,7 +2460,7 @@
 			event.preventDefault();
 			layerPopOver(this,'.G10000_lp8_pop');
 		});
-		
+
 		var owl = $('#recommendedListTabs');
 		owl.owlCarousel({
 			margin: 0,
@@ -2473,7 +2478,7 @@
 				items: 4
 			  }
 			}
-			
+
 		});
 
 
@@ -2489,8 +2494,8 @@
 		$('.giftList').delegate('.gift-total .opera', 'click', function(){
 			var count = $(this).attr("data");
 			var inputNum = $(this).parent().children("#amount-gift-input");
-			
-			inputNum.val(function(){ 
+
+			inputNum.val(function(){
 				var value= $(this).val();
 				var parent = $(this).parent();
 				count=="-"?value--:value++;

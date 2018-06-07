@@ -46,10 +46,11 @@ Version : AKL Hybris UIUX 1.0
 
 /* 회원가입 > 가입완료 */
 .akl .involved-ways02 {margin:0 80px; padding:40px 0 0; border-top: 1px solid #dadada;}
-.akl .involved-ways02 .list-type2 { padding:30px 0 0; border-top: 1px solid #dadada;}
+.akl .involved-ways02 .list-type2 { padding:38px 0 0; border-top: 1px solid #dadada;}
 .akl .involved-ways02 .involved-ways02-dl01 { margin-bottom:25px}
 .akl .involved-ways02 .involved-ways02-dl01 dt { font-size:16px; font-weight:500; margin-bottom:10px; color:#002f5f;}
 .akl .involved-ways02 .involved-ways02-dl01 dd p strong{ display:inline-block; padding-left:25px; background: url(../images/akl_common/icon_tel.png) no-repeat 5px 50%;}
+.akl .involved-ways02 .involved-ways02-dl02 {padding-bottom:25px}
 .akl .involved-ways02 .involved-ways02-dl02 dt { padding-left:25px; background: url(../images/akl_common/icon_mem.png) no-repeat 0 0;}
 .akl .involved-ways02 .involved-ways02-dl02 dd { padding-left:25px;}
 
@@ -101,27 +102,27 @@ Version : AKL Hybris UIUX 1.0
 .akl .datepicker-dropdown:after { display: none}
 
 .table-point-wrapper {width:100%;padding:28px 0 0}
-.table-point-wrapper ul {width:100%;border-top:1px solid #e3e3e3;}
-.table-point-wrapper ul li.thead-tit {width:100%;display:table;table-layout:fixed;background:#f4f4f4;border-bottom:1px solid #e3e3e3;padding:10px 15px;text-align:center;}
-.table-point-wrapper ul li.thead-tit span {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;}
+.table-point-wrapper ul {width:100%;border-top:1px solid #e3e3e3;display:table;table-layout:fixed;}
+.table-point-wrapper ul li.thead-tit {width:100%; display:table-row; background:#f4f4f4;border-bottom:1px solid #e3e3e3;text-align:center;}
+.table-point-wrapper ul li.thead-tit span {display:table-cell; padding:10px 15px; vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;}
 
-span.day-txt, div.day-txt {width:25%;text-align:left;}
-span.order-return-txt, div.order-divison {width:20%;text-align:left;}
+span.day-txt, div.day-txt {width:20%;text-align:center;}
+span.order-return-txt, div.order-divison {width:20%;text-align:center;}
 span.division-txt, div.division-txt {width:25%;text-align:center;}
-span.tobe-earned, span.earning-used, span.available-point {width:15%;}
-div.tobe-earned, div.earning-used, div.available-point {width:15%;}
+span.tobe-earned, span.earning-used, span.available-point {width:18%;}
+div.tobe-earned, div.earning-used, div.available-point {width:17%;}
 
-.table-point-wrapper ul li.tbody {clear:both;width:100%;display:table;table-layout:fixed;padding:16px 15px;}
-.table-point-wrapper ul li.tbody div {display:table-cell;vertical-align:middle;font-size:14px;}
+.table-point-wrapper ul li.tbody {clear:both;width:100%; display:table-row; }
+.table-point-wrapper ul li.tbody div {display:table-cell; padding:16px 15px;vertical-align:middle;font-size:14px;}
 .table-point-wrapper ul li.tbody span {font-size:14px;vertical-align:middle;}
 .table-point-wrapper ul li.tbody:nth-child(odd) {background:#f4f4f4;}
 .table-point-wrapper.mpoint ul li.tbody {border-bottom:1px solid #dadada;}
 .table-point-wrapper.mpoint ul li.tbody:nth-child(odd) {background:#fff;}
 .table-point-wrapper ul li.tbody.no-data {padding:16px 0;border-bottom:1px solid #dadada;}
 .table-point-wrapper ul li.tbody.no-data div.no-list {display:table-cell;text-align:center;width:100%;}
-ul li.tbody div.tobe-earned {text-align:right;padding:0 4.5% 0 0;}
-ul li.tbody div.earning-used {text-align:right;padding:0 4.5% 0 0;}
-ul li.tbody div.available-point {text-align:right;padding:0 3% 0 0;}
+ul li.tbody div.tobe-earned,
+ul li.tbody div.earning-used,
+ul li.tbody div.available-point {text-align:right;padding:0 2.5% 0 0;}
 .mob-earned-txt,.mob-earning-txt,.mob-available-txt,.mob-order-txt {display:none;}
 
 span.name-txt {text-align:center;width:19%;}
@@ -181,11 +182,12 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .create-new-shopping-list-container .create-shopping-list-form h6 {font-weight:500;}
 
 .wish-list-item {clear:both;display:block;}
-.wish-list-item:after {clear:both;display:block;content:''}
+.wish-list-item:after {content:'';clear:both;display:block; }
 .list-headers {clear:both;display:block;background:#f4f4f4;padding:0px 0;font-size:13px;color:#002f5f;font-weight:500;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .field-name {display:inline-block;vertical-align:middle;width:30%;}
 .field-name label {vertical-align:middle; margin-bottom:0}
-.field-memo {display:inline-block;vertical-align:middle;width:65%;}
+.field-memo {display:inline-block;vertical-align:middle;width:65%; }
+.list-headers .field-memo { padding-left:3px} 
 .list-details {clear:both;display:block;padding:20px 14px;vertical-align:middle;}
 .list-details:nth-child(odd) {background:#f4f4f4}
 .wisth-name {vertical-align:top;font-weight:500;padding-left:15px}
@@ -238,13 +240,16 @@ ul li.tbody div.mob-ttoy {display:none;}
 .shipping-top span { display:block; float:right}
 .akl .user-account-header .user-block .user-info .user-id {font-weight:400;}
 .shipping-list-head {overflow: hidden; padding:10px 0; background: #f4f4f4;border-bottom:1px solid #e3e3e3; border-top:1px solid #e3e3e3; width: 100%}
-.shipping-list-head span {float:left; font-size: 14px; padding:0 10px; font-weight:500; color:#002f5f}
-.shipping-list-head span:nth-of-type(1) { padding:0 10px 0 15px; }
+.shipping-list-head span {float:left; font-size: 14px; padding:0 10px; font-weight:500; color:#002f5f; text-align:center}
+.shipping-list-head span:nth-of-type(1) { padding:0 10px 1px 15px; }
+.shipping-list-head span:nth-of-type(3) {padding-bottom:1px; padding-right:19%}
 .shipping-list {overflow: hidden; clear:both; position: relative; padding:32px 10px 32px 0 ;border-bottom:1px solid #e3e3e3;  }
 .shipping-list div {float:left}
-.shipping-list div span {display:block;float:left; font-size: 14px}
+.shipping-list div span {display:block;float:left; font-size: 14px; text-align:center}
 .shipping-list div span i {display:block; color: #002f5f}
 .shipping-list div span em  {display:inline-block; margin-top:10px}
+.shipping-list div span:nth-of-type(1) {padding-bottom:1px;}
+.shipping-list div span:nth-of-type(2){ text-align:left}
 .shipping-list .bt-akl-blue {margin-bottom: 0}
 .list-left { position:absolute; width:120px; top:50%; margin-top:-10px; overflow: hidden; }
 .list-left span {padding:0 10px}
@@ -347,13 +352,14 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .modify #terms .col {float:left;}
 .akl .modify #terms h3 { font-size: 16px; font-weight:500; margin-bottom:20px }
 .akl .modify .col-md-2, .akl .modify .col-md-3, .akl .modify .col-md-4,.akl .modify .col-md-5,.akl .modify .col-md-5, .akl .modify .col-md-7, .akl .modify .col-md-8, .akl .modify .col-md-9,
-.akl .modify .col-md-10{padding-left: 0;}
-.akl .account-profile__panel .icon-minus:before {font-size:28px; font-weight:700;line-height:20px;font-family:'Noto Sans KR', sans-serif;}
+.akl .modify .col-md-10{padding-left: 0;} 
 .akl .account-profile__panel .text-uppercase { font-size:18px; font-weight:500; letter-spacing:-2px}
 .akl .account-profile__panel .panel-heading a  { display: block; padding: 30px 30px 30px 5px }
 .akl .account-profile__panel .icon-user-new:before,
 .akl .account-profile__panel .icon-shield:before,
-.akl .account-profile__panel .icon-mail:before { color: #008fc5; margin-right: 5px}
+.akl .account-profile__panel .icon-mail:before { font-size:18px; color:#008fc5; margin-right: 5px}
+.akl .account-profile__panel .icon-user-new02:before { font-size:18px; content:"\ea6b"; color: #008fc5; margin-right: 5px;}
+.akl .account-profile__panel .icon-user-new03:before { font-size:18px; content:"\ea6b"; color: #008fc5; margin-right: 5px;}
 .akl .account-profile .account-profile__label { text-transform:capitalize;}
 .akl .account-profile {font-size: 14px;font-family:'Noto Sans KR', sans-serif; padding: 0 1.75em 4.5em;}
 .akl .account-profile .account-profile__value, .akl .account-profile .account-profile__editor .form-group {font-size: 14px;}
@@ -413,9 +419,7 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 .certification-complete {padding:20px 0; border-top: 1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; text-align: center;}
 .certification-complete p { margin-bottom:15px;}
 .certification-complete .noti-suc {display:inline-block;  }
-#terms .col .line { bottom: 0}
-.akl .icon-user-new02:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}
-.akl .icon-user-new03:before {content: "\ea6b"; color: #008fc5; margin-right: 5px;}
+#terms .col .line { bottom: 0} 
 
 .akl .account-profile__value { padding-top:0;vertical-align:middle;}
 .akl .account-profile__editor { padding-top:0;vertical-align:middle;}
@@ -718,7 +722,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .shopping-th .th-chk, .shopping-th .th-tit {float:left;}
 .shopping-th .th-chk {width:5%;text-align:center;vertical-align:top;}
 .shopping-th .th-tit {width:95%;text-align:left;vertical-align:top;}
-.shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;box-sizing:border-box;}
+.shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;box-sizing:border-box;; text-align:center}
 .shopping-th .th-tit.th-head > div {display:table-cell;font-size:13px;font-weight:500;color:#002f5f;box-sizing:border-box;}
 .shopping-th .item-number {width:15%;}
 .shopping-th .item-subject {width:26%;}
@@ -736,13 +740,16 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 .shop-product-code {display:table-cell;width:43%;margin:0;vertical-align:middle;box-sizing:border-box;}
 .shop-product-code .shop-ptit {display:table;width:100%;}
-.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px;}
+.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px; text-align:center}
 .shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;}
 .shop-product-info {display:table-cell;width:57%;font-size:14px;margin:0;padding:0;box-sizing:border-box;}
 .shop-product-info .shop-plist {display:table;width:100%;text-align:left;table-layout:fixed;box-sizing:border-box;}
-.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:15%;font-size:14px;box-sizing:border-box;}
-.shop-product-info .shop-plist .list-price {display:table-cell;width:21.25%;text-align:right;padding:0 20px;box-sizing:border-box;}
-
+.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:25%;font-size:14px;box-sizing:border-box; text-align:center}
+.shop-product-info .shop-plist .list-price {display:table-cell; text-align:right;padding:0 10px;box-sizing:border-box; }
+.shop-product-info .shop-plist .list-price:nth-of-type(2) {width:20%; }
+.shop-product-info .shop-plist .list-price:nth-of-type(3) {width:20%; }
+.shop-product-info .shop-plist .list-price:nth-of-type(4) {width:15%;}
+.shop-product-info .shop-plist .list-price:nth-of-type(5) {width:20%; padding-right:24px}
 .shop-product-info .shop-plist .qty-label {display:none;}
 .shop-product-info .shop-plist .price-label {display:none;}
 .shop-product-info .shop-plist .total-price-label {display:none;}
@@ -755,7 +762,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .shopping-tbody .supply-price {background:#f4f4f4;}
 .shopping-tbody .supply-price span {font-weight:500;color:#002f5f}
 .shopping-tbody .supply-price span.est-label {font-size:13px;}
-.shopping-tbody .supply-price span.est-num {font-size:14px;text-align:right;padding-right:20px;}
+.shopping-tbody .supply-price span.est-num {font-size:14px;text-align:right;padding-right:10px;}
 
 /* 나의 쇼핑정보 > 중개판매관리 > 중개판매 견적내역 */
 .esthistory-box {clear:both;display:block;border-bottom:1px solid #e3e3e3;padding:20px 0}
@@ -763,20 +770,19 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .estimate-conts {clear:both;display:block;padding:30px 0 0}
 .estimate-conts p {font-size:14px;font-weight:400;}
 .estimate-conts p strong {color:#002f5e;font-weight:700;font-size:14px;}
-.estmlist-area {clear:both;display:block;}
-.estmlist-area:after {content:'';clear:both;display:block;}
-.akl .estmlist-area .list-content {padding:0 0}
-
-.akl div.esylist-no {width:8%;text-align:left;padding:0 20px;}
+.estmlist-area {clear:both;display:block;} 
+.estmlist-area:after {content:'';clear:both;display:block;} 
+.akl div.esylist-no {width:8%;text-align:left;padding:0 20px; text-align:center}
 .akl div.esylist-numname {width:58%;padding:0 10px;}
-.akl div.esylist-date {width:18%;padding:0 0px;}
-.akl div.esylist-condition {width:16%;}
-
-.esylist-num {display:inline-block;width:30%;font-size:14px}
+.akl div.esylist-date {width:18%;padding:0 0px; text-align:center}
+.akl div.esylist-condition {width:16%; text-align:center}
+ 
+.esylist-num {display:inline-block;width:30%;font-size:14px; text-align:center}
+.esylist-num a { padding-left:30px;}
 .esylist-subject {display:inline-block;width:65%;font-size:14px}
 .esylist-subject em {display:none;}
 .esylist-no {font-size:14px}
-
+.akl .estmlist-area .list-content .esylist-subject {padding-left:60px;}
 .pop-est-example {width:100%;height:auto;}
 .pop-est-example img {width:100%;height:auto;}
 
@@ -836,11 +842,11 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl div.pur-name {width:20%;padding:0 10px;}
 .akl div.pur-prod {width:18%;padding:0 0px;}
 .akl div.pur-quitey {width:10%;text-align:center;}
-.akl div.pur-day {width:15%;}
-.akl div.pur-grantor {width:13%;}
+.akl div.pur-day {width:15%; text-align:center;}
+.akl div.pur-grantor {width:13%; text-align:center;}
 .akl div.pur-btn {width:19%;text-align:left;}
 .akl div.pur-btn .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px}
-
+.akl .list-content.history .con-list-item .pur-day span.txte-wrap {width: 100%;}
 .cont-inarea {clear:both;display:table;width:100%;table-layout:fixed;padding:35px 0 0;box-sizing:border-box;}
 .cont-inarea:after {content:'';clear:both;display:block;}
 .cont-inarea .d-left {display:table-cell;width:50%;}
@@ -932,13 +938,14 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .title-box .product-list-page-title > h1.prde-reser {position:relative;font-size:18px;padding:0 0 5px;}
 .akl .title-box .product-list-page-title > h1.prde-reser:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_Intermediary.png') no-repeat left center;width:21px;height:21px;}
 
-.akl div.rese-num {width:10%;padding:0 20px;}
-.akl div.rese-condition {width:10%;}
-.akl div.rese-subje {width:48%;padding:0 20px 0 0;}
-.akl div.rese-period {width:19%;}
-.akl div.rese-day {width:13%;padding:0 20px;}
-.akl .content-list .con-list-item span.txte-wrap {vertical-align:middle;}
-.akl .content-list .con-list-item span.txte-wrap  span {font-size:14px;vertical-align:middle;padding:5px 0 0}
+.akl div.rese-num {width:7%;padding:0 10px;text-align:center}
+.akl div.rese-condition {width:15%;text-align:center}
+.akl div.rese-subje {width:46%;padding:0 20px 0 0;}
+.akl div.rese-period {width:19%;text-align:center}
+.akl div.rese-day {width:13%;padding:0 20px;text-align:center}
+.akl .content-list .con-list-item span.txte-wrap {vertical-align:middle; }
+.akl .content-list .con-list-item span.txte-wrap  span {font-size:14px;vertical-align:middle;padding:0;  }
+.akl .content-list .con-list-item span.txte-wrap  span.col-disabled {padding-top:5px;}
 
 /* 나의 쇼핑정보 > 제품구매 예약 > 상세보기 */
 .assignment-view {padding:5px 0;margin:0 0;}
@@ -950,7 +957,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .shopping-item-area {clear:both;display:block;}
 .shop-list-content {display:block;}
 .shop-list-content.type2 {margin-top:40px}
-.product-item-header {display:table;width:100%;box-sizing:border-box;table-layout:fixed;padding:10px 0;background:#f4f4f4;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3}
+.product-item-header {display:table;width:100%;box-sizing:border-box;table-layout:fixed;padding:10px 0 8px;background:#f4f4f4;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3}
 .product-item-header > div {display:table-cell;vertical-align:middle;font-size:13px;font-weight:500;color:#002f5f;box-sizing:border-box;}
 .shop-prod {padding:0 20px;width:54%;}
 .shop-quantity {padding:0 20px;width:20%;}
@@ -1021,14 +1028,14 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .myorder-list-num p strong {font-weight:700;color:#002f5e;}
 .myorder-list-num .hype-btn {position: absolute;right:0;top:0;}
 
-.akl .myorder-list .ord-num {width:13%;padding-left:15px;}
-.akl .myorder-list .ord-date {width:13%;padding-left:10px;}
-.akl .myorder-list .ord-price {width:14%;padding-right:10px;}
-.akl .myorder-list .ord-pvbv {width:12%;}
-.akl .myorder-list .ord-chnnel {width:14%;}
-.akl .myorder-list .ord-type {width:12%;}
-.akl .myorder-list .ord-cond {width:12%;}
-.akl .myorder-list .ord-btn {width:10%;}
+.akl .myorder-list .ord-num {width:13%;padding-left:15px; text-align:center}
+.akl .myorder-list .ord-date {width:13%;padding-left:10px; text-align:center}
+.akl .myorder-list .ord-price {width:14%; text-align:right}
+.akl .myorder-list .ord-pvbv {width:12%; text-align:center}
+.akl .myorder-list .ord-chnnel {width:14%; text-align:center}
+.akl .myorder-list .ord-type {width:12%; text-align:center}
+.akl .myorder-list .ord-cond {width:12%; text-align:center}
+.akl .myorder-list .ord-btn {width:10%; text-align:center}
 
 .akl .myorder-list .con-list-item a {color:#0075a4 !important;}
 .akl .myorder-list .con-list-item a:hover {color:#002f5f !important;}
@@ -1552,8 +1559,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
     .point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 10px auto}
 
 	.table-point-wrapper ul li.thead-tit {display:none;}
-	.table-point-wrapper ul li.tbody div {display:block;}
-	.table-point-wrapper ul li.tbody div.day-txt {float:left;}
+	.table-point-wrapper ul li.tbody div {display:block; padding:16px 12px 0;}
+	.table-point-wrapper ul li.tbody div.day-txt {float:left; padding-top:17px}
 	.table-point-wrapper ul li.tbody div.order-divison {float:right;}
 	.table-point-wrapper ul li.tbody div.order-divison span {display:inline-block;}
 	.table-point-wrapper ul li.tbody div.division-txt {display:none;}
@@ -1567,10 +1574,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	div.day-txt {width:50%;}
 	div.order-divison {width:50%;text-align:right !important;}
 	div.tobe-earned, div.earning-used, div.available-point {width:100%;}
-	ul li.tbody div.tobe-earned {text-align:right;padding:0 0 0 0;}
-	ul li.tbody div.earning-used {text-align:right;padding:0 0 0 0;}
-	ul li.tbody div.available-point {text-align:right;padding:0 0 0 0;}
-
+	.table-point-wrapper ul li.tbody {display:block; padding:0 0 30px}
+	ul li.tbody div.tobe-earned,  
+	ul li.tbody div.earning-used,  
+	ul li.tbody div.available-point {text-align:right;padding:3px 13px; }
+	
 	ul li.tbody div.name-txt {clear:both;display:block;width:100%;}
 	ul li.tbody div.no-point-txt {clear:both;display:block;width:100%;text-align:left;padding:10px 0 0}
 	ul li.tbody div.m-point-look {clear:both;display:block;width:100%;padding:8px 0 0}
@@ -1904,7 +1912,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.shopping-tbody .td-info {float:left;width:90%;padding:0 0 0 20px;vertical-align:top;box-sizing:border-box;margin:0 0;}
 
 	.shop-product-code {display:table;width:100%;padding:10px 0 0;table-layout:fixed}
-	.shop-product-code .pro-code {display:block;width:100%;}
+	.shop-product-code .pro-code {display:block;width:100%; text-align:left}
 	.shop-product-code .pro-name {display:block;width:100%;}
 
 	.shop-product-info {display:table;width:100%;padding:10px 0 0;table-layout:fixed}
@@ -1914,6 +1922,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.shop-product-info .shop-plist .list-item-quatiy {display:table;width:100%;font-size:14px;}
 
 	.shop-product-info .shop-plist .list-price {display:table;width:100%;padding:8px 0;}
+	.shop-product-info .shop-plist .list-price:nth-of-type(2) {width: 100%;}
+	.shop-product-info .shop-plist .list-price:nth-of-type(3) {width: 100%;}
+	.shop-product-info .shop-plist .list-price:nth-of-type(4) {width: 100%;}
+	.shop-product-info .shop-plist .list-price:nth-of-type(5) {width: 100%; padding-right:0}
 	.shop-product-info .shop-plist .price-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500}
 	.shop-product-info .shop-plist .total-price-label {display:table-cell;width:50%;text-align:left;color:#002f5f;font-weight:500}
 	.shop-product-info .shop-plist .value-wrapper {display:table-cell;width:50%;text-align:right;}
@@ -1991,18 +2003,19 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .list-content .list-row-title > div.esylist-condition {display:none;}
 
 	.akl .content-list .con-list-item > div.esylist-no {display:none;}
-	.akl .content-list .con-list-item > div.esylist-numname {width:100%;padding:0 20px;}
+	.akl .content-list .con-list-item > div.esylist-numname {width:100%;padding:0 20px 5px; }
 	.akl .content-list .con-list-item > div.esylist-date {width:100%;padding:0 20px;}
 	.akl .content-list .con-list-item > div.esylist-condition {width:100%;padding:0 20px;}
 
 	.akl .content-list .con-list-item > div.esylist-numname span.esylist-num {display:inline-block;width:auto;}
-	.akl .content-list .con-list-item > div.esylist-numname span.esylist-subject {display:inline-block;width:auto;}
+	.akl .content-list .con-list-item > div.esylist-numname span.esylist-num a {padding-left: 0;}
+	.akl .content-list .con-list-item > div.esylist-numname span.esylist-subject {display:inline-block;width:auto; padding-left:0 }
 	.akl .content-list .con-list-item > div.esylist-numname span.esylist-subject em {display:inline-block;}
 
-	.akl .content-list .con-list-item > div.esylist-date span.tite-label {display:inline-block;}
-	.akl .content-list .con-list-item > div.esylist-date span.txte-wrap {display:inline-block;}
-	.akl .content-list .con-list-item > div.esylist-condition span.tite-label {display:inline-block;}
-	.akl .content-list .con-list-item > div.esylist-condition span.txte-wrap {display:inline-block;}
+	.akl .content-list .con-list-item > div.esylist-date span.tite-label {display:inline-block; float:left}
+	.akl .content-list .con-list-item > div.esylist-date span.txte-wrap {display:inline-block; float:right }
+	.akl .content-list .con-list-item > div.esylist-condition span.tite-label {display:inline-block; float:left}
+	.akl .content-list .con-list-item > div.esylist-condition span.txte-wrap {display:inline-block; float:right }
 
 	.akl .cart-popup__header.white {background:#fff;border-bottom:1px solid #e3e3e3;}
 
@@ -2175,14 +2188,21 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .con-list-item .rese-period {display:block;width:100%;padding:5px 20px;}
 	.akl .con-list-item .rese-period span.tite-label {display:block;}
 	.akl .con-list-item .rese-day {display:block;width:100%;padding:5px 20px;}
-	.akl .con-list-item .rese-day span.tite-label {display:block;}
+	.akl .con-list-item .rese-day span.tite-label {display:block;} 
+ 
+	.akl div.rese-num {text-align:left; padding-top:2px;}
+	.akl div.rese-condition {text-align:left} 
+	.akl div.rese-period {text-align:left}
+	.akl div.rese-day {text-align:left} 
+	.akl .content-list .con-list-item span.txte-wrap  span.col-disabled {padding-top:3px;}
 
 	/* 나의 쇼핑정보 > 제품구매 예약 > 상세보기 */
 	.product-item-header .shop-prod {padding:0 20px;width:54%;}
 	.product-item-header .shop-quantity {display:none}
 	.product-item-header .shop-price {display:none}
 	.product-item-header .shop-total {display:none}
-
+	
+	.product-item-list li { padding: 20px 0 30px; }
 	.product-item-list li .shop-prod {display:table;padding:0 20px;width:100%;}
 	.product-item-list li .shop-quantity {clear:both;display:table;padding:20px 20px 0 100px;width:100%;}
 	.product-item-list li .shop-price {clear:both;display:table;padding:15px 20px 0 100px;width:100%;text-align:left;}
