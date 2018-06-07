@@ -28,6 +28,7 @@
 	});
 
 
+
 /** ----- SHOP ----- */
 
 	//2018.03.12 카테고리 왼쪽메뉴
@@ -282,6 +283,21 @@ function HEADER_MOB_search(){
 	});
 	$(".mobile-popover-close").click(function () {
 		$('header').removeClass('userinfo-open');
+	});
+}
+
+/* 최근검색어 레이어 */
+function HEADER_RecentSearches(){
+	var _SerchInput = $('#header').find('input.ui-autocomplete-input');
+	var layerRecentSearches = $('#header').find('.popoverword');
+	var layerCloseBtn = layerRecentSearches.find('.search-results-close');
+
+	_SerchInput.on('click',function(){
+		layerRecentSearches.show();
+	});
+
+	layerCloseBtn.on('click',function(){
+		layerRecentSearches.hide();
 	});
 }
 

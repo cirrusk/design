@@ -6,12 +6,12 @@ shop 옮김 : 2018.04.10
 /* commn shipping list */
 .akl .cartlist-td {margin-top: 68px;}
 .akl .cartlist-th {width: 100%;display: table;padding: 0 12px;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; text-align:center; font-weight:500; font-size:13px}
- 
+
 
 @media (max-width: 768px) {
 .akl .cartlist-th {display: none;}
 }
- 
+
 /* 검색 > 검색어  */
 .popoverword { display: none; position: absolute; top:138px;left: 0;z-index: 1050; width:100%; padding: 1px; text-align: left;background-color:#fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
 .popoverword .popover-content-akl { max-width:1376px; margin:0 auto; position:relative; padding:35px 105px; }
@@ -423,7 +423,7 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .all-ak-check {display:inline-block;vertical-align:middle;margin:9px 15px 11px;}
 .akl .shopping-cart-item-list .all-ak-check ._checkbox-element-global-class ~ span._checkbox-element-global-span:before {bottom:4px;}
 .akl .shopping-cart-item-list .cart-content-wrapper .cart-actions {padding:40px 0 45px }
-.akl .shopping-cart-item-list .value-wrapper.right {text-align:right !important;} 
+.akl .shopping-cart-item-list .value-wrapper.right {text-align:right !important;}
 .akl .shopping-cart-item-list .value-wrapper.option img {width:30px;height:30px;}
 .akl .shopping-cart-item-list .value-wrapper.option .option-info {display:block;padding:5px 0 0;}
 .akl .shopping-cart-item-list .value-wrapper.option .option-info span {font-size:14px;font-weight:500;padding:0 0;margin:0 0;}
@@ -455,7 +455,7 @@ shop 옮김 : 2018.04.10
 ._checkbox-element-global-class ~ span._checkbox-element-global-span {display: inline-block;width: 20px;height: 20px;margin-right: 5px;border: 1px solid #dadada;background: white;position: relative;top: 0px;cursor: pointer;}
 ._checkbox-element-global-class~span._checkbox-element-global-span:before {position: relative;top: 4px; left: 3px;float: left;font-family: 'AmwayIcons'!important; font-size: 9px;font-weight: normal;font-style: normal;font-variant: normal;
     line-height: 1; content: '\e909';text-transform: none;color: #ffffff; speak: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
-.akl .wish-promotion .shopping-cart-item-list .list-header .list-item-info {padding-left:15px;} 
+.akl .wish-promotion .shopping-cart-item-list .list-header .list-item-info {padding-left:15px;}
 .akl .wish-promotion .shopping-cart-item-list .product-list-item {position: relative;padding:40px 0 40px;letter-spacing:-0.05em;font-size:14px;font-family:'Noto Sans KR', sans-serif;}
 .akl .wish-promotion .shopping-cart-item-list .product-list-item .list-item-toggle {width:auto;}
 .akl .wish-promotion .shopping-cart-item-list .product-list-item .product-item-element {display: table-cell;}
@@ -898,7 +898,7 @@ shop 옮김 : 2018.04.10
 .akl .payment-promotion .shopping-cart-item-list .product-list-item .col-md-5 {width:44%;}
 .akl .payment-promotion .shopping-cart-item-list .product-list-item .col-md-3 {width:10%; text-align:center;}
 .akl .payment-promotion .shopping-cart-item-list .product-list-item .col-md-2 {width:22%; text-align:center;}
- 
+
 .akl .payment-promotion .shopping-cart-item-list .product-list-item .col-md-1 {width:12%;text-align:right;padding-right:30px;}
 .akl .payment-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:600px;}
 .akl .payment-promotion .view-bundle-contents {width:740px;}
@@ -1451,6 +1451,9 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 }
 
 @media (max-width: 768px) {
+	/* 최근검색어 */
+	.popoverword {top:128px;}
+
 	/* 검색 > 결과  */
 	.pagination-bar { border-top:0;}
 	.akl .col-search-right .hidden-sm {display:block !important;}
@@ -1701,10 +1704,10 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .wish-promotion .shopping-cart-item-list .product-list-item .list-item-image {padding:0 0;}
 
 	.akl .tooltip-btn {padding-left:20px;}
-	
+
 	.akl .wish-promotion .shopping-cart-item-list .product-list-item .plp-item-label-wrap + .product-details{ margin-top:25px}
 	.akl .shopping-cart-item-list .product-status-value { margin-top:-1px}
-	
+
 	.gwp-gift-selections .wp-conts {clear:both;display:block;}
 	.gwp-gift-selections .wp-conts .col-xs-9 {width:100%;}
 	.gwp-gift-selections .wp-conts .col-xs-3 {clear:both;display:block;width:100%;padding:0 10px;}
