@@ -90,7 +90,10 @@
 	.link-btn1 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #8c429c; border-radius:3px;}
 	.link-btn2 { display:inline-block; padding:0 5px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #1f85bf; border-radius:3px;}
 	.link-btn3 { display:inline-block; padding:0 10px; height:20px; line-height:18px; vertical-align: middle; text-decoration: none; color:#fff; background: #074f99; border-radius:3px;}
-
+	.delete { background-color: #ddd}
+	.delete:hover td { background-color: #ddd}
+	.delete td { text-decoration:line-through; }
+	.delete td.note{ text-decoration:none; font-weight: bold;}
 	/* .owner {background:#c5dcf7;} */
 	.owner span{position:relative;display:inline-block;width:43px; padding-left:7px;}
 	.owner span:before {content:'/'; position:absolute; top:0; left:0; color:#eee;}
@@ -1297,7 +1300,7 @@
 					</tr>
 
 					<!-- 픽업주문 -->
-					<tr>
+					<tr class="delete">
 						<td class="tit"></td>
 						<td>픽업 주문</td>
 						<td>STEP 3. ECP 컨펌</td>
@@ -1312,6 +1315,7 @@
 						<td class="note">
 							<ul class="modify-date">
 								 <li><strong>2018.04.13</strong> ECP컨펌과 ECP출력 앞뒤로 순서바뀜</li>
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
 							</ul>
 						</td>
 					</tr>
@@ -1329,7 +1333,7 @@
 						<td class="taCenter">2018.04.17</td>
 						<td class="note"></td>
 					</tr>
-					<tr>
+					<tr class="delete">
 						<td class="tit"></td>
 						<td></td>
 						<td></td>
@@ -1341,7 +1345,11 @@
 						<td class="stat"></td>
 						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
 						<td class="taCenter">2018.04.17</td>
-						<td class="note"></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
 					</tr>
 					<tr>
 						<td class="tit"></td>
@@ -1358,10 +1366,11 @@
 						<td class="note">
 							<ul class="modify-date">
 								 <li><strong>2018.05.23</strong> 바코드 스캔 인풋 추가</li>
+								 <li><strong>2018.06.07</strong> 리스트 노출정보 변경</li>
 							</ul>
 						</td>
 					</tr>
-					<tr>
+					<tr class="delete">
 						<td class="tit"></td>
 						<td></td>
 						<td>STEP 5. 영수증 발행</td>
@@ -1373,7 +1382,11 @@
 						<td class="stat"></td>
 						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
 						<td class="taCenter">2018.04.03</td>
-						<td class="note"></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
 					</tr>
 					<tr>
 						<td class="tit"></td>
@@ -1389,7 +1402,7 @@
 						<td class="taCenter">2018.04.03</td>
 						<td class="note"></td>
 					</tr>
-					<tr>
+					<tr class="delete">
 						<td class="tit"></td>
 						<td></td>
 						<td></td>
@@ -1401,7 +1414,11 @@
 						<td class="stat"></td>
 						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
 						<td class="taCenter">2018.04.20</td>
-						<td class="note"></td>
+						<td class="note">
+							<ul class="modify-date">
+								 <li><strong>2018.06.07</strong> 화면삭제</li>
+							</ul>
+						</td>
 					</tr>
 					<!-- //픽업주문 -->
 
@@ -1544,6 +1561,34 @@
 						<td class="taCenter">2018.05.17</td>
 						<td class="note"></td>
 					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>간편 선물 컨펌 확인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40010a.html" target="_blank">U40010a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.07</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td>설치 주문 컨펌 확인</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="file"><a href="/html/mediation/U40020a.html" target="_blank">U40020a.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.07</td>
+						<td class="note"></td>
+					</tr>
 
 					<tr>
 						<td class="tit">주문관리</td>
@@ -1560,6 +1605,7 @@
 						<td class="note">
 							<ul class="modify-date">
 								 <li><strong>2018.05.11</strong> 판매등록 버튼 추가</li>
+								 <li><strong>2018.06.07</strong> 문구수정</li>
 							</ul>
 						</td>
 					</tr>
@@ -1575,6 +1621,20 @@
 						<td class="stat"></td>
 						<td class="taCenter owner"><span class="partPlan">최소원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
 						<td class="taCenter">2018.04.02</td>
+						<td class="note"></td>
+					</tr>
+					<tr>
+						<td class="tit"></td>
+						<td></td>
+						<td></td>
+						<td>주문완료내역_ECP 출력 취소 팝업</td>
+						<td></td>
+						<td class="file"><a href="/html/order/U60002a_lp.html" target="_blank">U60002a_lp.html</a></td>
+						<td class="taCenter">●</td>
+						<td class="statD">●</td>
+						<td class="stat"></td>
+						<td class="taCenter owner"><span class="partPlan">김승원</span><span class="partDesign">이온유</span><span class="partPub">김하나</span></td>
+						<td class="taCenter">2018.06.07</td>
 						<td class="note"></td>
 					</tr>
 

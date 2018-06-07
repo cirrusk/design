@@ -615,3 +615,15 @@ $(function() {
 		layerPopOver('','.U60100_lp1_pop');
 	});
 });
+
+//온라인 매거진
+$(function() {
+	$('.mz-item .btn_ico').click(function(event) {
+		$(this).next('.bod-view-sns').toggle();
+	});
+	$('html').click(function(e) { 
+		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn_ico')){
+			$('.bod-view-sns').hide();
+		} 
+	}); 
+});
