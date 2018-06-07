@@ -495,10 +495,13 @@ ul .ol-list { margin:10px 0 20px 15px}
 .refund-box h5 {font-size:13px;padding:0;margin:0;}
 
 /* common > tab */
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap {min-width:120px;}
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle {display: table; min-width:120px; table-layout:fixed; text-align:center; word-break:break-all; height:50px}
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:table-cell; font-weight:500; font-size:14px; vertical-align: middle; line-height:120%;}
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display: inline-block;}
+.amway-theme .tabs-toggles.width-auto .tab-toggle-wrap {min-width:auto;}
+.amway-theme .tabs-toggles .tab-toggle-wrap {min-width:120px;}
+.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {width:100%; height:50px; padding:0 20px; text-align:center; word-break:break-all; display:-ms-flexbox; display:-webkit-flex; display:flex; -ms-flex-align:center; -webkit-align-items: center; -webkit-box-align: center; align-items: center;}
+.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; width:100%; font-weight:500; font-size:14px; line-height:120%; word-break:break-all;}
+.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {position:relative; padding-top:0; text-transform:none; border-top:0;}
+.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {content:'';position:absolute; top:0; left:0; width:100%; height:4px; background:#008fc5;}
+.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display:inline-block;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap {min-width:160px;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:160px;}
 
