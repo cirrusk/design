@@ -6,6 +6,27 @@
 		$('.tooltip-wrap').slideToggle(0);
 	});
 
+	//탭 스크롤
+	function tabwidth(){
+		var _winWidth = $(window).width();
+
+		$('.tabs-toggles').each(function(){
+			//wrapper border 삭제
+			var find_OuterBorder = $(this).parent('.outer-border-bottom');
+			if( find_OuterBorder.length ){
+				find_OuterBorder.addClass('border-none');
+			}
+
+			var maxWidth = _winWidth+4;
+			$(this).css('max-width',maxWidth);
+		});
+	}
+
+	tabwidth();
+	$(window).resize(function(){
+		tabwidth();
+	});
+
 
 /** ----- SHOP ----- */
 

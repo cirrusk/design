@@ -493,17 +493,15 @@ $(function() {
 
 
 	//mob get ".tabs-toggles" max-width
+	/*
 	function tabwidth(){
 		var maxWidth=$(window).width()+4;
 		$(".tabs-toggles").css('max-width',maxWidth)
 	}
+	tabwidth();
 	$(window).resize(function(){
 		tabwidth()
-	});
-	$(document).ready(function(){
-		tabwidth()
-	})
-
+	});*/
 
 	$(".url-copy").click(function(){
 		$(".url_pop").toggle();
@@ -549,32 +547,32 @@ $(function() {
 		event.preventDefault();
 		layerPopOver(this,'.G20203b_lp1_pop');
 	});
-	
+
 	$('#G20203b_lp2').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G20203b_lp2_pop');
 	});
-	
+
 	$('#G20205_lp1').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G20205_lp1_pop');
 	});
-	
+
 	$('#G20205_lp2').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G20205_lp2_pop');
 	});
-	
+
 	$('#G20206_lp').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G20206_lp_pop');
 	});
-	
+
 	$('#G20207_lp').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G20207_lp_pop');
 	});
-	
+
 	$('#G20208_lp').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G20208_lp_pop');
@@ -604,16 +602,16 @@ $(function() {
 
 //고객센터
 $(function() {
-	$('#F50000_lp').click(function(event) { 
-		event.preventDefault(); 
+	$('#F50000_lp').click(function(event) {
+		event.preventDefault();
 		layerPopOver(this,'.F50000_lp_pop');
-	}); 
-}); 
+	});
+});
 
 //간편가입
 $(function() {
-	$('#UrlLink_Recruitment').click(function(event) { 
-		event.preventDefault(); 
+	$('#UrlLink_Recruitment').click(function(event) {
+		event.preventDefault();
 		layerPopOver('','.U60100_lp1_pop');
-	}); 
-}); 
+	});
+});
