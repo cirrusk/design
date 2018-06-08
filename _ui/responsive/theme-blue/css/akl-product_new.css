@@ -116,6 +116,7 @@ Version : AKL Hybris UIUX 1.0
 .ingestion-usage dl dt {width:15%;vertical-align:top;font-size:26px;font-weight:500;letter-spacing:-2px;}
 .ingestion-usage dl dd {width:80%;vertical-align:top;padding:5px 0 0}
 .ingestion-usage dl dd p {margin:0 0;font-size:16px;font-weight:300;letter-spacing:-1px;}
+.ingestion-usage dl dd p.tit {padding:15px 0 0}
 .ingestion-usage.btm-line {border-bottom:1px solid #e3e3e3;padding:0 0 40px}
 
 ol, ul, dl{margin-bottom:0;}
@@ -137,9 +138,9 @@ ol, ul, dl{margin-bottom:0;}
 .inge-lst05 li {position:relative;font-size:14px;letter-spacing:-1px;font-weight:300;color: #808285;padding-left:10px;}
 .inge-lst05 li:after {position: absolute;top: 2px;left: 0;display: inline-block;width: 0;height: 0;border-radius: 50%;background-color: #808285;content: "*";font-size: 14px;}
 
-.inge-lst06 {padding:0 0 0}
-.inge-lst06 li {position:relative;padding-left:10px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;} 
-.inge-lst06 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:10px;left:0;background-color:#808285;content:"";}
+.inge-lst06 {padding:0 0 0 10px !important;}
+.inge-lst06 li {position:relative;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;text-indent:0 !important;margin-left:0 !important;} 
+.inge-lst06 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:13px;left:-10px;background-color:#808285;content:"";}
 
 .inge-lst06.f-big li{padding-left:10px;font-size:16px;} 
 .inge-lst06.f-big li:before{top:13px;}
@@ -161,6 +162,9 @@ ol, ul, dl{margin-bottom:0;}
 .inge-numlst01 li ul {padding:0 0 0 0}
 .inge-numlst01 li ul li {text-indent:-20px;margin-left:20px;}
 .inge-numlst01 li strong{font-weight:400;color:#56565a;}
+
+.inge-numlst02 {padding:0 0 0 15px}
+.inge-numlst02 li {font-size:16px;letter-spacing:-1px;font-weight:300;padding-left:15px;color:#808285;padding:2px 0;list-style-type:decimal}
 
 .norm-lst li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;padding:2px 0;}
 
@@ -670,6 +674,7 @@ span.txt-next {display:block;}
 	.inge-numlst01 li {font-size:14px;}
 	.norm-lst li {font-size:14px;}
 	.inge-lst01 li {font-size:14px;}
+	.inge-numlst02 li {font-size:14px;}
 
 	.advantage-area.bt-none{padding:25px 0 0 !important;}
 	.pro-video.video-type{margin: 25px 0 0;padding-top:25px;}
