@@ -1482,11 +1482,12 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .magazine-carousel .mz-item .thumb {background-color:#f4f4f4}
 .magazine-carousel .mz-item .thumb a {display:block; padding:16px; text-align:center}
 .magazine-carousel .mz-item .thumb a img {}
-.magazine-carousel .mz-item .info {background-color:#fff}
-.magazine-carousel .mz-item .info .tit {}
-.magazine-carousel .mz-item .info .txt {}
-.magazine-carousel .mz-item .info .btn_ico {display:inline-block; width:10px; height:10px}
-.magazine-carousel .mz-item .info .bod-view-sns {display:none;}
+.magazine-carousel .mz-item .info {position:relative; padding:20px; background-color:#fff}
+.magazine-carousel .mz-item .info .tit {display:block; color:#002f5f; font-size:18px; font-weight:500}
+.magazine-carousel .mz-item .info .txt {color:#56565a; font-weight:500}
+.magazine-carousel .mz-item .info .btn_ico {position:absolute; top:30px; right:20px; display:inline-block; width:22px; height:17px; background:url('../images/akl_common/ico_sns.png') no-repeat;}
+.magazine-carousel .mz-item .info .bod-view-sns {display:none; position:absolute; top:-55px; left:0; width:100%; height:55px; padding:15px 0; text-align:center; box-sizing:border-box; background-color:#fff; }
+.magazine-carousel .mz-item .info .bod-view-sns.on {display:block}
 .magazine-carousel .owl-prev {left:-5px}
 .magazine-carousel .owl-next {right:-5px}
 

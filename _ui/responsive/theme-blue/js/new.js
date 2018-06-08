@@ -618,12 +618,19 @@ $(function() {
 
 //온라인 매거진
 $(function() {
-	$('.mz-item .btn_ico').click(function(event) {
-		$(this).next('.bod-view-sns').toggle();
+	$('.mz-item .btn_ico').click(function() {
+		$('.url_pop').hide();
+		if(!$(this).next('.bod-view-sns').hasClass('on')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).next('.bod-view-sns').addClass('on')
+		}else{
+			$(this).next('.bod-view-sns').removeClass('on');
+		}
 	});
 	$('html').click(function(e) { 
 		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn_ico')){
-			$('.bod-view-sns').hide();
+			$('.bod-view-sns').removeClass('on');
+			$('.url_pop').hide();
 		} 
 	}); 
 });
