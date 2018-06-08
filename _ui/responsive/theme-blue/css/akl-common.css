@@ -197,10 +197,10 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .amway-theme .btn {font-family:'Noto Sans KR', sans-serif; }
 .akl .btn-blue-white {background:#002f5f;color:#fff;}
 .akl .btn-blue-white:hover {color:#002f5f;background:#fff}
-.akl .btn-blue-white, .akl .bt-akl-txt {font-size:14px;padding:10px 20px;vertical-align:middle;font-weight:500;}
+.akl .btn-blue-white, .akl .bt-akl-txt {font-size:14px;padding:12px 20px 8px;vertical-align:middle;font-weight:500 !important; border:1px solid #002f5f;min-width: 120px;}
 .akl .bt-akl-blue,.akl .bt-akl-white { min-width: 120px;}
 .akl  .bt-akl-txt { min-width:90px;}
-.akl .bt-akl-blue {display:inline-block;background-color:#002F5F !important;color:#fff;border:1px solid #002F5F!important;font-size:14px;padding:5px 25px 7px;height:40px;vertical-align:middle;font-weight:500; border-radius:0!important}
+.akl .bt-akl-blue {display:inline-block;background-color:#002F5F; color:#fff;border:1px solid #002F5F; font-size:14px;padding:5px 25px 7px;height:40px;vertical-align:middle;font-weight:500;}
 .akl .bt-akl-blue:hover,.akl .bt-akl-blue:focus,.akl .bt-akl-blue:active {color: #fff ;background-color: #002F5F;border-color: #002F5F;}
 .akl .bt-akl-blue:hover {background: #fff; color:#002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
 .akl .bt-akl-blue.mini {font-size:12px; padding:0 10px 0; height:25px; line-height:23px; height:25px; min-width:80px;}
@@ -209,7 +209,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .bt-akl-blue.type2 {min-width:80px;}
 .akl a.bt-akl-blue {padding:7px 30px 8px;}
 
-.akl .bt-akl-white {display:inline-block;background-color:#fff !important;color:#002F5F;border:1px solid #002F5F!important; font-size:14px;padding:6px 25px 8px;height:40px;vertical-align:middle;font-weight:500;border-radius:0!important}
+.akl .bt-akl-white {display:inline-block;background-color:#fff;color:#002F5F;border:1px solid #002F5F; font-size:14px;padding:6px 25px 8px;height:40px;vertical-align:middle;font-weight:500;}
 .akl .bt-akl-white:hover,.akl .bt-akl-white:focus,.akl .bt-akl-white:active {color: #fff;background-color:#002F5F;border-color: #002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
 .akl a.bt-akl-white {padding:8px 30px 8px;}
 .akl .bt-akl-white.mini {font-size:12px; padding:0 10px 0; height:25px; line-height:23px; min-width:74px;text-align:center;}
@@ -235,7 +235,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .btn-area {text-align:left;}
 .akl .btn-center {text-align:center;margin:40px auto 0;}
 .akl .download-btn {display:inline-block; font-weight:500; padding-left:25px; background: url(../images/akl_common/ico_download_m.png) no-repeat 0 3px; background-size: 16px 16px; }
-
+ 
 /* common > button > quick view */
 .akl .product-list__thum { display:block; position: relative; padding:0 9% 82%; height: 0; width:82%;margin: 0 auto; text-align: center;}
 .akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px; left:50%;}
@@ -500,7 +500,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {width:100%; height:50px; padding:0 20px; text-align:center; word-break:break-all; display:-ms-flexbox; display:-webkit-flex; display:flex; -ms-flex-align:center; -webkit-align-items: center; -webkit-box-align: center; align-items: center;}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; width:100%; font-weight:500; font-size:14px; line-height:120%; word-break:break-all;}
 .amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {position:relative; padding-top:0; text-transform:none; border-top:0;}
-.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {content:'';position:absolute; top:0; left:0; width:100%; height:4px; background:#008fc5;}
+.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {content:''; position:absolute; top:0; left:0; width:100%; height:4px; background:#008fc5;}
 .akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display:inline-block;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap {min-width:160px;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:160px;}
@@ -980,7 +980,14 @@ label + .toolTip-wrapper {margin-left:6px;}
 
     /* common > list style */
     .list-style-cont {padding:15px 0 0;}
-
+	
+	/* common > button */ 
+	.akl .panel .bt-akl-blue {background-color:#002F5F; border:1px solid #002F5F; border-radius:0!important}
+	.akl .panel .bt-akl-blue:hover,.akl .panel .bt-akl-blue:focus,.akl .panel .bt-akl-blue:active {color: #fff ;background-color: #002F5F;border-color: #002F5F;}
+	.akl .panel .bt-akl-blue:hover {background: #fff; color:#002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
+	.akl .panel .bt-akl-white {background-color:#fff; border:1px solid #002F5F; border-radius:0!important} 
+	.akl .panel .bt-akl-white:hover,.akl .panel .bt-akl-white:focus,.akl .panel .bt-akl-white:active {color: #fff;background-color:#002F5F;border-color: #002F5F; }
+	 
 	/* common > step */
 	.step-wrap .checkout-steps .checkout-step{width: 18%;font-size: 14px;}
     .step-wrap .checkout-steps.num03 .checkout-step {width:15%;font-size: 14px;}
@@ -1026,12 +1033,12 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* common > tabs (base.css 재정의) : 작업중  2018.06.07 */
 	.amway-theme .outer-border-bottom {position:relative;}
 	.amway-theme .outer-border-bottom:before {content:''; position:absolute; box-sizing:content-box; width:100%; padding-left:15px; padding-right:15px; height:1px; left:-15px; right:0; bottom:0; background:#dadada;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap {border-bottom:1px solid #dadada; margin-bottom:0;}
+	.amway-theme .tabs-toggles .tab-toggle-wrap {min-width:auto; margin-bottom:0; border-bottom:1px solid #dadada;}
 	.amway-theme .tabs-toggles .tab-toggle-wrap:last-of-type .tab-toggle{border:0;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {position:relative; display:table; box-sizing:border-box; padding:0; min-width:0; height:50px; border-width:0; background:#fff; word-break:; text-align:center;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; padding:0 20px; white-space:nowrap; color:#55565a; font-size:14px; font-weight:500; vertical-align: middle; line-height:120%; background:none;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {padding-top:0; border:0; text-transform:initial;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:after {content:'';display:block; position:absolute; left:0; right:0; bottom:-1px; z-index:10; width:100%; border-bottom:4px solid #008fc5;}
+	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {min-width:auto; border:0; background:#fff; word-break:; text-align:center;}
+	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; padding:0; white-space:nowrap; color:#55565a; font-size:14px; font-weight:500; vertical-align: middle; line-height:120%; background:none;}
+	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {padding-top:0; border:0;}
+	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {top:auto; bottom:-1px;}
 	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text,
 	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle:hover .toggle-text {color:#002f5f;}
 
@@ -1039,20 +1046,16 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.amway-theme .outer-border-bottom.border-none {border:0;}
 	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap {border-bottom:0;}
 	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap .tab-toggle {border-bottom:1px solid #dadada;}
-
-	.akl .amway-theme .tabs-toggles {overflow-x: auto; overflow-y:hidden; margin-left:0; border:0;}
-	.akl .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:table-cell; font-weight:500; font-size:14px; vertical-align: middle; line-height:120%;}
+	.akl .amway-theme .tabs-toggles {overflow-x:auto; overflow-y:hidden; margin-left:0; border:0;}
 	.akl .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display: inline-block;}
-
-	.akl .outer-border-bottom {margin-left:0; margin-right:0; position:relative;}
-	.akl .outer-border-bottom .tabs-toggles { margin-left: 0;margin-right: 0; }
+	.akl .outer-border-bottom {position:relative; margin-left:0; margin-right:0;}
+	.akl .outer-border-bottom .tabs-toggles {margin-left:0; margin-right:0;}
 	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap {margin-bottom: 0 !important; min-width:auto;}
-	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle {padding:0; min-width:auto;}
-
-	.akl .tabs-toggles.case01 .tab-toggle-wrap,
-	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:0;}
+	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle,
 	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap,
-	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}
+	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle,
+	.akl .tabs-toggles.case01 .tab-toggle-wrap,
+	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}
 
 	/* common > form */
 	.form-group .address p {margin-right:105px;}
