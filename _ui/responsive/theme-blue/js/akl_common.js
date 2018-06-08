@@ -7,26 +7,10 @@
 	});
 
 	//탭 스크롤
-	function tabwidth(){
-		var _winWidth = $(window).width();
-
-		$('.tabs-toggles').each(function(){
-			//wrapper border 삭제
-			var find_OuterBorder = $(this).parent('.outer-border-bottom');
-			if( find_OuterBorder.length ){
-				find_OuterBorder.addClass('border-none');
-			}
-
-			var maxWidth = _winWidth+4;
-			$(this).css('max-width',maxWidth);
-		});
-	}
-
 	tabwidth();
 	$(window).resize(function(){
 		tabwidth();
 	});
-
 
 
 /** ----- SHOP ----- */
@@ -162,6 +146,84 @@
 	});
 
 });
+
+/** ------------------------------------
+ *  공통요소
+ *  ------------------------------------
+ */
+function tabwidth(){
+	var _winWidth = $(window).width();
+
+	$('.tabs-toggles').each(function(){
+		var find_OuterBorder = $(this).parent('.outer-border-bottom');
+		if( find_OuterBorder.length ){
+			//wrapper border-bottom 삭제
+			find_OuterBorder.addClass('border-none')
+
+			//.scrollable-area 추가
+			var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
+			if ( $(scrollableDiv).length ){
+				return;
+			} else {
+				find_OuterBorder.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>');
+			}
+		}
+
+		//var maxWidth = _winWidth+4;
+		//$(this).css('max-width', maxWidth);
+
+		//스크롤가능 영역 표시
+		var leftDiv = $(this).siblings('.scrollable-area.left');
+		var righttDiv = $(this).siblings('.scrollable-area.right');
+		var $scrollArea = {
+				pc : function(){
+					leftDiv.hide();
+					righttDiv.hide();
+				},
+				mob : function(){
+					leftDiv.hide();
+					righttDiv.show();
+				 }
+		}
+
+		function width_check(){
+			var _winWidth = $(window).width();
+
+				 if(_winWidth > 768){ $scrollArea.pc(); }
+			else if(_winWidth < 769){ $scrollArea.mob();}
+		}
+
+		width_check();
+		$(window).resize(function(){
+			width_check();
+		});
+
+		$(this).scroll(function(event){
+			var targetWrapperSize = $(this).width(); //wrapper size
+			var actualContentSize = event.currentTarget.scrollWidth; //실제 컨텐츠 크기, 858
+			var scrolledPosition  = event.currentTarget.scrollLeft; //x좌표가 움직인 거리 , 최대 260
+			var scrollable_width  = actualContentSize - targetWrapperSize; // 260 (실제 테이블 width - 감싸는 DIV = 스크롤 가능 길이)
+
+			//console.log('wrapper : ' + targetWrapperSize +'/ 실제 컨텐츠 크기 : '+ actualContentSize +'/ 움직인 거리 : ' + scrolledPosition +'/ 스크롤 가능 길이 : '+ scrollable_width)
+			if (scrolledPosition < 30) {
+				//스크롤 시작
+				//console.log('스크롤 시작, 오른쪽으로 가기 >>');
+				$(this).siblings('.scrollable-area.left').hide();
+				$(this).siblings('.scrollable-area.right').show();
+			}
+			else if ( scrollable_width === scrolledPosition ){
+				//비교거리 === 움직인 거리
+				//console.log('스크롤 끝, << 왼쪽으로 돌아가기');
+				$(this).siblings('.scrollable-area.left').show();
+				$(this).siblings('.scrollable-area.right').hide();
+			}
+			else {
+				//움직이는 중
+				$(this).siblings('.scrollable-area.left , .scrollable-area.right').show();
+			}
+		});
+	});
+}
 
 /** ------------------------------------
  *  HEADER (코어 js 정리)
