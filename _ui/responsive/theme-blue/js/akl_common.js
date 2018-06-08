@@ -171,7 +171,7 @@
 /* body 클릭 시 열린 레이어 닫기 */
 function HEADER_stopPropagation(){
 	//event bubbling 막기
-	var stopPropagation_target = '.js-my-account-menu, .js-mini-cart-link, .auto-suggestion-popover, #overlay-menu-wrapper, #shoppingcar-drop-content, #login-drop-content';
+	var stopPropagation_target = '.js-my-account-menu, .js-mini-cart-link, .auto-suggestion-popover, .popoverword, #overlay-menu-wrapper, #shoppingcar-drop-content, #login-drop-content';
 	$(stopPropagation_target).on('click', function (e){
 		e.stopPropagation();
 	});
@@ -196,6 +196,14 @@ function HEADER_MenuShop(){
 	_btnSHOP.addClass('collapsed');
 	_btnSHOP.on('click', function(){
 		$(this).addClass('collapsed');
+		$('.popoverword').hide();
+	});
+
+	//쇼핑메뉴 닫기버튼
+	var _btnLayerClose = $('#overlay-menu-wrapper').find('.search-results-close');
+	_btnLayerClose.on('click',function(){
+		$("#overlay-menu-wrapper").removeClass("in");
+		$('.overlay-menu-toggle-desktop').addClass('collapsed');
 	});
 }
 
@@ -250,7 +258,9 @@ function HEADER_topSearch_suggestion(){
 	registerEvents();
 	function registerEvents() {
 		$('.ui-autocomplete-input').on('keyup', showSearchResults);
-		$('.search-results-close').on('click', closeSearchResults);
+
+		var $btnClose_autoSuggestion = $('.auto-suggestion-popover').find('.search-results-close');
+		$btnClose_autoSuggestion.on('click', closeSearchResults);
 	}
 }
 

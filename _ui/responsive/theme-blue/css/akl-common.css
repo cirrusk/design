@@ -235,7 +235,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl .btn-area {text-align:left;}
 .akl .btn-center {text-align:center;margin:40px auto 0;}
 .akl .download-btn {display:inline-block; font-weight:500; padding-left:25px; background: url(../images/akl_common/ico_download_m.png) no-repeat 0 3px; background-size: 16px 16px; }
- 
+
 /* common > button > quick view */
 .akl .product-list__thum { display:block; position: relative; padding:0 9% 82%; height: 0; width:82%;margin: 0 auto; text-align: center;}
 .akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px; left:50%;}
@@ -980,14 +980,14 @@ label + .toolTip-wrapper {margin-left:6px;}
 
     /* common > list style */
     .list-style-cont {padding:15px 0 0;}
-	
-	/* common > button */ 
+
+	/* common > button */
 	.akl .panel .bt-akl-blue {background-color:#002F5F; border:1px solid #002F5F; border-radius:0!important}
 	.akl .panel .bt-akl-blue:hover,.akl .panel .bt-akl-blue:focus,.akl .panel .bt-akl-blue:active {color: #fff ;background-color: #002F5F;border-color: #002F5F;}
 	.akl .panel .bt-akl-blue:hover {background: #fff; color:#002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
-	.akl .panel .bt-akl-white {background-color:#fff; border:1px solid #002F5F; border-radius:0!important} 
+	.akl .panel .bt-akl-white {background-color:#fff; border:1px solid #002F5F; border-radius:0!important}
 	.akl .panel .bt-akl-white:hover,.akl .panel .bt-akl-white:focus,.akl .panel .bt-akl-white:active {color: #fff;background-color:#002F5F;border-color: #002F5F; }
-	 
+
 	/* common > step */
 	.step-wrap .checkout-steps .checkout-step{width: 18%;font-size: 14px;}
     .step-wrap .checkout-steps.num03 .checkout-step {width:15%;font-size: 14px;}
@@ -1056,6 +1056,26 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle,
 	.akl .tabs-toggles.case01 .tab-toggle-wrap,
 	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}
+
+
+
+	.tabs-toggles::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.tabs-toggles::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.tabs-toggles::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
 
 	/* common > form */
 	.form-group .address p {margin-right:105px;}
