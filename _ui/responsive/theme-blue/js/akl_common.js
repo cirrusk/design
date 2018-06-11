@@ -233,7 +233,7 @@ function tabsTgg_Control(){
 			$tabWidthCheck();
 		});
 
-		/* 스크롤 가능 영역 표시 */
+		/* --- 스크롤 가능 영역 표시 --- */
 		var leftDiv = $(this).siblings('.scrollable-area.left');
 		var righttDiv = $(this).siblings('.scrollable-area.right');
 		var $scrollArea = {
@@ -241,10 +241,12 @@ function tabsTgg_Control(){
 					if( _UL.is('.scroll-tab')){
 						leftDiv.hide();
 						righttDiv.show();
+						_UL.parent('.col-search-tab').addClass('scrolling'); //균등분할 탭 여백조정 class 추가
 					}
 					else {
 						leftDiv.hide();
 						righttDiv.hide();
+						_UL.parent('.col-search-tab').removeClass('scrolling');
 					}
 				},
 				pc : function(){
