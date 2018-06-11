@@ -388,6 +388,21 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .business-guide-wrap h3.noticeH3 { margin:28px 0 10px; padding:0 0 4px 25px; background:url("../images/icons/info.png") no-repeat 0 0; background-size:18px 36px;}
 .akl .business-guide-wrap .btnWrapR { padding-top:20px; text-align:center; }
 
+.akl .amway-theme .tblList {border-bottom:1px solid #dadada;}
+.akl .amway-theme .tblList thead th {font-size: 13px; font-weight: 500; text-align:center }
+.akl .amway-theme .tblList tbody th {margin:10px 0; color: #333; background-color:#fff; vertical-align:middle;} 
+.akl .amway-theme .tblList tbody td { padding:18px 0} 
+.akl .amway-theme .tblList tr:nth-of-type(even) th  {background:#f4f4f4;}
+.akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:none}
+ 
+.akl .tblList02 thead th {font-size: 13px; font-weight: 500; text-align:center; border-left: 1px solid #e3e3e3; }
+.akl .tblList02 thead th:first-child { border-left:0; }
+.akl .tblList02 tbody th {margin:10px 0; color: #333; background-color:#fff; vertical-align:middle;border-bottom:1px solid #dadada;}  
+.akl .tblList02 tbody tr:nth-of-type(even) {background: #fff;}
+.akl .tblList02 tbody td {border-bottom: 1px solid #e3e3e3; padding:10px 15px; vertical-align:middle;}  
+.akl .tblList02 tbody tr td {border-left: 1px solid #e3e3e3; text-align:center}  
+.akl .tblList02 tbody tr td.txLeft { text-align:left} 
+
 .bizGuide h2 + .bizNumList{margin-top:16px;}
 .bizNumListT + .bizNumList{margin-top:4px;}
 .bizNumList{margin-top:12px;}
@@ -481,16 +496,23 @@ ul.woo-step-box li:last-child:before {background:none}
 
 .listWarning { margin-top:8px}
 .listWarning > li { line-height:140%}
-.listWarning > li {background:url('../images/akl_common/ico_star.png') no-repeat left 5px; padding:0 0 2px 10px;font-size:13px;color:#808285; font-style: italic;}  
- p.listWarning, p.txt-italic {background:url('../images/akl_common/ico_star.png') no-repeat left 9px; padding:0 0 2px 10px;font-size:13px;color:#808285; font-style: italic;}
+.listWarning > li ,p.listWarning, p.txt-italic  {background:url('../images/akl_common/ico_star.png') no-repeat left 5px; padding:0 0 2px 10px;font-size:13px;color:#808285; font-style: italic;}  
+ li p.listWarning, li p.txt-italic {background:url('../images/akl_common/ico_star.png') no-repeat left 9px; padding:0 0 2px 10px;font-size:13px;color:#808285; font-style: italic;}
 .listWarning > li, p.listWarning a, p.txt-italic a { font-size:13px; }
 .listWarning > li strong { font-size:13px;} 
 .listDotFS {margin:0;padding:0 0 5px;}
 .listDotFS > li { position:relative;padding:0 0 3px 10px; font-size:14px; }
 .listDotFS > li:before {content:""; position:absolute; display:block; width:3px; height:3px; background:#5e5e62; left:0; top:9px; border-radius:24px }
 .listDotFS > li .tit { display:block; margin-bottom: 3px;}
-h3.noticeH3 + .listDotFS { padding-left:25px; margin-top:-5px}
+ h3.noticeH3 + .listDotFS { padding-left:25px; margin-top:-5px}
  
+.list-type1 > li {background:url('../images/akl_common/ico_arr_line.png') no-repeat left 10px;padding:0 0 3px 10px; font-size:14px;}
+.bizNumListS .list-type1 > li { text-indent:0}
+
+.bizPhoto { margin:30px 0 40px;}
+.bizPhoto2 { margin:30px 0 40px;}
+.bizPhoto3 { margin:30px 0 40px;}
+
  /* tblInput */
 .tblInput-wrap {margin-bottom:20px; overflow:hidden;}
 .tblInput-wrap .tblInput { width:50%; float:left; }
@@ -517,16 +539,12 @@ h3.noticeH3 + .listDotFS { padding-left:25px; margin-top:-5px}
 .tblInput .dupliCheck label {display:inline-block;width:100%;height:auto;}
 .tblInput .dupliCheck label input {margin-top:5px;}
  
-.amway-theme table.tblInput tbody tr:nth-of-type(even) {background:none;}
-
-.tblList th {margin:10px 0; color: #333; background-color:#fff; vertical-align:middle;} 
-.tblList tr:nth-of-type(even) th  {background:#f4f4f4;}
-.tblList th .thTitle,.tblList td .thTitle { display:none}
+.amway-theme table.tblInput tbody tr:nth-of-type(even) {background:none;} 
 
 .placeHolderBox:first-child {padding-bottom:30px; margin:0 0 40px; border-bottom:1px solid #dadada;}
 .placeHolderBox p { font-weight:500}
 .placeHolderBox p.titH2 {  font-size:16px}
-.placeHolderBox .imgBox { background:#f6f6f6; padding:40px; margin-bottom:20px;}
+.placeHolderBox .imgBox { background:#f6f6f6; padding:40px 60px; margin-bottom:20px;}
 .placeHolderBox .basicList li{ margin-bottom:18px;}
 
 
@@ -790,16 +808,18 @@ h3.noticeH3 + .listDotFS { padding-left:25px; margin-top:-5px}
 		
 	.list_woo_donate .tbl_type span {width:50%; padding-right:0; font-size:14px}
 	.list_woo_donate .tbl_type em {background-color:#f4f4f4}  
-	 
-	.akl .amway-theme .bizNumList li table thead { display:none}
-	.akl .amway-theme .bizNumList li table thead th { text-align:left; padding:18px 20px 0; font-size:14px}
-	.akl .amway-theme .bizNumList li table tbody th { padding:18px 20px 0 }
-	.akl .amway-theme .bizNumList li .tblList td { display:block; padding:18px 20px 15px; font-size:14px} 
+	
 	.akl .amway-theme .tblList { border-top:1px solid #e3e3e3}
-	.akl .amway-theme .tblList thead th { display:block; text-align:left; padding:18px 20px 0; font-size:14px } 
-	.akl .amway-theme .tblList tbody th { display:block; padding:18px 20px 0 } 
-	.akl .amway-theme .tblList td { display:block; padding:18px 20px 12px; font-size:14px}  
+	.akl .amway-theme .tblList td { display:block; padding:10px 20px 15px; font-size:14px} 
+	.akl .amway-theme .tblList thead { display:none}   
+	.akl .amway-theme .tblList thead th { display:block; text-align:left; padding:15px 20px 0; font-size:14px } 
+	.akl .amway-theme .tblList tbody th { display:block; padding:10px 20px 0 }  
 	.akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:block; color: #002f5f; font-weight:500}
+	
+	.akl .amway-theme .scroll-table { overflow-y:none; overflow-x:auto;}
+	.akl .amway-theme .scroll-table.widthS-01 .tblList02{ width:900px} 
+	.akl .amway-theme .tblList02 thead th {font-size: 13px; } 
+	.akl .amway-theme .tblList02 tbody td {font-size: 14px; } 
 }
 
 @media (max-width: 360px) { 
