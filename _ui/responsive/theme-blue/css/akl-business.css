@@ -376,6 +376,7 @@ ul.woo-step-box li:last-child:before {background:none}
 
 /* 사업가이드 > 공통 */ 
 .akl .business-guide-wrap { margin:40px 0 0} 
+.akl .business-guide-wrap p { margin-bottom:2px}
 .akl .business-guide-wrap .realc{ padding-bottom:40px; margin:0 0 40px; border-bottom:1px solid #dadada;}
 .akl .business-guide-wrap .realc a{ font-weight:500; display:inline-block; position:relative; padding-left:18px;}
 .akl .business-guide-wrap .realc a:before{content:'\ea4d';position:absolute; left:0; top:-2px; font-family: 'AmwayIcons'!important; font-size:18px}
@@ -393,7 +394,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .bizNumList > li{ line-height:23px; padding-left:15px; text-indent:-15px;} 
 .bizNumList li li{font-weight:normal;}
 .bizNumList > li > strong { display:block; margin-top:20px} 
-.bizNumList > li .txt-italic, .bizNumList > li .listWarning li, .bizNumList p.listWarning{ padding-left:25px}
+.bizNumList > li .txt-italic, .bizNumList > li .listWarning li, .bizNumList p.listWarning{ text-indent:0}
 .bizNumList.txtB > li{padding-left:15px; text-indent:-15px; font-weight:bold;}
 .bizNumList .bizNumListS{margin-top:8px; margin-left:-15px;}
 .bizNumList .bizExList{margin-top:28px; text-indent:0; margin-left:-15px;}
@@ -412,7 +413,8 @@ ul.woo-step-box li:last-child:before {background:none}
 
 .bizNumListS li:first-child{margin-top:0;}
 .bizNumListS li{margin-top:2px; padding-left:16px; text-indent:-16px; line-height:20px;}
-
+.bizNumListS li .listWarning{ text-indent:0}
+.bizNumListS li .btnDwn{ padding-left:20px }
 .bizDashList li{padding-left:10px; text-indent:-10px; line-height:20px;}
 .bizSum + .bizGuideBox{margin-top:11px;}
 .bizGuideBox p:first-child{margin-top:0;}
@@ -485,7 +487,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .listWarning > li strong { font-size:13px;} 
 .listDotFS {margin:0;padding:0 0 5px;}
 .listDotFS > li { position:relative;padding:0 0 3px 10px; font-size:14px; }
-.listDotFS > li:before {content:""; position:absolute; width:3px; height:3px; background:#56565a;left:0; top:9px;  }
+.listDotFS > li:before {content:""; position:absolute; display:block; width:3px; height:3px; background:#5e5e62; left:0; top:9px; border-radius:24px }
 .listDotFS > li .tit { display:block; margin-bottom: 3px;}
 h3.noticeH3 + .listDotFS { padding-left:25px; margin-top:-5px}
  
@@ -520,6 +522,13 @@ h3.noticeH3 + .listDotFS { padding-left:25px; margin-top:-5px}
 .tblList th {margin:10px 0; color: #333; background-color:#fff; vertical-align:middle;} 
 .tblList tr:nth-of-type(even) th  {background:#f4f4f4;}
 .tblList th .thTitle,.tblList td .thTitle { display:none}
+
+.placeHolderBox:first-child {padding-bottom:30px; margin:0 0 40px; border-bottom:1px solid #dadada;}
+.placeHolderBox p { font-weight:500}
+.placeHolderBox p.titH2 {  font-size:16px}
+.placeHolderBox .imgBox { background:#f6f6f6; padding:40px; margin-bottom:20px;}
+.placeHolderBox .basicList li{ margin-bottom:18px;}
+
 
 /* MAX */
 @media (max-width: 1220px){
