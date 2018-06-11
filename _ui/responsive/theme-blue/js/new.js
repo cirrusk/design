@@ -616,6 +616,14 @@ $(function() {
 	});
 });
 
+//비즈니스 ABO탈퇴
+$(function() {
+	$('#G20710_004_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver('','.G20710_004_lp_pop');
+	});
+});
+
 //온라인 매거진
 $(function() {
 	$('.mz-item .btn_ico').click(function() {
