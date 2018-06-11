@@ -7,9 +7,9 @@
 	});
 
 	//탭 스크롤
-	tabScroll_Control();
+	tabsTgg_Control();
 	$(window).resize(function(){
-		tabScroll_Control();
+		tabsTgg_Control();
 	});
 
 
@@ -151,52 +151,125 @@
  *  공통요소
  *  ------------------------------------
  */
-function tabScroll_Control(){
+function tabsTgg_Control(){
 	var _winWidth = $(window).width();
 
-	$('.tabs-toggles').each(function(){
-		var find_OuterBorder = $(this).parent('.outer-border-bottom');
-		if( find_OuterBorder.length ){
-			//wrapper border-bottom 삭제
-			find_OuterBorder.addClass('border-none')
-
-			//.scrollable-area 추가
+	//균등분할 탭
+/*	var _tabEquality = $('.col-search-tab').find('ul');
+	_tabEquality.each(function(){
+		//wrapper 찾기
+		var find_searchTab = $(this).parent('.col-search-tab');
+		if (find_searchTab.length){
+			//object 추가
 			var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
 			var siblings_El = $(this).siblings(scrollableDiv);
+
+			if ( siblings_El.length ){ return; }
+			else { find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
+		}
+	});*/
+
+
+
+	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
+	_tabsToggles.each(function(){
+
+		/* -- 스크롤영역 표시 Div 추가 -- */
+		var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
+		var siblings_El = $(this).siblings(scrollableDiv);
+
+		//Type1: 기본형
+		var find_OuterBorder = $(this).parent('.outer-border-bottom');
+		if( find_OuterBorder.length ){
+			find_OuterBorder.addClass('border-none'); //border-bottom 삭제
 
 			if ( siblings_El.length ){ return; }
 			else { find_OuterBorder.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
 		}
 
-		//var maxWidth = _winWidth+4;
-		//$(this).css('max-width', maxWidth);
+		//Type2: 균등분할
+		var find_searchTab = $(this).parent('.col-search-tab');
+		if (find_searchTab.length){
+			if ( siblings_El.length ){ return; }
+			else { find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
+		}
 
-		//스크롤 가능 영역 표시
+		/* 너비 비교하기 */
+		var _UL = $(this);
+		var _LI = _UL.find('li');
+
+		var children_sum;
+		function $tabWidthCheck(){
+			var _winWidth = $(window).width();
+
+			children_sum = 0;
+			_LI.each(function(index){
+				var myWD = $(this).outerWidth(true);
+				children_sum += myWD;
+				//console.log('index' +index +', '+ children_sum);
+			});
+
+			function runWideView(){
+				_UL.removeClass('scroll-tab');
+
+				if( children_sum < _winWidth ){ _UL.removeClass('width-auto'); }
+				if( children_sum > _UL.width() ){ _UL.addClass('width-auto'); }
+			}
+
+			function runSmallView(){
+				_UL.removeClass('width-auto');
+
+				if(_winWidth < children_sum ){ _UL.addClass('scroll-tab'); }
+				if(_winWidth > children_sum ){ _UL.removeClass('scroll-tab'); }
+			}
+
+			//console.log('_winWidth :' + _winWidth);
+			if(_winWidth > 768){ runWideView();}
+			if(_winWidth < 769){ runSmallView();}
+		};
+
+		$tabWidthCheck();
+		$(window).resize(function(){
+			$tabWidthCheck();
+		});
+
+		/* 스크롤 가능 영역 표시 */
 		var leftDiv = $(this).siblings('.scrollable-area.left');
 		var righttDiv = $(this).siblings('.scrollable-area.right');
 		var $scrollArea = {
+				mob : function(){
+					if( _UL.is('.scroll-tab')){
+						leftDiv.hide();
+						righttDiv.show();
+					}
+					else {
+						leftDiv.hide();
+						righttDiv.hide();
+					}
+				},
 				pc : function(){
 					leftDiv.hide();
 					righttDiv.hide();
-				},
-				mob : function(){
-					leftDiv.hide();
-					righttDiv.show();
 				}
 		}
 
 		function width_check(){
 			var _winWidth = $(window).width();
-				 if(_winWidth > 768){ $scrollArea.pc(); }
-			else if(_winWidth < 769){ $scrollArea.mob();}
+			if(_winWidth > 768){
+				$scrollArea.pc();
+			}
+			if(_winWidth < 769){
+				$scrollArea.mob();
+			}
 		}
 
 		width_check();
 		$(window).resize(function(){
+			$tabWidthCheck();
 			width_check();
 		});
 
-		$(this).scroll(function(event){
+		_UL.scroll(function(event){
 			var targetWrapperSize = $(this).width(); //A. wrapper : ul
 			var actualContentSize = event.currentTarget.scrollWidth; //B. 스크롤되는 컨텐츠 길이
 			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤 움직인 길이 (x좌표가 움직인 거리)
