@@ -12,6 +12,30 @@
 		tabsTgg_Control();
 	});
 
+	//암웨이 매거진
+	$('.magazine-carousel').owlCarousel({
+		loop: false,
+		nav: true,
+		dots: false,
+		margin: 0,
+		items: 1,
+		responsiveClass: true,
+		responsive: {
+			480 : {
+				items: 1
+			},
+			768 : {
+				items: 2
+			},
+			960 : {
+				items: 3
+			},
+			1200 : {
+				items: 4
+			}
+		}
+	});
+
 
 /** ----- SHOP ----- */
 
