@@ -192,20 +192,14 @@ function tabsTgg_Control(){
 			});
 
 			function runWideView(){
-				_UL.removeClass('scroll-tab').css('width','');
-				if( children_sum < _winWidth ){ _UL.removeClass('width-auto'); }
-				if( children_sum > _UL.width() ){ _UL.addClass('width-auto'); }
+				_UL.removeClass('scroll-tab');
+				if( _winWidth > children_sum ){ _UL.removeClass('width-auto'); }
+				if( _winWidth < children_sum || children_sum > _UL.width() ){ _UL.addClass('width-auto'); }
 			}
 			function runSmallView(){
 				_UL.removeClass('width-auto');
 				if(_winWidth > children_sum ){ _UL.removeClass('scroll-tab'); }
 				if(_winWidth < children_sum ){ _UL.addClass('scroll-tab'); }
-
-				//균등분할 탭
-				var parentDiv = _UL.parent('.col-search-tab');
-				if(parentDiv.length){
-					_UL.css({'width':children_sum})
-				}
 			}
 
 			//console.log('_winWidth :' + _winWidth);
