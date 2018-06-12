@@ -9,6 +9,7 @@ Editor : eunmyoung Noh
 @import url("register.css");
 @import url("sprint.css");
 /* akl */
+@import url("akl-basic.css"); /* 추가  */
 @import url("akl-customer.css");
 @import url("akl-shop.css");
 @import url("akl-account.css");
@@ -496,7 +497,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .refund-box {border:1px solid #e3e3e3;padding:18px 20px 10px;margin-top:20px;}
 .refund-box h5 {font-size:13px;padding:0;margin:0;}
 
-/* common > tab */
+/* common > tab : 작업중
 .amway-theme .tabs-toggles .tab-toggle-wrap {min-width:120px;}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {width:100%; height:50px; padding:0 20px; text-align:center; word-break:break-all; display:flex; align-items:center;}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; width:100%; font-weight:500; font-size:14px; line-height:120%; word-break:break-all;}
@@ -507,7 +508,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display:inline-block;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap {min-width:160px;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:160px;}
-
+*/
 /* common > step */
 .step-wrap .checkout-steps .checkout-step {width: 25%; text-transform: capitalize;font-weight:500;font-size: 16px; letter-spacing: -1px }
 .step-wrap .checkout-step {width:25%;font-weight:500;}
@@ -940,7 +941,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.new-plp .col-md-9 {width:100%;}
 }
 @media (min-device-width:1025px){
-	/* 탭 스크롤 */
+	/* 탭 스크롤  : 작업중
 	.tabs-toggles::-webkit-scrollbar-track {background-color:rgba(245,245,245,0.1); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
 	.tabs-toggles::-webkit-scrollbar {width:6px; height:6px; background-color: rgba(245,245,245,1);}
 	.tabs-toggles::-webkit-scrollbar-thumb {width:6px; height:6px; background-color:rgba(0,0,0,0.2);}
@@ -948,6 +949,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.col-search-tab::-webkit-scrollbar-track {background-color:rgba(245,245,245,0.1); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
 	.col-search-tab::-webkit-scrollbar {top:5px; width:6px; height:6px; background-color: rgba(245,245,245,1);}
 	.col-search-tab::-webkit-scrollbar-thumb {width:6px; height:6px; background-color:rgba(0,0,0,0.2);}
+	*/
 
 	/* IE 스크롤 - 작업예정 */
 }
@@ -1085,19 +1087,19 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .tabs-toggles.case01 .tab-toggle-wrap,
 	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}
 
-	/* 스크롤되는 영역 표시 */
+	/* 스크롤되는 영역 표시 : 작업중
 	.outer-border-bottom .scrollable-area {position:absolute; left:0; top:-1px; width:60px; height:100%; z-index:1;}
 	.outer-border-bottom .scrollable-area.left {left:-15px;
-		background:    -moz-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background:     linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background:    -moz-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); FF3.6-15
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); Chrome10-25,Safari5.1-6
+		background:     linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
 	}
 	.outer-border-bottom .scrollable-area.right {left:auto; right:-15px;
-		background:    -moz-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background:       linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background:    -moz-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); FF3.6-15
+		background: -webkit-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); Chrome10-25,Safari5.1-6
+		background:       linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
 	}
-
+ */
 	/* common > form */
 	.form-group .address p {margin-right:105px;}
 	.form-group .address button {right:0}
