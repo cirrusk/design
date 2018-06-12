@@ -56,6 +56,50 @@
 .tbl-type .vt {vertical-align:top}
 .tbl-type .ex {width:23px}
 
+/* 뉴핀 성취자 */
+.newpin-area {padding-bottom:20px; border-top:1px solid #dadada; border-bottom:1px solid #dadada}
+.newpin-area .newpin {font-size:0}
+.newpin-area .newpin li {display:inline-block; width:14.2%; margin-top:35px; text-align:center; vertical-align:top}
+.newpin-area .newpin li a {display:block;}
+.newpin-area [class^='ico-np'] {display:inline-block; width:75px; height:62px; background-size:100% auto; background-repeat:no-repeat}
+.newpin-area .newpin li a .tit {display:block; font-weight:400; color:#56565a;}
+.newpin-area .ico-np01 {background-image:url(../images/akl_common/business/new_pin01.png)}
+.newpin-area .ico-np02 {background-image:url(../images/akl_common/business/new_pin02.png)}
+.newpin-area .ico-np03 {background-image:url(../images/akl_common/business/new_pin03.png)}
+.newpin-area .ico-np04 {background-image:url(../images/akl_common/business/new_pin04.png)}
+.newpin-area .ico-np05 {background-image:url(../images/akl_common/business/new_pin05.png)}
+.newpin-area .ico-np06 {background-image:url(../images/akl_common/business/new_pin06.png)}
+.newpin-area .ico-np07 {background-image:url(../images/akl_common/business/new_pin07.png)}
+.newpin-area .ico-np08 {background-image:url(../images/akl_common/business/new_pin08.png)}
+.newpin-area .ico-np09 {background-image:url(../images/akl_common/business/new_pin09.png)}
+.newpin-area .ico-np10 {background-image:url(../images/akl_common/business/new_pin10.png)}
+.newpin-area .ico-np11 {background-image:url(../images/akl_common/business/new_pin11.png)}
+.newpin-area .ico-np12 {background-image:url(../images/akl_common/business/new_pin12.png)}
+.newpin-area .ico-np13 {background-image:url(../images/akl_common/business/new_pin13.png)}
+.newpin-area .ico-np14 {background-image:url(../images/akl_common/business/new_pin14.png)}
+.newpin-area .ico-np15 {background-image:url(../images/akl_common/business/new_pin15.png)}
+.newpin-area .ico-np16 {background-image:url(../images/akl_common/business/new_pin16.png)}
+.newpin-area .ico-np17 {background-image:url(../images/akl_common/business/new_pin17.png)}
+.newpin-area .ico-np18 {background-image:url(../images/akl_common/business/new_pin18.png)}
+.newpin-area .ico-np19 {background-image:url(../images/akl_common/business/new_pin19.png)}
+.newpin-area .ico-np20 {background-image:url(../images/akl_common/business/new_pin20.png)}
+.newpin-area .ico-np21 {background-image:url(../images/akl_common/business/new_pin21.png)}
+.newpin-area .ico-np22 {background-image:url(../images/akl_common/business/new_pin22.png)}
+
+.newpin-area .np-list-wrap .list {margin-top:40px; padding:40px 0 0 20px; border-top:1px solid #dadada}
+.newpin-area .np-list-wrap .list .tit {}
+.newpin-area .np-list-wrap .list .tit > * {vertical-align:middle}
+.newpin-area .np-list-wrap .list .tit em {display:inline-block; margin-left:30px; font-size:18px; font-weight:500; color:#002f5f}
+.newpin-area .np-list-wrap .list .inner {padding:15px 0 0 107px}
+.newpin-area .np-list-wrap .list .inner + .inner {padding-top:0}
+.newpin-area .np-list-wrap .list .inner .date {display:block; padding:8px 20px; color:#002f5f; font-weight:500; font-size:16px; border-top:1px solid #dadada; background-color:#f4f4f4}
+.newpin-area .np-list-wrap .list .inner .info {padding:10px 20px 10px 0; border-top:1px solid #dadada; }
+.newpin-area .np-list-wrap .list .inner .info .row {padding:5px 0; font-size:0;}
+.newpin-area .np-list-wrap .list .inner .info .row div {display:inline-table; width:33.33333%; font-size:14px; padding-left:20px; vertical-align:middle}
+.newpin-area .np-list-wrap .list .inner .info .row div > * {display:table-cell; width:50%; vertical-align:middle}
+.newpin-area .np-list-wrap .list .inner .info .row div .name {font-weight:500}
+.newpin-area .np-list-wrap .list .inner .info .row div .adr {padding-left:10px}
+
 /* 비즈니스 > 암웨이-현대 제휴카드 */
 .business .box-gray {padding:40px; background-color:#f4f4f4}
 .business .box-gray.img-type01 .info {padding:0 40px 0 10px !important}
@@ -167,9 +211,9 @@
 .akl .report-date-area .bt-akl-blue { position: absolute; right:40px; top:40px; min-width:90px;}
 .akl .report-date-area .list-type2 { padding-top:20px; clear:both}
 
-
-.col-search-tab.num04  ul li { margin-bottom: -1px; width:25%}
-.col-search-tab.num04  ul li:nth-of-type(4) a{  border-right: 1px solid #dadada;  }
+/* 공통으로 이동 : 2018.06.12
+.col-search-tab.num04  ul li {margin-bottom:-1px; width:25%}
+.col-search-tab.num04  ul li:nth-of-type(4) a {border-right: 1px solid #dadada;}*/
 
 /*  비즈니스 > 사업성장 특별보상 프로그램 */
 .col-search-tab + .reward-detail{ margin-top:-19px}
@@ -606,6 +650,15 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business .form-wrapper.busi-search .form-s { height: auto; margin-bottom:0;}
 	.business .reset-btn-wrap { padding:10px 0 0; display:block; text-align: center;}
 	
+	/* 뉴핀 성취자 */
+	.newpin-area .newpin li {width:20%}
+	
+	.newpin-area .np-list-wrap .list .tit em {margin-left:10px}
+	.newpin-area .np-list-wrap .list {margin-top:30px; padding:30px 0 0 0; }
+	.newpin-area .np-list-wrap .list .inner {padding:10px 0 0 0}
+	.newpin-area .np-list-wrap .list .inner .info .row {padding:0}
+	.newpin-area .np-list-wrap .list .inner .info .row div {display:table; padding:5px 20px; width:100%;}
+	
 	/* 암웨이-현대 제휴카드 */
 	.business .card-info .info.type01 .inner {min-height:260px;}
 	.business .card-info .info.type02 .inner {min-height:310px;}
@@ -651,6 +704,11 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business .cart-popup__item-info {padding:25px 20px !important}
 	.business .m-hide {display:none !important} 
 	.business .list-content.business-type01 .content-list li {text-align:left;} 
+	
+	* 뉴핀 성취자 */
+	.newpin-area .newpin li {width:33.33333%}
+	.newpin-area .newpin li .tit {padding:0 5px}
+	.newpin-area .newpin li br {display:none}
 	
 	/* 비즈니스 > 암웨이-현대 제휴카드 */
 	.business .box-gray.img-type01 .info {text-align:center; padding:0 !important}

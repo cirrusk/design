@@ -1,4 +1,4 @@
-/* common > tab */
+/* --- 공통 : 탭 --- */
 .amway-theme .tabs-toggles .tab-toggle-wrap {min-width:120px;}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {width:100%; height:50px; padding:0 20px; text-align:center; word-break:break-all; display:flex; align-items:center;}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; width:100%; font-weight:500; font-size:14px; line-height:120%; word-break:break-all;}
@@ -10,16 +10,21 @@
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap {min-width:160px;}
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:160px;}
 
-.col-search-tab { margin: 0 0 40px; padding: 0; }
-.col-search-tab ul { display: -webkit-flex; display: -moz-flex;  display: -ms-flex; display: flex; margin: 0; padding: 0; border-bottom: 1px solid #dadada;}
-.col-search-tab ul li { margin-bottom: -1px; width:12%}
-.col-search-tab ul li a { width:100%; border: 1px solid #dadada; color: #55565a; padding:15px 0; text-align:center;  border-right: none; background: #f4f4f4;  display:block}
-.col-search-tab ul li:nth-of-type(7){ width:16%}
-.col-search-tab ul li:nth-of-type(8) a{  border-right: 1px solid #dadada;  }
-.col-search-tab ul li a span { font-weight:500px; }
-.col-search-tab ul li.active a { background: #fff; border-bottom: none; position:relative;}
+/* 검색 > 탭 */
+.col-search-tab {position:relative; margin:0 0 40px; padding:0;}
+.col-search-tab ul {display:flex; margin:0; padding:0; border-bottom: 1px solid #dadada;}
+.col-search-tab ul li {width:12%; margin-bottom:-1px;}
+.col-search-tab ul li a {display:flex; width:100%; height:50px; padding:15px 0; word-break:break-all; justify-content:center; align-items:center; color:#55565a; border:1px solid #dadada; border-right:0; background: #f4f4f4;}
+.col-search-tab ul li a span {font-weight:500;}
+.col-search-tab ul li:nth-of-type(7){width:16%}
+.col-search-tab ul li:nth-of-type(8) a{ border-right: 1px solid #dadada;}
+.col-search-tab ul li {display: inline-flex;}
+.col-search-tab ul li.active a {position:relative; background:#fff; border-bottom:0;}
 .col-search-tab ul li.active a:before { content:""; position:absolute; top:-1px; left:-1px; right:-1px;  border-top: 4px solid #008fc5; }
-.col-search-tab ul li { display: -webkit-inline-flex; display: -moz-inline-flex; display: -ms-inline-flex; display: inline-flex; }
+
+/* 비즈니스 > 사업성장 특별보상 프로그램 */
+.col-search-tab.num04  ul li {width:25%; margin-bottom: -1px;}
+.col-search-tab.num04  ul li:nth-of-type(4) a {border-right:1px solid #dadada;}
 
 /* 주문결제 > 결제방법 선택 > 카드사 혜택보기팝업 */
 .col-search-tab.card {margin-bottom:30px}
@@ -27,20 +32,16 @@
 .col-search-tab.card ul li:last-child {border-right:1px solid #dadada}
 
 @media (min-device-width:1025px){
-	/* 탭 스크롤 */
-	.tabs-toggles::-webkit-scrollbar-track {background-color:rgba(245,245,245,0.1); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
-	.tabs-toggles::-webkit-scrollbar {width:6px; height:6px; background-color: rgba(245,245,245,1);}
-	.tabs-toggles::-webkit-scrollbar-thumb {width:6px; height:6px; background-color:rgba(0,0,0,0.2);}
-
-	.col-search-tab::-webkit-scrollbar-track {background-color:rgba(245,245,245,0.1); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
-	.col-search-tab::-webkit-scrollbar {top:5px; width:6px; height:6px; background-color: rgba(245,245,245,1);}
-	.col-search-tab::-webkit-scrollbar-thumb {width:6px; height:6px; background-color:rgba(0,0,0,0.2);}
-
-	/* IE 스크롤 - 작업예정 */
+	/* webkit 스크롤 */
+	.tabs-toggles::-webkit-scrollbar-track, .col-search-tab>ul::-webkit-scrollbar-track {background-color:rgba(245,245,245,0.1); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
+	.tabs-toggles::-webkit-scrollbar, .col-search-tab>ul::-webkit-scrollbar {width:6px; height:6px; background-color: rgba(245,245,245,.8);}
+	.tabs-toggles::-webkit-scrollbar-thumb, .col-search-tab>ul::-webkit-scrollbar-thumb {width:6px; height:6px; background-color:rgba(0,0,0,0.1);}
+	/* IE 스크롤 */
+	.tabs-toggles, .col-search-tab>ul {-ms-overflow-style:-ms-autohiding-scrollbar; scrollbar-face-color:rgba(245,245,245,0); scrollbar-arrow-color:rgba(245,245,245,0); scrollbar-track-color:rgba(245,245,245,0.4); scrollbar-shadow-color:rgb(255,255,255,0.5); scrollbar-highlight-color:rgb(255,255,255,0); scrollbar-3dlight-color:rgb(255,255,255,0); scrollbar-darkshadow-Color:rgb(255,255,255,0);}
 }
-
 @media (max-width: 768px){
-	/* common > tabs (base.css 재정의) : 작업중  2018.06.07 */
+	/* --- 공통 : 탭 --- */
+	/* common > tabs (base.css 재정의) */
 	.amway-theme .outer-border-bottom {position:relative;}
 	.amway-theme .outer-border-bottom:before {content:''; position:absolute; box-sizing:content-box; width:100%; padding-left:15px; padding-right:15px; height:1px; left:-15px; right:0; bottom:0; background:#dadada;}
 	.amway-theme .tab-toggle-wrap {display:inline-table; display: block; flex:auto; min-width:auto;	margin:0; justify-content:center; align-items:center;}
@@ -57,6 +58,7 @@
 	.amway-theme .outer-border-bottom.border-none {border:0;}
 	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap {border-bottom:0;}
 	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap .tab-toggle {border-bottom:1px solid #dadada;}
+
 	.akl .amway-theme .tabs-toggles {overflow-x:auto; overflow-y:hidden; margin-left:0; border:0;}
 	.akl .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display: inline-block;}
 	.akl .outer-border-bottom {position:relative; margin-left:0; margin-right:0;}
@@ -68,32 +70,29 @@
 	.akl .tabs-toggles.case01 .tab-toggle-wrap,
 	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}
 
-	/* 스크롤되는 영역 표시 */
-	.outer-border-bottom .scrollable-area {position:absolute; left:0; top:-1px; width:60px; height:100%; z-index:1;}
-	.outer-border-bottom .scrollable-area.left {left:-15px;
+	/* 검색 > 탭 */
+	.col-search-tab {position:relative; margin: 0 0 30px;}
+	.col-search-tab:before {content:''; position:absolute; box-sizing:content-box; width:100%; padding-left:15px; padding-right:15px; height:1px; left:-15px; right:0; bottom:0; background:#dadada;}
+	.col-search-tab ul {overflow-x:auto; overflow-y:hidden; margin-left:0; border:0; width:auto;}
+	.col-search-tab ul li {display:inline-table; display: block; flex:auto; width:auto;	margin:0; justify-content:center; align-items:center;}
+	.col-search-tab ul li.active a:before {content:''; position:absolute; top:auto; bottom:0; left:0; right:0;  border-top: 4px solid #008fc5;}
+	.col-search-tab ul li a {display:block; padding:15px 20px; word-break:keep-all; white-space:nowrap; color:#55565a; font-size:14px; font-weight:500; vertical-align: middle; line-height:120%; background:none; border:0;}
+	.col-search-tab ul li:nth-of-type(7) {width:auto;}
+	.col-search-tab ul li:last-child a {border-right:0;}
+	.col-search-tab.num04 ul li:last-child a {border-right:0;}
+	.col-search-tab.num04 ul li {display:inline-table; display: block; flex:auto; width:auto;	margin:0; justify-content:center; align-items:center; width:auto}
+	.col-search-right .plp-add-to-ditto button {position:static;}
+
+	/* 스크롤 영역 표시 */
+	.scrollable-area {position:absolute; left:0; top:-1px; width:60px; height:100%; z-index:2;}
+	.scrollable-area.left {left:-15px;
 		background:    -moz-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
 		background:     linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
-	.outer-border-bottom .scrollable-area.right {left:auto; right:-15px;
+	.scrollable-area.right {left:auto; right:-15px;
 		background:    -moz-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
 		background:       linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
-
-
-	.akl .col-search-tab { margin: 0 0 30px; height:55px; overflow-x:auto; overflow-y:hidden;}
-	.akl .col-search-tab.scrolling {height:57px;}
-	.col-search-tab ul { width:990px;}
-	.col-search-tab ul li {width:auto;}
-	.col-search-tab ul li a {padding:15px 20px; background:none; border: 0}
-	.col-search-tab ul li:nth-of-type(7){ width:auto}
-	.col-search-tab ul li:last-of-type(8) a {border-right:0;}
-	.col-search-tab ul li:nth-of-type(8) a {border-right:0;}
-	.col-search-tab ul li a span {font-weight:500px;}
-	.col-search-tab ul li.active a:before { content:""; position:absolute; top:auto; bottom:-1px; left:-1px; right:-1px;  border-top: 4px solid #008fc5; }
-    .col-search-right .plp-add-to-ditto button { position:static;  }
-	.col-search-tab.num04 ul { width:100%; min-width:730px;}
-	.col-search-tab.num04 ul li a {padding:15px 10px;}
-	.col-search-tab.num04 ul li:nth-of-type(4) a {border-right:0 !important;}
 }

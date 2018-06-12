@@ -123,7 +123,7 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .akl {font-family:'Noto Sans KR', sans-serif; font-weight:normal; }
 .akl .container {max-width:1400px;clear:both;display:block;margin:0 auto;}
 .akl .amway-theme * {font-size:14px; letter-spacing:-1px; outline:initial;}
-.akl .amway-theme a {font-size:14px; font-weight:400}
+.akl a {font-size:14px; font-weight:400}
 .akl button {font-family:'Noto Sans KR', sans-serif !important}
 .akl caption {font-size:0; overflow:hidden; text-indent:-9999999px; height:0; width:0; line-height:0; padding:0;}
 .akl em, .akl i{ font-style:normal; font-size: 14px; }
@@ -243,7 +243,7 @@ b,strong{font-weight:500; }
 .akl .amwahover .product-list__thum img { position:absolute;top: 0; left:0; height: 100%; width:100%; transition: all 0.3s !important; -webkit-transition: all 0.3s !important; }
 
 /* common > h1~h6 */
-.akl h1 {font-size: 36px; letter-spacing: -2px; font-family:'Noto Sans KR', sans-serif; line-height: 140%; font-weight:700!important;}
+.akl h1 {font-size: 36px; letter-spacing: -2px; font-family:'Noto Sans KR', sans-serif; line-height: 140%; font-weight:700;}
 .akl h2 {font-size: 32px; letter-spacing: -2px; font-family:'Noto Sans KR', sans-serif; font-weight:700}
 .akl h3, .akl h4, .akl h5,.akl h6 {font-family:'Noto Sans KR', sans-serif; font-weight:500}
 .akl .title-h1 {font-size: 36px; letter-spacing: -2px; color: #002F5F; line-height: 100%; font-weight:700}
@@ -253,7 +253,7 @@ b,strong{font-weight:500; }
 .akl .title-h5 {font-size: 20px; letter-spacing: -2px; line-height: 100%; font-weight:500}
 .akl .title-h6 {font-size: 16px; letter-spacing: -1px; line-height: 100%; font-weight:500}
 .akl .product-list-page-title {  font-size: 32px; letter-spacing: -2px; }
-.akl .product-list-page-title + .product-list-page-sub-title  { margin-top:-20px; font-size:14px; font-weight:400}
+.akl .product-list-page-title + .product-list-page-sub-title  { margin-top:-25px; margin-bottom:38px; font-size:14px; font-weight:400}
 .akl .popular-searches + .product-list-page-title { text-align:center}
 .akl .product-list-page-title >h1 { margin:0;}
 
@@ -262,6 +262,7 @@ b,strong{font-weight:500; }
 .akl .bonus-payment .bonus-payment__title:after {position:absolute;top:3px;left:-30px;content:'';display:block;background:url('../images/akl_common/ico_note.png') no-repeat left top;width:17px;height:21px;}
 .akl .bonus-payment .bonus-payment__title.shipping:after {top:5px; left:-30px; background:url('../images/akl_common/ico_ship.png') no-repeat left top; }
 .akl .bonus-payment .bonus-payment__title.member-pointe:after {top:4px;left:-30px;background:url('../images/akl_common/ico-point-management.png') no-repeat left top;width:24px;height:20px;}
+.akl .bonus-payment .bonus-payment__title.child-regist:after {top:5px; left:-30px;width: 19px; background:url('../images/akl_common/ico_childregist.png') no-repeat left top; background-size:19px 16px }
 
 /* common > form */
 .akl .form-control { display:inline-block;}
@@ -1059,7 +1060,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .outer-border-bottom .tabs-toggles { margin-left: 0;margin-right: 0; }
 	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap { margin-bottom: 0 !important;} */
 
-	/* common > tabs (base.css 재정의) : 작업중  2018.06.07 */
+	/* common > tabs (base.css 재정의) : 작업중  2018.06.07 
 	.amway-theme .outer-border-bottom {position:relative;}
 	.amway-theme .outer-border-bottom:before {content:''; position:absolute; box-sizing:content-box; width:100%; padding-left:15px; padding-right:15px; height:1px; left:-15px; right:0; bottom:0; background:#dadada;}
 	.amway-theme .tab-toggle-wrap {display:inline-table; display: block; flex:auto; min-width:auto;	margin:0; justify-content:center; align-items:center;}
@@ -1070,9 +1071,9 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {padding-top:0; border:0;}
 	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {top:auto; bottom:-1px;}
 	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text,
-	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle:hover .toggle-text {color:#002f5f;}
+	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle:hover .toggle-text {color:#002f5f;}*/
 
-	/* wrapper가 있는 경우 (js에서 .border-none 추가) */
+	/* wrapper가 있는 경우 (js에서 .border-none 추가) 
 	.amway-theme .outer-border-bottom.border-none {border:0;}
 	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap {border-bottom:0;}
 	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap .tab-toggle {border-bottom:1px solid #dadada;}
@@ -1085,7 +1086,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap,
 	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle,
 	.akl .tabs-toggles.case01 .tab-toggle-wrap,
-	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}
+	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}*/
 
 	/* 스크롤되는 영역 표시 : 작업중
 	.outer-border-bottom .scrollable-area {position:absolute; left:0; top:-1px; width:60px; height:100%; z-index:1;}
