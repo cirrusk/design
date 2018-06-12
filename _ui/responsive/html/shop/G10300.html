@@ -131,7 +131,7 @@
 						</div>
 
 						<!-- 수정 : 2018.03.29 (기존 .flexslider 사용안함) -->
-						<div class="product-recentlyviewed__imagelist ui-snap-item" id="uiPrdViewDetail">
+						<div class="product-recentlyviewed__imagelist ui-snap-item owl-carousel owl-theme" id="uiPrdViewDetail"><!-- carousel 수정 : .owl-carousel.owl-theme 추가  -->
 							<div><button type="button" data-n="0" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></button></div>
 							<div><button type="button" data-n="1" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></button></div>
 							<div><button type="button" data-n="2" class="ui-snap-btn type-video"><img src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png" alt="동영상"></button></div>
@@ -822,7 +822,7 @@
 
 											<!-- 관련자료/ 온라인 교육자료 -->
 											<p class="carousel-title">관련자료/ 온라인 교육자료</p>
-											<div id="productLearningListTabs" class="owl-carousel">
+											<div id="productLearningListTabs" class="owl-carousel owl-theme"><!-- carousel 수정 : .owl-carousel.owl-theme 추가  -->
 												<div class="item">
 													<div class="full-width-item second-option">
 														<a href="#" id="PDP_DataLink"><!-- 2018.03.15 태깅 아이디 추가, 마크업 변경 : 이미지 -->
@@ -861,6 +861,20 @@
 															<div class="item-content-wrap">
 																<div class="carousel-link-wrap">
 																	<p class="primary-link"><span>엣모스피어 드라이브 가이드북</span></p>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="item">
+													<div class="full-width-item second-option">
+														<a href="#" id="PDP_DataLink"><!-- 2018.03.15 태깅 아이디 추가, 마크업 변경 : 이미지 -->
+															<div class="item-image-wrap">
+																<span href="#" class="primary-link"><img class="desktop-image" src="/_ui/responsive/theme-blue/images/product-learning1.png" alt=""></span>
+															</div>
+															<div class="item-content-wrap">
+																<div class="carousel-link-wrap">
+																	<p class="primary-link"><span>엣모스피어 드라이브 가이드북 (테스트 추가)</span></p>
 																</div>
 															</div>
 														</a>
@@ -951,7 +965,7 @@
 				<div class="container-fluid main-container">
 					<div class="amway-suggest col-md-12">
 						<h2 class="amway-suggest__title">함께하면 좋은 제품</h2>
-						<div id="productSuggestListTabs001" class="amway-suggest__list"><!-- 2018.04.12 수정 -->
+						<div id="productSuggestListTabs001" class="amway-suggest__list owl-carousel owl-theme"><!-- carousel 수정 : .owl-carousel.owl-theme 추가  --><!-- 2018.04.12 수정 -->
 							<div class="amway-suggest__item-container">
 								<div class="amway-suggest__item">
 									<div class="ico-solid-out">
@@ -1144,10 +1158,10 @@
 				<div class="col-sm-12 column product-description__section">
 					<div class="product-title-container">
 						<h2 class="amway-learning__title">
-							<span class="mH">최근 본 제품</span>	
+							<span class="mH">최근 본 제품</span>
 						</h2>
 					</div>
-					<div class="product-recentlyviewed__imagelist" id="recentlyViewedListTab">
+					<div class="product-recentlyviewed__imagelist owl-carousel owl-theme" id="recentlyViewedListTab"><!-- carousel 수정 : .owl-carousel.owl-theme 추가  -->
 						<!-- 2018.03.15 a 태그 추가 -->
 						<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/vitamin-c.png" alt="vitamin-c"></a></div>
 						<div><a href="#"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/lip-gloss.png" alt="lip-gloss"></a></div>
@@ -1613,7 +1627,7 @@
 						<div class="video-wrapper"></div>
 					</div>
 					<div class="popup-img-list">
-						<div class="product-recentlyviewed__imagelist" id="recentlyViewedListTab2">
+						<div class="product-recentlyviewed__imagelist owl-carousel owl-theme" id="recentlyViewedListTab2"><!-- carousel 수정 : .owl-carousel.owl-theme 추가  -->
 							<!-- 수정 : 2018.03.29 --><!-- 2018.03.14 마크업 수정  -->
 							<div><a href="#" data-n="0"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/no_img_s.png" alt=""></a></div>
 							<div><a href="#" data-n="1"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></a></div>
@@ -1716,6 +1730,7 @@
 				}
 			}
 		});
+
 
 		//온라인 교육자료
 		$('#productLearningListTabs').owlCarousel({

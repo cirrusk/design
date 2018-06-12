@@ -1,3 +1,34 @@
+/* --- 공통 : owl-carousel --- */
+
+/* base.css 라인 4905*/
+.homepage_banner .slick-slider{margin-bottom:10px;}
+.owl-prev{position:absolute;top:50%;left:40px;float:left;width:30px;height:30px;margin-top:-15px;font-weight:100;}
+.owl-next{position:absolute;top:50%;right:40px;float:left;width:30px;height:30px;margin-top:-15px;font-weight:100;}
+.owl-dots{position:absolute;right:80px;bottom:30px;width:auto;}
+.owl-dots .owl-dot span{opacity:1;background:#ffffff;box-shadow:0 0 2px #555555;}
+.owl-dots .owl-dot.active span{background:#8a9fb8;}
+@media (max-width: 768px){
+	.owl-dots{right:auto;bottom:12px;width:100%;}
+}
+
+
+/* akl_common.css 라인 487*/
+.akl .owl-nav div {background:none; text-indent: -999px; height:22px}
+.akl .owl-nav div::before {display:none}
+.akl .owl-nav .owl-prev { left:30px; background: url('../images/akl_common/icon_slide_prev_off.png') no-repeat left top !important; text-indent:-999px; overflow:hidden}
+.akl .owl-nav .owl-next { right:30px; background: url('../images/akl_common/icon_slide_next_off.png') no-repeat right top !important; text-indent:-999px; overflow:hidden}
+.akl .owl-nav .owl-prev:hover {background: url('../images/akl_common/icon_slide_prev_on.png') no-repeat left top !important;}
+.akl .owl-nav .owl-next:hover {background: url('../images/akl_common/icon_slide_next_on.png') no-repeat right top !important;}
+
+/* 최근 본 제품 */
+#recentlyViewedListTab .owl-nav .owl-prev {left:10px;}
+#recentlyViewedListTab .owl-nav .owl-next {right:10px;}
+#recentlyViewedListTab.owl-carousel .owl-item {padding:18px;}
+
+.akl .product-suggest .owl-theme .owl-controls .owl-nav .owl-next {right:-15px !important;}
+.akl .product-suggest .owl-theme .owl-controls .owl-nav .owl-prev {left:-15px !important;}
+
+
 /* --- 공통 : 탭 --- */
 .amway-theme .tabs-toggles .tab-toggle-wrap {min-width:120px;}
 .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {width:100%; height:50px; padding:0 20px; text-align:center; word-break:break-all; display:flex; align-items:center;}
