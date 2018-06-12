@@ -642,3 +642,18 @@ $(function() {
 		} 
 	}); 
 });
+
+//뉴핀 성취자
+$(function() {
+	$('.newpin a').click(function() {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+	      var headHei = $('.general-header').height();
+	      var trgt = $(hash).offset().top;
+	      
+	      $('html').animate({scrollTop: trgt - headHei}, 400);
+	    }
+	}); 
+});
