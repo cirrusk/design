@@ -153,32 +153,14 @@
  */
 function tabsTgg_Control(){
 	var _winWidth = $(window).width();
-
-	//균등분할 탭
-/*	var _tabEquality = $('.col-search-tab').find('ul');
-	_tabEquality.each(function(){
-		//wrapper 찾기
-		var find_searchTab = $(this).parent('.col-search-tab');
-		if (find_searchTab.length){
-			//object 추가
-			var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
-			var siblings_El = $(this).siblings(scrollableDiv);
-
-			if ( siblings_El.length ){ return; }
-			else { find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
-		}
-	});*/
-
-
-
 	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
-	_tabsToggles.each(function(){
 
-		/* -- 스크롤영역 표시 Div 추가 -- */
+	_tabsToggles.each(function(){
+		/* -- object 추가 (스크롤 영역 표시 용)-- */
 		var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
 		var siblings_El = $(this).siblings(scrollableDiv);
 
-		//Type1: 기본형
+		//Type1 기본
 		var find_OuterBorder = $(this).parent('.outer-border-bottom');
 		if( find_OuterBorder.length ){
 			find_OuterBorder.addClass('border-none'); //border-bottom 삭제
@@ -187,14 +169,14 @@ function tabsTgg_Control(){
 			else { find_OuterBorder.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
 		}
 
-		//Type2: 균등분할
+		//Type2 균등분할
 		var find_searchTab = $(this).parent('.col-search-tab');
 		if (find_searchTab.length){
 			if ( siblings_El.length ){ return; }
 			else { find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
 		}
 
-		/* 너비 비교하기 */
+		/* -- 너비 비교하기 -- */
 		var _UL = $(this);
 		var _LI = _UL.find('li');
 
@@ -210,17 +192,20 @@ function tabsTgg_Control(){
 			});
 
 			function runWideView(){
-				_UL.removeClass('scroll-tab');
-
+				_UL.removeClass('scroll-tab').css('width','');
 				if( children_sum < _winWidth ){ _UL.removeClass('width-auto'); }
 				if( children_sum > _UL.width() ){ _UL.addClass('width-auto'); }
 			}
-
 			function runSmallView(){
 				_UL.removeClass('width-auto');
-
-				if(_winWidth < children_sum ){ _UL.addClass('scroll-tab'); }
 				if(_winWidth > children_sum ){ _UL.removeClass('scroll-tab'); }
+				if(_winWidth < children_sum ){ _UL.addClass('scroll-tab'); }
+
+				//균등분할 탭
+				var parentDiv = _UL.parent('.col-search-tab');
+				if(parentDiv.length){
+					_UL.css({'width':children_sum})
+				}
 			}
 
 			//console.log('_winWidth :' + _winWidth);
@@ -233,7 +218,7 @@ function tabsTgg_Control(){
 			$tabWidthCheck();
 		});
 
-		/* --- 스크롤 가능 영역 표시 --- */
+		/* --- 스크롤 가능 표시 컨트롤 --- */
 		var leftDiv = $(this).siblings('.scrollable-area.left');
 		var righttDiv = $(this).siblings('.scrollable-area.right');
 		var $scrollArea = {
@@ -267,7 +252,6 @@ function tabsTgg_Control(){
 
 		width_check();
 		$(window).resize(function(){
-			$tabWidthCheck();
 			width_check();
 		});
 
@@ -290,7 +274,7 @@ function tabsTgg_Control(){
 				$(this).siblings('.scrollable-area.right').hide();
 			}
 			else {
-				//움직이는 주시작도 끝도 아님
+				//움직이는 중, 시작 후 스크롤 움직인 상태
 				$(this).siblings('.scrollable-area.left , .scrollable-area.right').show();
 			}
 		});
