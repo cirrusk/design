@@ -44,7 +44,51 @@
 <body class="akl">
 
 	<h1 class="h1Tit">Accordion</h1>
+	 
 	<div class="guide">
+		<p class="title-h6" style="color:#a7240e">Accordion type1(아이콘이 뒤에 있는 경우: 1개만 열리는 경우)</p>
+		<div class="akl-toggle-wrap">
+			<div class="panel-group accordion-custom"  id="aklPageAccordion" aria-multiselectable="true">
+				<div class="panel">
+					<div class="panel-heading" role="tab">
+						<a href="#down5" data-toggle="collapse"  class="collapsed" data-parent="#aklPageAccordion"> 
+							<div class="panel-title">
+								<span class="text-uppercase accordion-header-text">목록1</span>
+								<span class="pull-right icon-minus"></span>
+							</div>
+						</a>
+					</div>
+					<div id="down5" class="panel-collapse applicants-panel collapse" role="tabpanel"> 
+						<div class="panel-body">
+							<div class="col-md-12">
+										내용1
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel">
+					<div class="panel-heading" role="tab">
+						<a href="#down6" data-toggle="collapse"  class="collapsed" data-parent="#aklPageAccordion">
+							<div class="panel-title">
+								<span class="text-uppercase accordion-header-text">목록2</span>
+								<span class="pull-right icon-minus"></span>
+							</div>
+						</a>
+					</div>
+					<div id="down6" class="panel-collapse applicants-panel collapse" role="tabpanel">
+						<div class="panel-body">
+							<div class="col-md-12">
+									   내용2
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		
+		<div class="guide">
 		<p class="title-h6" style="color:#a7240e">Accordion type1(아이콘이 뒤에 있는 경우)</p>
 		<div class="akl-toggle-wrap">
 			<div class="panel-group accordion-custom" aria-multiselectable="true">
@@ -57,7 +101,7 @@
 							</div>
 						</a>
 					</div>
-					<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne"><!--  in - 첫번째 열어놓는 클래스  -->
+					<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel"><!--  in - 첫번째 열어놓는 클래스  -->
 						<div class="panel-body">
 							<div class="col-md-12">
 										내용1
@@ -75,7 +119,7 @@
 							</div>
 						</a>
 					</div>
-					<div id="down2" class="panel-collapse applicants-panel collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div id="down2" class="panel-collapse applicants-panel collapse" role="tabpanel">
 						<div class="panel-body">
 							<div class="col-md-12">
 									   내용2
