@@ -313,8 +313,35 @@ Version : AKL Hybris UIUX 1.0
 .add-answer p {  padding-left:30px; font-weight:500;background:url(../images/akl_common/ico_answer01.png) no-repeat left 0; }
 .add-answer span{ color:#808285; font-size:13px; display:block; padding-left:30px}
 
-@media (max-width: 1024px) {
+/* 암웨이 브랜드 센터 */
+.customer-conts {}
+.customer-conts .title-h6.customer {font-weight:400; color:#002f5f !important; font-size:18px}
+.customer-conts .center-photo {position:relative; padding-right:376px}
+.customer-conts .center-photo [class^="photo-wrap"] .photo {position:relative; padding-top:420px; overflow:hidden}
+.customer-conts .center-photo [class^="photo-wrap"] .photo img {position:absolute; top:0; left:0; right:0; bottom:0; min-width:100%; height:auto}
+.customer-conts .center-photo .photo-wrap02 .photo, 
+.customer-conts .center-photo .photo-wrap03 .photo {padding-top:202px}
+.customer-conts .center-photo .photo-wrap02 .photo img, 
+.customer-conts .center-photo .photo-wrap03 .photo img {height:100%}
+.customer-conts .center-photo .photo-wrap01 {width:100%;}
+.customer-conts .center-photo .photo-wrap01 .photo img {margin:auto 0}
+.customer-conts .center-photo .photo-wrap02 {position:absolute; right:0; top:0; width:360px;}
+.customer-conts .center-photo .photo-wrap03 {position:absolute; right:0; bottom:0; width:360px;}
 
+@media (max-width: 1024px) {
+	/* 암웨이 브랜드 센터 */
+	.customer-conts .center-photo  {padding-right:270px;}
+	.customer-conts .center-photo [class^="photo-wrap"] .photo {padding-top:320px;}
+	.customer-conts .center-photo .photo-wrap02, 
+	.customer-conts .center-photo .photo-wrap03 {width:255px}
+	.customer-conts .center-photo .photo-wrap02 .photo, 
+	.customer-conts .center-photo .photo-wrap03 .photo {padding-top:152px}
+	.customer-conts .center-photo .photo-wrap02 .photo img, 
+	.customer-conts .center-photo .photo-wrap03 .photo img {width:auto; height:100%}
+}
+
+@media (max-width: 992px) {
+	
 }
 
 @media (min-width: 769px) {
@@ -323,6 +350,13 @@ Version : AKL Hybris UIUX 1.0
 }
 
 @media (max-width: 768px) {
+	/* 암웨이 브랜드 센터 */
+	.customer-conts .center-photo {position:relative; padding-right:0}
+	.customer-conts .center-photo [class^="photo-wrap"] {width:100%; position:static}
+	.customer-conts .center-photo [class^="photo-wrap"] .photo {padding-top:35%}
+	.customer-conts .center-photo [class^="photo-wrap"] .photo img {margin:auto 0; max-width:100%; height:auto}
+	.customer-conts .center-photo [class^="photo-wrap"] + [class^="photo-wrap"] {margin-top:10px}
+	
 	/* 암웨이플라자 shopfinder F10000 */
 	.mob-view-box {display:block;}
 
