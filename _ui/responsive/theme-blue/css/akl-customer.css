@@ -315,7 +315,7 @@ Version : AKL Hybris UIUX 1.0
 
 /* 암웨이 브랜드 센터 */
 .customer-conts {}
-.customer-conts .title-h6.customer {font-weight:400; color:#002f5f !important; font-size:18px}
+.customer-conts .title-h6.customer {color:#002f5f !important; font-size:18px}
 .customer-conts .center-photo {position:relative; padding-right:376px}
 .customer-conts .center-photo [class^="photo-wrap"] .photo {position:relative; padding-top:420px; overflow:hidden}
 .customer-conts .center-photo [class^="photo-wrap"] .photo img {position:absolute; top:0; left:0; right:0; bottom:0; min-width:100%; height:auto}
@@ -328,6 +328,29 @@ Version : AKL Hybris UIUX 1.0
 .customer-conts .center-photo .photo-wrap02 {position:absolute; right:0; top:0; width:360px;}
 .customer-conts .center-photo .photo-wrap03 {position:absolute; right:0; bottom:0; width:360px;}
 
+.customer-conts .center-program {margin-top:20px; padding:50px; background-color:#f6f6f6; font-size:0}
+.customer-conts .center-program li {width:33.33333%; vertical-align:top; padding:0 20px; text-align:center}
+.customer-conts .center-program li + li {border-left:1px solid #e3e3e3}
+.customer-conts .center-program li em {display:inline-block; width:120px; height:120px; padding-top:35px; border-radius:50%; font-size:16px; font-weight:400; color:#fff}
+.customer-conts .center-program li em .blck {margin-top:-2px}
+.customer-conts .center-program li:nth-child(1) em {background-color:#002f5f}
+.customer-conts .center-program li:nth-child(2) em {background-color:#e11e45}
+.customer-conts .center-program li:nth-child(3) em {background-color:#0da1dc; letter-spacing:-0.06em; padding-top:47px}
+.customer-conts .center-program li p {margin-top:20px; font-size:14px}
+
+.customer-conts .txt-defind01 dt {margin-top:20px; font-weight:500}
+.customer-conts .txt-defind01 dd {margin-top:3px}
+
+.customer-conts .shop-info {margin-top:20px}
+.customer-conts .shop-info .panel-title {padding:16px 0 18px !important}
+.customer-conts .shop-info .panel-title .accordion-header-text {font-size:14px !important}
+.customer-conts .shop-info .panel-body {padding-bottom:40px !important}
+.customer-conts .shop-info .panel-body .col-md-12 {position:relative; min-height:300px; padding:40px 540px 40px 40px; background-color:#f6f6f6}
+.customer-conts .shop-info .panel-body .col-md-12 em {display:block; margin-top:10px; font-size:22px; color:#002f5f}
+.customer-conts .shop-info .panel-body .col-md-12 .color-blue {margin-top:5px; font-size:16px}
+.customer-conts .shop-info .panel-body .col-md-12 img {position:absolute; top:40px; right:40px; border:1px solid #fff}
+.customer-conts .shop-info .panel-body .col-md-12 .txt {margin-top:32px; font-size:14px}
+
 @media (max-width: 1024px) {
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo  {padding-right:270px;}
@@ -338,10 +361,15 @@ Version : AKL Hybris UIUX 1.0
 	.customer-conts .center-photo .photo-wrap03 .photo {padding-top:152px}
 	.customer-conts .center-photo .photo-wrap02 .photo img, 
 	.customer-conts .center-photo .photo-wrap03 .photo img {width:auto; height:100%}
+	
+	.customer-conts .center-program {padding:50px 20px}
+	.customer-conts .center-program li p br {display:none}
 }
 
 @media (max-width: 992px) {
-	
+	/* 암웨이 브랜드 센터 */
+	.customer-conts .shop-info .panel-body .col-md-12 {min-height:150px; padding-right:410px}
+	.customer-conts .shop-info .panel-body .col-md-12 img {margin-top:50px; width:40%}
 }
 
 @media (min-width: 769px) {
@@ -356,6 +384,17 @@ Version : AKL Hybris UIUX 1.0
 	.customer-conts .center-photo [class^="photo-wrap"] .photo {padding-top:35%}
 	.customer-conts .center-photo [class^="photo-wrap"] .photo img {margin:auto 0; max-width:100%; height:auto}
 	.customer-conts .center-photo [class^="photo-wrap"] + [class^="photo-wrap"] {margin-top:10px}
+	
+	.customer-conts .center-program {padding:40px 20px 30px}
+	.customer-conts .center-program li {display:block; width:100%}
+	.customer-conts .center-program li + li {border-left:0; border-top:1px solid #e3e3e3; padding-top:28px; margin-top:28px}
+	.customer-conts .center-program li p {margin-top:15px}
+	
+	.customer-conts .shop-info .panel-body .col-md-12 {padding:25px 20px;}
+	.customer-conts .shop-info .panel-body .col-md-12 em {margin-top:0}
+	.customer-conts .shop-info .panel-body .col-md-12 img {position:static; width:100%; margin-top:5px}
+	.customer-conts .shop-info .panel-body .col-md-12 .txt {margin-top:15px}
+	.customer-conts .shop-info .panel-body .col-md-12 em + img {margin-top:15px}
 	
 	/* 암웨이플라자 shopfinder F10000 */
 	.mob-view-box {display:block;}
