@@ -36,10 +36,11 @@ shop 옮김 : 2018.04.10
 .akl .auto-suggestion-popover { top: 128px; }
 .akl .auto-suggestion-popover .owl-carousel {   }
 .akl .auto-suggestion-popover .main-container { padding: 0 0;}
-.akl .auto-suggestion-popover .owl-carousel .owl-stage-outer {overflow:hidden; width:99% }
+.akl .auto-suggestion-popover .owl-carousel .owl-stage-outer {overflow:hidden; width:99%; margin-left:.5%;}
 .akl .auto-suggestion-popover .quick-area .owl-theme .owl-controls .owl-nav .owl-next { right:-5px !important;}
 .popover-content-akl { max-width:1376px; margin:0 auto; position:relative; }
 .popover-content-akl:after{ content:""; position:absolute; right:95px; top:-10px; display: block;width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 10px; border-top-width: 0;border-bottom-color: #fff;}
+.akl .auto-suggestion-popover .popover-content {padding:0 25px;}
 .akl .auto-suggestion-popover .popover-content ul {padding: 30px 70px;}
 .popover-content-akl .ui-menu-item a {color: #55565a; font-size:16px; display:block; padding:3px 0; font-weight: 400;}
 .popover-content-akl .ui-menu-item a .bold {font-weight:500;}
@@ -56,7 +57,7 @@ shop 옮김 : 2018.04.10
 .popular-searches dd ul li {position:relative; display: inline-block; padding: 0 28px; font-size: 16px;}
 .popular-searches dd ul li:after { content:""; position:absolute; right:0; border-left:1px solid #dadada; height:12px; top:50%; margin-top: -6px;}
 .popular-searches dd ul li:last-child:after { display: none}
- 
+
 /* 작업중
 .col-search-tab { margin: 0 0 40px; padding: 0; }
 .col-search-tab ul { display: -webkit-flex; display: -moz-flex;  display: -ms-flex; display: flex; margin: 0; padding: 0; border-bottom: 1px solid #dadada;}
@@ -446,8 +447,8 @@ shop 옮김 : 2018.04.10
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-2 {width:16%}
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-1 {width:11%}
 
-
-.akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header label {margin-bottom: 0; margin-right: 10px; padding-top:10px;float: left;line-height: 1.1;display: inline-block;color: #002f5f;max-width: 100%;}
+.shopping-cart-item-list .list-header {line-height:initial; border:1px solid red !important}
+.akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header label {margin-bottom: 0; margin-right: 10px; padding-top:0;float: left;line-height: 1.1;display: inline-block;color: #002f5f;max-width: 100%;}
 .akl .wish-promotion .shopping-cart-item-list [type="checkbox"]:not(:checked) {left: -9999px;position: absolute; }
 .akl .wish-promotion .shopping-cart-item-list input[type="radio"], input[type="checkbox"] {margin: 4px 0 0; margin-top: 1px \9;line-height: normal;}
 ._checkbox-element-global-class ~ span._checkbox-element-global-span {display: inline-block;width: 20px;height: 20px;margin-right: 5px;border: 1px solid #dadada;background: white;position: relative;top: 0px;cursor: pointer;}
@@ -1669,7 +1670,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .shopping-cart-item-list.new-shopping-cart-item-list .visible-xs {margin-bottom:20px;}
 	.akl .shopping-cart-item-list.new-shopping-cart-item-list .visible-xs .list-header label.checkbox-element-wrapper {padding-left:15px}
 	.akl .shopping-cart-item-list .product-list-item .list-item-image {float:left;width:70px;clear:both;display:inline-block;padding:0 0;}
-	.akl .shopping-cart-item-list .product-list-item .list-item-info {float:left;width:calc(100% - 85px);margin-left:0px;padding:0 0}
+	.akl .shopping-cart-item-list .product-list-item .list-item-info {float:left; width:calc(100% - 85px);margin-left:10px;padding:0 0}
 
 	.akl .shopping-cart-item-list .product-list-item.gwp-item {padding:40px 0 30px;}
 	.akl .shopping-cart-item-list .product-list-item.gwp-item .list-item-image {float:left;width:70px;clear:both;display:inline-block;padding:0 0;}
