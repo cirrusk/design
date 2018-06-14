@@ -143,7 +143,7 @@
 														<div class="shoping-cart-search">
 															<div class="container-fluid main-container quick-area">
 																<div class="amway-suggest col-md-12">
-																	<div id="productSuggestListTabs" class="amway-suggest__list">
+																	<div id="productSuggestListTabs" class="amway-suggest__list owl-carousel owl-theme"><!-- carousel 수정 : .owl-carousel.owl-theme 추가  -->
 																		<div class="amway-suggest__item-container">
 																			<div class="amway-suggest__item sort"><!-- sort 추가 -->
 																				<div class="amway-suggest__item-content amwahover">
@@ -383,7 +383,8 @@
 									</div>
 								</div>
 								<ul class="shopping-cart-item-list js-shopping-cart-item-list shopping-cart-product-item-list">
-									<li class="visible-md visible-lg">
+									<!-- 수정 : 2018.06.14 (class 변경) -->
+									<li class="cart-item-header"><!-- .visible-md.visible-lg 삭제 -->
 										<div class="col-xs-12 list-header">
 											<div class="col-xs-5 list-item-info">
 												<div class="product-item-element list-item-toggle">
@@ -400,6 +401,7 @@
 											<div class="col-xs-1 list-item-total">소계(원)</div>
 										</div>
 									</li>
+									<!-- //수정 : 2018.06.14 (class 변경) -->
 									<li class="product-list-item  js-shopping-cart-list-item">
 										<div class="col-xs-12 col-md-5 product-details print-col-6">
 											<div class="product-item-element list-item-toggle">

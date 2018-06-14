@@ -960,7 +960,7 @@
                 </div>
             </div>
         </div>
-        
+
 		<!-- 마크업 변경 2018.05.16 -->
 		<div id="shopping-list-content">
 			<div class="payment-promotion">
@@ -974,14 +974,15 @@
 							<div class="col-xs-1 list-item-total">소계(원)</div>
 						</div>
 					</li>
+					<!-- 삭제 : 2018.06.14 (mob 사이즈  사용안함)
 					<li class="visible-xs">
 						<div class="col-xs-12 uppercase list-header change-list-header mob-list-header">
 						</div>
-					</li>
+					</li> -->
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1101,7 +1102,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1259,7 +1260,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1375,7 +1376,7 @@
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션 세트</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -1492,11 +1493,11 @@
 							</div>
 						</div>
 					</li>
-					
+
 					<li class="product-list-item js-shopping-cart-list-item first-item">
 						<div class="plp-item-label-wrap">
 							<div class="plp-item-label bg-blue">프로모션</div>
-						</div> 
+						</div>
 						<div class="col-xs-12 col-md-5 product-details print-col-6">
 							<div class="product-item-element list-item-image">
 								<div>
@@ -3389,23 +3390,23 @@ $(function(){
 	$('.remove-item-btn').click(function(){
 		$(".delete-list-box,.overlay").show();
 	});
-	
+
 	$('.view-cart').click(function(){
 		$(".delete-list-box,.overlay").hide();
 		$('.delete-example,.delete-example-gift').hide();
 	});
-	
+
 	$(".cartlist-view").click(function(){
 		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
 	})
-	
-	$('.tooltip-btn').click(function() { 
-		$('.promotion-tip-alert').slideToggle(0);  
-	}); 
 
-	$('.tip-close').click(function() { 
+	$('.tooltip-btn').click(function() {
+		$('.promotion-tip-alert').slideToggle(0);
+	});
+
+	$('.tip-close').click(function() {
 		$('.promotion-tip-alert').hide();
-	}); 
+	});
 
 	$('#G10000_lp9').click(function(event) {
 		event.preventDefault();
