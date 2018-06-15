@@ -3,14 +3,6 @@ Version : AKL Hybris UIUX 1.0
 shop 옮김 : 2018.04.10
 *************************************************/
 
-/* commn shipping list */
-.akl .cartlist-td {margin-top: 68px;}
-.akl .cartlist-th {width: 100%;display: table;padding: 0 ;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; text-align:center; font-weight:500; font-size:13px}
-
-@media (max-width:768px){
-	.akl .cartlist-th {display: none;}
-}
-
 
 /** ---------------------------------
  * @ TYPE : LIST
@@ -107,7 +99,7 @@ shop 옮김 : 2018.04.10
 .akl .shop-cart-conts .shopping-cart-item-list .col-xs-1.list-item-total {width:13.33333333%}
 .akl .shop-cart-conts .product-list-item .col-md-3 {width:20%;}
 .akl .shop-cart-conts .product-list-item .col-md-1.list-item-total {width:13.33333333%;}
-
+/*
 .akl .shopping-cart-item-list .cart-content-wrapper .cart-actions {padding:40px 0 45px }
 .akl .shopping-cart-item-list .value-wrapper.right {text-align:right !important;}
 .akl .shopping-cart-item-list .value-wrapper.option img {width:30px;height:30px;}
@@ -122,6 +114,7 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .shop-list-right {display:block;clear:both;height:80px;margin-top:15px}
 .akl .shopping-cart-item-list .akl-toggle-wrap.sort-order .accordion-custom { border-top:0;}
 .akl .shopping-cart-item-list .akl-toggle-wrap.sort-order .accordion-custom .panel { border-bottom: 0;}
+ */
 .akl #shopping-list-content {box-sizing:border-box;margin:0;padding:0;}
 
 .akl .wish-promotion .shopping-cart-item-list {padding:0;box-sizing:border-box;}
@@ -131,6 +124,37 @@ shop 옮김 : 2018.04.10
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-3 {width:20%}
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-2 {width:16%}
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-1 {width:11%}
+
+/* ----- 주문결제 완료, 온라인 팩스 주문-실패  ----- */
+.cartlist-tbody.container-fluid>.row {padding:40px 0 35px;}
+.cartlist-tbody .cartlist-detail-desktop {padding:0;}
+.cartlist-tbody .extraclass-mobile-width {padding:0 0 0 10px;}
+.cartlist-image {display:block; float:left; width:77px; margin:0;}
+.cartlist-text {display:block; float:left; width:calc(100% - 80px); margin:0; text-align:left; color:#55565a;}
+
+.akl .cartlist-th {width:100%; display:table; padding:0; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; text-align:center; font-weight:500; font-size:13px}
+.akl .cartlist-tbody .value-wrapper.option .option-info {display:block; margin-top:8px; padding:0;}
+.akl .cartlist .value-wrapper.option .option-info {display:block; padding:5px 0 0; vertical-align:middle;}
+
+.akl .cartlist-image img { max-width: 67px}
+.akl .cartlist-td {margin-top:0; font-size:14px; font-weight:400; text-align:center;}
+.akl .cartlist-mbweight {display:block;font-size:14px;margin-top:10px;overflow:hidden;}
+.akl .cartlist-mbleft {font-weight:500}
+.akl .cartlist-mbright {color:#55565a;font-weight:400; text-align:right}
+.akl .cartlist-text {padding-left:0;}
+.akl .cartlist-text .cartlist-big {font-size:14px;font-weight:500;line-height:20px}
+.akl .cartlist-text .cartlist-big .cartlist-small2 {display:block;font-size:13px;font-weight:400;padding:10px 0 0;margin:0;}
+.akl .cartlist-text .cartlist-big .cartlist-small3 {display:block;font-size:13px;font-weight:400;padding:0 0;margin:0;}
+.akl .cartlist-text .cartlist-big .cartlist-instock {display:block;font-size:13px;font-weight:500;padding:14px 0 0;}
+.akl .cartlist-header {font-weight:500;font-size:18px;letter-spacing:-2px;}
+.akl .cartlist-header a {color:#002f5f;}
+.akl .cartlist-header:after {display:none;}
+
+/* 주문결제 완료 */
+.akl .cartlist {margin:0 0; padding:0;}
+.akl .cartlist-header .icon-minus {font-weight:500; padding:15px 15px 0 0;}
+.akl .cartlist-content .container-fluid .col-xs-12 {margin:0; padding:0;}
+
 
 @media (max-width: 768px){
 	/** ---------------------------------
@@ -208,6 +232,9 @@ shop 옮김 : 2018.04.10
 	.akl .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections .col-xs-9 {width:100%;padding:0 10px;}
 	.akl .shop-cart-conts .shopping-cart-item-list .col-xs-3 {width:100%;}
 
+	/* 주문/결제 완료 */
+	.akl .cartlist-th {display:none;}
+
 	/* 온라인 팩스 주문 */
 	.akl .faxOrder-cart-wrapper .shopping-cart-item-list .list-header {border-bottom:0;}
 	.akl .faxOrder-cart-wrapper .shopping-cart-item-list .search-no-result {padding:30px 0 0;}
@@ -234,7 +261,6 @@ shop 옮김 : 2018.04.10
 	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image img {max-width:67px;}
 	.akl .fax-order-wrapper .card-sort .pay-line input.card-inp {margin-right:6px;}
 }
-
 
 /* 검색 > 검색어  */
 .popoverword { display: none; position: absolute; top:138px;left: 0;z-index: 1050; width:100%; padding: 1px; text-align: left;background-color:#fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
@@ -1465,7 +1491,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .use-agreement #terms .col-text {padding:10px 18px 0;}
 .akl .use-agreement #terms .conditions {border:0; margin-bottom:0;}
 
-/* 주문결제 > 리스트 */
+/* 주문결제 > 리스트
 .akl .cartlist {margin:0 0;padding:0 0;}
 .akl .cartlist-content .container-fluid {margin:0 0;padding:0 0;}
 .akl .cartlist-content .container-fluid .row {margin:0 0;padding:0 0;}
@@ -1487,7 +1513,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .cartlist-td {margin-top:40px;font-size:14px;font-weight:400; text-align:center}
 .akl .cartlist-mbweight {display:block;font-size:14px;margin-top:10px;overflow:hidden;}
 .akl .cartlist-mbleft {font-weight:500}
-.akl .cartlist-mbright {color:#55565a;font-weight:400;}
+.akl .cartlist-mbright {color:#55565a;font-weight:400;} */
 
 /* 주문결제 > 주문불가제품알림 팝업 */
 .pop-prot-body {padding:0 0;border-bottom:1px solid #e3e3e3;}
@@ -2306,7 +2332,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 	/* 주문결제 > 리스트 */
 	.akl .cartlist-content .container-fluid {padding:0 10px;}
-	.akl .cartlist-content .cartlist-tbody .cartlist-text {padding-left:25px;}
+	.akl .extraclass-mobile-width .cartlist-text {padding-left:10px;}
 	.akl .amwa-btnbar {margin:40px 0 0;}
 
 	/* 주문결제 > 설치주문 */
