@@ -1291,7 +1291,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 .viewer-guide-box {position:relative; padding:30px; margin:40px 0; background:#f4f4f4;}
 .viewer-guide-box>p{margin:0; padding-left:50px; line-height:24px; background:url(../images/icon_caution.png) 0 0 no-repeat;}
 .viewer-guide-box:after {content:''; display:block; position:absolute; top:17px; right:17px; box-sizing:border-box; overflow:hidden;}
-.viewer-guide-box.type-pdf:after {width:198px; height:48px; border:1px solid #d82028; background:#fff url(../images/akl_common/ico_viewer_pdf.png) 0 0 no-repeat;}
+.viewer-guide-box.type-pdf a {position:absolute; top:17px; right:17px; display:block; width:198px; height:48px; border:1px solid #d82028;text-indent:-999px;overflow:hidden; background:#fff url(../images/akl_common/ico_viewer_pdf.png) 0 0 no-repeat;}
 .pocketbook-wrapper .viewer-guide-box + .list-type2 { padding-top:30px; border-top:1px solid #dadada;}
 
 /* 수첩 이미지 */
@@ -1887,7 +1887,8 @@ table.clone thead, .clone tfoot{background:transparent;}
 	/* 뷰어가이드 */
 	.viewer-guide-box>p {background-size:20px auto; background-position:0 5px; line-height:26px;}
 	.viewer-guide-box:after {position:initial; margin:10px 0 0 50px;}
-
+	.viewer-guide-box.type-pdf a { position:initial; margin:10px 0 0 50px;}
+	
 	/* 수첩 이미지 */
 	.note-con-box.imgs {margin:25px 0 40px; background:url(../images/akl_common/business/img_abo_pocket_mob.png) 50% 0 no-repeat; background-size:auto 485px;  height:485px;}
 	.note-con-box.imgs .img {display:none;}
