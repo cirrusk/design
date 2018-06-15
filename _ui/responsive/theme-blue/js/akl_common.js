@@ -472,10 +472,13 @@ function doOnOrientationChange(){
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
 	if (! $('.shipping-delivery .shipping-delivery-summary').length){ return;}
+	var compareTP = $('.shipping-delivery .shipping-delivery-summary').offset().top;
+	console.log(compareTP)
+
 	function fixedBox(){
 		//target position : top
 		var wScrollTop = $(window).scrollTop();
-		var headerHeight = 137;
+		var headerHeight = 139;
 		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var topAreaHeight = headerHeight + headerBtmSpace;
 
@@ -507,7 +510,7 @@ function orderSummaryFixed(){
 			if( wScrollTop > compareTop){
 				$('.shipping-delivery-summary').css({
 					'position':'absolute',
-					'top':targetReTOP,
+					'top':targetReTOP - 7, //border-bottom 맞추는 보정값 7px
 					'right':'12px'
 				});
 			} else if( wScrollTop > topAreaHeight ){
@@ -517,11 +520,11 @@ function orderSummaryFixed(){
 					'right':positionRight
 				});
 			} else {
-				targetWrapper.attr('style','');
+				targetObj.attr('style','');
 			}
 		}
 		else if( winWidth < 769 ){
-			targetWrapper.attr('style','');
+			targetObj.attr('style','');
 		}
 	}
 	$(window).scroll(function(){
@@ -536,7 +539,7 @@ function cartSummaryFixed(){
 	function fixedBox(){
 		//target position : top
 		var wScrollTop = $(window).scrollTop();
-		var headerHeight = 137;
+		var headerHeight = 139;
 		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var quickSrchbox = $('.account-section-content').outerHeight(true);
 		var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
