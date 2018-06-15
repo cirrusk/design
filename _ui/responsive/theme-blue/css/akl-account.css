@@ -63,7 +63,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .my-link { text-decoration: underline; color:#0075a4}
 .register-step-foot {border-top: 1px solid #e3e3e3; padding-top:60px; margin-top:50px; text-align: center;}
 .register-step-foot.mob {display:none;}
-.register-step-foot .title-h2 {  margin-bottom: 15px;}
+.register-step-foot .title-h2 {  margin-bottom: 15px; text-align:center}
 .register-step-foot  p { font-size:16px}
 .helping-people { overflow:hidden; margin:50px auto 0; max-width:1376px;}
 .helping-people li { float:left; width:20%}
@@ -1519,6 +1519,19 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .bod-view-head.tbl-type .head-title {margin-top:0}
 .bod-view-head.tbl-type .down {width:130px; text-align:right}
 
+/* 메뉴 잠금 설정 */
+.akl .icon-sub-title.menulock-title {padding-bottom:15px; }
+.akl .icon-sub-title.menulock-title:after { top:1px; width:22px; height:22px; background: url(../images/akl_common/ico_author_person.png) no-repeat left top;}
+.menu-lock-wrapper { padding:36px 50px 0;}  
+.menu-lock .menu-lock-txt { color:#002f5f; font-size:18px; padding:0 0 15px}
+.menu-lock .menu-lock-txt strong{ font-weight:400}
+.menu-lock .author-tit { margin-bottom:30px;display: block;font-size: 16px;}
+.menu-lock .form-group { max-width:540px}
+.menu-lock .form-group .col-md-5 { padding-left:0 } 
+.menu-lock-wrapper .valid-result-box {padding: 30px 0 40px;margin-bottom:18px; border-bottom: 1px solid #dadada;text-align: center;}
+.menu-lock-wrapper .next-control {text-align: center; margin-top: 40px;}
+.akl .menu-lock-wrapper .author-content .validation-wrapper.subBiz { margin-top: 40px; }
+.akl .menu-lock-wrapper .author-content .author-tit { border-bottom: 1px solid #dadada; padding-bottom:40px;  margin-bottom: 40px;}
 
 @media (max-width: 1200px){
 	.akl .user-account-header {padding-left:15px; padding-right:15px;}
@@ -1944,6 +1957,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	/* 위시리스트 */
 	.wish-list-item .list-headers .field-name {width:auto;}
+	.wish-list-item .list-headers .field-name .all-txt {display:none;} 
 
 	/* title common */
 	.title-box .product-list-page-title h1 {padding:0 0 5px 0;}
