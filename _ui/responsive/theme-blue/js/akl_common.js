@@ -517,8 +517,11 @@ function orderSummaryFixed(){
 					'right':positionRight
 				});
 			} else {
-				$('.shipping-delivery-summary').attr('style','');
+				targetWrapper.attr('style','');
 			}
+		}
+		else if( winWidth < 769 ){
+			targetWrapper.attr('style','');
 		}
 	}
 	$(window).scroll(function(){
@@ -581,6 +584,9 @@ function cartSummaryFixed(){
 			} else {
 				targetObj.attr('style','');
 			}
+		}
+		else if( winWidth < 769 ){
+			$(targetObj).attr('style','');
 		}
 	}
 	$(window).scroll(function(){
