@@ -276,7 +276,7 @@ function tabsTgg_Control(){
 		_UL.scroll(function(event){
 			var targetWrapperSize = $(this).width(); //A. wrapper : ul
 			var actualContentSize = event.currentTarget.scrollWidth; //B. 스크롤되는 컨텐츠 길이
-			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤 움직인 길이 (x좌표가 움직인 거리)
+			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤바 움직인 길이 (x좌표가 움직인 거리)
 
 			//스크롤 가능 길이 알아내기(D) : B - A
 			var scrollable_width  = actualContentSize - targetWrapperSize;
@@ -287,12 +287,12 @@ function tabsTgg_Control(){
 				$(this).siblings('.scrollable-area.right').show();
 			}
 			else if ( scrollable_width === scrolledPosition ){
-				//스크롤 가능 길이 알아내기(D) === 움직인 길이(C)
+				//스크롤 가능 길이(D) === 움직인 길이(C)
 				$(this).siblings('.scrollable-area.left').show();
 				$(this).siblings('.scrollable-area.right').hide();
 			}
 			else {
-				//움직이는 중, 시작 후 스크롤 움직인 상태
+				//움직이는 중, 스크롤 움직인 상태
 				$(this).siblings('.scrollable-area.left , .scrollable-area.right').show();
 			}
 		});
@@ -472,9 +472,6 @@ function doOnOrientationChange(){
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
 	if (! $('.shipping-delivery .shipping-delivery-summary').length){ return;}
-	var compareTP = $('.shipping-delivery .shipping-delivery-summary').offset().top;
-	console.log(compareTP)
-
 	function fixedBox(){
 		//target position : top
 		var wScrollTop = $(window).scrollTop();
@@ -510,7 +507,7 @@ function orderSummaryFixed(){
 			if( wScrollTop > compareTop){
 				$('.shipping-delivery-summary').css({
 					'position':'absolute',
-					'top':targetReTOP - 7, //border-bottom 맞추는 보정값 7px
+					'top':targetReTOP - 7, //bottom line 맞추는 보정값 7px
 					'right':'12px'
 				});
 			} else if( wScrollTop > topAreaHeight ){
