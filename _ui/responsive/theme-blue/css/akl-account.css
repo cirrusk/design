@@ -18,10 +18,10 @@ Version : AKL Hybris UIUX 1.0
 .akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px;padding: 13px 40px;}
 
 /* 로그인 > connectedID  */
-.connectedID {border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3; padding: 20px 0 5px; overflow:hidden; margin: 30px 0 20px}
-.connectedID .form-group{ }
-.connectedID .form-group label{ float:left; width:110px; margin-top: 2px;}
-.connectedID .form-group .account-profile__value { float:left;}
+.connectedID {border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3; padding:40px 0 25px; overflow:hidden; margin:18px 0 20px}
+.connectedID .form-group { max-width:500px}
+.connectedID .form-group label{ float:left; width:35%; line-height:40px; margin-bottom: 0}
+.connectedID .form-group .account-profile__value { float:left; width:65%;}
 .Connected-id p.tit { font-size:16px; font-weight:500}
 .Connected-id .list-type5 { padding-top:10px; padding-bottom: 15px}
 .Connected-id .list-type2 {border-top: 1px solid #e3e3e3; padding-top:18px}
@@ -610,15 +610,15 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .mypage-cupon-managment p.num-cupon strong {font-weight:700;color:#002f5e}
 .akl .mypage-cupon-managment .list-content {padding:10px 0 0}
 
-.akl .list-content .list-row-title > div.mycupon-num {width:20%;padding:0 0 0 20px;}
+.akl .list-content .list-row-title > div.mycupon-num {width:20%;padding:0 0 0 20px; text-align:center}
 .akl .list-content .list-row-title > div.mycupon-name {width:45%;padding:0 10px 0 0;}
-.akl .list-content .list-row-title > div.mycupon-day {width:23%;}
-.akl .list-content .list-row-title > div.mycupon-way {width:12%;}
+.akl .list-content .list-row-title > div.mycupon-day {width:23%; text-align:center}
+.akl .list-content .list-row-title > div.mycupon-way {width:12%; text-align:center}
 
-.akl .content-list .con-list-item > div.mycupon-num {width:20%;padding:0 0 0 20px;}
+.akl .content-list .con-list-item > div.mycupon-num {width:20%;padding:0 0 0 20px; text-align:center }
 .akl .content-list .con-list-item > div.mycupon-name {width:45%;padding:0 10px 0 0;}
-.akl .content-list .con-list-item > div.mycupon-day {width:23%;}
-.akl .content-list .con-list-item > div.mycupon-way {width:12%;}
+.akl .content-list .con-list-item > div.mycupon-day {width:23%; text-align:center}
+.akl .content-list .con-list-item > div.mycupon-way {width:12%; text-align:center}
 
 .akl .link-btn.color-gray {color:#bbb !important;}
 .color-gray {color:#bbb !important;}
@@ -1523,8 +1523,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl .icon-sub-title.menulock-title {padding-bottom:15px; }
 .akl .icon-sub-title.menulock-title:after { top:1px; width:22px; height:22px; background: url(../images/akl_common/ico_author_person.png) no-repeat left top;}
 .menu-lock-wrapper { padding:36px 50px 0;}  
-.menu-lock .menu-lock-txt { color:#002f5f; font-size:18px; padding:0 0 15px}
-.menu-lock .menu-lock-txt strong{ font-weight:400}
+.product-list-page-title + .menu-lock-txtb { margin-top:-6px} 
+.menu-lock-txtb { font-size:16px; font-weight:500; }
+.menu-lock-txt { color:#002f5f; font-size:18px; padding:0 0 15px}
+.menu-lock-txt strong{ font-weight:400}
 .menu-lock .author-tit { margin-bottom:30px;display: block;font-size: 16px;}
 .menu-lock .form-group { max-width:540px}
 .menu-lock .form-group .col-md-5 { padding-left:0 } 
@@ -1951,10 +1953,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .content-list .con-list-item > div.mycupon-num {display:inline-block;width:auto;}
 	.akl .content-list .con-list-item > div.mycupon-name {display:block;width:100%;padding:5px 20px;}
 	.akl .list-content .content-list .con-list-item > div.mycupon-name span.txte-wrap {color:#002f5f;font-weight:500}
-	.akl .content-list .con-list-item > div.mycupon-day {display:block;width:100%;padding:5px 20px;}
-	.akl .content-list .con-list-item > div.mycupon-day span.tite-label {display:block;}
+	.akl .content-list .con-list-item > div.mycupon-day {display:block;width:100%;padding:5px 20px; text-align:left;}
+	.akl .content-list .con-list-item > div.mycupon-day span.tite-label {display:block; text-align:left;}
 	.akl .content-list .con-list-item > div.mycupon-way {display:inline-block;width:auto;padding:0 0;}
-
+	.akl .content-list .con-list-item > div.mycupon-way .link-btn {margin-top: 0;}
 	/* 위시리스트 */
 	.wish-list-item .list-headers .field-name {width:auto;}
 	.wish-list-item .list-headers .field-name .all-txt {display:none;} 
@@ -2058,8 +2060,9 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 중개판매 견적내역 */
 	.estmlist-area {clear:both;display:block;}
+	.estmlist-area .search-no-result {padding:35px 0 30px;}
 	.estmlist-area:after {content:'';clear:both;display:block;}
-
+	.estimate-conts {padding: 20px 0 0;}
 	.akl .list-content .list-row-title > div.esylist-no {display:none;}
 	.akl .list-content .list-row-title > div.esylist-numname {display:none;}
 	.akl .list-content .list-row-title > div.esylist-date {display:none;}
@@ -2093,16 +2096,17 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl div.esylist-company {width:100%;text-align:left;padding:0 20px;}
 	.akl div.esylist-delegate {width:100%;padding:0 20px;}
 	.akl div.esylist-regdate {width:100%;padding:0 20px;}
-	.akl div.esylist-view {width:100%;padding:0 20px;}
+	.akl div.esylist-view {width:100%;padding:0 20px; position:absolute; right:0; top:50%; margin-top:-15px; text-align: right;}
 
 	.akl div.esylist-company span.esylist-subject {display:inline-block;width:auto;}
 	.akl div.esylist-company span.esylist-num {display:inline-block;width:auto;}
 	.akl div.esylist-company span.esylist-num em {display:inline-block;}
 
-	.akl .content-list .con-list-item > div.esylist-delegate span.tite-label {display:inline-block;}
-	.akl .content-list .con-list-item > div.esylist-delegate span.txte-wrap {display:inline-block;}
-	.akl .content-list .con-list-item > div.esylist-regdate span.tite-label {display:inline-block;}
-	.akl .content-list .con-list-item > div.esylist-regdate span.txte-wrap {display:inline-block;}
+	.akl .estmlist-area .list-content .esylist-subject {padding-left:0; margin-bottom:3px;}
+	.akl .content-list .con-list-item > div.esylist-delegate span.tite-label {display:inline-block; float:left; margin-right:5px; text-align:left; }
+	.akl .content-list .con-list-item > div.esylist-delegate span.txte-wrap {display:inline-block; float:left; text-align:left;}
+	.akl .content-list .con-list-item > div.esylist-regdate span.tite-label {display:inline-block; float:left; margin-right:5px; text-align:left;}
+	.akl .content-list .con-list-item > div.esylist-regdate span.txte-wrap {display:inline-block; float:left; text-align:left; }
 
 	.esthistory-detail-box {padding:15px 0 20px;}
 	.cellphone-group .col-md-4 {width:33.33333333%}
