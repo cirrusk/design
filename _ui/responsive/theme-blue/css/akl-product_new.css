@@ -38,6 +38,7 @@ Version : AKL Hybris UIUX 1.0
 .mt50{margin:23px 0 0;padding:25px 0 0;}
 .k-gold {color:#ad9172 !important;}
 .sky-blue {color:#0090c4 !important;}
+.dark-OliveGreen {color:#5b7927}
 
 /* 라인이 없거나 있는 경우의 수 추가 */
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
@@ -465,6 +466,8 @@ dl.bass-info dd {font-size:16px;font-weight:300;line-height:26px;color:#808285;}
 
 .effet-txt {clear:both;display:block;width:100%;}
 .effet-txt p {font-size:16px;font-weight:300;color:#808285;line-height:26px;}
+.effet-txt .tit {font-size:30px;line-height:44px;color:#56565a;letter-spacing:-2px;}
+.effet-txt ul li {font-size:16px;}
 .effet-box {display:table;clear:both;width:100%;margin-top:25px}
 
 .explic-lst {margin:0 0 10px;}
@@ -501,6 +504,44 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 .cirt-procedure li {float:left;width:50%;padding:5px 0;font-size:18px;font-weight:400;letter-spacing:-1px;}
 .cirt-procedure li.last {width:100%;}
 .cirt-procedure li span.circle {display:inline-block;width:25px;height:25px;border-radius:50%;text-align:center;background:#5c85c4;color:#fff;vertical-align:middle;line-height:25px;margin-right:8px;font-size:14px;}
+
+.advanBody-area {clear:both;display:block;border-bottom:1px solid #e3e3e3;margin:50px auto;padding:0 0 40px}
+.water-system {clear:both;margin:30px auto 0;}
+.water-system ol {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+.water-system ol li {display:table-cell;box-sizing: border-box;vertical-align:top;padding:0 10px;text-align:center;}
+.water-system ol li p {padding:10px 20px 0;margin:0 0;color:#808285;font-size:16px;letter-spacing:-1px;}
+.water-num {display:inline-block;height:43px;background:url('../images/akl_product/bath-body/ico_water_drop_gray.png') no-repeat left center;width:24px;height:33px;vertical-align:center;color:#fff;padding:10px 0 0;font-size:14px;font-weight:400;}
+ 
+.ingredient {clear:both;display:block;padding:80px 0 0;}
+ul.penny {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+ul.penny li {display:table-cell;width:33.333%;box-sizing: border-box;vertical-align:top;text-align:center;}
+ul.penny li dl {width:100%;padding:0 10px;}
+ul.penny li dl dt {font-size:24px;vertical-align:bottom;font-weight:500;}
+ul.penny li dl dt span {display:inline-block;position:relative;font-size:60px;letter-spacing:-2px;padding-right:5px}
+ul.penny li dl dt span:before {content:'';display:inline-block;position:absolute;top:0;left:-20px;width:39px;height:49px;}
+ul.penny li dl dt span strong {font-size:120px;letter-spacing:-3px;}
+ul.penny li dl dt.leaf_dark_green span:before {background:url('../images/akl_product/bath-body/ico_leaf_dark_green.png') no-repeat left top;}
+ul.penny li dl dt.leaf_brown span:before {background:url('../images/akl_product/bath-body/ico_leaf_brown.png') no-repeat left top;}
+ul.penny li dl dt.leaf_light_green span:before {background:url('../images/akl_product/bath-body/ico_leaf_light_green.png') no-repeat left top;}
+ul.penny li dl dd {font-size:16px;color:#808285;font-weight:300}
+
+.leaf_dark_green {color:#367a7f;}
+.leaf_brown {color:#7a675a;}
+.leaf_light_green {color:#8b9d46;}
+
+.stage-cultivation {padding-top:60px}
+.nemo-box {position:relative;width:99%;height:270px;background:#f9f9f0;border-radius:10px;margin:0 auto;}
+.nemo-box:after {content:'';display:inline-block;position:absolute;top:80px;right:-35px;background:url('../images/akl_product/bath-body/ico_verganic_next.png') no-repeat right top;width:41px;height:22px;z-index:10}
+.nemo-box.last:after {content:'';display:none;}
+
+.nemo-box .tit {position:absolute;top:-25px;left:50%;min-width:140px;padding:0 20px;border-radius:20px;height:42px;margin-left:-70px;text-align:center;}
+.nemo-box .tit.green {background:#8b9d46;}
+.nemo-box .tit span {display:inline-block;color:#fff;font-size:20px;text-align:center;padding:6px 0 0;letter-spacing:-1px} 
+.nemo-box dl {margin:0 30px;}
+.nemo-box dl dt {text-align:center;padding:50px 0 0}
+.nemo-box dl dd {padding:25px 0 0}
+.nemo-box dl dd ul {}
+.nemo-box dl dd ul li {background:url('../images/akl_product/bath-body/dot_leaf_light_green.png') no-repeat left 6px;padding:0 0 0 15px;font-size:14px;color:#808285;font-weight:300}
 
 /* 뉴트리라이트 파운데이션 트리오 번들팩 */
 .visual-area.type03.bundlepack {min-height:950px;}
@@ -598,6 +639,7 @@ span.txt-next {display:block;}
 	
 	.system-lst5 ul li {float:left;width:33.333%;padding:0 20px;}
 	.system-lst5 ul li .lst-won span {font-size:14px;height:120px;}
+	.system-lst5 ul li .lst-won p.txt {padding:10px 0;}
 
 	.siehe-box.top-line {padding:15px 20px 0;}
 	
@@ -609,7 +651,18 @@ span.txt-next {display:block;}
 	.ad-setp-lst2 li dl dt {display:block;margin:0 auto;}
 	.ad-setp-lst2 li dl dd {display:block;width:100%;height:82px;text-align:center;}
 	.ad-setp-lst2 li dl dd p {display:block;padding:10px 10px 0;text-align:center}
+	
 
+	ul.penny li dl {width:100%;padding:0 10px;}
+	ul.penny li dl dt {font-size:20px;}
+	ul.penny li dl dt span {font-size:40px;}
+	ul.penny li dl dt span:before {top:-12px}
+	ul.penny li dl dt span strong {font-size:80px;}
+	ul.penny li dl dd {padding:0 10px;}
+
+	.water-system ol li p {padding:10px 0 0}
+	.nemo-box {height:inherit;padding-bottom:20px;}
+	.nemo-box dl {margin:0 10px;}
 
 }
 
@@ -829,6 +882,15 @@ span.txt-next {display:block;}
 	.cirt-scenic span img {width:inherit;height:inherit;}
 	.cirt-procedure {width:100%;margin-left:0}
 	.cirt-procedure li {float:left;width:50%;font-size:14px}
+
+	.water-system ol li {float:left;width:50%;margin-top:10px;}
+	.water-system ol li p {font-size:14px;padding:10px 0px 0;}
+	
+	ul.penny li {display:block;width:100%;margin-bottom:30px;}
+	
+	.stage-cultivation .stage-step {margin-bottom:60px;}
+	.nemo-box {height:inherit;padding:0 0 30px}
+	.nemo-box:after {transform: rotate(90deg);-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);top:inherit;bottom:-20px;left:50%;margin-left:-20px}
 
 	/* 뉴트리라이트 파운데이션 트리오 번들팩 */
 	.visual-area.type03.bundlepack .txt-info-visual .v-txt {margin:30px 5% 0;}
