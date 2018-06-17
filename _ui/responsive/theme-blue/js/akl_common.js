@@ -1372,7 +1372,7 @@ function GNB_SubDepth_Control(){
 				var dep2Size = dep2_Anchor + dep3Size;
 				$(this).css({ height : dep2Size });
 			} else {
-				var dep2BoxSize = 48;
+				var dep2BoxSize = 54;
 				$(this).css({ height : dep2BoxSize });
 			}
 		});
