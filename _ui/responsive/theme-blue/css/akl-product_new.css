@@ -322,9 +322,15 @@ dl.amo-txt dd br {line-height:18px}
 .product-process-step .step-txt{display:block;margin-top:13px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:26px;}
 .akl .product-process .owl-theme .owl-controls .owl-nav .owl-prev{left:-22px;}
 .akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:-22px;}
-.product-process .owl-theme .owl-dots .owl-dot{padding:0 5px;}
+.product-process .owl-theme .owl-dots {position:absolute;left:50%;right:0;bottom:-40px;}
+.product-process .owl-theme .owl-dots .owl-dot {margin:0 5px;}
 .product-process .owl-theme .owl-dots .owl-dot span{width:15px;height:15px;margin:0 0;background-color:#eff0f1;}
 .product-process .owl-theme .owl-dots .owl-dot.active span{margin:0;background-color:#bbb;}
+
+/* 롤링 박스 공통 옮겨갈거 */
+.product-body-view .product-process{padding:37px 50px 60px;border:10px solid #eff0f1;}
+.product-body-view .product-process .owl-stage{margin:0 auto;}
+.skin-care .product-process .detail-tit{font-size:36px;font-weight:400;color:#56565a;text-align: center;}
 
 /* 제품사용순서 색상 */
 .product-process-step.yellow-ocher .step-num {background:#ad9172}
