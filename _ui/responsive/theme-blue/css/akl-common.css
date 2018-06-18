@@ -821,10 +821,11 @@ ul .ol-list { margin:10px 0 20px 15px}
 
 /* footer > quick-links */
 .akl .quick-links .container {max-width:1400px; padding-left:0; padding-right:0;}
-.akl .quick-links-header { font-weight: 700; font-size: 14px}
-.akl .quick-links ul li {font-weight: 400;  font-size: 14px; line-height: 2; letter-spacing: -0.05em }
+.akl .quick-links-header {font-size:14px; font-family:'Noto Sans KR', sans-serif; font-weight:500;}
+.akl .quick-links ul li {font-size:14px; font-weight:400; line-height:2; letter-spacing:-0.05em ; cursor:default; background: none;}
+.akl .quick-links-header>a {font-weight:500;}
 .akl .quick-links-title {  font-weight:500;font-size: 14px; }
-.akl .quick-links-misc li:nth-child(2) img { margin: 0 0 10px;  }
+.akl .quick-links-misc li:nth-child(2) img {margin:0 0 10px;}
 .akl .foot-news-letter { margin-bottom:20px}
 .akl .foot-news-letter input[type="text"] { height:44px; width: 70%; border: solid 1px #dadada; border-radius: 4px; text-indent: 10px}
 .akl .foot-news-letter button { width: 28%;height:44px; float:right;  background :#002f5f; color:#fff; border:0; font-weight: 500}
@@ -833,26 +834,28 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .footerShotcut button, .akl .footerShotcut a{color:#666;}
 .akl .footerShotcut > div { position:relative; width:49%; float: left; margin-top:20px }
 .akl .footerShotcut > div + div{ float: right  }
-.akl .footerShotcut > div > button{border:1px solid #d4d4d4; height:40px;  width:100%; display:block; margin-bottom:10px; text-indent: 5px; text-align:left; color:#002f5f; font-weight:500;
-background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; background-size: 18px; background-color: #fff;}
+.akl .footerShotcut > div > button{border:1px solid #d4d4d4; height:40px;  width:100%; display:block; margin-bottom:10px; text-indent: 5px; text-align:left; color:#002f5f; font-weight:500; background: url(../images/selector-arrow.png) no-repeat 96% center #dadada; background-size: 18px; background-color: #fff;}
 .akl .footerShotcut > div > button.selected { border-color:#007eb0 }
 .akl .footerShotcut > div > div{ display:none; position:absolute; left:0; bottom:49px; border:1px solid #007eb0; border-bottom:none; width:100%; background-color:#fff; padding:5px 0; z-index:2}
 .akl .footerShotcut > div > div a{display:block; font-size:14px; color:#002f5f; font-weight:500; height:40px; line-height:40px; text-indent: 10px; }
 .akl .footerShotcut > div > div a:hover{text-decoration:underline;}
-.akl .col-sm-8 { padding: 0}
-.akl .quick-links-header {font-family:'Noto Sans KR', sans-serif; font-weight:500 }
-.akl .quick-links-header a,
-.quick-links .collapse a { color:#002f5f}
+.akl .col-sm-8 { padding:0}
+.akl .quick-links-header a, .quick-links .collapse a {color:#002f5f;}
 .panel-collapse + .quick-links-header.akl-foot { margin-top: 30px;}
-.akl .quick-links ul li { cursor: default; background: none;}
-/* .quick-links-header.akl-foot { margin-bottom: 30px;}  */
 
 /* 퀵리스트 수정 : 2018.03.26 (시작) */
 .akl .container .row.footer-quick {overflow:visible;}
 .akl .qlink-left-box {float:left; width:870px; padding-right:10px;}
 .akl .qlink-right-box {float:right; width:420px; padding-right:12px;}
 .akl .quick-links-item {width:200px;}
-.akl .quick-links-item > ul {padding-bottom:18px !important;}
+
+/* ----------------------------------------
+ * 플러그인(Isotope) 메뉴 정렬상 필요한 속성
+ * 메뉴구조가 변경되어 필요하면 삭제해도 되는 부분
+ * ----------------------------------------
+ */
+.akl .quick-links-item > ul {padding-bottom:0 !important;}
+.akl .quick-links ul li { padding:2px 0;}
 
 /* 상품목록 > 카드형 */
 .akl .product-list__item { height: 640px; position: relative;}

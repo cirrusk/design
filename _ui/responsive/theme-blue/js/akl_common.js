@@ -1460,7 +1460,7 @@ function qkLinkAlign(){
 					var qHeader = $(this).find('.quick-links-header');
 					var qPanel  = $(this).find('.panel-collapse');
 
-					var qHeaderHeight = 31; // p
+					var qHeaderHeight = 30; // p
 					var qPanel_li_Num = qPanel.find('li').length;
 					var qPanel_li_Height = 28;
 					var itemHeight;
