@@ -27,36 +27,143 @@
 <main class="amway-theme">
     <div id="header"></div>
     <div class="container">
-        <div class="print-hide breadcrumb-section hasBack">
+        <div class="print-hide breadcrumb-section">
             <ol class="breadcrumb">
                 <li>
                     <a href="homepage-logged-in.html">Home</a></li>
-                <li> <a href="my-account.html">SOP</a></li>
-                <li>Nutrilite</li>
+                <li> <a href="my-account.html">My Account</a></li>
+                <li>MySOP Detail</li>
             </ol>
-
-            <div class="corner-block pre-res-corner-block sop-confirmation-back">
-                <i class="fas fa-caret-left"></i><a href="">BACK</a></div>
         </div>
     </div>
-    <div class="container">
+    <div class="user-account-header row">
+        <div class="container">
+            <div class="row">
+                <div class="user-block col-sm-4">
+                    <div class="user-image-container">
+                        <img class="user-image" src="images/yui.png">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Yui Mori</span>
+                        <span class="user-id">ABO # 1234567</span>
+                    </div>
+                </div>
+                <div class="go-block col-sm-8">
+                    <div class="amway-theme">
+                        <div class="jump-to">
+                            <span>Jump to</span>
+                        </div>
+                        <div class="jump-to-wrapper">
+                            <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                <option value="/my-account/billing-shipping/bank-account" class="js-account-option-link text-capitalize">Bank Account Management</option>
+                                <option value="/my-account/billing-shipping/credit-card-management" class="js-account-option-link text-capitalize">Credit Card Management</option>
+                                <option value="/my-account/profile-management" class="js-account-option-link text-capitalize">Profile Management</option>
+                                <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Edit Profile</option>
+                                <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T & C Management</option>
+                                <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                            </select>
+                            <input type="button" class="js-jump-to-selection-btn" value="GO">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-count">
+        <h4 class="panel-title">
+            <i class="far fa-repeat-alt"></i>
+            <span class="text-uppercase panel-title-text">My Sop</span>
+            <div class="corner-block pre-res-corner-block"><i class="fas fa-caret-left"></i>BACK</div>
+        </h4>
+        <div class="page-section-content my-count-page-wrap">
+            <div class="downline-profile">Yui Mori's Downline Profile (Wrap to two lines)</div>
+            <div class="downline-profile-second-line">
+                <div class="left-block">
+                    <div class=""><img src="images/visa.png"> ****9876</div>
+                    <div class=""><i class="fas fa-truck lightBlue"></i>Delivery</div>
+                    <div class="">8th DAY</div>
+                </div>
+                <div class="right-block">
+                    <a class="" id="edit-profile"><i class="fas fa-pencil"></i><span class="hidden-xs hidden-sm">Edit Profile</span></a>
+                </div>
+            </div>
+            <div class="edit-block">
+                <a class="pull-right close-edit" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
 
-        <div class="page-section-content">
+                        <label class="col-md-4 control-label text-upper">profile name</label>
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" class="text-left form-control" value="Yui Mori's Downline Profile(Wrap one line)">
+                        </div>
+                    </div>
 
+
+                    <div class="col-md-6 col-xs-12">
+
+                        <label class="col-md-4 control-label text-upper">process day</label>
+                        <div class="col-md-8 col-xs-12">
+                            <select class="form-control width-s">
+                                <option>5th</option>
+                                <option>6th</option>
+                                <option>7th</option>
+                            </select>
+                            <span>of each calendar month</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <a id="addNewPayment" class="col-xs-6 col-md-12 addBtn text-right">Add New Payment</a>
+                        <label class="col-xs-6 col-md-4 control-label text-upper">payment</label>
+                        <div class="col-md-8 col-xs-12 has-card">
+                            <div class="payment-card"><img src="images/visa.png"></div>
+                            <select class="form-control">
+                                <option>Work Card - **** 1234</option>
+                                <option>Work Card - **** 1234</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <a id="addNewAddress" class="col-xs-6 col-md-12 addBtn text-right">Add New Address</a>
+                        <label class="col-xs-6 col-md-4 control-label text-upper">delivery address</label>
+                        <div class="col-md-8 col-xs-12">
+                            <select class="form-control">
+                                <option>Yui's Home Address</option>
+                                <option>Yui's Home Address</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="edit-block-footer">
+                    <a href="" class="btn primary btn-m">save</a>
+                    <a href="" class="text-link link-cancel">Cancel</a>
+                    <a class="pull-right del-profile" href="javascript:void(0)"><i class="fas fa-trash-alt"></i><span class="hidden-xs">Delete Profile</span></a>
+                </div>
+            </div>
             <!--pc content-->
-            <div class="row mysop-product-detail">
+             <div class="row mysop-product-detail">
                         <div class="tag-group">
                             <label class="label-gift">
-                                <i class="fas fa-tag"></i>
+                                <i class="far fa-gift"></i>
                                 <span class="right-white-triangle"></span>
                             </label>
                             <div class="tags no-space hidden-xs">
-                                <span class="tag-purple">SOP</span></div>
+                                <span class="tag-purple">SOP BENEFIT</span></div>
                         </div>
-                        <div class="img-product">
+                        <div class="row img-product">
                             <div class="col-xs-4 col-md-6">
                                 <div class="hidden-md hidden-lg hidden-sm image-gallery">
-                                    <img src="images/artistry-bundle.png" /></div>
+                                    <img src="images/heart-health.png" /></div>
                                 <div class=" product-image-gallery v-m-pros hidden-xs" style="opacity: 1;">
                                     <div class="">
                                         <div class="slider-container">
@@ -65,7 +172,7 @@
                                                 <div class="item">
                                                     <div class="content">
                                                         <div class="image-gallery js-gallery">
-                                                            <img src="images/artistry-bundle.png" /></div>
+                                                            <img src="images/heart-health.png" /></div>
                                                         <div class="buttons zoom-center js-zoom-center">
                                                             <button id="openImg" class="enlarge2 btn btn-link">
                                                                 <i class="fas fa-search-plus"></i>
@@ -211,14 +318,15 @@
                             </div>
                             <div class="col-xs-8 col-md-6 pdp-info">
                                 <div class="product-details page-title">
-                                    <div class="name">ARTISTRY Pucker Up Bundle</div>
-                                    <div class="item-code">Item #: 116872</div></div>
+    
+                                    <div class="name">Nutrilite® Heart Health Pack Has a Long Name – Wraps to Two Lines</div>
+                                    <div class="item-code">VPS/SKU:118991/1184239</div></div>
                                 <div class="product-main-info">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="product-details">
                                                 <div class="bundle"></div>
-                                                <p class="price retail-price-discount">$17.10
+                                                <p class="price retail-price-discount">$35.10
                                                     <span class="description-cost">ABO Cost</span></p>
                                                 <span class="additional-price">
                                                     <ul>
@@ -247,22 +355,13 @@
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-7">
                                                     <label class="control-label col-xs-3" for="">Cycle</label>
-                                                    <div class="col-xs-9">
-                                                        <select class="size-select text-center  form-control" value="">
-                                                            <option>Monthly, 6 Month</option>
-                                                            <option>Monthly, 6 Month</option></select>
-                                                    </div>
+                                                    <div class="col-xs-9 cycle-period">Monthly, 6 Month</div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-7">
                                                     <label class="control-label col-xs-3"  for="">Start</label>
-                                                    <div class="col-xs-9">
-                                                        <select class="size-select text-center form-control" value="">
-                                                            <option>May 2018</option>
-                                                            <option>May 2018</option>
-                                                        </select>
-                                                    </div>
+                                                    <div class="col-xs-9 cycle-period">May, 2017</div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -290,119 +389,198 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <div class=" pdp-alert-info">
+                                    <div class="date-tips">
+    
+                                        <div class="alert-content">
+                                            <span class="lightBlue"><i class="far fa-gift"></i> Free BodyKey shaker cup on every 6th month</span>
+                                        </div>
+                                    </div>
                                    
-                                    <div class="row">
-                                        <div class="payment-selector-container cycle-period-container col-xs-12 col-md-7 noPadding">
-                                            <label class="col-xs-3 control-label" for="">Profile</label>
-                                            <div class="col-xs-9">
-                                                <select id="sop-p-sop" class="size-select text-center js-qty-selector-input form-control" value=''>
-                                                    <option value='' disabled selected style='display:none;'>New or Existing Profile</option>
-                                                    <option value='Create New Profile'>Create New Profile</option>
-                                                    <option value='Yui Mori Profile'>Yui Mori Profile</option>
-                                                    <option value='Jennifer Jones Profile'>Jennifer Jones Profile</option>
-                                                    
-                                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            
+
+            
+            <!--pc content-->
+            <div class="mysop-box-content">
+                <p class="text-uppercase box-text">SOP CONTENT</p>
+                <div class="row">
+                    <div class="col-md-12 shopping-cart-items-wrapper">
+                        <div id="shopping-list-content">
+                            <ul class="shopping-cart-item-list mysop-item-list">
+                                <li class="visible-md visible-lg">
+                                    <div class="col-xs-12 uppercase list-header change-list-header">
+                                        <div class="col-xs-5 list-item-info">Product</div>
+                                        <div class="col-xs-3 list-item-quantity">Qty</div>
+                                        <div class="col-xs-2 list-item-set-price">Option</div>
+                                        <div class="col-xs-1 list-item-price">Price</div>
+                                        <div class="col-xs-1 list-item-total">Total</div></div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="col-xs-12 col-md-5 product-details print-col-6">
+
+                                        <div class="product-item-element list-item-image">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-element list-item-info">
+                                            <span class="product-name">Nutrilite Cal Mag D </span>
+                                            <div class="product-code">SKU:
+                                                <span class="product-item-number">105480</span></div>
+                                            <div class="product-category">18.22PV/57.31BV</div>
+                                            <div class="product-stock cartlist-promotions cartlist-view"><a class="">View Bundle Contents<i class="fas fa-angle-down"></i></a></div>
+                                            <div class="view-bundle-contents shopping-cart-view-bundle-contents mysop-bundle-contents">
+                                                <div class="col-xs-12">
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            BodyKey by NUTRILITE Meal <br> Replacement Shake (Chocolate)
+                                                            <span class="sku-num">SKU:110622</span>
+                                                        </div>
+                                                        <div class="col-xs-2">5</div>
+                                                        <div class="col-xs-3">Chocolate</div>
+                                                        <div class="col-xs-3 text-right">$35.00</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            BodyKey by NUTRILITE Meal <br> Replacement Shake (Chocolate)
+                                                            <span class="sku-num">SKU:110622</span>
+                                                        </div>
+                                                        <div class="col-xs-2">5</div>
+                                                        <div class="col-xs-3">Vanilla</div>
+                                                        <div class="col-xs-3 text-right">$35.00</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            BodyKey by NUTRILITE Meal <br> Replacement Shake (Chocolate)
+                                                            <span class="sku-num">SKU:110622</span>
+                                                        </div>
+                                                        <div class="col-xs-2">5</div>
+                                                        <div class="col-xs-3">Vanilla</div>
+                                                        <div class="col-xs-3 text-right">$35.00</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            BodyKey by NUTRILITE Meal <br> Replacement Shake (Chocolate)
+                                                            <span class="sku-num">SKU:110622</span>
+                                                        </div>
+                                                        <div class="col-xs-2">5</div>
+                                                        <div class="col-xs-3">Cafe Au Lait</div>
+                                                        <div class="col-xs-3 text-right">$35.00</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            BodyKey by NUTRILITE Meal <br> Replacement Shake (Chocolate)
+                                                            <span class="sku-num">SKU:110622</span>
+                                                        </div>
+                                                        <div class="col-xs-2">5</div>
+                                                        <div class="col-xs-3">Blue</div>
+                                                        <div class="col-xs-3 text-right">$35.00</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-
-            <div class="row">
-                <div class="col-sx-12 mysop-product-detail-list">
-                    <div class="list-content">
-                        <div class="list-row-title row">
-                            <div class="col-md-6 col-xs-9">products in this bundle</div>
-                            <div class="col-md-2 col-xs-1 color-option">
-                                OPTION
-                            </div>
-                            <div class="col-md-1 col-xs-3 mob-text-right">price</div>
-                            <div class="col-md-2 hidden-xs hidden-sm">PV/BV</div>
-                            <div class="col-md-1 hidden-xs hidden-sm">QTY</div>
-                        </div>
-                        <div class="content-list row">
-                            <div class="row con-list-item">
-                                <div class="col-md-6 col-xs-9"><p>ARTISTRY Signature Color Sheer Lipstick</p></div>
-                                <div class="col-md-2 col-xs-1 color-option">
-                                <div class="color-img">
-                                    <img src="images/glitz-5.png">
-                                </div>
-                                <span>Flaming Red</span>
-                                </div>
-                                <div class="col-md-1 col-xs-3 mob-text-right">$20.00</div>
-                                <div class="col-md-2 col-xs-12">
-                                    <span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Total PV/BV</span>
-                                    <span class="mob-float-right">21.0/42.0</span></div>
-                                <div class="col-md-1 col-xs-12">
-                                    <span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
-                                    <span class="mob-float-right">1</span></div>
-
-                            </div>
-
-                        </div>
-                        <div class="content-list row">
-                            <div class="row con-list-item">
-                                <div class="col-md-6 col-xs-9"><p>ARTISTRY SIGNATURE COLOR Longwearing Eye Pencil</p></div>
-                                <div class="col-md-2 col-xs-1 color-option">
-                                    <span>Black</span>
-                                </div>
-                                <div class="col-md-1 col-xs-3 mob-text-right">$20.00</div>
-                                <div class="col-md-2 col-xs-12">
-                                    <span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Total PV/BV</span>
-                                    <span class="mob-float-right">21.0/42.0</span></div>
-                                <div class="col-md-1 col-xs-12">
-                                    <span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
-                                    <span class="mob-float-right">1</span></div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="row mysop-product-active">
-                        <div class="actions-wrapper">
-                            <div class="actions">
-                                <div class="AddToCart-AddToCartAction" data-index="1">
-                                    <form id="addToCartForm" class="add_to_cart_form col-md-3 col-xs-12" action="#" method="post">
-                                        <input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1" />
-                                        <input type="hidden" name="productCodePost" value="119889" />
-                                        <button id="sop-jump-to-1" class="btn primary col-md-10">next</button>
-                                        <!--<button id="BuyNow" class="btn primary btn-block js-add-to-cart js-enable-btn col-md-6">Checkout</button>-->
-                                        <div>
-                                            <input type="hidden" name="CSRFToken" value="1bcd7a5f-3229-4b1e-8f3f-1cbfa88e4768" /></div>
-                                    </form>
-
-                                    <div class="add-to-cart-extra-actions col-xs-12 col-md-5 link-line pull-right text-right ">
-                                        <div>
-                                            <a href="">
-                                                <img href="#" src="images/twitter.png" alt="twitter"></a>
+                                    <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                        <span class="qty-label">Qty</span>
+                                        <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                    </div>
+                                    <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                        <span class="total-price-label">options</span>
+                                        <div class="value-wrapper new-value-wrapper">
+                                            <span>60 pack</span>
+                                            <a class="uppercase change-color">
+                                                change <i class="fas fa-angle-right"></i>
+                                            </a>
                                         </div>
-                                        <div>
-                                            <a href="">
-                                                <img href="#" src="images/facebook2.png" alt="facebook"></a>
-                                        </div>
-                                        <div>
-                                            <a href="">
-                                                <img href="#" src="images/line.png" alt="line"></a>
-                                        </div>
-                                        <div>
-                                            <a href="">
-                                                <img href="#" src="images/new-tel.png" alt="tel"></a>
-                                        </div>
-                                        <div>
-                                            <a href="">
-                                                <img href="#" src="images/kakao.png" alt="talk"></a>
+
+                                    </div>
+                                    <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                        <span class="price-label">Total Price</span>
+                                        <div class="value-wrapper new-value-wrapper"><span class="past-price">$258.80</span></div>
+                                    </div>
+                                    <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                        <span class="total-price-label">Total PV/BV</span>
+                                        <div class="value-wrapper new-value-wrapper">
+                                            <span class="hidden-xs hidden-sm">$570.00</span>
+                                            <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                            <span class="hidden-md hidden-lg">91.10 / 286.55</span>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
+                </div>
+            </div>
+            <div class="row mysop-product-active no-border-mobile">
+                <div class="actions-wrapper">
+                    <div class="actions">
+                        <div class="AddToCart-AddToCartAction" data-index="1">
+                            <form id="addToCartForm" class="add_to_cart_form col-md-3 col-xs-12" action="#" method="post">
+                                <input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1" />
+                                <input type="hidden" name="productCodePost" value="119889" />
+                                <button id="addToCartButton" class="btn primary col-md-10">SAVE CHANGES</button>
+                                <!--<button id="BuyNow" class="btn primary btn-block js-add-to-cart js-enable-btn col-md-6">Checkout</button>-->
+                                <div>
+                                    <input type="hidden" name="CSRFToken" value="1bcd7a5f-3229-4b1e-8f3f-1cbfa88e4768" /></div>
+                            </form>
+                            <div class="add-to-cart-extra-actions col-xs-12 col-md-9">
+                                <div class="add-button-wrap add-to-shopping-list-container">
+                                    <button type="button" class="btn btn-link btn-block js-add-list-shopping-button" data-toggle="dropdown" id="">
+                                        <i class="far fa-heart"></i>
+                                        <span class="shopping-list-button-text">Add To Wishlist</span></button>
+
+                                    <div class="cart-detail__dropdown-menu dropdown-menu" role="menu">
+                                        <ul>
+                                            <li>
+                                                <input class="" id="toSL1" name="toDitto" type="checkbox">
+                                                <label class="cart-detail__addto-options" for="toSL1"></label>
+                                                <span>1</span></li>
+                                            <li>
+                                                <input class="" id="toSL2" name="toDitto" type="checkbox">
+                                                <label class="cart-detail__addto-options" for="toSL2"></label>
+                                                <span>TEST2</span></li>
+                                            <li>
+                                                <input class="" id="toSL3" name="toDitto" type="checkbox">
+                                                <label class="cart-detail__addto-options" for="toSL3"></label>
+                                                <span>test1</span></li>
+                                            <li>
+                                                <input class="" id="toSL4" name="toDitto" type="checkbox">
+                                                <label class="cart-detail__addto-options" for="toSL4"></label>
+                                                <span>GG</span></li>
+                                            <li>
+                                                <input class="" id="toSL5" name="toDitto" type="checkbox">
+                                                <label class="cart-detail__addto-options" for="toSL5"></label>
+                                                <span>GG8</span></li>
+                                        </ul>
+                                        <div class="dropdown-menu-bottom">
+                                            <button id="addToLIST" class="btn primary">ADD TO LIST</button>
+                                            <a href="javascript:void(0);" id="">Create New List</a></div>
+                                    </div>
+                                    <button type="button" class="cancel-sop btn btn-link">Cancel SOP</button>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="overlay"></div>
@@ -420,7 +598,7 @@
                         <div id="slider2" class="slider owl-carousel">
                             <div class="item">
                                 <div class="content">
-                                    <div class="image-gallery js-gallery"><img src="images/sop1.png" /></div>
+                                    <div class="image-gallery js-gallery"><img src="images/heart-health.png" /></div>
                                 </div>
                             </div>
                             <!--Repeat the below item to add more items in slider-->
@@ -529,6 +707,182 @@
     <div id="quick"></div>
     <div id="footer"></div>
 </main>
+<div class="popup" id="del-profile">
+    <div class="pop-box">
+        <div class="pop-header uppercase">delete sop profile<i class="pop-close cart-popup__close icon icon-x-close"></i></div>
+        <div class="pop-tip">The following SOP profile will be deleted:</div>
+
+        <div class="pop-content noPadding no-border">
+            <div class="pop-form">
+
+                <div class="row">
+                    <label class="col-md-4 control-label text-upper">profile name</label>
+                    <div class="col-md-8 col-xs-12">
+                        Yui Mori's Downline Profile(Wrap one line)
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-4 control-label text-upper">payment</label>
+                    <div class="col-md-8 col-xs-12 has-card">
+                        <img src="images/visa.png">
+                        Work Card - **** 1234
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-4 control-label text-upper">delivery address</label>
+                    <div class="col-md-8 col-xs-12">
+                        Yui Mori's Home Address
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="col-md-4 control-label text-upper">process day</label>
+                    <div class="col-md-8 col-xs-12">
+                        5th of each calendar month
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="pop-footer no-border text-center">
+            <p class="red-tip">All 8 active SOP in this profile will be cancelled.</p>
+            <a href="" class="btn primary btn-one">DELETE</a>
+        </div>
+
+    </div>
+</div>
+<div class="popup mysop-popup-save-change" id="add-to-cart-box1">
+    <div class="pop-box">
+        <div class="pop-header uppercase">Save Changes<i class="pop-close cart-popup__close icon icon-x-close"></i></div>
+        <div class="pop-tip">The changes below will be applied to the <span class="green text-uppercase">Next</span> delivery:
+            <div class="blue fontWeight600 apply-date">August 2018</div>
+        </div>
+
+        <div class="pop-content noPadding no-border ">
+            <div class="mysop-save-change-list">
+                <div class="list-label">QTY</div>
+                <div class="list-main-content">
+                    <span class="cancelled-num blue">1</span>
+                    <i class="far fa-arrow-right blue"></i>
+                    <span class="current-num lightBlue">2</span>
+                </div>
+            </div>
+            <div class="mysop-save-change-list">
+                <div class="list-label">Options</div>
+                <div class="">BodyKey™ Shaker Cup</div>
+                <div class="list-main-content">
+                    <span class="cancelled-num blue">Blue</span>
+                    <i class="far fa-arrow-right blue"></i>
+                    <span class="current-num lightBlue">Green</span>
+                </div>
+            </div>
+            <div class="mysop-save-change-list">
+                <div class="list-label">Auto Continue</div>
+                <div class="list-main-content">
+                    <span class="cancelled-num blue">Active</span>
+                    <i class="far fa-arrow-right blue"></i>
+                    <span class="current-num lightBlue">Inactive</span>
+                </div>
+            </div>
+        </div>
+        <div class="pop-footer no-border text-center">
+            <P class="blue fontWeight600">Would you like to keep these changes?</P>
+            <a href="" class="btn primary btn-one">Keep changes</a>
+            <a>Discard</a>
+        </div>
+
+    </div>
+</div>
+<div class="popup mysop-popup-cancel-sop" id="add-to-cart-box2">
+    <div class="pop-box">
+        <div class="pop-header uppercase">Cancel SOP<i class="pop-close cart-popup__close icon icon-x-close"></i></div>
+        <div class="pop-tip">The following SOP will be cancelled:</div>
+
+        <div class="pop-content noPadding no-border ">
+            <div class="tag-group">
+                <div class="tags no-space">
+                    <span class="tag-purple"><span class="hidden-xs hidden-sm">SOP benefit</span><span class="hidden-md hidden-lg"><i class="far fa-gift"></i></span></span>
+                </div>
+            </div>
+            <div class="row amwahover">
+                <img src="images/layer-123.png" class="cart-popup__thumbnail" alt="product">
+                <div class="cart-popup__item-detail">
+                    <p class="cart-popup__item-title">Nutrilite® Double X</p>
+                    <span class="cart-popup__item-number">Item #: 116991</span>
+                    <div class="pdp-info new-pdp-info">
+                        <div class="product-main-info">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="product-details">
+                                        <div class="bundle"></div>
+                                        <p class="price retail-price-discount">$35.10
+                                            <span class="description-cost">ABO Cost</span></p>
+                                        <span class="additional-price">
+                                                <div>
+                                                    <span>PV / BV: 91.10 / 286.55</span>
+                                                </div>
+                                            </span>
+                                        <div class="date-tips">
+                                            <div class="alert-icon">
+                                                <i class="far fa-gift"></i>
+                                            </div>
+                                            <div class="alert-content">
+                                                <span class="lightBlue">Free BodyKey shaker cup on every 6th month</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="page-details-variants-select new-page-details-variants-select">
+                                        <div class="page-details-add-to-cart-component">
+                                            <div class="addtocart-component">
+                                                <div class="amway-theme qty-selector js-qty-selector control-group">
+                                                    <div class="row">
+                                                        <div class="pull-left qty-selector-container">
+                                                            <label class="control-label" for="">Qty</label>
+                                                            <div class="qty-num">2</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="payment-selector-container cycle-period-container">
+                                                            <label class="control-label" for="">Cycle</label>
+                                                            <div class="cycle-period">Monthly, 6 Month</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="mysop-start-container">
+                                                            <label class="control-label" for="">Start</label>
+                                                            <div class="start-date">
+                                                                <div class="">May,2017</div>
+                                                                <div class="auto-continue">
+                                                                    <label class="checkbox-element-wrapper">
+                                                                        <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox" checked="checked">
+                                                                        <span class="_checkbox-element-global-span"></span>
+                                                                    </label>
+                                                                    <span class="auto-continue-text">Auto Continue</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-footer no-border text-center">
+            <P class="blue fontWeight600">Are you sure you want to cancel this SOP?</P>
+            <p class="red-tip">All progress and benefits will be lost</p>
+            <a href="" class="btn primary btn-one">Cancel SOP</a>
+        </div>
+
+    </div>
+</div>
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
 <script src="scripts/owl.carousel.js"></script>
@@ -543,20 +897,54 @@
         });
         return val;
     }
-
 $(function() {
+    $('.pop-close').click(function(){
+        $(".popup").hide();
+    });
+
+    $('.del-profile').click(function(e) {
+        e.preventDefault();
+        $("#del-profile").show();
+
+    });
 
 
-    $("#sop-jump-to-1").click(function(e){
-            e.preventDefault();
-            if($("#sop-p-sop").val() =="Create New Profile"){
-                window.location.href = "sop-createprofile.html";
-            }else{
-                window.location.href = "sop-confirmation.html";
-            }
+    $('#edit-profile').click(function(e){
+        e.preventDefault();
+        if($(".edit-block").is(':hidden')){
+            $(".downline-profile-second-line").hide();
 
+            $(".edit-block").slideDown();
+        }else{
+            $(".edit-block").hide();
+            $(".downline-profile-second-line").show();
         }
-    );
+
+    });
+    $('.close-edit').click(function(e) {
+        e.preventDefault();
+        $('.edit-block').slideUp();
+        $(".downline-profile-second-line").fadeIn(800);
+    });
+
+    $('.pop-close').click(function(){
+        $(".popup").hide();
+    });
+
+    $('#addToCartButton').click(function(event) {
+        event.preventDefault();
+        $("#add-to-cart-box1").show();
+
+    });
+
+    $('.cancel-sop').click(function(event) {
+        event.preventDefault();
+        $("#add-to-cart-box2").show();
+
+    });
+
+
+
     $(".edit").click(function() {
         var father = $(this).parents('.content-list');
         if (father.children("#editPay").is(":visible")) {
