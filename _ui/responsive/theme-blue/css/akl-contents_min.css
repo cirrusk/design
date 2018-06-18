@@ -5,9 +5,9 @@
 /* ----- core css 리셋 ----- */
 #business-page-accordion .panel-title a {padding: 2em 0; display:block;}
 #business-page-accordion .panel-title a span {font-size: 1.25em;font-weight: 600;}
-#business-page-accordion .panel-title a .icon-businnes { font-weight: 100; color: #008fc5; margin-right: 0.3em; font-size: 18px;}
-#business-page-accordion .panel-title a span.indicator:after { content: "\2013";color: #002F5F; font-size: 1.4em; margin-right: 0; font-weight:bold;}
-#business-page-accordion .panel-title a.collapsed span.indicator:after {content: "+";}
+#business-page-accordion .panel-title a .icon-businnes { font-weight: 100; color:#008fc5; margin-right:0.3em; font-size: 18px;}
+#business-page-accordion .panel-title a span.indicator:after { content:'\2013';color:#002F5F; font-size:1.4em; margin-right:0; font-weight:bold;}
+#business-page-accordion .panel-title a.collapsed span.indicator:after {content:'+';}
 
 .akl #register-step-page .new-ibo-reg {padding:0 12px;}
 .akl #register-step-page #confirm ,
@@ -41,22 +41,24 @@
 .tbl-list-board {display:table; width:100%; table-layout:fixed; margin-bottom:10px; box-sizing:border-box; border-bottom:1px solid #e3e3e3; word-break: break-all;}
 .tbl-list-board * {font-size:14px;}
 .tbl-list-board .thead {display:table-header-group;}
-.tbl-list-board .tbody {display:table-row-group; font-size:14px;}
+.tbl-list-board .tbody, .tbl-list-board .tfoot {display:table-row-group; font-size:14px;}
 .tbl-list-board .thead .tr>strong {text-align:center; display:table-cell; padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 .tbl-list-board .tbody .tr>strong {display:none;}
 .tbl-list-board .tbody .tr:nth-of-type(even) { background:#f4f4f4;}
 .tbl-list-board .th {background:#f4f4f4;}
-.tbl-list-board .tr {display:table-row; s}
-.tbl-list-board .tr>strong {font-size:13px;color:#002f5f;font-weight:500;  }
-.tbl-list-board .tr>div {display:table-cell; vertical-align:middle; padding:20px 15px 18px; box-sizing:border-box; border-top:1px solid #e3e3e3; }
+.tbl-list-board .tr {display:table-row;}
+.tbl-list-board .tr>strong {color:#002f5f; font-size:13px; font-weight:500;}
+.tbl-list-board .tr>div {display:table-cell; vertical-align:middle; padding:20px 15px 18px; box-sizing:border-box; border-top:1px solid #e3e3e3;}
 .tbl-list-board.authorization .tr>div { text-align:center}
 
 /* table : tbody에서 th노출(모바일view) */
 .tbl-list-board.type-tbody-th {margin-bottom:20px;}
 .tbl-list-board.type-tbody-th .tr:nth-of-type(even)>div {background:#f4f4f4;}
 .tbl-list-board.type-tbody-th .mob-block>strong {display:none;}
-.tbl-list-board.type-tbody-th .tbody .mob-block>p{margin-bottom:0}
+.tbl-list-board.type-tbody-th .mob-block>p{margin-bottom:0}
 .tbl-list-board.type-tbody-th .tbody .tr>div {border-top:0; width:16%; text-align:center}
+.tbl-list-board.type-tbody-th .tfoot .tr {text-align:center;}
+.tbl-list-board.type-tbody-th .tfoot .tr>div>p {color:#002f5f; font-weight:500;}
 
 /* table : 결과없음 */
 .tbl-list-board .tr.no-result {display:block !important;}
@@ -220,27 +222,6 @@ html.scrollLock body {overflow:hidden;}
 /* 결과보기 : 비밀번호 재설정 */
 .akl .wrapper-seek-result.reset-password input[type=text],
 .akl .wrapper-seek-result.reset-password input[type=password]{width:283px;}
-
-/* ----- jump-menu -----
-.akl .user-account-header .go-block .jump-to {vertical-align:middle;}
-.jump-menu {position:relative; z-index:10; display:inline-block; width:300px; background:#fff; text-align:left;}
-.jump-menu a {display:block; color:#002f5f; font-weight:500; padding-left:20px; font-size:14px !important;}
-.jump-menu .currentTxt {display:block; height:40px; line-height:38px; box-sizing:border-box; border:1px solid #dadada;}
-.jump-menu .menu-dep1 {height:40px; line-height:40px; padding-left:35px;}
-.jump-menu .menu-dep2 {height:40px; line-height:40px;}
-.jump-menu .current {background:#f4f4f4;}
-.jump-menu .select-wrapper {display:none; position:absolute; top:40px; left:0; width:100%; height:auto; background:#fff; border:1px solid #dadada; border-top:0;}
-.jump-menu .select-list>li {border-top:1px solid #dadada;}
-.jump-menu .select-list>li:first-child {border-top:0;}
-.jump-menu .select-list>li>ul {display:none;}
-.jump-menu .currentTxt,
-.jump-menu .hasSub {background:url(../images/akl_common/ico_jumpmenu_arrw.png) no-repeat 100% -55px;}
-.jump-menu .currentTxt.active,
-.jump-menu .on .hasSub {background-position: 100% -5px;}
-.jump-menu .sub-main .menu-dep1 {padding-left:20px;}
-.select-depth2 {margin-bottom:10px;}
-.select-depth2 a {padding-left:50px; font-weight:normal;}*/
-
 
 /* ----- 마이페이지 ----- */
 .akl .user-account-header .user-block .user-image-container .icon>a {position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
@@ -481,7 +462,6 @@ html.scrollLock body {overflow:hidden;}
 .akl .wrapper-memb-join .amw-radio-wrap.radio-label input[type=radio] {position:absolute; top:0; left:0;}
 .akl #register-step-page .amway-theme * {font-size:14px;}
 .akl #register-step-page .amway-theme h2.tit-h2 {font-size:18px;}
-
 
 /* 본인확인 > 본인확인 방법 선택 */
 .wrapper-memb-join.step-validation .tit-h2+div {margin-top:36px;}
@@ -1007,7 +987,6 @@ html.scrollLock body {overflow:hidden;}
 .transfer-resver-guide .guid-box.on a.title:before{content:'\002b'!important;}
 .transfer-resver-guide .guid-box .tgg-hidden-area {display:none;}
 .akl .fax-order-wrapper .amwa-btnbar {padding:40px 0 0;}
-
 .akl .fax-order-wrapper .pay-transaction .list-type2 .color-blue {font-weight:400}
 
 /* -- 제품주문 정보 -- */
@@ -1157,30 +1136,39 @@ table.clone thead, .clone tfoot{background:transparent;}
 .table-scroll .scrollArrow.toLeft {background:hotpink;}
 .table-scroll .scrollArrow.toRight {background:orange;}
 
+/* ----- 월간 코어 보너스 조회, 여행점수 조회 (공통 사용) ----- */
+.monthly-coreBonus-wrapper, .rewards-program-wrapper {padding:36px 0 0;}
+.monthly-coreBonus-wrapper .outer-border-bottom,
+.rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
+
+.akl .amway-theme.business > [class$=-wrapper] h2 {font-size:18px; text-align:left; margin:0; letter-spacing:-0.05em;}
+.akl .amway-theme.business > [class$=-wrapper] h3 {font-size:16px; text-align:left; color:#56565a; letter-spacing:-0.025em;}
+.akl .amway-theme.business .box-conts-summary>h2,
+.akl .amway-theme.business .box-conts-group>h2,
+.akl .amway-theme.business .box-conts-group>h3 {margin:0 0 27px;}
+
+.amway-theme.business .box-conts-summary dl {overflow:hidden;}
+.amway-theme.business .box-conts-summary dl>dt {float:left; width:20%; margin-top:13px; color:#002f5f;font-weight:500;}
+.amway-theme.business .box-conts-summary dl>dd {float:left; width:80%; margin-top:13px;}
+.amway-theme.business .box-conts-group {margin:37px 0 0; padding:37px 0 40px; border-top:1px solid #dadada;}
+.amway-theme.business .box-conts-group .search-no-result {background:#fafafa;}
+.amway-theme.business .box-conts-group+.box-conts-group {margin:0;}
+.amway-theme.business .box-conts-group .imgbox {text-align:center;}
+.akl .amway-theme .box-goal-point li>span {font-size:38px; letter-spacing:-0.025em;}
+
+/* ----- 월간 코어 보너스 조회 ----- */
+.monthly-coreBonus-wrapper .next-control {margin-top:30px; text-align:center;}
+.box-goal-point.corebonus {margin-top:20px;margin-bottom:40px;}
+.box-goal-point.corebonus>ul>li  {width:50%; padding-bottom:40px;}
+
+
 /* ----- 여행점수 조회 ----- */
 .akl .txt-required {font-size:13px !important;}
 .akl p.txt-required {margin-bottom:0;}
 .akl .amway-theme .etc-required>em {font-size:0;}
 .akl .amway-theme .rewards-program-wrapper * {font-size:14px;}
 .akl .amway-theme .rewards-program-wrapper .next-control {text-align:center; margin-top:30px;}
-.akl .amway-theme .rewards-program-wrapper h2 {font-size:18px;text-align:left;}
-.akl .amway-theme .rewards-program-wrapper h3 {font-size:16px;text-align:left;color:#56565a; letter-spacing:-0.025em;}
 .akl .amway-theme .rewards-program-wrapper .calc-travel-point>h3 {font-size:14px;}
-.akl .amway-theme .rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
-.akl .amway-theme .rewards-program-wrapper .box-goal-point li>span {font-size:38px; letter-spacing:-0.025em}
-
-.rewards-program-wrapper {padding:36px 0 0;}
-.rewards-program-wrapper h2 {margin:initial; text-align:left;}
-.rewards-program-wrapper .box-conts-summary>h2 {margin-bottom:28px;}
-.rewards-program-wrapper .box-conts-summary dl{overflow:hidden;}
-.rewards-program-wrapper .box-conts-summary dl>dt {float:left; width:20%; margin-top:13px; color:#002f5f;font-weight:500;}
-.rewards-program-wrapper .box-conts-summary dl>dd {float:left; width:80%; margin-top:13px;}
-.rewards-program-wrapper .box-conts-group {margin:37px 0 0; padding:37px 0 40px; border-top:1px solid #dadada;}
-.rewards-program-wrapper .box-conts-group .search-no-result {background:#fafafa;}
-.rewards-program-wrapper .box-conts-group>h2,
-.rewards-program-wrapper .box-conts-group>h3 {margin-bottom:28px;}
-.rewards-program-wrapper .box-conts-group+.box-conts-group {margin:0;}
-.rewards-program-wrapper .box-conts-group .imgbox {text-align:center;}
 
 /* 여행 점수 산출 diagram */
 .box-diagram {overflow:hidden; padding:40px 60px 37px; background:#fafafa;}
@@ -1281,6 +1269,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 .chartBar>span img {position:absolute; left:0; bottom:0; width:100%; min-height:3px; max-height:120px; border-radius:5px 5px 0 0;}
 .chartBar>span>strong{position:absolute; left:0; bottom:0; width:100%; min-height:3px; display:block;background:hotpink;overflow:hidden;text-indent:-9999px;font-size:0;}
 .chartNum {position:absolute; width:100%; text-align:center; font-size:13px;}
+
 
 /* ----- ABO수첩 ----- */
 .pocketbook-wrapper {margin-top:40px;}
@@ -1426,7 +1415,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 
 	/* table : list */
 	.akl .tbl-list-board .amw-checkbox-wrap {margin:0 10px 0 0;}
-	.tbl-list-board, .tbl-list-board .tr, .tbl-list-board .thead, .tbl-list-board .tbody {display:block;}
+	.tbl-list-board, .tbl-list-board .tr, .tbl-list-board .thead, .tbl-list-board .tbody, .tbl-list-board .tfoot {display:block;}
 	.tbl-list-board .thead .tr>strong {display:inline-block; padding-right:0; border:0; background:none; vertical-align:middle;}
 	.tbl-list-board.tbl-customMessage .thead .tr>strong {border-bottom:0;}
 	.tbl-list-board .thead .tr {background:#f4f4f4;}
@@ -1443,12 +1432,13 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.tbl-list-board.type-tbody-th{float:none}
 	.tbl-list-board.type-tbody-th .tr {border-top:0;}
 	.tbl-list-board.type-tbody-th .tbody .mob-block {overflow:hidden;}
-	.tbl-list-board.type-tbody-th .tbody .mob-block>strong{display:block;float:left; width:50%; color:#002f5f; font-weight:500;}
-	.tbl-list-board.type-tbody-th .tbody .mob-block>p{float:left; width:50%; margin-bottom:0;text-align:right;}
+	.tbl-list-board.type-tbody-th .tbody .mob-block>strong, .tbl-list-board.type-tbody-th .tfoot .mob-block>strong {display:block; float:left; width:50%; color:#002f5f; font-weight:500;}
+	.tbl-list-board.type-tbody-th .tbody .mob-block>p, .tbl-list-board.type-tbody-th .tfoot .mob-block>p{float:left; width:50%; margin-bottom:0;text-align:right;}
 	.tbl-list-board.type-tbody-th .tr>div.mob-block:first-child {padding-top:17px}
 	.tbl-list-board.type-tbody-th .tr>div.mob-block {padding:0 20px 15px;}
 	.tbl-list-board.type-tbody-th .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
-	.tbl-list-board.type-tbody-th .tbody .tr>div {/* width:auto; */ width:100%;}
+	.tbl-list-board.type-tbody-th .tbody .tr>div,
+	.tbl-list-board.type-tbody-th .tfoot .tr>div {width:100%;}
 
 	/* ----- 마이페이지, 회원가입 ----- */
 	/* 로그인 */
@@ -1804,6 +1794,14 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .cart-popup__content.height-auto {max-height:none;}
 	.cart-popup__item-info>.order-impossible-list:first-child {margin-top:20px;}
 
+	/* ----- 월간 코어 보너스 조회 ----- */
+	.tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>strong {display:none;}
+	.tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>p {float:none; width:100%; text-align:left; font-weight:500;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th {margin-bottom:0;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>strong {width:60%;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>p {width:40%;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>p {width:100%;}
+
 	/* ----- 여행점수 조회 ----- */
 	.rewards-program-wrapper {padding: 20px 0 0;}
 	.rewards-program-wrapper .box-conts-group .imgbox>img {width:100%;}
@@ -1820,6 +1818,10 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.box-goal-point>ul{overflow:hidden;}
 	.box-goal-point>ul>li {display:block; float:none; width:auto;}
 	.box-goal-point>ul>li+li{margin-top:20px;}
+
+	.box-goal-point.corebonus>ul>li{width:auto;}
+	.business .monthly-coreBonus-wrapper .tbl-list-board .th {padding-left:0;}
+	.monthly-coreBonus-wrapper .tbl-list-board.type-tbody-th .tbody .tr>div {text-align:left;}
 
 	/* 여행점수 시뮬레이션 */
 	.business .box-simulation .tbl-list-board .th {padding-left:0;}
@@ -1888,7 +1890,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.viewer-guide-box>p {background-size:20px auto; background-position:0 5px; line-height:26px;}
 	.viewer-guide-box:after {position:initial; margin:10px 0 0 50px;}
 	.viewer-guide-box.type-pdf a { position:initial; margin:10px 0 0 50px;}
-	
+
 	/* 수첩 이미지 */
 	.note-con-box.imgs {margin:25px 0 40px; background:url(../images/akl_common/business/img_abo_pocket_mob.png) 50% 0 no-repeat; background-size:auto 485px;  height:485px;}
 	.note-con-box.imgs .img {display:none;}
