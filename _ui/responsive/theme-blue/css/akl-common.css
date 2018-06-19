@@ -776,7 +776,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 
 .tab-pane.gnb-nav .depth2-links>ul {height:350px;}
 #navMenuTab0 .depth2-links>ul {height:400px;}
-#navMenuTab3 .depth2-links>ul {height:400px;} 
+#navMenuTab3 .depth2-links>ul {height:400px;}
 #navMenuTab5 .depth2-links>ul {height:400px;}
 .tab-pane.gnb-nav .depth2-links>ul>li {margin:0; padding:0; width:200px; min-height:48px;}
 .tab-pane.gnb-nav.shop-nutrition .depth2-links>ul {height:320px;}
@@ -1025,9 +1025,15 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.tabs-toggles, .col-search-tab>ul {-ms-overflow-style:-ms-autohiding-scrollbar; scrollbar-face-color:rgba(245,245,245,0); scrollbar-arrow-color:rgba(245,245,245,0); scrollbar-track-color:rgba(245,245,245,0.4); scrollbar-shadow-color:rgb(255,255,255,0.5); scrollbar-highlight-color:rgb(255,255,255,0); scrollbar-3dlight-color:rgb(255,255,255,0); scrollbar-darkshadow-Color:rgb(255,255,255,0);}
 }
 @media (max-width: 768px) {
-
-	/* 공통 : owl-carousel */
+	/** ---------------------------------
+	 * @ 공통 : owl-carousel
+	 * ----------------------------------
+	 */
 	.owl-dots{right:auto;bottom:12px;width:100%;}
+
+	/* 회원가입 완료 (하단 브랜드 링크) */
+	#join_featured_brandsList.owl-carousel .owl-item img {width:auto; display:inline-block;}
+
 
 	/** ---------------------------------
 	 * @ 공통 : 탭 (MOB)
@@ -1306,7 +1312,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory .subcategory-list li a img { width:147px}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element a {font-size: 14px;font-weight: 700;}
 	/*** header > 네비게이션 브랜드 ***/
-	#navMenuMobCollapse6 .list-wrapper {padding: 0 30px 15px 50px; } 
+	#navMenuMobCollapse6 .list-wrapper {padding: 0 30px 15px 50px; }
 	#navMenuMobCategoryCollapse-BeverageNavNode2 { overflow:hidden; padding-bottom:15px;}
 	#navMenuMobCategoryCollapse-BeverageNavNode2 li { float:left; width:50%}
 	#navMenuMobCategoryCollapse-BeverageNavNode2 li img{ width:110px}
@@ -1319,9 +1325,9 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container {min-width:65px; }
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container button { background: #fff }
 	.akl .breadcrumb {padding:8px 0;font-size:12px; margin-top:60px; }
-	
-	 
-	
+
+
+
 	/* header > mini deshboard */
 	.akl .mDashboard {top: 63px !important;}
 

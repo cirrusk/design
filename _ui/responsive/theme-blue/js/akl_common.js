@@ -36,6 +36,27 @@
 		}
 	});
 
+	//회원가입 완료
+	$('#join_featured_brandsList').owlCarousel({
+		loop: true,
+		nav: true,
+		dots: false,
+		margin: 0,
+		items: 1,
+		responsiveClass: true,
+		responsive: {
+			768 : {
+				items: 1
+			},
+			960 : {
+				items: 3
+			},
+			1200 : {
+				items: 5
+			}
+		}
+	});
+
 
 /** ----- SHOP ----- */
 
