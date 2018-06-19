@@ -1365,14 +1365,14 @@ function GNB_SubDepth_Control(){
 			if( $(this).find('.depth3-links').length ){
 				//3차메뉴 높이
 				var dep3Nums = $(this).find('.depth3-links>li').length;
-				var dep3Size = (dep3Nums * 29) + 25;
+				var dep3Size = (dep3Nums * 29) + 30;
 
 				//2차메뉴 높이
 				var dep2_Anchor = 24;
 				var dep2Size = dep2_Anchor + dep3Size;
 				$(this).css({ height : dep2Size });
 			} else {
-				var dep2BoxSize = 54;
+				var dep2BoxSize = 56;
 				$(this).css({ height : dep2BoxSize });
 			}
 		});

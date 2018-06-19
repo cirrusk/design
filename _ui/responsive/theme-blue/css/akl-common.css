@@ -755,7 +755,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item > a { font-weight:500; font-size: 16px;}
 
 /* header > navigation > 1depth */
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:13px 0 0 40px !important; height: 61px}
+.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 40px !important; height: 66px}
 .akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-image { width:40px;}
 .akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-title { font-weight: 500;font-size: 14px;font-family:'Noto Sans KR', sans-serif;  }
 
@@ -767,14 +767,17 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .overlay-menu-tab-categories .col-sm-3 { width:100%; float:none}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a {padding: 0px; font-size: 16px; font-weight:500; display: block; margin-bottom:33px }
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth2-links a + .depth3-links { margin-top: -25px; margin-bottom:30px}
-.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth3-links a {  padding: 0px; font-size: 14px; display: block; margin-bottom:5px; font-weight:400; }
+.akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .depth3-links a {  padding: 0px; font-size: 14px; display: block; margin-bottom:7px; font-weight:400; }
 
 /* gnb 수정 : 2018.03.2 (시작) */
 .akl header.main-header .nav-list-item .dep2-grid>li>a {margin-bottom:0 !important; line-height:1.5;}
 .akl header.main-header .nav-list-item .depth2-links a + .depth3-links {margin:5px 0 0 10px!important;}
 .akl .gnb-nav h5 {margin-bottom:10px}
 
-.tab-pane.gnb-nav .depth2-links>ul {height:330px;}
+.tab-pane.gnb-nav .depth2-links>ul {height:350px;}
+#navMenuTab0 .depth2-links>ul {height:400px;}
+#navMenuTab3 .depth2-links>ul {height:400px;} 
+#navMenuTab5 .depth2-links>ul {height:400px;}
 .tab-pane.gnb-nav .depth2-links>ul>li {margin:0; padding:0; width:200px; min-height:48px;}
 .tab-pane.gnb-nav.shop-nutrition .depth2-links>ul {height:320px;}
 .tab-pane.gnb-nav.shop-bath-body .depth2-links>ul {height:;}
@@ -790,7 +793,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 
 .brand-shop {padding:40px 0 0 20px; }
 .brand-shop .depth2-links ul {margin-bottom:10px;}
-.brand-shop .depth2-links li { float:left; margin-right:25px;}
+.brand-shop .depth2-links li { float:left; margin-right:25px; margin-bottom:8px}
 .brand-shop .depth2-links strong {  display:block;font-family:'Noto Sans KR', sans-serif; margin-bottom:5px; font-size: 14px; font-weight:500; color:#002f5f}
 
 .brand-shop .depth2-links.oneforone li { margin-right:7px;}
@@ -1298,15 +1301,26 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__heading h4.panel-title .panel-toggle {font-size: 14px;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory h5 { font-size: 14px; }
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory .subcategory-list { margin-top: -10px; }
-	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory .subcategory-list li a {font-weight: 500;font-size: 14px;}
+	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory .subcategory-list li a {font-weight: 500;font-size: 14px; text-align:center}
+	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory .subcategory-list li a img { width:147px}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element a {font-size: 14px;font-weight: 700;}
+	/*** header > 네비게이션 브랜드 ***/
+	#navMenuMobCollapse6 .list-wrapper {padding: 0 30px 15px 50px; } 
+	#navMenuMobCategoryCollapse-BeverageNavNode2 { overflow:hidden; padding-bottom:15px;}
+	#navMenuMobCategoryCollapse-BeverageNavNode2 li { float:left; width:50%}
+	#navMenuMobCategoryCollapse-BeverageNavNode2 li img{ width:110px}
+	#navMenuMobCategoryCollapse-BeverageNavNode5 { overflow:hidden; padding-bottom:15px;}
+	#navMenuMobCategoryCollapse-BeverageNavNode5 li { float:left; width:33.333%}
+	#navMenuMobCategoryCollapse-BeverageNavNode5 li img{ width:50px}
 	.akl .overlay-menu-mobile__panel >.active+.collapse {  padding-left: 0}
 	.akl .mobile-user-btn img { width: 32px}
 	.akl .amway-theme a span.icon-search {font-weight:400;}
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container {min-width:65px; }
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container button { background: #fff }
 	.akl .breadcrumb {padding:8px 0;font-size:12px; margin-top:60px; }
-
+	
+	 
+	
 	/* header > mini deshboard */
 	.akl .mDashboard {top: 63px !important;}
 
