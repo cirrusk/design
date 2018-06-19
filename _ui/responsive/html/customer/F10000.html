@@ -96,7 +96,7 @@
 							<span class="shop-finder-main-content-check-text">위치보기</span>
 						</div>
 						<div class="col-md-6 shop-finder-main-content-body-area-right"><!-- 수정 : 2018.05.04 (bootstrap 제어 class 삭제) -->
-						   <p class="no-map"><span>찾으시는 플라자를 선택하시면<br>구글맵에서 상세지도를 확인할 수 있습니다</span></p>
+							<p class="no-map"><span>찾으시는 플라자를 선택하시면<br>구글맵에서 상세지도를 확인할 수 있습니다</span></p>
 						</div>
 						<div class="check-area">
 							<label class="checkbox-element-wrapper">
@@ -106,18 +106,19 @@
 							<span class="shop-finder-main-content-check-text">사진보기</span>
 						</div>
 						<div class="col-md-6 shop-finder-main-content-body-area-right"><!-- 수정 : 2018.05.04 (bootstrap 제어 class 삭제) -->
-						   <!-- <p class="no-map no-img"><span>찾으시는 플라자를 선택하시면<br>구글맵에서 상세지도를 확인할 수 있습니다</span></p> -->
-						   <div id="map-list-mob">
-								 <div class="wrapper">
+						<!-- <p class="no-map no-img"><span>찾으시는 플라자를 선택하시면<br>구글맵에서 상세지도를 확인할 수 있습니다</span></p> -->
+
+						<div id="map-list-mob" class="owl-carousel owl-theme"><!-- carousel 수정(06.19) : .owl-carousel.owl-theme 추가 -->
+								<div class="wrapper">
 									<img src="/_ui/responsive/theme-blue/images/akl_common/@map01_mob.png" alt="" />
-								 </div>
-								 <div class="wrapper">
+								</div>
+								<div class="wrapper">
 									<img src="/_ui/responsive/theme-blue/images/akl_common/@map02_mob.png" alt="" />
-								 </div>
-								 <div class="wrapper">
+								</div>
+								<div class="wrapper">
 									<img src="/_ui/responsive/theme-blue/images/akl_common/@map03_mob.png" alt="" />
-								 </div>
-							 </div>
+								</div>
+							</div>
 						</div>
 					</div><!-- //수정 : 2018.05.04 (div 추가) -->
 					<!--// mobile api -->
@@ -343,7 +344,7 @@
 									</div>
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingThree">
-											 <a href="#ourCompany10" class="collapsed" data-toggle="collapse" data-parent="#business-page-accordion" aria-expanded="false" aria-controls="BusinessCollapseTwo">
+											<a href="#ourCompany10" class="collapsed" data-toggle="collapse" data-parent="#business-page-accordion" aria-expanded="false" aria-controls="BusinessCollapseTwo">
 												<div class="panel-title">
 													<span class="text-uppercase accordion-header-text">대구</span>
 													<span class="pull-right icon-minus"></span>
@@ -362,7 +363,7 @@
 									</div>
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingThree">
-											 <a href="#ourCompany11" class="collapsed" data-toggle="collapse" data-parent="#business-page-accordion" aria-expanded="false" aria-controls="BusinessCollapseTwo">
+											<a href="#ourCompany11" class="collapsed" data-toggle="collapse" data-parent="#business-page-accordion" aria-expanded="false" aria-controls="BusinessCollapseTwo">
 												<div class="panel-title">
 													<span class="text-uppercase accordion-header-text">창원</span>
 													<span class="pull-right icon-minus"></span>
@@ -459,24 +460,25 @@
 										<div class="tab-pane content-block active" id="shopFinderApi">
 											<h2 class="hidden">위치보기</h2>
 											<div class="shop-finder-main-content-body-area col-md-12">
-											   <p class="no-map"><span>찾으시는 플라자를 선택하시면<br>구글맵에서 상세지도를 확인할 수 있습니다</span></p>
+											<p class="no-map"><span>찾으시는 플라자를 선택하시면<br>구글맵에서 상세지도를 확인할 수 있습니다</span></p>
 											</div>
 										</div>
 										<div class="tab-pane content-block" id="shopFinderPic">
 											<h2 class="hidden">사진보기</h2>
 											<div class="shop-finder-main-content-body-area col-md-12">
-											   <!-- <p class="no-map no-img"><span>찾으시는 플라자를 선택하시면<br>선택 암웨이 플라자의 사진을 확인할 수 있습니다</span></p> -->
-											   <div id="map-list-pc" class="map-list">
-												  <div class="wrapper">
-													 <img src="/_ui/responsive/theme-blue/images/akl_common/@map01.png" alt="">
-												  </div>
-												  <div class="wrapper">
-													 <img src="/_ui/responsive/theme-blue/images/akl_common/@map02.png" alt="">
-												  </div>
-												  <div class="wrapper">
-													 <img src="/_ui/responsive/theme-blue/images/akl_common/@map03.png" alt="">
-												  </div>
-											  </div>
+											<!-- <p class="no-map no-img"><span>찾으시는 플라자를 선택하시면<br>선택 암웨이 플라자의 사진을 확인할 수 있습니다</span></p> -->
+
+											<div id="map-list-pc" class="map-list owl-carousel owl-theme"><!-- carousel 수정(06.19) : .owl-carousel.owl-theme 추가 -->
+												<div class="wrapper">
+													<img src="/_ui/responsive/theme-blue/images/akl_common/@map01.png" alt="">
+												</div>
+												<div class="wrapper">
+													<img src="/_ui/responsive/theme-blue/images/akl_common/@map02.png" alt="">
+												</div>
+												<div class="wrapper">
+													<img src="/_ui/responsive/theme-blue/images/akl_common/@map03.png" alt="">
+												</div>
+											</div>
 											</div>
 										</div>
 									</div>

@@ -32,11 +32,11 @@ Version : AKL Hybris UIUX 1.0
 .map-list .wrapper { position: relative; left:0; top:0;width: 100%; height:680px}
 .map-list .wrapper img { width: 100%}
 .akl .shop-finder-container .owl-carousel {padding:0}
-.akl .shop-finder-container .owl-theme .owl-controls .owl-dots { margin-top:-50px}
-.akl .shop-finder-container .owl-theme .owl-dots .owl-dot span { opacity: 0.9;  background: #fff;}
-.akl .shop-finder-container .owl-theme .owl-dots .owl-dot.active span { opacity: 0.6; background: #685d52;}
-.akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-prev { left: 10px;}
-.akl .shop-finder-container .owl-theme .owl-controls .owl-nav .owl-next { right: 10px;}
+.akl .shop-finder-container .owl-carousel .owl-dots {width:100%; left:0; right:0; text-align:center; margin-top:-50px;}
+.akl .shop-finder-container .owl-carousel .owl-dots .owl-dot span { opacity:0.9; background: #fff;}
+.akl .shop-finder-container .owl-carousel .owl-dots .owl-dot.active span { opacity:0.6; background: #685d52;}
+.akl .shop-finder-container .owl-carousel .owl-nav .owl-prev {left:10px;}
+.akl .shop-finder-container .owl-carousel .owl-nav .owl-next {right:10px;}
 
 /* 암웨이소식 공통 */
 .customer-area .title-box .product-list-page-title { margin-top:0}
@@ -94,7 +94,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .con-list-item div.cuo-subje a:hover {color:#0075a4;}
 
 /* 공지사항 > 상세보기 */
-.board-details {} 
+.board-details {}
 .btn-page-list { position:relative;  font-size:14px;font-weight:500; padding:0 0 0 18px!important; letter-spacing:-1px; display:inline-block;}
 .btn-page-list:before {content: '\ea4d';position: absolute;left: 0;top: -2px; font-family: 'AmwayIcons'!important;font-size: 18px;}
 .bod-view-head {position: relative;margin-top:26px;border-top:1px solid #e3e3e3;padding:0 0 20px;}
@@ -319,9 +319,9 @@ Version : AKL Hybris UIUX 1.0
 .customer-conts .center-photo {position:relative; padding-right:376px}
 .customer-conts .center-photo [class^="photo-wrap"] .photo {position:relative; padding-top:420px; overflow:hidden}
 .customer-conts .center-photo [class^="photo-wrap"] .photo img {position:absolute; top:0; left:0; right:0; bottom:0; min-width:100%; height:auto}
-.customer-conts .center-photo .photo-wrap02 .photo, 
+.customer-conts .center-photo .photo-wrap02 .photo,
 .customer-conts .center-photo .photo-wrap03 .photo {padding-top:202px}
-.customer-conts .center-photo .photo-wrap02 .photo img, 
+.customer-conts .center-photo .photo-wrap02 .photo img,
 .customer-conts .center-photo .photo-wrap03 .photo img {height:100%}
 .customer-conts .center-photo .photo-wrap01 {width:100%;}
 .customer-conts .center-photo .photo-wrap01 .photo img {margin:auto 0}
@@ -343,8 +343,8 @@ Version : AKL Hybris UIUX 1.0
 
 .customer-conts .shop-info {margin-top:20px}
 .customer-conts .shop-info .panel-title {padding:16px 0 18px !important}
-.akl .customer-conts .shop-info .panel-title .text-uppercase.accordion-header-text {font-size:14px} 
-.akl .customer-conts .shop-info .panel-heading+.panel-collapse>.panel-body{padding-bottom:40px} 
+.akl .customer-conts .shop-info .panel-title .text-uppercase.accordion-header-text {font-size:14px}
+.akl .customer-conts .shop-info .panel-heading+.panel-collapse>.panel-body{padding-bottom:40px}
 .customer-conts .shop-info .panel-body .col-md-12 {position:relative; min-height:300px; padding:40px 540px 40px 40px; background-color:#f6f6f6}
 .customer-conts .shop-info .panel-body .col-md-12 em {display:block; margin-top:10px; font-size:22px; color:#002f5f}
 .customer-conts .shop-info .panel-body .col-md-12 .color-blue {margin-top:5px; font-size:16px}
@@ -395,13 +395,13 @@ Version : AKL Hybris UIUX 1.0
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo  {padding-right:270px;}
 	.customer-conts .center-photo [class^="photo-wrap"] .photo {padding-top:320px;}
-	.customer-conts .center-photo .photo-wrap02, 
+	.customer-conts .center-photo .photo-wrap02,
 	.customer-conts .center-photo .photo-wrap03 {width:255px}
-	.customer-conts .center-photo .photo-wrap02 .photo, 
+	.customer-conts .center-photo .photo-wrap02 .photo,
 	.customer-conts .center-photo .photo-wrap03 .photo {padding-top:152px}
-	.customer-conts .center-photo .photo-wrap02 .photo img, 
+	.customer-conts .center-photo .photo-wrap02 .photo img,
 	.customer-conts .center-photo .photo-wrap03 .photo img {width:auto; height:100%}
-	
+
 	.customer-conts .center-program {padding:50px 20px}
 	.customer-conts .center-program li p br {display:none}
 }
@@ -410,7 +410,7 @@ Version : AKL Hybris UIUX 1.0
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .shop-info .panel-body .col-md-12 {min-height:150px; padding-right:410px}
 	.customer-conts .shop-info .panel-body .col-md-12 img {margin-top:50px; width:40%}
-	
+
 	/* 콜센터 */
 	.call-center {padding:20px 20px 0 20px}
 	.call-center .visual {padding-top:70px}
@@ -434,27 +434,27 @@ Version : AKL Hybris UIUX 1.0
 	.customer-conts .center-photo [class^="photo-wrap"] .photo {padding-top:35%}
 	.customer-conts .center-photo [class^="photo-wrap"] .photo img {margin:auto 0; max-width:100%; height:auto}
 	.customer-conts .center-photo [class^="photo-wrap"] + [class^="photo-wrap"] {margin-top:10px}
-	
+
 	.customer-conts .center-program {padding:40px 20px 30px}
 	.customer-conts .center-program li {display:block; width:100%}
 	.customer-conts .center-program li + li {border-left:0; border-top:1px solid #e3e3e3; padding-top:28px; margin-top:28px}
 	.customer-conts .center-program li p {margin-top:15px}
-	
+
 	.customer-conts .shop-info .panel-body .col-md-12 {padding:25px 20px;}
 	.customer-conts .shop-info .panel-body .col-md-12 em {margin-top:0}
 	.customer-conts .shop-info .panel-body .col-md-12 img {position:static; width:100%; margin-top:5px}
 	.customer-conts .shop-info .panel-body .col-md-12 .txt {margin-top:15px}
 	.customer-conts .shop-info .panel-body .col-md-12 em + img {margin-top:15px}
-	
+
 	.customer-conts .info-cs {margin-top:25px}
 	.customer-conts .info-cs > div {padding-left:30px}
 	.customer-conts .info-cs > div [class^="ico-info-cs"] {width:17px; height:17px}
-	
+
 	.customer-conts .map-area {height:210px}
-	
+
 	.customer-conts .shop-info + .title-h6,
 	.customer-conts .map-area + .title-h6 {margin-top:35px}
-	
+
 	/* 콜센터 */
 	.call-center {display:block; padding:0}
 	.call-center .visual {display:block; min-width:290px; padding-top:40px}
@@ -465,7 +465,7 @@ Version : AKL Hybris UIUX 1.0
 	.call-center .number > li ol {width:60%}
 	.call-center .number > li ol li {width:100% !important; font-size:13px; letter-spacing:-0.1em}
 	.call-center .number > li ol li:before {width:16px; height:16px; margin-right:2px; font-size:11px; text-indent:-2px}
-	
+
 	/* 암웨이플라자 shopfinder F10000 */
 	.mob-view-box {display:block;}
 

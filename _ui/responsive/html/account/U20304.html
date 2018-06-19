@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -60,7 +60,7 @@
 					<div class="row">
 						<div class="form-text"><!-- 클래스 col-md-9 col-xs-12  삭제  -->
 							<h3 class="success has-icon"><i class="icon icon-successs"></i>한국암웨이 Member 회원으로 가입이 완료되었습니다.</h3><!-- 수정 : 2018.03.22 (text) --><!-- fontWeight600  삭제  -->
-							
+
 							<!-- 수정 : 2018.03.22 (ConnectID 삭제로 설계변경) -->
 							<div class="content">
 								<h4 class="title-h6">가입 정보 </h4><!-- 타이틀 등록 정보 추가  -->
@@ -94,9 +94,9 @@
 		</div>
 		<!-- 2018.04.27 추가 -->
 		<div class="end-control">
-			<button type="button" class="bt-akl-blue">ABN 메인</button> 
-		</div> 
-		
+			<button type="button" class="bt-akl-blue">ABN 메인</button>
+		</div>
+
 		<div class="register-step-foot pc">
 			<h2 class="title-h2">Helping People Live Better Lives</h2><!-- 2018.03.28 수정 -->
 			<p>모든 사람들에게 보다 윤택한 삶의 기회를 제공합니다.</p>
@@ -131,14 +131,16 @@
 						<span><img src="/_ui/responsive/theme-blue/images/akl_common/img_helping05.png" alt=""></span>
 					</a>
 				</li>
-			</ul> 
-		</div>  
-		
+			</ul>
+		</div>
+
 		<div class="register-step-foot mob">
 			<div class=" col-sm-12">
 				<h2 class="title-h2">Helping People Live BETTER LIVES</h2>
 				<p>모든 사람들에게 보다 윤택한 삶의 기회를 제공합니다.</p>
-				<div class="product-recentlyviewed__imagelist" id="featured_brandsList">
+
+				<!-- 수정  2018.06.19 : ID변경 (#featured_brandsList > #join_featured_brandsList) -->
+				<div id="join_featured_brandsList" class="product-recentlyviewed__imagelist owl-carousel owl-theme"><!-- carousel 수정(06.19) : .owl-carousel.owl-theme 추가 -->
 					<div>
 						<a href="http://www.nutrilite.co.kr" target="_blank" title="새창열림">
 							<em>건강기능식품 전문가</em>
@@ -170,6 +172,7 @@
 						</a>
 					</div>
 				</div>
+				<!-- //수정  2018.06.19 : ID변경 -->
 			</div>
 		</div>
 		<!-- //정보입력 -->
