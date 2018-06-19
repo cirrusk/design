@@ -219,7 +219,7 @@ div.feat-txt p span.next-sort {display:block;}
 .sie-box {padding:0 0 0;word-break: keep-all;word-wrap: break-word;}
 .ad-setp-lst {width:100%;font-size: 16px;letter-spacing: -1px;}
 .ad-setp-lst dt {color:#0075a4;font-weight: 400;margin-top:23px;margin-bottom: 0;}
-.ad-setp-lst dd {font-weight: 300;margin-top: 2px;}
+.ad-setp-lst dd {font-weight: 300;margin-top: 2px;line-height:26px;color:#808285;}
 .bacteria-info .ad-setp-lst dt{font-size:18px;}
 
 /* type03 */
@@ -343,6 +343,11 @@ dl.amo-txt dd br {line-height:18px}
 .product-process-step.dark-gray .step-flow.active .step-num:after {content:'';position:absolute;left:50%;top:30px;margin-left:-12px;border-right: 12px solid transparent;border-left: 12px solid transparent;border-top:7px solid #808285;}
 .product-process-step.dark-gray .step-txt {padding:0 20px;}
 
+.product-process-step.red .step-num {background:#c4133f}
+.product-process-step.red .step-flow.active .step-num:after {content:'';position:absolute;left:50%;top:30px;margin-left:-12px;border-right: 12px solid transparent;border-left: 12px solid transparent;border-top:7px solid #c4133f;}
+.product-process-step.red .step-txt {padding:0 20px;}
+
+
 .system-lst {margin:0 auto;width:80%;}
 .system-lst ul {display:table;width:100%;table-layout:fixed;box-sizing: border-box;margin:0 auto;}
 .system-lst ul li {position:relative;display:table-cell;box-sizing:border-box;width:50%;text-align:center;vertical-align:middle;}
@@ -371,7 +376,7 @@ dl.amo-txt dd br {line-height:18px}
 .system-lst3 ul li .lst-won {margin:0 auto;width:140px;vertical-align:middle;}
 .system-lst3 ul li .lst-won p {height:140px;vertical-align:middle;padding:0;margin:0;}
 .system-lst3 ul li .lst-won p img {vertical-align:middle;border-radius:50%;width:100%;height:auto;}
-.system-lst3 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;}
+.system-lst3 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;color:#808285;font-weight:300}
 
 .system-lst3.type-2nd ul li .lst-won span{font-size:16px;}	/* 리스트의 내용 설명이 2단 타입*/
 .nurish-cont .system-lst3.type-2nd ul li .lst-won span.desc{font-size:14px;color:#808285;font-weight:300;padding:0 0;} /* 배스바디 너리쉬*/
@@ -429,7 +434,7 @@ dl.amo-txt dd br {line-height:18px}
 .point-wrap .desc{display: block;margin-top: 20px;font-size:16px;color:#808285;text-align:center;padding: 0 8.5% 0;font-weight:300;line-height: 1.5;}
 .point-wrap.block{margin-top:40px;letter-spacing:-2px}
 
-.t-big.point-wrap .tit{font-size:60px;letter-spacing:-2px;}
+.t-big.point-wrap .tit{font-size:60px;letter-spacing:-2px;line-height:70px;}
 .t-big.point-wrap .desc{font-size:18px;}
 .t-small.point-wrap .tit{font-size: 44px;letter-spacing:-2px}
 .t-mini.point-wrap .tit{font-size: 32px;letter-spacing:-2px}
@@ -641,6 +646,16 @@ span.txt-next {display:block;}
 .advan-right.ar_4285 .com-txt {padding-right:60px}
 .advan-right.ar_4285 .ad-setp-lst dd {padding-right:50px}
 .advan-right.ar_4285 .ad-setp-lst dd strong{font-weight:400}
+
+/* 스킨케어 */
+.visual-area.type02.indicator p.v-txt {padding:15px 0 0}
+.txt-info-visual .v-logo-txt.gray {color:#bbbbbb;}
+
+.visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
+.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
+
+.visual-area.type02.ultra-lifting.ar4223 {height:995px;background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting_AR4223.png) no-repeat top center;}
+
 
 @media (min-width: 1074px) and (min-width: 1280px) {
 
@@ -877,7 +892,20 @@ span.txt-next {display:block;}
 	.com-tit.youth_xtend {padding:0 0 0 0;}
 	.youth_xtend-area {width:100%;}
 	.youth_xtend_left dl dd p {font-size:13px;}
-
+	
+	.youth_xtend_relative {width:auto;height:auto;}
+	.youth_xtend_relative .youth_xtend_right img.img-micro{width:70%;}
+	.youth_xtend_relative .youth_xtend_right span{font-weight:300;font-size:12px;}
+	.youth_xtend_relative .youth_xtend_txt01 {height:auto;top:2px;left:2px;}
+	.youth_xtend_relative .youth_xtend_txt01 dt {width:auto;}
+	.youth_xtend_relative .youth_xtend_txt01 dd {padding:0 0 0 5px;text-align:left;}
+	.youth_xtend_relative .youth_xtend_txt02 {height:auto;top:75px;left:-8px;}
+	.youth_xtend_relative .youth_xtend_txt02 dt {width:auto;}
+	.youth_xtend_relative .youth_xtend_txt01 dt, .youth_xtend_relative .youth_xtend_txt01 dd p, .youth_xtend_relative .youth_xtend_txt01 dd p span, 
+	.youth_xtend_relative .youth_xtend_txt02 dt, .youth_xtend_relative .youth_xtend_txt02 dd p, .youth_xtend_relative .youth_xtend_txt02 dd p span{padding:0 0;font-size:12px;}
+	.youth_xtend_relative .youth_xtend_txt02 dd {padding:0 0;text-align:left;}
+	.youth_xtend_relative .youth_xtend_right {width:auto;top:5px;right:30px;}
+	.youth_xtend_relative .youth_xtend_right span {line-height:18px;}
 
 	/* 베스바디 공통 */
 	.advan-com-tit {width:100%;font-size:22px;line-height:27px;}
@@ -987,10 +1015,17 @@ span.txt-next {display:block;}
 	.adv-txt .t-tit strong {font-size:30px;line-height:40px;}
 	.adv-txt p.t-sm {font-size:14px;}
 	span.txt-next {display:inline-block;}
+	.t-big.point-wrap .tit {line-height:35px;}
 
 	.advan-right.ar_4285 .com-txt {padding-right:0px}
 	.advan-right.ar_4285 .ad-setp-lst dd {padding-right:0px}
 	.akl .com-tit em{font-size:20px;}
+	
+	.product-process .owl-theme .owl-dots {margin-left:-28px;}
+
+	.visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
+	.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
+	.visual-area.type02.supreme_lx .v-pro.ar4439 span img {width:inherit;height:inherit;}
 
 }	
 
