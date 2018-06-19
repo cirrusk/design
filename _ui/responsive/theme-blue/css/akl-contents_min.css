@@ -1147,6 +1147,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 .akl .amway-theme.business .box-conts-group>h2,
 .akl .amway-theme.business .box-conts-group>h3 {margin:0 0 27px;}
 
+.amway-theme.business .mob-inline {display:block;}
 .amway-theme.business .box-conts-summary dl {overflow:hidden;}
 .amway-theme.business .box-conts-summary dl>dt {float:left; width:20%; margin-top:13px; color:#002f5f;font-weight:500;}
 .amway-theme.business .box-conts-summary dl>dd {float:left; width:80%; margin-top:13px;}
@@ -1158,8 +1159,31 @@ table.clone thead, .clone tfoot{background:transparent;}
 
 /* ----- 월간 코어 보너스 조회 ----- */
 .monthly-coreBonus-wrapper .next-control {margin-top:30px; text-align:center;}
+
+/* tab1: 월간 코어 보너스 */
 .box-goal-point.corebonus {margin-top:20px;margin-bottom:40px;}
 .box-goal-point.corebonus>ul>li  {width:50%; padding-bottom:40px;}
+
+/* tab2: 여행점수 성장 보너스 시뮬레이션 */
+.type-bonus-simul .box-conts-summary + .box-conts-group {border-top:0; margin-top:0;}
+
+.diag-growth-bonus>p {display:table; width:100%; min-height:72px;}
+.diag-growth-bonus p>.math-txt:first-child {width:30%;}
+
+.diag-growth-bonus .math-txt {position:relative;display:table-cell; width:30%; box-sizing:border-box; vertical-align:middle; color:#002f5f;}
+.diag-growth-bonus .math-txt.multi {width:8%}
+.diag-growth-bonus .math-txt.last {width:36%;}
+.diag-growth-bonus .math-txt * {display:inline-block; vertical-align:middle;}
+.diag-growth-bonus [class^=ico-type] {position:relative; display:inline-block; padding:15px 0 0 82px; height:72px;}
+.diag-growth-bonus [class^=ico-type]:before {content:''; position:absolute; top:0; left:0; width:72px; height:72px; background:url(../images/akl_common/img_rewards_travel2_pc.png) no-repeat;}
+.diag-growth-bonus .ico-type-equal {padding-left:100px; width:100%; height:100px;}
+.diag-growth-bonus .ico-type-equal:before {width:100px; height:100px; background-position:0 0;}
+.diag-growth-bonus .ico-type-equal:after {content:''; position:absolute; top:50%; left:50%; margin:-7px 0 0 40px; width:24px; height:14px; background:url(../images/akl_common/img_rewards_travel2_pc.png) no-repeat 0 -300px;}
+.diag-growth-bonus .ico-type-a:before {background-position:50% -120px;}
+.diag-growth-bonus .ico-type-a:after {display:none;}
+.diag-growth-bonus .ico-type-b:before {right:30px; background-position:50% -210px;}
+.diag-growth-bonus .ico-type-multi{width:20px; height:20px; padding:0;}
+.diag-growth-bonus .ico-type-multi:before {width:20px; height:20px; background-position:0 -350px; top:50%; right:; margin-top:-10px;}
 
 
 /* ----- 여행점수 조회 ----- */
@@ -1201,7 +1225,6 @@ table.clone thead, .clone tfoot{background:transparent;}
 .rewards-program-wrapper .status-travel-point {margin-bottom:0;}
 .rewards-program-wrapper .status-travel-point em {font-weight:500; color:#002f5f;}
 .rewards-program-wrapper .txt-ty-month {font-weight:500;}
-.rewards-program-wrapper .mob-inline {display:block;}
 
 .box-goal-point {padding:30px 0 40px; margin-top:15px; background:#fafafa;}
 .box-goal-point>ul{overflow:hidden;}
