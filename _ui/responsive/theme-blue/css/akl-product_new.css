@@ -95,20 +95,21 @@ Version : AKL Hybris UIUX 1.0
 .comp-box dl {vertical-align:top;width:100%;text-align:center;margin:10px auto 0;}
 .comp-box dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
 .comp-box dl dt span.blue {display:block;color:#008fc5;font-weight:400;}
-.comp-box dl dd {text-align:center;padding:10px 0;}
+.comp-box dl dd {position:relative;text-align:center;padding:10px 0;height:130px;}
 .comp-box dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px auto 10px;height:50px;padding:0 0;width:100%;}
+.comp-box dl dd span {position:absolute;bottom:0;left:0;right:0;text-align:center;}
 .comp-box dl dd span.cc-btn {display:block;margin:0 auto;}
 
 .pcomp-list.deaf04 div.comp-info {width:25%;}
 .pcomp-list.deaf03 div.comp-info {width:33.3%;}
 .pcomp-list.deaf02 div.comp-info {width:50%;}
 .pcomp-list.deaf01 div.comp-info {width:100%;}
-.pcomp-list.deaf04 div.comp-info .free-gift{right:50%;margin-right:-130px;}
+.pcomp-list.deaf04 div.comp-info .free-gift{right:0;}
 
 /* 제품 구성 리스트 공통 */
 .pcomp-list div.comp-box .free-gift{display:table;position: absolute;top: 15px;right: 0;border-radius: 50%;height: 66px;width: 66px;background: #bbbbbb;}
-.pcomp-list div.comp-box .free-gift em{display:table-cell;vertical-align:middle;font-size: 14px;line-height: 1.5;text-align: center;color: #ffffff;font-weight: 400;letter-spacing: -1px;}
-.pcomp-list div.comp-box .free-gift br{line-height:1;}
+.pcomp-list div.comp-box .free-gift em {display:table-cell;vertical-align:middle;font-size: 14px;line-height: 1.5;text-align: center;color: #ffffff;font-weight: 400;letter-spacing: -1px;}
+.pcomp-list div.comp-box .free-gift br {line-height:1;}
 
 .ingestion-usage {border-top:1px solid #e3e3e3;margin-top:80px;}
 .ingestion-usage dl {clear:both;display:block;width:100%;margin:20px 0 0;padding:0;}
@@ -176,7 +177,7 @@ ol, ul, dl{margin-bottom:0;}
 /* special */
 .special-feat {clear:both;display:block;margin-top:20px;}
 ul.spc-list {display:block;width:100%;border-bottom:1px solid #e3e3e3;}
-ul.spc-list > li {display:table;width:100%;table-layout:fixed;box-sizing: border-box;padding:20px 50px;border-top:1px solid #e3e3e3;background: url(../images/akl_product/ico_bullet.png) no-repeat 8% 50%}
+ul.spc-list > li {display:table;width:100%;table-layout:fixed;box-sizing: border-box;padding:20px 50px;border-top:1px solid #e3e3e3;background: url('../images/akl_product/icon/ico_bullet.png') no-repeat 8% 50%}
 ul.spc-list li > div {display:table-cell;box-sizing: border-box;vertical-align:middle;}
 div.feat-txt {width:55%;text-align:left;letter-spacing:-2px;padding:0 10%}
 div.feat-txt p {font-weight:400;font-size:20px;margin:0 0;}
@@ -302,7 +303,7 @@ dl.amo-txt dd br {line-height:18px}
 
 .effect-info-step {width:-webkit-calc(100% + 30px);width:-moz-calc(100% + 30px);width:-ms-calc(100% + 30px);width:calc(100% + 30px);display:table;float:none;padding:0;margin-left:-30px;}
 .effect-info-step li{float:none;position:relative;display:table-cell;padding:0 0 0 30px;text-align:center;}
-.effect-info-step li:before{display:inline-block;position:absolute;top:50%;left:10px;width:10px;height:17px;margin-top:-8px;background:url('../images/akl_product/ico_arr_right.png') no-repeat 0 0;content:"";}
+.effect-info-step li:before{display:inline-block;position:absolute;top:50%;left:10px;width:10px;height:17px;margin-top:-8px;background:url('../images/akl_product/icon/ico_arr_right.png') no-repeat 0 0;content:"";}
 .effect-info-step li:first-child:before{display:none;}
 .effect-info-step.divid03 li{width:33.33%;text-align:center;}
 .effect-info-step .effect-step-txt{display:block;margin-top:30px;font-size:14px;color:#56565a;font-weight:300;letter-spacing:-1px;}
@@ -654,7 +655,7 @@ span.txt-next {display:block;}
 .visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
 .visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
 
-.visual-area.type02.ultra-lifting.ar4223 {height:995px;background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting_AR4223.png) no-repeat top center;}
+.visual-area.type02.ultra-lifting.ar4223 {height:995px;background: #f8f8f8 url('../images/akl_product/beauty/bg_youth_xtend_ultra_lifting_AR4223.png') no-repeat top center;}
 
 
 @media (min-width: 1074px) and (min-width: 1280px) {
