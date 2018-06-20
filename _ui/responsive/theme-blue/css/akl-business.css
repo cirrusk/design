@@ -441,7 +441,7 @@ ul.woo-step-box li:last-child:before {background:none}
  
 .akl .amway-theme .business-guide-wrap { margin:40px 0 0} 
 .akl .amway-theme .business-guide-wrap p { margin-bottom:2px}
-.akl .amway-theme .business-guide-wrap .realc{ padding-bottom:40px; margin:0 0 40px; border-bottom:1px solid #dadada;}  
+.akl .amway-theme .business-guide-wrap .realc{ padding-bottom:37px; margin:0 0 40px; border-bottom:1px solid #dadada;}  
 .akl .amway-theme .business-guide-wrap h2{ font-size:16px; font-weight:500; margin:28px 0 20px; text-align:left; letter-spacing:-1px }
 .akl .amway-theme .business-guide-wrap h3{ font-size:14px; font-weight:500; margin:28px 0 18px; color:#56565a }
 .akl .amway-theme .business-guide-wrap h3.num{ margin:26px 0 8px; }
@@ -626,6 +626,21 @@ ul.woo-step-box li:last-child:before {background:none}
 .listwarning{background: url(../images/akl_common/ico_star.png) no-repeat left 5px; padding: 0 0 4px 10px;font-size: 13px;color: #808285;line-height: 18px;font-style: italic;}
 .marLeft { margin-left:15px;} 
 .marLeft p.listWarning { font-size:14px}
+
+/* 주요 메뉴얼 */ 
+.manual-area {padding:0 10px !important; width:100%; max-width:100%; overflow:hidden;}
+.manual-area .mz-item {margin:0 1% 33px ; border:2px solid #f4f4f4; float:left; width:23%}
+.manual-area .mz-item:hover .thumb {background-color:#bbbbbb}
+.manual-area .mz-item:hover .info {background-color:#f4f4f4}
+.manual-area .mz-item .thumb {padding:16px 10px; text-align:center; background-color:#f4f4f4; border-bottom:2px solid #f4f4f4}
+.manual-area .mz-item .thumb img { display:inline-block; width:100%; max-width:181px; }
+.manual-area .mz-item .info {position:relative; padding:17px 20px 12px; background-color:#fff}
+.manual-area .mz-item .info .tit {display:block; color:#002f5f; font-size:18px; font-weight:500; text-transform:uppercase}
+.manual-area .mz-item .info .txt {color:#56565a; font-weight:500; text-transform:uppercase}
+.manual-area .mz-item .info .inner {padding-top:10px; margin-top:17px; border-top:1px solid #dadada}
+.manual-area .mz-item .info .inner .btn-ico {position:absolute; bottom:10px; display:inline-block; width:18px; height:20px;}
+.manual-area .mz-item .info .inner .btn-ico.pdf {right:20px; background:url('/_ui/responsive/theme-blue/images/akl_common/ico_download02.png') 0 0 no-repeat;}  
+
 
 /* MAX */
 @media (max-width: 1220px){
@@ -922,6 +937,9 @@ ul.woo-step-box li:last-child:before {background:none}
 	.bizPhoto img,
 	.bizPhoto2 img,  
 	.bizPhoto3 img { display:block; width:100%} 
+	
+	/* 주요 메뉴얼 */ 
+	.manual-area .mz-item {margin:0 0 33px ; float:left; width:100%}
 }
 
 @media (max-width: 360px) { 
