@@ -479,13 +479,14 @@ html.scrollLock body {overflow:hidden;}
 .validation-wrapper.type-member .valid-progress .box-input-details {display:block;}
 
 /* 인증방법 선택 */
-.validation-wrapper>div[class^=valid-type]>p {position:absolute; top:0; width:400px;text-align:center;}
+.validation-wrapper>div[class^=valid-type]>p {position:absolute; top:0; width:33.3333%; text-align:center;}
 .validation-wrapper>div.valid-type-phone>p {left:0; border-left:0;}
 .validation-wrapper>div.valid-type-ipin>p {left:33.5%;}
 .validation-wrapper>div.valid-type-simple>p {left:66.5%;}
 .validation-wrapper>div>p{border-left:1px solid #e3e3e3;}
-.validation-wrapper.subBiz>div.valid-type-phone>p {left:16%; border-left:0;}
+.validation-wrapper.subBiz>div.valid-type-phone>p {left:0; border-left:0;}
 .validation-wrapper.subBiz>div.valid-type-ipin>p {left:50%;}
+.validation-wrapper.subBiz>div[class^=valid-type]>p {width:50%;}
 .validation-wrapper .validation-para strong {position:relative; display:inline-block; padding-left:38px; line-height:25px; color:#002f5f; font-size:16px;}
 .validation-wrapper .validation-para strong:before {content:''; position:absolute; top:0; left:0; width:25px; height:25px; background-color:#ddd;}
 .validation-wrapper .validation-para span {display:block; margin:12px 0 20px;}
@@ -1488,14 +1489,15 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .wrapper-memb-join #terms .conditions {margin-bottom:10px;}
 	.akl .wrapper-memb-join #terms .agreement-box .agreement-para-box>p {margin-bottom:0;}
 	.akl .wrapper-memb-join #terms .agreement-box .agreement-para-box p+.italic {margin-top:16px;}
-	
-	/* 인증완료 메시지 */ 
+
+	/* 인증완료 메시지 */
 	.validation-wrapper .valid-result-box { margin-bottom:0;}
 
 	/* 본인확인 > 본인확인 방법 선택 */
 	.validation-wrapper {padding:0; margin-top:0; margin-bottom:20px; border-top:0;}
 	.validation-wrapper>div[class^=valid-type]{padding:35px 0 20px; border-top:0;}
 	.validation-wrapper>div[class^=valid-type]>p {position:static; width:auto;border-left:0;}
+	.validation-wrapper.subBiz>div[class^=valid-type]>p {position:initial; width:auto;}
 	.validation-wrapper .validation-para {margin-bottom:20px;}
 	.validation-wrapper .valid-progress .box-input-details {border-top:1px solid #dadada;}
 	.validation-wrapper>div {border-bottom:1px solid #e3e3e3;}
