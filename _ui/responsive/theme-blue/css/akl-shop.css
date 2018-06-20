@@ -17,10 +17,11 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .list-header>* {height:38px; line-height:38px;}
 .akl .shopping-cart-item-list .list-header [class^=col-]{padding-left:0; padding-right:0;}
 .akl .shopping-cart-item-list .list-header label {float:left; display:block; height:100%; padding:0; margin:0;}
-.akl .shopping-cart-item-list .list-header ._checkbox-element-global-class~span._checkbox-element-global-span {display:block; top:50%; margin-top:-10px;}
 .akl .shopping-cart-item-list .list-header .all-txt {font-size:13px !important; vertical-align:top;}
 .akl .shopping-cart-item-list .list-header .list-item-info {padding-left:15px; text-align:center;}
 .akl .shopping-cart-item-list .list-item-info label+em {font-size:13px !important;}
+.akl .shopping-cart-item-list ._checkbox-element-global-class ~ span._checkbox-element-global-span {top:4px;}
+.akl #shopping-list-content .list-header ._checkbox-element-global-class~span._checkbox-element-global-span {display:block; top:50%; margin-top:-10px;}
 
 /* list header > 온라인 팩스주문 */
 .akl .amway-theme.fax-order-wrapper .panel-body .list-header>* {font-size:13px !important;}
@@ -1871,11 +1872,12 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .popup-img-list {display:inline-block; width:320px; max-width:none;}
 	.akl .popup-img-list .product-recentlyviewed__imagelist {padding-bottom:20px; width:73%;}
 	.akl .popup-img-list .product-recentlyviewed__imagelist .owl-item img {width:93%}
-	.akl .popup-img-list .product-recentlyviewed__imagelist .owl-item a {margin:4px;}
+	.akl .popup-img-list .product-recentlyviewed__imagelist .owl-item a {margin:4px auto;}
+	.akl .popup-img-list .product-recentlyviewed__imagelist .owl-nav .owl-prev {left:0;}
+	.akl .popup-img-list .product-recentlyviewed__imagelist .owl-nav .owl-next {right:0;}
+
 	.akl .popup-img-list .owl-theme .owl-controls {margin:0;}
-	.akl .popup-img-list .owl-theme .owl-controls .owl-nav div {margin-top:-18px;}
-	.akl .popup-img-list .owl-theme .owl-controls .owl-nav .owl-prev {left:-30px !important;}
-	.akl .popup-img-list .owl-theme .owl-controls .owl-nav .owl-next {right:-30px !important;}
+	.akl .popup-img-list .owl-carousel .owl-nav div {margin-top:-18px;}
 
 	/* 제품상세 > 장바구니 담기 */
 	.akl .cart-popup__item-link.commpete .bt-akl-txt {padding:7px 20px 8px;}
