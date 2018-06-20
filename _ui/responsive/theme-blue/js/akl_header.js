@@ -28,7 +28,7 @@ $(function(){
 
 	//레이어 : 추천검색어  Carousel
 	$('#header_productSuggestListTabs').owlCarousel({
-		loop: true,
+		loop: false,
 		nav: true,
 		dots: false,
 		margin: 0,

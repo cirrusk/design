@@ -38,7 +38,7 @@
 
 	//회원가입 완료
 	$('#join_featured_brandsList').owlCarousel({
-		loop: true,
+		loop: false,
 		nav: true,
 		dots: false,
 		margin: 0,
@@ -625,7 +625,7 @@ function prdtDetails_IMG(){
 
 			$('#pdpImg').find('li').removeClass('on').eq(opt.current).addClass('on');
 			$('#uiPrdViewDetail').owlCarousel({
-				loop: true,
+				loop: false,
 				nav: true,
 				dots: false,
 				margin: 0,
@@ -677,7 +677,7 @@ function prdtDetails_IMG(){
 
 				$('#recentlyViewedListTab2').owlCarousel({
 					startPosition:popidx,
-					loop: true,
+					loop: false,
 					nav: true,
 					dots: false,
 					margin: 0,
