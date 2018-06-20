@@ -345,7 +345,7 @@ $(function() {
 	});*/
 
 	$('[id^=productSuggestListTabs]').owlCarousel({
-		loop: true,
+		loop: false,
 		nav: true,
 		dots: false,
 		margin: 0,
@@ -635,12 +635,12 @@ $(function() {
 			$(this).next('.bod-view-sns').removeClass('on');
 		}
 	});
-	$('html').click(function(e) { 
+	$('html').click(function(e) {
 		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
 			$('.bod-view-sns').removeClass('on');
 			$('.url_pop').hide();
-		} 
-	}); 
+		}
+	});
 });
 
 //뉴핀 성취자
@@ -652,8 +652,8 @@ $(function() {
 	      var hash = this.hash;
 	      var headHei = $('.general-header').height();
 	      var trgt = $(hash).offset().top;
-	      
+
 	      $('html').animate({scrollTop: trgt - headHei}, 400);
 	    }
-	}); 
+	});
 });
