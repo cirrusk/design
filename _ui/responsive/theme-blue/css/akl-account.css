@@ -65,18 +65,14 @@ Version : AKL Hybris UIUX 1.0
 .register-step-foot.mob {display:none;}
 .register-step-foot .title-h2 {  margin-bottom: 15px; text-align:center}
 .register-step-foot  p { font-size:16px}
-.helping-people { overflow:hidden; margin:50px auto 0; max-width:1376px;}
-.helping-people li { float:left; width:20%}
-.helping-people li:nth-of-type(1) {color:#004901}
-.helping-people li:nth-of-type(2) {color:#726135}
-.helping-people li:nth-of-type(3) {color:#509640}
-.helping-people li:nth-of-type(4) {color:#6dabdd}
-.helping-people li:nth-of-type(5) {color:#56565a}
-.helping-people li em { display:block; }
-.helping-people li span { position:relative;display:block; margin-top: 15px; height:45px}
-.helping-people li span:before {content: "";position: absolute;left: 0;top: 50%;height: 30px; margin-top: -15px;border-left: 1px solid #dadada;}
-.helping-people li:first-child span:before {display:none;}
-.helping-people li span img { vertical-align: middle;}
+.helping-people {overflow:hidden; margin:50px auto 0; padding:0 50px; max-width:1376px;}
+.helping-people .brand-item>a,
+.helping-people .brand-item em,
+.helping-people .brand-item span {display:block;}
+.helping-people .brand-item span {position:relative; margin-top:15px; height:45px;}
+.helping-people .brand-item span:before {content:''; display:block; position:absolute; left:0; bottom:2px; width:1px; height: 30px; background:#dadada;}
+.helping-people .owl-stage>div:nth-of-type(1) .brand-item span:before {display:none;}
+.helping-people .brand-item>a span img {width:auto; display:inline-block; vertical-align: middle;}
 
 /*** 회원가입 > 포인트관리  ***/
 .pointe-body {padding:30px 0 0;}
@@ -1532,7 +1528,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .menu-lock-txt strong{ font-weight:400}
 .menu-lock .author-tit { margin-bottom:30px; }
 .menu-lock .form-group { max-width:540px }
-.menu-lock .form-group .col-md-5 { padding-left:0 } 
+.menu-lock .form-group .col-md-5 { padding-left:0}
 .menu-lock-wrapper .next-control {text-align:center; margin-top: 40px;}
 .akl .menu-lock-wrapper .author-content02 .validation-wrapper.subBiz { margin-top: 40px; }
 .akl .menu-lock-wrapper .author-content02 .author-tit { border-top:1px solid #dadada; padding-top:35px; margin-top:40px; font-size:16px  }
@@ -1571,7 +1567,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.title-box .product-list-page-title h1.myorder:before {top:3px;left:0;}
 	.order-conts .col-md-9 {width:100%;}
 	.akl .btn.btn-primary span {color:#fff !important;}
-	
+
 	/* 암웨이 비즈니스센터(shop finder) */
 	.helping-people { overflow:hidden; margin:50px auto 0; max-width:1376px;}
 	.helping-people li {width:30%; padding-bottom:25px;}
@@ -1628,13 +1624,17 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.register-step-foot.pc {display:none;}
 	.register-step-foot.mob {display:block; overflow: hidden;}
 	.register-step-foot .title-h2 { font-size:28px; line-height:130%}
+	/*
 	.register-step-foot .product-recentlyviewed__imagelist { margin-top:30px;}
 	.register-step-foot .product-recentlyviewed__imagelist div em.col01 {color:#004901}
 	.register-step-foot .product-recentlyviewed__imagelist div em.col02 {color:#726135}
 	.register-step-foot .product-recentlyviewed__imagelist div em.col03 {color:#509640}
 	.register-step-foot .product-recentlyviewed__imagelist div em.col04 {color:#6dabdd}
-	.register-step-foot .product-recentlyviewed__imagelist div em.col05 {color:#56565a}
-	.register-step-foot .product-recentlyviewed__imagelist div em { display:block; margin-bottom:0; }
+	.register-step-foot .product-recentlyviewed__imagelist div em.col05 {color:#56565a} */
+	.register-step-foot .product-recentlyviewed__imagelist div em { display:block; margin-bottom:0;}
+
+	.helping-people .brand-item span:before,
+	.helping-people .owl-stage>div:nth-of-type(1) .brand-item span:before {display:none;}
 
 	/* 회원가입 > 포인트관리 */
 	.point-management .form-group {padding:0 0 10px}
@@ -2683,7 +2683,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.menu-lock-wrapper .valid-result-box {padding: 30px 0 40px;margin-bottom:18px; border-bottom: 1px solid #dadada;text-align: center;}
 	.akl .menu-lock-wrapper .author-content-complete .valid-result-box {padding:0;margin-bottom:0; border-bottom:0;}
 	.menu-lock-wrapper .valid-result-box {padding:0; margin-bottom:0; border-bottom:0; text-align: center;}
-	
+
 	.menu-lock-wrapper .next-control {text-align: center; margin-top: 40px;}
 	.akl .menu-lock-wrapper .author-content .validation-wrapper.subBiz { margin-top:30px; }
 	.akl .menu-lock-wrapper .author-content .author-tit { padding-top:35px; }

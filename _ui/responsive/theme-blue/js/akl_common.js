@@ -37,7 +37,7 @@
 	});
 
 	//회원가입 완료
-	$('#join_featured_brandsList').owlCarousel({
+	$('.brandsList').owlCarousel({
 		loop: false,
 		nav: true,
 		dots: false,
@@ -45,8 +45,11 @@
 		items: 1,
 		responsiveClass: true,
 		responsive: {
-			768 : {
+			480 : {
 				items: 1
+			},
+			768 : {
+				items: 2
 			},
 			960 : {
 				items: 3
