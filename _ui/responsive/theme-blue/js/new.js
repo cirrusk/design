@@ -657,3 +657,11 @@ $(function() {
 	    }
 	});
 });
+
+//회원탈퇴
+$(function() {
+	$('.G10600_lp8').click(function(event) {
+		event.preventDefault();
+		layerPopOver('','.G10600_lp8_pop');
+	});
+});
