@@ -391,6 +391,17 @@ Version : AKL Hybris UIUX 1.0
 .call-center .number > li ol li:nth-child(odd) {width:130px}
 .call-center .number > li:nth-child(4) ol li {display:block; width:200px}
 
+/* 암웨이 서비스센터 */
+.bg-bar > span + span:before {content:""; display:inline-block; height:10px; border-left:1px solid #e3e3e3; vertical-align:middle; padding-left:20px; margin-left:20px}
+.bg-bar > * {vertical-align:middle}
+
+.center-wel {margin-top:40px; text-align:center; color:#002f5f}
+.center-wel.bg-bar > span + span:before {height:30px; padding-left:30px; margin:-3px 0 0 30px}
+.center-wel img {width:134px}
+.center-wel span {display:inline-block; height:45px}
+.center-wel img + span {margin:-7px 0 0 5px; font-size:34px; font-weight:700; letter-spacing:-0.06em}
+.center-wel span + span {padding-top:10px; font-size:19px; font-weight:700; letter-spacing:-0.04em}
+
 @media (max-width: 1024px) {
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo  {padding-right:270px;}
