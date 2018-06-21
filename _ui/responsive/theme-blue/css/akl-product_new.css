@@ -35,7 +35,34 @@ Version : AKL Hybris UIUX 1.0
 .mascara .v-pro{margin-top:-150px;}
 .white, .txt-white{color:#ffffff !important;}
 
-/* SG */
+/* 공통 색상 */
+.red{color:#c4133f !important;}/* .pugia-red */
+.red01{color:#c45c7d;}/* .strawberry-milk */
+.red02{color:#e82332;}/* .brightred */
+.red03{color:#e11e45 !important;}/* .rosepink */
+.red04 {color:#c25653 !important;} 
+
+.yellow{color:#dfaa26 !important;}/* .yellow */
+.yellow01{color:#f1c192;}/* .gold */
+.yellow02{color:#ad9172 !important;}/* .k-gold */
+.yellow03{color:#d7b472 !important;}/* .light-gold */
+
+.orange{color:#ff4200;}
+.orange01{color:#c4133f !important;} 	/*jahong */
+.orange02{color:#f68e2d !important;} 	/* light-orange */
+.orange03{color:#eb7760 !important;} 	/* coral  */
+.orange04{color:#df7e24 !important;} 	/* gold-orange */
+.orange05 {color:#db5a3a}
+
+.purple{color:#e125aa;}/* .purple */
+.purple01{color:#e28379 !important;}/* .grapefruit */
+.purple02{color:#595280;}/* .blueberry */
+.purple03{color:#5a4aa7;}/* .satin-violet */
+.purple04{color:#ffb182;}/* .apricot */
+.purple05{color:#b6b4c9;}/* .lightpurple */
+.purple06{color:#a8627e;}/* .violet */
+.purple07{color:#731472 !important;}/* .wine */
+
 .blue{color:#0075a4;}/* .blue, .cobalt02, .navy */
 .blue01{color:#5c85c4 !important;}/* .sky-blue , .sea-blue */
 .blue02{color:#008fc5 !important;}/* .water-blue */
@@ -47,26 +74,6 @@ Version : AKL Hybris UIUX 1.0
 .blue08{color:#258b98 !important;}/* .deep-blue */
 .blue09{color:#002f5f;}/* .deep-navy */
 
-.red{color:#c4133f !important;}/* .pugia-red */
-.red01{color:#c45c7d;}/* .strawberry-milk */
-.red02{color:#e82332;}/* .brightred */
-.red03{color:#e11e45 !important;}/* .rosepink */
-
-.yellow{color:#dfaa26 !important;}/* .yellow */
-.yellow01{color:#f1c192;}/* .gold */
-.yellow02{color:#ad9172 !important;}/* .k-gold */
-.yellow03{color:#d7b472 !important;}/* .light-gold */
-
-.purple{color:#e125aa;}/* .purple */
-.purple01{color:#e28379 !important;}/* .grapefruit */
-.purple02{color:#595280;}/* .blueberry */
-.purple03{color:#5a4aa7;}/* .satin-violet */
-.purple04{color:#ffb182;}/* .apricot */
-.purple05{color:#b6b4c9;}/* .lightpurple */
-.purple06{color:#a8627e;}/* .violet */
-.purple07{color:#731472 !important;}/* .wine */
-
-/*JM*/
 .green{color:#017465 !important;} 	/* drakgreen */
 .green01 {color:#5b7927;} 	/* dark-OliveGreen */
 .green02{color:#20893d !important;} 	/* avocado , deepgreen */
@@ -92,16 +99,9 @@ Version : AKL Hybris UIUX 1.0
 .brown03{color:#a97e54;} 	/* bronze */
 .brown04{color:#5d3736;}
 .brown05{color:#835637;}
+.brown06{color:#835c5d}
 
 .beige{color:#ad9172 !important;} 	/*linght-beige drakbeige */
-
-.orange{color:#ff4200;}
-.orange01{color:#c4133f !important;} 	/*jahong */
-.orange02{color:#f68e2d !important;} 	/* light-orange */
-.orange03{color:#eb7760 !important;} 	/* coral  */
-.orange04{color:#df7e24 !important;} 	/* gold-orange */
-
-
 
 
 /* 라인이 없거나 있는 경우의 수 추가 */
@@ -207,12 +207,12 @@ ol, ul, dl{margin-bottom:0;}
 
 .inge-lst06 {padding:0 0 0 10px !important;}
 .inge-lst06 li {position:relative;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;text-indent:0 !important;margin-left:0 !important;} 
-.inge-lst06 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:13px;left:-10px;background-color:#808285;content:"";}
+.inge-lst06 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:12px;left:-10px;background-color:#808285;content:"";}
 
-.inge-lst06.f-big li{padding-left:10px;font-size:16px;} 
+.inge-lst06.f-big li{padding-left:0;font-size:16px;} 
 .inge-lst06.f-big li:before{top:13px;}
 
-.inge-lst07 li {font-size:14px;margin-left:12px;text-indent:-12px;letter-spacing:-1px;font-weight:300;color:#808285;} 
+.inge-lst07 li {font-size:14px;margin-left:12px;text-indent:-13px;letter-spacing:-1px;font-weight:300;color:#808285;} 
 
 .inge-lst08 li {font-size:14px;letter-spacing:-1px;line-height:1.7;font-weight:300;color:#808285;margin-left:9px;text-indent:-9px} 
 .inge-lst08 li p{margin:0;font-size:14px;}
@@ -289,7 +289,7 @@ div.feat-txt p span.next-sort {display:block;}
 .detail-content-area .health-inform-box:first-child{margin-top:50px;}
 .health-inform-box.type2 {margin-top:80px;}
 
-.box-tit {background:#eeefef;text-align:center;padding:15px 0 18px;}
+.box-tit {background:#eeefef;text-align:center;padding:19px 0 22px;}
 .box-tit h5 {font-size: 44px;color: #57565b;font-weight:400 !important;letter-spacing: -2px;text-align: center;}
 .box-tit h5 span {font-weight:400;font-size: 44px;}
 .effet-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;padding:30px 80px;}
@@ -380,7 +380,7 @@ dl.amo-txt dd br {line-height:18px}
 .product-process-step .step-flow.active {background:#f4f4f4;border-radius:4px;height:342px}
 .product-process-step .step-img {display:inline-block; text-align:center;vertical-align:bottom;min-height:140px;margin-top:10px}
 .product-process-step .step-img img {max-width:100%;max-height:100%;width:auto;height:auto;margin:0 auto;vertical-align:bottom !important;}
-.product-process-step .step-num {display:block;position:relative;max-width:70px;margin:15px auto 0;padding:3px 12px 5px;border-radius:20px;font-size:16px;color:#fff;letter-spacing:-0.05em;font-weight:300;background-color:#bbb;}
+.product-process-step .step-num {display:block;position:relative;max-width:70px;margin:15px auto 0;padding:3px 12px 5px;border-radius:20px;font-size:16px;color:#fff;font-weight:300;background-color:#bbb;}
 .product-process-step .step-txt{display:block;margin-top:13px;font-size:16px;color:#808285;letter-spacing:-1px;font-weight:300;line-height:26px;}
 .akl .product-process .owl-theme .owl-controls .owl-nav .owl-prev{left:-22px;}
 .akl .product-process .owl-theme .owl-controls .owl-nav .owl-next{right:-22px;}
@@ -400,6 +400,9 @@ dl.amo-txt dd br {line-height:18px}
 
 .product-process-step.dark-blue .step-num {background:#0075a4}
 .product-process-step.dark-blue .step-flow.active .step-num:after {content:'';position:absolute;left:50%;top:30px;margin-left:-12px;border-right: 12px solid transparent;border-left: 12px solid transparent;border-top:7px solid #0075a4;}
+
+.product-process-step.blue .step-num {background:#008fc5}
+.product-process-step.blue .step-flow.active .step-num:after {content:'';position:absolute;left:50%;top:30px;margin-left:-12px;border-right: 12px solid transparent;border-left: 12px solid transparent;border-top:7px solid #008fc5;}
 
 .product-process-step.dark-gray .step-num {background:#808285}
 .product-process-step.dark-gray .step-flow.active .step-num:after {content:'';position:absolute;left:50%;top:30px;margin-left:-12px;border-right: 12px solid transparent;border-left: 12px solid transparent;border-top:7px solid #808285;}
@@ -719,6 +722,9 @@ span.txt-next {display:block;}
 
 .visual-area.type02.ultra-lifting.ar4223 {height:995px;background: #f8f8f8 url('../images/akl_product/beauty/bg_youth_xtend_ultra_lifting_AR4223.png') no-repeat top center;}
 .visual-area.type02.hydrav.ar4919 {height:1030px;background: #f8f8f8 url('../images/akl_product/beauty/bg_hydrav_refreshing_ar4919.png') no-repeat top center;}
+.advantage-area .sie-box .com-tit .small  sup  {top:-0.8em}
+.txt-info-visual.ar1616 .v-etc {margin:20px 0 0}
+
 
 @media (min-width: 1074px) and (min-width: 1280px) {
 
