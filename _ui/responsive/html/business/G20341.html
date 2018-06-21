@@ -159,7 +159,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="box-conts-group">
+						<div class="box-conts-group type-bottom0">
 							<h3>여행 점수 성장 보너스 계산법</h3>
 							<div class="box-diagram">
 								<div class="diag-growth-bonus">
@@ -178,9 +178,50 @@
 					</div>
 					<!-- //입력 -->
 
+					<!-- 결과 -->
+					<div class="box-simulation outcome">
 
+						<div class="chartWrapper">
+							<p class="goalPoint">
+								<span class="colorBar">PF18 여행목표점수</span><strong>30,000,000 점</strong>
+							</p>
 
+							<!-- 차트 -->
+							<div class="barChartBox">
+								<div class="axisHorizontal">
+									<div class="yAxisMaximum"><span>30,000,000</span></div><!-- 목표점수 -->
+									<div class="yAxisHalf"><span>15,000,000</span></div><!-- 목표점수*1/2 -->
+									<div class="yAxisMinimum"><span>0</span></div><!-- 시작 -->
+								</div>
+								<ul>
+									<li>
+										<strong class="chartLegend">여행목표점수</strong>
+										<div class="chartBar barTarget">
+											<em class="chartNum">30,000,000</em><span><strong style="height:100%">여행목표점수</strong></span>
+										</div>
+									</li>
+									<li>
+										<strong class="chartLegend">달성한 여행점수</strong>
+										<div class="chartBar barAttainment">
+											<em class="chartNum">19,000,000</em><span><strong style="height:63%">달성한 여행점수</strong></span>
+										</div>
+									</li>
+									<li>
+										<strong class="chartLegend">프로모션이<span class="mob-block"> 적용된 점수</span></strong>
+										<div class="chartBar barPromotion">
+											<em class="chartNum">800,452</em><span><strong style="height:50%">프로모션이 적용된 점수</strong></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- //차트 -->
+						</div>
 
+						<div class="next-control">
+							<button type="button" class="bt-akl-blue">보너스 시뮬레이션 다시하기</button>
+						</div>
+					</div>
+					<!-- //결과 -->
 				</div>
 				<!-- //보너스 시뮬레이션  -->
 			</div>
