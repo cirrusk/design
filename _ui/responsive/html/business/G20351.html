@@ -127,47 +127,82 @@
 				<div class="outer-border-bottom">
 					<ul class="tabs-toggles">
 						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">월간 코어 보너스</span></a> </li>
-						<li class="tab-toggle-wrap active"><a class="tab-toggle" href="#"><span class="toggle-text">여행 점수 성장 보너스 시뮬레이션</span></a></li>
-						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">볼륨 성장 보너스 시뮬레이션</span></a></li>
+						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">여행 점수 성장 보너스 시뮬레이션</span></a></li>
+						<li class="tab-toggle-wrap active"><a class="tab-toggle" href="#"><span class="toggle-text">볼륨 성장 보너스 시뮬레이션</span></a></li>
 					</ul>
 				</div>
 
-				<!-- 보너스 시뮬레이션 -->
-				<div class="tab-content type-bonus-simul">
+				<!-- 볼륨 성장 보너스 시뮬레이션 -->
+				<div class="tab-content type-volume-simul">
 					<!-- 입력 -->
 					<div class="box-simulation">
 						<div class="box-conts-group">
-							<h2>여행 점수 성장 보너스 시뮬레이션 하기</h2>
-							<p class="status-travel-point"><b>월간 코어 보너스의 연간 총 합계금액을 입력</b>하시면, 여행 점수 성장 보너스를 시뮬레이션 하실 수 있습니다.</p>
+							<h2>볼륨 성장 보너스 시뮬레이션</h2>
+							<p class="status-travel-point"><b>국내 사업 핀과 월간 코어 보너스의 연간 총 합계금액을 입력</b>하시면, 볼륨 성장 보너스를 시뮬레이션 하실 수 있습니다.</p>
 
 							<ul class="form-list">
 								<li class="form-group">
-									<label class="col-md-4 col-xs-12 control-label" for="bonus_sponsor">후원수당</label>
-									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="bonus_sponsor"> <em>원</em></p></div>
+									<label class="col-md-4 col-xs-12 control-label" for="volume_bizLocal">국내 사업 핀</label>
+									<div class="col-md-8 col-xs-12">
+										<select class="form-control" id="volume_bizLocal">
+											<option value="">파운더스 에메랄드 이하</option>
+											<option value="">다이아몬드</option>
+											<option value="">파운더스 다이아몬드</option>
+											<option value="">수석 다이아몬드</option>
+											<option value="">파운더스 수석 다이아몬드</option>
+											<option value="">더블 다이아몬드</option>
+											<option value="">파운더스 더블 다이아몬드</option>
+											<option value="">트리플 다이아몬드</option>
+											<option value="">파운더스 트리플 다이아몬드</option>
+											<option value="">크라운</option>
+											<option value="">파운더스 크라운</option>
+											<option value="">파운더스 크라운 앰배서더</option>
+										</select>
+									</div>
 								</li>
 								<li class="form-group">
-									<label class="col-md-4 col-xs-12 control-label" for="bonus_leadership">리더십 보너스<span class="mob-inline">(21% 그룹 제외)</span></label>
-									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="bonus_leadership"> <em>원</em></p></div>
+									<label class="col-md-4 col-xs-12 control-label" for="volume_qLegLocal">국내 Q12 레그 수</label>
+									<div class="col-md-8 col-xs-12">
+										<select class="form-control" id="volume_qLegLocal">
+											<option value="">0</option>
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+											<option value="">6</option>
+											<option value="">7</option>
+											<option value="">8개 이상</option>
+										</select>
+									</div>
 								</li>
 								<li class="form-group">
-									<label class="col-md-4 col-xs-12 control-label" for="bonus_ruby">루비 보너스</label>
-									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="bonus_ruby"> <em>원</em></p></div>
+									<label class="col-md-4 col-xs-12 control-label" for="volume_sponsor">후원수당</label>
+									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="volume_sponsor"> <em>원</em></p></div>
 								</li>
 								<li class="form-group">
-									<label class="col-md-4 col-xs-12 control-label" for="bonus_md">MD 보너스</label>
-									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="bonus_leadership"> <em>원</em></p></div>
+									<label class="col-md-4 col-xs-12 control-label" for="volume_leadership">리더십 보너스<span class="mob-inline">(21% 그룹 제외)</span></label>
+									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="volume_leadership"> <em>원</em></p></div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-4 col-xs-12 control-label" for="volume_ruby">루비 보너스</label>
+									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="volume_ruby"> <em>원</em></p></div>
+								</li>
+								<li class="form-group">
+									<label class="col-md-4 col-xs-12 control-label" for="volume_md">MD 보너스</label>
+									<div class="col-md-8 col-xs-12"><p class="input-border"><input type="text" id="volume_leadership"> <em>원</em></p></div>
 								</li>
 							</ul>
 						</div>
 						<div class="box-conts-group type-bottom0">
-							<h3>여행 점수 성장 보너스 계산법</h3>
+							<h3>볼륨 성장 보너스 계산법</h3>
 							<div class="box-diagram">
 								<div class="diag-growth-bonus">
 									<p>
 										<strong class="math-txt"><span class="ico-type-equal"><em>보너스 금액</em></span></strong>
 										<strong class="math-txt"><span class="ico-type-a"><em>월간 코어 보너스 평균</em></span></strong>
 										<strong class="math-txt multi"><span class="ico-type-multi"><em class="hidden">곱하기</em></span></strong>
-										<strong class="math-txt last"><span class="ico-type-b"><em>여행 점수 성장률에 따른 지급비율</em></span></strong>
+										<strong class="math-txt last"><span class="ico-type-b"><em>핀 구간&amp;성장률에 따른 지급비율</em></span></strong>
 									</p>
 								</div>
 							</div>
@@ -181,43 +216,42 @@
 					<!-- 결과 -->
 					<div class="box-simulation outcome">
 						<div class="box-conts-group type-bottom0">
-							<h2>여행 점수 성장 보너스 시뮬레이션 하기</h2>
+							<h2>볼륨 성장 보너스 시뮬레이션</h2>
 							<div class="box-goal-point result-text">
 								<p><span class="color-blue">홍길동</span> 님의 월간 코어 보너스는 총합 <span class="color-blue">$39,999,999,996</span>원, 평균 <span class="color-blue">$3,333,333,333</span>원 입니다.</p>
-								<p>여행 점수 성장률에 따른 보너스 금액은 아래와 같습니다.</p>
+								<p><span class="color-blue">$파운더스 크라운 앰배서더</span> 핀 기준 다이아몬드 그룹 BV 성장률에 따른 보너스 금액은 아래와 같습니다.</p>
 							</div>
 						</div>
 						<div class="box-conts-group type-bottom0">
-							<h3>여행 점수 성장 보너스 금액</h3>
-
+							<h3>볼륨 성장 보너스 금액</h3>
 							<div class="chartWrapper">
 								<!-- 차트 -->
 								<div class="barChartBox coreBonus">
 									<div class="axisHorizontal">
-										<div class="yAxisMaximum"><span>1,668,000</span></div><!-- 최대금액 -->
-										<div class="yAxisHalf twoThirds"><span>1,112,000</span></div><!-- 최대금액*2/3 -->
-										<div class="yAxisHalf oneThirds"><span>556,000</span></div><!-- 최대금액*1/3 -->
+										<div class="yAxisMaximum"><span>5,667,000</span></div><!-- 최대금액 -->
+										<div class="yAxisHalf twoThirds"><span>3,778,000</span></div><!-- 최대금액*2/3 -->
+										<div class="yAxisHalf oneThirds"><span>1,889,000</span></div><!-- 최대금액*1/3 -->
 										<div class="yAxisMinimum"><span>0</span></div><!-- 시작 -->
 									</div>
 
-									<strong class="chartLegend">여행 점수 <em class="mob-block">성장률</em></strong>
+									<strong class="chartLegend">다이아몬드그룹<br> <em class="mob-block">BV성장률</em></strong>
 									<ul>
 										<li>
 											<strong class="chartLegend">1% 이상 ~ 5% 미만</strong>
 											<div class="chartBar barSection_01">
-												<em class="chartNum">500,000</em><span><strong style="height:40%">여행 점수 성장률 1% 이상 ~ 5% 미만</strong></span>
+												<em class="chartNum">4,999,999</em><span><strong style="height:50%">여행 점수 성장률 1% 이상 ~ 5% 미만</strong></span>
 											</div>
 										</li>
 										<li>
 											<strong class="chartLegend">5% 이상 ~ 10% 미만</strong>
 											<div class="chartBar barSection_02">
-												<em class="chartNum">19,000,000</em><span><strong style="height:63%">여행 점수 성장률 5% 이상 ~ 10% 미만</strong></span>
+												<em class="chartNum">5,333,333</em><span><strong style="height:63%">여행 점수 성장률 5% 이상 ~ 10% 미만</strong></span>
 											</div>
 										</li>
 										<li>
 											<strong class="chartLegend">10% 이상</strong>
 											<div class="chartBar barSection_03">
-												<em class="chartNum">1,648,000</em><span><strong style="height:98%">여행 점수 성장률 10% 이상</strong></span>
+												<em class="chartNum">5,667,000</em><span><strong style="height:100%">여행 점수 성장률 10% 이상</strong></span>
 											</div>
 										</li>
 									</ul>
@@ -232,7 +266,7 @@
 					</div>
 					<!-- //결과 -->
 				</div>
-				<!-- //보너스 시뮬레이션  -->
+				<!-- //볼륨 성장 보너스 시뮬레이션  -->
 			</div>
 		</div>
 		<div id="quick"></div>

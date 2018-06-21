@@ -1142,11 +1142,11 @@ table.clone thead, .clone tfoot{background:transparent;}
 .monthly-coreBonus-wrapper .outer-border-bottom,
 .rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
 
-.akl .amway-theme.business > [class$=-wrapper] h2 {font-size:18px; text-align:left; margin:0; letter-spacing:-0.05em;}
-.akl .amway-theme.business > [class$=-wrapper] h3 {font-size:16px; text-align:left; color:#56565a; letter-spacing:-0.025em;}
+.akl .amway-theme.business>[class$=-wrapper] h2 {font-size:18px; text-align:left; margin:0; letter-spacing:-0.05em;}
+.akl .amway-theme.business>[class$=-wrapper] h3 {font-size:14px; text-align:left; color:#56565a; letter-spacing:-0.05em;}
 .akl .amway-theme.business .box-conts-summary>h2,
 .akl .amway-theme.business .box-conts-group>h2,
-.akl .amway-theme.business .box-conts-group>h3 {margin:0 0 27px;}
+.akl .amway-theme.business .box-conts-group>h3 {margin:0 0 26px;}
 
 .amway-theme.business .mob-inline {display:block;}
 .amway-theme.business .box-conts-summary dl {overflow:hidden;}
@@ -1163,9 +1163,10 @@ table.clone thead, .clone tfoot{background:transparent;}
 .akl .txt-required {font-size:13px !important;}
 .akl p.txt-required {margin-bottom:0;}
 .akl .amway-theme .etc-required>em {font-size:0;}
-.akl .amway-theme .rewards-program-wrapper * {font-size:14px;}
-.akl .amway-theme .rewards-program-wrapper .next-control {text-align:center; margin-top:30px;}
+/* .akl .amway-theme .rewards-program-wrapper * {font-size:14px;} */
+.akl .amway-theme.business .rewards-program-wrapper h3 {font-size:16px;}
 .akl .amway-theme .rewards-program-wrapper .calc-travel-point>h3 {font-size:14px;}
+.akl .amway-theme .rewards-program-wrapper .next-control {text-align:center; margin-top:30px;}
 
 /* 여행 점수 산출 diagram */
 .box-diagram {overflow:hidden; padding:40px 60px 37px; background:#fafafa;}
@@ -1200,6 +1201,8 @@ table.clone thead, .clone tfoot{background:transparent;}
 .rewards-program-wrapper .txt-ty-month {font-weight:500;}
 
 .box-goal-point {padding:30px 0 40px; margin-top:15px; background:#fafafa;}
+.box-goal-point.result-text {padding:40px 30px 36px; text-align:center; font-size:16px; font-weight:500; line-height:170%;}
+.box-goal-point.result-text p{margin-bottom:0;}
 .box-goal-point>ul{overflow:hidden;}
 .box-goal-point>ul>li {display:block; float:left; width:33%; text-align:center; position:relative; padding-bottom:20px;}
 .box-goal-point li>span {display:block; font-weight:500; color:#002f5f;}
@@ -1209,7 +1212,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 .akl .form-group .input-border>input[type="text"] {border:0;}
 .box-simulation ul.form-list {width:500px; margin-top:30px;}
 .box-simulation .form-group label {padding-left:0; padding-right:0;}
-.box-simulation .form-group .input-border {position:relative; width:280px; box-sizing:border-box; margin:0; padding-right:45px; text-align:right;}
+.box-simulation .form-group .input-border {position:relative; width:100%; box-sizing:border-box; margin:0; padding-right:45px; text-align:right;}
 .box-simulation .form-group .input-border>em {position:absolute; top:0; right:0; display:block; padding-right:10px; line-height:38px;}
 .box-simulation .form-group .input-border>input{width:100%; padding-right:0;}
 .box-simulation .list-type2 > li.bg-none {background:none; padding-left:0}
@@ -1248,21 +1251,21 @@ table.clone thead, .clone tfoot{background:transparent;}
 /* Y축 */
 .axisHorizontal {position:absolute; left:90px; bottom:0; right:0; height:100px; box-sizing:border-box; border-bottom:1px solid #dadada;}
 .axisHorizontal>div {position:absolute; left:0; border-top:1px solid #dadada; width:100%;}
-.axisHorizontal>div>span {position:absolute; left:-90px; bottom:-8px; display:block; width:70px; text-align:right;}
+.axisHorizontal>div>span {position:absolute; left:-90px; bottom:-8px; display:block; width:70px; text-align:right; font-size:13px;}
 .axisHorizontal>div.yAxisMinimum {bottom:0; border:0;}
 .yAxisMaximum{top:0;}
 .yAxisHalf{top:50%;}
-.yAxisHalf.oneThirds{top:33.33%;}
-.yAxisHalf.twoThirds{top:66.66%;}
+.yAxisHalf.oneThirds{top:66.66%;}
+.yAxisHalf.twoThirds{top:33.33%;}
 
 /* X축 범례 */
-.chartLegend { position:absolute; bottom:-50px; display:block; width:100%; height:50px; text-align:center; padding-top:10px;}
+.chartLegend { position:absolute; bottom:-50px; display:block; width:100%; height:50px; text-align:center; padding-top:10px; font-size:13px; font-weight:400;}
 
 /* 막대 */
 .chartBar { position:absolute; bottom:0; width:100%; height:100px; box-sizing:border-box; text-align:center;}
-.chartBar.barTarget strong {background:#42cbd3;}
-.chartBar.barAttainment strong {background:#00b2e2;}
-.chartBar.barPromotion strong{background:#005cb9;}
+.chartBar.barTarget strong, .chartBar.barSection_01 strong {background:#42cbd3;}
+.chartBar.barAttainment strong, .chartBar.barSection_02 strong{background:#00b2e2;}
+.chartBar.barPromotfion strong, .chartBar.barSection_03 strong{background:#005cb9;}
 .chartBar>span { position:absolute; bottom:0; left:50%; display:block; vertical-align:bottom; width:100px; height:100px; margin-left:-50px;}
 .chartBar>span img {position:absolute; left:0; bottom:0; width:100%; min-height:3px; max-height:120px; border-radius:5px 5px 0 0;}
 .chartBar>span>strong{position:absolute; left:0; bottom:0; width:100%; min-height:3px; display:block;background:;overflow:hidden;text-indent:-9999px;font-size:0;}
@@ -1270,22 +1273,35 @@ table.clone thead, .clone tfoot{background:transparent;}
 
 /* ----- 월간 코어 보너스 조회 ----- */
 .monthly-coreBonus-wrapper .next-control {margin-top:30px; text-align:center;}
+.akl .amway-theme  .monthly-coreBonus-wrapper .box-simulation .box-conts-group>h3 {font-size:14px; margin-bottom:15px;}
+
+
+
+/* 월간 코어 보너스 Bar 차트 */
+.barChartBox.coreBonus .axisHorizontal {left:120px; height:150px;}
+.barChartBox.coreBonus .axisHorizontal>div>span {left:-95px;}
+.barChartBox.coreBonus .chartLegend {bottom:-55px;}
+.barChartBox.coreBonus>.chartLegend {width:auto; left:0; letter-spacing:-0.025em;}
+.barChartBox.coreBonus>ul {height:170px;}
+.barChartBox.coreBonus>ul>li,
+.barChartBox.coreBonus .chartBar,
+.barChartBox.coreBonus .chartBar>span {height:150px;}
 
 /* tab1: 월간 코어 보너스 */
 .box-goal-point.corebonus {margin-top:20px;margin-bottom:40px;}
 .box-goal-point.corebonus>ul>li  {width:50%; padding-bottom:40px;}
 
 /* tab2: 여행점수 성장 보너스 시뮬레이션 */
-.amway-theme.business .type-bonus-simul .box-conts-group {border-top:0; padding-top:0; margin-top:0;}
+.monthly-coreBonus-wrapper [class$=-simul] .box-conts-group {border-top:0; padding-top:0; margin-top:0;}
+.monthly-coreBonus-wrapper [class$=-simul] .outcome .box-conts-group>h3 {margin:30px 0 0;}
+.monthly-coreBonus-wrapper [class$=-simul] .outcome .chartWrapper {margin-top:30px;}
 .amway-theme.business .type-bonus-simul .box-conts-group>h3 {font-size:14px; margin-bottom:15px;}
-
 
 .diag-growth-bonus>p {display:table; width:auto; min-height:72px; margin:0}
 .diag-growth-bonus .math-txt {position:relative;display:table-cell; width:30%; box-sizing:border-box; vertical-align:middle; color:#002f5f;}
 .diag-growth-bonus .math-txt * {display:inline-block; vertical-align:middle;}
 .diag-growth-bonus .math-txt span>em {}
-.diag-growth-bonus .math-txt.multi {width:8%}
-.diag-growth-bonus .math-txt.last {}
+.diag-growth-bonus .math-txt.multi {width:8%;}
 .diag-growth-bonus [class^=ico-type] {position:relative; display:inline-block; padding:25px 0 0 76px; height:72px;}
 .diag-growth-bonus [class^=ico-type]:before {content:''; position:absolute; top:0; left:0; width:72px; height:72px; background:url(../images/akl_common/business/img_monthly_corebonus_pc.png) no-repeat;}
 .diag-growth-bonus .ico-type-equal {width:100%; padding-left:76px;}
@@ -1296,6 +1312,9 @@ table.clone thead, .clone tfoot{background:transparent;}
 .diag-growth-bonus .ico-type-a:before {background-position:50% -200px;}
 .diag-growth-bonus .ico-type-a:after {display:none;}
 .diag-growth-bonus .ico-type-b:before {right:30px; background-position:50% -290px;}
+
+/* tab3: 볼륨 성장 보너스 시뮬레이션 */
+.type-volume-simul .barChartBox.coreBonus>.chartLegend{text-align:right; left:10px}
 
 /* ----- ABO수첩 ----- */
 .pocketbook-wrapper {margin-top:40px;}
@@ -1353,6 +1372,10 @@ table.clone thead, .clone tfoot{background:transparent;}
 
 	/* ABO수첩 */
 	.note-index-wrapper dt.title {left:60px;}
+
+	/* 월간 코어 보너스 Bar 차트 */
+	.barChartBox.coreBonus .mob-block {display:block;}
+	.barChartBox.coreBonus>.chartLegend {text-align:right; width:60px; left:38px;}
 }
 @media (max-width: 1220px){
 	/* 여행 점수 산출 diagram */
@@ -1884,12 +1907,19 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>strong {display:none;}
 	.tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>p {float:none; width:100%; text-align:left; font-weight:500;}
 	.type-monthly-coreBonus .tbl-list-board.type-tbody-th {margin-bottom:0;}
-	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>strong {width:60%;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>strong {width:60%; text-align:left;}
 	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>p {width:40%;}
 	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>p {width:100%;}
 
-	.type-bonus-simul .box-diagram {padding:20px 0;}
+	.type-bonus-simul .box-diagram ,
+	.type-volume-simul .box-diagram{padding:20px 0;}
 	.type-bonus-simul .diag-growth-bonus>p {overflow:hidden; display:block; height:1px; padding:122px 0 0; margin:0; background:url(../images/akl_common/business/img_monthly_corebonus_mob.png) 50% 0 no-repeat; background-size:304px auto;}
+	.type-volume-simul .diag-growth-bonus>p {overflow:hidden; display:block; height:1px; padding:122px 0 0; margin:0; background:url(../images/akl_common/business/img_monthly_volumbonus_mob.png) 50% 0 no-repeat; background-size:304px auto;}
+
+	/* 월간 코어 보너스 Bar 차트 */
+	.barChartBox.coreBonus .axisHorizontal {left:90px;}
+	.barChartBox.coreBonus .axisHorizontal>div>span {left:-90px;}
+	.barChartBox.coreBonus>.chartLegend {left:12px;}
 
 	/* ----- ABO 갱신 ----- */
 	.layerBox .txt-ineligibility {padding:0 0 10px;}
@@ -1958,7 +1988,8 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .amway-theme.fax-order-wrapper .accordion-element .accordion-panel-title .title-element.accordion-header-icon {top:-2px; left:2px;}
 
 	/* 월간 코어 보너스 조회 */
-	.type-bonus-simul .diag-growth-bonus>p  {background-position:50% 50%; background-size:90% auto;}
+	.type-bonus-simul .diag-growth-bonus>p,
+	.type-volume-simul .diag-growth-bonus>p {background-position:50% 50%; background-size:90% auto;}
 
 	/* ABO수첩 */
 	.abo-pocket-menual .top-title>button {position:initial; margin-top:0;}
