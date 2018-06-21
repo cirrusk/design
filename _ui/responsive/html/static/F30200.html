@@ -168,28 +168,53 @@
 				<div class="tbl-list-board type-tbody-th aboRenewal mgt40">
 					<div class="thead mob-hide">
 						<div class="tr">
-							<strong class="mob-hide w13"></strong>
-							<strong class="mob-hide w13"></strong>
-							<strong class="mob-hide w13"></strong>
-							<strong class="mob-hide w13"></strong>
-							<strong class="mob-hide w22"></strong>
-							<strong class="mob-hide w13"></strong>
-							<strong class="mob-hide w13"></strong>
+							<strong class="mob-hide w13">접수번호</strong>
+							<strong class="mob-hide w12">제품</strong>
+							<strong class="mob-hide w15">서비스유형</strong>
+							<strong class="mob-hide w12">이름</strong>
+							<strong class="mob-hide w18">연락처</strong>
+							<strong class="mob-hide w15">신청일</strong>
+							<strong class="mob-hide w15">신청현황</strong>
 						</div>
 					</div>
 					<div class="tbody">
 						<div class="tr">
-							<div class="mob-block abo-downline-th1"><button type="button" id="F30200_lp">11481</button></div>
-							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+							<div class="mob-block w13"><button type="button" class="link-txt type01" id="F30200_lp">11481</button></div>
+							<div class="mob-block w12"><strong class="th">제품</strong><p>정수기</p></div>
+							<div class="mob-block w15"><strong class="th">서비스유형</strong><p>신규설치</p></div>
+							<div class="mob-block w12"><strong class="th">이름</strong><p>암순이</p></div>
+							<div class="mob-block w18"><strong class="th">연락처</strong><p>010-****-2345</p></div>
+							<div class="mob-block w15"><strong class="th">신청일</strong><p>2018-05-15</p></div>
+							<div class="mob-block w15"><strong class="th">신청현황</strong><p>신청  <button type="button" class="bt-akl-white mini type02">취소</button></p></div>
+						</div>
+						<div class="tr">
+							<div class="mob-block w13"><button type="button" class="link-txt type01">11481</button></div>
+							<div class="mob-block w12"><strong class="th">제품</strong><p>정수기</p></div>
+							<div class="mob-block w15"><strong class="th">서비스유형</strong><p>신규설치</p></div>
+							<div class="mob-block w12"><strong class="th">이름</strong><p>암순이</p></div>
+							<div class="mob-block w18"><strong class="th">연락처</strong><p>010-****-2345</p></div>
+							<div class="mob-block w15"><strong class="th">신청일</strong><p>2018-05-15</p></div>
+							<div class="mob-block w15"><strong class="th">신청현황</strong><p>접수완료</p></div>
 						</div>
 					</div>
 				</div>
 				<!-- //조회결과 -->
+				
+				<div class="paging-wrap">
+					<div class="paging">
+						<a href="#" class="prev">맨 처음 페이지</a>
+						<a href="#" class="before">이전 페이지</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="after">다음페이지</a>
+						<a href="#" class="next">맨 마지막 페이지</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="quick"></div>
@@ -197,11 +222,11 @@
 	</main> 
 	
 	<!-- 서비스 신청 내역 -->
-    <div class="layerWrapper F30200_lp_pop business"><!-- div.layerWrapper 추가 -->
+    <div class="layerWrapper F30200_lp_pop service"><!-- div.layerWrapper 추가 -->
 		<div class="cbox layerBox popWidM"><!-- .layerBox 추가 --> 
 	        <div class="cart-popup__dialog">
 	            <div class="cart-popup__header">
-	                <span class="cart-popup__header-text">서비스 신청 내
+	                <span class="cart-popup__header-text">서비스 신청 내역
 	                    <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
 	                       <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
 	                    </a>
@@ -209,9 +234,62 @@
 	            </div>
 	            <div class="cart-popup__content payment"> 
 		            <div class="cart-popup__item-info">
-		               ss
+			            <strong class="fsize16">접수번호 : 12345</strong>
+						<p class="mgt5">신청일 : 2018-05-15</p>
+						
+						<div>
+							<div class="dl-form-group mgt20">
+								<ul>
+									<li class="form-group">
+										<strong class="txt-label">제품</strong>
+										<div class="txt-value">정수기</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">서비스 유형</strong>
+										<div class="txt-value">신규 설치</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">모델</strong>
+										<div class="txt-value">100189K4</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">시리얼 번호</strong>
+										<div class="txt-value">-</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">구입정보</strong>
+										<div class="txt-value">2018-04-16</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">서비스 요청사항</strong>
+										<div class="txt-value">테스트</div>
+									</li>
+								</ul>
+							</div>
+							<div class="dl-form-group">
+								<ul>
+									<li class="form-group">
+										<strong class="txt-label">이름</strong>
+										<div class="txt-value">암순이</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">연락처</strong>
+										<div class="txt-value">010-2458-3480,010-2458-3489</div>
+									</li>
+									<li class="form-group">
+										<strong class="txt-label">주소</strong>
+										<div class="txt-value">인천 남동구 서창동 66 668</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<p class="mgt15">※ 서비스 일정은 담당 기사 연락 시 조율해주시면 됩니다.</p>
 					</div>
 	            </div> 
+	            <div class="cart-popup__item-link">
+		            <button type="button" class="bt-akl-blue">인쇄</button>
+		            <button type="button" class="btn-cancel">닫기</button>
+		        </div>
 	        </div>
 	    </div>
     </div>

@@ -392,12 +392,18 @@ Version : AKL Hybris UIUX 1.0
 .call-center .number > li:nth-child(4) ol li {display:block; width:200px}
 
 /* 암웨이 서비스센터 */
+.akl .bt-akl-white.mini.type02 {min-width:53px; margin-left:3px}
+.tbl-list-board .w12 {width:12%}
+.tbl-list-board .w13 {width:13%}
+.tbl-list-board .w15 {width:15%}
+.tbl-list-board .w18 {width:18%}
+
 .bg-bar > * + *:before {content:""; display:inline-block; height:10px; border-left:1px solid #e3e3e3; vertical-align:middle; padding-left:20px; margin-left:20px}
 .bg-bar > * {vertical-align:middle}
 .row.bg-bar > * + *:before {display:none}
 .row.bg-bar > * + * {border-left:1px solid #e3e3e3;}
 
-.link-txt.type01 {font-weight:700; color:#007eb0}
+.link-txt.type01 {font-weight:700; color:#007eb0; background-color:transparent; padding:0}
 .link-txt.type01 .icon-chevron-right {display:inline-block; font-size:18px; vertical-align:middle; margin-top:-2px}
 
 [class^="ico-comm"] {display:inline-block; vertical-align:middle; text-indent:-999px; overflow:hidden;}
@@ -427,6 +433,11 @@ Version : AKL Hybris UIUX 1.0
 .service-area .date-form-group .box-date-select input {width:100% !important}
 .service-area .date-form-group .date-range-icon {width:15px; margin:0 10px}
 .service-area .date-form-group .date-range-icon {border-top:2px solid #ddd; position:relative; top:20px}
+
+.service-area .tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong, .service-area .tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div {padding-left:15px}
+
+.layerWrapper.service .dl-form-group {border-top:1px solid #dadada; padding:15px 0 35px}
+.layerWrapper.service .dl-form-group:last-child {border-bottom:1px solid #dadada}
 
 @media (max-width: 1024px) {
 	/* 암웨이 브랜드 센터 */
