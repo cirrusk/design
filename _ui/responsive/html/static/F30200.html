@@ -74,19 +74,19 @@
 												<img src="/_ui/responsive/theme-blue/images/akl_common/customer/service_product01.png" alt="">
 												<em>정수기</em>
 												<p>서비스 요청항목 : 정수기<br>신규설치 / 이전 설치 / 수리접수</p>
-												<a href="#" class="link-txt type01">서비스신청<span class="icon-chevron-right"></span></a>
+												<a href="#" class="link-txt type01">서비스신청 <span class="icon-chevron-right"></span></a>
 											</li>
 											<li class="col-sm-4">
 												<img src="/_ui/responsive/theme-blue/images/akl_common/customer/service_product02.png" alt="">
 												<em>공기청정기</em>
 												<p>서비스 요청항목 : 공기청정기<br> 수리접수</p>
-												<a href="#" class="link-txt type01">서비스신청</a>
+												<a href="#" class="link-txt type01">서비스신청 <span class="icon-chevron-right"></span></a>
 											</li>
 											<li class="col-sm-4">
 												<img src="/_ui/responsive/theme-blue/images/akl_common/customer/service_product03.png" alt="">
 												<em>비데</em>
-												<p>서비스 요청항목 : 비데 이전 설치 / 수리접수</p>
-												<a href="#" class="link-txt type01">서비스신청</a>
+												<p>서비스 요청항목 : 비데<br> 이전 설치 / 수리접수</p>
+												<a href="#" class="link-txt type01">서비스신청 <span class="icon-chevron-right"></span></a>
 											</li>
 										</ul>
 									</div>
@@ -105,19 +105,117 @@
 							</div>
 							<div id="down2" class="panel-collapse applicants-panel collapse in" role="tabpanel">
 								<div class="panel-body">
-									
-											   내용2
-									
+									<div class="box-input-details">
+										<div class="validation-box-simple">
+											<div class="form-group ty-input-name">
+												<label class="col-md-3 control-label" for="service01">서비스 유형</label>
+												<div class="col-sm-9">
+													<select class="form-control" id="service01">
+														<option>전체</option>
+														<option>신규설치</option>
+														<option>이전설치</option>
+														<option>수리</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group ty-input-name">
+												<label class="col-md-3 control-label" for="service02">신청 현황</label>
+												<div class="col-md-9">
+													<select class="form-control" id="service02">
+														<option>전체</option>
+														<option>접수진행중</option>
+														<option>접수완료</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group ty-input-name">
+												<label class="col-md-3 control-label" for="service03">기간</label>
+												<div class="col-md-9">
+													<div class="form-group date-form-group">
+														<div class="point-date-range date-begin">
+															<div class="box-date-select">
+																<!-- 모바일 :type="date" 로 변경 -->
+																<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+															</div>
+														</div>
+														<div class="date-range-icon"></div>
+														<div class="point-date-range date-end">
+															<div class="box-date-select">
+																<!-- 모바일 :type="date" 로 변경 -->
+																<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<ul class="list-type5">
+										<li>접수 하신 서비스 내역의 조회 및 취소가 가능합니다.</li>
+										<li>서비스 신청현황이 접수 진행중 일 때는 신청취소가 가능하며, 이후 새롭게 서비스 신청을 하셔야 합니다.</li>
+									</ul>
+									<div class="text-center mgt20">
+										<button type="submit" class="bt-akl-blue">조회</button>
+										<button type="submit" class="bt-akl-white">전체보기</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
+				<!-- 조회결과 -->
+				<div class="tbl-list-board type-tbody-th aboRenewal mgt40">
+					<div class="thead mob-hide">
+						<div class="tr">
+							<strong class="mob-hide w13"></strong>
+							<strong class="mob-hide w13"></strong>
+							<strong class="mob-hide w13"></strong>
+							<strong class="mob-hide w13"></strong>
+							<strong class="mob-hide w22"></strong>
+							<strong class="mob-hide w13"></strong>
+							<strong class="mob-hide w13"></strong>
+						</div>
+					</div>
+					<div class="tbody">
+						<div class="tr">
+							<div class="mob-block abo-downline-th1"><button type="button" id="F30200_lp">11481</button></div>
+							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+							<div class="mob-block abo-downline-th2"><strong class="th"></strong><p></p></div>
+						</div>
+					</div>
+				</div>
+				<!-- //조회결과 -->
 			</div>
 		</div>
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main> 
+	
+	<!-- 서비스 신청 내역 -->
+    <div class="layerWrapper F30200_lp_pop business"><!-- div.layerWrapper 추가 -->
+		<div class="cbox layerBox popWidM"><!-- .layerBox 추가 --> 
+	        <div class="cart-popup__dialog">
+	            <div class="cart-popup__header">
+	                <span class="cart-popup__header-text">서비스 신청 내
+	                    <a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+	                       <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+	                    </a>
+	                </span>
+	            </div>
+	            <div class="cart-popup__content payment"> 
+		            <div class="cart-popup__item-info">
+		               ss
+					</div>
+	            </div> 
+	        </div>
+	    </div>
+    </div>
+    <!-- //서비스 신청 내역 --> 
 
 </body>
 </html>
