@@ -409,13 +409,24 @@ Version : AKL Hybris UIUX 1.0
 [class^="ico-comm"] {display:inline-block; vertical-align:middle; text-indent:-999px; overflow:hidden;}
 .ico-comm.mark01 {width:18px; height:18px; margin:-2px 7px 0 0; background:url("../images/akl_common/icon_mem.png") no-repeat;}
 
-.center-wel {margin-top:40px; text-align:center; color:#002f5f}
+.center-wel {margin:40px 0 30px; text-align:center; color:#002f5f}
 .center-wel.bg-bar > span + span:before {height:30px; padding-left:30px; margin:-3px 0 0 30px}
 .center-wel img {width:134px}
 .center-wel img + span:before {display:none}
 .center-wel span {display:inline-block; height:45px}
 .center-wel img + span {margin:-7px 0 0 5px; font-size:34px; font-weight:700; letter-spacing:-0.06em}
 .center-wel span + span {padding-top:10px; font-size:19px; font-weight:700; letter-spacing:-0.04em}
+
+.info-icotype {display:table; padding:50px 0; background-color:#fafafa}
+.info-icotype li {display:table-cell; padding:0 20px; text-align:center}
+.info-icotype li + li {border-left:1px solid #e3e3e3}
+.info-icotype li em {display:block; font-weight:500; margin-bottom:5px;}
+.info-icotype.service01 li {width:25%}
+.info-icotype.service01 li:before {content:""; display:inline-block; width:50px; height:50px; background-position:50% 50%; background-size:96%; background-repeat:no-repeat}
+.info-icotype.service01 li:nth-child(1):before {background-image:url("../images/akl_common/customer/ico_service01.png");}
+.info-icotype.service01 li:nth-child(2):before {background-image:url("../images/akl_common/customer/ico_service02.png");}
+.info-icotype.service01 li:nth-child(3):before {background-image:url("../images/akl_common/customer/ico_service03.png");}
+.info-icotype.service01 li:nth-child(4):before {background-image:url("../images/akl_common/customer/ico_service04.png");}
 
 .service-area .panel-heading+.panel-collapse>.panel-body {padding-bottom:40px !important}
 
@@ -519,8 +530,8 @@ Version : AKL Hybris UIUX 1.0
 	.apply-form .serial-num {padding:0}
 	.apply-form .serial-num .img {position:static}
 	.apply-form .serial-num input {width:100%; margin-top:10px}
-	.apply-form .sel-txt select, .apply-form .sel-txt input {width:100% !important}
-	.apply-form .sel-txt input {margin:10px 0 0 0; }
+	.apply-form .inp-seltxt select, .apply-form .sel-txt input {width:100% !important}
+	.apply-form .inp-seltxt input {width:100% !important; margin:10px 0 0 0; }
 	.apply-form textarea.form-control {width:100%; height:80px}
 	.apply-form .inp-m {width:100%}
 	.apply-form .inp-m + button {margin:10px 0 0 0}
@@ -530,6 +541,20 @@ Version : AKL Hybris UIUX 1.0
 	
 	.apply-form .dl-form-group.txt .form-group .col-sm-2 {display:table-cell !important; min-width:100px; width:28% !important}
 	.apply-form .dl-form-group.txt .form-group .col-sm-10 {display:table-cell !important; width:auto !important}
+	
+	.center-wel {margin:35px 0 15px}
+	.center-wel img {width:93px}
+	.center-wel span {height:auto}
+	.center-wel img + span {font-size:23px}
+	.center-wel span + span {display:block; font-size:18px}
+	.center-wel span + span:before {display:none}
+	
+	.info-icotype {padding:0 20px}
+	.info-icotype li {position:relative; display:block; padding:20px 0 20px 100px; text-align:left}
+	.info-icotype li + li {border-left:0; border-top:1px solid #e3e3e3}
+	.info-icotype li:before {position:absolute; top:50%; left:20px; margin-top:-22px}
+	.info-icotype.service01 li {width:100%}
+	.info-icotype.service01 li:before {width:45px; height:45px; background-size:contain;}
 	
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo {position:relative; padding-right:0}
