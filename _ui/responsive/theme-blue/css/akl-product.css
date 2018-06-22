@@ -434,7 +434,7 @@ Editor : sookkyung Han
 .special-list .special-txt{display:table-cell;padding-right:30px;vertical-align:middle;}
 .advan-left .special-list .special-txt{padding-right:0;}
 .special-list dt,
-.special-list p{font-size:16px;color:#56565a;font-weight:500;}
+.special-list p{font-size:16px;color:#56565a;}
 .special-list dd{margin-top:2px;font-size:16px;color:#808285;font-weight:300;line-height:1.6;}
 .special-list .special-txt span,
 .special-list .special-txt .list-star li{display:block;font-size:14px;color:#808285;font-weight:300;line-height:1.6;}
@@ -643,10 +643,15 @@ Editor : sookkyung Han
 	.advan-left .special-list > li,
 	.advan-left .special-list > li:last-child{width:100%;padding:15px 0 0 0;margin:0;}
 	.enerjuvetm-complex ul,
-	.enerjuvetm-complex li{width:100%;margin:0;padding:0 30px;}
+	.enerjuvetm-complex li{width:100%;margin:0;}
 	.enerjuvetm-complex li:first-child{margin-bottom:50px;}
 	.enerjuvetm-complex li span:before{top:-27px;left:50%;margin-left:-5px;transform: -webkit-rotate(90deg);transform: -moz-rotate(90deg);transform: -ms-rotate(90deg);transform: rotate(90deg);}
+	.enerjuvetm-complex .clx-txt{padding:0 30px;}
 }
 
+@media (max-width: 324px) {
+	.enerjuvetm-complex li span,
+	.enerjuvetm-complex .clx-img img{width:100%;}
+}
 
 
