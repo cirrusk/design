@@ -436,8 +436,35 @@ Version : AKL Hybris UIUX 1.0
 
 .service-area .tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong, .service-area .tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div {padding-left:15px}
 
-.layerWrapper.service .dl-form-group {border-top:1px solid #dadada; padding:15px 0 35px}
-.layerWrapper.service .dl-form-group:last-child {border-bottom:1px solid #dadada}
+.apply-form .tit {display:block; margin-top:20px; font-size:16px; font-weight:500}
+.apply-form .tit.fsize14 {font-size:14px !important}
+.apply-form .dl-form-group {border-top:1px solid #dadada; padding:15px 0 35px}
+.apply-form .dl-form-group:last-child {border-bottom:1px solid #dadada}
+.apply-form .dl-form-group .form-group .txt-label {min-width:auto}
+.layerWrapper .apply-form .dl-form-group .form-group .txt-label {min-width:150px}
+.apply-form .radio-wrapper {margin-top:0}
+.apply-form .radio-wrapper + .radio-wrapper {margin-top:10px}
+.apply-form .amw-radio-wrap.radio-label.pho-type {display:block; height:67px}
+.apply-form .amw-radio-wrap.radio-label.pho-type .product {position:absolute; top:0; left:0; display:inline-block; width:67px; height:67px; border:1px solid #dcdcdc}
+.apply-form .amw-radio-wrap.radio-label.pho-type .amw-radio-overlay {top:22px !important; left:87px}
+.apply-form .amw-radio-wrap.radio-label.pho-type .amw-label-radio-text {position:absolute; top:20px !important; left:105px}
+.apply-form .amw-radio-wrap.radio-label.pho-type .product img {width:100%; height:100%}
+.apply-form .serial-num {position:relative; padding-left:145px;}
+.apply-form .serial-num .img {position:absolute; top:0; left:0; display:block; width:126px; height:92px; border:1px solid #dcdcdc; padding:10px}
+.apply-form .serial-num input {width:282px}
+.apply-form .serial-num ul {margin-top:9px}
+.apply-form .inp-seltxt select {width:135px !important}
+.apply-form .inp-seltxt input {width:280px; margin-left:7px}
+.apply-form .inp-phone select {width:90px !important}
+.apply-form .inp-phone input {width:180px; margin-left:7px}
+.apply-form .list-type2 li, .apply-form .txt-italic {font-size:13px !important}
+.apply-form textarea.form-control {width:550px; height:100px; min-height:auto}
+.apply-form input[type=checkbox] + label {margin-left:0}
+.apply-form .inp-m {width:280px}
+.apply-form input + button {margin-left:7px}
+.apply-form .dl-form-group .form-group {margin-top:10px}
+.apply-form .dl-form-group.txt .form-group {margin-top:18px}
+.apply-form .dl-form-group .noti-suc {display:inline-block; margin-top:20px}
 
 @media (max-width: 1024px) {
 	/* 암웨이 브랜드 센터 */
@@ -484,6 +511,25 @@ Version : AKL Hybris UIUX 1.0
 	.service-area .form-group .box-date-select {width:100%}
 	.service-area .form-group .box-date-select input {font-size:14px}
 	.service-area .form-group.date-form-group .date-range-icon {top:0; margin:10px auto}
+	
+	.apply-form .dl-form-group .form-group .col-sm-2,
+	.apply-form .dl-form-group .form-group .col-sm-10 {display:block !important; width:100% !important}
+	.apply-form .dl-form-group .form-group .col-sm-10 {margin-top:7px}
+	.apply-form .radio-wrapper > .radio-label + .radio-label {display:block; margin-left:0 !important}
+	.apply-form .serial-num {padding:0}
+	.apply-form .serial-num .img {position:static}
+	.apply-form .serial-num input {width:100%; margin-top:10px}
+	.apply-form .sel-txt select, .apply-form .sel-txt input {width:100% !important}
+	.apply-form .sel-txt input {margin:10px 0 0 0; }
+	.apply-form textarea.form-control {width:100%; height:80px}
+	.apply-form .inp-m {width:100%}
+	.apply-form .inp-m + button {margin:10px 0 0 0}
+	.apply-form .inp-phone {position:relative; padding-left:100px}
+	.apply-form .inp-phone select {position:absolute; top:0; left:0}
+	.apply-form .inp-phone input {width:100%; margin-left:0}
+	
+	.apply-form .dl-form-group.txt .form-group .col-sm-2 {display:table-cell !important; min-width:100px; width:28% !important}
+	.apply-form .dl-form-group.txt .form-group .col-sm-10 {display:table-cell !important; width:auto !important}
 	
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo {position:relative; padding-right:0}
