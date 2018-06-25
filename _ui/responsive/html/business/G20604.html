@@ -124,79 +124,26 @@
 			<h1 class="title-h2">ABO TAX</h1>
 			<div class="outer-border-bottom">
 				<ul class="tabs-toggles">
-					<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 작성</span></a></li>
+					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 작성</span></a></li>
 					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 조회</span></a></li> 
 					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">월간명세서</span></a></li>
-					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">연간명세서</span></a></li>
+					<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">연간명세서</span></a></li>
 				</ul>
 			</div> 
 			<div class="ABOTAX-area">
-				<div class="form-regist"> 
+				<div class="point-management"> 
 					<div class="form-group">
-						<label class="col-md-3 control-label" for="date">날짜</label>
-						<div class="col-md-9 col-xs-12 form-item-row"> 
-							<div class="col-xs-12">
-								<input type="text" class="form-control" id="date" placeholder="2018-05-09"> 
-							</div>
+						<label for="weekSelect" class="col-md-4 control-label">거래기간선택</label>
+						<div class="col-md-8">
+							<div class="col-md-6">
+								<select class="form-control" id="weekSelect"> 
+									<option>2018</option> 
+								</select>
+							</div> 
 						</div>
 					</div>
-					
-					<div class="form-group">
-						<label class="col-md-3 control-label" for="business07">거래내용</label>
-						<div class="col-md-9 col-xs-12 col">
-							<select class="form-control" id="business07" title="대분류 선택">
-								<option>대분류</option>
-							</select>
-							<select class="form-control" title="소분류 선택">
-								<option>소분류</option>
-							</select>
-						</div> 
-					</div> 
-					 
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business01">거래처</label>
-						<div class="col-md-9 col-xs-12">
-                             <p><input type="text" id="business01" name="" class="form-control"></p>
-                             <button type="button" class="bt-akl-white">검색</button> 
-                         </div>
-					</div> 
-					
-					<div class="form-group">
-						<label class="col-md-3 control-label" for="business02">증빙서류</label>
-						<div class="col-md-9 col-xs-12 col">
-							<select class="form-control" id="business02">
-								<option>선택하세요</option>
-							</select> 
-						</div> 
-					</div>
-					
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business03">공급대가</label>
-						<div class="col-md-9 col-xs-12">
-							<input type="text" class="form-control" id="business03">
-							<span>원</span>
-						</div>
-					</div>
-					
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business04">공급가</label>
-						<div class="col-md-9 col-xs-12">
-							<input type="text" class="form-control" id="business04">
-							<span>원</span> 
-						</div>
-					</div>
-					
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business05">부가세</label>
-						<div class="col-md-9 col-xs-12">
-							<input type="text" class="form-control" id="business05"> 
-							<span>원</span>
-						</div>
-					</div> 
-				</div>	 
-				<ul class="list-type2">
-					<li>고정자산과 기부금 내역은  PC버전 (abotax.co.kr)에서 등록해 주세요.</li>
-				</ul> 
+				</div>  
+				 
 			</div>
 			<div class="button-control">
 				<button type="button" class="bt-akl-blue">저장</button>  
@@ -204,46 +151,6 @@
 		</div>
 		<div id="quick"></div>
 		<div id="footer"></div>
-	</main>
-		
-	<!-- layer 거래처 선택 -->
-	<div class="layerWrapper G20601_lp1_pop">
-		<div class="cbox layerBox popWidM">
-			<div class="cart-popup__dialog">
-				<div class="cart-popup__header">
-					<span class="cart-popup__header-text">거래처 선택
-						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-					</span>
-				</div>
-				<div class="cart-popup__content payment">
-					<div class="cart-popup__item-info">
-						 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //layer 거래처 선택 -->
-	
-	<!-- layer 거래처 신규 입력 -->
-	<div class="layerWrapper G20601_lp2_pop">
-		<div class="cbox layerBox popWidM">
-			<div class="cart-popup__dialog">
-				<div class="cart-popup__header">
-					<span class="cart-popup__header-text">거래처 신규 입력
-						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-					</span>
-				</div>
-				<div class="cart-popup__content payment">
-					<div class="cart-popup__item-info">
-						 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //layer 거래처 신규입력 -->
- 
-
+	</main> 
 </body>
 </html>

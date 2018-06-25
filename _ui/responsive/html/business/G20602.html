@@ -124,8 +124,8 @@
 			<h1 class="title-h2">ABO TAX</h1>
 			<div class="outer-border-bottom">
 				<ul class="tabs-toggles">
-					<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 작성</span></a></li>
-					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 조회</span></a></li> 
+					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 작성</span></a></li>
+					<li class="tab-toggle-wrap active"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">장부 조회</span></a></li> 
 					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">월간명세서</span></a></li>
 					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">연간명세서</span></a></li>
 				</ul>
@@ -133,24 +133,26 @@
 			<div class="ABOTAX-area">
 				<div class="point-management"> 
 					<div class="form-group date-form-group">
-						<div class="date-range-select">
-							<select class="form-control" id="weekSelect"> 
-								<option>1 주일</option>
-								<option>2 주일</option>
-							</select>
-						</div>
-						<div class="point-date-range date-begin">
-							<div class="box-date-select">  
-								<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+						<label for="weekSelect" class="col-md-4 control-label">조회기간선택</label>
+						<div class="col-md-8">
+							<div class="date-range-select">
+								<select class="form-control" id="weekSelect"> 
+									<option>당일</option> 
+								</select>
 							</div>
-						</div>
-						<div class="date-range-icon"></div>
-						<div class="point-date-range date-end">
-							<div class="box-date-select">  
-								<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+							<div class="point-date-range date-begin">
+								<div class="box-date-select">  
+									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+								</div>
 							</div>
-						</div>
-						<button class="bt-akl-blue" href="#">조회</button>
+							<div class="date-range-icon"></div>
+							<div class="point-date-range date-end">
+								<div class="box-date-select">  
+									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+								</div>
+							</div>
+							<button class="bt-akl-blue" href="#">조회</button>
+						</div> 
 					</div>
 				</div>  
 				 
@@ -161,46 +163,6 @@
 		</div>
 		<div id="quick"></div>
 		<div id="footer"></div>
-	</main>
-		
-	<!-- layer 거래처 선택 -->
-	<div class="layerWrapper G20601_lp1_pop">
-		<div class="cbox layerBox popWidM">
-			<div class="cart-popup__dialog">
-				<div class="cart-popup__header">
-					<span class="cart-popup__header-text">거래처 선택
-						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-					</span>
-				</div>
-				<div class="cart-popup__content payment">
-					<div class="cart-popup__item-info">
-						 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //layer 거래처 선택 -->
-	
-	<!-- layer 거래처 신규 입력 -->
-	<div class="layerWrapper G20601_lp2_pop">
-		<div class="cbox layerBox popWidM">
-			<div class="cart-popup__dialog">
-				<div class="cart-popup__header">
-					<span class="cart-popup__header-text">거래처 신규 입력
-						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-					</span>
-				</div>
-				<div class="cart-popup__content payment">
-					<div class="cart-popup__item-info">
-						 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //layer 거래처 신규입력 -->
- 
-
+	</main> 
 </body>
 </html>
