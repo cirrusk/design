@@ -676,8 +676,8 @@ $(function() {
 
 //사업자등록 여부 확인
 $(function() {
-	$('.checkibo').click(function(event) {
+	$('.checkibo').click(function(event){
 		event.preventDefault();
-		layerPopOver('','.checkibo_pop');
+		layerPopOver(this,'.checkibo_pop');
 	});
 });
