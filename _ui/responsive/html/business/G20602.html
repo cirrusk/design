@@ -140,7 +140,33 @@
 							</div>
 						</div>
 					</div>
-					
+					<div class="point-management">
+						<div class="form-group">
+							<label class="control-label" for="weekSelect">기간 선택</label>
+							<div class="date-range-select">
+								<select class="form-control" id="weekSelect"><!-- week < 주일로 변경 2018.03.12 -->
+									<option>1 주일</option>
+									<option>2 주일</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group date-form-group">
+							<div class="point-date-range date-begin">
+								<div class="box-date-select"><!-- value 년도 순서 변경 2018.03.12 -->
+									<!-- 모바일 :type="date" 로 변경 -->
+									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+								</div>
+							</div>
+							<div class="date-range-icon"></div>
+							<div class="point-date-range date-end">
+								<div class="box-date-select"><!-- value 년도 순서 변경 2018.03.12 -->
+									<!-- 모바일 :type="date" 로 변경 -->
+									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+								</div>
+							</div>
+							<button class="bt-akl-blue" href="#">조회</button>
+						</div>
+					</div>
 					<div class="form-group">
 						<label class="col-md-3 control-label" for="business07">거래내용</label>
 						<div class="col-md-9 col-xs-12 col">
