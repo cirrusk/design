@@ -131,98 +131,29 @@
 				</ul>
 			</div> 
 			<div class="ABOTAX-area">
-				<div class="form-regist"> 
-					<div class="form-group">
-						<label class="col-md-3 control-label" for="date">날짜</label>
-						<div class="col-md-9 col-xs-12 form-item-row"> 
-							<div class="col-xs-12">
-								<input type="text" class="form-control" id="date" placeholder="2018-05-09"> 
-							</div>
-						</div>
-					</div>
-					<div class="point-management">
-						<div class="form-group">
-							<label class="control-label" for="weekSelect">기간 선택</label>
-							<div class="date-range-select">
-								<select class="form-control" id="weekSelect"><!-- week < 주일로 변경 2018.03.12 -->
-									<option>1 주일</option>
-									<option>2 주일</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group date-form-group">
-							<div class="point-date-range date-begin">
-								<div class="box-date-select"><!-- value 년도 순서 변경 2018.03.12 -->
-									<!-- 모바일 :type="date" 로 변경 -->
-									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
-								</div>
-							</div>
-							<div class="date-range-icon"></div>
-							<div class="point-date-range date-end">
-								<div class="box-date-select"><!-- value 년도 순서 변경 2018.03.12 -->
-									<!-- 모바일 :type="date" 로 변경 -->
-									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
-								</div>
-							</div>
-							<button class="bt-akl-blue" href="#">조회</button>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-md-3 control-label" for="business07">거래내용</label>
-						<div class="col-md-9 col-xs-12 col">
-							<select class="form-control" id="business07" title="대분류 선택">
-								<option>대분류</option>
+				<div class="point-management"> 
+					<div class="form-group date-form-group">
+						<div class="date-range-select">
+							<select class="form-control" id="weekSelect"> 
+								<option>1 주일</option>
+								<option>2 주일</option>
 							</select>
-							<select class="form-control" title="소분류 선택">
-								<option>소분류</option>
-							</select>
-						</div> 
-					</div> 
-					 
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business01">거래처</label>
-						<div class="col-md-9 col-xs-12">
-                             <p><input type="text" id="business01" name="" class="form-control"></p>
-                             <button type="button" class="bt-akl-white">검색</button> 
-                         </div>
-					</div> 
-					
-					<div class="form-group">
-						<label class="col-md-3 control-label" for="business02">증빙서류</label>
-						<div class="col-md-9 col-xs-12 col">
-							<select class="form-control" id="business02">
-								<option>선택하세요</option>
-							</select> 
-						</div> 
-					</div>
-					
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business03">공급대가</label>
-						<div class="col-md-9 col-xs-12">
-							<input type="text" class="form-control" id="business03">
-							<span>원</span>
 						</div>
-					</div>
-					
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business04">공급가</label>
-						<div class="col-md-9 col-xs-12">
-							<input type="text" class="form-control" id="business04">
-							<span>원</span> 
+						<div class="point-date-range date-begin">
+							<div class="box-date-select">  
+								<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+							</div>
 						</div>
-					</div>
-					
-					<div class="form-group abo-tex">
-						<label class="col-md-3 control-label" for="business05">부가세</label>
-						<div class="col-md-9 col-xs-12">
-							<input type="text" class="form-control" id="business05"> 
-							<span>원</span>
+						<div class="date-range-icon"></div>
+						<div class="point-date-range date-end">
+							<div class="box-date-select">  
+								<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+							</div>
 						</div>
-					</div> 
-				</div>	 
-				<ul class="list-type2">
-					<li>고정자산과 기부금 내역은  PC버전 (abotax.co.kr)에서 등록해 주세요.</li>
-				</ul> 
+						<button class="bt-akl-blue" href="#">조회</button>
+					</div>
+				</div>  
+				 
 			</div>
 			<div class="button-control">
 				<button type="button" class="bt-akl-blue">저장</button>  
