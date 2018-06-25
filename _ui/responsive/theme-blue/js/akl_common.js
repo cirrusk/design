@@ -1074,7 +1074,7 @@ function event_NewABO_select(){
 	});
 }
 
-/* 온라인 FAX 주문 - 검색영역 열고 닫기 */
+/* 온라인 FAX 주문 - 검색영역 열고 닫기 : 2018.06.25 html로 이동 (개발요청)
 function toggleBox_faxOrder_srch(){
 	var parentsO = $(this).parents('.faxOrder-search-box');
 	var _srchResult = parentsO.find('.shoping-cart-search');
@@ -1089,6 +1089,7 @@ function toggleBox_faxOrder_srch(){
 		_srchResult.hide();
 	});
 }
+*/
 
 /* 온라인 FAX 주문 - 툴팁 : size 조정 */
 function toolTips_conSize(){

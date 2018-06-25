@@ -2275,10 +2275,22 @@ $(function(){
 		$divBizCard.removeClass('collapse');
 	});
 
-	//온라인 FAX 주문 - 검색영역 열고 닫기
+	//온라인 FAX 주문 - 검색영역 열고 닫기 : 2018.06.25 (akl_common.js > html로 이동 - 개발요청)
 	$('.btn-faxOrder-serch').on('click', function(e){
 		e.preventDefault();
-		toggleBox_faxOrder_srch();
+
+		var parentsO = $(this).parents('.faxOrder-search-box');
+		var _srchResult = parentsO.find('.shoping-cart-search');
+		var _closeBtn   = parentsO.find('.btnClosed');
+
+		if(_srchResult.is(':hidden')){
+			_srchResult.show();
+		}
+
+		_closeBtn.on('click',function(e){
+			e.preventDefault();
+			_srchResult.hide();
+		});
 	});
 });
 </script>
