@@ -110,9 +110,6 @@
 	//장바구니 : floating box
 	cartSummaryFixed();
 
-	//온라인 FAX 주문 - 검색영역 열고 닫기
-	toggleBox_faxOrder_srch();
-
 	//온라인 FAX 주문 - 툴팁 사이즈
 	toolTips_conSize();
 	$(window).resize(function(){
@@ -1079,21 +1076,17 @@ function event_NewABO_select(){
 
 /* 온라인 FAX 주문 - 검색영역 열고 닫기 */
 function toggleBox_faxOrder_srch(){
-	$('.btn-faxOrder-serch').on('click', function(e){
+	var parentsO = $(this).parents('.faxOrder-search-box');
+	var _srchResult = parentsO.find('.shoping-cart-search');
+	var _closeBtn   = parentsO.find('.btnClosed');
+
+	if(_srchResult.is(':hidden')){
+		_srchResult.show();
+	}
+
+	_closeBtn.on('click',function(e){
 		e.preventDefault();
-
-		var parentsO = $(this).parents('.faxOrder-search-box');
-		var _srchResult = parentsO.find('.shoping-cart-search');
-		var _closeBtn   = parentsO.find('.btnClosed');
-
-		if(_srchResult.is(':hidden')){
-			_srchResult.show();
-		}
-
-		_closeBtn.on('click',function(e){
-			e.preventDefault();
-			_srchResult.hide();
-		});
+		_srchResult.hide();
 	});
 }
 

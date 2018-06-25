@@ -2274,6 +2274,12 @@ $(function(){
 		$divPersonalCard.addClass('collapse');
 		$divBizCard.removeClass('collapse');
 	});
+
+	//온라인 FAX 주문 - 검색영역 열고 닫기
+	$('.btn-faxOrder-serch').on('click', function(e){
+		e.preventDefault();
+		toggleBox_faxOrder_srch();
+	});
 });
 </script>
 </body>
