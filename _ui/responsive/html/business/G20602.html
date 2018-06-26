@@ -130,36 +130,77 @@
 					<li class="tab-toggle-wrap"><a class="tab-toggle" data-toggle="tab" href="#"><span class="toggle-text">연간명세서</span></a></li>
 				</ul>
 			</div> 
-			<div class="ABOTAX-area">
-				<div class="point-management"> 
-					<div class="form-group date-form-group">
-						<label for="weekSelect" class="col-md-4 control-label">조회기간선택</label>
-						<div class="col-md-8">
-							<div class="date-range-select">
-								<select class="form-control" id="weekSelect"> 
-									<option>당일</option> 
-								</select>
-							</div>
-							<div class="point-date-range date-begin">
-								<div class="box-date-select">  
-									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
-								</div>
-							</div>
-							<div class="date-range-icon"></div>
-							<div class="point-date-range date-end">
-								<div class="box-date-select">  
-									<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
-								</div>
-							</div>
-							<button class="bt-akl-blue" href="#">조회</button>
-						</div> 
+			<div class="point-management">
+				<div class="form-group">
+					<label class="control-label" for="weekSelect">조회기간 선택</label>
+					<div class="date-range-select">
+						<select class="form-control" id="weekSelect">
+							<option>당일</option> 
+						</select>
 					</div>
-				</div>  
-				 
+				</div>
+				<div class="form-group date-form-group">
+					<div class="point-date-range date-begin">
+						<div class="box-date-select"> 
+							<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-22" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="시작일자 선택">
+						</div>
+					</div>
+					<div class="date-range-icon"></div>
+					<div class="point-date-range date-end">
+						<div class="box-date-select"> 
+							<input type="text" maxlength="" class="form_datetime text-center js-qty-selector-input" value="2018-01-29" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput" title="종료일자 선택">
+						</div>
+					</div>
+					<button class="bt-akl-blue" href="#">조회</button>
+				</div>
 			</div>
-			<div class="button-control">
-				<button type="button" class="bt-akl-blue">저장</button>  
-			</div>
+			<div class="ABOTAX-area">
+				<div class="scroll-table widthS-01">
+	                <table class="tblList02 lineLeft">
+	                    <caption>간편장부의 예시</caption>
+	                    <colgroup>
+	                        <col style="width:10%">
+	                        <col style="width:auto">
+	                        <col style="width:8%">
+	                        <col style="width:10%" span="6">
+	                        <col style="width:7%">
+	                    </colgroup>
+	                    <thead>
+	                        <tr class="lineH">
+	                            <th scope="col" rowspan="2">날짜</th>
+	                            <th scope="col" rowspan="2">거래내용</th>
+	                            <th scope="col" rowspan="2">거래처</th>
+	                            <th scope="col" colspan="2">수입(매출)</th>
+	                            <th scope="col" colspan="2">비용<br>(원가관련매입포함)</th>
+	                            <th scope="col" colspan="2">고정자산증감(매매)</th>
+	                            <th scope="col" rowspan="2">비고</th>
+	                        </tr>
+	                        <tr class="lineH">
+	                            <th scope="col" class="lineL">금액</th>
+	                            <th scope="col">부가세</th>
+	                            <th scope="col">금액</th>
+	                            <th scope="col">부가세</th>
+	                            <th scope="col">금액</th>
+	                            <th scope="col">부가세</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <th scope="row" class="bgNone">2002-01-06</th>
+	                            <td class="textL">A상품구입</td>
+	                            <td>암웨이</td>
+	                            <td class="textR"></td>
+	                            <td class="textR"></td>
+	                            <td class="textR">225,000</td>
+	                            <td class="textR">22,500</td>
+	                            <td class="textR"></td>
+	                            <td class="textR"></td>
+	                            <td>세금</td>
+	                        </tr> 
+	                    </tbody> 
+	                </table>
+                </div>
+			</div> 
 		</div>
 		<div id="quick"></div>
 		<div id="footer"></div>

@@ -122,27 +122,33 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .akl .link-btn.off { color: #bbb !important; }
 .akl .pot { color:#e11e45}
 .akl .text-uppercase {text-transform:capitalize;}
-.akl .clearfix:after {content:""; display:block;  clear:both; width: 0; height: 0;}
-.akl .break { display:block;}/* pc에서는 줄바꿈,모바일에서는 줄바꿈이 없는경우 */
-.akl .break-inverse { display: inline;}
+.akl .clearfix:after {content:""; display:block;  clear:both; width: 0; height: 0;} 
 .ellipsis {overflow:hidden; white-space: nowrap;text-overflow: ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-binding:url(/xe/ellipsis.xml#ellipsis)}
 .ellipsis2 {overflow: hidden;text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;word-wrap:break-word;}
-.dis-block { display: block;}
-.dis-inline-block { display: block;}/*모바일용*/
 .akl .amway-theme [role="button"] input[type="submit"], .akl .amway-theme input[type="reset"], .akl .amway-theme input[type="button"], .akl .amway-theme button, .akl .amway-theme .btn {font-weight:500;}
 input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .clearfix:after {content:""; clear:both; display:block;}
 .akl .col-disabled {color:#bbb;}
 .akl a:focus {outline:initial !important;}
-b,strong{font-weight:500; }
+ b,strong{font-weight:500; }
 .akl .title-box {clear:both;display:block;padding:10px 0 0}
-.akl label span { font-size:14px;}
+.akl label span { font-size:14px;} 
+.blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
+.hr {display:block; margin-top:40px; padding-top:40px ; border-top:1px solid #dadada}
+.layerWrapper .hr {margin-top:35px !important; padding-top:35px;} 
+
+/* common > display */
+.dis-block { display: block;}
+.dis-inline-block { display: block;}/*모바일용*/
+.akl .break { display:block;}/* pc에서는 줄바꿈,모바일에서는 줄바꿈이 없는경우 */
+.akl .break-inverse { display: inline;}
+ 
 
 /* common > font-size  */
-.fsize16 {font-size:16px;}
-.fsize15 {font-size:15px;}
-.fsize14 {font-size:14px;}
-.fsize13 {font-size:13px;}
+.fsize16 {font-size:16px !important;}
+.fsize15 {font-size:15px !important;}
+.fsize14 {font-size:14px !important;}
+.fsize13 {font-size:13px !important;}
 
 /* common > font-weight  */
 .akl .f-right {font-weight:300;}
@@ -167,10 +173,17 @@ b,strong{font-weight:500; }
 .akl .container-fluid { overflow: visible; }
 .akl .container-fluid.my-count {padding:0 0;}
 
-/* common > margin */
-.mt25 { margin-top:25px}
-.mgt30 {margin-top:30px !important}
+/* common > margin */ 
 .mgt0 {margin-top:0 !important}
+.mgt5 {margin-top:5px !important}
+.mgt10 {margin-top:10px !important}
+.mgt15 {margin-top:15px !important}
+.mgt20 {margin-top:20px !important}
+.mgt25 {margin-top:25px !important}
+.mgt30 {margin-top:30px !important}
+.mgt35 {margin-top:35px !important}
+.mgt40 {margin-top:40px !important}
+.mgt70 {margin-top:70px !important}
 
 /* common > button */
 .akl .end-control { text-align:center; padding:30px 0 0}
@@ -179,7 +192,7 @@ b,strong{font-weight:500; }
 .akl .btn-blue-white:hover {color:#002f5f;background:#fff}
 .akl .btn-blue-white, .akl .bt-akl-txt {font-size:14px;padding:12px 20px 8px;vertical-align:middle;font-weight:500 !important; border:1px solid #002f5f;min-width: 120px;}
 .akl .bt-akl-blue,.akl .bt-akl-white { min-width: 120px;}
-.akl  .bt-akl-txt { min-width:90px;}
+.akl .bt-akl-txt { min-width:90px;}
 .akl .bt-akl-blue {display:inline-block;background-color:#002F5F; color:#fff;border:1px solid #002F5F; font-size:14px;padding:5px 25px 7px;height:40px;vertical-align:middle;font-weight:500;}
 .akl .bt-akl-blue:hover,.akl .bt-akl-blue:focus,.akl .bt-akl-blue:active {color: #fff ;background-color: #002F5F;border-color: #002F5F;}
 .akl .bt-akl-blue:hover {background: #fff; color:#002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
@@ -222,6 +235,7 @@ b,strong{font-weight:500; }
 .akl .amwahover .product-list__thum img { position:absolute;top: 0; left:0; height: 100%; width:100%; transition: all 0.3s !important; -webkit-transition: all 0.3s !important; }
 
 /* common > h1~h6 */
+h2[class^='title-'] {text-align:left; margin:0}
 .akl h1 {font-size: 32px; letter-spacing: -2px; font-family:'Noto Sans KR', sans-serif; line-height: 140%; font-weight:700;}
 .akl h2 {font-size: 32px; letter-spacing: -2px; font-family:'Noto Sans KR', sans-serif; font-weight:700}
 .akl h3, .akl h4, .akl h5,.akl h6 {font-family:'Noto Sans KR', sans-serif; font-weight:500}
