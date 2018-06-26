@@ -434,8 +434,7 @@ ul.woo-step-box li:last-child:before {background:none}
  
 .akl .amway-theme .business-guide-wrap { margin:38px 0 0} 
 .akl .amway-theme .business-guide-wrap p { margin-bottom:2px}
-.akl .amway-theme .business-guide-wrap .realc{ position:relative; padding:0 0 37px 18px; margin:0 0 40px; border-bottom:1px solid #dadada;}  
-.akl .amway-theme .business-guide-wrap .realc:before {color: #0075a4; content: '\ea4d';position: absolute;left: 0;top: -2px;font-family: 'AmwayIcons'!important;font-size: 18px;}
+.akl .amway-theme .business-guide-wrap .realc{ padding:0 0 37px 0; margin:0 0 40px; border-bottom:1px solid #dadada;}   
 .akl .amway-theme .business-guide-wrap h2{ font-size:16px; font-weight:500; margin:28px 0 20px; text-align:left; letter-spacing:-1px }
 .akl .amway-theme .business-guide-wrap h3{ font-size:14px; font-weight:500; margin:28px 0 18px; color:#56565a }
 .akl .amway-theme .business-guide-wrap h3.num{ margin:26px 0 8px; }
@@ -450,13 +449,16 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .amway-theme .tblList {border-bottom:1px solid #dadada;}
 .akl .amway-theme .tblList thead th {font-size:13px; font-weight:500; text-align:center }
 .akl .amway-theme .tblList tbody th {font-size:14px; font-weight:400; margin:10px 0; color: #333; background-color:#fff; vertical-align:middle; text-align:center} 
+.akl .amway-theme .tblList tbody th.txLeft {text-align:left} 
+
 .akl .amway-theme .tblList td { padding:18px 20px; vertical-align:middle;} 
 .akl .amway-theme .tblList tr:nth-of-type(even) th  {background:#f4f4f4;}
 .akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:none}
 .akl .amway-theme .tblList.textCenter tbody td { text-align:center} 
 .akl .tblList02 thead th {padding:10px 10px; font-size: 13px; font-weight: 500; text-align:center; border-left: 1px solid #e3e3e3;line-height:150%  }
 .akl .tblList02 thead th:first-child { border-left:0; }
-.akl .tblList02 tbody th {  color:#333; background-color:#fff; vertical-align:middle;border-bottom:1px solid #dadada; font-size:14px}  
+.akl .tblList02 tbody th {  color:#333; background-color:#fff; vertical-align:middle;border-bottom:1px solid #dadada; font-size:14px;padding:10px 5px;}  
+.akl .tblList02 tbody th.txLCenter {text-align:center} 
 .akl .tblList02 tbody tr:nth-of-type(even) {background: #fff;}
 .akl .tblList02 tbody td {border-bottom: 1px solid #e3e3e3; padding:10px 15px; vertical-align:middle;}  
 .akl .tblList02 tbody tr td {border-left: 1px solid #e3e3e3; text-align:center}  
@@ -465,7 +467,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .tblList02 tfoot tr:nth-of-type(even) {background: #fff;}
 .akl .tblList02 tfoot td {border-bottom: 1px solid #e3e3e3; padding:10px 15px; vertical-align:middle; font-weight:500; color: #002f5f;}  
 .akl .tblList02 tfoot tr td {border-left: 1px solid #e3e3e3; text-align:center}  
-.akl .tblList02 tfoot tr td.txLeft { text-align:left}   
+.akl .tblList02 tfoot tr td.txLeft { text-align:left}  
 .bizGuide h2 + .bizNumList{margin-top:16px;}
 .bizNumListT + .bizNumList{margin-top:4px;}
 .bizNumList{margin-top:12px;}
@@ -635,6 +637,25 @@ ul.woo-step-box li:last-child:before {background:none}
 .manual-area .mz-item .info .inner .btn-ico {position:absolute; bottom:10px; display:inline-block; width:18px; height:20px;}
 .manual-area .mz-item .info .inner .btn-ico.pdf {right:20px; background:url('/_ui/responsive/theme-blue/images/akl_common/ico_download02.png') 0 0 no-repeat;}  
 
+.point-management + .ABOTAX-area { margin-top:40px;}  
+.point-management.ABOTAX .form-group label { display:block;}
+.point-management.ABOTAX .form-group .date-range-select { float:left; margin-right:10px; width:150px;} 
+.amway-theme .tax-table  {  border-top:1px solid #e3e3e3; margin-bottom:20px;} 
+.amway-theme .tax-table td {border-left:1px solid #e3e3e3;  border-bottom:1px solid #e3e3e3; height:40px; padding:10px 0; text-align:center} 
+.amway-theme .tax-table tr td:first-child {border-left:0;  }
+.amway-theme .tax-table tr.tax-head td { font-weight:500; font-size:13px } 
+.amway-theme .tax-table tr.tax-foot td { font-weight:500; color:#002f5f}
+
+/* ABO TAX */ 
+.ABOTAX-area .form-regist { border-bottom:1px solid #e3e3e3; max-width:100%; padding:22px 0 40px; margin-bottom:20px}
+.ABOTAX-area .form-regist .form-group {position:relative; width:433px;}
+.ABOTAX-area .form-regist .form-group .col select.form-control { width:48%}
+.ABOTAX-area .form-regist .form-group .col select.form-control + select.form-control { float:right}
+.ABOTAX-area .form-regist .form-group.abo-tex p{ margin-right:97px; margin-bottom:0} 
+.ABOTAX-area .form-regist .form-group.abo-tex .bt-akl-white{  position:absolute; right:12px; top:0; min-width:85px;}
+.ABOTAX-area .form-regist .form-group.abo-tex span{ position:absolute; right:25px; top:9px; }
+.ABOTAX-area .form-regist .form-group.abo-tex input{ padding-right:40px }
+.ABOTAX-area .button-control { text-align:center; margin-top:20px;}
 
 /* MAX */
 @media (max-width: 1220px){
@@ -934,6 +955,12 @@ ul.woo-step-box li:last-child:before {background:none}
 	
 	/* 주요 메뉴얼 */ 
 	.manual-area .mz-item {margin:0 0 33px ; float:left; width:100%}
+	
+	/* ABO TAX */  
+	.ABOTAX-area .form-regist .form-group { width:100%;}
+	.ABOTAX-area .form-regist .form-group.abo-tex .bt-akl-white {right:0;}
+	.ABOTAX-area .form-regist .form-group.abo-tex span{ right:15px; }
+	
 }
 
 @media (max-width: 360px) { 
