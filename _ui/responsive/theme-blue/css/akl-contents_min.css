@@ -84,6 +84,7 @@ html.scrollLock body {overflow:hidden;}
 /* RD화면 */
 .akl .layerWrapper .layer-content-wrapper.RD-Viewer {position:relative; max-width:1000px; height:700px; overflow:auto;}
 .akl .layerWrapper .layer-content-wrapper.overFlow {overflow:auto;}
+.RD-Layer {position:absolute; z-index:1;top:0; left:0; right:0; width:100%; padding:15px; border:1px solid #e3e3e3; background:#fff;}
 
 /* TYPE 3 : 제품상세 > 동영상보기 */
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
@@ -381,7 +382,7 @@ html.scrollLock body {overflow:hidden;}
 .tbl-list-board.authorization .tbody .mob-block>p{margin-bottom:0}
 .tbl-list-board.authorization .tbody .tr>div {border-top:0}
 
- 
+
 
 /* 마이페이지 - 맞춤메시지 */
 .akl .message-center-wrapper .next-control {text-align:center;}
@@ -1304,7 +1305,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.tbl-list-board.type-tbody-th .tbody .tr>div,
 	.tbl-list-board.type-tbody-th .tfoot .tr>div {width:100%;}
 
-	/* ----- 마이페이지 ----- */ 
+	/* ----- 마이페이지 ----- */
 	/* jump-menu
 	.akl .go-block .jump-to-wrapper {display:block; margin-top:15px; padding:0 20px; left:0;}
 	.akl .user-account-header .go-block .jump-to {display:block; text-align:left;}
