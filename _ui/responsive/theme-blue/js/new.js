@@ -681,3 +681,15 @@ $(function() {
 		layerPopOver(this,'.checkibo_pop');
 	});
 });
+
+//ABO TAX
+$(function() {
+	$('.G20601_lp1').click(function(event){
+		event.preventDefault();
+		layerPopOver(this,'.G20601_lp1_pop');
+	});
+	$('.G20601_lp2').click(function(event){
+		event.preventDefault();
+		layerPopOver(this,'.G20601_lp2_pop');
+	});
+});

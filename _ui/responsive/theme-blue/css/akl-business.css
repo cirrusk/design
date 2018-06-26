@@ -456,13 +456,15 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .amway-theme .tblList tr:nth-of-type(even) th  {background:#f4f4f4;}
 .akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:none}
 .akl .amway-theme .tblList.textCenter tbody td { text-align:center} 
+.akl .tblList02 { table-layout:fixed; }
 .akl .tblList02 thead th {padding:10px 10px; font-size: 13px; font-weight: 500; text-align:center; border-left: 1px solid #e3e3e3;line-height:150%  }
 .akl .tblList02 thead th:first-child { border-left:0; }
 .akl .tblList02 tbody th {  color:#333; background-color:#fff; vertical-align:middle;border-bottom:1px solid #dadada; font-size:14px;padding:10px 5px;}  
 .akl .tblList02 tbody th.txLCenter {text-align:center} 
 .akl .tblList02 tbody tr:nth-of-type(even) {background: #fff;}
 .akl .tblList02 tbody td {border-bottom: 1px solid #e3e3e3; padding:10px 15px; vertical-align:middle;}  
-.akl .tblList02 tbody tr td {border-left: 1px solid #e3e3e3; text-align:center}  
+.akl .tblList02 tbody tr td {border-left: 1px solid #e3e3e3; text-align:center; padding:10px 0; height:40px }  
+.akl .tblList02 tbody tr td:first-child { border-left:0;} 
 .akl .tblList02 tbody tr td.txLeft { text-align:left} 
 .akl .tblList02 tfoot th {padding:20px 10px; font-weight:500; color: #002f5f; vertical-align:middle;border-bottom:1px solid #dadada; background: #f4f4f4; text-align:center;  }  
 .akl .tblList02 tfoot tr:nth-of-type(even) {background: #fff;}
@@ -644,8 +646,9 @@ ul.woo-step-box li:last-child:before {background:none}
 .amway-theme .tax-table  {  border-top:1px solid #e3e3e3; margin-bottom:20px;} 
 .amway-theme .tax-table td {border-left:1px solid #e3e3e3;  border-bottom:1px solid #e3e3e3; height:40px; padding:10px 0; text-align:center} 
 .amway-theme .tax-table tr td:first-child {border-left:0;  }
-.amway-theme .tax-table tr.tax-head td { font-weight:500; font-size:13px } 
-.amway-theme .tax-table tr.tax-foot td { font-weight:500; color:#002f5f}
+.amway-theme .tax-table tr.tax-head td { font-weight:500; font-size:13px; background: #f4f4f4; } 
+.amway-theme .tax-table tr.tax-foot td { font-weight:500; color:#002f5f; background: #f4f4f4;}
+.amway-theme .tax-table tbody tr:nth-of-type(even) {background:#fff}
 
 /* ABO TAX */ 
 .ABOTAX-area .form-regist { border-bottom:1px solid #e3e3e3; max-width:100%; padding:22px 0 40px; margin-bottom:20px}
@@ -657,6 +660,9 @@ ul.woo-step-box li:last-child:before {background:none}
 .ABOTAX-area .form-regist .form-group.abo-tex span{ position:absolute; right:25px; top:9px; }
 .ABOTAX-area .form-regist .form-group.abo-tex input{ padding-right:40px }
 .ABOTAX-area .button-control { text-align:center; margin-top:20px;}
+.akl .cart-popup__content.payment .form-horizontal.taxpop { padding:0}
+.akl .form-group.taxpopradio label{ padding-top:0; }
+.akl .form-group.taxpopradio .col-md-9 { padding-top:8px}
 
 /* MAX */
 @media (max-width: 1220px){
@@ -948,7 +954,7 @@ ul.woo-step-box li:last-child:before {background:none}
 	.akl .amway-theme .scroll-table.widthS-01 .tblList02{ width:900px} 
 	.akl .amway-theme .scroll-table.widthS-02 .tblList02{ width:900px} 
 	.akl .amway-theme .tblList02 thead th {font-size: 13px; } 
-	.akl .amway-theme .tblList02 tbody td {font-size: 14px; } 
+	.akl .amway-theme .tblList02 tbody td {font-size: 14px; }  
 	 
 	.bizPhoto img,
 	.bizPhoto2 img,  
