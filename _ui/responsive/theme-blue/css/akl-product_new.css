@@ -41,6 +41,7 @@ Version : AKL Hybris UIUX 1.0
 .red02{color:#e82332;}/* .brightred */
 .red03{color:#e11e45 !important;}/* .rosepink */
 .red04 {color:#c25653 !important;} 
+.red05 {color:#b63751}
 
 .yellow{color:#dfaa26 !important;}/* .yellow */
 .yellow01{color:#f1c192;}/* .gold */
@@ -102,7 +103,7 @@ Version : AKL Hybris UIUX 1.0
 .brown06{color:#835c5d}
 
 .beige{color:#ad9172 !important;} 	/*linght-beige drakbeige */
-
+.beige01 {color:#89511f !important;} 
 
 /* 라인이 없거나 있는 경우의 수 추가 */
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
@@ -161,7 +162,7 @@ Version : AKL Hybris UIUX 1.0
 .comp-box dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
 .comp-box dl dt span.blue {display:block;color:#008fc5;font-weight:400;}
 .comp-box dl dd {position:relative;text-align:center;padding:10px 0;height:130px;}
-.comp-box dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px auto 10px;height:50px;padding:0 0;width:100%;}
+.comp-box dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px auto 10px;height:50px;padding:0 10%;width:100%;}
 .comp-box dl dd span {position:absolute;bottom:0;left:0;right:0;text-align:center;}
 .comp-box dl dd span.cc-btn {display:block;margin:0 auto;}
 
@@ -426,7 +427,7 @@ dl.amo-txt dd br {line-height:18px}
 .system-lst2 {margin:0 auto;width:70%;}
 .system-lst2 ul {display:table;width:100%;table-layout:fixed;box-sizing: border-box;margin:0 auto;}
 .system-lst2 ul li {position:relative;float:left;width:50%;text-align:center;vertical-align:middle;margin-bottom:20px;}
-.system-lst2 ul li:after {content:'';display:inline-block;position:absolute;top:50%;left:-6px;width:12px;height:12px;border-radius:50%;background:#e3e3e3;margin-top:-12px;}
+.system-lst2 ul li:after {content:'';display:inline-block;position:absolute;top:50%;left:12px;width:12px;height:12px;border-radius:50%;background:#e3e3e3;margin-top:-12px;}
 .system-lst2 ul li:nth-child(2n+1):after {display:none;}
 .system-lst2 ul li .lst-won {margin:0 auto;width:140px;vertical-align:middle;}
 .system-lst2 ul li .lst-won p {height:140px;vertical-align:middle;padding:0;margin:0;}
@@ -640,7 +641,6 @@ dl.mark-area dd {display:block;font-size:14px;color:#808285;font-weight:300;}
 dl.mark-area dd span {display:block;font-size:18px;font-weight:400;}
 dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 
-
 /* 뉴트리라이트 파운데이션 트리오 번들팩 */
 .visual-area.type03.bundlepack {min-height:950px;}
 .pcomp-area.bundlepack {border-bottom:1px solid #e3e3e3;padding:20px 0 30px;margin-bottom:70px}
@@ -726,6 +726,7 @@ span.txt-next {display:block;}
 .advantage-area .sie-box .com-tit .small  sup  {top:-0.8em}
 .txt-info-visual.ar1616 .v-etc {margin:20px 0 0}
 
+/* 메이크업 */
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 
@@ -924,12 +925,14 @@ span.txt-next {display:block;}
 	.system-lst ul li .lst-won p span img {height:80px;width:auto;}
 	.system-lst ul li .lst-won span {display:table;width:100%;letter-spacing:-1px;font-size:12px;}
 
-	.system-lst2 {margin:30px auto 0;width:80%;}
-	.system-lst2 ul li:after {top:50%;left:-3px;width:6px;height:6px;margin-top:-6px;}
-	.system-lst2 ul li .lst-won {width:70px;}
-	.system-lst2 ul li .lst-won p {height:inherit;}
-	.system-lst2 ul li .lst-won p img {width:inherit;height:auto;}
-	.system-lst2 ul li .lst-won span  {font-size:12px;height:42px;line-height:14px;}
+	.system-lst2 {margin:20px auto 0;width:100%;}
+	.system-lst2 ul li:after {margin-top:-10px;}
+
+	.system-lst2 ul li .lst-won {width:100px;}
+	.system-lst2 ul li .lst-won p {height:auto;}
+	.system-lst2 ul li .lst-won p img {width:inherit;height:inherit;}
+	.system-lst2 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;}
+
 	
 	.system-lst3 {margin:30px auto 0;width:100%;}
 	.system-lst3 ul li:after {top:50%;left:-3px;width:6px;height:6px;margin-top:-20px;}
