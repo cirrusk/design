@@ -399,47 +399,58 @@ Version : AKL Hybris UIUX 1.0
 .tbl-list-board .w13 {width:13%}
 .tbl-list-board .w15 {width:15%}
 .tbl-list-board .w18 {width:18%}
+.tbl-list-board .w20 {width:20%}
+.tbl-list-board .w30 {width:30%}
 
 .bg-bar > * + *:before {content:""; display:inline-block; height:10px; border-left:1px solid #e3e3e3; vertical-align:middle; padding-left:20px; margin-left:20px}
 .bg-bar > * {vertical-align:middle}
 .row.bg-bar > * + *:before {display:none}
 .row.bg-bar > * + * {border-left:1px solid #e3e3e3;}
 
-.link-txt.type01 {font-weight:700; color:#007eb0; background-color:transparent; padding:0}
-.link-txt.type01 .icon-chevron-right {display:inline-block; font-size:18px; vertical-align:middle; margin-top:-2px}
+.link-btn .icon-chevron-right {display:inline-block; font-size:18px; vertical-align:middle; margin-top:-2px}
 
-[class^="ico-comm"] {display:inline-block; vertical-align:middle; text-indent:-999px; overflow:hidden;}
-.ico-comm.mark01 {width:18px; height:18px; margin:-2px 7px 0 0; background:url("../images/akl_common/icon_mem.png") no-repeat;}
-
-.center-wel {margin:40px 0 30px; text-align:center; color:#002f5f}
-.center-wel.bg-bar > span + span:before {height:30px; padding-left:30px; margin:-3px 0 0 30px}
-.center-wel img {width:134px}
-.center-wel img + span:before {display:none}
-.center-wel span {display:inline-block; height:45px}
-.center-wel img + span {margin:-7px 0 0 5px; font-size:34px; font-weight:700; letter-spacing:-0.06em}
-.center-wel span + span {padding-top:10px; font-size:19px; font-weight:700; letter-spacing:-0.04em}
+[class^="icons"] {display:inline-block; vertical-align:middle; text-indent:-9999px; font-size:0; overflow:hidden;}
+.icons-mark01 {width:18px; height:18px; margin:-2px 7px 0 0; background:url("../images/akl_common/icon_mem.png") no-repeat;}
 
 .info-icotype {display:table; padding:50px 0; background-color:#fafafa}
 .info-icotype li {display:table-cell; padding:0 20px; text-align:center}
 .info-icotype li + li {border-left:1px solid #e3e3e3}
 .info-icotype li em {display:block; font-weight:500; margin-bottom:5px;}
 .info-icotype.service01 li {width:25%}
-.info-icotype.service01 li:before {content:""; display:inline-block; width:50px; height:50px; background-position:50% 50%; background-size:96%; background-repeat:no-repeat}
+.info-icotype.service01 li:before {content:""; display:inline-block; width:58px; height:58px; background-position:50% 50%; background-size:94%; background-repeat:no-repeat}
 .info-icotype.service01 li:nth-child(1):before {background-image:url("../images/akl_common/customer/ico_service01.png");}
 .info-icotype.service01 li:nth-child(2):before {background-image:url("../images/akl_common/customer/ico_service02.png");}
 .info-icotype.service01 li:nth-child(3):before {background-image:url("../images/akl_common/customer/ico_service03.png");}
 .info-icotype.service01 li:nth-child(4):before {background-image:url("../images/akl_common/customer/ico_service04.png");}
 
-.service-area .panel-heading+.panel-collapse>.panel-body {padding-bottom:40px !important}
+.tbl-top.tbl-type .right {text-align:right}
 
 .tit-mark01 {display:block; font-weight:500}
 .tit-mark01 + .list-type5 {margin:4px 0 0 28px}
 
-.service-kind {padding:0 50px}
-.service-kind .row li {text-align:center}
-.service-kind .row li img {margin-top:20px}
-.service-kind .row li em {display:block; margin-top:12px; font-weight:500; color:#00305e}
-.service-kind .row li p {margin:3px 0; font-size:13px}
+.service-area .panel-heading+.panel-collapse>.panel-body {padding-bottom:40px !important}
+
+.service-area .center-wel {margin:40px 0 30px; text-align:center; color:#002f5f}
+.service-area .center-wel.bg-bar > span + span:before {height:30px; padding-left:30px; margin:-3px 0 0 30px}
+.service-area .center-wel img {width:134px}
+.service-area .center-wel img + span:before {display:none}
+.service-area .center-wel span {display:inline-block; height:45px}
+.service-area .center-wel img + span {margin:-7px 0 0 5px; font-size:34px; font-weight:700; letter-spacing:-0.06em}
+.service-area .center-wel span + span {padding-top:10px; font-size:19px; font-weight:700; letter-spacing:-0.04em}
+
+.service-area .service-kind {padding:0 50px}
+.service-area .service-kind .row li {text-align:center}
+.service-area .service-kind .row li img {margin-top:20px}
+.service-area .service-kind .row li em {display:block; margin-top:12px; font-weight:500; color:#00305e}
+.service-area .service-kind .row li p {margin:3px 0; font-size:13px}
+
+.service-area .tech-center01 {background-color:#f6f6f6}
+.service-area .tech-center01 > div {width:50%}
+.service-area .tech-center01 .left {text-align:right; padding-top:50px;}
+.service-area .tech-center01 .left .icons {width:348px; height:179px; background-image:url("../images/akl_common/customer/img_callcenter01.png");}
+.service-area .tech-center01 .right {text-align:left; padding-left:50px; line-height:26px}
+.service-area .tech-center01 .right em {display:inline-block; margin-top:25px; font-size:16px; font-weight:500; color:#002f5f}
+.service-area .tech-center01 .right p {margin-top:5px}
 
 .service-area .date-form-group {display:inline-flex} 
 .service-area .date-form-group .box-date-select {position:relative; width:200px}
@@ -447,7 +458,8 @@ Version : AKL Hybris UIUX 1.0
 .service-area .date-form-group .date-range-icon {width:15px; margin:0 10px}
 .service-area .date-form-group .date-range-icon {border-top:2px solid #ddd; position:relative; top:20px}
 
-.service-area .tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong, .service-area .tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div {padding-left:15px}
+.service-area .tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong, 
+.service-area .tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div {padding-left:15px}
 
 .apply-form .tit {display:block; margin-top:20px; font-size:16px; font-weight:500}
 .apply-form .tit.fsize14 {font-size:14px !important}
@@ -524,10 +536,20 @@ Version : AKL Hybris UIUX 1.0
 	.row.bg-bar > * + * {margin-top:20px; border-left:0; border-top:1px solid #e3e3e3}
 	.service-kind {padding:0}
 	
+	.tbl-top.tbl-type > * {display:block}
+	.tbl-top.tbl-type .right {text-align:left}
+	.tbl-list-board.type02 .mob-block > * {width:100% !important; text-align:left !important}
+	
 	.service-area .form-group.date-form-group {display:block; margin-top:0}
 	.service-area .form-group .box-date-select {width:100%}
 	.service-area .form-group .box-date-select input {font-size:14px}
 	.service-area .form-group.date-form-group .date-range-icon {top:0; margin:10px auto}
+	
+	.service-area .tech-center > div {display:block; width:100%}
+	.service-area .tech-center .left {text-align:center; padding-top:50px;}
+	.service-area .tech-center .left .icons {width:290px; height:135px; background-size:contain; background-image:url("../images/akl_common/customer/img_callcenter02.png");}
+	.service-area .tech-center .right {padding-left:20px; height:155px; line-height:26px}
+	.service-area .tech-center .right em {margin-top:35px}
 	
 	.apply-form .dl-form-group .form-group .col-sm-2,
 	.apply-form .dl-form-group .form-group .col-sm-10 {display:block !important; width:100% !important}
