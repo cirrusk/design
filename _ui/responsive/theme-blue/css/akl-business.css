@@ -960,7 +960,7 @@ ul.woo-step-box li:last-child:before {background:none}
 	.akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:block; color: #002f5f; font-weight:500} 
 	.akl .amway-theme .scroll-table { overflow-y:none; overflow-x:auto;}
 	.akl .amway-theme .scroll-table.widthS-01 .tblList02{ width:900px} 
-	.akl .amway-theme .scroll-table.widthS-02 .tblList02{ width:900px} 
+	.akl .amway-theme .scroll-table.widthS-02 .tblList02{ width:900px}  
 	.akl .amway-theme .tblList02 thead th {font-size: 13px; } 
 	.akl .amway-theme .tblList02 tbody td {font-size: 14px; }  
 	 
@@ -984,10 +984,17 @@ ul.woo-step-box li:last-child:before {background:none}
 	
 }
 
+@media (max-width: 500px) { 
+	/* ABO TAX */ 
+	.akl .scroll-table.widthS-03 {overflow-x:scroll;}
+	.akl .scroll-table.widthS-03 .tblList02{ width:540px} 
+}
+
 @media (max-width: 360px) { 
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
-	.box-ratio ul li.thead div span:nth-of-type(1),.box-ratio ul li.tbody div span:nth-of-type(1) { height:110px }
+	.box-ratio ul li.thead div span:nth-of-type(1),.box-ratio ul li.tbody div span:nth-of-type(1) { height:110px } 
 }
+
 
 @media (max-width: 320px) {
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
