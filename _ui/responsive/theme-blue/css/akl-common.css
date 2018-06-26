@@ -397,7 +397,35 @@ h2[class^='title-'] {text-align:left; margin:0}
 .col-search-tab.card ul li {width:20%;}
 .col-search-tab.card ul li:last-child {border-right:1px solid #dadada}
 
+/** ---------------------------------
+ * @ 공통 : step
+ * ----------------------------------
+ */
+.step-wrap + .h4-txt {margin-top:-20px;}
+.akl .layerWrapper .checkout-steps {padding:0;}
+.akl .step-wrap .checkout-steps {margin-bottom:20px; padding:0 !important;}
 
+.checkout-steps-circle, .checkout-steps-circleactive {display:none;}
+.checkout-steps {display:table; width:100%; max-width:1400px; margin:0 auto; padding:0 12px; font-size:12px; line-height:initial;}
+.checkout-step {position:relative; display:table-cell; height:60px; padding:0; vertical-align:middle; font-size:16px; font-weight:500; line-height:initial; text-align:center; text-transform:none; color:#55565a; border:1px solid #dadada; border-width:1px 0 1px 1px; background:#f4f4f4;}
+.checkout-step:before, .checkout-step:after {content:''; position:absolute; top:0; border-top:30px solid transparent; border-bottom:30px solid transparent;}
+.checkout-step:before {left:0; border-left:13px solid #dadada;}
+.checkout-step:after {left:100%; z-index:20; border-left:13px solid #F4F4F4;}
+.checkout-steps-active:after {border-left-color:#fff;}
+.checkout-step:first-child::before, .checkout-step:last-child::after{border:none;}
+.checkout-step:last-child {border-right:1px solid #dadada;}
+.checkout-steps-active:after {border-left-color:#fff;}
+.checkout-steps-text {position:relative; display:inline-block; padding-left:30px; margin:0; vertical-align:middle; -webkit-transform:none; -ms-transform:none; transform:none;}
+.checkout-steps-text:before, .checkout-steps-before .checkout-steps-text:before {content:'\e909'; position:absolute; top:3px; left:0; display:block; width:20px; height:20px; margin:0; padding:5px 0 0; box-sizing:border-box; color:#929292; border:1px solid #929292; background:transparent; font-family:'AmwayIcons' !important; font-size:10px; font-weight:100; border-radius:100%; box-shadow:0;}
+.checkout-steps-active {color:#0075a4; background:#fff;}
+.checkout-steps-active .checkout-steps-text:before {border-color:#0075a4; color:#0075a4;}
+.checkout-steps-before .checkout-steps-text {margin-left:0;color:#56565a;}
+.checkout-steps-before .checkout-steps-text:before {color:#fff; border-color:#0075a4; background:#0075a4;}
+
+/* 스텝 사이즈 */
+.checkout-steps .checkout-step {width:25%; letter-spacing:-1px;}
+.checkout-steps.num03 .checkout-step {width:33.3333%;}
+.shipping-delivery .checkout-steps .checkout-step {float:none; width:50%;}
 
 /* common > toggle */
 .akl .akl-toggle-wrap .accordion-custom {padding: 0 0;}
@@ -582,34 +610,6 @@ ul .ol-list { margin:10px 0 20px 15px}
 /* common > box */
 .refund-box {border:1px solid #e3e3e3;padding:18px 20px 10px;margin-top:20px;}
 .refund-box h5 {font-size:13px;padding:0;margin:0;}
-
-/* common > tab : 작업중
-.amway-theme .tabs-toggles .tab-toggle-wrap {min-width:120px;}
-.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {width:100%; height:50px; padding:0 20px; text-align:center; word-break:break-all; display:flex; align-items:center;}
-.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; width:100%; font-weight:500; font-size:14px; line-height:120%; word-break:break-all;}
-.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {position:relative; padding-top:0; text-transform:none; border-top:0;}
-.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {content:''; position:absolute; top:0; left:0; width:100%; height:4px; background:#008fc5;}
-.amway-theme .tabs-toggles.width-auto .tab-toggle-wrap {min-width:auto;}
-.amway-theme .tabs-toggles.width-auto .tab-toggle-wrap .tab-toggle {padding:0 5px;}
-.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display:inline-block;}
-.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap {min-width:160px;}
-.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:160px;}
-*/
-/* common > step */
-.step-wrap .checkout-steps .checkout-step {width: 25%; text-transform: capitalize;font-weight:500;font-size: 16px; letter-spacing: -1px }
-.step-wrap .checkout-step {width:25%;font-weight:500;}
-.step-wrap .checkout-steps.num03 .checkout-step {width: 33.33333%; }
-.step-wrap .checkout-steps-circle {left: 25px; height: 25px; width: 25px; line-height:20px; padding-right: 1px;}
-.step-wrap .checkout-steps-circleactive {left: 20px; height: 25px;width: 25px;line-height:20px; padding-right:2px;}
-.step-wrap .checkout-steps-text {left: 55px;}
-.step-wrap  .checkout-steps-before .checkout-steps-text { margin-left: 0}
-.step-wrap .checkout-step:after { border-left: 13px solid #F4F4F4;}
-.step-wrap .checkout-step:before {border-left: 13px solid #dadada;}
-.step-wrap .checkout-steps-active:after {border-left-color: #fff;}
-.step-wrap .checkout-steps-circle {font-size: 14px; line-height:22px; }
-.step-wrap + .h4-txt { margin-top: -20px}
-.akl .layerWrapper .checkout-steps { padding: 0 0;}
-.akl .step-wrap .checkout-steps { margin-bottom:20px; padding:0 !important;  }
 
 /* common > product label */
 .akl .plp-item-label-wrap { position:absolute; left:0; top:0}
@@ -1060,7 +1060,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* 회원가입 완료 (하단 브랜드 링크) */
 	#join_featured_brandsList.owl-carousel .owl-item img {width:auto; display:inline-block;}
 
-
 	/** ---------------------------------
 	 * @ 공통 : 탭 (MOB)
 	 * ----------------------------------
@@ -1119,6 +1118,35 @@ label + .toolTip-wrapper {margin-left:6px;}
 		background: -webkit-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
 		background:       linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
+
+	/** ---------------------------------
+	 * @ 공통 : step
+	 * ----------------------------------
+	 */
+	.checkout-steps-text:before, .checkout-steps-before .checkout-steps-text:before {top:0;}
+	.checkout-step .checkout-steps-text {overflow:hidden; width:0; height:22px; padding-left:20px; margin-left:18px; font-size:14px;}
+	.checkout-steps-active .checkout-steps-text {width:auto; padding-left:26px; margin-left:0; vertical-align:middle;}
+
+	/* 비활성화 상태 */
+	.checkout-steps .checkout-step, .checkout-steps.num03 .checkout-step {width:50px;}
+	.checkout-steps .checkout-step:nth-of-type(1) .checkout-steps-text {margin-left:10px;}
+	.checkout-steps .checkout-step:nth-of-type(1), .checkout-steps.num03 .checkout-step:nth-of-type(1) {width:40px;}
+	.checkout-steps .checkout-step:nth-last-child(1) .checkout-steps-text {margin-left:12px;}
+	.checkout-steps .checkout-step:nth-last-child(1), .checkout-steps.num03 .checkout-step:nth-last-child(1) {width:55px;}
+
+	/* 스텝4 (기본) */
+	.checkout-steps .checkout-steps-active,
+	.checkout-steps .checkout-steps-active.checkout-step:nth-of-type(1),
+	.checkout-steps .checkout-steps-active.checkout-step:nth-last-child(1) {width:calc(100% - 155px);}
+
+	/* 스텝3 */
+	.checkout-steps.num03 .checkout-steps-active,
+	.checkout-steps.num03 .checkout-steps-active.checkout-step:nth-of-type(1),
+	.checkout-steps.num03 .checkout-steps-active.checkout-step:nth-last-child(1) {width:calc(100% - 90px);}
+
+	/* 스텝2 */
+	.shipping-delivery .checkout-steps .checkout-steps-active {width:calc(100% - 55px);}
+
 
 	/*** 404error화면 ***/
 	.error-wrap { display:flex; align-items:center; height:100%; width:100%; /*display:table; position:fixed; left:0; top:0; bottom:0;*/ }
@@ -1183,17 +1211,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .title-box {padding: 10px 0 26px;}
 	.akl .title-box {padding: 10px 0 26px;}
 	.akl .product-list-page-title {font-size: 24px;}
-
-	/* common > step */
-	.step-wrap .checkout-steps .checkout-step{width: 18%;font-size: 14px;}
-	.step-wrap .checkout-steps.num03 .checkout-step {width:15%;font-size: 14px;}
-	.step-wrap .checkout-steps .checkout-steps-active {width:40%;}
-	.step-wrap .checkout-steps.num03 li:nth-of-type(1).checkout-steps-active {width:58%;}
-	.step-wrap .checkout-steps.num03 li:nth-of-type(2).checkout-steps-active {width:58%;}
-	.step-wrap .checkout-steps.num03 li:nth-of-type(3).checkout-steps-active {width:65%;}
-	.step-wrap .checkout-steps-circle {left: 25px; height: 25px;width: 25px;}
-	.step-wrap .checkout-steps-text { /*left: 55px;*/left: 20px;}
-	.step-wrap .checkout-steps-circleactive {left: 20px; height:25px; width:25px;}
 
 	/* common > poppup */
 	.akl .cbox.popWidS {width:100% }
