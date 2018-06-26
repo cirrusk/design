@@ -4,7 +4,7 @@
 .business-pop-cont { padding-top:10px; }  
 .business .list-content.business-type01 .content-list {padding:0}
 .business .list-content.business-type01 .content-list li { display:table-row; text-align:center; background: #fff; box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
-.business .list-content.business-type01 .content-list li > div { padding:5px 20px  } 
+.business .list-content.business-type01 .content-list li > div { padding:10px 20px  } 
 
 .business .list-content.business-type01 .content-list li:nth-child(even) {background:#f4f4f4;} 
 .business .list-content.business-type01 .bt-akl-txt.list-type01 {min-width:0; height:auto; padding:0; border:0; background-color:initial} 
@@ -450,12 +450,12 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .amway-theme .tblList {border-bottom:1px solid #dadada;}
 .akl .amway-theme .tblList thead th {font-size:13px; font-weight:500; text-align:center }
 .akl .amway-theme .tblList tbody th {font-size:14px; font-weight:400; margin:10px 0; color: #333; background-color:#fff; vertical-align:middle; text-align:center} 
-.akl .amway-theme .tblList tbody th.txLeft {text-align:left} 
-
+.akl .amway-theme .tblList tbody th.txLeft {text-align:left}  
 .akl .amway-theme .tblList td { padding:18px 20px; vertical-align:middle;} 
 .akl .amway-theme .tblList tr:nth-of-type(even) th  {background:#f4f4f4;}
 .akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:none}
-.akl .amway-theme .tblList.textCenter tbody td { text-align:center} 
+.akl .amway-theme .tblList.textCenter tbody td { text-align:center}
+ 
 .akl .tblList02 { table-layout:fixed; }
 .akl .tblList02 thead th {padding:10px 10px; font-size: 13px; font-weight: 500; text-align:center; border-left: 1px solid #e3e3e3;line-height:150%  }
 .akl .tblList02 thead th:first-child { border-left:0; }
@@ -626,10 +626,17 @@ ul.woo-step-box li:last-child:before {background:none}
 .marLeft { margin-left:15px;} 
 .marLeft p.listWarning { font-size:14px}
 
+/* 비즈니스 가이드 > BO의 유형별 부가가치세 납세의무 */
+.akl .amway-theme .G20750-wrap table { margin-left:38px; margin-bottom:20px}
+.akl .amway-theme .tblList.G20750 tbody td{ text-align:center}  
+.akl .amway-theme .G20750-tit {font-weight:500;color:#56565a;}
+.akl .amway-theme .G20750-tit mark{color:#56565a;background-color:#fff; display:inline-block; width:30px; height:30px; text-align:center; font-weight:500; border-radius:36px; border:1px solid #ccc; margin-right:8px; vertical-align:middle;}
+.akl .amway-theme .tblList.G20750 tbody td .th-title-mob { display:none}
+
 /* 주요 메뉴얼 */ 
 .manual-area {padding:0 10px !important; width:100%; max-width:100%; overflow:hidden;}
 .manual-area .mz-item {margin:0 1% 33px ; border:2px solid #f4f4f4; float:left; width:23%}
-.manual-area .mz-item:hover .thumb {background-color:#bbbbbb}
+.manual-area .mz-item:hover .thumb {background-color:#bbb}
 .manual-area .mz-item:hover .info {background-color:#f4f4f4}
 .manual-area .mz-item .thumb {padding:16px 10px; text-align:center; background-color:#f4f4f4; border-bottom:2px solid #f4f4f4}
 .manual-area .mz-item .thumb img { display:inline-block; width:100%; max-width:181px; }
@@ -960,6 +967,12 @@ ul.woo-step-box li:last-child:before {background:none}
 	.bizPhoto2 img,  
 	.bizPhoto3 img { display:block; width:100%} 
 	
+	/* 비즈니스 가이드 > BO의 유형별 부가가치세 납세의무 */
+	.akl .amway-theme .G20750-wrap table { margin-left:38px; margin-right:12px; margin-top:10px; width:auto; display:block; padding-top:10px; }
+	.akl .amway-theme .tblList.G20750 tbody thead { display:none}
+	.akl .amway-theme .tblList.G20750 tbody td { display:block; text-align:left} 
+	.akl .amway-theme .tblList.G20750 tbody td .th-title-mob { display:block; font-weight:500; color:#002f5f}
+
 	/* 주요 메뉴얼 */ 
 	.manual-area .mz-item {margin:0 0 33px ; float:left; width:100%}
 	
