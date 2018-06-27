@@ -394,6 +394,8 @@ Version : AKL Hybris UIUX 1.0
 .call-center .number > li:nth-child(4) ol li {display:block; width:200px}
 
 /* 암웨이 서비스센터 */
+.tbl-top + .tbl-list-board, .title-h6 + .tbl-list-board, .title-h6 + .txt, .txt + .tbl-list-board {margin-top:15px}
+
 .akl .bt-akl-white.mini.type02 {min-width:53px; margin-left:3px}
 .tbl-list-board .w12 {width:12%}
 .tbl-list-board .w13 {width:13%}
@@ -401,6 +403,10 @@ Version : AKL Hybris UIUX 1.0
 .tbl-list-board .w18 {width:18%}
 .tbl-list-board .w20 {width:20%}
 .tbl-list-board .w30 {width:30%}
+
+.tbl-type1.line-st {}
+.tbl-type1.line-st tbody tr:nth-of-type(even) {background-color:#fff}
+.tbl-type1.line-st td + td, .tbl-type1.line-st th + th  {border-left:1px solid #e3e3e3}
 
 .bg-bar > * + *:before {content:""; display:inline-block; height:10px; border-left:1px solid #e3e3e3; vertical-align:middle; padding-left:20px; margin-left:20px}
 .bg-bar > * {vertical-align:middle}
@@ -440,7 +446,7 @@ Version : AKL Hybris UIUX 1.0
 
 .service-area .service-kind {padding:0 50px}
 .service-area .service-kind .row li {text-align:center}
-.service-area .service-kind .row li img {margin-top:20px}
+.service-area .service-kind .row li img {margin-top:20px; width:100px}
 .service-area .service-kind .row li em {display:block; margin-top:12px; font-weight:500; color:#00305e}
 .service-area .service-kind .row li p {margin:3px 0; font-size:13px}
 
@@ -452,7 +458,15 @@ Version : AKL Hybris UIUX 1.0
 .service-area .tech-center01 .right em {display:inline-block; margin-top:25px; font-size:16px; font-weight:500; color:#002f5f}
 .service-area .tech-center01 .right p {margin-top:5px}
 
-.service-area .date-form-group {display:inline-flex} 
+.service-area .tech-center02 {margin-top:20px}
+.service-area .tech-center02 .left {width:220px; text-align:center}
+.service-area .tech-center02 .left img {}
+.service-area .tech-center02 .right {}
+.service-area .tech-center02 .right .list-type5 .list-type1 {margin-top:3px}
+.service-area .tech-center02 .right .list-type5 em {font-weight:500}
+.service-area .tech-center02 .right .btn-wrap a {margin-left:12px}
+
+.service-area .date-form-group {display:inline-block} 
 .service-area .date-form-group .box-date-select {position:relative; width:200px}
 .service-area .date-form-group .box-date-select input {width:100% !important}
 .service-area .date-form-group .date-range-icon {width:15px; margin:0 10px}
@@ -540,16 +554,21 @@ Version : AKL Hybris UIUX 1.0
 	.tbl-top.tbl-type .right {text-align:left}
 	.tbl-list-board.type02 .mob-block > * {width:100% !important; text-align:left !important}
 	
+	.service-area .tech-center02 .left {display:block; width:100%; margin-top:20px}
+	.service-area .tech-center02 .left img {width:100px}
+	.service-area .tech-center02 .right {display:block; margin-top:30px}
+	.service-area .tech-center02 .right .btn-wrap a {margin-top:0}
+	
 	.service-area .form-group.date-form-group {display:block; margin-top:0}
 	.service-area .form-group .box-date-select {width:100%}
 	.service-area .form-group .box-date-select input {font-size:14px}
 	.service-area .form-group.date-form-group .date-range-icon {top:0; margin:10px auto}
 	
-	.service-area .tech-center > div {display:block; width:100%}
-	.service-area .tech-center .left {text-align:center; padding-top:50px;}
-	.service-area .tech-center .left .icons {width:290px; height:135px; background-size:contain; background-image:url("../images/akl_common/customer/img_callcenter02.png");}
-	.service-area .tech-center .right {padding-left:20px; height:155px; line-height:26px}
-	.service-area .tech-center .right em {margin-top:35px}
+	.service-area .tech-center01 > div {display:block; width:100%}
+	.service-area .tech-center01 .left {text-align:center; padding-top:50px;}
+	.service-area .tech-center01 .left .icons {width:290px; height:135px; background-size:contain; background-image:url("../images/akl_common/customer/img_callcenter02.png");}
+	.service-area .tech-center01 .right {padding-left:20px; height:155px; line-height:26px}
+	.service-area .tech-center01 .right em {margin-top:35px}
 	
 	.apply-form .dl-form-group .form-group .col-sm-2,
 	.apply-form .dl-form-group .form-group .col-sm-10 {display:block !important; width:100% !important}
