@@ -501,7 +501,7 @@ Version : AKL Hybris UIUX 1.0
 .apply-form .list-type2 li, .apply-form .txt-italic {font-size:13px !important}
 .apply-form textarea.form-control {width:550px; height:100px; min-height:auto}
 .apply-form input[type=checkbox] + label {margin-left:0}
-.apply-form .inp-m {width:280px}
+.apply-form .inp-m, .inp-m {width:280px !important}
 .apply-form input + button {margin-left:7px}
 .apply-form .dl-form-group .form-group {margin-top:10px}
 .apply-form .dl-form-group.txt .form-group {margin-top:18px}
@@ -549,6 +549,8 @@ Version : AKL Hybris UIUX 1.0
 
 @media (max-width: 768px) {
 	/* 암웨이 서비스센터 */
+	.form-group select.form-control {width:100% !important}
+	
 	.row.bg-bar > * + * {margin-top:20px; border-left:0; border-top:1px solid #e3e3e3}
 	.service-kind {padding:0}
 	
