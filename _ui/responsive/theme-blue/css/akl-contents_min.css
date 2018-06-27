@@ -84,12 +84,12 @@ html.scrollLock body {overflow:hidden;}
 /* RD화면 */
 .akl .layerWrapper .layer-content-wrapper.RD-Viewer {position:relative; max-width:1000px; height:700px; overflow:auto;}
 .akl .layerWrapper .layer-content-wrapper.overFlow {overflow:auto;}
-.RD-Layer {position:absolute; z-index:1; top:0; left:0; right:0; width:100%; padding:40px 20px; border:1px solid #e3e3e3; background:#fff;}
-
-.RD-Layer .subLayer-title { padding:0 0 15px; margin:20px 20px 0; font-size:22px; font-weight:500; color:#002f5f; border-bottom:1px solid #e3e3e3; letter-spacing:-0.05em;}
-
-.RD-Layer .subLayer-close { right: 30px; padding:5px 15px; }
-
+.RD-Layer {position:absolute; z-index:1; top:0; left:0; right:0; width:100%; padding:40px 40px 20px; border:1px solid #002f5f; background:#fff;}
+.RD-Layer .subLayer-title { padding:0 0 15px; margin:0 0 20px; font-size:22px; font-weight:500; color:#002f5f; border-bottom:1px solid #e3e3e3; letter-spacing:-0.05em;}
+.RD-Layer .subLayer-close { right: 30px; padding:5px 15px;}
+.RD-Layer .subLayer-content .list-type5>li{ line-height:1.5; margin-top:5px;}
+.RD-Layer .subLayer-btn {margin-top:20px;text-align:center;}
+.RD-Layer .closeSbLayer { display:block; position:absolute; top:40px; right:40px; background:url("../images/akl_common/ico_closed.png") no-repeat;width:18px;height:18px;}
 
 /* TYPE 3 : 제품상세 > 동영상보기 */
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
@@ -1246,6 +1246,10 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.col-equality-tab ul li.active a {height:50px;}
 	.col-equality-tab ul li.active a:after { content:""; position:absolute; z-index:2; top:auto; bottom:0; left:0; right:0;  border-top: 4px solid #008fc5;}
 	.akl .layerWrapper .cbox.typeAdminAdd .tb-box {padding:0 20px;}
+
+	/* RD화면 */
+	.RD-Layer {padding:20px 20px 20px;}
+	.RD-Layer .closeSbLayer {top:20px; right:20px;}
 
 	/* ----- form-group ----- */
 	/* form-group basic 추가 */

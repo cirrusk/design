@@ -556,22 +556,41 @@
 					</div>
 				</div>
 				<div class="layer-content-wrapper RD-Viewer">
-					<!-- 수정 : 2018.06.26 (추가) -->
+					<!-- 수정 : 2018.06.27 -->
 					<div class="RD-Layer">
-						성취보고서 안내문구<br>성취보고서 안내문구<br>성취보고서 안내문구<br>
+						<p class="subLayer-title">성취보고서 안내</p>
+						<a href="#" class="closeSbLayer" title="닫기"></a>
+
+						<div class="subLayer-content">
+							<ul class="list-type5">
+								<li>{YEAR}회계년도 {MONTH}월 마감 성취보고서 내용 중 [GIP 다이아몬드 그룹 BV]는 시스템 오류로 인해 정확하지 않을 수 있으며, </li>
+								<li>{YEAR}회계년도 {MONTH}월 마감  [GIP 다이아몬드 그룹 BV]는 ABN의 사업성장 특별보상 프로그램 중 GIP 다이아몬드 어워드 값을 참고하시기 바랍니다.</li>
+							</ul>
+						</div>
+						<div class="subLayer-btn">
+							<button type="button" class="bt-akl-white">확인</button>
+						</div>
 					</div>
-					<!-- //수정 : 2018.06.26 (추가) -->
+					<script>
+						$(function(){
+							var $subLayer_Close = $('.RD-Layer').find('.closeSbLayer');
+							$subLayer_Close.on('click',function(e){
+								e.preventDefault();
+								$(this).parent('.RD-Layer').hide();
+							});
+						});
+					</script>
+					<!-- //수정 : 2018.06.27 -->
 
 					<div class="tbl-list-view">
 						<div class="tr">
 							<div class="td">
-								<div style="overflow:hidden;height:300px; background:silver;">
+								<div style="overflow:hidden;height:300px;">
 									성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>
 									성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>
 									성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>
 									성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>성취보고서 레이어 테스트용<br>
 								</div>
-
 								성취보고서확인
 							</div>
 						</div>
