@@ -84,7 +84,12 @@ html.scrollLock body {overflow:hidden;}
 /* RD화면 */
 .akl .layerWrapper .layer-content-wrapper.RD-Viewer {position:relative; max-width:1000px; height:700px; overflow:auto;}
 .akl .layerWrapper .layer-content-wrapper.overFlow {overflow:auto;}
-.RD-Layer {position:absolute; z-index:1;top:0; left:0; right:0; width:100%; padding:15px; border:1px solid #e3e3e3; background:#fff;}
+.RD-Layer {position:absolute; z-index:1; top:0; left:0; right:0; width:100%; padding:40px 20px; border:1px solid #e3e3e3; background:#fff;}
+
+.RD-Layer .subLayer-title { padding:0 0 15px; margin:20px 20px 0; font-size:22px; font-weight:500; color:#002f5f; border-bottom:1px solid #e3e3e3; letter-spacing:-0.05em;}
+
+.RD-Layer .subLayer-close { right: 30px; padding:5px 15px; }
+
 
 /* TYPE 3 : 제품상세 > 동영상보기 */
 .akl .layerWrapper #videobox {top:0; left:0; box-sizing:border-box; -webkit-transform:none !important; transform:none !important; -ms-transform:none !important; opacity:0;}
