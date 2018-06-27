@@ -1093,9 +1093,8 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl #productLearningListTabs {margin-bottom:40px;}
 
 	/* 함께하면 좋은 제품 */
-	.amway-suggest .amway-suggest__item {width:100%;}
 	.akl .row.product-suggest .amway-suggest {padding:0 20px; margin-bottom:40px;}
-	.akl .row.product-suggest .amway-suggest .amway-suggest__item {margin:0;}
+	.akl .row.product-suggest .amway-suggest .amway-suggest__item {margin:0 auto;}
 	.akl .amway-suggest__list .owl-nav .owl-prev {left:-15px;}
 	.akl .amway-suggest__list .owl-nav .owl-next {right:-15px;}
 
@@ -1574,6 +1573,9 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* 상품목록 */
 	.product__list--item:last-child .plp-add-to-shopping-list .dropdown-menu {bottom: auto;}
 	.product__list--item:last-child .plp-add-to-ditto .dropdown-menu {bottom: auto;}
+}
+@media (max-width: 360px) {
+	.amway-suggest .amway-suggest__item {width:100%}
 }
 
 @media (max-width: 320px) {
