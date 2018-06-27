@@ -404,11 +404,11 @@ Version : AKL Hybris UIUX 1.0
 .tbl-list-board .w20 {width:20%}
 .tbl-list-board .w30 {width:30%}
 
-.tbl-type1.line-st {}
 .tbl-type1.line-st tbody tr:nth-of-type(even) {background-color:#fff}
 .tbl-type1.line-st td + td, .tbl-type1.line-st th + th  {border-left:1px solid #e3e3e3}
 .tbl-type1.line-st td {text-align:center; padding-top:0.7em; padding-bottom:0.7em}
 .tbl-type1.line-st .left {text-align:left}
+.tbl-list-board.tbl-mob {display:none}
 
 .bg-bar > * + *:before {content:""; display:inline-block; height:10px; border-left:1px solid #e3e3e3; vertical-align:middle; padding-left:20px; margin-left:20px}
 .bg-bar > * {vertical-align:middle}
@@ -555,6 +555,9 @@ Version : AKL Hybris UIUX 1.0
 	.tbl-top.tbl-type > * {display:block}
 	.tbl-top.tbl-type .right {text-align:left}
 	.tbl-list-board.type02 .mob-block > * {width:100% !important; text-align:left !important}
+	
+	.table-wrapper.tbl-pc {display:none}
+	.tbl-list-board.tbl-mob {display:block}
 	
 	.service-area .tech-center02 .left {display:block; width:100%; margin-top:20px}
 	.service-area .tech-center02 .left img {width:100px}
