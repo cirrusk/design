@@ -478,15 +478,14 @@ shop 옮김 : 2018.04.10
 .akl .recommendation__message-signature {font-size:16px;padding:0 0 30px 20px;}
 .akl .recommendation__message .recommendation__message-link {padding-left:20px;font-size:14px;font-weight:500;}
 
-.akl .experience-brands {padding:60px 0;width:100%;margin:0 auto;border-top:0 none;max-width:1376px;}
+.akl .experience-brands {padding:0; width:100%; margin:0 auto; border-top:0 none;max-width:1376px; border:1px solid red;}
 .akl .experience-brands__content {background-size:auto;background-attachment:initial; background-image: none; }
-.akl .experience-brands__content .wrapper.sub-banner {height:474px;}
-.akl .experience-brands__content .sub-banner .img-area  { position: absolute; left:0; top:0}
+.akl .experience-brands__content .wrapper.sub-banner {height:auto; overflow:hidden; padding-top:34.49781659388646%;}
+.akl .experience-brands__content .sub-banner .img-area  { position: absolute; left:0; top:0;}
 .akl .experience-brands__content .sub-banner .img-area img { width: 100%}
 .akl .experience-brands__content .banner-content .banner-title,.experience-brands__content .banner-content .banner-sub-title span {font-family:'Noto Sans KR', sans-serif;}
 .akl .experience-brands__content .banner-content .banner-title {font-size:40px;line-height:45px;font-weight:500;letter-spacing:-2px;}
 .akl .experience-brands__content .banner-content .banner-sub-title span {font-size:16px;line-height:22px;letter-spacing:-1px;}
-
 
 .akl .product-suggest {border-top:1px solid #dadada;}
 .akl .amway-suggest {border-top:0 none;padding:30px 0 0}
@@ -1693,7 +1692,11 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .faxOrder-prdt-list .list-header .list-item-price {padding:13px 0 0;font-size:13px !important;}
 .akl .faxOrder-prdt-list .list-header .list-item-total {padding:13px 0 0;font-size:13px !important;}
  */
-
+@media (max-width:1200px){
+	/* 제품상세 */
+	.akl .experience-brands__content .banner-content {top:15%;}
+	.akl .experience-brands__content .wrapper.sub-banner {padding-top:38%;}
+}
 @media (max-width: 990px) {
 	/* 카테고리 */
 	.akl .amway-theme .full-width-banner-component.banner-left-align .banner-content-wrap {width:100%;}
@@ -1804,11 +1807,14 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .recommendation.swatches-description__margin-minus {margin:0 auto 30px;}
 	.akl .recommendation__message-main {font-size:20px;line-height:25px;}
 	.akl .recommendation__message-signature {font-size:14px;padding:0 0 30px 0;text-align:center !important;}
-	.akl .experience-brands {clear:both;display:block;padding:40px 0 0;}
-	.akl .experience-brands__content {margin-bottom:40px;}
-	.akl .experience-brands__content .wrapper.sub-banner {height:237px;}
+	.akl .experience-brands {clear:both;display:block;padding:0;}
+	.akl .experience-brands__content {margin-bottom:0;}
+	.akl .experience-brands__content .wrapper.sub-banner {padding-top:50%;}
+	.akl .experience-brands__content .banner-content {top:18%;}
 	.akl .experience-brands__content .banner-content .banner-title {font-size:20px;line-height:25px;}
 	.akl .experience-brands__content .banner-content .banner-sub-title span {font-size:14px;line-height:18px;}
+	.akl .experience-brands .new-hot-brand {margin:0 auto;}
+
 	.akl .amway-suggest__item .ico-solid-out {top:1px;left:14px;}
 	.akl .amway-suggest__title {font-size:26px;margin:50px auto 24px;}
 	.amway-recentlyviewed {margin-top:25px}
@@ -2356,8 +2362,11 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .faxOrder-prdt-list .shopping-cart-item-list .product-list-item .product-item-element .total-price-label {float:left;display:inline-block;font-size:14px;font-weight:500;padding:0 0 0}
 	.akl .faxOrder-prdt-list .shopping-cart-item-list .product-list-item .product-item-element .price-label {float:left;display:inline-block;font-size:14px;font-weight:500;padding:0 0 0}
 }
-
-@media (max-width: 360px) {
+@media (max-width:430px) {
+	/* 제품상세 */
+	.akl .experience-brands__content .banner-content {top:6%;}
+}
+@media (max-width:360px) {
 	.akl .popup-img-list { width:100%;}
 
 }
