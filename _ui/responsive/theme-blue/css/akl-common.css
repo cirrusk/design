@@ -367,7 +367,9 @@ h2[class^='title-'] {text-align:left; margin:0}
 .akl .amway-suggest__list .owl-nav .owl-next {right:0;}
 
 /* 최근 본 제품 */
-#recentlyViewedListTab.owl-carousel .owl-item {padding:18px;}
+#recentlyViewedListTab.owl-carousel .owl-item {padding:0 15px;}
+.akl #recentlyViewedListTab .owl-nav .owl-prev {left:18px}
+.akl #recentlyViewedListTab .owl-nav .owl-next {right:18px}
 .akl .product-recentlyviewed__imagelist a.product-list__thum {padding:0; height:auto; width:100%;} /* 개발페이지 적용 */
 
 /* 관련자료/온라인 교육자료 */
@@ -382,7 +384,6 @@ h2[class^='title-'] {text-align:left; margin:0}
 /* 회원가입 완료 > brand list */
 .akl .brandsList .owl-nav .owl-prev {left:-30px;}
 .akl .brandsList .owl-nav .owl-next {right:-30px;}
-
 
 
 /** ---------------------------------
@@ -612,7 +613,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .list-content .list-row-title { background-color:#F4F4F4; display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
 .akl .list-content .list-row-title > div {text-align:center; padding:10px 0; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
-.akl .list-content .content-list {padding: 18px 0 22px;background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
+.akl .list-content .content-list {padding:14px 0 18px; background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txt-label {letter-spacing:-0.05em;}
 .akl .list-content .content-list .con-list-item span.txte-wrap {font-size:14px;font-weight:400;line-height:22px;color:#56565a;letter-spacing:-0.05em;}
@@ -1086,6 +1087,11 @@ label + .toolTip-wrapper {margin-left:6px;}
 	 */
 	.owl-dots{right:auto;bottom:12px;width:100%;}
 
+	/* 관련자료/온라인 교육자료 */
+	.akl #productLearningListTabs .owl-prev {left:0;}
+	.akl #productLearningListTabs .owl-next {right:0;}
+	.akl #productLearningListTabs {margin-bottom:40px;}
+
 	/* 함께하면 좋은 제품 */
 	.amway-suggest .amway-suggest__item {width:100%;}
 	.akl .row.product-suggest .amway-suggest {padding:0 20px; margin-bottom:40px;}
@@ -1095,7 +1101,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 
 	/* 최근 본 제품 */
 	#recentlyViewedListTab.owl-carousel .owl-item {padding:0;}
-	#recentlyViewedListTab.product-recentlyviewed__imagelist {margin:0 auto;}
+	#recentlyViewedListTab.product-recentlyviewed__imagelist {margin:0 auto; max-width:90%;}
 
 	/* 회원가입 완료 (하단 브랜드 링크) */
 	#join_featured_brandsList.owl-carousel .owl-item img {width:auto; display:inline-block;}
