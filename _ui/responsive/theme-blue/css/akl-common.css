@@ -132,6 +132,7 @@ input,textarea,select{-webkit-appearance:none;-webkit-border-radius:0}
 .akl a:focus {outline:initial !important;}
 b,strong{font-weight:500; }
 .akl .title-box {clear:both;display:block;padding:10px 0 0}
+.akl .account-area .title-box { padding-top:0} 
 .akl label span { font-size:14px;}
 .blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
 .hr {display:block; margin-top:40px !important; padding-top:40px !important; border-top:1px solid #dadada}
@@ -273,8 +274,11 @@ h2[class^='title-'] {text-align:left; margin:0}
 .akl .icon-sub-title.withdrawal-title:after { top:1px; width:22px; height:22px; background: url(../images/akl_common/ico_author_person.png) no-repeat left top;}
 .akl .icon-sub-title.abo-title:after {top:3px; width:22px; height:22px; background: url(../images/akl_common/ico_abo.png) no-repeat left top;}
 .akl .bonus-payment__title:after {position:absolute;top:5px;left:-30px;content:'';display:block;background:url('../images/akl_common/ico_note.png') no-repeat left top;width:17px;height:21px;}
-.akl .bonus-payment__description {font-size:14px;padding:7px 0 0; margin-bottom:28px}
+.akl .bonus-payment__description {font-size:14px;padding:7px 0 0; margin-bottom:25px}
 .akl .bonus-payment__title .bonus-payment__description { margin-bottom: 0}
+.akl .title-box .product-list-page-title h1.purchase {position:relative;font-size:18px;padding:0 0 5px;}
+.akl .title-box .product-list-page-title h1.purchase:before {content: "";position: absolute;top:2px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_purchase.png') no-repeat left center;width:21px;height:21px;}
+ 
 
 /* common > form */
 .akl .form-control { display:inline-block;}
@@ -1363,22 +1367,25 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.img-product .owl-theme .owl-controls .owl-nav .owl-next {right:-35px;}
 
 	/* common > h1 type2 */
-	.akl .bonus-payment .bonus-payment__title { padding-left:30px; }
+	.akl .bonus-payment .bonus-payment__title { padding-left:25px; }
 	.akl .bonus-payment .bonus-payment__title:after { left:0; }
 	.akl .bonus-payment .bonus-payment__title.shipping:after { left:0; }
 	.akl .bonus-payment .bonus-payment__title.member-pointe:after {left:0; }
 	.akl .bonus-payment .bonus-payment__title.child-regist:after {left:0; }
 	.akl .message-title:after {left:0;}
-	.akl .message-title, .akl .message-title-description {padding-left:30px;}
-	.akl .icon-sub-title {padding-left:30px;}
-	.akl .icon-title-description {padding-left:30px;}
+	.akl .message-title, .akl .message-title-description {padding-left:25px;}
+	.akl .icon-sub-title {padding-left:25px;}
+	.akl .icon-title-description {padding-left:26px;}
 	.akl .icon-sub-title:after {left:0;}
 	.akl .icon-sub-title.menulock-title {padding-bottom:15px; }
 	.akl .icon-sub-title.menulock-title:after { left:0}
 	.akl .icon-sub-title.withdrawal-title {padding-bottom:15px; }
 	.akl .icon-sub-title.withdrawal-title:after { left:0}
 	.akl .icon-sub-title.note-resend  {padding-left:25px;}
-
+	.akl .title-box .product-list-page-title h1.purchase {padding:0 0 5px 25px;}
+	.akl .title-box .product-list-page-title h1.purchase:before { left:0;}
+	.akl .icon-sub-title.aboRenewal-title { margin-bottom:-18px}
+	
 	/*** header ***/
 	.mob-tit4 {border-bottom: 1px solid #dadada; position:relative; margin-bottom: 0;  }
 	.mob-tit4 a { display:block; font-size:16px !important; }
