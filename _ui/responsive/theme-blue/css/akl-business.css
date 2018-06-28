@@ -4,8 +4,7 @@
 .business-pop-cont { padding-top:10px; }  
 .business .list-content.business-type01 .content-list {padding:0}
 .business .list-content.business-type01 .content-list li { display:table-row; text-align:center; background: #fff; box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
-.business .list-content.business-type01 .content-list li > div { padding:18px 20px  } 
-
+.business .list-content.business-type01 .content-list li > div { padding:18px 20px  }  
 .business .list-content.business-type01 .content-list li:nth-child(even) {background:#f4f4f4;} 
 .business .list-content.business-type01 .bt-akl-txt.list-type01 {min-width:0; height:auto; padding:0; border:0; background-color:initial} 
 .business .list-content.business-type01 .con-list-item > div.money-type01 { } 
@@ -134,7 +133,7 @@
 .business .topup-search .cuton-sel select  {width:150px;  } 
 .business .topup-search.type02 .cuton-sel select + select { margin-left:10px  } 
 .topup-search button { margin-left:20px }
-.business .tbl-list-board .tr>div.th{ color: #002f5f;}
+.business .tbl-list-board .tr>div.th{ color: #002f5f; font-weight:500}
 .business .tbl-list-board .tr>div.td { text-align: right;}
 .business .list-content.business-type01 + .title-h6 {  margin-top: 40px} 
 .title-h6 + .list-content.business-type01 {  margin-top:20px}  
@@ -769,10 +768,10 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business [class*="info-list-type"] .txt {text-align:right}
 	.business .list-content.business-type01 .list-row-title {padding:0}
 	.business .list-content.business-type01 .list-row-title > div {display:none}
-	.business .list-content.business-type01 .con-list-item > div {display:block; width:100%; padding:3px 0}
+	.business .list-content.business-type01 .content-list > li div {display:block; width:100%; padding:3px 20px}
 	.business .list-content.business-type01 .con-list-item > div:after {content:"";display:block;clear:both}
-	.business .list-content.business-type01 .con-list-item > div.money-type01 {text-align:inherit; padding-right:0}
-	.business .list-content.business-type01 .con-list-item > div.money-type02 {text-align:inherit; padding-right:0}
+	.business .list-content.business-type01 .con-list-item > div.money-type01,
+	.business .list-content.business-type01 .con-list-item > div.money-type02 {text-align:inherit; }
 	.business .list-content.business-type01 .con-list-item > div .tite-label {display:inline-block; color:#002f5f; font-weight:500;}
 	.business .list-content.business-type01 .con-list-item > div .tite-label + .txte-wrap {float:right}
 	.business .list-content.business-type01 .thumb-type .con-list-item > div {padding-left:80px}
@@ -782,6 +781,8 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business .list-content.business-type01 .content-list li {text-align:left; } 
 	.business .list-content.business-type01 .content-list li > div:first-child { padding-top:15px }
 	.business .list-content.business-type01 .content-list li > div:last-child { padding-bottom:15px }
+	 
+	
 	/* 뉴핀 성취자 */
 	.cuton-sel.type02 select {width:100%}
 	.newpin-area .newpin li {width:33.33333%}
