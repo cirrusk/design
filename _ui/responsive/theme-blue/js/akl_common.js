@@ -552,7 +552,7 @@ function orderSummaryFixed(){
 				$('.shipping-delivery-summary').css({
 					'position':'absolute',
 					'top':targetReTOP - 7, //bottom line 맞추는 보정값 7px
-					'right':'12px'
+					'right':'0'
 				});
 			} else if( wScrollTop > topAreaHeight ){
 				$('.shipping-delivery-summary').css({
