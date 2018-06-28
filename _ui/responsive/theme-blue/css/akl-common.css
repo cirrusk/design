@@ -431,7 +431,7 @@ h2[class^='title-'] {text-align:left; margin:0}
 .akl .step-wrap .checkout-steps {margin-bottom:20px; padding:0 !important;}
 
 .checkout-steps-circle, .checkout-steps-circleactive {display:none;}
-.checkout-steps {display:table; width:100%; max-width:1400px; margin:0 auto; padding:0 12px; font-size:12px; line-height:initial;}
+.checkout-steps {display:table; width:100%; max-width:1400px; margin:0 auto; padding:0; font-size:12px; line-height:initial;}
 .checkout-step {position:relative; display:table-cell; height:60px; padding:0; vertical-align:middle; font-size:16px; font-weight:500; line-height:initial; text-align:center; text-transform:none; color:#55565a; border:1px solid #dadada; border-width:1px 0 1px 1px; background:#f4f4f4;}
 .checkout-step:before, .checkout-step:after {content:''; position:absolute; top:0; border-top:30px solid transparent; border-bottom:30px solid transparent;}
 .checkout-step:before {left:0; border-left:13px solid #dadada;}
@@ -1168,7 +1168,16 @@ label + .toolTip-wrapper {margin-left:6px;}
 	 * @ 공통 : step
 	 * ----------------------------------
 	 */
-	.checkout-steps-text:before, .checkout-steps-before .checkout-steps-text:before {top:0;}
+	.akl .step-wrap {margin:0 -15px;}
+	.checkout-steps .checkout-step:nth-of-type(1) {border-left:0;}
+	.checkout-steps .checkout-step:nth-last-child(1){border-right:0;}
+
+	.akl .layerWrapper .step-wrap {margin:0;}
+	.akl .layerWrapper .checkout-steps .checkout-step:nth-of-type(1) {border-left:1px solid #dadada;}
+	.akl .layerWrapper .checkout-steps .checkout-step:nth-last-child(1){border-right:1px solid #dadada;}
+	.akl .layerWrapper .cart-popup__item-info>.step-wrap {margin-top:10px;}
+
+	.checkout-steps-text:before,.checkout-steps-before .checkout-steps-text:before {top:0;}
 	.checkout-step .checkout-steps-text {overflow:hidden; width:0; height:22px; padding-left:20px; margin-left:18px; font-size:14px;}
 	.checkout-steps-active .checkout-steps-text {width:auto; padding-left:26px; margin-left:0; vertical-align:middle;}
 
@@ -1177,12 +1186,12 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.checkout-steps .checkout-step:nth-of-type(1) .checkout-steps-text {margin-left:10px;}
 	.checkout-steps .checkout-step:nth-of-type(1), .checkout-steps.num03 .checkout-step:nth-of-type(1) {width:40px;}
 	.checkout-steps .checkout-step:nth-last-child(1) .checkout-steps-text {margin-left:12px;}
-	.checkout-steps .checkout-step:nth-last-child(1), .checkout-steps.num03 .checkout-step:nth-last-child(1) {width:55px;}
+	.checkout-steps .checkout-step:nth-last-child(1), .checkout-steps.num03 .checkout-step:nth-last-child(1) {width:60px;}
 
 	/* 스텝4 (기본) */
 	.checkout-steps .checkout-steps-active,
 	.checkout-steps .checkout-steps-active.checkout-step:nth-of-type(1),
-	.checkout-steps .checkout-steps-active.checkout-step:nth-last-child(1) {width:calc(100% - 155px);}
+	.checkout-steps .checkout-steps-active.checkout-step:nth-last-child(1) {width:calc(100% - 160px);}
 
 	/* 스텝3 */
 	.checkout-steps.num03 .checkout-steps-active,
@@ -1190,7 +1199,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.checkout-steps.num03 .checkout-steps-active.checkout-step:nth-last-child(1) {width:calc(100% - 90px);}
 
 	/* 스텝2 */
-	.shipping-delivery .checkout-steps .checkout-steps-active {width:calc(100% - 55px);}
+	.shipping-delivery .checkout-steps .checkout-steps-active {width:calc(100% - 60px);}
 
 
 	/*** 404error화면 ***/
