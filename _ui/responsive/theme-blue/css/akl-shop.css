@@ -416,6 +416,7 @@ shop 옮김 : 2018.04.10
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div.print {display:inline-block;}
 .akl .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .actions-wrapper .actions .add-to-cart-extra-actions.link-line div.kakaotalk {display:none;}
 
+
 /* common > 수량 */
 .akl .opt-quantity {position:relative;display:inline-block;width:130px;}
 .akl .opt-quantity .inpNum {margin-left:34px;width:62px;font-weight:400;font-family:'Noto Sans KR', sans-serif;color:#002f5f;}
@@ -461,9 +462,7 @@ shop 옮김 : 2018.04.10
 .akl #reviewsbody.accordion-panel-collapse {padding-bottom:0;padding-left:0;}
 .akl .panel-body.electr {margin:0;padding:0 10px;}
 .akl .panel-body.frcati, .akl .panel-body.method {margin:0;padding:0 0;}
-.akl .new-amway-competitive .col-md-12.column.product-description__section {padding:0 0;max-width:100%;}
-.akl .new-amway-competitive .col-md-12.column.product-description__section p {margin:0;text-align:left;max-width:100%;}
-.akl .new-amway-competitive .col-md-12.column.product-description__section p:last-child {max-width:100%;}
+
 .akl .product-competitive__title, .akl .product-competitive__desc {font-size:32px;font-family:'Noto Sans KR', sans-serif;font-weight:700;letter-spacing:-2px;}
 .akl .product-competitive__intro, .akl .product-competitive__summary {font-size:16px;line-height:24px;padding:10px 0 20px;font-style:normal}
 .akl .product-competitive__list {text-align:left;padding:20px 0;}
@@ -477,16 +476,13 @@ shop 옮김 : 2018.04.10
 .akl .carousel-title {font-size:32px;font-family:'Noto Sans KR', sans-serif;font-weight:700;letter-spacing:-2px;color:#002f5f;padding:30px 0 30px}
 .akl .amway-theme table tbody td {font-size:14px;}
 .akl .amway-theme .owl-carousel .carousel-link-wrap a.primary-link span {font-size:18px;font-weight:500;}
-.akl .video-preview {margin:60px auto 0;}
-.akl .video-preview__content .video-preview__play {cursor:pointer;}
-.akl .new-amway-competitive .col-md-12.column.product-description__section p.video-preview__title {font-size:32px;font-family:'Noto Sans KR', sans-serif;font-weight:400;letter-spacing:-2px;text-align:center;padding:30px 0 0}
-.akl .new-amway-competitive .col-md-12.column.product-description__section p.video-preview__subtitle {font-size:16px;line-height:22px;padding:25px 0 0;text-align:center;}
 
 .akl .recommendation.swatches-description__margin-minus {margin:40px auto;}
 .akl .recommendation__message-main {font-size:32px;color:#002f5f;font-weight:500;letter-spacing:-2px;font-family:'Noto Sans KR', sans-serif;line-height:38px;}
 .akl .recommendation__message-signature {font-size:16px;padding:0 0 30px 20px;}
 .akl .recommendation__message .recommendation__message-link {padding-left:20px;font-size:14px;font-weight:500;}
 
+/* 브랜드 체험 (이미지,설명+버튼) */
 .akl .experience-brands {padding:0; width:100%; margin:0 auto; border-top:0 none;max-width:1376px;}
 .akl .experience-brands__content {background-size:auto;background-attachment:initial; background-image: none; }
 .akl .experience-brands__content .wrapper.sub-banner {height:auto; overflow:hidden; padding-top:34.49781659388646%;}
@@ -495,6 +491,15 @@ shop 옮김 : 2018.04.10
 .akl .experience-brands__content .banner-content .banner-title,.experience-brands__content .banner-content .banner-sub-title span {font-family:'Noto Sans KR', sans-serif;}
 .akl .experience-brands__content .banner-content .banner-title {font-size:40px;line-height:45px;font-weight:500;letter-spacing:-2px;}
 .akl .experience-brands__content .banner-content .banner-sub-title span {font-size:16px;line-height:22px;letter-spacing:-1px;}
+
+/* 관련자료  - 비디오 */
+.akl .video-preview {margin:60px auto 0;}
+.akl .video-preview__content .video-preview__play {cursor:pointer;}
+.akl .new-amway-competitive .product-description__section {padding:0 0;max-width:100%;}
+.akl .new-amway-competitive .product-description__section p {margin:0;text-align:left;max-width:100%;}
+.akl .new-amway-competitive .product-description__section p:last-child {max-width:100%;}
+.akl .new-amway-competitive .product-description__section p.video-preview__title {font-size:32px; font-weight:400;letter-spacing:-2px; text-align:center; padding:0}
+.akl .new-amway-competitive .product-description__section p.video-preview__subtitle {font-size:16px;line-height:22px; padding:0;text-align:center;}
 
 /* 제품상세  > 함께하면 좋은 제품*/
 .akl .product-suggest {border-top:1px solid #dadada;}
@@ -510,7 +515,6 @@ shop 옮김 : 2018.04.10
 .akl .amway-suggest__item-title.amway-suggest__item-aboprice {font-size:14px;height:30px;}
 .akl .amway-suggest__item-retailprice {font-size:13px;height:auto;}
 .akl .amway-suggest__item .ico-solid-out {position:absolute;top:12px;left:12px;}
-
 .akl h2.amway-learning__title {margin:55px auto;}
 
 /* 제품상세  > 제품상세 layer popup */
@@ -1714,6 +1718,19 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 @media (max-width: 990px) {
 	/* 카테고리 */
 	.akl .amway-theme .full-width-banner-component.banner-left-align .banner-content-wrap {width:100%;}
+	/* 제품상세 > 관련자료 */
+	.akl .video-preview .video-preview__content button {width:70px; height:70px;}
+	.akl .video-preview .video-preview__content button>img {width:100%;height:auto;}
+/* 	.akl .video-preview .video-preview__content .video-preview__title {padding-top:10px;}
+
+	.akl .video-preview {margin:60px auto 0;}
+	.akl .video-preview__content .video-preview__play {cursor:pointer;}
+	.akl .new-amway-competitive .product-description__section {padding:0 0;max-width:100%;}
+	.akl .new-amway-competitive .product-description__section p {margin:0;text-align:left;max-width:100%;}
+	.akl .new-amway-competitive .product-description__section p:last-child {max-width:100%;} */
+	.akl .new-amway-competitive .product-description__section p.video-preview__title {font-size:28px; padding:0; margin:5px auto;}
+	.akl .new-amway-competitive .product-description__section p.video-preview__subtitle {font-size:16px;line-height:22px;padding:0;text-align:center;}
+
 }
 @media (max-width:850px) {
 	.akl .zoom-center button {margin-bottom:10px}
@@ -1811,7 +1828,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .product-competitive__intro, .akl .product-competitive__summary {font-size:14px;}
 	.akl .product-competitive__item {display:block;margin:0 auto 15px;width:100%;text-align:center;}
 	.akl .product-competitive__item:first-child {margin:0 auto 15px;}
-	.akl .video-preview {margin-top:0; padding:0 30px;}
+	.akl .video-preview {margin-top:0; padding:0 5%;}
 	.akl .new-amway-competitive .col-md-12.column.product-description__section p.video-preview__title {font-size:18px;line-height:24px;text-align:center !important;padding:20px 0 0}
     .akl .news-result-prom {margin-bottom:15px}
 	.akl .news-result-prom-text .product__title {font-size:14px;line-height:20px;text-align:left;height:42px}
