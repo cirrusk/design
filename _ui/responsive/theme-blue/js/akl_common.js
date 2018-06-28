@@ -107,6 +107,12 @@
 	//주문결제 : floating box
 	orderSummaryFixed();
 
+	//주문결제  : 스텝 여백조정
+	stepBox_Remargin();
+	$(window).resize(function(){
+		stepBox_Remargin();
+	});
+
 	//장바구니 : floating box
 	cartSummaryFixed();
 
@@ -489,6 +495,23 @@ function doOnOrientationChange(){
  *  쇼핑
  *  ------------------------------------
  */
+
+/* 주문결제  : STEP 여백조정 */
+function stepBox_Remargin(){
+	var _winWidth = $(window).width();
+	var _stepBox = $('.shipping-delivery').find('.checkout-steps');
+	if(! _stepBox.length){return;}
+
+	if (_winWidth < 769){
+		_stepBox.css({
+			'width': _winWidth,
+			'margin-left':'-15px'
+		});
+	}
+	if (_winWidth > 768){
+		_stepBox.attr('style','');
+	}
+}
 
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
