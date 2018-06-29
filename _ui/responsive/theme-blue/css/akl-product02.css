@@ -56,7 +56,7 @@ Editor : ji-min Park
 .visual-area.type04.bath-gift-ss{background: #ffffff url(../images/akl_product/bath-body/bg_gift_set_ss.png) no-repeat top center;height:775px;} /* 기프트세트 mini */
 .visual-area.type04.bath-gift-s .v-pro, .visual-area.type04.bath-gift-ss .v-pro{margin-top:60px;}
 .visual-area.type02.dayblock{background: #ffffff url(../images/akl_product/bath-body/bg_dayblock_sun.png) no-repeat top center;height:976px;} /* 데이블럭 썬케어  */
-
+.visual-area.type02.supplement{padding-bottom:90px;background:#c9e3f6;}
 
 
 .fleft{float:left !important;/*padding: 30px 0 0;*/}
@@ -475,13 +475,19 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .assistant-pr .ad-setp-lst dt{font-size:18px;}
 .assistant-pr .ad-setp-lst dd .inge-numlst01 li{margin-left: 10px;text-indent: -8px;}
 
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2){margin-top:50px;}
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area{display: inline-block;position: relative;width: auto;height: auto;}
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area img{width: auto;height: auto;display: block;}
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area .txt{position:absolute;overflow: hidden;}
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area .txt.fst{display:block;width:100%;top:0;left:0;}
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area .txt.sec{display:inline-block;width: 50%;bottom: 0;left:0;}
-.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area .txt.three{display:inline-block;width: 50%;bottom: 0;right: 0;}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area{margin-top:50px;}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area{display: inline-block;position: relative;width: auto;height: auto;}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area img{width: auto;height: auto;display: block;}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area .txt{position:absolute;overflow: hidden;}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area .txt.fst{display:block;width:100%;top:0;left:0;}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area .txt.sec{display:inline-block;width: 50%;bottom: 0;/* right: 0; */}
+.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area .txt.three{display:inline-block;width: 50%;bottom: 0;right: 0;}
+
+.assistant-pr .effet-area .advan-right.mod-wrap.buz{}
+.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.fst{display:block;width:100%;top:inherit !important;bottom:0;left:0;}
+.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.sec{display:inline-block;width:50%;top:0;bottom:inherit !important;left: 14%;}
+.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{display:inline-block;width:50%;top:0;bottom:inherit !important;left: 42%;}
+
 
 @media (max-width: 768px) {
 	/* 스킨케어 뷰티 비주얼 영역 공통 */	
@@ -692,7 +698,14 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.oral-round-lst li .txt-wrap dt{font-size:20px;margin-bottom:5px;}
 	.oral-round-lst li .txt-wrap dd{font-size:14px;}
 	
-	.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo:nth-child(2) .img-desc-area .txt{font-size:12px;padding-top:2px;}
+	.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area .img-desc-area .txt{font-size:12px;padding-top:2px;}
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .ade-photo.dot-txt-area .img-desc-area .txt{font-size:12px;}	
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.fst{bottom:-3px;left: 10px !important;}
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.sec, 
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{top:-5px;}
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{/*text-align:right;*/}
+	
+	
 }
 
 
@@ -736,9 +749,10 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.visual-area.others .txt-info-visual .v-etc{font-size:14px !important;}
 	.visual-area.others .v-pro {margin-top: 35px !important;}
 	.visual-area.others{padding-bottom:45px !important;}
-	
-	
-	
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.fst{bottom:-3px;left: 16px !important;}
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.sec, 
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{top:-7px;}
+	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{text-align:right;}
 	
 	
 }
