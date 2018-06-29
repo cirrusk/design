@@ -538,6 +538,7 @@ html.scrollLock body {overflow:hidden;}
 .tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th2,
 .tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th3 {width:28%;}
 .tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th4 {width:16%;}
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th5 {width:16%;}
 .tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
 .tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding-left:30px;}
 
@@ -1214,7 +1215,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 
 	/* table : tbody에서 th노출(모바일view) */
 	.tbl-list-board.type-tbody-th{float:none}
-	.tbl-list-board.type-tbody-th .tr {border-top:0;}
+	.tbl-list-board.type-tbody-th .tr {border-top:0; }
 	.tbl-list-board.type-tbody-th .tbody .mob-block {overflow:hidden;}
 	.tbl-list-board.type-tbody-th .tbody .mob-block>strong, .tbl-list-board.type-tbody-th .tfoot .mob-block>strong {display:block; float:left; width:50%; color:#002f5f; font-weight:500; text-align:left;}
 	.tbl-list-board.type-tbody-th .tbody .mob-block>p, .tbl-list-board.type-tbody-th .tfoot .mob-block>p{float:left; width:50%; margin-bottom:0;text-align:right;}
@@ -1576,9 +1577,11 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.akl .tbl-top-searchbox select.form-control {width:100%;}
 
 	.tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
-	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding-left:13px; padding-right:13px; }
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding:7px 20px; }
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div:first-of-type { padding-top:16px  }
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div:last-of-type { padding-bottom:16px  }
 	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block,
-	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block>p { text-align:left;}
+	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block>p  {}
 
 	/* ----- ABO양식 ----- */
 	.abn-forms-list>li {float:none; width:100%;}
