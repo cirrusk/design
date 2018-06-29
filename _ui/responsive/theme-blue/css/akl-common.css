@@ -195,7 +195,7 @@ b,strong{font-weight:500; }
 .akl .bt-akl-blue,.akl .bt-akl-white { min-width: 120px;}
 .akl .bt-akl-txt { min-width:90px;}
 .akl .bt-akl-blue {display:inline-block;background-color:#002F5F; color:#fff;border:1px solid #002F5F; font-size:14px;padding:5px 25px 7px;height:40px;vertical-align:middle;font-weight:500;}
-.akl .bt-akl-blue:hover,.akl .bt-akl-blue:focus,.akl .bt-akl-blue:active {color: #fff ;background-color: #002F5F;border-color: #002F5F;}
+.akl .bt-akl-blue:hover, .akl .bt-akl-blue:focus, .akl .bt-akl-blue:active {color: #fff ;background-color: #002F5F;border-color: #002F5F;}
 .akl .bt-akl-blue:hover {background: #fff; color:#002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
 .akl .bt-akl-blue.mini {font-size:12px; padding:0 10px 0; height:25px; line-height:23px; height:25px; min-width:80px;}
 .akl .bt-akl-blue.large {height:60px;font-size:20px;}
@@ -279,45 +279,6 @@ h2[class^='title-'] {text-align:left; margin:0}
 .akl .title-box .product-list-page-title h1.purchase {position:relative;font-size:18px;padding:0 0 5px;}
 .akl .title-box .product-list-page-title h1.purchase:before {content: "";position: absolute;top:2px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_purchase.png') no-repeat left center;width:21px;height:21px;}
 
-
-/* common > form */
-.akl .form-control { display:inline-block;}
-.akl .opt-quantity .form-control { display:block !important;}
-.akl label {font-weight: 500; font-size: 14px;text-transform:capitalize; }
-.akl .amwa-radio+label {line-height: 1.3; height:18px;}
-.akl label .amw-label-radio-text{font-weight: 500; font-size: 14px;}
-.akl .form-control {box-shadow:0 0 0 rgba(0,0,0,0.075) inset;/* color:#808285; */font-size:14px;margin:0 0;}
-.akl input[type="text"],.akl input[type="password"]  { height:40px; border: solid 1px #dadada;padding:0 15px; }
-.akl input[type="date"] { height:40px; border: solid 1px #dadada; padding-left: 10px; background:#fff}
-.akl select.form-control {padding:0 30px 0 15px; }
-/* .akl input:-ms-input-placeholder { color: #808285; }
-.akl input::-webkit-input-placeholder { color: #808285; }
-.akl input::-moz-placeholder { color: #808285; } */
-.akl button:disabled  { background: #bbb !important;border-color:#bbb !important; white-space:nowrap; font-weight: 400; color:#fff }
-.akl button:disabled:hover {color:#fff}
-.akl input[disabled],.akl select[disabled],.akl input[readonly],.akl select[readonly]{ background:#f4f4f4 !important;border-color:#bbb !important; white-space:nowrap; font-weight: 400; color:#bbb;  }
-.akl .amway-theme label {padding-top:0; font-size: 14px;}
-.akl .amway-theme .form-group > label { padding-top:7px; }
-.akl .amway-theme label.amw-radio-wrap .amw-radio-overlay { top: 1px; }
-.akl .radio-label + .radio-label{ margin-left: 20px !important; padding-bottom: 1px; }
-.akl .form-group select.form-control { width: 100%; vertical-align:middle;}
-.akl select.form-control { vertical-align:middle; }
-.akl select.form-control option {font-size:14px;}
-.akl .form-group:after {content:""; display: block; clear:both}
-.akl [type="checkbox"]:not(:checked)+label::before { width: 20px;height: 20px;}
-.akl [type="checkbox"]:checked+label::before  { width: 20px;height: 20px;}
-.akl .amway-theme input.amw-global-radio:checked +  .amw-radio-overlay:before { background:#0075a4;}
-.phone-group .control-group { float:left; width:40%}
-.phone-group .form-group { float:right; width:60%; padding-left: 8px;}
-.phone-group:after {content:""; display:block;  clear:both; width: 0; height: 0;}
-.phone-group .form-group + .clearfix { clear:both; }
-.form-group .address {  position: relative;}
-.form-group .address p { margin-right:107px; margin-bottom:0 }
-.form-group .address button {  position:absolute; right:0; top:0;  padding: 0 20px; min-width:95px}
-.form-group .address input[type="text"] { width:100%;}
-.form-group .address > .form-control { margin-top:7px !important;}
-.form-group.def-ship_new { margin-top:-10px;}
-
 /* common > paging */
 .paging { clear: both; padding:0; text-align: center; position: relative; margin-left: 4px; z-index: 1 }
 .paging > a { vertical-align: top; font-weight:400 }
@@ -337,17 +298,78 @@ h2[class^='title-'] {text-align:left; margin:0}
 .paging .next:hover { background: url("../images/akl_common/ico_board_on.png") no-repeat -23px -22px;  }
 .paging.pointer {padding:30px 0 0;}
 
-/** ---------------------------------
- * @ 공통 : checkbox+label
- * ----------------------------------
- */
-[type="checkbox"]+label, [type="checkbox"]:checked+label, [type="checkbox"]:not(:checked)+label {display:inline-block; padding-left:30px; vertical-align:top; color:#56565a; font-weight:400; line-height:20px; margin:5px 0;}
-[type="checkbox"]:not(:checked)+label {}
+/* common > form */
+label, select, button, input, input[type="text"], input[type="password"],input[type="password"] {font-size:14px;}
+.akl input[type="date"] {height:40px; padding-left:10px; border:1px solid #dadada; background:#fff;}
+.akl input[type="text"], .akl input[type="password"] {height:40px; padding:0 15px; border: solid 1px #dadada;}
+.akl button[disabled], .akl input[readonly], .akl input[disabled], .akl select[disabled], .akl select[readonly] {font-weight:400; color:#bbb; white-space:nowrap; background:#f4f4f4 !important; border-color:#bbb !important;}
+.akl button[disabled]{color:#fff; border-color:#bbb !important; background:#bbb !important;}
+.akl button[disabled]:hover {color:#fff;}
+
+/* form-group */
+.akl .form-group:after {content:""; display: block; clear:both}
+.akl .form-group select.form-control { width:100%; vertical-align:middle;}
+.akl .amway-theme .form-group > label { padding-top:7px;}
+.phone-group .control-group { float:left; width:40%}
+.phone-group .form-group { float:right; width:60%; padding-left: 8px;}
+.phone-group:after {content:""; display:block;  clear:both; width: 0; height: 0;}
+.phone-group .form-group + .clearfix { clear:both;}
+.form-group .address {position: relative;}
+.form-group .address p { margin-right:107px; margin-bottom:0 }
+.form-group .address button {  position:absolute; right:0; top:0;  padding: 0 20px; min-width:95px}
+.form-group .address input[type="text"] { width:100%;}
+.form-group .address > .form-control { margin-top:7px !important;}
+.form-group.def-ship_new { margin-top:-10px;}
+
+/* form-control */
+.akl .form-control {display:inline-block; margin:0; font-size:14px; box-shadow:0 0 0 rgba(0,0,0,0.075) inset;}
+.akl select.form-control {padding:0 30px 0 15px; vertical-align:middle;}
+.akl .opt-quantity .form-control {display:block !important;}
+
+/* label, label + checkbox(radio) */
+.akl label, .akl label .amw-label-radio-text, .akl .amway-theme label {font-size:14px; font-weight:500;}
+.akl .amwa-radio + label {height:18px; line-height:1.3;}
+.akl .amway-theme label {padding-top:0;}
+
+.akl .amway-theme label.amw-radio-wrap .amw-radio-overlay {top:1px;}
+.akl .amway-theme input.amw-global-radio:checked + .amw-radio-overlay:before {background:#0075a4;}
+.akl .radio-label + .radio-label{ margin-left: 20px !important; padding-bottom:1px;}
+
+[type="checkbox"]+label,
+[type="checkbox"]:checked+label,
+[type="checkbox"]:not(:checked)+label {display:inline-block; padding-left:30px; vertical-align:top; font-weight:400; line-height:20px; margin:5px 0;}
+[type="checkbox"]:not(:checked)+label {color:#56565a;}
 [type="checkbox"]:checked + label {color:#002f5f;}
-[type="checkbox"]:checked + label::after {top:6px;} /* 체크 V*/
+[type="checkbox"]:checked + label::after {top:6px;} /* 체크 V */
+.akl [type="checkbox"]:not(:checked) + label::before {top:0;}
+.akl [type="checkbox"]:not(:checked) + label::before, .akl [type="checkbox"]:checked + label::before {width:20px; height:20px;}
+.checkbox-element-wrapper {line-height:0;}
+._checkbox-element-global-class ~ span._checkbox-element-global-span {top:0;}
+._checkbox-element-global-class ~ span._checkbox-element-global-span:before {top:4px;}
 
-.akl [type="checkbox"]:not(:checked)+label::before {top:0}
+/* 전체선택 */
+.akl .all-ak-check {display:inline-block; margin:9px 15px; vertical-align:middle; line-height:0;}
+.akl .all-ak-check ._checkbox-element-global-class ~ span._checkbox-element-global-span:before {bottom:4px;}
+.akl .all-txt {display:inline-block; font-size:13px; vertical-align:middle;}
 
+
+
+
+
+
+
+.akl #shopping-list-content .list-header ._checkbox-element-global-class~span._checkbox-element-global-span {display:block; top:50%; margin-top:-10px;}
+
+/* 상품목록 checkbox */
+.akl .list-header .product-item-element .all-ak-check {margin:8px 0;}
+.akl .product-item-element .checkbox-element-wrapper {margin-top:3px;}
+.akl .product-allchoice .checklabel {height:20px; margin:8px 0;}
+
+/* 암웨이 비즈니스 센터(shop finder)- mob 사이즈 */
+.check-area .checkbox-element-wrapper + span {vertical-align:top;}
+
+/* 구매권한 양도/양수 checkbox */
+.akl .amway-theme .list-row-title .all-ceek .checkbox-element-wrapper {margin:9px 0;}
 
 
 /** ---------------------------------
@@ -626,7 +648,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .list-content {clear:both;display:table;width:100%;padding:10px 0 0;table-layout:fixed;}
 .akl .list-content .list-row-title { background-color:#F4F4F4; display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
 .akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
-.akl .list-content .list-row-title > div {text-align:center; padding:10px 0; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
+.akl .list-content .list-row-title > div {text-align:center; padding:0; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
 .akl .list-content .content-list {padding:14px 0 18px; background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txt-label {letter-spacing:-0.05em;}
