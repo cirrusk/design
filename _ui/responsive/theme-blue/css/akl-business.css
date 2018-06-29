@@ -762,25 +762,26 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram02 .diag-calculation>p {width:100%;} 
 }
 
-@media (max-width: 768px) {
- 
+@media (max-width: 768px) { 
 	/* 비즈니스 */ 
 	.business [class*="info-list-type"] .txt {text-align:right}
 	.business .list-content.business-type01 .list-row-title {padding:0}
 	.business .list-content.business-type01 .list-row-title > div {display:none}
-	.business .list-content.business-type01 .content-list > li div {display:block; width:100%; padding:1px 15px}
+	.business .list-content.business-type01 .content-list > li div {display:block; width:100%; padding:6px 20px}
 	.business .list-content.business-type01 .con-list-item > div:after {content:"";display:block;clear:both}
 	.business .list-content.business-type01 .con-list-item > div.money-type01,
 	.business .list-content.business-type01 .con-list-item > div.money-type02 {text-align:inherit; }
-	.business .list-content.business-type01 .con-list-item > div .tite-label {display:inline-block; color:#002f5f; font-weight:500;}
-	.business .list-content.business-type01 .con-list-item > div .tite-label + .txte-wrap {float:right}
+	.business .list-content.business-type01 .con-list-item > div span.tite-label {  }
+	.business .list-content.business-type01 .con-list-item > div span.tite-label + span.txte-wrap { }
 	.business .list-content.business-type01 .thumb-type .con-list-item > div {padding-left:80px}
 	.business .list-content.business-type01 .thumb-type .con-list-item > div.thumb {padding-left:0}
 	.business .cart-popup__item-info {padding:25px 20px !important}
 	.business .m-hide {display:none !important} 
 	.business .list-content.business-type01 .content-list li {text-align:left; } 
-	.business .list-content.business-type01 .content-list li > div:first-child { padding-top:15px }
-	.business .list-content.business-type01 .content-list li > div:last-child { padding-bottom:15px }
+	.business .list-content.business-type01 .content-list li > div:first-child { padding-top:18px;  }
+	.business .list-content.business-type01 .content-list li > div:first-child .txte-wrap{ text-align: left; width:100% } 
+	.business .list-content.business-type01 .content-list li > div:first-child .tite-label + .txte-wrap{ text-align:right; width:auto } 
+	.business .list-content.business-type01 .content-list li > div:last-child { padding-bottom:20px }
 	 
 	
 	/* 뉴핀 성취자 */
@@ -827,7 +828,7 @@ ul.woo-step-box li:last-child:before {background:none}
 	
 	/* 비즈니스 > 사업현황보고서 */ 
 	.report-top { padding: 20px 0 10px;}
-	.business .list-content.business-type01.report .report02 .con-list-item > div .tite-label + .txte-wrap {float:left; width:100%;}  
+	.business .list-content.business-type01.report .report02 .con-list-item > div span.tite-label + span.txte-wrap { width:100%;}  
 	.business .list-content.business-type01.report .con-list-item span.txte-wrap em { display:inline;}
 	.list-type5 + dl { margin-top:20px; }
 	.report-body .business-img-area {margin: 20px 10px ;}
