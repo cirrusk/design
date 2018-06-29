@@ -345,10 +345,10 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .akl [type="checkbox"]:not(:checked) + label::before, .akl [type="checkbox"]:checked + label::before {width:20px; height:20px;}
 .checkbox-element-wrapper {line-height:0;}
 ._checkbox-element-global-class ~ span._checkbox-element-global-span {top:0;}
-._checkbox-element-global-class ~ span._checkbox-element-global-span:before {top:4px;}
+._checkbox-element-global-class ~ span._checkbox-element-global-span:before {top:5px;}
 
 /* 전체선택 */
-.akl .all-ak-check {display:inline-block; margin:9px 15px; vertical-align:middle; line-height:0;}
+.akl .all-ak-check {display:inline-block; margin:10px 15px; vertical-align:middle; line-height:0;}
 .akl .all-ak-check ._checkbox-element-global-class ~ span._checkbox-element-global-span:before {bottom:4px;}
 .akl .all-txt {display:inline-block; font-size:13px; vertical-align:middle;}
 
@@ -356,9 +356,9 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .akl #shopping-list-content .list-header ._checkbox-element-global-class~span._checkbox-element-global-span {display:block; top:50%; margin-top:-10px;} */
 
 /* 상품목록 checkbox */
-.akl .list-header .product-item-element .all-ak-check {margin:8px 0;}
+.akl .list-header .product-item-element .all-ak-check {margin:9px 0;}
 .akl .product-item-element .checkbox-element-wrapper {margin-top:3px;}
-.akl .product-allchoice .checklabel {height:20px; margin:8px 0;}
+.akl .product-allchoice .checklabel {height:20px; margin:9px 0;}
 
 /* 암웨이 비즈니스 센터(shop finder)- mob 사이즈 */
 .check-area .checkbox-element-wrapper + span {vertical-align:top;}
@@ -642,9 +642,9 @@ ul .ol-list { margin:10px 0 20px 15px}
 /* common > table list > sp3,4 */
 .akl .col-ak-10 {width:100%;}
 .akl .list-content {clear:both;display:table;width:100%;padding:10px 0 0;table-layout:fixed;}
-.akl .list-content .list-row-title { background-color:#F4F4F4; display:table;width:100%;vertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.akl .list-content .list-row-title {display:table;width:100%;linevertical-align:middle;table-layout:fixed;box-sizing:border-box;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; background-color:#F4F4F4; }
 .akl .list-content .list-row-title:after, .list-content .content-list:after {content:'';display:table;}
-.akl .list-content .list-row-title > div {text-align:center; padding:0; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500;}
+.akl .list-content .list-row-title > div {text-align:center; padding:0; display:table-cell;vertical-align:middle;box-sizing:border-box;font-size:13px;color:#002f5f;font-weight:500; padding:10px 0;}
 .akl .list-content .content-list {padding:14px 0 18px; background: #fff;display: table;box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
 .akl .list-content .content-list:nth-child(odd) {background:#f4f4f4;}
 .akl .list-content .content-list .con-list-item span.txt-label {letter-spacing:-0.05em;}
