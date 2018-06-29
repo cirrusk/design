@@ -144,20 +144,9 @@
 				<div class="icon-title-description">
 					<p>간편 회원 가입을 통해 등록하신 ABO를 위한 추가 본인인증 서비스입니다.</p>
 					<p>본인인증(휴대폰 또는 아이핀)을 진행하시면 언제든지 ABO로서의 모든 서비스 및 활동이 가능합니다.</p>
-				</div>
-				<p class="menu-lock-txt"><strong>잠금 비밀번호 입력</strong> 또는 <strong>본인확인</strong> 중 한가지 방법을 통해 계속 진행할 수 있습니다.</p> 
+				</div>  
 				
-				<!-- 메뉴 잠금 사용중인 경우 -->
-				<div class="menu-lock"> 
-					<strong class="author-tit">잠금 비밀번호 입력</strong>
-					<div class="form-group">
-						<label class="col-md-5 control-label" for="lock01">잠금 비밀번호 4자리 입력</label>
-						<div class="col-md-7">
-							<input type="text" class="form-control" id="lock01">
-						</div>
-					</div> 
-				</div>
-				<!--// 메뉴 잠금 사용중인 경우 --> 
+				<!-- 메뉴 잠금 최초 진입 또는 메뉴 잠금을 사용 안하는 경우에서 진입  -->
 				<div class="author-content02">
 					<strong class="author-tit">본인확인</strong>  
 					<div class="validation-wrapper subBiz">
@@ -181,17 +170,77 @@
 								<p class="valid-result-box"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
 							</div>
 						</div>
-					</div>
-					<div class="info-txt-btm">
-						<ul class="list-type2">
-							<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
-						</ul>
-					</div>
+					</div> 
 				</div> 
-		 
 				<div class="next-control">
 					<button type="button" class="bt-akl-blue">다음</button>
 				</div>
+				<!--// 메뉴 잠금 최초 진입 또는 메뉴 잠금을 사용 안하는 경우에서 진입  -->
+				
+				<!-- 메뉴 잠금 사용중인 경우 -->
+				<div class="menu-lock-wrap">
+					<p class="menu-lock-txt"><strong>잠금 비밀번호 입력</strong> 또는 <strong>본인확인</strong> 중 한가지 방법을 통해 계속 진행할 수 있습니다.</p> 
+					<div class="menu-lock">  
+						<div class="form-group">
+							<label class="col-md-5 control-label" for="lock01">잠금 비밀번호 입력</label>
+							<div class="col-md-7">
+								<input type="text" class="form-control" id="lock01" placeholder="4자리 입력">
+							</div>
+						</div> 
+					</div>
+					
+					<div class="akl-toggle-wrap">
+						<div class="panel-group accordion-custom" id="aklPageAccordion" aria-multiselectable="true">
+							<div class="panel">
+								<div class="panel-heading" role="tab">
+									<a href="#down5" data-toggle="collapse" class="collapsed" data-parent="#aklPageAccordion"> 
+										<div class="panel-title">
+											<span class="text-uppercase accordion-header-text">잠금 비밀번호를 잊어버리셨을 경우 본인확인을 통해 메뉴 잠금 설정이 가능합니다.</span>
+											<span class="pull-right icon-minus"></span>
+										</div>
+									</a>
+								</div>
+								<div id="down5" class="panel-collapse applicants-panel collapse" role="tabpanel"> 
+									<div class="panel-body">
+										<div class="col-md-12">
+											<div class="author-content02">
+												<strong class="author-tit">본인확인</strong>  
+												<div class="validation-wrapper subBiz">
+													<div class="valid-type-phone">
+														<p class="validation-para">
+															<strong>휴대폰 본인확인</strong>
+															<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+															<a href="#" class="bt-akl-blue js-btn-show" id="SpouseAuthentication_Mobile">휴대폰 본인확인</a>
+														</p>
+														<div class="valid-progress">
+															<p class="valid-result-box on"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
+														</div>
+													</div>
+													<div class="valid-type-ipin">
+														<p class="validation-para">
+															<strong>아이핀 본인확인</strong>
+															<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+															<a href="#" class="bt-akl-blue js-btn-show" id="SpouseAuthentication_Ipin">아이핀 본인확인</a>
+														</p>
+														<div class="valid-progress">
+															<p class="valid-result-box"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
+														</div>
+													</div>
+												</div> 
+											</div> 
+									 
+											<div class="next-control">
+												<button type="button" class="bt-akl-blue">다음</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>  
+				</div>
+				<!--// 메뉴 잠금 사용중인 경우 -->
+				
 			</div> 
 
 		</div>
