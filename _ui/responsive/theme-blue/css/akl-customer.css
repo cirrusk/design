@@ -60,6 +60,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .order-history-container .order-history-search-wrapper .form-wrapper .cuton-sel { text-align: right;}
 .customer-area .order-history-container .order-history-search-wrapper .form-wrapper {padding: 20px 0 0}
 .page-title.customer span {padding:0 0 0 0;}
+.customer-area .title-box .product-list-page-title h1 {padding:0;}
 
 /* 공지사항 > tab */
 .akl .customer-wrap .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {min-width:148px;}
@@ -509,6 +510,31 @@ Version : AKL Hybris UIUX 1.0
 .apply-form .dl-form-group.txt .form-group {margin-top:18px}
 .apply-form .dl-form-group .noti-suc {display:inline-block; margin-top:20px}
 
+/* 평균 후원수당 공지 > 목록  */
+.brand-area .title-box .product-list-page-title {margin-top: 0;} 
+
+/* 평균 후원수당 공지 > 목록  */
+.akl .bod-customer {padding:10px 0 0}
+.akl .bod-customer .search-no-result {border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3; padding:70px 0; clear:both;}
+.akl .bod-customer .content-list .con-list-item > div {font-size:14px;font-weight:400;letter-spacing:-0.05em;}
+.akl .list-row-title div.cuo-num-brand {width:13%; text-align:center; }
+.akl .list-row-title div.cuo-sub-brand {width:55%;padding-left:20px;} 
+.akl .list-row-title div.cuo-cate-brand {width:10%; text-align:center }
+.akl .list-row-title div.cuo-search-brand {width:10%; text-align:center }
+.akl .list-row-title div.cuo-date-brand {width:12%; text-align:center }
+.akl .con-list-item div.cuo-num-brand {width:13%; text-align:center}
+.akl .con-list-item div.cuo-sub-brand {width:55%;padding-left:20px;} 
+.akl .con-list-item div.cuo-sub-brand a {color:#56565a}
+.akl .con-list-item div.cuo-sub-brand a:hover {color:#0075a4;}
+.akl .con-list-item div.cuo-cate-brand {width:10%; text-align:center; }
+.akl .con-list-item div.cuo-search-brand {width:10%; text-align:center; }
+.akl .con-list-item div.cuo-date-brand {width:12%; text-align:center; }
+
+/* 평균 후원수당 공지 > 상세보기 */
+.tblTitle { font-size:16px; font-weight:500; margin-bottom:15px;color: #002f5f;}
+ table + .tblTitle { margin-top:40px} 
+.scroll-table + .tblTitle { margin-top:40px} 
+
 @media (max-width: 1024px) {
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo  {padding-right:270px;}
@@ -808,6 +834,7 @@ Version : AKL Hybris UIUX 1.0
 	.ans-question .form-group .control-label { float:none; width:100%; }
 	.ans-question .form-group .form-item-row { float:none; width:100%;}
 
-
-
+	/* 평균 후원수당 공지 > 목록 */ 
+	.akl .content-list .con-list-item > div.cuo-num-brand {display:block;width:100%;padding:6px 20px; text-align:left}
+	.akl .content-list .con-list-item > div.cuo-sub-brand {display:block;width:100%;padding:6px 20px; text-align:left}  
 }
