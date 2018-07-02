@@ -1,23 +1,30 @@
 ﻿$(function(){
 /** ----- 공통 ----- */
 
-	//header login tooltip
-	$('.tooltip-btn').click(function() {
-		$('.tooltip-wrap').slideToggle(0);
+	//탭 스크롤
+	tabsTgg_Control();
+	$(window).resize(function(){
+		tabsTgg_Control();
 	});
 
-	//장바구니 툴팁
+	//장바구니,주문결제 툴팁
 	$('.tooltip-btn').each(function(){
-		var $promotionAll = $(document).find('.promotion-tip-alert');
-		var $promotionTip = $(this).parents('.promotion').find('.promotion-tip-alert');
+		var _this = $(this);
+
+		//다른 툴팁 찾기
+		var parentsRow = _this.parents('.product-list-item');
+		var $parentsSiblings = parentsRow.siblings('.product-list-item').find('.promotion-tip-alert');
+		//this
+		var $promotionTip = _this.parents('.promotion').find('.promotion-tip-alert');
 		var $tip_closeBtn = $promotionTip.find('.tip-close');
 
-		$(this).on('click',function(){
-			$promotionAll.hide(); //열린 툴팁 닫기
+		_this.on('click',function(){
+			//열린 툴팁 닫기
+			$parentsSiblings.hide();
 
 			if($promotionTip.is(':hidden')){
 				$promotionTip.show();
-			} else if($promotionTip.is(':hidden')){
+			} else if($promotionTip.is(':visible')){
 				$promotionTip.hide();
 			}
 		});
@@ -25,12 +32,6 @@
 		$tip_closeBtn.on('click',function(){
 			$promotionTip.hide();
 		});
-	});
-
-	//탭 스크롤
-	tabsTgg_Control();
-	$(window).resize(function(){
-		tabsTgg_Control();
 	});
 
 	//암웨이 매거진
