@@ -921,6 +921,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 /* 나의 쇼핑정보 > 중개판매관리 > 견적서 작성 */
 .account-area {padding:0 50px;}
+.account-area .title-box.order .myorder-sns {top:0;}
 .title-box .product-list-page-title {position:relative;margin:36px 0 0}
 .title-box .product-list-page-title h1.brokerage {position:relative;font-size:18px !important;padding:0 0 5px;}
 .title-box .product-list-page-title h1.brokerage:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_Intermediary.png') no-repeat left center;width:21px;height:21px;}
@@ -1427,7 +1428,8 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .jobo-top {clear:both;display:block;}
 .jobo-top .txt-title {font-size:16px;font-weight:500;padding-right:10px;}
 
-.akl .myorder-history .panel-group .panel-heading+.panel-collapse>.list-group, .akl .myorder-history .panel-group .panel-heading+.panel-collapse.in>.panel-body {border-top:0;padding:0 0 15px;}
+.akl .myorder-history .panel-group .panel-heading+.panel-collapse>.list-group,
+.akl .myorder-history .panel-group .panel-heading+.panel-collapse.in>.panel-body {border-top:0; /* padding:0 0 15px; */}
 .akl .myorder-history .panel-title {position:relative;}
 
 .akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text {font-family:'Noto Sans KR', sans-serif !important;padding-left:10px}
@@ -1701,6 +1703,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {width:11%;font-size:14px;text-align:right;padding:0 20px 0 0}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1.list-item-erformance {text-align:center;padding:0 0;}
 .akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:450px;}
+.akl .product-list-item .product-item-element.list-item-amount {text-align:center;}
 .akl .myorder-promotion .shopping-cart-item-list .view-bundle-contents {width:660px;}
 .akl .myorder-promotion .shopping-cart-item-list .view-bundle-contents * {font-size:13px;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .plp-item-label-wrap {top:-1px}
@@ -3168,10 +3171,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.menu-lock-txt { color:#002f5f; font-size:18px; padding:0 0 15px}
 	.menu-lock-txt strong{ font-weight:400}
 	.menu-lock .author-tit { margin-bottom:30px;display: block;font-size: 16px;}
-	.menu-lock .form-group { max-width:540px} 
+	.menu-lock .form-group { max-width:540px}
 	.menu-lock .form-group .col-md-8 span{ margin-right:0;}
 	.menu-lock .form-group .col-md-8 .bt-akl-blue{ position:static; right:auto; margin-top:10px}
-	
+
 	.menu-lock-wrapper .valid-result-box {padding: 30px 0 40px;margin-bottom:18px; border-bottom: 1px solid #dadada;text-align: center;}
 	.akl .menu-lock-wrapper .author-content-complete .valid-result-box {padding:0;margin-bottom:0; border-bottom:0;}
 	.menu-lock-wrapper .valid-result-box {padding:0; margin-bottom:0; border-bottom:0; text-align: center;}
