@@ -70,27 +70,30 @@
 				</div>
 
 				<div class="customer-wrap">
-					<div class="extinction-top">
-						<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12">
-							<div class="cuton-form-wrapper">
-								<div class="form-s">
-									<input type="text" id="" name="" placeholder="제품명, VPS코드, SKU 번호를 입력하세요" value="" class="input-st" title="제품명, VPS코드, SKU 번호 입력">
-									<button type="submit" class="btn btn-primary" id="NotificationBoard_Search"><span class="hidden-sm hidden-xs">검색</span></button>
+					<div class="extinction-top"> 
+						<div class="order-history-container"> 
+							<div class="order-history-search-wrapper amway-theme row">
+								<div class="hidden-md hidden-lg toggle-buttons-container row cutomer">
+									<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span> </button>
+									<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span> <span>검색</span> </button>
 								</div>
-							</div>
-						</div>
-						<div class="new-select form-wrapper col-md-6 col-sm-12">
-							<div class="cuton-sel">
-								<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
-									<option value="">전체보기</option>
-									<option value="">단종</option>
-									<option value="">일시품절</option>
-								</select>
-							</div>
-							<div class="cuton-mobile">
-								<span><a href="#" class="active">전체보기</a></span>
-								<span><a href="#">단종</a></span>
-								<span><a href="#">일시품절</a></span>
+								<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12 hidden-sm hidden-xs js-search-form-wrapper">
+									<div class="cuton-form-wrapper">
+										<div class="form-s">
+											<input type="text" id="" name="" placeholder="제목, 내용을 입력하세요" value="" class="input-st" title="제목, 내용을 입력">
+											<button type="submit" class="btn btn-primary" id="NotificationBoard_Search"><span class="hidden-sm hidden-xs">검색</span></button>
+										</div>
+									</div>
+								</div>
+								<div class="new-select form-wrapper col-md-6 col-sm-12 js-filter-form-wrapper hidden-sm hidden-xs">
+									<div class="cuton-sel">
+										<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+											<option value="Latest-date">전체 공지</option>
+											<option value="Oldest-date">단종</option>
+											<option value="Inquiry-Authority">일시품절</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
