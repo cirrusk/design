@@ -2,8 +2,31 @@
 /** ----- 공통 ----- */
 
 	//header login tooltip
-	$('.tooltip-btn').click(function() {
-		$('.tooltip-wrap').slideToggle(0);
+	$('.tooltip-btn').each(function(){
+		$(this).click(function() {
+			$('.tooltip-wrap').slideToggle(0);
+		});
+	});
+
+	//장바구니 툴팁
+	$('.tooltip-btn').each(function(){
+		var $promotionAll = $(document).find('.promotion-tip-alert');
+		var $promotionTip = $(this).parents('.promotion').find('.promotion-tip-alert');
+		var $tip_closeBtn = $promotionTip.find('.tip-close');
+
+		$(this).on('click',function(){
+			$promotionAll.hide(); //열린 툴팁 닫기
+
+			if($promotionTip.is(':hidden')){
+				$promotionTip.show();
+			} else if($promotionTip.is(':hidden')){
+				$promotionTip.hide();
+			}
+		});
+
+		$tip_closeBtn.on('click',function(){
+			$promotionTip.hide();
+		});
 	});
 
 	//탭 스크롤
@@ -1468,7 +1491,25 @@ function quickLinks(){
 	$(window).resize(function(){
 		qkLinkAlign();
 	});
+
+	//모바일 사이즈 퀵메뉴 열고닫기
+	setTimeout(function(){
+		quickLinksItem_MOB();
+	},300);
 };
+
+function quickLinksItem_MOB(){
+	$(".quick-links-item").click(function(e) {
+		e.preventDefault();
+
+		if($(this).hasClass("switcher")){
+			$(this).removeClass("switcher");
+		}else{
+			$(this).addClass("switcher");
+			$(this).siblings().removeClass("switcher");
+		}
+	});
+}
 
 function qkLinkAlign(){
 	var _winWidth = $(window).width();
