@@ -390,7 +390,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 /*******************************************************************************
-							     베이스 메이크업  
+							     베이스 메이크업                                 
 *******************************************************************************/
 
 /* 비주얼 영역 공통 */
@@ -487,6 +487,35 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.fst{display:block;width:100%;top:inherit !important;bottom:0;left:0;}
 .assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.sec{display:inline-block;width:50%;top:0;bottom:inherit !important;left: 14%;}
 .assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{display:inline-block;width:50%;top:0;bottom:inherit !important;left: 42%;}
+
+
+/* 디쉬드롭 */
+.pormula-lst{display:block;}
+.pormula-lst li{display:inline-block;margin-right:20px;}
+.pormula-lst li:last-child{margin-right:0;}
+.pormula-lst li span{position:relative;display: block;width: auto;height: auto;}
+.pormula-lst li span img{display:block;}
+.pormula-lst li span em{position:absolute;display: block;width:100%;top: 50%;left:0;margin-top: -20px;color:#ffffff;text-align: center;}
+.pormula-lst li:last-child span em{margin-top:-11px;}
+
+.bioquest-lst {width:100%;font-size: 16px;letter-spacing: -1px;margin-bottom:0;}
+.ad-step-lst li {display:block; margin-right:5px;margin-top:23px;font-weight: 300;}
+.ad-step-lst li strong{display:inline-block;margin-right:5px;color: #0075a4;font-weight: 400;}
+
+.border-bx{display:block;padding:50px 93px;border:1px solid #e3e3e3;margin-top:45px;}
+.dish-thum-lst{display: table;width: 100%;margin-bottom:50px;padding-bottom:50px;border-bottom:1px solid #e3e3e3;}
+.dish-thum-lst:before{width: 114px;display: table-cell;content:"";}
+.dish-thum-lst:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.dish-thum-lst.thum-bio:before{height: 114px;background:url(../images/akl_product/home-living/thum_mark_bioquest.png) no-repeat 0 50%;}					
+.dish-thum-lst.thum-safer:before{height: 142px;background:url(../images/akl_product/home-living/thum_mark_safer_choice.png) no-repeat 0 50%;}
+
+.dish-thum-lst .dish-thum-wrap{display:inline-block;margin-left: 73px;}
+.dish-thum-lst .dish-thum-wrap strong.h6{background:#008fc5;color:#ffffff;font-size:18px;font-weight:400;padding: 10px 15px;border-radius: 40px;box-sizing: border-box;display: inline-block;margin-bottom: 20px;}
+.dish-thum-lst .dish-thum-wrap .ad-step-lst{margin-bottom:10px;}
+.dish-thum-lst .dish-thum-wrap .ad-step-lst:before{}
+.dish-thum-lst .dish-thum-wrap .ad-step-lst li{margin-top: 0;line-height: 1.5;font-size: 16px;color: #808285;}
+.dish-thum-lst .dish-thum-wrap .ad-step-lst li strong{color: #56565a;}
+.dish-thum-lst .dish-thum-wrap .inge-lst03 li{font-size:14px;color:#808285;}
 
 
 @media (max-width: 768px) {
@@ -594,11 +623,24 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.oral-round-lst li .img-wrap img{width:70%;height:70%;}
 	.oral-round-lst li .txt-wrap dt{font-size:16px;}
 	.oral-round-lst li .txt-wrap dd{font-size:13px;}
+	
+	/* 홈리빙 */
+	.border-bx{padding: 25px 47px;}
+	
+	.dish-thum-lst{margin-bottom: 25px;padding-bottom: 25px;}
+	.dish-thum-lst.thum-bio:before{background-size: 70%;}					
+	.dish-thum-lst.thum-safer:before{background-size: 70%;}	
+	.dish-thum-lst .dish-thum-wrap{margin-left:10px;}
+	.dish-thum-lst .dish-thum-wrap .ad-step-lst li{line-height: 1.5;font-size:14px;}
+	.dish-thum-lst .dish-thum-wrap .inge-lst03 li{font-size:13px;}
+
 }
 
 
 @media (min-width: 769px) and (max-width: 1144px) {
-	.skin-care .ingre-list-wrap .ingre-list li{width:33.333%;min-width:auto;}	
+	.skin-care .ingre-list-wrap .ingre-list li{width:33.333%;min-width:auto;}		
+	
+	.pormula-lst li{margin-right: 15px;}
 }
 
 
@@ -705,7 +747,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{top:-5px;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{/*text-align:right;*/}
 	
-	
+	.pormula-lst{text-align:center;}
+	.pormula-lst li{margin-right: 15px;}
+	.border-bx{padding:20px 25px;}
+	.dish-thum-lst .dish-thum-wrap strong.h6{display:block;width:100%;text-align:center;font-size:16px;}
+	.dish-thum-lst:before{display: block;margin: auto;text-align: center;background-size: 100% !important;background-position: 100% 100% !important;}
+		
 }
 
 
@@ -753,6 +800,14 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.sec, 
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{top:-7px;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{text-align:right;}
+	
+	/*
+	.pormula-lst{text-align:center;}
+	.pormula-lst li{margin-right: 15px;}
+	.border-bx{padding:20px 25px;}
+	.dish-thum-lst .dish-thum-wrap strong.h6{display:block;width:100%;text-align:center;font-size:16px;}
+	.dish-thum-lst:before{display: block;margin: auto;text-align: center;background-size: 100% !important;background-position: 100% 100% !important;}
+	*/
 	
 	
 }
