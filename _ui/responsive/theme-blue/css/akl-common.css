@@ -773,9 +773,11 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .popover.bottom > .arrow { left: auto; right: 95px; }
 .akl .popover.bottom.extraclass1 > .arrow { right: 93px !important; }
 .akl .amway-theme h1.login-form__title { font-size:23px; letter-spacing: -2px; margin-bottom: 25px}
-.akl .popover .login-form input[type="text"],
-.akl .popover .login-form input[type="password"]{ width: 100%; height: 44px; font-weight: 400;}
 
+/* header > login */
+.akl .iframe-login { border:0; width:100%; height:220px;}
+.akl .popover .login-form input[type="text"],
+.akl .popover .login-form input[type="password"]{ width: 100%; height: 44px; font-weight: 400;} 
 .akl .popover .login-form label { font-weight: 700; margin-bottom:20px !important;}
 /* .akl [type="checkbox"]:not(:checked)+label::before {top:1px;}  2018.06.29 체크박스 수정 중 */
 .akl .login-form__link {font-weight: 700; font-size: 13px !important; }
@@ -783,10 +785,11 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .login-form__submit { font-size: 20px; font-weight:500; letter-spacing: -1px }
 .akl .login-form__register {font-size: 20px !important; font-weight:700 !important; letter-spacing:-2px}
 .akl .login-email-box {position: relative;}
-.akl .login-email-box .login-form__username { background:none !important;}
+.akl .login-email-box .login-form__username { background:none !important; width:100%;}
+.akl .login-form__password { width:100%;}
 .akl .login-email-box  button{ position:absolute; right:0; top:0; background-color:#fff; height: 44px; width:44px; background:url(../images/delete-icon.png) no-repeat 59% 11px !important;background-size: 18px !important; text-indent: -999px; overflow:hidden;;outline:initial;}
 .akl .tooltip-wrap {display:none; position: absolute; top:44px; right:0; width: 200px; height: 62px; padding:12px; letter-spacing:0; line-height:1.1!important; text-align: center;; color:#fff; font-size: 13px; font-weight:400; background:#56565a; border-radius:8px; }
-.akl .tooltip-wrap:before {content:""; position:absolute; top:-9px; right:15px; width:19px; height:9px;   background:url(../images/akl_common/ico_tooltip.png) no-repeat 0 0; }
+.akl .tooltip-wrap:before {content:""; position:absolute; top:-9px; right:15px; width:19px; height:9px;   background:url(../images/akl_common/ico_tooltip.png) no-repeat 0 0; } 
 
 /* header > mini deshboard */
 .akl .ico-wraper.noData span.message-num {background: #bbb !important; }
