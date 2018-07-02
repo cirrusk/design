@@ -66,8 +66,9 @@ Version : AKL Hybris UIUX 1.0
 .akl .customer-wrap .amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {min-width:148px;}
 .akl .customer-wrap .outer-border-bottom .tabs-toggles .tab-toggle-wrap {min-width:148px;}
 
-/* 공지사항 > 필터,검색 */
+/* 공지사항 > 필터,검색 */ 
 .akl .customer-wrap .order-history-search-wrapper .cuton-form-wrapper button {font-size:14px;}
+.akl .customer-wrap .toggle-buttons-container.cutomer { display:none}
 .akl .customer-wrap .toggle-buttons-container.cutomer button span {color:#0075a4;}
 
 .akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper input[type="text"] {margin-bottom:0;}
@@ -548,7 +549,7 @@ Version : AKL Hybris UIUX 1.0
 	.customer-conts .center-program li p br {display:none}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {  
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .shop-info .panel-body .col-md-12 {min-height:150px; padding-right:410px}
 	.customer-conts .shop-info .panel-body .col-md-12 img {margin-top:50px; width:40%}
@@ -698,8 +699,12 @@ Version : AKL Hybris UIUX 1.0
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {padding:20px 0 0;}
 	.akl .customer-wrap .order-history-container .order-history-search-wrapper .form-wrapper button {border:0 none;}
 	.akl .cuton-form-wrapper .form-s input.input-st {width:100%;padding-right:50px;}
-	.akl .cuton-form-wrapper .form-s button {border:0 none;}
-
+	.akl .cuton-form-wrapper .form-s button {border:0 none;}  
+	
+	/* 공지사항 > 필터,검색 */  
+	.akl .customer-wrap .toggle-buttons-container.cutomer { display:block} 
+ 	.akl .cuton-form-wrapper .btn.btn-primary span { overflow:hidden; width:0; height:0; position:absolute; left:100px}
+ 	
 	/* 공지사항 > 목록 */
 	.akl .bod-customer  .list-content .content-list { padding: 10px 0 10px;}
 	.akl .bod-customer .list-content .list-row-title {padding:0 0;border-bottom:0 none;}
