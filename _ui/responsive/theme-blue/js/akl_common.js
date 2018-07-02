@@ -7,33 +7,6 @@
 		tabsTgg_Control();
 	});
 
-	//장바구니,주문결제 툴팁
-	$('.tooltip-btn').each(function(){
-		var _this = $(this);
-
-		//다른 툴팁 찾기
-		var parentsRow = _this.parents('.product-list-item');
-		var $parentsSiblings = parentsRow.siblings('.product-list-item').find('.promotion-tip-alert');
-		//this
-		var $promotionTip = _this.parents('.promotion').find('.promotion-tip-alert');
-		var $tip_closeBtn = $promotionTip.find('.tip-close');
-
-		_this.on('click',function(){
-			//열린 툴팁 닫기
-			$parentsSiblings.hide();
-
-			if($promotionTip.is(':hidden')){
-				$promotionTip.show();
-			} else if($promotionTip.is(':visible')){
-				$promotionTip.hide();
-			}
-		});
-
-		$tip_closeBtn.on('click',function(){
-			$promotionTip.hide();
-		});
-	});
-
 	//암웨이 매거진
 	$('.magazine-carousel').owlCarousel({
 		loop: false,
@@ -125,6 +98,9 @@
 
 	//약관 더보기 (768이하)
 	terms_ViewAll();
+
+	//장바구니,주문결제 툴팁
+	promotionTooltip();
 
 	//주문결제 : floating box
 	orderSummaryFixed();
@@ -517,6 +493,35 @@ function doOnOrientationChange(){
  *  쇼핑
  *  ------------------------------------
  */
+
+/* 장바구니,주문결제 툴팁 */
+function promotionTooltip(){
+	$('.tooltip-btn').each(function(){
+		var _this = $(this);
+
+		//다른 툴팁 찾기
+		var parentsRow = _this.parents('.product-list-item');
+		var $parentsSiblings = parentsRow.siblings('.product-list-item').find('.promotion-tip-alert');
+		//this
+		var $promotionTip = _this.parents('.promotion').find('.promotion-tip-alert');
+		var $tip_closeBtn = $promotionTip.find('.tip-close');
+
+		_this.on('click',function(){
+			//열린 툴팁 닫기
+			$parentsSiblings.hide();
+
+			if($promotionTip.is(':hidden')){
+				$promotionTip.show();
+			} else if($promotionTip.is(':visible')){
+				$promotionTip.hide();
+			}
+		});
+
+		$tip_closeBtn.on('click',function(){
+			$promotionTip.hide();
+		});
+	});
+}
 
 /* 주문결제  : STEP 여백조정 */
 function stepBox_Remargin(){
