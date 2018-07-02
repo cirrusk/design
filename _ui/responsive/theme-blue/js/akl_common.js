@@ -2,10 +2,8 @@
 /** ----- 공통 ----- */
 
 	//header login tooltip
-	$('.tooltip-btn').each(function(){
-		$(this).click(function() {
-			$('.tooltip-wrap').slideToggle(0);
-		});
+	$('.tooltip-btn').click(function() {
+		$('.tooltip-wrap').slideToggle(0);
 	});
 
 	//장바구니 툴팁
