@@ -1497,9 +1497,7 @@ function quickLinks(){
 };
 
 function quickLinksItem_MOB(){
-	$(".quick-links-item").click(function(e) {
-		e.preventDefault();
-
+	$(".quick-links-item").click(function(){
 		if($(this).hasClass("switcher")){
 			$(this).removeClass("switcher");
 		}else{
