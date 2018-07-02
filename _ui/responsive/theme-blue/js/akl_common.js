@@ -102,17 +102,19 @@
 	//장바구니,주문결제 툴팁
 	promotionTooltip();
 
-	//주문결제 : floating box
+	//floating box : 주문결제, 장바구니
 	orderSummaryFixed();
+	cartSummaryFixed();
+	$(window).resize(function(){
+		orderSummaryFixed();//주문결제
+		cartSummaryFixed(); //장바구니
+	});
 
 	//주문결제  : 스텝 여백조정
 	stepBox_Remargin();
 	$(window).resize(function(){
 		stepBox_Remargin();
 	});
-
-	//장바구니 : floating box
-	cartSummaryFixed();
 
 	//온라인 FAX 주문 - 툴팁 사이즈
 	toolTips_conSize();
@@ -543,7 +545,7 @@ function stepBox_Remargin(){
 /* 주문결제 : floating box */
 function orderSummaryFixed(){
 	if (! $('.shipping-delivery .shipping-delivery-summary').length){ return;}
-	function fixedBox(){
+	function fixedBox_order(){
 		//target position : top
 		var wScrollTop = $(window).scrollTop();
 		var headerHeight = 139;
@@ -551,9 +553,9 @@ function orderSummaryFixed(){
 		var topAreaHeight = headerHeight + headerBtmSpace;
 
 		//target position : right
-		var winWidth = $(window).width();
+		var _winWidth = $(window).width();
 		var conWidth = $('.shipping-delivery .row').width(); //content width
-		var positionRight = (winWidth - conWidth)/2;
+		var positionRight = (_winWidth - conWidth)/2;
 
 		/* -- 중간 멈춤 위치 찾기 -- */
 		//주문결제 div
@@ -570,7 +572,7 @@ function orderSummaryFixed(){
 		var targetReTOP = compareTop - targetWrap_top + headerHeight;
 		var $cartContent = targetObj.parent().find('.cart-items-wrapper');
 
-		if( winWidth > 768 ){
+		if( _winWidth > 768 ){
 			//기본높이 부여
 			if( $cartContent.length && targetObj_H > 400){
 				$cartContent.css({'min-height':targetObj_H});
@@ -591,12 +593,16 @@ function orderSummaryFixed(){
 				targetObj.attr('style','');
 			}
 		}
-		else if( winWidth < 769 ){
+		else if( _winWidth < 769 ){
 			targetObj.attr('style','');
 		}
 	}
+	$(window).on('resize',function(){
+		$('html, body').scrollTop(0);
+		fixedBox_order();
+	});
 	$(window).scroll(function(){
-		fixedBox();
+		fixedBox_order();
 	});
 }
 
@@ -613,9 +619,9 @@ function cartSummaryFixed(){
 		var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
 
 		//target position : right
-		var winWidth = $(window).width();
+		var _winWidth = $(window).width();
 		var conWidth = $('.cart-content-wrapper').width(); //content width
-		var positionRight = (winWidth - conWidth)/2;
+		var positionRight = (_winWidth - conWidth)/2;
 
 		/* -- 중간 멈춤 위치 찾기 -- */
 		//cart div
@@ -633,7 +639,7 @@ function cartSummaryFixed(){
 		var targetReTOP = compareTop - targetWrap_top + headerHeight - quickSrchbox;
 		var $cartContent = targetObj.parents('.shop-cart-conts').find('.cart-items-wrapper');
 
-		if( winWidth > 768 ){
+		if( _winWidth > 768 ){
 			//기본높이 부여
 			$(targetObj).width(targetObj_W);
 			if( $cartContent.length && targetObj_H > 400){
@@ -656,11 +662,15 @@ function cartSummaryFixed(){
 				targetObj.attr('style','');
 			}
 		}
-		else if( winWidth < 769 ){
+		else if( _winWidth < 769 ){
 			$(targetObj).attr('style','');
 		}
 	}
-	$(window).scroll(function(){
+	$(window).on('resize',function(){
+		$('html, body').scrollTop(0);
+		fixedBox();
+	});
+	$(window).on('scroll',function(){
 		fixedBox();
 	});
 }
