@@ -116,6 +116,9 @@
 		stepBox_Remargin();
 	});
 
+	//주문,장바구니 - .gwp-gift-selections box-resize
+	gwpGiftSelections();
+
 	//온라인 FAX 주문 - 툴팁 사이즈
 	toolTips_conSize();
 	$(window).resize(function(){
@@ -474,23 +477,6 @@ function HEADER_RecentSearches(){
 	});
 }
 
-/* 테스트용 추가
-function findTarget(){
-	$('body').click(function(e){ console.log(e.target); });
-}
-function doOnOrientationChange(){
-	switch(window.orientation){
-		case -90:
-		case 90:
-			{ console.log(' 가로모드 landscape');}
-			break;
-		default:
-			{ console.log(' 세로모드 portraite');}
-			break;
-	}
-}
-*/
-
 /** ------------------------------------
  *  쇼핑
  *  ------------------------------------
@@ -673,6 +659,11 @@ function cartSummaryFixed(){
 	$(window).on('scroll',function(){
 		fixedBox();
 	});
+}
+
+/* 주문,장바구니 - .gwp-gift-selections box-resize */
+function gwpGiftSelections(){
+
 }
 
 /* 제품상세 상단 이미지 : 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정 */
@@ -1134,23 +1125,6 @@ function event_NewABO_select(){
 	});
 }
 
-/* 온라인 FAX 주문 - 검색영역 열고 닫기 : 2018.06.25 html로 이동 (개발요청)
-function toggleBox_faxOrder_srch(){
-	var parentsO = $(this).parents('.faxOrder-search-box');
-	var _srchResult = parentsO.find('.shoping-cart-search');
-	var _closeBtn   = parentsO.find('.btnClosed');
-
-	if(_srchResult.is(':hidden')){
-		_srchResult.show();
-	}
-
-	_closeBtn.on('click',function(e){
-		e.preventDefault();
-		_srchResult.hide();
-	});
-}
-*/
-
 /* 온라인 FAX 주문 - 툴팁 : size 조정 */
 function toolTips_conSize(){
 	var _winWidth= $(window).width();
@@ -1305,41 +1279,11 @@ function fixedTable_Scroll(){
 				return;
 			} else {
 				obj_orignal.clone(true).appendTo(this).addClass('clone');
-				//스크롤 표시 이미지
-				//$('<button type="button" class="scrollArrow"\>').appendTo(this);
 			}
 
 		} else if( _winWidth > 1024){
 			$(this).find('.clone').remove();
-			//스크롤 표시 이미지
-			//$(this).find('.scrollArrow').remove();
 		}
-
-		/* 사용보류
-		//스크롤 표시 이미지
-		$(this).scroll(function(event){
-			var targetWrapperSize = $(this).width(); //wrapper size : 598
-			var actualContentSize = event.currentTarget.scrollWidth; //실제 컨텐츠 크기, 858
-			var scrolledPosition  = event.currentTarget.scrollLeft; //x좌표가 움직인 거리 , 최대 260
-			var scrollable_width  = actualContentSize - targetWrapperSize; // 260 (실제 테이블 width - 감싸는 DIV = 스크롤 가능 길이)
-
-			if (scrolledPosition < 10) {
-				//스크롤 시작
-				//console.log('스크롤 시작, 오른쪽으로 가기 >>');
-				$(this).next('.scrollArrow').removeClass('toLeft toRight');
-			}
-			else if ( scrollable_width === scrolledPosition ){
-				//비교거리 === 움직인 거리
-				//console.log('스크롤 끝, << 왼쪽으로 돌아가기');
-				$(this).next('.scrollArrow').removeClass('toRight').addClass('toLeft');
-			}
-			else {
-				//움직이는 중
-				$(this).next('.scrollArrow').addClass('toRight');
-			}
-		});
-		*/
-
 	});
 }
 
@@ -1534,7 +1478,6 @@ function qkLinkAlign(){
 
 				qLinkWrapper.attr('style','');
 				qLinkItem.attr('style','');
-				//$('#accordionQuick').isotope().isotope('destroy');
 			}
 
 			resetMOB();
@@ -1573,7 +1516,6 @@ function qkLinkAlign(){
 						$(this).css({width:itemWidth, height:itemHeight});
 					}
 				});
-				//$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
 			}
 
 			desktopView();
@@ -1836,69 +1778,9 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			});
 		}
 
-		/* TYPE 4 : CMS용(어드민 등록) */
-		function _layerTypeCMS(){
-			var topPosition = (_winHeight/2);
-			var leftPosition = (_winWidth/2);
-			var targetWidth_admin = $layerAdminAdd.width();
-			var targetHeight_admin = $layerAdminAdd.height();
-
-			//CMS용 레이어 열린상태로 변경
-			openedLayerCMS = true;
-
-			if( _winWidth < 769 ){
-				$layerAdminAdd.css({
-					'display':'block',
-					'position':'absolute',
-					'top':'0',
-					'left':'0',
-					'right':'0',
-					'width':'100%',
-					'height':'auto',
-					'margin-top':'15px',
-					'margin-left':'0',
-					'margin-bottom':'12px'
-				});
-
-				var cnH = _winHeight*0.6;
-				$layerAdminAdd.find('.layer-content-wrapper').addClass('overFlow').height(cnH);
-
-			} else {
-				$layerAdminAdd.css({
-					'display':'block',
-					'width':'600px',
-					'max-width':'none',
-					'top':'0',
-					'left':'0',
-					'margin-top':'0',
-					'margin-left':'0'
-				});
-
-				$layerAdminAdd.find('.layer-content-wrapper').removeClass('overFlow').height('');
-			}
-
-			/* 2018.05.17 사용보류
-			var layerTabPanel = $layerAdminAdd.find('.layer-tabs-wrapper');
-			var subTabCon = layerTabPanel.find('.tab-pane.content-block');
-			var biggestHeight=0;
-			setTimeout(function(){
-				//탭 컨텐츠 높이 동일하게 고정
-				subTabCon.each(function(){
-					var contsHeight = $(this).outerHeight(true);
-					//console.log(contsHeight);
-					if(contsHeight > biggestHeight){
-						biggestHeight = contsHeight;
-					}
-				}).height(biggestHeight);
-			},300)
-			//console.log('biggestHeight'+biggestHeight);
-			*/
-		}
-
 		_layerTypeBasic(); //기본형
 		_layerTypeFullSize(); //제품상세 큰이미지 보기
 		_layerTypeVideoView(); //동영상
-		//_layerTypeCMS(); //CMS
 	}
 
 	/* 레이어 위치잡기 */
@@ -1924,17 +1806,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		$(this).css('z-index',_thisIndex);
 		$(this).addClass('active');
 		$(this).attr('tabindex','0').show().focus();
-
-		//공통팝업(CMS)인 경우
-		/*
-		if( $layerAdminAdd.length && openedLayerCMS === true){
-			scroll_RESET();
-			$('#mask').remove();
-			$layerAdminAdd.addClass('admin');
-			openedLayerCMS = false;
-		} else {
-			openedLayerCMS = false;
-		}*/
 	});
 
 	/* 레이어 닫기 */
