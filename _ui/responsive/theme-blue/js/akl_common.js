@@ -125,6 +125,9 @@
 		stepBox_Remargin();
 	});
 
+	//주문 배송메시지
+	deliveryMSG();
+
 	//주문,장바구니 - .gwp-gift-selections box-resize
 	gwpGiftSelections();
 
@@ -739,6 +742,24 @@ function cartSummaryFixed(){
 	});
 	$(window).on('scroll',function(){
 		fixedBox();
+	});
+}
+
+/* 주문 배송메시지 */
+function deliveryMSG(){
+	$('.delivery-msg').each(function(){
+		var $inputBox = $(this).find('input[type=text].m-message');
+		var $msgList = $(this).find('.delivery-msg-list');
+		var $msgText = $msgList.find('button')
+
+		$inputBox.on('click',function(){
+			$msgList.show();
+			$msgText.on('click',function(){
+				var targetText = $(this).text();
+				$inputBox.val(targetText);
+				$msgList.hide();
+			});
+		});
 	});
 }
 
