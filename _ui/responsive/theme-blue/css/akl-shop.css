@@ -1088,8 +1088,8 @@ span.btn-business {display:inline-block;}
 .btn-adress-list.mounting {position: relative;top:0;left:0;}
 
 /* 주문결제 > 단일 > 기본배송지 */
-.default-shipping-address {clear:both;display:block;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; margin-top:30px;padding:20px 0 0; overflow:hidden;}
-
+.default-shipping-address {clear:both;display:block;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; margin-top:30px;padding:20px 0 0; }
+.default-shipping-address:after { content:""; clear:both;display:block;}
 .default-shipping-address.no-botm {border-bottom:0 none;}
 .address-tit {font-size:16px;font-weight:500;letter-spacing:-1px;}
 .default-shipping-address .detail-content {margin:0 0;padding:0 0;letter-spacing:-1px;width:100%;}
@@ -1104,7 +1104,7 @@ span.btn-business {display:inline-block;}
 .default-shipping-address .message-shop {padding:10px 30px 0 0px;}
 .default-shipping-address .detail-content input.form-control.m-message {margin-left:0;}
 .default-shipping-address .delivery-msg {position:relative;}
-.default-shipping-address .delivery-msg .delivery-msg-list {position:absolute; width:80%; padding:10px 5px; left:0; top:39px; border:1px solid #e3e3e3; background:#fff; z-index:100}
+.default-shipping-address .delivery-msg .delivery-msg-list {position:absolute; width:80%; padding:10px 5px 9px; left:0; top:39px; border:1px solid #e3e3e3; background:#fff; z-index:100}
 .default-shipping-address .delivery-msg .delivery-msg-list button { display:block; background:none; height:25px;}
 /* 주문결제 > 단일 > 새배송지 */
 .new-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; margin-top:30px;padding:20px 0 0}
