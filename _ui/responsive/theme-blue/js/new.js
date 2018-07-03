@@ -464,6 +464,7 @@ $(function(){
 
 //공지사항 2018.04.17
 $(function() {
+	/* 사용안함 : 2018.07.03 (akl_common.js 로 이동)
 	$(".js-order-history-filters").click(function(){
 		$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
 		if($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')){
@@ -480,7 +481,7 @@ $(function() {
 		}else{
 			$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
 		}
-	});
+	});*/
 
 	//new-announcement-pop
 	$('.ditto-schedule-table tbody tr').click(function(event) {

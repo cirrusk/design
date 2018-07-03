@@ -7,6 +7,15 @@
 		tabsTgg_Control();
 	});
 
+	//검색 - core 스크립트 정리
+	searchBox_orderHistoryFilters();
+
+	//검색-필터(PC-MOB 전환) - 공지사항,일시품절/해지/단종
+	searchBox_filter();
+	$(window).resize(function(){
+		searchBox_filter();
+	});
+
 	//암웨이 매거진
 	$('.magazine-carousel').owlCarousel({
 		loop: false,
@@ -326,6 +335,78 @@ function tabsTgg_Control(){
 				$(this).siblings('.scrollable-area.left , .scrollable-area.right').show();
 			}
 		});
+	});
+}
+
+function searchBox_orderHistoryFilters(){
+	//공지사항,일시품절/해지/단종 페이지에서는 실행안함
+	var searchTypeFilter = $('.order-history-search-wrapper.search-filter');
+	if (searchTypeFilter.length){return;}
+
+	//core 스크립트
+	$(".js-order-history-filters").click(function(){
+		$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+		if($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')){
+			$(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+		}else{
+			$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+		}
+	});
+
+	$(".js-order-history-search").click(function(){
+		$(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+		if($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')){
+			$(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+		}else{
+			$(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+		}
+	});
+}
+
+/* 검색-필터(PC-MOB 전환) - 공지사항,일시품절/해지/단종 */
+function searchBox_filter(){
+	var searchTypeFilter = $('.order-history-search-wrapper.search-filter');
+	if (!searchTypeFilter.length){return;}
+
+	function stateMOB(){
+		var _winWidth = $(window).width();
+		if(_winWidth < 769){
+			searchTypeFilter.each(function(){
+				$(this).find('.form-wrapper').hide();
+				var boxSearch = $(this).find('.js-search-form-wrapper');
+				var boxFilter = $(this).find('.js-filter-form-wrapper');
+
+				var hiddenClass = $(this).find('.hidden-sm .hidden-xs')
+
+
+				var _btnFilter = $(this).find('.js-order-history-filters');
+				var _btnSearch = $(this).find('.js-order-history-search');
+
+				_btnFilter.on('click',function(){
+					//
+					hiddenClass.removeClass('.hidden-sm .hidden-xs');
+					boxFilter.show();
+					boxSearch.hide();
+				});
+				_btnSearch.on('click',function(){
+					//
+					hiddenClass.removeClass('.hidden-sm .hidden-xs');
+					boxFilter.hide();
+					boxSearch.show();
+				});
+			});
+		}
+		if(_winWidth > 768){
+			searchTypeFilter.each(function(){
+				var boxSearch = $(this).find('.js-search-form-wrapper');
+				var boxFilter = $(this).find('.js-filter-form-wrapper');
+				$(this).find('.form-wrapper').show();
+			});
+		}
+	}
+	stateMOB();
+	$(window).resize(function(){
+		stateMOB();
 	});
 }
 
@@ -663,7 +744,10 @@ function cartSummaryFixed(){
 
 /* 주문,장바구니 - .gwp-gift-selections box-resize */
 function gwpGiftSelections(){
-
+	var _gwpGift = $('.gwp-gift-selections');
+	_gwpGift.each(function(){
+		var listWidth = $(this).parents('.shopping-cart-item-list').width();
+	});
 }
 
 /* 제품상세 상단 이미지 : 크게보기 클릭시, 레이어에서 같은 이미지 보이게 수정 */
