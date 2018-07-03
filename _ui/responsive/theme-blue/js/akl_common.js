@@ -760,6 +760,15 @@ function deliveryMSG(){
 				$msgList.hide();
 			});
 		});
+
+		$('html').on('click',function(){
+			$msgList.hide();
+		});
+	});
+
+	var stopPropagation_target = '.delivery-msg .m-message, .delivery-msg .delivery-msg-list';
+	$(stopPropagation_target).on('click',function(e){
+		e.stopPropagation();
 	});
 }
 
