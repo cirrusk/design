@@ -16,7 +16,7 @@
 		searchBox_filter();
 	});
 
-	//암웨이 매거진
+	//온라인 매거진
 	$('.magazine-carousel').owlCarousel({
 		loop: false,
 		nav: true,
@@ -39,6 +39,9 @@
 			}
 		}
 	});
+
+	//온라인 매거진 SNS
+	magazinSNS();
 
 	//회원가입 완료
 	$('.brandsList').owlCarousel({
@@ -156,6 +159,19 @@
 	fixedTable_Scroll();
 	$(window).resize(function(){
 		fixedTable_Scroll();
+	});
+
+	//뉴핀 성취자
+	$('.newpin a').click(function() {
+		if (this.hash !== "") {
+			event.preventDefault();
+
+			var hash = this.hash;
+			var headHei = $('.general-header').height();
+			var trgt = $(hash).offset().top;
+
+			$('html').animate({scrollTop: trgt - headHei}, 400);
+		}
 	});
 
 
@@ -413,6 +429,25 @@ function searchBox_filter(){
 	stateMOB();
 	$(window).resize(function(){
 		stateMOB();
+	});
+}
+
+/* 온라인 매거진 */
+function magazinSNS(){
+	$('.mz-item .btn-ico.sns').click(function() {
+		$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+		if(!$(this).next('.bod-view-sns').hasClass('on')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).next('.bod-view-sns').addClass('on')
+		}else{
+			$(this).next('.bod-view-sns').removeClass('on');
+		}
+	});
+	$('html').click(function(e) {
+		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+		}
 	});
 }
 
@@ -2292,7 +2327,7 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 		photoScaled: false,	// whether to scale the photo the scale of (options.width, options.height)
 		photoFade: 500,		// whether to use fade transition to show photos, false, or a miniseconds
 
-		padding: '0 0 10px',			// the padding of the content
+		padding: '0 15px 10px',			// the padding of the content
 
 		imgError: 'Failed to load image.',	// the error message when loading image
 		xhrError: 'Failed to load URL.',	// the error message when using ajax
