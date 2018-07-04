@@ -802,7 +802,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .loofo-list {margin:30px auto;width:auto;display:table}
 .loofo-list li {display:table-cell;width:33.333%}
 
-.logo-info {display:table;width:100%;}
+.logo-info {display:table;width:100%;table-layout:fixed;}
 .logo-info span {display:inline-block;vertical-align:middle;}
 .logo-info dl {display:inline-block;vertical-align:middle;padding-left:10px;}
 .logo-info dl dt {font-size:22px;font-weight:400;}
@@ -822,6 +822,22 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .espring-lst ul li ol.esp-num li em {display:table;width:25px;height:25px;line-height:24px;border-radius:50%;background:#008fc5;color:#fff;text-align:center;vertical-align:middle;margin-right:10px;}
 .espring-lst ul li ol.esp-num li span {display:table-cell;vertical-align:middle;color:#808285;font-size:16px;font-weight:300;text-align:left;}
 .espring-lst ul li ol.esp-num li span.n-wobn {width:25px;}
+
+.use-tbl {display:table;width:100%;box-sizing: border-box;table-layout:fixed;margin:25px auto;}
+.tbl-home1 {float:left;display:table;box-sizing: border-box;}
+.tbl-home1.geneal {width:60%;}
+.tbl-home1.drum {width:26%;}
+.tbl-home1.hand-wash {width:14%;}
+.tbl-home1 li.thead-tit {background:#bbbb;font-size:16px;font-weight:300;color:#fff;padding:15px 0;text-align:center;width:100%;box-sizing: border-box;}
+.tbl-home1 li.tbody {display:table;box-sizing: border-box;vertical-align:middle;width:100%;padding:12px 0;background:#f4f4f4;border-bottom:1px solid #e3e3e3;font-size:14px;}
+.tbl-home1 li.tbody span {display:table-cell;vertical-align:middle;text-align:center;color:#808285;font-weight:300;}
+.tbl-home1 li.tbody .list-tit {width:30%;text-align:left;padding-left:40px;color:#56565a;}
+.tbl-home1 li.tbody .txt-amount {width:23.333%;}
+
+.tbl-home1.drum li.tbody .list-tit {display:none;}
+.tbl-home1.hand-wash li.tbody .list-tit {display:none;}
+
+
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 
@@ -889,6 +905,9 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	ul.ecoup-kiut li {width:20%;}
 	ul.ecoup-kiut li span {width:inherit;}
 	ul.ecoup-kiut li img {width:inherit;height:auto;}
+	
+	.tbl-home1 li.tbody .list-tit {padding-left:10px;font-size:12px;}
+	.tbl-home1 li.tbody span {font-size:12px;}
 
 }
 
@@ -1248,7 +1267,17 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 
 	.espring-lst ul li ol.esp-num {display:block;vertical-align:middle;padding:10px 0;width:auto;}
 	span.esp-photo img {width:inherit;height:auto;}
+	
+	.tbl-home1 {float:left;display:block;}
+	.tbl-home1.geneal {width:100%;}
+	.tbl-home1.drum {width:100%;margin:20px 0 0}
+	.tbl-home1.hand-wash {width:100%;margin:20px 0 0}
+	.tbl-home1 li.tbody {font-size:12px;}
+	.tbl-home1 li.tbody .list-tit {padding-left:10px;font-size:12px;}
+	.tbl-home1 li.tbody .txt-amount {width:23.333%;}
 
+	.tbl-home1.drum li.tbody .list-tit {display:table-cell;width:30%;}
+	.tbl-home1.hand-wash li.tbody .list-tit {display:table-cell;width:30%;}
 
 }	
 
