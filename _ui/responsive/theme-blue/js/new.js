@@ -504,16 +504,28 @@ $(function() {
 		tabwidth()
 	});*/
 
-	$(".url-copy").click(function(){
-		$(".url_pop").toggle();
-	});
+	$('.url-copy>a').on('click',function(){
+		var urlPOP = $(this).next('.url_pop');
+		var urlLyClose = $(this).parents('.url-copy').find('.cart-popup-close');
 
-	$(".cart-popup-close").click(function(){
-		$(".url_pop").fadeOut();
-		$(".url_pop").fadeOut("slow");
-		$(".url_pop").fadeOut(3000);
-	});
+		if (urlPOP.is(':hidden')){
+			$(this).next('.url_pop').show();
+		} else if (urlPOP.is(':visible')){
+			$(this).next('.url_pop').hide();
+		}
 
+		urlLyClose.on('click',function(){
+			urlPOP.hide();
+		});
+
+		$('.url-copy').on('click', function(e){
+			e.stopPropagation();
+		});
+
+		$('html').on('click',function(){
+			urlPOP.hide();
+		});
+	});
 });
 
 //나의 주문내역
@@ -636,7 +648,7 @@ $(function() {
 //온라인 매거진
 $(function() {
 	$('.mz-item .btn-ico.sns').click(function() {
-		$('.url_pop').hide();
+		$(this).parents('.bod-view-sns ').find('.url_pop').hide();
 		if(!$(this).next('.bod-view-sns').hasClass('on')){
 			$('.bod-view-sns').removeClass('on');
 			$(this).next('.bod-view-sns').addClass('on')
@@ -647,7 +659,7 @@ $(function() {
 	$('html').click(function(e) {
 		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
 			$('.bod-view-sns').removeClass('on');
-			$('.url_pop').hide();
+			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
 		}
 	});
 });
