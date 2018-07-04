@@ -128,8 +128,11 @@
 	//주문 배송메시지
 	deliveryMSG();
 
-	//주문,장바구니 - .gwp-gift-selections box-resize
+	//주문,장바구니 (옵션,프로모션 박스 width 조정)
 	gwpGiftSelections();
+	$(window).resize(function(){
+		gwpGiftSelections();
+	});
 
 	//온라인 FAX 주문 - 툴팁 사이즈
 	toolTips_conSize();
@@ -772,11 +775,62 @@ function deliveryMSG(){
 	});
 }
 
-/* 주문,장바구니 - .gwp-gift-selections box-resize */
+/* 주문,장바구니 (옵션,프로모션 박스 width 조정) */
 function gwpGiftSelections(){
-	var _gwpGift = $('.gwp-gift-selections');
-	_gwpGift.each(function(){
-		var listWidth = $(this).parents('.shopping-cart-item-list').width();
+	var _ItemOptions = $('.gwp-gift-selections');
+	var _PromOptions = $('.view-bundle-contents');
+
+	function ItemReSize(){
+		_ItemOptions.each(function(){
+			//상품옵션 parent에 class추가
+			var _thisParent = $(this).parent('.product-item-element.list-item-info'); //상품명 div
+			_thisParent.addClass('hasOptionBox');
+
+			//상품옵션 div 가로사이즈
+			var colWidth_list;
+			var _this_Parents = $(this).parents('.shopping-cart-item-list .product-list-item'); //li
+
+			var _winWidth = $(window).width();
+			if( _winWidth < 769){
+				$(this).attr('style','');
+			}
+			else if(_winWidth < 901){
+				colWidth_list = _this_Parents.width()*0.53;
+				$(this).css({'width':colWidth_list});
+			}
+			else {
+				colWidth_list = _this_Parents.width()*0.45;
+				$(this).css({'width':colWidth_list});
+			}
+		});
+
+		_PromOptions.each(function(){
+			//상품옵션 parent에 class추가
+			var _thisParent = $(this).parent('.product-item-element.list-item-info'); //상품명 div
+			_thisParent.addClass('hasOptionBox');
+
+			//상품옵션 div 가로사이즈
+			var colWidth_list;
+			var _this_Parents = $(this).parents('.shopping-cart-item-list .product-list-item'); //li
+
+			var _winWidth = $(window).width();
+			if( _winWidth < 769){
+				$(this).attr('style','');
+			}
+			else if(_winWidth < 901){
+				colWidth_list = _this_Parents.width()*0.7;
+				$(this).css({'width':colWidth_list});
+			}
+			else {
+				colWidth_list = _this_Parents.width()*0.6;
+				$(this).css({'width':colWidth_list});
+			}
+		});
+	}
+
+	ItemReSize();
+	$(window).resize(function(){
+		ItemReSize();
 	});
 }
 
