@@ -666,6 +666,8 @@ $(function() {
 	});
 });*/
 
+
+/* akl_common.js 이동 - 2018.07.04
 //뉴핀 성취자
 $(function() {
 	$('.newpin a').click(function() {
@@ -680,7 +682,7 @@ $(function() {
 	    }
 	});
 });
-
+*/
 //회원탈퇴
 $(function() {
 	$('.G10600_lp8').click(function(event) {

@@ -161,6 +161,19 @@
 		fixedTable_Scroll();
 	});
 
+	//뉴핀 성취자
+	$('.newpin a').click(function() {
+		if (this.hash !== "") {
+			event.preventDefault();
+
+			var hash = this.hash;
+			var headHei = $('.general-header').height();
+			var trgt = $(hash).offset().top;
+
+			$('html').animate({scrollTop: trgt - headHei}, 400);
+		}
+	});
+
 
 /** ----- 마이페이지 ----- */
 
