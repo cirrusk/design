@@ -887,7 +887,8 @@ shop 옮김 : 2018.04.10
 .akl .accordion-custom.pro-category .panel-title a:hover {color:#002f5f !important;}
 
 .product-solition-top.type2 {padding:0 0 0}
-.akl .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;padding-left:20px;}
+.pagination-bar .pagination-toolbar .pull-left {margin-left:0;}
+.akl .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;}
 .akl .filters-header span {font-family:'Noto Sans KR', sans-serif;font-weight:500}
 .akl .pagination-bar-results .total-wrapper {font-family:'Noto Sans KR', sans-serif;font-weight:500}
 .qut-num {padding-left:5px;letter-spacing:-0.05em;}
@@ -1457,6 +1458,10 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 }
 @media (max-width:850px) {
 	.akl .zoom-center button {margin-bottom:10px}
+	.panel.aisde .sub-cateogry {}
+	#product-facet.product__facet .facet .facet__list {padding-right:0; background:pink}
+	.panel.aisde .list-group-item li {padding-right:0;}
+	.product__facet.col-product__facet .facet .facet__list .facet__list__text {padding-right:0;}
 }
 @media (min-width:1250px){
 	.img-product .product-main-info {min-height:590px;}
@@ -1465,8 +1470,18 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	/* 위시리스트 */
 	.akl #ShopListDetailForm .col-md-12 {width: 88%;}
 	.akl #ShopListDetailBody .btn-wrapper { top:0;}
+
+	/* 제품 카테고리 */
+	.akl .product-list-right-component .pagination-wrapper .filter-facet-button-container .filter-facet-button {display:none;}
+/* 	.akl .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {padding-left:20px;} */
+
+
+
+	.pagination-bar-results{border:1px solid red}
 }
 @media (max-width: 768px) {
+	.hidden-xs {display:none!important}
+
 	/* 최근검색어 */
 	.popoverword {top:128px;}
 
