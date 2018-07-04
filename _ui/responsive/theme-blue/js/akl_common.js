@@ -16,7 +16,7 @@
 		searchBox_filter();
 	});
 
-	//암웨이 매거진
+	//온라인 매거진
 	$('.magazine-carousel').owlCarousel({
 		loop: false,
 		nav: true,
@@ -39,6 +39,9 @@
 			}
 		}
 	});
+
+	//온라인 매거진 SNS
+	magazinSNS();
 
 	//회원가입 완료
 	$('.brandsList').owlCarousel({
@@ -413,6 +416,25 @@ function searchBox_filter(){
 	stateMOB();
 	$(window).resize(function(){
 		stateMOB();
+	});
+}
+
+/* 온라인 매거진 */
+function magazinSNS(){
+	$('.mz-item .btn-ico.sns').click(function() {
+		$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+		if(!$(this).next('.bod-view-sns').hasClass('on')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).next('.bod-view-sns').addClass('on')
+		}else{
+			$(this).next('.bod-view-sns').removeClass('on');
+		}
+	});
+	$('html').click(function(e) {
+		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+		}
 	});
 }
 

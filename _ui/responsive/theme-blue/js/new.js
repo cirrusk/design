@@ -645,6 +645,7 @@ $(function() {
 	});
 });
 
+/* akl_common.js 이동 - 2018.07.04
 //온라인 매거진
 $(function() {
 	$('.mz-item .btn-ico.sns').click(function() {
@@ -659,10 +660,11 @@ $(function() {
 	$('html').click(function(e) {
 		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
 			$('.bod-view-sns').removeClass('on');
+			$('.url_pop').hide();
 			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
 		}
 	});
-});
+});*/
 
 //뉴핀 성취자
 $(function() {
