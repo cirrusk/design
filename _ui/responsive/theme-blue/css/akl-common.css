@@ -845,12 +845,12 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item > a { font-weight:500; font-size: 16px;}
 
 /* header > navigation > 1depth */
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 40px !important; height: 66px}
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-image { width:40px;}
-.akl header.main-header .amway-theme .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-title { font-weight: 500;font-size: 14px;font-family:'Noto Sans KR', sans-serif;  }
+.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 40px !important; height:66px;}
+.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-image { width:40px;}
+.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-title { font-weight: 500;font-size: 14px;font-family:'Noto Sans KR', sans-serif;  }
 
 /* header > navigation > 2depth,3depth */
-.akl .gnb-nav { padding:40px 240px 0 20px; height:420px; overflow:hidden;font-family:'Noto Sans KR', sans-serif; font-weight:400 }
+.akl .gnb-nav { padding:40px 240px 0 20px; height:420px; overflow:hidden;font-family:'Noto Sans KR', sans-serif; font-weight:400;}
 .akl .gnb-nav h5 { font-size:16px; margin-bottom:20px;}
 .akl .gnb-nav h5>a {display:inline-block !important; padding:0 !important; font-size:16px !important; font-weight:500 !important;}
 
@@ -891,7 +891,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .brand-shop .category-brand-shop { overflow: hidden;}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .brand-shop .depth2-links a {padding: 0px; font-size: 14px; font-weight:500; display: block; margin-bottom:0}
 
-.akl .overlay-menu-tab-left { position:absolute; right:0; top:0;  width:240px; padding:45px 0 0 30px;}
+.akl .overlay-menu-tab-left { position:absolute; right:0; top:0; width:22%; min-width:180px; padding:45px 0 0 30px; box-sizing:border-box;}
 .akl .overlay-menu-tab-left ul { margin-bottom: 35px}
 .akl .overlay-menu-tab-left ul li a {font-size: 14px; font-weight:500; display:block; margin-bottom:4px }
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-tab-left a {padding: 0px; font-size: 14px; font-weight:400;font-family:'Noto Sans KR', sans-serif; color: #56565a; }
@@ -1168,6 +1168,18 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* IE 스크롤 */
 	.tabs-toggles, .col-search-tab>ul {-ms-overflow-style:-ms-autohiding-scrollbar; scrollbar-face-color:rgba(245,245,245,0); scrollbar-arrow-color:rgba(245,245,245,0); scrollbar-track-color:rgba(245,245,245,0.4); scrollbar-shadow-color:rgb(255,255,255,0.5); scrollbar-highlight-color:rgb(255,255,255,0); scrollbar-3dlight-color:rgb(255,255,255,0); scrollbar-darkshadow-Color:rgb(255,255,255,0);}
 }
+@media (max-width:920px) {
+	/* header > navigation > 1depth */
+	header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers {min-width:160px;}
+
+	.akl .gnb-nav {padding-left:0;}
+	.overlay-menu-container .search-results-close {right:15px;}
+
+	.akl .overlay-menu-tab-left {padding:40px 0 0 20px;}
+	.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 25px !important; height:66px;}
+	#navMenuTab2 .depth2-links>ul {height:390px;}
+}
+
 @media (max-width: 768px) {
 	.akl .product-item-element .checkbox-element-wrapper {margin:3px 0 0 6px;}
 
