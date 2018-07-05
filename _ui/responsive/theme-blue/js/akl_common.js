@@ -340,7 +340,7 @@ function tabsTgg_Control(){
 			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤바 움직인 길이 (x좌표가 움직인 거리)
 
 			//스크롤 가능 길이 알아내기(D) : B - A
-			var scrollable_width  = actualContentSize - targetWrapperSize;
+			var scrollable_width = actualContentSize - targetWrapperSize;
 
 			if (scrolledPosition < 30) {
 				//스크롤 시작

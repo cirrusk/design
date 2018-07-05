@@ -897,7 +897,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-tab-left a {padding: 0px; font-size: 14px; font-weight:400;font-family:'Noto Sans KR', sans-serif; color: #56565a; }
 .akl .overlay-menu-tab-left:after { content:""; position:absolute; top:46px; bottom:14px; left:0; border-left:1px solid #ccc}
 .akl .overlay-menu-tab-left h5{ font-size:14px!important; color:#56565a; margin-bottom: 11px; }
- 
+
 /*** footer ***/
 .akl footer { margin-top:0; padding-top:20px;}
 .akl .footer { height: auto; padding-bottom:25px;}
@@ -972,7 +972,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .search-left-list [type="checkbox"]:not(:checked)+label {color:#002f5f; font-weight:500}
 .akl .search-list-page-right-result-list-slot { padding-top:0; }
 .akl .search-list-page-right-result-list-slot .pagination-bar {margin: 0 ; padding-bottom:10px; border-bottom: 1px solid #e3e3e3;}
-
+.akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding:0 0 0 20px;}
 .akl .product__list--wrapper .pagination-bar .pagination-toolbar [class^=col-] {padding:0;}
 .akl .search-list-page-right-result-list-slot .pagination-bar .pagination-bar-results{margin-top:0; color: #002f5f; font-weight:700; font-family:'Noto Sans KR', sans-serif; font-size:14px; line-height: 15px;}
 .akl .search-list-page-right-result-list-slot .pagination-bar .pagination-bar-results span {font-weight:700;}
@@ -1000,25 +1000,8 @@ ul .ol-list { margin:10px 0 20px 15px}
 .product-solition-top {padding:40px 0 0}
 
 /* 제품 카테고리 > 목록  */
-.product-list-right-slot .product__listing.product__list {border:0px solid red}
-.product-list-right-slot .product__list--item.col-md-4 {border:0px solid blue}
-.plp .container-fluid.main-container.new-plp .row{}
-
 .plp > .new-plp > .row > [class^=col-sm],
 .plp > .new-plp > .row > [class^=col-xs] {padding:0;}
-@media (max-width:1024px) and (min-width:769px){
-	.search-list-page-right-result-list-component {padding-left:0;}
-	.akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding-left:0;}
-
-	.plp > .new-plp > .row > [class^=col-xs]{padding-right:20px;}
-	.new-plp>.row>.col-xs-3 {width:36% !important;}
-	.new-plp>.row>.col-md-9 {width:64% !important;}
-	.product-list-right-slot .product__list--item.col-md-4 {width:50% !important;}
-}
-@media (max-width:768px){
-
-}
-
 
 /* 상품목록 >  위시리스트, 스마트오더 담기 영역 ***/
 .form-wrapper.address-pop02 form input {margin-right:0;}
@@ -1109,7 +1092,6 @@ ul .ol-list { margin:10px 0 20px 15px}
 
 .akl .amway-theme .full-width-title-component__sub-title {font-size: 18px; font-weight: 400;letter-spacing: -2px;}
 
-
 .akl .featured_brands .product-recentlyviewed__imagelist { margin-top: -20px}
 
 .akl .full-width-title-component.notice {margin:0 auto; padding: 0; position:relative; max-width:1240px; text-align:left ; overflow:hidden;}
@@ -1144,22 +1126,24 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .qlink-left-box {width:800px; padding-right:0;}
 	.akl .qlink-right-box {float:left; padding-left:15px;}
 }
-@media (min-width: 769px) {
-	/* 암웨이플라자 shopfinder F10000 */
-	.mob-view-box {display:none;}
-
-	.akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding:0 0 0 20px;}
-}
 @media (min-width: 769px) and (max-width:1024px) {
 	/* headr */
 	.header-element-content {max-width:none !important; width:100% !important; box-sizing:border-box;}
 	header.main-header .amway-theme .header-container .header-wrapper{margin:0; max-width:none !important; width:100% !important;}
 	header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container{margin:0; max-width:none !important; width:100% !important;}
+
+	.search-list-page-right-result-list-component {padding-left:0;}
+	.akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding-left:0;}
+
+	.plp > .new-plp > .row > [class^=col-xs]{padding-right:20px;}
+	.new-plp>.row>.col-xs-3 {width:36% !important;}
+	.new-plp>.row>.col-md-9 {width:64% !important;}
+	.product-list-right-slot .product__list--item.col-md-4 {width:50% !important;}
 }
-/* @media (min-width: 769px) and (max-width:1000px) {
-	headr
-	.new-plp .col-md-9 {width:100%;}
-} */
+@media (min-width: 769px) {
+	/* 암웨이플라자 shopfinder F10000 */
+	.mob-view-box {display:none;}
+}
 @media (min-device-width:1025px){
 	/* webkit 스크롤 */
 	.tabs-toggles::-webkit-scrollbar-track, .col-search-tab>ul::-webkit-scrollbar-track {background-color:rgba(245,245,245,0.1); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}
@@ -1305,7 +1289,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* 스텝2 */
 	.shipping-delivery .checkout-steps .checkout-steps-active {width:calc(100% - 60px);}
 
-
 	/*** 404error화면 ***/
 	.error-wrap { display:flex; align-items:center; height:100%; width:100%; /*display:table; position:fixed; left:0; top:0; bottom:0;*/ }
 	.error-wrap .error-inner{  text-align:center; width:100%; padding:0 20px;/*display:table-cell; vertical-align:middle;*/ }
@@ -1394,53 +1377,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl #videobox .popup-video-preview__content .video-cont span img { height: 100%;}
 	.akl .popup-video-preview__content .video-preview__play { margin-left:-41px;margin-top:-41px;}
 
-	/* 백업
-	.akl .amway-theme .tabs-toggles {  margin-left: 0; overflow-x: auto;overflow-y: hidden; border: 0;}
-	.akl .outer-border-bottom {margin-left: 0;margin-right:0; position:relative;}
-	.akl .outer-border-bottom .tabs-toggles { margin-left: 0;margin-right: 0; }
-	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap { margin-bottom: 0 !important;} */
-
-	/* common > tabs (base.css 재정의) : 작업중  2018.06.07
-	.amway-theme .outer-border-bottom {position:relative;}
-	.amway-theme .outer-border-bottom:before {content:''; position:absolute; box-sizing:content-box; width:100%; padding-left:15px; padding-right:15px; height:1px; left:-15px; right:0; bottom:0; background:#dadada;}
-	.amway-theme .tab-toggle-wrap {display:inline-table; display: block; flex:auto; min-width:auto;	margin:0; justify-content:center; align-items:center;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap {min-width:auto; margin-bottom:0; border-bottom:1px solid #dadada;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap:last-of-type .tab-toggle{border:0;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle {min-width:auto; border:0; background:#fff; word-break:; text-align:center;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; padding:0; white-space:nowrap; color:#55565a; font-size:14px; font-weight:500; vertical-align: middle; line-height:120%; background:none;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle {padding-top:0; border:0;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {top:auto; bottom:-1px;}
-	.amway-theme .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text,
-	.amway-theme .tabs-toggles .tab-toggle-wrap .tab-toggle:hover .toggle-text {color:#002f5f;}*/
-
-	/* wrapper가 있는 경우 (js에서 .border-none 추가)
-	.amway-theme .outer-border-bottom.border-none {border:0;}
-	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap {border-bottom:0;}
-	.amway-theme .outer-border-bottom.border-none .tabs-toggles .tab-toggle-wrap .tab-toggle {border-bottom:1px solid #dadada;}
-	.akl .amway-theme .tabs-toggles {overflow-x:auto; overflow-y:hidden; margin-left:0; border:0;}
-	.akl .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text i {display: inline-block;}
-	.akl .outer-border-bottom {position:relative; margin-left:0; margin-right:0;}
-	.akl .outer-border-bottom .tabs-toggles {margin-left:0; margin-right:0;}
-	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap {margin-bottom: 0 !important; min-width:auto;}
-	.akl .outer-border-bottom .tabs-toggles .tab-toggle-wrap .tab-toggle,
-	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap,
-	.akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle,
-	.akl .tabs-toggles.case01 .tab-toggle-wrap,
-	.akl .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:auto;}*/
-
-	/* 스크롤되는 영역 표시 : 작업중
-	.outer-border-bottom .scrollable-area {position:absolute; left:0; top:-1px; width:60px; height:100%; z-index:1;}
-	.outer-border-bottom .scrollable-area.left {left:-15px;
-		background:    -moz-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); FF3.6-15
-		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); Chrome10-25,Safari5.1-6
-		background:     linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-	}
-	.outer-border-bottom .scrollable-area.right {left:auto; right:-15px;
-		background:    -moz-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); FF3.6-15
-		background: -webkit-linear-gradient(right, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); Chrome10-25,Safari5.1-6
-		background:       linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-	}
- */
 	/* common > form */
 	.form-group .address p {margin-right:105px;}
 	.form-group .address button {right:0}
@@ -1449,7 +1385,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.tbl-type1 th, .tbl-type1 td {padding:10px 15px;}
 	.refund-box .tbl-type1 th,	.refund-box .tbl-type1 td {font-size:12px; padding:8px 15px;}
 	.tbl-type2 th, .tbl-type2 td {border-bottom:1px solid #e3e3e3;padding:8px 15px;}
-
 	.cart-popup__item-info .table-content .tbl-type1 td {text-align:center;}
 
 	/* common > table sp3.4 */
@@ -1530,7 +1465,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body .overlay-menu-subcategory .subcategory-list li a {font-weight: 500;font-size: 14px; }
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__content .panel-body.brand .overlay-menu-subcategory .subcategory-list li a { text-align:center}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element a {font-size: 14px;font-weight: 700;}
-	
+
 	/*** header > 네비게이션 브랜드 ***/
 	#navMenuMobCollapse6 .list-wrapper {padding: 0 30px 15px 50px; }
 	#navMenuMobCategoryCollapse-BeverageNavNode2 { overflow:hidden; padding-bottom:15px;}
@@ -1544,9 +1479,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .amway-theme a span.icon-search {font-weight:400;}
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container {min-width:65px; }
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container button { background: #fff }
-	.akl .breadcrumb {padding:8px 0;font-size:12px; margin-top:60px; }
-
-
+	.akl .breadcrumb {padding:8px 0;font-size:12px; margin-top:60px;}
 
 	/* header > mini deshboard */
 	.akl .mDashboard {top: 63px !important;}
@@ -1557,10 +1490,9 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* header > navigation */
 	.akl .panel-default > .panel-heading {background-color: #fff;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel {border-top: 1px solid #dadada; border-bottom:0}
-	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel.aklnew .overlay-menu-mobile__panel__heading h4.panel-title .panel-toggle  { padding-left:20px ; } 
-	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element ul {padding:10px 0} 
+	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel.aklnew .overlay-menu-mobile__panel__heading h4.panel-title .panel-toggle  { padding-left:20px ; }
+	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element ul {padding:10px 0}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element li a {padding:5px 40px; font-weight:500}
-	
 	header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel.aklnew  {border-top: 1px solid #dadada;}
 
 	/*** footer ***/
@@ -1642,9 +1574,8 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .new-hot-brand .owl-theme .owl-controls .owl-nav .owl-prev { left:  17px;}
 	.akl .new-hot-brand .owl-theme .owl-controls .owl-nav .owl-next { right: 17px;}
 
-	.akl .recommendation__image {  height:auto; }
-	.akl .video-preview + .recommendation { margin-top: 40px; border: 0}
-
+	.akl .recommendation__image {height:auto;}
+	.akl .video-preview + .recommendation { margin-top: 40px; border:0}
 	.akl .full-width-title-component.notice {margin:0 auto 50px; position:relative; max-width:none; width:auto; text-align:left; }
 	.akl .full-width-title-component.notice h2 { position: static; font-size: 16px;  text-align: center; width:auto }
 	.akl .full-width-title-component.notice h2:after {display: none}
@@ -1679,8 +1610,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* cmmon > popup > URL 복사팝업 */
 	.pop-area-body:after { left:27px;}
 }
-
-
 @media screen and (max-width:800px) and (min-width:415px) {
 	/* .akl .product-list__thum { padding: 0;height:240px;width:240px; margin: 0 auto;} */
 	/* 일시품절 해지 단종
@@ -1688,7 +1617,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .extinction-list .product-list__item-content {height:455px;}
 	.akl .extinction-list .product-list__item-link {}*/
 }
-
 @media (min-width: 1025px) {
 	.akl .datepicker {width: auto !important;}
 }
@@ -1699,7 +1627,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 .search-list-page-right-result-list-slot .product__list--wrapper .product__list .product__list--item:nth-child(3n + 1) {clear:none}
 .col-search-right .search-list-page-right-result-list-slot .product__list--wrapper .product__list .product__list--item:nth-child(4n + 1) {clear:none}
 }
-
 @media (max-width: 660px){
 	/* 상품목록 */
 	.product__list--item:last-child .plp-add-to-shopping-list .dropdown-menu {bottom: auto;}
@@ -1711,7 +1638,4 @@ label + .toolTip-wrapper {margin-left:6px;}
 
 @media (max-width: 320px) {
 	.cbox {max-width:320px !important; min-width:100%;}
-
-
-
 }
