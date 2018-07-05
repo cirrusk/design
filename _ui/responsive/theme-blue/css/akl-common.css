@@ -1170,16 +1170,16 @@ label + .toolTip-wrapper {margin-left:6px;}
 }
 @media (max-width:920px) {
 	/* header > navigation > 1depth */
-	header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers {min-width:160px;}
-
-	.akl .gnb-nav {padding-left:0;}
-	.overlay-menu-container .search-results-close {right:15px;}
-
-	.akl .overlay-menu-tab-left {padding:40px 0 0 20px;}
+	header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers.col-sm-3 {min-width:180px; width:20%;}
 	.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 25px !important; height:66px;}
+	.akl .gnb-nav {padding-left:0; height:450px;}
+	.akl .overlay-menu-tab-left {padding:40px 0 0 20px; min-width:150px;}
+	.overlay-menu-container .search-results-close {right:15px;}
+	.tab-pane.gnb-nav .depth2-links>ul>li {min-height:40px;}
+	.tab-pane.gnb-nav .depth2-links>ul>li .depth3-links {padding-bottom:20px;}
 	#navMenuTab2 .depth2-links>ul {height:390px;}
+	#navMenuTab4 .depth2-links>ul {height:400px;}
 }
-
 @media (max-width: 768px) {
 	.akl .product-item-element .checkbox-element-wrapper {margin:3px 0 0 6px;}
 

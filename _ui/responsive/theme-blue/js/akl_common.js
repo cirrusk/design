@@ -1557,13 +1557,13 @@ function GNB_SubDepth_Control(){
 				$2Dep_sideMenu.hide();
 			} else {
 				$2Dep_sideMenu.show();
-				gnbSideMenu();
+				//gnbSideMenu();
 			}
 		});
 	});
 
 	/* 오른쪽 메뉴 숨기기 */
-	gnbSideMenu();
+	//gnbSideMenu();
 	function gnbSideMenu(){
 		//메뉴영역 확보위해 메뉴 숨김
 		var _winWidth = $(window).width();
@@ -1574,7 +1574,7 @@ function GNB_SubDepth_Control(){
 		}
 	}
 	$(window).resize(function(){
-		gnbSideMenu();
+		//gnbSideMenu();
 
 		//브랜드샵 활성화상태에서 resize 되면 숨김
 		if ($2Dep_brandShop.hasClass('active')){
@@ -1704,10 +1704,15 @@ function qkLinkAlign(){
 					var qPanel_li_Num = qPanel.find('li').length;
 					var qPanel_li_Height = 28;
 					var itemHeight;
-					var itemWidth = 210;
+					var itemWidth = 200;
 
 					if(_winWidth < 851){
-						itemWidth = 195;
+						itemWidth = 185;
+					}
+					if(_winWidth < 800){
+						qHeaderHeight = 26;
+						qPanel_li_Height = 24;
+						itemWidth = 175;
 					}
 
 					if ( qPanel.length ){
