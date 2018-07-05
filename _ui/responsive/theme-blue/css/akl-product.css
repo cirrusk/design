@@ -104,7 +104,7 @@ Editor : sookkyung Han
 .detail-content-area .advan-com-tit:first-child{margin-top:50px;}
 
 .ad-setp-lst3 {margin-top:20px;clear:both;width:100%;} 
-.ad-setp-lst3:after {clear:both;display:block;}
+.ad-setp-lst3:after {content:'';display:block;clear:both;}
 .ad-setp-lst3 li {float:left;width:50%;font-size:16px;vertical-align:middle;margin:15px 0;}
 .ad-setp-lst3 li dl {display:table;width:100%;margin:0 auto;}
 .ad-setp-lst3 li dl dt, .ad-setp-lst3 li dl dd {display:inline-block;vertical-align:middle;letter-spacing:-1px;box-sizing: border-box;}
@@ -119,7 +119,7 @@ Editor : sookkyung Han
 .ad-setp-lst3 .i-won{width:80px;height:80px;}
 .ad-setp-lst3 .i-won.green {color:#fff !important;background:#20893d;}
 
-.txt-lound.purple07{background:#731472;}
+.txt-lound.purple07{background:#731472;} 
 .txt-lound.red{background:#c4133f;}
 .txt-lound.blue08{background:#258b98;}
 .txt-lound.orange02{background:#f68e2d;}
@@ -511,7 +511,11 @@ Editor : sookkyung Han
 .k-icon.ad-setp-lst dt{position:relative;}
 .k-icon.ad-setp-lst .icon-img{display:inline-block;position:absolute;top:0;left:-50px;width:42px;height:42px;padding:7px 0;vertical-align:middle;border-radius:50%;text-align:center;background-color:#f4f4f4;}
 
-
+.gray-box.queen{margin-top:18px;}
+.gray-box.queen .inge-lst03{padding:0 20px;}
+.gray-box.queen .inge-lst03:after{content:'';display:block;clear:both;}
+.gray-box.queen .inge-lst03 li{float:left;width:50%;}
+.gray-box.queen .inge-lst03 li:after{top:11px;}
 
 
 @media (min-width: 1074px) and (max-width: 1280px) {
@@ -719,6 +723,7 @@ Editor : sookkyung Han
 	.special-item .item-box dt{font-size:16px;}
 	.special-item .item-box ul{padding:5px;}
 	
+	.gray-box.queen .inge-lst03 li{width:100%;}
 }
 
 @media (max-width: 324px) {
