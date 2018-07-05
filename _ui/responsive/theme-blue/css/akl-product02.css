@@ -37,7 +37,7 @@ Editor : ji-min Park
 .visual-area.type02.foundation_longwearing{background: #000000 url(../images/akl_product/beauty/bg_longwearing_foundation.png) no-repeat top center;height:1105px;} /* 리프팅 스무싱 파운데이션 */
 .visual-area.type02.all_day_cover{background: #000000 url(../images/akl_product/beauty/bg_all_day_cover.png) no-repeat top center;height:1058px;} /* 올데이커버 파운데이션 */
 .visual-area.type02.all_day_cover02{background: #000000 url(../images/akl_product/beauty/bg_all_day_cover_02.png) no-repeat top center;height:1002px;} /* 올데이커버 파운데이션 리필*/
-.visual-area.type02.ex_loose_fd_pact{background: #000000 url(../images/akl_product/beauty/bg_loose_fd_light.png) no-repeat top center;height:1040px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더  팩트 리필) */
+.visual-area.type02.ex_loose_fd_pact{background: #000000 url(../images/akl_product/beauty/bg_loose_fd_light.png) no-repeat top center;height:1038px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더  팩트 리필) */
 .visual-area.type02.ex_fit_powder{background: #000000 url(../images/akl_product/beauty/bg_powder_refill_4931.png) no-repeat top center;height:798px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더) */
 .visual-area.type02.ex_fit_loose_powder{background: #000000 url(../images/akl_product/beauty/bg_ex_fit_loose_powder_4231.png) no-repeat top center;height:847px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
 .visual-area.type02.concealer{background: #000000 url(../images/akl_product/beauty/bg_concealer.png) no-repeat top center;height:884px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
@@ -501,10 +501,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .pormula-lst li:last-child{margin-right:0;}
 .pormula-lst li span{position:relative;display: block;width: auto;height: auto;}
 .pormula-lst li span img{display:block;}
-.pormula-lst li span em{position:absolute;display: block;width:100%;top: 50%;left:0;margin-top:-2px;line-height:1.3;color:#ffffff;text-align: center;}
-.pormula-lst li span em.one{margin-top:-9px;}
-.pormula-lst li span em.two{margin-top:-18px;}
-
+.pormula-lst li span em.fo-mark{position:absolute;display: block;width:100%;top:50%;left:0;margin-top:-2px;line-height:1.3;color:#ffffff;text-align: center;}
+.pormula-lst li span em.neutral{margin-top:-9px;}  /* 중성 */
+.pormula-lst li span em.weight{margin-top:-18px;}  /* 중량,용량 */
+.pormula-lst li span em.alkali{margin-top:-22px;}  /* 알칼리성 */
+.pormula-lst li span em.acid{} /* 기본이 산성 */
+.pormula-lst li span em.weak-acid{margin-top: -12px;} /* 약산성 */
 
 
 .bioquest-lst {width:100%;font-size: 16px;letter-spacing: -1px;margin-bottom:0;}
@@ -758,7 +760,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{top:-5px;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{/*text-align:right;*/}
 	
-	.pormula-lst{text-align:center;}
+	.pormula-lst{text-align:left;}
 	.pormula-lst li{margin-right: 15px;}
 	.border-bx{padding:20px 25px;}
 	.dish-thum-lst .dish-thum-wrap strong.h6{display:block;width:100%;text-align:center;font-size:16px;}

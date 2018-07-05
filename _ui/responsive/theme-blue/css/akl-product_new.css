@@ -834,12 +834,25 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .tbl-home1 li.thead-tit {display:table;background:#bbbb;font-size:16px;font-weight:300;color:#fff;padding:15px 0;text-align:center;width:100%;box-sizing: border-box;}
 .tbl-home1 li.tbody {display:table;box-sizing: border-box;vertical-align:middle;width:100%;padding:12px 0;background:#f4f4f4;border-bottom:1px solid #e3e3e3;font-size:14px;}
 .tbl-home1 li.tbody span {display:table-cell;vertical-align:middle;text-align:center;color:#808285;font-weight:300;}
-.tbl-home1 li.tbody .list-tit {width:30%;text-align:left;padding-left:40px;color:#56565a;}
-.tbl-home1 li.tbody .txt-amount {width:23.333%;}
+.tbl-home1 li.tbody .list-tit {width:30%;text-align:left;padding-left:40px;color:#56565a;min-height: 60px;}
+.tbl-home1 li.tbody .txt-amount {width:23.333%;min-height: 60px;}
 
 .tbl-home1.drum li.tbody .list-tit {display:none;}
 .tbl-home1.hand-wash li.tbody .list-tit {display:none;}
 
+/* col 4칸 */
+.tbl-home1.range {width:25%;}
+.tbl-home1.range li.tbody .list-tit {display:none;}
+
+/* col 3칸 */
+.tbl-home1.three-block {width:50%;}
+.tbl-home1.three-block li.tbody .list-tit {display:none;}
+.tbl-home1.three-block:first-child li.tbody .list-tit {display: table-cell;}
+.tbl-home1.three-block:first-child li.thead-tit{padding: 15px 0;}
+.tbl-home1.three-block:first-child li.tbody .list-tit{width:60%}
+.tbl-home1.three-block:first-child li.tbody .txt-amount{width:40%;}
+
+/* col 2칸 */
 .tbl-home1.compare {width:50%;}
 .tbl-home1.compare li.thead-tit span {display:table-cell;vertical-align:middle;text-align:center;}
 .tbl-home1.compare li.thead-tit span.th-tit {width:50%;}
@@ -850,9 +863,23 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .tbl-home1.range {width:25%;}
 .tbl-home1.range li.tbody .list-tit {display:none;}
 
+.tbl-home1.compare.type2 li.tbody .list-tit, 
+.tbl-home1.range.type2 li.tbody .list-tit{text-align:left;}
+
+/* col 1칸 */
+.tbl-home1.one-block {width:100%;}
+.tbl-home1.one-block li.thead-tit span.th-tit {width:50%;}
+.tbl-home1.one-block li.tbody .txt-amount {width:50%;text-align:center;}
+
+
 .com-tint {clear:both;padding:30px 0;margin:0 auto;}
 .com-tint dt {font-size:18px;font-weight:400}
 .com-tint dd {font-size:16px;font-weight:300;color:#808285;}
+
+
+
+
+
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 
@@ -886,6 +913,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.system-lst4 ul li:before {top:45%;left:-11px;right:0;}
 
 }
+
 
 @media (min-width: 769px) and (max-width: 1073px) {
 	.info-p-list ul li span img {width:100%;height:auto;}
@@ -1284,7 +1312,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
 	.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
 	.visual-area.type02.supreme_lx .v-pro.ar4439 span img {width:inherit;height:inherit;}
-	
+
 	/* 메이크업 */
 	.ingre-list-wrap.ar3189 {margin-top:0;}
 
@@ -1355,15 +1383,24 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.tbl-home1.range li.thead-tit span.th-txt {width:60%;}
 	.tbl-home1.range li.tbody .list-tit {display:table-cell;width:40%;text-align:center;}
 	.tbl-home1.range li.tbody .txt-amount {display:table-cell;width:40%;text-align:center;}
+	
+	
+	.tbl-home1.three-block {width:100%;margin: 20px 0 0;}		
+	.tbl-home1.three-block li.thead-tit{padding: 15px 0;}	
+	.tbl-home1.three-block li.tbody .list-tit {vertical-align: middle;display: table-cell;padding-left:30px;}	
+	.tbl-home1.three-block:first-child li.tbody .list-tit, 
+	.tbl-home1.three-block li.tbody .list-tit{width: 50%;text-align: left;}	
+	.tbl-home1.three-block:first-child li.tbody .txt-amount, 
+	.tbl-home1.three-block li.tbody .txt-amount{width:50%;text-align: center;}
+	
+	.tbl-home1.one-block li.tbody .list-tit{padding-left:20px;}
+	.tbl-home1.compare.type2 li.tbody .list-tit, .tbl-home1.range.type2 li.tbody .list-tit{padding-left:20px;}
 
 }	
 
 
-@media (max-width: 324px) {
-	/* .advan-left{width:100%;padding:0 0;}
-	.advan-right{width:100%;padding:0 0;}
-	.advan-left.fleft{padding:0 0;}
-	.advan-right.fright{padding:0 0;}
-	.akl .com-tit em{font-size:18px;} */
+@media (max-width: 324px) {	
+	.tbl-home1.three-block li.tbody .list-tit, .tbl-home1.one-block li.tbody .list-tit{padding-left:15px;}
+	.tbl-home1.compare.type2 li.tbody .list-tit, .tbl-home1.range.type2 li.tbody .list-tit{padding-left:15px;}
 	
 }
