@@ -55,7 +55,8 @@ Version : AKL Hybris UIUX 1.0
 .orange02{color:#f68e2d !important;} 	/* light-orange */
 .orange03{color:#eb7760 !important;} 	/* coral */
 .orange04{color:#df7e24 !important;} 	/* gold-orange */
-.orange05 {color:#db5a3a}
+.orange05{color:#db5a3a}
+.orange06{color:#f7bf89}
 
 .purple{color:#e125aa !important;}/* .purple */
 .purple01{color:#e28379 !important;}/* .grapefruit */
@@ -734,7 +735,7 @@ span.txt-next {display:block;}
 .txt-info-visual.ar1616 .v-etc {margin:20px 0 0}
 
 /* 메이크업 */
-.visual-area.tools.min-tools .v-txt {}
+.ingre-list-wrap.ar3189 {margin-top:100px;}
 
 /* 샘플작업 */
 .advantage-area.center {text-align:center;}
@@ -856,9 +857,33 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 @media (min-width: 1074px) and (max-width: 1280px) {
 
 	.system-lst {margin:0 auto;width:80%;}
-	.system-lst ul li .lst-won {width:160px;height:160px;}
+	.system-lst ul li .lst-won {width:auto;}
 	.system-lst ul li .lst-won p {height:115px;}
-	.system-lst ul li .lst-won p span img {height:80px;width:auto;}
+	.system-lst ul li .lst-won p span img {width:60%;height:auto;}
+
+	.system-lst2 {margin:20px auto 0;width:100%;}
+	.system-lst2 ul li:after {margin-top:-10px;left:-3px}
+	.system-lst2 ul li {padding:0 0;}
+	.system-lst2 ul li .lst-won {width:auto;}
+	.system-lst2 ul li .lst-won p {height:inherit;}
+	.system-lst2 ul li .lst-won p img {width:60%;height:auto;}
+	.system-lst2 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;}
+
+	.system-lst3 {margin:30px auto 0;width:100%;}
+	.system-lst3 ul li:after {top:50%;left:-3px;width:8px;height:8px;margin-top:-16px;}
+	.system-lst3 ul li .lst-won {width:auto;}
+	.system-lst3 ul li .lst-won p {height:inherit;}
+	.system-lst3 ul li .lst-won p img {width:80%;height:auto;}
+	.system-lst3 ul li .lst-won span  {font-size:12px;height:42px;line-height:14px;}
+	.system-lst3.type-2nd ul li .lst-won span{font-size: 14px;height: inherit;}
+	.system-lst3.type-2nd ul li .lst-won p img{width:inherit;}
+
+	.system-lst4.array {float:none;margin:0 auto;}
+	.system-lst4 ul li {display:table-cell;width:50%;padding:0 20px;}
+	.system-lst4 ul li .lst-won {width:auto;}
+	.system-lst4 ul li .lst-won p {height:inherit;}
+	.system-lst4 ul li .lst-won p img {width:60%;height:auto;}
+	.system-lst4 ul li:before {top:45%;left:-11px;right:0;}
 
 }
 
@@ -876,13 +901,29 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.system-lst ul li .lst-won p {height:105px;}
 	.system-lst ul li .lst-won p span img {height:80px;width:auto;}
 
-	.system-lst2 {margin:0 auto;width:100%;}
+	.system-lst2 {margin:20px auto 0;width:100%;}
+	.system-lst2 ul li:after {margin-top:-10px;left:-3px}
+	.system-lst2 ul li {padding:0 0;}
+	.system-lst2 ul li .lst-won {width:auto;}
+	.system-lst2 ul li .lst-won p {height:inherit;}
+	.system-lst2 ul li .lst-won p img {width:60%;height:auto;}
+	.system-lst2 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;}
 
-	.system-lst4.array {float:right;}
+	.system-lst3 {margin:30px auto 0;width:100%;}
+	.system-lst3 ul li:after {top:50%;left:-3px;width:8px;height:8px;margin-top:-16px;}
+	.system-lst3 ul li .lst-won {width:auto;}
+	.system-lst3 ul li .lst-won p {height:inherit;}
+	.system-lst3 ul li .lst-won p img {width:80%;height:auto;}
+	.system-lst3 ul li .lst-won span  {font-size:12px;height:42px;line-height:14px;}
+	.system-lst3.type-2nd ul li .lst-won span{font-size: 14px;height: inherit;}
+	.system-lst3.type-2nd ul li .lst-won p img{width:inherit;}
+
+	.system-lst4.array {float:none;margin:0 auto;}
 	.system-lst4 ul li {display:table-cell;width:50%;padding:0 20px;}
-	.system-lst4 ul li .lst-won {width:100px;}
-	.system-lst4 ul li .lst-won p {height:100px;}
-	.system-lst4 ul li:before {content:'';display:inline-block;position:absolute;top:50%;left:-11px;right:0;}
+	.system-lst4 ul li .lst-won {width:auto;}
+	.system-lst4 ul li .lst-won p {height:inherit;}
+	.system-lst4 ul li .lst-won p img {width:60%;height:auto;}
+	.system-lst4 ul li:before {top:45%;left:-11px;right:0;}
 	
 	.system-lst5 ul li {float:left;width:33.333%;padding:0 20px;}
 	.system-lst5 ul li .lst-won span {font-size:14px;height:120px;}
@@ -1053,7 +1094,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.variance li div:first-child:after{right:5px;}
 	
 	.system-lst {margin:0 auto;width:auto;}
-	.system-lst ul li .lst-won {width:120px;height:120px;}
+	.system-lst ul li .lst-won {width:auto;height:120px;}
 	.system-lst ul li .lst-won p {width:100%;height:90px;}
 	.system-lst ul li .lst-won p span img {height:80px;width:auto;}
 	.system-lst ul li .lst-won span {display:table;width:100%;letter-spacing:-1px;font-size:12px;}
@@ -1061,25 +1102,25 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.system-lst2 {margin:20px auto 0;width:100%;}
 	.system-lst2 ul li:after {margin-top:-10px;left:-3px}
 	.system-lst2 ul li {padding:0 0;}
-	.system-lst2 ul li .lst-won p {height:auto;}
-	.system-lst2 ul li .lst-won p img {width:120px;height:auto;}
+	.system-lst2 ul li .lst-won {width:auto;}
+	.system-lst2 ul li .lst-won p {height:inherit;}
+	.system-lst2 ul li .lst-won p img {width:60%;height:auto;}
 	.system-lst2 ul li .lst-won span {display:block;padding:10px 0;letter-spacing:-1px;}
 
-	
 	.system-lst3 {margin:30px auto 0;width:100%;}
-	.system-lst3 ul li:after {top:50%;left:-3px;width:6px;height:6px;margin-top:-20px;}
-	.system-lst3 ul li .lst-won {width:70px;}
+	.system-lst3 ul li:after {top:50%;left:-3px;width:8px;height:8px;margin-top:-20px;}
+	.system-lst3 ul li .lst-won {width:auto;}
 	.system-lst3 ul li .lst-won p {height:inherit;}
-	.system-lst3 ul li .lst-won p img {width:inherit;height:auto;}
+	.system-lst3 ul li .lst-won p img {width:60%;height:auto;}
 	.system-lst3 ul li .lst-won span  {font-size:12px;height:42px;line-height:14px;}
 	.system-lst3.type-2nd ul li .lst-won span{font-size: 14px;height: inherit;}
-	.system-lst3.type-2nd ul li .lst-won p img{width:70px;}
+	.system-lst3.type-2nd ul li .lst-won p img{width:inherit;}
 
 	.system-lst4.array {float:none;margin:0 auto;}
 	.system-lst4 ul li {display:table-cell;width:50%;padding:0 20px;}
-	.system-lst4 ul li .lst-won {width:80px;}
-	.system-lst4 ul li .lst-won p {height:auto;width:inherit;}
-	.system-lst4 ul li .lst-won p img {height:inherit;width:inherit;}
+	.system-lst4 ul li .lst-won {width:auto;}
+	.system-lst4 ul li .lst-won p {height:inherit;}
+	.system-lst4 ul li .lst-won p img {width:60%;height:auto;}
 	.system-lst4 ul li:before {top:45%;left:-11px;right:0;}
 	
 	.system-lst5 ul li {display:block;width:100%;background:url('../images/akl_product/bath-body/ico_child_next_mobile.png') no-repeat center bottom;padding:0 0 20px;}
@@ -1243,6 +1284,9 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 	.visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
 	.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
 	.visual-area.type02.supreme_lx .v-pro.ar4439 span img {width:inherit;height:inherit;}
+	
+	/* 메이크업 */
+	.ingre-list-wrap.ar3189 {margin-top:0;}
 
 	/* 샘플작업 */
 	.visual-area.type05 {padding:0 0;}
