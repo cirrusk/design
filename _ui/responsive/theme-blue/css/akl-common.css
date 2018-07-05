@@ -1143,6 +1143,9 @@ label + .toolTip-wrapper {margin-left:6px;}
 @media (min-width: 769px) {
 	/* 암웨이플라자 shopfinder F10000 */
 	.mob-view-box {display:none;}
+
+	/* 검색버튼 - text 숨김해제 */
+	.akl .btn.btn-primary span.hidden-sm {display:block !important;}
 }
 @media (min-device-width:1025px){
 	/* webkit 스크롤 */
@@ -1490,10 +1493,10 @@ label + .toolTip-wrapper {margin-left:6px;}
 	/* header > navigation */
 	.akl .panel-default > .panel-heading {background-color: #fff;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel {border-top: 1px solid #dadada; border-bottom:0}
-	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel.aklnew .overlay-menu-mobile__panel__heading h4.panel-title .panel-toggle  {  padding: 15px 15px 15px 20px; } 
-	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element ul {padding:10px 0} 
+	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel.aklnew .overlay-menu-mobile__panel__heading h4.panel-title .panel-toggle  {  padding: 15px 15px 15px 20px; }
+	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element ul {padding:10px 0}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element li a {padding:5px 40px; font-weight:500}
-	
+
 	header.main-header .amway-theme .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel.aklnew  {border-top: 1px solid #dadada;}
 
 	/*** footer ***/
@@ -1625,8 +1628,8 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.container {width:auto;}
 }
 @media (min-width: 769px){
-.search-list-page-right-result-list-slot .product__list--wrapper .product__list .product__list--item:nth-child(3n + 1) {clear:none}
-.col-search-right .search-list-page-right-result-list-slot .product__list--wrapper .product__list .product__list--item:nth-child(4n + 1) {clear:none}
+	.search-list-page-right-result-list-slot .product__list--wrapper .product__list .product__list--item:nth-child(3n + 1) {clear:none}
+	.col-search-right .search-list-page-right-result-list-slot .product__list--wrapper .product__list .product__list--item:nth-child(4n + 1) {clear:none}
 }
 @media (max-width: 660px){
 	/* 상품목록 */
