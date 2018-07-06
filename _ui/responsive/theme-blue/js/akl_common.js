@@ -67,6 +67,9 @@
 		}
 	});
 
+	//메인 > 신제품,프로모션 div 동일 높이 맞추기
+	MAIN_featuredProduct();
+
 
 /** ----- SHOP ----- */
 
@@ -236,6 +239,21 @@
  *  공통
  *  ------------------------------------
  */
+
+/* 메인 > 신제품,프로모션 div 동일 높이 맞추기 */
+function MAIN_featuredProduct(){
+	var maxHeight = 0;
+	$('.featured-product').each(function(){
+		var _SubItems = $(this).find('.featured-product__item');
+		_SubItems.each(function(){
+			var itemHeight = $(this).outerHeight(true);
+			if( itemHeight > maxHeight ) { maxHeight = itemHeight; }
+		});
+
+		var btmSpace = 50; //자세히보기 영역 padding-bottom 만큼의 값
+		_SubItems.height(maxHeight - btmSpace);
+	});
+}
 
 /* 탭 스크롤 */
 function tabsTgg_Control(){
