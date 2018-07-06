@@ -16,7 +16,7 @@
 		searchBox_filter();
 	});
 
-	//암웨이 매거진
+	//온라인 매거진
 	$('.magazine-carousel').owlCarousel({
 		loop: false,
 		nav: true,
@@ -39,6 +39,9 @@
 			}
 		}
 	});
+
+	//온라인 매거진 SNS
+	magazinSNS();
 
 	//회원가입 완료
 	$('.brandsList').owlCarousel({
@@ -156,6 +159,19 @@
 	fixedTable_Scroll();
 	$(window).resize(function(){
 		fixedTable_Scroll();
+	});
+
+	//뉴핀 성취자
+	$('.newpin a').click(function() {
+		if (this.hash !== "") {
+			event.preventDefault();
+
+			var hash = this.hash;
+			var headHei = $('.general-header').height();
+			var trgt = $(hash).offset().top;
+
+			$('html').animate({scrollTop: trgt - headHei}, 400);
+		}
 	});
 
 
@@ -413,6 +429,25 @@ function searchBox_filter(){
 	stateMOB();
 	$(window).resize(function(){
 		stateMOB();
+	});
+}
+
+/* 온라인 매거진 */
+function magazinSNS(){
+	$('.mz-item .btn-ico.sns').click(function() {
+		$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+		if(!$(this).next('.bod-view-sns').hasClass('on')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).next('.bod-view-sns').addClass('on')
+		}else{
+			$(this).next('.bod-view-sns').removeClass('on');
+		}
+	});
+	$('html').click(function(e) {
+		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
+			$('.bod-view-sns').removeClass('on');
+			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+		}
 	});
 }
 
@@ -1522,13 +1557,13 @@ function GNB_SubDepth_Control(){
 				$2Dep_sideMenu.hide();
 			} else {
 				$2Dep_sideMenu.show();
-				gnbSideMenu();
+				//gnbSideMenu();
 			}
 		});
 	});
 
 	/* 오른쪽 메뉴 숨기기 */
-	gnbSideMenu();
+	//gnbSideMenu();
 	function gnbSideMenu(){
 		//메뉴영역 확보위해 메뉴 숨김
 		var _winWidth = $(window).width();
@@ -1539,7 +1574,7 @@ function GNB_SubDepth_Control(){
 		}
 	}
 	$(window).resize(function(){
-		gnbSideMenu();
+		//gnbSideMenu();
 
 		//브랜드샵 활성화상태에서 resize 되면 숨김
 		if ($2Dep_brandShop.hasClass('active')){
@@ -1669,10 +1704,15 @@ function qkLinkAlign(){
 					var qPanel_li_Num = qPanel.find('li').length;
 					var qPanel_li_Height = 28;
 					var itemHeight;
-					var itemWidth = 210;
+					var itemWidth = 200;
 
 					if(_winWidth < 851){
-						itemWidth = 195;
+						itemWidth = 185;
+					}
+					if(_winWidth < 800){
+						qHeaderHeight = 26;
+						qPanel_li_Height = 24;
+						itemWidth = 175;
 					}
 
 					if ( qPanel.length ){
@@ -2292,7 +2332,7 @@ function msgboxCommon( msgboxType, msgboxContent , functionName ){
 		photoScaled: false,	// whether to scale the photo the scale of (options.width, options.height)
 		photoFade: 500,		// whether to use fade transition to show photos, false, or a miniseconds
 
-		padding: '0 0 10px',			// the padding of the content
+		padding: '0 15px 10px',			// the padding of the content
 
 		imgError: 'Failed to load image.',	// the error message when loading image
 		xhrError: 'Failed to load URL.',	// the error message when using ajax

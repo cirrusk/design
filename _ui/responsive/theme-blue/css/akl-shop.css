@@ -510,8 +510,8 @@ shop 옮김 : 2018.04.10
 
 /* 제품상세 > URL 팝업 */
 .row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div {position:relative;}
-.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop {display:block;position: absolute;top:45px;left:-30px;width:250px;z-index:10000}
-.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area {display:block;position: relative;}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop {display:none;position: absolute;top:45px;left:-30px;width:250px;z-index:10000}
+.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area {position: relative;}
 .row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-body {display:block;padding:14px 0 0;margin:0 20px 0;position: relative;text-align:left;}
 .row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-body:after {left:13px;}
 .row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-header {display:block;padding:0 0 0 !important;}
@@ -887,7 +887,8 @@ shop 옮김 : 2018.04.10
 .akl .accordion-custom.pro-category .panel-title a:hover {color:#002f5f !important;}
 
 .product-solition-top.type2 {padding:0 0 0}
-.akl .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;padding-left:20px;}
+.pagination-bar .pagination-toolbar .pull-left {margin-left:0;}
+.akl .product-list-right-slot .product-list-right-component .pagination-bar .pagination-toolbar .pull-left .pagination-bar-results {font-size:14px;font-weight:700;letter-spacing:-1px;}
 .akl .filters-header span {font-family:'Noto Sans KR', sans-serif;font-weight:500}
 .akl .pagination-bar-results .total-wrapper {font-family:'Noto Sans KR', sans-serif;font-weight:500}
 .qut-num {padding-left:5px;letter-spacing:-0.05em;}
@@ -1439,6 +1440,11 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	/* 제품상세 */
 	.akl .experience-brands__content .banner-content {top:15%;}
 	.akl .experience-brands__content .wrapper.sub-banner {padding-top:38%;}
+
+	/* 제품목록-카테고리 */
+	.panel.aisde .list-group-item li,
+	.product__facet.col-product__facet .facet .facet__list .facet__list__text ,
+	#product-facet.product__facet .facet .facet__list {padding-right:0;}
 }
 @media (max-width:1024px){
 	.akl .product-list-item .gwp-gift-selections {width:450px;}
@@ -1465,8 +1471,13 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	/* 위시리스트 */
 	.akl #ShopListDetailForm .col-md-12 {width: 88%;}
 	.akl #ShopListDetailBody .btn-wrapper { top:0;}
+
+	/* 제품 카테고리 */
+	.akl .product-list-right-component .pagination-wrapper .filter-facet-button-container .filter-facet-button {display:none;}
 }
 @media (max-width: 768px) {
+	.hidden-xs {display:none!important}
+
 	/* 최근검색어 */
 	.popoverword {top:128px;}
 
@@ -1732,8 +1743,9 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .prover-all-qty {display:block;width:100%;}
 
 	/* 제품상세 > URL 팝업 */
-	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop {display:none;position: absolute;top:45px;left:-8px;}
+	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.url_pop { position: absolute;top:45px;left:0;}
 	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.cart-popup-area:after {content:'';position: absolute;top:-6px;left:12px;}
+	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-body:after {left:-17px;}
 
 	/*** 장바구니 ***/
 	.akl .opt-quantity.mini {float:right;}

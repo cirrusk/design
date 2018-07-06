@@ -104,7 +104,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .wrapper-memb-join .amw-radio-wrap.radio-label input[type=radio] {position:absolute; top:0; left:0;}
 .akl #register-step-page .amway-theme * {font-size:14px;}
 .akl #register-step-page .amway-theme h2.tit-h2 {font-size:18px;}
-
+.akl #register-step-page .amway-theme .txt-info-must + .form-sub-title { margin-top:38px}
 /* 본인확인 > 본인확인 방법 선택 */
 .wrapper-memb-join.step-validation .tit-h2+div {margin-top:36px;}
 .wrapper-memb-join.step-validation #market-validation-box {border-bottom:0;}
@@ -154,7 +154,7 @@ Version : AKL Hybris UIUX 1.0
 .validation-box-simple .certifi-input-box {position:relative; box-sizing:border-box;}
 .validation-box-simple .certifi-input-box .certifi-label {margin-right:-2px;}
 .validation-box-simple .certifi-input-box .col-btn {padding-left:0; padding-right:0; width:32%;}
-.akl .form-group .txt-input-guide {margin-top:8px;color:#808285; font-size:13px;}
+.akl .form-group .txt-input-guide {margin-top:8px;color:#808285; font-size:13px; margin-bottom:0}
 
 /* 정보입력 */
 .confirm-sucees.col-space-top {margin-top:10px;}
@@ -166,7 +166,9 @@ Version : AKL Hybris UIUX 1.0
 .akl #reg-confirm-info.reg-confirm-txt {padding-left:0;}
 .akl #reg-confirm-info.reg-confirm-txt .help-block {margin-top:0;}
 .akl #register-step-page .form-horizontal .form-group {margin-left:-14px; margin-right:-14px;}
-.akl #register-step-page .boxtype-form-sponsor {margin-bottom:35px;}
+.akl #register-step-page .form-horizontal .form-group .list-type2 li:last-child { padding-bottom:0}
+
+.akl #register-step-page .boxtype-form-sponsor {margin-bottom:29px;}
 .akl #register-step-page .boxtype-form-sponsor .form-group+.list-type5 {margin-top:35px;}
 .akl #register-step-page .form-group.overseas-abo .bt-akl-white{margin-bottom:3px;}
 .akl #register-step-page .list-type5 > li strong{color:#002f5f; font-size:14px;}
@@ -201,7 +203,7 @@ Version : AKL Hybris UIUX 1.0
 .box-conts-tableset .col .line {position: absolute;height: 100%;top: 45px;right: 0;border-right: 1px solid #e3e3e3;}
 
 .akl #register-step-page .abo-steps1 {padding-top:0}
-.akl #register-step-page .form-sub-title {margin-bottom:15px; text-transform:initial;}
+.akl #register-step-page .form-sub-title {margin-bottom:15px; text-transform:initial;font-size:16px; }
 .akl #register-step-page .new-ibo-reg .radio-wrapper {margin-bottom:0;}
 .akl #register-step-page .box-agreement-detail .radio-wrapper + .form-sub-txt {margin-top:20px !important;}
 .akl .wrapper-memb-join #register-step-page .next-control {margin:0; padding:40px 0 30px; border-top:1px solid #dadada;}
@@ -211,6 +213,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .box-agreement-detail .space-list-top {margin-top:30px;}
 .akl .box-agreement-detail .form-sub-txt {color:#002f5f;font-weight:500;}
 .akl .box-agreement-detail .form-sub-title + p {margin-top:-5px;margin-bottom:20px;}
+.akl #register-step-page .box-agreement-detail + .divider { margin-top:0}
 
 .akl .form-set-email>span {display:inline-block; width:330px;}
 .akl .form-set-email input[type=text], .akl .form-set-email input[type=password] {width:148px;vertical-align:middle;}
@@ -1951,11 +1954,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .go-block.col-sm-6 {width:300px;}
 }
 @media (min-width: 769px){
-	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
-	.wrapper-memb-join.prev-step-fold .fold-hiddenbox {padding:30px !important;}
+	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */ 
+	.akl #register-step-page .new-ibo-reg.fold-hiddenbox .abo-steps1 { padding:0 30px 30px}
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox .col-md-2 {width:18% !important;}
-	.wrapper-memb-join.prev-step-fold .fold-hiddenbox .col-md-10 {width:82% !important;}
-	.wrapper-memb-join.prev-step-fold .fold-hiddenbox.open { border-top:1px solid #e3e3e3;}
+	.wrapper-memb-join.prev-step-fold .fold-hiddenbox .col-md-10 {width:82% !important;} 
 	.akl .wrapper-memb-join.prev-step-fold #reg-confirm-info.reg-confirm-txt {padding-left:15px;}
 }
 @media (max-width: 768px) {
@@ -2859,7 +2861,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .myorder-list .content-list .con-list-item .ord-btn span.txte-wrap .link-btn {margin-top:0; }
 	.akl .myorder-list .content-list .sub-list .con-list-item .ord-btn span.txte-wrap .link-btn { font-size:13px; }
 	.akl .myorder-list .content-list .con-list-item span.tite-label { width:100px }
-	.akl .myorder-list .content-list .con-list-item span.txte-wrap { text-align:left; float:left; }
+	.akl .myorder-list .content-list .con-list-item span.txte-wrap { text-align:left; }
 
 	.akl .myorder-list .content-list .sub-list .con-list-item span.tite-label { font-size:13px; width:80px }
 	.akl .myorder-list .content-list .sub-list .con-list-item span.txte-wrap { font-size:13px; }

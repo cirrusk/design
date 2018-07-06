@@ -37,7 +37,7 @@ Editor : ji-min Park
 .visual-area.type02.foundation_longwearing{background: #000000 url(../images/akl_product/beauty/bg_longwearing_foundation.png) no-repeat top center;height:1105px;} /* 리프팅 스무싱 파운데이션 */
 .visual-area.type02.all_day_cover{background: #000000 url(../images/akl_product/beauty/bg_all_day_cover.png) no-repeat top center;height:1058px;} /* 올데이커버 파운데이션 */
 .visual-area.type02.all_day_cover02{background: #000000 url(../images/akl_product/beauty/bg_all_day_cover_02.png) no-repeat top center;height:1002px;} /* 올데이커버 파운데이션 리필*/
-.visual-area.type02.ex_loose_fd_pact{background: #000000 url(../images/akl_product/beauty/bg_loose_fd_light.png) no-repeat top center;height:1040px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더  팩트 리필) */
+.visual-area.type02.ex_loose_fd_pact{background: #000000 url(../images/akl_product/beauty/bg_loose_fd_light.png) no-repeat top center;height:1038px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더  팩트 리필) */
 .visual-area.type02.ex_fit_powder{background: #000000 url(../images/akl_product/beauty/bg_powder_refill_4931.png) no-repeat top center;height:798px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더) */
 .visual-area.type02.ex_fit_loose_powder{background: #000000 url(../images/akl_product/beauty/bg_ex_fit_loose_powder_4231.png) no-repeat top center;height:847px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
 .visual-area.type02.concealer{background: #000000 url(../images/akl_product/beauty/bg_concealer.png) no-repeat top center;height:884px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
@@ -57,6 +57,9 @@ Editor : ji-min Park
 .visual-area.type04.bath-gift-s .v-pro, .visual-area.type04.bath-gift-ss .v-pro{margin-top:60px;}
 .visual-area.type02.dayblock{background: #ffffff url(../images/akl_product/bath-body/bg_dayblock_sun.png) no-repeat top center;height:976px;} /* 데이블럭 썬케어  */
 .visual-area.type02.supplement{padding-bottom:90px;background:#c9e3f6;}
+.visual-area.type02.kitchen{background: #ffffff url(../images/akl_product/home-living/bg_dish_drops.png) no-repeat top center;height:1073px;}
+.visual-area.type02.bathroom{background: #ffffff url(../images/akl_product/home-living/bg_bathroom.png) no-repeat top center;height:965px;}
+.visual-area.type02.laundry{background: #ffffff url(../images/akl_product/home-living/bg_bioquest_laundry.png) no-repeat top center;height:967px;}
 
 
 .fleft{float:left !important;/*padding: 30px 0 0;*/}
@@ -441,9 +444,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .pcomp-area.bath-type .po-tit {font-size: 20px;font-weight:400;letter-spacing:-1px;}
 .pcomp-area.bath-type .po-tit {font-size: 20px;font-weight:400;letter-spacing:-1px;margin: 0 0 20px 0;}
 
-.bath-body .pcomp-list.deaf03 {display: block;width: 100%;margin: 0 auto;padding: 0 8.5%;overflow: hidden;}
-.bath-body .pcomp-list.deaf03 div.comp-info {float:left;width:27.3%;text-align: center;padding:0 0;margin-right:7.5%;}
-.bath-body .pcomp-list.deaf03 div.comp-info:nth-child(3){margin-right:0;}
+/* 제품구성 left타입 가이드 공통
+.pcomp-area.left-type{border-bottom:0;}
+.pcomp-list.deaf03, .pcomp-list.deaf04{display: block;width: 100%;margin: 0 auto;overflow: hidden;table-layout: fixed;box-sizing: border-box;}
+.pcomp-list.deaf03 div.comp-info{float:left;width:33.3%;text-align: center;padding:0 0;}
+.pcomp-list.deaf04 div.comp-info{float:left;width:25%;text-align: center;padding:0 0;}*/
+
 
 .bath-body .special-feat {border-bottom: 1px solid #e3e3e3;border-top: 1px solid #e3e3e3;padding: 45px 0 40px;}
 .bath-body .special-feat ul.spc-list{border-bottom:none;}
@@ -472,7 +478,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .assistant-pr .effet-area{padding: 50px 93px;}
 .assistant-pr .effet-area .advan-right{padding-right: 0;}
 .assistant-pr .effet-area .advan-right .ade-photo.type-right{text-align:right;}
-.assistant-pr .ad-setp-lst dt{font-size:18px;}
+/*.assistant-pr .ad-setp-lst dt{font-size:18px;}*/
 .assistant-pr .ad-setp-lst dd .inge-numlst01 li{margin-left: 10px;text-indent: -8px;}
 
 .assistant-pr .effet-area .advan-right.mod-wrap .ade-photo.dot-txt-area{margin-top:50px;}
@@ -495,10 +501,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .pormula-lst li:last-child{margin-right:0;}
 .pormula-lst li span{position:relative;display: block;width: auto;height: auto;}
 .pormula-lst li span img{display:block;}
-.pormula-lst li span em{position:absolute;display: block;width:100%;top: 50%;left:0;margin-top:-2px;line-height:1.3;color:#ffffff;text-align: center;}
-.pormula-lst li span em.one{margin-top:-9px;}
-.pormula-lst li span em.two{margin-top:-18px;}
-
+.pormula-lst li span em.fo-mark{position:absolute;display: block;width:100%;top:50%;left:0;margin-top:-2px;line-height:1.3;color:#ffffff;text-align: center;}
+.pormula-lst li span em.neutral{margin-top:-9px;}  /* 중성 */
+.pormula-lst li span em.weight{margin-top:-18px;}  /* 중량,용량 */
+.pormula-lst li span em.alkali{margin-top:-22px;}  /* 알칼리성 */
+.pormula-lst li span em.acid{} /* 기본이 산성 */
+.pormula-lst li span em.weak-acid{margin-top: -12px;} /* 약산성 */
 
 
 .bioquest-lst {width:100%;font-size: 16px;letter-spacing: -1px;margin-bottom:0;}
@@ -618,7 +626,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:20px;}
 	
 	/* 배스바디 */
-	.bath-body .pcomp-list.deaf03 div.comp-info {display:block;float:inherit;width:100%;text-align: center;padding:0 0;margin-right:0;}
+	.bath-body .pcomp-list.deaf-left div.comp-info {display:block;float:inherit;width:100%;text-align: center;padding:0 0;margin-right:0;}
 	.bath-body .special-feat{padding: 15px 0 15px;}
 	.bath-body .special-feat ul.spc-list > li{border-top:none;padding: 15px 0 15px 30px;background: url(../images/akl_product/icon/ico_bullet.png) no-repeat 0 50%;background-size: 20px;}
 	.bath-body .v-pro span img{width:50%;}	
@@ -752,7 +760,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{top:-5px;}
 	.assistant-pr .effet-area .advan-right.mod-wrap.buz .img-desc-area .txt.three{/*text-align:right;*/}
 	
-	.pormula-lst{text-align:center;}
+	.pormula-lst{text-align:left;}
 	.pormula-lst li{margin-right: 15px;}
 	.border-bx{padding:20px 25px;}
 	.dish-thum-lst .dish-thum-wrap strong.h6{display:block;width:100%;text-align:center;font-size:16px;}
@@ -793,7 +801,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 		
 	/* 배스바디 */
 	.bep-lst.deaf02 ul li{width:100%;}
-	.bath-body .pcomp-list.deaf03 div.comp-info {display:block;float:inherit;width:100%;text-align: center;padding:0 0;margin-right:0;}
+	.bath-body .pcomp-list.deaf-left div.comp-info {display:block;float:inherit;width:100%;text-align: center;padding:0 0;margin-right:0;}
 	
 	/* 홈앤리빙 */
 	.visual-area.others .v-logo{padding:40px 0 0;}	
