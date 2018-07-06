@@ -233,9 +233,11 @@
 });
 
 /** ------------------------------------
- *  공통요소
+ *  공통
  *  ------------------------------------
  */
+
+/* 탭 스크롤 */
 function tabsTgg_Control(){
 	var _winWidth = $(window).width();
 	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
@@ -360,6 +362,7 @@ function tabsTgg_Control(){
 	});
 }
 
+/* 검색 - core 스크립트 정리 */
 function searchBox_orderHistoryFilters(){
 	//공지사항,일시품절/해지/단종 페이지에서는 실행안함
 	var searchTypeFilter = $('.order-history-search-wrapper.search-filter');
@@ -448,6 +451,63 @@ function magazinSNS(){
 			$('.bod-view-sns').removeClass('on');
 			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
 		}
+	});
+}
+
+/* 테이블 결과없음 : resize */
+function tbl_colspan(){
+	var colspanTbl = '.tbl-list-board';
+	if (!colspanTbl.length){return;}
+
+	var _winWidth = $(window).width();
+	var colspanResize = {
+			init : function(){
+				$(colspanTbl).each(function(){
+					var _noResult = $(this).find('.tr.no-result');
+					if (_noResult.length){
+						_noResult.find('.search-no-result').width('')
+					}
+				});
+			},
+			reSize : function(){
+				$(colspanTbl).each(function(){
+					var _tblWidth =  $(this).width();
+					var _noResult = $(this).find('.tr.no-result');
+					if (_noResult.length){
+						_noResult.find('.search-no-result').width(_tblWidth);
+					}
+				});
+			}
+	}
+
+	function colWidth_check(){
+		var _winWidth = $(window).width();
+		if( _winWidth > 768 ){
+			colspanResize.init();
+			colspanResize.reSize();
+		} else if(_winWidth < 769) {
+			colspanResize.init();
+		}
+	}
+
+	colWidth_check();
+	$(window).resize(function(){
+		colWidth_check();
+	});
+}
+
+/* 약관 더보기 (768이하) */
+function terms_ViewAll(){
+	var $btnViewAll = $('.text-btn.view-all');
+	$btnViewAll.each(function(){
+		$(this).on('click',function(){
+			var $termsTexts = $(this).parent('.conditions');
+			if ($termsTexts.hasClass('expand')){
+				$termsTexts.removeClass('expand');
+			}else {
+				$termsTexts.addClass('expand');
+			}
+		});
 	});
 }
 
@@ -1085,20 +1145,136 @@ function videoWrapperSize(){
 	});
 }
 
-/* 약관 더보기 (768이하) */
-function terms_ViewAll(){
-	var $btnViewAll = $('.text-btn.view-all');
-	$btnViewAll.each(function(){
-		$(this).on('click',function(){
-			var $termsTexts = $(this).parent('.conditions');
-			if ($termsTexts.hasClass('expand')){
-				$termsTexts.removeClass('expand');
-			}else {
-				$termsTexts.addClass('expand');
+/* 온라인 FAX 주문 - 툴팁 : size 조정 */
+function toolTips_conSize(){
+	var _winWidth= $(window).width();
+	var PortraiteSize = $(window).width();
+	var LandscapeSize = $(window).height();
+	if (LandscapeSize < PortraiteSize){PortraiteSize = LandscapeSize;}
+
+	var tooltipBox = $('.toolTip-wrapper');
+	var tooltipBTN = tooltipBox.find('.btn-tooltip');
+
+	function tipContWidth(){
+		tooltipBox.each(function(){
+			var contentWrapper = $(this).find('.tipCont-wrapper');
+			if( !contentWrapper.length ){
+				var $el = $(this).find('.tooltip-content');
+				$el.wrap('<div class="tipCont-wrapper"\>');
+			}
+
+			// wrapper 추가 후
+			$(this).addClass('type-mob-full');
+			var tooltipBTN = $(this).find('.btn-tooltip');
+			var tooltipWrapper = $(this).find('.tipCont-wrapper');
+			var tooltipContent = tooltipWrapper.find('.tooltip-content');
+
+			var tooltipSize = PortraiteSize;
+			if( _winWidth < 361){
+				tooltipWrapper.css({
+					'width':tooltipSize,
+					'max-width':tooltipSize-50
+				});
+			} else if( _winWidth < 769){
+				tooltipWrapper.css({
+					'width':tooltipSize,
+					'max-width':tooltipSize-80
+				});
+			} else {
+				tooltipWrapper.css({ 'width':'', 'max-width':'none'});
+			}
+		});
+
+		//버튼 위치 체크 후, 컨텐츠 위치조정
+		tooltipBTN.each(function(){
+			var leftPosition = $(this).offset().left;
+			var tipContent = $(this).parent().find('.tooltip-content');
+			var tipContentWidth = tipContent.width();
+
+			if( _winWidth > 768){
+				if( leftPosition < 100  &&  leftPosition < tipContentWidth/2){
+					tipContent.addClass('left');
+				}
+			} else {
+				tipContent.removeClass('left');
+			}
+		});
+	}
+
+	tipContWidth();
+	$(window).resize(function(){
+		tipContWidth();
+	});
+}
+
+/* 온라인 FAX 주문 - 툴팁열기 */
+function toolTips_open(){
+	var _winWidth= $(window).width();
+	var _btnToolTip = $('.toolTip-wrapper').find('.btn-tooltip');
+	var _btnTooltipClose = $('.toolTip-wrapper').find('.btn-tooltip-close');
+
+	_btnToolTip.each(function(){
+		$(this).on('click',function(e){
+			e.preventDefault();
+
+			//컨텐츠 노출
+			var _tipContent = $(this).parent().find('.tooltip-content');
+			if( _tipContent.is(':hidden')){
+				$(this).parent().addClass('open'); //화살표
+				_tipContent.show();
+			}
+			else if( _tipContent.is(':visible')){
+				$(this).parent().removeClass('open'); //화살표
+				_tipContent.hide();
+			}
+		});
+	});
+
+	//닫기 버튼
+	_btnTooltipClose.on('click',function(e){
+		e.preventDefault();
+
+		var tooltipWrapper = $(this).parents('.toolTip-wrapper');
+		var tooltipContent = tooltipWrapper.find('.tooltip-content');
+		tooltipWrapper.removeClass('open'); //화살표
+		tooltipContent.hide();
+	});
+}
+
+/* 온라인 FAX 주문 - 안내글 토글 */
+function toggleBox_Guide(){
+	var guideboxToggle = $('.js-guidebox-toggle');
+	if (! guideboxToggle.length){return}
+
+	guideboxToggle.each(function(){
+		var _titBtn = $(this).find('a.title');
+		var _hiddenBox = $(this).find('.tgg-hidden-area');
+
+		if( $(this).is('.on')){
+			_hiddenBox.show();
+		} else{
+			_hiddenBox.hide();
+		}
+
+		_titBtn.on('click',function(e){
+			e.preventDefault();
+			if(_hiddenBox.is(':hidden')){
+				$(this).parent().addClass('on');
+				$(this).find('span').text('닫기');
+				_hiddenBox.show();
+			} else if(_hiddenBox.is(':visible')){
+				$(this).parent().removeClass('on');
+				$(this).find('span').text('열기');
+				_hiddenBox.hide();
 			}
 		});
 	});
 }
+
+/** ------------------------------------
+ *  마이페이지
+ *  ------------------------------------
+ */
 
 /* 마이페이지 메인 : li 여백처리 */
 function mypageIndex_list(){
@@ -1111,6 +1287,7 @@ function mypageIndex_list(){
 		_ul.find('li').filter(':nth-of-type(-n+3)').addClass('nth-3n');
 	});
 }
+
 /* 마이페이지 메인 : li 높이제어 */
 function myPage_EqualHeight(){
 	var blockList = '.mypage-block-list';
@@ -1249,48 +1426,6 @@ function jumpMenuList(){
 	});
 }
 
-/* 테이블 결과없음 : resize */
-function tbl_colspan(){
-	var colspanTbl = '.tbl-list-board';
-	if (!colspanTbl.length){return;}
-
-	var _winWidth = $(window).width();
-	var colspanResize = {
-			init : function(){
-				$(colspanTbl).each(function(){
-					var _noResult = $(this).find('.tr.no-result');
-					if (_noResult.length){
-						_noResult.find('.search-no-result').width('')
-					}
-				});
-			},
-			reSize : function(){
-				$(colspanTbl).each(function(){
-					var _tblWidth =  $(this).width();
-					var _noResult = $(this).find('.tr.no-result');
-					if (_noResult.length){
-						_noResult.find('.search-no-result').width(_tblWidth);
-					}
-				});
-			}
-	}
-
-	function colWidth_check(){
-		var _winWidth = $(window).width();
-		if( _winWidth > 768 ){
-			colspanResize.init();
-			colspanResize.reSize();
-		} else if(_winWidth < 769) {
-			colspanResize.init();
-		}
-	}
-
-	colWidth_check();
-	$(window).resize(function(){
-		colWidth_check();
-	});
-}
-
 /* 신규ABO - 대상자 조회 */
 function event_NewABO_select(){
 	var _wrapper = $('.targetInquiry'),
@@ -1325,132 +1460,6 @@ function event_NewABO_select(){
 			obj1.hide();
 			obj5.show();
 		}
-	});
-}
-
-/* 온라인 FAX 주문 - 툴팁 : size 조정 */
-function toolTips_conSize(){
-	var _winWidth= $(window).width();
-	var PortraiteSize = $(window).width();
-	var LandscapeSize = $(window).height();
-	if (LandscapeSize < PortraiteSize){PortraiteSize = LandscapeSize;}
-
-	var tooltipBox = $('.toolTip-wrapper');
-	var tooltipBTN = tooltipBox.find('.btn-tooltip');
-
-	function tipContWidth(){
-		tooltipBox.each(function(){
-			var contentWrapper = $(this).find('.tipCont-wrapper');
-			if( !contentWrapper.length ){
-				var $el = $(this).find('.tooltip-content');
-				$el.wrap('<div class="tipCont-wrapper"\>');
-			}
-
-			// wrapper 추가 후
-			$(this).addClass('type-mob-full');
-			var tooltipBTN = $(this).find('.btn-tooltip');
-			var tooltipWrapper = $(this).find('.tipCont-wrapper');
-			var tooltipContent = tooltipWrapper.find('.tooltip-content');
-
-			var tooltipSize = PortraiteSize;
-			if( _winWidth < 361){
-				tooltipWrapper.css({
-					'width':tooltipSize,
-					'max-width':tooltipSize-50
-				});
-			} else if( _winWidth < 769){
-				tooltipWrapper.css({
-					'width':tooltipSize,
-					'max-width':tooltipSize-80
-				});
-			} else {
-				tooltipWrapper.css({ 'width':'', 'max-width':'none'});
-			}
-		});
-
-		//버튼 위치 체크 후, 컨텐츠 위치조정
-		tooltipBTN.each(function(){
-			var leftPosition = $(this).offset().left;
-			var tipContent = $(this).parent().find('.tooltip-content');
-			var tipContentWidth = tipContent.width();
-
-			if( _winWidth > 768){
-				if( leftPosition < 100  &&  leftPosition < tipContentWidth/2){
-					tipContent.addClass('left');
-				}
-			} else {
-				tipContent.removeClass('left');
-			}
-		});
-	}
-
-	tipContWidth();
-	$(window).resize(function(){
-		tipContWidth();
-	});
-}
-
-/* 온라인 FAX 주문 - 툴팁열기 */
-function toolTips_open(){
-	var _winWidth= $(window).width();
-	var _btnToolTip = $('.toolTip-wrapper').find('.btn-tooltip');
-	var _btnTooltipClose = $('.toolTip-wrapper').find('.btn-tooltip-close');
-
-	_btnToolTip.each(function(){
-		$(this).on('click',function(e){
-			e.preventDefault();
-
-			//컨텐츠 노출
-			var _tipContent = $(this).parent().find('.tooltip-content');
-			if( _tipContent.is(':hidden')){
-				$(this).parent().addClass('open'); //화살표
-				_tipContent.show();
-			}
-			else if( _tipContent.is(':visible')){
-				$(this).parent().removeClass('open'); //화살표
-				_tipContent.hide();
-			}
-		});
-	});
-
-	//닫기 버튼
-	_btnTooltipClose.on('click',function(e){
-		e.preventDefault();
-
-		var tooltipWrapper = $(this).parents('.toolTip-wrapper');
-		var tooltipContent = tooltipWrapper.find('.tooltip-content');
-		tooltipWrapper.removeClass('open'); //화살표
-		tooltipContent.hide();
-	});
-}
-
-/* 온라인 FAX 주문 - 안내글 토글 */
-function toggleBox_Guide(){
-	var guideboxToggle = $('.js-guidebox-toggle');
-	if (! guideboxToggle.length){return}
-
-	guideboxToggle.each(function(){
-		var _titBtn = $(this).find('a.title');
-		var _hiddenBox = $(this).find('.tgg-hidden-area');
-
-		if( $(this).is('.on')){
-			_hiddenBox.show();
-		} else{
-			_hiddenBox.hide();
-		}
-
-		_titBtn.on('click',function(e){
-			e.preventDefault();
-			if(_hiddenBox.is(':hidden')){
-				$(this).parent().addClass('on');
-				$(this).find('span').text('닫기');
-				_hiddenBox.show();
-			} else if(_hiddenBox.is(':visible')){
-				$(this).parent().removeClass('on');
-				$(this).find('span').text('열기');
-				_hiddenBox.hide();
-			}
-		});
 	});
 }
 

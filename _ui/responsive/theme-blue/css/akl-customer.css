@@ -545,14 +545,44 @@ Version : AKL Hybris UIUX 1.0
 .sitemap-area .list ul li a {display:inline-block;color:#56565a; font-size:14px}
 
 /* 컴플라이언스 센터 */
-.compliance-area {}
 .compliance-area .list-certifi {margin-top:30px; border-bottom:1px solid #e3e3e3}
 .compliance-area .list-certifi li {position:relative; min-height:220px; padding:40px 0 40px 170px; border-top:1px solid #e3e3e3}
 .compliance-area .list-certifi li .img {position:absolute; top:53px; left:33px; }
-.compliance-area .list-certifi li .img img {}
 .compliance-area .list-certifi li em {font-size:16px; font-weight:500; color:#002f5f}
 .compliance-area .list-certifi li p {margin:7px 0 18px}
-.compliance-area .list-certifi li a {}
+
+.compliance-area .tbl-list-board .w-num {width:9%}
+.compliance-area .tbl-list-board .w-tit {text-align:left !important}
+.compliance-area .tbl-list-board .w-tit a {color:#56565a}
+.compliance-area .tbl-list-board .w-file {width:33%}
+.compliance-area .tbl-list-board .w-file a {color:#808285}
+.compliance-area .tbl-list-board .w-date {width:18%}
+
+.compliance-area .form-email-inquiry {max-width:70%}
+.compliance-area .file-email-list li {padding-bottom:10px; border-bottom:1px solid #dadada}
+.compliance-area .file-email-list li + li {padding-top:12px}
+.compliance-area .file-email-list li a {color:#808285}
+
+.akl .compliance-area .termsWrapper * {font-size:14px}
+.akl .compliance-area .termsWrapper .titH2 {font-size:16px}
+.akl .compliance-area .termsWrapper ol {counter-reset:a}
+.akl .compliance-area .termsWrapper ol > li {position:relative; padding-left:22px; text-indent:0}
+.akl .compliance-area .termsWrapper ol > li:before {position:absolute; top:0; left:0; content:counter(a)". "; counter-increment:a; display:inline-block; width:22px}
+.akl .compliance-area .termsWrapper ol > li + li {margin-top:10px}
+.akl .compliance-area .termsWrapper ol + .txt-italic,
+.akl .compliance-area .termsWrapper div + .list-type2 {margin-top:10px}
+.akl .compliance-area .termsWrapper .list-type2 *, 
+.akl .compliance-area .termsWrapper .txt-italic {font-size:13px;}
+.akl .compliance-area .termsWrapper .list-type2 li {margin-top:0 !important; padding-bottom:0}
+.akl .compliance-area .termsWrapper .listDash li p,
+.akl .compliance-area .termsWrapper .listDash li + li {margin:0 !important}
+.akl .compliance-area .scroll-table table {table-layout:fixed;}
+.akl .compliance-area .scroll-table tbody th {background-color:#fff; font-width:300; color:#55565a}
+.akl .compliance-area .scroll-table tbody th + td {border-left:1px solid #e3e3e3}
+.akl .compliance-area .scroll-table tbody .block {padding-bottom:0}
+
+.akl .compliance-area .search-no-result {display:block; width:100%}
+.akl .compliance-area .search-no-result > div {}
 
 .announcement-search-result + .tbl-list-board {margin-top:18px}
 
@@ -606,6 +636,9 @@ Version : AKL Hybris UIUX 1.0
 	.compliance-area .list-certifi li .img {position:static; display:block; padding-left:30px}
 	.compliance-area .list-certifi li em {display:block; margin-top:25px}
 	.compliance-area .list-certifi li p {margin:10px 0 18px}
+	.compliance-area .form-email-inquiry {max-width:100%}
+	.akl .compliance-area .scroll-table {overflow-x:auto}
+	.akl .compliance-area .scroll-table table {width:900px;}
 	
 	/* 사이트맵 */
 	.sitemap-area h2, .sitemap-area h3 {text-align:center; font-size:20px}
