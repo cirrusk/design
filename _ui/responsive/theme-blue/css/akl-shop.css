@@ -197,14 +197,14 @@ shop 옮김 : 2018.04.10
 .akl .amway-suggest__pvbv { font-size: 13px;line-height: 18px;color: #808285;  font-weight: 400;}
 
 /* 검색 > 결과  */
-.popular-searches { padding:30px 127px; margin-bottom:40px; border-bottom: 1px solid #dadada; border-top: 1px solid #dadada  }
-.popular-searches dl { position:relative; margin-bottom:0; }
-.popular-searches dt{ position:absolute; left:0; top:0; width:100px; font-size: 16px; letter-spacing: -1px; color: #002f5f }
-.popular-searches dt:after { content:""; position:absolute; right:0; border-left:2px solid #002f5f; height:20px; top:50%; margin-top: -10px;}
-.popular-searches dd { position:relative; margin-left:100px; }
-.popular-searches dd button {position:absolute; right:0; top:0; }
-.popular-searches dd ul {margin-right:100px; }
-.popular-searches dd ul li {position:relative; display: inline-block; padding: 0 28px; font-size: 16px;}
+.popular-searches { padding:30px 40px 15px; margin-bottom:40px; border-bottom: 1px solid #dadada; border-top: 1px solid #dadada;  }
+.popular-searches dl { display:table;  margin:0 auto}
+.popular-searches dt{ position:relative; font-size: 16px; letter-spacing: -1px; color: #002f5f; display:table-cell; width:100px }
+.popular-searches dt:after { content:""; position:absolute; right:0; border-left:2px solid #002f5f; height:20px; top:12px; margin-top: -10px;}
+.popular-searches dd { display:table-cell; }
+.popular-searches dd:last-child {position:relative; }
+.popular-searches dd:last-child button { margin-top:-3px;}
+.popular-searches dd ul li {position:relative; display: inline-block; padding: 0 28px; font-size: 16px; margin-bottom:15px}
 .popular-searches dd ul li:after { content:""; position:absolute; right:0; border-left:1px solid #dadada; height:12px; top:50%; margin-top: -6px;}
 .popular-searches dd ul li:last-child:after { display: none}
 
@@ -681,7 +681,7 @@ shop 옮김 : 2018.04.10
 .akl .cart-voucher {border-top:1px solid #dadada;padding:10px 15px 20px !important;letter-spacing:-0.05em;}
 .akl .cart-voucher div.vocher-totle {font-size:14px;font-weight:500;color:#002f5f;padding:15px 0 0}
 .akl .cart-voucher .voucher-description {font-size:14px;line-height:22px;font-style:normal;padding:8px 0 0;margin:0 0}
-.akl .express-checkout-block {margin:0 auto; text-align:center;}
+.akl .express-checkout-block {margin: -21px auto 0; text-align: center;border: 1px solid #dadada;padding: 20px 15px;}
 .akl .express-checkout-block .bt-akl-blue {min-width:100%;}
 
 .akl .shop-cart-conts {position:relative;padding-top:10px;}
@@ -1493,12 +1493,13 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .col-search-right .search-list-page-right-result-list-component .pagination-wrapper {float:right ;width:auto;}
 	.akl .auto-suggestion-popover .popover-content ul { padding: 30px 20px;}
 	.popular-searches { padding:18px 0; }
-	.popular-searches dl { position:relative; margin-bottom:0; }
-	.popular-searches dt{ position:static; width:auto;  margin-bottom:15px; text-align:center;}
+	.popular-searches dl { display:block;}
+	.popular-searches dt{ width:auto; text-align:center; display:block;}
 	.popular-searches dt:after { display:none}
-	.popular-searches dd { position:relative; margin-left:0; text-align:center; }
+	.popular-searches dd { position:relative; margin-left:0; text-align:center;  display:block;}
 	.popular-searches dd button {position:static; }
 	.popular-searches dd ul {margin-right:0; margin-bottom: 20px }
+	.popular-searches dd ul li {  margin-top:15px; margin-bottom:0}
 
 	.akl .search-list-page-right-result-list-slot .pagination-bar {  margin-top: 40px;}
 	.popoverword .popover-content-akl { padding: 55px 20px 20px;}
