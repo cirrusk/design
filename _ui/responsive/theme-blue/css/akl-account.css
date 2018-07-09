@@ -1151,14 +1151,15 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 /* 나의 쇼핑정보 > 구매양도/양수 > 사용내역 */
 .akl .list-content.history {padding:40px 0 0}
-.akl div.all-ceek2 {width:5%;text-align:center;}
+.akl div.all-ceek2 {width:4%;text-align:center;}
 .akl div.pur-name2 {width:17%;padding:0 10px;}
-.akl div.pur-prod2 {width:20%;padding:0 10px;}
-.akl div.pur-assignee {width:11%;padding:0 10px 0 20px;text-align:center;}
-.akl div.pur-transferer {width:11%;text-align:center;}
-.akl div.pur-transfer-date {width:9%;text-align:center;}
+.akl div.pur-prod2 {width:17%;padding:0 10px;}
+.akl div.pur-assignee {width:9%;padding:0 10px 0 20px;text-align:center;}
+.akl div.pur-transferer {width:9%;text-align:center;}
+.akl div.pur-transfer-date {width:9%; text-align:center;}
+.akl div.pur-day-quantity {width:9%;text-align:center;}
 .akl div.pur-day-use {width:9%;text-align:center;}
-.akl div.pur-condition {width:10%;text-align:center;}
+.akl div.pur-condition {width:9%;text-align:center;}
 .akl div.pur-btn2 {width:8%;}
 .akl div.pur-btn2 .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px}
 
@@ -1229,6 +1230,12 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 .akl .list-content.revenge .content-list {border-bottom:1px solid #d3d3d3;}
 .akl .list-content.revenge .content-list:nth-child(odd) {background:#fff}
+
+/* 나의 쇼핑정보 > 구매권한 양도 > 양도취소(회수) 팝업 */
+.assignment-pop .assignment-opt{ margin:20px 0}
+.assignment-pop .assignment-opt .tite-label{ margin-right:20px}
+.assignment-tit {font-size:px;}
+.assignment-txt { font-size:px;}
 
 /* 나의 쇼핑정보 > 제품구매 예약 */
 .akl .title-box .product-list-page-title > h1.prde-reser {position:relative;font-size:18px;padding:0 0 5px;}
@@ -2665,6 +2672,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	/* 나의 쇼핑정보 > 구매권한 양도/양수 > 사용내역 */
 	.akl .list-content .list-row-title > div.all-ceek2 {width:15%;text-align:left;float:left;padding:0 20px;}
+	.akl .list-content .list-row-title > div.all-ceek2 .checkbox-element-wrapper {margin: 9px 0;}
 	.akl .list-content .list-row-title .pur-name2 {display:none;}
 	.akl .list-content .list-row-title .pur-prod2 {display:none;}
 	.akl .list-content .list-row-title .pur-assignee {display:none;}
@@ -2672,6 +2680,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .list-content .list-row-title .pur-transfer-date {display:none;}
 	.akl .list-content .list-row-title .pur-day-use {display:none;}
 	.akl .list-content .list-row-title .pur-condition {display:none;}
+	.akl .list-content .list-row-title .pur-day-quantity {display:none;}
 
 	.akl .content-list .con-list-item > div.all-ceek2 {text-align:left;float:left;padding:0 20px;}
 	.akl .content-list .con-list-item > div.pur-name2 {float:left;width:85%;padding:0 20px 5px;vertical-align:top;}
@@ -2683,7 +2692,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .content-list .con-list-item > div.pur-condition {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
 	.akl .content-list .con-list-item > div.pur-btn2 {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
 	.akl .content-list .con-list-item > div.pur-condition span.txte-wrap em {display:block;padding:0 0}
-
+	.akl .content-list .con-list-item > div.pur-day-quantity {clear:both;display:block;width:90%;padding:5px 0 5px 60px;}
 
 	/* 나의 쇼핑정보 > 구매권한 양도하기 팝업 */
 	.cart-popup__content.trans-purchase {max-height:500px;}

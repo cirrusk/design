@@ -460,6 +460,11 @@ $(function(){
 		layerPopOver(this,'.U70610_lp2_pop');
 	});
 
+	$('.U70610_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.U70610_lp_pop');
+	});
+
 });
 
 //공지사항 2018.04.17
