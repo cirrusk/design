@@ -1001,9 +1001,10 @@ span.btn-business {display:inline-block;}
 .default-shipping-address .detail-content input.form-control {width:80%;}
 .default-shipping-address .message-shop {padding:10px 30px 0 0px;}
 .default-shipping-address .detail-content input.form-control.m-message {margin-left:0;}
-.default-shipping-address .delivery-msg {position:relative;}
-.default-shipping-address .delivery-msg .delivery-msg-list {display:none; position:absolute; width:80%; padding:10px 5px 9px; left:0; top:39px; border:1px solid #e3e3e3; background:#fff; z-index:100}
-.default-shipping-address .delivery-msg .delivery-msg-list button { display:block; background:none; height:25px;}
+.default-shipping-address .delivery-msg{position:relative;}
+.delivery-msg-list {display: ; position:absolute; width:80%; padding:10px 5px 9px; left:0; top:39px; border:1px solid #e3e3e3; background:#fff; z-index:100}
+.delivery-msg-list button { display:block; background:none; height:25px;}
+
 /* 주문결제 > 단일 > 새배송지 */
 .new-shipping-address {border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; margin-top:30px;padding:20px 0 0}
 .new-message-shop {padding:0 0 10px;}
@@ -1091,7 +1092,8 @@ p.my-Shipping-txt {font-size:16px;font-weight:500;letter-spacing:-1px;padding:10
 .reven-ship-box {position:relative}
 .reven-ship-box .p-delect {position: absolute;top:0;right:5px;}
 .reven-ship-box p {margin:0;padding:5px 20px 0 0;font-size:14px;font-weight:400;letter-spacing:-1px;line-height:22px;}
-.form-group.ship-messige {}
+.ship-messige {position:relative;}
+.ship-messige .delivery-msg-list{top:74px; width:60%; }
 .form-group.ship-messige label {display:block;}
 .form-group.ship-messige input {display:block;width:60%;margin-left:0;}
 .messige-batch {padding:10px 0 0}
