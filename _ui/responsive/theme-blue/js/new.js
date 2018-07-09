@@ -650,6 +650,14 @@ $(function() {
 	});
 });
 
+//반품내역
+$(function() {
+	$('.U70201_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver('','.U70201_lp1_pop');
+	});
+});
+
 /* akl_common.js 이동 - 2018.07.04
 //온라인 매거진
 $(function() {
