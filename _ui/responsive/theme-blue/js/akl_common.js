@@ -1748,12 +1748,12 @@ function qkLinkAlign(){
 					var itemWidth;
 					var itemHeight;
 
-					if(_winWidth < 851){
-						itemWidth = 185;
-					} else if(_winWidth < 800){
+					if(_winWidth < 800){
 						qHeaderHeight = 26;
 						qPanel_li_Height = 24;
 						itemWidth = 175;
+					} else if(_winWidth < 851){
+						itemWidth = 185;
 					} else {
 						itemWidth = 200;
 					}
