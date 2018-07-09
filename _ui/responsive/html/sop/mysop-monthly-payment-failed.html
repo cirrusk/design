@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>나의sop-월별</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>mysop-monthly-payment-failed</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,11 +86,18 @@
             <span class="text-uppercase panel-title-text">My Sop</span>
             <div class="corner-block pre-res-corner-block"><a href="mysop-landing.html"><i class="fas fa-caret-left"></i>BACK</a></div>
         </h4>
-        <div class="page-section-content my-count-page-wrap">
+        <div class="row mysop-product-detail sop-confirmation haswarning ">
+            <div class="alert alert-info">
+                <div class="alert-icon"><i class="fas fa-exclamation"></i></div>
+                <div class="alert-text">An error occurred while your order for this month (December 2018) was being processed.<p>Please check with your payment service provider or select a different payment option for this profile.</p></div>
+                <div class="alert-rig-link"><a class="right-link" href="order-details-normal.html">View SOP Order</a></div>
+            </div>
+        </div>
+        <div class="page-section-content my-count-page-wrap pay-failed">
             <div class="downline-profile">Yui Mori's Downline Profile (Wrap to two lines)</div>
             <div class="downline-profile-second-line">
                 <div class="left-block">
-                    <div class=""><img src="images/visa.png"> ****9876</div>
+                    <div class="pay-card"><img src="images/visa.png"><span>****9876</span><i class="fas fa-exclamation-triangle"></i></div>
                     <div class=""><i class="fas fa-truck lightBlue"></i>Delivery</div>
                     <div class="">8TH DAY</div>
                 </div>
@@ -158,238 +165,17 @@
 
             <div class="cart-content-wrapper">
                 <div class="account-section-content">
-                    <div id="quickOrder"
-                         class="account-section shopping-cart-quick-shop-wrapper shopping-list-detail-shop-wrapper"
-                         data-grid-confirm-message="">
-                        <div class="quick-shop-container new-quick-shop-container">
-                            <div id="quickShopAccordion" class="panel-group accordion-custom" role="tablist"
-                                 aria-multiselectable="true">
-                                <div class="panel">
-                                    <div class="panel-heading" role="tab" id="quickShop">
-                                        <h4 class="panel-title">
-                                            <div role="button" data-toggle="collapse" data-parent="#quickShopAccordion"
-                                                 href="#quickShopBody" aria-controls="quickShopBody"
-                                                 class="collapsed quick-shop-collapse">
-                                                <i class="far fa-barcode"></i>
-                                                <span class="text-uppercase accordion-header-text">ADD NEW SOP ITEMS</span>
-                                                <span class="pull-right icon-minus"></span>
-                                            </div>
-                                        </h4>
-                                    </div>
-                                    <div id="quickShopBody" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            <div id="quickShopForm" class="quickShopForm">
-                                                <div class="item-name-container">
-                                                    <label class="js-sku-input-field-label sku-input-field-label">Item
-                                                        name or number</label>
-                                                    <input id="quick-shop-search"
-                                                           class="js-quick-shop-name quick-shop-name" type="text"></div>
-                                                <button class="btn primary btn-block js-quick-shop-submit disabled"
-                                                        onclick="changeFunction()">Search
-                                                </button>
-                                                <a class="btn btn-link reset">Reset</a></div>
-                                            <div class="row" id="quick-search-list" style="display:none;">
-                                                <div class="amway-suggest pdp-general-amway-suggest">
-                                                    <div id="productSuggestListTabs"
-                                                         class="owl-carousel owl-theme carousel-title-containeramway-suggest__list">
-                                                        <div class="item">
-                                                            <div class="amway-suggest__item">
-                                                                <div class="amway-suggest__item-content amwahover">
-                                                                    <img src="images/img-quick-shop-01.png"
-                                                                         class="amway-suggest__thumbnail" alt="product">
-                                                                    <div class="amway-suggest__item-detail">
-                                                                        <div class="amway-suggest__item-number">SKU:
-                                                                            116991
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title">ARTISTRY
-                                                                            SIGNATURE COLOR Lipstick
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title amway-suggest__item-aboprice">
-                                                                            <span class="amway-suggest__item-abovalue">$140</span>
-                                                                        </div>
-                                                                        <div class="product-list__item-title product-list__item-aboprice">
-                                                                            <span class="product-list__item-abovalue amount-cal list-total">
-                                                                                <a class="icon-del opera" data="-">
-                                                                                    <i class="fas fa-minus fa-delete"></i>
-                                                                                </a>
-                                                                                <input type="tel"
-                                                                                       class="pdpAddtoCartInput amount-cal-input"
-                                                                                       name='pdpAddtoCartInput'
-                                                                                       id="amount-cal-input-id" value="2">
-                                                                                <a class="icon-add opera" data="+">
-                                                                                    <i class="fas fa-plus fa-add"></i>
-                                                                                </a>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="amway-suggest__item-link">
-                                                                    <a href="#" class="btn primary" data-toggle="modal"
-                                                                       data-target="#cart-modal" tabindex="0">add to
-                                                                        sop</a></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="amway-suggest__item">
-                                                                <div class="amway-suggest__item-content amwahover">
-                                                                    <img src="images/img-quick-shop-02.png"
-                                                                         class="amway-suggest__thumbnail" alt="product">
-                                                                    <div class="amway-suggest__item-detail">
-                                                                        <div class="amway-suggest__item-number">SKU:
-                                                                            116991
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title">ARTISTRY
-                                                                            Length & Definition Mascara - Black
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title amway-suggest__item-aboprice">
-                                                                            <span class="amway-suggest__item-abovalue">$140</span>
-                                                                        </div>
-                                                                        <div class="product-list__item-title product-list__item-aboprice">
-                                                                            <span class="product-list__item-abovalue amount-cal list-total">
-                                                                                <a class="icon-del opera" data="-">
-                                                                                    <i class="fas fa-minus fa-delete"></i>
-                                                                                </a>
-                                                                                <input type="tel"
-                                                                                       class="pdpAddtoCartInput amount-cal-input"
-                                                                                       name='pdpAddtoCartInput'
-                                                                                       id="amount-cal-input-id" value="5">
-                                                                                <a class="icon-add opera" data="+">
-                                                                                    <i class="fas fa-plus fa-add"></i>
-                                                                                </a>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="amway-suggest__item-link">
-                                                                    <a href="#" class="btn primary" data-toggle="modal"
-                                                                       data-target="#cart-modal" tabindex="0">add to
-                                                                        sop</a></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="amway-suggest__item">
-                                                                <div class="amway-suggest__item-content amwahover">
-                                                                    <img src="images/img-quick-shop-03.png"
-                                                                         class="amway-suggest__thumbnail" alt="product">
-                                                                    <div class="amway-suggest__item-detail">
-                                                                        <div class="amway-suggest__item-number">SKU:
-                                                                            116991
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title">ARTISTRY
-                                                                            Length & Definition Mascara - Black
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title amway-suggest__item-aboprice">
-                                                                            <span class="amway-suggest__item-abovalue">$140</span>
-                                                                        </div>
-                                                                        <div class="product-list__item-title product-list__item-aboprice">
-                                                                            <span class="product-list__item-abovalue amount-cal list-total">
-                                                                                <a class="icon-del opera" data="-">
-                                                                                    <i class="fas fa-minus fa-delete"></i>
-                                                                                </a>
-                                                                                <input type="tel"
-                                                                                       class="pdpAddtoCartInput amount-cal-input"
-                                                                                       name='pdpAddtoCartInput'
-                                                                                       id="amount-cal-input-id" value="6">
-                                                                                <a class="icon-add opera" data="+">
-                                                                                    <i class="fas fa-plus fa-add"></i>
-                                                                                </a>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="amway-suggest__item-link">
-                                                                    <a href="#" class="btn primary" data-toggle="modal"
-                                                                       data-target="#cart-modal" tabindex="0">add to
-                                                                        sop</a></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="amway-suggest__item">
-                                                                <div class="amway-suggest__item-content amwahover">
-                                                                    <img src="images/img-quick-shop-04.png"
-                                                                         class="amway-suggest__thumbnail" alt="product">
-                                                                    <div class="amway-suggest__item-detail">
-                                                                        <div class="amway-suggest__item-number">SKU:
-                                                                            116991
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title">ARTISTRY
-                                                                            Length & Definition Mascara - Black
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title amway-suggest__item-aboprice">
-                                                                            <span class="amway-suggest__item-abovalue">$140</span>
-                                                                        </div>
-                                                                        <div class="product-list__item-title product-list__item-aboprice">
-                                                                            <span class="product-list__item-abovalue amount-cal list-total">
-                                                                                <a class="icon-del opera" data="-">
-                                                                                    <i class="fas fa-minus fa-delete"></i>
-                                                                                </a>
-                                                                                <input type="tel"
-                                                                                       class="pdpAddtoCartInput amount-cal-input"
-                                                                                       name='pdpAddtoCartInput'
-                                                                                       id="amount-cal-input-id" value="14">
-                                                                                <a class="icon-add opera" data="+">
-                                                                                    <i class="fas fa-plus fa-add"></i>
-                                                                                </a>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="amway-suggest__item-link">
-                                                                    <a href="#" class="btn primary" data-toggle="modal"
-                                                                       data-target="#cart-modal" tabindex="0">add to
-                                                                        sop</a></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="amway-suggest__item">
-                                                                <div class="amway-suggest__item-content amwahover">
-                                                                    <img src="images/img-quick-shop-05.png"
-                                                                         class="amway-suggest__thumbnail" alt="product">
-                                                                    <div class="amway-suggest__item-detail">
-                                                                        <div class="amway-suggest__item-number">SKU:
-                                                                            116991
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title">ARTISTRY
-                                                                            EXACT FIT Perfecting Loose Powder
-                                                                        </div>
-                                                                        <div class="amway-suggest__item-title amway-suggest__item-aboprice">
-                                                                            <span class="amway-suggest__item-abovalue">$140</span>
-                                                                        </div>
-                                                                        <div class="product-list__item-title product-list__item-aboprice">
-                                                                            <span class="product-list__item-abovalue amount-cal list-total">
-                                                                                <a class="icon-del opera" data="-">
-                                                                                    <i class="fas fa-minus fa-delete"></i>
-                                                                                </a>
-                                                                                <input type="tel"
-                                                                                       class="pdpAddtoCartInput amount-cal-input"
-                                                                                       name='pdpAddtoCartInput'
-                                                                                       id="amount-cal-input-id" value="12">
-                                                                                <a class="icon-add opera" data="+">
-                                                                                    <i class="fas fa-plus fa-add"></i>
-                                                                                </a>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="amway-suggest__item-link">
-                                                                    <a href="#" class="btn primary" data-toggle="modal"
-                                                                       data-target="#cart-modal" tabindex="0">add to
-                                                                        sop</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row" id="search-no-item" style="display:none;">
-                                                No items found.
-
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="quickShop">
+                            <h4 class="panel-title">
+                                <div role="button" data-toggle="collapse" class="collapsed disable quick-shop-collapse">
+                                    <i class="far fa-barcode"></i>
+                                    <span class="text-uppercase accordion-header-text">ADD NEW SOP ITEMS</span>
+                                    <span class="pull-right"><i class="fas fa-plus"></i></span>
                                 </div>
-                            </div>
+                            </h4>
                         </div>
+                                    
                     </div>
                 </div>
             </div>
@@ -399,7 +185,7 @@
                                 <div class="form-group sort-cell">
                                         <label class="control-label " for="msortForm1">View:</label>
                                         <form id="" name="sortForm1" method="get" action="">
-                                            <select id="view-month" name="sort" class="form-control no-uppercase-form-control">
+                                            <select id="view-month" name="sort" disabled="disabled" class="form-control no-uppercase-form-control">
                                                 <option selected="selected">1 Month</option>
 
                                                 <option>6 Month</option>
@@ -410,7 +196,7 @@
                                 <div class="form-group sort-cell">
                                     <label class="control-label" for="sortForm1">Showing:</label>
                                     <form id="" name="" method="get" action="">
-                                        <select id="" name="sort" class="form-control no-uppercase-form-control">
+                                        <select id="" name="sort" disabled="disabled" class="form-control no-uppercase-form-control">
                                             <option selected="selected">Decemeber</option>
                                             <option>January</option>
                                             <option>February</option>
@@ -418,7 +204,7 @@
                                             <option>April</option>
                                         </select>
 
-                                        <select id="" name="sort" class="form-control no-uppercase-form-control">
+                                        <select id="" name="sort" disabled="disabled" class="form-control no-uppercase-form-control">
                                             <option selected="selected">2018</option>
                                             <option>2017</option>
                                             <option>2016</option>
@@ -459,13 +245,13 @@
                         <div class="form-group sort-cell text-right filter-by-wrap">
                             <label class="control-label font-text-transform-none" for="sortForm1">Filter by:</label>
                             <form id="sortForm1" name="sortForm1" method="get" action="">
-                                <select id="sortOptions1" name="sort" class="form-control no-uppercase-form-control">
+                                <select id="sortOptions1" name="sort" disabled="disabled" class="form-control no-uppercase-form-control">
                                     <option selected="selected">Benefits</option>
                                 <option>Ditto</option>
                                 <option>All</option>
                                 </select>
 
-                                <select id="sortOptions2" name="sort" class="form-control no-uppercase-form-control">
+                                <select id="sortOptions2" name="sort" disabled="disabled" class="form-control no-uppercase-form-control">
                                     <option selected="selected">Active</option>
                                     <option>Inactive</option>
                                     <option>Cancel</option>
@@ -539,7 +325,7 @@
                                 <span class="product-item-number">105480</span></div>
                             <div class="product-category">18.22PV/57.31BV</div></div>
                     </div>
-                    <div class="col-md-1">3</div>
+                    <div class="col-md-1 red">3</div>
                     <div class="col-md-1">60 Pack</div>
                     <div class="col-md-1">$ 30.50</div>
                     <div class="col-md-1 data-cell">
@@ -552,7 +338,7 @@
                     </div>
 
                     <div class="col-md-1">
-                        <a href="mysop-detail-ditto.html">Details</a>
+                        <a href="">Details</a>
                     </div>
 
                     <div class="col-md-1">
@@ -576,11 +362,9 @@
                                 <span class="product-item-number">105480</span></div>
                             <div class="product-category">18.22PV/57.31BV</div></div>
                     </div>
-                    <div class="col-md-1 label-wrap">
+                    <div class="col-md-1  red">
 
-                        <label class="label-green">
-                            2
-                        </label>
+                        2
                     </div>
                     <div class="col-md-1">60 Pack</div>
                     <div class="col-md-1">$30.50</div>
@@ -617,10 +401,8 @@
                                 <span class="product-item-number">105480</span></div>
                             <div class="product-category">18.22PV/57.31BV</div></div>
                     </div>
-                    <div class="col-md-1 label-wrap">
-                        <label class="label-green">
-                            2
-                        </label>
+                    <div class="col-md-1  red">
+                        2
                     </div>
                     <div class="col-md-1">60 Pack</div>
                     <div class="col-md-1">$ 30.50</div>
@@ -659,11 +441,8 @@
                                 <span class="product-item-number">105480</span></div>
                             <div class="product-category">18.22PV/57.31BV</div></div>
                     </div>
-                    <div class="col-md-1 label-wrap">
+                    <div class="col-md-1 red">
                      2
-                        <label class="label-green">
-                           2
-                        </label>
                     </div>
                     <div class="col-md-1">60 Pack</div>
                     <div class="col-md-1">$30.50</div>
@@ -725,7 +504,7 @@
                         </div>
 
                         <div class="col-md-1">
-                            <a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+                            <a href="" class="mysop-list-details-link">Details</a>
                         </div>
 
                         <div class="col-md-1">
@@ -765,7 +544,7 @@
                         </div>
 
                         <div class="col-md-1">
-                            <a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+                            <a href="" class="mysop-list-details-link">Details</a>
                         </div>
 
                         <div class="col-md-1">
@@ -803,7 +582,7 @@
                         </div>
 
                         <div class="col-md-1">
-                            <a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+                            <a href="" class="mysop-list-details-link">Details</a>
                         </div>
 
                         <div class="col-md-1">
@@ -852,14 +631,14 @@
 
                     <div class="mysop-text-list">
                     <div class="list-row-content row">
-                        <div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
+                        <div class="col-md-3 col-xs-6">12312312</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
                         <div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
                         <div class="col-md-3 col-xs-6">Amway Plaza</div>
                     </div>
                     <div class="list-row-content row">
-                        <div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
+                        <div class="col-md-3 col-xs-6">12312312</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
                         <div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
@@ -867,14 +646,14 @@
                     </div>
 
                     <div class="list-row-content row">
-                        <div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
+                        <div class="col-md-3 col-xs-6">12312312</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
                         <div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
                         <div class="col-md-3 col-xs-6">Amway Plaza</div>
                     </div>
                     <div class="list-row-content row">
-                        <div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
+                        <div class="col-md-3 col-xs-6">12312312</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
                         <div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
                         <div class="col-md-2 col-xs-6 col-xs-rig">Backorder</div>
@@ -1177,17 +956,23 @@
         });
         $(".inactive").on("click",function (e) {
             e.preventDefault();
-          
+           $("#sortOptions1").addClass("select-close");
+                $("#sortOptions1").attr("disabled",true);
                 $("#active-block").hide();
                 $("#inactive-block").show();
+                $("#cancel-block").hide();
         });
         $(".active").on("click",function (e) {
-          
+            e.preventDefault();
+            $("#sortOptions1").removeClass("select-close");
+                $("#sortOptions1").attr("disabled",false);
                 $("#active-block").show();
                 $("#inactive-block").hide();
+                $("#cancel-block").hide();
         });
         $(".cancel").on("click",function (e) {
-           
+            e.preventDefault();
+            $("#cancel-block").show();
                 $("#active-block").hide();
                 $("#inactive-block").hide();
         });
