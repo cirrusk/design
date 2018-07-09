@@ -1017,36 +1017,38 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .shopping-tbl-list {clear:both;display:block;width:100%;}
 .shopping-th {display:table;width:100%;table-layout:fixed;background:#f4f4f4;overflow:hidden;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;box-sizing:border-box;}
 .shopping-th .th-chk, .shopping-th .th-tit {float:left;}
-.shopping-th .th-chk {width:5%;text-align:center;vertical-align:top;}
-.shopping-th .th-tit {width:95%;text-align:left;vertical-align:top;}
-.shopping-th .th-tit.th-head {display:table;position:relative;padding:11px 0;box-sizing:border-box;; text-align:center}
-.shopping-th .th-tit.th-head > div {display:table-cell;font-size:13px;font-weight:500;color:#002f5f;box-sizing:border-box;}
-.shopping-th .item-number {width:15%;}
-.shopping-th .item-subject {width:26%;}
-.shopping-th .item-quantity {width:15%;}
-.shopping-th .item-price {width:10%;}
-.shopping-th .item-total {width:10%;}
+.shopping-th .th-chk {width:5%;text-align:center;vertical-align:top;display:table-cell;}
+.shopping-th .th-tit {width:95%;text-align:left;vertical-align:top; }
+.shopping-th .th-tit.th-head {display:table-cell; position:relative;padding:11px 0;box-sizing:border-box;; text-align:center; }
+.shopping-th .th-tit.th-head > div { font-size:13px;font-weight:500;color:#002f5f;box-sizing:border-box;float:left; }
+.shopping-th .item-number {width:15.8%;}
+.shopping-th .item-subject {width:27.2%;}
+.shopping-th .item-quantity {width:14.3%;}
+.shopping-th .item-price:nth-child(4) {width:11.4%;}
+.shopping-th .item-total:nth-child(5) {width:11.4%;}
+.shopping-th .item-price:nth-child(6) {width:8.5%;}
+.shopping-th .item-total:nth-child(7) {width:10%;}
 
 .shopping-tbody {clear:both;display:block;}
 .shopping-tbody ul {}
 .shopping-tbody ul li {clear:both;display:table;position:relative;padding:15px 0;width:100%;border-bottom:1px solid #e3e3e3;}
-.shopping-tbody .td-chk, .shopping-tbody .td-info {float:left;}
+.shopping-tbody .td-chk, .shopping-tbody .td-info { display:table-cell;}
 .shopping-tbody .td-chk {width:5%;text-align:center;vertical-align:middle;}
 .shopping-tbody .td-chk label.checkbox-element-wrapper {padding:9px 0 0}
-.shopping-tbody .td-info {width:95%;text-align:left;display:table;vertical-align:middle;}
+.shopping-tbody .td-info {width:95%;text-align:left;display:table-cell;vertical-align:middle;}
 
 .shop-product-code {display:table-cell;width:43%;margin:0;vertical-align:middle;box-sizing:border-box;}
 .shop-product-code .shop-ptit {display:table;width:100%;}
-.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px; text-align:center}
+.shop-product-code .pro-code {display:table-cell;width:15%;font-size:14px; text-align:center; }
 .shop-product-code .pro-name {display:table-cell;width:26%;font-size:14px;}
 .shop-product-info {display:table-cell;width:57%;font-size:14px;margin:0;padding:0;box-sizing:border-box;}
 .shop-product-info .shop-plist {display:table;width:100%;text-align:left;table-layout:fixed;box-sizing:border-box;}
-.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:25%;font-size:14px;box-sizing:border-box; text-align:center}
-.shop-product-info .shop-plist .list-price {display:table-cell; text-align:right;padding:0 10px;box-sizing:border-box; }
+.shop-product-info .shop-plist .list-item-quatiy {display:table-cell;width:25%;font-size:14px;box-sizing:border-box; text-align:center; }
+.shop-product-info .shop-plist .list-price {display:table-cell; text-align:center; box-sizing:border-box; }
 .shop-product-info .shop-plist .list-price:nth-of-type(2) {width:20%; }
 .shop-product-info .shop-plist .list-price:nth-of-type(3) {width:20%; }
 .shop-product-info .shop-plist .list-price:nth-of-type(4) {width:15%;}
-.shop-product-info .shop-plist .list-price:nth-of-type(5) {width:20%; padding-right:24px}
+.shop-product-info .shop-plist .list-price:nth-of-type(5) {width:20%; padding-right:20px}
 .shop-product-info .shop-plist .qty-label {display:none;}
 .shop-product-info .shop-plist .price-label {display:none;}
 .shop-product-info .shop-plist .total-price-label {display:none;}
@@ -1673,11 +1675,16 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl div.pele-day {width:40%;}
 .akl div.pele-btn {width:15%;}
 
-/* 나의 주문내역 > 반품차감내역 팝업 */
+/* 나의 반품내역 > 목록,상세 반품차감내역 팝업 */
+.title-box .product-list-page-title h1.return {position:relative;font-size:18px !important;padding:0 0 5px;}
+.title-box .product-list-page-title h1.return:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_order02.png') no-repeat left center;width:21px;height:21px;}
+
 .return-his-list li{ overflow:hidden; margin-bottom:20px;}
 .return-his-list li span{color: #002f5f; font-weight: 500; float:left;}
 .return-his-list li em{ float:right;}
 .sumy-type .bt-akl-white { margin-left: 10px;}
+.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-paym02:before {content:'';position: absolute;top:50%;left:-16px;margin-top:-10px;background:url('../images/akl_common/ico_card02.png') no-repeat left center;width:21px;height:21px;}
+
 
 /* 마이페이지 > ABO전환 */
 .abo-cont { position: relative; max-width: 1400px; margin:0 auto 10px; padding:25px 62px 10px; background:#f4f4f4 url(../images/akl_common/img_abo_c.png) no-repeat 100% 100%;}
@@ -2498,10 +2505,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 나의 쇼핑정보 > 중개판매관리 > 제품리스트 */
 	.shopping-th .th-tit.th-head {display:none;}
 
-	.shopping-tbody .td-chk {float:left;width:5%; padding:0 12px;vertical-align:top;box-sizing:border-box;}
+	.shopping-tbody .td-chk {float:left;width:5%; padding:0 9px 0 15px;vertical-align:top;box-sizing:border-box;}
 	.shopping-tbody .td-info {float:left;width:90%; padding:0 0 0 20px;vertical-align:top;box-sizing:border-box;margin:0 0;}
 
-	.shop-product-code {display:table;width:100%;padding:10px 0 0;table-layout:fixed}
+	.shop-product-code {display:table;width:100%;padding:5px 0 0;table-layout:fixed}
 	.shop-product-code .pro-code {display:block;width:100%; text-align:left}
 	.shop-product-code .pro-name {display:block;width:100%;}
 
