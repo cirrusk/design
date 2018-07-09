@@ -1707,11 +1707,15 @@ function quickLinksItem_MOB(){
 }
 
 function qkLinkAlign(){
-	var _winWidth = $(window).width();
+	var _winWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	//var _winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+	//var _winWidth = $(window).width();
 	var qLinkItemRun = {
 		reStore : function(){
 			function resetMOB(){
-				var _winWidth = $(window).width();
+				//var _winWidth = $(window).width();
+				var _winWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 				var qLinkWrapper = $('#accordionQuick');
 				var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
@@ -1726,7 +1730,9 @@ function qkLinkAlign(){
 		},
 		setupAlign : function(){
 			function desktopView(){
-				var _winWidth = $(window).width();
+				//var _winWidth = $(window).width();
+				var _winWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
 				var qLinkWrapper = $('#accordionQuick');
 				var qLinkWrapper_height = qLinkWrapper.outerHeight(true);
 				var qLinkItem = qLinkWrapper.find('.quick-links-item');
@@ -1739,16 +1745,17 @@ function qkLinkAlign(){
 					var qHeaderHeight = 30; // p
 					var qPanel_li_Num = qPanel.find('li').length;
 					var qPanel_li_Height = 28;
+					var itemWidth;
 					var itemHeight;
-					var itemWidth = 200;
 
 					if(_winWidth < 851){
 						itemWidth = 185;
-					}
-					if(_winWidth < 800){
+					} else if(_winWidth < 800){
 						qHeaderHeight = 26;
 						qPanel_li_Height = 24;
 						itemWidth = 175;
+					} else {
+						itemWidth = 200;
 					}
 
 					if ( qPanel.length ){
@@ -1769,17 +1776,23 @@ function qkLinkAlign(){
 		}
 	}
 
-	if(_winWidth < 769) {
-		qLinkItemRun.reStore();
-		setTimeout(function(){
-			$('#accordionQuick').isotope().isotope('destroy');
-		},300);
-	}
-	if( _winWidth > 768 ){
+	//스크롤 width 17px 포함한 값으로 변경
+	//기준너비 785 = 768+17
+	if( _winWidth > 785){
 		qLinkItemRun.setupAlign();
+
+		$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
 		setTimeout(function(){
 			$('#accordionQuick').isotope({layoutMode: 'fitColumns',itemSelector: '.quick-links-item'});
 		},300);
+	}
+	if(_winWidth < 786){
+		$('#accordionQuick').isotope().isotope('destroy');
+		setTimeout(function(){
+			$('#accordionQuick').isotope().isotope('destroy');
+		},300);
+
+		qLinkItemRun.reStore();
 	}
 }
 

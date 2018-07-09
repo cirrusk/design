@@ -1046,7 +1046,6 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .category-success-story .col-sm-12:nth-of-type(2) {padding-right:0; padding-left:12px;}
 .akl .row {margin:0;}
 .akl .video-preview.col-sm-12,
-.akl .recommendation.col-sm-12,
 .akl .featured-product.no-border.col-sm-12{padding:0;}
 .akl .subTitle .full-width-title-component__title {font-size: 20px;}
 .akl .amway-theme .full-width-title-component {padding: 0  0 30px 0;}
@@ -1089,10 +1088,11 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .category-success-story .item-content-wrap .sub-title-wrap {font-weight: 500; font-size:14px; height:45px; line-height:1.3;}
 .akl .category-success-story .item-content-wrap .banner-title {margin-bottom: 15px}
 
+.recommendation__image{display:inline-block; max-width:none; margin:0; padding-left:0;}
+.akl .recommendation {height:400px; padding:0 0 0 72px; margin:0;}
+.akl .recommendation__image { width:auto; height:400px; margin:0;}
 
-.akl .recommendation { height:400px; margin-top:110px;}
-.akl .recommendation__message-main {font-size: 34px;font-family:'Noto Sans KR'; font-weight:400; letter-spacing: -2px; line-height:1.2; }
-.akl .recommendation__image { display: block; height:400px; margin-top:0; margin-left:72px; padding-left: 0; }
+.akl .recommendation__message-main {font-size:34px; font-family:'Noto Sans KR'; font-weight:400; letter-spacing: -2px; line-height:1.2; }
 .akl .recommendation__message-signature {font-size: 18px; font-weight: 500; margin-bottom:30px}
 .akl .recommendation__message-link {font-size: 14px; font-weight: 500}
 
@@ -1174,8 +1174,43 @@ label + .toolTip-wrapper {margin-left:6px;}
 	#navMenuTab4 .depth2-links>ul {height:400px;}
 
 	.akl .quick-links-misc .quick-links-sns { margin-top:30px;}
+
+	.akl .row.category-success-story {margin:60px auto;}
 }
-@media (max-width: 768px) {
+@media (max-width: 785px){
+
+	 .quick-links{padding-top:0;}
+  .quick-links .collapse.in{display:block!important;}
+  .quick-links .col-sm-8{width:100%;}
+  .quick-links .col-sm-3{width:100%;padding-left:10px;}
+  .quick-links .panel{margin-bottom:0;border-bottom:1px solid rgba(218, 218, 218, .8);}
+  .quick-links .container{padding:0;}
+  .quick-links .container .row{margin:0;}
+
+  .quick-links-misc{width:100%;}
+  .footer{height:250px;}
+  .footer-logos{margin:30px 17px 28px 22px;}
+  .footer-logos img{max-width:100%;}
+  .quick-links-header:before{position:relative;top:-1px;padding-right:5px;font-family:'Glyphicons Halflings';font-size:10px;content:'\002b';color:#0075a4;}
+  .switcher .quick-links-header:before{content:'\2212';}
+  .quick-links .quick-links-item ul.collapse{display:none!important;}
+  .quick-links .switcher ul.collapse{display:block!important;}
+  .quick-links-item ul{padding-left:20px;}
+
+	/* 퀵리스트 */
+	.akl .container .row.footer-quick {overflow:initial;}
+	.akl .qlink-left-box {padding-right:0;}
+	.akl .qlink-left-box, .akl .qlink-right-box {float:initial; width:auto;}
+	.akl .quick-links-header {padding:12px 15px 2px;}
+	.akl .quick-links-header:before {padding-left:7px;}
+	.akl .quick-links-misc { display:block; clear:both;float:initial; padding:30px 15px 0;}
+	.akl .quick-links ul ul{ padding-bottom: 10px;}
+	.akl .quick-links-item {width:100%;}
+	.akl .quick-links-item ul {padding-left:37px;}
+	.quick-links-header.akl-foot {padding-left:37px;}
+	.quick-links-header.akl-foot:before {display:none}
+}
+@media (max-width: 768px){
 	.akl .product-item-element .checkbox-element-wrapper {margin:3px 0 0 6px;}
 
 	/** ---------------------------------
@@ -1351,7 +1386,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 
 	/* common > h1~h6 */
 	.akl h1 {font-size: 26px; }
-	.akl h2 {font-size: 26px; }
+	.akl h2, .akl .amway-theme h2 {font-size: 26px;}
 	.akl .title-h1 {font-size: 26px; }
 	.akl .title-h2 {font-size: 24px; }
 	.akl .title-h3 {font-size: 22px; }
@@ -1521,7 +1556,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .container {padding: 0 15px;}
 	.paging.pointer {padding:30px 0 0;}
 
-	/* 퀵리스트 */
+	/* 퀵리스트 *//*
 	.akl .container .row.footer-quick {overflow:initial;}
 	.akl .qlink-left-box {padding-right:0;}
 	.akl .qlink-left-box, .akl .qlink-right-box {float:initial; width:auto;}
@@ -1532,7 +1567,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .quick-links-item {width:100%;}
 	.akl .quick-links-item ul {padding-left:37px;}
 	.quick-links-header.akl-foot {padding-left:37px;}
-	.quick-links-header.akl-foot:before {display:none}
+	.quick-links-header.akl-foot:before {display:none} */
 
 	.certification {text-align:center}
 	.certification a {display:none}
@@ -1570,10 +1605,40 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .product-list__thumbnail {float: none;  margin-right: 0;width:auto; display:inline-block;}
 
 	/*** main ***/
+	.akl .owl-carousel .owl-item:before {display:none}
+	.akl .amway-theme .full-width-title-component {padding-bottom:15px;}
+	.akl .akl-btn-wrap .banner__shop-now {padding:12px 20px;}
 	.akl .category-success-story .col-sm-12:nth-of-type(1),
 	.akl .category-success-story .col-sm-6:nth-of-type(1) {padding-right:0; padding-left:0;}
 	.akl .category-success-story .col-sm-6:nth-of-type(2),
 	.akl .category-success-story .col-sm-12:nth-of-type(2) {padding-right:0; padding-left:0;}
+	.akl .row.category-success-story {margin:40px auto;}
+	.akl .success-story__item:first-child { margin-bottom: 30px;}
+
+	.akl .recommendation {padding:0;height:auto; margin-top:0;}
+	.akl .recommendation__image {display:none;}
+	.akl .recommendation__message {position:relative; padding:50px 0 50px; margin:0 0 40px;}
+	.akl .recommendation__message:before, .akl .recommendation__message:after {content:''; position:absolute; width:100%; height:1px; padding:0 15px; box-sizing:content-box; left:-15px; right:-15px; background:#dadada;}
+	.akl .recommendation__message:before {top:0;}
+	.akl .recommendation__message:after {bottom:0;}
+	.akl .recommendation__message-signature {margin-bottom:0;}
+	.akl .recommendation__message-main {font-size:28px;}
+
+	/* 프로모션 */
+	.main-promotion .featured-product {overflow:initial;}
+	.main-promotion .featured-product > .featured-product__slogan {margin-top:0;}
+	.main-promotion .featured-product__item {height:auto;}
+	.main-promotion .featured-product__item:last-child {border-bottom:1px solid #dadada;}
+	.main-promotion .featured-product__subtitle {max-height:none;}
+	.akl .featured-product__slogan {position:relative; margin-bottom: 30px; padding-top:48px; font-size: 26px; border-top:0;}
+	.akl .featured-product__slogan:before {content:''; position:absolute; width:100%; height:1px; padding:0 15px; top:0; left:-15px; right:-15px; box-sizing:content-box; background:#dadada;}
+
+	/* 신제품 출시 & 프로모션 */
+	.akl .featured-product__subtitle {max-height:none; margin-bottom: 20px;}
+	.akl .featured-product__link { bottom:0; position:static;}
+	.akl .featured-product + .akl-btn-wrap .banner__shop-now {margin: -40px 0 40px !important; }
+	.akl .featured-product .featured-product__item {padding:20px 0;}
+
 	.akl .featured_brands .owl-theme .owl-controls .owl-nav .owl-prev{ left:0}
 	.akl .featured_brands .owl-theme .owl-controls .owl-nav .owl-next{right:0}
 	.akl .homepage_banner { height:auto; margin-top:0;  }
@@ -1588,7 +1653,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .new-hot-brand .owl-theme .owl-controls .owl-nav .owl-prev { left:  17px;}
 	.akl .new-hot-brand .owl-theme .owl-controls .owl-nav .owl-next { right: 17px;}
 
-	.akl .recommendation__image {height:auto;}
 	.akl .video-preview + .recommendation { margin-top: 40px; border:0}
 	.akl .full-width-title-component.notice {margin:0 auto 50px; position:relative; max-width:none; width:auto; text-align:left; }
 	.akl .full-width-title-component.notice h2 { position: static; font-size: 16px;  text-align: center; width:auto }
@@ -1597,26 +1661,8 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .full-width-title-component.notice > div { padding:20px 0 0; text-align: center; }
 	.akl .full-width-title-component.notice > a { position:static; text-align: center; }
 	.akl .full-width-title-component.notice p { width:auto; float:none; }
-	.akl .full-width-title-component.notice p > a { padding-left:0; max-width:768px;   }
-	.akl .full-width-title-component.notice p:after {  display:none}
-
-	.akl .akl-btn-wrap .banner__shop-now {padding: 12px 20px;}
-	.akl .amway-theme h2 { font-size: 26px; }
-	.akl .featured-product__slogan { font-size: 26px; margin-bottom: 30px; border-top: 2px solid #dadada; padding-top: 48px}
-	.akl .recommendation__message-main { font-size: 28px; }
-	.akl .amway-theme .full-width-title-component { padding-bottom: 15px; }
-	.akl .owl-carousel .owl-item:before {display: none}
-
-	.akl .featured-product__subtitle {margin-bottom: 20px;}
-	.akl .featured-product__link { bottom:0; position:static;}
-	.akl .featured-product + .akl-btn-wrap .banner__shop-now {margin: -40px 0 40px !important; }
-	.akl .featured-product .featured-product__item { padding:20px 0}
-
-	.akl .success-story__item:first-child { margin-bottom: 30px;}
-	.akl .recommendation {margin-top: 40px;}
-	.akl .featured-product__subtitle {max-height:none; }
-	.main-promotion .featured-product__subtitle {max-height:none;}
-	.main-promotion .featured-product__item {height:auto;}
+	.akl .full-width-title-component.notice p > a { padding-left:0; padding-right:0; max-width:768px;}
+	.akl .full-width-title-component.notice p:after {display:none}
 
 	/* common > table list > sp3,4 */
 	.akl .list-content .content-list {padding: 14px 0  }
@@ -1649,7 +1695,6 @@ label + .toolTip-wrapper {margin-left:6px;}
 @media (max-width: 360px) {
 	.amway-suggest .amway-suggest__item {width:100%}
 }
-
 @media (max-width: 320px) {
 	.cbox {max-width:320px !important; min-width:100%;}
 }
