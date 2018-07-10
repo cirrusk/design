@@ -956,11 +956,13 @@ ul.woo-step-box li:last-child:before {background:none}
 
 	/* 사업가이드 > 비즈니스 가이드 */
 	.akl .amway-theme .tblList { border-top:1px solid #e3e3e3}
-	.akl .amway-theme .tblList td { display:block; padding:5px 20px 15px; font-size:14px}
+	.akl .amway-theme .tblList td { display:block; padding:5px 20px 13px; font-size:14px}
+	.akl .amway-theme .tblList td:first-child { padding:8px 20px 15px; }
+	.akl .amway-theme .tblList td:last-child { padding:5px 20px 18px; }
 	.akl .amway-theme .tblList thead { display:none}
 	.akl .amway-theme .tblList thead th { display:block; text-align:left; padding:15px 20px 0; font-size:14px }
-	.akl .amway-theme .tblList tbody th { display:block; padding:10px 20px 0 }
-	.akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:block; color: #002f5f; font-weight:500}
+	.akl .amway-theme .tblList tbody th { display:block; padding:10px 20px 5px }
+	.akl .amway-theme .tblList th .thTitle,.tblList td .thTitle { display:block; color: #002f5f; font-weight:700}
 	.akl .amway-theme .scroll-table { overflow-y:none; overflow-x:auto;}
 	.akl .amway-theme .scroll-table.widthS-01 .tblList02{ width:900px}
 	.akl .amway-theme .scroll-table.widthS-02 .tblList02{ width:900px}
@@ -976,6 +978,19 @@ ul.woo-step-box li:last-child:before {background:none}
 	.akl .amway-theme .tblList.G20750 tbody thead { display:none}
 	.akl .amway-theme .tblList.G20750 tbody td { display:block; text-align:left}
 	.akl .amway-theme .tblList.G20750 tbody td .th-title-mob { display:block; font-weight:500; color:#002f5f}
+	.akl .amway-theme .tblList tbody th { text-align:left}
+
+	/* 비즈니스 가이드 > 테이블 정렬 */
+	.akl .amway-theme .tblList.textCenter tbody td { text-align:left}
+	.akl .amway-theme .tblList.textCenter.mAlign .thTitle { float:left; font-weight:700;letter-spacing: -1px;}
+	.akl .amway-theme .tblList.textCenter.mAlign th { text-align:right; padding:18px 20px 5px; margin:0;}
+	.akl .amway-theme .tblList.textCenter.mAlign td { text-align:right; padding:7px 20px}
+	.akl .amway-theme .tblList.textCenter.mAlign tr td:last-child { padding:7px 20px 16px}
+	.akl .amway-theme .tblList.textCenter td.textR,
+	.akl .amway-theme .tblList th.textC,
+	.akl .amway-theme .tblList td.textC { text-align:left !important;}
+	.akl .amway-theme .tblList td .listDotFS {padding: 0;}
+	.akl .amway-theme .tblList td .listDotFS > li {padding: 0 0 0 10px;}
 
 	/* 주요 메뉴얼 */
 	.manual-area .mz-item {margin:0 0 33px ; float:left; width:100%}
