@@ -21,13 +21,13 @@ Editor : eunmyoung Noh
 /* 운영팀게시물 */
 @import url("content_res_all.css");
 
-@font-face {
+/*@font-face {
 font-family: 'Noto Sans KR';
 font-style: normal;
-font-weight: 300;
+ font-weight: 300;
 src: url(../fonts/NotoSansKR-Light.woff2) format('woff2'),
 	url(../fonts/NotoSansKR-Light.woff) format('woff') ;
-}
+}*/
 @font-face {
 font-family: 'Noto Sans KR';
 font-style: normal;
@@ -49,13 +49,13 @@ font-weight: 700;
 src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
 	url(../fonts/NotoSansKR-Bold.woff) format('woff') ;
 }
-@font-face {
+/*@font-face {
 font-family: 'Noto Sans KR';
 font-style: normal;
 font-weight: 900;
 src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'),
 	url(../fonts/NotoSansKR-Black.woff) format('woff') ;
-}
+}*/
 
 /*** ASM화면 ***/
 .akl #_asm { position: fixed !important; }
@@ -484,27 +484,20 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .shipping-delivery .checkout-steps .checkout-step {float:none; width:50%;}
 
 /* common > toggle */
+.akl .panel-group .panel+.panel { margin-top:0;}
 .akl .akl-toggle-wrap .accordion-custom {padding: 0 0;}
 .akl .akl-toggle-wrap .panel-group {  margin-bottom:0;}
 .akl .panel-heading+.panel-collapse>.panel-body { border-top:0; padding-top:0; padding-bottom:30px}
 .akl .accordion-custom {font-family:'Noto Sans KR', sans-serif;}
 .akl .accordion-custom .panel-title {padding:25px 0 ;font-size:18px; letter-spacing:-2px; word-spacing:3px;}
 .akl .accordion-custom .panel-title .text-uppercase.accordion-header-text {font-size:18px;font-weight:500;letter-spacing:-2px;}
-.akl .accordion-custom .icon-minus:before {font-size:12px; }
-.akl .accordion-custom .collapsed .icon-minus:before {font-size:20px; font-weight:700;line-height:20px;}
+.akl .accordion-custom .icon-minus:before {font-size:12px; font-weight:400; }
+.akl .amway-theme .accordion-element a.accordion-toggle {display: block;}
 .akl .amway-theme .accordion-element a.accordion-toggle {display: block;}
 
 .akl .product-list-left-refinements-slot .accordion-custom .collapse-button .icon-minus:before,
-.akl .mob-product-facet.product__facet .accordion-custom .collapse-button .icon-minus:before {margin-right: 4px;}
+.akl .mob-product-facet.product__facet .accordion-custom .collapse-button .icon-minus:before {margin-right:4px; line-height: 2;}
 
-.category-titbox .ce-btn .list-group-item.collapsed .icon-minus:before { font-size:20px; font-weight:700; }
-.category-titbox .ce-btn .list-group-item .icon-minus:before { font-size:10px ; font-weight:700; }
-
-.akl .account-profile__panel .collapsed .icon-minus:before {font-size:20px; font-weight:700; }
-.akl .account-profile__panel .icon-minus:before {font-size:10px; font-weight:700; }
-
-.akl .business-page-accordion .collapsed .icon-minus:before {font-size:22px; }
-.akl .business-page-accordion .icon-minus:before {font-size:12px;font-weight:700;line-height:20px; }
 
 /* cmmon > popup */
 .akl .cbox.popWidS {width: 400px }
