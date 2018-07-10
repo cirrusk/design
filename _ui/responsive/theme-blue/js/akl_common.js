@@ -73,11 +73,6 @@
 		MAIN_featuredProduct();
 	});
 
-	//푸터 > 퀵링크
-	$(window).resize(function(){
-		quickLinks();
-	});
-
 
 /** ----- SHOP ----- */
 
@@ -1692,6 +1687,7 @@ function quickLinks(){
 	qkLinkAlign();
 	$(window).resize(function(){
 		qkLinkAlign();
+		//console.log('resize test - qkLinkAlign '+  window.innerWidth );
 	});
 
 	//모바일 사이즈 퀵메뉴 열고닫기
@@ -1713,12 +1709,9 @@ function quickLinksItem_MOB(){
 
 function qkLinkAlign(){
 	var _winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
 	var qLinkItemRun = {
 		reStore : function(){
 			function resetMOB(){
-				var _winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
 				var qLinkWrapper = $('#accordionQuick');
 				var qLinkItem = qLinkWrapper.find('.quick-links-item');
 
@@ -1750,7 +1743,7 @@ function qkLinkAlign(){
 					var itemWidth;
 					var itemHeight;
 
-					if(_winWidth < 800){
+					if( 785 < _winWidth < 800){
 						qHeaderHeight = 26;
 						qPanel_li_Height = 24;
 						itemWidth = 175;
