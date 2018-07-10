@@ -1143,7 +1143,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl div.pur-day {width:15%; text-align:center;}
 .akl div.pur-grantor {width:13%; text-align:center;}
 .akl div.pur-btn {width:19%;text-align:left;}
-.akl div.pur-btn .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px}
+.akl div.pur-btn .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px; margin:1px 1px}
 .akl .list-content.history .con-list-item .pur-day span.txte-wrap {width: 100%;}
 .cont-inarea {clear:both;display:table;width:100%;table-layout:fixed;padding:35px 0 0;box-sizing:border-box;}
 .cont-inarea:after {content:'';clear:both;display:block;}
@@ -1162,8 +1162,8 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl div.pur-day-quantity {width:9%;text-align:center;}
 .akl div.pur-day-use {width:9%;text-align:center;}
 .akl div.pur-condition {width:9%;text-align:center;}
-.akl div.pur-btn2 {width:8%;}
-.akl div.pur-btn2 .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px}
+.akl div.pur-btn2 {width:8%; text-align:right; padding-right:20px}
+.akl div.pur-btn2 .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px; min-width:auto;}
 
 /* 나의 쇼핑정보 > 구매권한 양도 결과 안내 */
 .akl .pop-authority .list-content {margin:0;padding:0 0 30px}
@@ -1234,8 +1234,9 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .list-content.revenge .content-list:nth-child(odd) {background:#fff}
 
 /* 나의 쇼핑정보 > 구매권한 양도 > 양도취소(회수) 팝업 */
-.assignment-pop .assignment-opt{ margin:20px 0}
-.assignment-pop .assignment-opt .tite-label{ margin-right:20px;}
+.akl .assignment-pop .assignment-opt{ margin:20px 0}
+.akl .assignment-pop .assignment-opt .tite-label{ margin-right:20px;}
+.akl .assignment-pop .assignment-opt .opt-quantity.mini {float:none}
 .assignment-tit {font-size:px;}
 .assignment-txt { font-size:px;}
 
