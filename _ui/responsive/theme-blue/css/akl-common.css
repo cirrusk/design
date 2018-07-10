@@ -514,9 +514,8 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .akl .cbox.typeFullSizeView.RD-View {width:960px;}
 .akl .popup-title {font-size:16px;letter-spacing:-1px;padding:0;margin:0;font-weight:500;}
 .akl .cart-popup__dialog {padding:0 0;height:auto;background:#fff;}
-.akl .cart-popup__header { display:table; height:70px; padding:0 20px}
-.akl .cart-popup__header-text {display:table-cell; font-size:24px; height:70px; vertical-align:middle; letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
-.akl .cart-popup__header-text a {font-size:24px;letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif;}
+.akl .cart-popup__header { display:table; height:70px; padding:0 50px 0 20px; position:relative;}
+.akl .cart-popup__header-text {display:table-cell; font-size:24px; height:70px; vertical-align:middle; letter-spacing:-2px;font-weight:500; font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
 .akl .cart-popup__content {padding:0;}
 .akl .cart-popup__item-info {height:auto !important;padding:36px 30px 20px;}
 .akl .cart-popup__item-info:after { content:""; display:block;clear:both;}
@@ -525,11 +524,10 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .akl .cart-popup__item-link .btn-blue-white {min-width:120px;}
 .akl .cbox .cart-popup__dialog.bg-white {height:auto;background:#fff;border:1px solid #c0c0c0}
 .akl .cbox .cart-popup__dialog.bg-white .cart-popup__close { padding:0 0; top:10px; right:20px;}
-.akl .cart-popup__close { padding:0 10px; top:12px; right:10px;}
-.akl .cart-popup__close.pop-close { padding: 10px; top:5px; right:10px;}
-
+.akl .cart-popup__close { top:50%; right:10px; margin-top:-20px; display:block; width:40px; height:40px; padding:10px}
+.akl .cart-popup__close img{ display:block;}
 .akl .cbox .cart-popup__dialog.bg-white .cart-popup__header-text2 {position: relative;font-size:24px;font-weight:500;color:#002f5f;padding:18px 0;border-bottom:1px solid #e3e3e3;margin:0 34px;letter-spacing:-1px;font-family:'Noto Sans KR', sans-serif;}
-.akl .cbox .cart-popup__dialog.bg-white .cart-popup__header-text2 .cart-popup__close {padding:0 10px;top:15px; right:-10px;}
+.akl .cbox .cart-popup__dialog.bg-white .cart-popup__header-text2 .cart-popup__close {padding:0 10px; top:15px; right:-10px;}
 .akl .cbox .cart-popup__dialog.bg-white .cart-popup__item-info {padding:30px 34px 20px;}
 .akl .cbox .cart-popup__dialog.bg-white .cart-popup__item-info p {margin:0 0 20px;}
 
