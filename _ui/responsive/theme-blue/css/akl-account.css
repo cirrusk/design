@@ -1379,7 +1379,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .list-ara {padding:10px 0 0}
 
 .mymyview-info-type {clear:both;display:block;border-top:1px solid #e3e3e3;margin-top:30px}
-.myview-info-type .txt-in-area {display:table;width:100%;padding:20px 0 0;overflow:hidden;}
+.myview-info-type .txt-in-area {display:table;width:100%;padding:20px 0 0; }
 .txt-in-area .txt-label {font-size:14px;color:#002f5f;font-weight:500;letter-spacing:-1px;}
 .txt-in-area .txt-content {font-size:14px;font-weight:400;letter-spacing:-1px;text-align:left;}
 .txt-in-area .txt-content span {font-size:14px;}
@@ -1393,7 +1393,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .txt-in-area .txt-content span.sumy-num button {margin-left:10px}
 .txt-in-area .txt-content .txt-smart {margin-top:-6px}
 
-.akl .myorder-history .accordion-custom .pull-right {position: absolute;right:0;top:15px;}
+.akl .myorder-history .accordion-custom .pull-right {position: absolute;right:0; }
 
 /* 나의 주문내역 > 상세정보 > 결제정보 */
 .txt-in-area .orderProof {clear:both;display:block;padding:10px 0 0;}
@@ -1414,7 +1414,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .myview-info-type.payway {clear:both;display:block;border-top:0 none;margin-top:0}
 .myview-info-type.payway .txt-in-area {padding:10px 0 0}
 .txt-in-area .btn-payinfo {vertical-align:top;margin:0 0 0 10px}
-.txt-in-area .orderPayme {padding:10px 0;height:40px;}
+.txt-in-area .orderPayme {padding:10px 0;}
 .txt-in-area .orderPayme .txt-content span {display:inline-block;}
 .txt-in-area .orderPayme .txt-content span em {display:inline-block;}
 .txt-in-area .orderPrice {padding:10px 0;height:40px;}
@@ -1490,7 +1490,8 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .view-info-delvery .orderPicup .txt-content {width:86.1%;font-weight:400;}
 .mychange-ship .default-shipping-address .detail-content .normal-devy .control-group.emplace select {width:160px;}
 
-.myordef-shipArea {clear:both;display:block;padding:30px 0 0}
+.myordef-shipArea {clear:both;display:block;padding:30px 0 0; }
+.btn-center + .myordef-shipArea {  border-top: 1px solid #e3e3e3; margin-top:40px}
 .mylist-top {clear:both;display:block;padding:0 0 0;}
 .mylist-top:after {content:'';clear:both;display:block;}
 .mylist-top .l-title {float:left;font-size:16px;font-weight:500;letter-spacing:-1px;}
@@ -1676,6 +1677,25 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl div.pele-day {width:40%;}
 .akl div.pele-btn {width:15%;}
 
+/* 나의 반품내역 > 목록,상세*/
+.list-ara {padding: 10px 0 34px;}
+.myview-info-type .txt-in-area { padding: 0;  border-top: 1px solid #e3e3e3; padding:27px 0 27px}
+.myorder-history .panel-group .panel {margin-top: 5px;}
+.myorder-history .panel-group .panel+.panel .txt-in-area{  border-top:0; padding-top:0 }
+.myorder-history .panel-group .myview-info-type.payway { border-bottom: 1px solid #e3e3e3; padding:0 0 27px; margin-bottom: 27px;}
+.myorder-history .panel-group .myview-info-type.group-sum { border-bottom: 1px solid #e3e3e3; margin-bottom: 27px;}
+.myview-info-type.payway .txt-in-area { padding: 0;}
+.akl .view-history-btn .link-btn { margin-top:0;}
+.akl .myorder-history .panel-heading+.panel-collapse>.panel-body {padding-bottom:0;}
+.myview-info-type.return .txt-in-area{  border-top:0; padding-top:0 }
+.col-md-12c {width: 100%; overflow:hidden; height:auto; padding:1px 0}
+.txt-in-area .orderSummary02 {padding:10px 0; }
+.myview-info-type.payway { padding-bottom:27px}
+.col-md-12.order-delivery{ padding-bottom:17px}
+.mychange-ship .tgg-hidden-area { margin-top:20px; padding:30px 0 0;}
+.tgg-hidden-area .default-shipping-address { border-bottom:0;}
+.myorder-history .panel-group .myview-info-type.payway.case02 {border-bottom:0; padding-bottom:0;}
+
 /* 나의 반품내역 > 목록,상세 반품차감내역 팝업 */
 .title-box .product-list-page-title h1.return {position:relative;font-size:18px !important;padding:0 0 5px;}
 .title-box .product-list-page-title h1.return:before {content: "";position: absolute;top:3px;left:-30px;display:inline-block;background:url('../images/akl_common/ico_order02.png') no-repeat left center;width:21px;height:21px;}
@@ -1685,6 +1705,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .return-his-list li em{ float:right;}
 .sumy-type .bt-akl-white { margin-left: 10px;}
 .akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-paym02:before {content:'';position: absolute;top:50%;left:-16px;margin-top:-10px;background:url('../images/akl_common/ico_card02.png') no-repeat left center;width:21px;height:21px;}
+
 
 
 /* 마이페이지 > ABO전환 */
@@ -1722,7 +1743,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-5 {width:37%;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-3 {width:10%;font-size:14px;}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-2 {width:20%;font-size:14px;}
-.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {width:11%;font-size:14px;text-align:right;padding:0 20px 0 0}
+.akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1 {width:11%;font-size:14px;text-align:center;padding:0}
 .akl .myorder-promotion .shopping-cart-item-list .product-list-item .col-md-1.list-item-erformance {text-align:center;padding:0 0;}
 .akl .myorder-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:450px;}
 .akl .product-list-item .product-item-element.list-item-amount {text-align:center;}
@@ -1971,7 +1992,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .go-block.col-sm-6 {width:300px;}
 
 	/* 나의 주문내역 */
-	.myorder-search .cuton-form-wrapper .form-s input.input-st {width:auto}
+	.myorder-search .cuton-form-wrapper .form-s input.input-st {/*width:auto*/}
 }
 @media (min-width: 769px){
 	/* 부사업자 등록 > 주사업자 입력내용 열고닫기 */
@@ -2727,7 +2748,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .poo-asslist-box {padding:20px 0 20px}
 	.akl .poo-asslist-box .pop-list-detail {max-height:initial;overflow-x: hidden;overflow-y:auto;}
 
-.akl .pop-list-detail .list-content .list-row-title { padding:12px 0 9px}
+	.akl .pop-list-detail .list-content .list-row-title { padding:12px 0 9px}
 	.akl .poo-asslist-box .list-content .content-list {padding: 20px 0 17px;}
 	.akl .poo-asslist-box .con-list-item .all-ceek {padding:6px 0}
 	.akl .content-list .con-list-item > div.pop-ass-num {width:100%;padding:6px 20px}
@@ -2907,9 +2928,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	.txt-in-area .col-md-3 {padding:0 0;}
 	.txt-in-area .orderSummary {display:block;padding:10px 0 5px;height:auto;width:100%;}
-	.txt-in-area .orderSummary .col-md-3.txt-label {float:left;width:30%;}
-	.txt-in-area .orderSummary .col-md-9.txt-content {float:left;width:70%;}
-	.txt-in-area .orderSummary .col-md-9.txt-content {float:left;width:70%;}
+	.txt-in-area .orderSummary .txt-label {float:left;width:30%;}
+	.txt-in-area .orderSummary .txt-content {float:left;width:70%;}
 	.txt-in-area .txt-content span.sumy-type {display:block;}
 	.txt-in-area .txt-content span.sumy-num {display:block;padding:5px 0 0}
 	.txt-in-area .txt-content span.sumy-num button {display:block;margin-left:0;margin-top:5px}
@@ -2919,8 +2939,9 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.txt-in-area .pay-trans span.btn-business {display:block;margin:5px 0 0;}
 	.txt-in-area .pay-pvbv {padding:10px 0 0}
 
+
 	/* 나의 주문내역 > 상세정보 > 결제정보 */
-	.txt-in-area .orderPayme {padding:10px 0 0;height:auto;}
+	.txt-in-area .orderPayme {padding:10px 0 0;height:auto; }
 	.txt-in-area .orderPayme .txt-content span {display:block;padding:0 0 6px}
 	.txt-in-area .orderPayme .txt-content span em {display:none;}
 	.txt-in-area .orderPayme .col-md-2 {padding:0 0;width:30%;}
@@ -2929,11 +2950,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	.txt-in-area .orderPrice {padding:10px 0;height:auto;}
 	.txt-in-area .orderPrice .col-md-3.txt-label {float:left;width:30%;vertical-align:top;}
-	.txt-in-area .orderPrice .col-md-9.txt-content {float:right;width:70%;vertical-align:top;text-align:right;letter-spacing:-0.05em}
-	.txt-in-area .orderPrice .col-md-9.txt-content span {display:block;}
-
+	.txt-in-area .orderPrice .col-md-9.txt-content {float:right;width:70%;vertical-align:top;text-align:right;letter-spacing:-0.05em;; font-weight:500}
+	.txt-in-area .orderPrice .col-md-9.txt-content span {display:block; }
+	.txt-in-area .orderPrice .col-md-9.txt-content span + span { font-weight:400}
 	.txt-in-area .orderPrice .col-md-2.txt-label {float:left;width:30%;}
-	.txt-in-area .orderPrice .col-md-10.txt-content {float:right;width:70%;text-align:right;letter-spacing:-0.05em}
+	.txt-in-area .orderPrice .col-md-10.txt-content {float:right;width:70%;text-align:right;letter-spacing:-0.05em; font-weight:500}
 	.txt-in-area .orderPrice .txt-content.pc {display:none;}
 
 	/* 나의 주문내역 > 상세정보 > 쿠폰/프로모션 내역 */
@@ -2984,11 +3005,13 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.mychange-ship .default-shipping-address .detail-content .normal-devy .control-group.emplace select {width:100%;}
 
 	.myorder-history {padding:0;}
-	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text {padding-left:20px}
-	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-infom:before {left:0;}
-	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-paym:before {left:0;}
-	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-cupon:before {left:0;}
-	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-deby:before {left:0;}
+	.myorder-history .panel-body { padding: 15px 7px 15px 36px;}
+	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text {padding-left:25px}
+	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-infom:before {left:10px;}
+	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-paym:before {left:10px;}
+	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-cupon:before {left:10px;}
+	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-deby:before {left:10px;}
+	.akl .myorder-history .accordion-custom .panel-title .text-uppercase.accordion-header-text.icon-paym02:before {left:10px;}
 
 	.akl .list-content .list-row-title > div.moy-prod {display:none;}
 	.akl .list-content .list-row-title > div.moy-qut {display:none;}
@@ -3166,6 +3189,17 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.month-label {display:inline-block;float:left;font-size:14px;text-align:left;font-weight:500;color:#002f5f;}
 	.value-wrapper.month-value-wrapper {float:right;}
 
+	/* 나의 반품내역 > 목록,상세*/
+	.txt-in-area .orderSummary02 {padding:10px 0;height:auto;}
+	.txt-in-area .orderSummary02 .txt-label {float:left;width:45%;}
+	.txt-in-area .orderSummary02 .txt-content {float:left;width:55%;}
+	.txt-in-area .orderPrice02 {padding:10px 0; height:auto; }
+	.txt-in-area .orderPrice02.mgt10 { margin-top:0!important;}
+	.txt-in-area .orderPrice02  .txt-label {float:left;width:45%;}
+	.txt-in-area .orderPrice02  .txt-content {float:left;width:55%;}
+	.txt-in-area .pay-pvbv span.pay-btn {margin-top:0;}
+	.myview-info-type.return .txt-in-area{  border-top:0; padding-top:0 }
+	.mychange-ship .tgg-hidden-area {  padding:15px 0 0;}
 
 	/* 마이페이지 > ABO전환 */
 	.abo-cont { margin:0 auto 10px; padding:25px 15px 10px; background:#f4f4f4 url(../images/akl_common/img_abo_c.png) no-repeat 50% 100%; background-size:320px auto}
