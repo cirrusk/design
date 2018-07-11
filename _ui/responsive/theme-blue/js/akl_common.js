@@ -872,7 +872,7 @@ function cartSummaryFixed(){
 
 /* 주문 배송메시지 */
 function deliveryMSG(){
-	$('.delivery-msg').each(function(){
+	$('.delivery-msg, .delivery-msg02').each(function(){
 		var $inputBox = $(this).find('input[type=text].m-message');
 		var $msgList = $(this).find('.delivery-msg-list');
 		var $msgText = $msgList.find('button')
@@ -891,7 +891,7 @@ function deliveryMSG(){
 		});
 	});
 
-	var stopPropagation_target = '.delivery-msg .m-message, .delivery-msg .delivery-msg-list';
+	var stopPropagation_target = '.m-message, .delivery-msg-list';
 	$(stopPropagation_target).on('click',function(e){
 		e.stopPropagation();
 	});
