@@ -963,7 +963,7 @@ shop 옮김 : 2018.04.10
 .akl .shipping-delivery .order-failed-area .amwa-btnbar {margin-bottom:40px;}
 
 .btn-delivery-guide {padding-left:10px;}
-.delivery-txt {padding:0 0 20px;}
+.delivery-txt {padding:0 0 5px;}
 .panel.col-panel { margin-bottom: 0}
 .akl .shipping-delivery-ship .panel label {line-height:18px;}
 .akl .shipping-delivery-ship {clear:both;display:block;margin:0 0;padding:35px 0;}
@@ -997,7 +997,7 @@ span.btn-business {display:inline-block;}
 .default-shipping-address {clear:both;display:block;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; margin-top:30px;padding:20px 0 0; }
 .default-shipping-address:after { content:""; clear:both;display:block;}
 .default-shipping-address.no-botm {border-bottom:0 none;}
-.address-tit {font-size:16px;font-weight:500;letter-spacing:-1px;}
+.address-tit {font-size:16px;font-weight:500;letter-spacing:-1px; margin-bottom:18px; margin-top:13px}
 .default-shipping-address .detail-content {margin:0 0;padding:0 0;letter-spacing:-1px;width:100%;}
 .default-shipping-address .detail-content .col-xs-12 {margin:0 0 10px;padding:0 0;}
 .default-shipping-address .detail-content .col-xs-12 .col-md-2 {padding:0 0;}
@@ -1981,13 +1981,13 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .col-md-9.cart-items-wrapper {padding:0 0 0 0;margin:0;}
 	.akl .shipping-delivery {margin-top:0;}
 	.akl .checkout-steps-active {width:75%}
-	.akl .shipping-delivery-ship {padding:25px 0 }
+	.akl .shipping-delivery-ship {padding:28px 0 }
+	.akl .shipping-delivery-ship.method {padding:30px 0 10px}
 	span.btn-business {padding-left:30px;}
 	.akl .shipping-delivery-radio-body {margin:10px 0 0 10px;}
 	.akl .shipping-delivery-ship .use-agreement{padding:0 15px}
 	.akl .use-agreement #terms .conditions .text-btn {display:block;text-align:center;padding:10px 10px;margin:0 auto;}
 	.akl .shipping-delivery .panel { margin-bottom:20px}
-	#selectPay .panel:nth-of-type(5) { margin-bottom:0}
 	#shippingdiv .panel.col-panel{ margin-bottom:0}
 
 	/* 주문결제 > Tab */
@@ -1999,6 +1999,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 	/* 주문결제 > 단일 */
 	.btn-adress-list {position: absolute;top:-67px;left:150px;}
+ 	.akl .btn-adress-list.mounting .link-btn {margin-top:0;}
 
 	/* 주문결제 > 단일 > 배송지 목록 */
 	.address-book span.btn-book {display:block;margin:10px 0 0}
@@ -2010,9 +2011,11 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.table-wrapper.my-Shipping-list .tbl-type1 td {padding:8px 15px}
 
 	/* 주문결제 > 단일 > 기본배송지 */
-	.default-shipping-address .detail-content .right-info {display:block;}
+	.default-shipping-address .detail-content .col-xs-12 .col-md-2.left-content { font-weight:700; margin-bottom:7px; display:block;}
+	.default-shipping-address .detail-content .right-info {display:block; margin-bottom:10px;}
 	.default-shipping-address .detail-content input.form-control {width:100%;}
 	.default-shipping-address .delivery-msg .delivery-msg-list {width:100%;}
+	.default-shipping-address .delivery-msg .delivery-msg-list + .message-shop { margin-bottom:-30px}
 	.default-shipping-address .delivery-msg .byte-txt { position:static; padding-top:10px; display: block;}
 	.default-shipping-address .delivery-msg02 .byte-txt { position:static; padding-top:10px; display: block;}
 	.ship-messige .byte-txt { position:static; padding-top:10px; display: block;}

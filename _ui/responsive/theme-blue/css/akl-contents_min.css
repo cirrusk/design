@@ -524,6 +524,7 @@ html.scrollLock body {overflow:hidden;}
 .dl-form-group .form-group .txt-value.mobile-num>span {display:inline-block; margin-right:10px;}
 .dl-form-group .txt-italic {margin:10px 0 0;}
 
+.box-case-wrapper { margin-top:-4px}
 .box-case-wrapper .box-case-tit {display:block; margin-bottom:17px; font-size:16px; letter-spacing:-0.025em;}
 .box-case-wrapper .box-case-text {line-height:160%;}
 .box-case-wrapper .box-case-text + .dl-form-group {margin-top:40px;border-top:1px solid #e3e3e3;}
@@ -583,8 +584,8 @@ html.scrollLock body {overflow:hidden;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading {padding:0 20px 0 50px;}
 .akl .fax-order-wrapper .accordion-custom .panel .panel-heading>a {display:block;}
 .akl .fax-order-wrapper .accordion-custom .panel-body {padding:0 30px 30px 50px; border-top:0;}
-.akl .fax-order-wrapper .accordion-custom .panel-title {position:relative; padding:18px 0 16px;}
-.akl .fax-order-wrapper .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px;}
+.akl .fax-order-wrapper .accordion-custom .panel-title {position:relative; }
+.akl .fax-order-wrapper .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-12px;}
 .akl .fax-order-wrapper .accordion-custom .panel-title .order-cases {display:inline-block; margin-left:10px}
 
 .akl .fax-order-wrapper .accordion-custom .icon-minus:before {line-height:15px;}
@@ -600,7 +601,7 @@ html.scrollLock body {overflow:hidden;}
 
 /* 배송지 */
 .fax-order-wrapper .amw-radio-wrap {display:inline-block; margin-right:20px; padding-bottom:7px;}
-.fax-order-wrapper .delivery-address .btn-box {padding-bottom:15px;}
+.fax-order-wrapper .delivery-address .btn-box {padding-bottom:5px;}
 .fax-order-wrapper .default-shipping-address {border-bottom:0;}
 .fax-order-wrapper .default-shipping-address .detail-content .form-group.col-xs-12 {margin-bottom:0;}
 .fax-order-wrapper .new-shipping-address {border-bottom:0;}
@@ -647,7 +648,7 @@ html.scrollLock body {overflow:hidden;}
 .faxOrder-group-order .confirm-check label.normal {color:#56565a;font-wieght:400;letter-spacing:-1px;}
 
 /* 결제방법 */
-.accordion-custom .panel.noline {border-bottom:0 ;}
+.accordion-custom .panel.noline {border-bottom:0 ; margin-bottom:15px}
 .akl .faxOrder-payment-wrapper hr.divide {margin:40px 0 40px; border-top:1px solid #e3e3e3;}
 .akl .faxOrder-payment-wrapper .divide.no-line {border-top:0;margin:40px 0 0;}
 .akl .faxOrder-payment-wrapper .shipping-delivery-ship {padding:0; border-bottom:0;}
@@ -1416,6 +1417,11 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.fax-order-wrapper .new-shipping-address .form-group.def-ship_new {padding-left:10px;}
 	.akl .faxOrder-cart-wrapper .card-kinds {margin:10px 0;}
 	.akl .shipping-delivery-setup-title.col-md-3 { margin-bottom: 20px;}
+
+	/* 배송지 */
+	.akl .fax-order-wrapper .delivery-address .link-btn { margin-top:0;}
+	.akl .fax-order-wrapper p.address-tit { padding: 0 0 10px; }
+
 	/* 제품주문 정보 */
 	.fax-order-wrapper .shopping-cart-item-list .product-list-item .list-item-image {margin-right:15px;}
 

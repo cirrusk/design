@@ -201,6 +201,7 @@ b,strong{font-weight:500; }
 
 .akl .bt-akl-white {display:inline-block;background-color:#fff;color:#002F5F;border:1px solid #002F5F; font-size:14px;padding:6px 25px 8px;height:40px;vertical-align:middle;font-weight:500;}
 .akl .bt-akl-white:hover,.akl .bt-akl-white:focus,.akl .bt-akl-white:active {color: #fff;background-color:#002F5F;border-color: #002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
+.akl .bt-akl-white:hover,.akl .bt-akl-white:focus,.akl .bt-akl-white:active {color: #fff;background-color:#002F5F!important;border-color: #002F5F;-webkit-transition: background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
 .akl a.bt-akl-white {padding:8px 30px 8px;}
 .akl .bt-akl-white.mini {font-size:12px; padding:0 10px 0; height:25px; line-height:23px; min-width:74px;text-align:center;}
 .akl .bt-akl-white.large {height:60px;font-size:20px;}
@@ -431,6 +432,7 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .akl .outer-border-bottom .tabs-toggles.case01 .tab-toggle-wrap .tab-toggle {min-width:160px;}
 
 /* 검색 > 탭 */
+.akl .amway-theme .outer-border-bottom { margin-bottom:40px}
 .col-search-tab {position:relative; margin:0 0 40px; padding:0;}
 .col-search-tab ul {display:flex; margin:0; padding:0; border-bottom: 1px solid #dadada;}
 .col-search-tab ul li {width:12%; margin-bottom:-1px;}
@@ -441,8 +443,9 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .col-search-tab ul li {display: inline-flex;}
 .col-search-tab ul li.active a {position:relative; background:#fff; border-bottom:0;}
 .col-search-tab ul li.active a:before { content:""; position:absolute; top:-1px; left:-1px; right:-1px;  border-top: 4px solid #008fc5; }
-.outer-border-bottom + .tab-content { padding-top:20px;}
+/* .outer-border-bottom + .tab-content { padding-top:10px;} */
 .order-payment .outer-border-bottom + .tab-content { padding-top:0;}
+.akl .tab-content .list-content{ padding-top:0;}
 
 /* 비즈니스 > 사업성장 특별보상 프로그램 */
 .col-search-tab.num04  ul li {width:25%; margin-bottom: -1px;}
@@ -490,6 +493,7 @@ label, select, button, input, input[type="text"], input[type="password"],input[t
 .akl .panel-heading+.panel-collapse>.panel-body { border-top:0; padding-top:0; padding-bottom:30px}
 .akl .accordion-custom {font-family:'Noto Sans KR', sans-serif;}
 .akl .accordion-custom .panel-title {padding:25px 0 ;font-size:18px; letter-spacing:-2px; word-spacing:3px;}
+.akl .accordion-custom .panel-title p{ margin-bottom: 0}
 .akl .accordion-custom .panel-title .text-uppercase.accordion-header-text {font-size:18px;font-weight:500;letter-spacing:-2px;}
 .akl .accordion-custom .icon-minus:before {font-size:12px; font-weight:400; }
 .akl .amway-theme .accordion-element a.accordion-toggle {display: block;}
@@ -1166,22 +1170,22 @@ label + .toolTip-wrapper {margin-left:6px;}
 @media (max-width: 785px){
 
 	.quick-links{padding-top:0;}
-  .quick-links .collapse.in{display:block!important;}
-  .quick-links .col-sm-8{width:100%;}
-  .quick-links .col-sm-3{width:100%;padding-left:10px;}
-  .quick-links .panel{margin-bottom:0;border-bottom:1px solid rgba(218, 218, 218, .8);}
-  .quick-links .container{padding:0;}
-  .quick-links .container .row{margin:0;}
+	.quick-links .collapse.in{display:block!important;}
+	.quick-links .col-sm-8{width:100%;}
+	.quick-links .col-sm-3{width:100%;padding-left:10px;}
+	.quick-links .panel{margin-bottom:0;border-bottom:1px solid rgba(218, 218, 218, .8);}
+	.quick-links .container{padding:0;}
+	.quick-links .container .row{margin:0;}
 
-  .quick-links-misc{width:100%;}
-  .footer{height:250px;}
-  .footer-logos{margin:30px 17px 28px 22px;}
-  .footer-logos img{max-width:100%;}
-  .quick-links-header:before{position:relative;top:-1px;padding-right:5px;font-family:'Glyphicons Halflings';font-size:10px;content:'\002b';color:#0075a4;}
-  .switcher .quick-links-header:before{content:'\2212';}
-  .quick-links .quick-links-item ul.collapse{display:none!important;}
-  .quick-links .switcher ul.collapse{display:block!important;}
-  .quick-links-item ul{padding-left:20px;}
+	.quick-links-misc{width:100%;}
+	.footer{height:250px;}
+	.footer-logos{margin:30px 17px 28px 22px;}
+	.footer-logos img{max-width:100%;}
+	.quick-links-header:before{position:relative;top:-1px;padding-right:5px;font-family:'Glyphicons Halflings';font-size:10px;content:'\002b';color:#0075a4;}
+	.switcher .quick-links-header:before{content:'\2212';}
+	.quick-links .quick-links-item ul.collapse{display:none!important;}
+	.quick-links .switcher ul.collapse{display:block!important;}
+	.quick-links-item ul{padding-left:20px;}
 
 	/* 퀵리스트 */
 	.akl .container .row.footer-quick {overflow:initial;}
@@ -1408,6 +1412,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.akl .popup-video-preview__content .video-preview__play { margin-left:-41px;margin-top:-41px;}
 
 	/* common > form */
+	label {font-weight:700!important;}
 	.form-group .address p {margin-right:105px;}
 	.form-group .address button {right:0}
 
