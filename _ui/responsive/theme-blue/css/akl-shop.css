@@ -638,6 +638,11 @@ shop 옮김 : 2018.04.10
 .akl .amway-suggest.cart-amway-suggest .amway-suggest__item-title a:hover{color:#0075a4}
 .akl .amway-suggest.cart-amway-suggest .amway-suggest__item .plp-item-label-wrap {top:-20px}
 .akl .amway-suggest.cart-amway-suggest .amwahover img {-webkit-transition:none;transition:none;}
+.akl .amway-suggest.cart-amway-suggest .amway-suggest__item .plp-item-label-wrap {left:0; }
+.akl .new-social-list .plp-item-label:nth-of-type(1) {padding-left:14px;}
+.akl .amway-suggest.cart-amway-suggest .amway-suggest__item .plp-item-label.bg-navy:after {width:12px; height:25px; right:-10px; background:none; border-style: solid; border-width: 25px 7px 0 0; border-color: #002f5f transparent transparent transparent;}
+.akl .amway-suggest.cart-amway-suggest .amway-suggest__item .plp-item-label.bg-red:after {width:12px; height:25px; right:-10px; background:none; border-style: solid; border-width: 25px 7px 0 0; border-color: #e11e45 transparent transparent transparent;}
+
 
 /* 장바구니 > 위시리스트 툴팁 */
 .akl .add-wish-warp {display:inline-block;vertical-align:middle;height:42px;text-align:right;margin-right:-10px}
@@ -1976,12 +1981,14 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .col-md-9.cart-items-wrapper {padding:0 0 0 0;margin:0;}
 	.akl .shipping-delivery {margin-top:0;}
 	.akl .checkout-steps-active {width:75%}
-	.akl .shipping-delivery-ship {padding:25px 0 10px}
+	.akl .shipping-delivery-ship {padding:25px 0 }
 	span.btn-business {padding-left:30px;}
 	.akl .shipping-delivery-radio-body {margin:10px 0 0 10px;}
 	.akl .shipping-delivery-ship .use-agreement{padding:0 15px}
 	.akl .use-agreement #terms .conditions .text-btn {display:block;text-align:center;padding:10px 10px;margin:0 auto;}
 	.akl .shipping-delivery .panel { margin-bottom:20px}
+	#selectPay .panel:nth-of-type(5) { margin-bottom:0}
+	#shippingdiv .panel.col-panel{ margin-bottom:0}
 
 	/* 주문결제 > Tab */
 	.akl .amway-theme.order-payment .outer-border-bottom {border-bottom:0 none;}
@@ -2006,6 +2013,9 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.default-shipping-address .detail-content .right-info {display:block;}
 	.default-shipping-address .detail-content input.form-control {width:100%;}
 	.default-shipping-address .delivery-msg .delivery-msg-list {width:100%;}
+	.default-shipping-address .delivery-msg .byte-txt { position:static; padding-top:10px; display: block;}
+	.default-shipping-address .delivery-msg02 .byte-txt { position:static; padding-top:10px; display: block;}
+	.ship-messige .byte-txt { position:static; padding-top:10px; display: block;}
 
 	/* 주문결제 > 단일 > 새배송지 */
 	.new-shipping-address .detail-content .new-cart .delv-shopbox {width:100%;}
