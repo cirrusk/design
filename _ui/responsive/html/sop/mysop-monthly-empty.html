@@ -325,21 +325,58 @@
                 </div>
             </div>
             <div class="row print-hide pagination-bar top">
-                    <div class="col-xs-12 sort-cell-wrap sort-cell-wrap-right print-hide pull-right">
-                        <div class="form-group sort-cell sort-cell-left">
-                                <div class="sort-refine-bar">
-                                    <div class="hidden-md hidden-lg filter-facet-button-container print-hide">
-                                        <div class="dropdown">
-                                            <button id="filterDropdown" class="dropdown-toggle" data-toggle="dropdown">
-                                                <i class="fas fa-filter"></i>
-                                                <span>Filters</span></button>
-                                            <ul class="dropdown-menu" aria-labelledby="filterDropdown">
-                                                <li>Active,with benefits</li>
-                                                <li>Active,without benefits</li>
-                                                <li>Inactive</li>
-                                            </ul>
-                                        </div>
+
+                    <div class="col-xs-12 col-sm-8 col-md-8 sort-cell-wrap sort-cell-wrap-left">
+                                <div class="form-group sort-cell">
+                                        <label class="control-label " for="msortForm1">View:</label>
+                                        <form id="" name="sortForm1" method="get" action="">
+                                            <select id="view-month" name="sort" class="form-control no-uppercase-form-control">
+                                                <option selected="selected">1 Month</option>
+
+                                                <option>6 Month</option>
+
+                                            </select>
+                                        </form>
                                     </div>
+                                <div class="form-group sort-cell">
+                                    <label class="control-label" for="sortForm1">Showing:</label>
+                                    <form id="" name="" method="get" action="">
+                                        <select id="" name="sort" class="form-control no-uppercase-form-control">
+                                            <option selected="selected">Decemeber</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                        </select>
+
+                                        <select id="" name="sort" class="form-control no-uppercase-form-control">
+                                            <option selected="selected">2018</option>
+                                            <option>2017</option>
+                                            <option>2016</option>
+                                            <option>2015</option>
+
+                                        </select>
+                                    </form>
+                                </div>
+
+
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 sort-cell-wrap sort-cell-wrap-right print-hide pull-right">
+                        <div class="form-group sort-cell sort-cell-left">
+                            <div class="sort-refine-bar">
+                                <div class="hidden-md hidden-lg filter-facet-button-container print-hide">
+                                    <div class="dropdown">
+                                        <button id="filterDropdown" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fas fa-filter"></i>
+                                            <span>Filters</span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                                            <li class="active">Active,with benefits</li>
+                                            <li class="active">Active,without benefits</li>
+                                            <li class="inactive">Inactive</li>
+                                            <li class="cancel">Cancel</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group sort-cell sort-cell-right">
@@ -362,6 +399,7 @@
                                 <select id="sortOptions2" name="sort" class="form-control no-uppercase-form-control">
                                     <option selected="selected">Active</option>
                                     <option>Inactive</option>
+                                    <option>Cancel</option>
 
                                 </select>
                             </form>
