@@ -897,12 +897,29 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 
 /* 전자상거래 등에서의 제품정보제공 고시 */
 .ecommerce-lst {border-top:2px solid #e3e3e3;overflow:hidden;padding:0 0 40px;}
-.ecommerce-lst li {display:table;width:100%;box-sizing: border-box;table-layout:fixed;border-bottom:1px solid #e3e3e3;}
+.ecommerce-lst li {clear:both;display:table;width:100%;box-sizing: border-box;table-layout:fixed;border-bottom:1px solid #e3e3e3;}
 .ecommerce-lst li div {display:table-cell;box-sizing: border-box;vertical-align:middle;padding:10px 15px;}
 .ecommerce-lst li .th-tit {width:20%;background:#f4f4f4;color:#002f5f;font-weight:500}
 .ecommerce-lst li .td-txt {width:80%;font-weight:400}
-.disc-line {padding:0 0;margin:5px 0 0;}
-.decimal-circle-zero li {border-bottom:0 none}
+.decimal-zero li {border-bottom:0 none !important;}
+
+.disc-line {padding:0 0;margin:0 0 0;}
+.disc-line li {position:relative;border-bottom:0 none;padding:1px 10px;}
+.disc-line li:before {content:'';display:block;position:absolute;top:10px;left:0;width:5px;height:1px;background:#bbb}
+
+.disc-line li ol.decimal-zero {padding:0 0;}
+.disc-line li ol.decimal-zero li {padding:0 0;}
+.disc-line li ol.decimal-zero li:before {content:'';display:none;}
+
+.disc-dot {padding:0 0;margin:0 0 0;}
+.disc-dot li {position:relative;border-bottom:0 none;padding:0 8px;}
+.disc-dot li:before {content:'';display:block;position:absolute;top:10px;left:0;width:1px;height:1px;background:#444}
+
+ol.decimal-num {display:block !important;padding:0 0;margin:0 0;list-style:decimal !important;}
+ol.decimal-num li {display:block !important;list-style-type:decimal !important;border-bottom:0 none;padding:5px 0;}
+ol.decimal-num li ul {padding-left:10px;}
+ol.decimal-num li ul li {padding:1px 10px;}
+
 .dotBox {border: 2px dotted #333;padding: 1px 3px;display: inline-block;}
 
 @media (min-width: 1074px) and (max-width: 1280px) {
