@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_sopTemp.js"></script>
 </head>
 <body class="akl">
 	<!-- skipToContent -->
@@ -31,14 +32,14 @@
 	</div>
 	<!-- //skipToContent -->
 
-		<main>
+	<main>
 		<div id="header"></div>
 		<div class="container-fluid main-container" id="contents">
 			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li>
-					<li><a href="my-account.html">마이 페이지</a></li>
-					<li>맞춤메시지</li>
+					<li><a href="#">마이 페이지</a></li>
+					<li>나의 스마트 오더</li>
 				</ol>
 			</div>
 		</div>
@@ -127,35 +128,44 @@
 		</div>
 		<!-- //마이페이지 상단공통 -->
 
-		<!-- // -->
-			<div class="container my-count sop-container">
-				<h4 class="panel-title">
-					<i class="far fa-repeat-alt"></i>
-					<span class="text-uppercase panel-title-text">MySop Profiles</span>
-					<div class="corner-block pre-res-corner-block"><a href="mysop-landing.html"><i
-							class="fas fa-caret-left"></i>BACK</a></div>
-				</h4>
-				<div class="row mysop-product-detail sop-confirmation haswarning warning-tip ">
-					<div class="alert alert-info">
-						<div class="alert-icon"><i class="fas fa-exclamation"></i></div>
-						<div class="alert-text">Page level error message title<p>Page level error message display here,text may span the length of the container.<a href="">Links look like this</a></p></div>
-						<div class="alert-rig-link"><a class="right-link" href="">Links look like this</a></div>
+		<!-- container-fluid -->
+		<div class="container-fluid main-container">
+			<div class="amway-theme sop-container">
+				<h1 class="icon-sub-title mySOP-title">나의 스마트 오더</h1>
+
+				<!-- 알림 -->
+				<div class="sop-alert sop-confirmation">
+					<div class="alert-info ico-fa-exclamation">
+						<div class="alert-text">
+							<strong>Page level error message title</strong>
+							<p>
+								Page level error message display here,text may span the length of the container
+								<a href="#">Links look like this</a>
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="page-section-content my-count-page-wrap" style="border:1px solid red">
+				<!-- //알림 -->
+
+
+				<!-- SOP 요약정보 -->
+				<div class="sop-profile-wrapper">
 					<div class="downline-profile">Yui Mori's Downline Profile (Wrap to two lines)</div>
 					<div class="downline-profile-second-line">
-						<div class="left-block">
-							<div class=""><img src="images/visa.png"> ****9876</div>
-							<div class=""><i class="fas fa-truck lightBlue"></i>Delivery</div>
-							<div class="">8TH DAY</div>
+						<!-- 주문정보 -->
+						<div class="sop-order-info">
+							<span class="type-payment">
+								<em><img src="/_ui/responsive/theme-blue/images/akl_common/sop/visa.png"></em>
+								<em>****9876</em>
+							</span>
+							<span class="type-state ico-fa-truck">Delivery</span>
+							<span class="type-numbs">8회차</span>
+							<a href="#" class="edit-profile ico-fa-pencil" id="edit-profile"><span>Edit Profile</span></a>
 						</div>
-						<div class="right-block">
-							<a class="" id="edit-profile"><i class="fas fa-pencil"></i><span class="hidden-xs hidden-sm">Edit Profile</span></a>
-
-						</div>
+						<!-- //주문정보 -->
 					</div>
 
+					<!-- 프로필 편집 -->
 					<div class="edit-block">
 						<a class="pull-right close-edit" href="javascript:void(0)"><i class="fas fa-times"></i></a>
 						<div class="row">
@@ -240,306 +250,244 @@
 									class="hidden-xs">Delete Profile</span></a>
 						</div>
 					</div>
+					<!-- //프로필 편집 -->
+				</div>
+				<!-- //SOP 요약정보 -->
 
 
-					<div class="cart-content-wrapper"  style="border:1px solid hotpink">
-						<div class="account-section-content">
-							<div id="quickOrder"
-								 class="account-section shopping-cart-quick-shop-wrapper shopping-list-detail-shop-wrapper"
-								 data-grid-confirm-message="">
-								<div class="quick-shop-container new-quick-shop-container">
-									<div id="quickShopAccordion" class="panel-group accordion-custom" role="tablist"
-										 aria-multiselectable="true">
-										<div class="panel">
-											<div class="panel-heading" role="tab" id="quickShop">
-												<h4 class="panel-title">
-													<div role="button" data-toggle="collapse" data-parent="#quickShopAccordion"
-														 href="#quickShopBody" aria-controls="quickShopBody"
-														 class="collapsed quick-shop-collapse">
-														<i class="far fa-barcode"></i>
-														<span class="text-uppercase accordion-header-text">ADD NEW SOP ITEMS</span>
-														<span class="pull-right icon-minus"></span>
-													</div>
-												</h4>
-											</div>
-											<div id="quickShopBody" class="panel-collapse collapse" role="tabpanel"
-												 aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div id="quickShopForm" class="quickShopForm">
-														<div class="item-name-container">
-															<label class="js-sku-input-field-label sku-input-field-label">Item
-																name or number</label>
-															<input id="quick-shop-search"
-																   class="js-quick-shop-name quick-shop-name" type="text"></div>
-														<button class="btn primary btn-block js-quick-shop-submit disabled"
-																onclick="changeFunction()">Search
-														</button>
-														<a class="btn btn-link reset">Reset</a></div>
-													<div class="row" id="quick-search-list" style="display:none;">
-														<div class="amway-suggest pdp-general-amway-suggest">
-															<div id="productSuggestListTabs"
-																 class="owl-carousel owl-theme carousel-title-containeramway-suggest__list">
-																<div class="item">
-																	<div class="amway-suggest__item">
-																		<div class="amway-suggest__item-content amwahover">
-																			<img src="images/img-quick-shop-01.png"
-																				 class="amway-suggest__thumbnail" alt="product">
-																			<div class="amway-suggest__item-detail">
-																				<div class="amway-suggest__item-number">SKU:
-																					116991
-																				</div>
-																				<div class="amway-suggest__item-title">ARTISTRY
-																					SIGNATURE COLOR Lipstick
-																				</div>
-																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
-																					<span class="amway-suggest__item-abovalue">$140</span>
-																				</div>
-																				<div class="product-list__item-title product-list__item-aboprice">
-																					<span class="product-list__item-abovalue amount-cal list-total">
-																						<a class="icon-del opera" data="-">
-																							<i class="fas fa-minus fa-delete"></i>
-																						</a>
-																						<input type="tel"
-																							   class="pdpAddtoCartInput amount-cal-input"
-																							   name='pdpAddtoCartInput'
-																							   id="amount-cal-input-id" value="2">
-																						<a class="icon-add opera" data="+">
-																							<i class="fas fa-plus fa-add"></i>
-																						</a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="amway-suggest__item-link">
-																			<a href="#" class="btn primary" data-toggle="modal"
-																			   data-target="#cart-modal" tabindex="0">add to
-																				sop</a></div>
-																	</div>
-																</div>
-																<div class="item">
-																	<div class="amway-suggest__item">
-																		<div class="amway-suggest__item-content amwahover">
-																			<img src="images/img-quick-shop-02.png"
-																				 class="amway-suggest__thumbnail" alt="product">
-																			<div class="amway-suggest__item-detail">
-																				<div class="amway-suggest__item-number">SKU:
-																					116991
-																				</div>
-																				<div class="amway-suggest__item-title">ARTISTRY
-																					Length & Definition Mascara - Black
-																				</div>
-																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
-																					<span class="amway-suggest__item-abovalue">$140</span>
-																				</div>
-																				<div class="product-list__item-title product-list__item-aboprice">
-																					<span class="product-list__item-abovalue amount-cal list-total">
-																						<a class="icon-del opera" data="-">
-																							<i class="fas fa-minus fa-delete"></i>
-																						</a>
-																						<input type="tel"
-																							   class="pdpAddtoCartInput amount-cal-input"
-																							   name='pdpAddtoCartInput'
-																							   id="amount-cal-input-id" value="5">
-																						<a class="icon-add opera" data="+">
-																							<i class="fas fa-plus fa-add"></i>
-																						</a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="amway-suggest__item-link">
-																			<a href="#" class="btn primary" data-toggle="modal"
-																			   data-target="#cart-modal" tabindex="0">add to
-																				sop</a></div>
-																	</div>
-																</div>
-																<div class="item">
-																	<div class="amway-suggest__item">
-																		<div class="amway-suggest__item-content amwahover">
-																			<img src="images/img-quick-shop-03.png"
-																				 class="amway-suggest__thumbnail" alt="product">
-																			<div class="amway-suggest__item-detail">
-																				<div class="amway-suggest__item-number">SKU:
-																					116991
-																				</div>
-																				<div class="amway-suggest__item-title">ARTISTRY
-																					Length & Definition Mascara - Black
-																				</div>
-																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
-																					<span class="amway-suggest__item-abovalue">$140</span>
-																				</div>
-																				<div class="product-list__item-title product-list__item-aboprice">
-																					<span class="product-list__item-abovalue amount-cal list-total">
-																						<a class="icon-del opera" data="-">
-																							<i class="fas fa-minus fa-delete"></i>
-																						</a>
-																						<input type="tel"
-																							   class="pdpAddtoCartInput amount-cal-input"
-																							   name='pdpAddtoCartInput'
-																							   id="amount-cal-input-id" value="6">
-																						<a class="icon-add opera" data="+">
-																							<i class="fas fa-plus fa-add"></i>
-																						</a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="amway-suggest__item-link">
-																			<a href="#" class="btn primary" data-toggle="modal"
-																			   data-target="#cart-modal" tabindex="0">add to
-																				sop</a></div>
-																	</div>
-																</div>
-																<div class="item">
-																	<div class="amway-suggest__item">
-																		<div class="amway-suggest__item-content amwahover">
-																			<img src="images/img-quick-shop-04.png"
-																				 class="amway-suggest__thumbnail" alt="product">
-																			<div class="amway-suggest__item-detail">
-																				<div class="amway-suggest__item-number">SKU:
-																					116991
-																				</div>
-																				<div class="amway-suggest__item-title">ARTISTRY
-																					Length & Definition Mascara - Black
-																				</div>
-																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
-																					<span class="amway-suggest__item-abovalue">$140</span>
-																				</div>
-																				<div class="product-list__item-title product-list__item-aboprice">
-																					<span class="product-list__item-abovalue amount-cal list-total">
-																						<a class="icon-del opera" data="-">
-																							<i class="fas fa-minus fa-delete"></i>
-																						</a>
-																						<input type="tel"
-																							   class="pdpAddtoCartInput amount-cal-input"
-																							   name='pdpAddtoCartInput'
-																							   id="amount-cal-input-id" value="14">
-																						<a class="icon-add opera" data="+">
-																							<i class="fas fa-plus fa-add"></i>
-																						</a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="amway-suggest__item-link">
-																			<a href="#" class="btn primary" data-toggle="modal"
-																			   data-target="#cart-modal" tabindex="0">add to
-																				sop</a></div>
-																	</div>
-																</div>
-																<div class="item">
-																	<div class="amway-suggest__item">
-																		<div class="amway-suggest__item-content amwahover">
-																			<img src="images/img-quick-shop-05.png"
-																				 class="amway-suggest__thumbnail" alt="product">
-																			<div class="amway-suggest__item-detail">
-																				<div class="amway-suggest__item-number">SKU:
-																					116991
-																				</div>
-																				<div class="amway-suggest__item-title">ARTISTRY
-																					EXACT FIT Perfecting Loose Powder
-																				</div>
-																				<div class="amway-suggest__item-title amway-suggest__item-aboprice">
-																					<span class="amway-suggest__item-abovalue">$140</span>
-																				</div>
-																				<div class="product-list__item-title product-list__item-aboprice">
-																					<span class="product-list__item-abovalue amount-cal list-total">
-																						<a class="icon-del opera" data="-">
-																							<i class="fas fa-minus fa-delete"></i>
-																						</a>
-																						<input type="tel"
-																							   class="pdpAddtoCartInput amount-cal-input"
-																							   name='pdpAddtoCartInput'
-																							   id="amount-cal-input-id" value="12">
-																						<a class="icon-add opera" data="+">
-																							<i class="fas fa-plus fa-add"></i>
-																						</a>
-																					</span>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="amway-suggest__item-link">
-																			<a href="#" class="btn primary" data-toggle="modal"
-																			   data-target="#cart-modal" tabindex="0">add to
-																				sop</a></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="row" id="search-no-item" style="display:none;">
-														No items found.
-
-													</div>
+				<!-- 빠른검색 -->
+				<div class="akl-toggle-wrap sort-order">
+					<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="quickShop">
+								<a  href="#down1" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="">
+									<div class="panel-title">
+										<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
+										<span class="accordion-header-text">빠른 제품 검색</span>
+										<span class="pull-right icon-minus"></span>
+									</div>
+								</a>
+							</div>
+							<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<div id="quickShopForm">
+										<div class="item-name-container">
+											<label class="js-sku-input-field-label sku-input-field-label" for="name-vps">제품명 또는 VPS 입력</label>
+											<div class="inp-button">
+												<div class="form-s"><!-- 2018.03.06 구조변경 -->
+													<input type="text" id="name-vps" name="" value="" class="input-st">
+													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-sm hidden-xs">검색</span></button><!-- 2018.03.15 태깅 아이디 추가 -->
 												</div>
 											</div>
 										</div>
+										<div class="add-item-container">
+											<a class="bt-akl-txt">검색초기화</a>
+										</div>
+										<!--  <div class="btn-order-right"> //2018.02.22 사용안함
+											<button id="G10500_lp1" class="bt-akl-blue">퀵오더 제품추가</button>
+										</div> -->
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row print-hide pagination-bar top">
+									<div class="shoping-cart-search">
+										<div class="container-fluid main-container quick-area">
+											<div class="amway-suggest col-md-12">
+												<div id="productSuggestListTabs" class="amway-suggest__list owl-carousel owl-theme"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  -->
+													<div class="amway-suggest__item-container">
+														<div class="amway-suggest__item sort"><!-- sort 추가 -->
+															<div class="amway-suggest__item-content amwahover">
+																<!-- 2018.04.30 마크업 수정 및 추가 -->
+																<a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
+																	<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="amway-suggest__thumbnail" alt="product1">
+																	<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+																</a>
+																<!--// 2018.04.30 마크업 수정 및 추가 -->
+																<div class="amway-suggest__item-detail quick-search">
+																	<p class="amway-suggest__item-number">[9658] 282658K</p>
+																	<p class="amway-suggest__item-title">이그젝트 핏 퍼펙팅 컨실러<br>라이트</p>
+																	<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																	<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																		<span class="amway-suggest__item-abovalue">320,000원</span>
+																	</div>
+																	<div class="qty-selector-container sort-order-qty">
+																		<div class="opt-quantity mini">
+																			<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput1" title="수량 입력" />
+																			<a href="#" class="btnMinus">수량하나빼기</a>
+																			<a href="#" class="btnPlus">수량하나더하기</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="amway-suggest__item-link">
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 -->
+															</div>
+														</div>
+													</div>
+													<div class="amway-suggest__item-container">
+														<div class="amway-suggest__item sort"><!-- sort 추가 -->
+															<div class="amway-suggest__item-content amwahover">
+																<a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
+																	<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="amway-suggest__thumbnail" alt="product2">
+																	<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+																</a>
+																<div class="amway-suggest__item-detail quick-search">
+																	<p class="amway-suggest__item-number">[9658] 282658K</p>
+																	<p class="amway-suggest__item-title">시그니처 컬러 라잇업 립글로스<br>라즈베리 키스</p>
+																	<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																	<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																		<span class="amway-suggest__item-abovalue">27,000원</span>
+																	</div>
+																	<div class="qty-selector-container sort-order-qty">
+																		<div class="opt-quantity mini">
+																			<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput2" title="수량 입력" />
+																			<a href="#" class="btnMinus">수량하나빼기</a>
+																			<a href="#" class="btnPlus">수량하나더하기</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="amway-suggest__item-link">
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+															</div>
+														</div>
+													</div>
+													<div class="amway-suggest__item-container">
+														<div class="amway-suggest__item sort"><!-- sort 추가 -->
+															<div class="amway-suggest__item-content amwahover">
+																<a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
+																	<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="amway-suggest__thumbnail" alt="product3">
+																	<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+																</a>
+																<div class="amway-suggest__item-detail quick-search">
+																	<p class="amway-suggest__item-number">[9658] 282658K</p>
+																	<p class="amway-suggest__item-title">아세로라 C<br>100 정</p>
+																	<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																	<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																		<span class="amway-suggest__item-abovalue">27,000원</span>
+																	</div>
+																	<div class="qty-selector-container sort-order-qty">
+																		<div class="opt-quantity mini">
+																			<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput3" title="수량 입력" />
+																			<a href="#" class="btnMinus">수량하나빼기</a>
+																			<a href="#" class="btnPlus">수량하나더하기</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="amway-suggest__item-link">
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+															</div>
+														</div>
+													</div>
+													<div class="amway-suggest__item-container">
+														<div class="amway-suggest__item sort"><!-- sort 추가 -->
+															<div class="amway-suggest__item-content amwahover">
+																<a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
+																	<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="amway-suggest__thumbnail" alt="product4">
+																	<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+																</a>
+																<div class="amway-suggest__item-detail quick-search">
+																	<p class="amway-suggest__item-number">[9658] 282658K</p>
+																	<p class="amway-suggest__item-title">아세로라 C<br>300 정</p>
+																	<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p><!-- 2018.03.14 PV 18,650 / BV 29,100 추가 -->
+																	<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																		<span class="amway-suggest__item-abovalue">27,000원</span>
+																	</div>
+																	<div class="qty-selector-container sort-order-qty">
+																		<div class="opt-quantity mini">
+																			<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput4" title="수량 입력" />
+																			<a href="#" class="btnMinus">수량하나빼기</a>
+																			<a href="#" class="btnPlus">수량하나더하기</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="amway-suggest__item-link">
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+															</div>
+														</div>
+													</div>
+													<div class="amway-suggest__item-container">
+														<div class="amway-suggest__item sort"><!-- sort 추가 -->
+															<div class="amway-suggest__item-content amwahover">
+																<a class="product-list__thum" target="_self" href="artistry-lip-gloss-product-detail-page.html">
+																	<img src="/_ui/responsive/theme-blue/images/product_list_item1.png" class="amway-suggest__thumbnail" alt="product5">
+																	<button class="quick-view-btn" onclick="javascript:location.href='#'">QUICK VIEW</button>
+																</a>
+																<div class="amway-suggest__item-detail quick-search">
+																	<p class="amway-suggest__item-number">[9658] 282658K</p>
+																	<p class="amway-suggest__item-title ellipsis2">허아릳랴ㅓ린 허아릳랴ㅓ린허아릳랴ㅓ린허아릳랴ㅓ</p>
+																	<p class="amway-suggest__pvbv">PV 18,650 / BV 29,100</p>
+																	<div class="amway-suggest__item-title amway-suggest__item-aboprice">
+																		<span class="amway-suggest__item-abovalue">27,000원</span>
+																	</div>
+																	<div class="qty-selector-container sort-order-qty"><!-- sort-order-qty -->
+																		<div class="opt-quantity mini">
+																			<input type="text" maxlength="3" class="form-control js-qty-selector-input inpNum" size="1" value="1" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput5" title="수량 입력" />
+																			<a href="#" class="btnMinus">수량하나빼기</a>
+																			<a href="#" class="btnPlus">수량하나더하기</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="amway-suggest__item-link">
+																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- 검색결과 없을시 추가  2018.03.28 -->
+											<div class="search-no-result">
+												<p>검색된 제품이 없습니다. 제품의 VPS코드, 제품명, SKU번호를 확인하신 후 다시 검색해 주세요.<p>
+											</div>
+											<!-- //검색결과 없을시 추가  2018.03.28 -->
+										</div>
 
-						<div class="col-xs-12 col-sm-8 col-md-8 sort-cell-wrap sort-cell-wrap-left">
-							<div class="form-group sort-cell">
-								<label class="control-label " for="sortForm1">View:</label>
-								<form id="" name="sortForm1" method="get" action="">
-									<select id="view-month" name="sort" class="form-control no-uppercase-form-control">
-										<option>1 Month</option>
-										<option selected="selected">6 Month</option>
-
-									</select>
-								</form>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-4 col-md-4 sort-cell-wrap sort-cell-wrap-right print-hide pull-right">
-							<div class="form-group sort-cell sort-cell-left">
-								<div class="sort-refine-bar">
-									<div class="hidden-md hidden-lg filter-facet-button-container print-hide">
-										<div class="dropdown">
-											<button id="filterDropdown" class="dropdown-toggle" data-toggle="dropdown">
-												<i class="fas fa-filter"></i>
-												<span>Filters</span></button>
-											<ul class="dropdown-menu" aria-labelledby="filterDropdown">
-													<li class="active">Active,with benefits</li>
-													<li class="active">Active,without benefits</li>
-													<li class="inactive">Inactive</li>
-												</ul>
+										<div class="btn-colsed-right">
+											<a href="#" class="btnClosed"><img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기"></a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="form-group sort-cell sort-cell-right">
-								<div class="sort-refine-bar">
-									<div class="button-radio-wrap">
-										<button class="active">6 MONTHS</button>
-										<button>1 MONTH</button>
-									</div>
-								</div>
-							</div>
-							<div class="form-group sort-cell text-right filter-by-wrap">
-								<label class="control-label font-text-transform-none" for="sortForm1">Filter by:</label>
-								<form id="sortForm1" name="sortForm1" method="get" action="">
-									<select id="sortOptions1" name="sort" class="form-control no-uppercase-form-control">
-										<option selected="selected">Benefits</option>
-										<option>Ditto</option>
-										<option>All</option>
-									</select>
-
-									<select id="sortOptions2" name="sort" class="form-control no-uppercase-form-control">
-										<option selected="selected">Active</option>
-										<option>Inactive</option>
-
-									</select>
-								</form>
-							</div>
-
 						</div>
 					</div>
-					<!--pc block-->
+				</div>
+				<!-- //빠른검색 -->
 
-					<div id="active-block"  style="border:2px dashed blue">
+
+				<!-- 필터 조회 -->
+				<div class="order-history-search-wrapper search-filter row">
+					<div class="toggle-buttons-container row cutomer">
+						<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span></button>
+						<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span> <span>기간</span> </button>
+					</div>
+					<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12 js-search-form-wrapper">
+						<div class="cuton-form-wrapper">
+							<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+								<option value="">1개월</option>
+								<option value="">6개월</option>
+							</select>
+						</div>
+					</div>
+					<div class="new-select form-wrapper col-md-6 col-sm-12 js-filter-form-wrapper">
+						<div class="cuton-sel">
+							<select id="sortOptions1" name="sort" class="form-control no-uppercase-form-control">
+								<option>All</option>
+								<option selected="selected">Benefits</option>
+								<option>Ditto</option>
+							</select>
+
+							<select id="sortOptions2" name="sort" class="form-control no-uppercase-form-control">
+								<option selected="selected">Active</option>
+								<option>Inactive</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<!-- //필터 조회 -->
+
+
+				<!-- 조회결과 목록 -->
+				<div id="active-block">
 					<div class="months-select-bar-out-wrap">
 						<div class="months-select-bar-title">
 							<i class="fas fa-question-circle"></i>
@@ -620,7 +568,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -668,7 +616,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-gift.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -720,7 +668,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -768,7 +716,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -816,7 +764,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -868,7 +816,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -916,7 +864,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-gift.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -968,7 +916,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1016,7 +964,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1064,7 +1012,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1116,7 +1064,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1164,7 +1112,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-gift.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1216,7 +1164,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1264,7 +1212,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1312,7 +1260,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1364,7 +1312,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1412,7 +1360,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-gift.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1464,7 +1412,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1512,7 +1460,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1560,7 +1508,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1612,7 +1560,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1660,7 +1608,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-gift.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1712,7 +1660,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1760,7 +1708,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1808,7 +1756,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1860,7 +1808,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1908,7 +1856,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-gift.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -1960,7 +1908,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -2008,7 +1956,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -2056,7 +2004,7 @@
 										<div class="product-item-element list-item-image">
 											<div>
 												<a href="mysop-detail-bundle.html">
-													<img src="images/nu105480.jpg" alt="Soft Cleanser"
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
 														 title="Soft Cleanser"></a>
 											</div>
 										</div>
@@ -2102,720 +2050,723 @@
 							</div>
 						</div>
 					</div>
-					</div>
-
-					<div id="inactive-block" style="border:2px solid blue">
-						<div class="months-select-bar-out-wrap">
-							<div class="months-select-bar-title">
-								<i class="fas fa-question-circle"></i>
-								<div class="circle-tip">
-								<span class="gray-span">
-									<i class="fas fa-gift"></i>Gift
-								</span>
-									<span class="gray-span">
-									<i class="fas fas fa-tag"></i>Benefit
-								</span>
-
-									<span>
-								<i></i>
-								Completed
-							</span>
-								</div>
-							</div>
-
-							<div class="months-select-bar-wrap">
-								<ul class="months-select-bar nav nav-tabs">
-									<li class="arrow-li-prev">
-										<i class="fas fa-caret-left"></i>
-									</li>
-									<li class="">
-										<a href="#" data-toggle="tab">
-											SEPT
-										</a>
-									</li>
-									<li class="">
-										<a href="#monthly-wrap-21" data-toggle="tab">
-											OCT
-										</a>
-									</li>
-									<li class="">
-										<a href="#monthly-wrap-22" data-toggle="tab">
-											NOV
-										</a>
-									</li>
-									<li class="active">
-										<label>2018</label>
-										<a href="#monthly-wrap-23" data-toggle="tab">
-											DEC
-										</a>
-										<div class="devided"></div>
-									</li>
-									<li class="">
-										<label>2019</label>
-										<a href="#monthly-wrap-24" data-toggle="tab">
-											JAN
-										</a>
-									</li>
-									<li class="">
-										<a href="#monthly-wrap-25" data-toggle="tab">
-											FEB
-										</a>
-									</li>
-									<li class="">
-										<a href="#monthly-wrap-26" data-toggle="tab" class="current-month">
-											MAR
-										</a>
-									</li>
-									<li class="">
-										<a href="#" data-toggle="tab">
-											APR
-										</a>
-									</li>
-									<li class="arrow-li-next">
-										<i class="fas fa-caret-right"></i>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="tab-content months-select-content-wrap">
-
-							<div id="monthly-wrap-21" class="tab-pane fade">
-								<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-bundle.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Completed
-										</div>
-									</div>
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-gift.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">1</label>
-										</div>
-										<div class="col-md-1">
-											<div class="fas-wrap">
-												<i class="fas fa-gift"></i>
-												<i class="fas fas fa-tag"></i>
-											</div>
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<i class="fas fa-repeat-alt"></i>1
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Cancelled
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="monthly-wrap-22" class="tab-pane fade">
-								<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-bundle.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Completed
-										</div>
-									</div>
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-gift.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">1</label>
-										</div>
-										<div class="col-md-1">
-											<div class="fas-wrap">
-												<i class="fas fa-gift"></i>
-												<i class="fas fas fa-tag"></i>
-											</div>
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<i class="fas fa-repeat-alt"></i>1
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Cancelled
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="monthly-wrap-23" class="tab-pane fade in active">
-								<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-bundle.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Completed
-										</div>
-									</div>
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-gift.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">1</label>
-										</div>
-										<div class="col-md-1">
-											<div class="fas-wrap">
-												<i class="fas fa-gift"></i>
-												<i class="fas fas fa-tag"></i>
-											</div>
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<i class="fas fa-repeat-alt"></i>1
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Cancelled
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="monthly-wrap-24" class="tab-pane fade">
-								<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-bundle.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Completed
-										</div>
-									</div>
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-gift.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">1</label>
-										</div>
-										<div class="col-md-1">
-											<div class="fas-wrap">
-												<i class="fas fa-gift"></i>
-												<i class="fas fas fa-tag"></i>
-											</div>
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<i class="fas fa-repeat-alt"></i>1
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Cancelled
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="monthly-wrap-25" class="tab-pane fade">
-								<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-bundle.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Completed
-										</div>
-									</div>
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-gift.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">1</label>
-										</div>
-										<div class="col-md-1">
-											<div class="fas-wrap">
-												<i class="fas fa-gift"></i>
-												<i class="fas fas fa-tag"></i>
-											</div>
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<i class="fas fa-repeat-alt"></i>1
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Cancelled
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="monthly-wrap-26" class="tab-pane fade">
-								<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-bundle.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-											-
-										</div>
-										<div class="col-md-1">
-
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Completed
-										</div>
-									</div>
-									<div class="list-row-content row">
-										<div class="col-md-3">
-											<div class="product-item-element list-item-image">
-												<div>
-													<a href="mysop-detail-gift.html">
-														<img src="images/nu105480.jpg" alt="Soft Cleanser"
-															 title="Soft Cleanser"></a>
-												</div>
-											</div>
-											<div class="product-item-element list-item-info">
-												<div>Nutrilite Cal Mag D</div>
-												<p>
-												</p>
-												<div class="product-code sku-code">SKU:
-													<span class="product-item-number">105480</span></div>
-												<div class="product-category">18.22PV/57.31BV</div>
-											</div>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="circle-green">1</label>
-										</div>
-										<div class="col-md-1">
-											<div class="fas-wrap">
-												<i class="fas fa-gift"></i>
-												<i class="fas fas fa-tag"></i>
-											</div>
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<label class="line-through">2</label>
-										</div>
-										<div class="col-md-1">
-											<i class="fas fa-repeat-alt"></i>1
-										</div>
-
-										<div class="col-md-1">
-											<a href="mysop-detail-inactive.html" class="">Details</a>
-										</div>
-
-										<div class="col-md-1">
-											Cancelled
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<!--mob block-->
 				</div>
 
+				<div id="inactive-block">
+					<div class="months-select-bar-out-wrap">
+						<div class="months-select-bar-title">
+							<i class="fas fa-question-circle"></i>
+							<div class="circle-tip">
+							<span class="gray-span">
+								<i class="fas fa-gift"></i>Gift
+							</span>
+								<span class="gray-span">
+								<i class="fas fas fa-tag"></i>Benefit
+							</span>
+
+								<span>
+							<i></i>
+							Completed
+						</span>
+							</div>
+						</div>
+
+						<div class="months-select-bar-wrap">
+							<ul class="months-select-bar nav nav-tabs">
+								<li class="arrow-li-prev">
+									<i class="fas fa-caret-left"></i>
+								</li>
+								<li class="">
+									<a href="#" data-toggle="tab">
+										SEPT
+									</a>
+								</li>
+								<li class="">
+									<a href="#monthly-wrap-21" data-toggle="tab">
+										OCT
+									</a>
+								</li>
+								<li class="">
+									<a href="#monthly-wrap-22" data-toggle="tab">
+										NOV
+									</a>
+								</li>
+								<li class="active">
+									<label>2018</label>
+									<a href="#monthly-wrap-23" data-toggle="tab">
+										DEC
+									</a>
+									<div class="devided"></div>
+								</li>
+								<li class="">
+									<label>2019</label>
+									<a href="#monthly-wrap-24" data-toggle="tab">
+										JAN
+									</a>
+								</li>
+								<li class="">
+									<a href="#monthly-wrap-25" data-toggle="tab">
+										FEB
+									</a>
+								</li>
+								<li class="">
+									<a href="#monthly-wrap-26" data-toggle="tab" class="current-month">
+										MAR
+									</a>
+								</li>
+								<li class="">
+									<a href="#" data-toggle="tab">
+										APR
+									</a>
+								</li>
+								<li class="arrow-li-next">
+									<i class="fas fa-caret-right"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-content months-select-content-wrap">
+
+						<div id="monthly-wrap-21" class="tab-pane fade">
+							<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-bundle.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Completed
+									</div>
+								</div>
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-gift.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">1</label>
+									</div>
+									<div class="col-md-1">
+										<div class="fas-wrap">
+											<i class="fas fa-gift"></i>
+											<i class="fas fas fa-tag"></i>
+										</div>
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<i class="fas fa-repeat-alt"></i>1
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Cancelled
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="monthly-wrap-22" class="tab-pane fade">
+							<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-bundle.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Completed
+									</div>
+								</div>
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-gift.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">1</label>
+									</div>
+									<div class="col-md-1">
+										<div class="fas-wrap">
+											<i class="fas fa-gift"></i>
+											<i class="fas fas fa-tag"></i>
+										</div>
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<i class="fas fa-repeat-alt"></i>1
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Cancelled
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="monthly-wrap-23" class="tab-pane fade in active">
+							<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-bundle.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Completed
+									</div>
+								</div>
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-gift.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">1</label>
+									</div>
+									<div class="col-md-1">
+										<div class="fas-wrap">
+											<i class="fas fa-gift"></i>
+											<i class="fas fas fa-tag"></i>
+										</div>
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<i class="fas fa-repeat-alt"></i>1
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Cancelled
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="monthly-wrap-24" class="tab-pane fade">
+							<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-bundle.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Completed
+									</div>
+								</div>
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-gift.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">1</label>
+									</div>
+									<div class="col-md-1">
+										<div class="fas-wrap">
+											<i class="fas fa-gift"></i>
+											<i class="fas fas fa-tag"></i>
+										</div>
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<i class="fas fa-repeat-alt"></i>1
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Cancelled
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="monthly-wrap-25" class="tab-pane fade">
+							<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-bundle.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Completed
+									</div>
+								</div>
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-gift.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">1</label>
+									</div>
+									<div class="col-md-1">
+										<div class="fas-wrap">
+											<i class="fas fa-gift"></i>
+											<i class="fas fas fa-tag"></i>
+										</div>
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<i class="fas fa-repeat-alt"></i>1
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Cancelled
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="monthly-wrap-26" class="tab-pane fade">
+							<div class="list-content mysop-monthly-list-content mysop-list mysop-table-wrap">
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-bundle.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+										-
+									</div>
+									<div class="col-md-1">
+
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="mysop-list-details-link">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Completed
+									</div>
+								</div>
+								<div class="list-row-content row">
+									<div class="col-md-3">
+										<div class="product-item-element list-item-image">
+											<div>
+												<a href="mysop-detail-gift.html">
+													<img src="/_ui/responsive/theme-blue/images/nu105480.jpg" alt="Soft Cleanser"
+														 title="Soft Cleanser"></a>
+											</div>
+										</div>
+										<div class="product-item-element list-item-info">
+											<div>Nutrilite Cal Mag D</div>
+											<p>
+											</p>
+											<div class="product-code sku-code">SKU:
+												<span class="product-item-number">105480</span></div>
+											<div class="product-category">18.22PV/57.31BV</div>
+										</div>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="circle-green">1</label>
+									</div>
+									<div class="col-md-1">
+										<div class="fas-wrap">
+											<i class="fas fa-gift"></i>
+											<i class="fas fas fa-tag"></i>
+										</div>
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<label class="line-through">2</label>
+									</div>
+									<div class="col-md-1">
+										<i class="fas fa-repeat-alt"></i>1
+									</div>
+
+									<div class="col-md-1">
+										<a href="mysop-detail-inactive.html" class="">Details</a>
+									</div>
+
+									<div class="col-md-1">
+										Cancelled
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- //조회결과 목록 -->
+
 			</div>
-			<!-- //코어 -->
-		<!-- // -->
+			<!-- //sop-container -->
+		</div>
+		<!-- //container-fluid -->
 
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+
+
+<!-- layer popup -->
 <div class="popup box-sizing" id="pop-address">
 	<div class="pop-box">
 		<div class="pop-header uppercase">add address
@@ -3054,101 +3005,101 @@
 			</div>
 			<div class="row">
 				<div class="col-sx-12 mysop-product-detail-list">
-							<div class="list-content">
-								<div class="list-row-title row">
-									<div class="col-md-5 col-xs-12">products in this bundle</div>
-									<div class="col-md-2 center hidden-xs hidden-sm">OPTION</div>
-									<div class="col-md-2 hidden-xs hidden-sm">price</div>
+					<div class="list-content">
+						<div class="list-row-title row">
+							<div class="col-md-5 col-xs-12">products in this bundle</div>
+							<div class="col-md-2 center hidden-xs hidden-sm">OPTION</div>
+							<div class="col-md-2 hidden-xs hidden-sm">price</div>
 
-									<div class="col-md-2 hidden-xs hidden-sm">PV/BV</div>
-									<div class="col-md-1 hidden-xs hidden-sm">QTY</div>
+							<div class="col-md-2 hidden-xs hidden-sm">PV/BV</div>
+							<div class="col-md-1 hidden-xs hidden-sm">QTY</div>
 
-								</div>
-
-								<div class="content-list row">
-									<div class="row con-list-item">
-										<div class="col-md-5 col-xs-12"><p>Nutrilite® Heart Health Pack Has a Long Name</p></div>
-										<div class="col-md-2 col-xs-12 color-option">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">option</span>
-											<span class="mob-float-right">60-pack</span>
-										</div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
-											<span class="mob-float-right">$30.00</span></div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
-											<span class="mob-float-right">21.0/42.0</span></div>
-										<div class="col-md-1 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
-											<span class="mob-float-right">3</span></div>
-
-									</div>
-
-								</div>
-								<div class="content-list row">
-									<div class="row con-list-item">
-										<div class="col-md-5 col-xs-12"><p>Nutrilite® Double X</p></div>
-										<div class="col-md-2 col-xs-12 color-option">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">option</span>
-											<span class="mob-float-right">30-pack</span>
-										</div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
-											<span class="mob-float-right">$30.00</span></div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
-											<span class="mob-float-right">21.0/42.0</span></div>
-										<div class="col-md-1 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
-											<span class="mob-float-right">3</span></div>
-
-									</div>
-
-								</div>
-								<div class="content-list row">
-									<div class="row con-list-item">
-										<div class="col-md-5 col-xs-12"><p>Nutrilite® Heart Health Pack Has a Long Name</p></div>
-										<div class="col-md-2 col-xs-12 color-option">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">option</span>
-											<span class="mob-float-right">30-pack</span>
-										</div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
-											<span class="mob-float-right">$30.00</span></div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
-											<span class="mob-float-right">21.0/42.0</span></div>
-										<div class="col-md-1 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
-											<span class="mob-float-right">3</span></div>
-
-									</div>
-
-								</div>
-								<div class="content-list row">
-									<div class="row con-list-item">
-										<div class="col-md-5 col-xs-12"><p>ARTISTRY Pucker Up Bundle</p></div>
-										<div class="col-md-2 col-xs-12 color-option">
-										   <div class="color-img">
-												<img src="images/glitz-5.png">
-											</div>
-											<span class="color-text mob-float-right">Flaming Red</span>
-										</div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
-											<span class="mob-float-right">$30.00</span></div>
-										<div class="col-md-2 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
-											<span class="mob-float-right">21.0/42.0</span></div>
-										<div class="col-md-1 col-xs-12">
-											<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
-											<span class="mob-float-right">3</span></div>
-
-									</div>
-
-								</div>
-							</div>
 						</div>
+
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12"><p>Nutrilite® Heart Health Pack Has a Long Name</p></div>
+								<div class="col-md-2 col-xs-12 color-option">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">option</span>
+									<span class="mob-float-right">60-pack</span>
+								</div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
+									<span class="mob-float-right">$30.00</span></div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span></div>
+								<div class="col-md-1 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
+									<span class="mob-float-right">3</span></div>
+
+							</div>
+
+						</div>
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12"><p>Nutrilite® Double X</p></div>
+								<div class="col-md-2 col-xs-12 color-option">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">option</span>
+									<span class="mob-float-right">30-pack</span>
+								</div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
+									<span class="mob-float-right">$30.00</span></div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span></div>
+								<div class="col-md-1 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
+									<span class="mob-float-right">3</span></div>
+
+							</div>
+
+						</div>
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12"><p>Nutrilite® Heart Health Pack Has a Long Name</p></div>
+								<div class="col-md-2 col-xs-12 color-option">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">option</span>
+									<span class="mob-float-right">30-pack</span>
+								</div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
+									<span class="mob-float-right">$30.00</span></div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span></div>
+								<div class="col-md-1 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
+									<span class="mob-float-right">3</span></div>
+
+							</div>
+
+						</div>
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12"><p>ARTISTRY Pucker Up Bundle</p></div>
+								<div class="col-md-2 col-xs-12 color-option">
+								   <div class="color-img">
+										<img src="images/glitz-5.png">
+									</div>
+									<span class="color-text mob-float-right">Flaming Red</span>
+								</div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Price</span>
+									<span class="mob-float-right">$30.00</span></div>
+								<div class="col-md-2 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span></div>
+								<div class="col-md-1 col-xs-12">
+									<span class="hidden-md hidden-lg blue fontWeight600 text-uppercase">Qty</span>
+									<span class="mob-float-right">3</span></div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="pop-footer no-border text-center">
@@ -3172,227 +3123,6 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/select2.js"></script>
-<script src="scripts/owl.carousel.js"></script>
-<script src="scripts/new.js"></script>
-<script type="text/javascript">
-	(function () {
-		function listenSearchInput() {
-			if ($(this).val().length >= 1) {
-				$(".js-quick-shop-submit").removeClass("disabled")
-			} else {
-				$(".js-quick-shop-submit").addClass("disabled")
-			}
-		}
-		function buttonState() {
-			$('#quick-shop-search').on('keyup', listenSearchInput);
-		}
 
-		buttonState();
-
-	})();
-	$("#editpay-card-password").bind("input propertychange",
-		function () {
-			value = $('#editpay-card-password').val();
-			setTimeout(function () {
-					str = value.substr(value.length - 1, 1);
-					str = '*';
-					str1 = '';
-					if (value.length > 1) {
-						str1 = value.substr(0, value.length - 1);
-						$('#editpay-card-password').val(str1)
-					}
-					if (value !== '') {
-						$('#editpay-card-password').val(str1 + str)
-					} else {
-						$('#editpay-card-password').val('')
-					}
-				},
-				0);
-		});
-	$("#editpay-card-cvv").bind("input propertychange",
-		function () {
-			value = $('#editpay-card-cvv').val();
-			setTimeout(function () {
-					str = value.substr(value.length - 1, 1);
-					str = '*';
-					str1 = '';
-					if (value.length > 1) {
-						str1 = value.substr(0, value.length - 1);
-						$('#editpay-card-cvv').val(str1)
-					}
-					if (value !== '') {
-						$('#editpay-card-cvv').val(str1 + str)
-					} else {
-						$('#editpay-card-cvv').val('')
-					}
-				},
-				0);
-		});
-
-	function verify(){
-		var day = $("#process-day").val();
-		if (day == '1'){
-			$(".verify-form").addClass("has-error");
-			$(".warning-tip").show();
-			return;
-		} else {
-			$("#save-change").fadeIn();
-		}
-
-
-	}
-
-	function changeFunction(){
-		var inputValue = $("#quick-shop-search").val().trim();
-		if(inputValue == '')
-		{
-			$("#quick-search-list").slideUp();
-			$("#search-no-item").slideUp();
-		}
-		else {
-			if(inputValue == '666'){
-				$("#quick-search-list").slideDown(1000);
-				$("#search-no-item").slideUp();
-
-			}else{
-				$("#search-no-item").slideDown(1000);
-				$("#quick-search-list").slideUp();
-			}
-
-		}
-	}
-	$(function () {
-		$('#view-month').change(function() {
-
-			var valueMonth = $("#view-month").val();
-			if (valueMonth == '6 Month') {
-				window.location.href = "mysop-6-month.html";
-			} else if (valueMonth == '1 Month') {
-				window.location.href = "mysop-monthly.html";
-			}
-		});
-
-
-		$('.pop-close').click(function () {
-			$(".popup").hide();
-		});
-
-
-		$('.pop-close').click(function () {
-			$(".popup").hide();
-		});
-
-		$('.del-profile').click(function (e) {
-			e.preventDefault();
-			$("#del-profile").show();
-
-		});
-
-		$('.mysop-list-cancel').click(function (e) {
-			e.preventDefault();
-			$("#mysop-list-cancel").show();
-
-		});
-
-		$("#sortOptions2").change(function () {
-			var ss = $(this).children('option:selected').val();
-			if (ss == "Inactive") {
-				$("#sortOptions1").addClass("select-close");
-				$("#sortOptions1").attr("disabled", true);
-				$("#active-block").hide();
-				$("#inactive-block").show();
-
-			} else if (ss == "Active") {
-				$("#sortOptions1").removeClass("select-close");
-				$("#sortOptions1").attr("disabled", false);
-
-
-				$("#active-block").show();
-				$("#inactive-block").hide();
-			}
-		});
-		// $(".inactive").on("click",function () {
-		//     $("#active-block").hide();
-		//     $("#inactive-block").show();
-		// });
-		// $(".active").on("click",function () {
-
-		//         $("#active-block").show();
-		//         $("#inactive-block").hide();
-		// });
-
-
-		$('.arrow-li-prev').click(function (e) {
-			e.preventDefault();
-			$('.months-select-bar .active').prev("li").children("a").tab('show');
-		});
-
-		$('.arrow-li-next').click(function (e) {
-			e.preventDefault();
-			$('.months-select-bar .active').next("li").children("a").tab('show');
-		});
-
-		$('#addNewAddress').click(function (e) {
-			e.preventDefault();
-			$('#pop-address').fadeIn();
-		});
-		$('#addNewPayment').click(function (e) {
-			e.preventDefault();
-			$('#pop-payment').fadeIn();
-		});
-
-		$('.pop-close, #submit-btn, #cancel-btn').click(function (e) {
-			e.preventDefault();
-			$('.popup').fadeOut();
-		});
-		$('.close-edit').click(function (e) {
-			e.preventDefault();
-			$('.edit-block').slideUp();
-			$(".downline-profile-second-line").fadeIn(800);
-		});
-
-		//reset
-		$('.reset').click(function () {
-			$(this).parents('#quickShopForm').find('#quick-shop-search').val('');
-			$(this).parents('#quickShopForm').next('#quick-search-list').slideUp(1000);
-		});
-
-		$('#edit-profile').click(function (e) {
-			e.preventDefault();
-			if ($(".edit-block").is(':hidden')) {
-				$(".downline-profile-second-line").hide();
-
-				$(".edit-block").slideDown();
-			} else {
-				$(".edit-block").hide();
-				$(".downline-profile-second-line").show();
-			}
-
-		});
-		var owl2 = $('#productSuggestListTabs');
-		owl2.owlCarousel({
-			margin: 0,
-			nav: true,
-			dots: false,
-			loop: true,
-			responsive: {
-				0: {
-					items: 1
-				},
-				768: {
-					items: 2
-				},
-				960: {
-					items: 5
-				}
-			}
-
-		});
-	})
-</script>
 </body>
-
 </html>

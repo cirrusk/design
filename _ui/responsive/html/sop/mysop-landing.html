@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_sopTemp.js"></script>
 </head>
 <body class="akl">
 	<!-- skipToContent -->
@@ -129,69 +130,49 @@
 
 		<!-- container-fluid -->
 		<div class="container-fluid main-container">
+
+			<!-- sop-container -->
 			<div class="amway-theme sop-container">
 				<h1 class="icon-sub-title message-title">나의 스마트 오더</h1>
 
-				<div class="tbl-list-board">
+
+				<p>진행 중인 나의 스마트 오더</p>
+				<div class="tbl-list-board type-tbody-th ongoingSOP">
 					<div class="thead mob-hide">
 						<div class="tr">
-							<strong class="mob-hide sop-myOrder-numb">스마트오더 번호</strong>
-							<strong class="mob-hide sop-myOrder-name">스마트오더명(차수)</strong>
-							<strong class="mob-hide sop-myOrder-pay">결제</strong>
-							<strong class="mob-hide sop-myOrder-state">진행상태</strong>
+							<strong class="mob-hide ongoingSOP_num">스마트오더명(차수)</strong>
+							<strong class="mob-hide ongoingSOP_num">타입</strong>
+							<strong class="mob-hide ongoingSOP_num">결제일</strong>
+							<strong class="mob-hide ongoingSOP_num">주문금액(원)</strong>
+							<strong class="mob-hide ongoingSOP_num">진행상태</strong>
+							<strong class="mob-hide ongoingSOP_num">결제상태</strong>
+							<strong class="mob-hide ongoingSOP_num">스마트오더 삭제</strong>
 						</div>
 					</div>
 					<div class="tbody">
+						<div class="tr">
+							<div class="mob-block ongoingSOP_num"><strong class="th">스마트오더명(차수)</strong> <p><a href="#">SOP 주문(2회차)</a></p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">타입</strong> <p>2016-04</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">결제일</strong> <p>25일</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">주문금액(원)</strong> <p>150,000</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">진행상태</strong> <p>진행</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">결제상태</strong> <p><a href="#">즉시결제</a> <a href="#">스마트오더 갱신</a> </p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">스마트오더 삭제</strong> <p><a href="#">삭제</a></p></div>
+						</div>
+						<div class="tr">
+							<div class="mob-block ongoingSOP_num"><strong class="th">스마트오더명(차수)</strong> <p><a href="#">SOP 주문(2회차)</a></p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">타입</strong> <p>2016-04</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">결제일</strong> <p>25일</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">주문금액(원)</strong> <p>150,000</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">진행상태</strong> <p>진행</p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">결제상태</strong> <p><a href="#">즉시결제</a> <a href="#">스마트오더 갱신</a> </p></div>
+							<div class="mob-block ongoingSOP_num"><strong class="th">스마트오더 삭제</strong> <p><a href="#">삭제</a></p></div>
+						</div>
 						<div class="tr no-result">
-							<div class="search-no-result">조회 결과가 없습니다.</div>
-						</div>
-						<div class="tr">
-							<div class="mob-block"><strong class="th sop-myOrder-numb">스마트오더 번호</strong><p>0000000</p></div>
-							<div class="mob-block"><strong class="th sop-myOrder-name">스마트오더명(차수)</strong><p>0000000</p></div>
-							<div class="mob-block"><strong class="th sop-myOrder-pay">결제</strong><p>0000000</p></div>
-							<div class="mob-block"><strong class="th">ABO</strong><p>0000000</p></div>
+							<div class="search-no-result">나의 스마트 오더가 없습니다.</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="tbl-list-board type-tbody-th aboRenewal">
-					<div class="thead mob-hide">
-						<div class="tr">
-							<strong class="mob-hide abo-downline-th1">ABO번호</strong>
-							<strong class="mob-hide abo-downline-th2">ABO성명</strong>
-							<strong class="mob-hide abo-downline-th3">갱신</strong>
-							<strong class="mob-hide abo-downline-th4">갱신방법</strong>
-						</div>
-					</div>
-					<div class="tbody">
-						<div class="tr">
-							<div class="mob-block abo-downline-th1"><strong class="th">ABO번호</strong><p>245****</p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th">ABO성명</strong><p>장**</p></div>
-							<div class="mob-block abo-downline-th3"><strong class="th">갱신</strong><p>N</p></div>
-							<div class="mob-block abo-downline-th4"><strong class="th">갱신방법</strong><p>-</p></div>
-						</div>
-						<div class="tr">
-							<div class="mob-block abo-downline-th1"><strong class="th">ABO번호</strong><p>7480002</p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th">ABO성명</strong><p>배진희</p></div>
-							<div class="mob-block abo-downline-th3"><strong class="th">갱신</strong><p>Y</p></div>
-							<div class="mob-block abo-downline-th4"><strong class="th">갱신방법</strong><p>ABN</p></div>
-						</div>
-						<div class="tr">
-							<div class="mob-block abo-downline-th1"><strong class="th">ABO번호</strong><p>7480000</p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th">ABO성명</strong><p>송은숙</p></div>
-							<div class="mob-block abo-downline-th3"><strong class="th">갱신</strong><p>Y</p></div>
-							<div class="mob-block abo-downline-th4"><strong class="th">갱신방법</strong><p>자동갱신</p></div>
-						</div>
-						<div class="tr">
-							<div class="mob-block abo-downline-th1"><strong class="th">ABO번호</strong><p>7480002</p></div>
-							<div class="mob-block abo-downline-th2"><strong class="th">ABO성명</strong><p>배진희</p></div>
-							<div class="mob-block abo-downline-th3"><strong class="th">갱신</strong><p>Y</p></div>
-							<div class="mob-block abo-downline-th4"><strong class="th">갱신방법</strong><p>ABC/기타</p></div>
-						</div>
-					</div>
-				</div>
-
-
 
 				<!-- paging-->
 				<div class="paging-wrap">
@@ -212,6 +193,7 @@
 				<!-- //paging -->
 
 			</div>
+			<!-- //sop-container -->
 		</div>
 		<!-- //container-fluid -->
 
