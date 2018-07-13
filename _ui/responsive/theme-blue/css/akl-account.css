@@ -1218,6 +1218,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 
 .pop-moreArea {display:none;}
 
+
 /* 나의 쇼핑정보 > 구매권한 양도 > 복수선택 팝업 */
 .poo-prdlist ul li span.op-sub-num {font-weight:400;text-align:left;}
 .poo-prdlist ul li span.op-sub-num div.opt-quantity {display:inline-block;vertical-align:middle;}
@@ -1235,11 +1236,18 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .list-content.revenge .content-list:nth-child(odd) {background:#fff}
 
 /* 나의 쇼핑정보 > 구매권한 양도 > 양도취소(회수) 팝업 */
-.akl .assignment-pop .assignment-opt{ margin:20px 0}
-.akl .assignment-pop .assignment-opt .tite-label{ margin-right:20px;}
+.akl .assignment-pop .assignment-opt{ margin:20px 0; overflow:hidden;}
+.akl .assignment-pop .assignment-opt span { float:left;}
+.akl .assignment-pop .assignment-opt .tite-label{  font-weight:500; color: #002f5f; margin-top:10px; width:90px; }
+.akl .assignment-pop .assignment-opt .txte-wrap + span { margin-top:10px; margin-left:10px}
 .akl .assignment-pop .assignment-opt .opt-quantity.mini {float:none}
 .assignment-tit {font-size:px;}
 .assignment-txt { font-size:px;}
+
+.assignment-opt.line {border-top:1px solid #dadada; padding-top:20px; padding-bottom:10px;}
+.assignment-opt-name { padding-bottom:20px; overflow:hidden;}
+.akl .assignment-pop .assignment-opt .assignment-opt-name .tite-label{ font-weight:500; margin-right:0; color: #002f5f; display:inline-block;float:none; }
+.akl .assignment-pop .assignment-opt .assignment-opt-name .txte-wrap{ display:inline-block;float:none;}
 
 /* 나의 쇼핑정보 > 제품구매 예약 */
 .akl .title-box .product-list-page-title > h1.prde-reser {position:relative;font-size:18px;padding:0 0 5px;}
