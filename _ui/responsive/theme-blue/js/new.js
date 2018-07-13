@@ -464,6 +464,10 @@ $(function(){
 		event.preventDefault();
 		layerPopOver(this,'.U70610_lp_pop');
 	});
+	$('.U70610_2p').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.U70610_2p_pop');
+	});
 
 });
 
