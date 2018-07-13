@@ -32,8 +32,10 @@
                             <tr>
                                 <th scope="row">발행구분</th>
                                 <td>
-                                    <label class="inp_rd mgl10" for="fg1">소득공제<input type="radio" name="fg" id="fg1" checked><span class="checkmark"></span></label>
-                                    <label class="inp_rd" for="fg2">지출증빙<input type="radio" name="fg" id="fg2"><span class="checkmark"></span></label>
+                                	<!-- 20180713 수정 -->
+                                    <label class="inp_rd mgl10" for="fg1">소득공제(근로자용)<input type="radio" name="fg" id="fg1" checked><span class="checkmark"></span></label>
+                                    <label class="inp_rd" for="fg2">지출증빙(사업자용)<input type="radio" name="fg" id="fg2"><span class="checkmark"></span></label>
+                                	<!-- //20180713 수정 -->
                                 </td>
                             </tr>
                             <tr>
@@ -53,6 +55,9 @@
         <!-- //pop_container -->
         <div class="pop_footer clearfix">
             <span class="fl">취소 ESC</span>
+            <!-- 20180713 추가 -->
+            <em class="finish fail">승인이 취소 되었습니다.</em>
+            <!-- //20180713 추가 -->
         </div>
     </div>
 </div>
