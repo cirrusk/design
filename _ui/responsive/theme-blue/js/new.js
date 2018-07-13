@@ -723,3 +723,15 @@ $(function() {
 		layerPopOver(this,'.G20601_lp2_pop');
 	});
 });
+
+//간편선물
+$(function() {
+	$('.U70101_lp17').click(function(event){
+		event.preventDefault();
+		layerPopOver(this,'.U70101_lp17_pop');
+	});
+	$('.U70101_lp18').click(function(event){
+		event.preventDefault();
+		layerPopOver(this,'.U70101_lp18_pop');
+	});
+});
