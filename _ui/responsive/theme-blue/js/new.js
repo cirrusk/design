@@ -619,6 +619,10 @@ $(function() {
 		event.preventDefault();
 		layerPopOver(this,'.G20401_lp_pop');
 	});
+	$('#G20325_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20325_lp_pop');
+	});
 
 });
 
