@@ -904,7 +904,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .decimal-zero li {border-bottom:0 none !important;}
 
 .disc-line {padding:0 0;margin:0 0 0;}
-.disc-line li {position:relative;border-bottom:0 none;padding:2px 10px 1px;}
+.disc-line li {position:relative;border-bottom:0 none;padding:2px 10px;}
 .disc-line li:before {content:'';display:block;position:absolute;top:10px;left:0;width:5px;height:1px;background:#bbb}
 
 .disc-line li ol.decimal-zero {padding:0 0;}
@@ -917,12 +917,19 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .disc-dot li .decimal-zero li {padding:0 0px;}
 .disc-dot li .decimal-zero li:before {content:'';display:none}
 
+.disc-dot li .disc-line li {padding:0 9px;}
+.disc-dot li .disc-line li:before {content:'';display:block;position:absolute;top:10px;left:0;width:5px;height:1px;background:#bbb}
+
 ol.decimal-num {display:block !important;padding:0 0;margin:0 0;list-style:decimal !important;}
-ol.decimal-num li {display:block !important;list-style-type:decimal !important;border-bottom:0 none;padding:5px 0;}
+ol.decimal-num li {display:block !important;list-style-type:decimal !important;border-bottom:0 none;padding:2px 0;}
 ol.decimal-num li ul {padding-left:10px;}
 ol.decimal-num li ul li {padding:1px 10px;}
-
 ol.decimal-num li ul.k-alpha {padding-left:5px;}
+
+.disc-noml {padding:0 0;margin:0 0 0;}
+.disc-noml li {border-bottom:0 none;padding:2px 0;}
+.disc-noml li ol {padding:0 0;margin:2px 0 0 8px;}
+.disc-noml li ol li {padding:1px 0;}
 
 .dotBox {border: 2px dotted #333;padding: 1px 3px;display: inline-block;}
 .dot-tit {font-weight:500;background: url('../images/akl_product/common/bul_dot.gif') no-repeat 0 8px; padding:0 0 0 10px;}
