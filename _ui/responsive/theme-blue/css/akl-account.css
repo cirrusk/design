@@ -1993,12 +1993,32 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .easy-cont .button-area { text-align: center; margin-top:30px}
 .easy-cont .list-type2 { margin-bottom:-10px}
 .easy-cont .bt-akl-white.mini { margin-left: 8px}
-.barcode-img { padding-bottom:40px; text-align:center}
-.barcode-img img { height:80px}
-.barcode-img-pop { text-align:center; padding:55px 30px}
-.barcode-img-pop img { width:60%}
-.easy-cont + .myordef-shipArea { padding-top: 0}
+.barcode-area { padding-bottom:43px; text-align:center}
+.barcode-area-pop { text-align:center; padding:55px 30px}
+.LINC_check_barcode{text-align:center;margin:20px 0 0;}
+.LINC_check_barcode span{font-family:'Free 3 of 9 Regular';font-size:50px;line-height:50px;font-weight:normal;color:#000;
+   -ms-transform: scaleY(2);
+   -webkit-transform: scaleY(2);
+   transform: scaleY(2); display:block;}
+.pop_LINC_barcode *{box-sizing:border-box}
+.pop_LINC_barcode{text-align:center;margin:20px auto 0 auto;}
+.pop_LINC_barcode .verticalBarcode{text-align:center;width:280px;height:280px;display:inline-block;
+   -ms-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   transform: rotate(90deg);} /* 90도 회전 */
+.pop_LINC_barcode .popBarcode span{display:block;position:relative;top:110px;width:280px;height:50px;line-height:50px;font-family:'Free 3 of 9 Regular';font-size:50px;font-weight:normal;color:#000;
+   -ms-transform: scaleY(3);
+   -webkit-transform: scaleY(3);
+   transform: scaleY(3);} /* 바코드 세팅 */
+.pop_LINC_barcode .popNumber{position:relative;top:150px}
+.pop_LINC_barcode .useCodeInput{margin:20px 10px 0 10px;text-align:left}
+.pop_LINC_barcode .useCodeInput label{display:block;margin-bottom:6px;font-size:16px;line-height:1.5;font-weight:bold;color:#333}
+.pop_LINC_barcode .useCodeInput input{width:100%;height:40px;line-height:40px;font-size:18px;}
 
+.barcode-img{width:280px;height:280px;margin:0 auto;text-align:center;} /*바코드가 이미지 일때*/
+.barcode-img img{max-width:100%;} /*바코드가 이미지 일때*/
+
+.easy-cont + .myordef-shipArea { padding-top: 0}
 .akl .easy-wrap .conditions.ind *,
 .akl .easy-wrap .conditions.ind p,
 .akl .easy-wrap #terms .conditions.ind p,
