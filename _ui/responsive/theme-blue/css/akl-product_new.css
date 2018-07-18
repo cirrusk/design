@@ -920,11 +920,17 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .disc-dot li .disc-line li {padding:0 9px;}
 .disc-dot li .disc-line li:before {content:'';display:block;position:absolute;top:10px;left:0;width:5px;height:1px;background:#bbb}
 
+.disc-won li {position:relative;border-bottom:0 none;padding:2px 8px;}
+.disc-won li:before {content:'';display:block;position:absolute;top:10px;left:0;width:3px;height:3px;background:#444;border-radius: 50%;}
+
 ol.decimal-num {display:block !important;padding:0 0;margin:0 0;list-style:decimal !important;}
 ol.decimal-num li {display:block !important;list-style-type:decimal !important;border-bottom:0 none;padding:2px 0;}
-ol.decimal-num li ul {padding-left:10px;}
+ol.decimal-num li ul {padding-left:15px;}
 ol.decimal-num li ul li {padding:1px 10px;}
 ol.decimal-num li ul.k-alpha {padding-left:5px;}
+ol.decimal-num li ul li ol {padding-left:15px;}
+ol.decimal-num li ol {padding:0 15px;}
+ol.decimal-num li ol li ol {padding:0 15px;}
 
 .disc-noml {padding:0 0;margin:0 0 0;}
 .disc-noml li {border-bottom:0 none;padding:2px 0;}
