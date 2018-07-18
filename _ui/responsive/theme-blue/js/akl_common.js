@@ -168,7 +168,7 @@
 	});
 
 	//뉴핀 성취자
-	$('.newpin a').click(function() {
+	$('.newpin a, .link-to a').click(function() {
 		if (this.hash !== "") {
 			event.preventDefault();
 
