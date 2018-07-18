@@ -253,13 +253,14 @@
 .akl .panel-body .panel-business dl dd .box-diagram + .list-type5 { margin-top:20px }
 .akl .panel-body .panel-business dl dd .list-type5 + .box-diagram { margin-top:10px }
 
-/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
+/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP18 */
 .box-diagram02 {background:#f6f6f6; overflow:hidden;padding:40px; margin:18px 0 10px}
 .box-diagram02.case02 {padding:40px 60px;}
 .box-diagram02 .diag-calculation {width:60%; }
 .box-diagram02 .diag-calculation>p {display:table; width:100%; height:102px; margin-bottom:0}
 .box-diagram02 .diag-calculation p>.math-txt:first-child {width:28%;}
-.box-diagram02 .diag-calculation .math-txt {position:relative;display:table-cell; width:28%; box-sizing:border-box; vertical-align:middle;}
+.box-diagram02 .diag-calculation .math-txt {position:relative;display:table-cell; width:25%; box-sizing:border-box; vertical-align:middle;}
+.box-diagram02 .diag-calculation .math-txt.sec {position:relative;display:table-cell; width:40%; box-sizing:border-box; vertical-align:middle;}
 .box-diagram02 .diag-calculation .math-txt.plus {width:8%}
 .box-diagram02 .diag-calculation .math-txt.last {width:36%;}
 .box-diagram02 .diag-calculation .math-txt * {display:inline-block; vertical-align:middle;}
@@ -276,7 +277,7 @@
 
 .box-ratio { background:#f6f6f6; overflow:hidden;padding:40px 60px; margin:10px 0 10px}
 .box-diagram-table { position:relative; }
-.box-diagram-table > p { position:absolute; left:0; top:70px; width:120px; height:120px; padding-top:34px; text-align:center;  background:#fff; border:2px solid #002f5f; border-radius:50%; color:#002f5f; font-weight:500}
+.box-diagram-table > p {position:absolute; left:0; top:70px; width:120px; height:120px;  text-align:center; font-weight:500; color:#002f5f; width:120px; height:120px; padding-top:34px; background:#fff; border:2px solid #002f5f; border-radius:50%; }
 .box-diagram-table > p:before {content: '';position: absolute; top: 50%;left:160px;width:20px;height:20px;margin-top: -10px;background: url(../images/akl_common/business/img_rewards_travel22_pc.png) no-repeat;
  background-position: 0 -350px;}
 .box-ratio ul { margin-left:237px; max-width:945px; }
@@ -286,19 +287,19 @@
 .box-ratio ul li.thead p span:before { content:""; position:absolute; left:0; bottom:-15px; height:15px; border-left:1px solid #dedede; }
 .box-ratio ul li.thead p span:after { content:""; position:absolute; right:0; bottom:-15px; height:15px; border-left:1px solid #dedede; }
 .box-ratio ul li.thead div { display:table; width:100%; clear:both;}
-.box-ratio ul li.thead div span { display:table-cell; padding:10px 0; vertical-align:middle; }
-.box-ratio ul li.thead div span:nth-of-type(1) { width:44%; padding-left:20px}
-.box-ratio ul li.thead div span:nth-of-type(2) { width:20%; padding-left:20px}
-.box-ratio ul li.thead div span:nth-of-type(3) { width:12%; text-align:center;}
-.box-ratio ul li.thead div span:nth-of-type(4) { width:12%; text-align:center;}
-.box-ratio ul li.thead div span:nth-of-type(5) { width:12%; text-align:center;}
+.box-ratio ul li.thead div span { display:table-cell; padding:10px 0; vertical-align:middle; text-align:center }
+.box-ratio ul li.thead div span:nth-of-type(1) { width:44%;}
+.box-ratio ul li.thead div span:nth-of-type(2) { width:20%;}
+.box-ratio ul li.thead div span:nth-of-type(3) { width:12%;}
+.box-ratio ul li.thead div span:nth-of-type(4) { width:12%;}
+.box-ratio ul li.thead div span:nth-of-type(5) { width:12%;}
 .box-ratio ul li.tbody div { display:table; width:100%}
-.box-ratio ul li.tbody div span {display:table-cell; padding:10px 0;font-size:14px; vertical-align:middle;}
-.box-ratio ul li.tbody div span:nth-of-type(1) { width:44%; padding-left:20px}
-.box-ratio ul li.tbody div span:nth-of-type(2) { width:20%; padding-left:20px; border-left:1px solid #dedede;}
-.box-ratio ul li.tbody div span:nth-of-type(3) { width:12%; text-align:center; background:#42cbd3; color:#fff}
-.box-ratio ul li.tbody div span:nth-of-type(4) { width:12%; text-align:center; background:#00b2e2; color:#fff}
-.box-ratio ul li.tbody div span:nth-of-type(5) { width:12%; text-align:center; background:#005cb9; color:#fff}
+.box-ratio ul li.tbody div span {display:table-cell; padding:10px 0;font-size:14px; vertical-align:middle; text-align:center}
+.box-ratio ul li.tbody div span:nth-of-type(1) { width:44%;}
+.box-ratio ul li.tbody div span:nth-of-type(2) { width:20%; border-left:1px solid #dedede;}
+.box-ratio ul li.tbody div span:nth-of-type(3) { width:12%; background:#42cbd3; color:#fff}
+.box-ratio ul li.tbody div span:nth-of-type(4) { width:12%; background:#00b2e2; color:#fff}
+.box-ratio ul li.tbody div span:nth-of-type(5) { width:12%; background:#005cb9; color:#fff}
 
 .box-ratio.type02 { padding:40px;}
 .box-ratio.type02 .box-diagram-table > p {top:30px;}
@@ -318,6 +319,66 @@
 .popup-calculation {height:301px; text-indent:-999px;overflow:hidden; background:url(../images/akl_common/business/img_pop_01.png) no-repeat 50% 0; }
 .table-scroll + .rewards-tale { margin-top:40px }
 
+/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
+.box-diagram03 {background:#f6f6f6; overflow:hidden;padding:40px; margin:18px 0 10px}
+.box-diagram03 .diag-calculation {max-width:70%; }
+.box-diagram03 .diag-calculation>p {display:table; width:100%; height:102px; margin-bottom:0; }
+.box-diagram03 .diag-calculation .math-txt {position:relative;display:table-cell; width:20%; box-sizing:border-box; vertical-align:middle;}
+.box-diagram03 .diag-calculation .math-txt.plus {width:5%}
+.box-diagram03 .diag-calculation .math-txt.multiply {width:5%}
+.box-diagram03 .diag-calculation .math-txt.bracket {  width:5%; }
+.box-diagram03 .diag-calculation .math-txt * {display:inline-block; vertical-align:middle;}
+.box-diagram03 .diag-calculation [class^=ico-type] {position:relative; display:inline-block; padding:15px 0 0 82px; height:72px;}
+.box-diagram03 .diag-calculation [class^=ico-type]:before {content:''; position:absolute; top:0; left:0; width:72px; height:72px; background:url(../images/akl_common/business/img_rewards_travel22_pc.png) no-repeat;}
+.box-diagram03 .diag-calculation .ico-type-equal {padding-left:100px; width:100%; height:100px;}
+.box-diagram03 .diag-calculation .ico-type-equal:before {width:100px; height:100px; background-position:0 0;}
+.box-diagram03 .diag-calculation .ico-type-equal:after {content:''; position:absolute; top:50%; left:50%; margin:-7px 0 0 40px; width:24px; height:14px; background:url(../images/akl_common/business/img_rewards_travel22_pc.png) no-repeat 0 -300px;}
+.box-diagram03 .diag-calculation .ico-type-a:before {background-position:50% -120px;}
+.box-diagram03 .diag-calculation .ico-type-a:after {display:none;}
+.box-diagram03 .diag-calculation .ico-type-b:before {right:30px; background-position:50% -210px;}
+.box-diagram03 .diag-calculation .ico-type-c:before {right:30px; background-position:50% -430px;}
+.box-diagram03 .diag-calculation .ico-type-multiply:before {width:30px; height:20px; background-position:10px -350px; top:50%; margin-top:-10px;}
+.box-diagram03 .diag-calculation .ico-type-plus:before {width:40px; height:30px; background-position:10px -397px; top:50%; margin-top:-10px;}
+.box-diagram03 .diag-calculation .ico-type-bracket01,
+.box-diagram03 .diag-calculation .ico-type-bracket02 {padding:0;}
+.box-diagram03 .diag-calculation .ico-type-bracket01:before {width:15px; height:64px; top:50%; margin-top:-32px; background:url(../images/akl_common/business/img_brackets.png) no-repeat 0 0; }
+.box-diagram03 .diag-calculation .ico-type-bracket02:before {width:15px; height:64px; top:50%;margin-top:-32px; background:url(../images/akl_common/business/img_brackets.png) no-repeat right 0; }
+.box-ratio02 { background:#f6f6f6; overflow:hidden;padding:40px 60px 30px; margin:10px 0 10px}
+.box-ratio02 .box-diagram-table { position:relative; }
+.box-ratio02 .box-diagram-table .box-diagram-left {position:absolute; left:0; top:0; width:120px; text-align:center; font-weight:500; color:#002f5f; line-height:180%}
+.box-ratio02 .box-diagram-table .box-diagram-left p { width:120px; height:120px; padding-top:34px; background:#fff; border:2px solid #002f5f; border-radius:50%;  line-height:160%}
+.box-ratio02 .box-diagram-table .box-diagram-left p:before {content: '';position: absolute; top: 50%;left:160px;width:20px;height:20px;margin-top: -10px;background: url(../images/akl_common/business/img_rewards_travel22_pc.png) no-repeat;
+ background-position: 0 -350px;}
+.box-ratio02 ul { margin-left:237px; max-width:945px; }
+.box-ratio02 ul li{  overflow:hidden; }
+.box-ratio02 ul li.thead span{ color:#002f5f; font-weight:500;font-size:13px;}
+.box-ratio02 ul li.thead div { display:table; width:100%; clear:both;}
+.box-ratio02 ul li.thead div span { display:table-cell; padding:10px 0; vertical-align:middle; text-align:center; }
+.box-ratio02 ul li.thead div span:nth-of-type(1) { width:38%; border-bottom:1px solid #dedede;}
+.box-ratio02 ul li.thead div span:nth-of-type(2) { width:20%; border-bottom:1px solid #dedede;}
+.box-ratio02 ul li.thead div span:nth-of-type(3) { width:17%;}
+.box-ratio02 ul li.thead div span:nth-of-type(4) { width:25%;}
+.box-ratio02 ul li.thead span.line{ position:relative; padding-bottom:30px; margin-right:10px; padding-left:10px }
+.box-ratio02 ul li.thead span.line i{ font-size:12px; }
+.box-ratio02 ul li.thead span.line:after { content:""; position:absolute; right:0; left:10px; bottom:5px;height:15px; border:1px solid #dedede; border-bottom:0 }
+
+.box-ratio02 ul li.tbody div { display:table; width:100%}
+.box-ratio02 ul li.tbody div span {display:table-cell; padding:10px 0;font-size:14px; vertical-align:middle; text-align:center; position:relative;}
+.box-ratio02 ul li.tbody div span:nth-of-type(1) { width:38%; border-bottom:1px solid #dedede;}
+.box-ratio02 ul li.tbody div span:nth-of-type(2) { width:20%; border-left:1px solid #dedede; border-bottom:1px solid #dedede;}
+.box-ratio02 ul li.tbody div span:nth-of-type(3) { width:42%; text-align:left;}
+.box-ratio02 ul li.tbody div span em { display:block;  width:100%;  position:absolute; height:20px; top:50%; left:10px; margin-top:-10px;  }
+.box-ratio02 ul li.tbody div span em mark {display:inline-block; position:relative; top:0; height:20px; line-height:20px; color:#fff; border-radius:0 24px 24px 0; white-space:nowrap; box-sizing:border-box; }
+.box-ratio02 ul li.tbody div span em mark:nth-of-type(1){ width:37%; background:#00b2e2; z-index:2; padding:0 0 0 12px; }
+.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { width:33%; background:#005cb9; margin-left:-20px; z-index:1; padding:0 0 0 32px; }
+.box-ratio02 ul li.tbody:nth-of-type(3) div span em mark:nth-of-type(1){ width:50%; }
+.box-ratio02 ul li.tbody:nth-of-type(4) div span em mark:nth-of-type(1){ width:60%; }
+.box-ratio02 ul li.tbody:nth-of-type(5) div span em mark:nth-of-type(1){ width:69%; }
+.box-ratio02 .mark-guide { padding:10px 0 0 58%; width:42%; }
+.box-ratio02 .mark-guide p { display:inline-block; position:relative; padding-left:30px; font-size:12px; padding-right:10px}
+.box-ratio02 .mark-guide p + p {  padding-left:30px}
+.box-ratio02 .mark-guide p:before {content:''; position:absolute; top:1px; left:10px; width:15px; height:15px;  background:#00b2e2;}
+.box-ratio02 .mark-guide p + p:before {background:#005cb9;}
 
 /* 비즈니스 > 사랑의 우수리 */
 .confirm-box-message:before {font-weight:400}
@@ -750,6 +811,25 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram02 .diag-calculation .math-txt {width:auto; min-width:80px; text-align:center;}
 	.box-diagram02 .box-diagram02.diag-calculation .math-txt.plus {width:auto; min-width:50px; text-align:center;}
 	.box-diagram02 .diag-calculation .math-txt.last {width:auto;}
+
+
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
+	.box-diagram03 { padding: 40px 20px;}
+	.box-diagram03 .diag-calculation .math-txt {width:auto; min-width:50px;}
+	.box-diagram03 .diag-calculation .math-txt.last + .bracket {min-width:30px;}
+	.box-diagram03 .diag-calculation .math-txt.multiply {min-width:30px;}
+	.box-diagram03 .diag-calculation p>.math-txt:first-child {  min-width:155px}
+	.box-diagram03 .diag-calculation p>.math-txt:nth-of-type(2) {  min-width:160px}
+	.box-diagram03 .diag-calculation .ico-type-multiply,
+	.box-diagram03 .diag-calculation .ico-type-plus {padding:15px 0 0 0}
+	.box-diagram03 .diag-calculation .ico-type-multiply:before { background-position:0 -350px; }
+	.box-diagram03 .diag-calculation .ico-type-plus:before { background-position:0 -397px; }
+
+	.box-ratio02 {padding: 40px 20px 30px;}
+	.box-ratio02 ul {margin-left: 200px;}
+	.box-ratio02 .box-diagram-table .box-diagram-left p:before {left: 140px;}
+ 	.box-ratio02 ul li.tbody div span em mark:nth-of-type(1){ padding:0 0 0 8px; }
+	.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { padding:0 0 0 25px; }
 }
 
 @media (max-width:992px) {
@@ -821,6 +901,49 @@ ul.woo-step-box li:last-child:before {background:none}
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.box-diagram02 .diag-calculation {  width:100%; padding:0 ; }
 	.box-diagram02 .diag-calculation>p {width:100%;}
+}
+
+@media (max-width:851px){
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
+		.box-diagram03 { padding:20px 10px; }
+		.box-diagram03 .diag-calculation {max-width:100%; }
+		.box-diagram03 .diag-calculation .math-txt em {display: none;}
+		.box-diagram03 .diag-calculation>p {height: 1px; padding: 207px 0 0;margin: 0 auto;background: url(../images/akl_common/business/img_rewards_travel22_mob2.png) 50% 0 no-repeat;background-size: auto 207px;}
+		.box-ratio02 { padding:40px 20px 30px; }
+
+		.box-ratio02 .box-diagram-table .box-diagram-left {position:relative; padding-left:100px; width:220px; text-align:left; margin:0 auto }
+		.box-ratio02 .box-diagram-table .box-diagram-left p { position:absolute; left:0; top:-10px; text-align: center; width:70px; height:70px; font-size:12px;}
+		.box-ratio02 .box-diagram-table .box-diagram-left p:before {  top:150px; left:50%; margin-left:20px; }
+		.box-ratio02 ul { margin-left:0; max-width:945px; margin-top:80px }
+		.box-ratio02 ul li{  overflow:hidden; }
+		.box-ratio02 ul li.thead span{ color:#002f5f; font-weight:500;font-size:13px;}
+		.box-ratio02 ul li.thead div { display:table; width:100%; clear:both;}
+		.box-ratio02 ul li.thead div span { display:table-cell; padding:10px 0; vertical-align:middle; text-align:center; }
+		.box-ratio02 ul li.thead div span:nth-of-type(1) { width:38%; border-bottom:1px solid #dedede;}
+		.box-ratio02 ul li.thead div span:nth-of-type(2) { width:20%; border-bottom:1px solid #dedede;}
+		.box-ratio02 ul li.thead div span:nth-of-type(3) { width:17%;}
+		.box-ratio02 ul li.thead div span:nth-of-type(4) { width:25%;}
+		.box-ratio02 ul li.thead span.line{ position:relative; padding-bottom:30px; margin-right:10px; padding-left:10px }
+		.box-ratio02 ul li.thead span.line i{ font-size:12px; }
+		.box-ratio02 ul li.thead span.line:after { content:""; position:absolute; right:0; left:10px; bottom:5px;height:15px; border:1px solid #dedede; border-bottom:0 }
+
+		.box-ratio02 ul li.tbody div { display:table; width:100%}
+		.box-ratio02 ul li.tbody div span {display:table-cell; padding:10px 0;font-size:14px; vertical-align:middle; text-align:center; position:relative;}
+		.box-ratio02 ul li.tbody div span:nth-of-type(1) { width:38%; border-bottom:1px solid #dedede;}
+		.box-ratio02 ul li.tbody div span:nth-of-type(2) { width:20%; border-left:1px solid #dedede; border-bottom:1px solid #dedede;}
+		.box-ratio02 ul li.tbody div span:nth-of-type(3) { width:42%; text-align:left;}
+		.box-ratio02 ul li.tbody div span em { display:block;  width:100%;  position:absolute; height:20px; top:50%; left:10px; margin-top:-10px;  }
+		.box-ratio02 ul li.tbody div span em mark {display:inline-block; position:relative; top:0; height:20px; line-height:20px; color:#fff; border-radius:0 24px 24px 0; white-space:nowrap; box-sizing:border-box; }
+		.box-ratio02 ul li.tbody div span em mark:nth-of-type(1){ width:37%; background:#00b2e2; z-index:2; padding:0 0 0 12px; }
+		.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { width:33%; background:#005cb9; margin-left:-20px; z-index:1; padding:0 0 0 32px; }
+		.box-ratio02 ul li.tbody:nth-of-type(3) div span em mark:nth-of-type(1){ width:50%; }
+		.box-ratio02 ul li.tbody:nth-of-type(4) div span em mark:nth-of-type(1){ width:60%; }
+		.box-ratio02 ul li.tbody:nth-of-type(5) div span em mark:nth-of-type(1){ width:69%; }
+		.box-ratio02 .mark-guide { padding:10px 0 0 58%; width:42%; }
+		.box-ratio02 .mark-guide p { display:inline-block; position:relative; padding-left:30px; font-size:12px; padding-right:10px}
+		.box-ratio02 .mark-guide p + p {  padding-left:30px}
+		.box-ratio02 .mark-guide p:before {content:''; position:absolute; top:1px; left:10px; width:15px; height:15px;  background:#00b2e2;}
+		.box-ratio02 .mark-guide p + p:before {background:#005cb9;}
 }
 
 @media (max-width: 768px) {

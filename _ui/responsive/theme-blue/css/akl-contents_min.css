@@ -354,6 +354,7 @@ html.scrollLock body {overflow:hidden;}
 .custom-message-header>p {font-size:24px;letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
 .custom-message-body {margin-top:40px; padding-bottom:50px; background-color:#f2f9fc;}
 .custom-message-body .message-detail { margin:20px 50px 0; padding:0 80px 50px; box-sizing:border-box; background:#fff;}
+.custom-message-body .message-detail .paging-wrap {margin-bottom:40px;}
 .custom-message-body .top-image>img {width:100%; height:auto;}
 .custom-message-body .top-image {margin-bottom:50px;}
 .message-detail .nca-footer-image {margin-top:35px;}
@@ -434,21 +435,22 @@ html.scrollLock body {overflow:hidden;}
 .flight-info .txt-airplane:before {content:'/'; position:absolute; top:0; left:0;}
 
 /* NPTS - 플래티늄 */
-.message-detail .box-top-text.platinum {  text-align: center; border-bottom:2px solid #333; position:relative; }
-.message-detail .box-top-text.platinum .name-title {padding: 65px 0 5px; color: #002f5f; font-size: 28px; line-height: 1.4; font-weight:700; margin-bottom: 0; letter-spacing: -1px }
-.message-detail .box-top-text.platinum .sub-text {font-size: 16px; padding-bottom:35px; margin-bottom: 0 }
+.message-detail .box-top-text.platinum {text-align: center; border-bottom:2px solid #333; position:relative;}
+.message-detail .box-top-text.platinum .name-title {padding:65px 0 5px; color: #002f5f; font-size: 28px; line-height: 1.4; font-weight:700; margin-bottom: 0; letter-spacing: -1px }
+.message-detail .box-top-text.platinum .sub-text {font-size: 16px; padding-bottom:35px; margin-bottom:0;}
 .message-detail .txt-tel {display:inline-block; padding-right:15px;}
-.message-detail .box-top-text.platinum button { position: absolute; right: 0; bottom:10px}
+.message-detail .box-top-text.platinum button {position:absolute; right:0; bottom:10px}
 .message-detail .custom-message.type-platinum li:first-child { margin-top:20px; border:0}
 .message-detail .custom-message.type-platinum li h3 {padding: 20px 0; }
-.message-detail .custom-message.type-platinum li div label { font-size:14px; }
-.message-detail .custom-message.type-platinum li div > span { display: block; margin-bottom:20px }
+.message-detail .custom-message.type-platinum li div label {font-size:14px;}
+.message-detail .custom-message.type-platinum li div > span {display: block; margin-bottom:20px;}
 .message-detail .custom-message.type-platinum li div input[disabled] + label,
-.message-detail .custom-message.type-platinum li div input[readonly] + label { color: #bbb; }
-.message-detail .custom-message.type-platinum li div.panel { border:0;border-radius: 0; -webkit-box-shadow: none;box-shadow:none;}
-.message-detail .custom-message.type-platinum li div.panel .plat-sel { margin: 15px 0 0 30px;}
-.message-detail .custom-message.type-platinum li div.panel .plat-sel label  { margin-right:20px}
-.message-detail .custom-message.type-platinum li div.panel .plat-sel span {  margin-bottom:10px }
+.message-detail .custom-message.type-platinum li div input[readonly] + label {color:#bbb;}
+.message-detail .custom-message.type-platinum li div.panel {border:0;border-radius: 0; -webkit-box-shadow: none;box-shadow:none;}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel {margin:15px 0 0 30px;}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel label {margin-right:20px}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel span {margin-bottom:10px;}
+.message-detail .custom-message + .list-type2 {margin-top:30px;}
 
 /* 신규 ABO 프로모션 */
 .state-new-abo>h3 {padding:0; margin:37px 0 17px; font-size:16px; text-align:center; font-weight:normal}
@@ -811,11 +813,11 @@ html.scrollLock body {overflow:hidden;}
 .akl .amway-theme .qLegs-wrapper * {font-size:14px;}
 .akl .amway-theme .qLegs-wrapper .list-type2 * {font-size:13px;}
 .akl .amway-theme .tbl_top_info>h2 {margin:40px 0 17px;font-size:16px; color:#56565a; text-align:left;}
+
 .qLegs-wrapper .tbl_top_info {margin:40px 0 0;}
 .qLegs-wrapper .tbl_top_info .title-h6 + p {padding-top:13px;}
 .qLegs-wrapper .outer-border-bottom {margin:80px 0 0;}
 .qLegs-wrapper .topup-search {margin:40px 0 20px;}
-.qLegs-wrapper .table-scroll {position:relative; overflow:hidden; box-sizing:border-box;}
 .qLegs-wrapper .qlegTotal {display:table; width:100%; margin-top:10px; border:1px solid #dadada; border-width:1px 0;}
 .qLegs-wrapper .qlegTotal>strong {display:table-cell; box-sizing:border-box; vertical-align:middle; padding:25px 25px 22px 22px; min-width:247px}
 .qLegs-wrapper .qlegTotal .txtTit {width:18%;background:#f4f4f4;}
@@ -839,9 +841,8 @@ html.scrollLock body {overflow:hidden;}
 .akl .amway-theme .tbl-list th {min-width:60px;}
 .akl .amway-theme .tbl-list .bd-right0 {border-right:0;}
 
-.table-scroll {position:relative;}
 .table-wrap {width:100%;overflow:auto;}
-.table-scroll  {position:relative; border:0px solid blue;}
+.table-scroll {position:relative; overflow:hidden; box-sizing:border-box;}
 .table-scroll table {width:100%;margin:auto;border-collapse:separate;border-spacing:0;}
 .table-scroll th, .table-scroll td {padding:5px 10px; white-space:nowrap;vertical-align:top;}
 .table-scroll thead, .table-scroll tfoot {background:#f9f9f9;}
