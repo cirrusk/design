@@ -712,13 +712,21 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 
 /* 마이페이지 > 후원자정정 */
 .akl .sponsor-switch-wrapper .step-wrap .checkout-steps {margin-bottom:0;}
-.sponsor-switch-wrapper .step-wrap + .author-content {margin-top:37px;}
 .sponsor-switch-wrapper .tit-h2+div {margin-top:20px;}
-.sponsor-switch-wrapper .info-txt-btm {padding-top:40px; border-top:1px solid #dadada;}
+.sponsor-switch-wrapper .step-wrap + .author-content {margin-top:37px;}
+.sponsor-switch-wrapper .author-content .info-txt-btm {padding-top:40px; border-top:1px solid #e3e3e3;}
 
-.sponsor-switch-info .title-h6 {margin-top:37px; padding-bottom:17px;color:#56565a;}
+.sponsor-switch-info .title-h6 {margin-top:37px; color:#56565a;}
+.sponsor-seek > p {margin-bottom:0;}
+.sponsor-seek .form-wrapper {overflow:hidden; padding:20px 0 0;}
+.sponsor-seek .form-wrapper>label {float:left; width:100px; line-height:40px;}
+.sponsor-switch-info .info-txt-btm {margin-top:40px;}
+.sponsor-switch-info .agreement-box {overflow:hidden; margin-top:40px; padding-top:20px; border-top:1px solid #e3e3e3;}
+.sponsor-switch-info .agreement-box > p {float:left; margin:5px 0 0;}
+.sponsor-switch-info .agreement-box > span {float:right; }
 
 /* 후원자 정정 */
+/*
 .sponsor-certification {position:relative; display:table; width:100%; padding:20px 0; margin-top:15px; border:1px solid #e3e3e3; border-width:1px 0;}
 .sponsor-certification:after {content:''; position:absolute; top:20px; bottom:20px; left:50%; border-left:1px solid #e3e3e3;}
 .sponsor-certification>dl {display:table-cell; width:50%; text-align:center;}
@@ -731,7 +739,7 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 
 .certification-complete {padding:20px 0; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; text-align:center;}
 .certification-complete p { margin-bottom:15px;}
-.certification-complete .noti-suc {display:inline-block;  }
+.certification-complete .noti-suc {display:inline-block;  } */
 #terms .col .line { bottom: 0}
 
 .akl .account-profile__value { padding-top:0;vertical-align:middle;}
@@ -2407,18 +2415,28 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .modify-form-group .form-group label, .akl .modify-form-group .form-group div {line-height: 30px;}
 	p + .modify-form-group { padding: 15px 0 30px !important;}
 
+	/* 마이페이지 > 후원자정정 */
+	.sponsor-seek > p {margin-bottom:0;}
+	.sponsor-seek .form-wrapper {overflow:initial;}
+	.sponsor-seek .form-wrapper>label {display:none;}
+	.sponsor-seek .form-wrapper>.form-s {float:none;}
+
 	/* 후원자 정정 */
+	/*
 	.sponsor-certification:after {display:none;}
 	.sponsor-certification>dl {display:block; width:auto;}
 	.sponsor-certification dl>dt {position:relative; display:inline-block; padding-left:32px; line-height:2;}
 	.sponsor-certification:after {display:none}
-	.sponsor-certification dl + dl {width:auto; border-top: 1px solid #e3e3e3; padding-top:20px; margin-top: 20px;}
+	.sponsor-certification dl + dl {width:auto; border-top: 1px solid #e3e3e3; padding-top:20px; margin-top: 20px;} */
+
+	.akl .account-profile {padding:0;}
 
 	.akl .account-profile .address-form-group .account-profile__value { line-height: 140%; margin-bottom:15px }
 	.akl .account-profile__panel .panel-heading a {padding: 30px 10px 30px 5px;}
-	.akl .account-profile { padding: 0 0 4.5em;}
+
 	.akl .account-profile__panel .panel-collapse { padding: 0 0.6em 0 2.20em; }
 	.akl .address-form-group .bt-akl-white {right:0;}
+
 	.akl .account-profile.modify .name-form-group { position: relative;}
 	.akl .account-profile.modify .name-form-group label { position: absolute; left:0; width:200px }
 	.akl .account-profile.modify .name-form-group .account-profile__value { margin-left:100px;}
