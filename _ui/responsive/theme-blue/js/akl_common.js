@@ -890,15 +890,6 @@ function deliveryMSG(){
 				$msgList.hide();
 			});
 		});
-
-		$('html').on('click',function(){
-			$msgList.hide();
-		});
-	});
-
-	var stopPropagation_target = '.m-message, .delivery-msg-list';
-	$(stopPropagation_target).on('click',function(e){
-		e.stopPropagation();
 	});
 }
 
