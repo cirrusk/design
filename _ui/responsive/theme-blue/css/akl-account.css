@@ -17,9 +17,13 @@ Version : AKL Hybris UIUX 1.0
 .akl .akl-btn-wrap { text-align: center}
 .akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px;padding: 13px 40px;}
 
+/* 마이페이지 wrapper */
+.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper {padding:36px 50px 0; font-family:'Noto Sans KR', sans-serif;}
+
 /* ----- 회원가입----- */
-.akl .wrapper-memb-join {max-width: 1400px; margin: 0 auto;}
-.akl .wrapper-memb-join h2.tit-h2 {font-size:18px; color:#002f5f; padding:0 12px; font-weight:500}
+.akl .tit-h2 {font-size:18px; color:#002f5f; font-weight:500;}
+.akl .wrapper-memb-join {max-width:1400px; margin: 0 auto;}
+.akl .wrapper-memb-join h2.tit-h2 {padding:0 12px;}
 .akl .wrapper-memb-join p.tit-sub-txt { padding:0 12px;}
 .akl .wrapper-memb-join #terms .conditions {min-height:140px;}
 .akl .wrapper-memb-join #terms h3 {font-size:16px;}
@@ -315,10 +319,10 @@ Version : AKL Hybris UIUX 1.0
 .akl .seek-login-data.amway-theme .tabs-toggles {margin-right:0; margin-left:0;}
 .akl .seek-login-data input[type="radio"].amwa-radio:checked+label {color:#002f5f;}
 
-/* 본인확인 정보입력 */
+/* 본인확인 정보입력 (본인확인 완료 메시지 영역 없음) */
 .akl .author-content .validation-wrapper {padding-top:0;}
-.akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;}
 .akl .author-content .validation-wrapper.subBiz {height:190px; margin-top:50px;}
+.akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;}
 .akl .author-content .validation-wrapper.simpleMember {padding-bottom:30px;}
 .akl .author-content .author-tit {display:block;font-size:16px;}
 .akl .author-content.member .author-tit {padding-top:40px; border-top:1px solid #dadada;}
@@ -328,6 +332,9 @@ Version : AKL Hybris UIUX 1.0
 .akl .author-content .validation-box-simple .ty-input-name input[type=text],
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
 .akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
+
+/* 본인확인 (본인확인 완료 메시지 포함) */
+.akl .author-content.result-message .validation-wrapper.subBiz {height:auto; padding-top:190px;}
 
 /* ABO갱신 - 본인확인 box */
 .renew-authorization .end-control { text-align:center; padding-top:50px;}
@@ -702,6 +709,14 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 .email-send button {vertical-align:middle;}
 .email-send + .list-type5 { padding-top:25px}
 .list-type-wrap { padding-top:20px}
+
+/* 마이페이지 > 후원자정정 */
+.akl .sponsor-switch-wrapper .step-wrap .checkout-steps {margin-bottom:0;}
+.sponsor-switch-wrapper .step-wrap + .author-content {margin-top:37px;}
+.sponsor-switch-wrapper .tit-h2+div {margin-top:20px;}
+.sponsor-switch-wrapper .info-txt-btm {padding-top:40px; border-top:1px solid #dadada;}
+
+.sponsor-switch-info .title-h6 {margin-top:37px; padding-bottom:17px;color:#56565a;}
 
 /* 후원자 정정 */
 .sponsor-certification {position:relative; display:table; width:100%; padding:20px 0; margin-top:15px; border:1px solid #e3e3e3; border-width:1px 0;}
@@ -2093,6 +2108,9 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	/* 마이페이지 > header  */
 	.akl .go-block.col-sm-6{ position:static; width:300px;}
+
+	/* 마이페이지 wrapper */
+	.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper {padding:30px 0 0;}
 
 	/* ----- 회원가입 ----- */
 	/* 로그인 */
