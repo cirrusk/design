@@ -1962,11 +1962,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .bos-admin .join-choice .row span:nth-child(even) a {width:140px}
 .bos-admin .join-choice .row + .row {margin:60px 0 25px; padding-top:60px; border-top:1px solid #e3e3e3}
 
-.bos-admin .validation-wrapper > div[class^=valid-type] > p {width:50%}
-.bos-admin .validation-wrapper > .valid-type-phone > p {padding-left:16%}
-.bos-admin .validation-wrapper > .valid-type-ipin > p, .bos-admin .validation-wrapper > .valid-type-simple > p {padding-right:16%; left:50%}
-.bos-admin #market-validation-box {min-height:300px}
+.bos-admin .validation-wrapper {padding:0}
+.bos-admin .validation-wrapper>div>p {position:static; width:100%; border-left:0; padding:0}
+.bos-admin #market-validation-box {min-height:auto}
 .bos-admin .valid-type-ipin .validation-para strong:before {background:url(../images/akl_common/icon_validation_foreigner.png) 0 0 no-repeat !important}
+.bos-admin .validation-box-simple {padding-right:40%}
 .bos-admin .inp-date > * {vertical-align:middle}
 .bos-admin .inp-date input.form-control {width:175px;}
 .bos-admin .inp-date .date-range-icon {display:inline-block; width:15px; border-top:2px solid #ddd; margin:-2px 10px 0;}
