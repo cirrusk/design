@@ -234,6 +234,7 @@
 .akl .pin-icon.bg-pinlevel-feme {background: #fff url(../images/akl_common/business/bg_reward_feme.gif) no-repeat center  bottom; background-size:120px auto}
 .akl .business .tbl-list-board .tr>div.td.left-al {text-align:left;}
 
+.rewards-tale + .rewards-tale { margin-top: 40px}
 .rewards-tale .title-h6 { margin-bottom:20px;}
 .rewards-tale ul { background:#f6f6f6; padding:35px 0; overflow:hidden;}
 .rewards-tale li { float:left; width:20%; text-align:center;}
@@ -379,6 +380,31 @@
 .box-ratio02 .mark-guide p + p {  padding-left:30px}
 .box-ratio02 .mark-guide p:before {content:''; position:absolute; top:1px; left:10px; width:15px; height:15px;  background:#00b2e2;}
 .box-ratio02 .mark-guide p + p:before {background:#005cb9;}
+
+.box-diagram04 { overflow:hidden; position:relative; padding-bottom:15px}
+.box-diagram04-left { float:left; width:49.5%; background:#f6f6f6; height:353px; }
+.box-diagram04-right { float:right; width:49.5%; background:#f6f6f6; height:353px; }
+.box-diagram04 p.text-tit { text-align:center; padding:37px 0 20px;font-weight:500; font-size:18px; }
+.box-diagram04 p strong {color:#e11e45; font-weight:700; font-size:22px;}
+.box-diagram04 dl { float:left; width:50%; text-align:center; height:222px; }
+.box-diagram04 dl + dl { border-left:1px solid #e3e3e3 }
+.box-diagram04 dl dt{ font-size:14px!important; margin-bottom:10px; }
+.box-diagram04 dl dd{  }
+.box-diagram04 dl dd .text-hidden {display:block; width:200px; height:158px; text-indent:-999px; overflow:hidden; margin:0 auto }
+.box-diagram04 dl dd .list-type2 { text-align:left; padding:0 20px}
+.box-diagram04-left dl.case01 dd .text-hidden{background:url("../images/akl_common/business/img_rewards_travel23_pc.png") no-repeat 0 0;}
+.box-diagram04-left dl.case02 dd .text-hidden{background:url("../images/akl_common/business/img_rewards_travel23_pc.png") no-repeat right 0;}
+.box-diagram04-right dl { width:33.3333% }
+.box-diagram04-right dt { padding-top:35px; color:#002f5f; margin-bottom:5px!important;}
+.box-diagram04-right dd p {font-weight:500; }
+.box-diagram04-right dl dt em{ display:block;  height:72px; margin:0 auto 10px; text-indent:-999px; overflow:hidden; background:url("../images/akl_common/business/img_rewards_travel24_pc.png") no-repeat 0 0;}
+
+.box-diagram04-right dl.case01 dt em{ width:72px; background-position:0px 0px;}
+.box-diagram04-right dl.case02 dt em{ width:82px; background-position:-185px 0px;}
+.box-diagram04-right dl.case03 dt em{ width:92px; background-position:-370px 0px;}
+.box-diagram04 .plus { position:absolute; left:50%;top:24px; margin-left:-25px; width:50px; height:50px; border-radius:36px; background:#fff url(../images/akl_common/business/img_rewards_travel22_pc.png) no-repeat 12px -382px; text-indent:-999px;}
+
+.box-diagram04 .plus { position:absolute; left:50%;top:24px; margin-left:-25px; width:50px; height:50px; border-radius:36px; background:#fff url(../images/akl_common/business/img_rewards_travel22_pc.png) no-repeat 12px -382px; text-indent:-999px;}
 
 /* 비즈니스 > 사랑의 우수리 */
 .confirm-box-message:before {font-weight:400}
@@ -889,6 +915,13 @@ ul.woo-step-box li:last-child:before {background:none}
 	.woo-ex-price .sec + .sec {margin-top:20px}
 
 	.list_woo_donate ul li {width:50%}
+
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
+	.box-diagram04-left { float:none; width:100%; height:auto; margin-bottom:10px; padding-bottom:20px; overflow:hidden;}
+	.box-diagram04-right {float:none; width:100%; height:auto; padding-bottom:40px; overflow:hidden;}
+	.box-diagram04 .box-diagram04-right p.text-tit { margin-top:20px; padding-top:20px}
+	.box-diagram04 dl { height:auto; }
+	.box-diagram04 .plus {  top:50%;  margin-top:-25px; }
 }
 
 @media (max-width:970px){
@@ -905,45 +938,41 @@ ul.woo-step-box li:last-child:before {background:none}
 
 @media (max-width:851px){
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
-		.box-diagram03 { padding:20px 10px; }
-		.box-diagram03 .diag-calculation {max-width:100%; }
-		.box-diagram03 .diag-calculation .math-txt em {display: none;}
-		.box-diagram03 .diag-calculation>p {height: 1px; padding: 207px 0 0;margin: 0 auto;background: url(../images/akl_common/business/img_rewards_travel22_mob2.png) 50% 0 no-repeat;background-size: auto 207px;}
-		.box-ratio02 { padding:40px 20px 30px; }
+	.box-diagram03 { padding:20px 10px; }
+	.box-diagram03 .diag-calculation {max-width:100%; }
+	.box-diagram03 .diag-calculation .math-txt em {display: none;}
+	.box-diagram03 .diag-calculation>p { display:block; height: 1px; padding: 180px 0 0;margin: 0 auto;background: url(../images/akl_common/business/img_rewards_travel22_mob2.png) 50% 0 no-repeat;background-size:260px auto}
+	.box-ratio02 { padding:20px 10px; }
+	.box-ratio02 .box-diagram-table .box-diagram-left {position:relative; padding-left:80px; width:160px; text-align:left; margin:0 auto; font-size:12px; line-height:140%}
+	.box-ratio02 .box-diagram-table .box-diagram-left p { position:absolute; left:0; top:-3px; text-align:center; width:70px; height:70px; font-size:12px; padding-top:18px; line-height:120%}
+	.box-ratio02 .box-diagram-table .box-diagram-left p:before { top:100px; left:50%; margin-left:20px; }
+	.box-ratio02 ul { margin-left:0; margin-top:50px }
+	.box-ratio02 ul li.thead span{ line-height:120%; font-size:10px;}
+	.box-ratio02 ul li.thead span i{ font-size:10px; }
+	.box-ratio02 ul li.thead div span:nth-of-type(1) { width:28%;}
+	.box-ratio02 ul li.thead div span:nth-of-type(2) { width:20%;}
+	.box-ratio02 ul li.thead div span:nth-of-type(3) { width:21%;}
+	.box-ratio02 ul li.thead div span:nth-of-type(4) { width:31%;}
 
-		.box-ratio02 .box-diagram-table .box-diagram-left {position:relative; padding-left:100px; width:220px; text-align:left; margin:0 auto }
-		.box-ratio02 .box-diagram-table .box-diagram-left p { position:absolute; left:0; top:-10px; text-align: center; width:70px; height:70px; font-size:12px;}
-		.box-ratio02 .box-diagram-table .box-diagram-left p:before {  top:150px; left:50%; margin-left:20px; }
-		.box-ratio02 ul { margin-left:0; max-width:945px; margin-top:80px }
-		.box-ratio02 ul li{  overflow:hidden; }
-		.box-ratio02 ul li.thead span{ color:#002f5f; font-weight:500;font-size:13px;}
-		.box-ratio02 ul li.thead div { display:table; width:100%; clear:both;}
-		.box-ratio02 ul li.thead div span { display:table-cell; padding:10px 0; vertical-align:middle; text-align:center; }
-		.box-ratio02 ul li.thead div span:nth-of-type(1) { width:38%; border-bottom:1px solid #dedede;}
-		.box-ratio02 ul li.thead div span:nth-of-type(2) { width:20%; border-bottom:1px solid #dedede;}
-		.box-ratio02 ul li.thead div span:nth-of-type(3) { width:17%;}
-		.box-ratio02 ul li.thead div span:nth-of-type(4) { width:25%;}
-		.box-ratio02 ul li.thead span.line{ position:relative; padding-bottom:30px; margin-right:10px; padding-left:10px }
-		.box-ratio02 ul li.thead span.line i{ font-size:12px; }
-		.box-ratio02 ul li.thead span.line:after { content:""; position:absolute; right:0; left:10px; bottom:5px;height:15px; border:1px solid #dedede; border-bottom:0 }
-
-		.box-ratio02 ul li.tbody div { display:table; width:100%}
-		.box-ratio02 ul li.tbody div span {display:table-cell; padding:10px 0;font-size:14px; vertical-align:middle; text-align:center; position:relative;}
-		.box-ratio02 ul li.tbody div span:nth-of-type(1) { width:38%; border-bottom:1px solid #dedede;}
-		.box-ratio02 ul li.tbody div span:nth-of-type(2) { width:20%; border-left:1px solid #dedede; border-bottom:1px solid #dedede;}
-		.box-ratio02 ul li.tbody div span:nth-of-type(3) { width:42%; text-align:left;}
-		.box-ratio02 ul li.tbody div span em { display:block;  width:100%;  position:absolute; height:20px; top:50%; left:10px; margin-top:-10px;  }
-		.box-ratio02 ul li.tbody div span em mark {display:inline-block; position:relative; top:0; height:20px; line-height:20px; color:#fff; border-radius:0 24px 24px 0; white-space:nowrap; box-sizing:border-box; }
-		.box-ratio02 ul li.tbody div span em mark:nth-of-type(1){ width:37%; background:#00b2e2; z-index:2; padding:0 0 0 12px; }
-		.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { width:33%; background:#005cb9; margin-left:-20px; z-index:1; padding:0 0 0 32px; }
-		.box-ratio02 ul li.tbody:nth-of-type(3) div span em mark:nth-of-type(1){ width:50%; }
-		.box-ratio02 ul li.tbody:nth-of-type(4) div span em mark:nth-of-type(1){ width:60%; }
-		.box-ratio02 ul li.tbody:nth-of-type(5) div span em mark:nth-of-type(1){ width:69%; }
-		.box-ratio02 .mark-guide { padding:10px 0 0 58%; width:42%; }
-		.box-ratio02 .mark-guide p { display:inline-block; position:relative; padding-left:30px; font-size:12px; padding-right:10px}
-		.box-ratio02 .mark-guide p + p {  padding-left:30px}
-		.box-ratio02 .mark-guide p:before {content:''; position:absolute; top:1px; left:10px; width:15px; height:15px;  background:#00b2e2;}
-		.box-ratio02 .mark-guide p + p:before {background:#005cb9;}
+	.box-ratio02 ul li.tbody div { display:table; width:100%}
+	.box-ratio02 ul li.tbody div span {display:table-cell; padding:10px 0;font-size:10px; vertical-align:middle; text-align:center; position:relative;}
+	.box-ratio02 ul li.tbody div span i{ font-size:10px; }
+	.box-ratio02 ul li.thead span.line i {font-size: 10px;}
+	.box-ratio02 ul li.thead span.line {position: relative;padding-bottom: 30px; margin-right:0;padding-left: 10px;}
+	.box-ratio02 ul li.tbody div span:nth-of-type(1) { width:28%; padding:5px 5px}
+	.box-ratio02 ul li.tbody div span:nth-of-type(2) { width:20%; }
+	.box-ratio02 ul li.tbody div span:nth-of-type(3) { width:52%; }
+	.box-ratio02 ul li.tbody div span em mark { font-size:12px;}
+	.box-ratio02 ul li.tbody div span em mark:nth-of-type(1){ width:30%;  padding:0 0 0 5px; }
+	.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { width:40%; padding:0 0 0 25px; }
+	.box-ratio02 ul li.tbody:nth-of-type(3) div span em mark:nth-of-type(1){ width:40%; }
+	.box-ratio02 ul li.tbody:nth-of-type(4) div span em mark:nth-of-type(1){ width:50%; }
+	.box-ratio02 ul li.tbody:nth-of-type(5) div span em mark:nth-of-type(1){ width:59%; }
+	.box-ratio02 .mark-guide { padding:10px 0 0 51%; width:49%; }
+	.box-ratio02 .mark-guide p { display:inline-block; position:relative; padding-left:30px; font-size:10px; padding-right:10px}
+	.box-ratio02 .mark-guide p + p {  padding-left:30px}
+	.box-ratio02 .mark-guide p:before {content:''; position:absolute; top:1px; left:10px; width:15px; height:15px;  background:#00b2e2;}
+	.box-ratio02 .mark-guide p + p:before {background:#005cb9;}
 }
 
 @media (max-width: 768px) {
@@ -1189,13 +1218,28 @@ ul.woo-step-box li:last-child:before {background:none}
 	.ABOTAX-area .form-regist .form-group { width:100%;}
 	.ABOTAX-area .form-regist .form-group.abo-tex .bt-akl-white {right:0;}
 	.ABOTAX-area .form-regist .form-group.abo-tex span{ right:15px; }
-
 }
 
 @media (max-width: 500px) {
 	/* ABO TAX */
 	.akl .scroll-table.widthS-03 {overflow-x:scroll;}
 	.akl .scroll-table.widthS-03 .tblList02{ width:540px}
+	.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { width:48%; padding:0 0 0 25px; }
+
+	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
+	.box-diagram04 dl { float:none; width:auto; margin: 0 15px ;border-bottom:1px solid #e3e3e3; }
+	.box-diagram04 dl + dl { border-left:0; }
+	.box-diagram04 dl:last-child {border-bottom:0}
+	.box-diagram04 p.text-tit {padding: 30px 0 10px;}
+	.box-diagram04 dl dt { padding-bottom:10px!important;}
+	.box-diagram04 dl.case01 dd .text-hidden {height:145px;}
+	.box-diagram04-left { height:589px}
+	.box-diagram04-left dl.case02 { padding-top:40px;}
+	.box-diagram04-left dl.case01 dd .text-hidden {height:145px;}
+	.box-diagram04-right {padding-bottom:0;}
+	.box-diagram04-right dl { width:auto; padding-bottom:25px }
+	.box-diagram04-right dl.case01 dt { padding-top:10px}
+	.box-diagram04 .plus {  top:50%;  margin-top:-126px; }
 }
 
 @media (max-width: 360px) {
@@ -1210,6 +1254,9 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-ratio ul li.thead div span:nth-of-type(1),.box-ratio ul li.tbody div span:nth-of-type(1) { height:110px }
 	.box-diagram .diag-calculation>p {background-size: auto 68px !important;}
 	.box-diagram02 .diag-calculation>p { background-size: auto 96px ;}
+	.box-diagram03 { margin:18px 0 5px}
+	.box-diagram03 .diag-calculation>p { padding: 170px 0 0; background-size:240px auto}
+
 }
 
 /* MIN */
