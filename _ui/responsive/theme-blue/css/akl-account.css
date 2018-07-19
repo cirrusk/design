@@ -146,12 +146,12 @@ Version : AKL Hybris UIUX 1.0
 .validation-wrapper>div.valid-type-ipin .validation-para strong:before {background:url(../images/akl_common/icon_validation_ipin.png) 0 0 no-repeat;}
 .validation-wrapper>div.valid-type-simple .validation-para strong:before {background:url(../images/akl_common/icon_validation_simple.png) 0 0 no-repeat;}
 .validation-wrapper>div.valid-type-simple02 .validation-para strong:before {background:url(../images/akl_common/icon_validation_simple.png) 0 0 no-repeat;}
-
+.validation-wrapper>div.valid-type-simple02 >p {border-left: 0}
 /* 간편 본인인증 */
 .validation-box-simple {padding-right:50%; box-sizing:border-box;}
 .validation-box-simple .ty-input-name input[type=text],
 .validation-box-simple .ty-input-birth input[type=text] {width:280px;}
-.validation-box-simple .form-group label {font-size:14px; padding-left:0;}
+.validat  SOP (진행중)  ion-box-simple .form-group label {font-size:14px; padding-left:0;}
 .validation-box-simple .form-group .col {padding-left:0; padding-right:0;}
 .validation-box-simple .form-group .last-col { padding-right:0;}
 .validation-box-simple .form-group.mobile .row.form-item-row .input-part-1 {padding-left:0; padding-right:0;}
@@ -1933,11 +1933,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .menu-lock .form-group .col-md-8 {padding-left:0; position:relative;}
 .menu-lock .form-group .col-md-8 span{ display:block; margin-right:85px;}
 .menu-lock .form-group .col-md-8 .bt-akl-blue{ min-width:85px; position:absolute; right:0; top:0}
-.menu-lock-wrapper .next-control {text-align:center; margin-top: 40px;}
+.menu-lock-wrapper .next-control {text-align:center; margin-top:10px;}
 .akl .menu-lock-wrapper .author-content02 .validation-wrapper.subBiz { margin-top: 40px; }
 .akl .menu-lock-wrapper .author-content02 .author-tit { border-top:1px solid #dadada; padding-top:35px; font-size:16px  }
 .akl .menu-lock-wrapper .author-content02 .author-tit02 {display:block; padding-top:15px; font-size:16px; }
-.akl .menu-lock-wrapper .author-content-complete { border-bottom:1px solid #dadada; text-align:center; margin-bottom:30px; padding-top:30px; padding-bottom:35px;}
+.akl .menu-lock-wrapper .author-content-complete { text-align:center; margin-bottom:30px; padding-top:30px; padding-bottom:10px;}
 .akl .menu-lock-wrapper .author-content-complete .valid-result-box { margin-bottom:0}
 .akl .menu-lock-wrapper .author-content-complete .valid-result-box span { display:block; margin-top:12px}
 .menu-lock-wrapper .pw-set { margin-bottom:30px; }
@@ -3386,6 +3386,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.menu-lock-wrapper .valid-result-box {padding:0; margin-bottom:0; border-bottom:0; text-align: center;}
 
 	.menu-lock-wrapper .next-control {text-align: center; margin-top: 40px;}
+	.menu-lock-wrapper .withdrawal + .next-control { margin-top:10px !important;}
 	.akl .menu-lock-wrapper .author-content .validation-wrapper.subBiz { margin-top:30px; }
 	.akl .menu-lock-wrapper .author-content .author-tit { padding-top:35px; }
 	.menu-lock-wrapper .validation-wrapper>div[class^=valid-type]:nth-of-type(1) {padding: 0 0 30px;}
@@ -3395,18 +3396,15 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.menu-lock-choice li {  width:50%; }
 
 	/* 회원탈퇴 */
-	.withdrawal .form-group span.control-label { margin-bottom:5px; display:block;}
-	.validation-wrapper.case02 { padding-top:0; margin-top:30px;}
-	.validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
-	.validation-para-input { width:auto; margin:30px auto 0; padding-top:20px; border-top: 1px solid #dadada;  }
-
+	.akl .validation-wrapper.case02 { padding: 0; margin-top:30px;}
+	.menu-lock-wrapper .validation-wrapper.case02 >div[class^=valid-type]:nth-of-type(1) {padding:0;}
+	.akl .validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
 	.akl .withdrawal {border-bottom:1px solid #dadada; padding-bottom: 30px }
 	.akl .withdrawal .author-tit { margin-top:15px; margin-bottom:30px; }
-	.akl .withdrawal .form-group { max-width:540px }
-	.akl .withdrawal .form-group span.control-label {color: #002f5f; font-weight:500 }
+	.akl .withdrawal .form-group { max-width:100% }
+	.akl .withdrawal .form-group span.control-label { margin-bottom:5px; display:block;color: #002f5f; font-weight:500 }
 	.akl .withdrawal .form-group .col-md-4 { padding-left:0 }
-	.akl .validation-wrapper.case02 { padding-top:180px; margin-top:40px;}
-	.akl .validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
+	.akl .validation-para-input {margin-top:40px;}
 	.akl .validation-para-input .inner{ width:100%; }
 	.akl .validation-para-input .bt-akl-white { position:static;}
 	.akl .validation-para-input .control-label { width:100%; }
