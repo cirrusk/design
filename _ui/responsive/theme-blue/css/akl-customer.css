@@ -576,6 +576,9 @@ Version : AKL Hybris UIUX 1.0
 .compliance-area [class*="list-type"] > li, .compliance-area p[class*="list-type"] {padding-bottom:0;margin-bottom:3px;}
 .compliance-area [class*="list-type"] .txt-italic.ex {padding:3px 0 0 8px;margin:0;text-indent:0;}
 .compliance-area .list-type5 > li > strong, .compliance-area p.list-type5 > strong {display:block;margin-top:5px;}
+.compliance-area .list-type5 > li > dl {margin:10px 0;}
+.compliance-area .list-type5 > li > dl .numList {margin-top:5px;}
+.compliance-area .list-type5 + dl dt {margin:18px 0 5px;}
 
 .compliance-area .txtTopdiv p{margin-top:10px;}
 .compliance-area .txtTopdiv strong {display:block;}
@@ -594,6 +597,7 @@ Version : AKL Hybris UIUX 1.0
 .compliance-area .numList .tbl-type1 th + td {border-left: 1px solid #e3e3e3;}
 
 .compliance-area table + h2{margin:40px 0 20px; }
+.compliance-area table thead th {line-height:initial;}
 
 .compliance-area .accordion-custom .panel-title {position:relative;}
 .compliance-area .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
@@ -715,8 +719,8 @@ Version : AKL Hybris UIUX 1.0
 	.akl .compliance-area .scroll-table table {width:900px;}
 
 	.compliance-area .numList.type2 > li .numList > li {padding-left:0;}
-	.compliance-area .numList .tbl-type1 {table-layout:}
-	.compliance-area .numList .tbl-type1 th {font-size:.875em;line-height:1.5;padding:5px 0;}
+	.compliance-area .numList .tbl-type1 th {font-size:.875em;padding:5px 0;}
+	.compliance-area .list-type5 table thead th {font-size:.875em !important;padding:5px;}
 
 	/* 사이트맵 */
 	.sitemap-area h2, .sitemap-area h3 {text-align:center; font-size:20px}
