@@ -18,7 +18,11 @@ Version : AKL Hybris UIUX 1.0
 .akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px;padding: 13px 40px;}
 
 /* 마이페이지 wrapper */
-.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper {padding:36px 50px 0; font-family:'Noto Sans KR', sans-serif;}
+.akl .message-center-wrapper, .akl .authorization-step-wrapper,
+.akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper {padding:36px 50px 0; font-family:'Noto Sans KR', sans-serif;}
+
+/* 비즈니스> 후원자정정 wrapper */
+.akl .business .sponsor-switch-wrapper {padding:36px 0 0;}
 
 /* ----- 회원가입----- */
 .akl .tit-h2 {font-size:18px; color:#002f5f; font-weight:500;}
@@ -331,10 +335,13 @@ Version : AKL Hybris UIUX 1.0
 .akl .amway-theme .author-text, .akl .amway-theme .author-text * {font-size:14px;}
 .akl .author-content .validation-box-simple .ty-input-name input[type=text],
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
+.akl .wrapper-memb-join .author-content .author-text {}
 .akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
 
 /* 본인확인 (본인확인 완료 메시지 포함) */
 .akl .author-content.result-message .validation-wrapper.subBiz {height:auto; padding-top:190px;}
+.akl .business .sponsor-switch-wrapper .author-content .author-tit {font-size:18px; color:#002f5f; letter-spacing:-0.025em;}
+.akl .business .sponsor-switch-wrapper .author-content .author-text{font-size:16px; letter-spacing:-0.025em;}
 
 /* ABO갱신 - 본인확인 box */
 .renew-authorization .end-control { text-align:center; padding-top:50px;}
@@ -727,7 +734,11 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 .sponsor-switch-info .info-txt-btm {margin-top:40px;}
 .sponsor-switch-info .agreement-box {overflow:hidden; margin-top:40px; padding-top:20px; border-top:1px solid #e3e3e3;}
 .sponsor-switch-info .agreement-box > p {float:left; margin:5px 0 0;}
-.sponsor-switch-info .agreement-box > span {float:right; }
+.sponsor-switch-info .agreement-box > span {float:right;}
+
+/* 비즈니스 > 후원자 정정 */
+.business .sponsor-switch-wrapper.request-status .info-txt-btm {margin-top:40px; padding-top:30px; border-top:1px solid #e3e3e3;}
+.business .sponsor-switch-wrapper.request-status h2>em {display:inline-block; margin-left:5px; letter-spacing:.025em;}
 
 /* 후원자 정정 */
 /*
@@ -2165,7 +2176,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.validation-wrapper>div:nth-last-child(1) {border-bottom:0;}
 
 	/* 본인확인 (본인확인 완료 메시지 포함) */
-	.akl .author-content.result-message .validation-wrapper.subBiz {padding-top:0;}
+	.akl .author-content.result-message .validation-wrapper.subBiz {padding-top:0; margin-bottom:0}
 
 	/* 본인확인 box */
 	.renew-authorization {padding:0 20px; margin-top:20px;}
