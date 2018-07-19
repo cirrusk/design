@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -36,7 +36,7 @@
 			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li>
-					<li><a href="#">마이페이지</a></li> 
+					<li><a href="#">마이페이지</a></li>
 					<li>회원탈퇴</li>
 				</ol>
 			</div>
@@ -139,38 +139,93 @@
 		<!-- container-fluid -->
 		<div class="container-fluid main-container">
 			<div class="row amway-theme menu-lock-wrapper">
-				<h1 class="icon-sub-title withdrawal-title">회원탈퇴 </h1>  
-				<div class="author-content02"> 
+				<h1 class="icon-sub-title withdrawal-title">회원탈퇴 </h1>
+				<div class="author-content02">
 					<strong class="author-tit02">본인확인 (주사업자)</strong>
 					<div class="validation-wrapper case02">
-						<div class="valid-type-phone">
+						<div class="valid-type-simple02">
 							<p class="validation-para">
-								<strong>휴대폰 본인확인</strong>
-								<span>고객님 명의로 된 휴대폰을 통해 본인을<br>  확인합니다.</span>
-								<a href="#" class="bt-akl-blue js-btn-show" id="SpouseAuthentication_Mobile">SMS 인증</a>
-							</p> 
+								<strong>간편 본인확인</strong>
+								<span>고객님의 이름과 생년월일, 휴대폰번호로 <br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
+							</p>
+
 							<div class="validation-para-input">
-								<div class="form-group">
-									<label class="control-label" for="url">인증번호 입력</label>
-									<div class="col-xs-12">
-										<div class="inputw">
-											<input type="text" class="form-control" id="url">
-											<p>남은시간 : 259초</p>
+								<p class="fsize16"><strong>회원정보에 등록하신 휴대폰 번호로 인증이 가능합니다.</strong></p>
+								<p>모든 입력 항목은 필수 항목입니다.</p>
+								<div class="inner">
+									<div class="form-group type02">
+										<label class="col-md-2 control-label" for="mainOperatorEngName">이름</label>
+										<div class="col-md-10 col-xs-12">
+											<input type="text" class="form-control" id="mainOperatorEngName">
 										</div>
-										<button type="button" class="bt-akl-white">확인</button>
 									</div>
+									<div class="form-group type02">
+										<label class="col-md-2 control-label" for="mainOperatorEngDate">법정생년월일</label>
+										<div class="col-md-10 col-xs-12">
+											<input type="text" class="form-control" id="mainOperatorEngDate">
+											<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. (예: 19800323)</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">성별</label>
+										<div class="col-md-10 col-xs-12 select-gender">
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label" for="selectGenderMale">
+													<input type="radio" name="radio-gender" checked="checked" class="amw-global-radio" id="selectGenderMale">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">남</span>
+												</label>
+											</div>
+											<div class="radio-wrapper">
+												<label class="amw-radio-wrap radio-label" for="selectGenderFemale">
+													<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderFemale">
+													<span class="amw-radio-overlay"></span>
+													<span class="amw-label-radio-text">여</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label" for="mainOperatorPhone">휴대폰 번호</label>
+										<div class="col-md-10 col-xs-12">
+											<div class="row form-item-row">
+												<div class="col-md-3">
+													<select class="form-control" id="mainOperatorPhone">
+														<option>선택</option>
+														<option>012</option>
+													</select>
+												</div>
+												<div class="col-md-9">
+													<input type="text" class="form-control" placeholder="‘-’없이 입력" title="전화번호 뒷자리 입력">
+												</div>
+												<button type="button" class="bt-akl-white">인증번호 전송</button>
+											</div>
+
+											<div class="form-group validation">
+												<label class="control-label" for="url">인증번호 입력</label>
+												<div class="inputw">
+													<input type="text" class="form-control" id="url">
+													<button type="button" class="bt-akl-blue">확인</button>
+													<p>남은시간 : 259초</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
 								</div>
 							</div>
 							<div class="valid-progress">
 								<p class="valid-result-box on"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
 							</div>
 						</div>
-						 
-					</div> 
-				</div> 
+
+					</div>
+				</div>
 				<div class="next-control">
 					<button type="button" class="bt-akl-blue">탈퇴</button>
-					<!-- <button type="button" class="bt-akl-blue">다음</button> --> 
+					<!-- <button type="button" class="bt-akl-blue">다음</button> -->
 					<button type="button" class="bt-akl-txt">취소</button>
 				</div>
 			</div>
