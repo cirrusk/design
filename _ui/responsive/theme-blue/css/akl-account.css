@@ -145,6 +145,7 @@ Version : AKL Hybris UIUX 1.0
 .validation-wrapper>div.valid-type-phone .validation-para strong:before {background:url(../images/akl_common/icon_validation_mobile.png) 0 0 no-repeat; top:2px; left:3px; width:22px;}
 .validation-wrapper>div.valid-type-ipin .validation-para strong:before {background:url(../images/akl_common/icon_validation_ipin.png) 0 0 no-repeat;}
 .validation-wrapper>div.valid-type-simple .validation-para strong:before {background:url(../images/akl_common/icon_validation_simple.png) 0 0 no-repeat;}
+.validation-wrapper>div.valid-type-simple02 .validation-para strong:before {background:url(../images/akl_common/icon_validation_simple.png) 0 0 no-repeat;}
 
 /* 간편 본인인증 */
 .validation-box-simple {padding-right:50%; box-sizing:border-box;}
@@ -1952,29 +1953,39 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .menu-lock-choice li:first-child [type=checkbox]:checked+label {font-weight:500}
 .panel-body .next-control { padding-bottom:10px;}
 /* 회원탈퇴 */
-.withdrawal {border-bottom:1px solid #dadada; padding-bottom: 30px }
-.withdrawal .author-tit { margin-top:15px; margin-bottom:30px; }
-.withdrawal .form-group { max-width:540px }
-.withdrawal .form-group span.control-label {color: #002f5f; font-weight:500 }
-.withdrawal .form-group .col-md-4 { padding-left:0 }
-.validation-wrapper.case02 { padding-top:180px; margin-top:40px;}
-.validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
-.validation-para-input { width:370px; margin:0 auto; }
-.akl .amway-theme .validation-para-input label {color: #56565a; }
-.akl .amway-theme .validation-para-input .bt-akl-white { min-width:75px; padding:0; position:absolute;right:0; top:0}
-.akl .amway-theme .validation-para-input .control-label { width:27%; float:left}
-.akl .amway-theme .validation-para-input .col-xs-12 { width:73%; padding:0; position:relative;}
-.akl .amway-theme .validation-para-input .inputw { padding:0; margin-right: 85px}
-.akl .amway-theme .validation-para-input .inputw p { color:#002f5f; font-size:13px; margin-top:5px; font-weight:500}
-.withdrawal .list-type5 { margin-top:-15px}
-.withdrawal .list-type5 li{ margin-bottom: 13px; line-height:150%}
-.withdrawal .list-type5 li strong { display:block;}
-.withdrawal .list-type5 .radio-wrapper div { margin-top:8px;}
-.withdrawal-action { border-top:1px solid #dadada; padding-top:37px; margin-top:14px;}
-.withdrawal-action p { font-size:16px; font-weight:500; margin-bottom:25px;}
-.withdrawal-action .radio-wrapper { text-align:right;}
-.withdrawal-action .list-type2 { margin-top:-20px; margin-bottom:10px }
-.withdrawal-action .list-type2 .bt-akl-white { margin-left:10px; font-style:normal;}
+.akl .withdrawal {border-bottom:1px solid #dadada; padding-bottom: 30px }
+.akl .withdrawal .author-tit { margin-top:15px; margin-bottom:30px; }
+.akl .withdrawal .form-group { max-width:540px }
+.akl .withdrawal .form-group span.control-label {color: #002f5f; font-weight:500 }
+.akl .withdrawal .form-group .col-md-4 { padding-left:0 }
+.akl .validation-wrapper.case02 { padding-top:180px; margin-top:40px;}
+.akl .validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
+.akl .validation-para-input { border-top:1px solid #dadada; border-bottom:1px solid #dadada; padding:37px 0 10px; margin-bottom: 40px; }
+.akl .validation-para-input .inner{ width:586px; margin-top:30px}
+.akl .validation-para-input .bt-akl-white { min-width:140px; padding:0; position:absolute;right:0; top:0}
+.akl .validation-para-input .control-label { width:150px; float:left;padding-left:0}
+.akl .validation-para-input .col-xs-12 { width:432px; padding:0; position:relative;}
+.akl .validation-para-input .col-md-3 { padding:0}
+.akl .validation-para-input .col-md-9 { padding:0 0 0 10px}
+.akl .validation-para-input .col-md-9 input { width:163px;}
+.akl .validation-para-input .col-md-9 button { width:140px;}
+.akl .validation-para-input .type02 .col-md-10 input { width:280px;}
+.akl .validation-para-input .form-group.validation {  margin-top: 10px}
+.akl .validation-para-input .form-group.validation .control-label { width:118px; color:#56565a}
+.akl .validation-para-input .form-group.validation input { width:163px;}
+.akl .validation-para-input .form-group.validation .inputw { padding:0; display:inline-block; }
+.akl .validation-para-input .form-group.validation .inputw p { color:#002f5f; font-size:13px; margin-top:5px; font-weight:500}
+.akl .validation-para-input .form-group.validation .bt-akl-blue { min-width:70px; margin-left:8px}
+.akl .withdrawal .list-type5 { margin-top:-15px}
+.akl .withdrawal .list-type5 li{ margin-bottom: 13px; line-height:150%}
+.akl .withdrawal .list-type5 li strong { display:block;}
+.akl .withdrawal .list-type5 .radio-wrapper div { margin-top:8px;}
+.akl .withdrawal-action { border-top:1px solid #dadada; padding-top:37px; margin-top:14px;}
+.akl .withdrawal-action p { font-size:16px; font-weight:500; margin-bottom:25px;}
+.akl .withdrawal-action .radio-wrapper { text-align:right;}
+.akl .withdrawal-action .list-type2 { margin-top:-20px; margin-bottom:10px }
+.akl .withdrawal-action .list-type2 .bt-akl-white { margin-left:10px; font-style:normal;}
+.akl .author-content02 + .next-control { border-top:1px solid #dadada; padding-top:40px }
 
 /* BOS 회원가입 */
 .bos-admin .join-choice {margin:0 auto; max-width:1100px}
@@ -3388,11 +3399,27 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.validation-wrapper.case02 { padding-top:0; margin-top:30px;}
 	.validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
 	.validation-para-input { width:auto; margin:30px auto 0; padding-top:20px; border-top: 1px solid #dadada;  }
-	.akl .amway-theme .validation-para-input .bt-akl-white { float:right}
-	.akl .amway-theme .validation-para-input .control-label { width:100%; float:none}
-	.akl .amway-theme .validation-para-input .col-xs-12 { width:100%}
-	.akl .amway-theme .validation-para-input .col-xs-8 { width:80%}
-	.akl .amway-theme .validation-para-input .col-xs-8 p { color:#002f5f; font-size:13px; margin-top:5px; font-weight:500}
+
+	.akl .withdrawal {border-bottom:1px solid #dadada; padding-bottom: 30px }
+	.akl .withdrawal .author-tit { margin-top:15px; margin-bottom:30px; }
+	.akl .withdrawal .form-group { max-width:540px }
+	.akl .withdrawal .form-group span.control-label {color: #002f5f; font-weight:500 }
+	.akl .withdrawal .form-group .col-md-4 { padding-left:0 }
+	.akl .validation-wrapper.case02 { padding-top:180px; margin-top:40px;}
+	.akl .validation-wrapper.case02>div[class^=valid-type]>p {width: 100%; margin-bottom:0}
+	.akl .validation-para-input .inner{ width:100%; }
+	.akl .validation-para-input .bt-akl-white { position:static;}
+	.akl .validation-para-input .control-label { width:100%; }
+	.akl .validation-para-input .col-xs-12 { width:100%; padding:0; position:relative;}
+	.akl .validation-para-input .col-md-3 { display:inline-block;width:100px}
+	.akl .validation-para-input .col-md-9 { display:inline-block;width:calc( 100% - 100px ); margin-bottom:10px }
+	.akl .validation-para-input .col-md-9 input { width:100%;}
+	.akl .validation-para-input .col-md-9 button { width:140px; margin-top:10px;}
+	.akl .validation-para-input .type02 .col-md-10 input { width:100%;}
+	.akl .validation-para-input .form-group.validation .control-label { width:100%; font-weight:500!important; }
+	.akl .validation-para-input .form-group.validation .inputw { width:100%; position:relative;}
+	.akl .validation-para-input .form-group.validation .inputw input {width:calc( 100% - 90px ); }
+	.akl .validation-para-input .form-group.validation .inputw .bt-akl-blue {  position:absolute; right:0; top:0 }
 
 	/* 간편가입 */
 	.akl .easy-wrap .shopping-cart-item-list .product-list-item .product-item-element .qty-label{margin-top:0}
