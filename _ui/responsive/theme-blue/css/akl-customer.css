@@ -568,8 +568,13 @@ Version : AKL Hybris UIUX 1.0
 .akl .compliance-list li a:after {content:""; position:absolute; right:0; top:4px; content: '\e258'; color:#0075a4; font-size:15px; font-family: 'Glyphicons Halflings';}
 
 .akl .amway-theme .compliance-area h2 {font-size:16px; font-weight:500; margin:28px 0 20px; text-align:left; letter-spacing:-1px } /** akl-business.css : .akl .amway-theme .business-guide-wrap h2 와 동일 스타일가이드 */
-.akl .amway-theme .compliance-area h3 {font-size:14px; font-weight:500; margin:28px 0 18px; color:#55565a }
+.akl .amway-theme .compliance-area h3 {font-size:14px; font-weight:500; margin:22px 0 12px; color:#55565a }
 
+.compliance-area ul.list-type1 {margin:3px 0 0 0;}
+.compliance-area ul.list-type5 {padding-bottom:0;}
+/*.compliance-area ul.list-type5 > li > ul.list-type1 {margin-left:-10px;} */
+.compliance-area [class*="list-type"] > li, .compliance-area p[class*="list-type"] {padding-bottom:0;margin-bottom:3px;}
+.compliance-area [class*="list-type"] .txt-italic.ex {padding:3px 0 0 8px;margin:0;text-indent:0;}
 .compliance-area .list-type5 > li > strong, .compliance-area p.list-type5 > strong {display:block;margin-top:5px;}
 
 .compliance-area .txtTopdiv p{margin-top:10px;}
@@ -589,6 +594,10 @@ Version : AKL Hybris UIUX 1.0
 .compliance-area .numList .tbl-type1 th + td {border-left: 1px solid #e3e3e3;}
 
 .compliance-area table + h2{margin:40px 0 20px; }
+
+.compliance-area .accordion-custom .panel-title {position:relative;}
+.compliance-area .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
+.compliance-area .accordion-custom .pull-right:before {position:absolute;right:0;}
 
 .compliance-area .list-certifi {margin-top:30px; border-bottom:1px solid #e3e3e3}
 .compliance-area .list-certifi li {position:relative; min-height:220px; padding:40px 0 40px 170px; border-top:1px solid #e3e3e3}
