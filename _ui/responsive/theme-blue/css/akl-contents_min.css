@@ -70,6 +70,10 @@
 .tbl-list-board.type-row-block .tbody .tr:nth-of-type(even).no-result {background:#fff;}
 .tbl-list-board.type-row-block .mob-block .th {display:none;}
 
+/* table : tbody에서 th노출안함(모바일view) */
+.tbl-list-board.type-td-show .tr {text-align:center;}
+.tbl-list-board.type-td-show .tbody .mob-block>strong {display:none;}
+
 /* ----- 레이어 팝업 ----- */
 html.scrollLock body {overflow:hidden;}
 #mask { position:fixed; z-index:9998; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.5); opacity:0;}
@@ -1238,14 +1242,19 @@ table.clone thead, .clone tfoot{background:transparent;}
 
 	/* table : tbody에서 th block (모바일view - .tbl-list-view 와 비슷) */
 	.tbl-list-board.type-row-block .mob-block .th {display:block;}
-
 	.tbl-list-board.type-row-block .tbody .tr>div {padding:0;}
 	.tbl-list-board.type-row-block .tbody .tr .td {padding:13px 15px 15px; margin-bottom:0; border-top:1px solid #e3e3e3;}
 	.tbl-list-board.type-row-block .tbody .th {display:block; padding:7px 15px; color:#002f5f; background:#f4f4f4; border-top:1px solid #e3e3e3;}
 	.tbl-list-board.type-row-block .tr.no-result>div {padding:40px 0; border-top:1px solid #e3e3e3;}
 	.tbl-list-board.type-row-block .tr {border-top:0; text-align:left;}
 
-
+	/* table : tbody에서 th노출안함(모바일view) */
+	.tbl-list-board.type-td-show .thead {display:none;}
+	.tbl-list-board.type-td-show .tr {text-align:left;}
+	.tbl-list-board.type-td-show .mob-block {padding:0; margin:0;}
+	.tbl-list-board.type-td-show .mob-block>p {margin-bottom:0;}
+	.tbl-list-board.type-td-show .tbody .tr>.mob-block:nth-of-type(1) {margin-top:15px;}
+	.tbl-list-board.type-td-show .tbody .tr>.mob-block:nth-last-child(1) {margin-bottom:5px;}
 
 	/* ----- 마이페이지 ----- */
 	/* jump-menu
@@ -1574,6 +1583,13 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.barChartBox.coreBonus .axisHorizontal {left:90px;}
 	.barChartBox.coreBonus .axisHorizontal>div>span {left:-90px;}
 	.barChartBox.coreBonus>.chartLegend {left:12px;}
+
+	/* ----- 비즈니스 > 후원자 정정 현황 ----- */
+	.business .request-status .tbl-list-board.type-td-show .tr>div {float:none; padding:0 0 17px 20px;}
+	.business .request-status .btn-td button+button {margin-left:10px;}
+	.business .request-status .tbl-list-board.type-td-show .tbody .tr {border-top:0;}
+	.business .request-status .tbl-list-board.type-td-show .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
+	.business .request-status .tbl-list-board.type-td-show .tbody .tr:nth-of-type(even) {background:#f4f4f4;}
 
 	/* ----- ABO 갱신 ----- */
 	.layerBox .txt-ineligibility {padding:0 0 10px;}
