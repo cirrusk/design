@@ -178,7 +178,7 @@
 											<div class="row preferred-langauge-form-group">
 												<label class="col-md-2 account-profile__label">후원자</label>
 												<div class="col-md-10 account-profile__value">
-												   <button type="button" class="bt-akl-white mini" id="U60301a_lp1">후원자 정정</button>
+												   <button type="button" class="bt-akl-white mini">후원자 정정</button><!-- 수정 : 2018.07.18 (레이어 사용안함, U60301a_lp1 삭제) -->
 												</div>
 											</div>
 										</div>
@@ -617,11 +617,11 @@
 													</ul>
 													<div class="action amway-theme">
 														<span class="dis-block">
-															<input id="remember" type="checkbox" ng-checked="">
+															<input id="remember" type="checkbox">
 															<label for="remember" class="normal inline-label checklabel">휴대폰</label>
 														</span>
 														<span class="dis-block">
-															<input id="remember2" type="checkbox" ng-checked="">
+															<input id="remember2" type="checkbox">
 															<label for="remember2" class="normal inline-label checklabel">이메일</label>
 														</span>
 													</div>
@@ -648,9 +648,10 @@
 
 
 
-	<!-- 후원자 정정 팝업 -->
-	<div class="layerWrapper U60301a_lp1"><!-- 2018.03.05 div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidM"><!-- 2018.03.05 .layerBox 추가 -->
+	<!-- 후원자 정정 팝업  -->
+	<!-- 수정 : 2018.07.18 (레이어 사용안함, U60301a_lp1 삭제)
+	<div class="layerWrapper U60301a_lp1">
+		<div class="cbox layerBox popWidM">
 			<div class="cart-popup__dialog">
 				<div class="cart-popup__header">
 					<span class="cart-popup__header-text">후원자 정정
@@ -735,9 +736,9 @@
 								</div>
 							</form>
 						</div>
-						<!-- 2018.03.21 추가 -->
+						2018.03.21 추가
 						<p class="h4-txt">조회결과</p>
-						<!-- //2018.03.21 추가 -->
+						//2018.03.21 추가
 						<div class="table-content">
 							<div class="table-wrapper">
 								<table class="tbl-type1">
@@ -758,12 +759,12 @@
 										</tr>
 									</tbody>
 								</table>
-								<!-- 2018.03.21 추가 -->
+								2018.03.21 추가
 								<div class="search-no-result">조회결과가 없습니다.</div>
-								<!-- //2018.03.21 추가 -->
+								//2018.03.21 추가
 							</div>
 						</div>
-					   <!-- 스탭 2단계 정정 승인 중 일때 버튼
+					   스탭 2단계 정정 승인 중 일때 버튼
 						<p class="h4-txt">변경 할 후원자 정보</p>
 						<div class="table-content">
 							<div class="table-wrapper">
@@ -787,9 +788,9 @@
 								</table>
 							</div>
 						</div>
-						-->
 
-						<!-- 스탭 3단계 정정 승인 중 일때 버튼
+
+						스탭 3단계 정정 승인 중 일때 버튼
 						<p class="h4-txt">변경 할 후원자 정보</p>
 						<div class="table-content">
 							<div class="table-wrapper">
@@ -813,7 +814,7 @@
 								</table>
 							</div>
 						</div>
-						-->
+
 						<div class="list-type-wrap">
 							<ul class="list-type2">
 								<li>후원자 정정은 ABO가입 후 3개월 이내에 1회만 하실 수 있습니다.</li>
@@ -829,19 +830,19 @@
 						</div>
 					</div>
 				</div>
-				<!-- 2018.03.05 위치변경 -->
+				2018.03.05 위치변경
 				<div class="cart-popup__item-link">
 					<button type="button" class="bt-akl-blue">정정 신청</button>
 					<button type="button" class="bt-akl-txt">취소</button>
-					<!-- 스탭 2단계 정정 승인 중 일때 버튼
+					스탭 2단계 정정 승인 중 일때 버튼
 					<button type="button" class="bt-akl-blue">신청확인</button>
 					<button type="button" class="bt-akl-txt">정정취소</button>
-					-->
+
 				</div>
-				<!--// 2018.03.05 위치변경 -->
+				// 2018.03.05 위치변경
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--// 후원자 정정 팝업 -->
 
 	<!-- 주소찾기 팝업 -->
@@ -984,10 +985,11 @@
 		});
 
 		//akl 추가 : 팝업 2018.03.05 수정
+		/*
 		$('#U60301a_lp1').click(function(event) {
 			event.preventDefault();
 			layerPopOver(this,'.U60301a_lp1');
-		});
+		}); */
 
 		$('#U61000_lp1').click(function(event) {
 			event.preventDefault();

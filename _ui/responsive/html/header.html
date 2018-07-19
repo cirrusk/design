@@ -10,7 +10,7 @@
 						<div class="topbar__popover login-form authentication-js">
 						   <h1 class="login-form__title">암웨이에 오신 것을 환영합니다 !</h1>
 						   <!-- 2810.07.02 변경
-						   <iframe src="/_ui/responsive/html/iframe_login.html" title="로그인" class="iframe-login"></iframe>  
+						   <iframe src="/_ui/responsive/html/iframe_login.html" title="로그인" class="iframe-login"></iframe>
 						   <a class="login-form__link" href="#">아이디찾기</a>
 						   <a class="login-form__link" href="#">비밀번호찾기</a>
 						   <hr>
@@ -28,6 +28,22 @@
 					<h3 class="popover-title" style="display: none;"></h3>
 					<div class="popover-content">
 						<ul class="nav__links account-popover js-my-account-popover">
+							<!-- 잠금 비밀번호 해제 -->
+							<li class="account-popover__congratulation">
+								<input class="btn-primary button login-form__submit U60802_lp1" type="button" value="잠금 비밀번호 해제">
+							</li>
+							<li class="account-popover__congratulation">
+								<div class="account">
+									<div class="sys-message">
+										<div class="ico-wraper">
+										<i class="icon-caution"></i>
+										</div>
+										<span class="menu-rock">해당 정보에 잠금 설정이 되어있습니다.<br>위에 버튼을 눌러서 잠금을 해제하세요. </span>
+									</div>
+								</div>
+							</li>
+							<!--//  잠금 비밀번호 해제 -->
+
 							<!-- 맴버 로그인 후 -->
 							<li class="account-popover__congratulation">
 								<input class="btn-primary button login-form__submit" type="button" value="ABO 회원전환">
@@ -1071,40 +1087,40 @@
 													</div>
 												</div>
 											</div>
-											
+
 											<!-- 2018.07.05 추가 -->
 											<div class="panel panel-default overlay-menu-mobile__panel aklnew">
 												<div class="panel-heading overlay-menu-mobile__panel__heading" role="tab" id="navMenuMobHeading8">
 													<h4 class="panel-title">
-														<a class="panel-toggle collapsed" href="#"> 
-															<span class="title-element title-text">제품소식</span> 
+														<a class="panel-toggle collapsed" href="#">
+															<span class="title-element title-text">제품소식</span>
 														</a>
 													</h4>
 												</div>
 												<div id="navMenuMobCollapse8" class="panel-collapse collapse overlay-menu-mobile__panel__content" role="tabpanel" aria-labelledby="navMenuMobHeading8">
 													<div class="panel-body">
-														<div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory"> 
+														<div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
 															<ul>
 																<li><a href="#">신제품</a></li>
 																<li><a href="#">프로모션</a></li>
 																<li><a href="#">일시품절/단종</a></li>
-															</ul> 
+															</ul>
 														</div>
-														 
+
 													</div>
 												</div>
 											</div>
 											<div class="panel panel-default overlay-menu-mobile__panel aklnew">
 												<div class="panel-heading overlay-menu-mobile__panel__heading" role="tab" id="navMenuMobHeading8">
 													<h4 class="panel-title">
-														<a class="panel-toggle collapsed" href="#"> 
-															<span class="title-element title-text">나의 쇼핑정보</span> 
+														<a class="panel-toggle collapsed" href="#">
+															<span class="title-element title-text">나의 쇼핑정보</span>
 														</a>
 													</h4>
 												</div>
 												<div id="navMenuMobCollapse8" class="panel-collapse collapse overlay-menu-mobile__panel__content" role="tabpanel" aria-labelledby="navMenuMobHeading8">
 													<div class="panel-body">
-														<div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory"> 
+														<div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
 															<ul>
 																<li><a href="#">나의 주문내역</a></li>
 																<li><a href="#">나의 반품내역</a></li>
@@ -1114,7 +1130,7 @@
 																<li><a href="#">구매권한 양도/양수</a></li>
 															</ul>
 														</div>
-														 
+
 													</div>
 												</div>
 											</div>
@@ -1816,6 +1832,38 @@
 	<!--search end-->
 </header>
 
+<!-- 잠금 비밀번호 해제 2018.07.18 추가-->
+	<div class="layerWrapper U60802_lp1_pop">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">잠금 비밀번호 해제
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close" >
+						<img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+				</div>
+				<div class="cart-popup__content ShoppingCart">
+					<div class="cart-popup__item-info">
+						<div class="menurlock-pop">
+							<p class="menurlock-tit">해당 메뉴는 <strong>잠금 설정</strong>이 되어 있습니다. 잠금 비밀번호 4자리를 입력하세요.</p>
+							<div class="menurlock-opt">
+								<span class="tite-label">잠금 비밀번호 해제</span>
+								<span class="txte-wrap">
+									<input type="text" class="form-control" >
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="cart-popup__item-link">
+					<button type="button" class="bt-akl-blue">해제</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //잠금 비밀번호 해제 2018.07.18 추가 -->
 
 <script>
 $(function(){
@@ -1879,7 +1927,25 @@ $(function(){
 });
 </script>
 
+<script>
+$(function(){
+	$('.U60802_lp1').click(function(event){
+		event.preventDefault();
+		/** -----------------------------
+			<main></main>이 z-index가 낮아서 생기는 문제 해결용.
+			- load html에서 테스트 용으로 띄우는 레이어 이므로,
+			- 마크업 페이지에서만 사용합니다.
+			-----------------------------
+		*/
+		$('main').css('z-index','initial');
 
+
+		setTimeout(function(){
+			layerPopOver(this,'.U60802_lp1_pop');
+		},200);
+	});
+})
+</script>
 
 
 <!-- 사용안함 : 2018.05.14

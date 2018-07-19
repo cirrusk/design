@@ -265,7 +265,7 @@ h2[class^='title-'] {text-align:left; margin:0}
 .akl .icon-sub-title {position:relative; padding:0 0 36px; font-size:18px;letter-spacing:-2px; font-weight:500;font-family: 'Noto Sans KR', sans-serif !important;}
 .akl .icon-sub-title:after {content:''; display:block; position:absolute; top:0; left:-30px; width:20px; height:20px;font-family: 'AmwayIcons'!important;}
 .akl .icon-sub-title.message-title:after {top:7px; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
-.akl .icon-sub-title.sponsor-switch-title:after {top:7px; width:20px; height:20px; background:url('../images/akl_common/ico_message_center.png') no-repeat left top;}
+.akl .icon-sub-title.sponsor-switch-title:after {top:4px; width:20px; height:21px; background:url('../images/akl_common/ico_sponsor-switch.png') no-repeat; background-size:cover;}
 .akl .icon-sub-title.author-title {padding-bottom:15px;}
 .akl .icon-sub-title.author-title:after {top:1px; width:22px; height:22px; background:url('../images/akl_common/ico_author_person.png') no-repeat left top;}
 .akl .icon-sub-title.aboRenewal-title:after {content:'\e996'; top:1px; width:22px; height:22px; color:#0075a4; font-weight:normal;}
@@ -809,6 +809,7 @@ ul .ol-list { margin:10px 0 20px 15px}
 .akl .account-popover__scores p {font-size: 14px;}
 .akl .ico-wraper { margin-right:8px;}
 .akl .sys-message span {font-weight: 500; font-size: 14px; }
+.akl .sys-message span.menu-rock { margin-left:-30px; padding-left:30px; display:inline-block;}
 .account-popover__congratulation .account {padding: 10px 0}
 .account-popover__congratulation .account .sys-message + .sys-message {margin-top:5px;}
 .point-new {padding: 10px 0;position:relative; }
@@ -819,6 +820,14 @@ ul .ol-list { margin:10px 0 20px 15px}
 .point-new .point-area:after {position: absolute; content: ''; display: block; top:0; left:0; background: url(../images/akl_common/ico-point-management2.png) no-repeat left top; width:26px;height:26px; background-size:26px auto }
 .ccount-my { float:right; color:#56565a}
 .ccount-my b {color:#002f5f; }
+
+.menurlock-pop {}
+.menurlock-tit { }
+.menurlock-opt { overflow:hidden; margin:30px 0 20px;}
+.menurlock-opt .tite-label{ width:35%; float:left; font-weight: 500; color: #002f5f; margin-top: 10px;}
+.menurlock-opt .txte-wrap {width:65%;float:left;}
+.menurlock-opt input{ width:100%}
+
 /* header > mini cart */
 .akl .mini-cart-items-container .arrow { left: auto;  right: 23px; }
 .akl .mincart-open .mini-cart-items-container .arrow:before {top: 60px;}
@@ -1533,6 +1542,9 @@ label + .toolTip-wrapper {margin-left:6px;}
 
 	/* header > mini deshboard */
 	.akl .mDashboard {top: 63px !important;}
+	.menurlock-opt .tite-label{ width:100%;  margin-top:0; margin-bottom:10px}
+	.menurlock-opt .txte-wrap {width:100%; }
+	.menurlock-opt input{ width:100%}
 
 	/* header > mini cart */
 	.akl .mini-cart-items-container { top: 63px !important; }
