@@ -1108,6 +1108,57 @@
 .ico-fa-truck:before{content:'\f0d1';}
 .ico-fa-pencil:before{content:'\f040';}
 .ico-fa-barcode:before{content:'\f02a';}
+.ico-fa-tag:before{content:'\f02b';}
+.ico-fa-angle-down:before{content:'\f107';}
+.open .ico-fa-angle-down:before{content:'\f106';}
+
+
+/* ---- SOP 제품상세 ---- */
+
+/* SOP 제품상세 - 툴팁 */
+.auto-continue .toolTip-wrapper .tooltip-content {position:absolute;top:-88px;right:19px;display:none;width:243px;height:76px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
+.auto-continue .toolTip-wrapper .tooltip-content * {color:#555}
+.auto-continue .toolTip-wrapper .btn-tooltip {margin-top:7px;}
+.auto-continue .toolTip-wrapper.open .btn-tooltip:after {content:''; top:-15px; left:50%; height:10px; margin-left:-10px; background:red url(../images/tip-arrow.png) no-repeat; background-size:20px;}
+
+/* SOP 제품상세 */
+.pdp-info .product-main-info .addtocart-component.sop-pdp select {width:260px;}
+.pdp-info .product-main-info .addtocart-component.sop-pdp .qty-selector label {margin-right:0;}
+.akl .addtocart-component.sop-pdp .row:first-child {padding-bottom:0;}
+.akl .addtocart-component.sop-pdp .size-selector-container {margin-bottom:20px;}
+.addtocart-component.sop-pdp .control-label {min-width:90px; margin-right:0;}
+.addtocart-component.sop-pdp .auto-continue {padding-left:90px; margin-bottom:17px;}
+.addtocart-component.sop-pdp .add_to_cart_form {padding-bottom:30px; margin-bottom:15px;border-bottom:1px solid #e3e3e3;}
+
+/* 정기주문 혜택 */
+.addtocart-component.sop-pdp .benefits-tips strong.control-label {display:block; margin-bottom:15px; color:#002f5f;}
+.addtocart-component.sop-pdp .toggle-benefits {position:relative;border-radius:5px; padding:15px 40px 15px 30px; margin:0 0 30px; background:#f4f4f4;}
+.addtocart-component.sop-pdp .toggle-benefits>p {margin:0; padding-top:10px; tex-align:left;}
+.addtocart-component.sop-pdp .toggle-benefits>p:nth-of-type(1){padding-top:0;}
+.addtocart-component.sop-pdp .toggle-benefits strong.ico-fa-tag {display:inline-block; padding-left:22px; margin-right:10px; color:#0075a4;}
+.addtocart-component.sop-pdp .btn-tgg-list.ico-fa-angle-down {position:absolute; top:10px; right:5px; display:block; width:30px; height:30px;}
+.addtocart-component.sop-pdp .btn-tgg-list.ico-fa-angle-down:before{width:100%; height:30px; line-height:2; text-align:center;}
+
+.sop-more-benefits {overflow:hidden;}
+.sop-more-benefits.off {height:0;}
+.sop-more-benefits > p {margin:0; padding-top:10px;}
+.sop-more-benefits > p:first-child {padding-top:0;}
+
+
+
+@media (max-width:768px){
+	/* SOP 제품상세 */
+	.addtocart-component.sop-pdp .auto-continue {padding-left:30%;}
+	.addtocart-component.sop-pdp .row>.size-selector-container {overflow:hidden;}
+	.addtocart-component.sop-pdp .control-label {float:left; width:30%; min-width:auto; box-sizing:border-box;}
+	.addtocart-component.sop-pdp .control-label + select.form-control {float:left; width:70%;}
+
+	/* 정기주문 혜택 */
+	.addtocart-component.sop-pdp .benefits-tips strong.control-label {float:none; display:block;}
+	.addtocart-component.sop-pdp .toggle-benefits p>span {display:block;}
+	.addtocart-component.sop-pdp .toggle-benefits {padding:15px 40px 15px 20px;}
+}
+
 
 /* ---- SOP 공통 ---- */
 .akl .sop-container {padding:36px 50px 0;}
@@ -1154,10 +1205,17 @@
 .sop-container .akl-toggle-wrap {margin-bottom:30px;}
 .sop-container .akl-toggle-wrap.sort-order .accordion-custom {border:1px solid #dadada; border-width:1px 0;}
 
+/* 빠른검색 disabled - 사용여부 아직 모름*/
+.sop-container .panel .panel-heading .panel-title .disable{padding:1em 0;cursor:not-allowed;}
+.sop-container .panel .panel-heading .panel-title .disable *{cursor:not-allowed;color:#bbbbbb;}
+.sop-container .panel .panel-heading .panel-title .disable .fa-plus::before{content:'\f067';color:#bbbbbb;}
+
 /* 필터 조회 */
 .sop-container .toggle-buttons-container {display:none}
 .sop-container .toggle-buttons-container button span {color:#0075a4;}
-.sop-container .cuton-sel select {font-size:14px;font-weight:400;letter-spacing:-1px;color:#002f5f;}
+.sop-container .cuton-sel select {font-size:14px; font-weight:400; letter-spacing:-1px; color:#002f5f; a}
+.sop-container .new-select.form-wrapper select:nth-last-of-type(1){margin-right:0 !important;}
+.akl .sop-container .order-history-search-wrapper .form-wrapper{padding-right:0;}
 .akl .sop-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
 .akl .sop-container .order-history-search-wrapper .form-wrapper .cuton-sel {text-align: right;}
 
@@ -1513,15 +1571,6 @@
 #search-no-item{margin-top:30px;font-size:20px;font-weight:400;line-height:100px;text-align:center;color:#55565a;}
 .cycle-period-container{margin-bottom:15px;}
 .cycle-period-container .cycle-period{display:inline-block;}
-.mysop-start-container{position:relative;top:-20px;display:inline-block;}
-.mysop-start-container .control-label{position:relative;top:-15px;}
-.mysop-start-container .start-date{position:relative;top:23px;display:inline-block;}
-.mysop-start-container .auto-continue{position:relative;z-index:1111;margin-top:15px;}
-.mysop-start-container .auto-continue .checkbox-element-wrapper{width:auto!important;margin-right:0!important;}
-.mysop-start-container .auto-continue .auto-continue-text{position:relative;top:-6px;display:inline-block;vertical-align:middle;color:#002f5f;}
-.mysop-start-container .auto-continue .auto-continue-text i{position:relative;margin-left:5px;font-size:18px;}
-.mysop-start-container .auto-continue .i-tip{position:absolute;top:-88px;right:19px;display:none;width:243px;height:76px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
-.mysop-start-container .auto-continue .i-tip:before{position:absolute;top:74px;right:39%;display:block;width:20px;height:11px;content:'';background:url(../images/tip-arrow.png) no-repeat;background-size:20px;}
 
 .sop-container .warning-tip{display:none;}
 .sop-container .qty-amout-wrap>label.control-label{width:30px!important;}
@@ -1717,10 +1766,8 @@
 .sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li:last-child{border:0;}
 .sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li label{margin-top:10px;vertical-align:top;}
 .sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li span{display:inline-block;}
-/* .sop-container .panel .panel-heading .panel-title{cursor:not-allowed;} */
-.sop-container .panel .panel-heading .panel-title .disable{padding:1em 0;cursor:not-allowed;}
-.sop-container .panel .panel-heading .panel-title .disable *{cursor:not-allowed;color:#bbbbbb;}
-.sop-container .panel .panel-heading .panel-title .disable .fa-plus::before{content:'\f067';color:#bbbbbb;}
+
+
 
 
 
