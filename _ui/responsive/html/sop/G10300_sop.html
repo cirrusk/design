@@ -386,70 +386,54 @@ $(function(){
 
 /* SOP - 정기주문 혜택정보 노출 */
 function SOP_PDP_benefitsTips(){
-	var winWidth = $(window).width();
-	var _tggTarget = $('.toggle-benefits');
-	//console.log('fn실행 시작 : '+winWidth);
+	var _targetO = $('.toggle-benefits');
 
-	_tggTarget.each(function(){
-		winWidth = $(window).width();
+	//버튼
+	var $tggBTN = _targetO.find('.btn-tgg-list');
+	var $BtnText = $tggBTN.find('em.hidden');
 
-		var _btnArrw = $(this).find('.btn-tgg-list');
-		var _btnText = _btnArrw.find('em.hidden');
-		var sop_benefits = $(this).find('.sop-more-benefits');
-		var subItem = sop_benefits.find('>p');
+	//SOP혜택 목록
+	var sop_benefits = _targetO.find('.sop-more-benefits');
+	var subItem = sop_benefits.find('>p');
 
-		//혜택이 1개 인 경우, 화살표 숨김
-		if( subItem.length === 1 ){ _btnArrw.hide();}
+	//animate 적용할 높이값 구하기
+	var catchHeight;
+	var height_firstChild;
+	var height_wrapper;
 
-		//animate height
-		var height_firstChild = sop_benefits.find('>p').eq(0).outerHeight(true);
-		var height_wrapper = sop_benefits.outerHeight(true);
+	function moreBenefits(){
+		height_firstChild = sop_benefits.find('>p').eq(0).outerHeight(true);
+		height_wrapper = sop_benefits.outerHeight(true);
 
-		console.log(sop_benefits.offsetHeight);
+		catchHeight = setTimeout(function(){
+			sop_benefits.height(height_firstChild);
+		}, 600);
+	}
 
-		//winWidth = $(window).width();
-		//console.log('fnInner 1 : '+winWidth);
-		//console.log('fnInner 2(height_wrapper) : '+height_wrapper);
-
-		var catchHeight;
-		function moreBenefits(){
-			catchHeight = setTimeout(function(){
-				sop_benefits.removeClass('off').height(height_firstChild);
-			}, 500);
-		}
-
-		sop_benefits.addClass('off'); //높이값 체크하는 동안, height 0
+	moreBenefits();
+	$(window).on('resize',function(){
+		sop_benefits.attr('style','');
 		moreBenefits();
+	});
 
-		$(window).on('resize',function(){
-			sop_benefits.addClass('off');
+	//혜택이 1개 인 경우, 버튼 숨김
+	if( subItem.length === 1 ){ $tggBTN.hide();}
 
-			height_firstChild = sop_benefits.find('>p').eq(0).outerHeight(true);
-			height_wrapper = sop_benefits.outerHeight(true);
+	//버튼 클릭
+	$tggBTN.on('click',function(e){
+		e.preventDefault();
+		clearTimeout(catchHeight);
 
-			moreBenefits();
-		});
-
-		//버튼 클릭
-		_btnArrw.on('click',function(e){
-			e.preventDefault();
-			clearTimeout(catchHeight);
-
-			if( sop_benefits.hasClass('open')){
-				_btnText.text('정기주문 혜택 열기');
-
-				sop_benefits.removeClass('open');
-				sop_benefits.stop().animate({
-					height: height_firstChild
-				},'fast');
-			} else {
-				_btnText.text('정기주문 혜택 닫기');
-
-				sop_benefits.addClass('open');
-				sop_benefits.css('height','').delay(200).slideDown(500);
-			}
-		});
-
+		if( sop_benefits.hasClass('open')){
+			$BtnText.text('정기주문 혜택 열기');
+			sop_benefits.removeClass('open');
+			sop_benefits.stop().animate({ height: height_firstChild },'fast');
+		}
+		else {
+			$BtnText.text('정기주문 혜택 닫기');
+			sop_benefits.addClass('open');
+			sop_benefits.stop().animate({ height: height_wrapper },'fast');
+		}
 	});
 }
 </script>
