@@ -39,7 +39,7 @@
 .tbl-list-board * {font-size:14px;}
 .tbl-list-board .thead {display:table-header-group;}
 .tbl-list-board .tbody, .tbl-list-board .tfoot {display:table-row-group; font-size:14px;}
-.tbl-list-board .thead .tr>strong {text-align:center; display:table-cell; padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; background:#f4f4f4; border:1px solid #e3e3e3; border-width:1px 0;}
+.tbl-list-board .thead .tr>strong {text-align:center; display:table-cell; padding:10px 15px; color:#002f5f; font-size:13px; font-weight:500; background:#f4f4f4; border:1px solid #e3e3e3; border-width:1px 0; vertical-align:middle;}
 .tbl-list-board .tbody .tr>strong {display:none;}
 .tbl-list-board .tbody .tr:nth-of-type(even) { background:#f4f4f4;}
 .tbl-list-board .th {background:#f4f4f4;}
@@ -66,13 +66,15 @@
 /* table : tbody에서 th block (모바일view - .tbl-list-view 와 비슷) */
 .tbl-list-board.type-row-block .tr {text-align:center;}
 .tbl-list-board.type-row-block .tr>div p {margin-bottom:0;}
-.tbl-list-board.type-row-block .tr.no-result>div {padding:40px 0; border-top:0px solid #e3e3e3;}
+.tbl-list-board.type-row-block .tr.no-result>div {padding:40px 0;}
 .tbl-list-board.type-row-block .tbody .tr:nth-of-type(even).no-result {background:#fff;}
 .tbl-list-board.type-row-block .mob-block .th {display:none;}
 
 /* table : tbody에서 th노출안함(모바일view) */
 .tbl-list-board.type-td-show .tr {text-align:center;}
+.tbl-list-board.type-td-show .tr>div {border-top:0;}
 .tbl-list-board.type-td-show .tbody .mob-block>strong {display:none;}
+.tbl-list-board.type-td-show .tbody .mob-block>p {margin-bottom:0;}
 
 /* ----- 레이어 팝업 ----- */
 html.scrollLock body {overflow:hidden;}
