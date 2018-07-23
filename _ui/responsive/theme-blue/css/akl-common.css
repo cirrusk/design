@@ -352,6 +352,9 @@ input[type=radio]{border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflo
 [type="checkbox"]:not(:checked)+label {color:#56565a;}
 [type="checkbox"]:checked + label {color:#002f5f;}
 [type="checkbox"]:checked + label::after {top:6px;} /* 체크 V */
+[type=checkbox]:not(:checked)[disabled]+label {font-weight:400; color:#bbb !important;}
+[type=checkbox]:not(:checked)[disabled]+label::before {background:#f4f4f4 !important;}
+
 .akl [type="checkbox"]:not(:checked) + label::before {top:0;}
 .akl [type="checkbox"]:not(:checked) + label::before, .akl [type="checkbox"]:checked + label::before {width:20px; height:20px;}
 .checkbox-element-wrapper {line-height:0;}
