@@ -64,7 +64,8 @@ Editor : ji-min Park
 /* 라임트리 */
 .visual-area.type02.limetree-bottle{background: #ffffff url(../images/akl_product/one-for-one/bg_limetree_bottle.png) no-repeat top center;height:1106px;} /* 라임트리 티 */
 .visual-area.type02.limetree-tea{background: #ffffff url(../images/akl_product/one-for-one/bg_limetree_tea.png) no-repeat top center;height:930px;} /* 라임트리 보틀 */
-.visual-area.type02.limetree_collection{background: #ffffff url(../images/akl_product/one-for-one/bg_limetree_collection.png) no-repeat top center;height:993px;} /* 라임트리 보틀 */
+.visual-area.type02.limetree_collection{background: #ffffff url(../images/akl_product/one-for-one/bg_limetree_collection.png) no-repeat top center;height:993px;} /* 라임트리 TEA 컬렉션 */
+.visual-area.type02.limetree_capsule{background: #ffffff url(../images/akl_product/one-for-one/bg_limetree_capsule_collection.png) no-repeat top center;height:1069px;} /* 라임트리 캡슐 컬렉션 */
 
 
 .fleft{float:left !important;/*padding: 30px 0 0;*/}
@@ -501,6 +502,19 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .clean-one li:last-child .dsc span{display: table-cell;font-size:18px;font-weight:400;color:#871e94;text-indent: 0 !important;text-align: left;vertical-align: middle;}
 
 
+/*****************************************************************
+								 원포원 
+******************************************************************/
+
+.limetree-area .health-inform-box.capsule-type{border-top:0;}
+.capsule-img-area em.txt{display:block;font-size:16px;color:#808285;font-weight:300;text-align:center;margin: 28px 0 0;}
+.siehe-box ol{margin-top: 21px;}
+
+.capsule-new-area{}
+.capsule-new-area:after{content:"";clear:both;display:block;}
+.capsule-new-area.new{display: block;padding: 40px 40px 0;position: relative;/* z-index: 2; */height: 235px;}
+.capsule-new-area.new:after{display:inline-block;content:"NEW";width:97px;height:97px;border-radius: 50% 50%;box-sizing: border-box;background: #ffedf6;font-size: 20px;color: #e86d8a;font-weight: 300;line-height: 97px;top: -11px;left: 29px;position: absolute;z-index: 1;}
+
 
 @media (max-width: 768px) {
 	/* 스킨케어 뷰티 비주얼 영역 공통 */	
@@ -587,7 +601,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	/* 베이스 메이크업 공통 */
 	.base-makeup .visual-area .v-logo.beauty img{height:13px;}
 	.base-makeup .v-pro span img{width:auto;height: auto;}
-	/*.concealer-img-area .dsc{left:15%;}*/
 	
 	
 	/* 립메이크업 공통 */
@@ -622,8 +635,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.perl-water-lst > ul li .perl-area span img{width:90%;height:90%;}
 	.perl-water-lst > ul li .perl-area p{font-size: 14px;line-height: 1.2;}
 	
+	
+	/*원포원*/	
+	.capsule-img-area em.txt br{display:none;} /* 라임트리 캡슐세트 */
 
 }
+
 
 
 
@@ -663,6 +680,10 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	/* 홈앤리빙 */
 	.assistant-pr .effet-area{padding:25px 45px;}	
+	
+	/* 원포원 */
+	.capsule-img-area em.txt{margin:14px 0 0;} /* 라임트리 캡슐세트 */
+	
 }
 
 
