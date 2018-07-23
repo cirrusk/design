@@ -510,11 +510,12 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .capsule-img-area em.txt{display:block;font-size:16px;color:#808285;font-weight:300;text-align:center;margin: 28px 0 0;}
 .siehe-box ol{margin-top: 21px;}
 
+
 .capsule-new-area{}
 .capsule-new-area:after{content:"";clear:both;display:block;}
-.capsule-new-area.new{display: block;padding: 40px 40px 0;position: relative;/* z-index: 2; */height: 235px;}
-.capsule-new-area.new:after{display:inline-block;content:"NEW";width:97px;height:97px;border-radius: 50% 50%;box-sizing: border-box;background: #ffedf6;font-size: 20px;color: #e86d8a;font-weight: 300;line-height: 97px;top: -11px;left: 29px;position: absolute;z-index: 1;}
-
+.capsule-new-area.new{display: block;position: relative;padding-top:50px;padding-left:50px; max-width:391px;margin:0 auto}
+.capsule-new-area.new span.lime-new{position: absolute;display:inline-block;width:80px;height:80px;border-radius:50%;font-size: 20px;color: #e86d8a;font-weight: 300;line-height: 80px;top: 0;left: -10px;box-sizing: border-box;background: #ffedf6;z-index:3;}
+.capsule-new-area.new .lime-img{position: relative;display:block; z-index:5;}
 
 @media (max-width: 768px) {
 	/* 스킨케어 뷰티 비주얼 영역 공통 */	
@@ -651,7 +652,11 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	
 }
+@media (min-width: 769px) and (max-width: 900px) {
+	.capsule-new-area.new{padding-top: 35px;padding-left: 40px;}
+	.capsule-new-area.new span.lime-new{left:0;font-size: 16px;  width: 50px;height: 50px;line-height: 50px;}
 
+}
 
 
 @media (max-width: 576px) {
@@ -773,6 +778,9 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.perl-water-lst > ul li .perl-area span img{width:auto;height:auto;}
 	.perl-water-lst > ul li .perl-area p{min-height:0;margin-bottom:30px;}
 	.clean-one{margin-left:-30px;}	
+
+	.capsule-new-area.new{padding-top: 35px;padding-left: 40px;}
+	.capsule-new-area.new span.lime-new{font-size: 16px;left:0;width: 50px;height:50px;line-height:50px}
 }
 
 
@@ -821,6 +829,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	
 		
-	
+	.capsule-new-area.new{padding-top: 28px;padding-left: 28px;}
+	.capsule-new-area.new span.lime-new{left:0;font-size: 14px;  width: 35px;height: 35px;line-height: 35px;}
 }
 
