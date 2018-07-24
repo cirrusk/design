@@ -848,12 +848,12 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .espring-lst ul li ol.esp-num li span {display:table-cell;vertical-align:middle;color:#808285;font-size:16px;font-weight:300;text-align:left;}
 .espring-lst ul li ol.esp-num li span.n-wobn {width:25px;}
 
-.use-tbl {display:table;width:100%;box-sizing: border-box;table-layout:fixed;margin:25px auto;}
+.use-tbl {display:table;width:100%;box-sizing: border-box;table-layout:fixed;margin:25px auto 0;}
 .tbl-home1 {float:left;display:table;box-sizing: border-box;}
 .tbl-home1.geneal {width:60%;}
 .tbl-home1.drum {width:26%;}
 .tbl-home1.hand-wash {width:14%;}
-.tbl-home1 li.thead-tit {display:table;background:#bbbb;font-size:16px;font-weight:300;color:#fff;padding:15px 0;text-align:center;width:100%;box-sizing: border-box;}
+.tbl-home1 li.thead-tit {display:table;background:#bbbb;font-size:16px;font-weight:300 !important;color:#fff;padding:15px 0;text-align:center;width:100%;box-sizing: border-box;}
 .tbl-home1 li.tbody {display:table;box-sizing: border-box;vertical-align:middle;width:100%;padding:12px 0;background:#f4f4f4;border-bottom:1px solid #e3e3e3;font-size:14px;}
 .tbl-home1 li.tbody span {display:table-cell;vertical-align:middle;text-align:center;color:#808285;font-weight:300;}
 .tbl-home1 li.tbody .list-tit {width:30%;text-align:left;padding-left:40px;color:#56565a;min-height: 60px;}
@@ -887,6 +887,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 
 .tbl-home1.compare.type2 li.tbody .list-tit, 
 .tbl-home1.range.type2 li.tbody .list-tit{text-align:left;}
+.tbl-home1.range li.thead-tit span.th-tit {display:none;}
 
 /* col 1칸 */
 .tbl-home1.one-block {width:100%;}
@@ -899,10 +900,9 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .tbl-home1.hand-wash.type2, 
 .tbl-home1.wash-before {width:14%;}
 
-
-.com-tint {clear:both;padding:30px 0;margin:0 auto;}
+.com-tint {clear:both;display:block;padding:30px 0 0;margin:0 auto;}
 .com-tint dt {font-size:18px;font-weight:400}
-.com-tint dd {font-size:16px;font-weight:300;color:#808285;}
+.com-tint dd {font-size:16px;font-weight:300 !important;color:#808285;}
 
 
 /* 전자상거래 등에서의 제품정보제공 고시 */
@@ -1448,11 +1448,10 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 	.tbl-home1.range {width:100%;margin:20px 0 0}
 	.tbl-home1.range li.thead-tit span {display:table-cell;vertical-align:middle;text-align:center;}
-	.tbl-home1.range li.thead-tit span.th-tit {width:40%;}
+	.tbl-home1.range li.thead-tit span.th-tit {width:40%;display:inline-block;}
 	.tbl-home1.range li.thead-tit span.th-txt {width:60%;}
 	.tbl-home1.range li.tbody .list-tit {display:table-cell;width:40%;text-align:center;}
 	.tbl-home1.range li.tbody .txt-amount {display:table-cell;width:40%;text-align:center;}
-	
 	
 	.tbl-home1.three-block {width:100%;margin: 20px 0 0;}		
 	.tbl-home1.three-block li.thead-tit{padding: 15px 0;}	
