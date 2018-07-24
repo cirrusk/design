@@ -1188,12 +1188,13 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .tab-content .list-content.history{ padding-top:40px;}
 .akl div.pur-btn .txte-btn button.bt-akl-blue.mini {padding:0 10px 0 !important;line-height:20px; margin:1px 1px}
 .akl .list-content.history .con-list-item .pur-day span.txte-wrap {width: 100%;}
-.cont-inarea {clear:both;display:table;width:100%;table-layout:fixed;padding:35px 0 0;box-sizing:border-box;}
-.cont-inarea:after {content:'';clear:both;display:block;}
-.cont-inarea .d-left {display:table-cell;width:50%;}
+.cont-inarea {clear:both;display:block;width:100%; padding:30px 0 0;box-sizing:border-box;}
+.cont-inarea .d-right .list-type2 {margin-top:20px}
+/*.cont-inarea:after {content:'';clear:both;display:block;}
+ .cont-inarea .d-left {display:table-cell;width:50%;}
 .cont-inarea .d-right {display:table-cell;width:50%;text-align:right;}
-.cont-inarea .d-right .list-type2 {float:right;}
-
+.cont-inarea .d-right .list-type2 {float:right;}*/
+.cont-inarea + .paging-wrap { margin-top:30px}
 /* 나의 쇼핑정보 > 구매양도/양수 > 사용내역 */
 .akl .list-content.history {padding:40px 0 0}
 .akl div.all-ceek2 {width:4%;text-align:center;}
@@ -1254,9 +1255,9 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .list-row-title .pop-ass-quay {width:35%;padding:3px 10px;}
 
 .akl .poo-asslist-box .con-list-item .all-ceek {padding:6px 0}
-.akl .content-list .con-list-item > div.pop-ass-num {width:25%;padding:6px 20px}
-.akl .content-list .con-list-item > div.pop-ass-name {width:30%;padding:6px 10px}
-.akl .content-list .con-list-item > div.pop-ass-quay {width:35%;padding:0 10px;}
+.akl .content-list .con-list-item > div.pop-ass-num {width:25%;padding:6px 20px;text-align:center;}
+.akl .content-list .con-list-item > div.pop-ass-name {width:30%;padding:6px 10px; text-align:center;}
+.akl .content-list .con-list-item > div.pop-ass-quay {width:35%;padding:0 10px;text-align:center;}
 
 .pop-moreArea {display:none;}
 
@@ -1270,8 +1271,8 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .list-row-title .pop-ass-name2 {width:55%;padding:3px 10px}
 .akl .list-row-title .pop-ass-btn {width:15%;padding:3px 10px;}
 
-.akl .con-list-item  .pop-ass-num2 {width:30%;padding:6px 20px}
-.akl .con-list-item  .pop-ass-name2 {width:55%;padding:6px 10px}
+.akl .con-list-item  .pop-ass-num2 {width:30%;padding:6px 20px; text-align: center;}
+.akl .con-list-item  .pop-ass-name2 {width:55%;padding:6px 10px; text-align: center;}
 .akl .con-list-item  .pop-ass-btn {width:15%;padding:0 15px;text-align:right;}
 
 .akl .list-content.revenge .content-list {border-bottom:1px solid #d3d3d3;}
@@ -1300,8 +1301,8 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl div.rese-subje {width:46%;padding:0 20px 0 0;}
 .akl div.rese-period {width:19%;text-align:center}
 .akl div.rese-day {width:13%;padding:0 20px;text-align:center}
-.akl .content-list .con-list-item span.txte-wrap {vertical-align:middle; }
-.akl .content-list .con-list-item span.txte-wrap  span {font-size:14px;vertical-align:middle;padding:0;  }
+.akl .content-list .con-list-item span.txte-wrap {vertical-align:middle; text-align: center; }
+.akl .content-list .con-list-item span.txte-wrap  span {font-size:14px;vertical-align:middle;padding:0;  text-align: c }
 .akl .content-list .con-list-item span.txte-wrap  span.col-disabled {padding-top:5px;}
 
 /* 나의 쇼핑정보 > 제품구매 예약 > 상세보기 */
@@ -2851,10 +2852,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .con-list-item .pur-name span.txte-wrap em {padding-left:0;}
 
 	.cont-inarea {clear:both;display:table;width:100%;table-layout:fixed;padding:30px 0 0}
-	.cont-inarea:after {content:'';clear:both;display:block;}
+	/*.cont-inarea:after {content:'';clear:both;display:block;}
 	.cont-inarea .d-left {display:table;width:100%;}
 	.cont-inarea .d-right {display:table;width:100%;text-align:left;padding:20px 0 0}
-	.cont-inarea .d-right .list-type2 {float:none;}
+	.cont-inarea .d-right .list-type2 {float:none;}*/
 
 	/* 나의 쇼핑정보 > 구매권한 양도/양수 > 사용내역 */
 	.akl .list-content .list-row-title > div.all-ceek2 {width:15%;text-align:left;float:left;padding:0 20px;}
@@ -2911,7 +2912,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .poo-asslist-box .pop-list-detail .list-content .con-list-item span.txte-wrap { width:60%;}
 	.pop-moreArea {display:block;text-align:center;padding:20px 0 0}
 
-
+	.pop-assignment .list-content.revenge .list-row-title {padding:0;}
 
 	/* 나의 쇼핑정보 > 구매권한 양도 > 복수선택 팝업 */
 	.poo-prdlist ul li span.op-sub-num {width:65%;text-align:right;}
