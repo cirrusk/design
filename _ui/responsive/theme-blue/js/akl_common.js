@@ -1533,6 +1533,12 @@ function print_layerSection(){
 	var $btnPrint_layer = $('.layerWrapper .btn-print-it');
 	$btnPrint_layer.each(function(){
 		$(this).on('click',function(){
+			var $parents = $(this).parents('.layerWrapper');
+			var $printSec = $parents.find('.print-section');
+			if( $printSec.length === 0 ){
+				$parents.addClass('print-section-normal');
+			}
+
 			$('html').addClass('printReady_layer');
 			$(this).parent('.print-section').siblings().removeClass('set_printArea');
 			$(this).parent('.print-section').addClass('set_printArea');
@@ -1546,7 +1552,7 @@ function print_layerSection(){
 
 /* 인쇄 - 게시판 상세 페이지 */
 function print_pageBoard(){
-	var  btnClass = '.btn-printPage , .btn-ico-print, #PDP_Print';
+	var  btnClass = '.btn-printPage, .btn-ico-print, #PDP_Print';
 	var _btn_PrintPage = $(btnClass);
 	_btn_PrintPage.on('click', function(e){
 		e.preventDefault();
@@ -2058,6 +2064,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	$(closeBtn).on('click', function(e){
 		e.preventDefault();
 		$(targetLayer).find('.layerBox, .typeFullSizeView, .typeVideoView').attr('style','');
+		$(targetLayer).removeClass('print-section-normal'); //레이어 인쇄용 class 제거
 
 		if($(this).data('closeAll') === true){
 			var layerAll = $(document).find('.layerWrapper.active');
