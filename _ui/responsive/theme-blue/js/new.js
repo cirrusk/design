@@ -88,6 +88,12 @@ $(function(){
 	 */
 	// DOM 생성 완료 시 화면 숨김 (파라미터로 전달되는 id는 제외)
 	hideExclude("changeM");
+
+	var sopAddress = $('.sop-delivery-adress').find('#changeTextArea');
+	if(sopAddress.length){
+		hideExclude();
+	}
+
 	// radio change 이벤트
 	$("input[name=abnAdress]").change(function() {
 		var radioValue = $(this).val();
@@ -100,11 +106,16 @@ $(function(){
 		}
 	});
 
-	// 체크 되어 있는지 확인
-	var checkCnt = $("input[name=abnAdress]:checked").size();
-	if (checkCnt == 0) {
+	//주문/배송 : 체크 되어 있는지 확인
+	var checkCnt = $("input[name=abnAdress]:checked");
+	if (checkCnt.length === 0) {
 		// default radio 체크 (첫 번째)
-		$("input[name=abnAdress]").eq(0).attr("checked", true);
+		$("input[name=abnAdress]").eq(0).prop("checked", true).attr('checked', 'checked');
+	}
+
+	//SOP 배송지선택
+	if(sopAddress.length && checkCnt.length === 0){
+		$("input[name=abnAdress]").eq(0).prop("checked", false).attr('checked',false);
 	}
 
 	// text area 숨김

@@ -1166,7 +1166,6 @@
 .shopping-cart-item-list.mysop-item-list .product-list-item>[class*=list-item]{text-align:center;}
 .shopping-cart-item-list.mysop-item-list .list-item-option .color-img {margin-bottom:5px;}
 .mysop-product-detail-list {margin-top:40px;}
-.mysop-product-detail-list .list-content {border-bottom:1px solid #e3e3e3;}
 .mysop-product-detail-list .list-content .color-img {margin-bottom:5px;}
 .mysop-product-detail-list .list-content + .mysop-item-list{margin-top:40px;}
 .mysop-product-detail-list + .mysop-product-active {border-top:0;}
@@ -1174,6 +1173,31 @@
 .mysop-product-detail-list .list-content .mob-block {display:none;}
 .mysop-product-detail-list .list-content .content-list {text-align:center;}
 .mysop-product-detail-list .list-content .content-list .item-prdt-name {text-align:left;}
+
+/* ---- SOP 스마트 오더 목록 ---- */
+.akl .list-content.mysop-list-content {padding-top:0;}
+.list-content.mysop-list-content {border-bottom:1px solid #e3e3e3;}
+.list-content.mysop-list-content>.row {display:table-row;}
+.list-content.mysop-list-content>.row.list-row-title>div {border:1px solid #e3e3e3; border-width:1px 0;}
+.list-content.mysop-list-content>.row>div {border-bottom:0px solid #e3e3e3;}
+.list-content.mysop-list-content .content-list {text-align:center;}
+.list-content.mysop-list-content .content-list .item-name,
+.list-content.mysop-list-content .content-list .item-address {text-align:left;}
+.list-content.mysop-list-content .item-address>span {display:block; padding:15px 0;}
+
+/* ---- SOP 주문서 생성 ---- */
+.akl .shipping-delivery.sopCreate {margin-bottom:30px;}
+.shipping-delivery.sopCreate .cart-items-wrapper {padding:0;}
+.shipping-delivery.sopCreate .shipping-delivery-ship .pay-transaction {padding-right:40%;}
+
+.sop-delivery-adress #changeTextArea {padding-bottom:30px; border-bottom:1px solid #e3e3e3;}
+.sop-delivery-adress #changeTextArea .default-shipping-address,
+.sop-delivery-adress #changeTextArea .new-shipping-address {padding-left:40px; border-bottom:0px solid #e3e3e3;}
+.sop-order-name {padding:30px 0 30px; margin-bottom:30px; border:1px solid #e3e3e3; border-width:1px 0;}
+.sop-order-name>label {width:18%; min-width:90px;}
+.sop-order-name>input[type=text] {width:65%;}
+
+
 
 @media (max-width:768px){
 	/* ---- SOP제품 상세 ---- */
@@ -1205,6 +1229,29 @@
 	.mysop-product-detail-list .list-content .content-list .col-xs-12 {padding-left:0;}
 	.mysop-product-detail-list .list-content .mob-block {display:block; float:left;}
 	.mysop-product-detail-list .mob-block.blue {color:#002f5f !important; font-weight:500;}
+
+	/* ---- SOP 스마트 오더 목록 ---- */
+	.akl .list-content.mysop-list-content .list-row-title {border-top:0;}
+	.list-content.mysop-list-content {border-bottom:0;}
+	.list-content.mysop-list-content>.row {display:block;}
+	.list-content.mysop-list-content [class*=col-] {text-align:left;}
+	.list-content.mysop-list-content [class*=col-].item-card-info {text-align:right;}
+	.list-content.mysop-list-content .list-row-title .col-xs-12 {text-align:center;}
+	.list-content.mysop-list-content .list-row-title>div {padding-left:10px; text-align:left;}
+	.list-content.mysop-list-content .content-list {padding:10px 15px 23px;}
+	.list-content.mysop-list-content .content-list .col-xs-12 {padding-left:0;}
+	.list-content.mysop-list-content .content-list>div {padding:10px 0 0;}
+	.list-content.mysop-list-content .content-list .item-payment {padding-top:0;}
+	.list-content.mysop-list-content .content-list .item-payment>a {margin-top:13px;}
+	.list-content.mysop-list-content .item-address>span {padding:0;}
+
+	/* ---- SOP 주문서 생성 ---- */
+	.sop-delivery-adress #changeTextArea .default-shipping-address,
+	.sop-delivery-adress #changeTextArea .new-shipping-address {padding-left:30px;}
+	.sop-order-name {padding:0 0 30px; margin-bottom:30px; border-bottom:1px solid #e3e3e3}
+	.sop-order-name>label {width:30%; min-width:90px;}
+	.sop-order-name>input[type=text] {width:70%;}
+
 }
 
 

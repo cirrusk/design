@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>sop-existingprofile</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>정기주문&amp;스마트 오더 주문서 생성 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,76 +26,84 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_sopTemp.js"></script>
 </head>
 <body class="akl">
-<body>
-<main class="amway-theme">
-    <div id="header"></div>
-    <div class="container">
-        <div class="print-hide breadcrumb-section">
-            <ol class="breadcrumb">
-                <li>
-                    <a href="homepage-logged-in.html">Home</a></li>
-                <li href="">SOP</li>
-                <li>Review New Profile</li>
-            </ol>
+<!-- skipToContent -->
+<div id="skipToContent">
+<a href="#contents">콘텐츠 바로가기 </a>
+</div>
+<!-- //skipToContent -->
 
-            <div class="corner-block pre-res-corner-block sop-confirmation-back">
-                <i class="fas fa-caret-left"></i><a href="sop-createprofile.html">BACK</a></div>
-        </div>
-    </div>
-    <div class="container my-count sop-container">
+<main>
+	<div id="header"></div>
+	<div class="container-fluid main-container" id="contents">
+		<div class="print-hide breadcrumb-section">
+			<ol class="breadcrumb">
+				<li><a href="#">홈</a></li>
+				<li><a href="#">쇼핑</a></li>
+				<li class="active">스마트오더 프로그램</li>
+			</ol>
+		</div>
+	</div>
 
+	<!-- main-container -->
+	<div class="container-fluid main-container">
+		<div class="shipping-delivery sopCreate">
+			<div class="container-fluid">
+				<div class="row cartTitile">
+					<h1 class="product-list-page-title mb25">정기주문&amp;스마트 오더 주문서 생성</h1>
+				</div>
+			</div>
 
-        <div class="row mysop-product-detail sop-confirmation">
-            <div class="sop-confirmation-head">
-                <div class="sop-title">review sop Profile</div>
-                <p><i>Click confirm to cintinue.</i></p>
-            </div>
-            <div class="col-xs-12 edit-block createSopForm">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
+			<div class="container-fluid amway-theme">
+				<div class="row sop-confirmation">
+					<div class="confirm-box">
+						<p class="confirm-box-message">정기주문&amp;스마트 오더 주문서 생성이 완료되었습니다.</p>
+					</div>
 
-                        <label class="col-md-4 control-label text-upper">profile name</label>
-                        <div class="col-md-8 col-xs-12">
-                            Yui Mori's SOP Profile
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <label class="col-md-4 control-label text-upper">payment</label>
-                        <div class="col-md-8 col-xs-12 has-card">
-                            <img src="images/visa.png"> Work Card - **** 1234
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <label class="col-md-4 control-label text-upper">delivery address</label>
-                        <div class="col-md-8 col-xs-12">
-                            Yui's Home Address
-                        </div>
-                    </div>
-                </div>
+					<!-- <div class="sop-confirmation-head">
+						<div class="sop-title">주문 생성 완료</div>
+						<p>-</p>
+					</div> -->
+					<div class="col-xs-12 edit-block createSopForm">
+						<div class="row">
+							<div class="col-md-6 col-xs-12">
+								<label class="col-md-4 control-label">주문서 명</label>
+								<div class="col-md-8 col-xs-12">사용자명의 정기주문1</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12">
+								<label class="col-md-4 control-label">결제수단</label>
+								<div class="col-md-8 col-xs-12 has-card">신용카드</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12">
+								<label class="col-md-4 control-label text-upper">배송지 주소</label>
+								<div class="col-md-8 col-xs-12">서울시 강남구 영동대로 517</div>
+							</div>
+						</div>
 
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <label class="col-md-4 control-label text-upper">process day</label>
-                        <div class="col-md-8 col-xs-12">
-                            5th of each calendar month
-                        </div>
-                    </div>
-                </div>
-            </div>
+						<div class="row">
+							<div class="col-md-6 col-xs-12">
+								<label class="col-md-4 control-label text-upper">결제일</label>
+								<div class="col-md-8 col-xs-12">매 달 5일</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        </div>
-        <div class="next-control new-next-control mob-sop-confirmation-next-control">
-            <a class="btn primary center col-xs-6 col-md-2 creat-action" href="sop-confirmation.html">confirm</a>
-            <a class="btn btn-cancel" href="sop-createprofile.html">Back</a>
-        </div>
-    </div>
+			</div>
+		</div>
+		<div class="amwa-btnbar">
+			<a href="#" class="btn-blue-white">확인</a>
+			<a href="#" class="bt-akl-txt">뒤로가기</a>
+		</div>
 
-    <div id="quick"></div>
-    <div id="footer"></div>
+	</div>
+	<!-- //main-container -->
+
+	<div id="quick"></div>
+	<div id="footer"></div>
 </main>
 </body>
 

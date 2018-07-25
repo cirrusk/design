@@ -23,6 +23,7 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_sopTemp.js"></script>
 </head>
 
 <body class="akl">
@@ -40,7 +41,7 @@
 					<li><a href="#">홈</a></li>
 					<li><a href="#">쇼핑</a></li>
 					<li><a href="#">플러스쇼핑</a></li>
-					<li class="active">스마트 오더</li>
+					<li class="active">스마트오더 프로그램</li>
 				</ol>
 			</div>
 		</div>
@@ -71,7 +72,7 @@
 							<!-- //2018.04.09 위치변경 -->
 							<ul class="slides">
 								<li>
-									<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></div>
+									<div class="image-gallery js-gallery"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
@@ -129,7 +130,7 @@
 
 						<!-- 수정 : 2018.03.29 (기존 .flexslider 사용안함) -->
 						<div class="product-recentlyviewed__imagelist ui-snap-item owl-carousel owl-theme" id="uiPrdViewDetail"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  -->
-							<div><button type="button" data-n="0" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/no_img_b.png" alt=""></button></div>
+							<div><button type="button" data-n="0" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></button></div>
 							<div><button type="button" data-n="1" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></button></div>
 							<div><button type="button" data-n="2" class="ui-snap-btn type-video"><img src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png" alt="동영상"></button></div>
 							<div><button type="button" data-n="3" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></button></div>
@@ -328,10 +329,11 @@
 				</div>
 			</div>
 
-			<!-- 제품정보 영역 -->
+			<!-- 제품정보 영역
 			<div class="amway-theme">
 				제품상세 정보영역
 			</div>
+			-->
 
 		</div><!-- //main-container -->
 
@@ -344,17 +346,17 @@
 		<div id="colorbox" class="typeFullSizeView">
 			<div class="layer-pop-type2">
 				<div class="popop-title">
-					<p>뉴트리라이트 프린트 팩</p>
+					<p>틴즈 퍼펙트 팩</p>
 				</div>
 				<div class="popop-tbody">
 					<div class="pop-gallery" id="largeImgView"><!-- 2018.03.14 마크업 수정: #largeImgView 추가  -->
-						<span><img src="/_ui/responsive/theme-blue/images/heart-health.png" alt="heart health pack"></span>
+						<span><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></span>
 						<div class="video-wrapper"></div>
 					</div>
 					<div class="popup-img-list">
 						<div class="product-recentlyviewed__imagelist owl-carousel owl-theme" id="recentlyViewedListTab2"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  -->
 							<!-- 수정 : 2018.03.29 --><!-- 2018.03.14 마크업 수정  -->
-							<div><a href="#" data-n="0"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/no_img_s.png" alt=""></a></div>
+							<div><a href="#" data-n="0"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt=""></a></div>
 							<div><a href="#" data-n="1"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/heart-health.png" alt=""></a></div>
 							<div><a href="#" data-n="2" class="type-video"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/new-detail-small-pic.png" alt="동영상"></a></div>
 							<div><a href="#" data-n="3"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/no-border-images/truvivity.png" alt=""></a></div>
@@ -372,74 +374,6 @@
 	<!-- //제품크게보기 팝업 -->
 
 
-<script type="text/javascript">
-$(function(){
-	//레이어
-	$('.G10300_lp1_btn').click(function(event) {
-		event.preventDefault();
-		layerPopOver('this','.G10300_lp1_pop');
-	});
-
-
-	//SOP - 정기주문 혜택정보 노출
-	SOP_PDP_benefitsTips();
-
-});
-
-/* SOP - 정기주문 혜택정보 노출 */
-function SOP_PDP_benefitsTips(){
-	var _targetO = $('.toggle-benefits');
-
-	//버튼
-	var $tggBTN = _targetO.find('.btn-tgg-list');
-	var $BtnText = $tggBTN.find('em.hidden');
-
-	//SOP혜택 목록
-	var sop_benefits = _targetO.find('.sop-more-benefits');
-	var subItem = sop_benefits.find('>p');
-
-	//animate 적용할 높이값 구하기
-	var catchHeight;
-	var height_firstChild;
-	var height_wrapper;
-
-	function moreBenefits(){
-		height_firstChild = sop_benefits.find('>p').eq(0).outerHeight(true);
-		height_wrapper = sop_benefits.outerHeight(true);
-
-		catchHeight = setTimeout(function(){
-			sop_benefits.height(height_firstChild);
-		}, 600);
-	}
-
-	moreBenefits();
-	$(window).on('resize',function(){
-		sop_benefits.attr('style','');
-		moreBenefits();
-	});
-
-	//혜택이 1개 인 경우, 버튼 숨김
-	if( subItem.length === 1 ){ $tggBTN.hide();}
-
-	//버튼 클릭
-	$tggBTN.on('click',function(e){
-		e.preventDefault();
-		clearTimeout(catchHeight);
-
-		if( sop_benefits.hasClass('open')){
-			$BtnText.text('정기주문 혜택 열기');
-			sop_benefits.removeClass('open');
-			sop_benefits.stop().animate({ height: height_firstChild },'fast');
-		}
-		else {
-			$BtnText.text('정기주문 혜택 닫기');
-			sop_benefits.addClass('open');
-			sop_benefits.stop().animate({ height: height_wrapper },'fast');
-		}
-	});
-}
-</script>
 </body>
-
 </html>
 
