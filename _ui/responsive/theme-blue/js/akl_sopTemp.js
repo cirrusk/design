@@ -27,11 +27,21 @@ $(function(){
 		layerPopOver(this,'#mysop-list-cancel');
 	});
 
+	//레이어
+	$('.G10300_lp1_btn').click(function(event) {
+		event.preventDefault();
+		layerPopOver('this','.G10300_lp1_pop');
+	});
 
-	//
+
+	//SOP 프로필 수정하기
 	SOP_editProfile();
+
+	//SOP - 정기주문 혜택정보 노출
+	SOP_PDP_benefitsTips();
 });
 
+/* SOP 프로필 수정하기 */
 function SOP_editProfile(){
 	$('#edit-profile').on('click',function(e){
 		e.preventDefault();
@@ -50,6 +60,58 @@ function SOP_editProfile(){
 	});
 }
 
+/* SOP - 정기주문 혜택정보 노출 */
+function SOP_PDP_benefitsTips(){
+	var _targetO = $('.toggle-benefits');
+
+	//버튼
+	var $tggBTN = _targetO.find('.btn-tgg-list');
+	var $BtnText = $tggBTN.find('em.hidden');
+
+	//SOP혜택 목록
+	var sop_benefits = _targetO.find('.sop-more-benefits');
+	var subItem = sop_benefits.find('>p');
+
+	//animate 적용할 높이값 구하기
+	var catchHeight;
+	var height_firstChild;
+	var height_wrapper;
+
+	function moreBenefits(){
+		height_firstChild = sop_benefits.find('>p').eq(0).outerHeight(true);
+		height_wrapper = sop_benefits.outerHeight(true);
+
+		catchHeight = setTimeout(function(){
+			sop_benefits.height(height_firstChild);
+		}, 600);
+	}
+
+	moreBenefits();
+	$(window).on('resize',function(){
+		sop_benefits.attr('style','');
+		moreBenefits();
+	});
+
+	//혜택이 1개 인 경우, 버튼 숨김
+	if( subItem.length === 1 ){ $tggBTN.hide();}
+
+	//버튼 클릭
+	$tggBTN.on('click',function(e){
+		e.preventDefault();
+		clearTimeout(catchHeight);
+
+		if( sop_benefits.hasClass('open')){
+			$BtnText.text('정기주문 혜택 열기');
+			sop_benefits.removeClass('open');
+			sop_benefits.stop().animate({ height: height_firstChild },'fast');
+		}
+		else {
+			$BtnText.text('정기주문 혜택 닫기');
+			sop_benefits.addClass('open');
+			sop_benefits.stop().animate({ height: height_wrapper },'fast');
+		}
+	});
+}
 
 
 
