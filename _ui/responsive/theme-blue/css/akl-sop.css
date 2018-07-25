@@ -1113,26 +1113,9 @@
 .open .ico-fa-angle-down:before{content:'\f106';}
 
 
-/* ---- SOP 제품상세 ---- */
-.img-product.SOP-img .product-main-info {min-height:initial;}
+/* ---- SOP제품 상세 ---- */
+.akl .product-image-gallery {opacity:1;}
 
-.img-product.SOP-img .product-image-gallery {opacity:1;}
-.img-product.SOP-img .image-gallery img { width:100%;}
-.img-product.SOP-img .image-gallery.SOP-img img:hover {margin-top:0; transform:none;}
-
-/* SOP 제품담기 완료(확인) */
-.sop-confirmation .sop-pdp-top {position:relative; padding-top:62px; border-top:1px solid #dadada}
-.sop-pdp-top .sop-confirmation-tag {position:absolute; top:20px; left:0; color:#20883e;}
-.sop-pdp-top .sop-confirmation-tag>* {display:inline-block; font-size:16px;}
-.sop-pdp-top .sop-confirmation-tag a {margin-left:10px; color:#0075a4}
-
-/* SOP 제품상세 - 툴팁 */
-.auto-continue .toolTip-wrapper .tooltip-content {position:absolute;top:-88px;right:19px;display:none;width:243px;height:76px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
-.auto-continue .toolTip-wrapper .tooltip-content * {color:#555}
-.auto-continue .toolTip-wrapper .btn-tooltip {margin-top:7px;}
-.auto-continue .toolTip-wrapper.open .btn-tooltip:after {content:''; top:-15px; left:50%; height:10px; margin-left:-10px; background:red url(../images/tip-arrow.png) no-repeat; background-size:20px;}
-
-/* SOP 제품상세 */
 .pdp-info .product-main-info .addtocart-component.sop-pdp select {width:260px;}
 .pdp-info .product-main-info .addtocart-component.sop-pdp .qty-selector label {margin-right:0;}
 .akl .addtocart-component.sop-pdp .row:first-child {padding-bottom:0;}
@@ -1141,10 +1124,15 @@
 .addtocart-component.sop-pdp .auto-continue {padding-left:90px; margin-bottom:17px;}
 .addtocart-component.sop-pdp .add_to_cart_form {padding-bottom:30px; margin-bottom:15px;border-bottom:1px solid #e3e3e3;}
 
+/* 자동연장하기 - 툴팁 */
+.auto-continue .toolTip-wrapper .tooltip-content {position:absolute;top:-88px;right:19px;display:none;width:243px;height:76px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
+.auto-continue .toolTip-wrapper .tooltip-content * {color:#555}
+.auto-continue .toolTip-wrapper .btn-tooltip {margin-top:7px;}
+.auto-continue .toolTip-wrapper.open .btn-tooltip:after {content:''; top:-15px; left:50%; height:10px; margin-left:-10px; background:red url(../images/tip-arrow.png) no-repeat; background-size:20px;}
+
 /* SOP 제품상세 - 옵션 선택 후 */
 .addtocart-component.sop-pdp strong {display:inline-block; color:#002f5f;}
 .addtocart-component.sop-pdp .control-label + .label-texts {display:inline-block;}
-
 
 /* 정기주문 혜택 */
 .addtocart-component.sop-pdp .benefits-tips strong.control-label {display:block; margin-bottom:15px; color:#002f5f;}
@@ -1161,9 +1149,35 @@
 .sop-more-benefits > p:first-child {padding-top:0;}
 
 
+/* ---- SOP제품 담기 완료(확인) ---- */
+.img-product.type-SOP .v-m-pros .image-gallery {margin-bottom:0;}
+.img-product .image-gallery.sopConfirmation img { width:100%;}
+.img-product .image-gallery.sopConfirmation img:hover {margin-top:0; transform:none;}
+.img-product.type-SOP .product-main-info {min-height:initial;}
+
+/* 상단 담기완료 메시지  */
+.sop-confirmation-tag {padding:20px 0 30px; border-top:1px solid #dadada;}
+.sop-confirmation-tag * {display:inline-block; font-size:16px;}
+.sop-confirmation-tag a {margin-left:10px; color:#0075a4; font-size:16px; font-weight:500;}
+
+/* SOP제품 목록 */
+.akl .shopping-cart-item-list.mysop-item-list .product-list-item {padding:24px 0;}
+.shopping-cart-item-list.mysop-item-list .product-details [class*=list-item] {text-align:left;}
+.shopping-cart-item-list.mysop-item-list .product-list-item>[class*=list-item]{text-align:center;}
+.shopping-cart-item-list.mysop-item-list .list-item-option .color-img {margin-bottom:5px;}
+.mysop-product-detail-list {margin-top:40px;}
+.mysop-product-detail-list .list-content {border-bottom:1px solid #e3e3e3;}
+.mysop-product-detail-list .list-content .color-img {margin-bottom:5px;}
+.mysop-product-detail-list .list-content + .mysop-item-list{margin-top:40px;}
+.mysop-product-detail-list + .mysop-product-active {border-top:0;}
+.mysop-product-active {padding:30px 0 0; border-top:1px solid #dadada;}
+.mysop-product-detail-list .list-content .mob-block {display:none;}
+.mysop-product-detail-list .list-content .content-list {text-align:center;}
+.mysop-product-detail-list .list-content .content-list .item-prdt-name {text-align:left;}
+
 @media (max-width:768px){
-	/* SOP 제품상세 */
-	.addtocart-component.sop-pdp .auto-continue {padding-left:30%;}
+	/* ---- SOP제품 상세 ---- */
+	.addtocart-component.sop-pdp .auto-continue {padding-left:30%; margin-bottom:0;}
 	.addtocart-component.sop-pdp .row>.size-selector-container {overflow:hidden;}
 	.addtocart-component.sop-pdp .control-label {float:left; width:30%; min-width:auto; box-sizing:border-box;}
 	.addtocart-component.sop-pdp .control-label + select.form-control {float:left; width:70%;}
@@ -1172,7 +1186,31 @@
 	.addtocart-component.sop-pdp .benefits-tips strong.control-label {float:none; display:block;}
 	.addtocart-component.sop-pdp .toggle-benefits p>span {display:block;}
 	.addtocart-component.sop-pdp .toggle-benefits {padding:15px 40px 15px 20px;}
+
+
+	/* ---- SOP제품 담기 완료(확인) ---- */
+	/* 상단 담기완료 메시지  */
+	.sop-confirmation-tag {padding:20px 0 30px; border-top:1px solid #dadada;}
+	.sop-confirmation-tag * {display:block;}
+	.sop-confirmation-tag a {margin:7px 0 0; padding-left:22px;}
+
+	/* SOP제품 목록 */
+	.shopping-cart-item-list.mysop-item-list .product-list-item>[class*=list-item] {float:right; margin-top:8px; clear:both;}
+	.shopping-cart-item-list.mysop-item-list .product-list-item>.list-item-option {text-align:left;}
+	.mysop-product-active>a {width:100%;}
+	.mysop-product-active>a+a {margin-top:10px;}
+
+	.mysop-product-detail-list .list-content .mob-float-right {float:right;}
+	.mysop-product-detail-list .list-content .content-list {padding:20px 10px; text-align:left;}
+	.mysop-product-detail-list .list-content .content-list .col-xs-12 {padding-left:0;}
+	.mysop-product-detail-list .list-content .mob-block {display:block; float:left;}
+	.mysop-product-detail-list .mob-block.blue {color:#002f5f !important; font-weight:500;}
 }
+
+
+
+
+
 
 
 /* ---- SOP 공통 ---- */
