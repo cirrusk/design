@@ -38,10 +38,11 @@
 			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li>
-					<li><a href="#">마이 페이지</a></li>
-					<li>나의 스마트 오더</li>
+					<li><a href="#">나의 쇼핑정보</a></li>
+					<li>나의 정기주문 & 스마트 오더</li>
 				</ol>
 			</div>
+
 		</div>
 
 		<!-- 마이페이지 상단공통 -->
@@ -71,7 +72,7 @@
 												<span class="currentTxt"><a href="#">마이페이지</a></span>
 												<div class="select-wrapper">
 													<ul class="select-list">
-														<li class="sub-main"><a href="#" class="menu-dep1 current">마이페이지 메인</a>
+														<li class="sub-main"><a href="#" class="menu-dep1">마이페이지 메인</a>
 														<li><a href="#" class="menu-dep1">ABO갱신</a>
 														<li>
 															<a href="#" class="menu-dep1">회원정보 관리</a>
@@ -85,7 +86,7 @@
 															</ul>
 														</li>
 														<li>
-															<a href="#" class="menu-dep1">나의쇼핑정보</a>
+															<a href="#" class="menu-dep1 current">나의쇼핑정보</a>
 															<ul class="select-depth2">
 																<li><a href="#" class="menu-dep2">나의주문내역</a></li>
 																<li><a href="#" class="menu-dep2">나의반품내역</a></li>
@@ -130,39 +131,23 @@
 
 
 		<!-- container-fluid -->
-		<div class="container-fluid main-container">
-			<div class="amway-theme sop-container">
-				<h1 class="icon-sub-title mySOP-title">나의 스마트 오더</h1>
+		<div class="container-fluid main-container amway-theme">
 
-				<!-- 알림
-				<div class="sop-alert sop-confirmation">
-					<div class="alert-info ico-fa-exclamation">
-						<div class="alert-text">
-							<strong>Page level error message title</strong>
-							<p>
-								Page level error message display here,text may span the length of the container
-								<a href="#">Links look like this</a>
-							</p>
-						</div>
-					</div>
-				</div> -->
-				<!-- //알림 -->
-
+			<!-- sop-container -->
+			<div class="sop-container">
+				<h1 class="icon-sub-title mySOP-title">나의 정기주문 &amp; 스마트 오더 목록</h1>
 
 				<!-- SOP 요약정보 -->
 				<div class="sop-profile-wrapper">
-					<div class="downline-profile">Yui Mori's Downline Profile (Wrap to two lines)</div>
+					<div class="downline-profile">사용자명의 정기주문명 상세보기</div>
 
 					<div class="downline-profile-second-line">
 						<!-- 주문정보 -->
 						<div class="sop-order-info">
-							<span class="type-payment">
-								<em><img src="/_ui/responsive/theme-blue/images/akl_common/sop/visa.png"></em>
-								<em>****9876</em>
-							</span>
-							<span class="type-state ico-fa-truck">Delivery</span>
-							<span class="type-numbs">8회차</span>
-							<a href="#" class="edit-profile ico-fa-pencil" id="edit-profile"><span>Edit Profile</span></a>
+							<span class="type-payment">신용카드</span>
+							<span class="type-address">서울특별시 강남구 영동대로 517 27층 </span>
+							<span class="type-numbs">매월 5일</span>
+							<a href="#" class="edit-profile ico-fa-pencil" id="edit-profile"><span>주문서 수정</span></a>
 						</div>
 						<!-- //주문정보 -->
 					</div>
@@ -173,7 +158,7 @@
 						<div class="row">
 							<div class="col-md-6 col-xs-12">
 
-								<label class="col-md-4 control-label text-upper">profile name</label>
+								<label class="col-md-4 control-label text-upper"></label>
 								<div class="col-md-8 col-xs-12">
 									<input type="text" class="verify-form text-left form-control"
 										value="Yui Mori's Downline Profile(Wrap one line)">
@@ -255,21 +240,20 @@
 				</div>
 				<!-- //SOP 요약정보 -->
 
-
 				<!-- 빠른검색 -->
 				<div class="akl-toggle-wrap sort-order">
 					<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
 						<div class="panel">
 							<div class="panel-heading" role="tab" id="quickShop">
-								<a href="#down1" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="disable"><!-- 닫힌상태는 .collapsed -->
+								<a href="#down1" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="collapsed"><!-- 닫힌상태는 .collapsed -->
 									<div class="panel-title">
 										<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
-										<span class="accordion-header-text">빠른 제품 검색</span>
+										<span class="accordion-header-text">빠른 제품 추가</span>
 										<span class="pull-right icon-minus"></span>
 									</div>
 								</a>
 							</div>
-							<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div id="down1" class="panel-collapse applicants-panel collapse" role="tabpanel" aria-labelledby="headingOne"><!-- 열린상태 .in -->
 								<div class="panel-body">
 									<div id="quickShopForm">
 										<div class="item-name-container">
@@ -277,16 +261,13 @@
 											<div class="inp-button">
 												<div class="form-s"><!-- 2018.03.06 구조변경 -->
 													<input type="text" id="name-vps" name="" value="" class="input-st">
-													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-sm hidden-xs">검색</span></button><!-- 2018.03.15 태깅 아이디 추가 -->
+													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-xs">검색</span></button>
 												</div>
 											</div>
 										</div>
 										<div class="add-item-container">
 											<a class="bt-akl-txt">검색초기화</a>
 										</div>
-										<!--  <div class="btn-order-right"> //2018.02.22 사용안함
-											<button id="G10500_lp1" class="bt-akl-blue">퀵오더 제품추가</button>
-										</div> -->
 									</div>
 									<div class="shoping-cart-search">
 										<div class="container-fluid main-container quick-area">
@@ -318,7 +299,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -346,7 +327,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -374,7 +355,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -402,7 +383,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -430,7 +411,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -454,299 +435,183 @@
 				</div>
 				<!-- //빠른검색 -->
 
-
-				<!-- 필터 조회 -->
-				<div class="order-history-search-wrapper search-filter row">
+				<!-- 기간조회 -->
+				<div class="row order-history-search-wrapper search-filter sop-sort-order">
 					<div class="toggle-buttons-container row cutomer">
 						<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span></button>
-						<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span> <span>기간</span> </button>
+						<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span><span>기간</span></button>
 					</div>
-					<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12 js-search-form-wrapper">
-						<div class="cuton-form-wrapper">
-							<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+
+					<!-- 기간 -->
+					<div class="form-wrapper search-form-wrapper js-search-form-wrapper col-md-8">
+						<div class="form-group sort-cell">
+							<label class="control-label" for="sop_sort_period">기간설정</label>
+							<select name="type" tabindex="-1" aria-hidden="true" class="form-control" id="sop_sort_period">
 								<option value="">1개월</option>
 								<option value="">6개월</option>
 							</select>
 						</div>
-
 						<div class="form-group sort-cell">
-							<label class="control-label" for="sortForm1">Showing:</label>
-							<select id="" name="sort" class="form-control">
-								<option selected="selected">Decemeber</option>
-								<option>January</option>
-								<option>February</option>
-								<option>March</option>
-								<option>April</option>
-							</select>
-
-							<select id="" name="sort" class="form-control">
+							<label class="control-label" for="sop_sort_month">월별조회</label>
+							<select name="sort" class="form-control" id="sop_sort_month">
 								<option selected="selected">2018</option>
 								<option>2017</option>
 								<option>2016</option>
-								<option>2015</option>
+							</select>
+							<select name="sort" class="form-control">
+								<option selected="selected">1월</option>
+								<option>1월</option>
+								<option>3월</option>
+								<option>4월</option>
 							</select>
 						</div>
 					</div>
-					<div class="new-select form-wrapper col-md-6 col-sm-12 js-filter-form-wrapper">
-						<div class="cuton-sel">
-							<select id="sortOptions1" name="sort" class="form-control">
-								<option>All</option>
-								<option selected="selected">Benefits</option>
-								<option>Ditto</option>
+					<!-- //기간 -->
+
+					<!-- 필터 -->
+					<div class="form-wrapper search-form-wrapper js-filter-form-wrapper col-md-4">
+						<div class="sort-cell cuton-sel">
+							<label class="control-label hidden-xs" for="sop_sort_filter1">필터</label>
+							<select name="sortFilter" class="form-control" id="sop_sort_filter1">
+								<option>혜택없음</option>
+								<option>혜택있음</option>
 							</select>
-
-							<select id="sortOptions2" name="sort" class="form-control">
-								<option selected="selected">Active,with benefits</option>
-								<option>Active,without benefits</option>
-								<option>Inactive</option>
-								<option>Cancel</option>
+							<select name="sortFilter" class="form-control" id="sop_sort_filter2">
+								<option>전체</option>
+								<option>진행</option>
+								<option>취소</option>
 							</select>
 						</div>
 					</div>
+					<!-- //필터 -->
+
 				</div>
-				<!-- //필터 조회 -->
+				<!-- //기간조회-->
 
+				<!-- 주문 상품목록 -->
+				<div class="list-content mysop-monthly-list-content mysop-list">
+					<div class="list-row-title row hidden-xs">
+						<div class="col-md-3 type-prdt">제품</div>
+						<div class="col-md-1 type-numb">수량</div>
+						<div class="col-md-1 type-option">옵션</div>
+						<div class="col-md-2 type-price">가격(원)</div>
+						<div class="col-md-5 data-cell">전체</div>
+					</div>
 
-				<!-- 목록 -->
-				<div class="" style="border:1px solid red">
-					<div class="list-content mysop-monthly-list-content mysop-list">
-						<div class="list-row-title row hidden-xs hidden-sm">
-							<div class="col-md-4">Product</div>
-							<div class="col-md-1">Qty</div>
-							<div class="col-md-1">Option</div>
-							<div class="col-md-1">price</div>
-							<div class="col-md-1">Total</div>
-						</div>
-
-
-						<div class="list-row-content row">
-							<div class="col-md-4">
-								<label class="label-gift"><i class="fas fa-gift"></i><span class="right-white-triangle"></span></label>
-								<div class="product-item-element list-item-image">
-									<div>
-										<a href="#">
-											<img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
-									</div>
-								</div>
-								<div class="product-item-element list-item-info">
-									<div>Nutrilite Cal Mag D</div>
-									<p>
-									</p>
-									<div class="product-code sku-code">SKU:
-										<span class="product-item-number">105480</span></div>
-									<div class="product-category">18.22PV/57.31BV</div></div>
-							</div>
-							<div class="col-md-1">3</div>
-							<div class="col-md-1">60 Pack</div>
-							<div class="col-md-1">$ 30.50</div>
-							<div class="col-md-1 data-cell">
-								<span>$61.00</span>
-								<span>10.0PV/</span>
-								<span>8.0BV</span>
-							</div>
-							<div class="col-md-1">
-								<i class="fas fa-repeat-alt"></i>1
-							</div>
-
-							<div class="col-md-1">
-								<a href="mysop-detail-ditto.html">Details</a>
-							</div>
-
-							<div class="col-md-1">
-								<a href="">Cancel</a>
+					<div class="list-row-content row">
+						<div class="col-md-3 type-prdt">
+							<div class="plp-item-label-wrap"><div class="plp-item-label bg-purple">증정품</div></div>
+							<div class="product-item-element list-item-image"><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></a></div>
+							<div class="product-item-element list-item-info">
+								<a href="#">뉴트리라이드 칼맥 디</a>
+								<div class="product-code sku-code">SKU:<span class="product-item-number">110607K6</span></div>
+								<div class="product-category">18,300 PV / 29,100 BV</div>
 							</div>
 						</div>
+						<div class="col-md-1 numbs">3</div>
+						<div class="col-md-1 hidden-xs">60팩</div>
+						<div class="col-md-2 hidden-xs">35,000</div>
+						<div class="col-md-2 data-cell">
+							<span>35,000원</span>
+							<span class="txt-pv">18,300 PV</span>
+							<span class="txt-bv">29,100 BV</span>
+						</div>
+						<div class="col-md-1 repeat"><span class="ico-fa-repeat-alt"><em class="hidden">반복회차</em>1</span></div>
+						<div class="col-md-1 hidden-xs"><a href="#">상세보기</a></div>
+						<div class="col-md-1 hidden-xs"><a href="#">제품취소</a></div>
+					</div>
 
-						<div class="list-row-content row">
-							<div class="col-md-4">
-
-								<div class="product-item-element list-item-image">
-									<div>
-										<a href="#">
-											<img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
-									</div>
-								</div>
-								<div class="product-item-element list-item-info">
-									<div>Nutrilite Cal Mag D</div>
-									<p>
-									</p>
-									<div class="product-code sku-code">SKU:
-										<span class="product-item-number">105480</span></div>
-									<div class="product-category">18.22PV/57.31BV</div></div>
-							</div>
-							<div class="col-md-1 label-wrap">
-
-								<label class="label-green">
-									2
-								</label>
-							</div>
-							<div class="col-md-1">60 Pack</div>
-							<div class="col-md-1">$30.50</div>
-							<div class="col-md-1 data-cell">
-								<span>$61.00</span>
-								<span>10.0PV/</span>
-								<span>8.0BV</span>
-							</div>
-							<div class="col-md-1">
-								<i class="fas fa-repeat-alt"></i>2
-							</div>
-
-							<div class="col-md-1">
-								<a href="">Details</a>
-							</div>
-
-							<div class="col-md-1">
-								<a href="">Cancel</a>
+					<div class="list-row-content row grey-block">
+						<div class="col-md-3 type-prdt">
+							<div class="plp-item-label-wrap"><div class="plp-item-label bg-purple">할인</div></div>
+							<div class="product-item-element list-item-image"><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></a></div>
+							<div class="product-item-element list-item-info">
+								<a href="#">뉴트리라이드 칼맥 디</a>
+								<div class="product-code sku-code">SKU:<span class="product-item-number">110607K6</span></div>
+								<div class="product-category">18,300 PV / 29,100 BV</div>
 							</div>
 						</div>
-						<div class="list-row-content row">
-							<div class="col-md-4">
-								<div class="product-item-element list-item-image">
-									<div>
-										<a href="#">
-											<img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
-									</div>
-								</div>
-								<div class="product-item-element list-item-info">
-									<div>Nutrilite Cal Mag D</div>
-									<p>
-									</p>
-									<div class="product-code sku-code">SKU:
-										<span class="product-item-number">105480</span></div>
-									<div class="product-category">18.22PV/57.31BV</div></div>
-							</div>
-							<div class="col-md-1 label-wrap">
-								<label class="label-green">
-									2
-								</label>
-							</div>
-							<div class="col-md-1">60 Pack</div>
-							<div class="col-md-1">$ 30.50</div>
-							<div class="col-md-1 data-cell">
-								<span>$61.00</span>
-								<span>10.0PV/</span>
-								<span>8.0BV</span>
-							</div>
-							<div class="col-md-1">
-								-
-							</div>
+						<div class="col-md-1 numbs">3</div>
+						<div class="col-md-1 hidden-xs">60팩</div>
+						<div class="col-md-2 hidden-xs">35,000</div>
+						<div class="col-md-2 data-cell">
+							<span>35,000원</span>
+							<span class="txt-pv">18,300 PV</span>
+							<span class="txt-bv">29,100 BV</span>
+						</div>
+						<div class="col-md-1 repeat"><span class="ico-fa-repeat-alt"><em class="hidden">반복회차</em>1</span></div>
+						<div class="col-md-1 hidden-xs"><a href="#">상세보기</a></div>
+						<div class="col-md-1 hidden-xs">취소</div>
+					</div>
 
-							<div class="col-md-1">
-								<a href="">Details</a>
-							</div>
-
-							<div class="col-md-1">
-								<a href="">Cancel</a>
+					<div class="list-row-content row grey-block">
+						<div class="col-md-3 type-prdt">
+							<div class="product-item-element list-item-image"><a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="틴즈 퍼펙트 팩"></a></div>
+							<div class="product-item-element list-item-info">
+								<a href="#">뉴트리라이드 칼맥 디</a>
+								<div class="product-code sku-code">SKU:<span class="product-item-number">110607K6</span></div>
+								<div class="product-category">18,300 PV / 29,100 BV</div>
 							</div>
 						</div>
+						<div class="col-md-1 numbs">-</div>
+						<div class="col-md-1 hidden-xs">60팩</div>
+						<div class="col-md-2 hidden-xs">35,000</div>
+						<div class="col-md-2 data-cell">
+							<span>35,000원</span>
+							<span class="txt-pv">18,300 PV</span>
+							<span class="txt-bv">29,100 BV</span>
+						</div>
+						<div class="col-md-1 repeat">-</div>
+						<div class="col-md-1 hidden-xs"><a href="#">상세보기</a></div>
+						<div class="col-md-1 hidden-xs">취소</div>
+					</div>
+				</div>
+				<!-- //주문 상품목록 -->
 
-						<div class="list-row-content row">
-							<div class="col-md-4">
-								<label class="label-gift"><i class="fas fa-tag"></i><span class="right-white-triangle"></span></label>
 
-								<div class="product-item-element list-item-image">
-									<div>
-										<a href="#">
-											<img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
-									</div>
-								</div>
-								<div class="product-item-element list-item-info">
-									<div>Nutrilite Cal Mag D</div>
-									<p>
-									</p>
-									<div class="product-code sku-code">SKU:
-										<span class="product-item-number">105480</span></div>
-									<div class="product-category">18.22PV/57.31BV</div></div>
-							</div>
-							<div class="col-md-1 label-wrap">2
-								<label class="label-green"> 2</label>
-							</div>
-							<div class="col-md-1">60 Pack</div>
-							<div class="col-md-1">$30.50</div>
-							<div class="col-md-1 data-cell">
-								<span>$61.00</span>
-								<span>10.0PV/</span>
-								<span>8.0BV</span>
-							</div>
-							<div class="col-md-1">
-								-
-							</div>
 
-							<div class="col-md-1">
-								<a href="">Details</a>
-							</div>
 
-							<div class="col-md-1">
-								<a href="">Cancel</a>
-							</div>
+				<div class="mysop-monthly-part">
+					<div class="sop-order fontWeight600">SOP ORDERS</div>
+					<div class="list-content mysop-monthly-list-content ">
+						<div class="list-row-title row ">
+							<div class="col-md-3 col-xs-6">Order Number</div>
+							<div class="col-md-2 col-xs-6 col-xs-rig">Order Date</div>
+							<div class="col-md-2 hidden-xs">Order Totals</div>
+							<div class="col-md-2 hidden-xs">Order Status</div>
+							<div class="col-md-3 hidden-xs">Order Channel</div></div>
+						<div class="mysop-text-list">
+							<div class="list-row-content row">
+								<div class="col-md-3 col-xs-6">
+									<a href="order-details-normal.html">12312312</a></div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+								<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+								<div class="col-md-3 col-xs-6">Amway Plaza</div></div>
+							<div class="list-row-content row">
+								<div class="col-md-3 col-xs-6">
+									<a href="order-details-normal.html">12312312</a></div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+								<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+								<div class="col-md-3 col-xs-6">Amway Plaza</div></div>
+							<div class="list-row-content row">
+								<div class="col-md-3 col-xs-6">
+									<a href="order-details-normal.html">12312312</a></div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+								<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+								<div class="col-md-3 col-xs-6">Amway Plaza</div></div>
+							<div class="list-row-content row">
+								<div class="col-md-3 col-xs-6">
+									<a href="order-details-normal.html">12312312</a></div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+								<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
+								<div class="col-md-2 col-xs-6 col-xs-rig">Backorder</div>
+								<div class="col-md-3 col-xs-6">Amway Plaza</div></div>
 						</div>
 					</div>
 				</div>
-				<!-- //목록 -->
-
-
-
-
-				<!-- monthly : 시작 -->
-
-				<div id="active-block" style="border:1px solid red">
-
-			</div>
-
-			<div class="mysop-monthly-part" style="border:2px solid hotpink">
-				<div class="sop-order fontWeight600">정기주문 주문내역</div>
-				<div class="list-content mysop-monthly-list-content ">
-					<div class="list-row-title row ">
-						<div class="col-md-3 col-xs-6">주문번호</div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">주문 날짜</div>
-						<div class="col-md-2 hidden-xs">주문 전체</div>
-						<div class="col-md-2 hidden-xs">주문 현황</div>
-						<div class="col-md-3 hidden-xs">주문 채널</div>
-					</div>
-
-					<div class="mysop-text-list">
-					<div class="list-row-content row">
-						<div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
-						<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
-						<div class="col-md-3 col-xs-6">Amway Plaza</div>
-					</div>
-					<div class="list-row-content row">
-						<div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
-						<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
-						<div class="col-md-3 col-xs-6">Amway Plaza</div>
-					</div>
-
-					<div class="list-row-content row">
-						<div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
-						<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
-						<div class="col-md-3 col-xs-6">Amway Plaza</div>
-					</div>
-					<div class="list-row-content row">
-						<div class="col-md-3 col-xs-6"><a href="order-details-normal.html">12312312</a></div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
-						<div class="col-md-2 col-xs-6">$333 60PV/60BV</div>
-						<div class="col-md-2 col-xs-6 col-xs-rig">Backorder</div>
-						<div class="col-md-3 col-xs-6">Amway Plaza</div>
-					</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-				<!-- //momthly : 끝 -->
-
-
-
-
-				<!-- 조회결과 목록 -->
-				<!-- //조회결과 목록 -->
 
 			</div>
 			<!-- //sop-container -->

@@ -1111,6 +1111,7 @@
 .ico-fa-tag:before{content:'\f02b';}
 .ico-fa-angle-down:before{content:'\f107';}
 .open .ico-fa-angle-down:before{content:'\f106';}
+.ico-fa-repeat-alt:before{content:'\f364';}
 
 
 /* ---- SOP제품 상세 ---- */
@@ -1147,7 +1148,6 @@
 .sop-more-benefits.off {height:0;}
 .sop-more-benefits > p {margin:0; padding-top:10px;}
 .sop-more-benefits > p:first-child {padding-top:0;}
-
 
 /* ---- SOP제품 담기 완료(확인) ---- */
 .img-product.type-SOP .v-m-pros .image-gallery {margin-bottom:0;}
@@ -1200,6 +1200,80 @@
 .sop-order-name>label {width:18%; min-width:90px;}
 .sop-order-name>input[type=text] {width:65%;}
 
+/* ---- 나의 정기주문&스마트오더 ---- */
+.akl .sop-container {padding:36px 50px 0;}
+.akl .icon-sub-title.mySOP-title:after {top:3px; width:20px; height:20px; background:#555;}
+
+/* SOP 상태정보 */
+.sop-container .downline-profile {font-size:32px; font-weight:500; letter-spacing:-0.025em; color:#002f5f;}
+.sop-container .downline-profile-second-line {position:relative; margin:13px 0 40px;}
+.sop-order-info>span {position:relative; display:inline-block; padding-right:20px;}
+.sop-order-info>span:after {content:'/'; position:absolute; top:0; right:0; display:block; width:12px; color:#ddd;}
+.sop-order-info .type-numbs {padding-right:0;}
+.sop-order-info .type-numbs:after {display:none;}
+.sop-order-info .edit-profile {position:absolute; top:0; right:0; display:inline-block; padding-left:22px;}
+
+/* SOP 프로필 수정 */
+.sop-container .edit-block {display:none; position:relative; padding:30px; margin-bottom:40px; background:#f4f4f4;}
+.sop-container .edit-block .close-edit{position:absolute;z-index:9;top:10px;right:10px;display:block;font-size:20px;}
+.sop-container .edit-block .edit-block-footer{margin:15px;padding:20px 0 0;border-top:1px solid #dadada;}
+.sop-container .edit-block .edit-block-footer .btn{margin-right:20px;}
+.sop-container .edit-block .edit-block-footer a.pull-right{line-height:40px;}
+.sop-container .edit-block .row{line-height:40px;}
+.sop-container .edit-block .row>div>div{height:56px;}
+.sop-container .edit-block .row .width-s{display:inline-block;width:60px;}
+.sop-container .edit-block .row .form-control{padding-left:10px!important;color:#55565a;}
+.sop-container .edit-block .row .has-card{position:relative;}
+.sop-container .edit-block .row .has-card img{margin-right:.75em;}
+.sop-container .edit-block .row .has-card .payment-card{position:absolute;top:8px;right:40px;vertical-align:top;}
+.sop-container .edit-block .row .has-card .payment-card img{max-width:40px;margin-right:0;vertical-align:top;}
+
+/* SOP 빠른 제품추가 */
+.sop-container .akl-toggle-wrap {margin-bottom:40px;}
+.sop-container .akl-toggle-wrap.sort-order .accordion-custom {border:1px solid #dadada; border-width:1px 0;}
+
+/* SOP 필터 검색 */
+.akl .sop-sort-order {margin:0 0 20px;}
+.akl .sop-sort-order select.form-control {width:auto; min-width:100px;}
+.akl .sop-sort-order .form-wrapper {padding:0}
+.akl .sop-sort-order .form-wrapper .form-group {margin-bottom:0;}
+.sop-sort-order .form-control+.form-control {margin-left:10px;}
+.sop-sort-order .form-group.sort-cell {float:left}
+.sop-sort-order .sort-cell+.sort-cell {margin-left:30px;}
+.sop-sort-order .control-label {margin-right:15px;}
+
+/* 필터 조회*/
+.sop-container .toggle-buttons-container {display:none}
+.sop-container .toggle-buttons-container button span {color:#0075a4;}
+.sop-container .cuton-sel select {font-size:14px; font-weight:400; letter-spacing:-1px; color:#002f5f; a}
+.sop-container .new-select.form-wrapper select:nth-last-of-type(1){margin-right:0 !important;}
+.akl .sop-container .order-history-search-wrapper .form-wrapper{padding-right:0;}
+.akl .sop-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
+.akl .sop-container .order-history-search-wrapper .form-wrapper .cuton-sel {text-align: right;}
+
+/* SOP 주문상세 > 제품목록 */
+.akl .sop-container .plp-item-label-wrap {top:-20px;}
+.akl .list-content.mysop-list {padding-top:0;}
+.akl .list-content.mysop-list .row>[class^=col-md] {padding-left:0; padding-right:0; text-align:center;}
+.akl .list-content.mysop-list .row.list-row-content .type-prdt {padding-left:10px;}
+.sop-container .ico-fa-repeat-alt {display:inline-block; padding-left:25px; text-align:center;}
+.list-content.mysop-list .list-row-content{position:relative; display:table; width:100%; margin:0; padding:20px 0 20px; vertical-align:middle; border-bottom:1px solid #e3e3e3;}
+.list-content.mysop-list .list-item-image {position:relative; display:table-cell; padding:0 10px 0 0; vertical-align:top; max-width:75px; max-height:75px;}
+.list-content.mysop-list .list-item-image img {width:100%; height:auto; border:1px solid #e3e3e3;}
+.list-content.mysop-list .list-item-info {display:table-cell; padding:0 10px; vertical-align:top;}
+.list-content.mysop-list .data-cell>span {display:block;}
+.list-content.mysop-list .data-cell>span+span {margin-top:5px;}
+
+/* SOP 주문상세 > 제품목록 - 취소상태 */
+.akl .grey-block .plp-item-label {background:#bbb;}
+.akl .grey-block .plp-item-label:after {width:12px; height:25px; right:-10px; background:none; border-style: solid; border-width: 25px 7px 0 0; border-color: #bbb transparent transparent transparent;}
+.list-content.mysop-list .list-row-content.grey-block>div {color:#bbb;}
+.list-content.mysop-list .list-item-info.grey-block>div{color:#bbb;}
+.list-content.mysop-list .grey-block .product-code,
+.list-content.mysop-list .grey-block .product-code > *,
+.list-content.mysop-list .grey-block .product-category,
+.list-content.mysop-list .grey-block .product-pvbv,
+.list-content.mysop-list .grey-block.list-row-content>div{color:#bbb;}
 
 
 @media (max-width:768px){
@@ -1258,6 +1332,60 @@
 	.akl .shipping-delivery.sopCreate {margin-bottom:0;}
 	.akl .sop-order-done .amwa-btnbar {padding:0; margin-top:0;}
 
+	/* ---- 나의 정기주문&스마트오더 ---- */
+	.akl .sop-container {padding:30px 0 0;}
+	.akl .sop-container .panel-heading + .panel-collapse>.panel-body {padding-bottom:15px;}
+	.sop-container .downline-profile-second-line {margin-bottom:30px;}
+
+	.sop-order-info {margin-right:40px;}
+	.sop-order-info>span { padding-right:15px;}
+	.sop-order-info>span:after {left:auto; right:0; text-align:right;}
+	.sop-order-info>span:first-child:after {display:block;}
+	.sop-order-info .type-numbs {padding-right:0;}
+	.sop-order-info .type-numbs:after {display:none;}
+	.sop-container .edit-profile {width:30px; height:30px; text-align:right;}
+	.sop-container .edit-profile.ico-fa-pencil:before {top:5px;left:auto; right:0;}
+	.sop-container .edit-profile>span {display:none;}
+
+	/* SOP 필터 검색 */
+	.sop-container .toggle-buttons-container {display:block}
+	.akl .sop-container .order-history-search-wrapper { margin-bottom:30px; border:0 none;}
+	.akl .sop-container .order-history-search-wrapper .toggle-buttons-container button {border:1px solid #d3d3d3; width:48%;}
+	.akl .sop-container .order-history-search-wrapper .toggle-buttons-container button:last-child { float:right;}
+	.akl .sop-container .order-history-search-wrapper .form-wrapper {border:0 none;padding:20px 0 0;}
+	.akl .sop-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {padding:20px 0 0;}
+	.akl .sop-container .order-history-search-wrapper .form-wrapper button {border:0 none;}
+
+	.akl .sop-sort-order select.form-control {width:auto; min-width:100px;}
+	.sop-sort-order .form-control+.form-control {margin-left:10px;}
+	.sop-sort-order .form-group.sort-cell {float:left}
+	.sop-sort-order .sort-cell+.sort-cell {margin-left:0;}
+	.sop-sort-order .control-label {margin-right:15px;}
+	.akl .sop-container .order-history-search-wrapper .form-wrapper .cuton-sel {text-align:left;}
+	.akl .sop-sort-order .cuton-sel select.form-control {width:100%; margin:0}
+	.akl .sop-sort-order .cuton-sel select.form-control +.form-control {margin-top:15px;}
+
+	/* SOP 주문상세 > 제품목록 */
+	.akl .list-content.mysop-list {table-layout:initial;}
+	.akl .sop-container .list-content.mysop-list .plp-item-label-wrap {top:0;}
+	.list-content.mysop-list .list-item-image {max-width:60px; max-height:60px;}
+	.list-content.mysop-list .list-row-content.row {display:table-row;}
+	.list-content.mysop-list .list-row-content>div {display:table-cell; vertical-align:middle; padding:20px 0; border-bottom:1px solid #e3e3e3;}
+	.list-content.mysop-list .list-row-content [class^=col-] {float:none;}
+	.list-content.mysop-list .list-row-content .type-btn,
+	.list-content.mysop-list .list-row-content .type-option,
+	.list-content.mysop-list .list-row-content .type-price,
+	.list-content.mysop-list .list-row-content .data-cell {display:none;}
+	.list-content.mysop-list .list-row-content.row .type-prdt {width:60%;}
+	.list-content.mysop-list .list-row-content.row .numbs {width:20%;}
+	.list-content.mysop-list .list-row-content.row .repeat {width:20%;}
+
+	/*
+	.sop-container .list-row-content>div.col-md-4{padding-left:30px;}
+	.sop-container .list-row-content>div.label-wrap{padding-top:10px;}
+	.sop-container .list-row-content>div.data-cell{padding-top:10px;}
+	.sop-container .list-row-content>div.data-cell>span:nth-child(1){display:block;margin-bottom:10px;}
+	.sop-container .list-row-content>div:first-child{padding-top:auto;} */
 }
 
 
@@ -1267,8 +1395,6 @@
 
 
 /* ---- SOP 공통 ---- */
-.akl .sop-container {padding:36px 50px 0;}
-.akl .icon-sub-title.mySOP-title:after {top:3px; width:20px; height:20px; background:#555;}
 
 /* 알림-경고 */
 .sop-alert {margin-bottom:20px;}
@@ -1279,51 +1405,11 @@
 .sop-alert .alert-info[class*=ico-fa-]{ padding:15px 15px 15px 60px;}
 .sop-alert .ico-fa-exclamation:before {top:50%; left:15px; color:#e11e45; font-size:24px; width:40px; height:40px; margin-top:-20px; text-align:center;}
 
-/* SOP 상태정보 */
-.sop-container .downline-profile {font-size:32px; font-weight:500; letter-spacing:-0.025em; color:#002f5f;}
-.sop-container .downline-profile-second-line {position:relative; margin:20px 0 10px;}
-.sop-order-info {min-height:50px; padding-bottom:25px; box-sizing:border-box;}
-.sop-order-info>span {display:inline-block; margin-right:25px;}
-.sop-order-info>span>em {display:inline-block;}
-.sop-order-info .edit-profile {position:absolute; top:0; right:0; display:inline-block; padding-left:22px;}
-.sop-order-info .type-payment>em {vertical-align:middle;}
-.sop-order-info .type-payment em>img{width:38px;}
-.sop-order-info .type-state.ico-fa-truck {padding-left:28px;}
-.sop-order-info .type-state.ico-fa-truck:before {left:0; top:0; color:#0075a4;}
-.sop-order-info .type-numbs {}
-
-/* SOP 프로필 수정 */
-.sop-container .edit-block {display:none; position:relative; padding:30px; margin-bottom:40px; background:#f4f4f4;}
-.sop-container .edit-block .close-edit{position:absolute;z-index:9;top:10px;right:10px;display:block;font-size:20px;}
-.sop-container .edit-block .edit-block-footer{margin:15px;padding:20px 0 0;border-top:1px solid #dadada;}
-.sop-container .edit-block .edit-block-footer .btn{margin-right:20px;}
-.sop-container .edit-block .edit-block-footer a.pull-right{line-height:40px;}
-.sop-container .edit-block .row{line-height:40px;}
-.sop-container .edit-block .row>div>div{height:56px;}
-.sop-container .edit-block .row .width-s{display:inline-block;width:60px;}
-.sop-container .edit-block .row .form-control{padding-left:10px!important;color:#55565a;}
-.sop-container .edit-block .row .has-card{position:relative;}
-.sop-container .edit-block .row .has-card img{margin-right:.75em;}
-.sop-container .edit-block .row .has-card .payment-card{position:absolute;top:8px;right:40px;vertical-align:top;}
-.sop-container .edit-block .row .has-card .payment-card img{max-width:40px;margin-right:0;vertical-align:top;}
-
-/* SOP 빠른검색 */
-.sop-container .akl-toggle-wrap {margin-bottom:30px;}
-.sop-container .akl-toggle-wrap.sort-order .accordion-custom {border:1px solid #dadada; border-width:1px 0;}
-
 /* 빠른검색 disabled - 사용여부 아직 모름*/
 .sop-container .panel .panel-heading .panel-title .disable{padding:1em 0;cursor:not-allowed;}
 .sop-container .panel .panel-heading .panel-title .disable *{cursor:not-allowed;color:#bbbbbb;}
 .sop-container .panel .panel-heading .panel-title .disable .fa-plus::before{content:'\f067';color:#bbbbbb;}
 
-/* 필터 조회 */
-.sop-container .toggle-buttons-container {display:none}
-.sop-container .toggle-buttons-container button span {color:#0075a4;}
-.sop-container .cuton-sel select {font-size:14px; font-weight:400; letter-spacing:-1px; color:#002f5f; a}
-.sop-container .new-select.form-wrapper select:nth-last-of-type(1){margin-right:0 !important;}
-.akl .sop-container .order-history-search-wrapper .form-wrapper{padding-right:0;}
-.akl .sop-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
-.akl .sop-container .order-history-search-wrapper .form-wrapper .cuton-sel {text-align: right;}
 
 /* 나의 스마트 오더(6개월) > 기간조회 Bar */
 .sop-container .months-select-bar-out-wrap {margin-top:10px; padding:0 0 20px; text-align:center; border:1px solid #e3e3e3;}
@@ -1357,6 +1443,8 @@
 .sop-container .circle-green{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
 .sop-container .circle-orange{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#e9961a;}
 
+
+/*
 #inactive-block .active a{color:#0075a4;}
 #inactive-block .list-item-image img{opacity:.5;}
 #inactive-block .list-item-info{color:#bbbbbb;}
@@ -1370,9 +1458,9 @@
 .sop-container #inactive-block .data-cell+div{color:#bbbbbb;}
 .sop-container #inactive-block .list-row-content>div{color:#bbbbbb;}
 .sop-container #inactive-block .list-row-content .list-item-info div:nth-child(1){color:#bbbbbb;}
-.sop-container #inactive-block .label-gift{background:#bbbbbb;}
+.sop-container #inactive-block .label-gift{background:#bbbbbb;} */
 
-/* 나의 스마트 오더(6개월) > 목록 table - 정리요망 */
+/* 나의 스마트 오더(6개월) > 목록 table - 정리요망
 .sop-container .list-content label.label-orange{display:block;width:55px;margin-bottom:5px;padding:6px 5px 6px 6px;font-size:16px;font-weight:100;line-height:18px;color:#ffffff;border-radius:30px;background:#e9961a;}
 .sop-container .list-content label.label-orange i{margin-right:10px;}
 .sop-container .list-content label.label-green{display:block;width:30px;margin:5px auto;font-size:16px;font-weight:100;line-height:30px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
@@ -1384,42 +1472,15 @@
 .sop-container .mysop-monthly-list-content .ui-front button{width:100%;}
 .sop-container .mysop-monthly-part .searchEmptyPageMiddle{padding:35px 0;}
 
-.sop-container .list-row-content{position:relative;display:table;width:100%;margin:0;padding:20px 0 10px;vertical-align:middle;border-bottom:1px solid #e3e3e3;}
-.sop-container .list-row-content>div{padding-top:20px;line-height:1em;}
-.sop-container .list-row-content>div.col-md-4{padding-left:30px;}
-.sop-container .list-row-content>div.label-wrap{padding-top:10px;}
-.sop-container .list-row-content>div.data-cell{padding-top:10px;}
-.sop-container .list-row-content>div.data-cell>span:nth-child(1){display:block;margin-bottom:10px;}
-.sop-container .list-row-content>div:first-child{padding-top:0;}
-.sop-container .list-row-content>div:first-child .list-item-image{position:relative;z-index:10;display:table-cell;padding:0 10px 0 0;vertical-align:top; width:75px; height:75px;}
-.sop-container .list-row-content>div:first-child .list-item-image img{width:75px;height:auto;border:1px solid #e3e3e3;}
-.sop-container .list-row-content>div:first-child .list-item-info{display:table-cell;padding:0 10px;vertical-align:top;}
-.sop-container .list-row-content>div:first-child .list-item-info .product-code{font-size:14px;line-height:1.71em;}
-.sop-container .list-row-content>div:first-child .list-item-info .product-category{font-size:14px;line-height:1.71em;}
-
-/* 정리요망 */
 .sop-container .label-gift{position:absolute;z-index:9;top:-20px;left:0;width:37px;height:26px;margin-bottom:0;padding-top:5px;padding-left:8px;color:#ffffff;background:#721472;}
 .sop-container .label-gift span{position:absolute;top:0;right:-16px!important;width:0;height:0;border-right:16px solid transparent;border-bottom:32px solid #ffffff;border-left:16px solid transparent;}
-
+*/
 
 
 @media (max-width:768px){
-	.akl .sop-container {padding:30px 0 0;}
-	.akl .sop-container .panel-heading + .panel-collapse>.panel-body {padding-bottom:15px;}
 
-	.sop-order-info>span {margin-right:15px;}
-	.sop-container .edit-profile {width:30px; height:30px; text-align:right;}
-	.sop-container .edit-profile.ico-fa-pencil:before {top:5px;left:auto; right:0;}
-	.sop-container .edit-profile>span {display:none;}
 
-	/* 필터 조회 */
-	.sop-container .toggle-buttons-container {display:block}
-	.akl .sop-container .order-history-search-wrapper { margin-bottom:30px; border:0 none;}
-	.akl .sop-container .order-history-search-wrapper .toggle-buttons-container button {border:1px solid #d3d3d3;width:48%; }
-	.akl .sop-container .order-history-search-wrapper .toggle-buttons-container button:last-child { float:right}
-	.akl .sop-container .order-history-search-wrapper .form-wrapper {border:0 none;padding:20px 0 0;}
-	.akl .sop-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {padding:20px 0 0;}
-	.akl .sop-container .order-history-search-wrapper .form-wrapper button {border:0 none;}
+
 
 	/* 나의 스마트 오더(6개월) > 기간조회 Bar */
 	.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span{font-size:12px;}
@@ -1974,7 +2035,7 @@
 	.auto-renewal-wrap.my-count-page-wrap .list-content .checkbox-element-wrapper{display:block!important;padding-left:0;}
 	.auto-renewal-wrap.my-count-page-wrap .list-content .position-absolute{position:relative;top:-110px;}
 
-	.sop-container .downline-profile-second-line{margin-bottom:0;}
+
 
 	.sop-container .pagination-bar{margin-bottom:15px;}
 	.sop-container .shopping-cart-item-list .product-list-item{padding-right:0!important;padding-left:0!important;}
@@ -2131,14 +2192,23 @@
 
 	.sop-container .list-row-content>div:first-child .list-item-image img{border:0;}
 	.sop-container .product-category{display:none;}
+
+
+	/*
 	.sop-container .mysop-list .list-row-content>div .list-item-info div:nth-child(1){font-size:20px;font-weight:600;line-height:20px;color:#002f5f;}
 	.sop-container .mysop-list .list-row-content>div:nth-child(1){padding-left:0;}
 	.sop-container .mysop-list .list-row-content>div:nth-child(1){float:left;width:61%;}
 	.sop-container .mysop-list .list-row-content>div:nth-child(2){float:left;width:20%;padding-top:0;font-size:18px;text-align:center;}
 	.sop-container .mysop-list .list-row-content>div:nth-child(2) .qty{display:block;margin-bottom:10px;font-size:16px;font-weight:600;color:#55565a;}
-	.sop-container .mysop-list .list-row-content>div:nth-child(6){position:relative;float:left;width:18%;padding-top:10px;font-weight:600;text-align:center;}
+	.sop-container .mysop-list .list-row-content>div:nth-child(6){position:relative;float:left;width:18%;font-weight:600;text-align:center;}
 	.sop-container .mysop-list .list-row-content>div:nth-child(6) i{position:absolute;top:30px;left:50%;margin-left:-8px;}
-	.sop-container .mysop-list .list-row-content>div:nth-child(3),.sop-container .mysop-list .list-row-content>div:nth-child(4),.sop-container .mysop-list .list-row-content>div:nth-child(5),.sop-container .mysop-list .list-row-content>div:nth-child(7),.sop-container .mysop-list .list-row-content>div:nth-child(8){display:none;}
+
+	.sop-container .mysop-list .list-row-content>div:nth-child(3),
+	.sop-container .mysop-list .list-row-content>div:nth-child(4),
+	.sop-container .mysop-list .list-row-content>div:nth-child(5),
+	.sop-container .mysop-list .list-row-content>div:nth-child(7),
+	.sop-container .mysop-list .list-row-content>div:nth-child(8){display:none;} */
+
 	.sop-container .mob-mysop-monthly-wrap .navigation-tabs-container .left-gradient{position:absolute;z-index:99;left:-18px;width:10%;height:57px;background:-webkit-gradient(linear,left top,100% top,color-stop(0,#ffffff),color-stop(39%,rgba(255,255,255,.45)),color-stop(40%,rgba(255,255,255,.27)),color-stop(100%,rgba(255,255,255,.15)));}
 	.sop-container .mob-mysop-monthly-wrap .navigation-tabs-container .right-gradient{height:67px;}
 	.sop-container .mob-mysop-monthly-wrap .navigation-tabs-container .outer-border-bottom{overflow:hidden;}
