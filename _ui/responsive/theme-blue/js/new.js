@@ -677,6 +677,14 @@ $(function() {
 	});
 });
 
+//컴플라이언스 센터
+$(function() {
+	$('.F80200_lp').click(function(event) {
+		event.preventDefault();
+		layerPopOver('','.F80200_lp_pop');
+	});
+});
+
 /* akl_common.js 이동 - 2018.07.04
 //온라인 매거진
 $(function() {
