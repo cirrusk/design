@@ -529,14 +529,39 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .brown09{color:#682114;}
 
 .visual-area.type02.jungipum-kim{}
-.v-pro.kim-area{width: 100%; display: block;margin: 70px auto 0;}
-.v-pro.kim-area .img-wrap{display:inline-block;position:relative;width: initial;width: auto;}
-.v-pro.kim-area .injung{position: absolute;top: 66%;left: 100%;margin-left: -54px;width: 80px;text-align: left;}
+
+
+.v-pro.certifi-area span.img{display:inline-block;width:auto;}
+.v-pro.certifi-area .certifi{display:inline-block;margin-left: -13px;padding-bottom:80px;vertical-align: bottom;text-align: left;}
+.v-pro.certifi-area .certifi .in-mark{text-align: left;}
+/*.v-pro.certifi-area .certifi .in-mark img{-webkit-box-shadow:3px 3px 3px rgba(0,0,0,.3),0 0 3px rgba(0,0,0,.7);
+									-moz-box-shadow:3px 3px 2px rgba(0,0,0,.3),0 0 3px rgba(0,0,0,.7);
+									box-shadow:3px 3px 2px rgba(0,0,0,.7),0,0,3px rgba(0,0,0,.7);}*/
+.v-pro.certifi-area .certifi ul{}
+.v-pro.certifi-area .certifi ul li{font-size:12px;color:#56565a;font-weight:300;letter-spacing:-1px;}
+
+
+.kim-knowhow{position: relative;}
+.kim-knowhow .oil-txt-lst, .kim-knowhow .oil-txt-lst.three {position: absolute;bottom: 0;/* display: block; */}
+
+
+.oil-txt-lst{display:block;padding: 0 13% 0;/* overflow: hidden; *//* margin-top: -50px; */}
+.oil-txt-lst ul li{float:left;width:25%;}
+.oil-txt-lst li .round-area{display: block;text-align: center;/* margin: 0 7px; */}
+.oil-txt-lst li .img-wrap{display: block;overflow: hidden;text-align: center;margin: 0 7px 8px;}
+.oil-txt-lst li .img-wrap:after{display:block;clear:both;content:"";}
+.oil-txt-lst li .img-wrap img{width:auto;height:auto;display:inline-block;text-align:center;}
+.oil-txt-lst li em.txt-wrap{font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
+
+.oil-txt-lst.three{padding: 0 17% 0;}
+.oil-txt-lst.three ul li{width: 33.3%;}
+
 
 
 
 
 @media (max-width: 768px) {
+	
 	/* 스킨케어 뷰티 비주얼 영역 공통 */	
 	.skin-care .visual-area.type02{height:inherit;background-color:inherit !important;}	
 	.skin-care .visual-area.type02.hydrav{min-height:595px;}
@@ -658,7 +683,15 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	/*원포원*/	
 	.capsule-img-area em.txt br{display:none;} /* 라임트리 캡슐세트 */
-	.v-pro.kim-area .img-wrap img{width:80%}
+	
+	.v-pro.certifi-area span.img{width:100% !important;} /* 김 */
+	.v-pro.certifi-area{position:relative;padding-bottom: 0;}
+	.v-pro.certifi-area .certifi{display:block;padding-bottom: 0;margin-left:6%;}
+	.v-pro.certifi-area .certifi span{width:auto;}
+	.v-pro.certifi-area .certifi ul li br{display:none;}
+	
+	.oil-txt-lst.three{padding: 0 5% 0;}
+	
 
 }
 
@@ -670,17 +703,15 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.pormula-lst li{margin-right: 15px;}
 	.perl-water-lst > ul li .perl-area span img{width:85%;height:85%;}
 	
-	.v-pro.kim-area .img-wrap img{width:90%}
-	.v-pro.kim-area .injung{left:97%;font-size:13px;}
-	
+	.v-pro.certifi-area span.img{width:90%;}
+	.v-pro.certifi-area span.img img{width:90%;}
+	.v-pro.certifi-area .certifi{margin-left:-40px;padding-bottom:40px;}
 	
 }
 @media (min-width: 769px) and (max-width: 900px) {
 	.capsule-new-area.new{padding-top: 35px;padding-left: 40px;}
 	.capsule-new-area.new span.lime-new{left:0;font-size: 16px;  width: 50px;height: 50px;line-height: 50px;}
-	.kim-area img.img{width:90%;}
-	.v-pro.kim-area .img-wrap img{width:80%}
-	.v-pro.kim-area .injung{left:93%;}
+
 
 }
 
@@ -807,9 +838,13 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 	.capsule-new-area.new{padding-top: 35px;padding-left: 40px;}
 	.capsule-new-area.new span.lime-new{font-size: 16px;left:0;width: 50px;height:50px;line-height:50px}
+
+	.v-pro.certifi-area .certifi{padding:10px 0 0 0;}
+	.v-pro.certifi-area .certifi ul{margin-top:0;}
+	.v-pro.certifi-area .certifi ul li br{display:none;}
 	
-	.v-pro.kim-area .img-wrap img{width:80%}
-	.v-pro.kim-area .img-wrap em{font-size:12px;}
+	.oil-txt-lst, .oil-txt-lst.three{padding: 0 0 0;}
+	.oil-txt-lst li em.txt-wrap{font-size:12px;}
 	
 }
 
@@ -857,9 +892,10 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.visual-area.others .v-pro {margin-top: 35px !important;}
 	.visual-area.others{padding-bottom:45px !important;}
 	
-	
-		
+			
 	.capsule-new-area.new{padding-top: 28px;padding-left: 28px;}
 	.capsule-new-area.new span.lime-new{left:0;font-size: 14px;  width: 35px;height: 35px;line-height: 35px;}
+	
+	.v-pro.certifi-area .certifi{margin-left:5%;}
 }
 
