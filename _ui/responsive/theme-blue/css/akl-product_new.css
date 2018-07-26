@@ -913,6 +913,8 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .process-infom-box {display:block;margin-top:30px;border:1px solid #e3e3e3;overflow:hidden;}
 .process-infom-box .box-tit {padding:15px 0;border-bottom:1px solid #e3e3e3;}
 .process-infom-box .box-tit p {font-size:18px;font-weight:300;color:#666;margin:0 0;padding:0 0;}
+.process-infom-box .box-tit p span {vertical-align:middle;padding:0 10px;}
+.process-infom-box .box-tit p span em {margin-right:5px;margin-top:-2px}
 
 .firepower-process {width:100%;padding:20px 0;}
 .firepower-process ul {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
@@ -981,8 +983,18 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 /* 원포원 - 정기품 */
 .visual-area.type02.jungipum-5-color {background: url('../images/akl_product/one-for-one/bg_jungipum_5_color.png') no-repeat center;min-height:989px;}
 .visual-area.type02.jungipum-5-color .v-pro {margin-left:70px}
-.fair-green {display:inline-block;width:8px;height:8px;}
-.ferment-red {display:inline-block;width:8px;height:8px;}
+.fair-green {display:inline-block;width:8px;height:8px;border-radius: 50%;background:#20893d;vertical-align:middle;}
+.ferment-red {display:inline-block;width:8px;height:8px;border-radius: 50%;background:#c4133f;vertical-align:middle;}
+.step-proc {padding:20px 40px;}
+.step-proc ul {display:table;width:100%;box-sizing: border-box;table-layout:fixed;margin:0 auto;}
+.step-proc ul li {display:table-cell;box-sizing: border-box;vertical-align:top;text-align:center;}
+.process-type1 li {width:9.0909%;}
+.process-drawing {background:#f4f4f4;padding:30px 30px;margin:10px auto 25px}
+.draw-step01 li {display:inline-block;}
+.draw-step01 li {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+.draw-step01 li dt {text-align:center;width:100%;vertical-align:middle;min-height:140px}
+.draw-step01 li dt img {vertical-align:middle;line-height:140px;text-align:center;}
+.draw-step01 li dd {text-align:center;width:100%;font-size:16px;color:#666;font-weight:300}
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 
@@ -1527,6 +1539,15 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 	/* 정기품 - 오색수연소면 */
 	.visual-area.type02.jungipum-5-color .v-pro {margin-left:10px}
+	.process-infom-box .box-tit p span {vertical-align:middle;padding:0 5px;text-align:center;}
+
+	.step-proc {padding:20px 20px;}
+	.process-type1 li {float:left;display:inline-block;width:25%;height:60px;} 
+	.process-drawing {margin:20px auto 30px}
+	.draw-step01 li {float:left;display:block;width:100%;padding:10px 0 20px;}
+	.draw-step01 li dl {margin:0 auto;}
+	.draw-step01 li dt img {width:inherit;height:auto;text-align:center;}
+	.draw-step01 li dd br {display:non;}
 
 }	
 
