@@ -138,6 +138,7 @@ Version : AKL Hybris UIUX 1.0
 /* 공통 타이틀 */
 .detail-content-area {/*padding:0 50px;*/}
 .com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.2;}
+.com-tit.small {font-size:32px !important;}
 .com-tit span {display:inline-block;font-weight:400;font-size:44px;}
 .com-tit span.small {font-size:32px;}
 .com-tit strong{font-weight:400;}
@@ -156,6 +157,10 @@ Version : AKL Hybris UIUX 1.0
 
 .com-tit.celleffect {padding:0 30% 0 0;}
 .com-txt.celleffect span {display:block;}
+
+.com-info-txt {width:100%;}
+.com-info-txt dt {font-size:32px;font-weight:400;line-height:42px;padding:0 0 10px;}
+.com-info-txt dd {font-size:16px;font-weight:300;line-height:26px;padding:0 0 30px;}
 
 /**** 타입01 ****/
 /* guide 01 */
@@ -1013,12 +1018,38 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 .step-w-lst li dl dd {vertical-align:top;}
 .step-w {display:inline-block;width:60px;height:20px;border-radius:10px;background:#bbbbbb;color:#fff;text-align:center;font-size:14px;font-weight:300;}
 
-.recipe-box {background:#f4f4f4;width:100%;height:440px;text-align:center;}
-.recipe-box p {font-size:18px;font-weight:400;}
+.recipe-box {position:relative;background:#f4f4f4;width:100%;min-height:440px;text-align:center;padding:20px 0;}
+.recipe-box p {font-size:18px;font-weight:400;letter-spacing:-2px;}
+.recipe-box p.txt-lp9969 {position:absolute;top:320px;left:50%;margin-left:-55px}
 .recipe-info {width:100%;height:380px;padding-top:40px;}
 
 /* 원포원 - 정기품 달인 맛간장소스 */
 .visual-area.type02.expertSoySauce {background: url('../images/akl_product/one-for-one/bg_expert_soy_sauce.png') no-repeat center;min-height:947px;}
+.recipt-mater {width:80%;margin:-40px auto 20px;}
+.recipt-mater ul {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+.recipt-mater li {display:table-cell;vertical-align:top;padding:0 0;background: url('../images/akl_product/icon/ico_plus.png') no-repeat left 35px;width:16.666%;text-align:center;}
+.recipt-mater li:first-child {background:0 none;}
+.recipt-mater li:nth-of-type(2) {background: url('../images/akl_product/icon/ico_semicolon.png') no-repeat left 35px;}
+.recipt-mater li dl {vertical-align:top;}
+.recipt-mater li dl dt {height:69px;line-height:69px;}
+.recipt-mater li dl dd {font-size:14px;font-weight:300;color:#808285;padding:10px 0 0;}
+
+.advan-jungipum-expert {height:267px;width:100%;text-align:center;border:1px solid #e3e3e3; 
+	background:url('../images/akl_product/one-for-one/bg_9969_wall_1.png') no-repeat -5px 90px, url('../images/akl_product/one-for-one/bg_9969_wall_2.png') no-repeat right bottom, url('../images/akl_product/one-for-one/bg_9969_tile.png') no-repeat left top, url('../images/akl_product/one-for-one/bg_9969_gray.png') repeat left top;}
+.sauce-tit {padding:70px 0 0}
+.sauce-tit dt p {font-size:44px;font-weight:400;line-height:54px}
+.sauce-tit dt span {font-size:32px;font-weight:400;line-height:36px;}
+.sauce-tit dd {font-size:18px;font-weight:400;line-height:26px;padding:22px 0 0}
+.sauce-tit dd p {font-size:16px;font-weight:300;color:#808285;}
+
+.recipe-menu-list {width:100%;margin:20px auto 0;}
+.recipe-menu-list ul {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+.recipe-menu-list ul li {display:table-cell;box-sizing: border-box;width:25%;text-align:center;}
+.recipe-menu-list ul li dd {line-height:22px;padding:10px 0 0}
+.recipe-menu-list ul li dd span {font-size:16px;font-weight:400;}
+.recipe-menu-list ul li dd p {font-size:14px;font-weight:300;color:#808285;padding:5px 0 0}
+
+.btn-food {width:65px;padding:7px 0 0;min-height:40px;display:inline-block;background:#012f60;text-align:center;margin:0 5px;}
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 
@@ -1577,6 +1608,13 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.recipe-box {height:auto;padding:20px 20px;}
 	.recipe-info {height:auto;padding-top:0;}
 	.recipe-info img {width:inherit;height:auto;}
+	
+	.recipe-box p.txt-lp9969 {position:relative;top:0;left:0;margin-left:0;text-align:center;}
+	.recipt-mater {width:100%;margin:0 auto;}
+	
+	.advan-jungipum-expert {height:auto; }
+	.sauce-tit {padding:50px 20px 0}
+	.recipe-menu-list ul li {display:block;width:100%;padding:20px 0;}
 
 }	
 
