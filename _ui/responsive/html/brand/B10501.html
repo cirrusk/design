@@ -32,32 +32,45 @@
 
 	<main>
 		<div id="header"></div>
-		<div class="container-fluid main-container" id="contents">
-			<div class="print-hide breadcrumb-section">
+		<!-- ## 브랜드 전체메뉴 영역 -->
+		<div class="container-fluid main-container"> 
+			<div class="print-hide breadcrumb-section brand-fullmenu">
 				<ol class="breadcrumb">
-					<li><a href="homepage-logged-in.html">홈</a></li> 
-					<li><a href="homepage-logged-in.html">암웨이소개</a></li>
-					<li>미디어 라이브러리</li>
+					<li><a href="#">홈</a></li> 
+					<li><a href="#">암웨이소개</a></li>
+					<li><!-- 브랜드 셀렉트메뉴 -->
+						<div>
+							<div>
+								<select class="form-control">
+									<option value="">한국암웨이</option>
+									<option value="" >글로벌암웨이</option>
+									<option value="" >사회공헌활동</option>
+									<option value="" >채용정보</option>
+									<option value="" >제품브랜드</option>
+									<option value="" selected>미디어 라이브러리</option>
+								</select>
+							</div>
+							<div>
+								<select class="form-control">
+									<option value="" selected>보도자료</option>
+									<option value="">광고영상</option>
+									<option value="">이벤트&amp;갤러리</option>
+								</select>
+							</div>
+						</div>
+						<!-- //브랜드 셀렉트메뉴 -->
+					</li>
 				</ol>
 			</div>
 		</div>
-		<div class="jump-to-amway">
-			<div>
-				<p>메뉴이동</p> 
-				<div class="jump-to-wrapper">
-					<div class="jump-menu">
-						<span class="currentTxt"><a href="#">보도자료</a></span>
-						<div class="select-wrapper">
-							<ul class="select-list"> 
-								<li><a href="#" class="menu-dep1 current">보도자료</a></li> 
-								<li><a href="#" class="menu-dep1">광고영상</a></li> 
-								<li><a href="#" class="menu-dep1">이벤트&amp;갤러리</a></li> 
-							</ul>
-						</div>
-					</div>
-				</div> 
-			</div>
-		</div>
+		<script>
+		$(document).ready(function(){
+			$(".form-control").select2();
+		});
+		</script>
+		<!-- //## 브랜드 전체메뉴 영역 -->
+		
+		
 		<div class="container">
 			<div class="customer-area">
 				<div class="title-box">

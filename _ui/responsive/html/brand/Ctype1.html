@@ -24,56 +24,6 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 </head>
 
-<script>
-$(document).ready(function(){
-
-	$(".form-control").select2();
-	$(".form-control").parent('div').css('display','inline-block');
-
-});
-</script>
-
-<style>
-/* 포커스 확인 */
-button:focus, a:focus {border:1px dotted #111;}
-
-
-/* 전체메뉴 */
-.brand-fullmenu {position:sticky;background:#fff;width:100%;top:139px;z-index:2;}
-.brand-fullmenu .select2-container {width:100% !important;}
-.brand-fullmenu .select2-container .select2-selection--single .select2-selection__rendered {width:100% !important;}
-
-/* 브랜드 메인 레이아웃 */
-.brand-main-container {}
-.full-width-component {position:relative;width:100%;margin:0;}
-.full-width-component img {width:100%;}
-
-/* 메인 비주얼 영역 */
-.mainmenu-link {position:absolute; left:0;top:30%;}
-.mainmenu-link a {display:block;width:150px;height:50px;}
-
-.main-title {margin-bottom:15px !important;}
-.main-title-txt {font-size:18px;font-weight:400;letter-spacing:-2px;}
-
-.title-component {clear:both;margin:55px auto 40px;padding:0;text-align:center;}
-.title-component h2 {margin:0;font-size:32px;color:#002f5f;}
-.title-component > p {margin:15px 0 0;font-size:16px;}
-.title-component .title-ul {margin:40px auto 80px;display:flex;width:90%;}
-.title-component .title-ul li{position:relative;padding:75px 0 0;display:inline-block;-webkit-flex:1;flex:1;text-align:center;border:1px solid;}
-.title-component .title-ul li:before {content:'';display:block;position:absolute;top:0;width:100%;height:70px;background:pink;}
-
-.content-component{margin:0;padding:0 40px;}
-
-.content-col {clear:both;overflow:hidden;display:flex;width:100%;}
-.content-col article {-webkit-flex:1;flex:1;width:50%;}
-.content-col article + article {margin-left:26px;}
-.content-col article .cont-type1 {margin:0;height:100%;background:#f4f4f4;}
-.content-col article .cont-type1 img {width:100%;}
-.content-col article .cont-type1 figcaption{padding:20px 20px 10px;font-size:16px;font-weight:500;color:#002f5f;}
-.content-col article .cont-type1 figcaption + p {margin:0;padding:0 20px 20px;line-height:1.8;}
-</style>
-
-
 <body class="akl">
 	<!-- skipToContent -->
 	<div id="skipToContent">
@@ -82,93 +32,151 @@ button:focus, a:focus {border:1px dotted #111;}
 	<!-- //skipToContent -->
 	<main>
 		<div id="header"></div>
-		
 		<!-- ## 브랜드 전체메뉴 영역 -->
-		<div class="container-fluid brand-fullmenu"> 
-			<div class="print-hide breadcrumb-section main-container">
+		<div class="container-fluid main-container"> 
+			<div class="print-hide breadcrumb-section brand-fullmenu">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li> 
 					<li><a href="#">암웨이소개</a></li>
-					<li><!-- 임시 -->
-						<!-- select2 플러그인 테스트 -->
+					<li><!-- 브랜드 셀렉트메뉴 -->
 						<div>
-							<select class="form-control">
-								<option value="">전체</option>
-								<option value="">Oldest date</option>
-								<option value="">Inquiry Authority</option>
-							</select>
+							<div>
+								<select class="form-control">
+									<option value="" selected>전체</option>
+									<option value="">Oldest date</option>
+									<option value="" >Inquiry Authority</option>
+								</select>
+							</div>
+							<div>
+								<select class="form-control">
+									<option value="">전체</option>
+									<option value="">Oldest date</option>
+									<option value="" selected>Inquiry Authority</option>
+								</select>
+							</div>
+							<div>
+								<select class="form-control">
+									<option value="">전체</option>
+									<option value="">Oldest date</option>
+									<option value="" selected>Inquiry Authority</option>
+								</select>
+							</div>
 						</div>
-					</li>
-					<li><!-- 임시 -->
-						<!-- select2 플러그인 테스트 -->
-						<div>
-							<select class="form-control">
-								<option value="">전체</option>
-								<option value="">Oldest date</option>
-								<option value="">Inquiry Authority</option>
-							</select>
-						</div>
-					</li>
-					<li><!-- 임시 -->
-						<!-- select2 플러그인 테스트 -->
-						<div>
-							<select class="form-control">
-								<option value="">전체</option>
-								<option value="">Oldest date</option>
-								<option value="">Inquiry Authority</option>
-							</select>
-						</div>
+						<!-- //브랜드 셀렉트메뉴 -->
 					</li>
 				</ol>
 			</div>
 		</div>
+		<script>
+		$(document).ready(function(){
+			$(".form-control").select2();
+		});
+		</script>
 		<!-- //## 브랜드 전체메뉴 영역 -->
 		
 		<!-- ## 템플릿 C-type -->
-		<div class="brand-main-container amway-theme" id="contents"><!-- 본문바로가기 위치 이동 -->
-			<!-- ## 메인 비주얼 영역 -->
-			<div class="full-width-component">
+		<div class="brand" id="contents"><!-- 본문바로가기 위치 이동 -->
 			
-				<div class="banner-image-wrap">
-					<img class="desktop-image" src="/_ui/responsive/theme-blue/images/category_banner_image.png" alt="Amway Queen 맛과 영양을 그대로 암웨이 퀸 지키는 기술">
-					<img class="desktop-image-mob" src="/_ui/responsive/theme-blue/images/category_banner_image_mobile.png" alt="banner">
-				</div>
-				
-				<div class="mainmenu-link">
-					<a href="#">My Cooking Story</a>
-					<a href="#">행복을 더하는 조리기구 암웨이 퀸</a>
-					<a href="#">암웨이 퀸 요리명장은 암웨이 쿡웨어로</a>
-				</div>
-				<div class="banner-content-wrap">
-					
+			<div class="homepage_banner">
+				<!-- ## 메인 비주얼 영역 -->
+				<div id="banner_list" class="owl-carousel owl-theme">
+					<div class="wrapper">
+						<div class="banner__wrapper">
+							<img class="banner__image" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01.jpg" alt="banner">
+							<img class="desktop-image-mob" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01_mob.png" alt="banner">
+							<div class="banner__title">Amway Queen</div>
+							<div class="banner__message">
+								<p class="banner__message--main">맛과 영양을 그대로<br>암웨이 퀸 지키는 기술</p>
+								<div class="banner__message--sub">
+									<p>원재료의 맛 그리고 영양까지<br> 살아있는 요리</p>
+									<p class="mgt20">혼자서도 어렵지 않게 할 수 있도록 <br>암웨이 퀸이 [지키는 기술]로 <br>당신의 요리와 함께 합니다.</p>
+								</div>
+							</div>
+							<!-- <img class="banner__image-sub" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02_sub.png" alt=""> -->
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="banner__wrapper s2">
+							<img class="banner__image" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02.jpg" alt="banner">
+							<img class="desktop-image-mob" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01_mob.png" alt="banner">
+							<div class="banner__title">Amway Queen</div>
+							<div class="banner__message">
+								<p class="banner__message--main">행복을 더하는 조리기구 암웨이 퀸</p>
+								<div class="banner__message--sub">
+									<p>좋은 조리기구 하나만 있어도 생활은 더욱 행복해 집니다. <br>과학으로 탄생한 세계적인 조리기구, 암웨이 퀸</p>
+								</div>
+							</div>
+							<img class="banner__image-sub" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02_sub.png" alt="">
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="banner__wrapper s3">
+							<img class="banner__image" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02.jpg" alt="banner">
+							<img class="desktop-image-mob" src="/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01_mob.png" alt="banner">
+							<div class="banner__title">Amway Queen</div>
+							<div class="banner__message">
+								<p class="banner__message--main">행복을 더하는 조리기구<br>암웨이  퀸웨이 퀸의 대형 프라이팬,</p>
+								<div class="banner__message--sub">
+									<div>
+										<p>은 조리기구 하나만 있어도  생활은 더욱 행복해 집니다. 
+										과학으로 탄생한 세계적인 조리기구, 암웨이 퀸 좋은 재료를 썼을 때 최고의 음식 맛을 낼 수 있듯이, 훌륭한 요리의 비법은 열을 효율적으로 균일하게 전달하는 조리기구의 능력에 달려 있습니다.<br> 
+										암웨이 퀸은 팬의 구조가 다층으로 되어 있기 때문에 균일한 열 전달을 촉진하며 온도를 오래 유지합니다. 또한, 조리과정 중에 수막이 생겨 열과 공기가 밖으로 나가는 것을 방지하므로 
+										맛은 물론이고 영양소의 손실을 줄여 주는 합리적인 설계로 여러 가지 요리에 활용할 수 있습니다.<br>
+										중에 수막이 생겨 열과 공기가 밖으로 나가는 것을 방지하므로 맛은 물론이고 영양소의 손실을 줄여 주는 합리적인 설계로여러 가지 요리에 활용할 수 있습니다.​</p>
+									</div>
+									<div>
+										<p><strong>열과 증기를 놓치지 않는 수봉현상</strong>
+										은 조리기구 하나만 있어도  생활은 더욱 행복해 집니다. <br>
+										과학으로 탄생한 세계적인 조리기구, 암웨이 퀸 좋은 재료를 썼을 때 최고의 음식 맛을 낼 수 있듯이, 훌륭한 요리의 비법은 열을 효율적으로 균일하게 전달하는 조리기구의
+										</p>
+										<p><strong>열과 증기를 놓치지 않는 수봉현상</strong>
+										은 조리기구 하나만 있어도  생활은 더욱 행복해 집니다. <br>
+										과학으로 탄생한 세계적인 조리기구, 암웨이 퀸 좋은 재료를 썼을 때 최고의 음식 맛을 낼 수 있듯이, 훌륭한 요리의 비법은 열을 효율적으로 균일하게 전달하는 조리기구의
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- //## 메인 비주얼 영역 -->
 			
-			<div class="title-component">
-				<h2>My Cooking Story</h2>
-				<p>두번째 이야기:맛과 영양을 그대로 암웨이 퀸의 지키는 기술</p>
-			</div>
+			<!-- ## 컨텐츠 영역 -->
+			<div class="main-container amway-theme">
 			
-			<div class="full-width-component movie-wrap">
-				<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/queen_movie_bg.png" alt="">
-			</div>
+				<div class="title-component">
+					<h2>My Cooking Story</h2>
+					<p>두번째 이야기:맛과 영양을 그대로 암웨이 퀸의 지키는 기술</p>
+				</div>
+				
+				<!-- Video Preview -->
+				<div class="video-preview col-sm-12">
+					<div class="video-cont">
+						<span>
+							<img class="video-preview__img" src="/_ui/responsive/theme-blue/images/akl_brand/queen/queen_movie_bg.jpg" alt="Amway Queen My Cooking Story">
+							<img class="video-preview__img-mob" src="/_ui/responsive/theme-blue/images/akl_brand/queen/queen_movie_bg_mob.png" alt="videoM">
+						</span>
+					</div>
+					<div class="video-preview__content">
+						<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+					</div>
+				</div>
+				<!-- //Video Preview -->
+				
+				<div class="title-component">
+					<h2>맛과 영양을 그대로</h2>
+					<p>좋은 요리를 위한 암웨이 퀸의 5가지 [지키는 기술]</p>
+					<ul class="title-ul">
+						<li>풍미를 지키는 <br>Moisture Seal</li>
+						<li>영양소를 지키는 <br>VITALOK Cooking</li>
+						<li>영양소를 지키는 <br>VITALOK Cooking</li>
+						<li>원칙을 지키는 <br>NSF 인증</li>
+						<li>디테일을 지키는 <br> Asian Kitchen Lab</li>
+					</ul>
+				</div>
 			
-			<div class="title-component">
-				<h2>맛과 영양을 그대로</h2>
-				<p>좋은 요리를 위한 암웨이 퀸의 5가지 [지키는 기술]</p>
-				<ul class="title-ul">
-					<li>풍미를 지키는 <br>Moisture Seal</li>
-					<li>영양소를 지키는 <br>VITALOK Cooking</li>
-					<li>영양소를 지키는 <br>VITALOK Cooking</li>
-					<li>원칙을 지키는 <br>NSF 인증</li>
-					<li>디테일을 지키는 <br> Asian Kitchen Lab</li>
-				</ul>
-			</div>
-			
-			<!-- ## 패딩 컨텐츠 영역 -->
-			<div class="content-component">
-				<div class="content-col">
+				<div class="content-row">
 					<article>
 						<figure class="cont-type1">
 							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/queen_contimg1.png" alt="">
@@ -186,16 +194,43 @@ button:focus, a:focus {border:1px dotted #111;}
 					</article>
 				</div>
 				
-				<div class="content-col">
-					<article>
-						<img src="">
-					</article>
-					<article>
-					</article>
+				<!-- 기존가이드 따름 -->
+				<div class="category-success-story row">
+					<div class="success-story__item col-sm-12 col-md-6">
+						<div class="item-image-wrap"><img alt="image" class="desktop-image" src="/_ui/responsive/theme-blue/images/akl_brand/queen/queen_contimg3.png" /></div>
+						<div class="item-content-wrap">
+							<h2 class="bbanner-sub-title"><span>MY COOKING STORY</span></h2>
+							<h4 class="banner-title">AMWAY QUEEN</h4>
+							<div class="sub-title-wrap">
+								<span class="banner-sub-title">클로즈업 초이스 – <br>EP 03. 에션셜 바이 아티스트리D</span>
+							</div>
+							<div class="banner-button-wrap">
+								<a href="#" class="banner-button-link ">
+									<div class="btn-blue-white"><span class="btn-text">자세히 보기</span></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="success-story__item col-sm-12 col-md-6">
+						<div class="item-image-wrap"><img alt="image" class="desktop-image" src="/_ui/responsive/theme-blue/images/akl_brand/queen/queen_contimg4.png" /></div>
+						<div class="item-content-wrap">
+							<h2 class="banner-sub-title"><span>요리명장</span></h2>
+							<h4 class="banner-title">COOK MASTER</h4>
+							<div class="sub-title-wrap">
+								<span class="banner-sub-title">맛과 영양이 풍부한 요리를 직접 만들어 <br>널리 알리는‘암웨이 퀸‘ 브랜드</span>
+							</div>
+							<div class="banner-button-wrap">
+								<a href="#" class="banner-button-link ">
+									<div class="btn-blue-white"><span class="btn-text">자세히 보기</span></div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
+				<!-- //기존가이드 따름 -->
+				
 			</div>
 			<!-- //## 메인 컨텐츠 영역 -->
-			
 				
 		</div>
 		<!-- //## 템플릿 C-type -->
@@ -203,6 +238,31 @@ button:focus, a:focus {border:1px dotted #111;}
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">$(function() {
+		$('#banner_list').owlCarousel({
+			loop: false,
+			nav: false,
+			dots: true,
+			//autoplay: true,
+			//autoplayTimeout:5000,
+			margin: 0,
+			items: 1
+		});
+		
+		var bannerId = $('#banner_list');
+		var $dotItembar = bannerId.find('.owl-dots');
+		var $dotItems = bannerId.find('.owl-dots > button');
+		
+		
+		$dotItems.eq(0).html('<span>My Cooking Story</span>');
+		$dotItems.eq(1).html('<span>행복을 더하는 조리기구 <br>암웨이 퀸</span>');
+		$dotItems.eq(2).html('<span>암웨이 퀸 요리명장은 <br>암웨이 쿡웨어로</span>');
+		
+		var mTop = $dotItembar.height()/2;
+		$dotItembar.css('margin-top',-mTop);
+		
+	})
+	</script>
 
 </body>
 </html>
