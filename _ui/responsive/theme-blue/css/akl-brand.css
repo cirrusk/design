@@ -22,7 +22,8 @@ button:focus, a:focus {border:1px dotted #111;}
 .select2-container--default .select2-results__option[aria-selected=true]{background-color:#002f5f;color:#fff;}
 .select2-container--default .select2-results__option {padding:10px 10px;text-transform:uppercase;line-height:1.5;letter-spacing:.2px;font-weight:100;}
 
-.brand-fullmenu {position:sticky;background:#fff;width:100%;z-index:2;padding:25px 0 25px;}
+#brandMenu {position:sticky;top:139px;background:#fff;width:100%;z-index:8000;}
+.brand-fullmenu {padding:25px 0 25px;}
 .brand-fullmenu .breadcrumb {margin:0;padding:0;}
 .brand-fullmenu .breadcrumb li::after {padding:0 5px;content:'/ ';color:#cccccc;}
 .brand-fullmenu .breadcrumb li::before, .brand-fullmenu .breadcrumb li:last-child::after, .brand-fullmenu .breadcrumb li > div > div:last-child::after {content:none;}
@@ -161,6 +162,7 @@ section {overflow:hidden;clear:both;margin-top:25px;}
 @media (max-width: 768px){
 	
 	/* 브랜드 전체메뉴 */
+	#brandMenu {top:0;}
 	.akl .brand-fullmenu {padding:10px 0;}
 	.brand-fullmenu .select.form-control {width:100%;}
 	.brand-fullmenu .breadcrumb li:nth-of-type(3) {display:block;margin-top:10px;width:100%;}
