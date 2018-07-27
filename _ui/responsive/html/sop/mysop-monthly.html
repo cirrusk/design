@@ -155,22 +155,19 @@
 					<!-- 프로필 편집 -->
 					<div class="edit-block">
 						<a class="pull-right close-edit" href="javascript:void(0)"><i class="fas fa-times"></i></a>
-						<div class="row">
-							<div class="col-md-6 col-xs-12">
 
-								<label class="col-md-4 control-label text-upper"></label>
-								<div class="col-md-8 col-xs-12">
-									<input type="text" class="verify-form text-left form-control"
-										value="Yui Mori's Downline Profile(Wrap one line)">
+						<div class="row">
+							<div class="editbox box-left">
+								<label class="control-label col-md-3 col-xs-12">주문서 명</label>
+								<div class="col-md-9 col-xs-12">
+									<input type="text" class="verify-form text-left form-control" value="사용자명의 정기주문명">
 									<p class="error">Please select a valid profile name</p>
 								</div>
 							</div>
-
-
-							<div class="col-md-6 col-xs-12">
-
-								<label class="col-md-4 control-label text-upper">process day</label>
-								<div class="col-md-8 col-xs-12">
+							<div class="editbox box-right">
+								<label class="control-label col-md-3 col-xs-12">결제일</label>
+								<div class="txt-repeat col-md-9 col-xs-12">
+									<span>매달</span>
 									<select id="process-day" class="form-control width-s">
 										<option>1</option>
 										<option>2</option>
@@ -204,36 +201,30 @@
 										<option>30</option>
 										<option>31</option>
 									</select>
-									<span>of each calendar month</span>
 								</div>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<a id="addNewPayment" class="col-xs-6 col-md-12 addBtn text-right">Add New Payment</a>
-								<label class="col-xs-6 col-md-4 control-label text-upper">payment</label>
-								<div class="col-md-8 col-xs-12 has-card">
-									<div class="payment-card"><img src="images/visa.png"></div>
-									<select class="form-control">
-										<option>Work Card - **** 1234</option>
-										<option>Work Card - **** 1234</option>
-									</select>
+						</div>
+						<div class="row">
+							<div class="editbox box-left">
+								<label class="control-label col-md-3 col-xs-12">결제수단</label>
+								<div class="next-to-label txt-payment col-md-9 col-xs-12">
+									<span>신용카드</span>
+									<a id="addNewPayment" class="bt-akl-white mini">결제수단 변경</a>
 								</div>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<a href="#" id="addNewAddress" class="col-xs-6 col-md-12 addBtn text-right">Add New Address</a>
-								<label class="col-xs-6 col-md-4 control-label text-upper">delivery address</label>
-								<div class="col-md-8 col-xs-12">
-									<select class="form-control">
-										<option>Yui's Home Address</option>
-										<option>Yui's Home Address</option>
-									</select>
+							<div class="editbox box-right">
+								<label class="control-label col-md-3 col-xs-12">배송지</label>
+								<div class="next-to-label txt-address col-md-9 col-xs-12">
+									<span>서울시 강남구 영동대로 517(삼성동.아셈타워 27층)</span>
+									<a href="#" id="addNewAddress" class="bt-akl-white mini">배송지주소 변경</a>
 								</div>
-
 							</div>
 						</div>
 						<div class="edit-block-footer">
-							<a href="#" class="btn primary btn-m" id="btnEditSave">save</a>
-							<a href="#" class="text-link link-cancel" id="btnEditCancel">Cancel</a>
-							<a href="#" class="pull-right del-profile"><i class="fas fa-trash-alt"></i><span class="hidden-xs">Delete Profile</span></a>
+							<a href="#" class="bt-akl-blue" id="btnEditSave">저장</a>
+							<a href="#" class="bt-akl-txt link-cancel" id="btnEditCancel">취소</a>
+
+							<a href="#" class="pull-right del-profile"><i class="fas fa-trash-alt"></i><span class="hidden-xs">주문 취소</span></a>
 						</div>
 					</div>
 					<!-- //프로필 편집 -->
@@ -617,6 +608,9 @@
 			<!-- //sop-container -->
 		</div>
 		<!-- //container-fluid -->
+
+
+
 
 		<div id="quick"></div>
 		<div id="footer"></div>
