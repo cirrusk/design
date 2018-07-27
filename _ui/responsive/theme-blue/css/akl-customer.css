@@ -413,6 +413,7 @@ Version : AKL Hybris UIUX 1.0
 .tbl-type1.line-st td + td, .tbl-type1.line-st th + th  {border-left:1px solid #e3e3e3}
 .tbl-type1.line-st td {text-align:center; padding-top:0.7em; padding-bottom:0.7em}
 .tbl-type1.line-st .left {text-align:left}
+.tbl-type1.line-st .left-odd tr > *:nth-child(even) {text-align:left}
 .tbl-type1.line-st .top {vertical-align:top}
 .akl .tbl-type1.line-st th.bg {background-color:#f4f4f4; color:#002f5f; font-weight:500}
 .tbl-list-board.tbl-mob {display:none}
@@ -628,6 +629,7 @@ Version : AKL Hybris UIUX 1.0
 .compliance-area .file-email-list li a {color:#808285}
 
 .akl .compliance-area .termsWrapper * {font-size:14px}
+.akl .compliance-area .termsWrapper .cart-popup__header-text {font-size:24px}
 .akl .compliance-area .termsWrapper .titH2 {font-size:16px}
 .akl .compliance-area .termsWrapper ol {counter-reset:a}
 .akl .compliance-area .termsWrapper ol > li {position:relative; padding-left:22px; text-indent:0}
@@ -736,7 +738,7 @@ Version : AKL Hybris UIUX 1.0
 	.compliance-area .list-certifi li p {margin:10px 0 18px}
 	.compliance-area .form-email-inquiry {max-width:100%}
 	.akl .compliance-area .scroll-table {overflow-x:auto}
-	.akl .compliance-area .scroll-table table {width:900px;}
+	.akl .compliance-area .scroll-table table {min-width:400px;}
 
 	.compliance-area .numList.type2 > li .numList > li {padding-left:0;}
 	.compliance-area .numList .tbl-type1 th {font-size:.875em;padding:5px 0;}
