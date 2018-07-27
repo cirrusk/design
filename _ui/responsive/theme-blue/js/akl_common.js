@@ -2045,7 +2045,11 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	var _thisIndex = _zindex+layerCounter;
 
 	if(!$('#mask').length){
-		$('body').append('<div id="mask"/>');
+		if($('.compliance-area').is('.privacy')){
+			$('.termsWrapper').append('<div id="mask"/>');
+		}else{
+			$('body').append('<div id="mask"/>');
+		}
 	}
 
 	$(targetLayer).fadeIn(150, function(){

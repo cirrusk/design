@@ -679,7 +679,7 @@ $(function() {
 
 //컴플라이언스 센터
 $(function() {
-	$('.F80200_lp').click(function(event) {
+	$('#F80200_lp').click(function(event) {
 		event.preventDefault();
 		layerPopOver('','.F80200_lp_pop');
 	});
