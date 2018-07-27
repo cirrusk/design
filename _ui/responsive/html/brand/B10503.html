@@ -33,7 +33,6 @@
 				transitionDuration:0,
 				percentPosition: true
 			});
-
 			$grid[1] = $('.media-borad-list-gallery ul').masonry({
 				columnWidth: '.grid-item',
 				transitionDuration:0,
@@ -48,31 +47,27 @@
 					$grid[$index].masonry();
 				})
 			});
-		
 
-			$( '.tab-toggle').eq(0).trigger('click');
-
+			//$( '.tab-toggle').eq(0).trigger('click');
 
 			var i = 0;
-			$(document).on('click', '.media-more-btn', function(e) {
+
+			$(document).on('click', '.media-more-btn button', function(e) {
 				var $winSize = $(window).outerWidth();
 				i++;
 				e.preventDefault();
-				var $index = +$(this).attr('data-index');
+				var $index = +$(this).parent().attr('data-index');
 				var startNum = 8 * i;
 				var endNum = startNum + 16;
 
+				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
 
-				$(this).prev().children().slice(startNum, endNum).css("display", "block");
 				setTimeout(function(){ $grid[$index].masonry() }, 0);
 
-				if(!$(this).prev().children().last().is(':hidden')){
+				if(!$(this).parent().prev().is(':hidden')){
 					$(this).hide();
 				}
-
-
 			});
-			
 		});
 
 		
@@ -578,9 +573,8 @@
 													</div>
 												</a>
 											</li>
-
+											<li class="grid-item media-more-btn" data-index="0"><button><span>more</span></button></li>
 										</ul>
-										<button class="media-more-btn" data-index="0"><span>more</span></button>
 									</div>
 								</div>
 								<!-- ## tab2 ## -->
@@ -1281,8 +1275,8 @@
 													</div>
 												</a>
 											</li>
+											<li class="grid-item media-more-btn" data-index="1"><button><span>more</span></button></li>
 										</ul>
-										<button class="media-more-btn" data-index="1"><span>more</span></button>
 									</div>
 								</div>
 							</div>
