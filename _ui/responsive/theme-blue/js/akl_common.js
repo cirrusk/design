@@ -180,6 +180,10 @@
 		}
 	});
 
+	//용어집
+	glossaryPage();
+
+
 
 /** ----- 마이페이지 ----- */
 
@@ -1518,6 +1522,44 @@ function fixedTable_Scroll(){
 
 		} else if( _winWidth > 1024){
 			$(this).find('.clone').remove();
+		}
+	});
+}
+
+/* 용어집 */
+function glossaryPage(){
+	//처음은 한글 활성화
+	var tabFirst = $('.sizer-tabs-toggles > .tabs-toggles > li').eq(0);
+	var firstHref = tabFirst.find('a').attr('href');
+	$(tabFirst).addClass('active');
+	$(firstHref).addClass('on');
+	$('#glossary_KOR').show();
+	$('#glossary_ENG').hide();
+
+
+	//언어선택 버튼 클릭
+	var _langsSwitchBtn = $('.tabs-toggles').find('a.tab-toggle');
+	_langsSwitchBtn.on('click', function(e){
+		e.preventDefault();
+
+		//ID 컨텐츠 활성화
+		var _ID = $(this).attr('href');
+		$(_ID).addClass('on').siblings().removeClass('on');
+
+		var _Parent = $(this).parent();
+		if( $(this).is('.btnKOR')){
+			$('#glossary_KOR').show();
+			$('#glossary_ENG').hide();
+
+			_Parent.addClass('active')
+			_Parent.siblings().removeClass('active');
+		}
+		if( $(this).is('.btnENG')){
+			$('#glossary_KOR').hide();
+			$('#glossary_ENG').show();
+
+			_Parent.addClass('active')
+			_Parent.siblings().removeClass('active');
 		}
 	});
 }
