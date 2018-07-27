@@ -436,22 +436,20 @@ function searchBox_filter(){
 				$(this).find('.form-wrapper').hide();
 				var boxSearch = $(this).find('.js-search-form-wrapper');
 				var boxFilter = $(this).find('.js-filter-form-wrapper');
-
-				var hiddenClass = $(this).find('.hidden-sm .hidden-xs')
-
+				var hiddenClass = $(this).find('.hidden-sm.hidden-xs')
 
 				var _btnFilter = $(this).find('.js-order-history-filters');
 				var _btnSearch = $(this).find('.js-order-history-search');
 
 				_btnFilter.on('click',function(){
 					//
-					hiddenClass.removeClass('.hidden-sm .hidden-xs');
+					hiddenClass.removeClass('hidden-sm hidden-xs');
 					boxFilter.show();
 					boxSearch.hide();
 				});
 				_btnSearch.on('click',function(){
 					//
-					hiddenClass.removeClass('.hidden-sm .hidden-xs');
+					hiddenClass.removeClass('hidden-sm hidden-xs');
 					boxFilter.hide();
 					boxSearch.show();
 				});
