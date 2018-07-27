@@ -2006,7 +2006,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 					});
 				}
 			}
-			//맞춤메시지 : 끝
+			//RD화면 : 끝
 		}
 
 		/* TYPE 3 : 동영상보기 */
