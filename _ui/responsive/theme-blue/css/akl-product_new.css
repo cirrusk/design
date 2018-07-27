@@ -326,6 +326,8 @@ div.feat-txt p span.next-sort {display:block;}
 .ad-setp-lst dd {font-weight: 300;margin-top: 2px;line-height:26px;color:#808285;}
 .bacteria-info .ad-setp-lst dt{font-size:18px;}
 
+.advan-etc {width:90%;}
+
 /* type03 */
 .health-inform-box {display:block;margin-top:50px;border:1px solid #e3e3e3;overflow:hidden;}
 .detail-content-area .health-inform-box:first-child{margin-top:50px;}
@@ -334,6 +336,7 @@ div.feat-txt p span.next-sort {display:block;}
 .box-tit {background:#eeefef;text-align:center;padding:19px 0 22px;}
 .box-tit h5 {font-size: 44px;color: #57565b;font-weight:400 !important;letter-spacing: -2px;text-align: center;}
 .box-tit h5 span {font-weight:400;font-size: 44px;}
+.box-tit h5 p {margin:0 0;padding:10px 0 0}
 .effet-area {display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;padding:30px 80px;}
 .siehe-box {padding:0 0;}
 .siehe-box.midle {padding:0 25% 0 0}
@@ -1016,6 +1019,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 .step-w-lst li dl {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
 .step-w-lst li dl dt {display:table-cell;width:70px;vertical-align:top;box-sizing: border-box;}
 .step-w-lst li dl dd {vertical-align:top;}
+.step-w-lst li dl dd p {font-size:12px;color:#bbb;margin:0 0;padding:5px 0 0;line-height:18px;}
 .step-w {display:inline-block;width:60px;height:20px;border-radius:10px;background:#bbbbbb;color:#fff;text-align:center;font-size:14px;font-weight:300;}
 
 .recipe-box {position:relative;background:#f4f4f4;width:100%;min-height:440px;text-align:center;padding:10px 0 20px;overflow:hidden;}
@@ -1023,6 +1027,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 .recipe-box p.txt-lp9969 {position:absolute;top:320px;left:50%;margin-left:-55px}
 .recipe-box p.txt-lp9972 {display:block;padding:55px 0 0px} 
 .recipe-info {width:100%;height:380px;padding-top:40px;}
+.recipe-info span {width:100%;}
+.recipe-info span img {width:auto;height:auto;}
 
 /* 원포원 - 정기품 달인 맛간장소스 */
 .visual-area.type02.expertSoySauce {background: url('../images/akl_product/one-for-one/bg_expert_soy_sauce.png') no-repeat center;min-height:947px;}
@@ -1057,6 +1063,27 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 /* 원포원 - 정기품 고등어·갈치조림 양념 */
 .visual-area.type02.seasoning {background: url('../images/akl_product/one-for-one/bg_jungipum_seasoning.png') no-repeat center;min-height:956px;}
+.recipe-box p.txt-lp9948 {display:block;padding:0 0 0px;margin:0 0;} 
+.recipe-box p.txt-lp9948-2 {display:block;padding:15px 0 0px} 
+.recipe-box.p9948 {height:auto;min-height:auto;padding:0 0 40px}
+.recipe-box.p9948 .recipe-info {height:auto;}
+
+.cooking-box {font-size:16px;}
+.cooking-box .cook-tit {font-weight:400;color:#c4133f;}
+.cooking-box p {font-weight:300;color:#808285;padding:8px 0 0}
+.cookery-num {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+.cookery-num li {display:table-cell;box-sizing: border-box;width:33.333%;text-align:center;}
+.cookery-num li dl {padding:10px 20%;}
+.cookery-num li dl dt span {display:block;margin:20px auto;}
+.cookery-num li dl dt span.step-p {width:100%;}
+.cookery-num li dl dt span.step-w {min-width:62px}
+.cookery-num li dl dd {font-weight:300;color:#666;}
+
+.history-box {display:table;width:100%;box-sizing: border-box;table-layout:fixed;padding:50px 0;}
+.sty-left, .sty-right {display:table-cell;box-sizing: border-box;vertical-align:top;}
+.sty-left {width:60%;padding-left:90px;} 
+.sty-left .com-txt {margin-top:0;}
+.sty-right {width:40%;padding:0 0;text-align:center;}
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 
@@ -1090,6 +1117,10 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.system-lst4 ul li:before {top:45%;left:-11px;right:0;}
 
 	.firepower-process ul li {float:left;display:inline-block;box-sizing: border-box;vertical-align:top;width:16.666%;padding:10px 0 10px;}
+	.recipe-info span {width:100%;}
+	.recipe-info span img {width:inherit;height:inherit;padding:0 20px;}
+
+	.sty-left {padding:0 0 0 50px;}
 
 }
 
@@ -1172,6 +1203,14 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.tbl-home1 li.tbody span {font-size:12px;}
 
 	.firepower-process ul li {float:left;display:inline-block;box-sizing: border-box;vertical-align:top;width:16.666%;padding:10px 0 10px;}
+
+	/* 원포원 */
+	.recipe-box {height:auto;padding:20px 20px;min-height:auto}
+	.recipe-info {height:auto;padding:20px 20px 0;}
+	.recipe-info span {width:100%;}
+	.recipe-info span img {width:inherit;height:inherit;padding:0 20px;}
+
+	.sty-left {padding:0 0 0 50px;}
 
 }
 
@@ -1600,6 +1639,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.ecommerce-lst li .td-txt {width:100%;}
 
 	/* 원포원 - 정기품 */
+	.advan-etc {width:100%;}
+
 	.visual-area.type02.jungipum-5-color .v-pro {margin-left:10px}
 	.process-infom-box .box-tit p span {vertical-align:middle;padding:0 5px;text-align:center;}
 
@@ -1613,11 +1654,13 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 	.visual-area.type02.purewheat_plain.v9968 .v-pro {margin-left:0}
 	.recipe-box {height:auto;padding:20px 20px;min-height:auto}
-	.recipe-info {height:auto;padding-top:0;}
-	.recipe-info img {width:inherit;height:auto;}
+	.recipe-info {height:auto;padding:20px 20px 0;}
+	.recipe-info span {width:100%;}
+	.recipe-info span img {width:inherit;height:inherit;padding:0 0;}
 	
 	.recipe-box p.txt-lp9969 {position:relative;top:0;left:0;margin-left:0;text-align:center;}
 	.recipe-box p.txt-lp9972 {padding:10px 0 0}
+	.recipe-box p.txt-lp9948 {padding:5px 0 0;margin:0 auto;}
 	.recipt-mater {width:100%;margin:0 auto;}
 	
 	.advan-jungipum-expert {height:auto; }
@@ -1625,7 +1668,14 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.recipe-menu-list ul li {display:block;width:100%;padding:20px 0;}
 
 	.notice-ap {padding:20px 15px;}
-
+	.cookery-num li {display:block;width:100%;text-align:center;}
+	.cookery-num li dl {padding:10px 0;margin:0 auto;}
+	.cookery-num li dt span img {width:inherit;height:auto;}
+	
+	.history-box {padding:10px 20px 30px}
+	.sty-left, .sty-right {display:block;width:100%;}
+	.sty-left {padding:0 0;}
+	
 }	
 
 @media (max-width: 324px) {	
