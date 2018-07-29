@@ -868,7 +868,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .sizer .sizer-row{display:none; width:100%; padding:22px 0 18px; border:1px solid #e3e3e3; border-width:1px 0;}
 .sizer .sizer-row.on {display:table;}
 .sizer .sizer-row span{display:table-cell; width:60px; margin:0; font-size:16px; font-weight:500; vertical-align:top; color:#bbbbbb;}
-.sizer .sizer-row p {display:table-cell; vertical-align:middle;}
+.sizer .sizer-row p {display:table-cell; vertical-align:middle; line-height:30px;}
 .sizer .sizer-row a {display:inline-block; min-width:35px; height:22px; font-size:19px; font-weight:400; line-height:100%; text-align:center; color:#56565a;}
 .sizer .sizer-row a:hover{color:#0075a4;}
 .sizer .sizer-row a.active-label{color:#0075a4;}
@@ -885,10 +885,10 @@ ul.woo-step-box li:last-child:before {background:none}
 .alphabet .search-no-result>p {margin:0;}
 .alphabet .row .search-no-result {margin:0; border-width:0 0 1px;}
 .alphabet .row>ul {display:table; width:100%;}
-.alphabet .row ul>li {display:table-row;}
-.alphabet .row ul>li>* {display:table-cell; padding:30px 0 0;vertical-align:top; box-sizing:border-box;}
-.alphabet .row ul>li>strong {width:30%; padding-left:60px; font-size:18px; font-weight:500; letter-spacing:-0.025em; color:#002f5f;}
-.alphabet .row ul>li>div {width:70%;}
+.alphabet .row>ul>li {display:table-row;}
+.alphabet .row>ul>li>* {display:table-cell; padding:30px 0 0;vertical-align:top; box-sizing:border-box;}
+.alphabet .row>ul>li>strong {width:30%; padding-left:60px; font-size:18px; font-weight:500; letter-spacing:-0.025em; color:#002f5f;}
+.alphabet .row>ul>li>div {width:70%;}
 .alphabet .row+h2 {margin-top:20px;}
 .alphabet h2 {padding:40px 0; font-size:36px; font-weight:500; color:#002f5f; border-bottom:1px solid #e3e3e3;}
 .amway-theme .alphabet h2 {margin:0; text-align:left;}
@@ -1339,6 +1339,13 @@ ul.woo-step-box li:last-child:before {background:none}
 	.akl .sizer-tabs-toggles .tabs-toggles .tab-toggle-wrap:first-child .tab-toggle {border-top-left-radius:4px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:4px;}
 	.akl .sizer-tabs-toggles .tabs-toggles .tab-toggle-wrap:last-child .tab-toggle {margin-left:-1px;border-top-left-radius:0px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:0px;}
 
+	/* 암웨이 용어집 > 용어목록 */
+	.alphabet .row>ul {display:block; box-sizing:border-box;}
+	.alphabet .row>ul>li {display:block;}
+	.alphabet .row>ul>li+li {margin-top:25px;}
+	 .alphabet .row>ul>li>* {display:block; padding-top:15px;}
+	.alphabet .row>ul>li>strong {width:100%; padding-left:0;}
+	.alphabet .row>ul>li>div {width:100%;}
 }
 
 @media (max-width: 500px) {

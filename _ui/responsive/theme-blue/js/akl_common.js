@@ -1526,7 +1526,9 @@ function fixedTable_Scroll(){
 
 /* 용어집 */
 function glossaryPage(){
-	//처음은 한글 활성화
+	if(!$('.glossary-wrapper').length){return;}
+
+	//로딩시 한글 활성화
 	var tabFirst = $('.sizer-tabs-toggles > .tabs-toggles > li').eq(0);
 	var firstHref = tabFirst.find('a').attr('href');
 	$(tabFirst).addClass('active');
@@ -1558,8 +1560,30 @@ function glossaryPage(){
 
 			_Parent.addClass('active')
 			_Parent.siblings().removeClass('active');
+
+			//스크롤 top 함수 실행
+			//glossaryScrollTop();
 		}
 	});
+
+	//glossaryScrollTop();
+	function glossaryScrollTop(){
+		$(document).on('click', '.sizer-row>p>a' , function(e){
+			e.preventDefault();
+
+			var headerHeight;
+			if( $(window).width() > 768){ headerHeight = 140}
+			if( $(window).width() < 769){ headerHeight = 70}
+
+			var targetDIV = $(this).attr('href');
+			var topPosition = $(targetDIV).offset().top;
+			var targetTop = (topPosition - headerHeight);
+
+			$('html, body').animate({
+				scrollTop: targetTop
+			}, 1000);
+		});
+	}
 }
 
 /** ------------------------------------------
