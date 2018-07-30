@@ -257,7 +257,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 /*삼각 트라이 앵글 맨 */
 .triangle.men-type{max-width:418px;}
-.triangle.men-type .tit-child{color:#ffffff;padding-top:50px}
+.triangle.men-type .tit-child{color:#ffffff;padding-top:50px;font-size:16px;}
 .triangle.men-type span.comment01{}
 .triangle.men-type span.comment02{top:100%;left:10%;margin-top:-32px}
 .triangle.men-type span.comment03{margin-right:5%;margin-top:-32px}
@@ -379,8 +379,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .base-makeup .skin-care .txt-info-visual .v-tit{padding: 32px 19% 0;}
 .beam-balance{position:relative;max-width:327px;margin:0 auto;}
 .beam-balance .txt-left, .beam-balance .txt-right{position:absolute;top:75%;} 
-.beam-balance .txt-left{left:0}
-.beam-balance .txt-right{left:68%}
+.beam-balance .txt-left{left:4%;}
+.beam-balance .txt-right{left:70%}
 
 .triangle.circle-type{padding: 0;display: block;}
 .triangle.circle-type .tit-child{color: #56565a;padding-top:50px;font-size:16px;font-weight:400;}
@@ -582,6 +582,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	.special-care-box dl dt span{font-size:16px;padding:5px 45px;font-weight:400;}
 	
+	.beam-balance .txt-left{left:4%;}
+	
 				
     /* 인텐시브 */
 	.skin-care .product-process .detail-tit{font-size:18px;}
@@ -707,18 +709,17 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.v-pro.certifi-area span.img img{width:90%;}
 	.v-pro.certifi-area .certifi{margin-left:-40px;padding-bottom:40px;}
 	
-}
-@media (min-width: 769px) and (max-width: 900px) {
 	.capsule-new-area.new{padding-top: 35px;padding-left: 40px;}
 	.capsule-new-area.new span.lime-new{left:0;font-size: 16px;  width: 50px;height: 50px;line-height: 50px;}
-
-
+	
 }
+
 
 
 @media (max-width: 576px) {
 	.skin-care .ingre-list-wrap .ingre-list li{width:33.333%;min-width:auto;}
 	.product-video{margin-bottom:40px;}
+	.beam-balance .txt-left{left:4%;}
 	
 	/* 더마 소닉 4779 */
 	.ctrl-product{display:block;}
@@ -745,6 +746,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	/* 원포원 */
 	.capsule-img-area em.txt{margin:14px 0 0;} /* 라임트리 캡슐세트 */
+	.one-for-one .v-pro span img{width:inherit !important;}
 	
 }
 
@@ -785,6 +787,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	.ingre-list.ingre-list-n2 li .ingre-txt{font-weight: 300;position: absolute;top: inherit;left: inherit;margin-left: 0 !important;width: 100%;text-align: center;}
 	.ingre-list.ingre-list-n2 li:nth-child(1) .ingre-txt{bottom:35px;}
 	.ingre-list.ingre-list-n2 li:nth-child(2) .ingre-txt{bottom:40px;}
+	
+	.beam-balance .txt-left{left:0;}
 	
 	/* 포인트 메이크업 립 */
 	.point-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}

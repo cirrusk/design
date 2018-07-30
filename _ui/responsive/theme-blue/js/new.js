@@ -683,6 +683,41 @@ $(document).on('click','#F80200_lp' , function() {
 	layerPopOver('','.F80200_lp_pop');
 });
 
+//SOP
+$(function(){
+	//레이어 띄우기
+	$('#addNewPayment').on('click',function(){
+		layerPopOver(this,'#pop-payment');
+	});
+
+	$('#addNewAddress').on('click',function(){
+		layerPopOver(this,'#pop-address');
+	});
+
+	$('.del-profile').on('click',function(){
+		layerPopOver(this,'#del-profile');
+	});
+
+	$('#btnEditSave').on('click',function(){
+		layerPopOver(this,'#save-change');
+	});
+
+	$('#btnEditCancel').on('click',function(){
+		layerPopOver(this,'#cancel-change');
+
+	});
+
+	$('.mysop-list-cancel').click(function(){
+		layerPopOver(this,'#mysop-list-cancel');
+	});
+
+	//레이어
+	$('.G10300_lp1_btn').click(function(event) {
+		event.preventDefault();
+		layerPopOver('this','.G10300_lp1_pop');
+	});
+})
+
 /* akl_common.js 이동 - 2018.07.04
 //온라인 매거진
 $(function() {
