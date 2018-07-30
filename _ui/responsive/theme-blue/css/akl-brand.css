@@ -5,6 +5,7 @@ Editor : HYEWON HWANG
 *************************************************/ 
 
 .colorM {color:#0a70d3 !important;}
+.rela {position:relative;}
 
 /* 전체메뉴 */
 /* select2.css */
@@ -24,7 +25,7 @@ Editor : HYEWON HWANG
 .brand-fullmenu .breadcrumb {margin:0;padding:0;}
 .brand-fullmenu .breadcrumb li::after {padding:0 5px;content:'/ ';color:#cccccc;}
 .brand-fullmenu .breadcrumb li::before, .brand-fullmenu .breadcrumb li:last-child::after, .brand-fullmenu .breadcrumb li > div > div:last-child::after {content:none;}
-.brand-fullmenu .breadcrumb li:nth-of-type(3) {width:calc(100% - 110px);padding:0;}
+.brand-fullmenu .breadcrumb li:nth-of-type(3) {width:calc(100% - 110px);padding:0;vertical-align:middle;}
 .brand-fullmenu .breadcrumb li > div {display:flex; width:100%;}
 .brand-fullmenu .breadcrumb li > div > div {position:relative;padding-right:20px;min-width:230px;} /* pc */
 .brand-fullmenu .breadcrumb li > div > div::after {position:absolute;top:8px;right:8px;content:'/ ';color:#cccccc;}
@@ -32,7 +33,10 @@ Editor : HYEWON HWANG
 .brand-fullmenu .form-control {width:100%;}
 .brand-fullmenu .select2-container {width:100% !important;}
 
-
+/* ### 공통 ###*/
+/* 버튼스타일 */
+.arr1 {position:relative;display:inline-block;} /* 오른쪽 화살표 > */
+.arr1:after {content:'';position:absolute;top:50%;right:-9px;width:7px;height:7px;transform:rotate(45deg) translatey(-50%);border:2px solid #fff;border-width:2px 2px 0 0;}
 
 /* ### 브랜드 템플릿 ### */ 
 
@@ -62,7 +66,7 @@ Editor : HYEWON HWANG
 .akl .brand .homepage_banner .banner__wrapper .banner__message {position:absolute;top:17%;right:0;width:40%;height:70%;margin:0 10% 0 0;padding:30px;}
 .akl .brand .homepage_banner .banner__message:before {content:'';position:absolute;z-index:-1;right:0;top:0;display:block;width:76%;height:100%;background:#e11e44;}
 .akl .brand .homepage_banner .banner__message--main {font-size:44px;font-weight:500;line-height:1.3;}
-.akl .brand .homepage_banner .banner__message--sub {float:right;padding:50px 0 0;width:auto;font-size:16px; line-height:1.5; letter-spacing:0;}
+.akl .brand .homepage_banner .banner__message--sub {position:absolute;right:30px;bottom:40px;padding:50px 0 0;width:auto;font-size:16px; line-height:1.5; letter-spacing:0;}
 
 /* 암웨이퀸 두번째 스타일 */
 .akl .brand .homepage_banner .banner__wrapper.s2 {}
@@ -84,7 +88,7 @@ Editor : HYEWON HWANG
 .akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div > p strong {display:block;font-size:16px;margin-bottom:10px;}
 /**/
 
-.title-component {clear:both;padding:50px 0 40px;text-align:center;}
+.title-component {clear:both;margin:50px 0 50px;text-align:center;}
 .title-component h2 {margin:0;}
 .title-component > p {margin:10px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-1px;}
 .title-component .title-ul {margin:40px auto;width:80%;display:flex;}
@@ -97,8 +101,7 @@ Editor : HYEWON HWANG
 
 .akl .brand .video-preview {margin:0;}
 
-.content-row {clear:both;overflow:hidden;display:flex;width:100%;}
-.content-row + .content-row {margin-top:60px;}
+.content-row {position:relative;clear:both;overflow:hidden;display:flex;width:100%;margin-top:60px;}
 .content-row article {position:relative;-webkit-flex:1;flex:1;max-width:50%;}
 .content-row article + article {margin-left:26px;}
 .content-row article .cont-type1 {margin:0;height:100%;background:#f4f4f4;}
@@ -106,10 +109,21 @@ Editor : HYEWON HWANG
 .content-row article .cont-type1 figcaption{padding:20px 20px 10px;font-size:16px;font-weight:500;color:#002f5f;}
 .content-row article .cont-type1 figcaption + p {margin:0;padding:0 20px 20px;line-height:1.8;}
 
-
-
 .akl .brand .item-content-wrap h2 {margin:0 0 10px;}
 
+/* 뉴트리라이트 */
+.txtbox{position:relative;display:flex;width:100%;height:100%;align-items:center;}
+.txtbox div{position:absolute;max-height:100%;max-width:100%;}
+.txtbox img {width:100%;}
+.txtbox .mob-image {display:none;}
+.txtbox h3 {font-size:34px;font-weight:400;line-height:1.2;color:#00305e;}
+.txtbox p {margin-top:10px;font-size:20px;}
+.txtbox div.s1 {left:90px;}
+.txtbox div.s2 {left:51%;}
+.txtbox div.s2 h3 {color:#20893d;}
+.txtbox div.s2 span {display:block;margin-top:10px;}
+.txtbox div.s2 a.arr1 {color:#0075a4;font-size:14px;font-weight:400;}
+.txtbox div.s2 a.arr1:after {border-color:#0075a4;}
 
 /* ### 한국암웨이 ### */
 .akl .brand-area {position:relative;}
@@ -185,7 +199,7 @@ section {overflow:hidden;clear:both;margin-top:25px;}
 	
 	.akl .brand .homepage_banner .banner__wrapper .banner__message {width:80%;margin:0;padding:30px 20px 20px;}
 	.akl .brand .homepage_banner .banner__message--main {font-size:25px;line-height:1.4;text-align:left;}
-	.akl .brand .homepage_banner .banner__message--sub {display:block;float:none;font-size:14px;padding:30px 0 0 30%;}
+	.akl .brand .homepage_banner .banner__message--sub {position:relative;display:block;right:auto;bottom:auto;font-size:14px;padding:30px 0 0 30%;}
 	
 
 	.content-row {display:block;}
@@ -200,6 +214,11 @@ section {overflow:hidden;clear:both;margin-top:25px;}
 	.title-component .title-ul li:nth-of-type(3):before {background-position-y:-165px;}
 	.title-component .title-ul li:nth-of-type(4):before {background-position-y:-250px;}
 	.title-component .title-ul li:nth-of-type(5):before {background-position-y:-332px;}
+	
+	.txtbox .desktop-image {display:none;}
+	.txtbox .mob-image {display:block;}
+	.txtbox h3 {font-size:28px;}
+	.txtbox p {display:none;}
 
 
 	/* 한국암웨이 */ 
