@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>미디어 라이브러리 | ABN Korea</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords">
+	<meta name="description" content="NY Fee Bundle">
+	<meta name="robots" content="index,follow">
+	
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script><!-- datepicker : 2018.03.19 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/isotope.pkgd.js"></script><!-- gnb 플러그인 : 2018.03.23 추가  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/select2.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/masonry.pkgd.min.js"></script><!-- media-borad-list 플러그인 : 2018.07.25 추가  -->
+
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function(){
+			var $grid = [];
+
+			$grid[0] = $('.media-borad-list-video ul').masonry({
+				columnWidth: '.grid-item',
+				transitionDuration:0,
+				percentPosition: true
+			});
+			$grid[1] = $('.media-borad-list-gallery ul').masonry({
+				columnWidth: '.grid-item',
+				transitionDuration:0,
+				percentPosition: true
+			});
+
+			$(document).on('click', '.tab-toggle', function(e) {
+				e.preventDefault();
+				var $index = +$(this).attr('data-index')
+
+				$($(this)[0].hash).show(0, function() {
+					$grid[$index].masonry();
+				})
+			});
+
+			//$( '.tab-toggle').eq(0).trigger('click');
+
+			var i = 0;
+
+			$(document).on('click', '.media-more-btn button', function(e) {
+				var $winSize = $(window).outerWidth();
+				i++;
+				e.preventDefault();
+				var $index = +$(this).parent().attr('data-index');
+				var startNum = 8 * i;
+				var endNum = startNum + 10;
+
+				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
+
+				setTimeout(function(){ $grid[$index].masonry() }, 0);
+
+				if(!$(this).parent().prev().is(':hidden')){
+					$(this).hide();
+				}
+			});
+		});
+
+		
+	</script>
+</head>
+<body class="akl">
+	<!-- skipToContent -->
+	<div id="skipToContent">
+	<a href="#contents">콘텐츠 바로가기 </a>
+	</div>
+	<!-- //skipToContent -->
+
+	<main>
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li> 
+					<li>암웨이소개</li>
+					<li>제품 브랜드</li>
+					<li>XS ENERGY</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="customer-area">
+				<div class="title-box">
+					<div class="product-list-page-title">
+						<h1 class="notice">미디어 라이브러리</h1>
+					</div>
+				</div>
+
+				<div class="customer-wrap">
+					<div class="amway-theme">
+						<div class="navigation-tabs-container order-history-container js-order-history-container">
+							<div class="outer-border-bottom">
+								<ul class="tabs-toggles">
+									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" data-index="0" href="#Video"> <span class="toggle-text">영상</span> </a> </li>
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" data-index="1" href="#Gallery"> <span class="toggle-text">포토</span> </a> </li>
+								</ul>
+							</div>
+							<div class="tab-content tabs-content-blocks">
+
+								<!-- ## tab1 ## -->
+								<div class="tab-pane content-block active" id="Video">
+									<h2 class="hidden">영상</h2>
+									<div class="media-borad-list-video">
+										<ul>
+											<li class="highlight">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L1_H.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>2017 XS Pool Party 하이라이트 영상</strong>
+														<p>비와이와 제시가 함께한 2017 XS Pool Party 하이라이트 영상을 지금 만나보세요!​</p>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>2017 XS Night Run 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>2016 XS poolside party 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L4.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>2016 XS Night Run highlight</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L5.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>2016 XS Night Run Teaser Film</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L6.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS망고파인애플구아바 택시편</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L7.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>2015 XS-mas 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L8.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 좀비런 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L9.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L10.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L11.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 메인 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 티저 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L13.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L14.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L15.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L16.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>쇼미더머니3콘서트-XS 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L17.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>쇼미더머니3콘서트-XS 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L18.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>쇼미더머니3콘서트-XS 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L19.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 드링크 1분스토리[Ref...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L20.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 드링크 1분스토리[Rec...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L21.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 드링크 1분스토리[Boo...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L22.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시 파티 -서울 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L23.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시 파티 -부산 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L24.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 티저 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L25.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>미디어 퍼포먼스</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L26.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS Energy Bike Challenge 하이라이트 영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L27.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>홍보영상: 이용대 편 메이킹영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L28.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>홍보영상: 구준엽 편</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L29.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>홍보영상: 구준엽 편 메이킹영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L30.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>DJ KOO : The Meaning of Life</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L31.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] J 스타일</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L32.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] Morning Energy Mas...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L33.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] XS 10주년 기념영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L34.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] XS 10주년 기념영상</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L35.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] Founders Adventure...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L36.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] Pitzal Wild Face R...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L37.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] 마이클잭슨 헌정 프...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L38.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] 할로윈 in Japan</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L39.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>[Global XS] 긍정의 에너지</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L40.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Video</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 드링크 제품 라인업</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item media-more-btn" data-index="0"><button><span>more</span></button></li>
+										</ul>
+									</div>
+								</div>
+								<!-- ## tab2 ## -->
+								<div class="tab-pane content-block" id="Gallery">
+									<h2 class="hidden">포토</h2>
+									<div class="media-borad-list-gallery">
+										<ul>
+											<li class="highlight">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L1_5.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in XS town(XS art zone)</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L2_9.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in XS town(cocktail)</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L3_6.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in XS town(Play zone)</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L4_6.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in XS town(energetic pa...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L5_1.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in Amway town(Brand col...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L6_1.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in Amway town(Brand col...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L7_18.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-mas in Amway town(energetic...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L8_12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 브랜드 부스</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L9_3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 출발</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L10_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 코스 - Phyto h...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L11_3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 코스 - Hydra V...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L12_8.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>S 5K Night Run 코스 - 챌린지...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L13_3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 코스 - eSpring...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L14_1.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 코스 - 그래피티...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L15_3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 코스 - XS 존</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L16_8.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 5K Night Run 공연</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L17_9.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지-광주AP</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L18_12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지-강서AP</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L19_12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지-강남AP</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L20_12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지-분당ABC</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L21_10.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지-부산AP</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L22_14.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS DDR 댄스 챌린지-대구AP</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L23_1.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L24_4.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L25_7.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L26_20.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L27_24.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L28_3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS-Mas in Amway Town in 클럽 옥...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L29_18.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 서울</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L30_5.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 서울</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L31_24.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 서울</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L32_27.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 서울</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L33_11.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 서울</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L34_20.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 서울</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L35_15.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L36_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L37_9.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L38_26.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L39_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS할로윈파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L40_11.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 김포 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L41_14.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 강남 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L42_14.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 분당 ABC 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L43_26.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 부산 AP사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L44_13.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 대구 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L45_9.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 창원 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L46_7.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 울산 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L47_12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 광주 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L48_6.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 에너지 바이크 대전 AP 사진</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L49_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부(바이크 준...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L50_20.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L51_3.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부(바이크 결...</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L52_6.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L53_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L54_12.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L55_1.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울1부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L56_16.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울2부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L57_4.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울2부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L58_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울2부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L59_1.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS 출시파티 - 서울2부</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item two-part">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L60_20.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS출시파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L61_2.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS출시파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L62_6.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS출시파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L63_7.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS출시파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item">
+												<a href="#">
+													<div class="view-img">
+														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L64_7.jpg" alt=""/>
+													</div>
+													<span class="tag"><span>Gallery</span></span>
+													<div class="tit-txt-wrap">
+														<strong>XS출시파티 - 부산</strong>
+													</div>
+												</a>
+											</li>
+											<li class="grid-item media-more-btn" data-index="1"><button><span>more</span></button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="quick"></div>
+		<div id="footer"></div>
+	</main>
+
+</body>
+</html>
