@@ -184,7 +184,6 @@
 	glossaryPage();
 
 
-
 /** ----- 마이페이지 ----- */
 
 	//마이페이지 메인 : li 여백처리
@@ -2111,7 +2110,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	if(!$('#mask').length){
 		if($('.compliance-area').is('.privacy')){
 			$('.termsWrapper').append('<div id="mask"/>');
-		}else{
+		} else{
 			$('body').append('<div id="mask"/>');
 		}
 	}
