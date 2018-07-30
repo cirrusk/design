@@ -202,6 +202,11 @@
 				<!-- 목록(한글) -->
 				<div class="alphabet" id="glossary_KOR">
 					<h2 id="hangul-list-01"><span>ㄱ</span></h2>
+					<!-- 검색결과 없음 -->
+					<div class="row">
+						<div class="search-no-result"><p>검색 결과가 없습니다.<p></div>
+					</div>
+					<!-- //검색결과 없음 -->
 					<div class="row">
 						<ul class="glossaryList">
 							<li>
@@ -377,13 +382,6 @@
 					<div class="row">
 						-
 					</div>
-
-					<!-- 검색결과 없음 -->
-					<div class="row">
-						<div class="search-no-result"><p>검색 결과가 없습니다.<p></div>
-					</div>
-					<!-- //검색결과 없음 -->
-
 				</div>
 				<!-- //목록(한글) -->
 
@@ -454,13 +452,11 @@
 
 					<h2 id="alphabet-list-c"><span>C</span></h2>
 					<div class="row">
-						<div class="search-no-result"><p>검색 결과가 없습니다.<p></div>
 					</div>
 
 					<h2 id="alphabet-list-d"><span>D</span></h2>
 					<div class="row">
 					</div>
-
 
 					<h2 id="alphabet-list-e"><span>E</span></h2>
 					<div class="row">
@@ -584,93 +580,14 @@
 				</div>
 				<!-- //목록(영어) -->
 
-				<!--
 				<p class="text-center show-more-products-wrapper">
 					<a type="button" id="show-more" class="btn btn-link"><span class="text-wrap">더보기</span><span class="icon icon-arrow-dropdown"></span></a>
-				</p> -->
+				</p>
 			</div>
 		</div>
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
 
-<!--
-<script type="text/javascript">
-$(function () {
-	/*
-	$(".alphabet .row > a").click(function (e) {
-		e.preventDefault();
-		var prev = $(this).prev(".col-md-8");
-		if (prev.hasClass("open")) {
-			prev.removeClass("open")
-		} else {
-			prev.addClass("open")
-		}
-	}); */
-
-	var aT;
-	var alphabetsTop = []; //색인 위치  array
-	var aL = $(".alphabet h2");
-	var H = $(document).height();
-	$(".alphabet-list").css("max-height", H - 80);
-
-	var headerHeight = $('#header').outerHeight(true); //139px
-	//console.log(headerHeight);
-
-	function arrayBuild(){
-		if (alphabetsTop.length == 0) {
-			for (var i = 0; i < aL.length; i++) {
-				alphabetsTop.push(aL.eq(i).offset().top - 100); //header 높이 60px + 여백 40px
-			}
-		}
-	}
-
-	$(document).on("click", function () {
-		arrayBuild();
-	});
-
-
-	$(document).on("touchend", function () {
-		var cP = $(document).scrollTop()+45;
-		for( var i = 0; i< alphabetsTop.length; i++){
-			if(cP > alphabetsTop[i] && cP < alphabetsTop[i+1]){
-				$(".alphabet-list a").removeClass("touch-selected")
-				$("#"+"a-label-"+(i+1)).addClass("touch-selected");
-				return;
-			}
-			if(cP > alphabetsTop[alphabetsTop.length-1]){
-				$(".alphabet-list a").removeClass("touch-selected")
-				$("#"+"a-label-"+alphabetsTop.length).addClass("touch-selected");
-			}
-			if(cP < alphabetsTop[0]){
-				$(".alphabet-list a").removeClass("touch-selected")
-			}
-		}
-	});
-
-	$(".alphabet-list a").on('click', function (e) {
-		e.stopPropagation();
-		aT = $(this).text();
-
-		if($(this).index()< aL.length){
-			$(this).addClass("touch-selected");
-			$(this).siblings().removeClass("touch-selected");
-			if ($("#alphabet-tip").length > 0) {
-				$("#alphabet-tip").text(aT);
-			} else {
-				$("body").append('<div id="alphabet-tip">' + aT + '</div>');
-			}
-			$("#alphabet-tip").show();
-		}
-
-	});
-
-	$(".alphabet-list a").on("touchend", function (e) {
-		e.stopPropagation();
-		$("#alphabet-tip").hide();
-	});
-
-});
-</script> -->
 </body>
 </html>
