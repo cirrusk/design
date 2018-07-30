@@ -129,38 +129,23 @@
 		<!-- //마이페이지 상단공통 -->
 
 		<!-- container-fluid -->
-		<div class="container-fluid main-container">
-			<div class="amway-theme sop-container">
-				<h1 class="icon-sub-title mySOP-title">나의 스마트 오더</h1>
+		<div class="container-fluid main-container amway-theme">
 
-				<!-- 알림 -->
-				<div class="sop-alert sop-confirmation">
-					<div class="alert-info ico-fa-exclamation">
-						<div class="alert-text">
-							<strong>Page level error message title</strong>
-							<p>
-								Page level error message display here,text may span the length of the container
-								<a href="#">Links look like this</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- //알림 -->
-
+			<!-- sop-container -->
+			<div class="sop-container">
+				<h1 class="icon-sub-title mySOP-title">나의 정기주문 &amp; 스마트 오더 목록</h1>
 
 				<!-- SOP 요약정보 -->
 				<div class="sop-profile-wrapper">
-					<div class="downline-profile">OOOO의 정기주문명 상세보기</div>
+					<div class="downline-profile">사용자명의 정기주문명 상세보기</div>
+
 					<div class="downline-profile-second-line">
 						<!-- 주문정보 -->
 						<div class="sop-order-info">
-							<span class="type-payment">
-								<em><img src="/_ui/responsive/theme-blue/images/akl_common/sop/visa.png"></em>
-								<em>****9876</em>
-							</span>
-							<span class="type-state ico-fa-truck">Delivery</span>
-							<span class="type-numbs">8회차</span>
-							<a href="#" class="edit-profile ico-fa-pencil" id="edit-profile"><span>Edit Profile</span></a>
+							<span class="type-payment">신용카드</span>
+							<span class="type-address">서울특별시 강남구 영동대로 517 27층 </span>
+							<span class="type-numbs">매월 5일</span>
+							<a href="#" class="edit-profile ico-fa-pencil" id="edit-profile"><span>주문서 수정</span></a>
 						</div>
 						<!-- //주문정보 -->
 					</div>
@@ -168,21 +153,19 @@
 					<!-- 프로필 편집 -->
 					<div class="edit-block">
 						<a class="pull-right close-edit" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+
 						<div class="row">
-							<div class="col-md-6 col-xs-12">
-								<label class="col-md-4 control-label text-upper">profile name</label>
-								<div class="col-md-8 col-xs-12">
-									<input type="text" class="verify-form text-left form-control"
-										value="Yui Mori's Downline Profile(Wrap one line)">
+							<div class="editbox box-left">
+								<label class="control-label col-md-3 col-xs-12">주문서 명</label>
+								<div class="col-md-9 col-xs-12">
+									<input type="text" class="verify-form text-left form-control" value="사용자명의 정기주문명">
 									<p class="error">Please select a valid profile name</p>
 								</div>
 							</div>
-
-
-							<div class="col-md-6 col-xs-12">
-
-								<label class="col-md-4 control-label text-upper">process day</label>
-								<div class="col-md-8 col-xs-12">
+							<div class="editbox box-right">
+								<label class="control-label col-md-3 col-xs-12">결제일</label>
+								<div class="txt-repeat col-md-9 col-xs-12">
+									<span>매달</span>
 									<select id="process-day" class="form-control width-s">
 										<option>1</option>
 										<option>2</option>
@@ -216,57 +199,50 @@
 										<option>30</option>
 										<option>31</option>
 									</select>
-									<span>of each calendar month</span>
 								</div>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<a id="addNewPayment" class="col-xs-6 col-md-12 addBtn text-right">Add New Payment</a>
-								<label class="col-xs-6 col-md-4 control-label text-upper">payment</label>
-								<div class="col-md-8 col-xs-12 has-card">
-									<div class="payment-card"><img src="images/visa.png"></div>
-									<select class="form-control">
-										<option>Work Card - **** 1234</option>
-										<option>Work Card - **** 1234</option>
-									</select>
+						</div>
+						<div class="row">
+							<div class="editbox box-left">
+								<label class="control-label col-md-3 col-xs-12">결제수단</label>
+								<div class="next-to-label txt-payment col-md-9 col-xs-12">
+									<span>신용카드</span>
+									<a id="addNewPayment" class="bt-akl-white mini">결제수단 변경</a>
 								</div>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<a href="#" id="addNewAddress" class="col-xs-6 col-md-12 addBtn text-right">Add New Address</a>
-								<label class="col-xs-6 col-md-4 control-label text-upper">delivery address</label>
-								<div class="col-md-8 col-xs-12">
-									<select class="form-control">
-										<option>Yui's Home Address</option>
-										<option>Yui's Home Address</option>
-									</select>
+							<div class="editbox box-right">
+								<label class="control-label col-md-3 col-xs-12">배송지</label>
+								<div class="next-to-label txt-address col-md-9 col-xs-12">
+									<span>서울시 강남구 영동대로 517(삼성동.아셈타워 27층)</span>
+									<a href="#" id="addNewAddress" class="bt-akl-white mini">배송지주소 변경</a>
 								</div>
-
 							</div>
 						</div>
 						<div class="edit-block-footer">
-							<a href="#" class="btn primary btn-m" id="btnEditSave">save</a>
-							<a href="#" class="text-link link-cancel" id="btnEditCancel">Cancel</a>
-							<a href="#" class="pull-right del-profile"><i class="fas fa-trash-alt"></i><span class="hidden-xs">Delete Profile</span></a>
+							<a href="#" class="bt-akl-blue" id="btnEditSave">저장</a>
+							<a href="#" class="bt-akl-txt link-cancel" id="btnEditCancel">취소</a>
+
+							<a href="#" class="pull-right del-profile"><i class="fas fa-trash-alt"></i><span class="hidden-xs">주문 취소</span></a>
 						</div>
 					</div>
 					<!-- //프로필 편집 -->
 				</div>
 				<!-- //SOP 요약정보 -->
 
-
 				<!-- 빠른검색 -->
 				<div class="akl-toggle-wrap sort-order">
 					<div class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
 						<div class="panel">
 							<div class="panel-heading" role="tab" id="quickShop">
-								<a href="#down1" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="disable"><!-- 닫힌상태는 .collapsed -->
+								<a href="#down1" data-toggle="collapse" data-parent="#quickShopAccordion" aria-controls="quickShopBody" class="collapsed"><!-- 닫힌상태는 .collapsed -->
 									<div class="panel-title">
 										<img src="/_ui/responsive/theme-blue/images/shopping-cart-icon.png" alt="cart" class="cart-header__cart-icon" />
-										<span class="accordion-header-text">빠른 제품 검색</span>
+										<span class="accordion-header-text">빠른 제품 추가</span>
 										<span class="pull-right icon-minus"></span>
 									</div>
 								</a>
 							</div>
-							<div id="down1" class="panel-collapse applicants-panel collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div id="down1" class="panel-collapse applicants-panel collapse" role="tabpanel" aria-labelledby="headingOne"><!-- 열린상태 .in -->
 								<div class="panel-body">
 									<div id="quickShopForm">
 										<div class="item-name-container">
@@ -274,16 +250,13 @@
 											<div class="inp-button">
 												<div class="form-s"><!-- 2018.03.06 구조변경 -->
 													<input type="text" id="name-vps" name="" value="" class="input-st">
-													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-sm hidden-xs">검색</span></button><!-- 2018.03.15 태깅 아이디 추가 -->
+													<button type="submit" class="btn btn-primary" id="Cart_Search"><span class="hidden-xs">검색</span></button>
 												</div>
 											</div>
 										</div>
 										<div class="add-item-container">
 											<a class="bt-akl-txt">검색초기화</a>
 										</div>
-										<!--  <div class="btn-order-right"> //2018.02.22 사용안함
-											<button id="G10500_lp1" class="bt-akl-blue">퀵오더 제품추가</button>
-										</div> -->
 									</div>
 									<div class="shoping-cart-search">
 										<div class="container-fluid main-container quick-area">
@@ -315,7 +288,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -343,7 +316,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -371,7 +344,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -399,7 +372,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -427,7 +400,7 @@
 																</div>
 															</div>
 															<div class="amway-suggest__item-link">
-																<a href="#" class="btn-blue-white" id="Cart_AddCart">장바구니</a><!-- 2018.03.15 태깅 아이디 추가 tabindex 제거 -->
+																<a href="#" class="btn-blue-white" data-toggle="modal" data-target="#cart-modal">주문 추가</a>
 															</div>
 														</div>
 													</div>
@@ -451,38 +424,58 @@
 				</div>
 				<!-- //빠른검색 -->
 
-
-				<!-- 필터 조회 -->
-				<div class="order-history-search-wrapper search-filter row">
+				<!-- 기간조회 -->
+				<div class="row order-history-search-wrapper search-filter sop-sort-order">
 					<div class="toggle-buttons-container row cutomer">
 						<button class="col-sm-6 js-order-history-filters"><span class="icon-Humburger_list"></span><span>필터</span></button>
-						<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span> <span>기간</span> </button>
+						<button class="col-sm-6 js-order-history-search"><span class="icon-search"></span><span>기간</span></button>
 					</div>
-					<div class="form-wrapper search-form-wrapper col-md-6 col-sm-12 js-search-form-wrapper">
-						<div class="cuton-form-wrapper">
-							<select id="type" name="type" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+
+					<!-- 기간 -->
+					<div class="form-wrapper search-form-wrapper js-search-form-wrapper col-md-8">
+						<div class="form-group sort-cell">
+							<select name="type" tabindex="-1" aria-hidden="true" class="form-control" title="기간설정">
+								<option value="">기간설정</option>
 								<option value="">1개월</option>
 								<option value="">6개월</option>
 							</select>
 						</div>
-					</div>
-					<div class="new-select form-wrapper col-md-6 col-sm-12 js-filter-form-wrapper">
-						<div class="cuton-sel">
-							<select id="sortOptions1" name="sort" class="form-control no-uppercase-form-control">
-								<option>All</option>
-								<option selected="selected">Benefits</option>
-								<option>Ditto</option>
+						<!-- <div class="form-group sort-cell">
+							<label class="control-label" for="sop_sort_month">월별조회</label>
+							<select name="sort" class="form-control" id="sop_sort_month">
+								<option selected="selected">2018</option>
+								<option>2017</option>
+								<option>2016</option>
 							</select>
+							<select name="sort" class="form-control">
+								<option selected="selected">1월</option>
+								<option>1월</option>
+								<option>3월</option>
+								<option>4월</option>
+							</select>
+						</div> -->
+					</div>
+					<!-- //기간 -->
 
-							<select id="sortOptions2" name="sort" class="form-control no-uppercase-form-control">
-								<option selected="selected">Active</option>
-								<option>Inactive</option>
+					<!-- 필터 -->
+					<div class="form-wrapper search-form-wrapper js-filter-form-wrapper col-md-4">
+						<div class="sort-cell cuton-sel">
+							<label class="control-label hidden-xs" for="sop_sort_filter1">필터</label>
+							<select name="sortFilter" class="form-control" id="sop_sort_filter1">
+								<option>혜택없음</option>
+								<option>혜택있음</option>
+							</select>
+							<select name="sortFilter" class="form-control" id="sop_sort_filter2">
+								<option>전체</option>
+								<option>진행</option>
+								<option>취소</option>
 							</select>
 						</div>
 					</div>
-				</div>
-				<!-- //필터 조회 -->
+					<!-- //필터 -->
 
+				</div>
+				<!-- //기간조회-->
 
 				<!-- 조회결과 목록 -->
 				<div id="active-block">
@@ -2756,6 +2749,7 @@
 
 			</div>
 			<!-- //sop-container -->
+
 		</div>
 		<!-- //container-fluid -->
 
