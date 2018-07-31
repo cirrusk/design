@@ -42,10 +42,10 @@
 				</ol>
 			</div>
 		</div>
-		
+
 		<div class="jump-to-business">
 			<div>
-				<p>메뉴이동</p> 
+				<p>메뉴이동</p>
 				<div class="jump-to-wrapper">
 					<div class="jump-menu">
 						<span class="currentTxt"><a href="#">나의탑업</a></span>
@@ -56,23 +56,23 @@
 									<a href="#" class="menu-dep1">사업현황</a>
 									<ul class="select-depth2">
 										<li><a href="#" class="menu-dep2">마감실적조회</a></li>
-										<li><a href="#" class="menu-dep2">Q레그 현황</a></li> 
+										<li><a href="#" class="menu-dep2">Q레그 현황</a></li>
 										<li><a href="#" class="menu-dep2 current">그룹내 총 반품</a></li>
 										<li><a href="#" class="menu-dep2">보너스 연관 반품</a></li>
 										<li><a href="#" class="menu-dep2">나의탑업</a></li>
 										<li><a href="#" class="menu-dep2">다운라인 반품탑업</a></li>
 										<li><a href="#" class="menu-dep2">사업현황보고서</a></li>
-										<li><a href="#" class="menu-dep2">성취보고서</a></li> 
+										<li><a href="#" class="menu-dep2">성취보고서</a></li>
 									</ul>
-								</li> 
+								</li>
 								<li>
 									<a href="#" class="menu-dep1">보상프로그램</a>
 									<ul class="select-depth2">
 										<li><a href="#" class="menu-dep2">사업성장 특별보상 프로그램</a></li>
 										<li><a href="#" class="menu-dep2">월간 코어 보너스 조회</a></li>
-										<li><a href="#" class="menu-dep2">여행점수조회</a></li> 
+										<li><a href="#" class="menu-dep2">여행점수조회</a></li>
 									</ul>
-								</li> 
+								</li>
 								<li>
 									<a href="#" class="menu-dep1">사업지원</a>
 									<ul class="select-depth2">
@@ -82,7 +82,7 @@
 										<li><a href="#" class="menu-dep2">교육비 관리</a></li>
 										<li><a href="#" class="menu-dep2">ABO양식</a></li>
 										<li><a href="#" class="menu-dep2">ABO수첩</a></li>
-										<li><a href="#" class="menu-dep2">암웨이 용어집</a></li> 
+										<li><a href="#" class="menu-dep2">암웨이 용어집</a></li>
 									</ul>
 								</li>
 								<li>
@@ -91,7 +91,7 @@
 										<li><a href="#" class="menu-dep2">교육장예약</a></li>
 										<li><a href="#" class="menu-dep2">퀸룸/파티품예약</a></li>
 										<li><a href="#" class="menu-dep2">비즈룸예약</a></li>
-										<li><a href="#" class="menu-dep2">시설예약현황확인</a></li> 
+										<li><a href="#" class="menu-dep2">시설예약현황확인</a></li>
 									</ul>
 								</li>
 								<li>
@@ -101,7 +101,7 @@
 										<li><a href="#" class="menu-dep2">피부측정예약</a></li>
 										<li><a href="#" class="menu-dep2">브랜드체험예약</a></li>
 										<li><a href="#" class="menu-dep2">문화체험예약</a></li>
-										<li><a href="#" class="menu-dep2">체험예약현황확인</a></li> 
+										<li><a href="#" class="menu-dep2">체험예약현황확인</a></li>
 									</ul>
 								</li>
 								<li>
@@ -111,56 +111,268 @@
 										<li><a href="#" class="menu-dep2">세일즈&마케팅 플랜</a></li>
 										<li><a href="#" class="menu-dep2">GIP&NCA</a></li>
 										<li><a href="#" class="menu-dep2">사업규정</a></li>
-										<li><a href="#" class="menu-dep2">세무법률</a></li> 
+										<li><a href="#" class="menu-dep2">세무법률</a></li>
 									</ul>
 								</li>
 								<li><a href="#" class="menu-dep1">뉴핀 성취자</a></li>
-								<li><a href="#" class="menu-dep1">ABO TAX</a></li>  
+								<li><a href="#" class="menu-dep1">ABO TAX</a></li>
 							</ul>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</div>
-		
+
 		<div class="container amway-theme business">
 			<h1 class="title-h2">그룹내 총 반품</h1>
-			<!-- 검색영역 -->
-			<div class="row filter-search"> 
-				<div class="form-wrapper search-form-wrapper col-md-7 busi-search">
-					<div class="cuton-form-wrapper">
-						<div class="form-s">
-							<input type="text" placeholder="성명, 회원 번호를 입력하세요" class="input-st" title="성명, 회원 번호">
-							<button type="submit" class="btn btn-primary" id="G20203b_lp1"><span>검색</span></button>
-							<span class="reset-btn-wrap"><button type="button" class="bt-akl-txt">검색초기화</button></span> 
-						</div>
-					</div>
-				</div>
-				<div class="new-select form-wrapper col-md-5">
-					<div class="cuton-sel text-right">
-						<span class="label-sel">기간선택</span>
-						<select class="form-control no-uppercase-form-control w150" title="년도" aria-hidden="true">
-							<option value="Latest-date">2018년</option>
-						</select>
-						<select class="form-control no-uppercase-form-control w150" title="월" aria-hidden="true">
-							<option value="Latest-date">3월</option>
-						</select>
-					</div>
-				</div>
+			<!-- 2018.07.31 수정 -->
+			<div class="fp-list">
+				<select name="type" class="form-control no-uppercase-form-control" title="FP 목록">
+					<option value="">PF16</option>
+					<option value="">PF17</option>
+					<option value="" selected="selected">PF18</option>
+				</select>
 			</div>
-			<!-- //검색영역 -->
-
-			<!-- LOS MAP AREA -->
 			<div class="losmap-wrap">
-				LOS MAP AREA
+				<div class="list-content business-type01">
+					<div class="list-row-title">
+						<div class="w25">Month</div>
+						<div class="w25">그룹 반품 PV 합계</div>
+						<div class="w25">그룹 반품 BV 합계</div>
+						<div class="w25">그룹 내 총반품</div>
+					</div>
+					<ul class="content-list">
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">9월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">10월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">11월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">12월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">1월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">2월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">3월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">4월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">5월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">6월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">7월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+						<li class="con-list-item">
+							<div class="w25">
+								<span class="tite-label">Month</span>
+								<span class="txte-wrap">8월</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 PV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 반품 BV 합계</span>
+								<span class="txte-wrap">0</span>
+							</div>
+							<div class="w25">
+								<span class="tite-label">그룹 내 총반품</span>
+								<span class="txte-wrap"><a href="#" class="bt-akl-white mini">자세히보기</a></span>
+							</div>
+						</li>
+
+					</ul>
+
+					<div class="search-no-result line">
+						<p>해당 년도/월에는 [F03에서 선택된 회원명] 님의 반품 내역이 없습니다.</p>
+					</div>
+				</div>
 			</div>
-			<!-- //LOS MAP AREA -->
-			
+			<!-- 2018.07.31 수정 -->
+
 			<div class="btn-wrap mgt30">
 				<a href="G20203a.html" class="link-btn"><span class="glyphicon glyphicon-triangle-left"></span>반품 ABO 목록</a>
 			</div>
 			<div class="business-info-wrap">
-				<span class="customer-info"><em>박창숙(8227184)</em>님의 <em>2018년 03월</em> 반품 정보 </span> 
+				<span class="customer-info"><em>박창숙(8227184)</em>님의 <em>2018년 03월</em> 반품 정보 </span>
 			</div>
 
 			<div class="view-ch-area">
@@ -233,12 +445,12 @@
 				</div>
 				<div class="tbl-list-board">
 					<div class="tr">
-						<div class="th order-sum">Total 반품 PV 합계</div><div class="td">12,092</div> 
-						<div class="th order-sum">Total 반품 BV 합계</div><div class="td">12,092</div> 
+						<div class="th order-sum">Total 반품 PV 합계</div><div class="td">12,092</div>
+						<div class="th order-sum">Total 반품 BV 합계</div><div class="td">12,092</div>
 					</div>
 				</div>
-				<!-- //반품 ABO목록 --> 
-	
+				<!-- //반품 ABO목록 -->
+
 				<div class="paging-wrap">
 					<div class="paging">
 						<a href="#" class="prev">맨 처음 페이지</a>
@@ -255,7 +467,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
 
@@ -266,7 +478,7 @@
 
 	<!-- 검색결과 팝업 -->
     <div class="layerWrapper G20203b_lp1_pop business"><!-- div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidM"><!-- .layerBox 추가 --> 
+		<div class="cbox layerBox popWidM"><!-- .layerBox 추가 -->
 	        <div class="cart-popup__dialog">
 	            <div class="cart-popup__header">
 	                <span class="cart-popup__header-text">검색결과
@@ -275,7 +487,7 @@
 	                    </a>
 	                </span>
 	            </div>
-	            <div class="cart-popup__content payment"> 
+	            <div class="cart-popup__content payment">
 		            <div class="cart-popup__item-info">
 		                <!-- //복수회원검색결과 목록 -->
 						<div class="list-content business-type01">
@@ -327,16 +539,16 @@
 						</div>
 						<!-- //복수회원검색결과 목록 -->
 					</div>
-	            </div> 
+	            </div>
 	        </div>
 	    </div>
     </div>
-    <!-- //검색결과 팝업 --> 
+    <!-- //검색결과 팝업 -->
 
 
 	<!-- 반품내역 상세정보 -->
     <div class="layerWrapper G20203b_lp2_pop business"><!-- div.layerWrapper 추가 -->
-		<div class="cbox layerBox popWidL"><!-- .layerBox 추가 --> 
+		<div class="cbox layerBox popWidL"><!-- .layerBox 추가 -->
 	        <div class="cart-popup__dialog">
 	            <div class="cart-popup__header">
 	                <span class="cart-popup__header-text">반품내역 상세정보
@@ -345,7 +557,7 @@
 	                    </a>
 	                </span>
 	            </div>
-	            <div class="cart-popup__content payment"> 
+	            <div class="cart-popup__content payment">
 		            <div class="cart-popup__item-info">
 		            	<div class="business-info-wrap no-line mgt0">
 		            		<p class="title-h6">최태영 & 윤금희 (5599015)</p>
@@ -365,7 +577,7 @@
 							<div class="list-row-title">
 								<div class="w5">No.</div>
 								<div class="w14">주문번호</div>
-								<div class="w39">제품정보</div> 
+								<div class="w39">제품정보</div>
 								<div class="w8">수량</div>
 								<div class="w13">단가(원)</div>
 								<div class="w13">소계(원)</div>
@@ -391,7 +603,7 @@
 												<span class="product-item-pvbv">PV 21,700 / BV 34,500</span>
 											</div>
 										</div>
-									</div> 
+									</div>
 									<div class="w8">
 										<span class="tite-label">수량</span>
 										<div class="txte-wrap">2</div>
@@ -428,7 +640,7 @@
 												<span class="product-item-pvbv">PV 21,700 / BV 34,500</span>
 											</div>
 										</div>
-									</div> 
+									</div>
 									<div class="w8">
 										<span class="tite-label">수량</span>
 										<div class="txte-wrap">22</div>
@@ -450,11 +662,11 @@
 						</div>
 						<!-- //반품내역 목록 -->
 					</div>
-	            </div> 
+	            </div>
 	        </div>
 	    </div>
     </div>
-    <!-- //반품내역 상세정보 --> 
+    <!-- //반품내역 상세정보 -->
 
 </body>
 </html>
