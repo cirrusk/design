@@ -17,6 +17,7 @@ Editor : HYEWON HWANG
 .select2-container .selection .select2-selection .select2-selection__arrow {height:38px;padding:0;background: url(/_ui/responsive/theme-blue/images/selector-arrow.png) right center no-repeat #ffffff;background-size:18px auto;}
 .select2-container--default .select2-selection--single .select2-selection__arrow b {display:none;}
 .select2-dropdown {border-color:#7a9cd3;border-radius:0;}
+.select2-search--dropdown {padding:0;}
 .select2-container--default .select2-results__option[aria-selected=true]{background-color:#002f5f;color:#fff;}
 .select2-container--default .select2-results__option {padding:10px 10px;text-transform:uppercase;line-height:1.5;letter-spacing:.2px;font-weight:100;}
 
@@ -72,10 +73,10 @@ Editor : HYEWON HWANG
 .akl .brand .homepage_banner .banner__wrapper.s2 {}
 .akl .brand .homepage_banner  .owl-carousel .owl-item .banner__wrapper.s2 .banner__image-sub { position:absolute;z-index:1;float:none;height:auto;width:70%;max-width:708px;margin:0; left:50%; top:45%;
 	-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
-.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message {top:70%;left:50%;right:auto;width:600px;height:auto;transform:translate(-50%,-50%);}
+.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message {top:72%;left:50%;right:auto;width:700px;height:auto;transform:translate(-50%,-50%);}
 .akl .brand .homepage_banner .banner__wrapper.s2 .banner__message:before, 
 .akl .brand .homepage_banner .banner__wrapper.s3 .banner__message:before {content:none;}
-.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message--sub {position:relative;right:auto;bottom:auto;width:100%;}
+.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message--sub {position:relative;right:auto;bottom:auto;width:100%;padding:0;}
 
 /* 암웨이퀸 세번째 스타일 */
 .akl .brand .homepage_banner .banner__wrapper.s3 .banner__message {top:10%;left:20%;max-width:800px;width:75%;height:auto;}
@@ -89,7 +90,7 @@ Editor : HYEWON HWANG
 /**/
 
 .title-component {clear:both;margin:50px 0 50px;text-align:center;}
-.title-component h2 {margin:0;}
+.title-component h2 {margin:0;text-transform:none;}
 .title-component h2 span {display:block;font-size:24px;font-weight:400;margin-bottom:8px;}
 .title-component > p {margin:10px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-1px;}
 .title-component .title-ul {margin:40px auto;width:80%;display:flex;}
@@ -151,9 +152,15 @@ Editor : HYEWON HWANG
 .artistry .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg3.jpg');background-position:50% 0;background-size:1376px auto;}
 .artistry .txtbox.s4 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg4.jpg');background-position:50% 0;background-size:1376px auto;}
 .artistry .txtbox.s5 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg5.jpg');background-position:50% 0;background-size:1376px auto;}
-
-.artistry .txtbox.s1 div, .artistry .txtbox.s2 div {top:50px;max-width:100%;} 
+.artistry .txtbox.s1 div, .artistry .txtbox.s2 div {top:50px;max-width:90%;} 
 .artistry .txtbox.s2 div{color:#fff;}
+
+/* 이스프링 */
+.espring .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg1.jpg');background-position:50% 0;background-size:1376px auto;}
+.espring .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg2.jpg');background-position:50% 0;background-size:1376px auto;}
+.espring .txtbox.s1 div, .espring .txtbox.s2 div {top:50px;max-width:90%;}
+.espring .txtbox.s1 p, .espring .txtbox.s2 p {font-size:16px;}
+.espring .txtbox.s1 p.b {color:#00305e;font-size:20px;font-weight:400;}
 
 
 /* ### 한국암웨이 ### */
@@ -263,6 +270,8 @@ section {overflow:hidden;clear:both;margin-top:25px;}
 	
 	/* 아티스트리 */
 	.artistry .txtbox.s1 p, .artistry .txtbox.s2 p {display:block;}
+	/* 이스프링 */
+	.espring .txtbox.s1 p, .espring .txtbox.s2 p {display:block;}
 
 
 	/* 한국암웨이 */ 
