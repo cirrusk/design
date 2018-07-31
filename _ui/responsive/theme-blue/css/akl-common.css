@@ -238,6 +238,15 @@ b,strong{font-weight:500; }
 .akl .akl-btn-wrap {text-align: center}
 .akl .akl-btn-wrap .banner__shop-now {padding: 13px 40px;}
 
+/* common > button > 파이프라인 버튼 */
+.akl .button-group { float:right; }
+.akl .button-group button { position:relative; background:none; color: #002f5f; font-family:'SNoto Sans KR'; font-weight:500; font-size: 14px; padding:0 0 0 12px; height:auto;  color:#0075a4; margin-left: 5px;}
+.akl .button-group button img { width:14px; vertical-align: middle;}
+.akl .button-group button:before { content:"|"; position:absolute; left:0; top:-1px; padding-right:10px; color:#55565a;  }
+.akl .button-group button:nth-of-type(1):before {display:none;}
+.akl .button-group button.on {color:#55565a;}
+.akl .ico-bg-sky { margin-left:5px }
+
 /* common > button > quick view */
 .akl .product-list__thum { display:block; position: relative; padding:0 9% 82%; height: 0; width:82%;margin: 0 auto; text-align: center;}
 .akl .quick-view-btn {border: 1px solid #002F5F;top:50%; margin-top: -20px;font-size: 14px; left:50%;}
