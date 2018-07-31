@@ -106,19 +106,19 @@
 						<div class="navigation-tabs-container order-history-container js-order-history-container">
 							<div class="outer-border-bottom">
 								<ul class="tabs-toggles">
-									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" data-index="0" href="#Video"> <span class="toggle-text">영상</span> </a> </li>
-									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" data-index="1" href="#Gallery"> <span class="toggle-text">포토</span> </a> </li>
+									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" data-index="0" href="#Video"> <span class="toggle-text">Video</span> </a> </li>
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" data-index="1" href="#Gallery"> <span class="toggle-text">Gallery</span> </a> </li>
 								</ul>
 							</div>
 							<div class="tab-content tabs-content-blocks">
 
 								<!-- ## tab1 ## -->
 								<div class="tab-pane content-block active" id="Video">
-									<h2 class="hidden">영상</h2>
+									<h2 class="hidden">Video</h2>
 									<div class="media-borad-list-video">
 										<ul>
 											<li class="highlight">
-												<a href="#">
+												<a href="#" onclick="layerPopOver(this,'.B20302_lp1');">
 													<div class="view-img">
 														<img src="../../theme-blue/images/akl_brand/xs_energy/video/L1_H.jpg" alt="2017 XS Pool Party"/>
 													</div>
@@ -553,7 +553,7 @@
 								</div>
 								<!-- ## tab2 ## -->
 								<div class="tab-pane content-block" id="Gallery">
-									<h2 class="hidden">포토</h2>
+									<h2 class="hidden">Gallery</h2>
 									<div class="media-borad-list-gallery">
 										<ul>
 											<li class="highlight">
@@ -1276,5 +1276,81 @@
 		<div id="footer"></div>
 	</main>
 
+<!-- (팝업) Gallery -->
+<div class="layerWrapper B20302_lp1"><!-- div.layerWrapper 추가 -->
+	<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">뉴트리라이트 스토리 15 건강수면편</span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+							<div class="gallery-wrapper">
+								<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L63_7.jpg" alt="XS출시파티 - 부산"/>
+								<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L63_7.jpg" alt="XS출시파티 - 부산"/>
+								<img src="../../theme-blue/images/akl_brand/xs_energy/gallery/L63_7.jpg" alt="XS출시파티 - 부산"/>
+
+							</div> 
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<div class="view-sns right">
+						<!-- 2018.03.05 : 수정 (img에서  href="#" 삭제, html syntax error) 2018.03.13 태깅 아이디 추가 -->
+						<div class="print"><!-- class 추가 2018.04.09 -->
+							<a href="#" id="PopupPlayMovie_Print"><img src="/_ui/responsive/theme-blue/images/new_Print.png" alt="Print"></a>
+						</div>
+						<div class="url-copy"><!-- class 추가 2018.04.09 -->
+							<a href="#" id="PopupPlayMovie_URL"><img src="/_ui/responsive/theme-blue/images/new_ie_URL.png" alt="ie_URL"></a>
+							<!-- URL 복사 팝업 2018.04.09 -->
+							<div class="url_pop">
+								<div class="cart-popup-area">
+									<div class="pop-area-header">
+										<a href="#dfde" class="cart-popup-close">
+											<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+										</a>
+									</div>
+									<div class="pop-area-body">
+										<p>주소가 복사되었습니다.<br>
+										원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="https://goo.gl/Pjy3en" aria-label="https://goo.gl/Pjy3en">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //URL 복사 팝업 2018.04.09 -->
+						</div>
+						<div class="kakaotalk"><!-- class 추가 2018.04.09 -->
+							<a href="#" id="PopupPlayMovie_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="kakaotalk"></a>
+						</div>
+						<div>
+							<a href="#" id="PopupPlayMovie_Kakaostory"><img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory"></a>
+						</div>
+						<div>
+							<a href="#" id="PopupPlayMovie_Facebook"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
+						</div>
+						<div>
+							<a href="#" id="PopupPlayMovie_Band"><img src="/_ui/responsive/theme-blue/images/new-Band.png" alt="Band"></a>
+						</div>
+						<div>
+							<a href="#" id="PopupPlayMovie_Twitter"><img src="/_ui/responsive/theme-blue/images/new-twitter2.png" alt="twitter"></a>
+						</div>
+						<!-- //2018.03.05 : 수정 (img에서  href="#" 삭제, html syntax error) 2018.03.13 태깅 아이디 추가 -->
+					</div>
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+
+</div>
+<!-- //(팝업) Gallery -->
 </body>
 </html>
