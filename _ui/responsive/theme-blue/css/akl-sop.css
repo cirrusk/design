@@ -1113,7 +1113,6 @@
 .open .ico-fa-angle-down:before{content:'\f106';}
 .ico-fa-repeat-alt:before{content:'\f364';}
 
-
 /* ---- SOP제품 상세 ---- */
 .akl .product-image-gallery {opacity:1;}
 
@@ -1174,11 +1173,15 @@
 .mysop-product-detail-list .list-content .content-list {text-align:center;}
 .mysop-product-detail-list .list-content .content-list .item-prdt-name {text-align:left;}
 
+.mysop-product-active.both-side {overflow:hidden;}
+.mysop-product-active.both-side .left-side {float:left;}
+.mysop-product-active.both-side .right-side {float:right;}
+
 /* ---- SOP 스마트 오더 목록 ---- */
 .akl .list-content.mysop-list-content {padding-top:0;}
-.list-content.mysop-list-content {border-bottom:1px solid #e3e3e3;}
+.list-content.mysop-list-content {border-bottom:0px solid #e3e3e3;}
 .list-content.mysop-list-content>.row {display:table-row;}
-.list-content.mysop-list-content>.row.list-row-title>div {border:1px solid #e3e3e3; border-width:1px 0;}
+/* .list-content.mysop-list-content>.row.list-row-title>div {border:0px solid #e3e3e3; border-width:1px 0;} */
 .list-content.mysop-list-content>.row>div {border-bottom:0px solid #e3e3e3;}
 .list-content.mysop-list-content .content-list {text-align:center;}
 .list-content.mysop-list-content .content-list .item-name,
@@ -1242,10 +1245,10 @@
 .sop-container .akl-toggle-wrap.sort-order .accordion-custom {border:1px solid #dadada; border-width:1px 0;}
 
 /* SOP 필터 검색 */
-.akl .sop-sort-order {margin:0 0 20px;}
-.akl .sop-sort-order select.form-control {width:auto; min-width:100px;}
-.akl .sop-sort-order .form-wrapper {padding:0}
-.akl .sop-sort-order .form-wrapper .form-group {margin-bottom:0;}
+.akl .sop-container .sop-sort-order {margin:0 0 20px;}
+.akl .sop-container .sop-sort-order select.form-control {width:auto; min-width:100px;}
+.akl .sop-container .sop-sort-order .form-wrapper {padding:0}
+.akl .sop-container .sop-sort-order .form-wrapper .form-group {margin-bottom:0;}
 .sop-sort-order .form-control+.form-control {margin-left:10px;}
 .sop-sort-order .form-group.sort-cell {float:left}
 .sop-sort-order .sort-cell+.sort-cell {margin-left:30px;}
@@ -1260,8 +1263,8 @@
 .akl .sop-container .order-history-search-wrapper .form-wrapper.search-form-wrapper {text-align:left;}
 .akl .sop-container .order-history-search-wrapper .form-wrapper .cuton-sel {text-align: right;}
 
-/* SOP 주문상세 > 제품목록 */
-.akl .sop-container .plp-item-label-wrap {top:-20px;}
+/* 나의 정기주문&스마트오더 > SOP 주문상세 > 제품목록 */
+/* .akl .sop-container .plp-item-label-wrap {top:-20px;} */
 .akl .list-content.mysop-list {padding-top:0;}
 .akl .list-content.mysop-list .row>[class^=col-md] {padding-left:0; padding-right:0; text-align:center;}
 .akl .list-content.mysop-list .row.list-row-content .type-prdt {padding-left:10px;}
@@ -1273,8 +1276,8 @@
 .list-content.mysop-list .data-cell>span {display:block;}
 .list-content.mysop-list .data-cell>span+span {margin-top:5px;}
 
-/* SOP 주문상세 > 제품목록 - 취소상태 */
-.akl .grey-block .plp-item-label {background:#bbb;}
+/* 나의 정기주문&스마트오더 > SOP 주문상세 > 제품목록 - 취소상태 */
+.akl .grey-block .plp-item-label {background:#bbb !important;}
 .akl .grey-block .plp-item-label:after {width:12px; height:25px; right:-10px; background:none; border-style: solid; border-width: 25px 7px 0 0; border-color: #bbb transparent transparent transparent;}
 .list-content.mysop-list .list-row-content.grey-block>div {color:#bbb;}
 .list-content.mysop-list .list-item-info.grey-block>div{color:#bbb;}
@@ -1284,7 +1287,7 @@
 .list-content.mysop-list .grey-block .product-pvbv,
 .list-content.mysop-list .grey-block.list-row-content>div{color:#bbb;}
 
-/* SOP 주문상세 > 주문내역 */
+/* 나의 정기주문&스마트오더 >  SOP 주문상세 > 주문내역 */
 .akl .mysop-monthly-part .list-content {padding-top:0;}
 .mysop-monthly-part {margin-top:40px;}
 .mysop-monthly-part .title-h6 {margin-bottom:20px;}
@@ -1295,6 +1298,45 @@
 .mysop-monthly-part .list-row-content div:first-child{color:#0075a4;}
 .mysop-monthly-part .mysop-text-list .list-row-content {display:table; width:100%; table-layout:fixed;}
 .mysop-monthly-part .mysop-text-list .list-row-content>div {text-align:center;}
+
+/* 나의 정기주문&스마트오더 > SOP 제품 상세보기*/
+.sop-container.mysop-prdt .sop-profile-wrapper.mysop-details {margin-bottom:50px;}
+.akl .sop-container.mysop-prdt .v-m-pros {padding:0 50px 0 0;}
+.akl .sop-container.mysop-prdt .sop-profile-wrapper.mysop-details {border-bottom:1px solid #e3e3e3;}
+
+/* SOP 제품 번들 목록 */
+.sop-container.mysop-prdt .mysop-product-detail-list {margin-top:30px;}
+.sop-container.mysop-prdt .mysop-product-detail .pdp-info.new-pdp-info{top:; border:1px solid blue}
+.sop-container.mysop-prdt .mysop-product-detail .img-product {padding-top:20px;}
+.akl .sop-container.mysop-prdt .list-content.mysop-item-list {padding-top:0;}
+
+
+
+
+
+/* 나의 정기주문&스마트오더 > 나의 스마트 오더(6개월) */
+.sop-container .label-gift{position:absolute;z-index:98;top:-20px;left:0;width:18px;height:20px;margin-bottom:0;padding-top:2px;padding-left:4px;font-size:12px;color:#ffffff;background:#721472;}
+.sop-container .label-gift span{position:absolute;top:0;right:-10px;display:table;width:0;height:0;border-top:20px solid #731472;border-right:10px solid transparent;border-bottom:none;border-left:0;background-color:transparent;}
+.sop-container .list-content label.label-orange{display:block;width:55px;margin-bottom:5px;padding:6px 5px 6px 6px;font-size:16px;font-weight:100;line-height:18px;color:#ffffff;border-radius:30px;background:#e9961a;}
+.sop-container .list-content label.label-orange i{margin-right:10px;}
+.sop-container .list-content label.label-green{display:block;width:30px;margin:5px auto;font-size:16px;font-weight:100;line-height:30px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
+.sop-container .list-content label.label-green i{margin-right:10px;}
+
+.sop-container .circle-green{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
+.sop-container .circle-orange{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#e9961a;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:768px){
@@ -1327,6 +1369,7 @@
 	.mysop-product-detail-list .list-content .content-list .col-xs-12 {padding-left:0;}
 	.mysop-product-detail-list .list-content .mob-block {display:block; float:left;}
 	.mysop-product-detail-list .mob-block.blue {color:#002f5f !important; font-weight:500;}
+	.akl .mysop-product-detail-list .list-content .content-list {padding:14px 15px;}
 
 	/* ---- SOP 스마트 오더 목록 ---- */
 	.akl .list-content.mysop-list-content .list-row-title {border-top:0;}
@@ -1421,8 +1464,14 @@
 	.mysop-monthly-part .list-row-title {display:block;}
 	.mysop-monthly-part .mysop-text-list .list-row-content>div {padding-left:15px; text-align:left;}
 	.mysop-monthly-part .mysop-text-list .list-row-content>div.col-xs-rig {text-align:right; padding:0 15px 0 0;}
-
 	.mysop-monthly-part .list-row-content .total-cell>span {display:block;}
+
+
+	/* 나의 스마트 오더(6개월)*/
+	.list-content.mysop-monthly-list-content.mysop-list.mysop-table-wrap {}
+
+	.akl .sop-container .sop-profile-wrapper.mysop-details {margin-bottom:0}
+
 }
 
 
@@ -1447,189 +1496,6 @@
 .sop-container .panel .panel-heading .panel-title .disable *{cursor:not-allowed;color:#bbbbbb;}
 .sop-container .panel .panel-heading .panel-title .disable .fa-plus::before{content:'\f067';color:#bbbbbb;}
 
-
-/* 나의 스마트 오더(6개월) > 기간조회 Bar */
-.sop-container .months-select-bar-out-wrap {margin-top:10px; padding:0 0 20px; text-align:center; border:1px solid #e3e3e3;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title{margin-bottom:20px;padding:10px 20px;text-align:left;border-bottom:1px solid #e3e3e3;background:#f4f4f4;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .fa-question-circle{font-size:20px;color:#bbbbbb;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip{float:right;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span{color:#27883e;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span.gray-span{margin-right:40px;color:#bbbbbb;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span.gray-span i{background:0 0;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span.red-span{margin-right:40px;color:#e11e45;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span.red-span i{background:#e11e45;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span i{display:inline-block;width:10px;height:10px;margin-right:10px;border-radius:50%;background:#27883e;}
-
-/* 나의 스마트 오더(6개월) > 조회결과 목록 */
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap{position:relative;display:inline-block;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap:before{position:absolute;z-index:99;top:-1px;bottom:0;left:0;width:60px;content:'';background:-webkit-gradient(linear,left top,100% top,color-stop(0,#ffffff),color-stop(90%,rgba(255,255,255,.8)),color-stop(100%,rgba(255,255,255,.3)));}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap:after{position:absolute;z-index:99;top:-1px;right:0;bottom:0;width:60px;content:'';background:-webkit-gradient(linear,left top,100% top,color-stop(0,rgba(255,255,255,.3)),color-stop(10%,rgba(255,255,255,.8)),color-stop(100%,#ffffff));}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar{position:relative;display:inline-block;font-size:0;text-align:center;border-bottom:0;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li{position:relative;display:inline-block;float:none;padding:0 20px;font-size:16px;border-top:1px solid #bbbbbb;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li.arrow-li-prev{z-index:100;padding:0;font-size:24px;cursor:pointer;vertical-align:top;color:#0075a4;border:0;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li.arrow-li-next{z-index:100;padding:0;font-size:24px;cursor:pointer;vertical-align:top;color:#0075a4;border:0;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li.active a{position:relative;color:#0075a4;border:0;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li.active a:focus,.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li.active a:hover{border:0;background:0 0;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li.active a:after{position:absolute;bottom:0;left:50%;width:20px;height:2px;margin-left:-10px;content:'';background:#0075a4;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li label{position:absolute;z-index:99;top:-12px;left:50%;display:block;width:100px;margin-left:-50px;font-size:15px;font-weight:100;color:#bbbbbb;background:#ffffff;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li a{position:relative;padding-bottom:2px;color:#bbbbbb;border:0!important;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li a:focus,.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li a:hover{border:0!important;background:0 0!important;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li a.current-month:after{position:absolute;bottom:-5px;left:50%;display:inline-block;width:6px;height:6px;margin-left:-3px;content:'';border-radius:50%;background:#bbbbbb;}
-.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li .devided{position:absolute;z-index:100;top:-9px;right:0;bottom:0;width:1px;background:#bbbbbb;}
-
-.sop-container .circle-green{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
-.sop-container .circle-orange{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#e9961a;}
-
-
-/*
-#inactive-block .active a{color:#0075a4;}
-#inactive-block .list-item-image img{opacity:.5;}
-#inactive-block .list-item-info{color:#bbbbbb;}
-#inactive-block .circle-green{background:#dadada;}
-#inactive-block .label-green{background:#dadada;}
-#inactive-block .mysop-table-wrap .list-row-content>div:nth-child(8){color:#bbbbbb;}
-#inactive-block a{color:#bbbbbb;}
-#inactive-block a.mysop-list-details-link{color:#0075a4;}
-#inactive-block a.mysop-list-details-link:hover{color:#002f5f;}
-#inactive-block .line-through{font-weight:300;text-decoration:line-through;color:#bbbbbb;}
-.sop-container #inactive-block .data-cell+div{color:#bbbbbb;}
-.sop-container #inactive-block .list-row-content>div{color:#bbbbbb;}
-.sop-container #inactive-block .list-row-content .list-item-info div:nth-child(1){color:#bbbbbb;}
-.sop-container #inactive-block .label-gift{background:#bbbbbb;} */
-
-/* 나의 스마트 오더(6개월) > 목록 table - 정리요망
-.sop-container .list-content label.label-orange{display:block;width:55px;margin-bottom:5px;padding:6px 5px 6px 6px;font-size:16px;font-weight:100;line-height:18px;color:#ffffff;border-radius:30px;background:#e9961a;}
-.sop-container .list-content label.label-orange i{margin-right:10px;}
-.sop-container .list-content label.label-green{display:block;width:30px;margin:5px auto;font-size:16px;font-weight:100;line-height:30px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
-.sop-container .list-content label.label-green i{margin-right:10px;}
-
-.sop-container .mysop-monthly-list-content .new-search-icon i{font-size:62px;}
-.sop-container .mysop-monthly-list-content .new-search-icon .border-bottom{position:relative;left:3px;width:45px;margin:0 auto;padding-top:10px;border-bottom:4px solid #999999;}
-.sop-container .mysop-monthly-list-content .ui-front{width:25%;text-align:center;}
-.sop-container .mysop-monthly-list-content .ui-front button{width:100%;}
-.sop-container .mysop-monthly-part .searchEmptyPageMiddle{padding:35px 0;}
-
-.sop-container .label-gift{position:absolute;z-index:9;top:-20px;left:0;width:37px;height:26px;margin-bottom:0;padding-top:5px;padding-left:8px;color:#ffffff;background:#721472;}
-.sop-container .label-gift span{position:absolute;top:0;right:-16px!important;width:0;height:0;border-right:16px solid transparent;border-bottom:32px solid #ffffff;border-left:16px solid transparent;}
-*/
-
-
-@media (max-width:768px){
-
-	/* 나의 스마트 오더(6개월) > 기간조회 Bar */
-	.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span{font-size:12px;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span.gray-span,
-	.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span.red-span{margin-right:7px;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-title .circle-tip span i{margin-right:3px;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-wrap:after,.sop-container .months-select-bar-out-wrap .months-select-bar-wrap:before{width:40px;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li{padding:0 5px;border:0;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li label{width:40px;margin-left:-20px;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .months-select-bar li a{padding:0;}
-	.sop-container .months-select-bar-out-wrap{margin:0 -15px;border:0;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-title{padding:10px 15px;border:0;}
-	.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-next,.sop-container .months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-prev{display:none!important;}
-	.sop-container .months-select-bar-out-wrap+.tab-content{padding-top:0;}
-	.sop-container .months-select-bar-out-wrap+.tab-content .list-item-info{display:none!important;}
-
-	/* 나의 스마트 오더(6개월) > 조회결과 목록 */
-	.sop-container .months-select-content-wrap .mysop-list .list-row-content{padding:0 0;border-bottom:0;}
-	.sop-container .months-select-content-wrap .mysop-list .list-row-content:after{position:absolute;bottom:0;left:26%;width:59%;height:1px;background:#e3e3e3;}
-	.sop-container .months-select-content-wrap .list-row-content>div{position:relative;display:table-cell!important;float:none!important;width:10%!important;padding-top:0!important;padding-right:2px;padding-left:2px;text-align:center;vertical-align:middle;color:#bbbbbb;}
-	.sop-container .months-select-content-wrap .list-row-content>div i{position:absolute;top:11px;left:8px;}
-	.sop-container .months-select-content-wrap .list-row-content>div label.circle-green{width:30px;height:30px;line-height:30px;}
-	.sop-container .months-select-content-wrap .list-row-content>div label.circle-orange{width:30px;height:30px;line-height:30px;}
-	.sop-container .months-select-content-wrap .list-row-content>div:nth-child(1){width:20%!important;margin-right:0;padding-right:0;}
-	.sop-container .months-select-content-wrap .list-row-content>div:nth-child(1) .list-item-image{padding:0;}
-	.sop-container .months-select-content-wrap .list-row-content>div:nth-child(8){font-size:0;color:#002f5f;}
-	.sop-container .months-select-content-wrap .list-row-content>div:nth-child(8) i{position:relative;top:0;font-size:16px;}
-	.sop-container .months-select-content-wrap .list-row-content>div:nth-child(10),.sop-container .months-select-content-wrap .list-row-content>div:nth-child(9){display:none!important;}
-
-	/* 정리요망 */
-	.sop-container .label-gift{z-index:11;}
-}
-
-
-
-
-
-
-
-
-/* 공통요소 >>> 사용안함
-.amway-theme .panel-title a,.amway-theme .panel-title a span{color:#002f5f;}
-.amway-theme h3.warning{color:#e11e45;}
-.amway-theme h3.success{text-transform:uppercase;color:#20883e;}
-.amway-theme .cart-content-wrapper,.amway-theme .cartTitile{margin-right:0;margin-left:0;}
-.amway-theme .cartTitile .product-list-page-sub-title,.amway-theme .cartTitile h4{padding-bottom:1em;font-family:SourceSansPro;font-size:1em;font-weight:400;color:#777777;}
-.amway-theme .shopping-list-page-title{margin-bottom:25px;}
-.amway-theme .cart-content-wrapper{padding-top:1.5em;}
-.amway-theme .cart-content-wrapper .account-section-content:last-child{margin-bottom:1.5em;}
-.amway-theme .cart-content-wrapper .pagination-bar{margin-bottom:.75em;}
-.amway-theme .cart-content-wrapper .pagination-bar .add-to-wishList{line-height:40px;text-transform:uppercase;}
-
-.panel-title{margin-top:0;margin-bottom:0;padding:1.5em 0;font-size:18px;font-weight:600;color:#002f5f;}
-.panel-title a,.panel-title span{cursor:pointer;}
-.panel-title>.small,.panel-title>.small>a,.panel-title>a,.panel-title>small,.panel-title>small>a{color:inherit;}
-.panel-title>div{display:block;text-align:left;white-space:normal;}
-.panel-title>div .indicator,.panel-title>div i{margin-right:5px;color:#0075a4;}
-.panel-title>div .fa-minus{float:right;margin-right:0;color:#0075a4;}
-.panel-title>i{width:25px;font-size:20px;color:#0075a4;}
-.panel-title>div[role=button]{display:block;text-align:left;white-space:normal;}
-.panel-title>div[role=button] .fa-minus{float:right;margin-right:0;color:#0075a4;}
-.panel-title>.collapsed .fa-minus:before{content:'\f067';}
-.page-title-s{font-size:20px;}
-.corner-block{float:right;margin-right:20px;font-size:16px;font-weight:600;cursor:pointer;color:#0075a4;}
-.corner-block i{width:16px;}
-.corner-block i.fa-caret-left{text-align:center;}
-.corner-block:hover{color:#002f5f;}
-
-.panel{margin-bottom:0;}
-.panel .accordion-panel-heading,.panel .panel-title{padding:0;font-weight:600;text-transform:uppercase;}
-.panel .accordion-panel-heading [data-toggle=collapse],.panel .panel-title [data-toggle=collapse]{display:block;padding:1.5em 0;cursor:pointer;}
-.panel .accordion-panel-heading i,.panel .accordion-panel-heading span,.panel .panel-title i,.panel .panel-title span{display:inline-block;font-size:18px;line-height:1;vertical-align:middle;}
-.panel .accordion-panel-heading i,.panel .panel-title i{min-width:28px;font-size:22px;}
-.panel .accordion-panel-heading span.text-uppercase,.panel .panel-title span.text-uppercase{font-size:20px;font-weight:600;color:#002f5f;}
-.panel .accordion-panel-heading .fa-plus,.panel .accordion-panel-heading .icon-minus,.panel .accordion-panel-heading .indicator,.panel .panel-title .fa-plus,.panel .panel-title .icon-minus,.panel .panel-title .indicator{position:relative;width:15px;height:26px;font-size:14px;line-height:26px;}
-.panel .accordion-panel-heading .fa-plus:before,.panel .accordion-panel-heading .icon-minus:before,.panel .accordion-panel-heading .indicator:before,.panel .panel-title .fa-plus:before,.panel .panel-title .icon-minus:before,.panel .panel-title .indicator:before{position:absolute;top:-1px;left:0;content:'\f068';}
-.panel .accordion-panel-heading .icon-minus:before,.panel .accordion-panel-heading .indicator:before,.panel .panel-title .icon-minus:before,.panel .panel-title .indicator:before{color:#0075a4;}
-.panel .accordion-panel-heading span[class^=icon-],.panel .panel-title span[class^=icon-]{width:35px;font-size:20px;color:#0075a4;}
-.panel .collapsed .fa-plus,.panel .collapsed .icon-minus,.panel .collapsed .indicator{font-weight:900;}
-.panel .collapsed .fa-plus:before,.panel .collapsed .icon-minus:before,.panel .collapsed .indicator:before{content:'\f067';}
-.panel .panel-collapse{padding:0 20px 0 35px;}
-.orderDetails .panel .panel-title span.text-uppercase{font-size:16px;}
-.panel-heading .panel-title .ditto-tab-toggle .icon-ditto{color:#0075a4;}
-.panel-heading .panel-title .ditto-tab-toggle .icon-minus:before{content:'\f067'!important;color:#0075a4;}
-.panel-heading .panel-title .ditto-tab-toggle.collapsed .icon-minus:before{content:'\f068'!important;}
-
-
-.alert{margin-bottom:26px;padding:15px 30px;border:1px solid transparent;border-radius:4px;}
-.alert h4{margin-top:0;color:inherit;}
-.alert .alert-link{font-weight:700;}
-.alert>p,.alert>ul{margin-bottom:0;}
-.alert>p+p{margin-top:5px;}
-.alert-dismissable,.alert-dismissible{padding-right:35px;}
-.alert-dismissable .close,.alert-dismissible .close{position:relative;top:-2px;right:-21px;color:inherit;}
-.alert-success{color:#3c763d;border-color:#d6e9c6;background-color:#dff0d8;}
-.alert-success hr{border-top-color:#c9e2b3;}
-.alert-success .alert-link{color:#2b542c;}
-.alert-info{color:#56565a;border-color:#f4f4f4;background-color:#f4f4f4;}
-.alert-info hr{border-top-color:#e7e7e7;}
-.alert-info .alert-link{color:#3d3d40;}
-.alert-warning{color:#8a6d3b;border-color:#faebcc;background-color:#fcf8e3;}
-.alert-warning hr{border-top-color:#f7e1b5;}
-.alert-warning .alert-link{color:#66512c;}
-.alert-danger{color:#a94442;border-color:#ebccd1;background-color:#f2dede;}
-.alert-danger hr{border-top-color:#e4b9c0;}
-.alert-danger .alert-link{color:#843534;}
-.alert .warning-icon,.alert .warning-text{display:inline-block;vertical-align:middle;}
-.alert .warning-icon{margin-right:15px;font-size:1.5em;}
-@media (max-width:768px){
-	.alert{margin:15px 0;}
-	.alert .warning-icon{display:block;margin:0 auto 15px;font-size:2em;text-align:center;}
-	.alert .warning-text{margin-bottom:15px;}
-	.alert .text-right{text-align:center;}
-}
-*/
 
 
 .cartlist-tbody .col-xs-12 .plp-item-label{width:150px;height:30px;margin-left:-15px;line-height:30px;}
@@ -1781,82 +1647,6 @@
 .sop-container .mysop-list-content .content-list .name a{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
 
 
-
-.sop-container .mob-text-right{text-align:inherit;}
-.sop-container .mysop-product-detail{margin:0 0 30px;padding-bottom:30px;border-top:1px solid #dadada;}
-.sop-container .mysop-product-detail .img-product>div:last-child .pdp-alert-info{border:0;}
-.sop-container .mysop-product-detail .img-product>div:last-child .pdp-alert-info .alert-content{padding:0;}
-.sop-container .mysop-product-detail .img-product>div:last-child .pdp-alert-info .alert-content i{padding-right:15px;}
-.sop-container .mysop-product-detail .product-image-gallery{overflow:hidden;padding:0 7% 0 5%;}
-.sop-container .mysop-product-detail .zoom-center{padding-bottom:20px;}
-.sop-container .mysop-product-detail .pdp-info .actions{padding-top:0!important;}
-.sop-container .mysop-product-detail .pdp-info .date-tips div.alert-icon{top:auto!important;}
-.sop-container .mysop-product-detail .pdp-info .date-tips div.alert-icon i{color:#0075a4!important;}
-.sop-container .mysop-product-detail .pdp-info .cancel-sop{float:right!important;padding-right:0!important;}
-.sop-container .tag-group .label-gift{display:none;}
-.sop-container .tag-group .tags span.second-tag-space{z-index:999;left:5px;}
-.sop-container .mysop-bundle-contents{width:100%;min-width:1120px;}
-.sop-container .mysop-bundle-contents .sku-num{display:block;}
-.sop-container .mysop-item-list .product-list-item .list-item-image{padding:0 10px 0 0;}
-.sop-container .mysop-item-list .product-list-item .list-item-info{padding:0;}
-.sop-container .mysop-item-list .product-list-item .list-item-ibo-price,.sop-container .mysop-item-list .product-list-item .list-item-price,.sop-container .mysop-item-list .product-list-item .list-item-quantity{padding-top:0;}
-.sop-container .mysop-item-list .product-list-item .amount-cal input{background-color:#f4f4f4;}
-.sop-container .mysop-box-content .box-text{position:relative;top:-10px;font-weight:600;}
-
-
-.sop-container .sort-cell-wrap.pull-right{text-align:right;}
-.sop-container .sort-cell-wrap .sort-cell{display:inline-block;width:auto;vertical-align:top;}
-.sop-container .sort-cell-wrap .sort-cell #edit-month{margin-left:20px;line-height:40px;}
-.sop-container .sort-cell-wrap .sort-cell #edit-month:hover span{color:#002f5f;}
-.sop-container .sort-cell-wrap .sort-cell .control-label{line-height:40px;vertical-align:top;text-transform:capitalize;color:#55565a;}
-.sop-container .sort-cell-wrap .sort-cell form{display:inline-block;}
-.sop-container .sort-cell-wrap .sort-cell form select{width:auto;margin:0 5px;padding:0 30px 0 10px!important;}
-.sop-container .sort-cell-right{display:none!important;}
-.sop-container .color-img img{width:30px;}
-.sop-container .color-option{text-align:center;}
-.sop-container label{font-weight:600;}
-.sop-container .shopping-cart-item-list .product-list-item .list-item-info .lightBlue{display:block;max-width:180px;font-size:13px;}
-.sop-container .actions-wrapper .primary{min-width:15%;margin-right:15px;}
-.sop-container .pay-failed .pay-card{color:#e11e45;}
-.sop-container .pay-failed .pay-card img{margin-right:6px;}
-.sop-container .pay-failed .pay-card span{margin-right:7px;}
-.sop-container .pagination-bar{margin-bottom:0;}
-.sop-container .pagination-bar .form-group{margin-bottom:5px;}
-
-
-
-/*
-.sop-container .content-block .col-md-6 .modify-sort-group{float:right;}
-.sop-container .content-block .col-md-6 .modify-sort-group label{display:inline;} */
-.sop-container .content-block .renew-list-content .col-md-6{margin-bottom:0;}
-.sop-container .content-block .renew-list-content .col-md-6 div{display:inline-block;width:auto;}
-.sop-container .sop-pdp-rig-actions{margin-top:10px;padding-top:0;}
-.sop-container .sop-pdp-rig-actions .actions{margin-bottom:15px;border-top:1px solid #dadada;}
-.sop-container .sop-pdp-rig-actions .link-line{padding-top:20px;}
-
-.sop-container .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .qty-selector .row{margin:10px 0;}
-.sop-container .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .sop-pdp-qty-selector{margin-top:0;margin-bottom:20px!important;}
-.sop-container .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .sop-pdp-qty-selector .control-label{width:30px;}
-.sop-container .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .sop-pdp-actions-wrapper #addToCartForm{padding-top:30px;border-top:1px solid #dadada;}
-.sop-container .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .sop-pdp-actions-wrapper #addToCartButton{width:275px!important;}
-.sop-container label.disabled span{cursor:default;}
-.sop-container label.disabled span:before{position:absolute;z-index:99;top:2px;left:2px;font-family:'Font Awesome 5 Pro';font-size:14px;content:'\f00c';color:#ffffff;}
-.sop-container label.disabled span:after{position:absolute;z-index:98;top:0;right:0;bottom:0;left:0;content:'';background:#dadada;}
-.sop-container .mysop-popup-save-change .pop-content.noPadding{padding:0;}
-.sop-container .mysop-popup-save-change .apply-date{padding:20px 0 10px;font-size:32px;text-align:center;}
-.sop-container .mysop-popup-save-change .pop-tip{margin-bottom:0;}
-.sop-container .mysop-popup-save-change .mysop-save-change-list{padding:10px 20px;border-bottom:1px solid #dadada;}
-.sop-container .mysop-popup-save-change .mysop-save-change-list div{padding:10px 0;font-weight:600;}
-.sop-container .mysop-popup-save-change .mysop-save-change-list .list-label{font-weight:600;text-transform:uppercase;color:#002f5f;}
-.sop-container .mysop-popup-save-change .mysop-save-change-list .list-main-content .cancelled-num{text-decoration:line-through;}
-.sop-container .mysop-popup-save-change .mysop-save-change-list .list-main-content i{padding:0 20px;font-weight:600;}
-.sop-container .mysop-popup-save-change .pop-footer.no-border{text-align:left;border-top:none;}
-.sop-container .mysop-popup-save-change .pop-footer.no-border a.btn{min-width:0;text-align:center;}
-.sop-container .mysop-popup-save-change .pop-footer.no-border a:last-child{padding-left:20px;}
-.sop-container .alert-line{position:relative;display:block;}
-.sop-container .alert-line .alert-down{position:absolute;top:0;right:0;}
-.sop-container .alert-line .alert-down.up .fa-angle-down::before{content:'\f106';}
-
 .sop-container .alert-box{display:none;margin-top:.75em;}
 .sop-container .a-link{display:table;clear:both;width:100%;padding:1.5em 0 .5em;}
 .sop-container .mysop-product-detail{position:relative;}
@@ -1876,131 +1666,15 @@
 .sop-container .mysop-product-detail .pdp-alert-info label.control-label{line-height:40px;text-transform:capitalize;}
 .sop-container .mysop-product-detail .pdp-alert-info select.form-control{width:140%;}
 .sop-container .mysop-product-detail .pdp-alert-info .date-tips{margin-top:5px;}
-.sop-container .mysop-product-detail .product-details .name{padding-top:40px;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions{display:block;margin:1.5em 0;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions form .btn{height:auto!important;padding:1em 0;font-size:16px!important;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions{border-top:0!important;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-to-shopping-list-container{margin-top:25px;padding:10px 0 25px;border-top:1px solid #dadada;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .btn{padding:1em 0;}
+
 .sop-container .mysop-product-detail .product-main-info .addtocart-component .row{height:auto;}
 .sop-container .mysop-product-detail .product-main-info .addtocart-component .row .cycle-period-container{margin-top:0!important;margin-bottom:0;}
 .sop-container .mysop-product-detail .product-main-info .addtocart-component .qty-selector .date-tips{margin-top:0;}
 .sop-container .mysop-product-detail .product-main-info .product-details{margin-bottom:1.5em;}
 .sop-container .mysop-product-detail .page-details-add-to-cart-component .actions-wrapper{margin-top:10px;padding-top:30px;}
 .sop-container .mysop-product-detail .page-details-add-to-cart-component .actions-wrapper .actions{border-top:1px solid #dadada;}
-/*
-.sop-container .mysop-product-detail.haswarning{border:none;}
-.sop-container .mysop-product-detail.haswarning .alert{margin:0;margin-bottom:.3em;padding:1em;font-weight:600;vertical-align:middle;border:1px solid #e3e3e3;}
-.sop-container .mysop-product-detail.haswarning .alert i.fas{float:left;margin:0 .85em 0 .25em;font-size:24px;color:#e11e45;}
-
- */
 
 
-.sop-container .mysop-product-detail-list{margin:0 15px;}
-.sop-container .mysop-product-detail-list .list-content .list-row-title{padding:10px 1.5em;}
-.sop-container .mysop-product-detail-list .list-content .content-list{padding:1.5em;}
-.sop-container .mysop-product-detail-list .dynamic-bundle-edit{padding-bottom:0;}
-.sop-container .mysop-product-detail-list .dynamic-bundle-edit .dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half{border:0;}
-.sop-container .mysop-product-detail-list .dynamic-bundle-edit .dynamic-bundle-edit-main-content .sub-dynamic-bundle-edit-main-content{display:table;width:100%;padding:0;border-top:1px solid #dadada;}
-.sop-container .mysop-product-detail-list .mob-text-right{text-align:right;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li{border-radius:100%;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li img{width:100%;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li span.color{float:left;width:100%;height:100%;border-radius:100%;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li .color_01{background:#000000;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li .color_02{background:#0075a4;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li .color_03{background:orange;}
-.sop-container .mysop-product-detail-list .lip-color-choose__nav li.active{padding:4px;background:#ffffff;}
-.sop-container .mysop-product-detail-list .view-all-colors{display:block;margin-top:15px;}
-.sop-container .mysop-product-detail-list .mobsopActive{display:none;}
-.sop-container .mysop-item-list li:last-child{border:none;}
-.sop-container .mysop-item-list .change-list-header{border:1px solid #dadada;border-width:1px 0;}
-
-.sop-container .mysop-product-active{margin:1.5em 0 .5em;padding:1.5em;border-top:1px solid #dadada;}
-.sop-container .mysop-product-active .link-line img{margin:0 0 0 15px;}
-.sop-container .mysop-product-active .cart-detail__dropdown-menu{right:auto;left:0;}
-.sop-container .sop-confirmation{position:relative;padding:0;}
-.sop-container .sop-confirmation .sop-title{display:block;padding:25px 0 10px;font-size:18px;font-weight:600;text-transform:uppercase;color:#002f5f;}
-.sop-container .sop-confirmation .sop-confirmation-tag{position:absolute;top:20px;left:0;}
-.sop-container .sop-confirmation .item{position:relative;top:50px;}
-.sop-container .sop-confirmation .qty-num{display:inline-block;font-size:16px;}
-.sop-container .mob-sop-confirmation-next-control{padding-top:2em;border-top:1px solid #dadada;}
-
-.sop-container .no-border-bottom{border-bottom:0;}
-.sop-container #productSuggestListTabs .disabled{display:block;}
-
-.sop-container .mysop-table-wrap .fas-wrap i{display:inline-block!important;}
-.sop-container .mysop-table-wrap .list-row-content{padding:20px 0 20px;}
-.sop-container .mysop-table-wrap .list-row-content>div{display:table-cell;float:none;padding-top:0;text-align:center;vertical-align:middle;}
-.sop-container .mysop-table-wrap .list-row-content>div:nth-child(1){text-align:left;}
-.sop-container .mysop-table-wrap .list-row-content>div:nth-child(8){color:#002f5f;}
-.sop-container .mysop-table-wrap .list-row-content>div:nth-child(2),.sop-container .mysop-table-wrap .list-row-content>div:nth-child(3),.sop-container .mysop-table-wrap .list-row-content>div:nth-child(4),.sop-container .mysop-table-wrap .list-row-content>div:nth-child(5),.sop-container .mysop-table-wrap .list-row-content>div:nth-child(6),.sop-container .mysop-table-wrap .list-row-content>div:nth-child(7){color:#bbbbbb;}
-.sop-container .mysop-table-wrap .list-row-content>div:nth-child(2) i,.sop-container .mysop-table-wrap .list-row-content>div:nth-child(3) i,.sop-container .mysop-table-wrap .list-row-content>div:nth-child(4) i,.sop-container .mysop-table-wrap .list-row-content>div:nth-child(5) i,.sop-container .mysop-table-wrap .list-row-content>div:nth-child(6) i,.sop-container .mysop-table-wrap .list-row-content>div:nth-child(7) i{position:relative;top:0;left:0;display:block;margin-right:0;margin-bottom:2px;margin-left:0;text-align:center;}
-
-
-.sop-container .sort-refine-bar .dropdown .dropdown-menu li{padding:10px;}
-.sop-container .sort-refine-bar .dropdown .dropdown-menu li:hover{color:#ffffff;background:#002f5f;}
-
-.sop-container .icon-group{margin:30px auto;text-align:center;}
-.sop-container .icon-group li{display:inline-block;margin:0 16px;}
-
-.sop-container .icon-group li i{margin-right:0;font-size:26px;color:#bbbbbb;}
-.sop-container .icon-group li.active{position:relative;}
-.sop-container .icon-group li.active i{position:relative;top:5px;font-size:50px;}
-.sop-container .icon-group li.active:after{position:absolute;right:5px;bottom:-18px;left:5px;height:4px;content:'';border-radius:6px;background:#bbbbbb;}
-.sop-container .tip-block{max-width:400px;margin:0 auto;text-align:center;}
-.sop-container .tip-block h1{margin:0 auto;font-size:18px;font-weight:600;line-height:60px;text-transform:none;color:#55565a;}
-.sop-container .tip-block p{font-size:16px;}
-.sop-container .tip-block button{width:90%;margin:30px auto 0;}
-.sop-container .open .js-add-list-shopping-button{position:relative;z-index:999;border:1px solid #dadada;}
-.sop-container .open .js-add-list-shopping-button:before{position:absolute;right:0;bottom:-1px;left:0;height:6px;content:'';background:#ffffff;}
-.sop-container .open .js-add-list-shopping-button+.dropdown-menu{z-index:87;margin-left:15px;padding:10px;border:1px solid #dadada;}
-.sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li{height:40px;line-height:40px;vertical-align:top;border-bottom:1px solid #dadada;}
-.sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li:last-child{border:0;}
-.sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li label{margin-top:10px;vertical-align:top;}
-.sop-container .open .js-add-list-shopping-button+.dropdown-menu ul li span{display:inline-block;}
-
-
-
-
-
-.sop-container .del-profile:hover span{color:#002f5f;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions{padding-top:20px!important;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap{position:relative;float:none!important;border:0!important;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap.add-to-sop{margin-top:0;padding-top:0!important;font-size:16px;text-align:center!important;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap button{padding-right:0;padding-left:0;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap.open .dropdown-menu-bottom button{margin-right:10px;padding-right:10px;padding-left:10px;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap.open button{padding-right:0;padding-left:0;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap.open button:before{position:absolute;right:0;bottom:-4px;left:0;height:6px;content:'';background:#ffffff;}
-.sop-container .mysop-product-detail .sop-pdp-rig-actions .add-to-cart-extra-actions .add-button-wrap.open .dropdown-menu{top:50px;left:0;overflow:hidden;margin-left:0;}
-.sop-container .list-item-wrapper .plp-add-to-shopping-list{position:relative;}
-.sop-container .list-item-wrapper .plp-add-to-shopping-list.open .dropdown-menu{top:37px;margin-left:0;}
-.sop-container .list-item-wrapper .plp-add-to-shopping-list.open .dropdown-menu ul li label{top:2px;}
-.sop-container .list-item-wrapper .plp-add-to-shopping-list .js-add-list-shopping-button{z-index:100;margin-top:5px;padding-top:10px;}
-.sop-container .list-item-wrapper .plp-add-to-shopping-list .js-add-list-shopping-button:before{bottom:-3px;}
-.sop-container .mysop-product-detail .open .js-add-list-shopping-button+.dropdown-menu{margin-left:0;}
-.sop-container .mysop-product-detail .open .js-add-list-shopping-button+.dropdown-menu ul li label{top:2px!important;}
-.sop-container .mysop-product-detail .add-to-cart-extra-actions .add-button-wrap{display:inline-block;}
-
-.sop-container .mysop-product-detail .sop-pdp-actions-wrapper form button{height:auto!important;padding:1em 0;font-size:16px!important;}
-.sop-container #addToCartForm{padding-top:30px;padding-bottom:30px;border-bottom:1px solid #dadada;}
-.sop-container #addToCartForm:after{display:table;clear:both;content:'';}
-
-.sop-container .mysop-product-detail .product-main-info .addtocart-component .add-to-cart-extra-actions{border-top:0!important;}
-
-.sop-container .mysop-product-active .AddToCart-AddToCartAction #addToCartForm{padding:0;border:0;}
-.sop-container.sop-element a.product-list__item-title{cursor:pointer;}
-.sop-container.sop-element a.product-list__item-title:hover{cursor:pointer;}
-.mysop-popup-save-change .pop-content.noPadding{padding:0;}
-.mysop-popup-save-change .apply-date{padding:20px 0 10px;font-size:32px;text-align:center;}
-.mysop-popup-save-change .pop-tip{margin-bottom:0;}
-.mysop-popup-save-change .mysop-save-change-list{padding:10px 20px;border-bottom:1px solid #dadada;}
-.mysop-popup-save-change .mysop-save-change-list div{padding:10px 0;font-weight:600;}
-.mysop-popup-save-change .mysop-save-change-list .list-label{font-weight:600;text-transform:uppercase;color:#002f5f;}
-.mysop-popup-save-change .mysop-save-change-list .list-main-content .cancelled-num{text-decoration:line-through;}
-.mysop-popup-save-change .mysop-save-change-list .list-main-content i{padding:0 20px;font-weight:600;}
-.mysop-popup-save-change .pop-footer.no-border{text-align:left;border-top:none;}
-.mysop-popup-save-change .pop-footer.no-border a.btn{min-width:0;text-align:center;}
-.mysop-popup-save-change .pop-footer.no-border a:last-child{padding-left:20px;}
 
 @media (max-width:768px){
 	.cartlist-tbody .col-xs-12 .plp-item-label{padding:0;}
@@ -2139,7 +1813,7 @@
 	.sop-container .mysop-product-detail-list .list-content .list-row-title{padding:10px .5em;}
 	.sop-container .mysop-product-detail-list .list-content .content-list{padding:1.5em .5em;}
 	.sop-container .mysop-item-list .change-list-header .list-item-info{margin-left:5px;}
-
+/*
 	.sop-container .a-link{padding:.5em 0 1em;text-align:center;}
 	.sop-container .add-to-sop{margin-top:0;padding-top:0;font-size:16px;}
 	.sop-container .mysop-product-detail{padding-top:20px;padding-bottom:0;}
@@ -2179,7 +1853,7 @@
 	.sop-container .mob-sop-confirmation .product-list-item .list-item-info{padding-bottom:15px;padding-left:0;}
 	.sop-container .mob-sop-confirmation .product-list-item:last-child{border-bottom:1px solid #dadada!important;}
 	.sop-container .mob-sop-confirmation-next-control{padding-top:20px;border-top:1px solid #dadada;}
-	.sop-container .mob-sop-confirmation-next-control a.btn{padding:10px;}
+	.sop-container .mob-sop-confirmation-next-control a.btn{padding:10px;} */
 
 
 	.sop-container .list-tag-group{left:0;}
@@ -2233,7 +1907,7 @@
 	.sop-container .mysop-list .list-row-content>div:nth-child(5),
 	.sop-container .mysop-list .list-row-content>div:nth-child(7),
 	.sop-container .mysop-list .list-row-content>div:nth-child(8){display:none;} */
-
+/*
 	.sop-container .mob-mysop-monthly-wrap .navigation-tabs-container .left-gradient{position:absolute;z-index:99;left:-18px;width:10%;height:57px;background:-webkit-gradient(linear,left top,100% top,color-stop(0,#ffffff),color-stop(39%,rgba(255,255,255,.45)),color-stop(40%,rgba(255,255,255,.27)),color-stop(100%,rgba(255,255,255,.15)));}
 	.sop-container .mob-mysop-monthly-wrap .navigation-tabs-container .right-gradient{height:67px;}
 	.sop-container .mob-mysop-monthly-wrap .navigation-tabs-container .outer-border-bottom{overflow:hidden;}
@@ -2252,7 +1926,7 @@
 	.sop-container .pdp-info .product-main-info .page-details-add-to-cart-component .addtocart-component .sop-pdp-actions-wrapper #addToCartButton{width:100%!important;}
 	.sop-container .mysop-popup-save-change .pop-footer.no-border{padding:20px;}
 	.sop-container .mysop-popup-save-change .pop-footer.no-border a.btn{width:auto;padding:10px;}
-	.sop-container .alert-line .alert-down{right:-20px;}
+	.sop-container .alert-line .alert-down{right:-20px;} */
 }
 
 
