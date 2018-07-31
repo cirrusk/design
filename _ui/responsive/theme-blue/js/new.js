@@ -707,8 +707,8 @@ $(function(){
 
 	});
 
-	$('.mysop-list-cancel').click(function(){
-		layerPopOver(this,'#mysop-list-cancel');
+	$('.btn-sop-prdt-cancel').click(function(){
+		layerPopOver(this,'#sop-prdt-cancel');
 	});
 
 	//레이어
