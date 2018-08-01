@@ -4,7 +4,7 @@ Version : AKL Hybris UIUX 1.0
 /*** 비주얼 영역 ***/
 iframe {border:0;}
 .product-body-view {word-break:keep-all;word-wrap:break-word;letter-spacing:-0.08em;}
-.visual-area {width:100%;position:relative;text-align:center;/*padding: 0 8.5% 0;*/}
+.visual-area {width:100%;position:relative;text-align:center;padding: 0 8.5% 0;}
 .visual-area.type01 {background-color:#eeede3;background-url:url('../images/akl_product/bg_NU02_01.png') no-repeat top center;height:840px;}
 .visual-area.type02 {background-color:#c9e3f6;min-height:620px;/*padding:0 20px 30px;*/}
 .visual-area.type03 {background-color:#f3f2eb;min-height:890px;/*padding:0 20px 30px;*/}
@@ -168,6 +168,7 @@ iframe {border:0;}
 .red09 {color:#b21f25;}
 .red10{color:#f18b93;}
 .red11{color:#ffa5ca;}
+.red12{color:#bd5c82 !important;}
 
 .yellow{color:#dfaa26 !important;}/* .yellow */
 .yellow01{color:#f1c192;}/* .gold */
@@ -189,6 +190,7 @@ iframe {border:0;}
 .orange05{color:#db5a3a}
 .orange06{color:#f7bf89}
 .orange07{color:#ee7300}
+.orange08{color:#e5a26a !important;}
 
 .purple{color:#e125aa !important;}/* .purple */
 .purple01{color:#e28379 !important;}/* .grapefruit */
@@ -216,6 +218,7 @@ iframe {border:0;}
 .blue09{color:#002f5f !important;}/* .deep-navy */
 .blue10{color:#356a86 !important;}
 .blue11{color:#1f1a5c !important;}
+.blue12{color:#366581 !important;}
 
 .green{color:#017465 !important;} 	/* drakgreen */
 .green01 {color:#5b7927;} 	/* dark-OliveGreen */
@@ -351,6 +354,8 @@ ul.tip, ol.tip{}
 ul.tip.type2, ol.tip.type2{margin-top:20px;}
 ul.tip li, ol.tip li{color:#999999;font-size:12px;letter-spacing:0;}
 ul.tip li:after, ol.tip li:after{top: 6px;}
+.tip.other{display:block;border-top: 1px solid #e3e3e3;margin-top:45px;}
+
 
 .inge-lst01 {}
 .inge-lst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;line-height:24px;}
@@ -406,6 +411,13 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 .inge-numlst02 li {font-size:16px;letter-spacing:-1px;font-weight:300;padding-left:15px;color:#808285;padding:2px 0;list-style-type:decimal}
 
 .norm-lst li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;padding:2px 0;}
+
+
+.info-deth-lst .ingestion-usage dl dd ul{}
+.info-deth-lst .ingestion-usage dl dd ul > li{}
+.info-deth-lst .ingestion-usage dl dd ul > li > ol{}
+.info-deth-lst .ingestion-usage dl dd ul > li > ol > li{}
+.info-deth-lst .ingestion-usage dl dd ul > li > ol > li:after{background:none}
 
 /* special */
 .special-feat {clear:both;display:block;margin-top:20px;}
@@ -675,7 +687,7 @@ dl.amo-txt dd br {line-height:18px}
 
 /* 스킨케어 */
 .point-wrap{text-align: center;padding: 0 0 0;}
-.point-wrap .tit{padding: 0 8.5% 0;margin: 0 auto;}
+.point-wrap .tit{/*padding: 0 8.5% 0;*/margin: 0 auto;}
 .point-wrap .tit strong{font-weight:400;}
 .point-wrap .sec-tit{color:#808285;font-size:32px;font-weight:400;letter-spacing:-2px}
 .point-wrap .tit span {display:block;font-weight:400;line-height:1.2;}
