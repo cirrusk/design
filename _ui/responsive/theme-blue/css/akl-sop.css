@@ -1112,6 +1112,7 @@
 .ico-fa-angle-down:before{content:'\f107';}
 .open .ico-fa-angle-down:before{content:'\f106';}
 .ico-fa-repeat-alt:before{content:'\f364';}
+.ico-fa-gift:before{content:'\f06b';}
 
 /* ---- SOP제품 상세 ---- */
 .akl .product-image-gallery {opacity:1;}
@@ -1139,14 +1140,14 @@
 .addtocart-component.sop-pdp .toggle-benefits {position:relative;border-radius:5px; padding:15px 40px 15px 30px; margin:0 0 30px; background:#f4f4f4;}
 .addtocart-component.sop-pdp .toggle-benefits>p {margin:0; padding-top:10px; tex-align:left;}
 .addtocart-component.sop-pdp .toggle-benefits>p:nth-of-type(1){padding-top:0;}
-.addtocart-component.sop-pdp .toggle-benefits strong.ico-fa-tag {display:inline-block; padding-left:22px; margin-right:10px; color:#0075a4;}
+.addtocart-component.sop-pdp .toggle-benefits strong.ico-fa-tag , .sop-more-benefits.prdt-cancel .ico-fa-gift {display:inline-block; padding-left:22px; margin-right:10px; color:#0075a4;}
 .addtocart-component.sop-pdp .btn-tgg-list.ico-fa-angle-down {position:absolute; top:10px; right:5px; display:block; width:30px; height:30px;}
 .addtocart-component.sop-pdp .btn-tgg-list.ico-fa-angle-down:before{width:100%; height:30px; line-height:2; text-align:center;}
-
 .sop-more-benefits {overflow:hidden;}
-.sop-more-benefits.off {height:0;}
 .sop-more-benefits > p {margin:0; padding-top:10px;}
 .sop-more-benefits > p:first-child {padding-top:0;}
+.sop-more-benefits.prdt-cancel {margin-top:25px;}
+.sop-more-benefits.prdt-cancel > p {padding-top:6px;}
 
 /* ---- SOP제품 담기 완료(확인) ---- */
 .img-product.type-SOP .v-m-pros .image-gallery {margin-bottom:0;}
@@ -1315,12 +1316,20 @@
 .shipping-delivery.sopInstantPayment .product-list-page-title {margin-bottom:20px}
 
 /* 나의 정기주문&스마트오더 > 상세보기 레이어 */
-.pop-sop-details {padding-bottom:20px;  border-bottom:1px solid #e3e3e3;}
+.pop-sop-details {padding-bottom:20px; border-bottom:1px solid #e3e3e3;}
 .pop-sop-details .txt-top {margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #e3e3e3;}
 .pop-sop-details .row>div,
 .pop-sop-details .row .control-label {padding:0;}
 .pop-sop-details .row+.row {margin-top:10px;}
 .pop-sop-details + .txt-italic {margin-top:20px;}
+
+.pop-sop-details.prdt-cancel {border-bottom:0;}
+.pop-sop-details.prdt-cancel .txt-bottom {padding:40px 0 0;text-align:center;}
+.pop-sop-details.prdt-cancel .txt-bottom>strong {display:block; color:#002f5f; font-weight:500; font-size:16px;}
+.pop-sop-details.prdt-cancel .txt-bottom>strong+p{margin-top:8px;}
+.pop-sop-details.prdt-cancel .mysop-product-detail-list {margin-top:0;}
+.akl .pop-sop-details.prdt-cancel .mysop-product-detail-list .list-content {padding-top:0;}
+
 
 /* 나의 정기주문&스마트오더 > 나의 스마트 오더(6개월) */
 .sop-container .label-gift{position:absolute;z-index:98;top:-20px;left:0;width:18px;height:20px;margin-bottom:0;padding-top:2px;padding-left:4px;font-size:12px;color:#ffffff;background:#721472;}
@@ -1333,14 +1342,14 @@
 .sop-container .circle-green{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
 .sop-container .circle-orange{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#e9961a;}
 
-
+.akl .sopInstantPayment .shopping-cart-item-list .product-list-item {padding:20px 0;}
 .akl .sopInstantPayment .shopping-cart-item-list .list-header>div,
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item>div {display:table-cell;}
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-5 {width:41.66666667%;}
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-2 {width:16.66666667%}
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-3 {width:25%}
 
-.akl .sopInstantPayment .shopping-cart-item-list .product-list-item {padding:20px 0;}
+
 
 
 @media (max-width:768px){
