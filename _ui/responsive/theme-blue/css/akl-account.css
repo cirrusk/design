@@ -152,7 +152,7 @@ Version : AKL Hybris UIUX 1.0
 .validation-box-simple {padding-right:50%; box-sizing:border-box;}
 .validation-box-simple .ty-input-name input[type=text],
 .validation-box-simple .ty-input-birth input[type=text] {width:280px;}
-.validat  SOP (진행중)  ion-box-simple .form-group label {font-size:14px; padding-left:0;}
+.validation-box-simple .form-group label {font-size:14px; padding-left:0;}
 .validation-box-simple .form-group .col {padding-left:0; padding-right:0;}
 .validation-box-simple .form-group .last-col { padding-right:0;}
 .validation-box-simple .form-group.mobile .row.form-item-row .input-part-1 {padding-left:0; padding-right:0;}
@@ -680,8 +680,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 .akl .help-block span { font-size: 13px; color: #e11e45; font-weight: 500}
 .akl .account-profile .mobile-phone-form-group .input-part-1,.account-profile .alternate-phone-form-group .input-part-1 { width: 139px;}
-.account-profile .alternate-phone-form-group .input-part-2 {width:168px;}
-.akl .account-profile .mobile-phone-form-group .input-part-2 {width:169px;}
+.account-profile .alternate-phone-form-group .input-part-2 {width:164px;}
+.akl .account-profile .mobile-phone-form-group .input-part-2 {width:164px;}
 .akl .account-profile .mobile-phone-form-group .input-part-3 {width:43%;  margin-left:12px; }
 .akl .account-profile .mobile-phone-form-group .certifi-input-box { margin-top:12px}
 .akl .account-profile .mobile-phone-form-group .certifi-input-box .certifi-label { width:22%; }
@@ -793,7 +793,7 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 
 /* 마이페이지 > 개인정보 활용동의 관리 */
 .akl .page-bonus-payment .bonus-payment .bonus-payment-content {padding:0 50px;font-family:'Noto Sans KR', sans-serif;}
-.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {margin:36px 0;border-top:0 none;padding:0;}
+.akl .page-bonus-payment .bonus-payment .bonus-payment-wrapper {margin:36px 0;border-top:0 none;padding:0;border-bottom: none;}
 .akl .page-bonus-payment .bonus-payment .bonus-payment__description {font-size:14px;padding:7px 0 0; }
 .akl .user-account-header, .akl .user-account-header .user-block .user-info .user-name {font-family:'Noto Sans KR', sans-serif;}
 
@@ -3336,6 +3336,9 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.value-wrapper.month-value-wrapper {float:right;}
 
 	/* 나의 반품내역 > 목록,상세*/
+	.box-date-select {position: relative;}
+	.box-date-select .form_datetime {min-width: 150px;outline: none;-webkit-appearance: none;border: 1px solid #CCCCCC;color: #002F5F;text-align: left;padding-left: 10px;position: relative;z-index: 99;background-color: transparent;cursor: pointer;}
+
 	.txt-in-area .orderSummary02 {padding:10px 0;height:auto;}
 	.txt-in-area .orderSummary02 .txt-label {float:left;width:45%;}
 	.txt-in-area .orderSummary02 .txt-content {float:left;width:55%;}

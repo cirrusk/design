@@ -1196,7 +1196,6 @@
 
 .shipping-delivery.sopCreate .edit-block.createSopForm {padding:30px 0 40px;}
 .shipping-delivery.sopCreate .edit-block.createSopForm > .row {margin-top:10px;}
-
 .sop-delivery-adress #changeTextArea {padding-bottom:30px; border-bottom:1px solid #e3e3e3;}
 .sop-delivery-adress #changeTextArea .default-shipping-address,
 .sop-delivery-adress #changeTextArea .new-shipping-address {padding-left:40px; border-bottom:0px solid #e3e3e3;}
@@ -1229,7 +1228,8 @@
 
 .sop-container .edit-block p.error {margin-bottom:0; color:#e11e45; padding:10px 0;}
 .sop-container .edit-block .bt-akl-txt {background:transparent}
-.sop-container .edit-block .close-edit{position:absolute;z-index:9;top:10px;right:10px;display:block;font-size:20px;}
+.sop-container .edit-block .close-edit{position:absolute;z-index:9;top:10px;right:10px;display:block; text-align:center;}
+.sop-container .edit-block .close-edit:before {content:'\e96d'; display:block; width:24px; height:24px; font-family:'AmwayIcons'!important; font-size:15px; line-height:24px;}
 .sop-container .edit-block .control-label {line-height:40px; margin-bottom:0;}
 .sop-container .edit-block .next-to-label {position:relative; min-height:40px;}
 .sop-container .edit-block .next-to-label>span {display:block; margin-right:115px;}
@@ -1329,6 +1329,9 @@
 .pop-sop-details.prdt-cancel .txt-bottom>strong+p{margin-top:8px;}
 .pop-sop-details.prdt-cancel .mysop-product-detail-list {margin-top:0;}
 .akl .pop-sop-details.prdt-cancel .mysop-product-detail-list .list-content {padding-top:0;}
+
+.pop-delivery-address {padding:30px 40px 20px; min-height:500px; box-sizing:border-box;}
+.pop-payment-change {padding:0 40px 20px; min-height:500px; box-sizing:border-box;}
 
 
 /* 나의 정기주문&스마트오더 > 나의 스마트 오더(6개월) */
@@ -1487,7 +1490,8 @@
 
 	.akl .mysop-monthly-part .list-content .list-row-title,
 	.mysop-monthly-part .mysop-text-list .list-row-content {table-layout:auto;}
-
+	.pop-delivery-address {padding:0 20px 20px;}
+	.pop-delivery-address .default-shipping-address .delivery-msg .delivery-msg-list + .message-shop {margin-bottom:0}
 
 	/* 나의 스마트 오더(6개월)*/
 	.list-content.mysop-monthly-list-content.mysop-list.mysop-table-wrap {}

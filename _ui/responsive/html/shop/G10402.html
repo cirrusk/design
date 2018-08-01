@@ -2231,18 +2231,6 @@
  *  --------------------------------------
  */
 $(function(){
-	var radioPay = $('#selectPay').find('.amwa-radio');
-	$(radioPay).each(function(){
-		$(this).click(function(){
-			var $panel = $(this).parent('.panel');
-			if( $(this).prop("checked", false) ){
-				$(this).prop("checked", true).attr('checked', 'checked');
-				$panel.find('.shipping-delivery-radio-body.panel-collapse').removeClass('collapse');
-				$panel.siblings().find('.shipping-delivery-radio-body.panel-collapse').addClass('collapse');
-			}
-		})
-	});
-
 	/* ---------- 단일결제 ---------- */
 	//초기세팅 - 개인카드 활성화
 	$('#individual').prop("checked", true).attr('checked', 'checked');
