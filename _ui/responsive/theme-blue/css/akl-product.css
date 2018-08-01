@@ -32,7 +32,7 @@ Editor : sookkyung Han
 .visual-area.nobsgala02{height:1134px;background:url(../images/akl_product/one-for-one/bg_nobsgala_02.png) no-repeat bottom center;}
 
 .visual-area.hua01{height:1025px;background:url(../images/akl_product/one-for-one/bg_hua_01.png) no-repeat bottom center;}
-.visual-area.hua02{height:947px;background:url(../images/akl_product/one-for-one/bg_hua_02.png) no-repeat bottom center;}
+.visual-area.hua02{height:947px;background:url(../images/akl_product/one-for-one/bg_hua_02.png) no-repeat bottom center;overflow-y:hidden;}
 
 
 .visual-area .v-logo.truvivity img{width:135px;height:25px;}
@@ -123,6 +123,8 @@ Editor : sookkyung Han
 .organic .organic-box{display:inline-block;margin-left:-40px;padding-bottom:140px;vertical-align:bottom;text-align:left;}
 .organic .organic-box li{font-size:12px;color:#fff;font-weight:300;letter-spacing:-1px;}
 
+.ad-setp-lst dd .inge-lst05 li,
+.ad-setp-lst dd .inge-lst08 li{font-size: 14px;}
 
 
 /* 건강정보 */
@@ -554,11 +556,56 @@ Editor : sookkyung Han
 .hua-ad-list li:nth-child(odd){padding:30px 20px 0 0;}
 .hua-ad-list .hua-ad-img{display:table-cell;padding-right:20px;vertical-align:top;}
 .hua-ad-list .hua-ad-img span{display:inline-block;width:100px;height:100px;border:4px solid #4d9fbe;border-radius:50%;}
+.red.hua-ad-list .hua-ad-img span{border-color:#bb5a7f;}
+.orange.hua-ad-list .hua-ad-img span{border-color:#e5a26a;}
+.blue.hua-ad-list .hua-ad-img span{border-color:#356580;}
+
 .hua-ad-list .hua-ad-box{display:table-cell;vertical-align:top;}
 .hua-ad-list .hua-ad-box .hua-ad-tit{display:block;font-size:20px;color:#56565a;font-weight:400;letter-spacing:-2px;}
 .hua-ad-list .hua-ad-box .hua-ad-txt{display:block;font-size:16px;color:#808285;line-height:1.7;letter-spacing:-1px;}
 .hua-ad-list .hua-ad-box .hua-ad-etc{display:block;margin-top:10px;font-size:14px;color:#808285;}
 
+.overnightwear-box{display:table;width:100%;table-layout:fixed;margin-top:70px;}
+.overnightwear-box .before-box{display:table-cell;width:35%;border-right:8px solid #fff;background-color:#ebf1f7;}
+.overnightwear-box .after-box{display:table-cell;position:relative;width:65%;border-left:8px solid #fff;background-color:#ebf1f7;}
+.overnightwear-box > div{padding:50px 45px 29px;}
+.overnightwear-box > div dl{position:relative;border-radius:5px;}
+.overnightwear-box dt{position:absolute;top:-65px;left:0;width:100%;text-align:center;}
+.overnightwear-box dt span{padding:6px 30px 8px;font-size:20px;font-weight:400;letter-spacing:-2px;color:#fff;border-radius:20px;background-color:#59a5c2;}
+.overnightwear-box .use-img{display:table;width:100%;table-layout:fixed;}
+.overnightwear-box .use-img li{display:table-cell;}
+.overnightwear-box .use-img div{display:inline-block;position:relative;padding:0 19px;}
+.overnightwear-box .use-img .num{display:inline-block;position:absolute;top:0;left:0;width:24px;height:24px;padding:1px 1px 0 0;color:#fff;font-size:14px;text-align:center;font-weight:300;border-radius:50%;background-color:#4d9fbe;}
+.overnightwear-box .use-txt{margin-top:13px;}
+.overnightwear-box .use-txt li{margin:2px 0 0 11px;text-indent:-11px;font-size:14px;color:#808285;font-weight:300;}
+
+.hua-system{margin-top:50px;padding-top:44px;border-top:1px solid #e3e3e3;}
+.hua-system .com-tit{font-size:30px;text-align:center;}
+.hua-system .system-box{width:100%;margin-top:30px;text-align:center;}
+.hua-system .axtive-box{display:inline-block;width:14%;vertical-align:top;}
+.hua-system .liner-box{display:inline-block;width:14%;vertical-align:top;}
+.hua-system .pad-box{display:inline-block;width:44%;vertical-align:top;}
+.hua-system .overnight-box{display:inline-block;width:28%;vertical-align:top;}
+
+.hua-system .hua-tbl-th{display:table;width:100%;height:80px;font-size:16px;color:#56565a;border-left:1px solid #fff;background-color:#f4f4f4;}
+.hua-system .hua-tbl-td{display:table;width:100%;height:90px;font-size:14px;color:#808285;font-weight:300;border-bottom:1px solid #e3e3e3;}
+.hua-system .hua-tbl-th span,
+.hua-system .hua-tbl-td span{display:table-cell;padding:0 5px;vertical-align:middle;}
+.hua-system .hua-tbl-tf{display:table;width:100%;height:180px;border-bottom:1px solid #e3e3e3;}
+.hua-system .hua-tbl-tf li{display:table-cell;vertical-align:middle;}
+.hua-system .hua-tbl-tf.def03 li{width:calc(100% / 3);}
+.hua-system .hua-tbl-tf.def02 li{width:50%;}
+.hua-system .hua-tbl-tf .td-img{display:block;}
+.hua-system .hua-tbl-tf .td-tit{display:block;margin-top:22px;font-size:14px;color:#999;font-weight:300;}
+.hua-system .hua-tbl-tf div{padding:20px;border-radius:10px;}
+.hua-system .blue .hua-tbl-th,
+.hua-system .blue .hua-tbl-tf div{background-color:#dbecf2;}
+.hua-system .red .hua-tbl-th,
+.hua-system .red .hua-tbl-tf div{background-color:#f2dee6;}
+.hua-system .orange .hua-tbl-th,
+.hua-system .orange .hua-tbl-tf div{background-color:#faece1;}
+.hua-system .blue02 .hua-tbl-th,
+.hua-system .blue02 .hua-tbl-tf div{background-color:#d7e0e6;}
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 	
@@ -579,6 +626,13 @@ Editor : sookkyung Han
 	
 	.icook-knife .icook-knife-img div,
 	.icook-knife .icook-knife-img div img{width:100%;max-width:824px;}
+	
+	.hua-system .axtive-box,
+	.hua-system .liner-box{width:50%;}
+	.hua-system .pad-box{width:100%;margin-top:20px;}
+	.hua-system .overnight-box{width:100%;margin-top:20px;}
+	.hua-system .hua-tbl-tf{height:130px;}
+	.hua-system .hua-tbl-tf div{padding:10px;}
 }
 
 @media (max-width: 768px) {
@@ -804,6 +858,20 @@ Editor : sookkyung Han
 	
 	/* 원포원 */
 	.hua-ad-list li{width:100%;padding-right:0;padding-left:0;}
+	.overnightwear-box > div{padding:50px 20px 29px;}
+	.overnightwear-box .before-box{display:block;width:100%;border:none;}
+	.overnightwear-box .after-box{display:block;margin-top:40px;width:100%;border:none;}
+	.overnightwear-box .use-img{display:block;}
+	.overnightwear-box .use-img:after{content:'';display:block;clear:both;}
+	.overnightwear-box .use-img li{display:block;float:left;width:50%;text-align:center;}
+	.overnightwear-box .use-img div{padding:0;}
+	
+	.hua-system .axtive-box,
+	.hua-system .liner-box{width:50%;}
+	.hua-system .pad-box{width:100%;margin-top:20px;}
+	.hua-system .overnight-box{width:100%;margin-top:20px;}
+	.hua-system .hua-tbl-tf{height:130px;}
+	.hua-system .hua-tbl-tf div{padding:10px;}
 }
 
 @media (max-width: 324px) {
