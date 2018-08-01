@@ -815,7 +815,7 @@
 
 <!-- 결제수단 변경 -->
 <div class="layerWrapper" id="pop-payment">
-	<div class="cbox layerBox popWidL">
+	<div class="cbox layerBox popWidXL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
 				<span class="cart-popup__header-text">결제수단 변경
@@ -824,9 +824,7 @@
 			</div>
 			<div class="cart-popup__content payment">
 				<!-- 결제수단 변경 -->
-				<div class="pop-payment-change">
-
-
+				<div class="pop-payment-change cart-items-wrapper">
 					<div id="selectPay" class="shipping-delivery-ship method">
 							<p class="shipping-delivery-shipping-header">결제방법 선택</p>
 							<div class="panel">
@@ -863,8 +861,8 @@
 												<div  class="col-xs-12 col-md-3 card-tit"><label for="cardfecture">카드종류</label></div>
 												<div class="col-xs-12 col-md-8">
 													<select class="shipping-delivery-size" id="cardfecture">
+														<option>선택하세요</option>
 														<option>Tokyo-to</option>
-														<option selected="">선택하세요</option>
 														<option>Tokyo-to</option>
 													</select>
 													<div class="card-favor">
@@ -872,6 +870,7 @@
 													</div>
 												</div>
 
+												<!-- card-sort -->
 												<div id="gaeincard" class="card-sort panel-collapse collapse" style="display:block;">
 													<div class="form-group">
 														<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
@@ -927,6 +926,7 @@
 														</div>
 													</div>
 												</div>
+												<!-- //card-sort -->
 											</div>
 
 										</div>
@@ -1208,7 +1208,7 @@
 								</ul>
 							</div>
 							<!-- //(약관내용) -->
-
+					</div>
 
 				</div>
 				<!-- //결제수단 변경 -->
