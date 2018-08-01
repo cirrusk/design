@@ -4,7 +4,7 @@ Version : AKL Hybris UIUX 1.0
 /*** 비주얼 영역 ***/
 iframe {border:0;}
 .product-body-view {word-break:keep-all;word-wrap:break-word;letter-spacing:-0.08em;}
-.visual-area {width:100%;position:relative;text-align:center;/*padding: 0 8.5% 0;*/}
+.visual-area {width:100%;position:relative;text-align:center;padding: 0 8.5% 0;}
 .visual-area.type01 {background-color:#eeede3;background-url:url('../images/akl_product/bg_NU02_01.png') no-repeat top center;height:840px;}
 .visual-area.type02 {background-color:#c9e3f6;min-height:620px;/*padding:0 20px 30px;*/}
 .visual-area.type03 {background-color:#f3f2eb;min-height:890px;/*padding:0 20px 30px;*/}
@@ -267,6 +267,7 @@ iframe {border:0;}
 .detail-content-area {padding: 0 7%;}
 .com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.2;}
 .com-tit.small {font-size:32px !important;}
+.com-tit.sub-tit{margin-top:35px;}
 .com-tit span {display:inline-block;font-weight:400;font-size:44px;}
 .com-tit span.small {font-size:32px;}
 .com-tit strong{font-weight:400;}
@@ -354,6 +355,8 @@ ul.tip, ol.tip{}
 ul.tip.type2, ol.tip.type2{margin-top:20px;}
 ul.tip li, ol.tip li{color:#999999;font-size:12px;letter-spacing:0;}
 ul.tip li:after, ol.tip li:after{top: 6px;}
+.tip.other{display:block;border-top: 1px solid #e3e3e3;margin-top:45px;}
+
 
 .inge-lst01 {}
 .inge-lst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;line-height:24px;}
@@ -409,6 +412,13 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 .inge-numlst02 li {font-size:16px;letter-spacing:-1px;font-weight:300;padding-left:15px;color:#808285;padding:2px 0;list-style-type:decimal}
 
 .norm-lst li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;padding:2px 0;}
+
+
+.info-deth-lst .ingestion-usage dl dd ul{}
+.info-deth-lst .ingestion-usage dl dd ul > li{}
+.info-deth-lst .ingestion-usage dl dd ul > li > ol{}
+.info-deth-lst .ingestion-usage dl dd ul > li > ol > li{}
+.info-deth-lst .ingestion-usage dl dd ul > li > ol > li:after{background:none}
 
 /* special */
 .special-feat {clear:both;display:block;margin-top:20px;}
@@ -678,7 +688,7 @@ dl.amo-txt dd br {line-height:18px}
 
 /* 스킨케어 */
 .point-wrap{text-align: center;padding: 0 0 0;}
-.point-wrap .tit{padding: 0 8.5% 0;margin: 0 auto;}
+.point-wrap .tit{/*padding: 0 8.5% 0;*/margin: 0 auto;}
 .point-wrap .tit strong{font-weight:400;}
 .point-wrap .sec-tit{color:#808285;font-size:32px;font-weight:400;letter-spacing:-2px}
 .point-wrap .tit span {display:block;font-weight:400;line-height:1.2;}
