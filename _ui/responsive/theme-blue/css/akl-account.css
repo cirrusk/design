@@ -651,8 +651,8 @@ ul li.tbody div.mob-ttoy {display:none;}
 
 /* 마이페이지 > 회원정보변경 */
 .noti-suc { font-size:16px; font-weight:500; padding-left: 22px; font-size:16px; font-weight:500; color:#20893d; background:url('../images/icons/success.png') no-repeat left 4px;letter-spacing:-1px;}
-.noti-error { display:inline-block;  font-size:16px; font-weight:500; padding-left: 22px; color:#e11e45; letter-spacing:-1px; position:relative;}
-.noti-error:brfore { content:"";  background:url('../images/icons/warning.png') no-repeat left 5px; position:absolute; left:0; top:0; width:30px; height:30px;}
+.noti-error { display:inline-block; font-size:16px; font-weight:500; color:#e11e45; letter-spacing:-1px; }
+.noti-error:before { content:"";  background:url('../images/icons/warning.png') no-repeat left 5px;  padding-right: 22px; }
 .akl .modify #terms .col {float:left;}
 .akl .modify #terms h3 { font-size: 16px; font-weight:500; margin-bottom:20px }
 .akl .modify .col-md-2, .akl .modify .col-md-3, .akl .modify .col-md-4,.akl .modify .col-md-5,.akl .modify .col-md-5, .akl .modify .col-md-7, .akl .modify .col-md-8, .akl .modify .col-md-9,
@@ -2380,9 +2380,9 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl #ShopListDetailBody .btn-wrapper>button+button {margin-top:0; margin-left:5px;}
 
 	/* 마이페이지 > 배송지 관리*/
-	.form-s { position:relative; height:40px; margin-bottom:10px }
-	.form-s input.input-st {width:100%; }
-	.form-s .btn.btn-primary { position: absolute;right:0; top:0; width:40px; padding:0; border:0;  background: url(../images/search@2x_mobile.png) no-repeat 50% 50% !important; background-size: 15px auto !important; border:0!important; }
+	.akl .form-s { position:relative; height:40px; margin-bottom:10px }
+	.akl .form-s input.input-st {width:100%; }
+	.akl .form-s .btn.btn-primary { position: absolute;right:1px; top:1px; width:40px; height:38px!important;padding:0 18px ; border:0;  background:#fff url(../images/search@2x_mobile.png) no-repeat 50% 50% !important; background-size: 15px auto !important; border:0!important; }
 	.akl .main-container.shipping { padding: 0 15px 0;}
 	.shipping-top { margin:5px 0 10px}
 	.shipping-top span {  float:none}
@@ -2828,7 +2828,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.shipping-form-wrapper.purchase {padding:18px 0 0}
 	.akl .tab-content .list-content.history {padding:20px 0 0}
 
-	.akl .list-content .list-row-title > div.all-ceek {width:15%;text-align:left;float:left;padding:0 20px; margin:0;}
+	.akl .list-content .list-row-title > div.all-ceek {width:15%;text-align:left;float:left;padding:0 20px; margin:8px 0;}
 	.akl .list-content .list-row-title > div.pur-name {display:none;}
 	.akl .list-content .list-row-title > div.pur-prod {display:none;}
 	.akl .list-content .list-row-title > div.pur-quitey {display:none;}

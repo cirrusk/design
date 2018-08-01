@@ -4,7 +4,7 @@ Version : AKL Hybris UIUX 1.0
 /*** 비주얼 영역 ***/
 iframe {border:0;}
 .product-body-view {word-break:keep-all;word-wrap:break-word;letter-spacing:-0.08em;}
-.visual-area {width:100%;position:relative;text-align:center;padding: 0 8.5% 0;}
+.visual-area {width:100%;position:relative;text-align:center;/*padding: 0 8.5% 0;*/}
 .visual-area.type01 {background-color:#eeede3;background-url:url('../images/akl_product/bg_NU02_01.png') no-repeat top center;height:840px;}
 .visual-area.type02 {background-color:#c9e3f6;min-height:620px;/*padding:0 20px 30px;*/}
 .visual-area.type03 {background-color:#f3f2eb;min-height:890px;/*padding:0 20px 30px;*/}
@@ -125,6 +125,7 @@ iframe {border:0;}
 .visual-area.type02.sonwha-salt{background: #ffffff url(../images/akl_product/one-for-one/bg_sonwha_salt.png) no-repeat top center;height:1030px;} /* 정기품 소금 */
 .visual-area.type02.jungipum-kim{background: #ffffff url(../images/akl_product/one-for-one/bg_kim.png) no-repeat top center;height:974px;} /* 정기품 김 */
 .visual-area.type02.hua-wear{background: #ffffff url(../images/akl_product/one-for-one/bg_hua_over_wear.png) no-repeat top center;height:923px;} /* 후아 팬티 */
+.visual-area.type02.sajo-can{background: #ffffff url(../images/akl_product/one-for-one/bg_sajo.png) no-repeat top center;height:975px;} /* 사조 캔 */
 
 
 .visual-area .bg-top {position:absolute;top:0;left:0;width:100%;}
@@ -167,6 +168,7 @@ iframe {border:0;}
 .red09 {color:#b21f25;}
 .red10{color:#f18b93;}
 .red11{color:#ffa5ca;}
+.red12{color:#bd5c82 !important;}
 
 .yellow{color:#dfaa26 !important;}/* .yellow */
 .yellow01{color:#f1c192;}/* .gold */
@@ -188,6 +190,7 @@ iframe {border:0;}
 .orange05{color:#db5a3a}
 .orange06{color:#f7bf89}
 .orange07{color:#ee7300}
+.orange08{color:#e5a26a !important;}
 
 .purple{color:#e125aa !important;}/* .purple */
 .purple01{color:#e28379 !important;}/* .grapefruit */
@@ -215,6 +218,7 @@ iframe {border:0;}
 .blue09{color:#002f5f !important;}/* .deep-navy */
 .blue10{color:#356a86 !important;}
 .blue11{color:#1f1a5c !important;}
+.blue12{color:#366581 !important;}
 
 .green{color:#017465 !important;} 	/* drakgreen */
 .green01 {color:#5b7927;} 	/* dark-OliveGreen */
@@ -345,6 +349,12 @@ iframe {border:0;}
 .ingestion-usage.btm-line {border-bottom:1px solid #e3e3e3;padding:0 0 40px}
 
 ol, ul, dl{margin-bottom:0;}
+
+ul.tip, ol.tip{}
+ul.tip.type2, ol.tip.type2{margin-top:20px;}
+ul.tip li, ol.tip li{color:#999999;font-size:12px;letter-spacing:0;}
+ul.tip li:after, ol.tip li:after{top: 6px;}
+
 .inge-lst01 {}
 .inge-lst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;line-height:24px;}
 
@@ -446,8 +456,9 @@ div.feat-txt p span.next-sort {display:block;}
 .ade-photo img {text-align:center;}
 .sie-box {padding:0 0 0;word-break: keep-all;word-wrap: break-word;}
 .ad-setp-lst {width:100%;font-size: 16px;letter-spacing: -1px;}
-.ad-setp-lst dt {color:#0075a4;font-weight: 400;margin-top:23px;margin-bottom: 0;}
-.ad-setp-lst dd {font-weight: 300;margin-top: 2px;line-height:26px;color:#808285;}
+.ad-setp-lst dt {color:#0075a4;font-weight: 400;margin-top:23px;margin-bottom: 0;font-size:18px;}
+.ad-setp-lst dd {font-weight: 300;margin-top: 2px;line-height:26px;color:#808285;font-size:16px;}
+.ad-setp-lst dd ul li, .ad-setp-lst dd ol li{font-size:16px;}
 .bacteria-info .ad-setp-lst dt{font-size:18px;}
 
 .advan-etc {width:90%;}
@@ -1262,6 +1273,17 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .uses-cook-txt p {font-size:18px;line-height:26px;}
 .uses-cook-txt p.etc-s {color:#999;font-size:14px;}
 
+/* 원포원 - 사조 */
+.step-lst-wrap{margin-top:27px;}
+.step-lst-wrap li{display:block;width:100%;margin-bottom:15px;}
+.step-lst-wrap li div{display:table;}
+.step-lst-wrap li div strong{display:table-cell;vertical-align:top;margin-right: 10px;display: inline-block;}
+.step-lst-wrap li div strong em{display: block;padding: 1px 12px;background: #bbbbbb;border-radius: 20px;color: #ffffff; font-weight: 300;}
+.step-lst-wrap li div p{display:table-cell;vertical-align:top;font-size: 14px;font-weight: 300;line-height: 1.5;}
+
+.sajo-wrap .ad-setp-lst:first-child dt{margin-top:0;} 
+
+
 @media (min-width: 1074px) and (max-width: 1280px) {
 
 	.system-lst {margin:0 auto;width:80%;}
@@ -1300,6 +1322,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.sty-left {padding:0 0 0 50px;}
 
 }
+
+
+
 
 
 @media (min-width: 769px) and (max-width: 1073px) {
@@ -1384,8 +1409,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	/* 공기청청기 */
 	.smart-ingo-lst {padding:0 0;}
 	.smart-ingo-lst ul li {padding:20px 20px;}
-
-	/* 원포원 */
+	
 	.recipe-box {height:auto;padding:20px 20px;min-height:auto}
 	.recipe-info {height:auto;padding:20px 20px 0;}
 	.recipe-info span {width:100%;}
