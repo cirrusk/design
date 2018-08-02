@@ -5,7 +5,7 @@ Editor : eunmyoung Noh
 *************************************************/
 /* 코어제공 */
 @import url("select2.css");
-@import url("register.css");
+/*@import url("register.css");*/
 @import url("sprint.css");
 /* akl */
 @import url("akl-customer.css");
@@ -197,6 +197,7 @@ b,strong{font-weight:500; }
 .color-blue {color:#002f5f !important;}
 .color-blue-sky {color:#007eb0 !important;}
 .color-gray {color: #55565a !important;;}
+.color-green {color: #20893d;}
 
 /* common > Alert & Confirm  */
 .akl-alt-wrap { background:#fff; height: auto; border: 1px solid #c0c0c0; position:relative;}
@@ -222,6 +223,12 @@ b,strong{font-weight:500; }
 .mgt70 {margin-top:70px !important}
 
 /* common > button */
+.text-btn {background: none;outline: none;border: none;font-weight: normal;padding: 0;color: #0075a4;}
+.text-btn .icon {height: 8px;width: 12px;position: relative;top: -1px; margin-left: 3px; background-size: 100%;}
+.text-btn .icon-arrow-ups {display: none;}
+.btn-cancel {border: 2px solid transparent;display: inline-block;letter-spacing: 0.2px;outline: medium none;background-color: #fff; font-size: 16px;border-radius: 1px; min-height: 40px;height: auto; vertical-align: middle;line-height: 1;padding: 10px 20px;text-align: center;color: #0075a4;}
+.btn-cancel:hover { color: #002F5F;}
+
 .akl .end-control, .akl .next-control { text-align:center; padding:40px 0 0}
 .akl .amway-theme .btn {font-family:'Noto Sans KR', sans-serif; }
 .akl .btn-blue-white {background:#002f5f;color:#fff;}
@@ -358,6 +365,8 @@ h2[class^='title-'] {text-align:left; margin:0}
 .paging.pointer {padding:30px 0 0;}
 
 /* common > form */
+.disabled label:before { background-color: #dadada!important;border: 1px solid #dadada!important;}
+.disabled label:after {color: #fff;}
 label, select, button, input, input[type="text"], input[type="password"],input[type="password"] {font-size:14px;}
 .akl input[type="date"] {height:40px; padding-left:10px; border:1px solid #dadada; background:#fff;}
 .akl input[type="text"], .akl input[type="password"] {height:40px; padding:0 15px; border: solid 1px #dadada;}
