@@ -35,7 +35,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .wrapper-memb-join #terms h3 a {position:absolute; right:0; top:0; display:block; overflow:hidden; width:22px; height:20px; text-align:right;}
 .akl .wrapper-memb-join #terms h3 .icon-exports {position:static; display:inline-block;}
 .akl .wrapper-memb-join .action {text-align:right;}
-.akl .wrapper-memb-join .action .radio-wrapper { display: inline-block; margin-left: 20px;}
+.akl .wrapper-memb-join .action .radio-wrapper { display: inline; margin-left: 20px;}
 .akl .wrapper-memb-join .next-control {margin:0 12px; text-align:center;}
 .akl #terms .agreement-para-box>p {color:#e11e45; margin-bottom:0}
 .akl #terms .agreement-para-box>p+p {margin-top:5px;}
@@ -119,7 +119,7 @@ Version : AKL Hybris UIUX 1.0
 .wrapper-memb-join.step-validation #market-validation-box {border-bottom:0;}
 
 /* 인증완료 메시지 */
-.validation-wrapper {position:relative; padding:190px 0 0; margin-top:30px; margin-bottom:18px; border-bottom:1px solid #dadada;}
+.validation-wrapper {position:relative; padding:190px 0 0; margin-top:40px; margin-bottom:18px; border-bottom:1px solid #dadada;}
 .validation-wrapper .valid-progress {position:relative;}
 .validation-wrapper .valid-result-box {display:none; text-align:center; margin-bottom:40px;}
 .validation-wrapper .valid-result-box.on {display:block;}
@@ -129,6 +129,7 @@ Version : AKL Hybris UIUX 1.0
 .validation-wrapper.type-member {padding:0;}
 .validation-wrapper.type-member .valid-progress .box-input-details {display:block;}
 .product-list-page-title.line { border-bottom:1px solid #dadada; padding-bottom:37px }
+.validation-wrapper.subBiz + .info-txt-btm {border-top: 1px solid #e3e3e3; padding-top:17px}
 
 /* 인증방법 선택 */
 .validation-wrapper>div[class^=valid-type]>p {position:absolute; top:0; width:33.3333%; text-align:center; box-sizing:border-box;}
@@ -272,7 +273,7 @@ Version : AKL Hybris UIUX 1.0
 
 /* 회원가입 > 가입완료 */
 .akl .involved-ways02 {margin:0 80px; padding:40px 0 0; border-top: 1px solid #dadada;}
-.akl .involved-ways02 .list-type2 { padding:38px 0 0; border-top: 1px solid #dadada;}
+.akl .involved-ways02 .list-type2 { padding:18px 0 0; border-top: 1px solid #dadada;}
 .akl .involved-ways02 .involved-ways02-dl01 { margin-bottom:25px}
 .akl .involved-ways02 .involved-ways02-dl01 dt { font-size:16px; font-weight:500; margin-bottom:10px; color:#002f5f;}
 .akl .involved-ways02 .involved-ways02-dl01 dd p strong{ display:inline-block; padding-left:25px; background: url(../images/akl_common/icon_tel.png) no-repeat 5px 50%;}
@@ -289,7 +290,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .my-link { text-decoration: underline; color:#0075a4}
 .register-step-foot {border-top: 1px solid #e3e3e3; padding-top:60px; margin-top:50px; text-align: center;}
 .register-step-foot.mob {display:none;}
-.register-step-foot .title-h2 {  margin-bottom: 15px; text-align:center}
+.register-step-foot .title-h2 {  margin-bottom: 15px; text-align:center; letter-spacing:-1px}
 .register-step-foot  p { font-size:16px}
 .helping-people {overflow:hidden; margin:50px auto 0; padding:0 50px; max-width:1376px;}
 .helping-people .brand-item>a,
@@ -329,7 +330,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .author-content .validation-wrapper {padding-top:0;}
 .akl .author-content .validation-wrapper.subBiz {height:190px; margin-top:50px;}
 .akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;}
-.akl .author-content .validation-wrapper.simpleMember {padding-bottom:30px;}
+.akl .author-content .validation-wrapper.simpleMember {padding-bottom:30px; border-bottom:1px solid #dadada;}
 .akl .author-content .author-tit {display:block;font-size:16px;}
 .akl .author-content.member .author-tit {padding-top:40px; border-top:1px solid #dadada;}
 .akl .author-content .author-text em {color:#002f5f;font-weight:500;}
@@ -339,6 +340,7 @@ Version : AKL Hybris UIUX 1.0
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
 .akl .wrapper-memb-join .author-content .author-text {}
 .akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
+.akl .wrapper-memb-join .author-content .info-txt-btm + .next-control {margin-top:0}
 
 /* 본인확인 (본인확인 완료 메시지 포함) */
 .akl .author-content.result-message .validation-wrapper.subBiz {height:auto; padding-top:190px;}
@@ -363,7 +365,6 @@ Version : AKL Hybris UIUX 1.0
 .akl .wrapper-seek-result .form-group p {margin-bottom:0;}
 .akl .wrapper-seek-result .form-group+.info-txt-btm {margin-top:20px;}
 .akl .wrapper-seek-result .form-group>strong {color:#002f5f;}
-.akl .wrapper-memb-join .wrapper-seek-result .next-control {margin:35px 0 0;}
 .akl .wrapper-seek-result .message-box {padding:0 0 30px; margin-bottom:40px; border-bottom:1px solid #dadada; text-align:center}
 .akl .wrapper-seek-result .message-box .form-sub-title-gray {margin-bottom:10px;}
 
@@ -399,17 +400,17 @@ Version : AKL Hybris UIUX 1.0
 .point-title .money p {font-size:16px;padding:0 0;margin:0 0;font-weight:500;color:#56565a}
 .point-title .money span {font-size:14px;font-weight:400;padding:0 0;margin:0 0;color:#808285}
 .po-list {padding:10px 0 0}
-.po-list p.po-timag {font-size:14px;padding:30px 0 5px;margin:0 0;font-weight:500}
+.po-list p.po-timag {font-size:14px;padding:10px 0 5px;margin:0 0;font-weight:500}
 .point-management .form-group {padding:15px 0 0}
 .point-management .form-group .date-range-select {/*width:247px !important;*/margin-top:10px !important;}
 .point-management .date-form-group {padding:10px 0 0}
 .point-management .date-form-group button {margin-left:10px; min-width: 95px}
 .point-management .form-group .box-date-select {width:200px;}
 .point-management .form-group .box-date-select input{width:100%;}
-
 .point-management .form-group.date-form-group .date-range-icon { width: 15px; margin: 0 10px;}
 .akl .datepicker-dropdown:before,
 .akl .datepicker-dropdown:after { display: none}
+.point-title + .po-list {border-bottom:1px solid #e3e3e3; padding-bottom:35px; margin-bottom:15px;}
 
 .table-point-wrapper {width:100%;padding:28px 0 0}
 .table-point-wrapper ul {width:100%;border-top:1px solid #e3e3e3;display:table;table-layout:fixed;}
@@ -448,7 +449,7 @@ ul li.tbody div.request-conver {text-align:center;width:25%;}
 
 .mob-business, .mob-look-txt, .mob-apply-txt, .mob-request-txt {display:none;}
 ul li.tbody div.mob-ttoy {display:none;}
-.member-point-body {border-top:1px solid #dadada;margin-top:37px}
+.member-point-body { margin-top:37px}
 
 .table-point-wrapper.member span.order-return-txt {width:15%;}
 .table-point-wrapper.member span.division-txt {width:26%;}
@@ -470,7 +471,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .pop-switch-poconts .form-group.pop-password span:first-child {width:22%;}
 
 /* 회원가입 > 간편가입 */
-.akl .easy-join {width:100%; padding:20px 0 0}
+.akl .easy-join {width:100%; padding:20px 0 25px; border-bottom:1px solid #e3e3e3;}
 .akl .easy-join .form-group .form-item-row.telephone select {width:100px; margin-right:10px; vertical-align:top}
 .akl .easy-join .form-group .form-item-row.telephone input {width:190px; vertical-align:top}
 .akl .easy-join .form-item-row .col-xs-8.col {width:auto; padding-left:0; padding-right:0}
@@ -643,11 +644,11 @@ ul li.tbody div.mob-ttoy {display:none;}
 .Defaul-taddr { padding-left:33.33333333%; width: 66.66666667%;}
 
 /* 마이페이지 > 비밀번호 확인 */
-.akl .modify .confirm-password { max-width:500px; padding:30px 0 15px }
+.akl .modify .confirm-password { max-width:500px; padding:30px 0 30px; }
 .akl .modify .confirm-password dt { font-size:16px; font-weight: 500; letter-spacing: -1px; margin-bottom:25px;}
 .akl .modify .confirm-password dd .form-group { margin: 0}
 .akl .modify .confirm-password dd .form-group label, .confirm-password dd .form-group div {line-height: 40px}
-.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:30px;text-align: center;}
+.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:40px;text-align: center;}
 
 /* 마이페이지 > 회원정보변경 */
 .noti-suc { font-size:16px; font-weight:500; padding-left: 22px; font-size:16px; font-weight:500; color:#20893d; background:url('../images/icons/success.png') no-repeat left 4px;letter-spacing:-1px;}
@@ -690,7 +691,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .account-profile .mobile-phone-form-group .certifi-input-box .col-btn { width:22%; padding-left:0}
 
 .akl .address-form-group { margin-bottom:20px}
-.akl .address-form-group .bt-akl-white {right:12px}
+.akl .address-form-group .bt-akl-white {right:15px}
 .akl .account-profile__editor__avatar__img-overlay button{margin-top:-4px; display:block; width:100%; background:none; border: 0; height:30px; line-height:100%;  text-align:center; padding:0;}
 .akl .account-profile__editor__avatar__img-overlay button span {font-size:14px; color: #fff; font-weight:500}
 .akl .legend-tit { margin:30px 0 10px;font-weight: 500; }
@@ -765,7 +766,7 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 .akl .account-profile__editor .form-group .email-id span.at {width:8%; text-align: center; margin-top: 5px;}
 .akl .account-profile__editor .form-group span.txt {line-height:2.3em;vertical-align:middle;font-size:14px;}
 .akl .account-profile__editor .form-group button {vertical-align:top}
-.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0; }
+.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-left: -3px;}
 .akl .account-profile__editor .form-group .email-dotcom select {width:43%;margin-right:8px;text-transform:lowercase}
 .akl .account-profile__editor .form-group .col-md-5.address {width:426px;}
 .preferred-name-form-group, .mobile-phone-form-group, .gender-form-group, .date-of-birth-form-group, .name-form-group, .preferred-name-form-group,
@@ -1185,6 +1186,7 @@ h1.page-title .fa-percent:before {content: "";position: absolute;left:25px;top:2
 .akl .list-content.history .con-list-item .pur-day span.txte-wrap {width: 100%;}
 .cont-inarea {clear:both;display:block;width:100%; padding:30px 0 0;box-sizing:border-box;}
 .cont-inarea .d-right .list-type2 {margin-top:20px}
+.akl .shipping-form-wrapper.purchase + .list-content {border-top:0; margin-top: 0}
 /*.cont-inarea:after {content:'';clear:both;display:block;}
  .cont-inarea .d-left {display:table-cell;width:50%;}
 .cont-inarea .d-right {display:table-cell;width:50%;text-align:right;}
@@ -1695,7 +1697,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .akl div.gio-pic {width:40%;}
 .akl div.gio-ap {width:15%;}
 
-.gift-txt {border-top:1px solid #e3e3e3;padding:15px 0 0}
+.gift-txt {border-top:0;padding:15px 0 0}
 .gift-group-send {display:block;margin:25px 0 0;padding:0 0 15px}
 .gift-group-send p.me-top label {font-size:14px;font-weight:400;color:#56565a;letter-spacing:-1px;}
 .simple-inpo {clear:both;display:block;border-top:1px solid #e3e3e3;padding:20px 0 0}
@@ -1713,7 +1715,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .perform-box {font-size:14px;letter-spacing:-0.05em;padding:0 0 20px}
 .perform-box .list-type5 {border-bottom:1px solid #e3e3e3;padding:0 0 15px}
 .perform-tit {font-weight:500;margin-top:30px }
-.perform-history {border-bottom:1px solid #e3e3e3;}
+/* .perform-history {border-bottom:1px solid #e3e3e3;} */
 .perform-history.no-line {border-bottom:0 none;}
 .akl .perform-history .list-content .content-list {padding:18px 0;}
 
@@ -2763,6 +2765,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 중개판매 견적내역 */
 	.estmlist-area {clear:both;display:block;}
+	.akl .estmlist-area .list-content .list-row-title + .content-list {border-top:0;}
 	.estmlist-area .search-no-result {padding:35px 0 30px;}
 	.estmlist-area:after {content:'';clear:both;display:block;}
 	.estimate-conts {padding: 20px 0 0;}
@@ -3007,6 +3010,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.myorder-search .cuton-sel select.form-control {width:100%;}
 	.myorder-search .cuton-form-wrapper {display:block;}
 	.myorder-list-area .myorder-search {display:none;}
+	.akl .myorder-list .list-content .content-list {border-top:0;}
+	.pop-orderCancel-area .myorder-list + .odc-info {border-top:0;}
 
 	.akl .panel-group.accordion-custom.myorder .panel-title {position:relative;padding:5px 0 15px;}
 	.akl .panel-group.accordion-custom.myorder .panel-title a {cursor:pointer;}
@@ -3058,6 +3063,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	.akl .myorder-list .content-list .sub-list .con-list-item span.tite-label { font-size:13px; width:80px }
 	.akl .myorder-list .content-list .sub-list .con-list-item span.txte-wrap { font-size:13px; }
+
+	.akl .myorder-list .list-content .search-no-result.line p {margin-bottom:0; padding-top:10px;}
 
 	.akl span.txte-wrap em.price-way {display:none !important;}
 	.akl em.price-bv {display:inline-block !important;}
@@ -3194,6 +3201,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 
 	/* 나의 주문내역 > 상세정보 > 팝업 > 택배조회 */
+	.akl .gift-order .list-content .content-list,
+	.akl .pop-parcelService .list-content .content-list {border-top:0;}
 	.akl .list-content .list-row-title > div.pop-sev-num {display:none;}
 	.akl .list-content .list-row-title > div.pop-sev-rec {display:none;}
 	.akl .list-content .list-row-title > div.pop-sev-add {display:none;}
@@ -3255,6 +3264,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .pop-orderCancel-area .myorder-list .con-list-item span.txte-wrap { width:60%; }
 
 	/* 나의 주문내역 > 상세정보 > 팝업 > 그룹주문 상세보기 */
+	.group-order-detail {padding-top:20px;}
 	.tbl-type1.group-history th {width:40%;}
 	.tbl-type1.group-history td {width:60%;}
 
@@ -3295,6 +3305,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .con-list-item > div.perf-num {clear:both;display:block;width:100%;padding:5px 15px;}
 	.akl .con-list-item > div.perf-pv {clear:both;display:block;width:100%;padding:5px 15px;}
 
+	.akl .perform-history .list-content .content-list {border-top:0;}
 	.akl .perform-history .con-list-item span.tite-label {  }
 	.akl .perform-history .con-list-item span.txte-wrap { }
 
