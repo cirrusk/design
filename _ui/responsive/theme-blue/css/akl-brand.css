@@ -6,6 +6,10 @@ Editor : HYEWON HWANG
 
 .colorM {color:#0a70d3 !important;}
 .rela {position:relative;}
+.fl {float:left;}
+.fr {float:right;}
+.tl {text-align:left;}
+.tr {text-align:right;}
 
 /* 전체메뉴 */
 /* select2.css */
@@ -58,7 +62,7 @@ Editor : HYEWON HWANG
 .akl .brand .homepage_banner .owl-dots .owl-dot.active {font-weight:400;font-size:17px;}
 .akl .brand .homepage_banner .owl-dots .owl-dot span {background:none;box-shadow:none;width:auto;height:auto;margin:0;}
 
-.akl .brand .homepage_banner .wrapper {background:gray;}
+.akl .brand .homepage_banner .wrapper {background:#fff;}
 .akl .brand .homepage_banner .banner__wrapper {max-width:1376px;}
 .akl .brand .homepage_banner .banner__wrapper * {color:#fff !important;}
 .akl .brand .homepage_banner .banner__title {position:absolute;z-index:11;top:40px;right:0;padding:10px 40px 0 0;font-size:14px;}
@@ -180,23 +184,17 @@ Editor : HYEWON HWANG
 /* XS에너지 */
 
 
-/* ### 한국암웨이 ### */
-.akl .brand-area {position:relative;}
-.akl .brand-area > h1 {margin:10px 0 27px;}
-.akl .brand-area h2{font-size:18px;text-align:left;margin:0 0 20px;}
+/* ### 암웨이소개: 레이아웃 ### */
+.brand .brand-contents {position:relative;}
+.brand .brand-contents > h1 {margin:10px 0 27px;}
+.brand .brand-contents h2{font-size:18px;text-align:left;margin:0 0 20px;}
+.brand .brand-contents p {margin:0 0 10px;}
 
-.brand-area p {margin:0 0 10px;}
-.brand-area .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
-.brand-area .accordion-custom .pull-right:before {position:absolute;right:0;}
-.brand-area section .con-title {font-size:20px;letter-spacing:-2px;font-weight:500;}
-.brand-area section + .col-equality-tab {margin-top:40px;}
-.brand-area .list-type5 > li > strong {display:block;}
-
-/* 한국암웨이 개요 */
-section {overflow:hidden;clear:both;margin-top:25px;}
-.brand-cont1 article{float:left;width:60%;}
-.brand-cont1 article:last-child{width:40%;height:100%;background:#eee;}
-.brand-cont1 article h2 {}
+.brand-cont1, .tit-txt + section {margin-top:30px;}
+.brand-cont1 > article:nth-of-type(1){margin-top:0;}
+.brand-cont1 article{margin-top:30px;overflow:hidden;clear:both;}
+.brand-cont1 article > div {float:left;width:60%;}
+.brand-cont1 article > div:last-child{width:40%;height:100%;background:#eee;}
 .brand-cont1 article dl {overflow:hidden;}
 .brand-cont1 article dl dt {float:left;margin-top:10px;}
 .brand-cont1 article dl dd {padding-left:100px;margin-top:10px;}
@@ -204,9 +202,15 @@ section {overflow:hidden;clear:both;margin-top:25px;}
 .brand-cont1 article a {text-decoration:underline;}
 
 
+.brand-contents .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
+.brand-contents .accordion-custom .pull-right:before {position:absolute;right:0;}
+.brand-contents section .con-title {font-size:20px;letter-spacing:-2px;font-weight:500;}
+.brand-contents .list-type5 > li > strong {display:block;}
+
+
 /* 연혁 */
-#history-list {display:block;}
-#history-list article {
+.history-area {display:block;margin-top:30px;}
+.history-area article {
     display: inline-block;
     width: 100%;
     height: 100%;
