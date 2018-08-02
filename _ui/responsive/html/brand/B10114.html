@@ -32,44 +32,40 @@
 
 	<main>
 		<div id="header"></div>
-		<div class="container-fluid main-container" id="contents">
-			<div class="print-hide breadcrumb-section">
+		<!-- ## 브랜드 전체메뉴 영역 -->
+		<div id="brandMenu" class="container-fluid"> 
+			<div class="print-hide breadcrumb-section brand-fullmenu">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li> 
 					<li>암웨이소개</li>
-					<li><a href="#">한국암웨이</a></li>
-					<li>프로세스로 보는 암웨이</li>
+					<li><!-- 브랜드 셀렉트메뉴 -->
+						<div>
+							<div>
+								<select class="form-control" title="브랜드2차메뉴">
+									<option value="" selected>한국암웨이</option>
+								</select>
+							</div>
+							<div>
+								<select class="form-control" title="브랜드3차메뉴">
+									<option value="" selected>프로세스로 보는 암웨이</option>
+								</select>
+							</div>
+						</div>
+						<!-- //브랜드 셀렉트메뉴 -->
+					</li>
 				</ol>
 			</div>
 		</div>
-		<div class="jump-to-amway">
-			<div>
-				<p>메뉴이동</p> 
-				<div class="jump-to-wrapper">
-					<div class="jump-menu">
-						<span class="currentTxt"><a href="#">프로세스로 보는 암웨이</a></span>
-						<div class="select-wrapper">
-							<ul class="select-list"> 
-								<li><a href="#" class="menu-dep1">한국암웨이 개요</a></li> 
-								<li><a href="#" class="menu-dep1">한국암웨이 가치</a></li> 
-								<li><a href="#" class="menu-dep1">CEO 인사말</a></li> 
-								<li><a href="#" class="menu-dep1">한국암웨이 연혁</a></li> 
-								<li><a href="#" class="menu-dep1">파운더스 카운슬 한국</a></li> 
-								<li><a href="#" class="menu-dep1">부산 아시아 물류 허브센터</a></li> 
-								<li><a href="#" class="menu-dep1 current">프로세스로 보는 암웨이</a></li> 
-							</ul>
-						</div>
-					</div>
-				</div> 
-			</div>
-		</div>
+		<!-- //## 브랜드 전체메뉴 영역 -->
 		
-		<div class="container amway-theme">
-			<div class="brand-area">
+		<!-- ## 컨텐츠 영역 -->
+		<div class="main-container brand amway-theme" id="contents">
+			<div class="brand-contents">
 				<h1 class="title-h2">프로세스로 보는 암웨이</h1>
 				<p class="tit-txt">하나의 제품이 탄생하기까지 암웨이만의 까다로운 과정을 소개합니다.</p>
-				<section>
-					<img src="" alt="이미지" style="display:block;width:100%;height:200px;background:#eee;"/>
+				
+				<section class="brand-cont1">
+					<div><img src="" alt="이미지" style="display:block;width:100%;height:200px;background:#eee;"/></div>
 				</section>
 				
 				<div class="col-search-tab num03 mgt40">

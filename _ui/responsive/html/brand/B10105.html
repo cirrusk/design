@@ -32,54 +32,50 @@
 
 	<main>
 		<div id="header"></div>
-		<div class="container-fluid main-container" id="contents">
-			<div class="print-hide breadcrumb-section">
+		<!-- ## 브랜드 전체메뉴 영역 -->
+		<div id="brandMenu" class="container-fluid"> 
+			<div class="print-hide breadcrumb-section brand-fullmenu">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li> 
 					<li>암웨이소개</li>
-					<li><a href="#">한국암웨이</a></li>
-					<li>CEO 인사말</li>
+					<li><!-- 브랜드 셀렉트메뉴 -->
+						<div>
+							<div>
+								<select class="form-control" title="브랜드2차메뉴">
+									<option value="" selected>한국암웨이</option>
+								</select>
+							</div>
+							<div>
+								<select class="form-control" title="브랜드3차메뉴">
+									<option value="" selected>CEO 인사말</option>
+								</select>
+							</div>
+						</div>
+						<!-- //브랜드 셀렉트메뉴 -->
+					</li>
 				</ol>
 			</div>
 		</div>
-		<div class="jump-to-amway">
-			<div>
-				<p>메뉴이동</p> 
-				<div class="jump-to-wrapper">
-					<div class="jump-menu">
-						<span class="currentTxt"><a href="#">CEO 인사말</a></span>
-						<div class="select-wrapper">
-							<ul class="select-list"> 
-								<li><a href="#" class="menu-dep1">한국암웨이 개요</a></li> 
-								<li><a href="#" class="menu-dep1">한국암웨이 가치</a></li> 
-								<li><a href="#" class="menu-dep1 current">CEO 인사말</a></li> 
-								<li><a href="#" class="menu-dep1">한국암웨이 연혁</a></li> 
-								<li><a href="#" class="menu-dep1">파운더스 카운슬 한국</a></li> 
-								<li><a href="#" class="menu-dep1">부산 아시아 물류 허브센터</a></li> 
-								<li><a href="#" class="menu-dep1">프로세스로 보는 암웨이</a></li> 
-							</ul>
-						</div>
-					</div>
-				</div> 
-			</div>
-		</div>
+		<!-- //## 브랜드 전체메뉴 영역 -->
 		
-		<div class="container amway-theme">
-			<div class="brand-area">
+		<!-- ## 컨텐츠 영역 -->
+		<div class="main-container brand amway-theme" id="contents">
+			<div class="brand-contents">
 				<h1 class="title-h2">CEO 인사말</h1>
 				<p class="tit-txt">안녕하십니까? 한국암웨이 대표 김장환입니다.</p>
+				
 				<section class="brand-cont1">
 					<article>
-						<h2>소비자와 사업파트너의 행복한 삶의 지도를 함께 그립니다.</h2>
-						<p>인공지능, 자율주행과 같은 낯선 용어들이 화두가 되고, 최근 무인 공장에 이어 무인 편의점까지 등장하고 있습니다. 이제 막 서막이 오른 이 예측 불가능한 4차 산업혁명 시대에서 각종 첨단 기술을 읽어내기도 벅찹니다. 우리의 삶이 기술과 함께 더욱 편리해지고 있지만, 한편으로는 기술에 흔들리지 않고 인간의 가치를 지킬 수 있을까 하는 우려의 목소리도 함께 있습니다.</p> 
-						<p>기술을 발전시키기에 앞서 사람에 대한 이해가 먼저여야 하지 않을까요? 통합과 융합의 시대에서 가장 중심에 두어야 할 것은 무엇보다 ‘사람’입니다.</p> 
-						<p>사람에 대한 애정은 암웨이가 지난 1959년 창사 이래 쭉 견지해온 철학과도 일맥상통합니다. 암웨이의 비전은 ‘Helping People Live Better Lives’, 즉 우리 민족의 홍익인간 정신과도 같은 ‘널리 사람을 이롭게 한다.’는 것입니다. 사람을 향한 이 기본 정신은 60여 년간 이어온 양보할 수 없는 암웨이의 핵심 가치입니다.</p>
+						<div>
+							<h2>소비자와 사업파트너의 행복한 삶의 지도를 함께 그립니다.</h2>
+							<p>인공지능, 자율주행과 같은 낯선 용어들이 화두가 되고, 최근 무인 공장에 이어 무인 편의점까지 등장하고 있습니다. 이제 막 서막이 오른 이 예측 불가능한 4차 산업혁명 시대에서 각종 첨단 기술을 읽어내기도 벅찹니다. 우리의 삶이 기술과 함께 더욱 편리해지고 있지만, 한편으로는 기술에 흔들리지 않고 인간의 가치를 지킬 수 있을까 하는 우려의 목소리도 함께 있습니다.</p> 
+							<p>기술을 발전시키기에 앞서 사람에 대한 이해가 먼저여야 하지 않을까요? 통합과 융합의 시대에서 가장 중심에 두어야 할 것은 무엇보다 ‘사람’입니다.</p> 
+							<p>사람에 대한 애정은 암웨이가 지난 1959년 창사 이래 쭉 견지해온 철학과도 일맥상통합니다. 암웨이의 비전은 ‘Helping People Live Better Lives’, 즉 우리 민족의 홍익인간 정신과도 같은 ‘널리 사람을 이롭게 한다.’는 것입니다. 사람을 향한 이 기본 정신은 60여 년간 이어온 양보할 수 없는 암웨이의 핵심 가치입니다.</p>
+						</div>
+						<div>
+							<img src="" alt="" />
+						</div>
 					</article>
-					<article>
-						<img src="" alt="" />
-					</article>
-				</section>
-				<section>
 					<article>
 						<h2>고객의 삶을 풍요롭고 건강하게</h2>
 						<p>사람을 향한 암웨이의 최우선 노력은 보다 좋은 상품과 서비스를 제공하는 것입니다. 세계적으로 탁월한 제품력을 인정받은 암웨이 브랜드에 만족하지 않고, 화려한 기능이 아닌 삶의 질을 높일 수 있는 제품의 끊임없는 개발은 암웨이의 신나는 도전입니다.</p> 
@@ -88,8 +84,10 @@
 						<p>아울러 희망비타민사업 등으로 지역사회와 함께 호흡하고, UN과 협업하는 ‘Power of 5’ 캠페인을 통해 전 세계 빈곤 국가 아동들이 기아와 질병으로 허덕이지 않도록 지원하여, 어린이들의 건강한 성장을 돕는 것은 기업시민으로서의 역할과 소임을 이어가는 암웨이의 자랑스런 전통입니다.</p> 
 						<p>사람과 사람을 연결하는 직접판매 선도 기업으로서, 기술의 진보 속에 가려진 사람에 대한 애정의 힘을 믿습니다. 한국암웨이는 앞으로도 ‘사람과 사람을 잇는 행복한 감성 지도’를 그려나가는데 역량을 집중하겠습니다. 초심을 잃지 않고 계속해서 사람들이 더 나은 삶을 살 수 있도록 돕는 것, 그것이 바로 우리가 존재하는 이유이기 때문입니다.</p> 
 						<p>감사합니다.
+						<p class="tr">한국암웨이 대표이사<br><strong>김 장 환</strong></p>
 					</article>
 				</section>
+				
 			</div>
 		</div> <!-- //container -->
 
