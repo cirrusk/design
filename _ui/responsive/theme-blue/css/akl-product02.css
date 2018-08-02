@@ -505,23 +505,26 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 /* 파스퇴르 */
-.lacto-wrap{}
+.lacto-wrap{    margin-top: 45px;}
 .lacto-wrap .head-tit{display:block;font-size:44px;color:#56565a;text-align:center;}
 .lacto-wrap .box-tit h5{font-size:20px;color:#56565a;text-align:center;}
 
-.lactobacillus{}
-.lactobacillus p.tit{display:block;line-height:40px;font-size:18px;color:#ffffff;font-weight:400;text-align:center;border-radius:40px;}
+.lacto-wrap .health-inform-box{    margin-top: 23px;}
+
+.lactobacillus{    margin-bottom: 24px;    display: block;}
+.lactobacillus p.tit{display:block;line-height:40px;font-size:18px;color:#ffffff;font-weight:400;text-align:center;border-radius:40px;background: #f3be0f;width: 270px;}
 
 .lactobacillus dl{}
-.lactobacillus dl dt{display:block;font-size:16px;color:#56565a;}
-.lactobacillus dl dd{display:block;position: relative;font-size: 14px;color: #808285; font-weight: 300; letter-spacing: -1px;}
+.lactobacillus dl dt{display:block;font-size:16px;color:#56565a;font-weight: 400;margin-left: 16px;line-height: 1.5;}
+.lactobacillus dl dd{display:block;position: relative;font-size: 14px;color: #808285;font-weight: 300;letter-spacing: -1px;margin-left: 27px;line-height: 1.5;letter-spacing: 0;}
 .lactobacillus dl dd:after{position: absolute;display: inline-block;width: 4px;height: 1px; top: 12px; left: -10px; background-color: #808285; content: "";}
 
 .lacto-tip-lst{}
-.lacto-tip-lst strong{display: block;padding: 1px 12px;background:#dadada;border-radius:19px;color: #ffffff; font-weight: 300;line-height:19px;}
-.lacto-tip-lst .fst{}
-.lacto-tip-lst .sub{}
+.lacto-tip-lst strong{display: inline-block;padding: 1px 12px;background:#dadada;border-radius:19px;color: #ffffff;font-weight: 400;line-height:19px;font-size: 12px;letter-spacing: 1px;margin-bottom: 5px;}
+.lacto-tip-lst .fst{    margin-bottom: 0;    line-height: 1.5;    font-size: 14px;    color: #999999;    font-weight: 300;}
+.lacto-tip-lst .sub{    font-size: 12px;    color: #999999;    line-height: 1.5;    font-weight: 300;}
 
+.lacto-wrap .health-inform-box .advan-right{padding: 0 0 0 0;}
 
 
 @media (max-width: 768px) {
@@ -688,6 +691,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	
 	.supreme_lx2 .v-pro span img{width:100% !important;}
 	.gift-lst-area .pcomp-list{padding-right:6%;}
+	
+	.lacto-wrap .health-inform-box .advan-right .ade-photo img{width:90%;}
 }
 
 
