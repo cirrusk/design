@@ -159,7 +159,7 @@
 								<label class="control-label col-md-3 col-xs-12">주문서 명</label>
 								<div class="col-md-9 col-xs-12">
 									<input type="text" class="verify-form text-left form-control" value="사용자명의 정기주문명">
-									<p class="error">Please select a valid profile name</p>
+									<p class="error">에러문구가 표시되는 영역</p>
 								</div>
 							</div>
 							<div class="editbox box-right">
@@ -199,6 +199,7 @@
 										<option>30</option>
 										<option>31</option>
 									</select>
+									<span>일</span>
 								</div>
 							</div>
 						</div>
@@ -477,14 +478,16 @@
 				</div>
 				<!-- //기간조회-->
 
+
 				<!-- 주문 상품목록 -->
-				<div class="list-content mysop-monthly-list-content mysop-list">
+				<div class="list-content mysop-list mysop-monthly-list-content">
 					<div class="list-row-title row hidden-xs">
 						<div class="col-md-3 type-prdt">제품</div>
 						<div class="col-md-1 type-numb">수량</div>
 						<div class="col-md-1 type-option">옵션</div>
 						<div class="col-md-2 type-price">가격(원)</div>
-						<div class="col-md-5 data-cell">전체</div>
+						<div class="col-md-2">PV/BV</div>
+						<div class="col-md-3 data-cell">자동갱신</div>
 					</div>
 
 					<div class="list-row-content row">
@@ -497,11 +500,13 @@
 								<div class="product-category">18,300 PV / 29,100 BV</div>
 							</div>
 						</div>
-						<div class="col-md-1 numbs">3</div>
+						<div class="col-md-1 numbs">
+							<span class="">1</span>
+							<label class="label-green">3</label>
+						</div>
 						<div class="col-md-1 hidden-xs">60팩</div>
 						<div class="col-md-2 hidden-xs">35,000</div>
 						<div class="col-md-2 data-cell">
-							<span>35,000원</span>
 							<span class="txt-pv">18,300 PV</span>
 							<span class="txt-bv">29,100 BV</span>
 						</div>
@@ -524,7 +529,6 @@
 						<div class="col-md-1 hidden-xs">60팩</div>
 						<div class="col-md-2 hidden-xs">35,000</div>
 						<div class="col-md-2 data-cell">
-							<span>35,000원</span>
 							<span class="txt-pv">18,300 PV</span>
 							<span class="txt-bv">29,100 BV</span>
 						</div>
@@ -546,7 +550,6 @@
 						<div class="col-md-1 hidden-xs">60팩</div>
 						<div class="col-md-2 hidden-xs">35,000</div>
 						<div class="col-md-2 data-cell">
-							<span>35,000원</span>
 							<span class="txt-pv">18,300 PV</span>
 							<span class="txt-bv">29,100 BV</span>
 						</div>
@@ -556,6 +559,7 @@
 					</div>
 				</div>
 				<!-- //주문 상품목록 -->
+
 
 				<!-- 주문내역 -->
 				<div class="mysop-monthly-part">
