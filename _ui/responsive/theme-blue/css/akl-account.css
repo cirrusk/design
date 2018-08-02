@@ -643,7 +643,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .Defaul-taddr { padding-left:33.33333333%; width: 66.66666667%;}
 
 /* 마이페이지 > 비밀번호 확인 */
-.akl .modify .confirm-password { max-width:500px; padding:30px 0 15px }
+.akl .modify .confirm-password { max-width:500px; padding:30px 0 30px; }
 .akl .modify .confirm-password dt { font-size:16px; font-weight: 500; letter-spacing: -1px; margin-bottom:25px;}
 .akl .modify .confirm-password dd .form-group { margin: 0}
 .akl .modify .confirm-password dd .form-group label, .confirm-password dd .form-group div {line-height: 40px}
@@ -1695,7 +1695,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .akl div.gio-pic {width:40%;}
 .akl div.gio-ap {width:15%;}
 
-.gift-txt {border-top:1px solid #e3e3e3;padding:15px 0 0}
+.gift-txt {border-top:0;padding:15px 0 0}
 .gift-group-send {display:block;margin:25px 0 0;padding:0 0 15px}
 .gift-group-send p.me-top label {font-size:14px;font-weight:400;color:#56565a;letter-spacing:-1px;}
 .simple-inpo {clear:both;display:block;border-top:1px solid #e3e3e3;padding:20px 0 0}
@@ -1713,7 +1713,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .perform-box {font-size:14px;letter-spacing:-0.05em;padding:0 0 20px}
 .perform-box .list-type5 {border-bottom:1px solid #e3e3e3;padding:0 0 15px}
 .perform-tit {font-weight:500;margin-top:30px }
-.perform-history {border-bottom:1px solid #e3e3e3;}
+/* .perform-history {border-bottom:1px solid #e3e3e3;} */
 .perform-history.no-line {border-bottom:0 none;}
 .akl .perform-history .list-content .content-list {padding:18px 0;}
 
@@ -2763,6 +2763,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	/* 나의 쇼핑정보 > 중개판매관리 > 중개판매 견적내역 */
 	.estmlist-area {clear:both;display:block;}
+	.akl .estmlist-area .list-content .list-row-title + .content-list {border-top:0;}
 	.estmlist-area .search-no-result {padding:35px 0 30px;}
 	.estmlist-area:after {content:'';clear:both;display:block;}
 	.estimate-conts {padding: 20px 0 0;}
@@ -3007,6 +3008,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.myorder-search .cuton-sel select.form-control {width:100%;}
 	.myorder-search .cuton-form-wrapper {display:block;}
 	.myorder-list-area .myorder-search {display:none;}
+	.akl .myorder-list .list-content .content-list {border-top:0;}
+	.pop-orderCancel-area .myorder-list + .odc-info {border-top:0;}
 
 	.akl .panel-group.accordion-custom.myorder .panel-title {position:relative;padding:5px 0 15px;}
 	.akl .panel-group.accordion-custom.myorder .panel-title a {cursor:pointer;}
@@ -3058,6 +3061,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 	.akl .myorder-list .content-list .sub-list .con-list-item span.tite-label { font-size:13px; width:80px }
 	.akl .myorder-list .content-list .sub-list .con-list-item span.txte-wrap { font-size:13px; }
+
+	.akl .myorder-list .list-content .search-no-result.line p {margin-bottom:0; padding-top:10px;}
 
 	.akl span.txte-wrap em.price-way {display:none !important;}
 	.akl em.price-bv {display:inline-block !important;}
@@ -3194,6 +3199,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 
 
 	/* 나의 주문내역 > 상세정보 > 팝업 > 택배조회 */
+	.akl .gift-order .list-content .content-list,
+	.akl .pop-parcelService .list-content .content-list {border-top:0;}
 	.akl .list-content .list-row-title > div.pop-sev-num {display:none;}
 	.akl .list-content .list-row-title > div.pop-sev-rec {display:none;}
 	.akl .list-content .list-row-title > div.pop-sev-add {display:none;}
@@ -3255,6 +3262,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .pop-orderCancel-area .myorder-list .con-list-item span.txte-wrap { width:60%; }
 
 	/* 나의 주문내역 > 상세정보 > 팝업 > 그룹주문 상세보기 */
+	.group-order-detail {padding-top:20px;}
 	.tbl-type1.group-history th {width:40%;}
 	.tbl-type1.group-history td {width:60%;}
 
@@ -3295,6 +3303,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .con-list-item > div.perf-num {clear:both;display:block;width:100%;padding:5px 15px;}
 	.akl .con-list-item > div.perf-pv {clear:both;display:block;width:100%;padding:5px 15px;}
 
+	.akl .perform-history .list-content .content-list {border-top:0;}
 	.akl .perform-history .con-list-item span.tite-label {  }
 	.akl .perform-history .con-list-item span.txte-wrap { }
 
