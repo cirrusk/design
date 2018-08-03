@@ -764,6 +764,10 @@ function orderSummaryFixed(){
 		var conWidth = $('.shipping-delivery .row').width(); //content width
 		var positionRight = (_winWidth - conWidth)/2;
 
+		if ($('.shipping-delivery').is('.sopInstantPayment')){
+			positionRight = (_winWidth - conWidth - 30)/2;
+		}
+
 		/* -- 중간 멈춤 위치 찾기 -- */
 		//주문결제 div
 		var targetWrapper = $('.shipping-delivery');
@@ -1365,11 +1369,13 @@ function SOP_PDP_benefitsTips(){
 		clearTimeout(catchHeight);
 
 		if( sop_benefits.hasClass('open')){
+			$(this).removeClass('on');
 			$BtnText.text('정기주문 혜택 열기');
 			sop_benefits.removeClass('open');
 			sop_benefits.stop().animate({ height: height_firstChild },'fast');
 		}
 		else {
+			$(this).addClass('on');
 			$BtnText.text('정기주문 혜택 닫기');
 			sop_benefits.addClass('open');
 			sop_benefits.stop().animate({ height: height_wrapper },'fast');
@@ -1384,7 +1390,7 @@ function SOP_MonthsSelectBar( dayStart, dayEnd, pageURL ){
 	var endDate   = moment(dayEnd  ,"YYYY-MM-DD");
 
 	var currentMonth = getCurrentMonth(startDate, endDate);
-	var MONTH_NODE = "<li class='#ACTIVE#'> ##<label>#YEAR#</label>YEAR## <a href='#HREF#' #TAB_TOGGLE#>#MONTH#</a> ##<div class='devided'></div>DEVIDER## </li>";
+	var MONTH_NODE = "<li class='#ACTIVE#'> ##<span class='years-label'>#YEAR#</span>YEAR## <a href='#HREF#' #TAB_TOGGLE#>#MONTH#</a> ##<div class='devided'></div>DEVIDER## </li>";
 	var MONTHS = [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ];
 
 	var duration = moment.duration(endDate.diff(startDate));
@@ -1438,10 +1444,10 @@ function SOP_MonthsSelectBar( dayStart, dayEnd, pageURL ){
 		}
 
 		if (month === 0 || month == 11) { // JAN and DEC show YEAR
-			monthNode = monthNode.replace("##<label>#YEAR#</label>YEAR##", "<label>#YEAR#</label>");
+			monthNode = monthNode.replace("##<span class='years-label'>#YEAR#</span>YEAR##", "<span class='years-label'>#YEAR#</span>");
 			monthNode = monthNode.replace("#YEAR#", year);
 		} else {
-			monthNode = monthNode.replace("##<label>#YEAR#</label>YEAR##", "");
+			monthNode = monthNode.replace("##<span class='years-label'>#YEAR#</span>YEAR##", "");
 		}
 
 		if (month == 11) { // DEC shows DIVIDER

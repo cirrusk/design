@@ -261,7 +261,7 @@ Editor : sookkyung Han
 .product-rank {clear:both;display:table;width:100%;margin-top:50px;padding:20px 0;background-color:#f2f8ec;table-layout:fixed;}
 .product-rank .rank-img {display:table-cell;vertical-align:middle;width:27%;text-align:center;}
 .product-rank .rank-img .img-box {display:inline-block;text-align:center;}
-.product-rank .rank-box {display:table-cell;vertical-align:middle;text-align:left;width:73%;padding:0 0;}
+.product-rank .rank-box {display:table-cell;vertical-align:middle;text-align:left;width:73%;padding:0 50px 0 0;}
 .product-rank .rank-box .com-tit2 {font-size:26px;font-weight:400;color:#56565a;letter-spacing:-2px;}
 .product-rank .rank-box .inge-lst03{padding:0;}
 .product-rank .rank-box .inge-lst03 strong{display:block;}
@@ -559,26 +559,37 @@ Editor : sookkyung Han
 .olive-list li{float:left;width:50%;padding:17px 0 0 20px;}
 .olive-list li .olive-tit{display:block;margin-top:5px;font-size:16px;color:#808285;font-weight:300;}
 
-.advantage-area .hua-ad-list{margin-top:20px;}
+.advantage-area > .hua-ad-list{margin-top:20px;}
+.advantage-area.bt-none > .hua-ad-list{margin-top:0;border-top:none;}
 .hua-ad-list{border-top:1px solid #e3e3e3;}
 .hua-ad-list > li{display:inline-block;width:50%;padding:30px 0 0 20px;vertical-align:top;}
 .hua-ad-list > li:nth-child(odd){padding:30px 20px 0 0;}
+.hua-ad-list.full{border:none;}
+.hua-ad-list.full > li,
+.hua-ad-list.full > li:nth-child(odd){width:100%;padding:30px 0 0;}
+.advantage-area.bt-none > .hua-ad-list > li:first-child,
+.advantage-area.bt-none > .hua-ad-list > li:nth-child(2){padding-top:0;}
+.hua-ad-list.full > li:first-child{padding:0;}
 .hua-ad-list .hua-ad-img{display:table-cell;padding-right:20px;vertical-align:top;}
+.hua-ad-list.full .hua-ad-img{vertical-align:middle;}
 .hua-ad-list .hua-ad-img span{display:inline-block;width:100px;height:100px;line-height:100px;border:2px solid #4d9fbe;border-radius:50%;text-align:center;overflow:hidden;}
 .red.hua-ad-list .hua-ad-img span{border-color:#bb5a7f;}
 .orange.hua-ad-list .hua-ad-img span{border-color:#e5a26a;}
 .blue.hua-ad-list .hua-ad-img span{border-color:#356580;}
-
+.pink.hua-ad-list .hua-ad-img span{border-color:#ef7e93;}
+.green.hua-ad-list .hua-ad-img span{border-color:#03b6ab;}
+.green02.hua-ad-list .hua-ad-img span{border-color:#68b834;}
+.purple.hua-ad-list .hua-ad-img span{border-color:#bf86c5;}
 .hua-ad-list.pas.step01 li .hua-ad-img span{border:2px solid #f3be0f;}
 .hua-ad-list.pas.step02 li .hua-ad-img span{border:2px solid #f99c83;}
 .hua-ad-list.pas.step03 li .hua-ad-img span{border:2px solid #4cab9d;}
-
-
 .hua-ad-list .hua-ad-box{display:table-cell;vertical-align:top;}
+.hua-ad-list.full .hua-ad-box{vertical-align:middle;}
 .hua-ad-list .hua-ad-box .hua-ad-tit{display:block;font-size:20px;color:#56565a;font-weight:400;letter-spacing:-2px;}
-.hua-ad-list .hua-ad-box .hua-ad-txt{display:block;font-size:16px;color:#808285;line-height:1.7;letter-spacing:-1px;}
-.hua-ad-list .hua-ad-box .hua-ad-etc{display:block;margin-top:10px;font-size:14px;color:#808285;}
+.hua-ad-list .hua-ad-box .hua-ad-txt{display:block;font-size:16px;color:#808285;line-height:1.6;letter-spacing:-1px;}
+.hua-ad-list .hua-ad-box .hua-ad-etc{display:block;margin-top:12px;font-size:12px;color:#808285;}
 .hua-ad-list.type02 .hua-ad-box .hua-ad-tit{padding-top:15px;font-size:16px;letter-spacing:-1px;}
+.hua-ad-list.full .hua-ad-box .hua-ad-tit{padding:0;}
 .hua-ad-list .pink .hua-ad-img span{border-color:#d599bf;}
 .hua-ad-list .green .hua-ad-img span{border-color:#8bc7a9;}
 .hua-ad-list .purple .hua-ad-img span{border-color:#ada0c8;}
@@ -692,7 +703,7 @@ Editor : sookkyung Han
 	
 	.product-rank{padding:20px 30px;margin-top:30px;}
 	.product-rank .rank-img{display:block;text-align:center;width:100%;}
-	.product-rank .rank-box{display:block;padding:15px 0 0 0;width:100%;}
+	.product-rank .rank-box{display:block;padding:15px 20px 0;width:100%;}
 	.product-rank .rank-box .com-tit2{font-size:16px;}
 	.product-rank .rank-box .com-etc{font-size:14px;}
 	.product-rank .rank-box .inge-lst03 li{margin-top:10px;}
@@ -891,7 +902,8 @@ Editor : sookkyung Han
 	.raw-lst li:first-child:after{width:8px;height:8px;margin:-4px -4px 0 0;}
 	
 	/* 원포원 */
-	.hua-ad-list li{width:100%;padding-right:0;padding-left:0;}
+	.hua-ad-list li{width:100%;padding-right:0 !important;padding-left:0 !important;}
+	.hua-ad-list .hua-ad-box .hua-ad-txt br{display:none;}
 	.overnightwear-box > div{padding:50px 20px 29px;}
 	.overnightwear-box .before-box{display:block;width:100%;border:none;}
 	.overnightwear-box .after-box{display:block;margin-top:40px;width:100%;border:none;}
@@ -921,6 +933,12 @@ Editor : sookkyung Han
 	.special-list .special-icon{display:block;width:100%;text-align:center;}
 	.special-icon span{display:block;line-height:100px;margin:0 auto;}
 	.special-list .special-txt{display:block;width:100%;padding:10px 0 0;text-align:center;}
+	
+	.hua-ad-list li{margin-top:30px;}
+	.hua-ad-list li:first-child{margin-top:0;}
+	.hua-ad-list .hua-ad-img{display:block;width:100%;text-align:center;padding-right:0;}
+	.hua-ad-list .hua-ad-box{display:block;width:100%;}
+	
 }
 
 
