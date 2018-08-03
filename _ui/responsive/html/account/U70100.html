@@ -821,7 +821,7 @@
 									</div>
 								</div>
 
-								<div class="myorder-list">
+								<div class="myorder-list type02"><!-- 2018.08.03 다중 클래스 'type02' 추가 -->
 									<div class="list-content">
 										<div class="list-row-title row">
 											<div class="col-ak-10 ord-num">주문번호</div>
@@ -833,103 +833,10 @@
 											<div class="col-ak-10 ord-cond">주문상태</div>
 											<div class="col-ak-10 ord-btn"></div>
 										</div>
+
+
 										<div class="content-list">
-											<div class="row con-list-item">
-												<div class="col-ak-10 ord-num">
-													<span class="tite-label">주문번호</span>
-													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
-												</div>
-												<div class="col-ak-10 ord-date">
-													<span class="tite-label">주문번호</span>
-													<span class="txte-wrap">2014-05-30</span>
-												</div>
-												<div class="col-ak-10 ord-price">
-													<span class="tite-label">결제금액</span>
-													<span class="txte-wrap">60,000<em class="price-way">(무통장입금)</em></span>
-												</div>
-												<div class="col-ak-10 ord-pvbv">
-													<span class="tite-label">총 PV/BV</span>
-													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
-												</div>
-												<div class="col-ak-10 ord-chnnel">
-													<div class="pc-in">
-														<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
-													</div>
-													<div class="mob-in">
-														<p class="jumon">
-															<span class="tite-label">주문채널</span>
-															<span class="txte-wrap">온라인팩스</span>
-														</p>
-														<p class="bab">
-															<span class="tite-label">배송방법</span>
-															<span class="txte-wrap">배달주문</span>
-														</p>
-													</div>
-												</div>
-												<div class="col-ak-10 ord-type">
-													<span class="tite-label">주문유형</span>
-													<span class="txte-wrap">일반주문</span>
-												</div>
-												<div class="col-ak-10 ord-cond">
-													<span class="tite-label">주문상태</span>
-													<span class="txte-wrap">입금확인대기</span>
-												</div>
-												<div class="col-ak-10 ord-btn">
-													<span class="txte-wrap">
-														<button type="button" class="link-btn">주문취소</button>
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="content-list">
-											<div class="row con-list-item">
-												<div class="col-ak-10 ord-num">
-													<span class="tite-label">주문번호</span>
-													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
-												</div>
-												<div class="col-ak-10 ord-date">
-													<span class="tite-label">주문일자</span>
-													<span class="txte-wrap">2014-05-30</span>
-												</div>
-												<div class="col-ak-10 ord-price">
-													<span class="tite-label">결제금액</span>
-													<span class="txte-wrap">60,000<em class="price-way">(신용카드)</em></span>
-												</div>
-												<div class="col-ak-10 ord-pvbv">
-													<span class="tite-label">총 PV/BV</span>
-													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
-												</div>
-												<div class="col-ak-10 ord-chnnel">
-													<div class="pc-in">
-														<span class="txte-wrap">ABN<em class="od-way">(설치주문)</em></span>
-													</div>
-													<div class="mob-in">
-														<p class="jumon">
-															<span class="tite-label">주문채널</span>
-															<span class="txte-wrap">온라인팩스</span>
-														</p>
-														<p class="bab">
-															<span class="tite-label">배송방법</span>
-															<span class="txte-wrap">설치주문</span>
-														</p>
-													</div>
-												</div>
-												<div class="col-ak-10 ord-type">
-													<span class="tite-label">주문유형</span>
-													<span class="txte-wrap">일반주문</span>
-												</div>
-												<div class="col-ak-10 ord-cond">
-													<span class="tite-label">주문상태</span>
-													<span class="txte-wrap">출고대기중</span>
-												</div>
-												<div class="col-ak-10 ord-btn">
-													<span class="txte-wrap">
-														<button type="button" class="link-btn">주문취소</button>
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="content-list">
+											<!-- tr(loop) -->
 											<div class="row con-list-item">
 												<div class="col-ak-10 ord-num">
 													<span class="tite-label">주문번호</span>
@@ -976,8 +883,12 @@
 													</span>
 												</div>
 											</div>
-											<div class="sub-list">
-												<div class="row con-list-item">
+										 	<!--// tr(loop) -->
+
+
+											<!-- (loop) -->
+											<ul class="sub-list">
+												<li class="row con-list-item">
 													<div class="col-ak-10 ord-num">
 														<span class="tite-label">주문번호</span>
 														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
@@ -1020,8 +931,13 @@
 													<div class="col-ak-10 ord-btn">
 														<span class="txte-wrap">배송명1</span>
 													</div>
-												</div>
-												<div class="row con-list-item">
+												</li>
+											</ul>
+											<!--// (loop) -->
+
+											<!-- tr(loop) -->
+											<ul class="sub-list">
+												<li class="row con-list-item">
 													<div class="col-ak-10 ord-num">
 														<span class="tite-label">주문번호</span>
 														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
@@ -1062,62 +978,15 @@
 														<span class="txte-wrap">출고완료</span>
 													</div>
 													<div class="col-ak-10 ord-btn">
-														<span class="txte-wrap">
-															<button type="button" class="link-btn">택배조회</button>
-															<em class="shipping-name">배송명2</em>
-														</span>
+														<span class="txte-wrap">배송명1</span>
 													</div>
-												</div>
-												<div class="row con-list-item">
-													<div class="col-ak-10 ord-num">
-														<span class="tite-label">주문번호</span>
-														<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
-													</div>
-													<div class="col-ak-10 ord-date">
-														<span class="tite-label">주문일자</span>
-														<span class="txte-wrap">2014-05-30</span>
-													</div>
-													<div class="col-ak-10 ord-price">
-														<span class="tite-label">결제금액</span>
-														<span class="txte-wrap">60,000</span>
-													</div>
-													<div class="col-ak-10 ord-pvbv">
-														<span class="tite-label">총 PV/BV</span>
-														<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
-													</div>
-													<div class="col-ak-10 ord-chnnel">
-														<div class="pc-in">
-															<span class="txte-wrap">ABN<em class="od-way">(배달주문)</em></span>
-														</div>
-														<div class="mob-in">
-															<p class="jumon">
-																<span class="tite-label">주문채널</span>
-																<span class="txte-wrap">온라인팩스</span>
-															</p>
-															<p class="bab">
-																<span class="tite-label">배송방법</span>
-																<span class="txte-wrap">배달주문</span>
-															</p>
-														</div>
-													</div>
-													<div class="col-ak-10 ord-type">
-														<span class="tite-label">주문유형</span>
-														<span class="txte-wrap">일반주문</span>
-													</div>
-													<div class="col-ak-10 ord-cond">
-														<span class="tite-label">주문상태</span>
-														<span class="txte-wrap">출고완료</span>
-													</div>
-													<div class="col-ak-10 ord-btn">
-														<span class="txte-wrap">
-															<button type="button" class="link-btn">택배조회</button>
-															<em class="shipping-name">배송명2</em>
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="content-list">
+												</li>
+											</ul>
+											<!--// tr(loop) -->
+
+
+
+											<!-- tr(loop) -->
 											<div class="row con-list-item">
 												<div class="col-ak-10 ord-num">
 													<span class="tite-label">주문번호</span>
@@ -1164,7 +1033,107 @@
 													</span>
 												</div>
 											</div>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<div class="row con-list-item">
+												<div class="col-ak-10 ord-num">
+													<span class="tite-label">주문번호</span>
+													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+												</div>
+												<div class="col-ak-10 ord-date">
+													<span class="tite-label">주문일자</span>
+													<span class="txte-wrap">2014-05-30</span>
+												</div>
+												<div class="col-ak-10 ord-price">
+													<span class="tite-label">결제금액</span>
+													<span class="txte-wrap">60,000<em class="price-way">(신용카드)</em></span>
+												</div>
+												<div class="col-ak-10 ord-pvbv">
+													<span class="tite-label">총 PV/BV</span>
+													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+												</div>
+												<div class="col-ak-10 ord-chnnel">
+													<div class="pc-in">
+														<span class="txte-wrap">ABN<em class="od-way">(설치주문)</em></span>
+													</div>
+													<div class="mob-in">
+														<p class="jumon">
+															<span class="tite-label">주문채널</span>
+															<span class="txte-wrap">온라인팩스</span>
+														</p>
+														<p class="bab">
+															<span class="tite-label">배송방법</span>
+															<span class="txte-wrap">설치주문</span>
+														</p>
+													</div>
+												</div>
+												<div class="col-ak-10 ord-type">
+													<span class="tite-label">주문유형</span>
+													<span class="txte-wrap">일반주문</span>
+												</div>
+												<div class="col-ak-10 ord-cond">
+													<span class="tite-label">주문상태</span>
+													<span class="txte-wrap">출고대기중</span>
+												</div>
+												<div class="col-ak-10 ord-btn">
+													<span class="txte-wrap">
+														<button type="button" class="link-btn">주문취소</button>
+													</span>
+												</div>
+											</div>
+											<!--// tr(loop) -->
+
+											<!-- tr(loop) -->
+											<div class="row con-list-item">
+												<div class="col-ak-10 ord-num">
+													<span class="tite-label">주문번호</span>
+													<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
+												</div>
+												<div class="col-ak-10 ord-date">
+													<span class="tite-label">주문일자</span>
+													<span class="txte-wrap">2014-05-30</span>
+												</div>
+												<div class="col-ak-10 ord-price">
+													<span class="tite-label">결제금액</span>
+													<span class="txte-wrap">60,000<em class="price-way">(신용카드)</em></span>
+												</div>
+												<div class="col-ak-10 ord-pvbv">
+													<span class="tite-label">총 PV/BV</span>
+													<span class="txte-wrap">211,050 /<em class="price-bv">232,500</em></span>
+												</div>
+												<div class="col-ak-10 ord-chnnel">
+													<div class="pc-in">
+														<span class="txte-wrap">ABN<em class="od-way">(설치주문)</em></span>
+													</div>
+													<div class="mob-in">
+														<p class="jumon">
+															<span class="tite-label">주문채널</span>
+															<span class="txte-wrap">온라인팩스</span>
+														</p>
+														<p class="bab">
+															<span class="tite-label">배송방법</span>
+															<span class="txte-wrap">설치주문</span>
+														</p>
+													</div>
+												</div>
+												<div class="col-ak-10 ord-type">
+													<span class="tite-label">주문유형</span>
+													<span class="txte-wrap">일반주문</span>
+												</div>
+												<div class="col-ak-10 ord-cond">
+													<span class="tite-label">주문상태</span>
+													<span class="txte-wrap">출고대기중</span>
+												</div>
+												<div class="col-ak-10 ord-btn">
+													<span class="txte-wrap">
+														<button type="button" class="link-btn">주문취소</button>
+													</span>
+												</div>
+											</div>
+											<!--// tr(loop) -->
 										</div>
+
 										<div class="search-no-result line">
 											<p>조회된 주문 내역이 없습니다.</p>
 										</div>

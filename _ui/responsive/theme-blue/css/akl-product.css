@@ -645,12 +645,14 @@ Editor : sookkyung Han
 .gray-tbl .list-info .list-txt{display:inline-block;margin-left:12px;}
 .gray-tbl .list-info li em{color:#56565a;font-weight:400;font-size:16px;}
 
-
-
-
-
-
-
+.ease-tip{margin-top:30px;}
+.ease-tip .tip-box{padding:15px 50px 17px;text-align:center;background-color:#f7f2f8;}
+.tip-box .tip-tit{margin:0;font-size:18px;color:#56565a;font-weight:300;}
+.tip-box .tip-txt{margin:2px 0 0;font-size:16px;color:#808285;font-weight:300;}
+.ease-tip .tip-btn{margin-top:30px;text-align:center;}
+.tip-btn .btn-tit{font-size:30px;color:#56565a;}
+.tip-btn .btn-tit em{font-size:30px;}
+.tip-btn .cc-btn{display:inline-block;margin-top:13px;}
 
 @media (min-width: 1074px) and (max-width: 1280px) {
 	
@@ -902,7 +904,8 @@ Editor : sookkyung Han
 	.raw-lst li:first-child:after{width:8px;height:8px;margin:-4px -4px 0 0;}
 	
 	/* 원포원 */
-	.hua-ad-list li{width:100%;padding-right:0 !important;padding-left:0 !important;}
+	.hua-ad-list li{width:100%;padding:30px 0 0 0 !important;}
+	.hua-ad-list li:first-child{padding:0 0 0 0 !important;}
 	.hua-ad-list .hua-ad-box .hua-ad-txt br{display:none;}
 	.overnightwear-box > div{padding:50px 20px 29px;}
 	.overnightwear-box .before-box{display:block;width:100%;border:none;}
@@ -925,6 +928,10 @@ Editor : sookkyung Han
 	.gray-tbl .list-info li{width:100%;margin-top:10px;}
 	.gray-tbl .list-info .list-ico{width:100%;text-align:center;}
 	.gray-tbl .list-info .list-txt{margin:10px 0 0;width:100%;text-align:center;}
+	
+	.tip-btn .btn-tit,
+	.tip-btn .btn-tit em{font-size:18px;}
+	
 }
 
 @media (max-width: 324px) {
