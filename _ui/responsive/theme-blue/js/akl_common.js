@@ -1377,6 +1377,166 @@ function SOP_PDP_benefitsTips(){
 	});
 }
 
+/* SOP 기간 조회: 6개월 (코어js 정리) */
+function SOP_MonthsSelectBar( dayStart, dayEnd, pageURL ){
+	var COL_SIZE = 6;
+	var startDate = moment(dayStart,"YYYY-MM-DD");
+	var endDate   = moment(dayEnd  ,"YYYY-MM-DD");
+
+	var currentMonth = getCurrentMonth(startDate, endDate);
+	var MONTH_NODE = "<li class='#ACTIVE#'> ##<label>#YEAR#</label>YEAR## <a href='#HREF#' #TAB_TOGGLE#>#MONTH#</a> ##<div class='devided'></div>DEVIDER## </li>";
+	var MONTHS = [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ];
+
+	var duration = moment.duration(endDate.diff(startDate));
+	var monthAmount = Math.ceil(duration.asMonths());
+	var month = startDate.month();
+	// Add fake cols to the beginning and to the ending
+	monthAmount += 2;
+	if (month === 0) {
+		month = 11;
+		year -= 1;
+	} else {
+		month -= 1;
+	}
+	var year = startDate.year();
+
+	var monthNode;
+	var monthWidth;
+
+	$(".search-results .months-select-bar").empty();
+	var PAGE = pageURL; //"mysop-monthly.html";
+	var TAB = "#monthly-wrap-";
+	var TAB_TOGGLE = "data-toggle='tab'";
+
+	for (var i = 0; i < monthAmount; i++) {
+		var tabNo = (Math.floor((i - 1) / 6) + 1);
+		var iterateMonth = moment(year + '-' + (month + 1) + '-01', "YYYY-MM-DD");
+		monthNode = MONTH_NODE.replace("#MONTH#", MONTHS[month]);
+
+		if (currentMonth.shouldActivateCurrentMonth) {
+			var durationTmp = moment.duration(iterateMonth.diff(currentMonth.month));
+			var monthAmountTmp = Math.ceil(durationTmp.asMonths());
+			if (monthAmountTmp % 6 === 0) {
+				monthNode = monthNode.replace("#HREF#", TAB + tabNo);
+				monthNode = monthNode.replace("#TAB_TOGGLE#", TAB_TOGGLE);
+			}
+		}
+
+		if ((i - 1) % 6 == 0 || isActiveMonth(i, year, month, currentMonth)) {
+			//monthNode = monthNode.replace("#TAB_NO#", tabNo);
+			monthNode = monthNode.replace("#HREF#", TAB + tabNo);
+			monthNode = monthNode.replace("#TAB_TOGGLE#", TAB_TOGGLE);
+			if (isActiveMonth(i, year, month, currentMonth)) {
+				monthNode = monthNode.replace("#ACTIVE#", "active");
+			} else {
+				monthNode = monthNode.replace("#ACTIVE#", "");
+			}
+		} else {
+			monthNode = monthNode.replace("#HREF#", PAGE);
+			monthNode = monthNode.replace("#ACTIVE#", "");
+			monthNode = monthNode.replace("#TAB_TOGGLE#", "");
+		}
+
+		if (month === 0 || month == 11) { // JAN and DEC show YEAR
+			monthNode = monthNode.replace("##<label>#YEAR#</label>YEAR##", "<label>#YEAR#</label>");
+			monthNode = monthNode.replace("#YEAR#", year);
+		} else {
+			monthNode = monthNode.replace("##<label>#YEAR#</label>YEAR##", "");
+		}
+
+		if (month == 11) { // DEC shows DIVIDER
+			monthNode = monthNode.replace("##<div class='devided'></div>DEVIDER##", "<div class='devided'></div>");
+			year += 1;
+			month = 0;
+		} else {
+			monthNode = monthNode.replace("##<div class='devided'></div>DEVIDER##", "");
+			month++;
+		}
+
+		$(".search-results .months-select-bar").append(monthNode);
+	}
+
+	$(".search-results .months-select-bar .active").children("a").tab('show');
+
+	function getCurrentMonth(startDate, endDate){
+		var currentDate = moment();
+		var shouldActivateCurrentMonth = false;
+		if (currentDate.isBetween(startDate, endDate)) {
+			// Conditions to shown current month as active: should have 5 trailing months
+			var durationFromCurrent = moment.duration(endDate.diff(currentDate));
+			var monthAmountFromCurrent = Math.ceil(durationFromCurrent.asMonths());
+			if (monthAmountFromCurrent >= 5) {
+				// Set current month as active
+				shouldActivateCurrentMonth = true;
+			}
+		}
+		return {
+			month: currentDate,
+			shouldActivateCurrentMonth: shouldActivateCurrentMonth
+		};
+	}
+
+	function isActiveMonth(i, year, month, currentMonth){
+		var iterateMonth = moment(year + '-' + (month + 1) + '-01', "YYYY-MM-DD");
+		return (currentMonth.shouldActivateCurrentMonth && currentMonth.month.isSame(iterateMonth, 'month'))
+			|| (i == 1 && !currentMonth.shouldActivateCurrentMonth);
+	}
+
+	function moveToActiveMonth(monthWidth) {
+		var prevs = $('.search-results .months-select-bar .active').prevAll();
+		if (prevs.length <= 1) return; // The first col is a fake col.
+		var offset = (prevs.length - 1) * monthWidth;
+		$('.search-results .months-select-bar').css('margin-left', '-=' + offset + 'px');
+	}
+
+	boxSizeCalculation();
+	$(window).resize(function(){
+		boxSizeCalculation();
+	});
+
+	function boxSizeCalculation(){
+		var monthBarWidth = 660;
+		var isMobile = false;
+		if (screen && screen.width && screen.width < 768) {
+			monthBarWidth = screen.width;
+			isMobile = true;
+			$(".months-select-bar-wrap").css({ width: monthBarWidth + "px", maxWidth: monthBarWidth + "px" });
+			$(".months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-next").css("left", (monthBarWidth - 30) + "px");
+			monthWidth = monthBarWidth / 8;
+			$(".months-select-bar").css({ tableLayout: "fixed" });
+			$(".months-select-bar li").css({ width: monthWidth + "px", maxWidth: monthWidth + "px", minWidth: monthWidth + "px" });
+		} else {
+			monthWidth = monthBarWidth / 6;
+		}
+	}
+
+	moveToActiveMonth(monthWidth);
+
+	$('.search-results .arrow-li-prev').click(function (e) {
+		e.preventDefault();
+		var TWO_PAGES = (5 + /*page size*/COL_SIZE + /*fake col*/1); // Show fixed 6 cols
+
+		var prevs = $('.search-results .months-select-bar .active').prevAll();
+		if (prevs.length <= 1) return; // The first col is a fake col.
+		var activeIndex = prevs.length <= COL_SIZE + 1 ? (prevs.length - 2) : (COL_SIZE - 1);
+		var offset = (activeIndex + 1) * monthWidth;
+
+		prevs.eq(activeIndex).children("a").tab('show');
+		$('.search-results .months-select-bar').css('margin-left', '+=' + offset + 'px');
+	});
+	$('.search-results .arrow-li-next').click(function (e) {
+		e.preventDefault();
+		var TWO_PAGES = (5 + /*page size*/COL_SIZE + /*fake col*/1); // Show fixed 6 cols
+		var nexts = $('.search-results .months-select-bar .active').nextAll();
+
+		if (nexts.length <= 6) return; // // The last col is a fake col.
+		var activeIndex = nexts.length < TWO_PAGES ? (nexts.length - 6/*shown cols*/ - /*fake col*/1) : (COL_SIZE - 1);
+		nexts.eq(activeIndex).children("a").tab('show');
+		var offset = (activeIndex + 1) * monthWidth;
+		$('.search-results .months-select-bar').css('margin-left', '-=' + offset + 'px');
+	});
+}
+
 /** ------------------------------------
  *  마이페이지
  *  ------------------------------------
