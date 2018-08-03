@@ -187,7 +187,9 @@ Editor : HYEWON HWANG
 /* ### 암웨이소개: 레이아웃 ### */
 .brand .brand-contents {position:relative;}
 .brand .brand-contents > h1 {margin:10px 0 27px;}
-.brand .brand-contents h2{font-size:18px;text-align:left;margin:0 0 20px;}
+.brand .brand-contents h2{font-size:18px;text-align:left;text-transform:none;letter-spacing:-1px;margin:0 0 20px;}
+.brand .brand-contents h2:not(:first-child) {margin-top:40px;}
+.brand .brand-contents h3 {margin-bottom:10px;}
 .brand .brand-contents p {margin:0 0 10px;}
 
 .brand-cont1, .tit-txt + section {margin-top:30px;}
@@ -207,6 +209,9 @@ Editor : HYEWON HWANG
 .brand-contents section .con-title {font-size:20px;letter-spacing:-2px;font-weight:500;}
 .brand-contents .list-type5 > li > strong {display:block;}
 
+.brand-contents .col-search-tab {margin-top:40px;}
+.brand-contents .col-search-tab li {flex:1;}
+.brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;}
 
 /* 연혁 */
 .history-area {display:block;margin-top:30px;}
