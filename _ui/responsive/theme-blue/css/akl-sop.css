@@ -51,13 +51,11 @@
 .addtocart-component.sop-pdp .add_to_cart_form {padding-bottom:30px; margin-bottom:15px;border-bottom:1px solid #e3e3e3;}
 
 /* 자동연장하기 - 툴팁 */
-.auto-continue .toolTip-wrapper .tooltip-content {position:absolute;top:-88px;right:19px;display:none;width:243px;height:76px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
-.auto-continue .toolTip-wrapper .tooltip-content * {color:#555}
+.auto-continue .toolTip-wrapper .tooltip-content {position:absolute; top:-72px; right:19px; display:none;width:243px; box-sizing:border-box; height:60px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
+.auto-continue .toolTip-wrapper .tooltip-content * {color:#555; font-weight:500;}
 .auto-continue .toolTip-wrapper .btn-tooltip {margin-top:7px;}
-.auto-continue .toolTip-wrapper.open .btn-tooltip:after {content:''; top:-25px; left:50%; height:10px; margin-left:-10px; background:red url(../images/tip-arrow.png) no-repeat; background-size:20px;}
-
-
-.sop-pdp .toolTip-wrapper .btn-tooltip-close {}
+.auto-continue .toolTip-wrapper.open .btn-tooltip:after {content:''; z-index:11; top:-30px; left:50%; height:20px; margin-left:-10px; background:url(../images/akl_common/tip-arrow.png) 0 100% no-repeat; background-size:20px;}
+.auto-continue .toolTip-wrapper .btn-tooltip-close:before {content:'\e96d'; font-family:'AmwayIcons'!important; font-weight:500;}
 
 /* SOP 제품상세 - 옵션 선택 후 */
 .addtocart-component.sop-pdp strong {display:inline-block; color:#002f5f;}
@@ -201,7 +199,7 @@
 .akl .list-content.mysop-list .row>[class^=col-md] {padding-left:0; padding-right:0; text-align:center;}
 .akl .list-content.mysop-list .row.list-row-content .type-prdt {padding-left:10px;}
 .sop-container .ico-fa-repeat-alt {display:inline-block; padding-left:25px; text-align:center;}
-.list-content.mysop-list .list-row-content{position:relative; display:table; width:100%; margin:0; padding:0; vertical-align:middle;}
+.list-content.mysop-list .list-row-content{position:relative; display:table; width:100%; margin:0; padding:0; border-top:1px solid #e3e3e3; vertical-align:middle;}
 .list-content.mysop-list .list-row-content > div {padding:30px 0;}
 .list-content.mysop-list .list-item-image {position:relative; display:table-cell; padding:0 10px 0 0; vertical-align:top; max-width:75px; max-height:75px;}
 .list-content.mysop-list .list-item-image img {width:100%; height:auto; max-height:75px; border:1px solid #e3e3e3;}
@@ -274,13 +272,10 @@
 .sop-container .label-gift{position:absolute;z-index:98;top:-20px;left:0;width:18px;height:20px;margin-bottom:0;padding-top:2px;padding-left:4px;font-size:12px;color:#ffffff;background:#721472;}
 .sop-container .label-gift span{position:absolute;top:0;right:-10px;display:table;width:0;height:0;border-top:20px solid #731472;border-right:10px solid transparent;border-bottom:none;border-left:0;background-color:transparent;}
 
+.sop-container .list-row-content span[class^=circle-]{display:inline-block; font-weight:400;color:#55565a;color:#ffffff;}
+.sop-container .list-row-content .order-benefits + span {line-height:40px; color:#bbbbbb;}
 
-/*
-.sop-container .list-content label.label-orange{display:block;width:55px;margin-bottom:5px;padding:6px 5px 6px 6px;font-size:16px;font-weight:100;line-height:18px;color:#ffffff;border-radius:30px;background:#e9961a;}
-.sop-container .list-content label.label-orange i{margin-right:10px;}
-.sop-container .list-content label.label-green{display:block;width:30px;margin:5px auto;font-size:16px;font-weight:100;line-height:30px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
-.sop-container .list-content label.label-green i{margin-right:10px;}
- */
+
 .sop-container .circle-green {width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
 .sop-container .circle-orange{width:40px;height:40px;font-size:16px;font-weight:100;line-height:40px;text-align:center;color:#ffffff;border-radius:50%;background:#e9961a;}
 
@@ -290,6 +285,10 @@
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-5 {width:41.66666667%;}
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-2 {width:16.66666667%}
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-3 {width:25%}
+
+.months-select-bar-wrap .arrow-li {border:1px solid blue; display:block;}
+.arrow-li-prev:before {content:'\e95c'; font-family:'AmwayIcons'!important;}
+.arrow-li-next:before {content:'\e95d'; font-family:'AmwayIcons'!important;}
 
 .months-select-bar-out-wrap {padding:0 0 20px;text-align:center; border:1px solid #e3e3e3;}
 .months-select-bar-out-wrap .months-select-bar-title {margin-bottom:20px;padding:10px 20px;text-align:left;border-bottom:1px solid #e3e3e3;background:#f4f4f4;}
@@ -304,6 +303,17 @@
 
 
 
+/* 조회기간 6개월 - 목록 */
+.akl .mysop-monthly-part .list-content.mysop-monthly-list-content {border-width:1px 0 0;}
+.mysop-monthly-part .mysop-text-list .list-row-content.row {border-top:1px solid #e3e3e3;}
+.akl .list-content.tbl-prdt {border-width:0; margin-top:20px;}
+.list-content.tbl-prdt {display:table; width:100%; table-layout:fixed;}
+.list-content.tbl-prdt .list-item-image a {max-width:65px; max-height:65px;}
+.list-content.tbl-prdt .list-item-image img {width:100%; height:auto; max-width:65px; max-height:65px;}
+.list-content.tbl-prdt .list-row-content.row {display:table-row; padding:0;}
+.list-content.tbl-prdt .list-row-content.row>div{display:table-cell; padding:30px 0; vertical-align:middle; text-align:center; border-bottom:1px solid #e3e3e3;}
+.list-content.tbl-prdt .col-md-1 {color:#bbb;}
+
 .months-select-bar-out-wrap .months-select-bar-wrap{position:relative;display:block;overflow:hidden;max-width:920px;height:60px;margin:0 auto;padding:25px 20px 0 15px;}
 .months-select-bar-out-wrap .months-select-bar-wrap:before{content:'';position:absolute;z-index:99;top:-1px;bottom:0;left:0; width:90px; background:-webkit-gradient(linear,left top,100% top,color-stop(0,#ffffff),color-stop(90%,rgba(255,255,255,.8)),color-stop(100%,rgba(255,255,255,.3)));}
 .months-select-bar-out-wrap .months-select-bar-wrap:after {content:'';position:absolute;z-index:99;top:-1px;bottom:0;right:0;width:90px; background:-webkit-gradient(linear,left top,100% top,color-stop(0,rgba(255,255,255,.3)),color-stop(10%,rgba(255,255,255,.8)),color-stop(100%,#ffffff));}
@@ -315,7 +325,7 @@
 .months-select-bar-out-wrap .months-select-bar li.active a{position:relative;color:#0075a4;border:0;}
 .months-select-bar-out-wrap .months-select-bar li.active a:focus,.months-select-bar-out-wrap .months-select-bar li.active a:hover{border:0;background:0 0;}
 .months-select-bar-out-wrap .months-select-bar li.active a:after{position:absolute;bottom:0;left:50%;width:20px;height:2px;margin-left:-10px;content:'';background:#0075a4;}
-.months-select-bar-out-wrap .months-select-bar li .years-label{position:absolute; z-index:99;top:-25px;left:50%;display:block;width:110px;margin-left:-55px;font-size:15px;font-weight:100;color:#bbbbbb;background:#ffffff;}
+.months-select-bar-out-wrap .months-select-bar li .years-label{position:absolute; z-index:99;top:-17px;left:50%;display:block;width:110px;margin-left:-55px;font-size:15px;font-weight:100;color:#bbbbbb;background:#ffffff;}
 .months-select-bar-out-wrap .months-select-bar li a{position:relative;display:block;width:110px;margin:0;padding-bottom:2px;color:#bbbbbb;border:0!important;}
 .months-select-bar-out-wrap .months-select-bar li a:focus,.months-select-bar-out-wrap .months-select-bar li a:hover{border:0!important;background:0 0!important;}
 .months-select-bar-out-wrap .months-select-bar li a.current-month:after{position:absolute;bottom:-5px;left:50%;display:inline-block;width:6px;height:6px;margin-left:-3px;content:'';border-radius:50%;background:#bbbbbb;}
@@ -336,25 +346,11 @@
 .mysop-start-container .auto-continue .i-tip{position:absolute;top:-88px;right:0;display:none;width:243px;height:76px;padding:10px;font-size:15px;font-weight:100;line-height:18px;color:#55565a;border:1px solid #dadada;border-radius:5px;background:#f4f4f4;}
 .mysop-start-container .auto-continue .i-tip:before{position:absolute;top:74px;right:4px;display:block;width:20px;height:11px;content:'';background:url(../images/tip-arrow.png) no-repeat;background-size:20px;}
 
-/* .sop-container .list-row-content .col-md-1{position:relative;display:inline-block;}
-.sop-container .list-row-content .col-md-1 .fas-wrap{margin-top:-18px;} */
-.sop-container .list-row-content span[class^=circle-]{display:inline-block; font-weight:400;color:#55565a;color:#ffffff;}
-.sop-container .list-row-content .order-benefits + span {line-height:40px; color:#bbbbbb;}
 
 
-/* 조회기간 6개월 - 목록 */
-.months-select-bar-wrap {border:1px solid red}
-.months-select-bar-wrap .arrow-li {border:1px solid blue; display:block;}
-.arrow-li-prev:before {content:'\e95c'; font-family:'AmwayIcons'!important;}
-.arrow-li-next:before {content:'\e95d'; font-family:'AmwayIcons'!important;}
 
-.akl .list-content.tbl-prdt {border-width:0; margin-top:20px;}
-.list-content.tbl-prdt {display:table; width:100%; table-layout:fixed;}
-.list-content.tbl-prdt .list-item-image a {max-width:65px; max-height:65px;}
-.list-content.tbl-prdt .list-item-image img {width:100%; height:auto; max-width:65px; max-height:65px;}
-.list-content.tbl-prdt .list-row-content.row {display:table-row; padding:0;}
-.list-content.tbl-prdt .list-row-content.row>div{display:table-cell; padding:30px 0; vertical-align:middle; text-align:center; border-bottom:1px solid #e3e3e3;}
-.list-content.tbl-prdt .col-md-1 {color:#bbb;}
+
+
 
 
 
@@ -372,6 +368,12 @@
 	.addtocart-component.sop-pdp .benefits-tips strong.control-label {float:none; display:block;}
 	.addtocart-component.sop-pdp .toggle-benefits p>span {display:block;}
 	.addtocart-component.sop-pdp .toggle-benefits {padding:15px 40px 15px 20px;}
+
+	/* 자동연장하기 - 툴팁 */
+	.auto-continue .toolTip-wrapper.type-mob-full {position:relative;}
+	.auto-continue .toolTip-wrapper.type-mob-full .tipCont-wrapper {top:-97px; margin-left:-170px;}
+	.auto-continue .toolTip-wrapper .tooltip-content {height:80px; max-width:270px;}
+
 
 	/* ---- SOP제품 담기 완료(확인) ---- */
 
@@ -407,7 +409,11 @@
 	.list-content.mysop-list-content .content-list .item-payment>a {margin-top:13px;}
 	.list-content.mysop-list-content .item-address>span {padding:0;}
 
-	.list-content.mysop-monthly-list-content .list-row-content.row {border-top:0px solid #e3e3e3;}
+	.akl .list-content.mysop-monthly-list-content.mysop-list {border-width:0 0 1px;}
+	.list-content.mysop-list.mysop-monthly-list-content .list-row-content.row>div {border-top:1px solid #e3e3e3;}
+
+	.akl .mysop-monthly-part .list-content.mysop-monthly-list-content {border-width:1px 0 0;}
+	.mysop-monthly-part .mysop-text-list .list-content.mysop-monthly-list-content .list-row-content.row>div {border-top:0;}
 
 	/* ---- SOP 주문서 생성 ---- */
 	.sop-delivery-adress #changeTextArea .default-shipping-address,
