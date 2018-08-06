@@ -120,6 +120,7 @@ iframe {border:0;}
 .visual-area.type02.nutri_nooddle{background: #ffffff url(../images/akl_product/one-for-one/bg_nutri_nooddle.png) no-repeat top center;height:917px;} /* 뉴트리 누들 작은거*/
 .visual-area.type02.jungipum01{background: #ffffff url(../images/akl_product/one-for-one/bg_jungipum.png) no-repeat top center;height:975px;} /* 정기품 1*/
 .visual-area.type02.jungipum02{background: #ffffff url(../images/akl_product/one-for-one/bg_jungipum_rice_brown_paste.png) no-repeat top center;height:926px;} /* 정기품 2*/
+.visual-area.type02.miyoek-set{background: #ffffff url(../images/akl_product/one-for-one/bg_kim_miyoek_set.png) no-repeat top center;height:1007px;} /* 김 미역 세트*/
 .visual-area.type02.jungipum-kimchi{background: #ffffff url(../images/akl_product/one-for-one/bg_kimchi_01.png) no-repeat top center;height:1082px;} /* 정기품 김치 */
 .visual-area.type02.jungipum-oil{background: #ffffff url(../images/akl_product/one-for-one/bg_sesame_oil.png) no-repeat top center;height:961px;} /* 정기품 오일 */
 .visual-area.type02.sonwha-salt{background: #ffffff url(../images/akl_product/one-for-one/bg_sonwha_salt.png) no-repeat top center;height:1030px;} /* 정기품 소금 */
@@ -1333,10 +1334,39 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .uses-cooking-recipe  .uses-cook-tit {position:absolute;top:-32px;left:50%;margin-left:-25%}
 .uses-cook-tit div {padding:0 50px;min-height:65px;margin:0 auto;text-align:center;color:#fff;font-size:44px;font-weight:300;background:#c4133f;}
 .uses-cook-tit div strong {font-weight:400;}
-
-.uses-cook-txt {position:relative;text-align:center;padding:64px 0 0}
+.uses-cook-txt {position:relative;text-align:center;padding:64px 0 0;}
 .uses-cook-txt p {font-size:18px;line-height:26px;}
 .uses-cook-txt p.etc-s {color:#999;font-size:14px;}
+
+/* 김미역 세트 */
+.uses-cooking-recipe.set-area{
+				background:url('../images/akl_product/one-for-one/food_bg_miyoek_left.png') no-repeat 77px 100%, 
+				url('../images/akl_product/one-for-one/food_bg_miyoek_right.png') no-repeat 94% 100%;min-height: inherit;}
+.uses-cooking-recipe.set-area .uses-cook-txt{padding: 0 20%;display: table;height: 97px;text-align: center;width: 100%;}
+
+
+.ribon-banner{background:url('../images/akl_product/one-for-one/banner_ribbon_01.png') no-repeat 77px center, url('../images/akl_product/one-for-one/banner_ribbon_02.png') no-repeat 94% center;}
+.ribon-banner .txt{}
+.ribon-banner .txt strong{} 
+
+
+.uses-cooking-recipe.set-area .uses-cook-txt p{line-height: 1.5;font-weight: 300;margin-bottom:0;/* margin: 0 20%; */display: table-cell;vertical-align: middle;text-align: center;}
+.uses-cooking-recipe .uses-cook-tit{position: absolute;top: -32px;left: 50%;margin-left: -355px;background: url(../images/akl_product/one-for-one/banner_ribbon_before.png) no-repeat 0 0;padding: 0 30px;}
+.uses-cooking-recipe .uses-cook-tit:after{display:block;content:"";clear:both;background: url(../images/akl_product/one-for-one/banner_ribbon_after.png) no-repeat 0 0;position: absolute;top: 0;left:95%;height: 65px;width:40px;}
+.uses-cooking-recipe.set-area .uses-cook-tit .ribon{background:#c4133f;height: 65px;margin:0;padding:0;}
+
+
+.food_gray_wrap .com-tit span{display:block;font-size:32px !important;font-weight:400;color:#56565a;text-align:center;}
+.food_gray_wrap ul{display: block;width: 100%; padding: 30px;background: #f4f4f4;overflow: hidden;}
+.food_gray_wrap ul li{float: left;width: 25%;text-align: center;}
+.food_gray_wrap ul li dl{padding: 0 7px;}
+.food_gray_wrap ul li dl dt{}
+.food_gray_wrap ul li dl dt span{display: block;margin: 28px auto 15px;}
+.food_gray_wrap ul li dl dt span.step-p{}
+.food_gray_wrap ul li dl dt span img{display: block;text-align: center;margin:auto;}
+.food_gray_wrap ul li dl dt span.step-2{}
+.food_gray_wrap ul li dl dd{font-size:16px;color:#666666;line-height:1.5;}
+
 
 /* 원포원 - 사조 */
 .step-lst-wrap{margin-top:27px;}
@@ -1482,12 +1512,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 
 	.sty-left {padding:0 0 0 50px;}
 	.one-for-one .v-pro span img{width: auto;}
-
 	
-	
-	
-	
-	
+	/* 원포원 (김미역세트 ) */
+	.food_gray_wrap ul li{float: left;width:50%;text-align: center;}
 	
 
 }
@@ -1983,13 +2010,24 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.history-box {padding:10px 20px 30px}
 	.sty-left, .sty-right {display:block;width:100%;}
 	.sty-left {padding:0 0;}
-	
+
 	.one-for-one .draw-step01 li dt img{width:auto;}
-	
+
+	/* 김미역 세트 */
+	.uses-cook-tit div{font-size: 18px;line-height: 65px;}
+
 }	
 
 @media (max-width: 324px) {	
 	.tbl-home1.three-block li.tbody .list-tit, .tbl-home1.one-block li.tbody .list-tit{padding-left:15px;}
 	.tbl-home1.compare.type2 li.tbody .list-tit, .tbl-home1.range.type2 li.tbody .list-tit{padding-left:15px;}
+	
+	/* 원포원 (김미역세트 ) */
+	.uses-cooking-recipe.set-area .uses-cook-tit .ribon p{font-size:26px;}
+	.food_gray_wrap ul{padding:0;}
+	.food_gray_wrap ul li{float: left;width:100%;text-align: center;}
+	.food_gray_wrap ul li:last-child{padding-bottom:25px;}
+	.food_gray_wrap ul li dl dd{font-size:12px;margin:0 20px;}
+	
 	
 }
