@@ -1382,7 +1382,15 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .akl .myorder-list.type02 .content-list {padding:0}
 .akl .myorder-list.type02 .content-list .con-list-item {padding: 14px 0 18px;}
 .akl .myorder-list.type02 .content-list .con-list-item:nth-of-type(even){padding: 14px 0 18px; background: #f4f4f4;}
-.akl .myorder-list.type02 .sub-list {margin: 0 0 0 30px;}
+.akl .myorder-list.type02 .content-list .con-list-item:nth-of-type(even) + .sub-list { background: #f4f4f4;}
+.akl .myorder-list.type02 .content-list .con-list-item:nth-of-type(even) + .sub-list + .sub-list{ background: #f4f4f4;}
+
+.akl .myorder-list.type02 .sub-list {margin: 0}
+.akl .myorder-list.type02 .sub-list .con-list-item {border-left:0; position:relative;}
+.akl .myorder-list.type02 .sub-list li:after {content:""; position:absolute; left:20px; top:0; bottom:0; border-left: 2px solid #dadada; height:77px }
+.akl .myorder-list.type02 .sub-list li > div { padding-left:25px!important; }
+
+.akl .myorder-list.type02 .content-list .con-list-item:nth-of-type(even) + .sub-list {  }
 
 .akl .myorder-list .ord-num {width:13%; text-align:center}
 .akl .myorder-list .ord-date {width:13%; text-align:center}
