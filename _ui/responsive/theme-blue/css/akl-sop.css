@@ -336,8 +336,8 @@
 .months-select-bar-out-wrap .months-select-bar li {position:relative;display:table-cell;float:none;width:112px;font-size:16px;border-top:1px solid #bbbbbb;}
 .months-select-bar-out-wrap .months-select-bar li.active a{position:relative;color:#0075a4;border:0;}
 .months-select-bar-out-wrap .months-select-bar li.active a:focus,.months-select-bar-out-wrap .months-select-bar li.active a:hover{border:0;background:0 0;}
-.months-select-bar-out-wrap .months-select-bar li.active a:after{position:absolute;bottom:0;left:50%;width:20px;height:2px;margin-left:-10px;content:'';background:#0075a4;}
-.months-select-bar-out-wrap .months-select-bar li .years-label {position:absolute; z-index:99;top:-17px;left:50%;display:block;width:110px;margin-left:-55px;font-size:15px;font-weight:100;color:#bbbbbb;background:#ffffff;}
+.months-select-bar-out-wrap .months-select-bar li.active a:after{ content:''; position:absolute; bottom:0; left:50%; width:20px; height:2px; margin-left:-10px; background:#0075a4;}
+.months-select-bar-out-wrap .months-select-bar li .years-label {position:absolute; z-index:99;top:-17px;left:50%;display:block;width:110px; margin-left:-55px; font-size:15px; font-weight:400; color:#bbb; background:#fff;}
 .months-select-bar-out-wrap .months-select-bar li a{position:relative;display:block;width:110px;margin:0;padding-bottom:2px;color:#bbbbbb;border:0!important;}
 .months-select-bar-out-wrap .months-select-bar li a:focus,.months-select-bar-out-wrap .months-select-bar li a:hover{border:0!important;background:0 0!important;}
 .months-select-bar-out-wrap .months-select-bar li a.current-month:after{position:absolute;bottom:-5px;left:50%;display:inline-block;width:6px;height:6px;margin-left:-3px;content:'';border-radius:50%;background:#bbbbbb;}
@@ -528,7 +528,7 @@
 	.list-content.tbl-prdt .list-row-content.row>div {vertical-align:middle; padding:25px 0;}
 	.months-select-bar-out-wrap .months-select-bar li .years-label {background:transparent}
 	.months-select-bar-out-wrap .months-select-bar li .devided {top:-15px;bottom:0;width:1px; height:40px;background:#bbbbbb;}
-	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li {top:0; width:30px; height:100%; background:#fff; z-indxe:200;}
+	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li {top:0; width:30px; height:100%; z-index:200;}
 	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li:before {position:absolute; display:block; top:50%; margin-top:-18px; padding-top:13px; height:36px;}
 	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-prev {left:10px;}
 	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-next,
@@ -539,7 +539,7 @@
 
 	.months-select-bar-out-wrap {position:relative;z-index:91;margin:0 -15px;border:0;}
 	.months-select-bar-out-wrap .months-select-bar-title {padding:10px 15px; border:0;}
-	.months-select-bar-out-wrap .months-select-bar-wrap {width:100%;}
+	.months-select-bar-out-wrap .months-select-bar-wrap {width:100%; padding:25px 10px 0 0;}
 	.months-select-bar-out-wrap .months-select-bar-wrap:after,
 	.months-select-bar-out-wrap .months-select-bar-wrap:before{width:40px;}
 	.months-select-bar-out-wrap .months-select-bar li{display:table-cell;width:12.5%;max-width:50px;padding:0 8px 20px;border:0;}
