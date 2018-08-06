@@ -294,8 +294,8 @@
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item .col-md-3 {width:25%}
 
 .months-select-bar-wrap .arrow-li {border:1px solid blue; display:block;}
-.arrow-li-prev:before {content:'\e95c'; font-family:'AmwayIcons'!important;}
-.arrow-li-next:before {content:'\e95d'; font-family:'AmwayIcons'!important;}
+.arrow-li-prev:before {content:'\ea4d'; font-family:'AmwayIcons'!important;}
+.arrow-li-next:before {content:'\ea4e'; font-family:'AmwayIcons'!important;}
 
 .months-select-bar-out-wrap {padding:0 0 20px;text-align:center; border:1px solid #e3e3e3;}
 .months-select-bar-out-wrap .months-select-bar-title {margin-bottom:20px;padding:10px 20px;text-align:left;border-bottom:1px solid #e3e3e3;background:#f4f4f4;}
@@ -337,11 +337,11 @@
 .months-select-bar-out-wrap .months-select-bar li.active a{position:relative;color:#0075a4;border:0;}
 .months-select-bar-out-wrap .months-select-bar li.active a:focus,.months-select-bar-out-wrap .months-select-bar li.active a:hover{border:0;background:0 0;}
 .months-select-bar-out-wrap .months-select-bar li.active a:after{position:absolute;bottom:0;left:50%;width:20px;height:2px;margin-left:-10px;content:'';background:#0075a4;}
-.months-select-bar-out-wrap .months-select-bar li .years-label{position:absolute; z-index:99;top:-17px;left:50%;display:block;width:110px;margin-left:-55px;font-size:15px;font-weight:100;color:#bbbbbb;background:#ffffff;}
+.months-select-bar-out-wrap .months-select-bar li .years-label {position:absolute; z-index:99;top:-17px;left:50%;display:block;width:110px;margin-left:-55px;font-size:15px;font-weight:100;color:#bbbbbb;background:#ffffff;}
 .months-select-bar-out-wrap .months-select-bar li a{position:relative;display:block;width:110px;margin:0;padding-bottom:2px;color:#bbbbbb;border:0!important;}
 .months-select-bar-out-wrap .months-select-bar li a:focus,.months-select-bar-out-wrap .months-select-bar li a:hover{border:0!important;background:0 0!important;}
 .months-select-bar-out-wrap .months-select-bar li a.current-month:after{position:absolute;bottom:-5px;left:50%;display:inline-block;width:6px;height:6px;margin-left:-3px;content:'';border-radius:50%;background:#bbbbbb;}
-.months-select-bar-out-wrap .months-select-bar li .devided{position:absolute;z-index:100;top:-25px;right:0;bottom:0;width:1px;background:#bbbbbb;}
+.months-select-bar-out-wrap .months-select-bar li .devided{position:absolute; z-index:99; top:-25px;right:0;bottom:0;width:1px;background:#bbbbbb;}
 .sop-container .sort-refine-bar .dropdown .dropdown-menu li{padding:10px;}
 .sop-container .sort-refine-bar .dropdown .dropdown-menu li:hover{color:#ffffff;background:#002f5f;}
 
@@ -526,7 +526,13 @@
 	/* 나의 스마트 오더(6개월)*/
 	.list-content.tbl-prdt .ico-fa-repeat-alt {display:inline-block; padding-left:0; height:18px; width:18px; text-align:center;}
 	.list-content.tbl-prdt .list-row-content.row>div {vertical-align:middle; padding:25px 0;}
-
+	.months-select-bar-out-wrap .months-select-bar li .years-label {background:transparent}
+	.months-select-bar-out-wrap .months-select-bar li .devided {top:-15px;bottom:0;width:1px; height:40px;background:#bbbbbb;}
+	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li {top:0; width:30px; height:100%; background:#fff; z-indxe:200;}
+	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li:before {position:absolute; display:block; top:50%; margin-top:-18px; padding-top:13px; height:36px;}
+	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-prev {left:10px;}
+	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-next,
+	.months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-next:before {right:10px;}
 	.months-select-bar-title .box-icon-info .left-info,
 	.months-select-bar-title .box-icon-info .right-info {float:none;}
 	.months-select-bar-title .box-icon-info .right-info>span {margin:8px 15px 0 0;}
@@ -537,12 +543,11 @@
 	.months-select-bar-out-wrap .months-select-bar-wrap:after,
 	.months-select-bar-out-wrap .months-select-bar-wrap:before{width:40px;}
 	.months-select-bar-out-wrap .months-select-bar li{display:table-cell;width:12.5%;max-width:50px;padding:0 8px 20px;border:0;}
-	.months-select-bar-out-wrap .months-select-bar li span{width:40px;margin-left:-20px;}
-	.months-select-bar-out-wrap .months-select-bar li a{width:auto;padding:0;}
+	.months-select-bar-out-wrap .months-select-bar li span{width:40px; margin-left:-20px;}
+	.months-select-bar-out-wrap .months-select-bar li a {width:auto; padding:5px 0;}
 	.months-select-bar-out-wrap+.tab-content{padding-top:0;}
 	.months-select-bar-out-wrap+.tab-content .list-item-info {display:none !important;}
 
-	.akl .sop-profile-wrapper.mysop-details {margin-bottom:0;}
 	.months-select-content-wrap .mysop-list .list-row-content:after{position:absolute;bottom:0;left:14%;width:71%;height:1px;background:#e3e3e3;}
 	.months-select-content-wrap .list-row-content>div{position:relative; float:none!important; width:13.3%!important;}
 	.months-select-content-wrap .list-row-content>div:nth-child(1){width:10%!important;margin-right:0;padding-right:0;}
@@ -551,4 +556,5 @@
 	.months-select-content-wrap .list-row-content>div:nth-child(8) i{position:relative;top:0;font-size:16px;}
 	.months-select-content-wrap .list-row-content>div:nth-child(10),
 	.months-select-content-wrap .list-row-content>div:nth-child(9){display:none!important;}
+	.akl .sop-profile-wrapper.mysop-details {margin-bottom:0;}
 }
