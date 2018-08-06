@@ -585,33 +585,50 @@ Editor : sookkyung Han
 .overnightwear-box .use-txt{margin-top:13px;}
 .overnightwear-box .use-txt li{margin:2px 0 0 11px;text-indent:-11px;font-size:14px;color:#808285;font-weight:300;}
 
-.hua-system{margin-top:50px;padding-top:44px;border-top:1px solid #e3e3e3;}
-.hua-system .com-tit{font-size:30px;text-align:center;}
-.hua-system .system-box{width:100%;margin-top:30px;text-align:center;}
-.hua-system .axtive-box{display:inline-block;width:14%;vertical-align:top;}
-.hua-system .liner-box{display:inline-block;width:14%;vertical-align:top;}
-.hua-system .pad-box{display:inline-block;width:44%;vertical-align:top;}
-.hua-system .overnight-box{display:inline-block;width:28%;vertical-align:top;}
+.step-tbl{margin-top:50px;padding-top:44px;border-top:1px solid #e3e3e3;}
+.step-tbl.mt30{margin-top:30px;}
+.step-tbl .com-tit,
+.step-tbl .com-tit span{font-size:30px;text-align:center;}
+.step-tbl .tbl-box{width:100%;margin-top:30px;text-align:center;}
+.step-tbl .axtive-box{display:inline-block;width:14%;vertical-align:top;}
+.step-tbl .liner-box{display:inline-block;width:14%;vertical-align:top;}
+.step-tbl .pad-box{display:inline-block;width:44%;vertical-align:top;}
+.step-tbl .overnight-box{display:inline-block;width:28%;vertical-align:top;}
+.step-tbl .band-type{display:inline-block;width:60%;vertical-align:top;}
+.step-tbl .pants-type{display:inline-block;width:40%;vertical-align:top;}
 
-.hua-system .hua-tbl-th{display:table;width:100%;height:80px;font-size:16px;color:#56565a;border-left:1px solid #fff;background-color:#f4f4f4;}
-.hua-system .hua-tbl-td{display:table;width:100%;height:90px;font-size:14px;color:#808285;font-weight:300;border-bottom:1px solid #e3e3e3;}
-.hua-system .hua-tbl-th span,
-.hua-system .hua-tbl-td span{display:table-cell;padding:0 5px;vertical-align:middle;}
-.hua-system .hua-tbl-tf{display:table;width:100%;height:180px;border-bottom:1px solid #e3e3e3;}
-.hua-system .hua-tbl-tf li{display:table-cell;vertical-align:middle;}
-.hua-system .hua-tbl-tf.def03 li{width:calc(100% / 3);}
-.hua-system .hua-tbl-tf.def02 li{width:50%;}
-.hua-system .hua-tbl-tf .td-img{display:block;}
-.hua-system .hua-tbl-tf .td-tit{display:block;margin-top:22px;font-size:14px;color:#999;font-weight:300;}
-.hua-system .hua-tbl-tf div{padding:20px;border-radius:10px;}
-.hua-system .blue .hua-tbl-th,
-.hua-system .blue .hua-tbl-tf div{background-color:#dbecf2;}
-.hua-system .red .hua-tbl-th,
-.hua-system .red .hua-tbl-tf div{background-color:#f2dee6;}
-.hua-system .orange .hua-tbl-th,
-.hua-system .orange .hua-tbl-tf div{background-color:#faece1;}
-.hua-system .blue02 .hua-tbl-th,
-.hua-system .blue02 .hua-tbl-tf div{background-color:#d7e0e6;}
+.step-tbl .hua-tbl-th{display:table;width:100%;height:80px;font-size:16px;color:#56565a;border-left:1px solid #fff;background-color:#f4f4f4;}
+.wellors.step-tbl .hua-tbl-th{height:60px;}
+.step-tbl .hua-tbl-td{display:table;width:100%;height:90px;font-size:14px;color:#808285;font-weight:300;border-bottom:1px solid #e3e3e3;}
+.step-tbl .hua-tbl-th span,
+.step-tbl .hua-tbl-td span{display:table-cell;padding:0 5px;vertical-align:middle;}
+.step-tbl ul.hua-tbl-td{display:table;width:100%;height:75px;border-bottom:1px solid #e3e3e3;}
+.step-tbl .hua-tbl-tf{display:table;width:100%;height:180px;border-bottom:1px solid #e3e3e3;}
+.wellors.step-tbl .hua-tbl-tf{height:190px;}
+.step-tbl .hua-tbl-tf li,
+.step-tbl ul.hua-tbl-td li{display:table-cell;vertical-align:middle;}
+.step-tbl .hua-tbl-tf.def03 li,
+.step-tbl ul.hua-tbl-td.def03 li{width:calc(100% / 3);}
+.step-tbl .hua-tbl-tf.def02 li,
+.step-tbl ul.hua-tbl-td.def02 li{width:50%;}
+.step-tbl .hua-tbl-tf .td-img{display:block;}
+.step-tbl .hua-tbl-tf .td-tit{display:block;margin-top:10px;font-size:14px;color:#999;font-weight:300;}
+.step-tbl .hua-tbl-tf .td-tit .ring{display:inline-block;width:24px;height:24px;line-height:24px;margin-right:7px;text-indent:-1px;color:#fff !important;font-size:14px;text-align:center;border-radius:50%;}
+.step-tbl .hua-tbl-tf .td-tit .yellow{background-color:#fbad18;}
+.step-tbl .hua-tbl-tf .td-tit .pink{background-color:#ef7a90;}
+.step-tbl .hua-tbl-tf .td-tit .green{background-color:#02b7ac;}
+.step-tbl .hua-tbl-tf .td-tit .green02{background-color:#6da64b;}
+.step-tbl .hua-tbl-tf .td-tit .purple{background-color:#a36fbc;}
+
+.step-tbl .hua-tbl-tf div{padding:20px;border-radius:10px;}
+.step-tbl .blue .hua-tbl-th,
+.step-tbl .blue .hua-tbl-tf div{background-color:#dbecf2;}
+.step-tbl .red .hua-tbl-th,
+.step-tbl .red .hua-tbl-tf div{background-color:#f2dee6;}
+.step-tbl .orange .hua-tbl-th,
+.step-tbl .orange .hua-tbl-tf div{background-color:#faece1;}
+.step-tbl .blue02 .hua-tbl-th,
+.step-tbl .blue02 .hua-tbl-tf div{background-color:#d7e0e6;}
 
 .gray-tbl{margin-top:50px;padding:30px 30px;background-color:#f4f4f4;}
 .gray-tbl .list-tit{display:inline-block;width:32%;font-size:22px;color:#56565a;vertical-align:middle;}
@@ -650,12 +667,9 @@ Editor : sookkyung Han
 	.icook-knife .icook-knife-img div,
 	.icook-knife .icook-knife-img div img{width:100%;max-width:824px;}
 	
-	.hua-system .axtive-box,
-	.hua-system .liner-box,
-	.hua-system .pad-box{width:100%;margin-top:20px;}
-	.hua-system .overnight-box{width:100%;margin-top:20px;}
-	.hua-system .hua-tbl-tf{height:130px;}
-	.hua-system .hua-tbl-tf div{padding:10px;}
+	.step-tbl .tbl-box > li{width:100%;margin-top:20px;}
+	.step-tbl .hua-tbl-tf{height:130px;}
+	.step-tbl .hua-tbl-tf div{padding:10px;}
 }
 
 @media (max-width: 768px) {
@@ -891,12 +905,11 @@ Editor : sookkyung Han
 	.overnightwear-box .use-img li{display:block;float:left;width:50%;text-align:center;}
 	.overnightwear-box .use-img div{padding:0;}
 	
-	.hua-system .axtive-box,
-	.hua-system .liner-box,
-	.hua-system .pad-box{width:100%;margin-top:20px;}
-	.hua-system .overnight-box{width:100%;margin-top:20px;}
-	.hua-system .hua-tbl-tf{height:130px;}
-	.hua-system .hua-tbl-tf div{padding:10px;}
+	.step-tbl .tbl-box > li{width:100%;margin-top:20px;}
+	.step-tbl .hua-tbl-tf{height:130px;}
+	.step-tbl .hua-tbl-tf div{padding:10px;}
+	.wellors.step-tbl .hua-tbl-tf .td-img img{height:100%;max-height:40px;width:auto;}
+	.step-tbl .hua-tbl-tf .td-tit .ring{margin-right:3px;}
 	
 	.gray-tbl .list-tit{display:block;width:100%;font-size:18px;text-align:center;}
 	.gray-tbl .list-tit br{display:none;}
