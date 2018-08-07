@@ -200,25 +200,38 @@ Editor : HYEWON HWANG
 .brand-cont1 article{margin-top:30px;overflow:hidden;clear:both;}
 .brand-cont1 article > div {float:left;width:60%;}
 .brand-cont1 article > div:last-child{width:40%;height:100%;background:#eee;}
-.brand-cont1 article dl {overflow:hidden;}
-.brand-cont1 article dl dt {float:left;margin-top:10px;}
-.brand-cont1 article dl dd {padding-left:100px;margin-top:10px;}
-.brand-cont1 article dl dd span{display:block;}
-.brand-cont1 article a {text-decoration:underline;}
-
 
 .brand-contents .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
 .brand-contents .accordion-custom .pull-right:before {position:absolute;right:0;}
 .brand-contents section .con-title {font-size:20px;letter-spacing:-2px;font-weight:500;}
-.brand-contents .list-type5 > li > strong {display:block;}
+.brand-contents .list-type5 > li > strong {display:block;margin:6px 0;}
 
 .brand-contents .col-search-tab {margin-top:40px;}
 .brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;}
 
-.akl .bod-customer.nonepointer {padding:0;}
+/* 한국암웨이 */
+.brand .about article:not(:first-child) {padding:40px 0;border-top:1px solid #adadad;}
+.brand .about article:first-child {padding-bottom:40px;}
+.brand .about article > div:nth-of-type(2) {margin-top:40px;}
+.brand .about article dl {overflow:hidden;}
+.brand .about article dl dt {float:left;margin-top:10px;color:#002f5f;}
+.brand .about article dl dd {padding-left:150px;margin-top:10px;}
+.brand .about article dl dd .link-btn {margin-left:20px;}
+
+.brand .about .plp-item-label {position:absolute;height:25px;}
+.brand .about .plp-item-label:after {right:-7px;top:0;width:0;height:0;border:1px solid #008fc5;border-width:25px 7px 0 0;}
+.brand .about .plp-item-label.bg-blue:after {border-color:#008fc5 transparent transparent #008fc5;}
+.brand .about .plp-item-label.bg-green:after {border-color:#20893d transparent transparent #20893d;} 
+.brand .about .plp-item-label.bg-red:after {border-color:#e11e45 transparent transparent #e11e45;} 
+.brand .about .plp-item-label.bg-gray {background:#56565a;} 
+.brand .about .plp-item-label.bg-gray:after {border-color:#56565a transparent transparent #56565a;} 
+.brand .about article .bt-akl-white {margin-top:10px;}
+
+.akl .nonepointer.bod-customer {padding:0;}
 .akl .nonepointer .thumnail-box .featured-product__thumnail,
 .akl .nonepointer .news-result-item-text {cursor:default;min-height:80px;text-align:center;}
 .akl .nonepointer .featured-product__title:hover {color:#002f5f;}
+
 
 /* 연혁 */
 .history-area {display:block;margin-top:30px;}
