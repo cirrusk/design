@@ -355,7 +355,7 @@ iframe {border:0;}
 .pcomp-list div.comp-box .free-gift br {line-height:1;}
 
 .ingestion-usage {border-top:1px solid #e3e3e3;margin-top:80px;}
-.ingestion-usage dl {clear:both;display:block;width:100%;margin:20px 0 0;padding:0;}
+.ingestion-usage dl {clear:both;display:block;width:100%;margin:40px 0 0;padding:0;}
 .ingestion-usage dl:after {content:'';clear:both;display:block;}
 .ingestion-usage dl dt, .ingestion-usage dl dd {float:left;box-sizing:border-box;}
 .ingestion-usage dl dt {width:15%;vertical-align:top;font-size:26px;font-weight:500;letter-spacing:-2px;}
@@ -458,7 +458,7 @@ div.feat-txt p span.next-sort {display:block;}
 
 /* type02 */
 .advantage-area {clear:both;display:table;width:100%;table-layout:fixed;box-sizing: border-box;border-top:1px solid #e3e3e3;margin-top:47px;padding-top: 50px;}
-.advantage-area.bt-none{margin-top:0 !important;padding-top:45px !important;border-top:none;}
+.advantage-area.bt-none{margin-top:0 !important;padding-top:50px !important;border-top:none;}
 .advantage-area.btm-line{padding:50px 0;border-bottom:1px solid #e3e3e3;}
 .pro-video.video-type{margin: 50px 0 0;padding-top:50px;}
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
@@ -1315,7 +1315,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 .cooking-box {font-size:16px;}
 .cooking-box .cook-tit {font-weight:400;color:#c4133f;}
 .cooking-box p {font-weight:300;color:#808285;padding:8px 0 0}
-.cookery-num {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
+.cookery-num {display:table;width:100%;box-sizing: border-box;table-layout:fixed;background: #f4f4f4;}
 .cookery-num li {display:table-cell;box-sizing: border-box;width:33.333%;text-align:center;}
 .cookery-num li dl {padding:10px 20%;}
 .cookery-num li dl dt span {display:block;margin:20px auto;}
@@ -1339,33 +1339,37 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .uses-cook-txt p.etc-s {color:#999;font-size:14px;}
 
 /* 김미역 세트 */
-.uses-cooking-recipe.set-area{
-				background:url('../images/akl_product/one-for-one/food_bg_miyoek_left.png') no-repeat 77px 100%, 
-				url('../images/akl_product/one-for-one/food_bg_miyoek_right.png') no-repeat 94% 100%;min-height: inherit;}
-.uses-cooking-recipe.set-area .uses-cook-txt{padding: 0 20%;display: table;height: 97px;text-align: center;width: 100%;}
 
-
-.ribon-banner{background:url('../images/akl_product/one-for-one/banner_ribbon_01.png') no-repeat 77px center, url('../images/akl_product/one-for-one/banner_ribbon_02.png') no-repeat 94% center;}
-.ribon-banner .txt{}
-.ribon-banner .txt strong{} 
-
+.miyoek-detail_warp{position:relative;margin:92px 0 0;}
+.detail-top{position:relative;text-align:center;}
+.detail-top-txt{position:relative;display:inline-block;font-size: 44px;color:#fff;text-align:center;padding:1px 25px;background-color:#c4133f;font-weight: 300;letter-spacing:-2px;}
+.detail-top-txt strong{font-weight:400;}
+.detail-top-txt:before,
+.detail-top-txt:after{content:"";position:absolute;top: 0px;width:34px;height:100%;background-repeat:no-repeat;}
+.detail-top-txt:before{left: -17px;background-image:url("../images/akl_product/one-for-one/banner_ribbon_01.png");}
+.detail-top-txt:after{right:-34px;background-image:url("../images/akl_product/one-for-one/banner_ribbon_02.png");}		
+.detail-content{margin-top:-30px;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;padding-top:30px;text-align:center;}
+.detail-bg{display:table;width:100%;height:100%;box-sizing:border-box;}
+.detail-con-txt{display:table-cell;vertical-align:middle;background: url("../images/akl_product/one-for-one/food_bg_miyoek_left.png") 5% bottom no-repeat;width: 100%;display: block;}
+.detail-con-txt span{position:relative;display:block;padding: 35px 18%;background: url("../images/akl_product/one-for-one/food_bg_miyoek_right.png") 95% bottom no-repeat;font-size: 18px;color: #56565a;/* width: 100%; */font-weight: 300;}
+		
 
 .uses-cooking-recipe.set-area .uses-cook-txt p{line-height: 1.5;font-weight: 300;margin-bottom:0;/* margin: 0 20%; */display: table-cell;vertical-align: middle;text-align: center;}
 .uses-cooking-recipe .uses-cook-tit{position: absolute;top: -32px;left: 50%;margin-left: -355px;background: url(../images/akl_product/one-for-one/banner_ribbon_before.png) no-repeat 0 0;padding: 0 30px;}
 .uses-cooking-recipe .uses-cook-tit:after{display:block;content:"";clear:both;background: url(../images/akl_product/one-for-one/banner_ribbon_after.png) no-repeat 0 0;position: absolute;top: 0;left:95%;height: 65px;width:40px;}
 .uses-cooking-recipe.set-area .uses-cook-tit .ribon{background:#c4133f;height: 65px;margin:0;padding:0;}
 
-
-.food_gray_wrap .com-tit span{display:block;font-size:32px !important;font-weight:400;color:#56565a;text-align:center;}
-.food_gray_wrap ul{display: block;width: 100%; padding: 30px;background: #f4f4f4;overflow: hidden;}
-.food_gray_wrap ul li{float: left;width: 25%;text-align: center;}
-.food_gray_wrap ul li dl{padding: 0 7px;}
-.food_gray_wrap ul li dl dt{}
-.food_gray_wrap ul li dl dt span{display: block;margin: 28px auto 15px;}
-.food_gray_wrap ul li dl dt span.step-p{}
-.food_gray_wrap ul li dl dt span img{display: block;text-align: center;margin:auto;}
-.food_gray_wrap ul li dl dt span.step-2{}
-.food_gray_wrap ul li dl dd{font-size:16px;color:#666666;line-height:1.5;}
+.food-gray-wrap .com-tit{display:block;text-align:center;margin:47px 0 25px;}
+.food-gray-wrap .com-tit span{font-size:32px !important;font-weight:400;color:#56565a;}
+.food-gray-wrap ul{display: block;width: 100%; padding: 40px 10px;background: #f4f4f4;overflow: hidden;}
+.food-gray-wrap ul li{float: left;width: 25%;text-align: center;}
+.food-gray-wrap ul li dl{padding: 0;}
+.food-gray-wrap ul li dl dt{}
+.food-gray-wrap ul li dl dt span{display: block;margin: 0 auto 15px;}
+.food-gray-wrap ul li dl dt span.step-p{}
+.food-gray-wrap ul li dl dt span img{display: block;text-align: center;margin:auto;}
+.food-gray-wrap ul li dl dt span.step-2{}
+.food-gray-wrap ul li dl dd{font-size:16px;color:#666666;line-height:1.5;padding: 0 30px;}
 
 
 /* 원포원 - 사조 */
@@ -1415,6 +1419,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.recipe-info span img {width:inherit;height:inherit;padding:0 20px;}
 
 	.sty-left {padding:0 0 0 50px;}
+	
+	.food-gray-wrap ul li{float: left;width:50%;text-align: center;}
 
 }
 
@@ -1514,12 +1520,28 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.one-for-one .v-pro span img{width: auto;}
 	
 	/* 원포원 (김미역세트 ) */
-	.food_gray_wrap ul li{float: left;width:50%;text-align: center;}
+	.food-gray-wrap ul li{float: left;width:50%;text-align: center;}
+	.food-gray-wrap ul li dl dt{padding-top:15px;}
+	
+	.detail-top-txt{font-size:32px;letter-spacing:-2px;line-height:63px;}
 	
 
 }
 
 @media (max-width: 768px) {
+	
+	/* 김미역 */
+	.miyoek-detail_warp{margin:46px 0 24px;}
+	.detail-top-txt{font-size: 26px !important;padding: 4px 25px;}
+	.detail-top-txt:before, 
+	.detail-top-txt:after{content:none;}
+	.detail-con-txt{background: url(../images/akl_product/one-for-one/food_bg_miyoek_left.png) 5% bottom no-repeat;}
+	.detail-con-txt span{padding:25px 20%;font-size:14px;background: url(../images/akl_product/one-for-one/food_bg_miyoek_right.png) 95% bottom no-repeat;}
+	
+	.food-gray-wrap ul li{display:block;width:100%;}
+	.food-gray-wrap ul li:nth-child(2) dl dt, .food-gray-wrap ul li:nth-child(3) dl dt{margin-top:30px;}
+	
+	/* 공통 */
 	.akl .panel-body.product-detail {padding: 0 13px 30px;}
 
 	.visual-area + .advantage-area {margin-top:25px;}
@@ -2012,18 +2034,24 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.sty-left {padding:0 0;}
 
 	.one-for-one .draw-step01 li dt img{width:auto;}
-
-	/* 김미역 세트 */
-	.uses-cook-tit div{font-size: 18px;line-height: 65px;}
-
+	
 }	
+
+
+
+
+@media (max-width: 576px) {
+	
+}
+
+
 
 @media (max-width: 324px) {	
 	.tbl-home1.three-block li.tbody .list-tit, .tbl-home1.one-block li.tbody .list-tit{padding-left:15px;}
 	.tbl-home1.compare.type2 li.tbody .list-tit, .tbl-home1.range.type2 li.tbody .list-tit{padding-left:15px;}
 	
 	/* 원포원 (김미역세트 ) */
-	.uses-cooking-recipe.set-area .uses-cook-tit .ribon p{font-size:26px;}
+	
 	.food_gray_wrap ul{padding:0;}
 	.food_gray_wrap ul li{float: left;width:100%;text-align: center;}
 	.food_gray_wrap ul li:last-child{padding-bottom:25px;}
