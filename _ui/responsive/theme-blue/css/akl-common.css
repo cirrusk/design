@@ -62,20 +62,6 @@ src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'),
 font-family: 'Free 3 of 9 Regular';
 src:url(../fonts/FREE3OF9.woff) format('woff') ;
 }
-/* 사업 가이드 > GIP&NCA */
-.gn-box-tit {display:block; color:#fff; background:#42cbd3; margin-bottom:10px; text-align:center; padding:10px; font-size:18px; font-weight:500}
-.gn-box-tit.year { background:#00b2e2;  position:relative; margin-top: 80px}
-.gn-box-tit.year:before {content:""; position:absolute; left:-60px; right:-60px; top:-40px; border-top:1px solid #dadada }
-.bizNumList li .box-diagram { margin-top:10px; text-indent:0;}
-.akl .gn-box .tblList02 + .tblList02 thead tr {border-top: 0}
-.akl .gn-box .tblList02.Ruby tbody tr > * { padding: 10px 10px; background: #f4f4f4; color: #002f5f; font-weight: 500;}
-.box-diagram-perq { padding: 40px 20px; background: #f4f4f4; }
-.personalq-list { margin-top:10px}
-.personalq-list li { padding-left:15px; }
-.personalq-list dt{ margin-bottom:3px}
-.personalq-list dd{ padding-left:15px; }
-.personalq-list .box-diagram-perq { margin:16px 0 20px}
-.personalq-list .gn-box{ margin:16px 0 20px}
 
 /* 영수증 */
 .pop_wrap {background-color:#fff;}
@@ -277,8 +263,13 @@ b,strong{font-weight:500; }
 .akl .bt-akl-blue,.akl a.bt-akl-blue,.akl .bt-akl-white,.akl a.bt-akl-white,.akl .bt-akl-txt,.akl a.bt-akl-txt {white-space: nowrap; text-align: center;}
 .akl .btn.btn-primary {height:40px !important;border:1px solid #002F5F; padding:0 28px ;min-width:auto;font-size:14px;font-weight:400; box-sizing: border-box;}
 .akl .btn-primary:hover {  transition:background-color 0.3s, color 0.3s; transition: background-color 0.3s, color 0.3s; }
-.akl .btn.btn-primary span {font-size:14px; font-weight:400}
+.akl .btn.btn-primary span {font-size:14px; font-weight:400;}
 .akl .btn-cancel {font-size: 14px;}
+
+	.akl .coupon-offer-search .btn.btn-primary span {color:#fff;}
+	.akl .coupon-offer-search .btn.btn-primary:focus span {color:#002f5f !important;}
+
+
 
 .akl .bt-akl-white.small, .akl .bt-akl-blue.small {min-width:74px;padding:5px 10px 7px;text-align:center;}
 .akl a.bt-akl-white.small, .akl a.bt-akl-blue.small {min-width:74px;padding:8px 20px 7px;text-align:center;}
@@ -1321,6 +1312,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 	.quick-links-header.akl-foot:before {display:none}
 }
 @media (max-width: 768px){
+	.akl .btn.btn-primary span {color:#fff;}
 	.akl .product-item-element .checkbox-element-wrapper {margin:3px 0 0 6px;}
 	.akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding-left:0;}
 
