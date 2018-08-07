@@ -205,6 +205,236 @@ Editor : HYEWON HWANG
 .brand-contents .col-search-tab {margin-top:40px;}
 .brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;}
 
+
+/* ### 암웨이소개 ### */ 
+.brand img.mob {
+    display: none;
+}
+.three-tile-component{
+	margin-left: -15px;
+    margin-right: -15px;
+}
+.masthead {
+    position: relative;
+    width: 100%;
+    display: table;
+    margin:0 auto;
+    }
+.masthead img {
+    width: 100%;
+}
+.masthead .mob {
+    display: none;
+}
+.masthead .banner_wrapper {
+    padding-left: 100px;
+    z-index: 99;
+    max-width: 1400px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.masthead .banner_wrapper h1 {
+    /*font-family: 'RobotoCondensed';*/
+    font-size: 45px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.masthead .banner_wrapper .text {
+    font-size: 20px;
+    display: block;
+    max-width: 55%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.experience-brands {
+    margin-bottom: 50px;
+}
+
+.amway-theme .experience-brands.pullRight .masthead .banner_wrapper {
+    transform: translate(0, -50%);
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+.amway-theme .experience-brands .masthead .banner_wrapper .text{
+	color: #002f5f;
+}
+.amway-theme .experience-brands .masthead .banner_wrapper h1 {
+    color: #002f5f;
+}
+
+#about-amway .about-amway-content {
+    margin-top: 50px;
+}
+.amway-theme .experience-brands.hasBorder {
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 50px;
+}
+
+#about-amway .content-article-bottom {
+    border-top: none;
+}
+#about-amway .about-amway-content .block .item-content-wrap {
+    background-color: #002F5F;
+}
+.btn-text, .btn, .akl .bt-akl-blue {
+	font-size:1.125em;
+	text-transform: uppercase;
+}
+.akl .bt-akl-blue {border:1px solid #fff;}
+
+.banner-button-link .btn{    
+	line-height: 0.95em;
+    height: 40px;
+    padding: 10px 25px;
+}
+.amway-theme .category-success-story .item-content-wrap {
+    max-width: 80%;
+    height: auto;
+    max-height: 191px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.category-success-story .item-content-wrap .banner-title{
+	font-size: 36px;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}
+.category-success-story .item-content-wrap .sub-title-wrap {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.category-success-story{    
+	margin: 0 auto 20px;
+    text-align: center;
+}
+
+.akl .brand h2.amway-learning__title {margin:55px auto;text-align:center;font-size:32px;letter-spacing:-2px;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item a {display:inline-block;width:136px;padding-top:136px;color:#00305e;font-size:16px;font-weight:400;background:url('/_ui/responsive/theme-blue/images/akl_brand/about/brand_icons.png') no-repeat 0 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item a span{display:block;margin-top:10px;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(2) a {background-position:-166px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(3) a {background-position:-338px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(4) a {background-position:-506px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(5) a {background-position:-677px 0;}
+.akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item:nth-child(6) a {background-position:-846px 0;}
+
+@media (max-width: 768px){
+	.masthead .mob {
+	    display: block;
+	}
+	.masthead .pc {
+	    display: none;
+	}
+	.container, .main-container, .checkout-steps {
+    	width: 100%;
+	}
+	.amway-theme .experience-brands .masthead {
+	    margin-top: 1em;
+	}
+	
+	.amway-theme .masthead .banner_wrapper .text {
+	    display: none;
+	}
+	.amway-theme .experience-brands .masthead img {
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.amway-theme .experience-brands.pullRight .masthead .banner_wrapper {
+	    transform: none;
+	}
+}
+@media (max-width: 768px) {
+  .amway-theme .desktop-image {
+    display: none;
+  }
+  .amway-theme .desktop-image-mob {
+    display: block;
+  }
+  .amway-theme .banner.homepage_banner {
+    margin-top: 60px;
+  }
+  .amway-theme .masthead .pc {
+    display: none;
+  }
+  .amway-theme .masthead .mob {
+    display: block;
+  }
+  .amway-theme .masthead .banner_wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .amway-theme .masthead .banner_wrapper h1 {
+    margin: 0 auto 15px;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .amway-theme .masthead .banner_wrapper .text {
+    display: none;
+  }
+  .amway-theme .masthead .banner_wrapper .banner-more {
+    margin: 0;
+    padding: 5px 20px;
+    float: none;
+    display: inline-block;
+  }
+  .amway-theme .masthead .banner_wrapper .primary-link {
+    display: block;
+    margin-top: 0;
+  }
+  .amway-theme .experience-brands .masthead {
+    margin-top: 1em;
+  }
+  .amway-theme .experience-brands .masthead img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .amway-theme .experience-brands .masthead .banner_wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    text-align: center;
+    transform: none;
+    margin: 1em 0;
+  }
+  .amway-theme .experience-brands .masthead .banner_wrapper h1 {
+    word-wrap: break-word;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .amway-theme .experience-brands.pullRight .masthead .banner_wrapper {
+    transform: none;
+  }
+  
+}
+
+@media (min-width: 1200px){
+	.container, .main-container, .checkout-steps {
+	    max-width: 1400px;
+	    width: 100%;
+	}
+}
+
+
+
 /* 한국암웨이 */
 .brand .about article:not(:first-child) {padding:40px 0;border-top:1px solid #adadad;}
 .brand .about article:first-child {padding-bottom:40px;}
