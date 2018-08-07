@@ -436,6 +436,8 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 .info-deth-lst .ingestion-usage dl dd ul > li > ol > li{}
 .info-deth-lst .ingestion-usage dl dd ul > li > ol > li:after{background:none}
 
+
+
 /* special */
 .special-feat {clear:both;display:block;margin-top:20px;}
 ul.spc-list {display:block;width:100%;border-bottom:1px solid #e3e3e3;}
@@ -473,8 +475,8 @@ div.feat-txt p span.next-sort {display:block;}
 .advan-left, .advan-right {display:table-cell;box-sizing: border-box;}
 .advan-left{width:50%;padding-right:50px;vertical-align:top;}
 .advan-right{width:50%;/*padding: 0 50px 0 0;*/padding:0;vertical-align:middle;}
-.advan-left.fleft{padding-right:50px;padding-left:0;vertical-align:top;}
-.advan-right.fright{padding-left: 0;/*padding-right: 50px;*/padding-right:0;vertical-align:middle;}
+.advan-right.fleft{padding-right:50px;padding-left:0;vertical-align:top;}
+.advan-left.fright{padding-left: 0;/*padding-right: 50px;*/padding-right:0;vertical-align:middle;}
 .advan-full{float:left;width:100%;}
 .advan-left.v-mid {vertical-align:middle;}
 .advan-right.v-top {vertical-align:top;}
@@ -482,6 +484,7 @@ div.feat-txt p span.next-sort {display:block;}
 .ade-photo {margin:0 auto;text-align:center;}
 .ade-photo.right {text-align:right;}
 .ade-photo.botm {vertical-align:bottom;}
+.advan-right.botm {vertical-align:bottom};
 .ade-photo.vtop {vertical-align:top;}
 .ade-photo img {text-align:center;}
 .sie-box {padding:0 0 0;word-break: keep-all;word-wrap: break-word;}
@@ -490,8 +493,7 @@ div.feat-txt p span.next-sort {display:block;}
 .ad-setp-lst dd {font-weight: 300;margin-top: 2px;line-height:26px;color:#808285;font-size:16px;}
 .ad-setp-lst dd ul li, .ad-setp-lst dd ol li{font-size:16px;}
 .bacteria-info .ad-setp-lst dt{font-size:18px;}
-
-.advan-etc {width:90%;}
+.advan-etc {/*width:inherit;*/display: block;margin: auto;}
 
 /* type03 */
 .health-inform-box {display:block;margin-top:50px;border:1px solid #e3e3e3;overflow:hidden;}
@@ -1307,27 +1309,28 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 /* 원포원 - 정기품 고등어·갈치조림 양념 */
 .visual-area.type02.seasoning {background: url('../images/akl_product/one-for-one/bg_jungipum_seasoning.png') no-repeat center;min-height:956px;}
+.box-tit h5.other{font-size:32px;color:#56565a;font-weight:300;}
+.box-tit h5.other p{font-size:44px;}
 .recipe-box p.txt-lp9948 {display:block;padding:0 0 0px;margin:0 0;} 
 .recipe-box p.txt-lp9948-2 {display:block;padding:15px 0 0px} 
 .recipe-box.p9948 {height:auto;min-height:auto;padding:0 0 40px}
-.recipe-box.p9948 .recipe-info {height:auto;}
+.recipe-box.p9948 .recipe-info {width:inherit;height:auto;}
 
 .cooking-box {font-size:16px;}
 .cooking-box .cook-tit {font-weight:400;color:#c4133f;}
 .cooking-box p {font-weight:300;color:#808285;padding:8px 0 0}
-.cookery-num {display:table;width:100%;box-sizing: border-box;table-layout:fixed;background: #f4f4f4;}
+.cookery-num {display:table;width:100%;box-sizing: border-box;table-layout:fixed;/*background: #f4f4f4;*/}
 .cookery-num li {display:table-cell;box-sizing: border-box;width:33.333%;text-align:center;}
-.cookery-num li dl {padding:10px 20%;}
+.cookery-num li dl {padding:10px 0;}
 .cookery-num li dl dt span {display:block;margin:20px auto;}
 .cookery-num li dl dt span.step-p {width:100%;}
 .cookery-num li dl dt span.step-w {min-width:62px}
-.cookery-num li dl dd {font-weight:300;color:#666;}
+.cookery-num li dl dd {font-weight:300;color:#666;padding:0 20px;}
 
-.history-box {display:table;width:100%;box-sizing: border-box;table-layout:fixed;padding:50px 0;}
-.sty-left, .sty-right {display:table-cell;box-sizing: border-box;vertical-align:top;}
-.sty-left {width:60%;padding-left:90px;} 
-.sty-left .com-txt {margin-top:0;}
-.sty-right {width:40%;padding:0 0;text-align:center;}
+.health-inform-box.type2.boiled .advan-left {width:60%;}
+.health-inform-box.type2.boiled .advan-left .com-txt {margin-top:0;}
+.health-inform-box.type2.boiled .advan-right {width:40%;}
+.health-inform-box.type2.boiled .advan-right .ade-photo{text-align:right;}
 
 .uses-cooking-recipe {position:relative;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;min-height:180px;margin:80px auto 15px;
 background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-repeat 77px center, url('../images/akl_product/one-for-one/food_recipe_fish.png') no-repeat 94% center;}
@@ -1338,9 +1341,10 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .uses-cook-txt p {font-size:18px;line-height:26px;}
 .uses-cook-txt p.etc-s {color:#999;font-size:14px;}
 
+
 /* 김미역 세트 */
 
-.miyoek-detail_warp{position:relative;margin:92px 0 0;}
+.miyoek-detail-warp{position:relative;margin:50px 0 0;}
 .detail-top{position:relative;text-align:center;}
 .detail-top-txt{position:relative;display:inline-block;font-size: 44px;color:#fff;text-align:center;padding:1px 25px;background-color:#c4133f;font-weight: 300;letter-spacing:-2px;}
 .detail-top-txt strong{font-weight:400;}
@@ -1372,6 +1376,14 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .food-gray-wrap ul li dl dd{font-size:16px;color:#666666;line-height:1.5;padding: 0 30px;}
 
 
+/* 닭볶음탕 */
+.detail-con-txt.chicken{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+.detail-con-txt.chicken span{background: url("../images/akl_product/one-for-one/food_bg_chicken.png") 95% bottom no-repeat;}
+
+/* 고추장 돼지 주물럭 */
+.detail-con-txt.fork{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+.detail-con-txt.fork span{background: url("../images/akl_product/one-for-one/food_bg_fork.png") 95% bottom no-repeat;}
+
 /* 원포원 - 사조 */
 .step-lst-wrap{margin-top:27px;}
 .step-lst-wrap li{display:block;width:100%;margin-bottom:15px;}
@@ -1381,6 +1393,13 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .step-lst-wrap li div p{display:table-cell;vertical-align:top;font-size: 14px;font-weight: 300;line-height: 1.5;}
 
 .sajo-wrap .ad-setp-lst:first-child dt{margin-top:0;} 
+
+
+/*  고등어 갈치조림 */
+	.cookery-num li dl dt span.step-p img{width:auto;}
+	.detail-con-txt.voiled-fish{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+	.detail-con-txt.voiled-fish span{background: url("../images/akl_product/one-for-one/food_recipe_fish.png") 95% bottom no-repeat;}	
+	.cookery-num li dl {padding:10px 0;margin:0 auto;}
 
 
 @media (min-width: 1074px) and (max-width: 1280px) {
@@ -1421,11 +1440,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.sty-left {padding:0 0 0 50px;}
 	
 	.food-gray-wrap ul li{float: left;width:50%;text-align: center;}
+	
 
 }
-
-
-
 
 
 @media (min-width: 769px) and (max-width: 1073px) {
@@ -1521,9 +1538,10 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	/* 원포원 (김미역세트 ) */
 	.food-gray-wrap ul li{float: left;width:50%;text-align: center;}
-	.food-gray-wrap ul li dl dt{padding-top:15px;}
-	
+	.food-gray-wrap ul li dl dt{padding-top:15px;}	
 	.detail-top-txt{font-size:32px;letter-spacing:-2px;line-height:63px;}
+	
+	.cookery-num li dl dt span.step-p img{width:auto;}
 	
 
 }
@@ -1531,8 +1549,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 @media (max-width: 768px) {
 	
 	/* 김미역 */
-	.miyoek-detail_warp{margin:46px 0 24px;}
-	.detail-top-txt{font-size: 26px !important;padding: 4px 25px;}
+	.miyoek-detail-warp{margin:25px 0 0;}
+	.detail-top-txt{font-size: 26px !important;padding: 4px 25px;line-height: 1.2;}
 	.detail-top-txt:before, 
 	.detail-top-txt:after{content:none;}
 	.detail-con-txt{background: url(../images/akl_product/one-for-one/food_bg_miyoek_left.png) 5% bottom no-repeat;}
@@ -1540,9 +1558,33 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	.food-gray-wrap ul li{display:block;width:100%;}
 	.food-gray-wrap ul li:nth-child(2) dl dt, .food-gray-wrap ul li:nth-child(3) dl dt{margin-top:30px;}
+	.box-tit h5.other{font-size:20px;}
+	.box-tit h5.other p{font-size:26px;}
+	
+	/*  고등어 갈치조림 */
+	.cookery-num{display:block;}
+	.cookery-num li{width: 100%;display: block;}
+	.detail-con-txt.voiled-fish{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+	.detail-con-txt.voiled-fish span{background: url("../images/akl_product/one-for-one/food_recipe_fish.png") 95% bottom no-repeat;}	
+	.health-inform-box.type2.boiled .advan-left {width:100%;}
+	.health-inform-box.type2.boiled .advan-left .com-txt {margin-top:0;}
+	.health-inform-box.type2.boiled .advan-right {width:100%;}
+	.health-inform-box.type2.boiled .advan-right .ade-photo{text-align:center;}
+	
+	/* 닭볶음탕 */
+	.detail-con-txt.chicken{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+	.detail-con-txt.chicken span{background: url("../images/akl_product/one-for-one/food_bg_chicken.png") 95% bottom no-repeat;}
+	
+	/* 고추장 돼지 주물럭 */
+	.detail-con-txt.fork{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+	.detail-con-txt.fork span{background: url("../images/akl_product/one-for-one/food_bg_fork.png") 95% bottom no-repeat;}
+	
 	
 	/* 공통 */
 	.akl .panel-body.product-detail {padding: 0 13px 30px;}
+	
+	.advan-right.fleft{padding-right:0;}
+	.advan-left.right{padding-right:50px;}
 
 	.visual-area + .advantage-area {margin-top:25px;}
 	.visual-area.type02 {background-color:#c9e3f6;min-height:619px;padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
