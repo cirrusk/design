@@ -23,6 +23,107 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 </head>
+<style>
+@media (max-width: 768px){
+	.brand .masthead .mob {
+	    display: block;
+	}
+	.brand .masthead .pc {
+	    display: none;
+	}
+	.container, .main-container, .checkout-steps {
+    	width: 100%;
+	}
+	.amway-theme .experience-brands .masthead {
+	    margin-top: 1em;
+	}
+	
+	.amway-theme .masthead .banner_wrapper .text {
+	    display: none;
+	}
+	.amway-theme .experience-brands .masthead img {
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.amway-theme .experience-brands.pullRight .masthead .banner_wrapper {
+	    transform: none;
+	}
+}
+@media (max-width: 768px) {
+  .amway-theme .desktop-image {
+    display: none;
+  }
+  .amway-theme .desktop-image-mob {
+    display: block;
+  }
+  .amway-theme .banner.homepage_banner {
+    margin-top: 60px;
+  }
+  .amway-theme .masthead .pc {
+    display: none;
+  }
+  .amway-theme .masthead .mob {
+    display: block;
+  }
+  .amway-theme .masthead .banner_wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .amway-theme .masthead .banner_wrapper h1 {
+    margin: 0 auto 15px;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .amway-theme .masthead .banner_wrapper .text {
+    display: none;
+  }
+  .amway-theme .masthead .banner_wrapper .banner-more {
+    margin: 0;
+    padding: 5px 20px;
+    float: none;
+    display: inline-block;
+  }
+  .amway-theme .masthead .banner_wrapper .primary-link {
+    display: block;
+    margin-top: 0;
+  }
+  .amway-theme .experience-brands .masthead {
+    margin-top: 1em;
+  }
+  .amway-theme .experience-brands .masthead img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .amway-theme .experience-brands .masthead .banner_wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    text-align: center;
+    transform: none;
+    margin: 1em 0;
+  }
+  .amway-theme .experience-brands .masthead .banner_wrapper h1 {
+    word-wrap: break-word;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .amway-theme .experience-brands.pullRight .masthead .banner_wrapper {
+    transform: none;
+  }
+  
+}
+
+@media (min-width: 1200px){
+	.container, .main-container, .checkout-steps {
+	    max-width: 1400px;
+	    width: 100%;
+	}
+}
+</style>
 <body class="akl">
 	<!-- skipToContent -->
 	<div id="skipToContent">
@@ -59,7 +160,7 @@
 		
 		<!-- ## 컨텐츠 영역 -->
 		<div class="main-container brand amway-theme" id="contents">
-			<div class="brand-contents">
+			<div class="brand-contents intro">
 				<h1 class="hidden">암웨이 소개</h1>
 				
 				<div class="masthead">
