@@ -190,16 +190,12 @@ Editor : HYEWON HWANG
 /* ### 암웨이소개: 레이아웃 ### */
 .brand .brand-contents {position:relative;}
 .brand .brand-contents > h1 {margin:10px 0 27px;}
-.brand .brand-contents > h1 + .tit-txt {margin:-15px 0 30px;} 
+.brand .brand-contents > h1 + .tit-txt {margin:-15px 0 35px;} 
 .brand .brand-contents h2{font-size:18px;text-align:left;text-transform:none;letter-spacing:-1px;margin:0 0 20px;}
 .brand .brand-contents h2:not(:first-child) {margin-top:40px;}
 .brand .brand-contents h3 {margin-bottom:10px;}
 .brand .brand-contents p {margin:0 0 10px;}
-.brand-cont1, .tit-txt + section {margin-top:30px;}
-.brand-cont1 > article:nth-of-type(1){margin-top:0;}
-.brand-cont1 article{margin-top:30px;overflow:hidden;clear:both;}
-.brand-cont1 article > div {float:left;width:60%;}
-.brand-cont1 article > div:last-child{width:40%;height:100%;background:#eee;}
+.tit-txt + section {margin-top:30px;}
 
 .brand-contents .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
 .brand-contents .accordion-custom .pull-right:before {position:absolute;right:0;}
@@ -213,6 +209,7 @@ Editor : HYEWON HWANG
 .brand .about article:not(:first-child) {padding:40px 0;border-top:1px solid #adadad;}
 .brand .about article:first-child {padding-bottom:40px;}
 .brand .about article > div:nth-of-type(2) {margin-top:40px;}
+.brand .about article:last-child {padding-bottom:0;}
 .brand .about article dl {overflow:hidden;}
 .brand .about article dl dt {float:left;margin-top:10px;color:#002f5f;}
 .brand .about article dl dd {padding-left:150px;margin-top:10px;}
@@ -232,6 +229,17 @@ Editor : HYEWON HWANG
 .akl .nonepointer .news-result-item-text {cursor:default;min-height:80px;text-align:center;}
 .akl .nonepointer .featured-product__title:hover {color:#002f5f;}
 
+.brand-cont1.bg {margin-bottom:40px;padding:30px 35px 25px;line-height:1.8;background:#f4f4f4;}
+.brand .accordion-custom .panel-body {font-size:14px;}
+.brand .accordion-custom .panel-body ul.list-type5 {margin-top:15px;}
+.brand .accordion-custom .panel-body ul.list-type5 li strong {color:#002f5f;}
+
+
+/* CEO인사말 */
+.ceo .full-component h2 {margin:50px 0 25px;font-size:20px;}
+.ceo .full-component h2:first-child {margin-top:0;}
+.ceo .full-component p {margin:20px 0 0;font-size:16px;}
+
 
 /* 연혁 */
 .history-area {display:block;margin-top:30px;}
@@ -242,9 +250,14 @@ Editor : HYEWON HWANG
     max-height: 180px;}
 
 /* 부산 아시아 물류 허브 센터 */    
-    
+.hubcenter .ui-snap-big {margin:40px auto;height:400px;}
+.hubcenter .ui-snap-big li {height:100%;}
+.hubcenter .slides .image-gallery {text-align:center;}
+.hubcenter .image-gallery.js-gallery img {display:inline-block;width:auto;}
+.hubcenter .slides .image-gallery img:hover {margin:0;-webkit-transform:none;-ms-transform:none;transform:none;}
 
-
+.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn {margin:0 15px;max-width:100%;max-height:100%;}
+.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn img {max-height:100%;}
 
 /* ### 글로벌 암웨이 ### */ 
 
@@ -321,11 +334,21 @@ Editor : HYEWON HWANG
 	/* 이스프링 */
 	.espring .txtbox.s1 p, .espring .txtbox.s2 p {display:block;}
 	/* 엣모스피어 */
+	
+	
 
+	/* ### 암웨이소개 ### */
 
-	/* 한국암웨이 */ 
-	.brand-cont1 article {float:none;width:100% !important;}
-	.brand-cont1 article + article {margin-top:15px;}
+	/* CEO인사말 */ 
+	.ceo .full-component h2 {margin:20px 0;font-size:18px !important;}
+	.ceo .full-component h2:first-child {margin-top:10px;}
+	.ceo .full-component p {margin:10px 0 0;font-size:14px;}
+	
+	/* 부산 아시아 물류 허브 센터 */ 
+	.hubcenter .ui-snap-big {height:auto; width:100%; margin:20px auto;}
+	.hubcenter .ui-snap-big li {height:auto !important;}
+	.hubcenter .image-gallery.js-gallery img {width:100%;}
+	.hubcenter .product-recentlyviewed__imagelist {max-width:100%;margin:auto;}
 	
 	/* 글로벌 암웨이 */	 
 }
