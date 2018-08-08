@@ -1,22 +1,3 @@
-// $(function(){
-//     $(window).resize(function () {
-//         dialogPos();
-//     });
-//     $(".cboxClose").click(function () {
-//         $(".cbox,.overlay").hide();
-//     })
-// });
-// function dialogPos() {
-//     var W = $(window).width();
-//     var cW = $(".cbox").width();
-//     $(".cbox").css("left",(W-cW)/2);
-// }
-//
-// function openDialog() {
-//     $(".cbox,.overlay").show();
-//     dialogPos();
-// }
-
 /* akl 사용안함 : 2018.03.20
 function orderSummary() {
 	var win = $(window);
@@ -49,7 +30,6 @@ function orderSummary() {
 
 	});
 }
-*/
 
 function registerABO() {
 	var win=$(window);
@@ -73,16 +53,14 @@ function registerABO() {
 		}
 	})
 }
+*/
 
 $(function(){
 	$("#header").load("/_ui/responsive/html/header.html");
 	$("#quick").load("/_ui/responsive/html/quicklink.html");
 	$("#footer").load("/_ui/responsive/html/footer.html");
 
-	registerABO();
-});
 
-$(function(){
 	/** ---------------------------------
 	 *  배송지 정보
 	 *  ---------------------------------
@@ -226,15 +204,6 @@ $(function(){
 		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
 	})
 
-	/*
-	$('.tooltip-btn').click(function() {
-		$('.promotion-tip-alert').slideToggle(0);
-	});
-
-	$('.tip-close').click(function() {
-		$('.promotion-tip-alert').hide();
-	}); */
-
 	$('#G10000_lp9').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G10000_lp9_pop');
@@ -333,179 +302,6 @@ $(function(){
 
 });
 
-
-
-
-
-
-
-(function () {
-	'use strict';
-
-	$(window).resize(handleToggling);
-	function handleToggling() {
-		if (window.innerWidth < 768) {
-
-			$('.quick-links-js-header').addClass('collapsed');
-			$('.quick-links-js-header').attr('data-toggle', 'collapse');
-			$("ul[id^='quick-links-collapse']").removeClass('in');
-			$("ul[id^='quick-links-collapse']").addClass('padding-left-20');
-		} else {
-
-			$('.quick-links-js-header').removeAttr('data-toggle');
-			$("ul[id^='quick-links-collapse']").addClass('in');
-			$("ul[id^='quick-links-collapse']").removeClass('padding-left-20');
-		}
-	}
-
-	handleToggling();
-
-	$(".cartlist .cartlist-header").click(function(){
-		if($("#cartlistContent").is(':hidden')) {
-			$("#cartlistContent").slideDown(300);
-		} else {
-			$("#cartlistContent").slideUp(300);
-		}
-
-	});
-
-	$(".cartlist-view").click(function(){
-		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
-	})
-})();
-
-
-
-(function () {
-	var SPEED = 'slow';
-	function showSearchResults() {
-		var $this = $(this);
-		var $searchResult = $('.contacts-auto-suggestion');
-		if ($this.val().length >= 3) {
-			$searchResult.show();
-		} else {
-			$searchResult.hide();
-		}
-	}
-
-	function closeSearchResults() {
-		var $searchResult = $('.contacts-auto-suggestion').hide();
-	}
-
-	function contactsEvents() {
-		$('#contacts-search').on('keyup', showSearchResults);
-		$('#contacts-search').on('blur', closeSearchResults);
-	}
-
-	function init() {
-		contactsEvents();
-	}
-	init();
-})();
-
-
-// (function () {
-//     $(window).resize(navToggling);
-//
-//     function navToggling() {
-//         if (window.innerWidth < 768) {
-//             $('.overlay-menu-mobile__panel__heading').click(function () {
-//                 if($(this).hasClass('active')){
-//                     $(this).removeClass('active');
-//                     $(this).next('.panel-collapse').removeClass('in');
-//                     $(this).parent('.panel').siblings('.panel').show();
-//                     $('.nav-list-element').show();
-//                 }else{
-//                     $(this).addClass('active');
-//                     $(this).parent('.panel').siblings('.panel').hide();
-//                     $('.nav-list-element').hide();
-//                 }
-//             });
-//         } else {
-//         }
-//     }
-//
-//     navToggling();
-// })();
-$(function(){
-	//my account jump to event
-	$(".js-jump-to-selection-btn").click(function(e){
-		e.preventDefault();
-		var value =$(".js-jump-to-selection").val();
-		if (value == '/my-account') {
-			window.location.href = "my-account.html";
-		} else if (value == '/my-account/business-information') {
-			window.location.href = "business-information.html";
-		} else if (value == '/my-account/bonus-payment') {
-			window.location.href = "Bonus-Payment-Preference.html";
-		} else if(value == '/my-account/orders'){
-			window.location.href = "Order-History-Personal-Orders-expanded.html";
-		}else if(value == '/my-account/billing-shipping'){
-			window.location.href = "billing-shipping-add-new-payment-method.html";
-		}else if(value == '/my-account/bonus-payment'){
-			window.location.href = "Bonus-Payment-Preference.html";
-		} else if(value == '/my-account/auto-renewal'){
-			window.location.href = "auto-renewal.html";
-		}else if(value == '/my-account/update-profile'){
-			window.location.href = "Edit-Profile.html";
-		}else if(value == '/my-account/contract-renewal'){
-			window.location.href = "contract-renewal.html";
-		}else if(value == '/my-account/contracts'){
-			window.location.href = "contracts.html";
-		} else if(value == '/my-account/terms-and-conditions-management'){
-			window.location.href = "terms-and-conditions-management.html";
-		}else if(value == '/my-account/coupon-management'){
-			window.location.href = "coupon-management.html";
-		} else if(value == '/my-account/point-management'){
-			window.location.href = "point-management.html";
-		} else if(value == '/my-account/billing-shipping/credit-card-management'){
-			window.location.href = "credit-and-debit-card-management-non-payment-gateway.html";
-		}else if(value == '/my-account/billing-shipping/bank-account'){
-			window.location.href = "bank-account-management.html";
-		}else if(value == '/my-account/profile-management'){
-			window.location.href = "profile-management.html";
-		}
-	});
-
-
-	//business center jump to event
-	$(".prw-jump-to-button").click(function(e){
-		e.preventDefault();
-		var value =$(".form-control.no-uppercase-form-control").val();
-		if (value == '/my-business-center') {
-			window.location.href = "dashboard.html";
-		}else if(value == '/my-business-center/action-reports-overview'){
-			window.location.href = "action-reports-overview.html";
-		}else if(value == '/my-business-center/LOS-TreeView'){
-			window.location.href = "los-treeview.html";
-		}else if(value == '/my-business-center/customer-sales-history'){
-			window.location.href = "customer-sales-history.html";
-		}else if(value == '/my-business-center/key-indicators'){
-			window.location.href = "kpi-tracking.html";
-		}else if(value == '/my-business-center/pv-inquiry'){
-			window.location.href = "pv-inquiry.html";
-		}else if(value == '/my-business-center/PV/BV-Transfer'){
-			window.location.href = "pvbv-transfer.html";
-		}else if(value == '/my-business-center/create-receipt'){
-			window.location.href = "create-a-receipt-1.html";
-		}else if(value == '/my-business-center/my-business-income'){
-			window.location.href = "my-business-income.html";
-		}else if(value == '/my-business-center/message-center'){
-			window.location.href = "message-center.html";
-		}
-	});
-	$(".upTips").click(function(e){
-		e.preventDefault();
-		var flag = $(this).prev(".toolTips").is(":hidden");
-		if(flag) {
-			$(".toolTips").fadeOut();
-			$(this).prev(".toolTips").fadeIn();
-		} else {
-			$(this).prev(".toolTips").fadeOut();
-		}
-	})
-
-});
 
 
 //중개판매관리 2018.03.30
@@ -946,13 +742,13 @@ $(function() {
 $(function() {
 	$('.newpin a').click(function() {
 		if (this.hash !== "") {
-		  event.preventDefault();
+		event.preventDefault();
 
-		  var hash = this.hash;
-		  var headHei = $('.general-header').height();
-		  var trgt = $(hash).offset().top;
+		var hash = this.hash;
+		var headHei = $('.general-header').height();
+		var trgt = $(hash).offset().top;
 
-		  $('html').animate({scrollTop: trgt - headHei}, 400);
+		$('html').animate({scrollTop: trgt - headHei}, 400);
 		}
 	});
 });
@@ -994,5 +790,150 @@ $(function() {
 	$('.U70101_lp18').click(function(event){
 		event.preventDefault();
 		layerPopOver(this,'.U70101_lp18_pop');
+	});
+});
+
+
+
+
+/* ----- 코어 제공 js ----- */
+(function () {
+	'use strict';
+
+	$(window).resize(handleToggling);
+	function handleToggling() {
+		if (window.innerWidth < 768) {
+
+			$('.quick-links-js-header').addClass('collapsed');
+			$('.quick-links-js-header').attr('data-toggle', 'collapse');
+			$("ul[id^='quick-links-collapse']").removeClass('in');
+			$("ul[id^='quick-links-collapse']").addClass('padding-left-20');
+		} else {
+
+			$('.quick-links-js-header').removeAttr('data-toggle');
+			$("ul[id^='quick-links-collapse']").addClass('in');
+			$("ul[id^='quick-links-collapse']").removeClass('padding-left-20');
+		}
+	}
+
+	handleToggling();
+
+	$(".cartlist .cartlist-header").click(function(){
+		if($("#cartlistContent").is(':hidden')) {
+			$("#cartlistContent").slideDown(300);
+		} else {
+			$("#cartlistContent").slideUp(300);
+		}
+
+	});
+
+	$(".cartlist-view").click(function(){
+		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
+	})
+})();
+
+(function () {
+	var SPEED = 'slow';
+	function showSearchResults() {
+		var $this = $(this);
+		var $searchResult = $('.contacts-auto-suggestion');
+		if ($this.val().length >= 3) {
+			$searchResult.show();
+		} else {
+			$searchResult.hide();
+		}
+	}
+
+	function closeSearchResults() {
+		var $searchResult = $('.contacts-auto-suggestion').hide();
+	}
+
+	function contactsEvents() {
+		$('#contacts-search').on('keyup', showSearchResults);
+		$('#contacts-search').on('blur', closeSearchResults);
+	}
+
+	function init() {
+		contactsEvents();
+	}
+	init();
+})();
+
+$(function(){
+	//my account jump to event
+	$(".js-jump-to-selection-btn").click(function(e){
+		e.preventDefault();
+		var value =$(".js-jump-to-selection").val();
+		if (value == '/my-account') {
+			window.location.href = "my-account.html";
+		} else if (value == '/my-account/business-information') {
+			window.location.href = "business-information.html";
+		} else if (value == '/my-account/bonus-payment') {
+			window.location.href = "Bonus-Payment-Preference.html";
+		} else if(value == '/my-account/orders'){
+			window.location.href = "Order-History-Personal-Orders-expanded.html";
+		}else if(value == '/my-account/billing-shipping'){
+			window.location.href = "billing-shipping-add-new-payment-method.html";
+		}else if(value == '/my-account/bonus-payment'){
+			window.location.href = "Bonus-Payment-Preference.html";
+		} else if(value == '/my-account/auto-renewal'){
+			window.location.href = "auto-renewal.html";
+		}else if(value == '/my-account/update-profile'){
+			window.location.href = "Edit-Profile.html";
+		}else if(value == '/my-account/contract-renewal'){
+			window.location.href = "contract-renewal.html";
+		}else if(value == '/my-account/contracts'){
+			window.location.href = "contracts.html";
+		} else if(value == '/my-account/terms-and-conditions-management'){
+			window.location.href = "terms-and-conditions-management.html";
+		}else if(value == '/my-account/coupon-management'){
+			window.location.href = "coupon-management.html";
+		} else if(value == '/my-account/point-management'){
+			window.location.href = "point-management.html";
+		} else if(value == '/my-account/billing-shipping/credit-card-management'){
+			window.location.href = "credit-and-debit-card-management-non-payment-gateway.html";
+		}else if(value == '/my-account/billing-shipping/bank-account'){
+			window.location.href = "bank-account-management.html";
+		}else if(value == '/my-account/profile-management'){
+			window.location.href = "profile-management.html";
+		}
+	});
+
+
+	//business center jump to event
+	$(".prw-jump-to-button").click(function(e){
+		e.preventDefault();
+		var value =$(".form-control.no-uppercase-form-control").val();
+		if (value == '/my-business-center') {
+			window.location.href = "dashboard.html";
+		}else if(value == '/my-business-center/action-reports-overview'){
+			window.location.href = "action-reports-overview.html";
+		}else if(value == '/my-business-center/LOS-TreeView'){
+			window.location.href = "los-treeview.html";
+		}else if(value == '/my-business-center/customer-sales-history'){
+			window.location.href = "customer-sales-history.html";
+		}else if(value == '/my-business-center/key-indicators'){
+			window.location.href = "kpi-tracking.html";
+		}else if(value == '/my-business-center/pv-inquiry'){
+			window.location.href = "pv-inquiry.html";
+		}else if(value == '/my-business-center/PV/BV-Transfer'){
+			window.location.href = "pvbv-transfer.html";
+		}else if(value == '/my-business-center/create-receipt'){
+			window.location.href = "create-a-receipt-1.html";
+		}else if(value == '/my-business-center/my-business-income'){
+			window.location.href = "my-business-income.html";
+		}else if(value == '/my-business-center/message-center'){
+			window.location.href = "message-center.html";
+		}
+	});
+	$(".upTips").click(function(e){
+		e.preventDefault();
+		var flag = $(this).prev(".toolTips").is(":hidden");
+		if(flag) {
+			$(".toolTips").fadeOut();
+			$(this).prev(".toolTips").fadeIn();
+		} else {
+			$(this).prev(".toolTips").fadeOut();
+		}
 	});
 });

@@ -612,6 +612,14 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .tblList02 tfoot tr td.txLeft { text-align:left}
 .bizGuide h2 + .bizNumList{margin-top:16px;}
 .bizNumListT + .bizNumList{margin-top:4px;}
+
+.business-guide-wrap h2 + .bizNumList,
+.business-guide-wrap h2 + p, h3 + .bizNumList,
+.business-guide-wrap h3 + .bizNumListS { margin-left:15px;}
+.akl .amway-theme .business-guide-wrap h2 + h3.num,
+ .akl .amway-theme .business-guide-wrap p + h3.num,
+.business-guide-wrap h3.num + p  { margin-left:15px;}
+
 .bizNumList{margin-top:12px;}
 .bizNumList > li{ line-height:23px; padding-left:15px; text-indent:-15px;}
 .bizNumList > li li{font-weight:normal; text-indent:0}
@@ -845,6 +853,46 @@ ul.woo-step-box li:last-child:before {background:none}
 .personalq-list .box-diagram-perq { margin:16px 0 20px}
 .akl .amway-theme .business-guide-wrap .box-diagram-perq h3 {font-size: 16px;margin: 0 0 35px;}
 .personalq-list .gn-box{ margin:16px 0 20px}
+
+.box-diagram-perq.type01 { overflow:hidden; padding:40px 10px;}
+.box-diagram-perq.type01 ol { margin:0 auto;  }
+.box-diagram-perq.type01 ol li { margin: 0 3%; display:inline-block; position:relative;}
+.box-diagram-perq.type01 ol li:after { content:"OR"; position:absolute; right:-50px; top:58px; font-weight:500; color: #002f5f; }
+.box-diagram-perq.type01 ol li p {margin:0 auto; width:146px; height:236px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca01.png') 0 0 no-repeat; background-size:919px auto}
+.box-diagram-perq.type01 ol li:nth-of-type(2) p { width:82px; background-position:-261px 0}
+.box-diagram-perq.type01 ol li:nth-of-type(3) p { width:105px; background-position:-479px 0}
+.box-diagram-perq.type01 ol li:nth-of-type(4) p { width:243px; background-position:-679px 0}
+.box-diagram-perq.type01 ol li:nth-of-type(1) { margin-left:0}
+.box-diagram-perq.type01 ol li:nth-of-type(4) { margin-right:0}
+.box-diagram-perq.type01 ol li:nth-of-type(3):after {right:-60px;}
+.box-diagram-perq.type01 ol li:nth-of-type(4):after {display:none}
+
+.box-diagram-perq.type02 { overflow:hidden;}
+.box-diagram-perq.type02 ol {max-width:930px; margin:0 auto;}
+.box-diagram-perq.type02 ol li { float:left; width:25%; }
+.box-diagram-perq.type02 ol li p {margin:0 auto; width:164px; height:160px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca03.png') 0 0 no-repeat; background-size:849px auto}
+.box-diagram-perq.type02 ol li:nth-of-type(2) p { background-position:-230px 0}
+.box-diagram-perq.type02 ol li:nth-of-type(3) p { background-position:-461px 0}
+.box-diagram-perq.type02 ol li:nth-of-type(4) p { background-position:-688px 0}
+
+.akl .gn-box02 {margin-top:20px; padding:40px 20px; border:1px solid #dadada; background:#fff}
+.case-list01 { margin: 0 auto; width:863px; text-align:left;}
+.case-list01 li {  padding:20px 0; }
+.case-list01 li:nth-of-type(5) { padding-bottom:0;}
+.case-list01 li strong { display:block; padding-left:43px;  margin-bottom:30px; color:#002f5f; font-size:16px; height:30px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/icon_nca.png') 0 0 no-repeat; background-size:33px auto }
+.case-list01 li > div {width:603px; position:relative; border-bottom:1px solid #dadada;  padding-bottom:40px; }
+.case-list01 li:nth-of-type(5) div { padding-bottom:0; border-bottom:0; }
+.case-list01 li > div p { height:72px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca08.png') 0 0 no-repeat; background-size:850px auto}
+.case-list01 li > div.ex-case02 p { background-position:0 -97px}
+.case-list01 li > div.ex-case03 p { background-position:0 -189px}
+.case-list01 li > div.ex-case04 p { background-position:0 -283px}
+.case-list01 li > div.ex-case05 p { background-position:0 -376px}
+.case-list01 li > div > em { display:block; margin-top:30px}
+.case-list01 li > div span { position:absolute; right:-120px; top:10px; display:block; width:100px; height:105px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca08.png') -750px 0 no-repeat; background-size:850px auto}
+.case-list01 li > div.ex-case02 span { background-position:-612px -113px; right:-280px; width:250px; height:130px;}
+.case-list01 li > div.ex-case03 span,
+.case-list01 li > div.ex-case04 span { background-position:-750px -257px; }
+
 .tblList02 th p { padding-left:48px; height:53px; line-height:53px; font-weight:500; color:#002f5f; position:relative; display: inline-block; }
 .tblList02 th [class*="iconcase"]:before { content:"";  display:block; position:absolute; left:0; top:0; width:40px; height:53px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca06_mob.png') 0 3px no-repeat; background-size:40px auto }
 .tblList02 th [class*="iconcase-02"]:before { background-position: 0 -45px }
@@ -884,6 +932,8 @@ ul.woo-step-box li:last-child:before {background:none}
 .case-list02 li [class*="imgcase01-03"] {background-position: center -248px }
 .case-list02 li [class*="imgcase01-04"] {background-position: center -382px }
 .case-list02 li [class*="imgcase01-05"] {background-position: center -510px }
+
+
 
 /* 사업 가이드 > 사업규정 */
 .bizStit { font-size:15px; font-weight:500; margin-bottom:15px;}
@@ -1128,7 +1178,15 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram04-right {float:none; width:100%; height:auto; padding-bottom:40px; overflow:hidden;}
 	.box-diagram04 .box-diagram04-right p.text-tit { margin-top:20px; padding-top:20px}
 	.box-diagram04 dl { height:auto; }
-	.box-diagram04 .plus {  top:50%;  margin-top:-25px; }
+	.box-diagram04 .plus {  top:50%;  margin-top:-17px; }
+
+	/* 사업 가이드 > GIP&NCA */
+	.case-list01 { width:auto; }
+	.case-list01 li > div {width:auto; }
+	.case-list01 li > div p { width:603px; margin:0 auto;}
+	.case-list01 li > div > em { width:auto; }
+	.case-list01 li > div span { position:relative; right:auto; top:auto; margin:30px auto 0}
+	.case-list01 li > div.ex-case02 span { position:relative; right:auto; top:auto; margin:30px auto 0}
 }
 
 @media (max-width:970px){
@@ -1259,6 +1317,32 @@ ul.woo-step-box li:last-child:before {background:none}
 	.personalq-list dd{ padding-left:15px; }
 	.personalq-list .box-diagram-perq { margin:16px 0 20px}
 	.personalq-list .gn-box{ margin:16px 0 20px}
+
+	.box-diagram-perq.type01 ol li { margin: 0 auto; display:block; position:relative;}
+	.box-diagram-perq.type01 ol li:after { display:none}
+	.box-diagram-perq.type01 ol li p {margin:0 auto; width:166px; height:194px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca01_mob.png') 0 0 no-repeat; background-size:166px auto}
+	.box-diagram-perq.type01 ol li:nth-of-type(2) p { width:166px; height:176px; background-position:0 -194px}
+	.box-diagram-perq.type01 ol li:nth-of-type(3) p { width:166px; height:199px; background-position:0 -374px}
+	.box-diagram-perq.type01 ol li:nth-of-type(4) p { width:166px; height:204px; background-position:0 -572px}
+
+	.box-diagram-perq.type02 { overflow:hidden;  }
+	.box-diagram-perq.type02 ol {max-width:930px; margin:0 auto;  }
+	.box-diagram-perq.type02 ol li { float:none; width:auto; margin-bottom:40px;}
+	.box-diagram-perq.type02 ol li:nth-of-type(4) {margin-bottom:0}
+	.box-diagram-perq.type02 ol li p {margin:0 auto; width:251px; height:41px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca03_mob.png') 0 0 no-repeat; background-size:251px auto}
+	.box-diagram-perq.type02 ol li:nth-of-type(2) p { background-position:0 -70px; }
+	.box-diagram-perq.type02 ol li:nth-of-type(3) p { background-position:0 -140px; height:101px;}
+	.box-diagram-perq.type02 ol li:nth-of-type(4) p { background-position:0 -269px; height:162px; margin-bottom:0 }
+
+	.case-list01 li > div p { width:228px; height:158px;  margin:0 auto; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca08_mob.png') 0 0 no-repeat; background-size:506px auto}
+	.case-list01 li > div.ex-case02 p { background-position:0 -184px}
+	.case-list01 li > div.ex-case03 p { background-position:0 -369px}
+	.case-list01 li > div.ex-case04 p { background-position:0 -548px}
+	.case-list01 li > div.ex-case05 p { background-position:0 -731px}
+	.case-list01 li > div span {  width:86px; height:86px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca08_mob.png') -277px 0 no-repeat; background-size:506px auto}
+	.case-list01 li > div.ex-case02 span { background-position:-277px -99px; width:230px; height:112px;}
+	.case-list01 li > div.ex-case03 span,
+	.case-list01 li > div.ex-case04 span { background-position:-277px -234px; }
 
 	.tblList02 th p { padding-left:0; height:auto; padding-top:40px; line-height:100%; font-size:10px }
 	.tblList02 th [class*="iconcase"]:before {  width:30px; height:40px; background-size:30px auto }
@@ -1574,6 +1658,8 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram04-right dl.case01 dt em{ width:72px; background-position:0 0px;; background-size:81px auto}
 	.box-diagram04-right dl.case02 dt em{ width:82px; background-position:0 -210px; background-size:81px auto}
 	.box-diagram04-right dl.case03 dt em{ width:92px; background-position:0 -410px;background-size:81px auto}
+
+	.box-diagram04 .plus { margin-top: -112px;}
 
 }
 
