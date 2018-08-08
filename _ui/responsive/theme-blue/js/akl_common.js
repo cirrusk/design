@@ -1,4 +1,31 @@
-﻿﻿$(function(){
+﻿$(function(){
+
+	﻿$.fn.enterKey = function (fnc) {
+		return this.each(function () {
+			$(this).keypress(function (ev) {
+				var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+				if (keycode == '13') {
+					fnc.call(this, ev);
+				}
+			});
+		});
+	}
+
+	var focusableElements = '.amw-radio-wrap, .radio-label , input[type=checkbox]+label';
+	var focusableEls = $(document).find(focusableElements);
+
+	focusableEls.addClass('focus').attr('tabindex','0');
+	focusableEls.enterKey(function(){
+		if( $(this).find('input[type=radio]').prop("checked", false) ){
+			$(this).find('input[type=radio]').prop("checked", true).attr('checked',true);
+		}
+
+		var chk = $(this).prev().is(":checked");
+		if (chk){ $('label').prev('input[type=checkbox]').prop('checked', false).attr('checked',false);}
+		else    { $('label').prev('input[type=checkbox]').prop('checked', true).attr('checked',true);}
+	});
+
+
 /** ----- 공통 ----- */
 
 	//탭 스크롤
