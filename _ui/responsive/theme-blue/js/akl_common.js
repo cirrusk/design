@@ -162,8 +162,13 @@
 	//SOP - 정기주문 혜택정보 노출
 	SOP_PDP_benefitsTips();
 
-/** ----- 비즈니스 ----- */
 
+/** ----- 나의 쇼핑정보 ----- */
+	// 나의 주문내역 list - 짝수줄 서브목록 bg 넣기
+	MyOrderLIST_row_bgcolor();
+
+
+/** ----- 비즈니스 ----- */
 	//여행점수 시뮬레이션
 	BarChart();
 
@@ -246,6 +251,7 @@
 	});
 
 });
+
 
 /** ------------------------------------
  *  공통
@@ -1306,7 +1312,7 @@ function toggleBox_Guide(){
 }
 
 /** ------------------------------------
- *  쇼핑-SOP
+ *  쇼핑-스마트오더 프로그램
  *  ------------------------------------
  */
 /* SOP 프로필 수정하기 */
@@ -1379,6 +1385,24 @@ function SOP_PDP_benefitsTips(){
 			$BtnText.text('정기주문 혜택 닫기');
 			sop_benefits.addClass('open');
 			sop_benefits.stop().animate({ height: height_wrapper },'fast');
+		}
+	});
+}
+
+/** ------------------------------------
+ *  나의 쇼핑정보
+ *  ------------------------------------
+ */
+
+/* 나의 주문내역 list - 짝수줄 서브목록 bg 넣기 */
+function MyOrderLIST_row_bgcolor(){
+	var myOrderList = $(document).find('.myorder-list.type02');
+	myOrderList.each(function(){
+		var LIST_ROW = $(this).find('.row.con-list-item');
+		var EVEN_ROW = LIST_ROW.filter(':nth-of-type(even)');
+
+		if( EVEN_ROW.next('.sub-list').length ){
+			EVEN_ROW.nextUntil( LIST_ROW ).addClass('row-bg');
 		}
 	});
 }
