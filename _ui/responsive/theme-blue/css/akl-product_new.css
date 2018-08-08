@@ -5,7 +5,7 @@ Version : AKL Hybris UIUX 1.0
 iframe {border:0;}
 .product-body-view {word-break:keep-all;word-wrap:break-word;letter-spacing:-0.08em;}
 .visual-area {width:100%;position:relative;text-align:center;padding: 0 8.5% 0;}
-.visual-area.type01 {background-color:#eeede3;background-url:url('../images/akl_product/bg_NU02_01.png') no-repeat top center;height:840px;}
+.visual-area.type01 {background:#eeede3 url('../images/akl_product/nutrition-health/bg_NU02_01.png') no-repeat top center;height:840px;}
 .visual-area.type02 {background-color:#c9e3f6;min-height:620px;/*padding:0 20px 30px;*/}
 .visual-area.type03 {background-color:#f3f2eb;min-height:890px;/*padding:0 20px 30px;*/}
 .visual-area.type04 {background: url('../images/akl_product/beauty/bg_youth_xtend_set.png') no-repeat top center;min-height:840px;/*padding:0 20px 0;*/}
@@ -248,6 +248,7 @@ iframe {border:0;}
 .green15{color:#14bbaf !important;}
 .green16{color:#5db327 !important;}
 .green17{color:#73aa4f !important;}
+.green18{color:#235921 !important;}
 
 .black{color:#000000 !important;} 
 .black02{color:#001c31;}
@@ -313,13 +314,13 @@ iframe {border:0;}
 .description-area .cd-pro {margin:20px 0 0;text-align:center;}
 .description-area .cd-pro img {text-align:center;margin:0 auto;width:auto;height:auto;}
 
-.info-p-list {clear:both;display:block;margin:30px auto;}
-.info-p-list ul {width:100%;margin:0 auto;}
+.info-p-list {clear:both;display:block;}
+.info-p-list ul {width:100%;}
 .info-p-list ul:after {content:'';clear:both;display:block;}
-.info-p-list ul li {float:left;width:14.28%;text-align:center;vertical-align:top;min-height:140px;}
+.info-p-list ul li {float:left;width:14.28%;margin-top:18px;text-align:center;vertical-align:top;min-height:140px;}
 .info-p-list ul li span {display:block;padding:10px 10px 0;text-align:center;}
 .info-p-list ul li span img {width:auto;height:auto;}
-.info-p-list ul li p {margin:10px 0 0;font-size:16px;letter-spacing:-1px;}
+.info-p-list ul li p {margin:10px 0 0;font-size:16px;color:#808285;letter-spacing:-1px;}
 
 .description-area.line-box {clear:both;display:block;border:1px solid #e3e3e3;padding:35px 40px;}
 .description-area.line-box .cd-tit {font-size:30px;}
@@ -874,16 +875,15 @@ dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 .health-inform-box.type2.acerola_C .advan-right {width:40%;}
 
 /* 더블엑스 리필 */
-.visual-area.type01.doubleX_Refill {min-height:950px;}
+.visual-area.type01.doubleX_Refill {min-height:1000px;}
 .visual-area.type01.doubleX_Refill .v-logo {padding:100px 0 0;}
 .visual-area.type01.doubleX_Refill .txt-info-visual .v-txt {margin:30px 23% 0;}
 .visual-area.type01.doubleX_Refill .txt-info-visual .v-etc {font-size:16px;color:#808285;}
 
 .description-area.doubleX_Refill {border-top:1px solid #e3e3e3;margin:50px 0 0;padding:50px 0 0}
-.description-area.doubleX_Refill .com-tit {font-size:32px;}
-.description-area.doubleX_Refill .com-tit span {display:block;}
 
-.ingred-analy {margin:30px auto;}
+
+.ingred-analy {margin:30px auto 18px;}
 .ingred-analy ul {display:table;width:100%;}
 .ingred-analy li {display:inline-block;background:url('../images/akl_product/nutrition-health/bg_doubleX_refill_won.png') no-repeat left center;padding:0 6px 0 42px}
 .ingred-analy li:first-child {background:0 none;padding:0 8px 0 0}
@@ -1865,6 +1865,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.description-area.doubleX_Refill .com-tit {font-size:20px;}
 	.description-area.doubleX_Refill .com-tit span {display:inline-block;}
 
+	/*
 	.ingred-analy {margin:15px auto 0;padding:0 0;}
 	.ingred-analy ul {display:table;width:100%;}
 	.ingred-analy li {display:inline-block;position:relative;width:33.333%;padding:0 0}
@@ -1875,7 +1876,10 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.analy-value dl dt span {bottom:2px;font-size:13px;margin:0 0;padding:0 0 15px;font-weight:300}
 	.analy-value dl dt p {font-size:30px;}
 	.analy-value dl dd {padding:8px 0 0;font-size:11px;letter-spacing:-0.03em}
-
+	*/
+	.ingred-analy li,
+	.ingred-analy li:first-child{padding:0;}
+	
 	.gray-box {padding:20px 20px;}
 	.gray-box p {font-size:16px;}
 

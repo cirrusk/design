@@ -10,6 +10,7 @@ Editor : HYEWON HWANG
 .fr {float:right;}
 .tl {text-align:left;}
 .tr {text-align:right;}
+.full {width:100%;}
 
 /* 전체메뉴 */
 /* select2.css 
@@ -190,7 +191,7 @@ Editor : HYEWON HWANG
 .brand .brand-contents {position:relative;}
 .brand .brand-contents > h1 {margin:10px 0 27px;}
 .brand .brand-contents > h1 + .tit-txt {margin:-15px 0 35px;} 
-.brand .brand-contents h2{font-size:18px;text-align:left;text-transform:none;letter-spacing:-1px;margin:0 0 20px;}
+.brand .brand-contents h2{text-align:left;text-transform:none;letter-spacing:-1px;margin:0 0 20px;}
 .brand .brand-contents h2:not(:first-child) {margin-top:40px;}
 .brand .brand-contents h3 {margin-bottom:10px;}
 .brand .brand-contents p {margin:0 0 10px;}
@@ -203,120 +204,36 @@ Editor : HYEWON HWANG
 
 .brand-contents .col-search-tab {margin-top:40px;}
 .brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;}
+.brand-contents .col-search-tab.s1 ul li {flex:1;}
 
 
 /* 암웨이소개 */ 
-.brand img.mob { display: none;}
-.brand .three-tile-component{
-	margin-left: -15px;
-    margin-right: -15px;
-}
-.brand .masthead {
-    position: relative;
-    width: 100%;
-    display: table;
-    margin:0 auto;
-    }
-.brand .masthead img {
-    width: 100%;
-}
-.brand .masthead .mob {
-    display: none;
-}
-.brand .masthead .banner_wrapper {
-    padding-left: 100px;
-    z-index: 99;
-    max-width: 1400px;
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-.brand .masthead .banner_wrapper h1 {
-    /*font-family: 'RobotoCondensed';*/
-    font-size: 45px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #fff;
-}
-.brand .masthead .banner_wrapper .text {
-    font-size: 20px;
-    display: block;
-    max-width: 55%;
-    margin-bottom: 20px;
-    color: #fff;
-}
+.brand img.mob { display:none;}
+.intro .three-tile-component {margin-left:-15px; margin-right:-15px;}
+.intro .masthead {position:relative; width:100%; display:table; margin:0 auto;}
+.intro .masthead img {width:100%;}
+.intro .masthead .mob {display:none;}
+.intro .masthead .banner_wrapper {padding-left:100px; z-index:99; max-width:1400px; margin:0; position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); transform:translate(-50%, -50%); width:100%;}
+.intro .masthead .banner_wrapper h1 { font-size:45px; line-height:1.2; text-transform:uppercase; margin-bottom:30px; color:#fff;}
+.intro .masthead .banner_wrapper .text {font-size:20px; display:block; max-width:55%; margin-bottom:20px; color:#fff;}
 
-.brand .experience-brands {
-    margin-bottom: 50px;
-}
+.intro .experience-brands {margin-bottom:50px;}
+.amway-theme .intro .experience-brands.pullRight .masthead .banner_wrapper {transform:translate(0, -50%); width:auto; max-width:100%; overflow:hidden;}
+.amway-theme .intro .experience-brands .masthead .banner_wrapper .text{color:#002f5f;}
+.amway-theme .intro .experience-brands .masthead .banner_wrapper h1 {color:#002f5f;}
+.amway-theme .intro .experience-brands.hasBorder {border-bottom:1px solid #dadada; padding-bottom:50px;}
 
-.amway-theme .intro .experience-brands.pullRight .masthead .banner_wrapper {
-    transform: translate(0, -50%);
-    width: auto;
-    max-width: 100%;
-    overflow: hidden;
-}
-.amway-theme .intro .experience-brands .masthead .banner_wrapper .text{
-	color: #002f5f;
-}
-.amway-theme .intro .experience-brands .masthead .banner_wrapper h1 {
-    color: #002f5f;
-}
-
-#about-amway .about-amway-content {
-    margin-top: 50px;
-}
-.brand.amway-theme .experience-brands.hasBorder {
-    border-bottom: 1px solid #dadada;
-    padding-bottom: 50px;
-}
-
-#about-amway .content-article-bottom {
-    border-top: none;
-}
-#about-amway .about-amway-content .block .item-content-wrap {
-    background-color: #002F5F;
-}
+#about-amway .about-amway-content {margin-top:50px;}
+#about-amway .content-article-bottom {border-top:none;}
+#about-amway .about-amway-content .block .item-content-wrap {background-color:#002F5F;}
 
 .akl .intro .bt-akl-blue {border:1px solid #fff;}
 
-.intro .banner-button-link .btn{    
-	line-height: 0.95em;
-    height: 40px;
-    padding: 10px 25px;
-}
-.amway-theme .intro .category-success-story .item-content-wrap {
-    max-width: 80%;
-    height: auto;
-    max-height: 191px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-}
-.intro .category-success-story .item-content-wrap .banner-title{
-	font-size: 36px;
-    font-weight: bold;
-    font-stretch: condensed;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    margin: 0;
-}
-.intro .category-success-story .item-content-wrap .sub-title-wrap {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.11;
-}
-
-.intro .category-success-story{    
-	margin: 0 auto 20px;
-    text-align: center;
-}
+.intro .banner-button-link .btn{line-height:0.95em; height:40px; padding:10px 25px;}
+.amway-theme .intro .category-success-story .item-content-wrap {max-width:80%; height:auto; max-height:191px; padding-top:22px; padding-bottom:22px;}
+.intro .category-success-story .item-content-wrap .banner-title{font-size:36px; font-weight:bold; font-stretch:condensed; text-transform:uppercase; text-align:center; line-height:1; margin:0;}
+.intro .category-success-story .item-content-wrap .sub-title-wrap {font-size:18px; font-weight:600; line-height:1.11;}
+.intro .category-success-story{margin:0 auto 20px; text-align:center;}
 
 .akl .brand h2.amway-learning__title {margin:55px auto;text-align:center;font-size:32px;letter-spacing:-2px;}
 .akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item a {display:inline-block;width:136px;padding-top:136px;color:#00305e;font-size:16px;font-weight:400;background:url('/_ui/responsive/theme-blue/images/akl_brand/about/brand_icons.png') no-repeat 0 0;}
@@ -464,6 +381,15 @@ Editor : HYEWON HWANG
 	
 
 	/* ### 암웨이소개 ### */
+	/* 암웨이소개 메인 */ 
+
+	.brand .mob, .intro .masthead .mob, .amway-theme .desktop-image-mob  {
+	    display: block;
+	}
+	.brand .pc, .intro .masthead .pc, .amway-theme .desktop-image {
+	    display: none;
+	}
+	/**/
 
 	/* CEO인사말 */ 
 	.ceo .full-component h2 {margin:20px 0;font-size:18px !important;}
