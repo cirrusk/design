@@ -803,7 +803,7 @@ function orderSummaryFixed(){
 		//주문결제 div
 		var targetWrapper = $('.shipping-delivery');
 		var targetWrap_top = targetWrapper.offset().top;
-		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom : 1750
+		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom
 
 		//주문회원정보 (floating div)
 		var targetObj = $('.shipping-delivery-summary');
@@ -859,7 +859,6 @@ function cartSummaryFixed(){
 		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var quickSrchbox = $('.account-section-content').outerHeight(true);
 		var newTopAreaHeight = $('.cart-items-wrapper').offset().top - headerHeight - headerBtmSpace;
-		//var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
 
 		var _winWidth = $(window).width();
 		var cartContentTop = $('.cart-content-wrapper').offset().top; //위시리스트에서 사용
@@ -883,6 +882,7 @@ function cartSummaryFixed(){
 			var wishListTop = $('.wishlist-wrapper').offset().top;
 			var pageTitHeight = wishListTop - cartContentTop;
 
+			targetObj.addClass('fixed');
 			compareTop = targetWrap_btm - targetObj_H - pageTitHeight - 94; //-94px은  border-bottom 맞추기 위한 보정값
 		} else {
 			compareTop = targetWrap_btm - targetObj_H;
@@ -911,6 +911,7 @@ function cartSummaryFixed(){
 					'right': positionRight
 				});
 			} else {
+				targetObj.removeClass('fixed');
 				targetObj.attr('style','');
 			}
 		}
