@@ -858,13 +858,13 @@ function cartSummaryFixed(){
 		var headerHeight = 139;
 		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var quickSrchbox = $('.account-section-content').outerHeight(true);
-		//var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
 		var newTopAreaHeight = $('.cart-items-wrapper').offset().top - headerHeight - headerBtmSpace;
+		//var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
 
-		//target position : right
 		var _winWidth = $(window).width();
-		var conWidth = $('.cart-content-wrapper').width(); //content width
-		var positionRight = (_winWidth - conWidth)/2;
+		var cartContentTop = $('.cart-content-wrapper').offset().top; //위시리스트에서 사용
+		var conWidth_width = $('.cart-content-wrapper').width(); //content width
+		var positionRight = ( _winWidth - conWidth_width)/2;
 
 		/* -- 중간 멈춤 위치 찾기 -- */
 		//cart div
@@ -878,14 +878,18 @@ function cartSummaryFixed(){
 		var targetObj_H = targetObj.outerHeight(true);
 
 		//재설정 위치값
-		var compareTop = targetWrap_btm - targetObj_H; //1063
+		var compareTop;
+		if ($('#Shopping-List-Detail').length){ /* 위시리스트 */
+			var wishListTop = $('.wishlist-wrapper').offset().top;
+			var pageTitHeight = wishListTop - cartContentTop;
+
+			compareTop = targetWrap_btm - targetObj_H - pageTitHeight - 94; //-94px은  border-bottom 맞추기 위한 보정값
+		} else {
+			compareTop = targetWrap_btm - targetObj_H;
+		}
+
 		var targetReTOP = compareTop - targetWrap_top + headerHeight - quickSrchbox;
 		var $cartContent = targetObj.parents('.shop-cart-conts').find('.cart-items-wrapper');
-
-		/* 위시리스트
-		var accountTop = $('.user-account-header').outerHeight(true);
-		if( $('#Shopping-List-Detail').length){
-		} */
 
 		if( _winWidth > 768 ){
 			//기본높이 부여
