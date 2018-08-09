@@ -922,10 +922,13 @@ ul.woo-step-box li:last-child:before {background:none}
 
 .case-list02 li { border-bottom:1px solid #dadada; padding:40px 0; margin-bottom:40px;}
 .case-list02 li:last-child { border-bottom:0; margin-bottom:0;}
-.case-list02 li p { position:relative; padding-left:105px; text-indent:-14px; line-height:140%}
+.case-list02 li p { position:relative; padding-left:110px; line-height:140%}
 .case-list02 li p strong{display:block; position:absolute; left:0; top:50%; width:73px; height:96px; margin-top:-48px; color:#002f5f; padding-top:78px; text-align:center; text-indent:0 }
-.case-list02 li p i {font-size:20px; color:#002f5f; }
+.case-list02 li p i {color:#002f5f; font-size:20px; display:none }
 .case-list02 li p [class*="iconcase01"]:before{content:"";  display:block; position:absolute; left:0; top:0; width:73px; height:73px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca07_mob.png') 0 0 no-repeat; background-size:73px auto }
+.case-list02 li p:before, .case-list02 li p:after {content:''; display:inline-block; width:9px; height:8px; vertical-align:middle; margin-top:-12px; background-size:80px 300px; background-image:url('/_ui/responsive/theme-blue/images/akl_common/business/ico_gn01.png');}
+.case-list02 li p:before {background-position:-71px -41px; margin-right:5px}
+.case-list02 li p:after {background-position:-71px -73px; margin-left:5px}
 
 .case-list02 li p [class*="iconcase01-02"]:before { background-position: 0 -97px }
 .case-list02 li p [class*="iconcase01-03"]:before { background-position: 0 -192px }
@@ -937,8 +940,6 @@ ul.woo-step-box li:last-child:before {background:none}
 .case-list02 li [class*="imgcase01-03"] {background-position: center -248px }
 .case-list02 li [class*="imgcase01-04"] {background-position: center -382px }
 .case-list02 li [class*="imgcase01-05"] {background-position: center -510px }
-
-
 
 /* 사업 가이드 > 사업규정 */
 .bizStit { font-size:15px; font-weight:500; margin-bottom:15px;}
