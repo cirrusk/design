@@ -34,7 +34,7 @@
 		<div id="header"></div>
 		<!-- ## 브랜드 전체메뉴 영역 -->
 		<div id="brandMenu" class="container-fluid"> 
-			<div class="print-hide breadcrumb-section brand-fullmenu">
+			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li> 
 					<li>암웨이소개</li>
@@ -146,8 +146,8 @@
 				</section>
 				<h2 class="title-h5 color-gray">글로벌 암웨이 히스토리</h2>
 				<p class="bdbtm">암웨이가 걸어온 길, 그것은 곧 세상과 함께 나눈 신뢰의 역사입니다.</p>
+				
 				<section class="timeline-cont1">
-					<!-- ai-is -->
 	                <div class="timeline">
 	                    <div class="timelineWrap owl-carousel owl-theme"> 
 	                        <!-- data 1 -->
@@ -298,7 +298,6 @@
 	                        </div>
 						</div>
 					</div>
-	                    
 					<!-- // -->
 				</section>
 				
@@ -308,69 +307,23 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	
-<style>
-
-
-/*.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next {
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    height: 20px;
-    margin-top: -10px;
-    border: 0;
-    background: none;
-    font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;
-    color: #999999;
-    cursor: pointer;
-    padding-left: 20px;
-}
-.owl-theme .owl-nav .owl-prev:before {
-    content: "\f053";
-}
-.owl-theme .owl-nav .owl-prev:before, .owl-theme .owl-nav .owl-next:before {
-    font-size: 18px;
-    position: absolute;
-    left: 0;
-    width: 20px;
-    text-align: center;
-    top: 0;
-    vertical-align: top;
-}
-
-.owl-nav button {
-    background: none;
-    border: none;
-    color: #0075a4;
-}
-*/
-
-</style>
-<script type="text/javascript">
-    $(function() { 
-        $('.timelineWrap').owlCarousel({
-            loop: true,
-            nav: true,
-            dots: true,
-            margin: 0,
-            items: 1
-        });
-        $('#facility-list').owlCarousel({
-            loop: true,
-            nav: true,
-            dots: false,
-            margin: 0,
-            items: 1
-        });
-    }); 
-</script>	
+	<script type="text/javascript">
+	    $(function() { 
+	        $('.timelineWrap').owlCarousel({
+	            loop: true,
+	            nav: true,
+	            dots: true,
+	            margin: 0,
+	            items: 1
+	        });
+	        $('#facility-list').owlCarousel({
+	            loop: true,
+	            nav: true,
+	            dots: false,
+	            margin: 0,
+	            items: 1
+	        });
+	    }); 
+	</script>	
 </body>
 </html>
