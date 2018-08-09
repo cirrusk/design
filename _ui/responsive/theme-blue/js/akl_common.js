@@ -1,32 +1,38 @@
 ﻿$(function(){
-
-	﻿$.fn.enterKey = function (fnc) {
-		return this.each(function () {
-			$(this).keypress(function (ev) {
-				var keycode = (ev.keyCode ? ev.keyCode : ev.which);
-				if (keycode == '13') {
-					fnc.call(this, ev);
-				}
-			});
-		});
-	}
-
-	var focusableElements = '.amw-radio-wrap, .radio-label , input[type=checkbox]+label';
-	var focusableEls = $(document).find(focusableElements);
-
-	focusableEls.addClass('focus').attr('tabindex','0');
-	focusableEls.enterKey(function(){
-		if( $(this).find('input[type=radio]').prop("checked", false) ){
-			$(this).find('input[type=radio]').prop("checked", true).attr('checked',true);
-		}
-
-		var chk = $(this).prev().is(":checked");
-		if (chk){ $('label').prev('input[type=checkbox]').prop('checked', false).attr('checked',false);}
-		else    { $('label').prev('input[type=checkbox]').prop('checked', true).attr('checked',true);}
-	});
-
-
 /** ----- 공통 ----- */
+
+	//radio, checkbox 키보드로 체크하기
+	var focusable_labels = '.amw-radio-wrap, .radio-label, input[type=radio]+label , .checkbox-element-wrapper, input[type=checkbox]+label';
+	var _focusableEls = $(document).find( focusable_labels );
+	_focusableEls.addClass('focus').attr('tabindex','0');
+	_focusableEls.keypress(function(event){
+		var keycode = event.keyCode || event.which;
+		if( keycode == '13' ){
+
+			//라디오 Type1 : label wrapper
+			var input_Radio = $(this).find('input[type=radio]');
+			if( input_Radio.prop("checked", false)){
+				input_Radio.prop("checked", true).attr('checked',true);
+			}
+
+			//라디오 Type2 : checkbox + label
+			var prev_RadioBox = $(this).prev('input[type=radio]');
+			if( prev_RadioBox.prop("checked", false)){
+				prev_RadioBox.prop("checked", true).attr('checked',true);
+			}
+
+			//체크박스 Type1 : label wrapper
+			var input_CheckBox = $(this).find('input[type=checkbox]');
+			var input_CheckBox_Chked = input_CheckBox.is(":checked");
+			input_CheckBox_Chked ? input_CheckBox.prop('checked', false).attr('checked',false) : input_CheckBox.prop('checked', true).attr('checked',true);
+
+			//체크박스 Type2 : checkbox + label
+			var prev_CheckBox = $(this).prev('input[type=checkbox]');
+			var prev_CheckBox_Chked = prev_CheckBox.is(":checked");
+			prev_CheckBox_Chked ? prev_CheckBox.prop('checked', false).attr('checked',false) : prev_CheckBox.prop('checked', true).attr('checked',true);
+
+		}
+	});
 
 	//탭 스크롤
 	tabsTgg_Control();
