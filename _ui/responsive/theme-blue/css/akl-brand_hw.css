@@ -137,7 +137,9 @@ Editor :
 
 .biz-slide-wrap {margin-top:40px;padding:0 20px;}
 .biz-slide-wrap a.primary-link span {position:absolute;width:100%;height:auto;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);margin:0;text-indent:-99999px;}
+.biz-slide-wrap a.primary-link span:after {clear:both;content:'';display:block;position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;background:url(../images/akl_brand/common/bg_movie_play.png) no-repeat 0 0;background-size:contain;}
 .biz-slide-wrap a.primary-link p {position:absolute;bottom:20px;left:20px;color:#fff;z-index:1;font-weight:500;font-size:14px;margin:0;}
+
 
 .biz-qna {padding:0 60px;}
 .biz-qna dt {position:relative;display:table;min-height:54px;margin-bottom:30px;}
@@ -153,6 +155,8 @@ Editor :
 .biz-qna dd div:after {right:-5px;background-color:#f4f4f4;}
 
 @media (max-width:768px) { 
+	.biz-slide-wrap a.primary-link span:after {width:110px;height:110px;margin:-55px 0 0 -55px;}
+
 	[class*="img-text-row-box-type"] {display:block;margin-top:30px;}
 	[class*="img-text-row-box-type"] div {display:flex;padding-left:40px;width:100%;}
 	[class*="img-text-row-box-type"] div:first-child {width:100%}
