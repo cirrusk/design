@@ -631,6 +631,14 @@ $(function() {
 		event.preventDefault();
 		layerPopOver(this,'.G20325_lp_pop');
 	});
+	$('#G20200_lp2').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20200_lp2_pop');
+	});
+	$('#G20200_lp3').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20200_lp3_pop');
+	});
 
 });
 
