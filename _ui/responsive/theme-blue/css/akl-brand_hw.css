@@ -19,7 +19,20 @@ Editor :
 .brand .title-txt02 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#55565a;}
 .brand h2.title-h4 {color:#55565a;}
 .brand .hr .img-bnr {margin:0 0 35px;}
+.brand .hr + .hr {margin-top:0 !important;}
 
+.lay-box-2 {display:flex;margin:0 -12px;}
+.lay-box-2 > div {position:relative;width:50%;padding:0 12px;}
+.lay-box-2 > div img {vertical-align:top;width:100%;}
+
+.list-style-info {position:relative;margin-top:20px;}
+.list-style-info li {position:relative;overflow:hidden;margin-top:15px;}
+.list-style-info li strong {float:left;width:150px;color:#002f5f;}
+.list-style-info li span {float:left;}
+@media (max-width:768px) { 
+	.list-style-info li strong {float:none;width:auto;display:block;}
+	.list-style-info li span {float:none;display:block;margin-top:10px;}
+}
 /***** 미디어 라이브러리 *****/ 
 /* 미디어 리스트 */ 
 [class*="media-borad-list"] {position:relative;}
