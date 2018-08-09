@@ -9,17 +9,10 @@
 		var keycode = event.keyCode || event.which;
 		if( keycode == '13' ){
 
-			//라디오 Type1 : label wrapper
 			var input_Radio = $(this).find('input[type=radio]');
-			if( input_Radio.prop("checked", false)){
-				input_Radio.prop("checked", true).attr('checked',true);
-			}
-
-			//라디오 Type2 : checkbox + label
-			var prev_RadioBox = $(this).prev('input[type=radio]');
-			if( prev_RadioBox.prop("checked", false)){
-				prev_RadioBox.prop("checked", true).attr('checked',true);
-			}
+			var prev_Radio = $(this).prev('input[type=radio]');
+			input_Radio.prop("checked", true).attr('checked',true);
+			prev_Radio.prop("checked", true).attr('checked',true);
 
 			//체크박스 Type1 : label wrapper
 			var input_CheckBox = $(this).find('input[type=checkbox]');
@@ -30,7 +23,6 @@
 			var prev_CheckBox = $(this).prev('input[type=checkbox]');
 			var prev_CheckBox_Chked = prev_CheckBox.is(":checked");
 			prev_CheckBox_Chked ? prev_CheckBox.prop('checked', false).attr('checked',false) : prev_CheckBox.prop('checked', true).attr('checked',true);
-
 		}
 	});
 
