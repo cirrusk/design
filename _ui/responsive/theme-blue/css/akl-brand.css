@@ -120,7 +120,7 @@ Editor : HYEWON HWANG
 .espring .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/movie_bg.jpg');}
 .artistry .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/movie_bg.jpg');}
 
-.content-row {position:relative;clear:both;overflow:hidden;display:flex;width:100%;margin-top:60px;}
+.content-row {position:relative;clear:both;overflow:hidden;display:flex;margin:60px -15px 0;}
 .content-row article {position:relative;-webkit-flex:1;flex:1;max-width:50%;padding:0 15px;box-sizing:border-box;}
 .content-row.col3 article {max-width:33.3%;}
 .content-row article img {width:100%;}
@@ -393,6 +393,23 @@ Editor : HYEWON HWANG
 .timeline .owl-dots .owl-dot.active span {
   background: #008fc5;
 } 
+.timeline .owl-dots {
+  background: url("/_ui/responsive/theme-blue/images/akl_brand/about/company_timeline_bg.png") no-repeat center top;
+  background-size: 1400px auto;
+  width: 1400px;
+  /*padding: 8px 11.3% 20px 11.3%;*/
+  padding: 8px 153px 20px;
+  margin: 0 auto;
+  height: 74px;
+  text-align: left;
+  right:auto;
+  bottom:auto;
+}
+.timeline .owl-dots .owl-dot {
+  opacity: 0;
+  display: inline-block;
+  margin-right:138.5px;
+}
 
 /* 부산 아시아 물류 허브 센터 */    
 .hubcenter .ui-snap-big {margin:40px auto;height:400px;}
@@ -451,7 +468,7 @@ Editor : HYEWON HWANG
 	
 	.brand .video-preview {height:320px;background-size:auto 100%;}
 
-	.content-row {display:block;}
+	.content-row {display:block;margin:30px 0 0;}
 	.content-row article, .content-row.col3 article {max-width:100%;margin:0 0 30px;padding:0 !important;}
 	.content-row.col3 + .content-row.col3 {margin-top:30px;}
 	.content-row article:last-child {margin-bottom:0;}
