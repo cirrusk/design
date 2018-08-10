@@ -51,6 +51,8 @@ Editor : HYEWON HWANG
 
 .brand img:hover, .brand a:hover{-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;}
 
+[class*=btn-wrap] {clear:both;margin:auto;text-align:center;}
+.btn-wrap50 {margin:50px 0 50px;}
 
 /* ### 브랜드 템플릿 ### */ 
 
@@ -124,11 +126,12 @@ Editor : HYEWON HWANG
 .content-row article {position:relative;-webkit-flex:1;flex:1;max-width:50%;padding:0 15px;box-sizing:border-box;}
 .content-row.col3 article {max-width:33.3%;}
 .content-row article img {width:100%;}
-.content-row article .cont-type1 {position:relative;margin:0;height:100%;background:#f4f4f4;}
-.content-row article .cont-type1 figcaption{padding:20px 20px 10px;font-size:16px;font-weight:500;color:#002f5f;}
-.content-row article .cont-type1 figcaption + p {margin:0;padding:0 20px 50px;line-height:1.8;}
-.content-row article .cont-type1 a.arr1 {position:absolute;bottom:20px;left:20px;display:inline-block;font-weight:500;}
-.content-row article .cont-type1 a.arr1:after {border-color:#0075a4;}
+.content-row article [class*="cont-type"] {position:relative;margin:0;height:100%;background:#f4f4f4;}
+.content-row article [class*="cont-type"] figcaption{padding:20px 20px 10px;font-size:16px;font-weight:500;color:#002f5f;}
+.content-row article [class*="cont-type"] figcaption + p {margin:0;padding:0 20px 50px;line-height:1.8;}
+.content-row article [class*="cont-type"] a.arr1 {position:absolute;bottom:20px;left:20px;display:inline-block;font-weight:500;}
+.content-row article [class*="cont-type"] a.arr1:after {border-color:#0075a4;}
+.content-row article .cont-type2 figcaption + p {padding-bottom:20px;}
 
 .akl .brand .item-content-wrap h2 {margin:0 0 10px;text-align:center;}
 .akl .brand .category-success-story .success-story__item {-webkit-flex:1;flex:1;max-width:50%;padding:0 15px;}
