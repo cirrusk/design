@@ -1867,6 +1867,7 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .txt-in-area .txt-label {font-size:14px;color:#002f5f;font-weight:500;letter-spacing:-1px;}
 .txt-in-area .txt-content {font-size:14px;font-weight:400;letter-spacing:-1px;text-align:left;}
 .txt-in-area .txt-content span {font-size:14px;}
+.txt-in-area .txt-content span + button {margin-left:10px}
 .txt-in-area .col-md-6 {padding:0 0;}
 .txt-in-area .col-md-3 {padding:0 0;}
 .txt-in-area .col-md-2 {padding:0 0;width:13.5%;}
@@ -3753,22 +3754,22 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.txt-in-area .pay-trans span.btn-business {display:block;margin:5px 0 0;}
 	.txt-in-area .pay-pvbv {padding:10px 0 0}
 
-
 	/* 나의 주문내역 > 상세정보 > 결제정보 */
-	.txt-in-area .orderPayme {padding:10px 0 0;height:auto; }
-	.txt-in-area .orderPayme .txt-content span {display:block;padding:0 0 6px}
+	.myview-info-type.payway .txt-content,
+	.myview-info-type.group-sum .txt-content {padding-left:10px;}
+	.txt-in-area .orderPayme {padding:10px 0 0; height:auto;}
+	.txt-in-area .orderPayme .txt-content span {display:block; padding:0 0 6px;}
 	.txt-in-area .orderPayme .txt-content span em {display:none;}
-	.txt-in-area .orderPayme .col-md-2 {padding:0 0;width:30%;}
-	.txt-in-area .orderPayme .col-md-10 {padding:0 0;width:70%;}
+	.txt-in-area .orderPayme .col-md-2 {width:30%;}
+	.txt-in-area .orderPayme .col-md-10 {width:70%;}
 	.txt-in-area .orderPayme .btn-payinfo {margin-left:0;}
-
-	.txt-in-area .orderPrice {padding:10px 0;height:auto;}
-	.txt-in-area .orderPrice .col-md-3.txt-label {float:left;width:30%;vertical-align:top;}
-	.txt-in-area .orderPrice .col-md-9.txt-content {float:right;width:70%;vertical-align:top;text-align:right;letter-spacing:-0.05em;; font-weight:500}
-	.txt-in-area .orderPrice .col-md-9.txt-content span {display:block; }
+	.txt-in-area .orderPrice {height:auto;}
+	.txt-in-area .orderPrice .col-md-3.txt-label {float:left;width:30%; vertical-align:top;}
+	.txt-in-area .orderPrice .col-md-9.txt-content span {display:block;}
 	.txt-in-area .orderPrice .col-md-9.txt-content span + span { font-weight:400}
 	.txt-in-area .orderPrice .col-md-2.txt-label {float:left;width:30%;}
-	.txt-in-area .orderPrice .col-md-10.txt-content {float:right;width:70%;text-align:right;letter-spacing:-0.05em; font-weight:500}
+	.txt-in-area .orderPrice .col-md-9.txt-content {width:70%; padding-left:10px; letter-spacing:-0.05em; font-weight:500}
+	.txt-in-area .orderPrice .col-md-10.txt-content {width:70%; padding-left:10px; letter-spacing:-0.05em; font-weight:500}
 	.txt-in-area .orderPrice .txt-content.pc {display:none;}
 
 	/* 나의 주문내역 > 상세정보 > 쿠폰/프로모션 내역 */
