@@ -1,15 +1,15 @@
-﻿/************************************************
-Version : AKL Hybris UIUX 1.0
-shop 옮김 : 2018.04.10
-*************************************************/
+﻿/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-shop.css
+  * @ 구분 : 쇼핑
+  * ---------------------------------------------------------
+  */
 
-
-/** -----------------------------------------------------------------
- * @ TYPE : LIST
- * - 장바구니 제품 목록
- * - 적용 : 장바구니,주문결제,온라인 FAX 주문,위시리스트
- * -----------------------------------------------------------------
- */
+/** ---------------------------------
+  * @ 담은 제품 목록
+  *   장바구니,주문결제,온라인 FAX 주문,위시리스트
+  * ---------------------------------
+  */
 .akl .new-shopping-cart-item-list {margin-top:0;}
 
 /* list header */
@@ -20,9 +20,6 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .list-header .all-txt {font-size:13px !important; vertical-align:top;}
 .akl .shopping-cart-item-list .list-header .list-item-info {padding-left:15px; text-align:center;}
 .akl .shopping-cart-item-list .list-item-info label+em {font-size:13px !important;}
-/*
-.akl .shopping-cart-item-list ._checkbox-element-global-class ~ span._checkbox-element-global-span {top:4px;}
-.akl #shopping-list-content .list-header ._checkbox-element-global-class~span._checkbox-element-global-span {display:block; top:50%; margin-top:-10px;} */
 
 /* list header > 온라인 팩스주문 */
 .akl .amway-theme.fax-order-wrapper .panel-body .list-header>* {font-size:13px !important;}
@@ -31,9 +28,6 @@ shop 옮김 : 2018.04.10
 .product-overlap-body .list-header {text-align:left;}
 .product-overlap-body .list-header .col-xs-5.list-item-info {width:100% !important;}
 .product-overlap-body .list-header .all-txt {margin-left:-15px;}
-
-/* list item
-.shopping-cart-item-list .product-list-item .product-details {overflow:hidden;}*/
 
 /* col width: 주문결제*/
 .akl .payment-promotion .shopping-cart-item-list .list-header [class^=col-xs-].list-item-info {width:44%;}
@@ -63,7 +57,6 @@ shop 옮김 : 2018.04.10
 .akl .payment-promotion .shopping-cart-item-list .list-header {padding:0;}
 .akl .payment-promotion .shopping-cart-item-list .product-list-item .list-item-info {width:100%;}
 .akl .payment-promotion .shopping-cart-item-list .gwp-item.product-list-item .list-item-image {padding-left:0;}
-/* .akl .payment-promotion .shopping-cart-item-list .gwp-item.product-list-item .gwp-gift-selections {width:100%;} */
 .akl .payment-promotion .view-bundle-contents {width:740px;}
 .akl .payment-promotion .view-bundle-contents .view-setcomp .v-subject {width:70%;}
 .akl .payment-promotion .view-bundle-contents .view-setcomp .v-number {width:10%;}
@@ -75,7 +68,7 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .product-list-item .product-item-element .price-label,
 .akl .shopping-cart-item-list .product-list-item .product-item-element .total-pv-bv-label,
 .akl .shopping-cart-item-list .product-list-item .product-item-element .qty-label,
-.akl .shopping-cart-item-list .product-list-item .product-item-element .option-label {display: none;font-size: 14px;line-height: 20px;letter-spacing:-1px;color: #002f5f;font-weight: 500;margin: 0;text-transform: none;}
+.akl .shopping-cart-item-list .product-list-item .product-item-element .option-label {display:none; font-size:14px; line-height:20px; letter-spacing:-1px; color:#002f5f; font-weight:500; margin:0; text-transform:none;}
 .akl .shopping-cart-item-list .product-list-item .list-item-info .product-name {display:block; font-size:14px;line-height:20px;letter-spacing:-1px;font-weight: 500;padding:3px 0 0;}
 .akl .shopping-cart-item-list .product-list-item .hasOptionBox .product-name {width:70%;}
 .akl .shopping-cart-item-list .product-list-item .list-item-pv-bv {font-size: 14px;line-height: 20px;letter-spacing:-1px;font-weight:500;}
@@ -84,11 +77,10 @@ shop 옮김 : 2018.04.10
 .akl .shopping-cart-item-list .product-code {padding:5px 0 0;}
 .akl .product-code,.akl .product-category,.akl .product-pvbv {font-size:13px;line-height:18px;color:#808285;}
 
-.akl .shopping-cart-item-list .product-list-item .list-item-info .product-category {line-height:18px;padding:0 0 3px}
-.akl .shopping-cart-item-list .sort-refine-bar .form-group select.cart-detail__size {font-weight:500;color:#002f5f;}
-.akl .shopping-cart-item-list .proabo-btn .product-availability span.sto-blue{margin:0 0 0 10px; position:relative;}
+.akl .shopping-cart-item-list .product-list-item .list-item-info .product-category {padding:0 0 3px; line-height:18px;}
+.akl .shopping-cart-item-list .sort-refine-bar .form-group select.cart-detail__size {color:#002f5f; font-weight:500;}
+.akl .shopping-cart-item-list .proabo-btn .product-availability span.sto-blue {position:relative; margin:0 0 0 10px;}
 .akl .shopping-cart-item-list .proabo-btn .product-availability .bt-akl-white {margin-bottom:2px;}
-
 .akl .shopping-cart-item-list .product-list-item .gwp-gift-selections,
 .akl .shopping-cart-item-list .view-bundle-contents {width:600px;}
 
@@ -109,7 +101,7 @@ shop 옮김 : 2018.04.10
 .akl #shopping-list-content {box-sizing:border-box;margin:0;padding:0;}
 
 .akl .wish-promotion .shopping-cart-item-list {padding:0;box-sizing:border-box;}
-.akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .list-item-info{ text-align:center; }
+.akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .list-item-info {text-align:center;}
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-12 {width:100%;}
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-5 {width:41.66666667%}
 .akl .wish-promotion .shopping-cart-item-list .list-header.change-list-header .col-xs-3 {width:20%}
@@ -166,28 +158,27 @@ shop 옮김 : 2018.04.10
 .search-list-page-right-result-list-component .product-results-list { margin-top: 40px;}
 .search-list-page-right-result-list-component .header-text .item-description { color: #55565a;}
 
-
 /* 검색 > 자동완성  */
-.akl .auto-suggestion-popover { top: 128px; }
-.akl .auto-suggestion-popover .owl-carousel {   }
-.akl .auto-suggestion-popover .main-container { padding: 0 0;}
+.akl .auto-suggestion-popover {top:128px;}
+.akl .auto-suggestion-popover .owl-carousel {}
+.akl .auto-suggestion-popover .main-container {padding:0 0;}
 .akl .auto-suggestion-popover .owl-carousel .owl-stage-outer {overflow:hidden; width:99%; margin-left:.5%;}
 .akl .auto-suggestion-popover .quick-area .owl-theme .owl-controls .owl-nav .owl-next { right:-5px !important;}
-.popover-content-akl { max-width:1376px; margin:0 auto; position:relative; }
+.popover-content-akl {max-width:1376px; margin:0 auto; position:relative; }
 .popover-content-akl:after{ content:""; position:absolute; right:95px; top:-10px; display: block;width: 0; height: 0; border-color: transparent; border-style: solid; border-width: 10px; border-top-width: 0;border-bottom-color: #fff;}
 .akl .auto-suggestion-popover .popover-content {padding:0 25px;}
 .akl .auto-suggestion-popover .popover-content ul {padding: 30px 70px;}
 .popover-content-akl .ui-menu-item a {color: #55565a; font-size:16px; display:block; padding:3px 0; font-weight: 400;}
 .popover-content-akl .ui-menu-item a .bold {font-weight:500;}
-.akl .amway-suggest__pvbv { font-size: 13px;line-height: 18px;color: #808285;  font-weight: 400;}
+.akl .amway-suggest__pvbv {font-size: 13px;line-height: 18px;color: #808285;  font-weight: 400;}
 
 /* 검색 > 결과  */
-.popular-searches { padding:30px 40px 15px; margin-bottom:40px; border-bottom: 1px solid #dadada; border-top: 1px solid #dadada;  }
-.popular-searches dl { display:table;  margin:0 auto}
+.popular-searches { padding:30px 40px 15px; margin-bottom:40px; border-bottom: 1px solid #dadada; border-top:1px solid #dadada;}
+.popular-searches dl { display:table; margin:0 auto}
 .popular-searches dt{ position:relative; font-size: 16px; letter-spacing: -1px; color: #002f5f; display:table-cell; width:100px }
-.popular-searches dt:after { content:""; position:absolute; right:0; border-left:2px solid #002f5f; height:20px; top:12px; margin-top: -10px;}
-.popular-searches dd { display:table-cell; }
-.popular-searches dd:last-child {position:relative; }
+.popular-searches dt:after {content:""; position:absolute; right:0; border-left:2px solid #002f5f; height:20px; top:12px; margin-top: -10px;}
+.popular-searches dd { display:table-cell;}
+.popular-searches dd:last-child {position:relative;}
 .popular-searches dd:last-child button { margin-top:-3px;}
 .popular-searches dd ul li {position:relative; display: inline-block; padding: 0 28px; font-size: 16px; margin-bottom:15px}
 .popular-searches dd ul li:after { content:""; position:absolute; right:0; border-left:1px solid #dadada; height:12px; top:50%; margin-top: -6px;}
@@ -196,15 +187,17 @@ shop 옮김 : 2018.04.10
 .search-list-page-right-result-list-component .item-header { margin-bottom:10px}
 .akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-header .header-image-wrapper {margin-right:0;}
 .akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-header .header-image-wrapper img {width:20px;}
-.akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-description { padding-left: 0; }
+.akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-description {padding-left: 0;}
 .akl .search-list-page-right-result-list-slot .product__list--wrapper .product__list .content-list-item .item-description.case02 { padding-left:34px}
-.akl-no-results { text-align: center}
 .akl .col-search-right .product__list--wrapper .pagination-bar .pagination-toolbar {padding:0}
 .spl-page-title + .col-search-tab {margin-top:40px}
-/** ----------------------------------------------------------------
- *  @ 제품상세
- *  ----------------------------------------------------------------
- */
+.akl-no-results {text-align:center;}
+
+
+/** ---------------------------------
+  * @ 제품상세
+  * ---------------------------------
+  */
 .ui-snap-big{position:relative; z-index:0;/* height:526px */}
 .ui-snap-big li {display:none; position: static; top:0; left:0; width:100%; height:100%;}
 .ui-snap-big li.type-video {box-sizing:border-box; padding:0 8%;}
@@ -304,19 +297,23 @@ shop 옮김 : 2018.04.10
 .akl .amway-theme .accordion-element {margin-bottom:60px;}
 .akl .amway-theme .accordion-element .accordion-panel {table-layout:fixed;}
 .akl .amway-theme .accordion-element .accordion-panel-title {padding-left:0;padding-right:0;}
-.akl .amway-theme .accordion-element .accordion-panel-title .title-element {font-size:18px;font-weight:500;letter-spacing:-1px;}
+.akl .amway-theme .accordion-element .accordion-panel-title .title-element {font-size:18px;font-weight:500; letter-spacing:-1px;}
 .akl .panel-body .accordion-collapse-wrapper {font-size:14px;}
 .akl .panel-body.product-detail {overflow:hidden; margin:0; padding:0 0 40px;}
-.akl .panel-body.product-detail [class^=col-]{overflow:hidden;padding:0;}
-.akl .panel-body.product-detail .col-md-4 {width:32%; max-height:;}
-.akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) {width:36%; padding:0 2%;}
+.akl .panel-body.product-detail [class^=col-]{overflow:hidden; padding:0; box-sizing:border-box;}
+.akl .panel-body.product-detail .col-md-4 {width:32%; margin-top:22px;}
+.akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) {margin:22px 2% 0;}
+.akl .panel-body.product-detail .col-md-4:nth-of-type(3n+1) {clear:left;}
+.akl .panel-body.product-detail .col-md-4:nth-of-type(-n+3){margin-top:0;}
 .akl .panel-body.product-detail .news-result-prom {float:right;}
+
 .akl .amway-theme .accordion-element .accordion-panel-collapse .accordion-collapse-wrapper {padding:0 50px;}
 .akl .accordion-toggle.collapsed .title-element.accordion-header-icon.no-icon {font-size:0;}
 .akl .accordion-toggle.collapsed .title-element.accordion-header-icon.no-icon:before {content:''}
-.akl .news-result-prom {width:100%; height:100%; max-width:420px; max-height:350px;}
-.akl .news-result-prom img {width:100%; height:auto; max-height:224px;box-sizing:border-box}
-.akl .news-result-prom-text {background:#f4f4f4;width:100%;min-height:80px;padding:20px;}
+.akl .news-result-prom {width:100%; height:100%;}
+.akl .news-result-prom > a {position:relative; overflow:hidden; padding-top:54.90196078431373%; display:block; max-width:408px; max-height:350px; background:#f4f4f4;}
+.akl .news-result-prom img {position:absolute; top:0; left:0; right:0; width:100%; height:auto; box-sizing:border-box;}
+.akl .news-result-prom-text {position:relative; z-index:1; bottom:0; width:100%; min-height:130px; padding:20px; background:#f4f4f4;}
 .akl .news-result-prom-text .product__title {font-size:16px;line-height:24px;color:#002f5f;font-weight:500;height:48px;letter-spacing:-1px;overflow:hidden;white-space: normal;word-wrap: break-word;/* display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;text-overflow: ellipsis; */}
 .akl .news-result-prom-text .product__title a {display:block;font-weight:500;color:#002F5F;}
 .akl .news-result-prom-text .product__subtitle {font-size:14px;line-height:20px;}
@@ -505,10 +502,16 @@ shop 옮김 : 2018.04.10
 .row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-header {display:block;padding:0 0 0 !important;}
 .row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div > div.pop-area-header a.cart-popup-close {position: absolute;top:3px;right:8px;display:block;padding:0 0;margin:0;}
 
-/** ----------------------------------------------------------------
- *  @ 장바구니
- *  ----------------------------------------------------------------
- */
+
+/** ---------------------------------
+  * @ 장바구니
+  * ---------------------------------
+  */
+.akl .lightBlue {color:#0075a4}
+.akl .lightBlue a {color:#0075a4}
+.akl .green a {color:#20883e;}
+.akl .red a {color:#e11e45}
+
 .product-list-page-title {font-family:'Noto Sans KR', sans-serif;}
 .akl .cart-content-wrapper .account-section-content .panel-group .panel-heading + .panel-collapse > .panel-body {border-top: 0;}
 .akl .cart-content-wrapper .account-section-content .panel-body { padding-top: 0;}
@@ -521,16 +524,10 @@ shop 옮김 : 2018.04.10
 .akl .cart-items-wrapper {margin-top:0;}
 .akl .cart-items-wrapper .pagination-bar .pagination-toolbar {padding-left:0;}
 
-.akl .lightBlue {color:#0075a4}
-.akl .green a {color:#20883e;}
-.akl .red a {color:#e11e45}
-.akl .lightBlue a {color:#0075a4}
-
 .list-item-info .has-promotion-stock {display: table;}
 .list-item-info .has-promotion-stock .promotion {position: relative;display: table-cell;}
 .list-item-info .has-promotion-stock .promotion .promotion-tip {padding-top:0;}
 .list-item-info .has-promotion-stock .promotion .promotion-tip img {vertical-align:middle;}
-
 .list-item-info .has-promotion-stock .cartlist-instock {display: table-cell;position: relative;left: 10px;color: #20883e;text-align: left;font-weight:500;font-size:13px;}
 .list-item-info .has-promotion-stock .cartlist-instock * {font-size:13px;}
 .list-item-info .has-promotion-stock .promotion .promotion-tip .tooltip-btn {display:inline-block;background: url(../images/info-icon@2x.png) no-repeat left center;background-size: 18px;outline: initial;padding-left:25px;cursor:pointer;font-size:13px;}
@@ -1277,7 +1274,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
 .akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
 .akl .panel.cash-receipts label {display:inline-block;}
-.akl .panel.cash-receipts .cash-type {display:table;width:75%;text-align:right;}
+.akl .panel.cash-receipts .cash-type {display:table; width:75%; min-width:450px; text-align:right;}
 .akl .panel.cash-receipts .cash-type .cash-phone {display:block;text-align:right;width:100%;}
 .akl .panel.cash-receipts .cash-phone select.form-control {width:170px;display:inline-block;vertical-align:middle;margin-right:8px}
 .akl .panel.cash-receipts .cash-phone input.form-control {width:55%;display:inline-block;vertical-align:middle;}
@@ -1928,6 +1925,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 	.row.add-to-cart-extra-actions.col-xs-12.col-sm-12.col-md-12.js-add-to-actions-wrapper.link-line div {width:auto;}
 	.akl .product-main-info .amway-theme select {display:inline-block;}
+
 	.akl .addtocart-component .qty-selector select.form-control {width:65%; }
 	.akl .add_to_cart_form > button {font-size:18px;}
 	.akl .add_to_cart_form.type1 button {width:100%;margin:0 0 10px;}
@@ -1948,13 +1946,30 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .video-preview {margin-top:0; padding:0 5%;}
 	.akl .new-amway-competitive .col-md-12.column.product-description__section p.video-preview__title {font-size:18px;line-height:24px;text-align:center !important;padding:20px 0 0}
 	.akl .news-result-prom {width:100%; height:auto; max-width:none; max-height:none; margin-bottom:15px}
-	.akl .news-result-prom img {width:100%; height:auto; max-height:none;}
+	.akl .news-result-prom > a {padding-top:0; max-width:none; max-height:none;}
+	.akl .news-result-prom img {position:static; width:100%; height:auto; max-height:none;}
+
+	.akl .panel-body.product-detail .col-md-4 ,
+	.akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) { margin:0;}
+
+	.akl .news-result-prom-text {min-height:auto}
+
 	.akl .panel-body.product-detail .news-result-prom {float:none;}
-	.akl .panel-body.product-detail .col-md-4,
-	.akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) {width:100%; padding:0;}
+	.akl .panel-body.product-detail .col-md-4, .akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) {width:100%; padding:0;}
 	.akl .news-result-prom-text .product__title {font-size:14px;line-height:20px;text-align:left;height:auto;}
 	.akl .news-result-prom-text .product__subtitle {font-size:12px;line-height:18px;}
 	.akl .owl-carousel .full-width-item {padding:0 0;margin:0 0;}
+
+
+
+/* 	.akl .panel-body.product-detail {overflow:hidden; margin:0; padding:0 0 40px;}
+	.akl .panel-body.product-detail [class^=col-]{overflow:hidden; padding:0; box-sizing:border-box;}
+	.akl .panel-body.product-detail .col-md-4 {width:32%; margin-top:22px;}
+	.akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) {width:32%; margin:22px 2% 0;}
+	.akl .panel-body.product-detail .col-md-4:nth-of-type(3n+1) {clear:left;}
+	.akl .panel-body.product-detail .col-md-4:nth-of-type(-n+3){margin-top:0;}
+	.akl .panel-body.product-detail .news-result-prom {float:right;} */
+
 
 	.akl .recommendation.swatches-description__margin-minus {margin:0 auto 30px;}
 	.akl .recommendation__message-main {font-size:20px;line-height:25px;}
