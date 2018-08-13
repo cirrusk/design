@@ -114,11 +114,11 @@
 /* ---- SOP 스마트 오더 목록 ---- */
 .akl .list-content.mysop-list-content {padding-top:0;}
 .akl .icon-sub-title + .list-content { margin-top:4px;}
-.list-content.mysop-list-content {border-bottom:0px solid #e3e3e3;}
+.list-content.mysop-list-content {border-bottom:1px solid #e3e3e3;}
 .list-content.mysop-list-content>.row {display:table-row;}
-.list-content.mysop-list-content>.row>div {border-bottom:0px solid #e3e3e3;}
+.list-content.mysop-list-content>.row>div { padding:14px 0;}
 .list-content.mysop-list-content .content-list {text-align:center;}
-.list-content.mysop-list-content .content-list .item-name,
+.list-content.mysop-list-content .content-list .item-name{padding-left:15px; text-align:left;}
 .list-content.mysop-list-content .content-list .item-address {text-align:left;}
 .list-content.mysop-list-content .item-address>span {display:block;}
 
@@ -127,7 +127,11 @@
 .shipping-delivery.sopCreate .cart-items-wrapper {padding:0;}
 .shipping-delivery.sopCreate .shipping-delivery-ship .pay-transaction {max-width:790px;}
 .akl .shipping-delivery.sopCreate .panel.cash-receipts .cash-type {min-width:410px;}
-
+.shipping-delivery.sopCreate .sop-settlingDay,
+.shipping-delivery.sopCreate .sop-settlingDay [class^=col-md-],
+.akl .shipping-delivery.sopCreate .shipping-delivery-setup-title.col-md-3 {padding:0;}
+.shipping-delivery.sopCreate .sop-settlingDay .control-label {margin-top:8px;}
+.shipping-delivery.sopCreate .sop-settlingDay .form-control {width:auto; min-width:120px; margin-left:10px;}
 .shipping-delivery.sopCreate .edit-block.createSopForm {padding:30px 0 40px;}
 .shipping-delivery.sopCreate .edit-block.createSopForm > .row {margin-top:10px;}
 .sop-delivery-adress #changeTextArea {padding-bottom:30px; border-bottom:1px solid #e3e3e3;}
@@ -392,12 +396,14 @@
 	.list-content.mysop-list-content [class*=col-].item-card-info {text-align:right;}
 	.list-content.mysop-list-content .list-row-title .col-xs-12 {text-align:center;}
 	.list-content.mysop-list-content .list-row-title>div {padding-left:10px; text-align:left;}
-	.list-content.mysop-list-content .content-list {padding:10px 15px 23px;}
+	.list-content.mysop-list-content .content-list {padding:10px 0 23px 0;}
 	.list-content.mysop-list-content .content-list>div {padding:8px 15px 0 15px;}
 	.list-content.mysop-list-content .content-list .item-name {padding-top:0;}
 	.list-content.mysop-list-content .content-list .item-payment {padding-top:0;}
 	.list-content.mysop-list-content .content-list .item-payment>a {margin-top:13px;}
 	.list-content.mysop-list-content .item-address>span {padding:0;}
+
+	.akl .icon-sub-title + .list-content { margin-top:0;}
 
 	.akl .list-content.mysop-monthly-list-content.mysop-list {border-width:0 0 1px;}
 	.list-content.mysop-list.mysop-monthly-list-content .list-row-content.row>div {border-top:1px solid #e3e3e3;}
