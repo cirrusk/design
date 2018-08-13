@@ -30,9 +30,16 @@ Editor :
 .lay-box-2 {display:flex;margin:35px -12px 0;}
 .lay-box-2 > div {position:relative;width:50%;padding:0 12px;}
 .lay-box-2 > div img {vertical-align:top;width:100%;}
-.lay-box-4 {display:flex;flex-wrap:wrap;margin:20px -12px -15px;}
-.lay-box-4 li {position:relative;width:25%;padding:15px 12px;} 
-.lay-box-4 li img {vertical-align:top;width:100%;}
+
+.lay-box-4 {overflow:hidden;margin:20px -12px -15px;}
+.lay-box-4 li {position:relative;float:left;width:25%;padding:15px 12px;} 
+.lay-box-4 li > img {vertical-align:top;width:100%;}
+
+.lay-box-pdt {display:flex;flex-wrap:wrap;overflow:hidden;margin:20px -12px -15px;}
+.lay-box-pdt li {position:relative;width:25%;padding:15px 12px;} 
+.lay-box-pdt li > div {padding:40px 20px 45px;border:1px solid #dadada;height:100%;text-align:center;}
+.lay-box-pdt li > div img {width:auto;max-width:100%;}
+.lay-box-pdt li > div p {margin:20px 0 0 0!important;font-weight:500;color:#002f5f;text-align:left;}
 
 .brand .lay-box-2 .plp-item-label {position:absolute;height:25px;}
 .brand .lay-box-2 .plp-item-label:after {right:-7px;top:0;width:0;height:0;border:1px solid #008fc5;border-width:25px 7px 0 0;}
@@ -50,6 +57,10 @@ Editor :
 @media (max-width:768px) { 
 	.lay-box-2 {margin:0;display:block;}
 	.lay-box-2 > div {width:100%;padding:0;margin-top:15px;}
+	.lay-box-4 {margin:-15px -12px -15px;display:block;}
+	.lay-box-4 li {width:100%;}
+	.lay-box-pdt {margin:-15px -12px -15px;display:block;}
+	.lay-box-pdt li {width:100%;}
 	.list-style-info li strong {float:none;width:auto;display:block;}
 	.list-style-info li span {float:none;display:block;margin-top:10px;}
 }
