@@ -10,7 +10,7 @@ Editor : ji-min Park
 			          뷰티	비주얼 영역 bg 공통 모음
 ***************************************************/
 
-.visual-area.basic-gray{background: #f4f4f4;min-height:900px;padding-bottom:50px;}
+.visual-area.basic-gray{background: #f4f4f4;/*min-height:900px;*/padding-bottom:50px;}
 .txt-info-visual .v-etc.block li{display:block;}
 .fleft{float:left !important;/*padding: 30px 0 0;*/}
 .fleft .sie-box{padding-top:0;}
@@ -504,13 +504,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .oil-txt-lst.three ul li{width: 33.3%;}
 
 /* 파스퇴르 */
-.red13{color:#f99c83 !important;}
-.green18{color:#4cab9d !important;}
-
-.visual-area.type02.pasteur-01{background: #ffffff url(../images/akl_product/one-for-one/bg_pasteur_01.png) no-repeat top center;height:883px;} /* 파스퇴르 */
-.visual-area.type02.pasteur-02{background: #ffffff url(../images/akl_product/one-for-one/bg_pasteur_02.png) no-repeat top center;height:883px;} /* 파스퇴르 */
-.visual-area.type02.pasteur-03{background: #ffffff url(../images/akl_product/one-for-one/bg_pasteur_03.png) no-repeat top center;height:883px;} /* 파스퇴르 */
-
 .lacto-wrap{    margin-top: 45px;}
 .lacto-wrap .head-tit{display:block;font-size:44px;color:#56565a;text-align:center;}
 .lacto-wrap .box-tit h5{font-size:20px;color:#56565a;text-align:center;}
@@ -532,19 +525,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 .lacto-wrap .health-inform-box .advan-right{padding: 0 0 0 0;}
 
-/*파스퇴르 후아 리스트
-.advantage-area .hua-ad-list.pas{border-top:0;margin-top:10px;}
-.hua-ad-list.pas li{padding: 40px 0 0 20px;}
-.hua-ad-list.pas > li:nth-child(odd){padding: 40px 20px 0 0;}
-.hua-ad-list.pas li .hua-ad-box > ul{margin-left: 4px;}
-.hua-ad-list.pas li .hua-ad-box > ul li{width:100%;padding: 0;margin-top:0;}
-.hua-ad-list.pas li .hua-ad-box > ul li:first-child{}
-.hua-ad-list.pas li .hua-ad-box > ul li:nth-child(2){min-height:inherit;}
-
-.hua-ad-list.pas.step01 li .hua-ad-img span{border:2px solid #f3be0f;}
-.hua-ad-list.pas.step02 li .hua-ad-img span{border:2px solid #f99c83;}
-.hua-ad-list.pas.step03 li .hua-ad-img span{border:2px solid #4cab9d;}
-*/
 
 /* 베이비 테이블 */
 .baby-guide-tit{display:block;color:#56565a;font-size:18px;font-weight:400;margin-bottom:0;}
@@ -570,7 +550,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 /* 비비안 */
-.visual-area.type02.vivien{background: #ffffff url(../images/akl_product/one-for-one/bg_vivien_stocking.png) no-repeat top center;height:1071px;} /* 파스퇴르 */
+
 
 .product-rank.aroma.gray{background-color:#f4f4f4;}
 .product-rank.aroma{padding:37px 0 !important;}
@@ -579,11 +559,6 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .product-rank.aroma .rank-box .com-tit2{font-size:16px;line-height:1.5;color:#56565a;}
 .product-rank.aroma .rank-box .rank-txt{margin:0 0 0;}
 .to-mark span{display:inline-block;}
-
-
-/* 엣모스피어 스카이 */
-
-.visual-area.type02.atmosphere-sky{background: #ffffff url(../images/akl_product/home-living/bg_atbosphere_sky.png) no-repeat top center;height:1040px;} 
 
 
 
@@ -798,112 +773,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 	/* 원포원 */
 	.capsule-img-area em.txt{margin:14px 0 0;} /* 라임트리 캡슐세트 */
 	.one-for-one .v-pro span img{width:inherit !important;}
-	
 }
-
-
-
-@media (max-width: 474px) {
-	.skin-care .ingre-list li{width:100% !important;}
-	.ingre-list li:before{display:none;}
-	.pro-video.type2{margin: 25px 0 0;padding: 25px 0 0;}
-	
-	.polymer{margin-top:20px;}
-	.polymer p, 
-	.polymer p em, 
-	.polymer.vita p, 
-	.polymer.vita p em{font-size: 13px;}
-	
-	.polymer.vita .one, 
-	.polymer.vita .two, 
-	.polymer.vita .two em{font-size:13px;}
-	
-	.polymer.vita .two{top:45%;font-size:12px;line-height:1.2;letter-spacing:-1.3px;}
-	
-	.ade-photo .reposom-wrap em.one{top: 8px;left: 64%;width:91px;height:34px;}
-	.ade-photo .reposom-wrap em.two{bottom: 44px;left: 64%;width:91px;height:17px;}	
-     
-	
-	.triangle{margin: 25px auto;}
-	.triangle .tit > span > span{font-size:14px}
-	.triangle.men-type .tit br{display:block;}
-	.triangle.men-type span.comment02{left:8%}
-	.triangle.men-type span.comment03{margin-right:0}
-	.triangle.lx-tech span.comment02{left: 4%;}
-	.triangle.lx-tech span.comment03{right:5%}
-	.triangle.lx-tech span.comment03 .linght-beige br{display:block;}	
-	.triangle.ingre-three .tit .linght-beige{font-size:16px}
-	.beam-balance .txt-left, .beam-balance .txt-right{font-size:14px}
-	
-	.ingre-list.ingre-list-n2 li .ingre-txt{font-weight: 300;position: absolute;top: inherit;left: inherit;margin-left: 0 !important;width: 100%;text-align: center;}
-	.ingre-list.ingre-list-n2 li:nth-child(1) .ingre-txt{bottom:35px;}
-	.ingre-list.ingre-list-n2 li:nth-child(2) .ingre-txt{bottom:40px;}
-	
-	.beam-balance .txt-left{left:0;}
-	
-	/* 포인트 메이크업 립 */
-	.point-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
-	.point-makeup .visual-area .v-logo img{height:13px;}
-	.point-makeup .txt-info-visual .v-tit{padding: 18px 0 0 !important;}
-	.point-makeup .v-pro{margin-top: 35px;}
-	
-	.point-makeup .visual-area.lipgloss .v-pro span img {width:inherit;height:auto;}
-	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:13px;}
-	
-	
-	/* 베이스 메이크업 */
-	.base-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
-	.base-makeup .visual-area .v-logo img{height:13px;}
-	.base-makeup .txt-info-visual .v-tit{padding: 18px 0 0 !important;}
-	.base-makeup .v-pro{margin-top: 35px;}
-	.base-makeup .v-pro span img{width:inherit;}
-	
-	.triangle .tit{font-size:14px;}
-	.triangle .tit em{font-size:14px !important;}
-	.triangle.circle-type .comment02{left:-10%;}
-	.triangle.circle-type .comment03{right:-10%;}
-	
-	.oral-round-lst{padding:0 0%;}
-	.oral-round-lst li {float: none;width: 100%;display: block;}
-	.oral-round-lst li .round-area{display: block;text-align: center;margin: 0 20px 25px;}
-	.oral-round-lst li .img-wrap{margin-bottom:10px;}
-	.oral-round-lst li .img-wrap img{width:100%;height:100%;}
-	.oral-round-lst li .txt-wrap dt{font-size:20px;margin-bottom:5px;}
-	.oral-round-lst li .txt-wrap dd{font-size:14px;}
-	
-	/* 맙 */
-	.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo .img-desc-area .txt.fst{top:-2%;left:1%;}
-	.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo .img-desc-area .txt.sec{left:0;bottom:-5%;}
-	.assistant-pr .effet-area .advan-right.mod-wrap .ade-photo .img-desc-area .txt.three{right:0;bottom:-5%;}	
-	/* 버즈 */
-	.assistant-pr .effet-area .advan-right.buz-wrap .ade-photo.dot-txt-area .img-desc-area .txt.fst{bottom:-6%;left:0;}
-	.assistant-pr .effet-area .advan-right.buz-wrap .ade-photo.dot-txt-area .img-desc-area .txt.sec{top:-15%;left: 0;}
-	.assistant-pr .effet-area .advan-right.buz-wrap .ade-photo.dot-txt-area .img-desc-area .txt.three{top:-15%;left: 42%;}	
-	
-	.pormula-lst{text-align:left;}
-	.pormula-lst li{margin-right: 15px;}
-	.border-bx{padding:20px 25px;}
-	.dish-thum-lst .dish-thum-wrap strong.h6{display:block;width:100%;text-align:center;font-size:16px;}
-	.dish-thum-lst:before{display: block;margin: auto;text-align: center;background-size: 100% !important;background-position: 100% 100% !important;}
-		
-	.perl-water-lst > ul li{width: 100%;}
-	.perl-water-lst > ul li .perl-area span img{width:auto;height:auto;}
-	.perl-water-lst > ul li .perl-area p{min-height:0;margin-bottom:30px;}
-	.clean-one{margin-left:-30px;}	
-
-	.capsule-new-area.new{padding-top: 35px;padding-left: 40px;}
-	.capsule-new-area.new span.lime-new{font-size: 16px;left:0;width: 50px;height:50px;line-height:50px}
-
-	.v-pro.certifi-area .certifi{padding:10px 0 0 0;}
-	.v-pro.certifi-area .certifi ul{margin-top:0;}
-	.v-pro.certifi-area .certifi ul li br{display:none;}
-	
-	.oil-txt-lst, .oil-txt-lst.three{padding: 0 0 0;}
-	.oil-txt-lst li em.txt-wrap{font-size:12px;}
-	
-}
-
-
 
 
 @media (max-width: 324px) {
