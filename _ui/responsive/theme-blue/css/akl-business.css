@@ -1,4 +1,19 @@
-﻿/* 비즈니스 공통 */
+﻿/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-business.css
+  * @ 구분 : 비즈니스
+  * ---------------------------------------------------------
+  */
+
+/* ----- core css 리셋 ----- */
+#business-page-accordion .panel-title a {padding: 2em 0; display:block;}
+#business-page-accordion .panel-title a span {font-size: 1.25em;font-weight: 600;}
+#business-page-accordion .panel-title a .icon-businnes {font-weight: 100; color:#008fc5; margin-right:0.3em; font-size: 18px;}
+#business-page-accordion .panel-title a span.indicator:after {content:'\2013';color:#002F5F; font-size:1.4em; margin-right:0; font-weight:bold;}
+#business-page-accordion .panel-title a.collapsed span.indicator:after {content:'+';}
+
+
+/* 비즈니스 공통 */
 /*.business .list-content .list-row-title { text-align: center;}*/
 .container.amway-theme.business { position:relative;}
 .business-pop .link-btn { margin-bottom:15px }
@@ -616,12 +631,13 @@ ul.woo-step-box li:last-child:before {background:none}
 .bizGuide h2 + .bizNumList{margin-top:16px;}
 .bizNumListT + .bizNumList{margin-top:4px;}
 
+/*비즈니스 가이드 정렬 수정중
 .business-guide-wrap h2 + .bizNumList,
 .business-guide-wrap h2 + p, h3 + .bizNumList,
 .business-guide-wrap h3 + .bizNumListS { margin-left:15px;}
 .akl .amway-theme .business-guide-wrap h2 + h3.num,
  .akl .amway-theme .business-guide-wrap p + h3.num,
-.business-guide-wrap h3.num + p  { margin-left:15px;}
+.business-guide-wrap h3.num + p  { margin-left:15px;}*/
 
 .bizNumList{margin-top:12px;}
 .bizNumList > li{ line-height:23px; padding-left:15px; text-indent:-15px;}
@@ -812,7 +828,8 @@ ul.woo-step-box li:last-child:before {background:none}
 /* 사업 가이드 > GIP&NCA */
 .akl .amway-theme .business-guide-wrap .gn-box h3 {font-size:16px; color:#002f5f; margin-left:40px; text-indent:-40px;}
 .akl .amway-theme .business-guide-wrap h2 {text-transform:none !important; margin-bottom:10px}
-.akl .gn-box {margin-top:20px; padding:40px 100px; border:1px solid #dadada}
+.akl .gn-box {margin-top:20px; padding:40px 100px; border:1px solid #dadada; }
+.akl .gn-box.center { text-align:center}
 .akl .gn-box .tblList02 tbody tr > * {padding:20px 5px}
 .akl .gn-box .tblList02 .won {display:block; font-weight:500; color:#002f5f; letter-spacing:-0.05em}
 .akl .gn-box .tblList02 .won + .won {margin-top:3px}
@@ -920,10 +937,13 @@ ul.woo-step-box li:last-child:before {background:none}
 
 .case-list02 li { border-bottom:1px solid #dadada; padding:40px 0; margin-bottom:40px;}
 .case-list02 li:last-child { border-bottom:0; margin-bottom:0;}
-.case-list02 li p { position:relative; padding-left:105px; text-indent:-14px; line-height:140%}
+.case-list02 li p { position:relative; padding-left:110px; line-height:140%}
 .case-list02 li p strong{display:block; position:absolute; left:0; top:50%; width:73px; height:96px; margin-top:-48px; color:#002f5f; padding-top:78px; text-align:center; text-indent:0 }
-.case-list02 li p i {font-size:20px; color:#002f5f; }
+.case-list02 li p i {color:#002f5f; font-size:20px; display:none }
 .case-list02 li p [class*="iconcase01"]:before{content:"";  display:block; position:absolute; left:0; top:0; width:73px; height:73px; background:url('/_ui/responsive/theme-blue/images/akl_common/business/img_nca07_mob.png') 0 0 no-repeat; background-size:73px auto }
+.case-list02 li p:before, .case-list02 li p:after {content:''; display:inline-block; width:9px; height:8px; vertical-align:middle; margin-top:-12px; background-size:80px 300px; background-image:url('/_ui/responsive/theme-blue/images/akl_common/business/ico_gn01.png');}
+.case-list02 li p:before {background-position:-71px -41px; margin-right:5px}
+.case-list02 li p:after {background-position:-71px -73px; margin-left:5px}
 
 .case-list02 li p [class*="iconcase01-02"]:before { background-position: 0 -97px }
 .case-list02 li p [class*="iconcase01-03"]:before { background-position: 0 -192px }
@@ -935,8 +955,6 @@ ul.woo-step-box li:last-child:before {background:none}
 .case-list02 li [class*="imgcase01-03"] {background-position: center -248px }
 .case-list02 li [class*="imgcase01-04"] {background-position: center -382px }
 .case-list02 li [class*="imgcase01-05"] {background-position: center -510px }
-
-
 
 /* 사업 가이드 > 사업규정 */
 .bizStit { font-size:15px; font-weight:500; margin-bottom:15px;}
@@ -1069,11 +1087,318 @@ ul.woo-step-box li:last-child:before {background:none}
 .amway-theme .alphabet h2 {margin:0; text-align:left;}
 #alphabet-tip{position:fixed; z-index:100; top:50%;left:50%;width:110px;height:110px;margin-top:-55px;margin-left:-55px;font-size:40px;font-weight:500;line-height:110px;text-align:center;color:#ffffff;border-radius:50%;background:rgba(0,47,95,.8);}
 
-/* 모바일용 색인 */
-.alphabet-list {display:none;}
+/* 로스맵 */
+.losmap {margin-top:40px}
+.losmap .txt-tbl strong {font-weight:700; color:#002f5f}
+.losmap .txt-stat {display:table; margin-top:12px; }
+.losmap .txt-stat > * {display:table-cell; vertical-align:middle}
+.losmap .txt-stat em {font-weight:500; color:#002f5f}
+.losmap .txt-stat div {padding-left:20px}
+.losmap .txt-stat div span + span:before {content:'/'; display:inline-block; margin-right:4px}
+.losmap .txt-stat div span strong {font-weight:700; color:#002f5f}
+.losmap .mob-blck {margin-right:15px}
+.akl .losmap .link-btn {line-height:1; font-style:normal}
+.layerWrapper.business .list-type5.line {padding:15px 0 8px; margin-top:20px; border-top:1px solid #dadada; border-bottom:1px solid #dadada}
+.layerWrapper.business .list-type5 em {font-weight:500}
 
+
+/* ----- Q레그 현황 ----- */
+.list-type5.qlegs-info {overflow:hidden;}
+.list-type5.qlegs-info > li {float:left; width:50%;}
+
+.akl .amway-theme .qLegs-wrapper * {font-size:14px;}
+.akl .amway-theme .qLegs-wrapper .list-type2 * {font-size:13px;}
+.akl .amway-theme .tbl_top_info>h2 {margin:40px 0 17px;font-size:16px; color:#56565a; text-align:left;}
+
+.qLegs-wrapper .tbl_top_info {margin:40px 0 0;}
+.qLegs-wrapper .tbl_top_info .title-h6 + p {padding-top:13px;}
+.qLegs-wrapper .outer-border-bottom {margin:80px 0 0;}
+.qLegs-wrapper .topup-search {margin:40px 0 20px;}
+.qLegs-wrapper .qlegTotal {display:table; width:100%; margin-top:10px; border:1px solid #dadada; border-width:1px 0;}
+.qLegs-wrapper .qlegTotal>strong {display:table-cell; box-sizing:border-box; vertical-align:middle; padding:25px 25px 22px 22px; min-width:247px}
+.qLegs-wrapper .qlegTotal .txtTit {width:18%;background:#f4f4f4;}
+.qLegs-wrapper .qlegTotal .numb {width:auto; text-align:right;}
+.qLegs-wrapper .qlegTotal.ty-international .txtTit { min-width:302px}
+.qLegs-wrapper .tbl_top_info .link-btn {margin:0 0 0 15px;}
+.qLegs-wrapper .tab-content+.list-type2 {margin-top:40px;}
+
+.akl .amway-theme .tbl-list {margin:0; border-top:1px solid #e3e3e3;}
+.akl .amway-theme .tbl-list td, .akl .amway-theme .tbl-list th {color:#55565a; font-weight:500; text-align:center; vertical-align:middle; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3; background:#fff;}
+.akl .amway-theme .tbl-list th, .akl .amway-theme .tbl-list tbody tr:nth-of-type(even) {background:#fff;}
+.akl .amway-theme .tbl-list tr td:last-child,
+.akl .amway-theme .tbl-list thead tr th:last-child {border-right:0;}
+.akl .amway-theme .tbl-list .colspan-line,
+.akl .amway-theme .tbl-list tr td:last-child.colspan-line,
+.akl .amway-theme .tbl-list thead tr th:last-child.colspan-line {border-right:1px solid #e3e3e3}
+.akl .amway-theme .tbl-list thead th {background:#f4f4f4;}
+.akl .amway-theme .tbl-list thead .thisMonth {background:#007eb0; color:#fff;}
+.akl .amway-theme .tbl-list tbody .thisMonth {background:#f2f9fc;}
+.akl .amway-theme .tbl-list td,
+.akl .amway-theme .tbl-list th {min-width:60px;}
+.akl .amway-theme .tbl-list .bd-right0 {border-right:0;}
+
+.table-wrap {width:100%;overflow:auto;}
+.table-scroll {position:relative; overflow:hidden; box-sizing:border-box;}
+.table-scroll table {width:100%;margin:auto;border-collapse:separate;border-spacing:0;}
+.table-scroll th, .table-scroll td {padding:5px 10px; white-space:nowrap;vertical-align:top;}
+.table-scroll thead, .table-scroll tfoot {background:#f9f9f9;}
+table.clone {position:absolute;top:0;left:0;pointer-events:none;}
+table.clone th, .clone td {visibility:hidden}
+table.clone td, .clone th {border-color:transparent}
+table.clone tbody th {visibility:visible;color:red;}
+table.clone .fixed-side { visibility:visible;}
+table.clone thead, .clone tfoot{background:transparent;}
+.table-scroll .scrollArrow {position:absolute; top:50%; right:20px; margin-top:-35px; width:70px; height:70px; background:#555;}
+.table-scroll .scrollArrow.toLeft {background:hotpink;}
+.table-scroll .scrollArrow.toRight {background:orange;}
+
+/* ----- 월간 코어 보너스 조회, 여행점수 조회 (공통 사용) ----- */
+.monthly-coreBonus-wrapper, .rewards-program-wrapper {padding:36px 0 0;}
+.monthly-coreBonus-wrapper .outer-border-bottom,
+.rewards-program-wrapper .outer-border-bottom {margin-bottom:40px;}
+
+.akl .amway-theme.business>[class$=-wrapper] h2 {font-size:18px; text-align:left; margin:0; letter-spacing:-0.05em;}
+.akl .amway-theme.business>[class$=-wrapper] h3 {font-size:14px; text-align:left; color:#56565a; letter-spacing:-0.05em;}
+.akl .amway-theme.business .box-conts-summary>h2,
+.akl .amway-theme.business .box-conts-group>h2,
+.akl .amway-theme.business .box-conts-group>h3 {margin:0 0 26px;}
+
+.amway-theme.business .mob-inline {display:block;}
+.amway-theme.business .box-conts-summary dl {overflow:hidden;}
+.amway-theme.business .box-conts-summary dl>dt {float:left; width:20%; margin-top:13px; color:#002f5f;font-weight:500;}
+.amway-theme.business .box-conts-summary dl>dd {float:left; width:80%; margin-top:13px;}
+.amway-theme.business .box-conts-group {margin:37px 0 0; padding:37px 0 40px; border-top:1px solid #dadada;}
+.amway-theme.business .box-conts-group.type-bottom0 {padding-bottom:0}
+.amway-theme.business .box-conts-group .search-no-result {background:#fafafa;}
+.amway-theme.business .box-conts-group+.box-conts-group {margin:0;}
+.amway-theme.business .box-conts-group .imgbox {background: #fafafa; padding:40px 60px}
+.akl .amway-theme .box-goal-point li>span {font-size:38px; letter-spacing:-0.025em;}
+
+/* ----- 여행점수 조회 ----- */
+.akl .txt-required {font-size:13px !important;}
+.akl p.txt-required {margin-bottom:0;}
+.akl .amway-theme .etc-required>em {font-size:0;}
+/* .akl .amway-theme .rewards-program-wrapper * {font-size:14px;} */
+.akl .amway-theme.business .rewards-program-wrapper h3 {font-size:16px;}
+.akl .amway-theme .rewards-program-wrapper .calc-travel-point>h3 {font-size:14px;}
+.akl .amway-theme .rewards-program-wrapper .next-control {text-align:center; margin-top:30px;}
+
+/* 여행 점수 산출 diagram */
+.box-diagram {overflow:hidden; padding:40px 60px 37px; background:#fafafa;}
+.box-diagram .diag-calculation {float:left; width:60%; margin-right:3%; border-right:1px solid #dadada;}
+.box-diagram .diag-details {float:left; width:37%;}
+.diag-calculation>p {display:table; width:100%; height:102px;}
+.diag-calculation p>.math-txt:first-child {width:28%;}
+.diag-calculation .math-txt {position:relative;display:table-cell; width:28%; box-sizing:border-box; vertical-align:middle; color:#002f5f;}
+.diag-calculation .math-txt.plus {width:8%}
+.diag-calculation .math-txt.last {width:36%;}
+.diag-calculation .math-txt * {display:inline-block; vertical-align:middle;}
+.diag-calculation [class^=ico-type] {position:relative; display:inline-block; padding:15px 0 0 82px; height:72px;}
+.diag-calculation [class^=ico-type]:before {content:''; position:absolute; top:0; left:0; width:72px; height:72px; background:url(../images/akl_common/img_rewards_travel2_pc.png) no-repeat;}
+.diag-calculation .ico-type-equal {padding-left:100px; width:100%; height:100px;}
+.diag-calculation .ico-type-equal:before {width:100px; height:100px; background-position:0 0;}
+.diag-calculation .ico-type-equal:after {content:''; position:absolute; top:50%; left:50%; margin:-7px 0 0 40px; width:24px; height:14px; background:url(../images/akl_common/img_rewards_travel2_pc.png) no-repeat 0 -300px;}
+.diag-calculation .ico-type-a:before {background-position:50% -120px;}
+.diag-calculation .ico-type-a:after {display:none;}
+.diag-calculation .ico-type-b:before {right:30px; background-position:50% -210px;}
+.diag-calculation .ico-type-plus{width:20px; height:20px; padding:0;}
+.diag-calculation .ico-type-plus:before {width:20px; height:20px; background-position:0 -350px; top:50%; right:; margin-top:-10px;}
+.diag-details li>p{margin:0; padding-left:35px;}
+.diag-details .txt-required {color:#e11e45;}
+.diag-details .symbol-tit+.txt {font-size:13px;color:#808285;}
+.diag-details .symbol-tit {position:relative; padding-left:35px;font-weight:500;}
+.diag-details .symbol-tit .symbol-round-txt {position:absolute; top:0; left:0}
+.symbol-round-txt {display:inline-block; background:#002f5f; color:#fff; font-size:16px; font-weight:500; border-radius:12px; width:24px; height:24px; text-align:center; line-height:22px;}
+
+/* 여행점수 확인 */
+.rewards-program-wrapper .status-travel-point {margin-bottom:0;}
+.rewards-program-wrapper .status-travel-point em {font-weight:500; color:#002f5f;}
+.rewards-program-wrapper .txt-ty-month {font-weight:500;}
+
+.box-goal-point {padding:30px 0 40px; margin-top:15px; background:#fafafa;}
+.box-goal-point.result-text {padding:40px 30px 36px; text-align:center; font-size:16px; font-weight:500; line-height:170%;}
+.box-goal-point.result-text p{margin-bottom:0;}
+.box-goal-point>ul{overflow:hidden;}
+.box-goal-point>ul>li {display:block; float:left; width:33%; text-align:center; position:relative; padding-bottom:20px;}
+.box-goal-point li>span {display:block; font-weight:500; color:#002f5f;}
+.box-goal-point li>strong {display:block; position:absolute; bottom:0; left:0; right:0; width:100%;}
+
+.akl .form-group .input-border {border:solid 1px #dadada;}
+.akl .form-group .input-border>input[type="text"] {border:0;}
+.box-simulation ul.form-list {width:500px; margin-top:30px;}
+.box-simulation .form-group label {padding-left:0; padding-right:0;}
+.box-simulation .form-group .input-border {position:relative; width:100%; box-sizing:border-box; margin:0; padding-right:45px; text-align:right;}
+.box-simulation .form-group .input-border>em {position:absolute; top:0; right:0; display:block; padding-right:10px; line-height:38px;}
+.box-simulation .form-group .input-border>input{width:100%; padding-right:0;}
+.box-simulation .list-type2 > li.bg-none {background:none; padding-left:0}
+
+/* 1개월 여행점수 계산법 */
+.calc-travel-point {margin:30px 0 10px;}
+.calc-travel-point .box-diagram {margin-top:15px;}
+.calc-travel-point .txt-math {overflow:hidden; margin:0;}
+.calc-travel-point .txt-math>span {display:block; float:left; height:34px; background:url(../images/akl_common/business/img_rewards_travelmath1_pc.png) no-repeat 0 0;}
+.calc-travel-point .txt-math .math-left {width:260px; background-position:0 0;}
+.calc-travel-point .txt-math .plus {width:70px; background-position:-260px 0;}
+.calc-travel-point .txt-math .math-right {width:338px; background-position:-332px 0;}
+
+/* 여행점수 시뮬레이션 결과 */
+.box-simulation .tbl-list-board {margin-top:40px;}
+.box-simulation .tbl-list-board .travel-simul-th6 {width:20%;}
+.box-simulation .tbl-list-board .travel-simul-th6>p {color:#731472;}
+
+/* --- 여행점수 시뮬레이션 : Bar 차트 --- */
+.akl .amway-theme .rewards-program-wrapper .chartNum,
+.akl .amway-theme .rewards-program-wrapper .axisHorizontal>div>span {font-size:13px;}
+.chartWrapper {margin-top:20px;}
+.chartWrapper .goalPoint { margin-bottom:10px; text-align:right; line-height:1;}
+.chartWrapper .goalPoint span, .chartWrapper .goalPoint strong {display:inline-block; padding-bottom:2px;}
+.chartWrapper .goalPoint strong { padding-left:8px; color:#444;}
+.chartWrapper .colorBar {position:relative; padding-left:20px}
+.chartWrapper .colorBar:before {content:'';position:absolute; top:4px; left:0; display:inline-block; width:12px; height:12px; background:#42cbd3;}
+.chartWrapper .colorBar>em {display:inline-block; position:absolute; left:-9999px; top:-9999px; width:0 !important; height:0 !important; font-size:0 !important; line-height:0 !important; margin:0; padding:0;}
+.chartWrapper .tblList .lineH th { padding:12px 0; letter-spacing:-1px;}
+
+/* 차트상자 */
+.barChartBox {position:relative; margin:0 0 60px; padding:0 0 0 90px;}
+.barChartBox>ul {display:table; width:100%; height:130px; border-top:0px solid #dadada;}
+.barChartBox>ul>li {position:relative; display:table-cell; height:100px; box-sizing:border-box; vertical-align:bottom;}
+
+/* Y축 */
+.axisHorizontal {position:absolute; left:90px; bottom:0; right:0; height:100px; box-sizing:border-box; border-bottom:1px solid #dadada;}
+.axisHorizontal>div {position:absolute; left:0; border-top:1px solid #dadada; width:100%;}
+.axisHorizontal>div>span {position:absolute; left:-90px; bottom:-8px; display:block; width:70px; text-align:right; font-size:13px;}
+.axisHorizontal>div.yAxisMinimum {bottom:0; border:0;}
+.yAxisMaximum{top:0;}
+.yAxisHalf{top:50%;}
+.yAxisHalf.oneThirds{top:66.66%;}
+.yAxisHalf.twoThirds{top:33.33%;}
+
+/* X축 범례 */
+.chartLegend { position:absolute; bottom:-50px; display:block; width:100%; height:50px; text-align:center; padding-top:10px; font-size:13px; font-weight:400;}
+
+/* 막대 */
+.chartBar { position:absolute; bottom:0; width:100%; height:100px; box-sizing:border-box; text-align:center;}
+.chartBar.barTarget strong, .chartBar.barSection_01 strong {background:#42cbd3;}
+.chartBar.barAttainment strong, .chartBar.barSection_02 strong {background:#00b2e2;}
+.chartBar.barPromotion strong,  .chartBar.barSection_03 strong {background:#005cb9;}
+.chartBar>span { position:absolute; bottom:0; left:50%; display:block; vertical-align:bottom; width:100px; height:100px; margin-left:-50px;}
+.chartBar>span img {position:absolute; left:0; bottom:0; width:100%; min-height:3px; max-height:120px; border-radius:5px 5px 0 0;}
+.chartBar>span>strong{position:absolute; left:0; bottom:0; width:100%; min-height:3px; display:block;background:;overflow:hidden;text-indent:-9999px;font-size:0;}
+.chartNum {position:absolute; width:100%; text-align:center; font-size:13px;}
+
+/* ----- 월간 코어 보너스 조회 ----- */
+.monthly-coreBonus-wrapper .next-control {margin-top:30px; text-align:center;}
+.akl .amway-theme  .monthly-coreBonus-wrapper .box-simulation .box-conts-group>h3 {font-size:14px; margin-bottom:15px;}
+
+/* 월간 코어 보너스 Bar 차트 */
+.barChartBox.coreBonus .axisHorizontal {left:120px; height:150px;}
+.barChartBox.coreBonus .axisHorizontal>div>span {left:-95px;}
+.barChartBox.coreBonus .chartLegend {bottom:-55px;}
+.barChartBox.coreBonus>.chartLegend {width:auto; left:0; letter-spacing:-0.025em;}
+.barChartBox.coreBonus>ul {height:170px;}
+.barChartBox.coreBonus>ul>li,
+.barChartBox.coreBonus .chartBar,
+.barChartBox.coreBonus .chartBar>span {height:150px;}
+
+/* tab1: 월간 코어 보너스 */
+.box-goal-point.corebonus {margin-top:20px;margin-bottom:40px;}
+.box-goal-point.corebonus>ul>li  {width:50%; padding-bottom:40px;}
+
+/* tab2: 여행점수 성장 보너스 시뮬레이션 */
+.monthly-coreBonus-wrapper [class$=-simul] .box-conts-group {border-top:0; padding-top:0; margin-top:0;}
+.monthly-coreBonus-wrapper [class$=-simul] .outcome .box-conts-group>h3 {margin:30px 0 0;}
+.monthly-coreBonus-wrapper [class$=-simul] .outcome .chartWrapper {margin-top:30px;}
+.amway-theme.business .type-bonus-simul .box-conts-group>h3 {font-size:14px; margin-bottom:15px;}
+
+.diag-growth-bonus>p {display:table; width:auto; min-height:72px; margin:0}
+.diag-growth-bonus .math-txt {position:relative;display:table-cell; width:30%; box-sizing:border-box; vertical-align:middle; color:#002f5f;}
+.diag-growth-bonus .math-txt * {display:inline-block; vertical-align:middle;}
+.diag-growth-bonus .math-txt span>em {}
+.diag-growth-bonus .math-txt.multi {width:8%;}
+.diag-growth-bonus [class^=ico-type] {position:relative; display:inline-block; padding:25px 0 0 76px; height:72px;}
+.diag-growth-bonus [class^=ico-type]:before {content:''; position:absolute; top:0; left:0; width:72px; height:72px; background:url(../images/akl_common/business/img_monthly_corebonus_pc.png) no-repeat;}
+.diag-growth-bonus .ico-type-equal {width:100%; padding-left:76px;}
+.diag-growth-bonus .ico-type-equal:before {width:64px; height:72px; background-position:50% -93px;}
+.diag-growth-bonus .ico-type-equal:after {content:''; position:absolute; top:50%; left:50%; margin:-7px 0 0 55px; width:24px; height:14px; background:url(../images/akl_common/business/img_monthly_corebonus_pc.png) no-repeat 50% 0;}
+.diag-growth-bonus .ico-type-multi{width:18px; height:18px; padding:0;}
+.diag-growth-bonus .ico-type-multi:before {width:18px; height:18px; background-position:50% -50px; top:50%; margin-top:-9px;}
+.diag-growth-bonus .ico-type-a:before {background-position:50% -200px;}
+.diag-growth-bonus .ico-type-a:after {display:none;}
+.diag-growth-bonus .ico-type-b:before {right:30px; background-position:50% -290px;}
+
+/* tab3: 볼륨 성장 보너스 시뮬레이션 */
+.type-volume-simul .barChartBox.coreBonus>.chartLegend{text-align:right; left:10px}
+
+/* ----- ABO양식 ----- */
+.aboForm-wrapper {margin-top:40px;}
+.aboForm-wrapper .search-block {margin-bottom:40px;}
+.aboForm-wrapper .search-no-result {border-top:1px solid #dadada;}
+.aboForm-wrapper .list-type2 {padding-top:30px; border-top:1px solid #dadada;}
+.abn-forms-list {overflow:hidden; margin-bottom:40px;}
+.abn-forms-list>li {float:left; width:32%; margin-top:20px; border:1px solid #e3e3e3;}
+.abn-forms-list>li:nth-of-type(3n-1){margin:20px 2% 0;}
+.abn-forms-list>li:nth-of-type(-n+3){margin-top:0;}
+.docfile-box {position:relative; height:100%; padding-bottom:38px;}
+.docfile-box > * {box-sizing:border-box;}
+.docfile-box .doc-text {display:block; height:75px; padding:17px 20px 0;}
+.docfile-box .doc-file{display:block; position:absolute; left:0; bottom:0; width:100%; padding:4px 6px 0 0; background:#f4f4f4; height:38px; text-align:right;}
+
+/* ----- ABO수첩 ----- */
+.pocketbook-wrapper {margin-top:40px;}
+.abo-pocket-menual .top-title {position:relative; padding:20px 0 0; overflow:hidden; margin-bottom:0; border:1px solid #e3e3e3; border-width:1px 0 0; text-align:right}
+.btn-download{padding:5px 5px 5px 26px !important; background:url(../images/akl_common/ico_btn_download.png) 0 50% no-repeat !important; background-size:18px auto !important; color:#0075a4 !important;}
+
+/* 뷰어가이드 */
+.viewer-guide-box {position:relative; padding:30px; margin:40px 0; background:#f4f4f4;}
+.viewer-guide-box>p{margin:0; padding-left:50px; line-height:24px; background:url(../images/icon_caution.png) 0 0 no-repeat;}
+.viewer-guide-box:after {content:''; display:block; position:absolute; top:17px; right:17px; box-sizing:border-box; overflow:hidden;}
+.viewer-guide-box.type-pdf a {position:absolute; top:17px; right:17px; display:block; width:198px; height:48px; border:1px solid #d82028;text-indent:-999px;overflow:hidden; background:#fff url(../images/akl_common/ico_viewer_pdf.png) 0 0 no-repeat;}
+.pocketbook-wrapper .viewer-guide-box + .list-type2 { padding-top:30px; border-top:1px solid #dadada;}
+
+/* 수첩 이미지 */
+.note-con-box {display:table; width:100%; table-layout:fixed; margin:20px 0 0;}
+.note-con-box>span {display:table-cell; vertical-align:top;}
+.note-con-box .img>img { height:auto;}
+.note-con-box .ty-cover {width:37%; text-align:right;}
+.note-con-box .ty-inside {width:63%;}
+.note-con-box .qr-box {margin-left:60px;}
+.note-imgs-wrapper .qr-box {padding:28px; border:1px solid #f4f4f4;}
+.note-imgs-wrapper .qr-box>p {display:table-cell; vertical-align:middle;}
+.note-imgs-wrapper .code-img {width:100px; height:100px;}
+.note-imgs-wrapper .code-img>img {width:100%;}
+.note-imgs-wrapper .code-info{padding-left:50px;}
+.note-imgs-wrapper .pc-block{display:block;}
+
+/* 수첩목차 */
+.note-index-wrapper {position:relative; overflow:hidden; padding:37px 0 37px 37%; margin:40px 0; border:1px solid #dadada; border-width:1px 0;}
+.note-index-wrapper dt.title {position:absolute; top:34px; left:130px; font-size:32px; color:#002f5f; text-transform:uppercase;font-weight:500;}
+.note-index-wrapper dt+dd { padding-left:60px;}
+.note-index-wrapper dd {float:left; width:50%; box-sizing:border-box; line-height:180%; word-spacing:0.25em}
+
+
+
+/* MIN */
+@media (min-width: 768px) {
+	.box-gray.img-type01 .img {float:right}
+}
+@media (min-width:993px){
+	/* 비즈니스 > 사랑의 우수리 */
+	.woo-ex-price .sec {float:left; width:33.333333%;}
+}
 /* MAX */
+@media (max-width: 1250px){
+	/* ABO수첩 */
+	.note-index-wrapper dt.title {left:60px;}
+
+	/* 월간 코어 보너스 Bar 차트 */
+	.barChartBox.coreBonus .mob-block {display:block;}
+	.barChartBox.coreBonus>.chartLegend {text-align:right; width:60px; left:38px;}
+}
 @media (max-width: 1220px){
+	/* 여행 점수 산출 diagram */
+	.diag-calculation .math-txt.plus {width:6%;}
+	.diag-calculation .math-txt.last {width:38%;}
+
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.box-diagram02 .diag-calculation .math-txt.plus {width:6%;}
 	.box-diagram02 .diag-calculation .math-txt.last {width:38%;}
@@ -1087,6 +1412,18 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business .card-receive .tbl-type li:nth-child(3) {width:31%; padding-right:0}
 }
 @media (max-width: 1148px){
+	/* 여행 점수 산출 diagram */
+	.box-diagram .diag-calculation {width:auto; padding-right:30px;}
+	.box-diagram .diag-details {width:auto;}
+	.diag-calculation>p {width:auto;}
+	.diag-calculation p>.math-txt:first-child {width:auto; min-width:150px}
+	.diag-calculation .math-txt em {display:none;}
+	.diag-calculation [class^=ico-type] {padding-left:72px}
+	.diag-calculation .ico-type-plus {padding-left:0;}
+	.diag-calculation .math-txt {width:auto; min-width:80px; text-align:center;}
+	.diag-calculation .math-txt.plus {width:auto; min-width:50px; text-align:center;}
+	.diag-calculation .math-txt.last {width:auto;}
+
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.box-diagram02 .diag-calculation {width:auto; padding-right:30px;}
 	.box-diagram02 .diag-calculation>p {width:auto;}
@@ -1117,7 +1454,23 @@ ul.woo-step-box li:last-child:before {background:none}
  	.box-ratio02 ul li.tbody div span em mark:nth-of-type(1){ padding:0 0 0 8px; }
 	.box-ratio02 ul li.tbody div span em mark:nth-of-type(2) { padding:0 0 0 25px; }
 }
+@media (max-width: 1120px){
+	/* ABO수첩 */
+	.note-con-box .img>img {width:100%;}
+	.note-index-wrapper dt.title {left:20px;}
+}
+@media (max-width:1024px){
+	.qLegs-wrapper .qlegTotal {background:#f4f4f4;}
+	.qLegs-wrapper .qlegTotal .txtTit {width:auto;}
+	.qLegs-wrapper .qlegTotal .numb {width:auto;text-align:right;}
+	.qLegs-wrapper .qlegTotal.ty-international .txtTit {width:auto;}
 
+	/* ABO수첩 */
+	.note-con-box .qr-box {margin-left:0;}
+	.note-con-box.qrcode .ty-cover {display:none;}
+	.note-con-box.qrcode .ty-inside {width:auto;}
+	.note-index-wrapper dt+dd { padding-left:0;}
+}
 @media (max-width:992px) {
 
 	/* 비즈니스 */
@@ -1199,11 +1552,19 @@ ul.woo-step-box li:last-child:before {background:none}
 }
 
 @media (max-width:940px){
+	/* 여행 점수 산출 diagram */
+	.box-diagram .diag-calculation {float:none; width:100%; padding:0 0 30px; margin-bottom:35px; border-right:0; border-bottom:1px solid #dadada;}
+	.box-diagram .diag-details {float:none; width:;}
+	.diag-calculation>p {width:100%;}
+
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.box-diagram02 .diag-calculation {  width:100%; padding:0 ; }
 	.box-diagram02 .diag-calculation>p {width:100%;}
 }
-
+@media (max-width:900px){
+	/* 여행점수 성장 보너스 시뮬레이션 */
+	.diag-growth-bonus .math-txt.multi {width:5%;}
+}
 @media (max-width:851px){
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram > FP19*/
 	.box-diagram03 { padding:20px 10px; }
@@ -1264,7 +1625,6 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram06 .pop-diagram-img02 { background:url(../images/akl_common/business/img_rewards_travel26_mob.png) no-repeat 50% 0; background-size:220px auto }
 	.box-diagram06 .pop-diagram-img03 { background:url(../images/akl_common/business/img_rewards_travel27_mob.png) no-repeat 50% 0; background-size:220px auto;height:635px; }
 }
-
 @media (max-width: 768px) {
 	/* 비즈니스 */
 	.business [class*="info-list-type"] .txt {text-align:right}
@@ -1294,6 +1654,114 @@ ul.woo-step-box li:last-child:before {background:none}
 	.business-main-wrapper .mypage-block-list {margin:18px -10px 0 -10px}
 	.akl .business-main-wrapper .mypage-block-list li {width:100%; margin:0; padding:10px}
 
+		/* ----- 여행점수 조회 ----- */
+	.rewards-program-wrapper {padding: 20px 0 0;}
+	.rewards-program-wrapper .box-conts-group .imgbox>img {width:100%;}
+	.rewards-program-wrapper .box-conts-group .box-diagram {padding:40px 30px;}
+	.amway-theme.business .box-conts-group .imgbox { padding:40px 20px; }
+	.amway-theme.business .box-conts-group .imgbox .mob { text-align: center;}
+	.amway-theme.business .box-conts-group .imgbox .mob img{max-width:306px; width:100%}
+
+	/* 여행 점수 산출 diagram */
+	.diag-calculation [class^=ico-type] {padding:15px 0 0 62px; height:52px;}
+	.diag-calculation [class^=ico-type]:before, .diag-calculation [class^=ico-type]:after {display:none;}
+	.box-diagram .diag-calculation>p {overflow:hidden; display:block; height:1px; padding:70px 0 0; margin:0; background:url(../images/akl_common/img_rewards_travel2_mob.png) 50% 0 no-repeat; background-size:auto 70px;}
+
+	/* 여행점수 확인 */
+	.rewards-program-wrapper .mob-inline {display:inline;}
+	.box-goal-point {padding:10px 0 20px;}
+	.box-goal-point>ul{overflow:hidden;}
+	.box-goal-point>ul>li {display:block; float:none; width:auto;}
+	.box-goal-point>ul>li+li{margin-top:20px;}
+
+	.box-goal-point.corebonus>ul>li{width:auto;}
+	.business .monthly-coreBonus-wrapper .tbl-list-board .th {padding-left:0;}
+	.monthly-coreBonus-wrapper .tbl-list-board.type-tbody-th .tbody .tr>div {text-align:left;}
+
+	/* 여행점수 시뮬레이션 */
+	.business .box-simulation .tbl-list-board .th {padding-left:0;}
+	.box-simulation ul.form-list {width:auto;}
+	.box-simulation .form-group .input-border {width:auto;}
+	.box-simulation .tbl-list-board {margin-top:;}
+	.box-simulation .tbl-list-board.type-tbody-th .tbody .mob-block>strong ,
+	.box-simulation .tbl-list-board.type-tbody-th .tbody .mob-block>p{float:none; width:auto; text-align:left;}
+
+	/* 여행점수 시뮬레이션 : Bar 차트 */
+	.barChartBox {margin:0 0 90px 0;}
+	.mob-block {display:block;}
+	.chartBar>span {width:50px; margin-left:-25px;}
+
+	.calc-travel-point .txt-math {overflow:hidden; margin:0;}
+	.calc-travel-point .txt-math>span {display:block; float:left; height:34px; background:url(../images/akl_common/business/img_rewards_travelmath1_mob.png) no-repeat 0 0; background-size:auto 117px;}
+	.calc-travel-point .txt-math .math-left {width:100%; background-position: 50% 0;}
+	.calc-travel-point .txt-math .plus {width:100%; height:52px; background-position:50% -33px;}
+	.calc-travel-point .txt-math .math-right {width:100%; background-position:50% -85px;}
+
+	/* Q레그 현황 */
+	.table-scroll {position:relative; min-width:305px; margin:auto;overflow:hidden; margin-right:-15px;}
+	.table-scroll .tbl-list td {padding:15px 17px;}
+	.list-type5.qlegs-info {margin:30px 0;}
+	.business .topup-search .cuton-sel select {margin:0}
+	.business .qLegs-wrapper .topup-search.type02 .cuton-sel select {margin:0}
+	.qLegs-wrapper .outer-border-bottom {margin-top:60px;}
+	.qLegs-wrapper .qlegTotal>strong {min-width:auto;}
+
+	.akl .business .qLegs-wrapper .topup-search.type02 .cuton-sel .link-btn {margin:5px 0 0 15px;}
+	.akl .amway-theme .tbl-wrapper-qLegs .tbl-list td.no-result {text-align:left;}
+
+	/* ----- 월간 코어 보너스 조회 ----- */
+	.tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>strong {display:none;}
+	.tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>p {float:none; width:100%; text-align:left; font-weight:500;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th {margin-bottom:0;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>strong {width:60%; text-align:left;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block>p {width:40%;}
+	.type-monthly-coreBonus .tbl-list-board.type-tbody-th .mob-block.monthly-bonus-th1>p {width:100%;}
+
+	.type-bonus-simul .box-diagram ,
+	.type-volume-simul .box-diagram{padding:20px 0;}
+	.type-bonus-simul .diag-growth-bonus>p {overflow:hidden; display:block; height:1px; padding:122px 0 0; margin:0; background:url(../images/akl_common/business/img_monthly_corebonus_mob.png) 50% 0 no-repeat; background-size:304px auto;}
+	.type-volume-simul .diag-growth-bonus>p {overflow:hidden; display:block; height:1px; padding:122px 0 0; margin:0; background:url(../images/akl_common/business/img_monthly_volumbonus_mob.png) 50% 0 no-repeat; background-size:304px auto;}
+
+	/* 월간 코어 보너스 Bar 차트 */
+	.barChartBox.coreBonus .axisHorizontal {left:90px;}
+	.barChartBox.coreBonus .axisHorizontal>div>span {left:-90px;}
+	.barChartBox.coreBonus>.chartLegend {left:12px;}
+
+	/* ----- 비즈니스 > 후원자 정정 현황 ----- */
+	.business .request-status .tbl-list-board.type-td-show .tr>div {float:none; padding:0 0 17px 20px;}
+	.business .request-status .btn-td button+button {margin-left:10px;}
+	.business .request-status .tbl-list-board.type-td-show .tbody .tr {border-top:0;}
+	.business .request-status .tbl-list-board.type-td-show .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
+	.business .request-status .tbl-list-board.type-td-show .tbody .tr:nth-of-type(even) {background:#f4f4f4;}
+
+	/* ----- ABO양식 ----- */
+	.abn-forms-list>li {float:none; width:100%;}
+	.abn-forms-list>li:nth-of-type(3n-1),
+	.abn-forms-list>li:nth-of-type(-n+3){margin:20px 0 0;}
+	.abn-forms-list>li:nth-of-type(1){margin-top:0;}
+	.docfile-box .doc-text {height:auto; min-height:75px; padding-bottom:17px;}
+	.search-block .form-s .btn.btn-primary>span{position:absolute; left:0; top:0; width:0; height:0; overflow:hidden;}
+
+	/* ----- ABO수첩 ----- */
+	.abo-pocket-menual .top-title>span {font-size:22px;}
+
+	/* 뷰어가이드 */
+	.viewer-guide-box>p {background-size:20px auto; background-position:0 5px; line-height:26px;}
+	.viewer-guide-box:after {position:initial; margin:10px 0 0 50px;}
+	.viewer-guide-box.type-pdf a { position:initial; margin:10px 0 0 50px;}
+
+	/* 수첩 이미지 */
+	.note-con-box.imgs {margin:25px 0 40px; background:url(../images/akl_common/business/img_abo_pocket_mob.png) 50% 0 no-repeat; background-size:auto 485px;  height:485px;}
+	.note-con-box.imgs .img {display:none;}
+	.note-imgs-wrapper .code-img {width:69px; height:69px;}
+	.note-imgs-wrapper .code-info{padding-left:20px;}
+	.note-imgs-wrapper .pc-block{display:inline;}
+
+	/* 수첩목차 */
+	.note-index-wrapper {padding-left:0; margin:40px 0 0;}
+	.note-index-wrapper dt.title {position:initial; padding:0 0 33px;}
+	.note-index-wrapper dd {float:none; width:auto; padding-left:2px;}
+
 	/* 사업 가이드 > GIP&NCA */
 	.akl .gn-box {padding:20px}
 	.akl .gn-box .tblList02 .won .name {display:block; margin-right:5px}
@@ -1306,6 +1774,14 @@ ul.woo-step-box li:last-child:before {background:none}
 	.bizNumList li .box-diagram { padding:40px 20px}
 	.bizNumList li .box-diagram .mob { text-align: center; }
 	.bizNumList li .box-diagram .mob img{max-width:306px; width:100%}
+
+	/* 로스맵 */
+	.losmap .txt-stat > * {display:block}
+	.losmap .txt-stat div {padding-left:0; margin-top:4px}
+	.losmap .mob-blck {display:inline-block; margin-bottom:4px}
+	.losmap .form-group.mgt20 {margin-top:10px !important}
+	.akl .losmap .link-btn {margin-top:0}
+
 
 	.gn-box-tit {display:block; color:#fff; background:#42cbd3; margin-bottom:10px; text-align:center; padding:10px; font-size:18px; font-weight:500}
 	.gn-box-tit.year { background:#00b2e2;  position:relative; margin-top: 80px}
@@ -1663,16 +2139,21 @@ ul.woo-step-box li:last-child:before {background:none}
 	.box-diagram04-right dl.case03 dt em{ width:92px; background-position:0 -410px;background-size:81px auto}
 
 	.box-diagram04 .plus { margin-top: -112px;}
-
 }
-
 @media (max-width: 360px) {
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.box-ratio ul li.thead div span:nth-of-type(1),.box-ratio ul li.tbody div span:nth-of-type(1) { height:110px }
+
+	/* 월간 코어 보너스 조회 */
+	.type-bonus-simul .diag-growth-bonus>p,
+	.type-volume-simul .diag-growth-bonus>p {background-position:50% 50%; background-size:90% auto;}
+
+	/* ABO수첩 */
+	.abo-pocket-menual .top-title>button {position:initial; margin-top:0;}
 }
-
-
 @media (max-width: 320px) {
+	.akl .evidence-paper label + .btn-business {margin-left:0px;}
+
 	/*  비즈니스 > 사업성장 특별보상 프로그램 > diagram */
 	.panel-body { padding: 15px 0; }
 	.box-ratio ul li.thead div span:nth-of-type(1),.box-ratio ul li.tbody div span:nth-of-type(1) { height:110px }
@@ -1692,15 +2173,4 @@ ul.woo-step-box li:last-child:before {background:none}
 	.case-list02 li [class*="imgcase01-03"] {background-position: center -182px }
 	.case-list02 li [class*="imgcase01-04"] {background-position: center -285px }
 	.case-list02 li [class*="imgcase01-05"] {background-position: center -384px }
-
-}
-
-/* MIN */
-@media (min-width: 768px) {
-	.box-gray.img-type01 .img {float:right}
-}
-
-@media (min-width:992px){
-	/* 비즈니스 > 사랑의 우수리 */
-	.woo-ex-price .sec {float:left; width:33.333333%;}
 }

@@ -1,6 +1,10 @@
-﻿/************************************************
-Version : AKL Hybris UIUX 1.0
-*************************************************/
+﻿/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-account.css
+  * @ 구분 : 회원가입, 마이페이지 등
+  * ---------------------------------------------------------
+  */
+
 .akl .banner__shop-now {font-weight:500; font-size:16px;}
 .akl .sub_banner .banner__message--main {font-family:'Noto Sans KR', sans-serif; font-weight:500; letter-spacing: -2px;}
 .akl .sub_banner .banner__message--sub {  font-size: 18px; font-weight:400; letter-spacing: -1px; line-height: 130%}
@@ -14,16 +18,436 @@ Version : AKL Hybris UIUX 1.0
 .akl .video-preview .video-cont span { display:table-cell; vertical-align: middle;}
 .akl .featured_brands .product-recentlyviewed__imagelist .owl-item:before { content:""; position: absolute; left:0; top:50%; height:30px; margin-top:-15px; border-left:1px solid #dadada; z-index: 1}
 .akl .featured_brands .product-recentlyviewed__imagelist .owl-item:first-child:before { display:none}
-/*
-.akl .akl-btn-wrap { text-align: center}
-.akl .akl-btn-wrap .banner__shop-now { margin:-10px 0 65px; padding: 13px 40px;} */
+
 
 /* 마이페이지 wrapper */
-.akl .message-center-wrapper, .akl .authorization-step-wrapper,
+.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .wishlist-wrapper,
 .akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper {padding:36px 50px 0; font-family:'Noto Sans KR', sans-serif;}
 
 /* 비즈니스> 후원자정정 wrapper */
 .akl .business .sponsor-switch-wrapper {padding:36px 0 0;}
+
+/* box */
+.refund-box {border:1px solid #e3e3e3;padding:18px 20px 10px;margin-top:20px;}
+.refund-box h5 {font-size:13px;padding:0;margin:0;}
+
+/** ---------------------------------
+ * @ 마이페이지
+ * ----------------------------------
+ */
+.akl .user-account-header .user-block .user-image-container .icon>a {position:absolute; top:0; left:0; display:block; width:100%; height:100%;}
+.mypage-main-wrapper {padding:40px 0 0;}
+
+/* 메인 Toggle 영역 */
+.akl .mypage-main-wrapper .panel-group .panel+.panel {margin-top:0;}
+.akl .mypage-main-wrapper .accordion-custom .panel .panel-heading {padding:0 20px;}
+.akl .mypage-main-wrapper .accordion-custom .panel .panel-heading>a {display:block;}
+.akl .mypage-main-wrapper .accordion-custom .panel-title {position:relative; padding:27px 0 27px;}
+.akl .mypage-main-wrapper .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px}
+.akl .mypage-main-wrapper .accordion-custom .panel-body {padding:0 20px 40px; border-top:0;}
+.mypage-main-wrapper .accordion-custom .panel-title p {margin-bottom:0; margin-top:-3px;}
+.mypage-main-wrapper .accordion-custom .panel-title p>* {display:inline-block; vertical-align:middle;}
+.mypage-main-wrapper .accordion-custom .panel-title p>strong {font-size:18px;}
+.mypage-main-wrapper .accordion-custom .panel-title p>span {margin-left:20px; color:#56565a; font-size:14px; font-weight:400;letter-spacing:normal;}
+.mypage-main-wrapper .akl-toggle-wrap {margin:40px 20px;}
+.mypage-main-wrapper .always-show {padding:0 40px; box-sizing:border-box;}
+
+/* 배너형 링크 */
+.mypage-block-list p {margin-bottom:0; font-size:14px;}
+.mypage-block-list ul {overflow:hidden;}
+.mypage-block-list li {float:left; width:32%; margin-top:24px;}
+.mypage-block-list li>div a {display:block; position:relative; box-sizing:border-box; height:92px; height:100%; padding:20px 20px 20px 65px; border:1px solid #dadada; border-radius:3px; color:#56565a; font-weight:400;}
+.mypage-block-list li>div a:before {content:''; position:absolute; top:50%; left:22px; margin-top:-14px; width:28px; height:28px; background:url(../images/akl_common/ico_mypage_main.png) no-repeat;}
+.mypage-block-list li>div strong{display:inline-block; margin-bottom:3px; color:#032c5e; font-weight:500;}
+.mypage-block-list li p>span {display:inline-block; margin-left:10px; padding-left:10px; font-size:14px; line-height:1.2; font-weight:normal;border-left:1px solid #56565a;}
+.mypage-block-list li p>span:first-child {margin-left:0;padding-left:0; border-left:0;}
+.mypage-block-list.top-info {margin-top:0; border:1px solid #dadada; background:#f4f4f4; border-radius:3px;}
+.mypage-block-list.top-info li>div {position:relative;}
+.mypage-block-list.top-info li>div a {border:0; border-radius:0;}
+.mypage-block-list.top-info li>div:after {content:''; position:absolute; top:26px; right:-12px; width:1px; height:40px; background:#dadada;}
+.mypage-block-list.top-info li>div strong {font-size:14px; line-height:1.2; color:#0073a3;}
+.type-member .mypage-block-list.top-info li>div:after {background:transparent}
+/*
+.mypage-block-list.top-info li>div {position:relative; box-sizing:border-box; min-height:92px; height:100%; padding:20px 20px 20px 65px;border:0; border-radius:0;}
+.mypage-block-list.top-info li>div:before, .mypage-block-list.top-info li>div:after {content:''; position:absolute;}
+.mypage-block-list.top-info li>div:before {top:50%; left:22px; margin-top:-14px; width:28px; height:28px; background:#0074a3;}
+.mypage-block-list.top-info li>div:after {top:26px; right:-12px; width:1px; height:40px; background:#dadada;}
+ */
+
+.mypage-block-list.top-info li>.box-top-03:after {display:none;}
+.mypage-block-list.top-info li.nth-3n {margin-top:0;}
+.mypage-block-list li.nth-3n-1 {width:36%; padding-left:24px; padding-right:24px;}
+.panel-collapse .mypage-block-list li.nth-3n {margin-top:0;}
+
+/* 배너형 링크 icon > 상단고정  */
+.always-show .mypage-block-list .abo-icon-01 a:before {background-position:0 0;}
+.always-show .mypage-block-list .abo-icon-02 a:before {background-position:0 -40px;}
+.always-show .mypage-block-list .abo-icon-03 a:before {background-position:0 -80px;}
+.always-show .mypage-block-list .abo-icon-04 a:before {background-position:0 -120px;}
+.always-show .mypage-block-list .abo-icon-05 a:before {background-position:0 -160px;}
+.always-show .mypage-block-list .abo-icon-06 a:before {background-position:0 -200px;}
+.always-show .mypage-block-list .member-icon-01 a:before {background-position:0 0;}
+.always-show .mypage-block-list .member-icon-02 a:before {background-position:0 -200px;}
+
+/* 배너형 링크 icon > 회원정보관리 */
+.mypage-block-list.type-abo-manage .abo-icon-01 a:before {background-position:0 -160px;}
+.mypage-block-list.type-abo-manage .abo-icon-02 a:before {background-position:0 -240px;}
+.mypage-block-list.type-abo-manage .abo-icon-03 a:before {background-position:0 -280px;}
+.mypage-block-list.type-abo-manage .abo-icon-04 a:before {background-position:0 -320px;}
+.mypage-block-list.type-abo-manage .abo-icon-05 a:before {background-position:0 -360px;}
+.mypage-block-list.type-abo-manage .abo-icon-06 a:before {background-position:0 -400px;}
+.mypage-block-list.type-abo-manage .abo-icon-07 a:before {background-position:0 -440px;}
+.mypage-block-list.type-abo-manage .abo-icon-08 a:before {background-position:0 -920px;}
+.mypage-block-list.type-abo-manage .abo-icon-09 a:before {background-position:0 -952px;}
+.mypage-block-list.type-abo-manage .member-icon-01 a:before {background-position:0 -160px;}
+.mypage-block-list.type-abo-manage .member-icon-02 a:before {background-position:0 -360px;}
+.mypage-block-list.type-abo-manage .member-icon-03 a:before {background-position:0 -400px;}
+
+/* 배너형 링크 icon > 나의쇼핑정보 */
+.mypage-block-list.type-shopping-manage .abo-icon-01 a:before {background-position:0 -480px;}
+.mypage-block-list.type-shopping-manage .abo-icon-02 a:before {background-position:0 -520px;}
+.mypage-block-list.type-shopping-manage .abo-icon-03 a:before {background-position:0 -560px;}
+.mypage-block-list.type-shopping-manage .abo-icon-04 a:before {background-position:0 -600px;}
+.mypage-block-list.type-shopping-manage .abo-icon-05 a:before {background-position:0 -640px;}
+.mypage-block-list.type-shopping-manage .abo-icon-06 a:before {background-position:0 -680px;}
+.mypage-block-list.type-shopping-manage .abo-icon-07 a:before {background-position:0 -720px;}
+.mypage-block-list.type-shopping-manage .abo-icon-08 a:before {background-position:0 -760px;}
+.mypage-block-list.type-shopping-manage .member-icon-01 a:before {background-position:0 -480px;}
+.mypage-block-list.type-shopping-manage .member-icon-02 a:before {background-position:0 -520px;}
+.mypage-block-list.type-shopping-manage .member-icon-03 a:before {background-position:0 -560px;}
+.mypage-block-list.type-shopping-manage .member-icon-04 a:before {background-position:0 -760px;}
+
+/* 배너형 링크 icon > 결제관리 */
+.mypage-block-list.type-payment-manage .abo-icon-01 a:before {background-position:0 -800px;}
+.mypage-block-list.type-payment-manage .abo-icon-02 a:before {background-position:0 -80px;}
+.mypage-block-list.type-payment-manage .abo-icon-03 a:before {background-position:0 -840px;}
+.mypage-block-list.type-payment-manage .member-icon-01 a:before {background-position:0 -800px;}
+.mypage-block-list.type-payment-manage .member-icon-02 a:before {background-position:0 -80px;}
+
+/* 배너형 링크 icon > 멤버십 */
+.mypage-block-list.type-membership-manage .abo-icon-01 a:before {background-position:0 -120px;}
+.mypage-block-list.type-membership-manage .abo-icon-02 a:before {background-position:0 -880px;}
+.mypage-block-list.type-membership-manage .member-icon-01 a:before {background-position:0 -880px;}
+.mypage-block-list.type-membership-manage .member-icon-02 a:before {background-position:0 -200px;}
+
+/* 전자세금계산서 수신정보 */
+.tax-bill-sms>p {padding-bottom:36px;margin-bottom:36px;border-bottom:1px solid #e3e3e3;}
+
+
+
+/* 프로필사진 */
+.photo-managing-tool {background:#efefef;}
+.photo-managing-tool > img {width:100%; height:auto;}
+.photo-managing-terms {padding:10px 40px 0;}
+.photo-managing-terms .conditions .text {font-size:13px;}
+.photo-managing-terms .radio-wrapper {display:inline-block; margin-left:15px;}
+.photo-managing-terms #terms .conditions {margin-bottom:10px;}
+.photo-managing-terms #terms .text {max-height:100px;}
+.photo-managing-terms #terms h3 {font-size:16px; font-weight:500;}
+.photo-managing-terms #terms .action.amway-theme {border:0; padding:0; margin:0; text-align:right;}
+.photo-managing-terms .imgupload { border-top:1px solid #dadada; margin-top:20px; }
+.photo-managing-terms .imgupload h3 {  font-size:18px!important; color:#002f5f; margin-top:10px; padding-bottom:5px; font-weight:400!important;}
+.photo-managing-terms .bouns-file-list p {margin-bottom:0; border:0}
+/* 마이페이지 > 본인인증 */
+.authorization-step-wrapper .icon-title-description {padding-bottom:10px;}
+.authorization-step-wrapper .validation-wrapper {border-bottom:0; margin-bottom:0;}
+.authorization-step-wrapper .valid-result-box {padding:30px 0 40px; margin-bottom:0; border-bottom:1px solid #dadada; text-align:center;}
+.authorization-step-wrapper .next-control {text-align:center; margin-top:40px;}
+
+.result-failure-details {border-bottom:1px solid #dadada;}
+.result-failure-details .sub-title-gray {margin-bottom:20px; font-size:16px; color:#56565a;}
+.result-failure-details >div {padding:40px 0 37px;}
+.result-failure-details .box-line {border-top:1px solid #dadada;}
+.result-failure-details .st-text+p {margin-top:17px;}
+.result-failure-details>li * {font-size:14px;}
+
+.tbl-list-board.authorization {margin-bottom:20px;}
+.tbl-list-board.authorization .thead .tr>strong,
+.tbl-list-board.authorization .tr>div {padding-left:20px;}
+.tbl-list-board.authorization .tr:nth-of-type(even)>div {background:#f4f4f4;}
+.tbl-list-board.authorization .mob-block>strong {display:none;}
+.tbl-list-board.authorization .tbody .mob-block>p{margin-bottom:0}
+.tbl-list-board.authorization .tbody .tr>div {border-top:0}
+
+/* 마이페이지 - 맞춤메시지 */
+.akl .message-center-wrapper .next-control {text-align:center;}
+.akl .message-center-list {padding:0 50px; margin-top:10px;}
+.akl .message-center-wrapper .messages-numb {margin-bottom:27px;font-size:14px;font-weight:500; text-align:center}
+.akl .message-center-wrapper .messages-numb:nth-of-type(1) { text-align:left}
+.akl .message-center-wrapper .messages-numb a {text-decoration:underline; font-weight:inherit; display:inline-block; padding:0 3px; color:#0075a4;}
+.akl .amway-theme.message-center-wrapper .messages-numb a:hover{text-decoration:underline !important;}
+.paging-wrap + .list-type2 {margin-top:40px;}
+
+/* 마이페이지 - 맞춤메시지 목록 - col width */
+.amway-theme .state-notyet>div a {font-weight:500;}
+.tbl-list-board.tbl-customMessage a {color:#56565a; font-weight:400;}
+.tbl-list-board.tbl-customMessage .tr>div {border-top:0}
+.tbl-list-board.tbl-customMessage .tr>div.cell-label{ text-align:center}
+.tbl-list-board.tbl-customMessage .tr>div.cell-confirm { text-align:center}
+.tbl-list-board.tbl-customMessage .tr>div.cell-date{ text-align:center}
+.tbl-list-board.tbl-customMessage .state-notyet>div {font-weight:500;}
+.tbl-list-board.tbl-customMessage .thead .tr>strong {border-bottom:1px solid #e3e3e3;}
+.tbl-list-board.tbl-customMessage .cell-label{width:5%;}
+.tbl-list-board.tbl-customMessage .cell-num{width:10%;}
+.tbl-list-board.tbl-customMessage .cell-confirm{width:10%;}
+.tbl-list-board.tbl-customMessage .cell-confirm>em[class^=ico-message]{display:inline-block; width:20px; height:22px; text-indent:-999px; margin-top:3px; overflow:hidden; background:url(../images/akl_common/ico_message_read.png) 0 5px no-repeat;}
+.tbl-list-board.tbl-customMessage .cell-confirm em.ico-message-read {background-position:0 -59px;}
+.tbl-list-board.tbl-customMessage .cell-date{width:15%;}
+.tbl-list-board.tbl-customMessage .cell-title{width:70%;}
+
+/* 마이페이지 - 맞춤메시지 상세내용 */
+.message-center-details {position:relative; padding-top:43px;}
+.akl .message-center-details .btn-prev-page {position:absolute; top:0; left:0; display:inline-block; padding-left:16px; font-size:14px; font-weight:500; }
+.akl .message-center-details .btn-prev-page:before {content:'\ea4d'; position:absolute; left:0; top:-2px; font-family:'AmwayIcons'!important; font-size:18px;}
+.message-center-details * {font-size:14px;}
+.message-center-details .next-control {margin-top:40px;}
+.message-center-details .next-control .bt-akl-txt {min-width:0;}
+.board-view-head {position:relative; padding:26px 160px 27px 0; border:1px solid #e3e3e3; border-width:1px 0;}
+.board-view-head .txt-title {text-align:left; margin:0; padding:0 0 10px; line-height:1.4;}
+.board-view-head .txt-date {margin-bottom:0; font-size:14px;}
+.board-view-head .btn-box {position:absolute; top:30px; right:0;}
+.board-view-head .btn-box button {width:40px; height:20px; padding:0; margin-left:10px; color:#0075a4; font-size:14px; background:transparent;}
+.board-view-head .btn-box .btn-ico-print {width:60px; padding-left:25px; margin-left:0; background:url(../images/akl_common/ico_btn_print.png) no-repeat;}
+.board-view-body {margin:30px 0 60px;}
+.board-view-foot {overflow:hidden; padding-top:30px; border-top:1px solid #e3e3e3;}
+.board-view-foot .btn_prev {float:left;}
+.board-view-foot .btn_next {float:right;}
+
+.message-sponsor-switch .msg-box ul>li {margin-top:5px;}
+.message-sponsor-switch .btn-box {padding:30px 0; text-align:center;}
+
+/* 사용안함 : 2018.04.17
+.board-view-foot li {display:table;width:100%; border-bottom:1px solid #e3e3e3;}
+.board-view-foot li>* {display:table-cell;vertical-align:middle;}
+.board-view-foot li>strong {width:14%; padding:20px 0 18px; font-weight:normal;}
+.board-view-foot li>p {width:86%; padding:20px 0 18px;} */
+
+/* 마이페이지 - 맞춤메시지 팝업 */
+.akl .popup-dialog {padding:24px 40px 40px; background:#fff;}
+.akl .popup-dialog .popup__close {position:absolute; top:-2px; right:0;}
+.custom-message-header {position:relative; padding-bottom:18px; border-bottom:1px solid #e3e3e3; color:#002f5f; font-size:24px; font-weight:500; letter-spacing:-0.05em;}
+.custom-message-header>p {font-size:24px;letter-spacing:-2px;font-weight: 500;font-family:'Noto Sans KR', sans-serif; text-transform:initial;}
+.custom-message-body {margin-top:40px; padding-bottom:50px; background-color:#f2f9fc;}
+.custom-message-body .message-detail { margin:20px 50px 0; padding:0 80px 50px; box-sizing:border-box; background:#fff;}
+.custom-message-body .message-detail .paging-wrap {margin-bottom:40px;}
+.custom-message-body .top-image>img {width:100%; height:auto;}
+.custom-message-body .top-image {margin-bottom:50px;}
+.message-detail .nca-footer-image {margin-top:35px;}
+.message-detail .nca-footer-image>img {width:100%; height:auto;}
+.message-detail .next-control {padding-top:38px; margin-top:38px; text-align:center; border-top:1px solid #dadada;}
+.message-detail .box-top-text h2 { padding:75px 0 40px; margin-bottom:40px; color:#002f5f; font-size:28px; line-height:1.4; font-weight:500; text-align:center; border-bottom:2px solid #333;}
+.message-detail .box-top-text.small-txt {padding-bottom:30px;margin-bottom:0; border-bottom:2px solid #333;}
+.message-detail .box-top-text.small-txt h2{padding-bottom:0; margin-bottom:10px; font-size:18px;border-bottom:0;}
+.message-detail .box-top-text.small-txt p {text-align:center;}
+.message-detail.new-abo .box-top-text {padding-bottom:30px;margin-bottom:0; border-bottom:2px solid #333;}
+.message-detail.new-abo .box-top-text h2{margin:0 0 10px; padding-bottom:0; font-size:28px;border-bottom:0;}
+.message-detail.new-abo .box-top-text p {font-size:18px;text-align:center;}
+
+#terms.custom-message .action {padding:0;margin:0;text-align:right;border:0;}
+#terms.custom-message .action .radio-wrapper {display:inline-block; margin-left:15px;}
+.custom-message h3 {font-size:16px;}
+.custom-message>li{margin-top:40px; border-top:1px solid #e3e3e3;}
+.custom-message>li.start {margin-top:0; border-top:0;}
+.custom-message.trip-detail h3 {margin:0}
+.custom-message.trip-detail>li{position:relative; padding-top:40px;}
+.custom-message.trip-detail .btn-print-it {position:absolute; top:40px; right:0;}
+.custom-message.trip-detail .box-trip-notice {margin-top:20px;}
+.form-group.mobile-nca {display:table; margin:25px 0 25px;}
+.form-group.mobile-nca > span {display:table-cell; vertical-align:top; padding-left:10px}
+.form-group.mobile-nca .form-tel-1 {width:90px; padding-left:0;}
+.form-group.mobile-nca .form-tel-2 {width:180px;}
+.form-group.mobile-nca .form-btn {width:100px;}
+
+.tbl-list-dl {overflow:hidden; table-layout: auto;}
+.tbl-list-dl>dt, .tbl-list-dl>dd {float:left; margin-top:20px;}
+.tbl-list-dl>dt {width:15%; color:#002f5f;}
+.tbl-list-dl>dd {width:85%;}
+
+/* NCA 항공메시지 */
+.nca-passenger {margin-top:25px; color:#333; font-weight:500;}
+.nca-sub-title {position:relative; margin-top:18px; padding-left:10px; font-weight:500;}
+.nca-sub-title:before {content:''; position:absolute; top:50%; left:0; margin-top:-2px; width:3px; height:3px; background:#5a5a5e;}
+.nca-flight-data {display:table; width:100%;}
+.nca-flight-data>li {display:table-cell;box-sizing:border-box;}
+.nca-flight-data.type-domestic>li {width:50%;}
+.nca-flight-data.type-domestic .box-left {padding-right:10px;}
+.nca-flight-data.type-domestic .box-right {padding-left:10px;}
+.nca-flight-data.type-abroad>li {width:32%;}
+.nca-flight-data.type-abroad .box-left {padding-right:10px;}
+.nca-flight-data.type-abroad .box-center {width:34%; padding-left:10px; padding-right:10px;}
+.nca-flight-data.type-abroad .box-right {padding-left:10px;}
+
+/* NCA 항공메시지 - 비행정보 */
+.flight-info .txt-reserve-details {background:url(../images/akl_common/bg_nca_airplane_pc.png) no-repeat 50% 50%;}
+.flight-info .txt-reserve-details {padding:25px 20px;}
+.flight-info .txt-reserve-details ol {overflow:hidden;}
+.flight-info .txt-reserve-details ol>li {float:right; text-align:right;}
+.flight-info .txt-reserve-details ol>li:first-child {float:left; text-align:left;}
+.flight-info .txt-reserve-details ol>li>span{display:block;}
+.flight-info .txt-reserve-details .flight-city {padding-bottom:6px;font-size:14px; color:#56565a;}
+.flight-info .txt-reserve-details .flight-date,
+.flight-info .txt-reserve-details .flight-time {margin-top:6px; font-size:16px; color:#222;}
+.type-abroad .flight-info .txt-reserve-details {padding:20px 20px; background:url(../images/akl_common/bg_nca_airplane_pc2.png) no-repeat 50% 22px;}
+.type-abroad .flight-info .txt-reserve-details .flight-date,
+.type-abroad .flight-info .txt-reserve-details .flight-time {font-size:14px;}
+
+/* 대기상태 */
+.flight-info.state-waiting .txt-reserve-details ol>li>span {color:#bbb;}
+
+/* NCA 항공메시지 - Tag */
+.flight-info {border:1px solid #e3e3e3;}
+.flight-info>p {position:relative; padding:16px 20px; text-align:right; background:#f4f4f4;}
+.flight-info>p>span {display:inline-block;}
+.flight-info>p .tag-txt {position:absolute; top:14px; left:20px;}
+.flight-info .tag-txt {display:inline-block;padding:0 8px;border-radius:2px;color:#fff;line-height:20px; font-size:11px;}
+.flight-info .tag-txt.start {background:#2a6df0;}
+.flight-info .tag-txt.finish {background:#f02a2a;}
+.flight-info .tag-txt.start {background:#2a6df0;}
+.flight-info .tag-txt.via {background:#666;}
+.flight-info .tag-txt.arrival {background:#222;}
+.flight-info .txt-reserve-num {}
+.flight-info .txt-airplane {position:relative; margin-left:7px; padding-left:14px;}
+.flight-info .txt-airplane:before {content:'/'; position:absolute; top:0; left:0;}
+
+/* NPTS - 플래티늄 */
+.message-detail .box-top-text.platinum {text-align: center; border-bottom:2px solid #333; position:relative;}
+.message-detail .box-top-text.platinum .name-title {padding:65px 0 5px; color: #002f5f; font-size: 28px; line-height: 1.4; font-weight:700; margin-bottom: 0; letter-spacing: -1px }
+.message-detail .box-top-text.platinum .sub-text {font-size: 16px; padding-bottom:35px; margin-bottom:0;}
+.message-detail .txt-tel {display:inline-block; padding-right:15px;}
+.message-detail .box-top-text.platinum button {position:absolute; right:0; bottom:10px}
+.message-detail .custom-message.type-platinum li:first-child { margin-top:20px; border:0}
+.message-detail .custom-message.type-platinum li h3 {padding: 20px 0; }
+.message-detail .custom-message.type-platinum li div label {font-size:14px;}
+.message-detail .custom-message.type-platinum li div > span {display: block; margin-bottom:20px;}
+.message-detail .custom-message.type-platinum li div input[disabled] + label,
+.message-detail .custom-message.type-platinum li div input[readonly] + label {color:#bbb;}
+.message-detail .custom-message.type-platinum li div.panel {border:0;border-radius: 0; -webkit-box-shadow: none;box-shadow:none;}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel {margin:15px 0 0 30px;}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel label {margin-right:20px}
+.message-detail .custom-message.type-platinum li div.panel .plat-sel span {margin-bottom:10px;}
+.message-detail .custom-message + .list-type2 {margin-top:30px;}
+
+/* 신규 ABO 프로모션 */
+.state-new-abo>h3 {padding:0; margin:37px 0 17px; font-size:16px; text-align:center; font-weight:normal}
+.state-new-abo>ul {overflow:hidden;}
+.state-new-abo>ul>li {float:left; margin-top:20px; box-sizing:border-box;}
+.state-new-abo .current-info {height:300px; border:1px solid #dadada; text-align:center;}
+.state-new-abo .current-info>strong{position:relative;display:block;padding-top:200px;font-weight:500;}
+.state-new-abo .current-info>strong:before {content:'';position:absolute; width:100%; height:100px; left:0; right:0; bottom:60px;}
+.state-new-abo .current-info>p {margin:0; font-size:16px;}
+.state-new-abo .current-info .numb {font-size:32px; font-weight:700;}
+.state-new-abo .list-num1 {text-align:center;}
+.state-new-abo .list-num1>li {display:inline-block; float:none;width:420px; }
+.state-new-abo .list-num2>li {width:50%; padding-left:1%}
+.state-new-abo .list-num2>li:first-child {padding-right:1%;}
+.state-new-abo .list-num3>li {width:32%;}
+.state-new-abo .list-num3>li.nth-3n-1 {width:36%; padding:0 2%;}
+.state-new-abo .list-num4>li {width:25.5%; padding-left:2%;}
+.state-new-abo .list-num4>li.first {width:23.5%; padding-left:0;}
+.state-new-abo .list-num5>li {width:32%;}
+.state-new-abo .list-num5>li.nth-3n-1 {width:35%; padding:0 2.5%;}
+.state-new-abo .current-info.type-total>strong:before {background:url(../images/akl_common/ico_msg_newabo_total.png) no-repeat 50% 100%;}
+.state-new-abo .current-info.buyer-type-01>strong:before {background:url(../images/akl_common/ico_msg_newabo_buyer1.png) no-repeat 50% 100%;}
+.state-new-abo .current-info.buyer-type-02>strong:before {background:url(../images/akl_common/ico_msg_newabo_buyer2.png) no-repeat 50% 100%;}
+.state-new-abo .current-info.buyer-type-03>strong:before {background:url(../images/akl_common/ico_msg_newabo_buyer3.png) no-repeat 50% 100%;}
+.state-new-abo .current-info.buyer-type-04>strong:before {background:url(../images/akl_common/ico_msg_newabo_buyer4.png) no-repeat 50% 100%;}
+
+.message-detail.search-area {padding-top:70px;}
+.message-detail.search-area .tbl-top-total strong {display:inline-block; padding:0 3px 0 5px; color:#002f5f;}
+.message-detail.search-area .tbl-list-board.type-tbody-th {margin-top:17px;}
+.message-detail.search-area .tbl-list-board.type-tbody-th .tbody .new-abo-th1 {padding-left:25px;}
+.message-detail.search-area .list-wrapper-notice {padding-top:40px;border-top:1px solid #e3e3e3;}
+.message-detail.search-area .list-wrapper-notice .title {position:relative; padding-left:24px; font-size:14px;}
+.message-detail.search-area .list-wrapper-notice .title:before {content:'';position:absolute; top:0; left:0; display:block; width:20px; height:20px; background:url(../images/akl_common/icon_mem.png) no-repeat;}
+.message-detail.search-area .list-wrapper-notice>ul {margin-left:24px;}
+.message-detail.search-area .list-wrapper-notice strong {font-weight:500;}
+
+/* 신규 ABO 프로모션 : 대상자 조회 */
+.akl .form-group .joinDate select.form-control {width:auto; min-width:80px;}
+.targetInquiry {padding-bottom:40px; margin-bottom:36px;border-bottom:1px solid #dadada;}
+.targetInquiry .form-group {overflow:hidden; float:left;}
+.targetInquiry .form-group * {font-size:14px;}
+.targetInquiry .form-group label {min-width:95px; box-sizing:border-box; padding-right:30px;}
+.targetInquiry .form-group>div {display:block; float:left;}
+.targetInquiry .form-group>div>* {display:inline-block;}
+.targetInquiry .joinDate>em {display:inline-block; padding-right:10px;}
+.targetInquiry .joinDate {width:190px;}
+.targetInquiry .valueBox input[type=text] {width:190px;}
+.targetInquiry .form-group.target {margin-right:30px;}
+.targetInquiry .form-group.target .select-type {width:180px; margin-right:20px;}
+.targetInquiry .form-group.take-part .select-type {width:180px;}
+.targetInquiry .form-group.take-part > * {display:inline-block}
+.targetInquiry .btns button {min-width:70px;}
+.targetInquiry .btns:before {content:''; display:table; width:100%;}
+
+/* ----- ABO 갱신 ----- */
+.layerBox .txt-ineligibility {padding:0 10px 10px;}
+.mypage-abo-renewal .outer-border-bottom {margin-bottom:37px;}
+.mypage-abo-renewal .info-txt-btm {margin-top:40px; padding-top:20px; border-top:1px solid #e3e3e3;}
+.mypage-abo-renewal .akl-toggle-wrap {margin-top:40px;}
+.mypage-abo-renewal #terms .action {text-align:right; border-bottom:0; padding-bottom:0;}
+.mypage-abo-renewal #terms h3 {margin-top:10px; color:#56565a; font-weight:500; letter-spacing:-0.025em;}
+.mypage-abo-renewal #terms p.terms-paragraph {padding-bottom:15px; line-height:150%;}
+.mypage-abo-renewal a {font-weight:500;}
+.mypage-abo-renewal p {margin-bottom:0;}
+.form-group.inline-child .amw-radio-wrap {display:block;}
+.form-group.inline-child .amw-radio-wrap+.amw-radio-wrap {margin-top:10px;}
+
+.dl-form-group > dt {padding-bottom:10px; color:#56565a; font-size:16px; font-weight:500;}
+.dl-form-group .form-group {display:table; width:100%; margin:18px 0 0;}
+.dl-form-group .form-group * { font-size:14px;}
+.dl-form-group .form-group .txt-label {display:table-cell; width:16%; min-width:150px; color:#002f5f;}
+.dl-form-group .form-group .txt-value {display:table-cell; width:84%;}
+.dl-form-group .form-group .txt-value.mobile-num>span {display:inline-block; margin-right:10px;}
+.dl-form-group .txt-italic {margin:10px 0 0;}
+
+.box-case-wrapper { margin-top:-4px}
+.box-case-wrapper .box-case-tit {display:block; margin-bottom:17px; font-size:16px; letter-spacing:-0.025em;}
+.box-case-wrapper .box-case-text {line-height:160%;}
+.box-case-wrapper .box-case-text + .dl-form-group {margin-top:40px;border-top:1px solid #e3e3e3;}
+.box-case-wrapper .box-case-text + .dl-form-group>dt { padding-top:36px;}
+.box-case-wrapper .dl-form-group>ul {margin-top:38px;}
+.box-case-wrapper .dl-form-group>ul>li.form-group:first-child {margin-top:0;}
+
+.box-case-wrapper .box-case-sub .box-case-tit {margin-bottom:5px; font-weight:normal;}
+.box-case-wrapper .box-case-sub .box-case-text .btn-box {display:block; padding-top:8px;}
+.akl .box-case-wrapper .box-case-sub .box-case-text{font-size:14px;color:#808285;}
+
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th1,
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th2,
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th3 {width:28%;}
+.tbl-list-board.type-tbody-th.aboRenewal .abo-downline-th4 {width:16%;}
+.tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
+.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding-left:30px;}
+
+.akl .mypage-abo-renewal .accordion-custom .panel .panel-heading {padding:0 20px;}
+.akl .mypage-abo-renewal .accordion-custom .panel .panel-heading>a {display:block;}
+.akl .mypage-abo-renewal .accordion-custom .panel-body {padding:0 30px 30px 20px; border-top:0;}
+.akl .mypage-abo-renewal .accordion-custom .panel-title {position:relative; padding:27px 0 27px;}
+.akl .mypage-abo-renewal .accordion-custom .panel-title .pull-right {position:absolute; top:50%; right:0; margin-top:-14px;}
+.akl .mypage-abo-renewal .accordion-custom .panel-body .control-label {padding-left:0;}
+.akl .mypage-abo-renewal .accordion-custom .panel-body .list-type2,
+.akl .mypage-abo-renewal .accordion-custom .panel-body .list-type5 {margin-top:30px;}
+.akl .mypage-abo-renewal .after-processing {margin:40px 0 0; padding:30px 20px 30px; border:1px solid #dadada; border-width:1px 0; text-align:center}
+.akl .mypage-abo-renewal .after-processing .title {display:inline-block; margin-right:20px; color:#002f5f; font-size:18px; font-weight:500;}
+.akl .mypage-abo-renewal .after-processing .noti-suc {display:inline-block;}
+
+.box-case-wrapper .list-type5 +.tbl-top-searchbox {margin-top:37px;}
+.box-case-wrapper .tbl-top-title {margin:37px 0 18px; font-weight:500; font-size:16px; color:#56565a; letter-spacing:-0.025em;}
+.box-case-wrapper .tbl-top-searchbox {overflow:hidden; margin-bottom:30px;}
+.box-case-wrapper .tbl-top-searchbox .tbl-top-title { float:left; margin:0; padding:16px 0 0;}
+.box-case-wrapper .tbl-top-searchbox .form-select {float:right;}
+.form-srch-btn {overflow:hidden; float:left;}
+.form-srch-btn select.form-control {margin-right:8px;}
+
+
+
+
+
+
+
+
+
 
 /* ----- 회원가입----- */
 .akl .tit-h2 {font-size:18px; color:#002f5f; font-weight:500;}
@@ -2092,6 +2516,13 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl .easy-wrap #terms .conditions.ind p,
 .akl .easy-wrap .conditions.ind .tbl-list-view .thead .tr>strong {font-size: 16px !important;}
 
+@media (max-width: 1250px){
+	/* 마이페이지 메인 */
+	.mypage-block-list li>div a {height:auto; padding:15px 15px 15px 65px;}
+	.mypage-block-list li>div a:before {top:45px;}
+	.mypage-block-list li p>span {display:block; margin-left:0; padding-left:0; border-left:0;}
+	.mypage-block-list li p>span:first-child {margin-bottom:6px;}
+}
 @media (max-width: 1200px){
 	.akl .user-account-header {padding-left:15px; padding-right:15px;}
 	.akl .user-account-header .container {padding:0;}
@@ -2141,6 +2572,8 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .wrapper-memb-join.prev-step-fold #reg-confirm-info.reg-confirm-txt {padding-left:15px;}
 }
 @media (max-width: 768px) {
+	.akl #register-step-page .form-control + .bt-akl-white {margin-left:0;}
+
 	/* BOS 회원가입 */
 	.bos-admin .validation-wrapper > div[class^=valid-type] > p {width:auto}
 	.bos-admin .validation-wrapper > .valid-type-phone > p {padding-left:0}
@@ -2162,7 +2595,208 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .go-block.col-sm-6{ position:static; width:300px;}
 
 	/* 마이페이지 wrapper */
-	.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper {padding:30px 0 0;}
+	.akl .message-center-wrapper, .akl .authorization-step-wrapper, .akl .mypage-abo-renewal, .akl .sponsor-switch-wrapper, .akl .wishlist-wrapper {padding:30px 0 0;}
+
+	/* ----- 마이페이지 ----- */
+
+	/* 마이페이지 메인 Toggle */
+	.mypage-main-wrapper .panel-body {padding:0 10px;}
+	.mypage-main-wrapper .accordion-custom .panel-title p>span {display:none;}
+	.mypage-main-wrapper .always-show {padding:0 15px;}
+	.mypage-main-wrapper .akl-toggle-wrap {margin:30px 5px;}
+	.mypage-main-wrapper .panel-group .panel+.panel {margin-top:0;}
+
+	.akl .mypage-main-wrapper .accordion-custom .panel-title {padding:25px 0;}
+	.akl .mypage-main-wrapper .accordion-custom .panel .panel-heading,
+	.akl .mypage-main-wrapper .accordion-custom .panel-body {padding:0 10px;}
+	.akl .mypage-main-wrapper .accordion-custom .panel-body .mypage-block-list {margin-bottom:30px;}
+
+	.amway-theme .mypage-block-list p,
+	.amway-theme .mypage-block-list p * {font-size:14px;}
+	.mypage-block-list ul {display:block;}
+	.mypage-block-list li {float:none; width:auto; margin-top:0; margin-top:20px;}
+	.mypage-block-list li:first-child {margin-top:0;}
+	.mypage-block-list li.nth-3n-1 {width:auto; padding-left:0; padding-right:0;}
+	.mypage-block-list li.nth-3n {margin-top:24px;}
+	.panel-collapse .mypage-block-list li:first-child.nth-3n {margin-top:0;}
+	.panel-collapse .mypage-block-list li.nth-3n {margin-top:24px;}
+	.mypage-block-list li>div {min-height:0; height:auto;}
+	.mypage-block-list li>div p {margin-top:3px;}
+	.mypage-block-list li>div:before {display:;}
+	.always-show .mypage-block-list li:first-child {margin-top:24px;}
+	.always-show .mypage-block-list.top-info li {margin-top:0;}
+	.mypage-block-list.top-info li>div:after  {display:none;}
+	.mypage-block-list.top-info li>div {min-height:0; height:auto; margin:0 20px; border-top:1px solid #dadada;}
+	.mypage-block-list.top-info li:first-child>div {border-top:0;}
+
+	/* 마이페이지 멤버 메인 */
+	.mypage-main-wrapper.type-member {}
+
+
+
+	/* (레이어) 전자세금계산서 수신정보 */
+	.tax-bill-sms>p {padding-bottom:16px;margin-bottom:16px;}
+
+	/* 마이페이지 - 본인인증 */
+	.tbl-list-board.authorization .tbody .mob-block {overflow:hidden;}
+	.tbl-list-board.authorization .tbody .mob-block>strong{display:block;float:left; width:35%;}
+	.tbl-list-board.authorization .tbody .mob-block>p{float:left; width:65%; margin-bottom:0}
+	.tbl-list-board.authorization .tr>div.mob-block:first-child {padding-top:17px}
+	.tbl-list-board.authorization .tr>div.mob-block {padding:0 20px 15px;}
+	.tbl-list-board.authorization .tr {border-top:0;}
+	.tbl-list-board.authorization .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
+
+	.akl .author-content .validation-wrapper.subBiz {height:auto; margin-top:0;}
+
+	/* 마이페이지 - 맞춤메시지 */
+	.akl .message-center-wrapper .messages-numb {margin-bottom:20px;}
+	.akl .message-center-list {padding:0; margin-top:0;}
+	.akl .message-center-list .shipping-top {margin:0 0 10px}
+	.akl .message-center-wrapper .shipping-top p {margin:0;}
+	.board-view-head {padding-right:50px;}
+	.board-view-head .btn-box {top:21px;}
+	.board-view-head .btn-box button {padding:10px; width:auto; height:auto;}
+	.board-view-head .btn-box .btn-ico-print {display:none;}
+
+	/* 마이페이지 - 맞춤메시지 > 검색 - select+input
+	.form-s.type-board {display:table;width:100%;}
+	.form-s.type-board>span {display:table-cell;box-sizing:border-box;}
+	.form-s.type-board>span * {vertical-align:top}
+	.form-s.type-board .box-select {width:40%; padding-right:12px;}
+	.form-s.type-board .box-submit {width:60%; position:relative;} */
+
+	/* 마이페이지 - 맞춤메시지 목록 - col */
+	.tbl-list-board.tbl-customMessage .cell-label,
+	.tbl-list-board.tbl-customMessage .cell-num,
+	.tbl-list-board.tbl-customMessage .cell-confirm,
+	.tbl-list-board.tbl-customMessage .cell-date,
+	.tbl-list-board.tbl-customMessage .cell-title{width:auto;}
+	.tbl-list-board.tbl-customMessage .cell-title {padding-top:0; padding-left:60px;}
+
+	/* 마이페이지 - 맞춤메시지 팝업 */
+	.akl .popup-dialog {padding:18px 20px 20px;}
+	.akl .popup-dialog .custom-message-header {font-size:18px; padding-bottom:18px;}
+	.akl .popup-dialog .custom-message-body {margin-top:20px; padding-bottom:12px;}
+	.akl .popup-dialog .custom-message-body .message-detail { margin:12px 12px 0; padding:20px;}
+	.akl .popup-dialog  #terms .text{padding:20px 0 0;}
+	.message-detail .box-top-text h2 { padding:0 0 30px; margin-bottom:30px; font-size:21px;}
+
+	.akl #terms.custom-message .conditions .text-btn.view-all {margin-top:25px; padding:0;}
+	.akl #terms.custom-message p.more-info {margin-top:25px;}
+	.custom-message-body .top-image {margin-bottom:0;}
+	.custom-message.trip-detail h3 {margin:0}
+	.custom-message.trip-detail>li{position:relative; padding-top:30px;}
+	.custom-message.trip-detail .btn-print-it {display:none;}
+	.custom-message.trip-detail .box-trip-notice {margin-top:20px;}
+
+	.tbl-list-dl {overflow:hidden;}
+	.tbl-list-dl>dt, .tbl-list-dl>dd {margin-top:13px;}
+	.tbl-list-dl>dt {width:35%;}
+	.tbl-list-dl>dd {width:65%;}
+	.form-group.mobile-nca {display:table; margin:25px 0 25px;}
+	.form-group.mobile-nca > span {display:table-cell; vertical-align:top; padding-left:10px}
+	.form-group.mobile-nca .form-tel-1 { display:inline-block;width:35%; padding-left:0;}
+	.form-group.mobile-nca .form-tel-2 { display:inline-block;width:65%;}
+	.form-group.mobile-nca .form-btn {display:block; width:auto; margin-top:10px; padding-left:0;}
+
+	/* NCA 항공메시지 */
+	.nca-flight-data {display:block;}
+	.nca-flight-data>li {display:block;box-sizing:border-box;}
+	.nca-flight-data.type-domestic>li {width:auto;}
+	.nca-flight-data.type-domestic .box-left {padding-right:0;}
+	.nca-flight-data.type-domestic .box-right {padding-left:0; margin-top:10px;}
+	.nca-flight-data.type-abroad>li {width:auto;}
+	.nca-flight-data.type-abroad .box-left {padding-right:0;}
+	.nca-flight-data.type-abroad .box-center {width:auto; padding-left:0; padding-right:0; margin-top:10px;}
+	.nca-flight-data.type-abroad .box-right {padding-left:0; margin-top:10px;}
+
+	/* NCA 항공메시지 - 비행정보 */
+	.flight-info>p {position:relative; padding-left:90px;  background:#f4f4f4;}
+	.flight-info .txt-reserve-details, .type-abroad .flight-info .txt-reserve-details {padding:8px 10px 13px; background:url(../images/akl_common/bg_nca_airplane_mob.png) no-repeat 50% 10px; background-size:25px auto;}
+	.flight-info .txt-reserve-details ol {overflow:hidden;}
+	.flight-info .txt-reserve-details ol>li {float:right; text-align:right;}
+	.flight-info .txt-reserve-details ol>li:first-child {float:left; text-align:left;}
+	.flight-info .txt-reserve-details ol>li>span{display:block;}
+	.flight-info .txt-reserve-details .flight-city {padding-bottom:0;}
+	.flight-info .txt-reserve-details .flight-date,
+	.flight-info .txt-reserve-details .flight-time {font-size:15px;}
+	.type-abroad .flight-info .txt-reserve-details .flight-date,
+	.type-abroad .flight-info .txt-reserve-details .flight-time {font-size:15px;}
+
+	/* NPTS - 플래티늄 */
+	.message-detail .box-top-text.platinum .name-title {padding: 25px 0 5px;}
+	.message-detail .box-top-text.platinum .sub-text {padding-bottom:27px;}
+	.message-detail .box-top-text.platinum button {display:none}
+	.message-detail .txt-tel {display:inline-block; padding:0 10px 10px 0;}
+	.message-detail .custom-message.type-platinum li div label { line-height: 130%}
+	.message-detail .custom-message.type-platinum li div > span { margin-bottom:18px }
+	.message-detail .custom-message.type-platinum li div.panel .plat-sel { margin: 10px 0 0 30px;}
+	.message-detail .custom-message.type-platinum li div.panel .plat-sel select{width: 100%}
+	.message-detail .custom-message.type-platinum li div.panel .plat-sel span {margin-bottom:10px }
+
+	/* 신규 ABO 프로모션 */
+	.akl .popup-dialog .custom-message-body .message-detail.new-abo {padding-top:40px;}
+	.message-detail.new-abo .box-top-text {padding-bottom:20px;}
+	.state-new-abo>h3 {line-height:1.4;}
+	.state-new-abo>h3>span {display:block;}
+	.state-new-abo>ul>li {float:none;}
+	.state-new-abo .current-info {height:auto; padding:30px 0 20px;}
+	.state-new-abo .current-info>strong{padding-top:115px;}
+	.state-new-abo .current-info>strong:before {bottom:40px;}
+	.state-new-abo .list-num1>li,
+	.state-new-abo .list-num2>li,
+	.state-new-abo .list-num3>li,
+	.state-new-abo .list-num3>li.nth-3n-1,
+	.state-new-abo .list-num4>li,
+	.state-new-abo .list-num4>li.first,
+	.state-new-abo .list-num5>li,
+	.state-new-abo .list-num5>li.nth-3n-1 {width:auto; padding:0;}
+	.message-detail.search-area {padding-top:30px;}
+	.message-detail.search-area .tbl-list-board.type-tbody-th .tbody .new-abo-th1 {padding-left:20px;}
+
+	/* 신규 ABO 프로모션 : 대상자 조회 */
+	.targetInquiry {padding-bottom:40px; margin-bottom:0;border-bottom:0;}
+	.targetInquiry .form-group {position:relative; float:none;}
+	.targetInquiry .form-group>div {float:none;}
+	.targetInquiry .valueBox {margin-top:12px;}
+	.targetInquiry .valueBox input[type=text]{width:100%;}
+	.targetInquiry .form-group.target {margin-right:0}
+	.targetInquiry .form-group.target .select-type {width:100%; margin-right:0;}
+	.targetInquiry .form-group.target .joinDate {width:100%;}
+	.targetInquiry .form-group.take-part {margin-top:25px;}
+	.targetInquiry .form-group.take-part .select-type {width:100%;}
+
+	/* ----- ABO 갱신 ----- */
+	.layerBox .txt-ineligibility {padding:0 0 10px;}
+	.akl .mypage-abo-renewal #terms .text {padding:0 0 20px; margin-bottom:20px;}
+	.akl .mypage-abo-renewal #terms .text
+	.akl .mypage-abo-renewal #terms .text-btn {padding-left:0;}
+	.dl-form-group {padding:0 7px;}
+	.dl-form-group .form-group .txt-label {width:28%; min-width:initial;}
+	.dl-form-group .form-group .txt-value {width:auto;}
+	.form-group.inline-child .amw-radio-wrap {display:block;}
+	.form-group.inline-child .amw-radio-wrap+.amw-radio-wrap {margin:18px 0 0;}
+
+	.akl .mypage-abo-renewal .after-processing {padding:20px 10px;}
+	.akl .mypage-abo-renewal .after-processing .title {display:block; margin:0 0 10px;}
+	.akl .mypage-abo-renewal .after-processing .noti-suc {display:block;}
+	.akl .mypage-abo-renewal .accordion-custom .panel-body {padding-right:10px;}
+
+	.box-case-wrapper .tbl-top-title {margin:37px 0 18px; font-weight:500; font-size:16px; color:#56565a; letter-spacing:-0.025em;}
+	.box-case-wrapper .tbl-top-searchbox {overflow:hidden; margin-bottom:30px;}
+	.box-case-wrapper .tbl-top-searchbox .tbl-top-title { padding-top:0; margin-bottom:17px;}
+	.box-case-wrapper .tbl-top-searchbox .form-select {float:none; margin-top:10px;}
+	.form-srch-btn {float:none; position:relative; padding-right:100px;}
+	.form-srch-btn .bt-akl-blue  {position:absolute; top:0; right:0; width:90px;}
+	.akl .form-srch-btn .bt-akl-blue {min-width:0;}
+	.akl .tbl-top-searchbox select.form-control {width:100%;}
+
+	.tbl-list-board.type-tbody-th.aboRenewal .thead .tr>strong,
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div{ padding:7px 20px; }
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div:first-of-type { padding-top:16px  }
+	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div:last-of-type { padding-bottom:16px  }
+	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block,
+	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block>p  {}
 
 	/* ----- 회원가입 ----- */
 	/* 로그인 */
@@ -3466,4 +4100,15 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 간편가입 */
 	.akl .easy-wrap .shopping-cart-item-list .product-list-item .product-item-element .qty-label{margin-top:0}
 	.akl .easy-wrap .shopping-cart-item-list .product-list-item .product-item-element .total-price-label {margin-top:0}
+}
+@media (max-width: 420px) {
+	/* ABO 갱신 */
+	.dl-form-group {padding:0;}
+	.dl-form-group .form-group .txt-label {width:35%;}
+	.box-case-wrapper .dl-form-group .form-group .txt-label {width:45%;}
+}
+@media (max-width: 320px) {
+	/* 신규 ABO 프로모션 */
+	.state-new-abo>h3>span {display:inline;}
+	.message-detail.search-area .tbl-list-board.type-tbody-th .tr>div.mob-block {padding:8px 10px 10px;}
 }

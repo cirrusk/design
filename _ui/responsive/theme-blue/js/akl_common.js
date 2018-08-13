@@ -1,5 +1,30 @@
-﻿﻿$(function(){
+﻿$(function(){
 /** ----- 공통 ----- */
+
+	//radio, checkbox 키보드로 체크하기
+	var focusable_labels = '.amw-radio-wrap, .radio-label, input[type=radio]+label , .checkbox-element-wrapper, input[type=checkbox]+label';
+	var _focusableEls = $(document).find( focusable_labels );
+	_focusableEls.addClass('focus').attr('tabindex','0');
+	_focusableEls.keypress(function(event){
+		var keycode = event.keyCode || event.which;
+		if( keycode == '13' ){
+
+			var input_Radio = $(this).find('input[type=radio]');
+			var prev_Radio = $(this).prev('input[type=radio]');
+			input_Radio.prop("checked", true).attr('checked',true);
+			prev_Radio.prop("checked", true).attr('checked',true);
+
+			//체크박스 Type1 : label wrapper
+			var input_CheckBox = $(this).find('input[type=checkbox]');
+			var input_CheckBox_Chked = input_CheckBox.is(":checked");
+			input_CheckBox_Chked ? input_CheckBox.prop('checked', false).attr('checked',false) : input_CheckBox.prop('checked', true).attr('checked',true);
+
+			//체크박스 Type2 : checkbox + label
+			var prev_CheckBox = $(this).prev('input[type=checkbox]');
+			var prev_CheckBox_Chked = prev_CheckBox.is(":checked");
+			prev_CheckBox_Chked ? prev_CheckBox.prop('checked', false).attr('checked',false) : prev_CheckBox.prop('checked', true).attr('checked',true);
+		}
+	});
 
 	//탭 스크롤
 	tabsTgg_Control();
@@ -778,7 +803,7 @@ function orderSummaryFixed(){
 		//주문결제 div
 		var targetWrapper = $('.shipping-delivery');
 		var targetWrap_top = targetWrapper.offset().top;
-		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom : 1750
+		var targetWrap_btm = targetWrapper.position().top + targetWrapper.outerHeight(true); //bottom
 
 		//주문회원정보 (floating div)
 		var targetObj = $('.shipping-delivery-summary');
@@ -833,12 +858,12 @@ function cartSummaryFixed(){
 		var headerHeight = 139;
 		var headerBtmSpace = $('.breadcrumb-section').outerHeight(true);
 		var quickSrchbox = $('.account-section-content').outerHeight(true);
-		var topAreaHeight = headerHeight + headerBtmSpace + quickSrchbox;
+		var newTopAreaHeight = $('.cart-items-wrapper').offset().top - headerHeight - headerBtmSpace;
 
-		//target position : right
 		var _winWidth = $(window).width();
-		var conWidth = $('.cart-content-wrapper').width(); //content width
-		var positionRight = (_winWidth - conWidth)/2;
+		var cartContentTop = $('.cart-content-wrapper').offset().top; //위시리스트에서 사용
+		var conWidth_width = $('.cart-content-wrapper').width(); //content width
+		var positionRight = ( _winWidth - conWidth_width)/2;
 
 		/* -- 중간 멈춤 위치 찾기 -- */
 		//cart div
@@ -852,7 +877,17 @@ function cartSummaryFixed(){
 		var targetObj_H = targetObj.outerHeight(true);
 
 		//재설정 위치값
-		var compareTop = targetWrap_btm - targetObj_H; //1063
+		var compareTop;
+		if ($('#Shopping-List-Detail').length){ /* 위시리스트 */
+			var wishListTop = $('.wishlist-wrapper').offset().top;
+			var pageTitHeight = wishListTop - cartContentTop;
+
+			targetObj.addClass('fixed');
+			compareTop = targetWrap_btm - targetObj_H - pageTitHeight - 94; //-94px은  border-bottom 맞추기 위한 보정값
+		} else {
+			compareTop = targetWrap_btm - targetObj_H;
+		}
+
 		var targetReTOP = compareTop - targetWrap_top + headerHeight - quickSrchbox;
 		var $cartContent = targetObj.parents('.shop-cart-conts').find('.cart-items-wrapper');
 
@@ -866,16 +901,17 @@ function cartSummaryFixed(){
 			if( wScrollTop > compareTop){
 				targetObj.css({
 					'position':'absolute',
-					'top':targetReTOP-25, // -25px은 border-bottom 맞추기 위한 보정값
+					'top': targetReTOP - 13, // -18px은 border-bottom 맞추기 위한 보정값
 					'right':'0'
 				});
-			} else if( wScrollTop > topAreaHeight ){
+			} else if( wScrollTop > newTopAreaHeight ){
 				targetObj.css({
 					'position':'fixed',
 					'top': headerHeight+15, //상단 여백용 보정값
-					'right':positionRight
+					'right': positionRight
 				});
 			} else {
+				targetObj.removeClass('fixed');
 				targetObj.attr('style','');
 			}
 		}
