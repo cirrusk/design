@@ -1269,18 +1269,19 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 /* 주문결제 > 거래내역증빙신청 */
 .akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
-.akl .shipping-delivery-setup-title.col-md-3 {padding:0 12px 0 0;font-size:14px;font-weight:500;}
+.akl .shipping-delivery-setup-title.col-md-3 {padding:0 12px 0 0;font-size:14px;font-weight:500; margin-bottom:0;}
 .akl .pay-transaction .amwa-radio + label {font-size:14px;font-weight:500;}
-.akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
-.akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
+.akl .panel.cash-receipts {display:block; width:100%; margin-bottom:10px;}
+.akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0;}
 .akl .panel.cash-receipts label {display:inline-block;}
-.akl .panel.cash-receipts .cash-type {display:table; width:75%; min-width:450px; text-align:right;}
+.akl .panel.cash-receipts .cash-type {display:table; width:370px; text-align:right;}
 .akl .panel.cash-receipts .cash-type .cash-phone {display:block;text-align:right;width:100%;}
-.akl .panel.cash-receipts .cash-phone select.form-control {width:170px;display:inline-block;vertical-align:middle;margin-right:8px}
-.akl .panel.cash-receipts .cash-phone input.form-control {width:55%;display:inline-block;vertical-align:middle;}
+.akl .panel.cash-receipts .cash-phone select.form-control {width:180px; display:inline-block;vertical-align:middle;margin-right:8px}
+.akl .panel.cash-receipts .cash-phone input.form-control {display:inline-block; vertical-align:middle;}
 .akl .panel.cash-receipts .receipt-type {display:block;text-align:right;padding:10px 0 0;width:100%;}
+.akl .panel.cash-receipts .cash-phone input.form-control, .receipt-type select.form-control {width:45%;}
+.receipt-type select.form-control {font-size:14px; display:inline-block;vertical-align:middle;}
 .receipt-type label {font-size:14px;width:110px;display:inline-block;vertical-align:middle;text-align:right;margin-right:8px}
-.receipt-type select.form-control {font-size:14px;width:55%;display:inline-block;vertical-align:middle;}
 
 .akl .shipping-delivery .panel label {font-size:14px;color:#56565a;font-weight:500;}
 .txt-tye {padding:25px 0 0;font-size:14px;letter-spacing:-1px;}
@@ -1589,13 +1590,8 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .akl .accordion-custom .shipping-delivery-ship.agreement {margin:0; padding-top:40px; border-top:1px solid #e3e3e3;}
 
 /* 주문결제 > 거래내역증빙신청 */
-.akl .pay-transaction.col-xs-12 {padding:0;margin:0;}
-.akl .shipping-delivery-setup-title.col-md-3 {padding:0 12px 0 0;font-size:14px;font-weight:500; margin-bottom: 0}
-.akl .shipping-delivery-setup-title.col-md-3 + .col-md-9 .panel.pay-pvbv { margin-bottom:0}
+.akl .shipping-delivery-setup-title.col-md-3 + .col-md-9 .panel.pay-pvbv { margin-bottom:0;}
 
-.akl .pay-transaction .amwa-radio + label {font-size:14px;font-weight:500;}
-.akl .panel.cash-receipts {display:block;width:100%;margin-bottom:10px;}
-.akl .panel.cash-receipts .col-xs-12.col-md-3 {padding:0 0;}
 .akl .evidence-paper label + .btn-business {margin-left:10px;}
 .akl .evidence-paper .cash-type {padding-left:30px;}
 .akl .evidence-paper .cash-receipts label {display:inline-block;}
@@ -2384,7 +2380,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.transfer-resver-guide .guid-box {width:100%;}
 
 	/* 주문결제 > 거래내역증빙신청 */
-	.akl .panel.cash-receipts .cash-type {width:100%;text-align:left;padding:8px 0 0 30px}
+	.akl .panel.cash-receipts .cash-type {width:100%; min-width:auto; text-align:left;padding:8px 0 0 30px}
 	.akl .panel.cash-receipts .cash-type .cash-phone {text-align:left;}
 	.akl .panel.cash-receipts .cash-phone select.form-control {width:44%;margin-right:4px;padding-left:5px;font-size:12px;letter-spacing:-1px;}
 	.akl .panel.cash-receipts .cash-phone input.form-control {width:52%;}
