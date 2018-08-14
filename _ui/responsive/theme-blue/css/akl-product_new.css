@@ -391,6 +391,8 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 
 .inge-small{margin-bottom:12px;}
 .inge-small li{font-size:12px !important;line-height:1.5;} /* 리스트 텍스트 스몰일때 추가 다중 클래스 */
+.f14{margin-bottom:20px;}
+.f14 li{font-size:14px !important;line-height:1.5;} /* 리스트 텍스트 스몰일때 추가 다중 클래스 */
 
 .inge-lst01 {}
 .inge-lst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;line-height:24px;}
@@ -1223,9 +1225,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 /* 공기청정기 */
 .visual-area.type02.atmosphere02 {background: url('../images/akl_product/home-living/bg_atmosphere_02.png') no-repeat center;min-height:964px;} 
 .atmosInfo {padding:0 0 0}
-.atmosInfo dt {font-size:16px;font-weight:400;color:#356a86;line-height:26px;padding:15px 0 0}
+.atmosInfo dt {font-size:16px;font-weight:400;color:#356a86;line-height:26px;/*padding:15px 0 0*/}
 .atmosInfo dd {font-size:16px;font-weight:300;color:#808285;line-height:26px;}
-.atmosInfo dd.small {font-size:14px;line-height:24px;}
+.atmosInfo dd.small {font-size:14px !important;line-height:24px;}
 
 .atmosphere-allergy {position:relative;width:auto;}
 .atmosphere-allergy .allergy-lst {position:absolute;width:auto;top:90px;right:60px;}
@@ -1419,10 +1421,10 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 
 
 /*  고등어 갈치조림 */
-	.cookery-num li dl dt span.step-p img{width:auto;}
-	.detail-con-txt.voiled-fish{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
-	.detail-con-txt.voiled-fish span{background: url("../images/akl_product/one-for-one/food_recipe_fish.png") 95% bottom no-repeat;}	
-	.cookery-num li dl {padding:10px 0;margin:0 auto;}
+.cookery-num li dl dt span.step-p img{width:auto;}
+.detail-con-txt.voiled-fish{background: url("../images/akl_product/one-for-one/food_recipe_spoon.png") 5% bottom no-repeat;}
+.detail-con-txt.voiled-fish span{background: url("../images/akl_product/one-for-one/food_recipe_fish.png") 95% bottom no-repeat;}	
+.cookery-num li dl {padding:10px 0;margin:0 auto;}
 
 
 /* 엣모스피어 스카이 */
@@ -1454,7 +1456,22 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 .fit-filter .atmosky-monitor.app{margin-top:20px;}
 .fit-filter .atmosky-monitor.app li{float:none;width:100%;display:block;}
+.atmosInfo.inge-small dd{font-size:14px;line-height:1.2;margin-top:6px;}
 
+/* 엣모 헤파 필터 (단종) */
+.thumnail-star-lst{display:table;min-height:66px;margin-top:30px;}
+.thumnail-star-lst .img-area{display:table-cell;vertical-align:middle;width:65px;}
+.thumnail-star-lst .img-area img{display:block;margin-right: 18px;}
+.thumnail-star-lst .cont{display:table-cell;vertical-align:middle;}
+.thumnail-star-lst .cont strong{display:block;font-size:16px;font-weight:400;color:#356a86;}
+.thumnail-star-lst .cont span{display:block;margin-top:11px;font-size:14px;color:#808285;font-weight:300;}
+
+.atmosky-monitor{display:block;padding: 20px 20px 0;overflow: hidden;}
+.atmosky-monitor > ul li{float:left;width:33.3%;display: block;text-align: center;}
+.atmosky-monitor > ul li span{display: block;margin-bottom: 7px;}
+.atmosky-monitor > ul li span img{}
+.atmosky-monitor > ul li strong{font-size: 14px;color: #56565a;display: block;font-weight: 300;}
+.atmosky-monitor > ul li em{display: block;font-size: 14px;}
 
 
 
@@ -1598,6 +1615,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.one-for-one .v-pro span img{width: auto;}
 	
 	.atmosky-allergy-lst .allergy-txt-cont ul li{width:50%;}
+	.atmosky-monitor > ul li span img{width:80%;}
 	
 	/* 원포원 (김미역세트 ) */
 	.food-gray-wrap ul li{float: left;width:50%;text-align: center;}
@@ -1617,7 +1635,11 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.visual-area .v-logo.none{padding: 0 0 0;}
 	.visual-area .v-logo.atmo img{height:10px;}
 	.visual-area .v-logo.atmo-guide img{height:24px;}
+	.visual-area .v-logo.atmo-hepa img{height:28px;}
+	.visual-area .v-logo.atmo-hepa{padding: 27px 0 0;}
 	.v-pro{margin-top:55px;}
+	.txt-info-visual .v-logo-txt{padding: 13px 0 0;}
+	.txt-info-visual .v-tit{padding: 18px 0 0;}
 	
 	/* 김미역 */
 	.miyoek-detail-warp{margin:25px 0 0;}
@@ -1663,8 +1685,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.visual-area.type04 {min-height:619px;padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
 	.visual-area .v-logo.nutrition-health img {width:auto;height:18px;}	
 	.txt-info-visual .v-txt {font-size:14px;margin:20px 10%;line-height:1.5;word-break: keep-all;word-wrap: break-word;letter-spacing:-0.05em;}
-	.txt-info-visual .v-tit {font-size:35px;}
-	.txt-info-visual .v-tit span {font-size:35px;}
+	.txt-info-visual .v-tit {font-size:30px;}
+	.txt-info-visual .v-tit span {font-size:30px;}
 	.txt-info-visual .v-logo-txt {font-size:20px;}
 	.txt-info-visual .v-logo-txt.none {font-size: 0;line-height: 0;padding: 0 0 0;}
 	
@@ -1717,7 +1739,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.pcomp-list.deaf02 div.comp-info {clear:both;display:block;width:100%;}
 	.pcomp-list.deaf01 div.comp-info {clear:both;display:block;width:100%;}
 	
-	.ingestion-usage {margin-top:40px;padding: 10px 5% 0;}
+	.ingestion-usage {margin-top:40px;padding: 10px 0 0;}
 	.ingestion-usage dl dt {width:100%;font-size:18px;}
 	.ingestion-usage dl dd {width:100%;}
 	.ingestion-usage dl dd p {font-weight:400}
@@ -2257,6 +2279,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	.fit-filter .fit-left, .fit-filter .fit-right{float:none;width:100%;display:block;}
 	.fit-filter .fit-right{margin-top:50px;}
+	
+	.atmosky-monitor > ul li span img{width:80%;}
 	
 }
 
