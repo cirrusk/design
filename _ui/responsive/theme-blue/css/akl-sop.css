@@ -310,8 +310,18 @@
 .list-content.tbl-prdt .list-item-image img {width:100%; height:auto; max-width:65px; max-height:65px;}
 
 .months-select-bar-out-wrap .months-select-bar-wrap{position:relative;display:block;overflow:hidden;max-width:920px;height:60px;margin:0 auto;padding:25px 20px 0 15px;}
-.months-select-bar-out-wrap .months-select-bar-wrap:before{content:'';position:absolute;z-index:99;top:-1px;bottom:0;left:0; width:90px; background:-webkit-gradient(linear,left top,100% top,color-stop(0,#ffffff),color-stop(90%,rgba(255,255,255,.8)),color-stop(100%,rgba(255,255,255,.3)));}
-.months-select-bar-out-wrap .months-select-bar-wrap:after {content:'';position:absolute;z-index:99;top:-1px;bottom:0;right:0;width:90px; background:-webkit-gradient(linear,left top,100% top,color-stop(0,rgba(255,255,255,.3)),color-stop(10%,rgba(255,255,255,.8)),color-stop(100%,#ffffff));}
+.months-select-bar-out-wrap .months-select-bar-wrap:before{content:'';position:absolute;z-index:99;top:-1px;bottom:0;left:0; width:90px;
+	background:    -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 76%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 76%, rgba(255,255,255,0) 100%);
+	background:     linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 76%, rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1 );
+}
+.months-select-bar-out-wrap .months-select-bar-wrap:after {content:'';position:absolute;z-index:99;top:-1px;bottom:0;right:0;width:90px;
+	background:    -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 24%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 24%, rgba(255,255,255,1) 100%);
+	background:     linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 24%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1 );
+}
 .months-select-bar-out-wrap .months-select-bar-wrap .arrow-li{position:absolute;z-index:100;top:10px;width:auto;padding:0;font-size:24px;cursor:pointer;vertical-align:top;color:#0075a4;border:0;}
 .months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-prev{left:20px;}
 .months-select-bar-out-wrap .months-select-bar-wrap .arrow-li-next{right:10px;}
