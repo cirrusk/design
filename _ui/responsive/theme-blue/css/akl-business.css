@@ -1136,6 +1136,7 @@ ul.woo-step-box li:last-child:before {background:none}
 .akl .amway-theme .tbl-list td,
 .akl .amway-theme .tbl-list th {min-width:60px;}
 .akl .amway-theme .tbl-list .bd-right0 {border-right:0;}
+.akl .amway-theme .tbl-list.clone .bd-right0 {border-right:0;}
 
 .table-wrap {width:100%;overflow:auto;}
 .table-scroll {position:relative; overflow:hidden; box-sizing:border-box;}
@@ -1654,7 +1655,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.business-main-wrapper .mypage-block-list {margin:18px -10px 0 -10px}
 	.akl .business-main-wrapper .mypage-block-list li {width:100%; margin:0; padding:10px}
 
-		/* ----- 여행점수 조회 ----- */
+	/* ----- 여행점수 조회 ----- */
 	.rewards-program-wrapper {padding: 20px 0 0;}
 	.rewards-program-wrapper .box-conts-group .imgbox>img {width:100%;}
 	.rewards-program-wrapper .box-conts-group .box-diagram {padding:40px 30px;}
@@ -1700,6 +1701,9 @@ table.clone thead, .clone tfoot{background:transparent;}
 	/* Q레그 현황 */
 	.table-scroll {position:relative; min-width:305px; margin:auto;overflow:hidden; margin-right:-15px;}
 	.table-scroll .tbl-list td {padding:15px 17px;}
+	.table-scroll .tbl-list.clone thead tr > th.fixed-side,
+	.table-scroll .tbl-list.clone tbody tr > td.fixed-side,
+	.table-scroll .tbl-list.clone tbody tr > .fixed-side.lineL {border-right:1px solid #bbb;}
 	.list-type5.qlegs-info {margin:30px 0;}
 	.business .topup-search .cuton-sel select {margin:0}
 	.business .qLegs-wrapper .topup-search.type02 .cuton-sel select {margin:0}
