@@ -774,6 +774,19 @@
 .akl .amway-theme .compliance-area .mgl20 {margin-left:20px}
 .akl .amway-theme .compliance-area .txt-italic {margin:5px 0 0 12px}
 
+.akl .amway-theme .compliance-area .list-bj {margin:15px 0 38px; padding:30px 0; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; font-size:0}
+.akl .amway-theme .compliance-area .list-bj li {display:inline-block; width:33.3333%; vertical-align:top}
+.akl .amway-theme .compliance-area .list-bj li a {display:inline-block; padding:6px 40px 6px 0; font-weight:500}
+
+.akl .amway-theme .compliance-area .tbl-bj {border-bottom:1px solid #e3e3e3}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type {border-top:1px solid #e3e3e3}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type > em {width:150px; text-align:center; font-weight:500; background-color:#f4f4f4; color:#002f5f}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type > div {padding:15px 20px}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type > div .list-num-dot {counter-reset:li}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type > div .list-num-dot li {position:relative; padding-left:20px}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type > div .list-num-dot li:before {position:absolute; top:0; left:0; content:counter(li)". "; counter-increment:li; display:inline-block; width:20px}
+.akl .amway-theme .compliance-area .tbl-bj .tbl-type > div .list-num-dot li + li {margin-top:3px}
+
 .announcement-search-result + .tbl-list-board {margin-top:18px}
 
 @media (max-width: 1024px) {
@@ -846,6 +859,11 @@
 	.compliance-area .list-type5 table thead th {font-size:.875em !important;padding:5px;}
 	
 	.akl .compliance-area .list-cp01 li {width:50%}
+	
+	.akl .amway-theme .compliance-area .tbl-bj {}
+	.akl .amway-theme .compliance-area .tbl-bj .tbl-type {}
+	.akl .amway-theme .compliance-area .tbl-bj .tbl-type > em {display:block; padding-top:15px; width:100%; text-align:left; background-color:#fff}
+	.akl .amway-theme .compliance-area .tbl-bj .tbl-type > div {display:block; padding:5px 0 15px}
 
 	/* 사이트맵 */
 	.sitemap-area h2, .sitemap-area h3 {text-align:center; font-size:20px}
