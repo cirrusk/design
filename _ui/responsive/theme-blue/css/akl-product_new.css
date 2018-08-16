@@ -276,6 +276,7 @@ iframe {border:0;}
 .gray03{color:#999 !important;} 	/* brightgray */
 .gray04{color:#80859d !important;} 	/*silver-gray */
 .gray05{color:#dadada !important;}
+.gray06{color:#bbbbbb !important;}
 
 .product-body-view .brown{color:#6f5f3d !important;} 
 .brown01{color:#685e52 !important;} 	/* cafe-browon  */
@@ -296,7 +297,7 @@ iframe {border:0;}
 
 /* 공통 타이틀 */
 .detail-content-area {padding: 0 7%;}
-.com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.3;margin-bottom:18px;}
+.com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.5;margin-bottom:18px;}
 .com-tit.small {font-size:32px !important;}
 .com-tit.sub-tit{margin-top:35px;}
 .com-tit span {display:inline-block;font-weight:400;font-size:44px;}
@@ -326,13 +327,8 @@ iframe {border:0;}
 .com-info-txt dd {font-size:16px;font-weight:300;line-height:26px;padding:0 0 30px;letter-spacing:-1px;}
 
 .detail-content-area p{margin: 0 0 18px;line-height:1.5;}
-.txt-s, 
-.txt-s li, 
-.txt-s li strong{font-size:12px !important;line-height:1.5;letter-spacing:0 !important;}
-.txt-s, 
-.txt-s li > .txt-s{margin:4px 0;letter-spacing:0 !important;}
-.txt-c{text-align:center;}
-.txt-block{display:block;}
+
+
 
 /**** 타입01 ****/
 /* guide 01 */
@@ -428,9 +424,6 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 .inge-lst06 li {position:relative;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;text-indent:0 !important;margin-left:0 !important;} 
 .inge-lst06 li:before{position:absolute;display:inline-block;width:4px;height:1px;top:12px;left:-10px;background-color:#808285;content:"";}
 
-.inge-lst06.f-big li{padding-left:0;font-size:16px;} 
-.inge-lst06.f-big li:before{top:13px;}
-
 .inge-lst07 li {font-size:14px;margin-left:12px;text-indent:-13px;letter-spacing:-1px;font-weight:300;color:#808285;} 
 
 .inge-lst08 li {font-size:14px;letter-spacing:-1px;line-height:1.7;font-weight:300;color:#808285;margin-left:9px;text-indent:-9px} 
@@ -499,9 +492,18 @@ div.feat-txt p span.next-sort {display:block;}
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
 
 /* 마진, 패딩*/
-.mt20{margin-top:20px;}
-.advantage-area.mt30, .hua-system.mt30, .product-rank.mt30{margin-top:30px;}
+.mt20{margin-top:17px;}
+.advantage-area.mt30, .hua-system.mt30, .product-rank.mt30, .mt30{margin-top:27px !important;}
 .mt50, .advantage-area.mt50{margin-top:48px !important;}
+.mb0{margin-bottom:0 !important;}
+.mt0{margin-top:0 !important;}
+
+/* font-size */
+.txt-s, .txt-s li, .txt-s li strong{font-size:12px !important;line-height:1.5;letter-spacing:0 !important;}  /* 폰트12*/
+.txt-s, .txt-s li > .txt-s{margin:4px 0;letter-spacing:0 !important;}
+
+.txt-m, .txt-m li{padding-left:0;font-size:16px !important;line-height:1.5;} /* 폰트 16*/ 
+.txt-m, .txt-m li:before{top:13px;}
 
 /* 정렬 */
 .txt-l{text-aling:left;}
@@ -969,6 +971,15 @@ dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 
 
 /* 시그니처 셀렉트 */
+.signature-cont-area .pcomp-area {margin:18px 0 0;}
+.signature-cont-area .pcomp-area .comp-info{/*float: left;*/display:inline-block;width: 25%;}
+.signature-cont-area .pcomp-area .comp-info .comp-box dl dt{padding: 15px 30px 2px !important;height: inherit;}
+.signature-cont-area .pcomp-area .comp-info .comp-box dl dt p{}
+.signature-cont-area .pcomp-area .comp-info .comp-box dl dd{min-height: 105px; padding: 0 0;height: inherit;}
+.signature-cont-area .pcomp-area .comp-info .comp-box dl dd p{margin: 0 auto 10px;height: inherit;}
+.signature-cont-area .pcomp-area .comp-info .comp-box p{margin-bottom:0 !important;}
+.signature-cont-area .pcomp-area .comp-info .comp-box p em.txt-mini{font-size:12px;color:#bbbbbb;line-height:1.5;text-align:center;display:block;}
+
 
 /* 비주얼 이미지(bg 효과로 인해 개별 마진) */
 .signature-select01 .v-pro{}
@@ -1686,6 +1697,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.sig-serum-box .effet-area .advan-left{width:100%;}
 	.sig-serum-box .effet-area .advan-right{width:100%}
 	
+	.signature-cont-area .pcomp-area .comp-info{width:50%;}
+	.detail-content-area .pcomp-area .comp-info .comp-box dl dd{min-height:100px;}
+	
 	/* 김미역 */
 	.miyoek-detail-warp{margin:25px 0 0;}
 	.detail-top-txt{font-size: 26px !important;padding: 4px 25px;line-height: 1.2;}
@@ -2037,6 +2051,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	/* 시그니처 셀렉트 */
 	.inge-lst10.reference-txt{display:block;text-align:center;}
+	.signature-cont-area .akl a.bt-akl-blue{padding: 7px 10px 8px !important;}
 
 	/* 메이크업 */
 	.ingre-list-wrap.ar3189 {margin-top:0;}
@@ -2331,11 +2346,13 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.atmosky-allergy-lst .allergy-tit-area .tit em{font-size:12px;}
 	.atmosky-allergy-lst .allergy-tit-area .tit p{font-size:18px;}
 	.atmosky-allergy-lst .allergy-txt-cont ul li{display:inline-block;width:50%;vertical-align: top;font-size:14px;}
-	
 	.fit-filter .fit-left, .fit-filter .fit-right{float:none;width:100%;display:block;}
 	.fit-filter .fit-right{margin-top:50px;}
-	
 	.atmosky-monitor > ul li span img{width:80%;}
+	
+	/* 시그니처 셀렉트 */
+	.signature-cont-area .pcomp-area .comp-info .comp-box .bt-akl-blue{padding: 7px 10px 8px !important;}
+	
 	
 }
 
@@ -2358,6 +2375,12 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	/*  엣모스피어 스카이 */
 	.atmosky-allergy-lst .allergy-txt-cont ul li{font-size:12px;}
+	
+	/* 셀렉트 시그니처 */
+	.signature-cont-area .pcomp-area .comp-info .comp-box dl dd{min-height:130px;}
+	.signature-cont-area .pcomp-area .comp-info .comp-box dl dt p {font-size:12px;}
+	.signature-cont-area .akl a.bt-akl-blue, 
+	.signature-cont-area .pcomp-area .comp-info .comp-box .bt-akl-blue{padding: 7px 10px 8px !important;}
 
 	
 	
