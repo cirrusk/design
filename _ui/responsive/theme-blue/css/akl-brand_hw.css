@@ -41,6 +41,13 @@ Editor :
 .lay-box-pdt li > div img {width:auto;max-width:100%;}
 .lay-box-pdt li > div p {margin:20px 0 0 0!important;font-weight:500;color:#002f5f;text-align:left;}
 
+.lay-box-team {display:flex;flex-wrap:wrap;overflow:hidden;margin:15px -12px -15px;}
+.lay-box-team li {position:relative;width:25%;padding:20px 12px;} 
+.lay-box-team li > a {display:block;border:1px solid #f4f4f4;height:100%;text-align:center;}
+.lay-box-team li > a img {width:auto;max-width:100%;}
+.lay-box-team li > a p {background:#f4f4f4;margin:0 !important;padding:20px;min-height:82px;font-weight:500;color:#002f5f;font-size:16px;text-align:left;}
+
+
 .brand .lay-box-2 .plp-item-label {position:absolute;height:25px;}
 .brand .lay-box-2 .plp-item-label:after {right:-7px;top:0;width:0;height:0;border:1px solid #008fc5;border-width:25px 7px 0 0;}
 .brand .lay-box-2 .plp-item-label.bg-blue:after {border-color:#008fc5 transparent transparent #008fc5;}
@@ -54,6 +61,15 @@ Editor :
 .list-style-info li strong {float:left;width:150px;color:#002f5f;}
 .list-style-info li span {float:left;}
 
+@media (max-width:1024px) { 
+	.lay-box-4 {margin:-15px -12px -15px;}
+	.lay-box-4 li {width:50%;}
+	.lay-box-pdt {margin:-15px -12px -15px;}
+	.lay-box-pdt li {width:50%;}
+	.lay-box-team {margin:0 -12px -15px;}
+	.lay-box-team li {padding:10px 12px;width:50%;}
+}
+
 @media (max-width:768px) { 
 	.lay-box-2 {margin:0;display:block;}
 	.lay-box-2 > div {width:100%;padding:0;margin-top:15px;}
@@ -61,9 +77,25 @@ Editor :
 	.lay-box-4 li {width:100%;}
 	.lay-box-pdt {margin:-15px -12px -15px;display:block;}
 	.lay-box-pdt li {width:100%;}
+	.lay-box-team {margin:0 -12px -15px;display:block;}
+	.lay-box-team li {padding:10px 12px;width:100%;}
 	.list-style-info li strong {float:none;width:auto;display:block;}
 	.list-style-info li span {float:none;display:block;margin-top:10px;}
 }
+/* 식물영양소 캠페인 */ 
+.content-row article [class*="cont-type"] figcaption + .box-txt-list {margin:0;padding:0 20px 50px;line-height:1.8;}
+div.box-txt-list .list-type5 {padding:0;}
+div.box-txt-list .list-type5 li {margin-bottom:8px;}
+div.box-txt-list .list-type5 li strong {margin:0;}
+
+dl.box-txt-list {margin:25px 0 35px;}
+dl.box-txt-list dd {margin-top:5px;}
+dl.box-txt-list dd ul {padding:0;}
+dl.box-txt-list dd ul li {margin-top:10px;padding-bottom:0;}
+dl.box-txt-list dd + dt {margin-top:30px;}
+.img-bnr + .txt-italic.bg-n {margin-top:-10px;}
+.txt-italic.bg-n {padding:0;background:none;}
+
 /***** 미디어 라이브러리 *****/ 
 /* 미디어 리스트 */ 
 [class*="media-borad-list"] {position:relative;}
@@ -145,10 +177,10 @@ Editor :
 .brand .box-bnr-05 .txt-wrap strong {font-size:34px;}
 .brand .box-bnr-05 .txt-wrap p {margin:8px 0 15px;font-size:20px;color:#56565a;font-weight:500;}
 .brand .box-bnr-06 {margin-top:35px;}
-.brand .box-bnr-06 .txt-wrap strong {color:#fff;}
+.brand .box-bnr-06 .txt-wrap strong {color:#fff;font-size:16px;line-height:18px;letter-spacing:0;}
 .brand .box-bnr-06 .txt-wrap span {display:block;}
-.brand .box-bnr-06 .txt-wrap p {margin-top:15px;font-size:18px;color:#fff;font-weight:300;}
-
+.brand .box-bnr-06 .txt-wrap p {margin-top:5px;font-size:14px;color:#fff;font-weight:300;}
+.brand .box-bnr-06 .txt-wrap p + strong {display:block;margin-top:30px;}
 
 @media (max-width:768px) { 
 /* 사회공헌 */ 
