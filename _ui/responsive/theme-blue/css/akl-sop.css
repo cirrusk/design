@@ -1,16 +1,15 @@
-/** --------------------------------------------------
- *  Version : AKL Hybris UIUX 1.0
- *  - SOP 전용
- *  --------------------------------------------------
- */
-/* Font Awesome 사용안함 - 다른폰트로 대체 */
-.fa,.fas,.indicator,[class*=ico-fa]:before, [class*=ico-sop]:before{font-family:'AmwayIcons'!important; font-weight:700;}
-.fa,.far,.fas{margin-right:5px;}
+/** ---------------------------------------------------------
+  * Version : AKL Hybris UIUX 1.0
+  * @ 파일 : akl-sop.css
+  * @ 구분 : 쇼핑 > 플러스쇼핑 > 정기주문&스마트 오더 프로그램
+  * ---------------------------------------------------------
+  */
+
 
 /* ---- SOP 공통 ---- */
 [class*=ico-fa-], [class*=ico-sop] {position:relative;}
 [class*=ico-fa-]:before {content:''; display:block; position:absolute; top:0; left:0; font-size:14px;}
-
+[class*=ico-fa]:before, [class*=ico-sop]:before{font-family:'AmwayIcons'!important; font-weight:700;}
 .ico-fa-pencil:before{content:'\e9aa';}
 .ico-fa-tag:before{content:'\ea07';}
 .ico-fa-angle-down:before{content:'\e95b';}
