@@ -41,6 +41,11 @@ Editor : sookkyung Han
 .visual-area.wellros05{height:753px;background:url(../images/akl_product/one-for-one/bg_wellros_05.png) no-repeat bottom center;}
 .visual-area.wellros06{height:754px;background:url(../images/akl_product/one-for-one/bg_wellros_06.png) no-repeat bottom center;}
 
+.visual-area.nuts{height:782px;background:url(../images/akl_product/nutrition-health/bg_nuts_01.png) no-repeat bottom center;}
+.visual-area.gourmet-selection{height:778px;background:url(../images/akl_product/nutrition-health/bg_gourmet_selection_01.png) no-repeat bottom center;}
+
+
+
 
 .visual-area .v-logo.truvivity img{width:135px;height:25px;}
 .visual-area .v-logo.energy01 img{width:102px;height:25px;}
@@ -50,7 +55,7 @@ Editor : sookkyung Han
 
 
 /* 색 */
-
+.green20{color:#c3d200 !important;}
 
 
 
@@ -241,9 +246,6 @@ Editor : sookkyung Han
 .effect-img2019 .comment03 dt,
 .effect-img2276 .comment03 dt{color:#9170ae;}
 
-
-
-
 .com-ingred.effect-img7070{margin-top:0;}
 .effect-img7070 p{right:63%;font-size:14px;color:#808285;font-weight:300;text-align:right;}
 .effect-img7070 .comment01{top:39%;}
@@ -310,6 +312,7 @@ Editor : sookkyung Han
 .component-list{overflow:hidden;float:none;padding:0;width:-webkit-calc(100% + 15px);width:-moz-calc(100% + 15px);width:calc(100% + 15px);margin:30px 0 0 -15px;}
 .component-list li{width:20%;float:left;padding:23px 0 0;min-height:200px;text-align:center;border-left:15px solid #fff;background-color:#f4f4f4;}
 .component-list .col-sm-3{width:25%;}
+.component-list.deaf03 li{width:33.33%;}
 .component-list .list-icon{display:inline-block;height:108px;line-height:108px;}
 .component-list .list-txt{display:block;margin-top:15px;font-size:16px;color:#56565a;font-weight:300;letter-spacing:-1px;}
 .component-list .list-txt em{display:block;font-size:14px;color:#808285;line-height:1;}
@@ -415,11 +418,41 @@ Editor : sookkyung Han
 .ingred-analy02 .analy-num{display:block;font-size:44px;color:#20893d;letter-spacing:-2px;}
 .ingred-analy02 .analy-txt{display:block;margin-top:35px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 
+.pcomp-area.type02{padding:38px 95px;border-bottom:1px solid #e3e3e3;}
+.pcomp-area.type02 > ul > li{display:table;width:100%;margin-top:25px;text-align:left;}
+.pcomp-area.type02 > ul > li:first-child{margin:0;}
+.pcomp-area.type02 .circle{display:table-cell;width:60px;padding:2px 0;vertical-align:middle;}
+.pcomp-area.type02 .circle > span{display:inline-block;width:50px;height:50px;line-height:48px;font-size:18px;color:#fff;text-align:center;border-radius:50%;background-color:#ad9172;}
+.pcomp-area.type02 .circle.gray > span{background-color:#bbb;}
+
+.pcomp-area.type02 .circle-box{display:table-cell;vertical-align:middle;}
+.pcomp-area.type02 .circle-box .circle-tit{display:block;font-size:20px;color:#56565a;font-weight:400;}
+.pcomp-area.type02 .circle-box .circle-txt{display:block;margin-top:2px;font-size:18px;color:#808285;font-weight:300;}
+
+.gourmet-origin{margin-top:43px;}
+.gourmet-origin .com-tit{margin-bottom:23px;text-align:center;}
+.gourmet-origin .origin-box{padding:44px 0 47px;background:url('../images/akl_product/nutrition-health/cont_bg_gourmet_selection.png') no-repeat center top;background-size:cover;}
+.gourmet-origin .origin-tit{margin-bottom:33px;font-size:20px;color:#fff;text-align:center;}
+.gourmet-origin .origin-list{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex;justify-content:space-between;list-style:none;padding:0 75px;}
+.gourmet-origin .origin-list:before{display:inline-block;width:1px;content:'';}
+.gourmet-origin .origin-list:after{display: inline-block;width:1px;content:'';}
+.gourmet-origin .origin-list li{display:inline-block;text-align:center;}
+.gourmet-origin .origin-list .origin-icon{display:inline-block;height:59px;line-height:59px;}
+.gourmet-origin .origin-list .origin-txt{margin-top:20px;color:#fff;}
+.gourmet-origin .origin-list .origin-txt span{display:block;margin-top:4px;font-size:12px;font-weight:300;}
+
+.neon-sns{margin-top:50px;padding:16px 40px 17px;background-color:#f3f6cc;}
+.neon-sns:after{content:'';clear:both;display:block;}
+.neon-sns .sns-notice{float:left;margin:0;font-size:18px;color:#56565a;font-weight:300;}
+.neon-sns .sns-box{float:right;padding-top:2px;}
+.neon-sns .sns-box li{float:left;margin-left:20px;}
+.neon-sns .sns-box .sns-txt{margin-left:8px;}
+
+
 /* 뉴트리라이트 파운데이션 트리오 번들팩 */
 .pcomp-area.foundation_trio_bundlepack {border-bottom:1px solid #e3e3e3;padding:20px 0 30px;margin-bottom:70px}
 .pcomp-area.foundation_trio_bundlepack .comp-info dl dt {height:20px}
 .pcomp-area.foundation_trio_bundlepack .comp-info dl dd p {height:70px;padding:0 80px;}
-
 
 
 /* 베스바디 */
@@ -859,6 +892,21 @@ Editor : sookkyung Han
 	.ad-setp-lst3 li{width:100%;margin:8px;}
 	
 	.com-tit sup{font-size:13px;top:-0.7em;}
+	
+	.pcomp-area.type02{padding:20px;}
+	.pcomp-area.type02 > ul > li{margin-top:20px;}
+	.pcomp-area.type02 .circle-box .circle-tit{font-size:16px;}
+	.pcomp-area.type02 .circle-box .circle-txt{font-size:14px;}
+	
+	.gourmet-origin .origin-list{display:block;padding:0 30px;}
+	.gourmet-origin .origin-list:before,
+	.gourmet-origin .origin-list:after{display:none;}
+	.gourmet-origin .origin-list li{width:100%;margin-top:25px;}
+	.gourmet-origin .origin-list li:first-child{margin:0;}
+	.gourmet-origin .origin-list .origin-icon{height:auto;width:65px;}
+	.gourmet-origin .origin-list .origin-txt{display:inline-block;margin:0 0 0 20px;vertical-align:middle;}
+	
+	.cont-img img{width:inherit;max-width:100%;height:auto;}
 
 	/* 비주얼 텍스트 */
 	.txt-info-visual .v-txt.acerola_C {margin:30px 5% 0;}
