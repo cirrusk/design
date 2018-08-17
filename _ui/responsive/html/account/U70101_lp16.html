@@ -27,7 +27,7 @@
 
 <!-- (팝업)HyperStore 주문내역 -->
 <div class="layerWrapper U70101_lp16_pop">
-	<div class="cbox layerBox popWidL">
+	<div class="cbox layerBox popWidXL">
 		<div class="cart-popup__dialog">
 			<div class="cart-popup__header">
 				<span class="cart-popup__header-text">HyperStore 주문내역
@@ -38,60 +38,116 @@
 			</div>
 			<div class="cart-popup__content payment">
 				<div class="cart-popup__item-info">
-					<div class="">
-						<div class="">
-							<button type="button" class="bt-akl-blue">인쇄</button>
+					<div class="amway-theme hyper-store">
+						<div>
+							<div class="form-group">
+								<label for="country" class="col-md-2 control-label">통신사</label>
+								<div class="col-md-10">
+									<select id="country" name="type" class="form-control no-uppercase-form-control">
+										<option value="">SKT</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="country2" class="col-md-2 control-label">주문기간</label>
+								<div class="col-md-10">
+									<span>
+										<select id="country2" name="type" class="form-control no-uppercase-form-control" title="시작 년 선택">
+											<option value="">2018년</option>
+										</select>
+										<select name="type" class="form-control no-uppercase-form-control" title="시작 월 선택">
+											<option value="">8월</option>
+										</select>
+										<select name="type" class="form-control no-uppercase-form-control" title="시작 일 선택">
+											<option value="">1월</option>
+										</select>
+									</span>
+									<em>~</em>
+									<span>
+										<select name="type" class="form-control no-uppercase-form-control" title="종료 년 선택">
+											<option value="">2018년</option>
+										</select>
+										<select  name="type" class="form-control no-uppercase-form-control" title="종료 월 선택">
+											<option value="">8월</option>
+										</select>
+										<select name="type" class="form-control no-uppercase-form-control" title="종료 일 선택">
+											<option value="">1월</option>
+										</select>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="btn-center">
+							<button type="button" class="bt-akl-blue">조회</button>
 						</div>
 					</div>
 					<div class="hyperStore-box">
-						<div class="myorder-list type02">
+						<div class="myorder-list type03">
 							<div class="list-content">
 								<div class="list-row-title row">
-									<div class="col-ak-10 ord-num">번호</div>
-									<div class="col-ak-10 ord-date">주문일</div>
-									<div class="col-ak-10 ord-price">통신사</div>
-									<div class="col-ak-10 ord-pvbv">주문번호</div>
-									<div class="col-ak-10 ord-chnnel">주문PV</div>
-									<div class="col-ak-10 ord-type">주문BV</div>
-									<div class="col-ak-10 ord-cond">주문금액</div>
+									<div class="col-ak-10 ord-hyper">번호</div>
+									<div class="col-ak-10 ord-hyper">주문일</div>
+									<div class="col-ak-10 ord-hyper">통신사</div>
+									<div class="col-ak-10 ord-hyper">주문번호</div>
+									<div class="col-ak-10 ord-hyper">주문PV</div>
+									<div class="col-ak-10 ord-hyper">주문BV</div>
+									<div class="col-ak-10 ord-hyper">주문금액</div>
 								</div>
 
 
 								<div class="content-list">
 									<!-- tr(loop) -->
 									<div class="row con-list-item">
-										<div class="col-ak-10 ord-num">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">번호</span>
 											<span class="txte-wrap"><a href="U70101.html">1234568</a></span>
 										</div>
-										<div class="col-ak-10 ord-date">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">주문일</span>
 											<span class="txte-wrap">2014-05-30</span>
 										</div>
-										<div class="col-ak-10 ord-price">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">통신사</span>
 											<span class="txte-wrap">SKT</span>
 										</div>
-										<div class="col-ak-10 ord-pvbv">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">주문번호</span>
 											<span class="txte-wrap">1234568</span>
 										</div>
-										<div class="col-ak-10 ord-chnnel">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">주문PV</span>
 											<span class="txte-wrap">주문PV</span>
 										</div>
-										<div class="col-ak-10 ord-type">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">주문BV</span>
 											<span class="txte-wrap">주문BV</span>
 										</div>
-										<div class="col-ak-10 ord-cond">
+										<div class="col-ak-10 ord-hyper">
 											<span class="tite-label">주문금액</span>
 											<span class="txte-wrap">60,000</span>
 										</div>
 									</div>
 								 	<!--// tr(loop) -->
-
 								</div>
+								<!-- 합계 -->
+								<div class="ord-hyper-totel">
+									<div class="totel-name">
+										합계
+									</div>
+									<div class="totel-price">
+										<span class="tite-label">주문PV 합계</span>
+										<span class="txte-wrap">0</span>
+									</div>
+									<div class="totel-price">
+										<span class="tite-label">주문PV 합계</span>
+										<span class="txte-wrap">0</span>
+									</div>
+									<div class="totel-price">
+										<span class="tite-label">주문금액 합계</span>
+										<span class="txte-wrap">0</span>
+									</div>
+								</div>
+								<!--// 합계 -->
 
 								<div class="search-no-result line">
 									<p>주문 내역이 없습니다.</p>
@@ -116,9 +172,6 @@
 						</div>
 
 					</div>
-				</div>
-				<div class="cart-popup__item-link">
-					<button type="button" class="bt-akl-blue">인쇄</button>
 				</div>
 			</div>
 		</div>
