@@ -67,7 +67,10 @@ iframe {border:0;}
 .visual-area.type02.boosting-infusion{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_boosting_infusion.png) no-repeat top center;height:1039px;} /*01 인텐시브 부스팅 인퓨전  */
 .visual-area.type02.intensive-skin{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_skincare.png) no-repeat top center;height:1144px;}   /*01 인텐시브 스킨케어 */
 .visual-area.type02.intensive-restore{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_night_restore.png) no-repeat top center;height:1098px;} /*01 인텐시브 리스토어 프로그램*/
-.visual-area.type02.youth-xtend{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:1172px;}   /* 02 Youth_Xtend*/
+.visual-area.type02.youth-xtend-01{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:1136px;}   /* 02 Youth_Xtend*/
+.visual-area.type02.youth-xtend{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:1136px;}   /* 02 Youth_Xtend*/
+
+
 .visual-area.type02.youth-xtend.cream{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:900px;}   /* 02 Youth_Xtend*/
 .visual-area.type02.youth-xtend-set{background: #f3e8e6 url(../images/akl_product/beauty/bg_youth_xtend_set.png) no-repeat top center;height:797px;}  /* 02 Youth_Xtend set*/
 .visual-area.type02.ultra-lifting{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting.png) no-repeat top center;height:1100px;} /*03 Youth Xtend lifting */
@@ -167,7 +170,7 @@ iframe {border:0;}
 
 /* 텍스트 컬러값 조정시 사용 */
 .space, .advantage-area.space{padding:30px 0 40px;}
-.beige, dl.beige dt{color:#e7c099;}
+.product-body-view .beige, dl.beige dt{color:#e7c099;}
 .sapphire, .txt-sapphire, strong.sapphire{color: #1ef1d9;}
 .txt-lound.blue04{background:#06a5bb;}
 .txt-lound.green04{background:#4d6b26;}
@@ -496,9 +499,14 @@ div.feat-txt p span.next-sort {display:block;}
 /* 마진, 패딩*/
 .mt20{margin-top:17px;}
 .advantage-area.mt30, .hua-system.mt30, .product-rank.mt30, .mt30{margin-top:27px !important;padding:0 0 0;}
+.mt40, .advantage-area.mt40{margin-top:38px !important;padding:0 0 0;}
 .mt50, .advantage-area.mt50{margin-top:48px !important;padding:0 0 0;}
 .mb0{margin-bottom:0 !important;}
 .mt0{margin-top:0 !important;}
+
+/*.space-top{margin-top:22px;}
+.space-tit{margin-top:42px;}*/
+
 
 /* font-size */
 .txt-s, .txt-s li, .txt-s li strong{font-size:12px !important;line-height:1.5;letter-spacing:0 !important;}  /* 폰트12*/
@@ -1072,7 +1080,8 @@ dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 .sig-serum-box .effet-area .siehe-box.f-amp .com-txt{padding-left:21px;background: url(../images/akl_product/beauty/ico_water_orange.png) no-repeat 0 5px;background-size: 12px;}
 .sig-serum-box .effet-area .siehe-box .com-txt strong{color:#56565a;font-weight:400 !important;}
 
-
+/* 유스 익스텐드 어드밴스드 클렌징 크림 */
+.youth-ex .v-pro span img{}
 
 /* 유스 익스텐드 리치 밀키 에멀젼 */
 .advantage-area.youth_xtend .product-process-step .step-flow .step-num {background:#ad9172;}
@@ -1767,6 +1776,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.beauty-list-wrap ul > li > .beauty-thum-wrap .txt{/* display: block; */}
 	.beauty-list-wrap ul > li > .beauty-thum-wrap .txt dd{font-size:12px;}
 
+	/* 유스 익스텐드 */
+	.youth-xtend-01 .v-pro span img{width:auto;}
+
 	/*.ade-photo .youth_xtend_relative img.img-micro{max-width:100%;}*/
 	.pcomp-list{width:inherit; margin: 0 auto;display: inline-block;}
 	.pcomp-list.deaf03 div.comp-info{width:100%}
@@ -1828,7 +1840,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.txt-info-visual .v-logo-txt {font-size:20px;}
 	.txt-info-visual .v-logo-txt.none {font-size: 0;line-height: 0;padding: 0 0 0;}
 	
-	.v-pro span img {text-align:center;/*width:auto;*/width:inherit;height:auto;}
+	.v-pro span img {text-align:center;width:inherit;height:auto;}
 	.one-for-one .v-pro span img {width:auto;}
 	
 	div.feat-txt p span.next-sort {display:inline-block;}
@@ -2002,6 +2014,11 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.com-tit.youth_xtend {padding:0 0 0 0;}
 	.youth_xtend-area {width:100%;}
 	.youth_xtend_left dl dd p {font-size:13px;}
+	
+	
+	
+	
+	
 	
 	/*
 	.youth_xtend_relative {width:auto;height:auto;}
