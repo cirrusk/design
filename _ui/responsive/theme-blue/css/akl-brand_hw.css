@@ -16,7 +16,6 @@ Editor :
 
 .cart-popup__item-info .img-bnr {margin:20px 0 25px;}
 
-.brand h2.title-h4 + .img-bnr {margin-top:0;}
 .brand h1.title-h2 + p {margin-top:-15px;}
 .brand .numList {margin-top:12px;}
 .brand .numList > li { line-height:23px;padding-left:10px;text-indent:-10px;}
@@ -60,7 +59,6 @@ Editor :
 .lay-box-col3 li .txt-bx p {margin:0 !important;}
 .lay-box-col3 li .txt-bx strong {font-size:18px;}
 
-
 .brand .lay-box-2 .plp-item-label {position:absolute;height:25px;}
 .brand .lay-box-2 .plp-item-label:after {right:-7px;top:0;width:0;height:0;border:1px solid #008fc5;border-width:25px 7px 0 0;}
 .brand .lay-box-2 .plp-item-label.bg-blue:after {border-color:#008fc5 transparent transparent #008fc5;}
@@ -74,30 +72,6 @@ Editor :
 .list-style-info li strong {float:left;width:150px;color:#002f5f;}
 .list-style-info li span {float:left;}
 
-@media (max-width:1024px) { 
-	.lay-box-4 {margin:-15px -12px -15px;}
-	.lay-box-4 li {width:50%;}
-	.lay-box-pdt {margin:-15px -12px -15px;}
-	.lay-box-pdt li {width:50%;}
-	.lay-box-team {margin:0 -12px -15px;}
-	.lay-box-team li {padding:10px 12px;width:50%;}
-}
-
-@media (max-width:768px) { 
-	.lay-box-2 {margin:0;display:block;}
-	.lay-box-2 > div {width:100%;padding:0;margin-top:15px;}
-	.lay-box-4 {margin:-15px -12px -15px;display:block;}
-	.lay-box-4 li {width:100%;}
-	.lay-box-pdt {margin:-15px -12px -15px;display:block;}
-	.lay-box-pdt li {width:100%;}
-	.lay-box-team {margin:0 -12px -15px;display:block;}
-	.lay-box-team li {padding:10px 12px;width:100%;}
-	.list-style-info li strong {float:none;width:auto;display:block;}
-	.list-style-info li span {float:none;display:block;margin-top:10px;}
-
-	.lay-box-col3 li {width:100%} 
-	.lay-box-col3 li .txt-bx {min-height:auto;}
-}
 /* 식물영양소 캠페인 */ 
 .content-row article [class*="cont-type"] figcaption + .box-txt-list {margin:0;padding:0 20px 50px;line-height:1.8;}
 div.box-txt-list .list-type5 {padding:0;}
@@ -143,32 +117,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .media-borad-list-gallery li a .tag {background:#002f5f;}
 .media-borad-list-gallery li a .tag span {display:inline-block;padding-left:20px;background:url(../images/akl_brand/common/bg_tag_gallery.png) no-repeat 0 50%;background-size:13px auto;}
 
-@media (max-width:1024px) { 
-	[class*="media-borad-list"] li {width:33.333%;}
-	[class*="media-borad-list"] li.highlight {width:66.666%;}
-	[class*="media-borad-list"] li.two-part {width:66.666%;}
-}
-@media (max-width:768px) { 
-	[class*="media-borad-list"] ul {margin-left:0;}
-	[class*="media-borad-list"] li {width:100%;position:static !important}
-	[class*="media-borad-list"] li.two-part {width:100%;}
-	[class*="media-borad-list"] li a {margin:0 0 20px 0;}	
-	[class*="media-borad-list"] li a .view-img {height:61.19vw;}	
-	[class*="media-borad-list"] li.highlight a .view-img {height:99.47vw;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
-	[class*="media-borad-list"] li.highlight a .view-img  img {width:auto;}
-	[class*="media-borad-list"] li a .tag {top:15px;right:8px;padding:0 12px;}
-	[class*="media-borad-list"] li a .tit-txt-wrap {padding:0 20px;}
-	[class*="media-borad-list"] li a .tit-txt-wrap strong {font-size:17px;}
-	[class*="media-borad-list"] li.highlight {width:100%;}
-	[class*="media-borad-list"] li.highlight a {margin:0 -15px 20px;}
-	[class*="media-borad-list"] li.highlight a .tag {top:20px;right:15px;}
-	[class*="media-borad-list"] li.highlight a .tit-txt-wrap {padding:0 15px;bottom:30px;}
-	[class*="media-borad-list"] li.highlight a .tit-txt-wrap strong {font-size:20px;}
-	[class*="media-borad-list"] li.media-more-btn button {height:44px;width:100%;border-radius:0;margin:0;}
-	[class*="media-borad-list"] li.media-more-btn button span {display:inline-block;padding:0 0 0;background:none;}
-	.media-borad-list-video li a .tit-txt-wrap:after {left:20px;top:-66px;width:48px;height:48px;}
-	.media-borad-list-video li.highlight .tit-txt-wrap:after {top:-92px;left:15px;width:66px;height:66px;}
-}
+
 
 /***** 암웨이 소개 *****/ 
 /* 사회공헌 */ 
@@ -200,15 +149,6 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .box-bnr-07 .txt-wrap p {margin-top:5px;font-size:14px;color:#fff;font-weight:300;}
 .brand .box-bnr-07 .txt-wrap p + strong {display:block;margin-top:30px;}
 
-@media (max-width:768px) { 
-/* 사회공헌 */ 
-	.brand .full-component {padding:0;height:auto;margin:0 -15px;width:auto;}
-	.brand [class*="box-bnr"] {height:auto;}
-	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;}
-	.brand [class*="box-bnr"] .txt-wrap > strong {font-size:28px;line-height:32px;}
-	.brand [class*="box-bnr"] .txt-wrap p {margin:5px 0 0;font-size:16px;}
-	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block}
-}
 
 /* 암웨이 사업 */ 
 [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:40px;}
@@ -240,12 +180,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .biz-qna dd div {background:#f4f4f4;color:#56565a;}
 .biz-qna dd div:after {right:-5px;background-color:#f4f4f4;}
 
-@media (max-width:768px) { 
-	[class*="img-text-row-box-type"] {display:block;margin-top:30px;padding-right:0;}
-	[class*="img-text-row-box-type"] div {display:flex;padding-left:0;width:100%;}
-	[class*="img-text-row-box-type"] div:first-child {width:100%}
-	[class*="img-text-row-box-type"] dl {margin-top:20px;}
-}
+
 
 /* 글로벌암웨이 */ 
 .info-icotype.global {width:100%;background:#fff;}
@@ -268,15 +203,6 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .full-component.hr {margin-top:30px !important;}
 .full-component.hr .img-bnr {margin-top:0;}
 
-@media (max-width:768px) { 
-	.info-icotype.global li {width:100%}
-	.info-icotype.global li:before {width:45px;height:45px;background-size:contain;}
-	.info-icotype.global li em {margin:0;}
-	.about-founder {padding:30px 20px;}
-	.about-founder dl {padding:0;}
-	.about-founder .img-bnr {position:static;margin-top:30px;text-align:center;}
-	.about-founder .img-bnr img {width:100%;}
-}
 
 /*뉴트리키즈*/
 .kids-playground {margin:0 -40px;}
@@ -284,12 +210,98 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .kids-playground a.primary-link span {position:absolute;width:100%;height:auto;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);margin:0;text-indent:-99999px;}
 .kids-playground a.primary-link:after {clear:both;content:'';display:block;position:absolute;left:50%;top:50%;width:110px;height:110px;margin:-55px 0 0 -55px;background:url(../images/akl_brand/common/bg_movie_play.png) no-repeat 0 0;background-size:contain;}
 
-@media (max-width:768px) { 
-	.kids-playground {margin:0 0;}
-	.kids-playground a.primary-link:after {width:64px;height:64px;margin:-32px 0 0 -32px;}
 
-}
 /*레이어 팝업*/
 .gallery-wrapper {width:100%;height:524px;overflow-y:auto;}
 .gallery-wrapper img {max-width:100%;}
 
+/*채용정보*/
+.akl-toggle-wrap.recruit {margin-top:40px;}
+.akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
+.akl-toggle-wrap.recruit .panel-title .text-uppercase.accordion-header-text {font-size:14px;letter-spacing:0;}
+.akl-toggle-wrap.recruit .panel-body {padding-left:0;}
+.panel-body
+@media (max-width:1024px) { 
+	.lay-box-4 {margin:-15px -12px -15px;}
+	.lay-box-4 li {width:50%;}
+	.lay-box-pdt {margin:-15px -12px -15px;}
+	.lay-box-pdt li {width:50%;}
+	.lay-box-team {margin:0 -12px -15px;}
+	.lay-box-team li {padding:10px 12px;width:50%;}
+
+
+	[class*="media-borad-list"] li {width:33.333%;}
+	[class*="media-borad-list"] li.highlight {width:66.666%;}
+	[class*="media-borad-list"] li.two-part {width:66.666%;}
+}
+
+@media (max-width:768px) { 
+	.lay-box-2 {margin:0;display:block;}
+	.lay-box-2 > div {width:100%;padding:0;margin-top:15px;}
+	.lay-box-4 {margin:-15px -12px -15px;display:block;}
+	.lay-box-4 li {width:100%;}
+	.lay-box-pdt {margin:-15px -12px -15px;display:block;}
+	.lay-box-pdt li {width:100%;}
+	.lay-box-team {margin:0 -12px -15px;display:block;}
+	.lay-box-team li {padding:10px 12px;width:100%;}
+	.list-style-info li strong {float:none;width:auto;display:block;}
+	.list-style-info li span {float:none;display:block;margin-top:5px;}
+
+	.lay-box-col3 li {width:100%} 
+	.lay-box-col3 li .txt-bx {min-height:auto;}
+
+	.brand h2.title-h4 {font-size:20px;}
+	.brand h3.title-h5 {font-size:16px !important;}
+	.m_f16 {font-size:16px;}
+
+	[class*="media-borad-list"] ul {margin-left:0;}
+	[class*="media-borad-list"] li {width:100%;position:static !important}
+	[class*="media-borad-list"] li.two-part {width:100%;}
+	[class*="media-borad-list"] li a {margin:0 0 20px 0;}	
+	[class*="media-borad-list"] li a .view-img {height:61.19vw;}	
+	[class*="media-borad-list"] li.highlight a .view-img {height:99.47vw;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+	[class*="media-borad-list"] li.highlight a .view-img  img {width:auto;}
+	[class*="media-borad-list"] li a .tag {top:15px;right:8px;padding:0 12px;}
+	[class*="media-borad-list"] li a .tit-txt-wrap {padding:0 20px;}
+	[class*="media-borad-list"] li a .tit-txt-wrap strong {font-size:17px;}
+	[class*="media-borad-list"] li.highlight {width:100%;}
+	[class*="media-borad-list"] li.highlight a {margin:0 -15px 20px;}
+	[class*="media-borad-list"] li.highlight a .tag {top:20px;right:15px;}
+	[class*="media-borad-list"] li.highlight a .tit-txt-wrap {padding:0 15px;bottom:30px;}
+	[class*="media-borad-list"] li.highlight a .tit-txt-wrap strong {font-size:20px;}
+	[class*="media-borad-list"] li.media-more-btn button {height:44px;width:100%;border-radius:0;margin:0;}
+	[class*="media-borad-list"] li.media-more-btn button span {display:inline-block;padding:0 0 0;background:none;}
+	.media-borad-list-video li a .tit-txt-wrap:after {left:20px;top:-66px;width:48px;height:48px;}
+	.media-borad-list-video li.highlight .tit-txt-wrap:after {top:-92px;left:15px;width:66px;height:66px;}
+
+/* 사회공헌 */ 
+	.brand .full-component {padding:0;height:auto;margin:0 -15px;width:auto;}
+	.brand [class*="box-bnr"] {height:auto;}
+	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;}
+	.brand [class*="box-bnr"] .txt-wrap > strong {font-size:28px;line-height:32px;}
+	.brand [class*="box-bnr"] .txt-wrap p {margin:5px 0 0;font-size:16px;}
+	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block}
+
+	[class*="img-text-row-box-type"] {display:block;margin-top:30px;padding-right:0;}
+	[class*="img-text-row-box-type"] div {display:flex;padding-left:0;width:100%;}
+	[class*="img-text-row-box-type"] div:first-child {width:100%}
+	[class*="img-text-row-box-type"] dl {margin-top:20px;}
+
+	.kids-playground {margin:0 0;}
+	.kids-playground a.primary-link:after {width:64px;height:64px;margin:-32px 0 0 -32px;}
+
+	.info-icotype.global {padding:0;}
+	.info-icotype.global li {width:100%;font-size:14px;padding: 20px 0 20px 90px;}
+	.info-icotype.global li:before {width:50px;left:10px;height:50px;background-size:contain;}
+	.info-icotype.global li em {margin:0;}
+	.info-icotype.global li span {display:inline;}
+	.about-founder {padding:30px 20px;}
+	.about-founder dl {padding:0;}
+	.about-founder .img-bnr {position:static;margin-top:30px;text-align:center;}
+	.about-founder .img-bnr img {width:100%;}
+
+	.img-bnr {margin:20px 0 35px;}
+	.br-box-cont-hr {margin-top:30px !important;padding-top:30px !important;}
+	.br-box-cont-hr .list-type5 li {margin-top:10px;}
+	.brand.amway-theme .link-btn {margin:0;}
+}

@@ -170,11 +170,6 @@ iframe {border:0;}
 .visual-area.wellros05{height:753px;background:url(../images/akl_product/one-for-one/bg_wellros_05.png) no-repeat bottom center;}
 .visual-area.wellros06{height:754px;background:url(../images/akl_product/one-for-one/bg_wellros_06.png) no-repeat bottom center;}
 
-/********************************************************************************************************************
-							css
-
-*********************************************************************************************************************/
-
 .visual-area .bg-top {position:absolute;top:0;left:0;width:100%;}
 .visual-area .bg-top img {width:100%;height:auto;}
 .visual-area .v-logo {padding:80px 0 0;}
@@ -193,7 +188,6 @@ iframe {border:0;}
 .v-pro {margin-top:78px;width:100%;text-align:center;}
 .v-pro span {display:block;text-align:center;margin:0 auto;width:100%;}
 .v-pro span img {text-align:center;width:auto;height:auto;}
-
 
 
 .txt-info-visual .v-etc.block li{display:block;}
@@ -366,6 +360,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .com-etc.small {font-size:13px;}
 .com-etc.x-small{font-size:12px;}
 .com-etc.default {font-size:14px;}
+.com-txt strong{font-weight:400;color:#56565a;}
 .pr-tit {font-size:16px;font-weight:400;letter-spacing:-1px;}
 .po-txt {font-size:16px;letter-spacing:-1px;font-weight:300;}
 
@@ -1149,17 +1144,36 @@ span.txt-next {display:block;}
 .advan-right.ar_4285 .ad-setp-lst dd {padding-right:50px}
 .advan-right.ar_4285 .ad-setp-lst dd strong{font-weight:400}
 
+/* 아이디얼 래디언스 4988_ UV 프로텍트 */
+.triangle.circle-type.uv{padding: 0;display: block;}
+.triangle.circle-type.uv .tit-child{color: #8eb1d3;padding-top:50px;font-size: 18px;font-weight: 400;text-align: center;letter-spacing: 0;}
+.triangle.circle-type.uv .tit-child sup{font-size: 6px !important;top: -.7em;font-weight: 300;}
+.triangle.circle-type.uv .tit-child em{font-size:16px !important;}
+.triangle.circle-type.uv .txt-round{width:100%;position:absolute;color:#ffffff;}
+.triangle.circle-type.uv .txt-round em{display:inline-block;min-width: 139px;min-height: 139px;padding-top: 22px;border:none !important;box-sizing: border-box;border-radius: 100%;font-size: 18px;line-height: 1.2;}
+.triangle.circle-type.uv .txt-round em:before{min-width:30px;min-height: 30px;display:block;content:"";margin-bottom: 3px;}
+
+.triangle.circle-type.uv .comment01{width:100%;}
+.triangle.circle-type.uv .comment02{width:50%;top: inherit;bottom: 0;left: 0;}
+.triangle.circle-type.uv .comment03{width:50%;top: inherit;bottom: 0;right: 0;}
+.triangle.circle-type.uv .comment01 em{background-color:#fddfe5;color:#d06488;top: 0;left: 50%;padding-top: 35px;}
+.triangle.circle-type.uv .comment02 em{background-color:#d1e6f8;color:#2e6eaf;padding-top: 20px;}
+.triangle.circle-type.uv .comment03 em{background-color:#d3f4e1;color:#368469;padding-top: 33px;}
+.triangle.circle-type.uv .comment01 em:before{background: url(../images/akl_product/beauty/ico_radi_uv_pink.png) no-repeat 50% 30%;}
+.triangle.circle-type.uv .comment02 em:before{background: url(../images/akl_product/beauty/ico_radi_uv_blue.png) no-repeat 50% 30%;margin-bottom: 8px;}
+.triangle.circle-type.uv .comment03 em:before{background: url(../images/akl_product/beauty/ico_radi_uv_green.png) no-repeat 50% 0;}
+
 /* 스킨케어 */
 .visual-area.type02.indicator p.v-txt {padding:15px 0 0}
-/*.txt-info-visual .v-logo-txt.gray {color:#bbbbbb;}*/
-
 .visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
 .visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
-
 .visual-area.type02.ultra-lifting.ar4223 {height:995px;background: #f8f8f8 url('../images/akl_product/beauty/bg_youth_xtend_ultra_lifting_AR4223.png') no-repeat center center;}
 .visual-area.type02.hydrav.ar4919 {height:1030px;background: #f8f8f8 url('../images/akl_product/beauty/bg_hydrav_refreshing_ar4919.png') no-repeat top center;}
-/*.advantage-area .sie-box .com-tit .small  sup  {top:-0.8em}*/
 .txt-info-visual.ar1616 .v-etc {margin:20px 0 0}
+
+
+
+
 
 /* 메이크업 */
 .ingre-list-wrap.ar3189 {margin-top:100px;}
@@ -2157,8 +2171,6 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 
 
 	
-	
-	
 	/*
 	.youth_xtend_relative {width:auto;height:auto;}
 	.youth_xtend_relative .youth_xtend_right img.img-micro{width:70%;}
@@ -2637,7 +2649,20 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.young-age-area .polygon .txt dt{font-size:14px;}
 	.young-age-area .polygon .txt dd{font-size:12px;}
 	
-	
+	/* 4988_ UV 프로텍트 */
+	.triangle.circle-type.uv img.chart{width:auto;}
+	.triangle.circle-type.uv .tit-child{font-size:12px;}
+	.triangle.circle-type.uv .tit-child em{font-size:12px !important;}
+	.triangle.circle-type.uv .txt-round em{min-width: 70px;min-height: 70px;padding-top: 22px;font-size: 12px;}
+	.triangle.circle-type.uv .txt-round em:before{min-width: 20px;min-height: 20px;background-size: 21px;}
+	.triangle.circle-type.uv .comment02{left:-30px !important;}
+	.triangle.circle-type.uv .comment03{right:-30px !important;}
+	.triangle.circle-type.uv .comment01 em{top: 0;left: 50%;padding-top: 11px;}
+	.triangle.circle-type.uv .comment02 em{padding-top: 6px;}
+	.triangle.circle-type.uv .comment03 em{padding-top: 8px;}
+	.triangle.circle-type.uv .comment01 em:before{}
+	.triangle.circle-type.uv .comment02 em:before{margin-bottom: 0;}
+	.triangle.circle-type.uv .comment03 em:before{}
 	
 }
 
@@ -2662,7 +2687,24 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.signature-cont-area .pcomp-area .comp-info .comp-box dl dt p {font-size:12px;}
 	.signature-cont-area .akl a.bt-akl-blue, 
 	.signature-cont-area .pcomp-area .comp-info .comp-box .bt-akl-blue{padding: 7px 10px 8px !important;}
+	
+	/* 4988_ UV 프로텍트 */
+	.triangle.circle-type.uv img.chart{width: 100% !important;}
+	.triangle.circle-type.uv .tit-child{font-size: 14px;}
+	.triangle.circle-type.uv .tit-child em{font-size:12px !important;}
+	.triangle.circle-type.uv .txt-round em{min-width: 70px;min-height: 70px;padding-top: 22px;font-size: 12px;}
+	.triangle.circle-type.uv .txt-round em:before{min-width: 20px;min-height: 20px;background-size: 21px;}
+	
 
+	.triangle.circle-type.uv .comment02{left:-30px !important;}
+	.triangle.circle-type.uv .comment03{right:-30px !important;}
+	
+	.triangle.circle-type.uv .comment01 em{top: 10px;left: 50%;padding-top: 14px;}
+	.triangle.circle-type.uv .comment02 em{padding-top: 8px;}
+	.triangle.circle-type.uv .comment03 em{padding-top: 14px;}
+	.triangle.circle-type.uv .comment01 em:before{}
+	.triangle.circle-type.uv .comment02 em:before{margin-bottom: 3px;}
+	.triangle.circle-type.uv .comment03 em:before{}
 	
 	/* 하이드라 */
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size:13px;}
