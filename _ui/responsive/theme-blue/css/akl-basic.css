@@ -890,6 +890,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 /* 함께하면 좋은 제품 */
 .akl .amway-suggest__list .owl-nav .owl-prev {left:-30px;}
 .akl .amway-suggest__list .owl-nav .owl-next {right:0;}
+.akl .popover-content .amway-suggest__list .owl-nav .owl-prev {left:-15px;}
 
 /* 최근 본 제품 */
 #recentlyViewedListTab.owl-carousel .owl-item {padding:0 15px;}
@@ -995,7 +996,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 .shipping-delivery .checkout-steps .checkout-step {float:none; width:50%;}
 
 /** ---------------------------------
-  * @ 공통 : 테이블(UL)
+  * @ 공통 : 테이블(UL/DIV)
   * ---------------------------------
   */
 /* table : view */
@@ -1132,6 +1133,22 @@ ul .ol-list {margin:10px 0 20px 15px;}
 .akl .con-list-item span.txte-wrap em a {font-weight:500;font-size:14px;}
 .akl .con-list-item div.search-no-result {display:table;width:100%;}
 
+/* ----- 검색결과 ----- */
+
+/* 통합검색 */
+.shipping-list .search-no-result {padding:20px 0; margin-bottom:0}
+.col-search-right .search-no-result {border-bottom:1px solid #dadada; padding:40px 0}
+.col-search-right .pagination-toolbar {margin-top:60px;}
+.col-search-right .product__list--wrapper.search-list-page-right-result-list-component:last-child .search-no-result {margin-bottom:0;}
+
+/* 목록 - 결과 없음 */
+.search-no-result  {text-align:center; padding:40px 0; width:100%;}
+.search-no-result.line {border-bottom:1px solid #e3e3e3;}
+.search-no-result p {font-size:14px;}
+.table-point-wrapper  .search-no-result {border-bottom:1px solid #dadada;}
+.list-details .search-no-result {width:auto; margin:0 -12px; border-bottom:1px solid #dadada;}
+
+
 /** ---------------------------------
   * @ 쇼핑:메인, PLP 등
   * ---------------------------------
@@ -1150,20 +1167,15 @@ ul .ol-list {margin:10px 0 20px 15px;}
 .akl .product-list-left-refinements-slot .accordion-custom .collapse-button .icon-minus:before,
 .akl .mob-product-facet.product__facet .accordion-custom .collapse-button .icon-minus:before {margin-right:4px; line-height:2;}
 
+
 /* common > 기타 */
 .st-text {font-size:16px; font-weight:500}
 .st-text + .table-wrapper {margin-top:15px;}
 .style_line {border-bottom:1px solid #e3e3e3; padding-bottom:10px; margin-bottom:10px;}
-.search-no-result  {text-align:center; padding:40px 0; width:100%;}
-.search-no-result.line {border-bottom:1px solid #e3e3e3;}
-.search-no-result p {font-size:14px;}
-.shipping-list .search-no-result {padding:20px 0; margin-bottom:0}
-.col-search-right .search-no-result {border-bottom:1px solid #dadada; padding:40px 0}
-.col-search-right .pagination-toolbar {margin-top:60px;}
-.col-search-right .product__list--wrapper.search-list-page-right-result-list-component:last-child .search-no-result {margin-bottom:0;}
 
-.table-point-wrapper  .search-no-result {border-bottom:1px solid #dadada;}
-.list-details .search-no-result {border-bottom:1px solid #dadada; margin:0 -12px; width:auto;}
+
+
+
 
 /* 상품목록 > 카드형 */
 .akl .product-list__item {height:640px; position:relative;}
@@ -1546,7 +1558,7 @@ ul .ol-list {margin:10px 0 20px 15px;}
 	.akl .cbox .cart-popup__dialog {box-shadow:0 5px 15px rgba(0,0,0,.3);}
 	.akl .cbox.typeAdminAdd .tabcon-tit {padding:0; margin:0 20px 17px;}
 
-	/* Layer:동영상 크게보기 */
+	/* Layer: 동영상 크게보기 */
 	.akl #videobox {top:15px;width:auto; left:15px; right:15px; height:auto;transform:none;}
 	.akl .popup-video-preview__content {padding:50px 20px 0;}
 	.akl .video-pop {padding-bottom:20px;}
@@ -1557,21 +1569,21 @@ ul .ol-list {margin:10px 0 20px 15px;}
 	.akl #videobox .popup-video-preview__content .video-cont span img {height:100%;}
 	.akl .popup-video-preview__content .video-preview__play {margin-left:-41px;margin-top:-41px;}
 
-	/* Layer:동영상 재생 */
+	/* Layer: 동영상 재생 */
 	.akl .view-sns div.print {display:none;}
 	.akl .view-sns div.kakaotalk {display:inline-block;}
 
-	/* Layer:컨텐츠 높이제한 없음 */
+	/* Layer: 컨텐츠 높이제한 없음 */
 	.layerBox .cart-popup__content.height-auto {max-height:none;}
 
-	/* Layer:RD화면 */
+	/* Layer: RD화면 */
 	.RD-Layer {padding:20px 20px 20px;}
 	.RD-Layer .closeSbLayer {top:20px; right:20px;}
 
-	/* Layer:URL 복사 */
+	/* Layer: URL 복사 */
 	.pop-area-body:after {left:27px;}
 
-	/* Layer:어드민 관리/등록 (메인전용) */
+	/* Layer: 어드민 관리/등록 (메인전용) */
 	.layer-tabs-wrapper {padding:20px 0;}
 	.col-equality-tab {margin:0 0 30px; height:55px; overflow-x:auto; overflow-y:hidden;}
 	.col-equality-tab ul {width:100%; padding:0 20px ;}
@@ -1878,21 +1890,21 @@ ul .ol-list {margin:10px 0 20px 15px;}
 	.akl .content-list .con-list-item span.tite-label {display:block; float:left; text-align:left; font-size:14px; font-weight:700; color:#002f5f;}
 	.akl .content-list .con-list-item span.txte-wrap {display:block; float:right; text-align:right;}
 
+	/* ----- 검색결과 ----- */
+	.search-no-result {padding:20px 0 30px;}
+	.search-no-result p {padding:0 20px;}
+
 	/** ---------------------------------
 	  * @ 쇼핑:메인, PLP 등
 	  * ---------------------------------
 	  */
 	.akl .product-item-element .checkbox-element-wrapper {margin:3px 0 0 6px;}
 	.akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding-left:0;}
-
-	.search-no-result {padding:20px 0 30px;}
-	.search-no-result p {padding:0 20px;}
-
 	.akl .accordion-custom .panel-title {padding:25px 50px 25px 10px;}
 	.col-search-right .pagination-toolbar {margin-top:30px;}
 
-	.certification {text-align:center}
-	.certification a {display:none}
+	.certification {text-align:center;}
+	.certification a {display:none;}
 	.certification a:last-child {display:inline-block;}
 
 	/* common > toggle */
