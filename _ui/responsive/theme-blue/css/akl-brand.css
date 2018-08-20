@@ -4,6 +4,7 @@ Date : 2018-07-02
 Editor : HYEWON HWANG
 *************************************************/ 
 
+/* ### 공통 ###*/
 .brand .colorM {color:#0a70d3 !important;}
 .brand .rela {position:relative;}
 .brand .overh {overflow:hidden;}
@@ -43,8 +44,8 @@ Editor : HYEWON HWANG
 #brandMenu .form-control {width:100%;}
 #brandMenu .select2-container {width:100% !important;}
 
+.brand-contents .bod-view-sns {position:absolute;top:0;right:0;text-align:right;}
 
-/* ### 공통 ###*/
 /* 버튼스타일 */
 .arr1 {position:relative;display:inline-block;} /* 오른쪽 화살표 > */
 .arr1:after {content:'';position:absolute;top:50%;right:-9px;width:7px;height:7px;transform:rotate(45deg) translatey(-50%);border:2px solid #fff;border-width:2px 2px 0 0;}
@@ -74,7 +75,7 @@ Editor : HYEWON HWANG
 .akl .brand .homepage_banner .owl-dots .owl-dot span {background:none;box-shadow:none;width:auto;height:auto;margin:0;}
 
 .akl .brand .homepage_banner .wrapper {background:#fff;}
-.akl .brand .homepage_banner .banner__wrapper {max-width:1376px;}
+/*.akl .brand .homepage_banner .banner__wrapper {max-width:1376px;}*/
 .akl .brand .homepage_banner .banner__wrapper * {color:#fff !important;}
 .akl .brand .homepage_banner .banner__title {position:absolute;z-index:11;top:40px;right:0;padding:10px 40px 0 0;font-size:14px;}
 .akl .brand .homepage_banner .banner__title:before {content:'';display:block;position:absolute;right:0;top:0px;width:83px;height:3px;background:#e11e44;}
@@ -453,7 +454,9 @@ Editor : HYEWON HWANG
 	
 	.brand .brand-contents > h1 {margin:10px 0 27px;}
 	.brand .brand-contents > h1 + .tit-txt {margin:-15px 0 15px;} 
-
+	
+	.brand-contents .bod-view-sns {position:relative;float:none;margin:-5px 0 40px;}
+	
 	/* 브랜드 템플릿 */
 	.akl .brand .homepage_banner, 
 	.akl .brand .homepage_banner .owl-carousel .owl-stage-outer,
