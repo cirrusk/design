@@ -217,11 +217,17 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .gallery-wrapper img {max-width:100%;}
 
 /*채용정보*/
-.akl-toggle-wrap.recruit {margin:40px 0 30px;}
+
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
 .akl-toggle-wrap.recruit .panel-title .text-uppercase.accordion-header-text {font-size:14px;letter-spacing:0;}
 .akl-toggle-wrap.recruit .panel-body {padding-left:0;}
 
+.recruit-step-wrap {margin-top:40px;padding:60px 40px 60px 40px;background:#f6f6f6;}
+.recruit-step-wrap > ul {display:flex;flex-wrap:wrap;}
+.recruit-step-wrap > ul > li {position:relative;width:25%;box-sizing:border-box;text-align:center;}
+.recruit-step-wrap > ul > li div {display:inline-block;width:170px;height:170px;border-radius:100%;background:#fff;}
+.recruit-step-wrap > ul > li:after {content:'';display:inline-block;position:absolute;top:85px;right:-4px;background:url("../images/akl_common/ico_step_arrow.png") no-repeat right center;width:9px;height:16px;}
+.recruit-step-wrap > ul > li:last-child:after {background:none}
 
 
 @media (max-width:1024px) { 
