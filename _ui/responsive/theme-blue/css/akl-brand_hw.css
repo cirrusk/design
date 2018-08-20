@@ -3,12 +3,17 @@ Version :AKL Hybris UIUX 1.0
 Date :2018-07-02
 Editor :
 *************************************************/ 
-.brand article .title-h5 {letter-spacing:-1px;}
-.brand article .title-h6 {letter-spacing:-1px;color:#002f5f;}
-.brand article .title-h6 strong {font-weight:700;}
+
+[class*="br-box-cont"] .title-h5 {letter-spacing:-1px;}
+[class*="br-box-cont"] .title-h6 {letter-spacing:-1px;color:#002f5f;}
+[class*="br-box-cont"] .title-h6 strong {font-weight:700;}
+.br-box-cont-hr {display:block; margin-top:40px !important; padding-top:40px !important; border-top:1px solid #dadada;}
+.brand [class*="br-box-cont"] .img-bnr {margin:0 0 35px;}
+.brand [class*="br-box-cont"] ul + .img-bnr {margin:10px 0 35px;}
+
 .img-bnr {margin:35px 0 45px;overflow:hidden;}
 .img-bnr img {width:100%;}
-.brand .hr .img-bnr {margin:0 0 35px;}
+
 .cart-popup__item-info .img-bnr {margin:20px 0 25px;}
 
 .brand h2.title-h4 + .img-bnr {margin-top:0;}
