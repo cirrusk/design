@@ -13,6 +13,8 @@ Editor :
 
 .img-bnr {margin:35px 0 45px;overflow:hidden;}
 .img-bnr img {width:100%;}
+.img-bnr-bg {margin:35px 0 45px;padding:40px;overflow:hidden;background:#f4f4f4;text-align:center;}
+.img-bnr-bg img {max-width:100%;}
 
 .cart-popup__item-info .img-bnr {margin:20px 0 25px;}
 
@@ -149,7 +151,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .box-bnr-07 .txt-wrap span {display:block;}
 .brand .box-bnr-07 .txt-wrap p {margin-top:5px;font-size:14px;color:#fff;font-weight:300;}
 .brand .box-bnr-07 .txt-wrap p + strong {display:block;margin-top:30px;}
-
+.brand .box-bnr-07 .txt-wrap .t1 {display:block;line-height:48px;font-size:40px;margin-bottom:15px;}
 
 /* 암웨이 사업 */ 
 [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:40px;}
@@ -217,17 +219,70 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .gallery-wrapper img {max-width:100%;}
 
 /*채용정보*/
-
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
 .akl-toggle-wrap.recruit .panel-title .text-uppercase.accordion-header-text {font-size:14px;letter-spacing:0;}
 .akl-toggle-wrap.recruit .panel-body {padding-left:0;}
 
-.recruit-step-wrap {margin-top:40px;padding:60px 40px 60px 40px;background:#f6f6f6;}
+.recruit-step-wrap {margin-top:40px;padding:60px 7% 20px 3%;background:#f6f6f6;}
 .recruit-step-wrap > ul {display:flex;flex-wrap:wrap;}
-.recruit-step-wrap > ul > li {position:relative;width:25%;box-sizing:border-box;text-align:center;}
-.recruit-step-wrap > ul > li div {display:inline-block;width:170px;height:170px;border-radius:100%;background:#fff;}
-.recruit-step-wrap > ul > li:after {content:'';display:inline-block;position:absolute;top:85px;right:-4px;background:url("../images/akl_common/ico_step_arrow.png") no-repeat right center;width:9px;height:16px;}
+.recruit-step-wrap > ul > li {position:relative;width:25%;text-align:center;margin-bottom:30px;}
+.recruit-step-wrap > ul > li:after {content:'';display:inline-block;position:absolute;top:77px;right:-4px;background:url(../images/akl_common/ico_step_arrow.png) no-repeat right center;width:9px;height:16px;}
 .recruit-step-wrap > ul > li:last-child:after {background:none}
+.recruit-step-wrap > ul > li div {position:relative;display:inline-block;width:170px;height:170px;padding-top:95px;border-radius:100%;background:#fff;}
+.recruit-step-wrap > ul > li:nth-of-type(1) div, .recruit-step-wrap > ul > li:nth-of-type(8) div {background:#00b2e2;}
+.recruit-step-wrap > ul > li:nth-of-type(1) div strong, .recruit-step-wrap > ul > li:nth-of-type(8) div strong, .recruit-step-wrap > ul > li:nth-of-type(1) div span, .recruit-step-wrap > ul > li:nth-of-type(8) div span {color:#fff;}
+.recruit-step-wrap > ul > li div:after {content:'';display:inline-block;position:absolute;top:30px;left:50%;width:60px;height:60px;margin:0 0 0 -30px;background-size:contain;}
+.recruit-step-wrap > ul > li:nth-of-type(1) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step01.png);}
+.recruit-step-wrap > ul > li:nth-of-type(2) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step02.png);}
+.recruit-step-wrap > ul > li:nth-of-type(3) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step03.png);}
+.recruit-step-wrap > ul > li:nth-of-type(4) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step04.png);}
+.recruit-step-wrap > ul > li:nth-of-type(5) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step05.png);}
+.recruit-step-wrap > ul > li:nth-of-type(6) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step06.png);}
+.recruit-step-wrap > ul > li:nth-of-type(7) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step07.png);}
+.recruit-step-wrap > ul > li:nth-of-type(8) div:after {background-image:url(../images/akl_brand/about/ico_recruit_step08.png);}
+.recruit-step-wrap > ul > li div strong {display:block;font-size:16px;font-weight:500;}
+.recruit-step-wrap > ul > li div span {font-weight:700;font-size:12px;letter-spacing:0;color:#002f5f;} 
+.recruit-step-wrap > ul > li ul {display:table;margin:7px auto;}
+.recruit-step-wrap > ul > li ul li {text-align:left;letter-spacing:0;}
+
+.br_ico_list {margin-top:40px;border-top:1px solid #e3e3e3;}
+.br_ico_list li {display:table;overflow:hidden;padding:40px 20px;border-bottom:1px solid #e3e3e3;width:100%;}
+.br_ico_list li img {float:left;}
+.br_ico_list li dl {float:left;width:calc(100% - 105px);padding-left:40px;}
+.br_ico_list li dl dt {font-size:16px;color:#002f5f;}
+.br_ico_list li dl dd {margin-top:10px;}
+.br_ico_list li strong {float:left;width:calc(100% - 105px);padding-left:40px;font-size:16px;color:#002f5f;}
+
+.internship-wrap {overflow:hidden;margin-top:40px;}
+.internship-wrap .cont-l {position:relative;padding-top:130px;float:left;width:250px;}
+.internship-wrap .cont-l:before {content:'';display:inline-block;position:absolute;top:0;left:0;width:206px;height:100px;background-image:url(../images/akl_brand/about/bg_internship_wrap_left.jpg);background-size:contain;} 
+.internship-wrap .cont-l .title-h4 {margin-bottom:10px;line-height:30px;color:#002f5f;}
+.internship-wrap .cont-l p {margin-bottom:0;line-height:24px;}
+.internship-wrap .cont-l p span {display:block;}
+.internship-wrap .cont-r {float:left;width:calc(100% - 250px);}
+
+.internship-wrap .internship-list {padding-left:7%;}
+.internship-wrap .internship-list:after {content:'';display:block;clear:both;}
+.internship-wrap .internship-list li {position:relative;padding-top:20px;width:25%;float:left;margin-bottom:60px;}
+.internship-wrap .internship-list li:before {position:absolute;content:'';display:block;clear:both;top:5px;left:0;width:100%;height:1px;background:#e3e3e3;}
+.internship-wrap .internship-list li:after {position:absolute;content:'';display:block;clear:both;top:0;left:0;width:10px;height:10px;border-radius:100%;background:#e3e3e3;}
+.internship-wrap .internship-list li:last-child:before {display:none;}
+.internship-wrap .internship-list li img {height:205px;}
+.internship-wrap .internship-list li strong {display:block;margin-bottom:10px;font-size:20px;color:#002f5f;}
+
+.info-icotype.internship {width:100%;padding:30px 0;}
+.info-icotype.internship li {width:20%;font-size:13px;}
+.info-icotype.internship li:before {content:"";display:inline-block;width:60px;height:60px;background-position:50% 50%;background-size:100%;background-repeat:no-repeat}
+.info-icotype.internship li:nth-child(1):before {background-image:url(../images/akl_brand/about/ico_internship01.png);}
+.info-icotype.internship li:nth-child(2):before {background-image:url(../images/akl_brand/about/ico_internship02.png);}
+.info-icotype.internship li:nth-child(3):before {background-image:url(../images/akl_brand/about/ico_internship03.png);}
+.info-icotype.internship li:nth-child(4):before {background-image:url(../images/akl_brand/about/ico_internship04.png);}
+.info-icotype.internship li:nth-child(5):before {background-image:url(../images/akl_brand/about/ico_internship05.png);}
+.c-tbl .tbl-type1 th {line-height:18px;word-break:keep-all;word-wrap: break-word;}
+.c-tbl .tbl-type1 td {text-align:center;word-break:keep-all;word-wrap: break-word;}
+.c-tbl .tbl-type1 th + th, .c-tbl .tbl-type1 td + td {border-left:1px solid #e3e3e3;}
+.c-tbl .tbl-type1 tbody tr:nth-of-type(even) {background:none;}
+
 
 
 @media (max-width:1024px) { 
@@ -242,9 +297,23 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	[class*="media-borad-list"] li {width:33.333%;}
 	[class*="media-borad-list"] li.highlight {width:66.666%;}
 	[class*="media-borad-list"] li.two-part {width:66.666%;}
+
+	/*채용정보*/
+	.recruit-step-wrap > ul > li {width:33.333%;}
+	.internship-wrap .cont-l {float:none;width:100%;}
+	.internship-wrap .cont-l p {font-size:15px;}
+	.internship-wrap .cont-l p span {display:inline;}
+	.internship-wrap .cont-l .title-h4 {font-size:22px;}
+	.internship-wrap .cont-r {float:none;width:100%;}
+	.internship-wrap .internship-list {margin-top:50px;padding:0 5%}
+	.internship-wrap .internship-list li {width:33.333%;}
 }
 
+
 @media (max-width:768px) { 
+	.brand [class*="box-bnr"] .txt-wrap p {display:none;}
+	.img-bnr {margin:20px 0 35px;}
+	.img-bnr-bg {margin:20px 0 35px;padding:30px 15px;}
 	.lay-box-2 {margin:0;display:block;}
 	.lay-box-2 > div {width:100%;padding:0;margin-top:15px;}
 	.lay-box-4 {margin:-15px -12px -15px;display:block;}
@@ -259,9 +328,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.lay-box-col3 li {width:100%} 
 	.lay-box-col3 li .txt-bx {min-height:auto;}
 
-	.brand h2.title-h4 {font-size:20px;}
+	.brand h2.title-h4 {margin:35px 0 10px !important;;font-size:20px;}
 	.brand h3.title-h5 {font-size:16px !important;}
-	.m_f16 {font-size:16px;}
 
 	[class*="media-borad-list"] ul {margin-left:0;}
 	[class*="media-borad-list"] li {width:100%;position:static !important}
@@ -309,8 +377,44 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.about-founder .img-bnr {position:static;margin-top:30px;text-align:center;}
 	.about-founder .img-bnr img {width:100%;}
 
-	.img-bnr {margin:20px 0 35px;}
 	.br-box-cont-hr {margin-top:30px !important;padding-top:30px !important;}
 	.br-box-cont-hr .list-type5 li {margin-top:10px;}
 	.brand.amway-theme .link-btn {margin:0;}
+
+	/*채용정보*/
+	.recruit-step-wrap {padding:60px 7% 20px 0;}
+	.recruit-step-wrap > ul > li {width:50%;}
+	.internship-wrap .internship-list {display:flex;flex-direction: column-reverse;}
+	.internship-wrap .internship-list li {width:100%;padding:0 0 35px 10%;margin:0;}
+	.internship-wrap .internship-list li:before {top:10px;left:6px;width:2px;height:100%;}
+	.internship-wrap .internship-list li:first-child:before {display:none;}
+	.internship-wrap .internship-list li:last-child:before {display:block;}
+	.internship-wrap .internship-list li:after {top:7px;width:15px;height:15px;}
+	.internship-wrap .internship-list li strong {display:inline-block;width:70px;vertical-align:top;font-style:italic;}
+	.internship-wrap .internship-list li img {height:215px;}
+	.info-icotype.internship {overflow:hidden;padding:0 20px;}
+	.info-icotype.internship li {float:left;width:50%;border-bottom:1px solid #e3e3e3;padding:100px 0 30px;text-align:center;}
+	.info-icotype.internship li:last-child {border:none;}
+	.info-icotype li + li {border-top:none;}
+	.info-icotype.internship li:before {top:40px;left:50%;margin:0 0 0 -25px;width:50px;height:50px;}
+	.c-tbl table.tbl-type1 thead th {padding:10px 10px;font-size:13px;}
+	
+	.br_ico_list {margin-top:40px;}
+	.br_ico_list li {display:block;padding:40px 0;}
+	.br_ico_list li img {float:none;}
+	.br_ico_list li dl {float:none;width:100%;padding:0;}
+	.br_ico_list li dl dt {font-size:16px;color:#002f5f;}
+	.br_ico_list li dl dd {margin-top:10px;}
+	.br_ico_list li strong {float:none;display:block;width:100%;padding:0;}
+
+	.brand .c-tbl table.tbl-type1 td {font-size:14px;}
+
+}
+	
+@media (max-width:480px) { 
+	/*채용정보*/
+	.recruit-step-wrap {padding:40px 0 0}
+	.recruit-step-wrap > ul > li {width:100%;float:none;padding-bottom:30px;}
+	.recruit-step-wrap > ul > li:after {top:auto;right:50%;bottom:-10px;;transform:rotate(90deg);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);margin-right:-8px;}
+	.recruit-step-wrap > ul > li:last-child {padding-bottom:15px;}
 }
