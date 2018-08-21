@@ -8,7 +8,6 @@
 	_focusableEls.keypress(function(event){
 		var keycode = event.keyCode || event.which;
 		if( keycode == '13' ){
-
 			var input_Radio = $(this).find('input[type=radio]');
 			var prev_Radio = $(this).prev('input[type=radio]');
 			input_Radio.prop("checked", true).attr('checked',true);
