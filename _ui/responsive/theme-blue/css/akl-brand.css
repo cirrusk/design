@@ -11,8 +11,8 @@ Editor : HYEWON HWANG
 .brand .overh {overflow:hidden;}
 .brand .fl {float:left;}
 .brand .fr {float:right;}
-.brand .tl {text-align:left;}
-.brand .tr {text-align:right;}
+.brand .txtl {text-align:left;}
+.brand .txtr {text-align:right;}
 .brand .full {width:100%;}
 
 /* 전체메뉴 */
@@ -275,10 +275,11 @@ Editor : HYEWON HWANG
 
 
 /* 한국암웨이 */
-.brand .about article:not(:first-child) {padding:40px 0;border-top:1px solid #adadad;}
-.brand .about article:first-child {padding-bottom:40px;}
+.brand .about article {padding:40px 0;border-top:1px solid #e3e3e3;}
+.brand .about article:first-child {padding-top:0;border-top:0;}
 .brand .about article > div:nth-of-type(2) {margin-top:40px;}
 .brand .about article:last-child {padding-bottom:0;}
+.brand .about article img {width:100%;}
 .brand .about article dl {overflow:hidden;}
 .brand .about article dl dt {float:left;margin-top:10px;color:#002f5f;}
 .brand .about article dl dd {padding-left:150px;margin-top:10px;}
@@ -528,7 +529,10 @@ Editor : HYEWON HWANG
 	    display: none;
 	}
 	.akl .amway-theme .intro .bt-akl-blue {background:#002F5F;}
-	/**/
+	
+	/* 한국암웨이 */
+	.brand .about article {padding:30px 0;}
+	.brand .about article > div:nth-of-type(2) {margin-top:25px;}
 	
 	/* CEO인사말 */ 
 	.ceo .full-component h2 {margin:20px 0;font-size:18px !important;}
