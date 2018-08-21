@@ -187,7 +187,7 @@ $(function(){
 		layerPopOver(this,'.G10600_lp1_pop');
 	});
 
-	$(".select2-hidden-accessible").select2();
+	//$(".select2-hidden-accessible").select2();
 	$(".form_datetime").datepicker({format: 'yyyy-mm-dd',autoclose: true});
 
 	//프로모션 관련 2018.05.16 추가
@@ -307,7 +307,7 @@ $(function(){
 //중개판매관리 2018.03.30
 $(function() {
 
-	$(".select2-hidden-accessible").select2();
+	//$(".select2-hidden-accessible").select2();
 	$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
 
 	$("#addToLIST").click(function(){
