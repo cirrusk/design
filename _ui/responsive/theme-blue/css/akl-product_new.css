@@ -416,7 +416,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .pcomp-list div.comp-info {float:left;/*display:table-cell;vertical-align:top;*/text-align:center;box-sizing: border-box;/*padding:0 10px;*/}  /* 18.07.04*/
 .pcomp-list div.comp-info .comp-box {position:relative;width:100%;}
 .comp-box dl {vertical-align:top;width:100%;text-align:center;margin:10px auto 0;}
-.comp-box dl dt {height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
+.comp-box dl dt {display: inline-block;height:40px;font-family:'Noto Sans KR', sans-serif;padding:10px 30px;}
 .comp-box dl dt span.blue {display:block;color:#008fc5;font-weight:400;}
 .comp-box dl dd {position:relative;text-align:center;padding:10px 0;height:130px;}
 .comp-box dl dd p {font-size:14px;font-weight:300;color:#808285;margin:15px auto 10px;height:50px;padding:0 10%;width:100%;}
@@ -1881,7 +1881,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.detail-content-area .pcomp-area .comp-info .comp-box dl dd{min-height:100px;}
 	
 	/* 스킨케어 뷰티 비주얼 영역 공통 */	
-	.skin-care .visual-area.type02 .v-logo.beauty img{height:15px;}
+	.skin-care .visual-area.type02 .v-logo.beauty img{height:30px;}
+	.skin-care .visual-area.type02.zone-patch .v-logo.beauty img{height:15px;}
 	.skin-care .visual-area.type02{height:inherit;background-color:inherit !important;}	
 	.skin-care .visual-area.type02.hydrav{min-height:595px;}
 	.skin-care .visual-area.type02.hydrav-set{min-height: 528px;}		
