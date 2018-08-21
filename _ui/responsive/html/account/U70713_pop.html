@@ -46,16 +46,17 @@
 								<label for="radio3">신용카드</label>
 								<div id="collapseThree" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
+										<!-- 수정 : 2018.08.21 (프로모션 삭제)
 										<div class="card-promotion">
 											<span><img src="/_ui/responsive/theme-blue/images/akl_common/card-p.png" alt=""></span>
 											<dl>
 												<dt>자동이체 10% PV UP 프로모션</dt>
 												<dd>자동이체로 결제시 10 PV 추가 적용</dd>
 											</dl>
-										</div>
+										</div> -->
 										<div class="row card-method">
 											<div class="form-group">
-												<div  class="col-xs-12 col-md-3 card-tit"><label for="aa">멤버포인트</label></div>
+												<div  class="col-xs-12 col-md-3 card-tit"><label for="aa">A포인트</label></div>
 												<div class="col-xs-12 col-md-8">
 													<input id="all" type="checkbox" checked="checked">
 													<label for="all" class="normal inline-label checklabel">모두사용 (보유포인트 1,000P)</label>
@@ -65,84 +66,193 @@
 													</div>
 													<div class="a-point info">
 														<ul class="list-type2">
-															<li>모두 사용 체크시 200원을 제외한 최종 결제 금액이 적용됩니다.</li>
-															<li>멤버포인트를 사용한 복합결제 주문 제품을 반품할 시, 멤버포인트포인트가 먼저 환불됩니다.</li>
+															<li>모두 사용 체크시 200원을 제외한 최종 결제 금액이 적용됩니다.</li><!-- 수정 : 2018.05.03 (문구) -->
+															<li>A포인트를 사용한 복합결제 주문 제품을 반품할 시, A포인트가 먼저 환불됩니다.</li>
 														</ul>
 													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<!-- 수정 : 2018.05.03 (text) -->
+												<div class="col-xs-12 col-md-3 card-tit">
+													<label for="apointApply">Re-Cash</label>
+													<!-- 툴팁 -->
+													<div class="toolTip-wrapper">
+														<button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+														<div class="tooltip-content">
+															<button type="button" class="btn-tooltip-close"><span class="hidden">안내닫기</span></button>
+															<p>Re-Cash 가 발생할 수 있는 경우</p>
+															<ul>
+																<li>1. 보너스 입금 시 계좌 오류로 미 지급된 경우</li>
+																<li>2. 무통장입금 시 주문결제 금액보다 많이 입금한 경우</li>
+															</ul>
+														</div>
+													</div>
+													<!-- //툴팁 -->
+												</div>
+												<!-- //수정 : 2018.05.03 (text) -->
+												<div class="col-xs-12 col-md-8">
+													<input id="all2" type="checkbox" checked="checked">
+													<label for="all2" class="normal inline-label checklabel">모두사용 (보유금액 1,000원)</label><!-- 수정 : 2018.04.26 (보유포인트 >> 보유금액) -->
+
+													<div class="a-point">
+														<input name="point" id="ap" type="text" value="" placeholder="원">
+														<button type="button" class="bt-akl-white small">적용</button>
+													</div>
+													<!-- 2018.03.21 텍스트 추가 -->
+													<div class="a-point info">
+														<ul class="list-type2">
+															<li>모두 사용 체크시 200원을 제외한 최종 결제 금액이 적용됩니다.</li><!-- 수정 : 2018.05.03 (문구 추가) -->
+															<li>매월 보너스 지급일인 15일에 보너스 계좌로 입금 될 수 있습니다. (계좌 오류시 재 적립 됨)</li>
+															<li>환불을 원하시는 경우 고객센터 1588-0080번으로 연락을 주십시오.</li>
+														</ul>
+													</div>
+													<!-- //2018.03.21 텍스트 추가 -->
 												</div>
 											</div>
 											<div class="form-group">
 												<div  class="col-xs-12 col-md-3 card-tit"><label for="cardfecture">카드종류</label></div>
 												<div class="col-xs-12 col-md-8">
 													<select class="shipping-delivery-size" id="cardfecture">
-														<option>선택하세요</option>
 														<option>Tokyo-to</option>
+														<option selected="">선택하세요</option>
 														<option>Tokyo-to</option>
 													</select>
+													<div class="card-kinds">
+														<span class="col-xs-12 col-md-6">
+															<input class="amwa-radio" type="radio" name="optradio" id="individual" />
+															<label for="individual">개인카드</label><!-- 마크업수정 2018.04.02-->
+														</span>
+														<span class="col-xs-12 col-md-6">
+															<input class="amwa-radio" type="radio" name="optradio" id="corporation" />
+															<label for="corporation">법인카드</label><!-- 마크업수정 2018.04.02-->
+														</span>
+													</div>
 													<div class="card-favor">
 														<span class="G10600_lp2"><a href="#" class="bt-akl-white mini">카드사 혜택보기</a></span>
 													</div>
 												</div>
-
-												<!-- card-sort -->
-												<div id="gaeincard" class="card-sort panel-collapse collapse" style="display:block;">
-													<div class="form-group">
-														<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
-														<div class="col-xs-12 col-md-8">
-															<div class="pay-system">
-																<span class="col-xs-12 col-md-2">
-																	<input class="amwa-radio" type="radio" name="optradio" id="p-1" />
-																	<label for="p-1">안심결제</label>
-																</span>
-																<span class="col-xs-12 col-md-2">
-																	<input class="amwa-radio" type="radio" name="optradio" id="p-2" />
-																	<label for="p-2">일반결제</label>
-																</span>
-															</div>
-
-															<div class="pay-line">
-																<div class="form-group row">
-																	<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
-																	<span class="col-md-10 col-xs-12">
-																		<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="두번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="세번째 네자리" />
-																		<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
-																	</span>
-																</div>
-																<div class="form-group row">
-																	<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
-																	<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
-																	<div class="payment-forms-back-slash">/</div>
-																	<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
-																</div>
-																<div class="form-group row">
-																	<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
-																	<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
-																	<div class="payment-forms-txt">비밀번호 앞 2자리</div>
-																</div>
-																<div class="form-group row">
-																	<label for="month" class="col-md-2 col-xs-12">생년월일</label>
-																	<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
-																	<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
-																</div>
-															</div>
+											</div>
+											<!-- 마크업수정 2018.04.02-->
+											<div id="gaeincard" class="card-sort panel-collapse collapse">
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
+													<div class="col-xs-12 col-md-8">
+														<div class="pay-system">
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-1" />
+																<label for="p-1">안심결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-2" />
+																<label for="p-2">일반결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-3" />
+																<label for="p-3">PayShot</label>
+															</span>
 														</div>
-													</div>
-													<div class="form-group">
-														<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
-														<div class="col-xs-12 col-md-5">
-															<select class="shipping-delivery-size" id="installment">
-																<option selected="">일시불</option>
-																<option>Tokyo-to</option>
-																<option>Tokyo-to</option>
-															</select>
+
+														<div class="pay-line">
+															<div class="form-group row">
+																<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																<span class="col-md-10 col-xs-12">
+																	<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
+																	<input name="card-num" type="password" class="card-inp" title="두번째 네자리" />
+																	<input name="card-num" type="password" class="card-inp" title="세번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																</span>
+															</div>
+															<div class="form-group row">
+																<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
+																<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
+																<div class="payment-forms-back-slash">/</div>
+																<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+															</div>
+															<div class="form-group row">
+																<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
+																<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+															</div>
+															<div class="form-group row">
+																<label for="month" class="col-md-2 col-xs-12">생년월일</label>
+																<input name="month" type="text" placeholder="800111" id="month" class="card-inp4" />
+																<div class="payment-forms-txt2">주민번호 앞 6자리와 동일하게 입력</div>
+															</div>
 														</div>
 													</div>
 												</div>
-												<!-- //card-sort -->
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
+													<div class="col-xs-12 col-md-8">
+														<select class="shipping-delivery-size" id="installment">
+															<option selected="">일시불</option>
+															<option>Tokyo-to</option>
+															<option>Tokyo-to</option>
+														</select>
+													</div>
+												</div>
 											</div>
+											<div id="bubincard" class="card-sort panel-collapse collapse">
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit">결제방식</div>
+													<div class="col-xs-12 col-md-8">
+														<div class="pay-system">
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-1" />
+																<label for="p-1">안심결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-2" />
+																<label for="p-2">일반결제</label>
+															</span>
+															<span class="col-xs-12 col-md-2">
+																<input class="amwa-radio" type="radio" name="optradio" id="p-3" />
+																<label for="p-3">PayShot</label>
+															</span>
+														</div>
 
+														<div class="pay-line">
+															<div class="form-group row">
+																<label for="card-num" class="col-md-2 col-xs-12">카드번호</label>
+																<span class="col-md-10 col-xs-12">
+																	<input name="card-num" id="card-num" type="text" class="card-inp" title="첫번째 네자리" />
+																	<input name="card-num" type="password" class="card-inp" title="두번째 네자리" />
+																	<input name="card-num" type="password" class="card-inp" title="세번째 네자리" />
+																	<input name="card-num" type="text" class="card-inp" title="네번째 세자리 또는 네자리" />
+																</span>
+															</div>
+															<div class="form-group row">
+																<label for="expDate" class="col-md-2 col-xs-12">유효기간</label>
+																<input name="expDate" type="text" placeholder="월" id="expDate" class="card-inp2" />
+																<div class="payment-forms-back-slash">/</div>
+																<input name="expDate2" type="text" placeholder="년" class="card-inp2" title="년도 입력" />
+															</div>
+															<div class="form-group row">
+																<label for="card-pw" class="col-md-2 col-xs-12">카드비밀번호</label>
+																<input name="card-pw" type="text" placeholder="**" id="card-pw" class="card-inp3" />
+																<div class="payment-forms-txt">비밀번호 앞 2자리</div>
+															</div>
+															<div class="form-group row">
+																<label for="bussnum" class="col-md-2 col-xs-12">사업자등록번호</label>
+																<input name="bussnum" type="text" id="bussnum" class="card-inp4" />
+																<div class="payment-forms-txt2">사업자등록번호 10자리 '-'없이 입력</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div  class="col-xs-12 col-md-3 card-tit"><label for="installment">할부기간</label></div>
+													<div class="col-xs-12 col-md-8">
+														<select class="shipping-delivery-size" id="installment">
+															<option selected="">일시불</option>
+															<option>Tokyo-to</option>
+															<option>Tokyo-to</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!-- //마크업수정 2018.04.02-->
 										</div>
 									</div>
 								</div>
@@ -152,13 +262,14 @@
 								<label for="radio40">무통장입금</label>
 								<div id="collapseFour" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
+										<!-- 수정 : 2018.08.21 (프로모션 삭제)
 										<div class="card-promotion">
 											<span><img src="/_ui/responsive/theme-blue/images/akl_common/card-p.png" alt=""></span>
 											<dl>
 												<dt>자동이체 10% PV UP 프로모션</dt>
 												<dd>자동이체로 결제시 10 PV 추가 적용</dd>
 											</dl>
-										</div>
+										</div> -->
 										<div class="row card-method">
 											<div class="form-group">
 												<div  class="col-xs-12 col-md-3 card-tit"><label for="depositor">입금자명</label></div>
@@ -209,23 +320,78 @@
 								</div>
 							</div>
 							<div class="panel">
-								<input class="amwa-radio" type="radio" name="optradio" id="radio6" />
-								<label for="radio6">자동이체예약</label>
-								<div id="collapseSix" class="shipping-delivery-radio-body panel-collapse collapse">
+								<input class="amwa-radio" type="radio" name="optradio" id="radio5" />
+								<label for="radio5">자동이체</label>
+								<div id="collapseFive" class="shipping-delivery-radio-body panel-collapse collapse">
 									<div class="panel-body paymemnt">
+										<!-- 수정 : 2018.08.21 (프로모션 삭제)
 										<div class="card-promotion">
 											<span><img src="/_ui/responsive/theme-blue/images/akl_common/card-p.png" alt=""></span>
 											<dl>
 												<dt>자동이체 10% PV UP 프로모션</dt>
 												<dd>자동이체로 결제시 10 PV 추가 적용</dd>
 											</dl>
-										</div>
+										</div> -->
 										<div class="row card-method">
+											<div class="form-group">
+												<div  class="col-xs-12 col-md-3 card-tit"><label for="aa">A포인트</label></div>
+												<div class="col-xs-12 col-md-8">
+													<input id="all" type="checkbox" checked="checked">
+													<label for="all" class="normal inline-label checklabel">모두사용 (보유포인트 1,000P)</label>
+													<div class="a-point">
+														<input name="point" id="aa" type="text" value=""  placeholder="원">
+														<button type="button" class="bt-akl-white small">적용</button>
+													</div>
+													<div class="a-point info">
+														<ul class="list-type2">
+															<li>모두 사용 체크시 1원을 제외한 최종 결제 금액이 적용됩니다.</li><!-- 수정 : 2018.05.03 (문구) -->
+															<li>A포인트를 사용한 복합결제 주문 제품을 반품할 시, A포인트가 먼저 환불됩니다.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<!-- 수정 : 2018.05.03 (Re-Cash 로 변경) -->
+												<div  class="col-xs-12 col-md-3 card-tit">
+													<label for="recashApply">Re-Cash</label>
+													<!-- 툴팁 -->
+													<div class="toolTip-wrapper">
+														<button type="button" class="btn-tooltip"><span class="hidden">안내</span></button>
+														<div class="tooltip-content">
+															<button type="button" class="btn-tooltip-close"><span class="hidden">안내닫기</span></button>
+															<p>Re-Cash 가 발생할 수 있는 경우</p>
+															<ul>
+																<li>1. 보너스 입금 시 계좌 오류로 미 지급된 경우</li>
+																<li>2. 무통장입금 시 주문결제 금액보다 많이 입금한 경우</li>
+															</ul>
+														</div>
+													</div>
+													<!-- //툴팁 -->
+												</div>
+												<!-- //수정 : 2018.05.03 (Re-Cash 로 변경) -->
+												<div class="col-xs-12 col-md-8">
+													<!-- 수정 : 2018.05.03 (text) -->
+													<input id="recashUseAll_automaticTransfer" type="checkbox" checked="checked">
+													<label for="recashUseAll_automaticTransfer" class="normal inline-label checklabel">모두사용 (보유금액 1,000원)</label>
+													<div class="a-point">
+														<input name="point" id="ap" type="text" value="" placeholder="원">
+														<button type="button" class="bt-akl-white small">적용</button>
+													</div>
+													<div class="a-point info">
+														<ul class="list-type2">
+															<li>모두 사용 체크시 1원을 제외한 최종 결제 금액이 적용됩니다.</li><!-- 수정 : 2018.05.03 (추가) -->
+															<li>매월 보너스 지급일인 15일에 보너스 계좌로 입금 될 수 있습니다. (계좌 오류시 재 적립 됨)</li>
+															<li>환불을 원하시는 경우 고객센터 1588-0080번으로 연락을 주십시오.</li>
+														</ul>
+													</div>
+													<!-- //수정 : 2018.05.03(text) -->
+												</div>
+											</div>
 											<div class="form-group">
 												<div  class="col-xs-12 col-md-3 card-tit"><label for="ap">자동이체 비밀번호</label></div>
 												<div class="col-xs-12 col-md-8">
 													<div class="a-point">
-														<input name="point" id="ap" type="text" value="" class="auto-pw" placeholder="자동이체 비밀번호 6자리"><!-- 수정 : 2018.05.03 (수정) -->
+														<input name="point" id="ap" type="text" value="" class="auto-pw" placeholder="자동이체 비밀번호 6자리"><!-- 수정 : 2018.05.03 (placeholder) -->
 														<button type="button" class="bt-akl-white">자동이체계좌 등록</button>
 													</div>
 													<div class="a-point info">
@@ -237,12 +403,13 @@
 											</div>
 										</div>
 										<div class="transfer-resver-guide">
-											<!-- 수정 : 2018.05.03 (수정) -->
+											<!-- 수정 : 2018.05.03 -->
 											<div class="guid-box js-guidebox-toggle">
-												<a href="#" class="title">자동이체 예약안내 <span class="hidden">열기</span></a><!-- 수정 : 2018.05.03 (수정) -->
+												<a href="#" class="title">자동이체 안내 <span class="hidden">열기</span></a>
 
 												<ul class="list-type5">
-													<li><span class="color-red">자동이체 가능은행</span> : SC제일, 유안타증권, 농협, 우리, KEB하나, 신한, 기업, 씨티, 국민 은행, 우체국</li>
+													<li>자동이체 결제 후 주문 취소하실 경우 환불시점은 영업일 기준 익일 오후 5시입니다.</li>
+													<li><span class="color-red">자동이체 가능은행</span> : 국민, 신한, 우리, SC제일, KEB하나, 농협, 기업, 씨티, 우체국, 유안타증권</li>
 												</ul>
 												<div class="tgg-hidden-area">
 													<ul class="list-type5">
@@ -251,7 +418,9 @@
 																<li>한도금액을 초과하는 주문 시에는 주문을 나누어 주십시오.</li>
 																<li>자동이체는 주문 해당 월에 결제되지 않으면 당월 실적으로 인정되지 않으므로 예약이체 시에 주의하시기 바랍니다.</li>
 																<li>자동이체는 은행에 따라 새벽시간(00시 ~ 00시 30분) 거래가 불안정할 수 있습니다.
-																	<p>또한, 월말에는 거래 가능 시간에도 불구하고 은행에 따라 은행영업시간(오후 4시) 이후에 거래가 되지 않을 수 있으니 자동이체 이외의 타 결제 수단을 이용하시기 바랍니다.</p>
+																	<p>또한, 월말에는 거래 가능 시간에도 불구하고 은행에 따라 은행영업시간(오후 4시) 이후에 거래가 되지 않을 수 있으니
+																		자동이체 이외의 타 결제 수단을 이용하시기 바랍니다.
+																	</p>
 																</li>
 															</ul>
 														</li>
@@ -265,12 +434,11 @@
 													</ul>
 												</div>
 											</div>
-											<!-- //수정 : 2018.05.03 (수정) -->
+											<!-- //수정 : 2018.05.03 -->
 										</div>
 									</div>
 								</div>
 							</div>
-
 						</div>
 
 						<div class="shipping-delivery-ship">
