@@ -229,14 +229,13 @@
 								</div>
 							</li>
 						</ul>
-						<div class="btn-more-pagination">
+						<!-- <div class="btn-more-pagination">
 							<button class="text-btn view-all">더보기
 								<i class="icon icon-arrow-downs"></i>
 								<i class="icon icon-arrow-ups"></i>
 							</button>
-						</div>
+						</div> -->
 					</div>
-
 					
 				</div>
 				
@@ -246,34 +245,6 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	<script language="javascript" type="text/javascript">
-		$(document).ready(function(){
-			
-			var columnNum = $('.new-social-list ul>li').length;
-			var i = 0;
-			
-			console.log(columnNum);
 
-			$(document).on('click', '.btn-more-pagination button', function(e) {
-				//var $winSize = $(window).outerWidth();
-				i++;
-				e.preventDefault();
-				//var $index = +$(this).parent().attr('data-index');
-				var startNum = 6 * i;
-				var endNum = startNum + 6;
-				
-				
-				console.log(startNum, endNum);
-				
-				$(this).parent().children('li').slice(startNum, endNum).css("display", "block");
-
-				setTimeout(function(){ $grid[$index].masonry() }, 0);
-
-				if(!$(this).parent().prev().is(':hidden')){
-					$(this).hide();
-				}
-			});
-		});
-	</script>
 </body>
 </html>
