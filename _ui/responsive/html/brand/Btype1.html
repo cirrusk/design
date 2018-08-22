@@ -83,52 +83,152 @@
 		<!-- ## 템플릿 B-type -->
 		<div class="brand xsenergy" id="contents"><!-- 본문바로가기 위치 이동 -->
 			
-			<div class="homepage_banner">
-				<!-- ## 메인 비주얼 영역 -->
-				<div id="banner_list">
-					<ul>
-						<li></li>
-						<li><a href=""></a></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+<style>
+.xsenergy_mainlist {width:100%;overflow:hidden;} 
+.xsenergy_mainlist li {float:left;width:33.33%;position:relative;}
+.xsenergy_mainlist li.wide1 {width:66.65%;}
+.xsenergy_mainlist li.wide2, .xsenergy_mainlist li.wide3{width:66.67%;} 
+.xsenergy_mainlist li img {display:block;width:100%;height:auto;}
+.xsenergy_mainlist .txt-wrap {position:absolute;top:25px;left:30px;line-height:1.5;}
+.xsenergy_mainlist .txt-wrap span {display:block;font-size:16px;color:#fff;}
+.xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;}
+.xsenergy_mainlist .video-btn {position:absolute;top:50%;left:50%;margin:-20px 0 0 -40px;height:80px;width:80px;}
+.xsenergy_mainlist .video-btn button {background:none;padding:0;}
+.xsenergy_mainlist .sns-link {position:absolute;bottom:25px;left:30px;}
+.xsenergy_mainlist .sns-link a {color:#fff;}
+
+.xsenergy_mainlist li:nth-child(9) {}
+
+@media (max-width: 1024px){
+	.xsenergy_mainlist li {width:50%;}
+	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
+}
+@media (max-width: 768px){
+	.xsenergy_mainlist .video-btn {width:20%;height:20%;margin:-5% 0 0 -10%;}
+}
+@media (max-width: 630px){
+	.xsenergy_mainlist li {width:100% !important;}
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+		var colmn = $('.xsenergy_mainlist li').eq(8);
+		var colmnHeight = colmn.height() + 0.1;
+		
+		console.log(colmnHeight);
+		
+		colmn.css('margin-top',-colmnHeight+'px');
+		//document.location.reload();
+	});
+</script>
+				<!-- ## 컨텐츠 영역 -->		
+				<div class="main-container amway-theme">
+					<ul class="xsenergy_mainlist">
+						<li class="wide1">
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main01.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<span>XS 니온 블라스트로 <br>에너지 BURN!</span>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main02.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>XS 망고파인애플구아바 &lt;택시편&gt;</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main03.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>XS 망고파인애플구아바 &lt;노래방편&gt;</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main04.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>2016 XS Night Run Teaser Film</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main05.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>2015 XS-mas 하이라이트 영상</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main06.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>5K Night Run 하이라이트 영상</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main07.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<span>XS Amway Korea<br>이번 여름, 자신있어?</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+							<div class="sns-link">
+								<a href="" class="arr1">Facebook 바로가기</a>
+							</div>
+						</li>
+						<li class="wide2">
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main08.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>XS AmwayKorea Facebook</em>
+								<span>2018<br>XS POOL PAPTY</span>
+								<span class="hashtag">베스트 인증샷 이벤트<br>#2018XS풀파티<br>#XS풀파티</span>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main09.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<span>XS Amway Korea<br>2018 XS 풀파티 D-10</span>
+							</div>
+							<div class="video-btn">
+								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
+							</div>
+							<div class="sns-link">
+								<a href="" class="arr1">Facebook 바로가기</a>
+							</div>
+						</li>
+						<li>
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main10.jpg" alt="" /></div>
+							<div class="txt-wrap">
+								<em>XS에너지드링크 Instagram</em>
+							</div>
+							<div class="sns-link">
+								<a href="" class="arr1">Instagram 바로가기</a>
+							</div>
+						</li>
+						<li class="wide3">
+							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main11.jpg" alt="" /></div>
+						</li>
 					</ul>
 				</div>
-			</div>
-			<!-- //## 메인 비주얼 영역 -->
+				<!-- //## 컨텐츠 영역 -->
 			
 		</div>
-		<!-- //## 템플릿 D-type -->
+		<!-- //## 템플릿 B-type -->
 
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	<script type="text/javascript">$(function() {
-		$('#banner_list').owlCarousel({
-			loop: false,
-			nav: false,
-			dots: true,
-			//autoplay: true,
-			//autoplayTimeout:5000,
-			margin: 0,
-			items: 1
-		});
-		
-		var bannerId = $('#banner_list');
-		var $dotItembar = bannerId.find('.owl-dots');
-		var $dotItems = bannerId.find('.owl-dots > button');
-		
-		
-		$dotItems.eq(0).html('<span>ARTISTRY 아티스트리</span>');
-		$dotItems.eq(1).html('<span>시그니처 솔루션</span>');
-		$dotItems.eq(2).html('<span>브랜드 이야기</span>');
-		
-		var mTop = $dotItembar.height()/2;
-		$dotItembar.css('margin-top',-mTop);
-		
-	})
-	</script>
 
 </body>
 </html>
