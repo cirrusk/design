@@ -124,12 +124,24 @@
 /* ---- SOP 주문서 생성 ---- */
 .akl .shipping-delivery.sopCreate {margin-bottom:30px;}
 .shipping-delivery.sopCreate .cart-items-wrapper {padding:0;}
+.shipping-delivery.sopCreate .cart-items-wrapper .form-group label {margin-top:10px;}
 .shipping-delivery.sopCreate .shipping-delivery-ship .pay-transaction {max-width:790px;}
 .shipping-delivery.sopCreate .edit-block.createSopForm {padding:30px 0 40px;}
 .shipping-delivery.sopCreate .edit-block.createSopForm > .row {margin-top:10px;}
+
 .sop-delivery-adress #changeTextArea {padding-bottom:30px; border-bottom:1px solid #e3e3e3;}
 .sop-delivery-adress #changeTextArea .default-shipping-address,
 .sop-delivery-adress #changeTextArea .new-shipping-address {padding-left:40px; border-bottom:0px solid #e3e3e3;}
+
+/* 안내문구  */
+.sop-delivery-adress .info-txtbox {padding:0 0 25px; font-size:13px;}
+.sop-delivery-adress .info-txtbox > p {margin:0;}
+.sop-delivery-adress .info-txtbox > p + p {margin-top:5px;}
+.sopCreate .info-txtbox .card-tit {margin-top:10px;}
+.sop-settlingDay .info-txtbox {padding-top:20px;}
+
+.sopCreate .panel-body.paymemnt, .pop-payment-change .panel-body.paymemnt {border-bottom:0; padding-bottom:0}
+
 .sop-order-name {padding:30px 0 30px; margin-bottom:30px; border:1px solid #e3e3e3; border-width:1px 0;}
 .sop-order-name>label {width:18%; min-width:90px;}
 .sop-order-name>input[type=text] {width:40%;}
@@ -517,7 +529,7 @@
 	/* 즉시결제 */
 	.shipping-delivery.sopInstantPayment {padding:0;}
 	.shipping-delivery.sopInstantPayment .cart-items-wrapper {margin-top:20px; padding-right:0;}
-	.akl .shipping-delivery.sopInstantPayment .shipping-delivery-ship {padding-top:0;}
+/* 	.akl .shipping-delivery.sopInstantPayment .shipping-delivery-ship {padding-top:0;} */
 
 	/* 나의 스마트 오더(6개월)*/
 	.list-content.tbl-prdt .ico-fa-repeat-alt {display:inline-block; padding-left:0; height:18px; width:18px; text-align:center;}
