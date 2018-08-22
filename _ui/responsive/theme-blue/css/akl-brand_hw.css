@@ -139,6 +139,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 .brand .box-bnr-03 .txt-wrap {padding:0;position:absolute;}
 .brand .box-bnr-03 .txt-wrap p {font-size:14px;color:#56565a;line-height:24px;font-weight:400;}
+.brand .box-bnr-03 .txt-wrap p span {display:block;}
 .brand .box-bnr-04 .txt-wrap p {font-size:16px;color:#56565a;line-height:24px;font-weight:400;}
 .brand .box-bnr-04 .txt-wrap p em {display:block;font-size:18px;color:#002f5f;font-weight:500;font-style:normal;}
 .brand .box-bnr-05 {margin-top:60px;max-height:300px;}
@@ -311,7 +312,18 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 @media (max-width:768px) { 
-	.brand [class*="box-bnr"] .txt-wrap p {display:none;}
+	.brand .full-component {padding:0;height:auto;margin:0 -15px;width:auto;}
+	.brand [class*="box-bnr"] {height:auto;max-height:750px;}
+	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;width:100%;}
+	.brand [class*="box-bnr"] .txt-wrap > strong, .brand [class*="box-bnr"] .txt-wrap .txt-right strong {font-size:28px;line-height:32px;}
+	.brand [class*="box-bnr"] .txt-wrap p {display:none;margin:5px 0 0;font-size:14px;}
+	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block;}
+	.brand .box-bnr-03 .txt-wrap {top:40px;left:20px;transform:none;text-align:left;width:90%;}
+	.brand .box-bnr-03 .txt-wrap p {display:block;}
+	.brand .box-bnr-03 .txt-wrap p span {display:inline;}
+	.brand [class*="box-bnr"].quotes .txt-wrap div::before, .brand [class*="box-bnr"].quotes02 .txt-wrap div::before {display:none;}
+	.brand [class*="box-bnr"].quotes .txt-wrap div::after, .brand [class*="box-bnr"].quotes02 .txt-wrap div::after {display:none;}
+
 	.img-bnr {margin:20px 0 35px;}
 	.img-bnr-bg {margin:20px 0 35px;padding:30px 15px;}
 	.lay-box-2 {margin:0;display:block;}
@@ -350,14 +362,6 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	[class*="media-borad-list"] li.media-more-btn button span {display:inline-block;padding:0 0 0;background:none;}
 	.media-borad-list-video li a .tit-txt-wrap:after {left:20px;top:-66px;width:48px;height:48px;}
 	.media-borad-list-video li.highlight .tit-txt-wrap:after {top:-92px;left:15px;width:66px;height:66px;}
-
-/* 사회공헌 */ 
-	.brand .full-component {padding:0;height:auto;margin:0 -15px;width:auto;}
-	.brand [class*="box-bnr"] {height:auto;max-height:750px;}
-	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;}
-	.brand [class*="box-bnr"] .txt-wrap > strong {font-size:28px;line-height:32px;}
-	.brand [class*="box-bnr"] .txt-wrap p {margin:5px 0 0;font-size:16px;}
-	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block}
 
 	[class*="img-text-row-box-type"] {display:block;margin-top:30px;padding-right:0;}
 	[class*="img-text-row-box-type"] div {display:flex;padding-left:0;width:100%;}
