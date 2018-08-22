@@ -84,9 +84,9 @@ iframe {border:0;}
 
 
 .visual-area.type02.ideal{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience.png) no-repeat top center;height:1100px;} /* 4. 아이디얼  */
-.visual-area.type02.ideal.mask{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience_01.png) no-repeat top center;height:1047px;} /* 4. 아이디얼 일루미네이팅 마스크*/
-.visual-area.type02.ideal.set{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience_set.png) no-repeat top center;height:964px;} /* 4. 아이디얼 세트 */
-.visual-area.type02.ideal-uv{background: #f8f8f8 url(../images/akl_product/beauty/bg_ideal_radience_uv_protect.png) no-repeat top center;height:1064px;}/* 4. 아이디얼 프로덱트 */
+.visual-area.type02.ideal.long{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience_01.png) no-repeat top center;height:1049px;} /* 4. 아이디얼 일루미네이팅, 7555, 9619*/
+.visual-area.type02.ideal.short{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience_set.png) no-repeat top center;height:964px;} /* 4. 아이디얼 세트 */
+.visual-area.type02.ideal-uv{background: #f8f8f8 url(../images/akl_product/beauty/bg_ideal_radience_uv_protect.png) no-repeat top center;height:1064px;}/* 4. 아이디얼 프로텍트uv */
 .visual-area.type02.zone-patch{background: #f8f8f8 url(../images/akl_product/beauty/bg_zone_patch.png) no-repeat top center;height:904px;} /* 4. 아이디얼 존패치 */
 
 .visual-area.type02.hydrav{background: #f8f8f8 url(../images/akl_product/beauty/bg_hydrav_refreshing.png) no-repeat top center;height:1189px;}  /*05 하이드라 1323 */
@@ -1197,8 +1197,27 @@ span.txt-next {display:block;}
 .photo-zone-patch .photo-txt02{top:47%;left:64%;text-align:left;}
 .photo-zone-patch .photo-txt03{bottom:0;left: 59%;text-align:left;}
 
-
 .youth-cont-area .ad-setp-lst dd strong{font-weight: 400 !important;}
+
+/* 아이디얼 래디언스 피부표면 광채케어 */
+
+.reposom-sys-wrap{}
+.reposom-sys-wrap ul{display: block;}
+.reposom-sys-wrap ul:after{display:block;content:"";clear:both;}
+.reposom-sys-wrap ul li{float:left;width: 50%;/width: auto;border-radius: 100%;}
+.reposom-sys-wrap ul li div{display: table;margin: 0 auto;height: 200px;width: 200px;border-radius: 100%;background: #f8f8f8 url(../images/akl_product/beauty/ingredient_liposome_system_02.png) no-repeat center center;}
+.reposom-sys-wrap ul li:first-child div{background: #f8f8f8 url('../images/akl_product/beauty/ingredient_liposome_system_01.png') no-repeat center center;}
+.reposom-sys-wrap ul li span{display: table-cell;font-size:16px;color:#56565a;text-align: center;padding-bottom: 30px;vertical-align: bottom;}
+
+
+
+
+
+/*9622, 9618 라운드 썸네일 나열*/
+.ingredient-list{display: block;overflow:hidden;margin-top:10px;padding:0 10%;}
+.ingredient-list li{width: 22%;display: inline-block;float: left;margin: 0 0 4% 4%;}
+.ingredient-list li:first-child, .ingredient-list li:nth-child(4n+1){margin-left:0;}
+.ingredient-list li img{max-width:100%;} 
 
 /* 스킨케어 */
 .visual-area.type02.indicator p.v-txt {padding:15px 0 0}
@@ -1734,7 +1753,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 
 }
 
-@media (min-width: 1072px) and (max-width: 1204px) {
+@media (min-width: 1024px) and (max-width: 1366px) {
 	
 
 
@@ -2588,6 +2607,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	/* 원포원 */
 	.capsule-img-area em.txt{margin:14px 0 0;} /* 라임트리 캡슐세트 */
 	.one-for-one .v-pro span img{width:inherit !important;}
+	
 }
 
 
@@ -2642,6 +2662,12 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.photo-zone-patch .photo-txt01{right: -11px;}
 	.photo-zone-patch .photo-txt02{right: 28px;}
 	.photo-zone-patch .photo-txt03{bottom: -25px;right: -3px;}
+	
+	/* 아이디얼 래디언스 피부 표면 광채케어 */	
+	.reposom-sys-wrap{/*margin-bottom:25px;*/}
+	.reposom-sys-wrap ul li div{height: 150px;width: 150px;background-size: 100%;}
+	.reposom-sys-wrap ul li:first-child div{background-size: 100%;}
+	.reposom-sys-wrap ul li span{font-size: 12px;padding-bottom: 20px;}
 	
 	/* 포인트 메이크업 립 */
 	.point-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
@@ -2792,6 +2818,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.photo-zone-patch .photo-txt02{top:47%;left:64%;text-align:left;}
 	.photo-zone-patch .photo-txt03{bottom: -52px;left: 59%;text-align:left;}
 	
+	/* 래디언스 리포솜 광채케어 */
+	.reposom-sys-wrap ul li div{height: 120px;width: 120px;background-size: 100%;}
 	
 	/* 하이드라 */
 	.hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size:13px;}
