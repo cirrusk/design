@@ -75,6 +75,11 @@ Editor :
 .list-style-info li strong {float:left;width:150px;color:#002f5f;}
 .list-style-info li span {float:left;}
 
+.list-style-info2 > li {background:url(../images/akl_common/ico_star.png) no-repeat left 7px;padding:0 0 4px 10px;font-size:14px;color:#808285;line-height:20px;}
+.list-style-info2 > li a, p.txt-italic a {font-size:13px;font-style:normal;font-weight:500;}
+
+
+
 /* 식물영양소 캠페인 */ 
 .content-row article [class*="cont-type"] figcaption + .box-txt-list {margin:0;padding:0 20px 50px;line-height:1.8;}
 div.box-txt-list .list-type5 {padding:0;}
@@ -153,6 +158,10 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .box-bnr-07 .txt-wrap p {margin-top:5px;font-size:14px;color:#fff;font-weight:300;}
 .brand .box-bnr-07 .txt-wrap p + strong {display:block;margin-top:30px;}
 .brand .box-bnr-07 .txt-wrap .t1 {display:block;line-height:48px;font-size:40px;margin-bottom:15px;}
+.brand .box-bnr-08 .txt-wrap span {display:block;}
+.brand .box-bnr-08 .txt-wrap strong {font-size:32px;line-height:40px;}
+.brand .box-bnr-08 .txt-wrap strong span {font-size:24px;font-weight:400;}
+.brand .box-bnr-08 .txt-wrap ul {margin-top:10px;}
 
 /* 암웨이 사업 */ 
 [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:40px;}
@@ -284,7 +293,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .c-tbl .tbl-type1 th + th, .c-tbl .tbl-type1 td + td {border-left:1px solid #e3e3e3;}
 .c-tbl .tbl-type1 tbody tr:nth-of-type(even) {background:none;}
 
-
+.bod-view-sns + .content-row  {margin-top:0}
 
 @media (max-width:1024px) { 
 	.lay-box-4 {margin:-15px -12px -15px;}
@@ -315,15 +324,16 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand .full-component {padding:0;height:auto;margin:0 -15px;width:auto;}
 	.brand [class*="box-bnr"] {height:auto;max-height:750px;}
 	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;width:100%;}
-	.brand [class*="box-bnr"] .txt-wrap > strong, .brand [class*="box-bnr"] .txt-wrap .txt-right strong {font-size:28px;line-height:32px;}
-	.brand [class*="box-bnr"] .txt-wrap p {display:none;margin:5px 0 0;font-size:14px;}
+	.brand [class*="box-bnr"] .txt-wrap > strong, .brand [class*="box-bnr"] .txt-wrap .txt-right strong, .brand [class*="box-bnr"] .txt-wrap .t1 {font-size:28px;line-height:32px;}
+	.brand [class*="box-bnr"] .txt-wrap p, .brand [class*="box-bnr"] .txt-wrap ul {display:none;margin:5px 0 0;font-size:14px;}
 	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block;}
 	.brand .box-bnr-03 .txt-wrap {top:40px;left:20px;transform:none;text-align:left;width:90%;}
 	.brand .box-bnr-03 .txt-wrap p {display:block;}
 	.brand .box-bnr-03 .txt-wrap p span {display:inline;}
 	.brand [class*="box-bnr"].quotes .txt-wrap div::before, .brand [class*="box-bnr"].quotes02 .txt-wrap div::before {display:none;}
 	.brand [class*="box-bnr"].quotes .txt-wrap div::after, .brand [class*="box-bnr"].quotes02 .txt-wrap div::after {display:none;}
-
+	.brand .box-bnr-08 .txt-wrap strong {font-weight:700;}
+	.brand .box-bnr-08 .txt-wrap strong span {font-size:16px;} 
 	.img-bnr {margin:20px 0 35px;}
 	.img-bnr-bg {margin:20px 0 35px;padding:30px 15px;}
 	.lay-box-2 {margin:0;display:block;}
@@ -412,6 +422,9 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.br_ico_list li strong {float:none;display:block;width:100%;padding:0;}
 
 	.brand .c-tbl table.tbl-type1 td {font-size:14px;}
+	
+	dl.box-txt-list {margin:15px 0 20px;}
+	.content-row +  p.txt-italic {margin-top:15px;}
 
 }
 	
