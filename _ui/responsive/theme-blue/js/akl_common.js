@@ -314,7 +314,7 @@ function onScroll_TOP(){
 	setTimeout(function(){ appendObject(); }, 600);
 
 	//버튼 클릭 시
-	$(document).on('click', '#ScrollTopArea > .toTop' ,function(){
+	$(document).on('click', '#ScrollTopArea > .toTop', function(){
 		$('html,body').animate({ scrollTop:0 }, 400);
 	});
 
@@ -452,7 +452,7 @@ function tabsTgg_Control(){
 			var actualContentSize = event.currentTarget.scrollWidth; //B. 스크롤되는 컨텐츠 길이
 			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤바 움직인 길이 (x좌표가 움직인 거리)
 
-			//스크롤 가능 길이 알아내기(D) : B - A
+			//스크롤 가능 길이(D) : B - A
 			var scrollable_width  = actualContentSize - targetWrapperSize;
 
 			if (scrolledPosition < 30) {
@@ -461,7 +461,7 @@ function tabsTgg_Control(){
 				$(this).siblings('.scrollable-area.right').show();
 			}
 			else if ( scrollable_width === scrolledPosition ){
-				//스크롤 가능 길이(D) === 움직인 길이(C)
+				//스크롤 끝, 스크롤 가능 길이(D) === 움직인 길이(C)
 				$(this).siblings('.scrollable-area.left').show();
 				$(this).siblings('.scrollable-area.right').hide();
 			}
