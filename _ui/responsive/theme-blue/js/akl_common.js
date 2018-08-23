@@ -25,6 +25,9 @@
 		}
 	});
 
+	//푸터 > 위로이동
+	onScroll_TOP();
+
 	//탭 스크롤
 	tabsTgg_Control();
 	$(window).resize(function(){
@@ -281,6 +284,37 @@
  *  공통
  *  ------------------------------------
  */
+
+/* 푸터 > 위로이동 */
+function onScroll_TOP(){
+	var scrollDIV = '<div id="ScrollTopArea" class="scrollTopWrapper" style="display:none"><button type="button" class="toTop">TOP</button></div>';
+
+	var $footer = $('#footer');
+	var $topBox = $('#ScrollTopArea');
+	var $btnTop = $('#ScrollTopArea').find('.toTop');
+
+	function appendObject(){
+		if ( $topBox.length ){ return; }
+		else { $footer.append( scrollDIV ); }
+	}
+
+	function pageScrollTOP(){
+		var $scrollTop = $(this).scrollTop();
+		var $scrollBox = $('.scrollTopWrapper');
+		$scrollTop > 100 ? $scrollBox.stop().fadeIn('fast') : $scrollBox.stop().fadeOut();
+	}
+
+	//append object
+	setTimeout(function(){ appendObject(); }, 600);
+
+	//버튼 이벤트
+	$(document).on('click', $btnTop ,function(){
+		$('html,body').animate({ scrollTop:0 }, 400);
+	});
+
+	//스크롤 시
+	window.onscroll = function(){ pageScrollTOP(); };
+ }
 
 /* 메인 > 신제품,프로모션 div 동일 높이 맞추기 */
 function MAIN_featuredProduct(){
