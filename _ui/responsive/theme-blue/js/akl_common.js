@@ -287,33 +287,40 @@
 
 /* 푸터 > 위로이동 */
 function onScroll_TOP(){
-	var scrollDIV = '<div id="ScrollTopArea" class="scrollTopWrapper" style="display:none"><button type="button" class="toTop">TOP</button></div>';
+	var scrollDIV = '<div id="ScrollTopArea" class="scrollTopWrapper" style="display:none"><button type="button" class="toTop">TOP(위로이동)</button></div>';
 
 	var $footer = $('#footer');
 	var $topBox = $('#ScrollTopArea');
 
 	function appendObject(){
-		if ( $topBox.length ){ return; }
-		else { $footer.append( scrollDIV ); }
+		if ( $topBox.length ){return;}
+
+		$footer.append( scrollDIV );
+		pageScrollTOP(); //새로고침 시, scrolltop !=0  버튼 노출
 	}
 
 	function pageScrollTOP(){
-		var $scrollTop = $(this).scrollTop();
+		var $scrollTop = $(window).scrollTop();
 		var $scrollBox = $('.scrollTopWrapper');
-		$scrollTop > 100 ? $scrollBox.stop().fadeIn('fast') : $scrollBox.stop().fadeOut();
+
+		if($scrollTop > 0){
+			$scrollBox.stop().fadeIn('fast');
+		} else {
+			$scrollBox.stop().fadeOut();
+		}
 	}
 
-	//append object
+	//위로이동 버튼 append
 	setTimeout(function(){ appendObject(); }, 600);
 
-	//버튼 이벤트
+	//버튼 클릭 시
 	$(document).on('click', '#ScrollTopArea > .toTop' ,function(){
 		$('html,body').animate({ scrollTop:0 }, 400);
 	});
 
 	//스크롤 시
 	window.onscroll = function(){ pageScrollTOP(); };
- }
+}
 
 /* 메인 > 신제품,프로모션 div 동일 높이 맞추기 */
 function MAIN_featuredProduct(){

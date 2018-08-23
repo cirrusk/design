@@ -72,8 +72,8 @@ input::-ms-clear {display:none;}
 .layerWrapper .hr {margin-top:35px !important; padding-top:35px;}
 
 /* 위로이동(작업예정) */
-.scrollTopWrapper {position:fixed; z-index:100; bottom:40px; right:40px;}
-.scrollTopWrapper .toTop { width:50px; height:50px; background:#fff; border:1px solid #bbb;}
+.scrollTopWrapper {position:fixed; z-index:300; bottom:40px; right:40px;}
+.scrollTopWrapper .toTop {overflow:hidden; width:40px; height:40px; text-indent:-9999px; background:url(../images/akl_common/btn_scroll_top.png) 0 0 no-repeat; background-size:40px auto; border:1px solid #002f5f;}
 
 /* skipToContent */
 #skipToContent a {position:fixed; top:0; left:0; z-index:9999; width:100%; height:0; margin-top:-1px; display:block; background-color:#3875c1; font-size:14px; font-weight:bold; color:#fff; line-height:1; text-align:center; overflow:hidden;}
@@ -1450,6 +1450,9 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	/* ----- 공통 UI ----- */
 	.main-container, .akl .container {padding:0 15px;}
 	.paging.pointer {padding:30px 0 0;}
+
+	/* 위로이동(작업예정) */
+	.scrollTopWrapper {bottom:15px; right:15px;}
 
 	/* loading */
 	.loading .loading-wrap img {width:55px;}
