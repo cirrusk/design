@@ -67,10 +67,12 @@ iframe {border:0;}
 .visual-area.espring.min{min-height:880px;}
 .visual-area.icook{min-height:1053px;background:url(../images/akl_product/home-living/bg_icook_01.png) no-repeat bottom center;}
 
-.visual-area.type02.ad-vitamin{background:#c1dff4 url(../images/akl_product/beauty/bg_intensive_advanced_1480.png) no-repeat bottom center;height:1023px;} /*01 인텐시브 비타민 */
-.visual-area.type02.boosting-infusion{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_boosting_infusion.png) no-repeat top center;height:1039px;} /*01 인텐시브 부스팅 인퓨전  */
-.visual-area.type02.intensive-skin{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_skincare.png) no-repeat top center;height:1144px;}   /*01 인텐시브 스킨케어 */
-.visual-area.type02.intensive-restore{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_night_restore.png) no-repeat top center;height:1098px;} /*01 인텐시브 리스토어 프로그램*/
+.visual-area.type02.vitamin{background:#c1dff4 url(../images/akl_product/beauty/bg_intensive_advanced_1480.png) no-repeat bottom center;height:1069px;} /*01 인텐시브 비타민 1480 */
+.visual-area.type02.infusion{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_boosting_infusion.png) no-repeat top center;height:980px;} /*01 인텐시브 부스팅 인퓨전 2851 */
+.visual-area.type02.intensive-skin{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_skincare.png) no-repeat top center;height:1144px;}   /*01 인텐시브 스킨케어 4532 4657*/
+.visual-area.type02.intensive-restore{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_night_restore.png) no-repeat top center;height:1098px;} /*01 인텐시브 리스토어 프로그램 4523*/
+
+
 .visual-area.type02.youth-xtend-01{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_01.png) no-repeat top left;height:1136px;}   /* 02 유스익스텐드-1 */
 .visual-area.type02.youth-xtend-02{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_02.png) no-repeat top center;height:1186px;}   /* 02 유스익스텐드-2 */
 .visual-area.type02.youth-xtend-03{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_03.png) no-repeat top center;height:1116px;}   /* 02 유스익스텐드-3 , 리프로그래밍 마스크 */ 
@@ -327,6 +329,7 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 .green19{color:#235921 !important;}
 .green20{color:#c3d200 !important;}
 .green21{color:#5c9b02 !important;}
+.green22{color:#9ef9da !important;}
 
 .product-body-view .black{color:#000000 !important;} 
 .black02{color:#001c31;}
@@ -557,10 +560,11 @@ div.feat-txt p span.next-sort {display:block;}
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
 
 /* 마진, 패딩*/
-.mt20{margin-top:17px;}
+.mt20{margin-top:17px;padding:0 0 0;}
 .advantage-area.mt30, .hua-system.mt30, .product-rank.mt30, .mt30{margin-top:27px !important;padding:0 0 0;}
 .mt40, .advantage-area.mt40{margin-top:38px !important;padding:0 0 0;}
 .mt50, .advantage-area.mt50{margin-top:48px !important;padding:0 0 0;}
+.mt60, .advantage-area.mt60{margin-top:55px !important;padding:0 0 0;}
 .mb0{margin-bottom:0 !important;}
 .mt0{margin-top:0 !important;}
 
@@ -574,6 +578,8 @@ div.feat-txt p span.next-sort {display:block;}
 
 .txt-m, .txt-m li{padding-left:0;font-size:16px !important;line-height:1.5;} /* 폰트 16*/ 
 .txt-m, .txt-m li:before{top:13px;}
+
+.ad-setp-lst.txt-m dt, .ad-setp-lst.txt-m dd{font-size:16px !important;}
 
 /* 정렬 */
 .txt-l{text-aling:left;}
@@ -890,20 +896,33 @@ dl.amo-txt dd br {line-height:18px}
 .t-big.point-wrap .desc{font-size:18px;}
 .t-small.point-wrap .tit{font-size: 44px;letter-spacing:-2px}
 .t-mini.point-wrap .tit{font-size: 32px;letter-spacing:-2px}
+.t-mini.point-wrap .desc{margin-top:7px !important;}
+
+/* 상단 비주얼 바로 아래 큰 텍스트 사이 */
+.point-wrap .dot-lst{display:block;margin-top:22px;}
+.point-wrap .dot-lst li{position:relative;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;text-indent:0 !important;margin-left:0 !important;} 
+.point-wrap .dot-lst li:after {position: absolute;top: 3px;left: 50%;display: inline-block;width: 0;height: 0;border-radius: 50%;background-color: #808285;content: "*";font-size: 14px;margin-left: -59px;}
 
 
 .polymer{position: relative;display:inline-block;}
 .polymer img{width: auto; display: block;}
-.polymer p{position:absolute;letter-spacing:-1px;display: inline-block;top: 45%;text-align: center;}
+.polymer p{position:absolute;letter-spacing:-1px;display: inline-block;top: 45%;text-align: center;color: #808285;font-weight: 300;}
 .polymer p em{display: block;font-size: 16px;font-weight: 400;color:#008fc5;}
 .polymer .one{left: 0;width: 50%;}
 .polymer .two{right: 0;width: 48%;padding-left: 2%;}
 
-.polymer.vita p{font-size: 18px;}
+.polymer.vita p{font-size: 18px;color: #808285;font-weight: 300;}
 .polymer.vita p em{font-size: 18px;}
 .polymer.vita .one{left: 0;width: 49%;font-size: 18px;margin-right: 12%;top: 53%;}
 .polymer.vita .two{right: 0;width: 39%;padding: 0 3%;font-size: 14px;top: 53%;text-align: center;}
 .polymer.vita .two em{font-size:16px;}
+
+/* 스페셜 케어 더마 소닉 */
+.v-pro.kc-mark-area{position:relative;}
+.v-pro.kc-mark-area .mark-wrap{position:absolute;display:inline-block;top:0;left: 55%;border:solid 2px #bbbbbb;padding:15px 20px 15px 50px;background: #ffffff url('../images/akl_product/beauty/mark_kc.png') no-repeat 20px 51%;}
+.v-pro.kc-mark-area .mark-wrap span{display:inline-block;text-align: left;}
+
+
 
 
 /* 베스바디 공통 */
@@ -1210,9 +1229,27 @@ span.txt-next {display:block;}
 .reposom-sys-wrap ul li:first-child div{background: #f8f8f8 url('../images/akl_product/beauty/ingredient_liposome_system_01.png') no-repeat center center;}
 .reposom-sys-wrap ul li span{display: table-cell;font-size:16px;color:#56565a;text-align: center;padding-bottom: 30px;vertical-align: bottom;}
 
+/* 인텐시브 리스토어 리스트 4523 */
+.ad-setp-lst.restore-lst{}
+.ad-setp-lst.restore-lst dt, .ad-setp-lst.restore-lst dd{font-size:16px;}
+.ad-setp-lst.restore-lst dt{color:#56565a;font-weight:400;}
+.ad-setp-lst.restore-lst dt strong{font-weight:400 !important;color:#017465;}
+.ad-setp-lst.restore-lst dd{color:#808285;}
+/* 인텐시브 리스토어 - 울트라좀 4523 */
+.ade-photo{}
+.ade-photo .reposom-wrap{position: relative;margin:0 auto 0;}
+.ade-photo .reposom-wrap img{text-align:center;max-width:100%;width:auto;}
+.ade-photo .reposom-wrap em{position:absolute;display:inline-block;padding-left:5px;font-size:14px;color:#0075a4;font-weight:300;line-height:1.2;vertical-align:middle;letter-spacing:-1px;text-align:left;}
+.ade-photo .reposom-wrap em.one{top:15px;left:69%;width:91px;height:34px;}
+.ade-photo .reposom-wrap em.two{bottom:47px;left:69%;width:91px;height:17px;}
+.ade-photo .reposom-wrap em br{line-height:0;}
+.ade-photo .reposom-wrap .point-txt{text-indent:-9999px;}
 
+.separation{position: relative;display:inline-block;}
+.separation img{width: auto;display: block;}
+.separation p{position: absolute;top: 67%;left: 0;letter-spacing: 0;color: #808285;font-weight: 300;font-size: 14px;width: 50%;text-align: center;padding-left: 20px;}
 
-
+	
 
 /*9622, 9618 라운드 썸네일 나열*/
 .ingredient-list{display: block;overflow:hidden;margin-top:10px;padding:0 10%;}
@@ -1755,8 +1792,10 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-	
 
+/* 리스토어 울트라좀 4523 */
+.ade-photo .reposom-wrap em.one{left: 75%;}
+.ade-photo .reposom-wrap em.two{left:75%;}
 
 }
 
@@ -1941,6 +1980,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
     .ade-photo .reposom-wrap em.one{top: 8px;left: 64%;width:91px;height:34px;}
 	.ade-photo .reposom-wrap em.two{bottom: 44px;left: 64%;width:91px;height:17px;}	
 	.advan-left.full{padding: 30px 12% 0;}
+	
+	.visual-area.type02.vitamin .v-pro span img{width: auto;}
 
 	.polymer{margin-top:20px;}
 	.polymer p{font-size:15px;}
@@ -1950,6 +1991,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.polymer.vita .one{font-size:16px;}
 	.polymer.vita .two{font-size: 13px;}
 	.polymer.vita .two em{font-size:16px;}
+	
 	
 	/* 유스 익스텐드 울트라 리프팅 크림  */	
 	.com-tit.youth_xtend {padding:0 0 0 0;}
@@ -2560,6 +2602,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 
 	.one-for-one .draw-step01 li dt img{width:auto;}
 	
+	.ade-photo .reposom-wrap em.one{left:68%;}
+	.ade-photo .reposom-wrap em.two{left:68%;}	
+	
 }	
 
 
@@ -2598,6 +2643,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	.ade-photo .reposom-wrap em.one{top: 8px;left: 64%;width:91px;height:34px;}
 	.ade-photo .reposom-wrap em.two{bottom: 44px;left: 64%;width:91px;height:17px;}	
+
+	.v-pro.kc-mark-area .mark-wrap{top:0;left: 50%;border:solid 2px #bbbbbb;padding: 8px 10px 8px 28px;background: #ffffff url('../images/akl_product/beauty/mark_kc.png') no-repeat 9px 50%;background-size: 17px;}
+	.v-pro.kc-mark-area .mark-wrap span{font-size: 12px;}
 	
 	/* 배스바디 */
 	.bath-body .v-pro span img{width:80%;}
@@ -2608,6 +2656,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	/* 원포원 */
 	.capsule-img-area em.txt{margin:14px 0 0;} /* 라임트리 캡슐세트 */
 	.one-for-one .v-pro span img{width:inherit !important;}
+	
+	
 	
 }
 
@@ -2632,9 +2682,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	.polymer.vita .two{top:45%;font-size:12px;line-height:1.2;letter-spacing:-1.3px;}
 	
-	.ade-photo .reposom-wrap em.one{top: 8px;left: 64%;width:91px;height:34px;}
-	.ade-photo .reposom-wrap em.two{bottom: 44px;left: 64%;width:91px;height:17px;}	
-     
+	/* 리스토어 울트라좀 4523 */
+	.ade-photo .reposom-wrap em.one{top: 24px;left: 70%;}
+	.ade-photo .reposom-wrap em.two{bottom: 37px;left: 73%;}	     
    
     .personalized-serum li{font-size:12px; padding-top: 20px;}
     .personalized-serum li:nth-child(3), .personalized-serum li:nth-child(5){padding-top: 29px;}
@@ -2768,6 +2818,14 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.triangle.circle-type.uv .comment02 em:before{margin-bottom: 0;}
 	.triangle.circle-type.uv .comment03 em:before{}
 	
+	/* 스페셜 케어 */
+	.skin-care .visual-area.type02.duma-sonic{padding-bottom: 100px;}
+	.skin-care .visual-area.type02.duma-sonic{}
+	.skin-care .visual-area.type02.duma-sonic .v-pro.kc-mark-area .mark-wrap{display:block;}
+	.skin-care .visual-area.type02.duma-sonic .v-pro.kc-mark-area .mark-wrap{top: inherit;left: 50%;bottom: -70px;border:solid 2px #bbbbbb;padding: 8px 10px 8px 28px;background: #ffffff url('../images/akl_product/beauty/mark_kc.png') no-repeat 9px 50%;background-size: 17px;margin-left: -102px;}
+	.skin-care .visual-area.type02.duma-sonic .v-pro.kc-mark-area .mark-wrap span{font-size: 12px;}
+	
+	
 }
 
 
@@ -2839,6 +2897,12 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.ingre-list.ingre-list-n2 li .ingre-txt{font-weight: 300;position: absolute;top: inherit;left: inherit;margin-left: 0 !important;width: 100%;text-align: center;}
 	.ingre-list.ingre-list-n2 li:nth-child(1) .ingre-txt{bottom:35px;}
 	.ingre-list.ingre-list-n2 li:nth-child(2) .ingre-txt{bottom:40px;}
+	
+	/* 인텐시브 리스토어 4523 */
+	.ade-photo .reposom-wrap em.one{top: 24px;left: 64%;}
+	.ade-photo .reposom-wrap em.two{bottom: 29px;left: 73%;}
+	
+	
 			
 	/* 베이스 메이크업 */	
 	.triangle.circle-type .tit-child{font-size:14px;}
