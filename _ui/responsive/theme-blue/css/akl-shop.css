@@ -154,8 +154,10 @@
 .search-results-akl li button { position: absolute; right:0; top:0; text-indent:-1000px; width:48px; height:40px;  overflow:hidden;background: url(../images/akl_common/ico_x_red02.png) no-repeat 50% 50%;  border:0;  background-size: 11px auto; }
 .search-list-page-right-result-list-component .header-text a { color: #55565a; }
 .search-list-page-right-result-list-component .header-text a:hover { color: #0075a4; text-decoration: underline;}
-.search-list-page-right-result-list-component .product-results-list { margin-top: 40px;}
+.search-list-page-right-result-list-component .product-results-list {overflow:hidden; margin-top: 40px;}
+.search-list-page-right-result-list-component .product-results-list .news-result-prom {margin-bottom:15px;}
 .search-list-page-right-result-list-component .header-text .item-description { color: #55565a;}
+.akl .product__list--wrapper.search-list-page-right-result-list-component .text-center {margin-top:0}
 
 /* 검색 > 자동완성  */
 .akl .auto-suggestion-popover {top:128px;}
@@ -309,7 +311,7 @@
 .akl .accordion-toggle.collapsed .title-element.accordion-header-icon.no-icon {font-size:0;}
 .akl .accordion-toggle.collapsed .title-element.accordion-header-icon.no-icon:before {content:''}
 .akl .news-result-prom {width:100%; height:100%;}
-.akl .news-result-prom > a {position:relative; overflow:hidden; padding-top:54.90196078431373%; display:block; max-width:408px; max-height:350px; background:#f4f4f4;}
+.akl .news-result-prom > a {position:relative; overflow:hidden; padding-top:54.90196078431373%; display:block; max-width:408px; max-height:350px;}
 .akl .news-result-prom img {position:absolute; top:0; left:0; right:0; width:100%; height:auto; box-sizing:border-box;}
 .akl .news-result-prom-text {position:relative; z-index:1; bottom:0; width:100%; min-height:130px; padding:20px; background:#f4f4f4;}
 .akl .news-result-prom-text .product__title {font-size:16px;line-height:24px;color:#002f5f;font-weight:500;height:48px;letter-spacing:-1px;overflow:hidden;white-space: normal;word-wrap: break-word;/* display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;text-overflow: ellipsis; */}
@@ -333,7 +335,11 @@
 .akl .tbl-type2.electronic td {width:80%; background:#fff}
 .akl .amway-competitive .tb-box {-webkit-overflow-scrolling: touch;}
 .akl .table.table-hover {border-bottom:1px solid #e4e4e5;table-layout:fixed}
-.akl .carousel-title {font-size:32px;font-family:'Noto Sans KR', sans-serif;font-weight:700;letter-spacing:-2px;color:#002f5f;padding:30px 0 30px}
+
+.akl .carousel-title {font-size:32px;font-family:'Noto Sans KR', sans-serif;font-weight:700;letter-spacing:-2px;color:#002f5f;}
+.akl .three-tile-component {padding:0;}
+.akl .amway-theme h2.carousel-title {margin:60px 0;}
+
 .akl .amway-theme table tbody td {font-size:14px;}
 .akl .amway-theme .owl-carousel .carousel-link-wrap a.primary-link span {font-size:18px;font-weight:500;}
 
@@ -369,7 +375,7 @@
 .akl .product-suggest {border-top:1px solid #dadada;}
 .akl .product-suggest .main-container {padding:0;}
 .akl .row.product-suggest {margin-top:60px;}
-.akl .row.product-suggest .amway-suggest {padding:0 0 0 30px; margin-bottom:60px;}
+.akl .row.product-suggest .amway-suggest {padding:0;/*  margin-bottom:60px; */}
 .akl .row.product-suggest .amway-suggest .amway-suggest__item {margin:0 32px 0 0;}
 .akl .amway-suggest {border-top:0 none; padding:30px 0 0}
 .akl .amway-suggest__title {margin:55px auto;font-size:32px;color:#002f5f;font-weight:700;letter-spacing:-2px;font-family:'Noto Sans KR', sans-serif;line-height:38px;}
@@ -379,7 +385,7 @@
 .akl .amway-suggest__item-title.amway-suggest__item-aboprice {font-size:14px;height:30px;}
 .akl .amway-suggest__item-retailprice {font-size:13px;height:auto;}
 .akl .amway-suggest__item .ico-solid-out {position:absolute;top:12px;left:12px;}
-.akl h2.amway-learning__title {margin:55px auto;}
+.akl h2.amway-learning__title {margin:60px auto;}
 
 /* 제품상세  > 제품상세 layer popup */
 .akl .cart-popup__item-info.amwahover img:hover{-webkit-transform:none !important; transform:none !important; -ms-transform:none !important;}
@@ -848,30 +854,37 @@
 .akl .amway-theme .full-width-banner-component .banner-content .sub-title-wrap .banner-sub-title span {font-size:18px;line-height:22px;font-weight:400;letter-spacing:-2px;}
 .akl .amway-theme .full-width-banner-component .banner-content .banner-button-wrap .banner-button-link .btn-blue-white {min-width:210px;}
 
-.akl .product-suggest.best-pro {border-bottom:1px solid #dadada;padding-bottom:50px;}
-.akl .product-suggest.best-pro .amway-suggest__title {margin:30px auto 40px}
+.akl .product-suggest.best-pro {border-bottom:1px solid #dadada;padding-bottom:60px; margin-top:40px;}
+.akl .product-suggest.best-pro .amway-suggest__title {margin:60px auto 60px;}
+.akl #productLearningListTabs .owl-controls {display:block;}
 
 .akl .simpleimagecomponent .category-name {font-size:14px;font-family:'Noto Sans KR', sans-serif;font-weight:500;}
 .akl .simpleimagecomponent.pcp-prod {border-bottom:1px solid #dadada;}
-.akl #productLearningListTabs .owl-controls {display:block;}
-.akl .simpleimagecomponent.pcp-banner {padding-bottom:60px;}
+.akl .simpleimagecomponent.pcp-banner {padding-bottom:50px;}
+.akl .simpleimagecomponent > .category-item > label {margin-bottom:10px;}
+.akl .simpleimagecomponent > .category-item .category-name {display:block; height:40px;}
+.akl .simpleimagecomponent > .category-item img {max-width:138px; height:auto;}
+/*
 .akl .simpleimagecomponent .owl-theme .owl-controls .owl-nav .owl-prev {left:-15px;}
 .akl .simpleimagecomponent .owl-theme .owl-controls .owl-nav .owl-next {right:-15px;}
-.akl .simpleimagecomponent .carousel-title {padding:0 0;}
+.akl .simpleimagecomponent .carousel-title {padding:0 0;} */
 
 .akl .user-account-options {padding:0 0 50px;}
 .akl .user-account-options .container {width:100%;padding:0 0;}
 .akl .account-landing-page {font-family:'Noto Sans KR', sans-serif;}
+.akl .full-width-title-component__title {margin-top:60px;}
 .akl .account-landing-page .user-account-options {background:#fff;}
 .akl .account-landing-page .container-fluid {padding:0 0;}
 .akl .account-landing-page .user-account-options .option-item-container {height:280px;}
 .akl .account-landing-page .user-account-options .option-item-container .option-item .option-title {font-size:16px;font-weight:500;letter-spacing:-1px;}
 
-.solution-page {padding:60px 0 40px;}
+.solution-page {padding:60px 0 0;}
 .solution-page .col-lg-12 {padding:0 0;}
 .solution-page .news-result-prom img {height:auto;}
 .solution-page .news-result-prom-text {min-height:40px !important;padding:15px 18px;}
 .solution-page .amway-suggest__title {margin:0 auto;padding-bottom:60px;}
+
+.akl .solution-page .news-result-prom {margin-bottom:20px;}
 
 .akl .sub_banner .banner__wrapper .btn-blue-white { margin: 24px 0; padding:19px 50px; font-size: 16px;}
 
@@ -1944,6 +1957,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .news-result-prom {width:100%; height:auto; max-width:none; max-height:none; margin-bottom:15px}
 	.akl .news-result-prom > a {padding-top:0; max-width:none; max-height:none;}
 	.akl .news-result-prom img {position:static; width:100%; height:auto; max-height:none;}
+	.akl .solution-page .news-result-prom {margin-bottom:15px;}
 
 	.akl .panel-body.product-detail .col-md-4 ,
 	.akl .panel-body.product-detail .col-md-4:nth-of-type(3n-1) { margin:0;}
@@ -1976,8 +1990,9 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .experience-brands__content .banner-content .banner-sub-title span {font-size:14px;line-height:18px;}
 	.akl .experience-brands .new-hot-brand {margin:0 auto;}
 
-	/* 함께하면 좋은 제품  */
+	/* 제품상세  > 함께하면 좋은 제품*/
 	.akl .row.product-suggest {margin-top:0; border-top:0;}
+	.akl .row.product-suggest .amway-suggest .amway-suggest__item {margin:0 auto;}
 	.akl .amway-suggest__title {font-size:26px; margin:50px auto 24px;}
 	.akl .amway-suggest__item .ico-solid-out {top:1px; left:14px;}
 
@@ -2210,13 +2225,20 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .amway-theme .full-width-banner-component .banner-content .banner-title {font-size:30px;}
 	.akl .amway-theme .full-width-banner-component .banner-content .banner-title span {font-size:30px;}
 	.akl .simpleimagecomponent .amway-theme h4.full-width-title-component__sub-title {padding:0 10px;}
+
+
+	.category-item.col-sm-6 {width:50%;float:left;}
 	.akl .amway-theme .full-width-banner-component .banner-content .banner-button-wrap .banner-button-link .btn-blue-white {min-width:auto;}
 
 	.akl .category-banner {padding:0 0;}
 	.akl .category-banner .sub_banner .banner__message--main {font-size:26px;}
 	.akl .category-banner .sub_banner .banner__wrapper {width:80%;}
-	.akl .solution-page {padding:30px 0 20px;}
+	.akl .solution-page {padding:30px 0 0;}
 	.akl .solution-page .amway-suggest__title {margin:0 auto;padding:0 0 30px;}
+	.akl .solution-page .col-md-3 {float:left; width:50%;}
+	.akl .solution-page .news-result-prom-text .product__title {height:38px;}
+	.akl .solution-page .col-lg-12 > .col-md-3:nth-of-type(odd){padding-right:8px;}
+	.akl .solution-page .col-lg-12 > .col-md-3:nth-of-type(even){padding-left:8px;}
 
 	.akl .account-landing-page .full-width-title-component__title {margin:40px auto 20px;}
 
