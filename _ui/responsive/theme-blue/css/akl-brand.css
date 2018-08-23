@@ -209,8 +209,30 @@ Editor : HYEWON HWANG
 .atmosphere .txtbox.s2 div {max-width:100%;top:10px;}
 .atmosphere .txtbox.s3 div {left:19%;top:35%;}
 
-/* XS에너지 */
-.xsenergy {}
+/* XS 에너지 */
+.xsenergy_mainlist {width:100%;overflow:hidden;background:#000;} 
+.xsenergy_mainlist li {float:left;width:33.33%;position:relative;}
+.xsenergy_mainlist li.wide1 {width:66.65%;}
+.xsenergy_mainlist li.wide2, .xsenergy_mainlist li.wide3{width:66.67%;} 
+.xsenergy_mainlist li img {display:block;width:100%;height:auto;}
+.xsenergy_mainlist .txt-wrap {position:absolute;top:25px;left:30px;line-height:1.5;}
+.xsenergy_mainlist .txt-wrap span {display:block;font-size:16px;color:#fff;}
+.xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;}
+.xsenergy_mainlist li > a {position:absolute;top:0;width:100%;height:100%;display:block;color:#fff;}
+.xsenergy_mainlist li > a:hover {color:#fff;}
+.xsenergy_mainlist .video-btn img {position:absolute;top:50%;left:50%;margin:-20px 0 0 -40px;height:80px;width:80px;}
+.xsenergy_mainlist .sns-link span {position:absolute;bottom:25px;left:30px;}
+
+@media (max-width: 1024px){
+	.xsenergy_mainlist li {width:50%;}
+	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
+}
+@media (max-width: 768px){
+	.xsenergy_mainlist .video-btn img {width:70px;height:70px;margin:-5% 0 0 -35px;}
+}
+@media (max-width: 630px){
+	.xsenergy_mainlist li {width:100% !important;}
+}
 
 /* ### 암웨이소개: 레이아웃 ### */
 .brand .brand-contents {position:relative;}
@@ -520,12 +542,11 @@ Editor : HYEWON HWANG
 	/* 엣모스피어 */
 	
 	
-
 	/* ### 암웨이소개 ### */
 	/* 암웨이소개 메인 */ 
 
 	.brand .mob, .intro .masthead .mob, .amway-theme .desktop-image-mob  {
-	    display: block;
+	    display: block !important;
 	}
 	.brand .pc, .intro .masthead .pc, .amway-theme .desktop-image {
 	    display: none;
