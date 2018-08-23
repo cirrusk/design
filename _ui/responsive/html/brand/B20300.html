@@ -22,6 +22,35 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	var windowWidth = $(window).width();
+	var colmn = $('.xsenergy_mainlist li').eq(8);
+	var colmnHeight = colmn.height() + 0.01;
+	
+	if(windowWidth > 1024) {
+		
+		colmn.css('margin-top',-colmnHeight+'px');
+		console.log(colmnHeight);
+		
+		$(window).resize(function() {
+			var colmnHeight = colmn.height() + 0.01;
+			colmn.css('margin-top',-colmnHeight+'px');
+		});
+		
+	}else{
+		$(window).resize(function() {
+			// 창 크기 바뀌면 리로딩.
+			 if (self.name != 'reload') {
+		         self.name = 'reload';
+		         self.location.reload(true);
+		     }
+		     else self.name = '';
+		});
+	}
+});
+</script>
 </head>
 
 <body class="akl">
@@ -82,63 +111,7 @@
 		
 		<!-- ## 템플릿 B-type -->
 		<div class="brand xsenergy" id="contents"><!-- 본문바로가기 위치 이동 -->
-			
-<style>
-.xsenergy_mainlist {width:100%;overflow:hidden;background:#000;} 
-.xsenergy_mainlist li {float:left;width:33.33%;position:relative;}
-.xsenergy_mainlist li.wide1 {width:66.65%;}
-.xsenergy_mainlist li.wide2, .xsenergy_mainlist li.wide3{width:66.67%;} 
-/*.xsenergy_mainlist li:nth-child(9){margi-top:-389.}*/
 
-.xsenergy_mainlist li img {display:block;width:100%;height:auto;}
-.xsenergy_mainlist .txt-wrap {position:absolute;top:25px;left:30px;line-height:1.5;}
-.xsenergy_mainlist .txt-wrap span {display:block;font-size:16px;color:#fff;}
-.xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;}
-.xsenergy_mainlist .video-btn {position:absolute;top:50%;left:50%;margin:-20px 0 0 -40px;height:80px;width:80px;}
-.xsenergy_mainlist .video-btn button {background:none;padding:0;}
-.xsenergy_mainlist .sns-link {position:absolute;bottom:25px;left:30px;}
-.xsenergy_mainlist .sns-link a {color:#fff;}
-
-@media (max-width: 1024px){
-	.xsenergy_mainlist li {width:50%;}
-	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
-}
-@media (max-width: 768px){
-	.xsenergy_mainlist .video-btn {width:20%;height:20%;margin:-5% 0 0 -10%;}
-}
-@media (max-width: 630px){
-	.xsenergy_mainlist li {width:100% !important;}
-}
-</style>
-<script type="text/javascript">
-$(function() {
-	
-	var windowWidth = $(window).width();
-	var colmn = $('.xsenergy_mainlist li').eq(8);
-	var colmnHeight = colmn.height() + 0.01;
-	
-	if(windowWidth > 1024) {
-		
-		colmn.css('margin-top',-colmnHeight+'px');
-		console.log(colmnHeight);
-		
-		$(window).resize(function() {
-			var colmnHeight = colmn.height() + 0.01;
-			colmn.css('margin-top',-colmnHeight+'px');
-		});
-		
-	}else{
-		$(window).resize(function() {
-			// 창 크기 바뀌면 리로딩.
-			 if (self.name != 'reload') {
-		         self.name = 'reload';
-		         self.location.reload(true);
-		     }
-		     else self.name = '';
-		});
-	}
-});
-</script>
 				<!-- ## 컨텐츠 영역 -->		
 				<div class="main-container amway-theme">
 					<ul class="xsenergy_mainlist">
@@ -153,57 +126,54 @@ $(function() {
 							<div class="txt-wrap">
 								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>XS 망고파인애플구아바 &lt;택시편&gt;</span>
 							</div>
-							<div class="video-btn">
-								<button onclick="layerPopOver(this,'.B20302_lp1');"><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
+							<a class="video-btn" href="#none" onclick="layerPopOver(this,'.B20300_pop1');">
+								<img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생">
+							</a>
 						</li>
 						<li>
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main03.jpg" alt="" /></div>
 							<div class="txt-wrap">
 								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>XS 망고파인애플구아바 &lt;노래방편&gt;</span>
 							</div>
-							<div class="video-btn">
-								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
+							<a class="video-btn" href="#none" onclick="layerPopOver(this,'.B20300_pop2');">
+								<img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생">
+							</a>
 						</li>
 						<li>
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main04.jpg" alt="" /></div>
 							<div class="txt-wrap">
 								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>2016 XS Night Run Teaser Film</span>
 							</div>
-							<div class="video-btn">
-								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
+							<a class="video-btn" href="#none" onclick="layerPopOver(this,'.B20300_pop3');">
+								<img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생">
+							</a>
 						</li>
 						<li>
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main05.jpg" alt="" /></div>
 							<div class="txt-wrap">
 								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>2015 XS-mas 하이라이트 영상</span>
 							</div>
-							<div class="video-btn">
-								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
+							<a class="video-btn" href="#none" onclick="layerPopOver(this,'.B20300_pop4');">
+								<img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생">
+							</a>
 						</li>
 						<li>
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main06.jpg" alt="" /></div>
 							<div class="txt-wrap">
 								<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>5K Night Run 하이라이트 영상</span>
 							</div>
-							<div class="video-btn">
-								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
+							<a class="video-btn" href="#none" onclick="layerPopOver(this,'.B20300_pop5');">
+								<img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생">
+							</a>
 						</li>
 						<li>
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main07.jpg" alt="" /></div>
 							<div class="txt-wrap">
 								<span>XS Amway Korea<br>이번 여름, 자신있어?</span>
 							</div>
-							<div class="video-btn">
-								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
-							<div class="sns-link">
-								<a href="" class="arr1">Facebook 바로가기</a>
-							</div>
+							<a class="sns-link" target="_blank" href="https://www.facebook.com/xsakl/videos/1722056397915266/">
+								<span class="arr1">Facebook 바로가기</span>
+							</a>
 						</li>
 						<li class="wide2">
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main08.jpg" alt="" /></div>
@@ -218,21 +188,18 @@ $(function() {
 							<div class="txt-wrap">
 								<span>XS Amway Korea<br>2018 XS 풀파티 D-10</span>
 							</div>
-							<div class="video-btn">
-								<button><img class="video-preview__play" src="/_ui/responsive/theme-blue/images/play_button.png" alt="동영상 재생"></button>
-							</div>
-							<div class="sns-link">
-								<a href="" class="arr1">Facebook 바로가기</a>
-							</div>
+							<a class="sns-link" target="_blank" href="https://www.facebook.com/xsakl/videos/1729628500491389/">
+								<span class="arr1">Facebook 바로가기</span>
+							</a>
 						</li>
 						<li>
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main10.jpg" alt="" /></div>
 							<div class="txt-wrap">
 								<em>XS에너지드링크 Instagram</em>
 							</div>
-							<div class="sns-link">
-								<a href="" class="arr1">Instagram 바로가기</a>
-							</div>
+							<a class="sns-link" target="_blank" href="#">
+								<span class="arr1">Instagram 바로가기</span>
+							</a>
 						</li>
 						<li class="wide3">
 							<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main11.jpg" alt="" /></div>
@@ -247,25 +214,123 @@ $(function() {
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	
 	<!-- (팝업) Video -->
-	<div class="layerWrapper B20302_lp1"><!-- div.layerWrapper 추가 -->
+	<div class="layerWrapper B20300_pop1">
 		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
 			<div class="video-pop">
 				<div id="cboxTitle">
 					<div class="headline">
-						<span class="headline-text">뉴트리라이트 스토리 15 건강수면편</span>
+						<span class="headline-text">[XS 에너지 드링크] XS 망고파인애플구아바 &lt;택시편&gt;</span>
 					</div>
 				</div>
 				<div id="bonusPaymentDirectDeposit">
 					<div class="bonus-payment-method__wrapper">
 						<!-- layer conts -->
 						<div class="popup-video-preview__content">
-							<!-- 2018.02.13 수정 -->
 							<div class="video-cont">
 								<div class="video-wrapper">
-									<!-- iframe width="100%" height="100%" title="아티스트리 하이드라-브이 1분 스토리" src="http://www.youtube.com/embed/7CKdgdVhrwU?rel=0&amp;wmode=opaque" frameborder="0"></iframe> -->
 									<iframe title="XS 망고파인애플구아바 택시편" src="https://www.youtube.com/embed/7C-GjDAm1pA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-									
+								</div> 
+							</div>
+						</div>
+						<!-- //layer conts -->
+					</div>
+				</div>
+				<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="layerWrapper B20300_pop2">
+		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
+			<div class="video-pop">
+				<div id="cboxTitle">
+					<div class="headline">
+						<span class="headline-text">[XS 에너지 드링크] XS 망고파인애플구아바 &lt;노래방편&gt;</span>
+					</div>
+				</div>
+				<div id="bonusPaymentDirectDeposit">
+					<div class="bonus-payment-method__wrapper">
+						<!-- layer conts -->
+						<div class="popup-video-preview__content">
+							<div class="video-cont">
+								<div class="video-wrapper">
+									<iframe title="XS 망고파인애플구아바 노래방편" src="https://www.youtube.com/embed/irqi9ayU34E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div> 
+							</div>
+						</div>
+						<!-- //layer conts -->
+					</div>
+				</div>
+				<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="layerWrapper B20300_pop3">
+		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
+			<div class="video-pop">
+				<div id="cboxTitle">
+					<div class="headline">
+						<span class="headline-text">[XS 에너지 드링크] 2016 XS Night Run Teaser Film</span>
+					</div>
+				</div>
+				<div id="bonusPaymentDirectDeposit">
+					<div class="bonus-payment-method__wrapper">
+						<!-- layer conts -->
+						<div class="popup-video-preview__content">
+							<div class="video-cont">
+								<div class="video-wrapper">
+									<iframe title="2016 XS Night Run Teaser Film" src="https://www.youtube.com/embed/vogV-Y_lEGk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div> 
+							</div>
+						</div>
+						<!-- //layer conts -->
+					</div>
+				</div>
+				<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="layerWrapper B20300_pop4">
+		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
+			<div class="video-pop">
+				<div id="cboxTitle">
+					<div class="headline">
+						<span class="headline-text">[XS 에너지 드링크] 2015 XS-mas 하이라이트 영상</span>
+					</div>
+				</div>
+				<div id="bonusPaymentDirectDeposit">
+					<div class="bonus-payment-method__wrapper">
+						<!-- layer conts -->
+						<div class="popup-video-preview__content">
+							<div class="video-cont">
+								<div class="video-wrapper">
+									<iframe title="2015 XS-mas 하이라이트 영상" src="https://www.youtube.com/embed/H3l4LaG3Ke8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div> 
+							</div>
+						</div>
+						<!-- //layer conts -->
+					</div>
+				</div>
+				<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="layerWrapper B20300_pop5">
+		<div id="videobox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox typeVideoView">
+			<div class="video-pop">
+				<div id="cboxTitle">
+					<div class="headline">
+						<span class="headline-text">[XS 에너지 드링크] 5K Night Run 하이라이트 영상</span>
+					</div>
+				</div>
+				<div id="bonusPaymentDirectDeposit">
+					<div class="bonus-payment-method__wrapper">
+						<!-- layer conts -->
+						<div class="popup-video-preview__content">
+							<div class="video-cont">
+								<div class="video-wrapper">
+									<iframe title="5K Night Run 하이라이트 영상" src="https://www.youtube.com/embed/KBJdGHxg-8w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div> 
 							</div>
 						</div>
