@@ -127,57 +127,51 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">최홍철(스키점프)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player19.jpg" alt="최홍철" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">최홍철(스키점프)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 최홍철</dd> 
-							<dd>종목 : 스키점프</dd>
-							<dt>경력사항</dt>
-							<dd>2014 제 22회 소치 동계올림픽 스키점프 국가대표</dd>
-							<dd>2011 제 7회 아스타나-알미티 동계아시안게임 스키점프 국가대표</dd>
-							<dd>2010 제 21회 벤쿠버 동계올림픽 스키점프 국가대표</dd>
-							<dt>수상내역</dt>
-							<dd>2016 한국 알펜시아 FIS-컵 스키점프</dd>
-							<dd>2011 아스타나-알미티 동계아시안게임 남자 스키점프 라지히 단체 동메달</dd>
-							<dd>2009 오스트리아 Villach FIS-컵 금메달</dd>
-							<dd>2009 하얼빈 동계유니버시아드 대회 스키점프 남자 단체전 금메달, 개인전 동메달</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 최홍철</dd> 
+						<dd>종목 : 스키점프</dd>
+						<dt>경력사항</dt>
+						<dd>2014 제 22회 소치 동계올림픽 스키점프 국가대표</dd>
+						<dd>2011 제 7회 아스타나-알미티 동계아시안게임 스키점프 국가대표</dd>
+						<dd>2010 제 21회 벤쿠버 동계올림픽 스키점프 국가대표</dd>
+						<dt>수상내역</dt>
+						<dd>2016 한국 알펜시아 FIS-컵 스키점프</dd>
+						<dd>2011 아스타나-알미티 동계아시안게임 남자 스키점프 라지히 단체 동메달</dd>
+						<dd>2009 오스트리아 Villach FIS-컵 금메달</dd>
+						<dd>2009 하얼빈 동계유니버시아드 대회 스키점프 남자 단체전 금메달, 개인전 동메달</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>최홍철</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
-								<p>더블엑스</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
+									<p>더블엑스</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
+									<p>새몬 오메가-3</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
+									<p>조인트가드</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt05.jpg" alt="인테스티플로라"/>
+									<p>인테스티플로라 7 (40포)</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
-								<p>새몬 오메가-3</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
-								<p>조인트가드</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt05.jpg" alt="인테스티플로라"/>
-								<p>인테스티플로라 7 (40포)</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -187,6 +181,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 4
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>

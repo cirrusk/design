@@ -127,54 +127,48 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">김승학(레슬링)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player02.jpg" alt="김승학" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">김승학(레슬링)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 김승학</dd> 
-							<dd>종목 : 레슬링</dd>
-							<dt>경력사항</dt>
-							<dd>2016년 리우올림픽 국가대표</dd>
-							<dt>수상내역</dt>
-							<dd>2017 세계선수권대회 동메달</dd>
-							<dd>2016 제 97회 전국체육대회 레스링 남자일반부 그레꼬로만형 1위</dd>
-							<dd>2016 리우올림픽 국가대표</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 김승학</dd> 
+						<dd>종목 : 레슬링</dd>
+						<dt>경력사항</dt>
+						<dd>2016년 리우올림픽 국가대표</dd>
+						<dt>수상내역</dt>
+						<dd>2017 세계선수권대회 동메달</dd>
+						<dd>2016 제 97회 전국체육대회 레스링 남자일반부 그레꼬로만형 1위</dd>
+						<dd>2016 리우올림픽 국가대표</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>김승학</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt06.jpg" alt="칼디"/>
-								<p>칼디</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt06.jpg" alt="칼디"/>
+									<p>칼디</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
+									<p>조인트가드</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt07.jpg" alt="비젼 아이디"/>
+									<p>비젼 아이디</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt08.jpg" alt="아이언 폴릭 플러스"/>
+									<p>아이언 폴릭 플러스</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
-								<p>조인트가드</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt07.jpg" alt="비젼 아이디"/>
-								<p>비젼 아이디</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt08.jpg" alt="아이언 폴릭 플러스"/>
-								<p>아이언 폴릭 플러스</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -184,6 +178,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 4
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>

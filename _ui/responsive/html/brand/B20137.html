@@ -127,48 +127,44 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">이광희(유도)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player13.jpg" alt="이광희" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">이광희(유도)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 이광희</dd> 
-							<dd>종목 : 유도</dd>
-							<dt>경력사항</dt>
-							<dd>2017 대한민국 유도 국가대표 후보선수</dd>
-							<dt>수상내역</dt>
-							<dd>2016 하계 전국 유도대회 1회</dd>
-							<dd>2016 1회 순천만 국가 정원컵 전국유도대회 1위</dd>
-							<dd>2015 전국체육대회 유도 1위</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 이광희</dd> 
+						<dd>종목 : 유도</dd>
+						<dt>경력사항</dt>
+						<dd>2017 대한민국 유도 국가대표 후보선수</dd>
+						<dt>수상내역</dt>
+						<dd>2016 하계 전국 유도대회 1회</dd>
+						<dd>2016 1회 순천만 국가 정원컵 전국유도대회 1위</dd>
+						<dd>2015 전국체육대회 유도 1위</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>이광희</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
-								<p>더블엑스</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
+									<p>더블엑스</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt12.jpg" alt="칼맥디"/>
+									<p>칼맥디</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트 가드"/>
+									<p>조인트 가드</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt12.jpg" alt="칼맥디"/>
-								<p>칼맥디</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트 가드"/>
-								<p>조인트 가드</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -178,6 +174,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 3
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>

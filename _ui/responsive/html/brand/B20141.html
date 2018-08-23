@@ -127,51 +127,47 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">전준우(야구)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player17.jpg" alt="전준우" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">전준우(야구)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 전준우</dd> 
-							<dd>종목 : 야구</dd>
-							<dt>경력사항</dt>
-							<dd>2014~2016 경찰 야구단</dd>
-							<dd>2014 대한적십자사 홍보대사</dd>
-							<dd>2013 제 3회 월드베이스볼클래식(WBC) 국가대표</dd>
-							<dd>2008~ 롯데자이언츠</dd>
-							<dt>수상내역</dt>
-							<dd>2013 KBO 올스타전 MVP</dd>
-							<dd>2011 KBO 정규리그 득점 1위</dd>
-							<dd>2008 퓨처스 올스타전 MVP</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 전준우</dd> 
+						<dd>종목 : 야구</dd>
+						<dt>경력사항</dt>
+						<dd>2014~2016 경찰 야구단</dd>
+						<dd>2014 대한적십자사 홍보대사</dd>
+						<dd>2013 제 3회 월드베이스볼클래식(WBC) 국가대표</dd>
+						<dd>2008~ 롯데자이언츠</dd>
+						<dt>수상내역</dt>
+						<dd>2013 KBO 올스타전 MVP</dd>
+						<dd>2011 KBO 정규리그 득점 1위</dd>
+						<dd>2008 퓨처스 올스타전 MVP</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>전준우</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt08.jpg" alt="아이언 폴릭 플러스"/>
-								<p>아이언 폴릭 플러스</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt08.jpg" alt="아이언 폴릭 플러스"/>
+									<p>아이언 폴릭 플러스</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt16.jpg" alt="맨즈 에너지 팩"/>
+									<p>맨즈 에너지 팩</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt05.jpg" alt="인테스티플로라"/>
+									<p>인테스티플로라</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt16.jpg" alt="맨즈 에너지 팩"/>
-								<p>맨즈 에너지 팩</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt05.jpg" alt="인테스티플로라"/>
-								<p>인테스티플로라</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -181,6 +177,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 3
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>

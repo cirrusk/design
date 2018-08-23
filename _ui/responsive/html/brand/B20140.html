@@ -127,57 +127,51 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">장원준(야구)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player16.jpg" alt="장원준" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">장원준(야구)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 장원준</dd> 
-							<dd>종목 : 야구</dd>
-							<dt>경력사항</dt>
-							<dd>2015~ 두산베어스 2013~ 2014 롯데자이언츠</dd>
-							<dd>2013 AFC U-19 여자챔피언십 청소년대표</dd>
-							<dd>2004~2011 롯데자이언츠</dd>
-							<dt>수상내역</dt>
-							<dd>2016 조아제약 프로야구대상 최고투수상</dd>
-							<dd>2013 한국야구르트 세븐 프로야구 퓨처스리그 북부리그 평균자책점 1위</dd>
-							<dd>2012 팔도프로야구 북부리그 평균자책점 1위</dd>
-							<dd>2011 프로야구 올스타전 우수투수상</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 장원준</dd> 
+						<dd>종목 : 야구</dd>
+						<dt>경력사항</dt>
+						<dd>2015~ 두산베어스 2013~ 2014 롯데자이언츠</dd>
+						<dd>2013 AFC U-19 여자챔피언십 청소년대표</dd>
+						<dd>2004~2011 롯데자이언츠</dd>
+						<dt>수상내역</dt>
+						<dd>2016 조아제약 프로야구대상 최고투수상</dd>
+						<dd>2013 한국야구르트 세븐 프로야구 퓨처스리그 북부리그 평균자책점 1위</dd>
+						<dd>2012 팔도프로야구 북부리그 평균자책점 1위</dd>
+						<dd>2011 프로야구 올스타전 우수투수상</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>장원준</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
-								<p>더블엑스</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
+									<p>더블엑스</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
+									<p>조인트가드</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
+									<p>새몬 오메가-3</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt11.jpg" alt="밀크씨슬 EX"/>
+									<p>밀크씨슬 EX</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
-								<p>조인트가드</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
-								<p>새몬 오메가-3</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt11.jpg" alt="밀크씨슬 EX"/>
-								<p>밀크씨슬 EX</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -187,6 +181,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 4
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
