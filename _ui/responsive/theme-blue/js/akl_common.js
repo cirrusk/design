@@ -291,7 +291,6 @@ function onScroll_TOP(){
 
 	var $footer = $('#footer');
 	var $topBox = $('#ScrollTopArea');
-	var $btnTop = $('#ScrollTopArea').find('.toTop');
 
 	function appendObject(){
 		if ( $topBox.length ){ return; }
@@ -308,7 +307,7 @@ function onScroll_TOP(){
 	setTimeout(function(){ appendObject(); }, 600);
 
 	//버튼 이벤트
-	$(document).on('click', $btnTop ,function(){
+	$(document).on('click', '#ScrollTopArea > .toTop' ,function(){
 		$('html,body').animate({ scrollTop:0 }, 400);
 	});
 
