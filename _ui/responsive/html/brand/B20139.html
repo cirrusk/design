@@ -127,48 +127,44 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">장슬기(축구)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player15.jpg" alt="장슬기" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">장슬기(축구)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 장슬기</dd> 
-							<dd>종목 : 축구</dd>
-							<dt>경력사항</dt>
-							<dd>2018 AFC 여자 아시안컵 국가대표</dd>
-							<dd>2014 FIFA U-20 여자월드컵 국가대표</dd>
-							<dd>2013 AFC U-19 여자챔피언십 청소년대표</dd>
-							<dd>2011 AFC U-19 여자챔피언십 청소년대표</dd>
-							<dd>FIFA U-17 여자월드컵 청소년대표</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 장슬기</dd> 
+						<dd>종목 : 축구</dd>
+						<dt>경력사항</dt>
+						<dd>2018 AFC 여자 아시안컵 국가대표</dd>
+						<dd>2014 FIFA U-20 여자월드컵 국가대표</dd>
+						<dd>2013 AFC U-19 여자챔피언십 청소년대표</dd>
+						<dd>2011 AFC U-19 여자챔피언십 청소년대표</dd>
+						<dd>FIFA U-17 여자월드컵 청소년대표</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>장슬기</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
-								<p>더블엑스</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
+									<p>더블엑스</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
+									<p>새몬 오메가-3</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt13.jpg" alt="F옥타코사놀"/>
+									<p>F옥타코사놀</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
-								<p>새몬 오메가-3</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt13.jpg" alt="F옥타코사놀"/>
-								<p>F옥타코사놀</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -178,6 +174,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 3
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>

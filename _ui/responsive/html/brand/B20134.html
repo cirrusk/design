@@ -127,59 +127,51 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">오상욱(펜싱)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player10.jpg" alt="오상욱" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">오상욱(펜싱)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 오상욱</dd> 
-							<dd>종목 : 펜싱</dd>
-							<dt>경력사항</dt>
-							<dd>2014 인천아시안게임 남자 사격 국가대표</dd>
-							<dt>수상내역</dt>
-							<dd>2018 국제펜싱연맹 국제그랑프리대회 남자 사브르 개인전 금메달</dd>
-							<dd>2017 대한펜싱협회가 선정하는 ‘올해의 최우수선수＇</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 오상욱</dd> 
+						<dd>종목 : 펜싱</dd>
+						<dt>경력사항</dt>
+						<dd>2014 인천아시안게임 남자 사격 국가대표</dd>
+						<dt>수상내역</dt>
+						<dd>2018 국제펜싱연맹 국제그랑프리대회 남자 사브르 개인전 금메달</dd>
+						<dd>2017 대한펜싱협회가 선정하는 ‘올해의 최우수선수＇</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>오상욱</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
-								<p>더블엑스</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt01.jpg" alt="더블엑스"/>
+									<p>더블엑스</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
+									<p>새몬 오메가-3</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
+									<p>조인트가드</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt11.jpg" alt="밀크씨슬 EX"/>
+									<p>밀크씨슬 EX</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt03.jpg" alt="비타민 B 플러스"/>
+									<p>비타민 B 플러스(90점)</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt10.jpg" alt="새몬 오메가-3"/>
-								<p>새몬 오메가-3</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt02.jpg" alt="조인트가드"/>
-								<p>조인트가드</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt11.jpg" alt="밀크씨슬 EX"/>
-								<p>밀크씨슬 EX</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt03.jpg" alt="비타민 B 플러스"/>
-								<p>비타민 B 플러스(90점)</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -189,6 +181,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 5
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>

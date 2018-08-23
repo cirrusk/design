@@ -127,55 +127,49 @@
 			<div class="brand-contents">
 	
 				<h1 class="title-h2">팀뉴트리라이트</h1>
-				<div class="lay-box-2">
+				<div class="team-player-box">
+					<h2 class="team-tit">한승우(사격)</h2>
 					<div>
 						<img src="../../theme-blue/images/akl_brand/nutrilite/img_team_player20.jpg" alt="한승우" />
 					</div>
-					<div class="team-player">
-						<h2 class="team-tit">한승우(사격)</h2>
-						<dl>
-							<dt>선수소개</dt>
-							<dd>성명 : 한승우</dd> 
-							<dd>종목 : 사격</dd>
-							<dt>경력사항</dt>
-							<dd>2016년 리우올림픽 국가대표</dd>
-							<dt>수상내역</dt>
-							<dd>제46회 봉황기 전국사격대회 남자 일반부 공기권총 동메달</dd>
-							<dd>제11회 대통령경호실장기 전국사격대회 남자 일반부 권총 은메달</dd>
-							<dd>2015년 한화회장배 전국사격대회 남자 일반부 권총 3위</dd>
-							<dd>2013년 제6회 톈진 동아시아경기대회 사격 단체전 동메달</dd>
-						</dl>
-					</div>
+					<dl>
+						<dt>선수소개</dt>
+						<dd>성명 : 한승우</dd> 
+						<dd>종목 : 사격</dd>
+						<dt>경력사항</dt>
+						<dd>2016년 리우올림픽 국가대표</dd>
+						<dt>수상내역</dt>
+						<dd>제46회 봉황기 전국사격대회 남자 일반부 공기권총 동메달</dd>
+						<dd>제11회 대통령경호실장기 전국사격대회 남자 일반부 권총 은메달</dd>
+						<dd>2015년 한화회장배 전국사격대회 남자 일반부 권총 3위</dd>
+						<dd>2013년 제6회 톈진 동아시아경기대회 사격 단체전 동메달</dd>
+					</dl>
 				</div>
 				
 				<article class="br-box-cont-hr">
 					<h2 class="title-h6"><strong>한승우</strong> 선수 섭취 제품</h2>
-					<ul class="lay-box-pdt">
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt05.jpg" alt="인테스티플로라"/>
-								<p>인테스티플로라 7 (120포)</p>
+					<div class="row">
+						<div class="col-sm-12 column">
+							<div class="lay-box-pdt owl-carousel owl-theme" id="layBoxPdt">
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt05.jpg" alt="인테스티플로라"/>
+									<p>인테스티플로라 7 (120포)</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt11.jpg" alt="밀크씨슬 EX"/>
+									<p>밀크씨슬 EX</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt18.jpg" alt="뉴트리 파이토푸로틴 스틱"/>
+									<p>뉴트리 파이토푸로틴 스틱</p>
+								</div>
+								<div>
+									<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt19.jpg" alt="화이버비츠 플러스"/>
+									<p>화이버비츠 플러스</p>
+								</div>
 							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt11.jpg" alt="밀크씨슬 EX"/>
-								<p>밀크씨슬 EX</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt18.jpg" alt="뉴트리 파이토푸로틴 스틱"/>
-								<p>뉴트리 파이토푸로틴 스틱</p>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/_ui/responsive/theme-blue/images/akl_brand/nutrilite/img_team_pdt19.jpg" alt="화이버비츠 플러스"/>
-								<p>화이버비츠 플러스</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</article>
 
 			</div>
@@ -185,6 +179,27 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	<script type="text/javascript">
+		$(function(){
+
+			$('#layBoxPdt').owlCarousel({
+				loop: false,
+				nav: true,
+				dots: false,
+				margin: 0,
+				items: 1,
+				responsiveClass: true,
+				responsive: {
+					768 : {
+						items: 1
+					},
+					1200 : {
+						items: 4
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
