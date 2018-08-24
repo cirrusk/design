@@ -17,7 +17,7 @@ function brandTopSNS(){
 		var $brandSns = $('.brand .bod-view-sns');
 		var titHeight = $brandHeading.outerHeight(true);
 
-		//console.log('h1 높이: ' + titHeight);
+		console.log('h1 높이: ' + titHeight);
 		$brandSns.css('top',titHeight);
 	}
 
@@ -28,4 +28,6 @@ function brandTopSNS(){
 			titSpaceCal();
 		},300);
 	}
+	
+	
 }
