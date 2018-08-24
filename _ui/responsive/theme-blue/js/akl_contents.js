@@ -1,5 +1,4 @@
 $(function(){
-
 /** ----- 브랜드 ----- */
 	//브랜드 상단 SNS
 	brandTopSNS();

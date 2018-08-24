@@ -570,7 +570,7 @@ function magazinSNS(){
 function brandTopSNS(){
 	
 	var windowWidth = $(window).width();
-	var _brandSns = $('.brand .bod-view-sns'); 
+	var _brandSns = $('.brand > div.bod-view-sns'); 
 	var _brnadH1 = $('.brand .brand-contents > h1').height(); 
 	var _brnadTxt = $('.brand .brand-contents > p.tit-txt').height(); 
 	var _top = 0;
