@@ -1,35 +1,31 @@
 $(function(){
 /** ----- 브랜드 ----- */
 	//브랜드 상단 SNS
-	//window.onload=function(){
+	brandTopSNS();
+	$(window).resize(function(){
 		brandTopSNS();
-	//}
+	});
 
 });
 
 /* 브랜드 모바일 SNS 위치 */
 function brandTopSNS(){
+	var $brandHeading = $('.brand .top-title-wrapper');
+	if(!$brandHeading.length){return;}
+
+	function titSpaceCal(){
+		var $brandSns = $('.brand .bod-view-sns');
+		var titHeight = $brandHeading.outerHeight(true);
+
+		//console.log('h1 높이: ' + titHeight);
+		$brandSns.css('top',titHeight);
+	}
 
 	var windowWidth = $(window).width();
-	if(windowWidth < 769) {
-		var _brandSns = $('.brand .bod-view-sns');
-		var _brnadH1 = $('.brand .brand-contents > h1').height();
-		var _brnadTxt = $('.brand .brand-contents > p.tit-txt').height();
-		var _top;
+	if(windowWidth < 769){
 
-		if($('.brand .brand-contents > h1').length){
-			_top = 20 + _brnadH1 + _brnadTxt;
-			
-			/*if (_brnadTxt){
-				_top = 20 + _brnadH1 + _brnadTxt;
-			}else{
-				_top = 15 + _brnadH1;
-			}*/
-		}
-		_brandSns.css('top',_top + 'px');
-		
+		setTimeout(function(){
+			titSpaceCal();
+		},300);
 	}
-	
-	console.log (_brnadH1, _brnadTxt);
-	console.log(_top);
 }
