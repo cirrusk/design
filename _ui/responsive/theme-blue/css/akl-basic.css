@@ -220,6 +220,7 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .point-new .point-area:after {position:absolute; content:''; display:block; top:0; left:0; background:url(../images/akl_common/ico-point-management2.png) no-repeat left top; width:26px;height:26px; background-size:26px auto }
 .ccount-my {float:right; color:#56565a}
 .ccount-my b {color:#002f5f;}
+.akl .mDashboard .mobile-popover-close {display:none}
 
 .menurlock-pop {}
 .menurlock-tit {}
@@ -263,6 +264,7 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 40px !important; height:66px;}
 .akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-image {width:40px;}
 .akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item .tab-title {font-weight:500;font-size:14px;font-family:'Noto Sans KR', sans-serif;}
+.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle .tab-image img { height:31px}
 
 /* header > navigation > 2depth,3depth */
 .akl .gnb-nav {padding:40px 240px 0 20px; height:420px; overflow:hidden;font-family:'Noto Sans KR', sans-serif; font-weight:400;}
@@ -668,7 +670,7 @@ h2[class^='title-'] {text-align:left; margin:0;}
 .akl .bt-akl-txt.normal {padding:7px 0 4px; text-align:center; min-width:auto}
 .akl button.bt-akl-blue,.akl button.bt-akl-white,.akl button.bt-akl-txt {padding:0 25px;font-size:14px;}
 .akl .bt-akl-blue,.akl a.bt-akl-blue,.akl .bt-akl-white,.akl a.bt-akl-white,.akl .bt-akl-txt,.akl a.bt-akl-txt {white-space:nowrap; text-align:center;}
-.akl .btn.btn-primary {height:40px !important;border:1px solid #002F5F; padding:0 28px ;min-width:auto;font-size:14px;font-weight:400; box-sizing:border-box;}
+.akl .btn.btn-primary {height:40px;border:1px solid #002F5F; padding:0 28px ;min-width:auto;font-size:14px;font-weight:400; box-sizing:border-box;}
 .akl .btn-primary:hover  {transition:background-color 0.3s, color 0.3s; transition:background-color 0.3s, color 0.3s;}
 .akl .btn.btn-primary span {font-size:14px; font-weight:400;}
 .akl .btn-cancel {font-size:14px;}
@@ -1223,7 +1225,7 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 .akl .category-soultion .product-list__item-retailprice.quantity {font-size:14px;font-weight:500;}
 .akl .product-list__item-abolabel {padding-top:10px;}
 .akl .product-list__item-abovalue {padding-top:10px;}
-
+.akl .product-list__item-count {display:none}
 .product-allchoice {clear:both;display:block;background:#f4f4f4;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;padding:0 20px;}
 .product-solition-top {padding:40px 0 0}
 
@@ -1396,7 +1398,8 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	/* header > navigation > 1depth */
 	header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers.col-sm-3 {min-width:180px; width:20%;}
 	.akl header.main-header .overlay-menu-container .overlay-menu .overlay-menu-headers .tab-header-list .tab-header-item a.tab-toggle {padding:17px 0 0 25px !important; height:66px;}
-	.akl .gnb-nav {padding-left:0; height:450px;}
+	.akl header.main-header .mobile-container .overlay-mobile-menu .overlay-menu-component-mobile-wrapper .panel-group .overlay-menu-mobile__panel__heading h4.panel-title .panel-toggle .tab-image img {height: 31px;}
+.akl .gnb-nav {padding-left:0; height:450px;}
 	.akl .overlay-menu-tab-left {padding:40px 0 0 20px; min-width:150px;}
 	.overlay-menu-container .search-results-close {right:15px;}
 	.tab-pane.gnb-nav .depth2-links>ul>li {min-height:40px;}
