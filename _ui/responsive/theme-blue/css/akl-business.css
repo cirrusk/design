@@ -18,9 +18,14 @@
 .container.amway-theme.business { position:relative;}
 .business-pop .link-btn { margin-bottom:15px }
 .business-pop-cont { padding-top:10px; }
-.business .list-content.business-type01 .content-list {padding:0}
-.business .list-content.business-type01 .content-list li { display:table-row; text-align:center; background: #fff; box-sizing:border-box;vertical-align: middle;width: 100%;margin: 0;border-top: none;}
-.business .list-content.business-type01 .content-list li > div { padding:18px 20px  }
+
+.business .list-content.business-type01 {display:block;}
+.business .list-content.business-type01 .list-row-title {overflow:hidden; display:block; width:100%; clear:both;}
+.business .list-content.business-type01 .list-row-title>div {display:block; float:left;}
+.business .list-content.business-type01 .content-list {padding:0; border-top:0;}
+.business .list-content.business-type01 .content-list .con-list-item > div {padding:18px 0; text-align:center; border-top:1px solid #eee;}
+.business .list-content.business-type01 .content-list .txte-wrap .bt-akl-white.mini {min-width:auto; color:#002F5F;}
+
 .business .list-content.business-type01 .content-list li:nth-child(even) {background:#f4f4f4;}
 .business .list-content.business-type01 .bt-akl-txt.list-type01 {min-width:0; height:auto; padding:0; border:0; background-color:initial}
 .business .list-content.business-type01 .con-list-item > div.thumb {padding-right:20px}
@@ -48,6 +53,7 @@
 .business .list-content.business-type01 .w60 {width:60%}
 .mob {display:none}
 
+.akl .view-ch-area {}
 /* 비즈니스 메인  action-report */
 .action-report {min-height:500px;}
 
@@ -1676,12 +1682,19 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.business .cart-popup__item-info {padding:25px 20px !important}
 	.business .m-hide {display:none !important}
 	.business .list-content.business-type01 .content-list li {text-align:left; }
+
+
+	.akl .business .view-ch-area .list-content.business-type01 .list-row-title {display:none}
+	.business .list-content.business-type01 .content-list .con-list-item > div {padding:6px 20px; border-top:0;}
+
 	.business .list-content.business-type01 .content-list li > div:first-child { padding-top:18px;  }
 	.business .list-content.business-type01 .content-list li > div:first-child span.txte-wrap{ text-align: left; width:100% }
 	.business .list-content.business-type01 .content-list li > div:first-child span.tite-label + span.txte-wrap{ text-align:right; width:auto }
 	.business .list-content.business-type01 .content-list.report02 .con-list-item span.tite-label { text-align:left;}
 	.business .list-content.business-type01 .content-list.report02 .con-list-item span.tite-label + span.txte-wrap {text-align:left; }
 	.business .list-content.business-type01 .content-list li > div:last-child { padding-bottom:20px }
+
+
 	.pc {display:none}
 	.mob {display:block}
 
@@ -1937,6 +1950,8 @@ table.clone thead, .clone tfoot{background:transparent;}
 	/* 비즈니스 > 나의 탑업 */
 	.topup-search { margin-top:38px; margin-bottom:20px; }
 	.business .topup-search .cuton-sel select  {width:100%; margin-bottom:15px; }
+	.business .topup-search .cuton-sel select+button{margin-left:0}
+
 	.business .topup-search:after {content:""; display:block; clear:both;}
 	.business .topup-search.type02 .cuton-sel select  {width:48%; margin-bottom:15px; float:left;}
 	.business .topup-search.type02 .cuton-sel select + select { float:right; margin-left:0; }
