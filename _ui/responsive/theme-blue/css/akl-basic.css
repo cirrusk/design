@@ -524,11 +524,11 @@ html.scrollLock body {overflow:hidden;}
 
 /* Layer: 동영상재생 */
 .akl #videobox  {display:none; position:fixed; top:50%; width:80%; max-width:800px; left:50%; height:auto;transform:translate(-50%,-50%); z-index:10000  }
-.akl #videobox #cboxTitle {padding:23px 0 15px; margin:0 40px;border-bottom:1px solid #e3e3e3; width:auto; left:0; right:0;display:block;}
+.akl #videobox #cboxTitle {position:static; height:auto; padding:23px 30px 20px 0; margin:0 40px; border-bottom:1px solid #e3e3e3; width:auto; display:block; float:none}
 .akl #videobox #cboxClose {right:30px; padding:5px 15px;}
-.akl #videobox #cboxTitle .headline {font-size:22px;line-height:22px; font-weight:500; font-family:'Noto Sans KR', sans-serif; color:#002f5f; letter-spacing:-1px;}
+.akl #videobox #cboxTitle .headline {font-size:22px;line-height:24px; font-weight:500; font-family:'Noto Sans KR', sans-serif; color:#002f5f; letter-spacing:-1px;}
 .akl .video-pop {background:#fff; display:block; margin:0 auto; width:100%; padding-bottom:50px; border:1px solid #c0c0c0;}
-.akl .popup-video-preview__content {padding:112px 40px 0}
+.akl .popup-video-preview__content {padding:40px 39px 0;}
 .akl #videobox .popup-video-preview__content .video-cont {display:table; position:relative; width:100%;}
 .akl #videobox .popup-video-preview__content .video-cont span {display:table-cell; height:396px; vertical-align:middle;}
 .akl .popup-video-preview__content .video-preview__img {height:100%;}
@@ -1593,10 +1593,10 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 
 	/* Layer: 동영상 크게보기 */
 	.akl #videobox {top:15px;width:auto; left:15px; right:15px; height:auto;transform:none;}
-	.akl .popup-video-preview__content {padding:50px 20px 0;}
+	.akl .popup-video-preview__content {padding:20px 20px 0;}
 	.akl .video-pop {padding-bottom:20px;}
-	.akl #videobox #cboxTitle {padding:15px 0 0;margin:0 20px;border-bottom:0;}
-	.akl #videobox #cboxTitle .headline {font-size:18px;line-height:18px;}
+	.akl #videobox #cboxTitle {padding:17px 30px 15px 0;margin:0 20px;}
+	.akl #videobox #cboxTitle .headline {font-size:18px;line-height:20px;}
 	.akl #videobox #cboxClose {right:6px; top:0;}
 	.akl #videobox .popup-video-preview__content .video-cont span {height:300px;}
 	.akl #videobox .popup-video-preview__content .video-cont span img {height:100%;}
