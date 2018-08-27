@@ -124,7 +124,7 @@
 									</ul>
 								</li>
 								<li><a href="#" class="menu-dep1">뉴핀 성취자</a></li>
-								<li><a href="#" class="menu-dep1">ABO TAX</a></li> 
+								<li><a href="#" class="menu-dep1">ABO TAX</a></li>
 							</ul>
 						</div>
 					</div>
@@ -138,7 +138,7 @@
 				<div class="outer-border-bottom">
 					<ul class="tabs-toggles">
 						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">월간 코어 보너스</span></a> </li>
-						<li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">여행 점수 성장 보너스 시뮬레이션</span></a></li>
+						<!-- <li class="tab-toggle-wrap"><a class="tab-toggle" href="#"><span class="toggle-text">여행 점수 성장 보너스 시뮬레이션</span></a></li> 2018.08.27 삭제 -->
 						<li class="tab-toggle-wrap active"><a class="tab-toggle" href="#"><span class="toggle-text">볼륨 성장 보너스 시뮬레이션</span></a></li>
 					</ul>
 				</div>
@@ -207,6 +207,24 @@
 						</div>
 						<div class="box-conts-group type-bottom0">
 							<h3>볼륨 성장 보너스 계산법</h3>
+							<!-- 수정 : 2018.08.27 (PF19) -->
+							<div class="box-diagram03">
+								<div class="diag-calculation">
+									<p>
+										<strong class="math-txt"><span class="ico-type-equal"><em class="hidden">보너스금액</em></span></strong>
+										<strong class="math-txt"><span class="ico-type-a"><em class="hidden">30</em><em>월간 코어<br>  보너스 평균</em></span></strong>
+										<strong class="math-txt multiply"><span class="ico-type-multiply"><em class="hidden">곱하기</em></span></strong>
+										<strong class="math-txt bracket"><span class="ico-type-bracket01"><em class="hidden">(</em></span></strong>
+										<strong class="math-txt"><span class="ico-type-b"><em class="hidden">%</em><em>핀 구간별<br>기본보너스</em></span></strong>
+										<strong class="math-txt plus"><span class="ico-type-plus"><em class="hidden">더하기</em></span></strong>
+										<strong class="math-txt last"><span class="ico-type-c"><em>추가<br>보너스</em></span></strong>
+										<strong class="math-txt bracket"><span class="ico-type-bracket02"><em class="hidden">)</em></span></strong>
+									</p>
+								</div>
+							</div>
+							<!-- //수정 : 2018.08.27 (PF19) -->
+
+							<!-- 수정 : 2018.08.27 (PF18 사용안함)
 							<div class="box-diagram">
 								<div class="diag-growth-bonus">
 									<p>
@@ -216,7 +234,7 @@
 										<strong class="math-txt last"><span class="ico-type-b"><em>핀 구간&amp;성장률에 따른 지급비율</em></span></strong>
 									</p>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="next-control">
 							<button type="button" class="bt-akl-blue">보너스 시뮬레이션하기</button>
@@ -254,17 +272,18 @@
 											</div>
 										</li>
 										<li>
-											<strong class="chartLegend">5% 이상 ~ 10% 미만</strong>
+											<strong class="chartLegend">5% 이상</strong><!-- 수정 : 2018.08.27 (text) -->
 											<div class="chartBar barSection_02">
-												<em class="chartNum">5,333,333</em><span><strong style="height:63%">여행 점수 성장률 5% 이상 ~ 10% 미만</strong></span>
+												<em class="chartNum">5,333,333</em><span><strong style="height:63%">여행 점수 성장률 5% 이상</strong></span><!-- 수정 : 2018.08.27 (text) -->
 											</div>
 										</li>
+										<!-- 수정 : 2018.08.27 (PF18 삭제)
 										<li>
 											<strong class="chartLegend">10% 이상</strong>
 											<div class="chartBar barSection_03">
 												<em class="chartNum">5,667,000</em><span><strong style="height:100%">여행 점수 성장률 10% 이상</strong></span>
 											</div>
-										</li>
+										</li> -->
 									</ul>
 								</div>
 								<!-- //차트 -->
