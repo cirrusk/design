@@ -438,13 +438,17 @@ Editor : HYEWON HWANG
 .xsenergy_mainlist li.wide1 {width:66.65%;}
 .xsenergy_mainlist li.wide2, .xsenergy_mainlist li.wide3{width:66.67%;}
 .xsenergy_mainlist li img {display:block;width:100%;height:auto;}
-.xsenergy_mainlist .txt-wrap {position:absolute;top:25px;left:30px;line-height:1.5;}
-.xsenergy_mainlist .txt-wrap span {display:block;font-size:16px;color:#fff;}
-.xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;}
+.xsenergy_mainlist .txt-wrap {position:absolute;top:0;left:0;padding:25px 0 0 30px;width:100%;height:100%;line-height:1.5;font-size:16px;color:#fff;}
+.xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;letter-spacing:0;}
 .xsenergy_mainlist li > a {position:absolute;top:0;width:100%;height:100%;display:block;color:#fff;}
 .xsenergy_mainlist li > a:hover {color:#fff;}
 .xsenergy_mainlist .video-btn img {position:absolute;top:50%;left:50%;margin:-20px 0 0 -40px;height:80px;width:80px;}
-.xsenergy_mainlist .sns-link span {position:absolute;bottom:25px;left:30px;}
+.xsenergy_mainlist .sns-btn span {position:absolute;bottom:25px;left:30px;text-transform:uppercase;}
+.xsenergy_mainlist li.wide1 .txt-wrap {top:40%;left:0;padding-left:10%;font-size:22px;}
+.xsenergy_mainlist .link-btn {position:absolute;top:54%;left:0;padding-left:10%;}
+.xsenergy_mainlist .link-btn .bt-akl-blue {height:50px;font-size:16px;}
+.xsenergy_mainlist li.wide2 .txt-wrap .hashtag {position:absolute;top:60%;left:10%;font-size:26px;}
+
 @media (max-width: 1024px){
 	.xsenergy_mainlist li {width:50%;}
 	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
@@ -454,6 +458,10 @@ Editor : HYEWON HWANG
 }
 @media (max-width: 630px){
 	.xsenergy_mainlist li {width:100% !important;}
+	.xsenergy_mainlist li.wide1 .txt-wrap {font-size:16px;}
+	.xsenergy_mainlist li.wide2 .txt-wrap .hashtag {font-size:18px;}
+	.xsenergy_mainlist .link-btn {top:58%;}
+	.xsenergy_mainlist .link-btn .bt-akl-blue {font-size:14px;height:40px;line-height:1.6;}
 }
 
 
