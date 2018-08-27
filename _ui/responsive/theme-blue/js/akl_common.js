@@ -100,6 +100,7 @@
 		MAIN_featuredProduct();
 	});
 
+
 /** ----- SHOP ----- */
 
 	//2018.03.12 카테고리 왼쪽메뉴
@@ -2271,9 +2272,9 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 				'left':leftPosition,
 				'width':(_winWidth - 20),
 				'margin-top': -(targetHeight_video/2),
-				'margin-left':-(targetWidth_video/2),
-				'-webkit-transition':'left .5s',
-				'transition':'left .5s'
+				'margin-left':-(targetWidth_video/2)
+				//, '-webkit-transition':'left .5s',
+				//'transition':'left .5s'
 			});
 		}
 
