@@ -667,7 +667,7 @@ h2[class^='title-'] {text-align:left; margin:0;}
 .akl a.bt-akl-txt:hover,.akl a.bt-akl-txt:focus,.akl a.bt-akl-txt:active {color:#002f5f;text-decoration:underline !important}
 .akl .bt-akl-txt.large {height:60px;font-size:20px;}
 .akl .bt-akl-txt.mini {font-size:12px;padding:3px 15px 4px;height:25px;}
-.akl .bt-akl-txt.normal {padding:7px 0 4px; text-align:center; min-width:auto}
+.akl .bt-akl-txt.normal {padding:7px 0 4px; text-align:center; min-width:initial}
 .akl button.bt-akl-blue,.akl button.bt-akl-white,.akl button.bt-akl-txt {padding:0 25px;font-size:14px;}
 .akl .bt-akl-blue,.akl a.bt-akl-blue,.akl .bt-akl-white,.akl a.bt-akl-white,.akl .bt-akl-txt,.akl a.bt-akl-txt {white-space:nowrap; text-align:center;}
 .akl .btn.btn-primary {height:40px;border:1px solid #002F5F; padding:0 28px ;min-width:auto;font-size:14px;font-weight:400; box-sizing:border-box;}
@@ -1780,7 +1780,9 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.col-search-tab {position:relative; margin:0 0 30px;}
 	.col-search-tab:before {content:''; position:absolute; box-sizing:content-box; width:100%; padding-left:15px; padding-right:15px; height:1px; left:-15px; right:0; bottom:0; background:#dadada;}
 	.col-search-tab ul {overflow-x:auto; overflow-y:hidden; margin-left:0; border:0; width:auto;}
-	.col-search-tab ul li {background:#fff;display:inline-table; display:block; flex:auto !important; width:auto;	margin:0; justify-content:center; align-items:center;}
+	/* 
+	.col-search-tab ul li {background:#fff;display:inline-table; display:block; flex:auto !important; width:auto; margin:0; justify-content:center; align-items:center;} */
+	.col-search-tab ul li {display:flexbox; flex:auto !important; width:auto; margin:0; justify-content:center; align-items:center;}
 	.col-search-tab ul li.active a:before {content:''; position:absolute; top:auto; bottom:0; left:0; right:0; border-top:4px solid #008fc5;}
 	.col-search-tab ul li a {display:block; padding:15px 20px; word-break:keep-all; white-space:nowrap; color:#55565a; font-size:14px; font-weight:500; vertical-align:middle; line-height:120%; background:none; border:0;}
 	.col-search-tab ul li:nth-of-type(7) {width:auto;}
