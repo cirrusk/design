@@ -2,8 +2,12 @@ $(function(){
 /** ----- 브랜드 ----- */
 	//브랜드 상단 SNS
 	brandTopSNS();
+	//XS에너지 홈 
+	xsEnergyHome();
+	
 	$(window).resize(function(){
 		brandTopSNS();
+		xsEnergyHome();
 	});
 
 });
@@ -27,9 +31,32 @@ function brandTopSNS(){
 			titSpaceCal();
 		},300);
 	}
-	else if(windowWidth > 768){
+	else{
 		setTimeout(function(){
 			$brandSns.css('top','0');
 		},300);
+	}
+}
+/* XS에너지 홈 */
+function xsEnergyHome(){
+	
+	var $xsenergyList = $('.xsenergy_mainlist');
+	if(!$xsenergyList.length){return;}
+	
+	var colmn = $xsenergyList.children('li').eq(8);
+	var colmnHeight = colmn.height() + 0.01;
+	var windowWidth = $(window).width();
+	
+	function colmnTop(){
+		colmn.css('margin-top',-colmnHeight+'px');
+	}
+	
+	//console.log(colmnHeight);
+	
+	if(windowWidth > 1024) {
+		colmnTop();
+	}
+	else{
+		colmn.css('margin-top','0');
 	}
 }

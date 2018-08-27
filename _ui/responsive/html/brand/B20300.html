@@ -25,30 +25,38 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 플러그인 : 2018.08.24 추가  -->
 <script type="text/javascript">
 $(function() {
-	
+/*	
 	var windowWidth = $(window).width();
 	var colmn = $('.xsenergy_mainlist li').eq(8);
 	var colmnHeight = colmn.height() + 0.01;
 	
-	if(windowWidth > 1024) {
-		
-		colmn.css('margin-top',-colmnHeight+'px');
-		console.log(colmnHeight);
-		
-		$(window).resize(function() {
-			var colmnHeight = colmn.height() + 0.01;
+	xsenergyHome();
+	
+	function xsenergyHome(){
+	
+		if(windowWidth > 1024) {
+			
 			colmn.css('margin-top',-colmnHeight+'px');
-		});
-		
+			console.log(colmnHeight);
+			
+			$(window).resize(function() {
+				var colmnHeight = colmn.height() + 0.01;
+				colmn.css('margin-top',-colmnHeight+'px');
+			});
+		}
 	}
+	
 	$(window).resize(function() {
+		
+		xsenergyHome();
 		// 창 크기 바뀌면 리로딩.
-		 if (self.name != 'reload') {
+		if (self.name != 'reload') {
 	         self.name = 'reload';
 	         self.location.reload(true);
 	     }
 	     else self.name = '';
-	});
+	     
+	}); */
 });
 </script>
 </head>
@@ -178,9 +186,12 @@ $(function() {
 					<li class="wide2">
 						<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main08.jpg" alt="" /></div>
 						<div class="txt-wrap">
-							<em>XS에너지드링크 Instagram</em>
+							<em>XS에너지 Instagram</em>
 							<span class="hashtag">베스트 인증샷 이벤트<br>#2018XS풀파티<br>#XS풀파티</span>
 						</div>
+						<a class="sns-btn" target="_blank" href="#">
+							<span class="arr1">Instagram 바로가기</span>
+						</a>
 					</li>
 					<li>
 						<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main09.jpg" alt="" /></div>
@@ -192,15 +203,18 @@ $(function() {
 						</a>
 					</li>
 					<li>
-						<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main10.jpg" alt="" /></div>
+						<div class="view-img">
+							<img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main10.jpg" alt="" class="pc" />
+							<img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main10_mob.jpg" alt="" class="mob" />
+						</div>
 						<div class="txt-wrap">
-							<em>XS에너지드링크 Facebook</em>
+							<em>XS에너지 Facebook</em>
 						</div>
 						<a class="sns-btn" target="_blank" href="#">
 							<span class="arr1">Facebook 바로가기</span>
 						</a>
 					</li>
-					<li class="wide3">
+					<li class="wide3 pc">
 						<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_main11.jpg" alt="" /></div>
 					</li>
 				</ul>
