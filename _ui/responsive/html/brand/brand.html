@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>브랜드통합 | ABN Korea</title>
+	<title>브랜드 콘텐츠 레이아웃 | ABN Korea</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -33,12 +33,14 @@
 
 	<main>
 		<div id="header"></div>
-		<div class="container-fluid main-container" id="contents">
+		<!-- ## 브랜드 전체메뉴 영역 -->
+		<div id="brandMenu" class="container-fluid">
 			<div class="print-hide breadcrumb-section">
 				<ol class="breadcrumb">
-					<li><a href="#">홈</a></li> 
-					<li><a href="homepage-logged-in.html">암웨이소식</a></li>
-					<li>공지사항</li>
+					<li><a href="#">홈</a></li>
+					<li>암웨이소개</li>
+					<li>2 Depth</li>
+					<li>3 Depth</li>
 				</ol>
 			</div>
 			<div class="jump-to-amway">
@@ -77,19 +79,71 @@
 			</div>
 			<!-- //jump-to-amway -->
 		</div>
-		<div class="container">
-			<div class="brand-area">
-				<h1 class="title-h2">브랜드 타이틀</h1> 
-				<div class="brand-wrap amway-theme">
-					 컨텐츠
+
+		<!-- ## 컨텐츠 영역 -->
+		<div class="main-container brand amway-theme" id="contents">
+			<!-- sns 영역 -->
+			<div class="bod-view-sns">
+				<div class="print">
+					<a href="#" id="NotificationBoard_Print"><img src="/_ui/responsive/theme-blue/images/new_Print.png" alt="Print"></a>
+				</div>
+				<div class="url-copy">
+					<a href="#dfd" id="NotificationBoard_URL"><img src="/_ui/responsive/theme-blue/images/new_ie_URL.png" alt="ie_URL"></a>
+					<div class="url_pop">
+						<div class="cart-popup-area">
+							<div class="pop-area-header">
+								<a href="#dfde" class="cart-popup-close">
+									<img src="/_ui/responsive/theme-blue/images/akl_common/ico_url_closed.png" alt="닫기">
+								</a>
+							</div>
+							<div class="pop-area-body">
+								<p>주소가 복사되었습니다.<br>
+								원하는 곳에 붙여넣기(Ctrl+V) 해주세요.</p>
+								<div class="form-group">
+									<input type="text" class="form-control" value="https://goo.gl/Pjy3en" aria-label="https://goo.gl/Pjy3en" title="주소 복사">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="kakaotalk">
+					<a href="#" id="NotificationBoard_Kakaotalk"><img src="/_ui/responsive/theme-blue/images/new-talk.png" alt="kakaotalk"></a>
+				</div>
+				<div>
+					<a href="#" id="NotificationBoard_Kakaostory"><img src="/_ui/responsive/theme-blue/images/new-Kakaostory.png" alt="Kakaostory"></a>
+				</div>
+				<div>
+					<a href="#" id="NotificationBoard_Facebook" class="sns-notice"><img src="/_ui/responsive/theme-blue/images/facebook.png" alt="facebook"></a>
+				</div>
+				<div>
+					<a href="#" id="NotificationBoard_Band"><img src="/_ui/responsive/theme-blue/images/new-Band.png" alt="Band"></a>
+				</div>
+				<div>
+					<a href="#" id="NotificationBoard_Twitter"><img src="/_ui/responsive/theme-blue/images/new-twitter2.png" alt="twitter"></a>
 				</div>
 			</div>
-		</div>
+			<!-- //sns 영역 -->
 
+			<div class="brand-contents history"> <!-- 필요 시 서브페이지 별 css 추가 -->
+				<div class="top-title-wrapper">
+					<h1 class="title-h2">브랜드 페이지 제목</h1>
+				</div>
+
+				<section style="height:300px;">
+				콘텐츠 내용..
+				</section>
+
+			</div>
+		</div> <!-- //container -->
 
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-
+	<script type="text/javascript">
+	    $(function() {
+	       //스크립트 삽입 위치
+	    });
+	</script>
 </body>
 </html>
