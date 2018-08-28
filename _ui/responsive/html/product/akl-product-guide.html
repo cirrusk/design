@@ -86,12 +86,12 @@
 											<li class="num04"><a href="#none">4. 제품구성 및 특징(기본공통)</a></li>
 											<li class="num05"><a href="#none">5. 사용방법 및 사용순서 등(기본공통)</a></li>
 											<li class="num06"><a href="#none">6. 텍스트 (뎁스 리스트)</a></li>
-											<li><a href="#num-a">A. 영양건강</a></li>
-											<li><a href="#num-b">B. 뷰티</a></li>
-											<li><a href="#num-c">C. 배스바디</a></li>
-											<li><a href="#num-d">D. 원포원</a></li>
-											<li><a href="#num-e">E. 사업보조용품</a></li>
-											<li><a href="#num-f">F. 기타</a></li>
+											<li><a href="nutrition-health-guide.html">A. 영양건강</a></li>
+											<li><a href="#none">B. 뷰티</a></li>
+											<li><a href="#none">C. 배스바디</a></li>
+											<li><a href="#none">D. 원포원</a></li>
+											<li><a href="#none">E. 사업보조용품</a></li>
+											<li><a href="#none">F. 기타</a></li>
 										</ol>
 									</div>
 									
@@ -2215,10 +2215,12 @@
 	$(function(){
 		$('.product-body-view').find('> div').hide().eq(0).show();
 		$('.product-body-nemu-lnb > ol li a').click(function(){
-			var idNum = $(this).parent().attr('class');
-			$('.product-body-view').find('> div').hide();
-			$('.product-body-view').find('#' + idNum).show();
-			return false;
+			if($(this).parent().index() < 6){
+				var idNum = $(this).parent().attr('class');
+				$('.product-body-view').find('> div').hide();
+				$('.product-body-view').find('#' + idNum).show();
+				return false;
+			}
 		});
 	});
 	</script> 
