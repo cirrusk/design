@@ -58,9 +58,10 @@ Editor :
 
 .lay-box-col3 {display:flex;flex-wrap:wrap;overflow:hidden;margin:25px -12px -15px;}
 .lay-box-col3 li {position:relative;width:calc(33.333% - 24px);margin:0 12px 20px;display:block;border:1px solid #f4f4f4;text-align:center;}
-.lay-box-col3 li img {width:auto;max-width:100%;}
-.lay-box-col3 li > div {height:100%;}
-.lay-box-col3 li .txt-bx {padding:15px 15px 10px;min-height:94px;background:#f4f4f4;color:#002f5f;font-size:16px;text-align:left;}
+.lay-box-col3 li > div {height:100%;background:#f4f4f4;}
+.lay-box-col3 li .img {display:block;background:#fff;padding:30px 20px 0;}
+.lay-box-col3 li .img img {width:auto;max-width:100%;}
+.lay-box-col3 li .txt-bx {padding:15px 15px 15px;color:#002f5f;font-size:16px;text-align:left;}
 .lay-box-col3 li .txt-bx p {margin:0 !important;}
 .lay-box-col3 li .txt-bx strong {font-size:18px;}
 
@@ -339,6 +340,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.list-style-info li span {float:none;display:block;margin-top:5px;}
 
 	.lay-box-col3 li {width:100%}
+	.lay-box-col3 li .img {padding:0;}
 	.lay-box-col3 li .txt-bx {min-height:auto;}
 
 	.brand h2.title-h4:not(:first-child) {margin:35px 0 10px !important; font-size:20px;}
