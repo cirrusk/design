@@ -19,7 +19,7 @@ Editor :
 .cart-popup__item-info .img-bnr {margin:20px 0 25px;}
 
 .brand .numList {margin-top:12px;}
-.brand .numList > li { line-height:23px;padding-left:10px;text-indent:-10px;}
+.brand .numList > li {line-height:23px;padding-left:10px;text-indent:-10px;}
 .brand .numList > li li {font-weight:normal;text-indent:0}
 
 
@@ -58,9 +58,10 @@ Editor :
 
 .lay-box-col3 {display:flex;flex-wrap:wrap;overflow:hidden;margin:25px -12px -15px;}
 .lay-box-col3 li {position:relative;width:calc(33.333% - 24px);margin:0 12px 20px;display:block;border:1px solid #f4f4f4;text-align:center;}
-.lay-box-col3 li img {width:auto;max-width:100%;}
-.lay-box-col3 li > div {height:100%;}
-.lay-box-col3 li .txt-bx {padding:15px 15px 10px;min-height:94px;background:#f4f4f4;color:#002f5f;font-size:16px;text-align:left;}
+.lay-box-col3 li > div {height:100%;background:#f4f4f4;}
+.lay-box-col3 li .img {display:block;background:#fff;padding:30px 20px 0;}
+.lay-box-col3 li .img img {width:auto;max-width:100%;}
+.lay-box-col3 li .txt-bx {padding:15px 15px 15px;color:#002f5f;font-size:16px;text-align:left;}
 .lay-box-col3 li .txt-bx p {margin:0 !important;}
 .lay-box-col3 li .txt-bx strong {font-size:18px;}
 
@@ -319,7 +320,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand [class*="box-bnr"] .txt-wrap > strong, .brand [class*="box-bnr"] .txt-wrap .txt-right strong, .brand [class*="box-bnr"] .txt-wrap .t1 {font-size:28px;line-height:32px;}
 	.brand [class*="box-bnr"] .txt-wrap p, .brand [class*="box-bnr"] .txt-wrap ul {display:none;margin:5px 0 0;font-size:14px;}
 	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block;}
-	.brand .box-bnr-03 .txt-wrap {top:40px;left:20px;transform:none;text-align:left;width:90%;}s
+	.brand .box-bnr-03 .txt-wrap {top:40px;left:20px;transform:none;text-align:left;width:90%;}
 	.brand .box-bnr-02 .txt-wrap p, .brand .box-bnr-03 .txt-wrap p, .brand .box-bnr-09 .txt-wrap p {display:block;}
 	.brand .box-bnr-03 .txt-wrap p span {display:inline;}
 	.brand .box-bnr-04 .txt-wrap strong {color:#fff;}
@@ -328,7 +329,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand .box-bnr-08 .txt-wrap strong {font-weight:700;}
 	.brand .box-bnr-08 .txt-wrap strong span {font-size:16px;}
 	.img-bnr {margin:20px 0 35px;}
-	.img-bnr-bg {margin:20px 0 35px;padding:30px 15px;}
+	.img-bnr-bg {margin:20px 0 35px;padding:30px 0 15px;}
+	.img-bnr-bg img.mob {display:inline-block !important;max-width:305px;width:100%;}
 	.lay-box-2 {margin:0;display:block;}
 	.lay-box-2 > div {width:100%;padding:0;margin-top:15px;}
 	.lay-box-4 {margin:-10px -6px -10px;}
@@ -339,6 +341,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.list-style-info li span {float:none;display:block;margin-top:5px;}
 
 	.lay-box-col3 li {width:100%}
+	.lay-box-col3 li .img {padding:0;}
 	.lay-box-col3 li .txt-bx {min-height:auto;}
 
 	.brand h2.title-h4:not(:first-child) {margin:35px 0 10px !important; font-size:20px;}
