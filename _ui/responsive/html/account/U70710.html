@@ -462,15 +462,20 @@
 					<div class="form-wrapper search-form-wrapper js-filter-form-wrapper col-md-4">
 						<div class="sort-cell cuton-sel">
 							<label class="control-label hidden-xs" for="sop_sort_filter1">필터</label>
+
+							<!-- 수정 : 2018.08.28(옵션변경) -->
 							<select name="sortFilter" class="form-control" id="sop_sort_filter1">
-								<option>혜택없음</option>
+								<option>전체</option>
 								<option>혜택있음</option>
+								<option>혜택없음</option>
 							</select>
 							<select name="sortFilter" class="form-control" id="sop_sort_filter2">
 								<option>전체</option>
 								<option>진행</option>
+								<option>완료 </option>
 								<option>취소</option>
 							</select>
+							<!-- //수정 : 2018.08.28(옵션변경) -->
 						</div>
 					</div>
 					<!-- //필터 -->
@@ -486,7 +491,7 @@
 						<div class="col-md-1 type-numb">수량</div>
 						<div class="col-md-1 type-option">옵션</div>
 						<div class="col-md-2 type-price">가격(원)</div>
-						<div class="col-md-2">PV/BV</div>
+						<div class="col-md-2">합계(원)/PV/BV</div><!-- 수정 : 2018.08.28(text) -->
 						<div class="col-md-1 data-cell">자동연장</div>
 						<div class="col-md-2"><span class="hidden">상세보기/제품취소</span></div>
 					</div>
@@ -510,6 +515,7 @@
 						<div class="col-md-1 hidden-xs">60팩</div>
 						<div class="col-md-2 hidden-xs">35,000</div>
 						<div class="col-md-2 data-cell">
+							<span class="txt-price">35,000</span><!-- 수정 : 2018.08.28(추가) -->
 							<span class="txt-pv">18,300 PV</span>
 							<span class="txt-bv">29,100 BV</span>
 						</div>
@@ -534,6 +540,7 @@
 						<div class="col-md-1 hidden-xs">60팩</div>
 						<div class="col-md-2 hidden-xs">35,000</div>
 						<div class="col-md-2 data-cell">
+							<span class="txt-price">35,000</span><!-- 수정 : 2018.08.28(추가) -->
 							<span class="txt-pv">18,300 PV</span>
 							<span class="txt-bv">29,100 BV</span>
 						</div>
@@ -555,6 +562,7 @@
 						<div class="col-md-1 hidden-xs">60팩</div>
 						<div class="col-md-2 hidden-xs">35,000</div>
 						<div class="col-md-2 data-cell">
+							<span class="txt-price">18,300</span><!-- 수정 : 2018.08.28(추가) -->
 							<span class="txt-pv">18,300 PV</span>
 							<span class="txt-bv">29,100 BV</span>
 						</div>
@@ -564,6 +572,27 @@
 					</div>
 				</div>
 				<!-- //주문 상품목록 -->
+
+
+				<!-- 목록 없음  --><!-- 수정 : 2018.08.28(추가) -->
+				<div class="list-content mysop-list mysop-monthly-list-content">
+					<div class="list-row-title row hidden-xs">
+						<div class="col-md-3 type-prdt">제품</div>
+						<div class="col-md-1 type-numb">수량</div>
+						<div class="col-md-1 type-option">옵션</div>
+						<div class="col-md-2 type-price">가격(원)</div>
+						<div class="col-md-2">합계(원)/PV/BV</div>
+						<div class="col-md-1 data-cell">자동연장</div>
+						<div class="col-md-2"><span class="hidden">상세보기/제품취소</span></div>
+					</div>
+					<div class="list-row-content row">
+						<div class="sop-no-items">
+							<div class="search-no-result"><p>진행중인 정기주문&스마트오더 프로그램이 없습니다</p></div>
+							<a href="#" class="bt-akl-blue">스마트오더 프로그램 제품보기</a>
+						</div>
+					</div>
+				</div>
+				<!-- //목록 없음  --><!-- //수정 : 2018.08.28(추가) -->
 
 
 				<!-- 주문내역 -->
@@ -599,6 +628,14 @@
 								<div class="col-md-2 col-xs-5 col-xs-rig">완료</div>
 								<div class="col-md-2 col-xs-12">암웨이 플라자</div>
 							</div>
+							
+							<!-- 내역 없음  --><!-- 수정 : 2018.08.28(추가) -->
+							<div class="list-row-content row">
+								<div class="col-md-12 col-xs-12">
+									<div class="search-no-result"><p>이 달에 주문 완료된 내역이 없습니다</p></div>
+								</div>
+							</div>
+							<!-- //내역 없음  --><!-- 수정 : 2018.08.28(추가) -->
 						</div>
 					</div>
 				</div>

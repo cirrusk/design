@@ -461,15 +461,20 @@
 					<div class="form-wrapper search-form-wrapper js-filter-form-wrapper col-md-6">
 						<div class="sort-cell cuton-sel">
 							<label class="control-label hidden-xs" for="sop_sort_filter1">필터</label>
+
+							<!-- 수정 : 2018.08.28(옵션변경) -->
 							<select name="sortFilter" class="form-control" id="sop_sort_filter1">
-								<option>혜택없음</option>
+								<option>전체</option>
 								<option>혜택있음</option>
+								<option>혜택없음</option>
 							</select>
 							<select name="sortFilter" class="form-control" id="sop_sort_filter2">
 								<option>전체</option>
 								<option>진행</option>
+								<option>완료 </option>
 								<option>취소</option>
 							</select>
+							<!-- //수정 : 2018.08.28(옵션변경) -->
 						</div>
 					</div>
 					<!-- //필터 -->
@@ -487,6 +492,7 @@
 									<a href="#" class="ico-sop-benefits ico-sop-guide"><em>info</em></a>
 								</div>
 								<div class="right-info">
+									<span class="ico-sop-pending">미결제</span><!-- 수정 : 2018.08.28(추가) -->
 									<span class="ico-sop-benefits ico-sop-discount">할인</span>
 									<span class="ico-sop-benefits ico-sop-pvbv">PV/BV up</span>
 									<span class="ico-sop-benefits ico-sop-gift">선물</span>
@@ -538,7 +544,7 @@
 									</div>
 									<div class="col-md-1"><span class="circle-green">2</span></div>
 									<div class="col-md-1"><span class="circle-green">2</span></div>
-									<div class="col-md-1">2</div>
+									<div class="col-md-1"><span class="circle-red">2</span></div><!-- 수정 : 2018.08.28(case pending 추가) -->
 									<div class="col-md-1">2</div>
 									<div class="col-md-1">4</div>
 									<div class="col-md-1">4</div>
