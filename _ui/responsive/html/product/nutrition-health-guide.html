@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>제품 상세정보</title>
+	<title>bath body guide</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -22,7 +22,13 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
-	
+
+	<style>
+		/*가이드임시*/
+		p.title-h6 {clear:both;display:block;color:#f00000 !important; font-size:26px !important; margin:0 auto !important;overflow:hidden;padding:70px 0 30px !important;}
+
+	</style>
+
 </head>
 
 <body class="akl">
@@ -33,15 +39,26 @@
 	<!-- //skipToContent -->
 
 	<main>
-		
+		<div id="header"></div>
+		<div class="container-fluid main-container" id="contents">
+			<div class="print-hide breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="#">홈</a></li>
+					<li><a href="#">뷰티</a></li>
+					<li><a href="category-page.html">베스바디</a></li>
+					<li class="active">치약</li>
+				</ol>
+			</div>
+		</div>
+		<div class="header-margin hidden-sm hidden-xs"></div>
+
 		<div class="container-fluid main-container">
+
 			<div class="amway-theme">
-				
 				<div class="accordion-element new-accordion-element" id="productPageAccordion" role="tablist" aria-multiselectable="true">
 					<div class="panel panel-default accordion-panel">
-						
 						<div class="accordion-panel-heading">
-							<div class="accordion-toggle collapsed"><!-- toggle 기능 삭제, 태그변경 2018.03.13 -->
+							<div class="accordion-toggle collapsed">
 								<div class="accordion-panel-title panel-title">
 									<span class="accordion-title-wrapper">
 										<span class="title-element accordion-header-icon no-icon"></span>
@@ -51,12 +68,12 @@
 								</div>
 							</div>
 						</div>
-						
-						<div class="accordion-panel-collapse"><!--  in - 첫번째 열어놓는 클래스 2018.03.13 id값,toggle 삭제  -->
+						<div class="accordion-panel-collapse">
 							<div class="panel-body product-detail">
 								<div class="accordion-collapse-wrapper">
-									<!-- 제품 상세영역 시작 -->
-									<div class="product-body-view nutrition-health">
+									<!-- 제품상세부분 시작 class 변경 -->
+									<div class="product-body-view">
+									
 										<!--  content 영역 -->
 										<div class="detail-content-area">
 											
@@ -1118,17 +1135,21 @@
 											
 										</div>
 										<!--  //content 영역 -->
+
 									</div>
-									<!-- //제품 상세영역 끝 -->
+									<!-- //제품상세부분 End -->
 								</div>
 							</div>
 						</div>
-							
 					</div>
+
 				</div>
 			</div>
-			
+
 		</div>
+
+		<div id="quick"></div>
+		<div id="footer"></div>
 	</main>
 
 </body>
