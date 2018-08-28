@@ -356,30 +356,30 @@ function tabsTgg_Control(){
 	_tabsToggles.each(function(){
 		var _UL = $(this);
 		var _LI = _UL.find('li');
+		var Wrapper = _UL.parent('.tabWrapper');
 
 		/* -- object 추가 (스크롤 영역 표시 용)-- */
-
 		var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
-		var siblings_El = $(this).siblings(scrollableDiv);
+		var siblings_El = Wrapper.siblings(scrollableDiv);
 
 		//Type1 기본
-		var find_OuterBorder = $(this).parent('.outer-border-bottom');
+		var find_OuterBorder = _UL.parents('.outer-border-bottom');
 		if( find_OuterBorder.length ){
 			find_OuterBorder.addClass('border-none'); //border-bottom 삭제
 
 			if ( siblings_El.length ){ return; }
 			else {
-				_UL.wrap('<div class="tabWrapper"/>');
+				_UL.wrap('<div class="tabWrapper"/>'); //ul wrapper 추가
 				find_OuterBorder.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>');
 			}
 		}
 
 		//Type2 균등분할
-		var find_searchTab = $(this).parent('.col-search-tab');
+		var find_searchTab = _UL.parents('.col-search-tab');
 		if (find_searchTab.length){
 			if ( siblings_El.length ){ return; }
 			else {
-				_UL.wrap('<div class="tabWrapper"/>');
+				_UL.wrap('<div class="tabWrapper"/>'); //ul wrapper 추가
 				find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>');
 			}
 		}
@@ -418,8 +418,8 @@ function tabsTgg_Control(){
 		});
 
 		/* --- 스크롤 가능 표시 컨트롤 --- */
-		var leftDiv = $(this).siblings('.scrollable-area.left');
-		var righttDiv = $(this).siblings('.scrollable-area.right');
+		var leftDiv = $(this).parent().siblings('.scrollable-area.left');
+		var righttDiv = $(this).parent().siblings('.scrollable-area.right');
 		var $scrollArea = {
 				mob : function(){
 					if( _UL.is('.scroll-tab')){
@@ -454,8 +454,8 @@ function tabsTgg_Control(){
 			width_check();
 		});
 
-		_UL.scroll(function(event){
-			var targetWrapperSize = $(this).width(); //A. wrapper : ul
+		_UL.parent('.tabWrapper').scroll(function(event){
+			var targetWrapperSize = $(this).width(); //A. wrapper
 			var actualContentSize = event.currentTarget.scrollWidth; //B. 스크롤되는 컨텐츠 길이
 			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤바 움직인 길이 (x좌표가 움직인 거리)
 
@@ -464,17 +464,18 @@ function tabsTgg_Control(){
 
 			if (scrolledPosition < 30) {
 				//스크롤 시작
-				$(this).siblings('.scrollable-area.left').hide();
-				$(this).siblings('.scrollable-area.right').show();
+				leftDiv.hide();
+				righttDiv.show();
 			}
 			else if ( scrollable_width === scrolledPosition ){
 				//스크롤 끝, 스크롤 가능 길이(D) === 움직인 길이(C)
-				$(this).siblings('.scrollable-area.left').show();
-				$(this).siblings('.scrollable-area.right').hide();
+				leftDiv.show();
+				righttDiv.hide();
 			}
 			else {
 				//움직이는 중, 스크롤 움직인 상태
-				$(this).siblings('.scrollable-area.left , .scrollable-area.right').show();
+				leftDiv.show();
+				righttDiv.show();
 			}
 		});
 	});
