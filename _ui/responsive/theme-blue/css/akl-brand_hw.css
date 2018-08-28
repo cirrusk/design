@@ -3,6 +3,7 @@ Version :AKL Hybris UIUX 1.0
 Date :2018-07-02
 Editor :
 *************************************************/
+.view-m {display:none;}
 
 [class*="br-box-cont"] .title-h5 {letter-spacing:-1px;}
 [class*="br-box-cont"] .title-h6 {letter-spacing:-1px;color:#002f5f;}
@@ -16,17 +17,17 @@ Editor :
 .img-bnr-bg {margin:35px 0 45px;padding:40px;overflow:hidden;background:#f4f4f4;text-align:center;}
 .img-bnr-bg img {max-width:100%;}
 
-.cart-popup__item-info .img-bnr {margin:20px 0 25px;}
-
+.cart-popup__item-info p + .img-bnr {margin:20px 0 25px;}
+.cart-popup__item-info .img-bnr {margin-top:0;}
 .brand .numList {margin-top:12px;}
 .brand .numList > li {line-height:23px;padding-left:10px;text-indent:-10px;}
 .brand .numList > li li {font-weight:normal;text-indent:0}
 
-
 .brand .title-txt01 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
-.brand .title-txt02 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#55565a;}
-.brand .title-txt03 {font-size:14px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
+.brand .title-txt02, .layerWrapper .title-txt02 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#55565a;}
+.brand .title-txt03, .layerWrapper .title-txt03 {font-size:14px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
 .brand h2.title-h4 {color:#55565a;}
+.layerWrapper p + .title-txt02 {display:block;margin-top:30px;} 
 
 .team-player-box {overflow:hidden;}
 .team-player-box .team-tit {float:right;padding-left:12px;width:50%;margin-top:0;font-size:34px;letter-spacing:-2px;color:#002F5F;line-height:100%;font-weight:500;}
@@ -83,7 +84,6 @@ Editor :
 
 .brand .list-star > li {background:url(../images/akl_common/ico_star.png) no-repeat left 5px;padding:0 0 4px 10px;line-height:18px;}
 
-
 /* 식물영양소 캠페인 */
 .content-row article [class*="cont-type"] figcaption + .box-txt-list {margin:0;padding:0 20px 50px;line-height:1.8;}
 div.box-txt-list .list-type5 {padding:0;}
@@ -129,8 +129,6 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .media-borad-list-gallery li a .tag {background:#002f5f;}
 .media-borad-list-gallery li a .tag span {display:inline-block;padding-left:20px;background:url(../images/akl_brand/common/bg_tag_gallery.png) no-repeat 0 50%;background-size:13px auto;}
 
-
-
 /***** 암웨이 소개 *****/
 /* 사회공헌 */
 .brand [class*="box-bnr"] {position:relative;overflow:hidden;max-height:400px;}
@@ -170,6 +168,12 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .box-bnr-09 .txt-wrap strong {color:#fff;}
 .brand .box-bnr-09 .txt-wrap span {display:block;}
 .brand .box-bnr-09 .txt-wrap p {margin-top:15px;font-size:18px;color:#fff;font-weight:300;}
+.brand .box-bnr-10 .txt-wrap strong {font-size:16px;line-height:18px;letter-spacing:0;}
+.brand .box-bnr-10 .txt-wrap span {display:block;}
+.brand .box-bnr-10 .txt-wrap p {margin-top:5px;font-size:14px;color:#56565a;}
+.brand .box-bnr-10 .txt-wrap p.txt-italic {font-size:13px;color:#808285;}
+.brand .box-bnr-10 .txt-wrap .t1 {display:block;line-height:48px;font-size:40px;margin-bottom:15px;}
+
 
 /* 암웨이 사업 */
 [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:40px;}
@@ -231,7 +235,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 /*레이어 팝업*/
 .gallery-wrapper {width:100%;height:524px;overflow-y:auto;}
 .gallery-wrapper img {max-width:100%;}
-
+.
 /*채용정보*/
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
 .akl-toggle-wrap.recruit .panel-title .text-uppercase.accordion-header-text {font-size:14px;letter-spacing:0;}
@@ -317,6 +321,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 @media (max-width:768px) {
+	.view-m {display:block;}
 	.brand [class*="box-bnr"] {height:auto;max-height:750px;}
 	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;width:100%;}
 	.brand [class*="box-bnr"] .txt-wrap > strong, .brand [class*="box-bnr"] .txt-wrap .txt-right strong, .brand [class*="box-bnr"] .txt-wrap .t1 {font-size:28px;line-height:32px;}
@@ -324,7 +329,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block;}
 	.brand [class*="box-bnr"] .woo-btn a {font-size:16px;height:45px;padding:9px 30px 8px;}
 	.brand .box-bnr-03 .txt-wrap {top:40px;left:20px;transform:none;text-align:left;width:90%;}
-	.brand .box-bnr-02 .txt-wrap p, .brand .box-bnr-03 .txt-wrap p, .brand .box-bnr-09 .txt-wrap p {display:block;}
+	.brand .box-bnr-02 .txt-wrap p, .brand .box-bnr-03 .txt-wrap p, .brand .box-bnr-09 .txt-wrap p, .brand .box-bnr-10 .txt-wrap p {display:block;}
 	.brand .box-bnr-03 .txt-wrap p span {display:inline;}
 	.brand .box-bnr-04 .txt-wrap strong {color:#fff;}
 	.brand .box-bnr-04 .txt-wrap .woo-btn {margin-top:10px;}
@@ -333,6 +338,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand [class*="box-bnr"].quotes .txt-wrap strong:after, .brand [class*="box-bnr"].quotes02 .txt-wrap div:after {display:none;}
 	.brand .box-bnr-08 .txt-wrap strong {font-weight:700;}
 	.brand .box-bnr-08 .txt-wrap strong span {font-size:16px;}
+	.brand .box-bnr-10 {padding:20px 20px 200px;background:#f4f4f4 url(../images/akl_brand/nutrilite/img_bnr_health_mob01.jpg) no-repeat center bottom;text-align:center;background-size: 375px auto;}
+	.brand .box-bnr-10 .txt-wrap {position:static;text-align:left;transform:initial;}
 	.img-bnr {margin:20px 0 35px;}
 	.img-bnr-bg {margin:20px 0 35px;padding:30px 0 15px;}
 	.img-bnr-bg img.mob {display:inline-block !important;max-width:305px;width:100%;}
