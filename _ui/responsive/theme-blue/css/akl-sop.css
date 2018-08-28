@@ -226,6 +226,11 @@
 .list-content.mysop-list .data-cell>span {display:block;}
 .list-content.mysop-list .data-cell>span+span {margin-top:5px;}
 
+/* SOP 주문상세 > 제품목록 - 결과없음 */
+.list-content.mysop-list .list-row-content.row .sop-no-items {width:100%; padding:40px 0; text-align:center;}
+.list-content.mysop-list .sop-no-items .search-no-result {padding:0 0 20px;}
+.list-content.mysop-monthly-list-content .mysop-text-list .search-no-result {color:#55565a; padding:20px 0;}
+
 /* 나의 정기주문&스마트오더 > SOP 주문상세 > 제품목록 - 취소상태 */
 .list-content.mysop-list .list-row-content.grey-block>div {color:#bbb;}
 .list-content.mysop-list .list-item-info.grey-block>div{color:#bbb;}
@@ -286,6 +291,7 @@
 .sop-container .list-row-content span[class^=circle-]{display:inline-block; font-weight:400;color:#55565a;color:#ffffff;}
 .sop-container .circle-green {width:38px;height:38px;font-size:16px;font-weight:100;line-height:38px;text-align:center;color:#ffffff;border-radius:50%;background:#27883e;}
 .sop-container .circle-orange{width:38px;height:38px;font-size:16px;font-weight:100;line-height:38px;text-align:center;color:#ffffff;border-radius:50%;background:#e9961a;}
+.sop-container .circle-red {width:38px;height:38px;font-size:16px;font-weight:100;line-height:38px;text-align:center;color:#ffffff;border-radius:50%;background:#e11e45;}
 
 .akl .sopInstantPayment .shopping-cart-item-list .product-list-item {padding:20px 0;}
 .akl .sopInstantPayment .shopping-cart-item-list .list-header>div,
@@ -307,8 +313,10 @@
 .months-select-bar-title .box-icon-info .right-info>span {display:inline-block; line-height:20px; vertical-align:middle; margin-left:18px; color:#bbb;}
 .months-select-bar-title .box-icon-info .right-info .ico-sop-gift:before {top:1px;}
 .months-select-bar-title .box-icon-info .right-info .ico-sop-complete {color:#27883e;}
-.months-select-bar-title .ico-sop-complete {position:relative; padding-left:28px; display:inline-block; height:22px; font-weight:500; color:#27883e;}
+.months-select-bar-title .box-icon-info .right-info .ico-sop-pending {color:#e11e45;}
+.months-select-bar-title .ico-sop-complete, .months-select-bar-title .ico-sop-pending {position:relative; padding-left:28px; display:inline-block; height:22px; font-weight:500; color:#27883e;}
 .months-select-bar-title .ico-sop-complete:before{content:''; position:absolute; top:0; left:0; width:20px; height:20px; padding:0; background:#27883e; border-radius:11px}
+.months-select-bar-title .ico-sop-pending:before{content:''; position:absolute; top:0; left:0; width:20px; height:20px; padding:0; background:#e11e45; border-radius:11px}
 
 /* 조회기간 6개월 - 목록 */
 .akl .mysop-monthly-part .list-content.mysop-monthly-list-content {border-width:1px 0 0;}
@@ -425,7 +433,6 @@
 	.list-content.mysop-list-content .item-address>span {padding:0;}
 
 	.akl .icon-sub-title + .list-content { margin-top:0;}
-
 	.akl .list-content.mysop-monthly-list-content.mysop-list {border-width:0 0 1px;}
 	.list-content.mysop-list.mysop-monthly-list-content .list-row-content.row>div {border-top:1px solid #e3e3e3;}
 
@@ -508,6 +515,10 @@
 	.list-content.mysop-list .list-row-content.row .type-prdt {width:60%;}
 	.list-content.mysop-list .list-row-content.row .numbs {width:20%;}
 	.list-content.mysop-list .list-row-content.row .repeat {width:20%;}
+
+	/* SOP 주문상세 > 제품목록 - 결과없음 */
+	.list-content.mysop-list .list-row-content.row .sop-no-items {width:100%; padding:20px 0 40px;}
+	.list-content.mysop-list .sop-no-items .search-no-result {padding:20px 0;}
 
 	/* SOP 주문상세 > 주문내역 */
 	.mysop-monthly-part .list-content,
