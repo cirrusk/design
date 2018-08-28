@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>암웨이 퀸 요리명장 | ABN Korea</title>
+	<title>미디어 라이브러리 | ABN Korea</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
@@ -23,24 +23,72 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 플러그인 : 2018.08.24 추가  -->
-</head>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/masonry.pkgd.min.js"></script><!-- media-borad-list 플러그인 : 2018.07.25 추가  -->
 
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function(){
+			var $grid = [];
+
+			$grid[0] = $('.media-borad-list-video ul').masonry({
+				columnWidth: '.grid-item',
+				transitionDuration:0,
+				percentPosition: true
+			});
+			$grid[1] = $('.media-borad-list-gallery ul').masonry({
+				columnWidth: '.grid-item',
+				transitionDuration:0,
+				percentPosition: true
+			});
+
+			$(document).on('click', '.tab-toggle', function(e) {
+				e.preventDefault();
+				var $index = +$(this).attr('data-index')
+
+				$($(this)[0].hash).show(0, function() {
+					$grid[$index].masonry();
+				})
+			});
+
+			//$( '.tab-toggle').eq(0).trigger('click');
+
+			var i = 0;
+
+			$(document).on('click', '.media-more-btn button', function(e) {
+				var $winSize = $(window).outerWidth();
+				i++;
+				e.preventDefault();
+				var $index = +$(this).parent().attr('data-index');
+				var startNum = 8 * i;
+				var endNum = startNum + 10;
+
+				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
+
+				setTimeout(function(){ $grid[$index].masonry() }, 0);
+
+				if(!$(this).parent().prev().is(':hidden')){
+					$(this).hide();
+				}
+			});
+		});
+	</script>
+</head>
 <body class="akl">
 	<!-- skipToContent -->
 	<div id="skipToContent">
 	<a href="#contents">콘텐츠 바로가기 </a>
 	</div>
 	<!-- //skipToContent -->
+
 	<main>
 		<div id="header"></div>
 		<!-- ## 브랜드 전체메뉴 영역 -->
 		<div id="brandMenu" class="container-fluid"> 
-			<div class="print-hide breadcrumb-section">
+			<div class="print-hide breadcrumb-section brand-fullmenu">
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li> 
 					<li>암웨이소개</li>
-					<li>암웨이 퀸</li>
-					<li>암웨이 퀸 요리명장</li>
+					<li>아티스트리</li>
+					<li>미디어 라이브러리</li>
 				</ol>
 			</div>
 			<div class="jump-to-amway">
@@ -125,110 +173,122 @@
 				</div>
 			</div>
 			<!-- //sns 영역 -->
-			
 			<div class="brand-contents">
 				<div class="top-title-wrapper">
-					<h1 class="title-h2">암웨이 퀸 요리명장</h1>
+					<h1 class="title-h2">미디어 라이브러리</h1>
 				</div>
-				
-				<section class="full-component">
-					<div class="box-bnr-fw01">
-						<img class="pc" src="../../theme-blue/images/akl_brand/queen/sub4_visual01.jpg" alt="" />
-						<img class="mob" src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_visual01.jpg" alt="">
-						<div class="txt-wrap">
-							<strong>요리명장<br>AMWAY QUEEN COOK MASTER</strong>
-							<p>암웨이 퀸 요리명장은 암웨이 쿡웨어로 맛과 영양이 풍부한 요리를 직접 만들어 <br>널리 알리는 ‘암웨이 퀸‘ 브랜드 및 제품 홍보 대사입니다.</p> 
+
+				<div class="outer-border-bottom">
+					<ul class="tabs-toggles">
+						<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" data-index="0" href="#Video"> <span class="toggle-text">영상</span> </a> </li>
+						<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" data-index="1" href="#Gallery"> <span class="toggle-text">포토</span> </a> </li>
+					</ul>
+				</div>
+				<div class="tab-content tabs-content-blocks">
+
+					<!-- ## tab1 ## -->
+					<div class="tab-pane content-block active" id="Video">
+						<h2 class="hidden">영상</h2>
+						<div class="media-borad-list-video">
+							<ul>
+								<li class="highlight">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/L1 - _Thumbnail.jpg" alt="비타민씨플러스 히알루론산"/>
+										</div>
+										<span class="tag"><span>Video</span></span>
+										<div class="tit-txt-wrap">
+											<strong>비타민씨플러스 히알루론산(30초)</strong>
+										</div>
+									</a>
+								</li>
+								<li class="grid-item">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/L2 - _Thumbnail.jpg" alt="에센셜 바이 아티스트리 - 씻고자 편"/>
+										</div>
+										<span class="tag"><span>Video</span></span>
+										<div class="tit-txt-wrap">
+											<strong>에센셜 바이 아티스트리 - 씻고자 편(30초)</strong>
+										</div>
+									</a>
+								</li>
+								<li class="grid-item">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/L3 - _Thumbnail.jpg" alt="에센셜 바이 아티스트리 - 피부미인 편"/>
+										</div>
+										<span class="tag"><span>Video</span></span>
+										<div class="tit-txt-wrap">
+											<strong>에센셜 바이 아티스트리 - 피부미인 편(30초)</strong>
+										</div>
+									</a>
+								</li>
+								<!-- <li class="grid-item media-more-btn" data-index="0"><button><span>more</span></button></li> -->
+							</ul>
 						</div>
 					</div>
-				</section>
-			
-				<div class="title-component">
-					<h2>콘테스트 기수별 테마 </h2>
+					<!-- ## tab2 ## -->
+					<div class="tab-pane content-block" id="Gallery">
+						<h2 class="hidden">포토</h2>
+						<div class="media-borad-list-gallery">
+							<ul>
+								<li class="highlight">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/artistry_vc_ha_AD - Thumbnail.jpg" alt=""/>
+										</div>
+										<span class="tag"><span>Gallery</span></span>
+										<div class="tit-txt-wrap">
+											<strong>비타민씨 플러스 히알루론산 트리트먼트</strong>
+										</div>
+									</a>
+								</li>
+								<li class="grid-item">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/artistry_eba_a_AD01_Thumbnail.jpg" alt=""/>
+										</div>
+										<span class="tag"><span>Gallery</span></span>
+										<div class="tit-txt-wrap">
+											<strong>어린피부를 위한 3단케어</strong>
+										</div>
+									</a>
+								</li>
+								<li class="grid-item">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/artistry_eba_a_AD02 - Thumbnail.jpg" alt=""/>
+										</div>
+										<span class="tag"><span>Gallery</span></span>
+										<div class="tit-txt-wrap">
+											<strong>메이크업이 예쁘려면</strong>
+										</div>
+									</a>
+								</li>
+								<li class="grid-item two-part">
+									<a href="#">
+										<div class="view-img">
+											<img src="../../theme-blue/images/akl_brand/artistry/artistry_eba_a_AD03 - Thumbnail.jpg" alt=""/>
+										</div>
+										<span class="tag"><span>Gallery</span></span>
+										<div class="tit-txt-wrap">
+											<strong>피부미인은 이번 생에</strong>
+										</div>
+									</a>
+								</li>
+								<!-- <li class="grid-item media-more-btn" data-index="1"><button><span>more</span></button></li> -->
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="content-row col3">
-					<article>
-						<figure class="cont-type2">
-							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_contimg1.jpg" alt="">
-							<figcaption>요리명장 1기</figcaption>
-							<p>Amway Queen’s Best Recipe<br>암웨이 퀸 베스트 레시피​</p>
-						</figure>
-					</article>
-					<article>
-						<figure class="cont-type2">
-							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_contimg2.jpg" alt="">
-							<figcaption>요리명장 2기</figcaption>
-							<p>My Storytelling Recipe<br>암웨이 제품의 이야기가 담긴 스토리텔링 레시피​</p>
-						</figure>
-					</article>
-					<article>
-						<figure class="cont-type2">
-							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_contimg3.jpg" alt="">
-							<figcaption>요리명장 3기</figcaption>
-							<p>Food Letter with Love<br>사랑과 감사의 마음을 담은 나만의 레시피​</p>
-						</figure>
-					</article>
-				</div>
-				<div class="content-row col3">
-					<article>
-						<figure class="cont-type2">
-							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_contimg4.jpg" alt="">
-							<figcaption>요리명장 4기</figcaption>
-							<p>My Home Party Secret<br>나의 홈파티 시크릿 레시피​</p>
-						</figure>
-					</article>
-					<article>
-						<figure class="cont-type2">
-							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_contimg5.jpg" alt="">
-							<figcaption>요리명장 5기</figcaption>
-							<p>My Sweet Home Baking<br>달콤한 나의 홈 베이킹 레시피​</p>
-						</figure>
-					</article>
-					<article>
-						<figure class="cont-type2">
-							<img src="/_ui/responsive/theme-blue/images/akl_brand/queen/sub4_contimg6.jpg" alt="">
-							<figcaption>요리명장 6기</figcaption>
-							<p>My Simple Cooking Story<br>암웨이 퀸으로 하는 퀵 &amp; 심플 레시피​</p>
-						</figure>
-					</article>
-				</div>
-				<div class="btn-wrap50">
-					<p><a href="https://www.amwayon.co.kr/category/recipe" taget="_blank" class="bt-akl-blue">레시피 보러가기</a></p>
-				</div>
-				
-			</div>
-			<!-- //## 메인 컨텐츠 영역 -->
-				
-		</div>
-		<!-- //## 템플릿 C-type -->
+
+			</div> <!-- //brand-area -->
+		</div> <!-- //container -->
 
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	<script type="text/javascript">$(function() {
-		$('#banner_list').owlCarousel({
-			loop: false,
-			nav: false,
-			dots: true,
-			//autoplay: true,
-			//autoplayTimeout:5000,
-			margin: 0,
-			items: 1
-		});
-		
-		var bannerId = $('#banner_list');
-		var $dotItembar = bannerId.find('.owl-dots');
-		var $dotItems = bannerId.find('.owl-dots > button');
-		
-		
-		$dotItems.eq(0).html('<span>My Cooking Story</span>');
-		$dotItems.eq(1).html('<span>행복을 더하는 조리기구 <br>암웨이 퀸</span>');
-		$dotItems.eq(2).html('<span>암웨이 퀸 요리명장은 <br>암웨이 쿡웨어로</span>');
-		
-		var mTop = $dotItembar.height()/2;
-		$dotItembar.css('margin-top',-mTop);
-		
-	})
-	</script>
-
+	
 </body>
 </html>

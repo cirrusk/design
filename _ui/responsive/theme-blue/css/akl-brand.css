@@ -352,7 +352,9 @@ Editor : HYEWON HWANG
 .content-row.col4 article {width:25%;}
 .content-row article img {width:100%;}
 .content-row article [class*="cont-type"] {position:relative;margin:0;height:100%;background:#f4f4f4;}
-.content-row article [class*="cont-type"] figcaption{padding:20px 20px 10px;font-size:16px;font-weight:500;color:#002f5f;}
+.content-row article [class*="cont-type"] figcaption{padding:15px 20px 5px;font-size:16px;font-weight:500;color:#002f5f;}
+.content-row article [class*="cont-type"] figcaption:only-child {padding-bottom:20px;}
+.content-row article [class*="cont-type"] figcaption > span {display:block;padding:3px 0 13px;font-weight:400;}
 .content-row article [class*="cont-type"] figcaption + p {margin:0;padding:0 20px 50px;line-height:1.8;}
 .content-row article [class*="cont-type"] figcaption + p > span {display:block;margin-bottom:10px;}
 .content-row article [class*="cont-type"] a.arr1 {position:absolute;bottom:20px;left:20px;display:inline-block;font-weight:500;}
@@ -585,15 +587,16 @@ Editor : HYEWON HWANG
 
 	.brand .video-preview {height:320px;background-size:auto 100%;}
 
-	.content-row {display:block;margin:30px 0 0;}
-	.content-row article, .content-row.col3 article {width:100%;margin:0 0 30px;padding:0;}
-	.content-row.col3 + .content-row.col3 {margin-top:30px;}
-	.content-row article:last-child {margin-bottom:0;}
+	.content-row {display:block;margin:30px 0 -20px;}
+	.content-row article, .content-row.col3 article {width:100%;padding:0 0 20px;}
+	.content-row.col4 {display:flex;margin:10px -7px 0;}
+	.content-row.col4 article {width:50%;padding:20px 7px 0;}
 
 	.akl .brand .category-success-story {display:block;margin:0;}
 	.akl .brand .category-success-story .success-story__item {max-width:100%;margin:30px 0 0;}
 	.akl .brand .category-success-story .success-story__item + .success-story__item {margin-left:0;}
-
+	
+	.title-component {margin:40px 0 30px;}
 	.title-component .title-ul {display:block;width:60%;}
 	.title-component .title-ul li {display:block;margin-top:30px;padding:0 0 0 73px;text-align:left;}
 	.title-component .title-ul li:before {width:50px;height:50px;left:0;background-size:52px auto;}
