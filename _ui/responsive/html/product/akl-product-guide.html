@@ -80,12 +80,12 @@
 									<div class="product-body-nemu-lnb">
 										<div class="guide-h3">가이드 메뉴 리스트</div>
 										<ol>
-											<li><a href="#num01">1. 비주얼영역(기본공통)</a></li>
-											<li><a href="#num02">2. 텍스트 모음(기본공통)</a></li>
-											<li><a href="#num03">3. 제품설명(기본공통)</a></li>
-											<li><a href="#num04">4. 제품구성 및 특징(기본공통)</a></li>
-											<li><a href="#num05">5. 사용방법 및 사용순서 등(기본공통)</a></li>
-											<li><a href="#num06">6. 텍스트 (뎁스 리스트)</a></li>
+											<li class="num01"><a href="#none">1. 비주얼영역(기본공통)</a></li>
+											<li class="num02"><a href="#none">2. 텍스트 모음(기본공통)</a></li>
+											<li class="num03"><a href="#none">3. 제품설명(기본공통)</a></li>
+											<li class="num04"><a href="#none">4. 제품구성 및 특징(기본공통)</a></li>
+											<li class="num05"><a href="#none">5. 사용방법 및 사용순서 등(기본공통)</a></li>
+											<li class="num06"><a href="#none">6. 텍스트 (뎁스 리스트)</a></li>
 											<li><a href="#num-a">A. 영양건강</a></li>
 											<li><a href="#num-b">B. 뷰티</a></li>
 											<li><a href="#num-c">C. 배스바디</a></li>
@@ -2072,7 +2072,7 @@
 										
 										
 										<!-- 6.  -->
-										<div id="num07">
+										<div id="num06">
 											<h1 class="h1Tit">6. 텍스트 (뎁스 리스트)</h1>
 											
 											<div class="advantage-area">											
@@ -2213,30 +2213,13 @@
 	
 	<script type="text/javascript">
 	$(function(){
-
-		$('#productProcess').owlCarousel({
-			loop: true,
-			margin: 0,
-			nav: true,
-			dots: true,
-			loop: true,
-			responsiveClass: true,
-			responsive: {
-				0:{
-			        items:1,
-			        loop: false
-			    },
-			    500:{
-			        items:3,
-			        loop: false
-			    },
-			    1000:{
-			        items:5,
-			        loop: false			    
-			    }
-			}
+		$('.product-body-view').find('> div').hide().eq(0).show();
+		$('.product-body-nemu-lnb > ol li a').click(function(){
+			var idNum = $(this).parent().attr('class');
+			$('.product-body-view').find('> div').hide();
+			$('.product-body-view').find('#' + idNum).show();
+			return false;
 		});
-
 	});
 	</script> 
 
