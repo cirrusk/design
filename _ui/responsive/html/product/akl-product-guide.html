@@ -2256,6 +2256,29 @@
 	
 	<script type="text/javascript">
 	$(function(){
+		$('#productProcess').owlCarousel({
+			loop: true,
+			margin: 0,
+			nav: true,
+			dots: true,
+			loop: true,
+			responsiveClass: true,
+			responsive: {
+				0:{
+			        items:1,
+			        loop: false
+			    },
+			    500:{
+			        items:3,
+			        loop: false
+			    },
+			    1000:{
+			        items:5,
+			        loop: false			    
+			    }
+			}
+		});
+		
 		$('.product-body-view').find('> div').hide().eq(0).show();
 		$('.product-body-nemu-lnb > ol li a').click(function(){
 			if($(this).parent().index() < 6){

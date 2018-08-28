@@ -354,7 +354,11 @@ function tabsTgg_Control(){
 	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
 
 	_tabsToggles.each(function(){
+		var _UL = $(this);
+		var _LI = _UL.find('li');
+
 		/* -- object 추가 (스크롤 영역 표시 용)-- */
+
 		var scrollableDiv = '.scrollable-area.left , .scrollable-area.right';
 		var siblings_El = $(this).siblings(scrollableDiv);
 
@@ -364,20 +368,23 @@ function tabsTgg_Control(){
 			find_OuterBorder.addClass('border-none'); //border-bottom 삭제
 
 			if ( siblings_El.length ){ return; }
-			else { find_OuterBorder.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
+			else {
+				_UL.wrap('<div class="tabWrapper"/>');
+				find_OuterBorder.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>');
+			}
 		}
 
 		//Type2 균등분할
 		var find_searchTab = $(this).parent('.col-search-tab');
 		if (find_searchTab.length){
 			if ( siblings_El.length ){ return; }
-			else { find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>'); }
+			else {
+				_UL.wrap('<div class="tabWrapper"/>');
+				find_searchTab.prepend('<span class="scrollable-area left"/><span class="scrollable-area right"/>');
+			}
 		}
 
 		/* -- 너비 비교하기 -- */
-		var _UL = $(this);
-		var _LI = _UL.find('li');
-
 		var children_sum;
 		function $tabWidthCheck(){
 			var _winWidth = $(window).width();
