@@ -852,6 +852,7 @@ div.tobe-earned, div.earning-used, div.available-point {width:17%;}
 .table-point-wrapper ul li.tbody span {font-size:14px;vertical-align:middle;}
 .table-point-wrapper ul li.tbody:nth-child(odd) {background:#f4f4f4;}
 .table-point-wrapper.mpoint ul li.tbody {border-bottom:1px solid #dadada;}
+.table-point-wrapper.mpoint ul li.tbody:after {content:''; display:block; clear:both}
 .table-point-wrapper.mpoint ul li.tbody:nth-child(odd) {background:#fff;}
 .table-point-wrapper ul li.tbody.no-data {padding:16px 0;border-bottom:1px solid #dadada;}
 .table-point-wrapper ul li.tbody.no-data div.no-list {display:table-cell;text-align:center;width:100%;}
@@ -1078,7 +1079,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 /* 마이페이지 > 회원정보변경 */
 .noti-suc { font-size:16px; font-weight:500; padding-left: 22px; font-size:16px; font-weight:500; color:#20893d; background:url('../images/icons/success.png') no-repeat left 4px; background-size:14px; letter-spacing:-1px;}
 .noti-error { display:inline-block; font-size:16px; font-weight:500; color:#e11e45; letter-spacing:-1px; }
-.noti-error:before { content:"";  background:url('../images/icons/warning.png') no-repeat left 5px;  padding-right: 22px; }
+.noti-error:before { content:"";  background:url('../images/icons/warning.png') no-repeat left 5px; background-size:16px; padding-right: 22px; }
 .akl .modify #terms .col {float:left;}
 .akl .modify #terms h3 { font-size: 16px; font-weight:500; margin-bottom:20px }
 .akl .modify .col-md-2, .akl .modify .col-md-3, .akl .modify .col-md-4,.akl .modify .col-md-5,.akl .modify .col-md-5, .akl .modify .col-md-7, .akl .modify .col-md-8, .akl .modify .col-md-9,

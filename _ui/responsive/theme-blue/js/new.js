@@ -59,7 +59,7 @@ $(function(){
 	$("#header").load("/_ui/responsive/html/header.html");
 	$("#quick").load("/_ui/responsive/html/quicklink.html");
 	$("#footer").load("/_ui/responsive/html/footer.html");
-
+	$("#topbanner").load("/_ui/responsive/html/topbanner.html");
 
 	/** ---------------------------------
 	 *  배송지 정보
