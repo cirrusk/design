@@ -316,6 +316,15 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .br-pro dl dd p a {letter-spacing:0;font-weight:500;}
 
 
+.brand .br-btn-tab {margin-top:-10px;}
+.brand .br-btn-tab .tabs-toggles {border:none;}
+.brand .br-btn-tab .tabs-toggles .tab-toggle-wrap {min-width:95px;margin:0;padding:0 5px 0 0}
+.brand .br-btn-tab .tabs-toggles .tab-toggle-wrap .tab-toggle {height:40px;border:1px solid #ccc;margin:0;background:#fff;border-radius:30px;}
+.brand .br-btn-tab .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {letter-spacing:0 ;font-weight:400;}
+.brand .br-btn-tab .tabs-toggles .tab-toggle-wrap.active .tab-toggle {margin:0;border:1px solid #008fc5;background:#008fc5;}
+.brand .br-btn-tab .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {color:#fff;}
+.brand .br-btn-tab .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {display:none;}
+
 @media (max-width:1024px) {
 	[class*="media-borad-list"] li {width:33.333%;}
 	[class*="media-borad-list"] li.highlight {width:66.666%;}
@@ -471,6 +480,9 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.biz-qna span {top:10px;left:-30px;width:23px;height:23px;font-size:10px;line-height:22px;font-weight:400;}
 	.biz-qna div {padding:10px 15px;border-radius:3px;}
 	.biz-qna div:after {top:16px;left:-2px;}
+
+	.brand .br-btn-tab:before {display:none;}
+	.brand .br-btn-tab .tabs-toggles {margin:0;}
 
 }
 
