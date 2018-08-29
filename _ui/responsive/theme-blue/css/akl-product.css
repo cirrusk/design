@@ -598,7 +598,7 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 
 .inge-lst10 {}
 .inge-lst10 li {display:inline-block;position:relative;margin-left:17px;font-size:14px;letter-spacing:-1px;line-height:1.7;font-weight:300;color:#808285;} 
-.inge-lst10 li:before{position:absolute;display:inline-block;top:0px;left:-17px;content:"※";}
+.inge-lst10 li:before{position:absolute;display:inline-block;top:0;left:-17px;content:"※";}
 .inge-lst10 strong{font-size:14px;font-weight:400;color:#56565a;}
 
 .inge-numlst01 li {font-size:16px;letter-spacing:-1px;font-weight:300;margin-left:15px;text-indent:-15px;color:#808285;padding:2px 0;}
@@ -615,7 +615,7 @@ ul.tip li:after, ol.tip li:after{top: 6px;}
 .inge-numlst01 li > ul.inge-lst03 li > ol li:after{	position: inherit;top: 0;left: 0;display: inline-block;width: inherit;height: inherit;border-radius:inherit; background:none;content:inherit;}
 
 .inge-numlst02 {padding:0 0 0 15px}
-.inge-numlst02 li {font-size:16px;letter-spacing:-1px;font-weight:300;padding-left:15px;color:#808285;padding:2px 0;list-style-type:decimal}
+.inge-numlst02 li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;padding:2px 0 2px 15px;list-style-type:decimal}
 
 .norm-lst li {font-size:16px;letter-spacing:-1px;font-weight:300;color:#808285;padding:2px 0;}
 
@@ -678,7 +678,7 @@ div.feat-txt p span.next-sort {display:block;}
 .ad-setp-lst.txt-m dt, .ad-setp-lst.txt-m dd{font-size:16px !important;}
 
 /* 정렬 */
-.txt-l{text-aling:left;}
+.txt-l{text-align:left;}
 .txt-c{text-align:center;}
 .txt-r{text-align:right;}
 
@@ -686,7 +686,7 @@ div.feat-txt p span.next-sort {display:block;}
 .detail-content-area .advantage-area:first-child,
 .detail-content-area .advantage-area.btm-line:first-child {margin-top:50px;border-top:none;padding-top: 0;}
 .detail-content-area .advantage-area:first-child .t-big.point-wrap{margin-top:-11px;}
-.detail-content-area .advantage-area:first-child .sie-box{padding: 0px 0 0;}
+.detail-content-area .advantage-area:first-child .sie-box{padding:0;}
 .advan-left, .advan-right {display:table-cell;box-sizing: border-box;}
 .advan-left{width:50%;padding-right:50px;vertical-align:top;}
 .advan-right{width:50%;/*padding: 0 50px 0 0;*/padding:0;vertical-align:middle;}
@@ -746,7 +746,7 @@ div.feat-txt p span.next-sort {display:block;}
 .ad-setp-lst2 li dl dt p {display:table-cell;vertical-align:middle;color:#fff !important;text-align:center;}
 .ad-setp-lst2 li dl dt p span {border-bottom:1px solid #fff;}
 .ad-setp-lst2 li dl dd {text-align:left;width:calc(100% - 82px);}
-.ad-setp-lst2 li dl dd p {display:table-cell;vertical-align:middle;text-align:left;padding:0 10px;font-size:14px;font-weight:300;word-break:all;margin:0 0;}
+.ad-setp-lst2 li dl dd p {display:table-cell;vertical-align:middle;text-align:left;padding:0 10px;font-size:14px;font-weight:300;word-break:break-all;margin:0 0;}
 .ad-setp-lst2 li dl dt p sub{bottom:0;}
 
 .i-won {width:82px;height:82px;border-radius:50%;margin:0 auto;color:#fff !important;}
@@ -918,13 +918,13 @@ dl.amo-txt dd br {line-height:18px}
 
 .effect-graph{padding-bottom:70px;}
 .effect-graph .effect-comment img{width:37px;height:42px;}
-.effect-graph .comment{width:100%;display:table;bottom:0;left:0%;text-align:center;}
+.effect-graph .comment{width:100%;display:table;bottom:0;left:0;text-align:center;}
 .effect-graph .comment li{display:table-cell;position:relative;width:auto;padding-left:10%;}
 .effect-graph .comment li:first-child{padding:0;}
 
 .effect-img2060{margin:0;}
 .effect-img2060 .comment01,
-.effect-img2060 .comment02{bottom:4%;left:0%;}
+.effect-img2060 .comment02{bottom:4%;left:0;}
 .effect-img2060 .comment03{top:12%;left:66%;}
 
 .effect-img2051 .comment01{top:40%;left:10%;text-align:center;}
@@ -1001,7 +1001,7 @@ dl.amo-txt dd br {line-height:18px}
 .effect-img2019 .comment01,
 .effect-img2276 .comment01{display:block;width:100%;top:0;left:0;}
 .effect-img2019 .comment02,
-.effect-img2276 .comment02{top:90%;left:0%;}
+.effect-img2276 .comment02{top:90%;left:0;}
 .effect-img2019 .comment03,
 .effect-img2276 .comment03{top:90%;left:82%;}
 .effect-img2019 .comment01 dt,
@@ -1125,7 +1125,7 @@ dl.amo-txt dd br {line-height:18px}
 .energy-list .energy-img-tit .bottom-txt{display:block;margin-top:-7px;font-size:11px;letter-spacing:0;font-weight:300;}
 .energy-list .energy-graph{position:relative;width:100%;height:20px;margin-top:10px;border-radius:3px;background-color:#bbb;}
 .energy-list .energy-graph .total{display:inline-block;position:absolute;top:1px;left:10px;font-size:12px;color:#fff;font-weight:300;}
-.energy-list .energy-graph .num{display:inline-block;position:absolute;top:0px;right:10px;text-align:right;font-size:12px;color:#fff;font-weight:300;}
+.energy-list .energy-graph .num{display:inline-block;position:absolute;top:0;right:10px;text-align:right;font-size:12px;color:#fff;font-weight:300;}
 .energy-list .energy-graph .bar{display:inline-block;height:20px;position:absolute;top:0;right:0;border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:#5c9b02;}
 .energy-list .energy-txt{margin-top:2px;font-size:20px;color:#000;text-align:center;}
 .energy-info{margin-top:13px;text-align:center;}
@@ -1290,7 +1290,7 @@ dl.amo-txt dd br {line-height:18px}
 .beauty-list-wrap ul > li > .beauty-thum-wrap .thum{display: table-cell;width: 100px;vertical-align: middle;}
 .beauty-list-wrap ul > li > .beauty-thum-wrap .thum img{margin-right:20px;}
 .beauty-list-wrap ul > li > .beauty-thum-wrap .txt{display: table-cell;vertical-align: middle;}
-.beauty-list-wrap ul > li > .beauty-thum-wrap .txt dt{color: #0075a4;font-weight: 400;font-size: 16px;font-weight: 400;}
+.beauty-list-wrap ul > li > .beauty-thum-wrap .txt dt{color: #0075a4;font-size: 16px;font-weight: 400;}
 .beauty-list-wrap ul > li > .beauty-thum-wrap .txt dd{font-weight: 300;color: #808285;font-size: 16px;}
 
 .youth_xtend_relative {position:relative;width:469px;height:197px;margin: auto;}
@@ -1500,7 +1500,7 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 .water-system ol {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
 .water-system ol li {display:table-cell;box-sizing: border-box;vertical-align:top;padding:0 10px;text-align:center;}
 .water-system ol li p {padding:10px 20px 0;margin:0 0;color:#808285;font-size:16px;letter-spacing:-1px;}
-.water-num {display:inline-block;height:43px;background:url('../images/akl_product/bath-body/ico_water_drop_gray.png') no-repeat left center;width:24px;height:33px;vertical-align:center;color:#fff;padding:10px 0 0;font-size:14px;font-weight:400;}
+.water-num {display:inline-block;background:url('../images/akl_product/bath-body/ico_water_drop_gray.png') no-repeat left center;width:24px;height:33px;text-align:center;color:#fff;padding:10px 0 0;font-size:14px;font-weight:400;}
  
 .ingredient {clear:both;display:block;padding:80px 0 0;}
 ul.penny {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
@@ -1555,7 +1555,7 @@ dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 .special-list > li{display:table;float:left;width:50%;padding:30px 30px 0 0;table-layout:fixed;}
 .advan-left .special-list > li{width:100%;padding:30px 0 0 0;}
 .advan-left .special-list > li:first-child{padding:0;}
-.advan-left .special-list > li:last-child{padding:30px 0 0 0;margin-top:0px;}
+.advan-left .special-list > li:last-child{padding:30px 0 0 0;margin-top:0;}
 .special-list .special-icon{display:table-cell;width:120px;vertical-align:top;}
 .advan-left .special-list .special-icon{vertical-align:middle;}
 .special-icon span{position:relative;display:table-cell;width:100px;height:100px;border-radius:50%;vertical-align:middle;text-align:center;}
@@ -1575,7 +1575,7 @@ dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 .special-list dd{margin-top:2px;font-size:16px;color:#808285;font-weight:300;line-height:1.6;}
 .special-list .special-txt span,
 .special-list .special-txt .list-star li{display:block;font-size:14px;color:#808285;font-weight:300;line-height:1.6;}
-.special-list .special-txt .list-star li{margin:0;line-height:1.5;margin-left:5px;text-indent:-5px;}
+.special-list .special-txt .list-star li{margin:0 0 0 5px;line-height:1.5;text-indent:-5px;}
 .special-list .list-star li:nth-child(1){margin-left:7px;text-indent:-7px;}
 .special-list .list-star li:nth-child(2){margin-left:12px;text-indent:-12px;}
 .special-list .list-star li:nth-child(3){margin-left:18px;text-indent:-18px;}
@@ -2051,7 +2051,7 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .disc-dot {padding:0 0;margin:0 0 0;}
 .disc-dot li {position:relative;border-bottom:0 none;padding:2px 8px;}
 .disc-dot li:before {content:'';display:block;position:absolute;top:10px;left:0;width:1px;height:1px;background:#444}
-.disc-dot li .decimal-zero li {padding:0 0px;}
+.disc-dot li .decimal-zero li {padding:0;}
 .disc-dot li .decimal-zero li:before {content:'';display:none}
 
 .disc-dot li .disc-line li {padding:0 9px;}
@@ -2286,7 +2286,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 .recipe-box {position:relative;background:#f4f4f4;width:100%;min-height:440px;text-align:center;padding:10px 0 20px;overflow:hidden;}
 .recipe-box p {font-size:18px;font-weight:400;letter-spacing:-1px;}
 .recipe-box p.txt-lp9969 {position:absolute;top:320px;left:50%;margin-left:-55px}
-.recipe-box p.txt-lp9972 {display:block;padding:55px 0 0px} 
+.recipe-box p.txt-lp9972 {display:block;padding:55px 0 0;} 
 .recipe-info {width:100%;height:380px;padding-top:40px;}
 .recipe-info span {width:100%;}
 .recipe-info span img {width:auto;height:auto;}
@@ -2326,8 +2326,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 .visual-area.type02.seasoning {background: url('../images/akl_product/one-for-one/bg_jungipum_seasoning.png') no-repeat center;min-height:956px;}
 .box-tit h5.other{font-size:32px;color:#56565a;font-weight:300;}
 .box-tit h5.other p{font-size:44px;}
-.recipe-box p.txt-lp9948 {display:block;padding:0 0 0px;margin:0 0;} 
-.recipe-box p.txt-lp9948-2 {display:block;padding:15px 0 0px} 
+.recipe-box p.txt-lp9948 {display:block;padding:0 0 0;margin:0 0;} 
+.recipe-box p.txt-lp9948-2 {display:block;padding:15px 0 0;} 
 .recipe-box.p9948 {height:auto;min-height:auto;padding:0 0 40px}
 .recipe-box.p9948 .recipe-info {width:inherit;height:auto;}
 
@@ -2364,7 +2364,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .miyoek-detail-warp .detail-top-txt{position:relative;display:inline-block;font-size: 44px;color:#fff;text-align:center;padding:1px 25px;background-color:#c4133f;font-weight: 300;letter-spacing:-2px;}
 .miyoek-detail-warp .detail-top-txt strong{font-weight:400;}
 .miyoek-detail-warp .detail-top-txt:before,
-.miyoek-detail-warp .detail-top-txt:after{content:"";position:absolute;top: 0px;width:34px;height:100%;background-repeat:no-repeat;}
+.miyoek-detail-warp .detail-top-txt:after{content:"";position:absolute;top:0;width:34px;height:100%;background-repeat:no-repeat;}
 .miyoek-detail-warp .detail-top-txt:before{left: -17px;background-image:url("../images/akl_product/one-for-one/banner_ribbon_01.png");}
 .miyoek-detail-warp .detail-top-txt:after{right:-34px;background-image:url("../images/akl_product/one-for-one/banner_ribbon_02.png");}		
 .miyoek-detail-warp .detail-content{margin-top:-30px;border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;padding-top:30px;text-align:center;}
@@ -2403,7 +2403,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .step-lst-wrap{margin-top:27px;}
 .step-lst-wrap li{display:block;width:100%;margin-bottom:15px;}
 .step-lst-wrap li div{display:table;}
-.step-lst-wrap li div strong{display:table-cell;vertical-align:top;margin-right: 10px;display: inline-block;}
+.step-lst-wrap li div strong{display:table-cell;vertical-align:top;padding-right: 10px;}
 .step-lst-wrap li div strong em{display: block;padding: 1px 12px;background: #bbbbbb;border-radius: 20px;color: #ffffff; font-weight: 300;}
 .step-lst-wrap li div p{display:table-cell;vertical-align:top;font-size: 14px;font-weight: 300;line-height: 1.5;}
 
@@ -2432,7 +2432,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 .atmosky-allergy-lst .allergy-txt-cont ul li{/*display:inline-block;*/float:left;padding-left: 24px;background: url("../images/akl_product/home-living/ico-chk-round.png") 0 0 no-repeat;width: 33.3%;font-size: 14px;color: #808285;font-weight: 300;vertical-align: top;}
 
 .fit-filter{display:block;width: 100%; overflow: hidden;}
-.fit-filter:after{clear:both;content:"";dispaly:block;}
+.fit-filter:after{display:block;clear:both;content:"";}
 .fit-filter .fit-left, .fit-filter .fit-right{float:left;}
 .fit-filter .fit-left{width:70%;}
 .fit-filter .fit-right{width:30%;}
@@ -3088,8 +3088,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.signature-cont-area .pcomp-area .comp-info{width:50%;}
 	.detail-content-area .pcomp-area .comp-info .comp-box dl dd{min-height:100px;}
 
-	
-	
+
 	/* 김미역 */
 	.miyoek-detail-warp{margin:25px 0 0;}
 	.detail-top-txt{font-size: 26px !important;padding: 4px 25px;line-height: 1.2;}
@@ -3129,9 +3128,9 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.advan-left.right{padding-right:50px;}
 
 	.visual-area + .advantage-area {margin-top:25px;}
-	.visual-area.type02 {/*background-color:#c9e3f6;*/min-height:619px;padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
-	.visual-area.type03 {min-height:619px;padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
-	.visual-area.type04 {min-height:619px;padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
+	.visual-area.type02 {/*background-color:#c9e3f6;*/padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
+	.visual-area.type03 {padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
+	.visual-area.type04 {padding:0 20px 30px;height: inherit !important;min-height: inherit !important;}
 	.visual-area .v-logo.nutrition-health img {width:auto;height:18px;}	
 	.txt-info-visual .v-txt {font-size:14px;margin:20px 10%;line-height:1.5;word-break: keep-all;word-wrap: break-word;letter-spacing:-0.05em;}
 	.txt-info-visual .v-tit {font-size:30px;}
@@ -3150,7 +3149,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	
 	.detail-content-area .advantage-area:first-child {margin-top:25px;border-top:none;padding-top: 0;}
 	
-	.detail-content-area {padding:0 0px;}
+	.detail-content-area {padding:0;}
 	
 	.point-wrap{text-align: center;padding: 0 0 0;}
 	.point-wrap .tit span{display:block;font-weight:400;}
@@ -3223,12 +3222,12 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.ade-photo .reposom-wrap em.one{width:80px;}
 	.ade-photo .reposom-wrap em.one br{display:none;}
 
-	dl.amo-txt dd p {padding:0 0 0 0;}
+	dl.amo-txt dd p {padding:0;}
 	
 	.inge-lst03 li:after {top:8px}
 	.effet-area {padding:30px 30px;}
-	.siehe-box.midle {padding:0 0 0 0;}
-	.siehe-box {padding:0 0px}
+	.siehe-box.midle {padding:0;}
+	.siehe-box {padding:0;}
 	.siehe-box.top-line {padding:20px 0 0;}
 
 	.box-tit h5, .box-tit h5 span {font-size:24px}
@@ -3347,7 +3346,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.bass-style-list li:last-child{padding-bottom:0;}
 	.bass-txt dd {width:100%;}
 	
-	.explic-lst {clear:both;display:block;margin:0 0;}
+	.explic-lst {clear:both;display:block;margin:0;}
 	.explic-lst dt {font-size:22px;}
 	.explic-lst dd {clear:both;display:block;}
 	.explic-lst dd p {font-size:14px;}
@@ -3364,7 +3363,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.cirt-procedure li {float:left;width:50%;font-size:14px}
 
 	.water-system ol li {float:left;width:50%;margin-top:10px;}
-	.water-system ol li p {font-size:14px;padding:10px 0px 0;}
+	.water-system ol li p {font-size:14px;padding:10px 0 0;}
 	
 	ul.penny li {display:block;width:100%;margin-bottom:30px;}
 	
@@ -3431,8 +3430,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	span.txt-next {display:inline-block;}
 	.t-big.point-wrap .tit {line-height:35px;}
 
-	.advan-right.ar_4285 .com-txt {padding-right:0px}
-	.advan-right.ar_4285 .ad-setp-lst dd {padding-right:0px}
+	.advan-right.ar_4285 .com-txt {padding-right:0}
+	.advan-right.ar_4285 .ad-setp-lst dd {padding-right:0}
 	.akl .com-tit em{font-size:20px;}
 
 	.visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
@@ -3586,7 +3585,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.draw-step01 li {float:left;display:block;width:100%;padding:10px 0 20px;}
 	.draw-step01 li dl {margin:0 auto;}
 	.draw-step01 li dt img {width:inherit;height:auto;text-align:center;}
-	.draw-step01 li dd br {display:non;}
+	.draw-step01 li dd br {display:none}
 
 	.visual-area.type02.purewheat_plain.v9968 .v-pro {margin-left:0}
 	.recipe-box {height:auto;padding:20px 20px;min-height:auto}
@@ -3618,10 +3617,19 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.ade-photo .reposom-wrap em.two{left:68%;}	
 	
 	.hua-ad-list > li{width:100%;padding:30px 0 0 0 !important;}
-	.hua-ad-list > li:nth-child(odd){padding:0 !important;}
+	.hua-ad-list > li:nth-child(odd){padding:30px 0 0 0 !important;}
 	.step-tbl .tbl-box li{width:100%;}
 	.overnightwear-box .before-box{display:block;width:100%;border:none;}
 	.overnightwear-box .after-box{display:block;width:100%;border:none;margin-top:50px;}
+	.hua-ad-list .hua-ad-box .hua-ad-tit{font-size:16px;}
+	.hua-ad-list .hua-ad-box .hua-ad-txt{font-size:14px;}
+	
+	/* 원포원 */
+	.cooking-lst{margin:0;}
+	.cooking-lst li{float:none;}
+	.sauce-tit dt span{font-size:26px;line-height:1.3;}
+	.sauce-tit dt p{font-size:30px;line-height:1.3;margin:0;}
+	.com-etc.default{margin-top:10px;}
 	
 }	
 
@@ -3760,7 +3768,7 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.triangle.circle-type .comment02{left:-10%;}
 	.triangle.circle-type .comment03{right:-10%;}
 	
-	.oral-round-lst{padding:0 0%;}
+	.oral-round-lst{padding:0;}
 	.oral-round-lst li {float: none;width: 100%;display: block;}
 	.oral-round-lst li .round-area{display: block;text-align: center;margin: 0 20px 25px;}
 	.oral-round-lst li .img-wrap{margin-bottom:10px;}
@@ -3843,7 +3851,8 @@ background:url('../images/akl_product/one-for-one/food_recipe_spoon.png') no-rep
 	.skin-care .visual-area.type02.duma-sonic .v-pro.kc-mark-area .mark-wrap{top: inherit;left: 50%;bottom: -70px;border:solid 2px #bbbbbb;padding: 8px 10px 8px 28px;background: #ffffff url('../images/akl_product/beauty/mark_kc.png') no-repeat 9px 50%;background-size: 17px;margin-left: -102px;}
 	.skin-care .visual-area.type02.duma-sonic .v-pro.kc-mark-area .mark-wrap span{font-size: 12px;}
 	
-	
+	.miyoek-detail-warp .detail-top-txt:before,
+	.miyoek-detail-warp .detail-top-txt:after{display:none;}
 }
 
 
