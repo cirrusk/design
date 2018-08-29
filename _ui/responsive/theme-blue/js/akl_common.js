@@ -887,7 +887,9 @@ function orderSummaryFixed(){
 		}
 	}
 	$(window).on('resize',function(){
-		$('html, body').scrollTop(0);
+		if( $(window).width() > 768 ){
+			$('html, body').scrollTop(0);
+		}
 		fixedBox_order();
 	});
 	$(window).scroll(function(){
@@ -967,7 +969,9 @@ function cartSummaryFixed(){
 		}
 	}
 	$(window).on('resize',function(){
-		$('html, body').scrollTop(0);
+		if( $(window).width() > 768 ){
+			$('html, body').scrollTop(0);
+		}
 		fixedBox();
 	});
 	$(window).on('scroll',function(){
