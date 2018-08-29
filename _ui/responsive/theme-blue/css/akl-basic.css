@@ -97,6 +97,18 @@ img.loader-size {width:55px;} /* 개발 ajax */
 .error-wrap .error-inner dd {float:left; width:400px; height:40px; line-height:40px; border-bottom:1px solid #e3e3e3; border-left:1px solid #e3e3e3; padding-left:20px;}
 .error-wrap .error-btn {padding-top:40px; border-top:1px solid #e3e3e3;}
 
+/* 최 상단 배너 */
+.akl-top-banner { height:60px; background:#0074a3; position:fixed; top:0; left:0; right:0; width:100% }
+.akl-top-banner .inner { position:relative; margin:0 auto; max-width:1400px;}
+.akl-top-banner .inner a{ display:block; text-align:center; padding:0 60px; position:relative; z-index:1}
+.akl-top-banner .inner a span {display:block;}
+.akl-top-banner .inner a span.pc {display:block;}
+.akl-top-banner .inner a span.mob {display:none;}
+.akl-top-banner .inner button {z-index:1; position:absolute; right:0; top:0; width:60px; height:60px;  background:url(../images/akl_common/icon_top_close.png) 50% 50% no-repeat; background-size:20px auto; text-indent:-999px; overflow:
+hidden; }
+.topbanner main{ margin-top: 197px;}
+.topbanner .general-header { top:60px}
+
 /* 웹접근성  */
 .akl .hidden, .akl caption {overflow:hidden; width:0; height:0; padding:0; margin:0; font-size:0; line-height:0; text-indent:-9999px;}
 .blind {overflow:hidden !important; width:1px !important; height:1px !important; margin:-1px !important; position:absolute !important; clip:rect(0 0 0 0) !important; border:0 !important; padding:0 !important;}
@@ -1487,6 +1499,13 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.error-wrap .error-btn {border-top:0;}
 	.error-wrap .error-btn .bt-akl-blue,
 	.error-wrap .error-btn .bt-akl-white {max-width:200px; padding:0; width:47%; text-align:center; margin:0 1%;}
+
+	/* 최 상단 배너 */
+	.akl-top-banner .inner a{ padding:0 40px;}
+	.akl-top-banner .inner button { width: 40px;}
+	.akl-top-banner .inner a span.pc {display:none;}
+	.akl-top-banner .inner a span.mob {display:block;}
+	.akl-top-banner .inner a span.mob img{ height:60px; width:auto; }
 
 	/* 공통:display */
 	.akl .break {display:inline-block;}
