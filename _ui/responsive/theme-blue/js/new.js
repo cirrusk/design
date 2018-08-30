@@ -56,6 +56,7 @@ function registerABO() {
 */
 
 $(function(){
+	$("#header_none").load("/_ui/responsive/html/header_none.html");
 	$("#header").load("/_ui/responsive/html/header.html");
 	$("#quick").load("/_ui/responsive/html/quicklink.html");
 	$("#footer").load("/_ui/responsive/html/footer.html");

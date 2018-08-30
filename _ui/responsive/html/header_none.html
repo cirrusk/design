@@ -1,217 +1,36 @@
-﻿<header class="js-mainHeader main-header general-header">
+<header class="js-mainHeader main-header general-header">
 	<div class="amway-theme">
 		<nav class="header-container">
 			<div class="header-wrapper pos-relative">
-				<!-- login 2018.03.20 ConnectID 삭제
-				<div class="popover bottom extraclass1 no-login" id="login-drop-content" >
-					<div class="popover-arrow arrow"></div>
-					<div class="popover-content">
-						<i class="mobile-popover-close"></i>
-						<div class="topbar__popover login-form authentication-js">
-						   <h1 class="login-form__title">암웨이에 오신 것을 환영합니다 !</h1>
-						   <!-- 2810.07.02 변경
-						   <iframe src="/_ui/responsive/html/iframe_login.html" title="로그인" class="iframe-login"></iframe>
-						   <a class="login-form__link" href="#">아이디찾기</a>
-						   <a class="login-form__link" href="#">비밀번호찾기</a>
-						   <hr>
-						   <p class="login-form__owner">암웨이 비즈니스와 함께하세요.</p>
-						   <a href="register-landing.html"><span class="login-form__register">회원가입</span></a>
-					   </div>
-					</div>
-				</div>
-				-->
+				<!-- logged-in -->
+				 <div class="popover bottom extraclass1 no-login" id="login-drop-content" >
+					 <div class="popover-arrow arrow"></div>
+					 <div class="popover-content">
+						 <i class="mobile-popover-close"></i>
+						 <div class="topbar__popover login-form authentication-js">
+							<h1 class="login-form__title">암웨이에 오신 것을 환영합니다 !</h1>
+							<iframe src="/_ui/responsive/html/iframe_login.html" title="로그인" class="iframe-login"></iframe>
+							<!-- 아이프레임 변경
+							<div class="login-email-box">
+								<input type="text" placeholder="아이디/회원번호" class="login-form__username" title="아이디/회원번호">
+								<button type="button">삭제</button>
+							</div>
+							<input type="password" placeholder="비밀번호" class="login-form__password" title="비밀번호 입력">
+							<input class="login-form__remember" id="remember" name="remember" type="checkbox">
+							<label for="remember" class="remember-me">아이디 저장</label>
+							<input class="btn-primary button login-form__submit" type="button" value="로그인">
+							 -->
+							<a class="login-form__link" href="#">아이디찾기</a>
+							<a class="login-form__link" href="#">비밀번호찾기</a>
+							<hr>
+							<p class="login-form__owner">암웨이 비즈니스와 함께하세요.</p>
+							<a href="register-landing.html"><span class="login-form__register">회원가입</span></a>
+						</div>
+					 </div>
+				 </div>
+				 <!--// logged-in -->
 
-				<!-- mini dashboard -->
-				<div class="popover bottom mDashboard" role="tooltip" id="login-drop-content"><!-- AKL에서 클래스 추가 mDashboard -->
-					<i class="mobile-popover-close"></i>
-					<div class="arrow"></div>
-					<h3 class="popover-title" style="display: none;"></h3>
-					<div class="popover-content">
-						<ul class="nav__links account-popover js-my-account-popover">
-							<!-- 잠금 비밀번호 해제 -->
-							<li class="account-popover__congratulation">
-								<input class="btn-primary button login-form__submit U60802_lp1" type="button" value="잠금 비밀번호 해제">
-							</li>
-							<li class="account-popover__congratulation">
-								<div class="account">
-									<div class="sys-message">
-										<div class="ico-wraper">
-										<i class="icon-caution"></i>
-										</div>
-										<span class="menu-rock">해당 정보에 잠금 설정이 되어있습니다.<br>위에 버튼을 눌러서 잠금을 해제하세요. </span>
-									</div>
-								</div>
-							</li>
-							<!--//  잠금 비밀번호 해제 -->
 
-							<!-- 맴버 로그인 후 -->
-							<li class="account-popover__congratulation">
-								<input class="btn-primary button login-form__submit" type="button" value="ABO 회원전환">
-							</li>
-							<!--  맴버 로그인 후 -->
-							<li class="account-popover__congratulation">
-								<div class="account">
-									<div class="sys-message">
-										<div class="ico-wraper">
-										<i class="icon-caution"></i>
-										</div>
-										<span>신규 ABO 0명 </span>
-
-										<!-- 신규가 없을경우
-										<div class="ico-wraper noData">
-										<i class="icon-caution"></i>
-										</div>
-										<span>신규 ABO가 없습니다</span> -->
-
-									</div>
-									<div class="sys-message">
-										<div class="ico-wraper">
-										<span class="message-num">99</span>
-										</div>
-										<span>새 맞춤메시지</span>
-										<!-- 메세지가 없을 경우
-										<div class="ico-wraper noData">
-										<span class="message-num">99</span>
-										</div>
-										<span>새 맞춤메세지가 없습니다</span>-->
-									</div>
-								</div>
-							</li>
-							<!-- 2018.06.12 추가 -->
-							<li class="account-popover__congratulation">
-								<div class="point-new">
-									<div class="coupon-area">
-										<span>쿠폰 :<em>5</em>장</span>
-									</div>
-									<div class="point-area">
-										<span>A포인트 가용 :<em> 501,000</em></span>
-									</div>
-								</div>
-							</li>
-							<!--// 2018.06.12 추가 -->
-							<li class="account-popover__scores">
-								<ul>
-									<li><span>개인</span> <span>PV : 300.0</span></li>
-									<li><span>BV : No</span></li>
-								</ul>
-								<p>최종업데이트 : 2018-01-10 - 4:07pm</p>
-							</li>
-							<li class="account-popover__pv-display" onclick="javascript:location.href='dashboard-mvp.html'">
-								<div id="circle" class="tab-pane fade in active">
-								<!--<image src="/_ui/responsive/theme-blue/images/performance-chart-arch-mobile.png" />-->
-									<amw-rainbow>
-										<!---->
-										<amw-performance-graph>
-											<div id="performance-graph-rainbow">
-												<svg preserveaspectratio="xMinYMin meet" viewbox="0 0 340 230">
-													<g transform="translate(170, 170)">
-														<path class="arc-done"
-														d="M-170,-2.0818995585505004e-14A170,170 0 0,1 -170,-2.0818995585505004e-14L-140,-1.7145055188062946e-14A140,140 0 0,0 -140,-1.7145055188062946e-14Z"
-														stroke="#27a248" stroke-width="10"></path>
-														<path class="arc-todo"
-														d="M-170,-2.0818995585505004e-14A170,170 0 0,1 170,0L140,0A140,140 0 0,0 -140,-1.7145055188062946e-14Z"></path>
-														<polyline points="10 -135, 0 -125, -10 -135" fill="#27a248"
-														transform="rotate(-90)">
-														</polyline>
-														<text x="0" y="-3.5em" text-anchor="middle"
-														class="grouppv-title">그룹 PV
-														</text>
-														<text x="0" y="-1.2em" text-anchor="middle"
-														class="grouppv-value">1,600.00
-														</text>
-														<text x="0" y="-0.5em" text-anchor="middle"
-														class="grouppv-content">100.00 그룹 PV to 3%
-														</text>
-														<text x="-170px" y="1.8em" text-anchor="start"
-														class="point-text green">3%
-														</text>
-														<text x="-170px" y="3.5em" text-anchor="start"
-														class="point-value">3.00 GPV
-														</text>
-														<text x="170px" y="1.8em" text-anchor="end" class="point-text">
-														100%
-														</text>
-														<text x="170px" y="3.5em" text-anchor="end" class="point-value">
-														100.00 GPV
-														</text>
-													</g>
-												</svg>
-											</div>
-										</amw-performance-graph>
-										<div class="text-center">
-											<amw-modal>
-												<div aria-hidden="true" bsmodal=""
-												class="modal fade amw-performance-modal" role="dialog"
-												tabindex="-1">
-													<div class="modal-dialog  amw-modal">
-														<div class="modal-content">
-															<button aria-label="Close" class="close" type="button">
-															<span aria-hidden="true">&times;</span></button>
-															<div class="modal-header">
-																<div class="modal-title amw-modal-title">Performance
-																Bonus Schedule
-																</div>
-															</div>
-															<div class="modal-body">
-																<ul>
-																	<li class="amw-performance-raw amw-performance-title">
-																	<span class="amw-performance-cell">If your total monthly PV is:</span>
-																	<span class="amw-performance-cell">Your performance bonus is:</span>
-																	</li>
-																	<!---->
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">7,500 or more</span>
-																		<span class="amw-performance-cell">25% of your BV (Business Volume)</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">6,000</span>
-																		<span class="amw-performance-cell">23% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">4,000</span>
-																		<span class="amw-performance-cell">21% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">2,500</span>
-																		<span class="amw-performance-cell">18% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">1,500</span>
-																		<span class="amw-performance-cell">15% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">1,000</span>
-																		<span class="amw-performance-cell">12% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">600</span>
-																		<span class="amw-performance-cell">9% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">300</span>
-																		<span class="amw-performance-cell">6% of BV</span>
-																	</li>
-																	<li class="amw-performance-raw">
-																		<span class="amw-performance-cell">100</span>
-																		<span class="amw-performance-cell">3% of BV</span>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</amw-modal>
-										</div>
-									</amw-rainbow>
-								</div>
-							</li>
-							<li class="account-popover__element"><a href="my-account.html" title="My Account">마이페이지</a></li>
-							<li class="account-popover__element"><a href="billing-shipping-add-new-payment-method.html" title="Billing Shipping">나의주문내역 <span class="ccount-my"><b>1</b>/<em>500</em></span></a></li><!-- 2018.06.12 추가 -->
-							<li class="account-popover__element"><a href="#" title="Personal Details">나의반품내역</a></li>
-							<li class="account-popover__element sign-out"><a href="homepage-non-logged-in.html" title="Sign Out"><i class="glyphicon glyphicon-log-out"></i>로그아웃 </a></li>
-						</ul>
-					</div>
-				</div><!--// mini dashboard -->
 
 				<!-- mini cart -->
 				<div class="mini-cart-items-container mini-cart-wrapper" id="shoppingcar-drop-content">
@@ -334,7 +153,7 @@
 						<div class="site-logo">
 							<a href="homepage-logged-in.html"><img src="/_ui/responsive/theme-blue/images/logo1.png" alt="Amway"></a>
 						</div>
-						<!-- 로그인 후 -->
+						<!-- 로그인 후
 						<div class="nav-links-container pos-relative">
 							<ul class="nav-list clearfix">
 								<li class=" nav-item">
@@ -365,9 +184,9 @@
 									</span>
 								</li>
 							</ul>
-						</div>
+						</div>-->
 
-						<!-- 로그인 전
+						<!-- 로그인 전-->
 						<div class="nav-links-container pos-relative">
 							<ul class="nav-list clearfix">
 								<li class="yCmsComponent nav-item">
@@ -392,7 +211,6 @@
 								</li>
 							</ul>
 						</div>
-						 -->
 					</div>
 				</div>
 				<div class="">
@@ -1159,7 +977,8 @@
 						</div>
 						<div class="mobile-header-cell user-info-container">
 							<button class="mobile-user-btn js-toggle-xs-search print-hide js-my-account-menu" type="button">
-							<img src="/_ui/responsive/theme-blue/images/yui.png" alt="">
+							<!--<img src="/_ui/responsive/theme-blue/images/yui.png" alt="">
+							 <span class="message-num-1">24</span>  -->
 							<span class="icon icon-user"></span>
 							</button>
 						</div>
@@ -1168,7 +987,7 @@
 								<div class="nav-cart nav-cart-wrapper js-nav-cart-wrapper print-hide">
 									<a href="#" class="mini-cart-link js-mini-cart-link clearfix">
 										<div class="mini-cart-icon ">
-											<span class="nav-items-total">16</span>
+											<!--<span class="nav-items-total">0</span>-->
 											<span class="icon-shopping-cart"></span>
 										</div>
 
@@ -1947,177 +1766,3 @@ $(function(){
 </script>
 
 
-<!-- 사용안함 : 2018.05.14
-<script>
-	(function () {
-		function mobileEvent() {
-			$(".js-my-account-menu").click(function (e) {
-				$('header').hasClass('userinfo-open') ? $('header').removeClass('userinfo-open') : $('header').addClass('userinfo-open');
-				$('.top-search').removeClass('search-open');
-				$(".dropdown").removeClass("open");
-				$(".auto-suggestion-popover").hide();
-				$('header').removeClass('mincart-open');
-				$("#overlay-menu-wrapper").removeClass("in");
-//                $('#overlay-menu-wrapper').collapse('hide');
-				$('.overlay-menu-toggle-desktop').addClass('collapsed');
-				e.stopPropagation();
-			});
-
-			$(".js-mini-cart-link").click(function (e) {
-				$('header').hasClass('mincart-open') ? $('header').removeClass('mincart-open') : $('header').addClass('mincart-open');
-				$('.top-search').removeClass('search-open');
-				$('header').removeClass('userinfo-open');
-				$(".dropdown").removeClass("open");
-				$("#overlay-menu-wrapper").removeClass("in");
-				$(".auto-suggestion-popover").hide();
-//                $('#overlay-menu-wrapper').collapse('hide');
-				$('.overlay-menu-toggle-desktop').addClass('collapsed');
-				e.stopPropagation();
-			});
-
-			$(".mobile-search-btn").click(function () {
-				$('.top-search').hasClass('search-open') ? $('.top-search').removeClass('search-open') : $('.top-search').addClass('search-open');
-				$('header').removeClass('userinfo-open');
-				$('header').removeClass('mincart-open');
-				$(".dropdown").removeClass("open");
-			});
-
-			$(".mobile-popover-close").click(function () {
-				$('header').removeClass('userinfo-open');
-			});
-
-			$(".mobile-popover-close2").click(function () {
-				$('header').removeClass('mincart-open');
-			});
-			$(".dropdown").click(function () {
-				$('header').removeClass('userinfo-open mincart-open');
-				$(".auto-suggestion-popover").hide();
-			});
-			$('.auto-suggestion-popover,#shoppingcar-drop-content,#login-drop-content').click(function (e) {
-				e.stopPropagation();
-			});
-			$('#shoppingcar-drop-content .nav a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show');
-			});
-			$(document).bind('click',function(){
-				$('header').removeClass('userinfo-open mincart-open');
-				$(".auto-suggestion-popover").hide();
-			});
-
-			$('#productSuggestListTabs').owlCarousel({
-				loop: true,
-				nav: true,
-				dots: false,
-				margin: 0,
-				items: 1,
-				responsiveClass: true,
-				responsive: {
-					480 : {
-						items: 1
-					},
-					768 : {
-						items: 2
-					},
-					960 : {
-						items: 3
-					},
-					1200 : {
-						items: 5
-					}
-				}
-			});
-		}
-		mobileEvent();
-	})();
-	//This code will be removed when project end.Consistent with the new.js
-	(function () {
-		//search box click event
-		$(window).resize(searchClick);
-		function searchClick() {
-			console.log("function");
-			// PC search click event
-			if (window.innerWidth > 768) {
-				$(".icon-search").click(function (e) {
-					e.preventDefault();
-					var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-					if (value == 'did you mean') {
-						window.location.href = "did-you-mean.html";
-					} else if (value == 'artistry') {
-						window.location.href = "search-result-page.html";
-					} else if (value != '') {
-						window.location.href = "search-no-result.html";
-					}
-				});
-			} else {
-				//mob search click event
-				$(".icon-search").click(function (e) {
-					e.preventDefault();
-					var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
-					if ($('.top-search').hasClass('search-open')) {
-						if (value == 'did you mean') {
-							window.location.href = "did-you-mean.html";
-						} else if (value == 'artistry') {
-							window.location.href = "search-result-page.html";
-						} else if (value != '') {
-							window.location.href = "search-no-result.html";
-						}
-					}
-				});
-			}
-		}
-		searchClick();
-
-		$(window).resize(navToggling);
-		function navToggling() {
-			if (window.innerWidth < 768) {
-				$('.overlay-menu-mobile__panel__heading').click(function () {
-					if ($(this).hasClass('active')) {
-						$(this).removeClass('active');
-						$(this).next('.panel-collapse').removeClass('in');
-						$(this).parent('.panel').siblings('.panel').show();
-						$(this).parents('.nav-list-element').siblings('.nav-list-element').show();
-					} else {
-						$(this).addClass('active');
-						$(this).parent('.panel').siblings('.panel').hide();
-						$(this).parents('.nav-list-element').siblings('.nav-list-element').hide();
-					}
-				}
-				);
-			} else {
-			}
-		}
-		navToggling();
-	})();
-
-	(function () {
-		var SPEED = 'slow';
-		function showSearchResults() {
-			var $this = $(this);
-
-			var $searchResult = $('.auto-suggestion-popover');
-			if ($this.val().length >= 3) {
-				$searchResult.fadeIn(SPEED);
-			} else {
-				$searchResult.fadeOut(SPEED);
-			}
-		}
-
-		function closeSearchResults() {
-			var $searchResult = $('.auto-suggestion-popover').fadeOut(SPEED);
-			$('.ui-autocomplete-input').val('');
-		}
-
-		function registerEvents() {
-			$('.ui-autocomplete-input').on('keyup', showSearchResults);
-			$('.search-results-close').on('click', closeSearchResults);
-		}
-
-		function init() {
-			registerEvents();
-		}
-
-		init();
-	})();
-</script>
--->
