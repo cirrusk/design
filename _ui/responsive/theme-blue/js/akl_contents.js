@@ -22,7 +22,7 @@ function brandTopSNS(){
 	var windowWidth = $(window).width();
 
 	function titSpaceCal(){
-		console.log('h1 높이: ' + titHeight);
+		//console.log('h1 높이: ' + titHeight);
 		$brandSns.css('top',titHeight);
 	}
 
@@ -43,7 +43,9 @@ function xsEnergyHome(){
 	var $xsenergyList = $('.xsenergy_mainlist');
 	if(!$xsenergyList.length){return;}
 	
-	var colmn = $xsenergyList.children('li').eq(8);
+	//var colmn = $xsenergyList.children('li').eq(8);
+	
+	var colmn = $xsenergyList.children('li:nth-last-child(2)');
 	var colmnHeight = colmn.height() + 0.01;
 	var windowWidth = $(window).width();
 	
@@ -51,7 +53,7 @@ function xsEnergyHome(){
 		colmn.css('margin-top',-colmnHeight+'px');
 	}
 	
-	//console.log(colmnHeight);
+	console.log(colmnHeight);
 	
 	if(windowWidth > 1024) {
 		colmnTop();

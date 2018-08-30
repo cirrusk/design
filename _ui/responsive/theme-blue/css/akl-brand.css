@@ -9,8 +9,8 @@ Editor : HYEWON HWANG
 .brand .color-gray{color:#55565a !important;}
 .brand .rela {position:relative;}
 .brand .overh {overflow:hidden;}
-.brand .fl {float:left;}
-.brand .fr {float:right;}
+.brand .fl {float:left !important;}
+.brand .fr {float:right !important;}
 .brand .txtl {text-align:left;}
 .brand .txtr {text-align:right;}
 .brand .full {width:100%;}
@@ -30,6 +30,8 @@ Editor : HYEWON HWANG
 
 .popup-video-preview__content .video-wrapper + p {margin:10px 0 0;}
 
+.brand .owl-nav .owl-prev {left:10px;}
+.brand .owl-nav .owl-next {right:10px;}
 
 /* ### 레이아웃 ### */
 /* 전체메뉴 */
@@ -465,7 +467,8 @@ Editor : HYEWON HWANG
 .xsenergy_mainlist {width:100%;overflow:hidden;background:#000;}
 .xsenergy_mainlist li {float:left;width:33.33%;position:relative;}
 .xsenergy_mainlist li.wide1 {width:66.65%;}
-.xsenergy_mainlist li.wide2, .xsenergy_mainlist li.wide3{width:66.67%;}
+.xsenergy_mainlist li.wide2 {width:66.67%;}
+.xsenergy_mainlist li.wide3 {width:100%;}
 .xsenergy_mainlist li img {display:block;width:100%;height:auto;}
 .xsenergy_mainlist .txt-wrap {position:absolute;top:0;left:0;padding:25px 0 0 30px;width:100%;height:100%;line-height:1.5;font-size:16px;color:#fff;}
 .xsenergy_mainlist .txt-wrap em {display:block;color:#fff;opacity:0.5;letter-spacing:0;}
@@ -475,15 +478,18 @@ Editor : HYEWON HWANG
 .xsenergy_mainlist .sns-btn span {position:absolute;bottom:25px;left:30px;text-transform:uppercase;}
 .xsenergy_mainlist li.wide1 .txt-wrap {top:40%;left:0;padding-left:10%;font-size:22px;}
 .xsenergy_mainlist .link-btn {position:absolute;top:54%;left:0;padding-left:10%;}
-.xsenergy_mainlist .link-btn .bt-akl-blue {height:50px;font-size:16px;}
+.xsenergy_mainlist a.bt-akl-blue {height:50px;font-size:16px;line-height:1;padding:15px 30px 0;}
 .xsenergy_mainlist li.wide2 .txt-wrap .hashtag {position:absolute;top:60%;left:10%;font-size:26px;}
 
 @media (max-width: 1024px){
 	.xsenergy_mainlist li {width:50%;}
 	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
+	.xsenergy_mainlist li.wide3 {width:50%;}
 	.xsenergy_mainlist li:nth-child(10) .pc {display:none;}
 	.xsenergy_mainlist li:nth-child(10) .mob {display:block;}
 	.xsenergy_mainlist li:nth-child(11) {display:none;}
+	
+	.xsenergy_mainlist.xsenergy li.wide3 {width:100%;}
 }
 @media (max-width: 768px){
 	.xsenergy_mainlist .video-btn img {width:70px;height:70px;margin:-5% 0 0 -35px;}
@@ -516,6 +522,9 @@ Editor : HYEWON HWANG
 	.brand .mob, .intro .masthead .mob, .amway-theme .desktop-image-mob {display:block !important;}
 	.brand .pc, .intro .masthead .pc, .amway-theme .desktop-image {display:none;}
 	.brand .full-component {margin:0 -15px;height:auto;width:auto;}
+	
+	.brand .owl-nav .owl-prev {left:0px;}
+	.brand .owl-nav .owl-next {right:0px;}
 	
 	.brand-board {padding:25px 0 0;}
 
