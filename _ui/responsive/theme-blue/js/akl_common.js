@@ -324,10 +324,16 @@ function onScroll_TOP(){
 
 /* 메인 > 신제품,프로모션 div 동일 높이 맞추기 */
 function MAIN_featuredProduct(){
+	var $featuredPRDT = $('.featured-product');
+	var $featureITEMS = $featuredPRDT.find('.featured-product__item');
+
+	if (! $featureITEMS.length){ return; }
+
 	function setHeight(){
 		_winWidth = $(window).width();
-		var maxHeight = 0;
-		$('.featured-product').each(function(){
+
+		var maxHeight = 360;
+		$featuredPRDT.each(function(){
 			var _SubItems = $(this).find('.featured-product__item');
 			if(_winWidth > 768){
 				_SubItems.each(function(){
@@ -343,9 +349,8 @@ function MAIN_featuredProduct(){
 			}
 		});
 	}
-	setTimeout(function(){
-		setHeight();
-	},300);
+
+	setTimeout(function(){ setHeight(); }, 600);
 }
 
 /* 탭 스크롤 */

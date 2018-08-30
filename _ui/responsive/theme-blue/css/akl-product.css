@@ -704,8 +704,9 @@ div.feat-txt p span.next-sort {display:block;}
 .ade-photo img {text-align:center;}
 .sie-box {padding:0 0 0;word-break: keep-all;word-wrap: break-word;}
 .ad-setp-lst {width:100%;font-size: 16px;letter-spacing: -1px;}
-.ad-setp-lst dt {color:#0075a4;font-weight:400 !important;margin-top:23px;margin-bottom: 0;font-size:18px;}
+.ad-setp-lst dt {color:#0075a4;font-weight:400 !important;margin-top:23px;margin-bottom: 0;font-size:16px;}
 .ad-setp-lst dd {font-weight: 300;margin-top: 2px;line-height:26px;color:#808285;font-size:16px;}
+.ad-setp-lst dd strong{font-weight:400;color:#56565a;}
 .ad-setp-lst ol{margin:0;}
 .ad-setp-lst dd ul li, .ad-setp-lst dd ol li{font-size:16px;}
 .bacteria-info .ad-setp-lst dt{font-size:18px;}
@@ -1365,7 +1366,7 @@ dl.amo-txt dd br {line-height:18px}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd{font-weight: 300;color: #808285;font-size:16px;}
 .hydra-list-wrap ul > li > .hydra-thum-wrap .txt dd.point{font-size: 14px;color: #808285;margin-top: 22px;}
 
-.ad-setp-lst.ar7227 dt{font-size:32px;color:#56565a;}
+.ad-setp-lst.ar7227 dt{font-size:32px !important;color:#56565a;}
 .ar7227 dd strong{font-weight: 400;}
 
 
@@ -3116,6 +3117,10 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.oil-txt-lst.three{padding: 0 21% 0;}
 	
+	.tip-box .tip-tit{font-size:16px;}
+	.tip-box .tip-txt{font-size:14px;}
+	.step-tbl .com-tit, .step-tbl .com-tit span{font-size:26px;}
+	
 	
 	/* 비비안 */
 	.product-rank.aroma .rank-img{display: block;text-align: center;width: 100%;}
@@ -3583,7 +3588,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.visual-area.type01.doubleX_Refill .txt-info-visual .v-etc {font-size:14px;}
 
 	.description-area.doubleX_Refill {border-top:1px solid #e3e3e3;margin:50px 0 0;padding:50px 0 0}
-	.description-area.doubleX_Refill .com-tit {font-size:20px;}
+	/*.description-area.doubleX_Refill .com-tit {font-size:20px;}*/
 	.description-area.doubleX_Refill .com-tit span {display:inline-block;}
 
 	.ingred-analy li,
@@ -3647,6 +3652,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 	.cert-im span {width:100%;}
 	.cert-im img {margin-top:-50px;width:inherit;height:auto;}
+	.certification_box .cert-im img{width:auto;}
 	
 	.effet-box.certif .advan-left {display:block;width:100%;border-right:0 none;padding:0 0 20px;}
 	.effet-box.certif .advan-right {display:block;width:100%;border-top:1px solid #e3e3e3;padding:30px 0 0;}
@@ -4037,7 +4043,6 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.deaf03.bep-lst li{width:50%;}
 	
-	.system-lst3 ul li{float:none;width:100%;text-align:center;}
 	
 	/* 홈리빙 */
 	.special-item{padding:20px 30px;margin-top:25px;}
@@ -4117,6 +4122,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.hua-ad-list > li{width:100%;padding:30px 0 0 0 !important;}
 	.hua-ad-list.type02 > li:first-child{padding:30px 0 0 0 !important;}
+	.hua-ad-list.full > li:first-child{padding-top:0 !important;}
 	.hua-ad-list .hua-ad-box,
 	.hua-ad-list .hua-ad-img{vertical-align:middle;}
 	.hua-ad-list .hua-ad-box .hua-ad-tit{font-size:16px;}
@@ -4412,6 +4418,10 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	/*  엣모스피어 스카이 */
 	.atmosky-allergy-lst .allergy-txt-cont ul li{font-size:12px;}
 	
+	
+	/* 뷰티 */
+	.system-lst3 ul li{float:none;width:100%;text-align:center;}
+	
 	/* 셀렉트 시그니처 */
 	.signature-cont-area .pcomp-area .comp-info .comp-box dl dd{min-height:130px;}
 	.signature-cont-area .pcomp-area .comp-info .comp-box dl dt p {font-size:12px;}
@@ -4502,5 +4512,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.rep-box .rep-fle-money{left:10%;bottom:20%;}
 	.rep-box .rep-fle-txt{bottom:7%;right:5%;}
+	
+	.cert-lst:after{top:52px;height:82.5%}
 	
 }

@@ -126,6 +126,9 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .media-borad-list-video li a .tag {background-color:#e11e45;}
 .media-borad-list-video li a .tit-txt-wrap:after {clear:both;content:'';display:block;position:absolute;left:30px;top:-90px;width:62px;height:62px;background:url(../images/akl_brand/common/bg_movie_play.png) no-repeat 0 0;background-size:contain;}
 .media-borad-list-video li.highlight .tit-txt-wrap:after {top:-119px;left:30px;width:78px;height:78px;}
+.media-borad-list-video li a .tag.gallery {background:#002f5f;}
+.media-borad-list-video li a .tag.gallery span {display:inline-block;padding-left:20px;background:url(../images/akl_brand/common/bg_tag_gallery.png) no-repeat 0 50%;background-size:13px auto;}
+.media-borad-list-video li a .tag.gallery + .tit-txt-wrap:after {display:none;}
 .media-borad-list-gallery li a .tag {background:#002f5f;}
 .media-borad-list-gallery li a .tag span {display:inline-block;padding-left:20px;background:url(../images/akl_brand/common/bg_tag_gallery.png) no-repeat 0 50%;background-size:13px auto;}
 
@@ -236,9 +239,9 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 /*레이어 팝업*/
-.gallery-wrapper {width:100%;height:524px;overflow-y:auto;}
+.gallery-wrapper {width:100%;max-height:524px;overflow-y:auto;}
 .gallery-wrapper img {max-width:100%;}
-.
+.gallery-wrapper img + img {margin-top:10px;} 
 /*채용정보*/
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
 .akl-toggle-wrap.recruit .panel-title .text-uppercase.accordion-header-text {font-size:14px;letter-spacing:0;}
