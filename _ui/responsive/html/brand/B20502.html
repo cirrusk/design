@@ -27,29 +27,11 @@
 
 	<script language="javascript" type="text/javascript">
 		$(document).ready(function(){
-			var $grid = [];
-
-			$grid[0] = $('.media-borad-list-video ul').masonry({
+			$('.media-borad-list-video ul').masonry({
 				columnWidth: '.grid-item',
 				transitionDuration:0,
 				percentPosition: true
 			});
-			$grid[1] = $('.media-borad-list-gallery ul').masonry({
-				columnWidth: '.grid-item',
-				transitionDuration:0,
-				percentPosition: true
-			});
-
-			$(document).on('click', '.tab-toggle', function(e) {
-				e.preventDefault();
-				var $index = +$(this).attr('data-index')
-
-				$($(this)[0].hash).show(0, function() {
-					$grid[$index].masonry();
-				})
-			});
-
-			//$( '.tab-toggle').eq(0).trigger('click');
 
 			var i = 0;
 
@@ -57,13 +39,12 @@
 				var $winSize = $(window).outerWidth();
 				i++;
 				e.preventDefault();
-				var $index = +$(this).parent().attr('data-index');
-				var startNum = 8 * i;
+				var startNum = 7 * i;
 				var endNum = startNum + 10;
 
 				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
 
-				setTimeout(function(){ $grid[$index].masonry() }, 0);
+				setTimeout(function(){ $('.media-borad-list-video ul').masonry() }, 0);
 
 				if(!$(this).parent().prev().is(':hidden')){
 					$(this).hide();
@@ -87,7 +68,7 @@
 				<ol class="breadcrumb">
 					<li><a href="#">홈</a></li> 
 					<li>암웨이소개</li>
-					<li>아티스트리</li>
+					<li>암웨이 퀸</li>
 					<li>미디어 라이브러리</li>
 				</ol>
 			</div>
@@ -178,109 +159,89 @@
 					<h1 class="title-h2">미디어 라이브러리</h1>
 				</div>
 
-				<div class="outer-border-bottom">
-					<ul class="tabs-toggles">
-						<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" data-index="0" href="#Video"> <span class="toggle-text">영상</span> </a> </li>
-						<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" data-index="1" href="#Gallery"> <span class="toggle-text">포토</span> </a> </li>
+				<div class="media-borad-list-video">
+					<ul>
+						<li class="highlight">
+							<a href="#" class="B20502_lp1">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L1_H.jpg" alt="[암웨이 퀸] My Cooking Story, Amway Queen™ - 두 번째 이야기"/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] My Cooking Story, Amway Queen™ - 두 번째 이야기</strong>
+									<p>퀸쿡 웨어로 만드는 요리 레서피입니다.</p>
+								</div>
+							</a>
+						</li>
+						<li class="grid-item">
+							<a href="#" class="B20502_lp2">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L2.jpg" alt="[암웨이 퀸] 맛있는 이야기를 만듭니다 My Cooking Story, Amway Queen™ "/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] 맛있는 이야기를 만듭니다 My Cooking Story, Amway Queen™ </strong>
+								</div>
+							</a>
+						</li>
+						<li class="grid-item">
+							<a href="#" class="B20502_lp3">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L3.jpg" alt="[암웨이 퀸] 지키는 기술 1 - Moisture Seal"/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] 지키는 기술 1 - Moisture Seal</strong>
+								</div>
+							</a>
+						</li>
+						<li class="grid-item">
+							<a href="#" class="B20502_lp4">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L4.jpg" alt="[암웨이 퀸] 지키는 기술 2 - VITALOK™ Cooking "/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] 지키는 기술 2 - VITALOK™ Cooking </strong>
+								</div>
+							</a>
+						</li>
+						<li class="grid-item">
+							<a href="#" class="B20502_lp5">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L5.jpg" alt="[암웨이 퀸] 지키는 기술 3 - All Layer Tech "/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] 지키는 기술 3 - All Layer Tech </strong>
+								</div>
+							</a>
+						</li>
+						<li class="grid-item">
+							<a href="#" class="B20502_lp6">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L6.jpg" alt="[암웨이 퀸] 지키는 기술 4 - NSF 인증"/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] 지키는 기술 4 - NSF 인증</strong>
+								</div>
+							</a>
+						</li>
+						<li class="grid-item">
+							<a href="#" class="B20502_lp7">
+								<div class="view-img">
+									<img src="../../theme-blue/images/akl_brand/queen/movie_L7.jpg" alt="[암웨이 퀸] 지키는 기술 5 - Asian Kitchen Lab "/>
+								</div>
+								<span class="tag"><span>Video</span></span>
+								<div class="tit-txt-wrap">
+									<strong>[암웨이 퀸] 지키는 기술 5 - Asian Kitchen Lab </strong>
+								</div>
+							</a>
+						</li>
+						 <!-- <li class="grid-item media-more-btn"><button><span>more</span></button></li> -->
 					</ul>
-				</div>
-				<div class="tab-content tabs-content-blocks">
-
-					<!-- ## tab1 ## -->
-					<div class="tab-pane content-block active" id="Video">
-						<h2 class="hidden">영상</h2>
-						<div class="media-borad-list-video">
-							<ul>
-								<li class="highlight">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/L1 - _Thumbnail.jpg" alt="비타민씨플러스 히알루론산"/>
-										</div>
-										<span class="tag"><span>Video</span></span>
-										<div class="tit-txt-wrap">
-											<strong>비타민씨플러스 히알루론산(30초)</strong>
-										</div>
-									</a>
-								</li>
-								<li class="grid-item">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/L2 - _Thumbnail.jpg" alt="에센셜 바이 아티스트리 - 씻고자 편"/>
-										</div>
-										<span class="tag"><span>Video</span></span>
-										<div class="tit-txt-wrap">
-											<strong>에센셜 바이 아티스트리 - 씻고자 편(30초)</strong>
-										</div>
-									</a>
-								</li>
-								<li class="grid-item">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/L3 - _Thumbnail.jpg" alt="에센셜 바이 아티스트리 - 피부미인 편"/>
-										</div>
-										<span class="tag"><span>Video</span></span>
-										<div class="tit-txt-wrap">
-											<strong>에센셜 바이 아티스트리 - 피부미인 편(30초)</strong>
-										</div>
-									</a>
-								</li>
-								<!-- <li class="grid-item media-more-btn" data-index="0"><button><span>more</span></button></li> -->
-							</ul>
-						</div>
-					</div>
-					<!-- ## tab2 ## -->
-					<div class="tab-pane content-block" id="Gallery">
-						<h2 class="hidden">포토</h2>
-						<div class="media-borad-list-gallery">
-							<ul>
-								<li class="highlight">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/artistry_vc_ha_AD - Thumbnail.jpg" alt=""/>
-										</div>
-										<span class="tag"><span>Gallery</span></span>
-										<div class="tit-txt-wrap">
-											<strong>비타민씨 플러스 히알루론산 트리트먼트</strong>
-										</div>
-									</a>
-								</li>
-								<li class="grid-item">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/artistry_eba_a_AD01_Thumbnail.jpg" alt=""/>
-										</div>
-										<span class="tag"><span>Gallery</span></span>
-										<div class="tit-txt-wrap">
-											<strong>어린피부를 위한 3단케어</strong>
-										</div>
-									</a>
-								</li>
-								<li class="grid-item">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/artistry_eba_a_AD02 - Thumbnail.jpg" alt=""/>
-										</div>
-										<span class="tag"><span>Gallery</span></span>
-										<div class="tit-txt-wrap">
-											<strong>메이크업이 예쁘려면</strong>
-										</div>
-									</a>
-								</li>
-								<li class="grid-item two-part">
-									<a href="#">
-										<div class="view-img">
-											<img src="../../theme-blue/images/akl_brand/artistry/artistry_eba_a_AD03 - Thumbnail.jpg" alt=""/>
-										</div>
-										<span class="tag"><span>Gallery</span></span>
-										<div class="tit-txt-wrap">
-											<strong>피부미인은 이번 생에</strong>
-										</div>
-									</a>
-								</li>
-								<!-- <li class="grid-item media-more-btn" data-index="1"><button><span>more</span></button></li> -->
-							</ul>
-						</div>
-					</div>
+					
 				</div>
 
 			</div> <!-- //brand-area -->
@@ -289,6 +250,359 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	
+
+<!-- (팝업) B20502_lp1_pop -->
+<div class="layerWrapper B20502_lp1_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] My Cooking Story, Amway Queen™ - 두 번째 이야기</span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] My Cooking Story, Amway Queen™ - 두 번째 이야기" src="https://www.youtube.com/embed/zilKGHWBGzo" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">퀸쿡 웨어로 만드는 요리 레서피입니다.</p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp1_pop -->
+
+<!-- (팝업) B20502_lp2_pop -->
+<div class="layerWrapper B20502_lp2_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] 맛있는 이야기를 만듭니다 My Cooking Story, Amway Queen™ </span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] 맛있는 이야기를 만듭니다 My Cooking Story, Amway Queen™ " src="https://www.youtube.com/embed/WXL8xo1d4m0" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">늘 냉장고에 특별한 재료가 있지는 않습니다. 모두가 특별한 요리 솜씨를 갖고 있지도 않습니다.<br />하지만 누구나, 언제나, 요리를 잘 만들고 싶습니다.요리는 사람의 마음을 여는 가장 좋은 방법이니까요.</p>
+							<p class="mgt10">재료가 평범해도 솜씨가 서툴러도 누구나 좋은 요리로 맛있는 이야기를 만들 수 있도록 암웨이 퀸의 기술은 섬세하게 설계되어 있습니다. </p>
+							<p>Moisture Seal, VITALOK™ Cooking, All Layer Tech, Asian Kitchen Lab까지 – 요리의 시작과 끝을 모두 고려하였습니다. <br />맛있는 이야기를 만듭니다. MY COOKING STORY AMWAY QUEEN™</p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp2_pop -->
+
+
+<!-- (팝업) B20502_lp3_pop -->
+<div class="layerWrapper B20502_lp3_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] 지키는 기술 1 - Moisture Seal</span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] 지키는 기술 1 - Moisture Seal" src="https://www.youtube.com/embed/YoFTdKBOjjo" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">뚜껑과 본체의 빈틈을 최소화하고 내부 증기로도 음식을 익혀 풍미를 지켜줍니다.</p>
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp3_pop -->
+
+<!-- (팝업) B20502_lp4_pop -->
+<div class="layerWrapper B20502_lp4_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] 지키는 기술 2 - VITALOK™ Cooking </span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] 지키는 기술 2 - VITALOK™ Cooking " src="https://www.youtube.com/embed/0s6XIL8OaGM" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">암웨이 퀸의 차별화 된 저수 조리법 <br />저수 조리는 일반 조리보다 영양소 보존이 높아 맛있고 건강한 요리가 됩니다.</p>
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp4_pop -->
+
+<!-- (팝업) B20502_lp5_pop -->
+<div class="layerWrapper B20502_lp5_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] 지키는 기술 3 - All Layer Tech </span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] 지키는 기술 3 - All Layer Tech " src="https://www.youtube.com/embed/jJ5UHQH2m-8" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">스테인리스 스틸을 사용한 통다중구조 (7중)/(3중) <br />우수한 열전도율과 보온력으로 노오븐베이킹이 가능합니다.</p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp5_pop -->
+
+<!-- (팝업) B20502_lp6_pop -->
+<div class="layerWrapper B20502_lp6_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] 지키는 기술 4 - NSF 인증</span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] 지키는 기술 4 - NSF 인증" src="https://www.youtube.com/embed/s1uhMFr4H9Q" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">생산라인부터 제품의 규격 및 재질, 품질, 성능, 패키지 및 라벨까지 - WHO의 협력센터인 NSF인증을 획득했습니다.</p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp6_pop -->
+
+<!-- (팝업) B20502_lp7_pop -->
+<div class="layerWrapper B20502_lp7_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[암웨이 퀸] 지키는 기술 5 - Asian Kitchen Lab </span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[암웨이 퀸] 지키는 기술 5 - Asian Kitchen Lab " src="https://www.youtube.com/embed/58HiDcZyBTI" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">인체공학적설계를 통해 아시아인이 사용하기 편리하도록 디자인 하였습니다.</p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp7_pop -->
+
+<!-- (팝업) B20502_lp8_pop -->
+<div class="layerWrapper B20502_lp8_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[뉴트리라이트] 왜 뉴트리라이트인가?(Why queen?)</span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[뉴트리라이트] 왜 뉴트리라이트인가?(Why queen?)" src="https://www.youtube.com/embed/ccnxCgOXlio" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">최고의 자연과 최상의 과학의 만남, 뉴트리라이트</p>
+							<p>뉴트리라이트 브랜드 사이트 <a href="http://www.queen.co.kr" target="_blank" title="뉴트리라이트 새창열림">www.queen.co.kr</a></p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp8_pop -->
+
+<!-- (팝업) B20502_lp9_pop -->
+<div class="layerWrapper B20502_lp9_pop">
+	<div id="videobox" class="lynx-modal-window--opened directbox typeVideoView">
+		<div class="video-pop">
+			<div id="cboxTitle">
+				<div class="headline">
+					<span class="headline-text">[뉴트리라이트] Perfect Balance</span>
+				</div>
+			</div>
+			<div id="bonusPaymentDirectDeposit">
+				<div class="bonus-payment-method__wrapper">
+					<!-- layer conts -->
+					<div class="popup-video-preview__content">
+						<!-- 2018.02.13 수정 -->
+						<div class="video-cont">
+
+							<div class="video-wrapper">
+								<iframe width="100%" height="100%" title="[뉴트리라이트] Perfect Balance" src="https://www.youtube.com/embed/lIU0r4Mz9ds" frameborder="0"></iframe>
+							</div>
+							<p class="mgt10">뉴트리라이트의 역사와 정신, 철학에 대해서 자세히 알 수 있는 영상입니다. </p>
+							<p>뉴트리라이트 브랜드 사이트 <a href="http://www.queen.co.kr" target="_blank" title="뉴트리라이트 새창열림">www.queen.co.kr</a></p>
+
+						</div>
+						<!--// 2018.02.13 수정 -->
+					</div>
+
+					<!-- //layer conts -->
+				</div>
+			</div>
+			<a href="#" id="cboxClose" class="cClose" title="닫기"><span class="modal-close-icon"></span></a>
+		</div>
+	</div>
+</div>
+<!-- //(팝업) B20502_lp9_pop -->
+
+
+<script language="javascript" type="text/javascript">
+	$(function(){
+		//동영상보기 레이어
+		$('.B20502_lp1').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp1_pop');
+		});
+
+		$('.B20502_lp2').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp2_pop');
+		});
+		$('.B20502_lp3').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp3_pop');
+		});
+		$('.B20502_lp4').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp4_pop');
+		});
+		$('.B20502_lp5').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp5_pop');
+		});
+		$('.B20502_lp6').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp6_pop');
+		});
+		$('.B20502_lp7').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp7_pop');
+		});
+		$('.B20502_lp8').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp8_pop');
+		});
+		$('.B20502_lp9').click(function(event) {
+			event.preventDefault();
+			layerPopOver('this','.B20502_lp9_pop');
+		});
+
+	});
+</script>
 </body>
 </html>
