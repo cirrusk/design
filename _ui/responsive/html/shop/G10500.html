@@ -456,7 +456,7 @@
 										<span class="value-wrapper option">
 											<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4"></p>
 											<div class="option-info">
-												<span>19번 코랄 선라이즈</span>
+												<span>19번 코랄 선라이즈(옵션변경 팝업열림)</span>
 												<a class="link-btn" href="#" id="G10500_lp2">변경하기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 											</div>
 										</span>
@@ -695,6 +695,7 @@
 										<span class="total-price-label">옵션</span>
 										<span class="value-wrapper option">
 											<div class="option-info type2">
+												<span>(옵션 선택  팝업 열림)</span>
 												<a class="link-btn" href="#" id="G10000_lp9">변경하기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 											</div>
 										</span>
@@ -950,7 +951,7 @@
 										<span class="value-wrapper option">
 											<p class="opt-im"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="color-4"></p>
 											<div class="option-info">
-												<span>19번 코랄 선라이즈</span>
+												<span>19번 코랄 선라이즈(제품 선택  팝업 열림)</span>
 												<a class="link-btn" href="#" id="G10000_lp10">변경하기<span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
 											</div>
 										</span>
@@ -1831,7 +1832,7 @@
 <!-- //옵션변경 팝업  -->
 
 
-<!-- 퀵오더 팝업 -->
+<!-- 퀵오더 팝업 사용안함 -->
 <div class="layerWrapper G10500_lp1_pop"><!-- div.layerWrapper 추가 -->
 	<div class="cbox G10500_lp1 layerBox popWidM"><!-- .layerBox 추가 -->
 		<div class="cart-popup__dialog">
@@ -2476,15 +2477,6 @@
 			$(".opt-quantity-tooltip").hide();
 		});
 
-		$('#G10500_lp1').click(function(event) {
-			event.preventDefault();
-			layerPopOver(this,'.G10500_lp1_pop');
-		});
-
-		$('#G10500_lp2').click(function(event) {
-			event.preventDefault();
-			layerPopOver(this,'.G10500_lp2_pop');
-		});
 		$('.quick-view-btn').click(function(event) {
 			event.preventDefault();
 			layerPopOver(this,'.QUICK_VIEW_pop');
@@ -2533,34 +2525,37 @@
 		$(".cartlist-view").click(function(){
 			$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
 		})
-		/* akl_common.js 로 이동
-		$('.tooltip-btn').click(function() {
-			$('.promotion-tip-alert').slideToggle(0);
-		});
 
-		$('.tip-close').click(function() {
-			$('.promotion-tip-alert').hide();
-		}); */
-
-		$('#G10000_lp9').click(function(event) {
+		$('#G10500_lp1').click(function(event) { //사용안함
 			event.preventDefault();
-			layerPopOver(this,'.G10000_lp9_pop');
+			layerPopOver(this,'.G10500_lp1_pop');
 		});
 
-		$('#G10000_lp10').click(function(event) {
+		$('#G10500_lp2').click(function(event) {//변경하기 버튼에 링크
 			event.preventDefault();
-			layerPopOver(this,'.G10000_lp10_pop');
+			layerPopOver(this,'.G10500_lp2_pop');
 		});
 
-		$('#G10500_lp3').click(function(event) {
+		$('#G10500_lp3').click(function(event) {//삭제 버튼에 링크
 			event.preventDefault();
 			layerPopOver(this,'.G10500_lp3_pop');
 		});
 
-		$('#G10000_lp8').click(function(event) {
+		$('#G10000_lp8').click(function(event) {//수량빼기 버튼에 링크
 			event.preventDefault();
 			layerPopOver(this,'.G10000_lp8_pop');
 		});
+
+		$('#G10000_lp9').click(function(event) {//3번째 변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp9_pop');
+		});
+
+		$('#G10000_lp10').click(function(event) {//5번째 변경하기 버튼에 링크
+			event.preventDefault();
+			layerPopOver(this,'.G10000_lp10_pop');
+		});
+
 
 		var owl = $('#recommendedListTabs');
 		owl.owlCarousel({
