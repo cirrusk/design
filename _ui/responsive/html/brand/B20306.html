@@ -145,30 +145,53 @@
 				<div class="tab-content tabs-content-blocks">
 					<div class="tab-pane content-block active">
 <style>
-.xsenergy .item .txt-wrap .ex-wrap span:before {content:'';display:inline-block;position:absolute;top:0;}
+.xs_subpage .item .txt-wrap .ex-wrap span:before,
+.xs_subpage .item .ex-wrap2 .icon-wrap span:before {content:'';display:inline-block;position:absolute;top:0;}
 /* owl */
-.xsenergy .owl-nav .owl-prev, .xsenergy .owl-nav .owl-next,
-.xsenergy .owl-nav .owl-prev:hover, .xsenergy .owl-nav .owl-next:hover {height:45px;width:20px; background-size:20px 43px !important;}
-.xsenergy .owl-dots {left:auto;right:auto;width:100%;text-align:center;}
-.xsenergy .owl-dots .owl-dot.active span {background:#fff;} 
+.xs_subpage .owl-nav .owl-prev, .xs_subpage .owl-nav .owl-next,
+.xs_subpage .owl-nav .owl-prev:hover, .xs_subpage .owl-nav .owl-next:hover {top:33%;height:45px;width:20px; background-size:20px 43px !important;}
+.xs_subpage .owl-dots {left:auto;right:auto;top:630px;width:100%;text-align:center;}
+.xs_subpage .owl-dots .owl-dot.active span {background:#fff;} 
 
-.xsenergy .wide3 {width:100%;}
-.xsenergy .item {position:relative;} 
-.xsenergy .item .view-img-item img {display:block;position:absolute;top:50%;right:10%;transform:translateY(-50%);width:auto;}
-.xsenergy .item .txt-wrap {padding:50px 95px;}
-.xsenergy .item .txt-wrap .view-img-item img {width:auto;}
-.xsenergy .item .txt-wrap > p:nth-of-type(1) {color: transparent;margin-bottom:40px;width:126px;height:31px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_logo1.png') no-repeat 0 0;}
-.xsenergy .item .txt-wrap > p:nth-of-type(2) {margin-bottom:10px;font-size:18px;}
-.xsenergy .item .txt-wrap > p:nth-of-type(3) {margin-bottom:40px;font-size:16px;font-weight:400;color:#bbb;}
-.xsenergy .item .txt-wrap > h2 {margin:0 0 30px;font-size:50px;font-weight:700;color:#c3d200;}
-.xsenergy .item .txt-wrap > p:nth-of-type(4) {margin:40px 0 50px;}
-.xsenergy .item .txt-wrap .ex-wrap span{position:relative;display:inline-block;padding-top:80px;width:80px;color:#bbb;font-size:14px;font-weight:400;text-align:center;}
-.xsenergy .item .txt-wrap .ex-wrap span:before {margin:auto;width:60px;height:60px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/xs_icon01.png') no-repeat 0 10px;}
-.xsenergy .item .txt-wrap .ex-wrap span:nth-child(2):before {background-position-x:-90px;}
-.xsenergy .item .txt-wrap .ex-wrap span:nth-child(3):before {background-position-x:-180px;}
+
+.xs_subpage {position:relative;}
+.xs_subpage .main-brn-wrap {width:100%;}
+.xs_subpage .item {position:relative;}
+.xs_subpage .item section:nth-child(1) {height:680px;background:url(/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01.jpg) no-repeat 100% 0;} 
+.xs_subpage .item .txt-wrap {padding:50px 95px;}
+.xs_subpage .item .txt-wrap > p:nth-of-type(1) {color: transparent;margin-bottom:40px;width:126px;height:31px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_logo1.png') no-repeat 0 0;}
+.xs_subpage .item .txt-wrap > p:nth-of-type(2) {margin-bottom:10px;font-size:18px;}
+.xs_subpage .item .txt-wrap > p:nth-of-type(3) {margin-bottom:40px;font-size:16px;font-weight:400;color:#bbb;}
+.xs_subpage .item .txt-wrap > h2 {margin:0 0 30px;font-size:50px;font-weight:700;color:#c3d200;}
+.xs_subpage .item .txt-wrap > p:nth-of-type(4) {margin:40px 0 50px;}
+.xs_subpage .item .txt-wrap .ex-wrap span{position:relative;display:inline-block;padding-top:80px;width:80px;color:#bbb;font-size:14px;font-weight:400;text-align:center;}
+.xs_subpage .item .txt-wrap .ex-wrap span:before {margin:auto;width:60px;height:60px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/xs_icon01.png') no-repeat 0 10px;}
+.xs_subpage .drink1 .txt-wrap .ex-wrap span:nth-child(1):before {background-position-x:0px;}
+.xs_subpage .drink1 .txt-wrap .ex-wrap span:nth-child(2):before {background-position-x:-90px;}
+.xs_subpage .drink1 .txt-wrap .ex-wrap span:nth-child(3):before {background-position-x:-180px;}
+
+.xs_subpage .item section:nth-child(2) {width:-webkit-calc(100% - 33.33%);width:calc(100% - 33.33%);position:relative;}
+.xs_subpage .item .ex-wrap2 {position:absolute;top:0;left:0;width:100%;text-align:center;word-wrap:break-word;}
+.xs_subpage .item .ex-wrap2 > p {margin-top:6%;font-size:22px;font-weight:500;letter-spacing:0}
+.xs_subpage .drink1 .ex-wrap2 > p span {color:#c3d200;}
+.xs_subpage .drink2 .ex-wrap2 > p span {color:#c3d200;}
+.xs_subpage .drink3 .ex-wrap2 > p span {color:#c3d200;}
+.xs_subpage .drink4 .ex-wrap2 > p span {color:#c3d200;}
+.xs_subpage .item .ex-wrap2 .icon-wrap {margin:6% auto 0;text-align:center;}
+.xs_subpage .item .ex-wrap2 .icon-wrap span {position:relative;display:inline-block;padding-top:95px;width:120px;font-size:16px;line-height:1.5;vertical-align:top;letter-spacing:-2px;}
+.xs_subpage .item .ex-wrap2 .icon-wrap span:before {width:84px;height:84px;left:50%;margin-left:-42px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/xs_icon01.png') no-repeat -270px 0;}
+.xs_subpage .drink1 .ex-wrap2 .icon-wrap span:nth-child(1):before {background-position-x:-270px;}
+.xs_subpage .drink1 .ex-wrap2 .icon-wrap span:nth-child(2):before {background-position-x:-360px;}
+.xs_subpage .drink1 .ex-wrap2 .icon-wrap span:nth-child(3):before {background-position-x:-450px;}
+.xs_subpage .drink1 .ex-wrap2 .icon-wrap span:nth-child(4):before {background-position-x:-540px;}
+.xs_subpage .drink1 .ex-wrap2 .icon-wrap span:nth-child(5):before {background-position-x:-630px;}
+
+.xs_subpage .video1 {position:absolute;top:680px;right:0;}
+.xs_subpage .video1.rela {position:relative;top:auto;right:auto;}
+
 
 /* 상품에 따라 칼라, 아이콘 변경 */
-.drink1 {}
+.drink1 {}/*color:#c3d200*/
 .drink2 {}
 .drink3 {}
 .drink4 {}
@@ -179,59 +202,78 @@
 .nuts {}
 .chip {}
 
+@media (max-width: 1024px){
+	.xs_subpage .item .txt-wrap {padding-top:25px;padding-left:50px;}
+	.xs_subpage .item section:nth-child(2) {width:100% !important;}
+	.xs_subpage .video1 {position:relative;top:auto;right:auto;}
+}
+
+
 </style>
-						<ul class="xsenergy_mainlist xsenergy">
-							<li class="wide3">
+						<ul class="xsenergy_mainlist xs_subpage">
+							<li class="main-brn-wrap">
 								<div id="banner_list" class="owl-carousel owl-theme">
+									<!-- item1 -->
 									<div class="item drink1">
-										<img class="" src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01.jpg" alt="">
-										<div class="view-img-item"><img class="" src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01_item.png" alt=""></div>
-										<div class="txt-wrap">
-											<p>XS ENERGY</p>
-											<p>초콜릿의 달콤함과 풍부한 식감으로 에너지 UP!</p>
-											<h2>XS 에너지 바</h2>
-											<p>- 초콜릿 엔로빙으로 한층 더 부드러워진 풍미<br>
-												- 오트(귀리) 퍼프로 더 크런치해진 식감<br>
-												- 비타민 B군 함유로 에너지 플러스(나이아신, 판토텐산,비타민 B2)
-											</p>
-											<p><a href="#" class="bt-akl-blue">구매하기</a></p>
-											<p class="ex-wrap"><span>와일드 <br>망고씨유 함유</span><span>카페인 <br>0mg</span><span>풍부한 <br>비타민B</span></p>
-										</div>
+										<section>
+											<div class="view-img"><img class="mob" src="" alt="XSenergy+burn 네온 블라스트"></div>
+											<div class="txt-wrap">
+												<p>XS ENERGY</p>
+												<p>XS 네온 블라스트로 에너지 BURN!</p>
+												<h2>XS NEON BLAST</h2>
+												<p>CALORIE DOWN! ENERGY UP!</p>
+												<p><a href="http://www.abnkorea.co.kr/shop/nutrition-health/xs-energy/p/284571K" class="bt-akl-blue">구매하기</a></p>
+												<p class="ex-wrap"><span>와일드 <br>망고씨유 함유</span><span>카페인 <br>0mg</span><span>풍부한 <br>비타민B</span></p>
+											</div>
+										</section>
+										<section>
+											<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01_bg.jpg" alt="" /></div>
+											<div class="ex-wrap2">
+												<p><span>XS RED BLAST</span>가 필요할 때!</p>
+												<div class="icon-wrap">
+													<span>몸매 관리에 관심이 있을 때</span>
+													<span>운동 전/후 에너지 번이 필요할 때</span>
+													<span>기분 전환이 필요할 때</span>
+													<span>가벼워진 기분을 느끼고 싶을 때</span>
+													<span>야외활동이 기다리고 있을 때</span>
+												</div>
+											</div>
+										</section>
 									</div>
+									<!-- item1 -->
 									<div class="item drink2">
-										<div class="item ">
-										<img class="" src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr02.jpg" alt="">
-										<div class="view-img-item"><img class="" src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr02_item.png" alt=""></div>
-										<div class="txt-wrap">
-											<p>XS ENERGY</p>
-											<p>초콜릿의 달콤함과 풍부한 식감으로 에너지 UP!</p>
-											<h2>XS 에너지 바</h2>
-											<p>- 초콜릿 엔로빙으로 한층 더 부드러워진 풍미<br>
-												- 오트(귀리) 퍼프로 더 크런치해진 식감<br>
-												- 비타민 B군 함유로 에너지 플러스(나이아신, 판토텐산,비타민 B2)
-											</p>
-											<p><a href="#" class="bt-akl-blue">구매하기</a></p>
-											<p class="ex-wrap"><span>와일드 <br>망고씨유 함유</span><span>카페인 <br>0mg</span><span>풍부한 <br>비타민B</span></p>
-										</div>
+										<section>
+											<div class="view-img"><img class="mob" src="" alt="XSenergy+burn 레드 블라스트"></div>
+											<div class="txt-wrap">
+												<p>XS ENERGY</p>
+												<p>XS 레드 블라스트로 에너지 BURN!</p>
+												<h2>XS RED BLAST</h2>
+												<p>CALORIE DOWN! ENERGY UP!</p>
+												<p><a href="http://www.abnkorea.co.kr/shop/nutrition-health/xs-energy/p/284571K" class="bt-akl-blue">구매하기</a></p>
+												<p class="ex-wrap"><span>와일드 <br>망고씨유 함유</span><span>카페인 <br>0mg</span><span>풍부한 <br>비타민 C</span><span>풍부한 <br>비타민 B</span></p>
+											</div>
+										</section>
+										<section>
+											<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01_bg.jpg" alt="" /></div>
+											<div class="ex-wrap2">
+												<p><span>XS RED BLAST</span>가 필요할 때!</p>
+												<div class="icon-wrap">
+													<span>몸매 관리에 관심이 있을 때</span>
+													<span>운동 전/후 에너지 번이 필요할 때</span>
+													<span>기분 전환이 필요할 때</span>
+													<span>가벼워진 기분을 느끼고 싶을 때</span>
+													<span>야외활동이 기다리고 있을 때</span>
+												</div>
+											</div>
+										</section>
 									</div>
+									<!-- item1 -->
 									<div class="item">
 									</div>
+									
 								</div>
 							</li>
-							<li class="wide1">
-								<div id="banner_list2" class="owl-carousel owl-theme">
-									<div class="item drink1">
-										<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01_bg.jpg" alt="" /></div>
-									</div>
-									<div class="item drink2">
-										<div class="view-img">22</div>
-									</div>
-									<div class="item">
-										<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_drink_bnr01_bg.jpg" alt="" /></div>
-									</div>
-								</div>
-							</li>
-							<li>
+							<li class="video1">
 								<div class="view-img"><img src="/_ui/responsive/theme-blue/images/akl_brand/xs_energy/img_bnr06.jpg" alt="" /></div>
 								<div class="txt-wrap">
 									<em>MULTIMEDIA</em><span>[XS Energy Drink]<br>5K Night Run 하이라이트 영상</span>
@@ -305,15 +347,15 @@
 				margin: 0,
 				items: 1
 			});
-			$('#banner_list2').owlCarousel({
-				loop: false,
-				nav: false,
-				dots: false,
-				//autoplay: true,
-				//autoplayTimeout:5000,
-				margin: 0,
-				items: 1
-			});
+			
+			/*var video1 = $('.xsenergy_mainlist li.video1');
+			var mainbnr =   $('.main-brn-wrap .item section:first-child');
+			var mainbnrHeight = mainbnr.height();
+			*/
+			
+			//
+			
+			
 		})
 	</script>
 	
