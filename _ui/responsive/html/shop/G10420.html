@@ -46,6 +46,7 @@
 		<div class="header-margin hidden-sm hidden-xs"></div>
 
 		<div class="container-fluid main-container"><!-- main-container -->
+			<!-- 제품상세 -->
 			<div class="row">
 				<div class="title-product-replacement-container">
 					<div class="pdp-info page-title-container">
@@ -118,7 +119,7 @@
 								</li>
 								<li>
 									<div class="image-gallery js-gallery">
-									<img src="/_ui/responsive/theme-blue/images/akl_common/@img/blush.png" alt=""></div>
+									<img src="/_ui/responsive/theme-blue/images/akl_common/@blush.png" alt=""></div>
 									<div class="buttons zoom-center js-zoom-center">
 										<button class="enlarge2 btn btn-link G10300_lp1_btn"><span class="glyphicon glyphicon-zoom-in"></span><span>크게보기</span></button>
 									</div>
@@ -134,7 +135,7 @@
 							<div><button type="button" data-n="3" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@truvivity.png" alt=""></button></div>
 							<div><button type="button" data-n="4" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@perfect-pack.png" alt=""></button></div>
 							<div><button type="button" data-n="5" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@cleanser.png" alt=""></button></div>
-							<div><button type="button" data-n="6" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@img/blush.png" alt=""></button></div>
+							<div><button type="button" data-n="6" class="ui-snap-btn"><img src="/_ui/responsive/theme-blue/images/akl_common/@blush.png" alt=""></button></div>
 						</div>
 						<!-- //수정 : 2018.03.29 (.flexslider 사용안함) -->
 					</div>
@@ -326,6 +327,363 @@
 					<!-- //pdp-info -->
 				</div>
 			</div>
+			<!-- //제품상세 -->
+
+
+			<!-- SOP 제품목록 -->
+			<div class="mysop-product-detail-list sop-kit-prdt">
+				<div class="list-content mysop-item-list">
+					<div class="list-row-title row">
+						<div class="col-md-5 col-xs-8">번들 제품</div>
+						<div class="col-md-2 col-xs-4">가격(원)</div>
+						<div class="col-md-3 hidden-xs">PV/BV</div>
+						<div class="col-md-2 hidden-xs type-edit-btn">수량</div>
+					</div>
+					<div class="content-list row">
+						<div class="row con-list-item">
+							<div class="col-md-5 col-xs-9 item-prdt-name"><p>아티스트리 시그니쳐 컬러 쉬어 립스틱</p></div>
+							<div class="col-md-2 col-xs-3">
+								<span class="mob-float-right">32,000</span>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<span class="mob-block blue">PV/BV</span>
+								<span class="mob-float-right">18,300/29,100</span>
+							</div>
+							<div class="col-md-2 col-xs-12 type-edit-btn"><!-- 옵션열기 버튼 .type-edit-btn -->
+								<div class="col-xs-12">
+									<span class="mob-block blue">수량</span>
+									<span class="mob-float-right">1</span>
+								</div>
+
+								<div class="edit edit-type-option"><!-- 버튼 영역 .edit-type-option -->
+									<button type="button" class=""><span>옵션변경 열기</span></button>
+								</div>
+							</div>
+						</div>
+
+						<!-- 번들 선택 -->
+						<div class="row dynamic-bundle-edit dynamic-bundle-edit-has-pic">
+							<div class="row con-list-item">
+								<div class="dynamic-bundle-edit-main-content">
+									<div class="sub-dynamic-bundle-edit-main-content">
+										<div class="col-md-6 col-xs-12 dynamic-bundle-edit-main-content-half text-uppercase fontWeight600 blue">
+											Items Selected: <span class="red">2 / <span id="giftCount">6</span></span>
+										</div>
+										<div class="col-md-6 col-xs-12 dynamic-bundle-edit-main-content-half text-right clear-selection">
+											<a href="#">Clear Selection</a>
+										</div>
+									</div>
+
+									<div class="row giftList">
+										<div class="giftBox">
+											<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+											<div class="giftName"><span class="gift-tit"><a href="#">스윗멜론</a></span></div>
+											<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a href="#" class="icon-add opera" data="+"><span class="hidden">수량하나더하기</span><i class="far fa-angle-up"></i></a>
+													<a href="#" class="icon-del opera" data="-"><span class="hidden">수량하나빼기</span><i class="far fa-angle-down"></i></a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" title="수량 " name="pdpAddtoCartInput" value="0">
+												</span>
+											</div>
+										</div>
+										<div class="giftBox">
+											<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+											<div class="giftName"><span class="gift-tit"><a href="#">미스티모브</a></span></div>
+											<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a href="#" class="icon-add opera" data="+"><span class="hidden">수량하나더하기</span><i class="far fa-angle-up"></i></a>
+													<a href="#" class="icon-del opera" data="-"><span class="hidden">수량하나빼기</span><i class="far fa-angle-down"></i></a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" title="수량 " name="pdpAddtoCartInput" value="0">
+												</span>
+											</div>
+										</div>
+										<div class="giftBox">
+											<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+											<div class="giftName"><span class="gift-tit"><a href="#">쥬이시 피치</a></span></div>
+											<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a href="#" class="icon-add opera" data="+"><span class="hidden">수량하나더하기</span><i class="far fa-angle-up"></i></a>
+													<a href="#" class="icon-del opera" data="-"><span class="hidden">수량하나빼기</span><i class="far fa-angle-down"></i></a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" title="수량 " name="pdpAddtoCartInput" value="0">
+												</span>
+											</div>
+										</div>
+										<div class="giftBox">
+											<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+											<div class="giftName"><a href="#">Pink</a></div>
+											<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a href="#" class="icon-add opera" data="+"><span class="hidden">수량하나더하기</span><i class="far fa-angle-up"></i></a>
+													<a href="#" class="icon-del opera" data="-"><span class="hidden">수량하나빼기</span><i class="far fa-angle-down"></i></a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" title="수량 " name="pdpAddtoCartInput" value="0">
+												</span>
+											</div>
+										</div>
+										<div class="giftBox">
+											<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-8.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+											<div class="giftName"><a href="#">Pastel Red</a></div>
+											<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a href="#" class="icon-add opera" data="+"><span class="hidden">수량하나더하기</span><i class="far fa-angle-up"></i></a>
+													<a href="#" class="icon-del opera" data="-"><span class="hidden">수량하나빼기</span><i class="far fa-angle-down"></i></a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" title="수량 " name="pdpAddtoCartInput" value="0">
+												</span>
+											</div>
+										</div>
+										<div class="giftBox">
+											<div class="giftName"><a href="#">Pastel Red</a></div>
+											<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a href="#" class="icon-add opera" data="+"><span class="hidden">수량하나더하기</span><i class="far fa-angle-up"></i></a>
+													<a href="#" class="icon-del opera" data="-"><span class="hidden">수량하나빼기</span><i class="far fa-angle-down"></i></a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" title="수량 " name="pdpAddtoCartInput" value="0">
+												</span>
+											</div>
+										</div>
+									</div>
+
+									<!--
+									<div class="row">
+										<div class="giftList">
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+													<div class="giftName"><a href="#">Pink</a></div>
+													<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a class="icon-del opera" data="-">
+														<i class="far fa-angle-down"></i>
+													</a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="1">
+													<a class="icon-add opera" data="+">
+														<i class="far fa-angle-up"></i>
+													</a>
+												</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-8.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+													<div class="giftName"><a href="#">Pastel Red</a></div>
+													<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a class="icon-del opera" data="-">
+														<i class="far fa-angle-down"></i>
+													</a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="1">
+													<a class="icon-add opera" data="+">
+														<i class="far fa-angle-up"></i>
+													</a>
+												</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+													<div class="giftName"><a href="#">Red Kiss</a></div>
+													<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a class="icon-del opera" data="-">
+														<i class="far fa-angle-down"></i>
+													</a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="0">
+													<a class="icon-add opera" data="+">
+														<i class="far fa-angle-up"></i>
+													</a>
+												</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+													<div class="giftName"><a href="#">Pink</a></div>
+													<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a class="icon-del opera" data="-">
+														<i class="far fa-angle-down"></i>
+													</a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="1">
+													<a class="icon-add opera" data="+">
+														<i class="far fa-angle-up"></i>
+													</a>
+												</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-8.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+													<div class="giftName"><a href="#">Pastel Red</a></div>
+													<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a class="icon-del opera" data="-">
+														<i class="far fa-angle-down"></i>
+													</a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="1">
+													<a class="icon-add opera" data="+">
+														<i class="far fa-angle-up"></i>
+													</a>
+												</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftImg"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+													<div class="giftName"><a href="#">Red Kiss</a></div>
+													<div class="giftCon">
+												<span class="amount-cal gift-total">
+													<a class="icon-del opera" data="-">
+														<i class="far fa-angle-down"></i>
+													</a>
+													<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="0">
+													<a class="icon-add opera" data="+">
+														<i class="far fa-angle-up"></i>
+													</a>
+												</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftName"><a href="#">Chocolate</a></div>
+													<div class="giftCon">
+														<span class="amount-cal gift-total">
+															<a class="icon-del opera" data="-">
+																<i class="far fa-angle-down"></i>
+															</a>
+															<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="1">
+															<a class="icon-add" data="+">
+																<i class="far fa-angle-up"></i>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftName"><a href="#">Vanilla</a></div>
+													<div class="giftCon">
+														<span class="amount-cal gift-total">
+															<a class="icon-del opera" data="-">
+																<i class="far fa-angle-down"></i>
+															</a>
+															<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="0">
+															<a class="icon-add" data="+">
+																<i class="far fa-angle-up"></i>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-xs-12">
+												<div class="giftBox">
+													<div class="giftName"><a href="#">Cafe Au Lait</a></div>
+													<div class="giftCon">
+														<span class="amount-cal gift-total">
+															<a class="icon-del" data="-">
+																<i class="far fa-angle-down"></i>
+															</a>
+															<input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-gift-input" value="0">
+															<a class="icon-add" data="+">
+																<i class="far fa-angle-up"></i>
+															</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div> -->
+								</div>
+							</div>
+
+						</div>
+						<!-- //번들 -->
+					</div>
+					<div class="content-list row">
+						<div class="row con-list-item">
+							<div class="col-md-5 col-xs-9 item-prdt-name"><p>아티스트리 시그니쳐 컬러 쉬어 립스틱</p></div>
+							<div class="col-md-2 col-xs-3">
+								<span class="mob-float-right">32,000</span>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<span class="mob-block blue">PV/BV</span>
+								<span class="mob-float-right">18,300/29,100</span>
+							</div>
+							<div class="col-md-2 col-xs-12 type-edit-btn"><!-- 옵션열기 버튼 .type-edit-btn -->
+								<div class="col-xs-12">
+									<span class="mob-block blue">수량</span>
+									<span class="mob-float-right">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-list row">
+						<div class="row con-list-item">
+							<div class="col-md-5 col-xs-9 item-prdt-name"><p>아티스트리 시그니쳐 컬러 쉬어 립스틱</p></div>
+							<div class="col-md-2 col-xs-3">
+								<span class="mob-float-right">32,000</span>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<span class="mob-block blue">PV/BV</span>
+								<span class="mob-float-right">18,300/29,100</span>
+							</div>
+							<div class="col-md-2 col-xs-12 type-edit-btn"><!-- 옵션열기 버튼 .type-edit-btn -->
+								<div class="col-xs-12">
+									<span class="mob-block blue">수량</span>
+									<span class="mob-float-right">1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //SOP 제품목록 -->
+
+<style>
+
+
+</style>
+<script>
+$(function(){
+	$('.edit-type-option').each(function(){
+		$(this).click(function() {
+			var upperNode = $(this).parents('.content-list');
+			var bundleEdit = upperNode.find('.dynamic-bundle-edit');
+
+			if( bundleEdit.is(":visible")) {
+				bundleEdit.hide();
+				upperNode.removeClass('view-open');
+			} else {
+				bundleEdit.slideDown('200');
+				upperNode.addClass('view-open');
+			}
+		});
+	});
+
+});
+</script>
+
+
+
+
+
+
+
+			<!-- 버튼 -->
+			<div class="mysop-product-active both-side">
+				<div class="left-side">
+					<a class="bt-akl-blue" href="#">변경 사항 저장하기</a>
+					<a class="bt-akl-txt" href="#">변경 사항 없애기</a>
+				</div>
+				<div class="right-side">
+					<a class="bt-akl-white" href="#">제품 취소</a>
+				</div>
+			</div>
+			<!-- //버튼 -->
 
 
 			<!-- <div class="amway-thee">제품상세 정보영역</div> -->
@@ -358,7 +716,7 @@
 							<div><a href="#" data-n="3"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/@truvivity.png" alt=""></a></div>
 							<div><a href="#" data-n="4"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/@perfect-pack.png" alt=""></a></div>
 							<div><a href="#" data-n="5"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/@cleanser.png" alt=""></a></div>
-							<div><a href="#" data-n="6"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/@img/blush.png" alt=""></a></div>
+							<div><a href="#" data-n="6"><img class="product-recentlyviewed__img no-border-image" src="/_ui/responsive/theme-blue/images/akl_common/@blush.png" alt=""></a></div>
 							<!-- //수정 : 2018.03.29 --><!-- // 2018.03.14 마크업 수정  -->
 						</div>
 					</div>
