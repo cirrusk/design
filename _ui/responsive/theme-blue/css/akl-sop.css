@@ -125,9 +125,44 @@
 .mysop-product-detail-list .list-content .mob-block {display:none;}
 .mysop-product-detail-list .list-content .content-list {text-align:center;}
 .mysop-product-detail-list .list-content .content-list .item-prdt-name {text-align:left;}
+.mysop-product-detail-list .list-content .content-list .item-prdt-name > p {margin-bottom:0}
 .mysop-product-active.both-side {overflow:hidden;}
 .mysop-product-active.both-side .left-side {float:left;}
 .mysop-product-active.both-side .right-side {float:right;}
+
+/* SOP 제품상세 > 번들(kit) */
+.akl .list-content .list-row-title > .type-edit-btn {padding-right:30px;}
+.akl .list-content .type-edit-btn {position:relative; padding-right:30px;}
+.list-content .type-edit-btn[class^=col-] > div {display:block; padding-left:0; clear:both;}
+.list-content .type-edit-btn .edit.edit-type-option {position:absolute; top:0; right:15px; width:30px; height:25px;}
+.list-content .type-edit-btn .edit.edit-type-option .btn-open-close {}
+
+.edit.edit-type-option .btn-open-close {display:block; width:30px; height:25px; text-align:right; line-height:1;}
+.edit.edit-type-option .btn-open-close:before {content:'\e95b'; font-family:'AmwayIcons'!important; font-weight:500; font-size:24px;}
+.view-open .edit.edit-type-option .btn-open-close:before {content:'\e966';}
+
+.akl .content-list .dynamic-bundle-edit > .con-list-item > div {display:block;}
+.dynamic-bundle-edit {display:none; margin:0; padding:0 15px;}
+.dynamic-bundle-edit .row.con-list-item {display:block;}
+.dynamic-bundle-edit .dynamic-bundle-edit-main-content {padding-top:18px;}
+.dynamic-bundle-edit-main-content {margin-top:18px;}
+.dynamic-bundle-edit-main-content .giftList {overflow:hidden; margin-left:-15px;}
+.dynamic-bundle-edit-main-content .giftList .giftBox {width:22%; min-width:260px; height:77px; margin-left:15px; margin:15px 0 0 15px;}
+.dynamic-bundle-edit-main-content .giftBox > div {height:75px;}
+.dynamic-bundle-edit-main-content .giftBox .giftImg {width:90px; height:75px; padding:0;}
+.dynamic-bundle-edit-main-content .giftBox .giftImg img {width:36px; height:36px; margin-left:5px; transition:none;}
+.dynamic-bundle-edit-main-content .giftBox .giftImg img:hover {transform:none;}
+.dynamic-bundle-edit-main-content .giftBox .giftName {padding-left:10px;}
+.dynamic-bundle-edit-main-content .giftBox .giftCon .amount-cal input {height:75px; background-color:transparent;}
+.dynamic-bundle-edit-main-content .giftBox .giftCon .amount-cal a {margin-top:0; background-color:transparent;}
+.dynamic-bundle-edit-main-content .sub-dynamic-bundle-edit-main-content {display:block; overflow:hidden; padding:0; border-top:1px solid #e3e3e3;}
+.dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half {float:left; width:50%; text-align:left; padding:15px 0;}
+.dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half.clear-selection {text-align:right;}
+
+.list-content .giftList  [class^=col-] {display:block; float:left}
+.content-list .edit .fa-angle-down{cursor:pointer;}
+.content-list.view-open .edit .fa-angle-down:before{content:'\f106';}
+
 
 /* ---- SOP 주문서 생성 ---- */
 .akl .shipping-delivery.sopCreate {margin-bottom:30px;}
@@ -243,7 +278,7 @@
 
 /* SOP 제품 번들 목록 */
 .sop-container.mysop-prdt .mysop-product-detail-list {margin-top:30px;}
-.sop-container.mysop-prdt .mysop-product-detail .pdp-info.new-pdp-info{top:; border:1px solid blue}
+.sop-container.mysop-prdt .mysop-product-detail .pdp-info.new-pdp-info{top:;}
 .sop-container.mysop-prdt .mysop-product-detail .img-product {padding-top:20px;}
 .akl .sop-container.mysop-prdt .list-content.mysop-item-list {padding-top:0;}
 
@@ -273,7 +308,12 @@
 .list-content.mysop-list .data-cell>span+span {margin-top:5px;}
 
 /* SOP 주문상세 > 제품목록 - 결과없음 */
-.list-content.mysop-list .list-row-content.row .sop-no-items {width:100%; padding:40px 0; text-align:center;}
+.sop-container .sop-no-items {padding:60px 0; text-align:center; border:1px solid #e3e3e3; border-width:1px 0;}
+.sop-container .sop-no-items .search-no-result {padding:0;}
+.sop-container .sop-no-items .search-no-result > p {margin-bottom:20px;}
+.sop-container .list-content.mysop-list .sop-no-items .search-no-result > p {margin-bottom:0;}
+
+.list-content.mysop-list .list-row-content.row .sop-no-items {width:100%; padding:50px 0; border:0;}
 .list-content.mysop-list .sop-no-items .search-no-result {padding:0 0 20px;}
 .list-content.mysop-monthly-list-content .mysop-text-list .search-no-result {color:#55565a; padding:20px 0;}
 
@@ -418,9 +458,9 @@
 	.addtocart-component.sop-pdp .toggle-benefits {padding:15px 40px 15px 20px;}
 
 	/* 자동연장하기 - 툴팁 */
-	.auto-continue .toolTip-wrapper.type-mob-full {position:relative;}
-	.auto-continue .toolTip-wrapper.type-mob-full .tipCont-wrapper {top:-97px; margin-left:-170px;}
-	.auto-continue .toolTip-wrapper .tooltip-content {height:80px; max-width:270px;}
+	.addtocart-component.sop-pdp .auto-continue .toolTip-wrapper.type-mob-full {position:relative;}
+	.auto-continue .toolTip-wrapper.type-mob-full .tipCont-wrapper {top:-104px; margin-left:-200px;}
+	.auto-continue .toolTip-wrapper .tooltip-content {height:80px;}
 
 	/* ---- SOP제품 담기 완료(확인) ---- */
 	/* 상단 담기완료 메시지  */
@@ -441,6 +481,22 @@
 	.mysop-product-detail-list .list-content .mob-block {display:block; float:left;}
 	.mysop-product-detail-list .mob-block.blue {color:#002f5f !important; font-weight:500;}
 	.akl .mysop-product-detail-list .list-content .content-list {padding:14px 15px;}
+
+	/* SOP 제품상세 > 번들(kit) */
+
+	.akl .content-list .dynamic-bundle-edit > .con-list-item > div {display:block; padding-bottom:15px;}
+	.akl .list-content .type-edit-btn {overflow:hidden; padding:0;}
+	.akl .list-content .type-edit-btn>div {float:none;}
+	.list-content .type-edit-btn .edit.edit-type-option {position:static; width:100%; right:0; padding-top:5px; text-align:center;}
+	.edit.edit-type-option .btn-open-close {width:100%; height:25px; text-align:center;}
+
+	.dynamic-bundle-edit {padding:0;}
+	.dynamic-bundle-edit .dynamic-bundle-edit-main-content {padding-top:0;}
+	.dynamic-bundle-edit-main-content .giftList {margin:0; overflow:unset;}
+	.dynamic-bundle-edit-main-content .giftList .giftBox {float:none; width:100%; min-width:auto; margin:15px 0 0;}
+	.dynamic-bundle-edit-main-content .sub-dynamic-bundle-edit-main-content {display:block; overflow:hidden; padding:0; border-top:1px solid #e3e3e3;}
+	.dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half {float:none; width:100%; text-align:left; padding:15px 0 0;}
+	.dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half.clear-selection {text-align:left;}
 
 	/* ---- SOP 스마트 오더 목록 ---- */
 	.sop-container .list-content.mysop-list-content .list-row-title {border-bottom:0px solid #e3e3e3;}
@@ -605,7 +661,5 @@
 	.sop-container .mysop-list [class^=circle-] {margin-top:21px;}
 	.sop-container .mysop-list .order-benefits + [class^=circle-] {margin-top:3px;}
 	.sop-container .tab-content.months-select-content-wrap {margin:0 -15px;}
-
-	.list-content.mysop-list .result-txt {}
 	.list-content.tbl-prdt .list-item-image img {min-width:30px;}
 }
