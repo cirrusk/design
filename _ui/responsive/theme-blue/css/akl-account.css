@@ -2570,8 +2570,19 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 .akl .easy-wrap .conditions.ind .tbl-list-view .thead .tr>strong {font-size: 16px !important;}
 
 
-.bio-pop-head {}
-
+.bio-pop-head { background:#f4f4f4; border:1px solid #dadada; padding:14px; margin:10px 0 28px}
+.bio-pop-head [type="checkbox"]+label, [type="checkbox"]:checked+label, [type="checkbox"]:not(:checked)+label {line-height:25px; font-size:16px; font-weight:500; padding-left:35px}
+.bio-pop-head [type=checkbox]:not(:checked)+label::before { width:25px;height:25px; border: 0; background:url(../images/icons/bio.png) no-repeat 0 0; background-size:50px auto;}
+.bio-pop-head [type=checkbox]:checked+label::before { width:25px; height:25px; border:0; border-color:0; background:url(../images/icons/bio.png) no-repeat 0 -26px; background-size:50px 51px;}
+.bio-pop-head [type=checkbox]:checked+label::after { display:none}
+.bio-pop-body {padding:0 14px;}
+.bio-pop-body li { position:relative; margin-bottom:20px}
+.bio-pop-body li > span { position:absolute; display:block; left:0; top:3px; width:20px; height:20px; }
+.bio-pop-body li > span label { text-indent:-999px; overflow:hidden;}
+.bio-pop-body li [type=checkbox]:not(:checked)+label::before { border: 0; background:url(../images/icons/bio.png) no-repeat -25px -4px; background-size:50px auto;}
+.bio-pop-body li [type=checkbox]:checked+label::before {  border:0; border-color:0; background:url(../images/icons/bio.png) no-repeat -25px -30px; background-size:50px 51px;}
+.bio-pop-body li [type=checkbox]:checked+label::after { display:none}
+.bio-pop-body li > div { margin-left:30px;}
 
 @media (max-width: 1250px){
 	/* 마이페이지 메인 */
