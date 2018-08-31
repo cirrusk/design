@@ -104,7 +104,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 [class*="media-borad-list"] ul {margin-left:-26px;}
 [class*="media-borad-list"] ul:after {clear:both;content:'';display:block;}
 [class*="media-borad-list"] li {float:left;width:25%;box-sizing:border-box;}
-[class*="media-borad-list"] li:nth-child(9) ~ li {display:none;}
+[class*="media-borad-list"] li:nth-child(10) ~ li {display:none;}
 [class*="media-borad-list"] li a {display:block;position:relative;margin:0 0 25px 26px;background:#000}
 [class*="media-borad-list"] li a .view-img {position:relative;overflow:hidden;height:244px}
 [class*="media-borad-list"] li a .view-img:after {clear:both;content:'';display:block;position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);}
@@ -182,14 +182,16 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 /* 암웨이 사업 */
 [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:40px;}
-[class*="img-text-row-box-type"] {display:flex;justify-content:space-between;margin-top:60px;padding-right:40px;}
-[class*="img-text-row-box-type"] div {padding-left:40px;width:45%;}
-[class*="img-text-row-box-type"] div:first-child {width:55%}
+[class*="img-text-row-box-type"] {display:flex;justify-content:space-between;margin-top:60px;}
+[class*="img-text-row-box-type"] div {width:45%;}
+[class*="img-text-row-box-type"] div:first-child {width:55%;}
 [class*="img-text-row-box-type"] div img {width:100%;}
 [class*="img-text-row-box-type"] dl {margin-top:6%;}
 [class*="img-text-row-box-type"] dl dt {font-size:16px;color:#002f5f;font-weight:500;}
 [class*="img-text-row-box-type"] dl dd {margin-top:15px;line-height:24px;}
 .img-text-row-box-type2 {flex-direction:row-reverse;}
+.img-text-row-box-type1 div:nth-of-type(2) {padding-left:40px;}
+.img-text-row-box-type2 div:nth-of-type(1) {padding-left:40px;}
 
 .biz-slide-wrap {margin-top:40px;padding:0 20px;}
 .biz-slide-wrap a.primary-link > span {position:absolute;width:100%;height:auto;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);margin:0;text-indent:-99999px;}

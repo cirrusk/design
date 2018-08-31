@@ -189,6 +189,8 @@
 	//SOP - 정기주문 혜택정보 노출
 	SOP_PDP_benefitsTips();
 
+	//SOP - 번들선택 toggle
+	SOP_PDP_editBundle();
 
 /** ----- 나의 쇼핑정보 ----- */
 	//나의 주문내역 list - 짝수줄 서브목록 bg 넣기
@@ -1480,6 +1482,25 @@ function SOP_PDP_benefitsTips(){
 		}
 	});
 }
+
+/* SOP - 번들선택 toggle */
+function SOP_PDP_editBundle(){
+	$('.edit-type-option .btn-open-close').each(function(){
+		$(this).click(function(e) {
+			e.preventDefault();
+			var upperNode = $(this).parents('.content-list');
+			var bundleEdit = upperNode.find('.dynamic-bundle-edit');
+
+			if( bundleEdit.is(":visible")) {
+				bundleEdit.hide();
+				upperNode.removeClass('view-open');
+			} else {
+				bundleEdit.slideDown('200');
+				upperNode.addClass('view-open');
+			}
+		});
+	});
+};
 
 /** ------------------------------------
  *  나의 쇼핑정보
