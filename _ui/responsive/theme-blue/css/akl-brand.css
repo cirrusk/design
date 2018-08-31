@@ -16,7 +16,7 @@ Editor : HYEWON HWANG
 .brand .full {width:100%;}
 .brand .inblock {display:inline-block;}
 
-.brand {letter-spacing:-1px;word-spacing:1px;}
+.brand {letter-spacing:-1px;}
 .arr1 {position:relative;display:inline-block;} /* 오른쪽 화살표 > */
 .arr1:after {content:'';position:absolute;top:50%;right:-9px;width:7px;height:7px;transform:rotate(45deg) translatey(-50%);border:2px solid #fff;border-width:2px 2px 0 0;}
 
@@ -464,7 +464,7 @@ Editor : HYEWON HWANG
 .atmosphere .txtbox.s3 div {left:19%;top:35%;}
 
 /* XS 에너지 */
-.xsenergy_mainlist {width:100%;overflow:hidden;background:#000;}
+.xsenergy_mainlist {position:relative;width:100%;overflow:hidden;background:#000;}
 .xsenergy_mainlist li {float:left;width:33.33%;position:relative;}
 .xsenergy_mainlist li.wide1 {width:66.65%;}
 .xsenergy_mainlist li.wide2 {width:66.67%;}
@@ -485,16 +485,13 @@ Editor : HYEWON HWANG
 	.xsenergy_mainlist li {width:50%;}
 	.xsenergy_mainlist li[class*='wide']{width:100%;margin:0 !important;}
 	.xsenergy_mainlist li.wide3 {width:50%;}
-	.xsenergy_mainlist li:nth-child(10) .pc {display:none;}
-	.xsenergy_mainlist li:nth-child(10) .mob {display:block;}
-	.xsenergy_mainlist li:nth-child(11) {display:none;}
-	
-	.xsenergy_mainlist.xsenergy li.wide3 {width:100%;}
+	.xsenergy_mainlist li:last-child .pc {display:none;}
+	.xsenergy_mainlist li:last-child .mob {display:block;}
 }
 @media (max-width: 768px){
-	.xsenergy_mainlist .video-btn img {width:70px;height:70px;margin:-5% 0 0 -35px;}
+	/*.xsenergy_mainlist .video-btn img {width:70px;height:70px;margin:-5% 0 0 -35px;}*/
 }
-@media (max-width: 630px){
+@media (max-width: 750px){
 	.xsenergy_mainlist li {width:100% !important;}
 	.xsenergy_mainlist li.wide1 .txt-wrap {font-size:16px;}
 	.xsenergy_mainlist li.wide2 .txt-wrap .hashtag {font-size:18px;}
@@ -504,7 +501,6 @@ Editor : HYEWON HWANG
 
 
 @media (max-width: 768px){
-
 	/* ### 레이아웃 ### */
 	#brandMenu .select.form-control {width:100%;}
 	#brandMenu .breadcrumb li > div > div {position:relative;padding-right:10px;flex:1;min-width:33%;}
