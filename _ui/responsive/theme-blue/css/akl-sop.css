@@ -131,11 +131,14 @@
 .mysop-product-active.both-side .right-side {float:right;}
 
 /* SOP 제품상세 > 번들(kit) */
+.mysop-product-detail-list.sop-kit-prdt {margin-top:0}
 .akl .list-content .list-row-title > .type-edit-btn {padding-right:30px;}
 .akl .list-content .type-edit-btn {position:relative; padding-right:30px;}
 .list-content .type-edit-btn[class^=col-] > div {display:block; padding-left:0; clear:both;}
 .list-content .type-edit-btn .edit.edit-type-option {position:absolute; top:0; right:15px; width:30px; height:25px;}
 .list-content .type-edit-btn .edit.edit-type-option .btn-open-close {}
+
+
 
 .edit.edit-type-option .btn-open-close {display:block; width:30px; height:25px; text-align:right; line-height:1;}
 .edit.edit-type-option .btn-open-close:before {content:'\e95b'; font-family:'AmwayIcons'!important; font-weight:500; font-size:24px;}
@@ -162,6 +165,9 @@
 .list-content .giftList  [class^=col-] {display:block; float:left}
 .content-list .edit .fa-angle-down{cursor:pointer;}
 .content-list.view-open .edit .fa-angle-down:before{content:'\f106';}
+
+
+.view-bundle-contents.mysop-bundle-contents {margin-left:80px;}
 
 
 /* ---- SOP 주문서 생성 ---- */
@@ -489,6 +495,10 @@
 	.akl .list-content .type-edit-btn>div {float:none;}
 	.list-content .type-edit-btn .edit.edit-type-option {position:static; width:100%; right:0; padding-top:5px; text-align:center;}
 	.edit.edit-type-option .btn-open-close {width:100%; height:25px; text-align:center;}
+
+
+	.akl .shopping-cart-item-list .product-list-item .gwp-gift-selections, .akl .shopping-cart-item-list .view-bundle-contents {width:auto;}
+
 
 	.dynamic-bundle-edit {padding:0;}
 	.dynamic-bundle-edit .dynamic-bundle-edit-main-content {padding-top:0;}
