@@ -362,8 +362,6 @@ function tabsTgg_Control(){
 
 	if (!_tabsToggles.length){ return; }
 
-	console.log('_tabsToggles 실행')
-
 	_tabsToggles.each(function(){
 		var _UL = $(this);
 		var _LI = _UL.find('li');
