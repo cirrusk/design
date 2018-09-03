@@ -1014,7 +1014,7 @@ function cartSummaryFixed(){
 function deliveryMSG(){
 	var $deliveryMSG_box = $('.delivery-msg, .delivery-msg02');
 	if(!$deliveryMSG_box.length){return;}
-	
+
 	$deliveryMSG_box.each(function(){
 		var $inputBox = $(this).find('input[type=text].m-message');
 		var $msgList = $(this).find('.delivery-msg-list');
@@ -2333,16 +2333,28 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			var targetWidth_video = $layerVideoView.width();
 			var targetHeight_video = $layerVideoView.height();
 
-			$layerVideoView.css({
-				'display':'block',
-				'top':topPosition,
-				'left':leftPosition,
-				'width':(_winWidth - 20),
-				'margin-top': -(targetHeight_video/2),
-				'margin-left':-(targetWidth_video/2)
-				//, '-webkit-transition':'left .5s',
-				//'transition':'left .5s'
-			});
+			if( _winWidth < 769 ){
+				$layerVideoView.css({
+					'display':'block',
+					'position':'absolute',
+					'top':'3%',
+					'left':'0',
+					'max-width':'',
+					'height':'auto',
+					'margin':'0 auto',
+					'margin-bottom':'3%'
+				});
+			} else {
+				$layerVideoView.css({
+					'display':'block',
+					'top':topPosition,
+					'left':leftPosition,
+					'width':'',
+					'max-width':'800px',
+					'margin-top': -(targetHeight_video/2),
+					'margin-left':-(targetWidth_video/2)
+				});
+			}
 		}
 
 		_layerTypeBasic(); //기본형

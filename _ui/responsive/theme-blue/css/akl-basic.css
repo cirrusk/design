@@ -208,7 +208,9 @@ hidden; }
 .akl .login-email-box  button {position:absolute; right:0; top:0; background-color:#fff; height:44px; width:44px; background:url(../images/delete-icon.png) no-repeat 59% 11px !important;background-size:18px !important; text-indent:-999px; overflow:hidden;;outline:initial;}
 .akl .tooltip-wrap {display:none; position:absolute; top:44px; right:0; width:200px; height:62px; padding:12px; letter-spacing:0; line-height:1.1!important; text-align:center;; color:#fff; font-size:13px; font-weight:400; background:#56565a; border-radius:8px;}
 .akl .tooltip-wrap:before {content:""; position:absolute; top:-9px; right:15px; width:19px; height:9px;  background:url(../images/akl_common/ico_tooltip.png) no-repeat 0 0;}
-.akl .login-form .fingerprint { display:none}
+.akl .moble-login .fingerprint { display:none}
+.akl .moble-login .fingerprint-wrap [type="checkbox"]:not(:checked) + label::before,
+.akl .moble-login .fingerprint-wrap [type=checkbox]:checked+label::before {top: 2px;}
 
 /* header > mini deshboard */
 .akl .ico-wraper.noData span.message-num {background:#bbb !important;}
@@ -1341,10 +1343,10 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.akl header.main-header .amway-theme .mobile-container .overlay-mobile-menu .nav-list-element a {font-size:14px;font-weight:700;}
 
 	/* header > login */
-	.akl .login-form .fingerprint { padding:20px 0 10px; display:block;}
-	.akl .login-form .fingerprint .bt-akl-blue { min-width:100%;  }
-	.akl .login-form .fingerprint .bt-akl-blue span{ display:inline-block; background:url(../images/icons/fingerprint.png) no-repeat left 50%; background-size:20px auto; padding-left:30px }
-
+	.akl .moble-login .fingerprint-wrap { position:relative;}
+	.akl .moble-login .fingerprint  { padding:17px 0 0; display:block; position:absolute; right:0; top:0;}
+	.akl .amway-theme.moble-login .amw-radio-overlay { left:auto; right:0; top:0}
+	.akl .amway-theme.moble-login .amw-radio-wrap {padding-right:20px;}
 
 	/* gnb > 브랜드 */
 	#navMenuMobCollapse6 .list-wrapper {padding:0 30px 15px 50px;}
@@ -1418,12 +1420,12 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.akl .cbox.typeAdminAdd .tabcon-tit {padding:0; margin:0 20px 17px;}
 
 	/* Layer: 동영상 크게보기 */
-	.akl #videobox {top:15px;width:auto; left:15px; right:15px; height:auto;transform:none;}
-	.akl .popup-video-preview__content {padding:20px 20px 0; }
+	.akl #videobox {top:15px; left:15px; right:15px; width:100%; padding:0 15px; height:auto; transform:none; box-sizing:border-box;}
+	.akl .popup-video-preview__content {padding:20px 20px 0;}
 	.akl .video-pop {padding-bottom:20px;}
 	.akl #videobox #cboxTitle {padding:17px 30px 15px 0;margin:0 20px;}
 	.akl #videobox #cboxTitle .headline {font-size:18px;line-height:20px;}
-	.akl #videobox #cboxClose {right:6px; top:2px;}
+	.akl #videobox #cboxClose {right:15px; top:2px;}
 	.akl #videobox .popup-video-preview__content .video-cont span {height:300px;}
 	.akl #videobox .popup-video-preview__content .video-cont span img {height:100%;}
 	.akl .popup-video-preview__content .video-preview__play {margin-left:-41px;margin-top:-41px;}
@@ -1762,4 +1764,5 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 @media (max-width:320px) {
 	.cbox {max-width:320px !important; min-width:100%;}
 	.akl .popup-video-preview__content { max-height:350px; }
+	.akl .view-sns {padding:20px 20px 0}
 }
