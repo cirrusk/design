@@ -488,7 +488,27 @@
 			<!-- //SOP 제품목록 -->
 
 			<br><br>
+<script>
+$(function(){
+	var sopBundleConts = $('.shopping-cart-item-list.mysop-item-list').find('.product-details .mysop-bundle-contents');
+	var sopBundleBtn = $('.product-item-element.list-item-info').find('.product-stock');
+	sopBundleBtn.each(function(){
+		$(this).on('click',function(e){
+			e.preventDefault();
+			var $bundleConts = $(this).parents('.product-item-element.list-item-info').siblings('.view-bundle-contents');
 
+			if( $bundleConts.is(':hidden')){
+				$(this).addClass('view-open');
+				$bundleConts.slideDown('200');
+			} else {
+				$(this).removeClass('view-open');
+				$bundleConts.hide();
+			}
+
+		});
+	});
+});
+</script>
 			<ul class="shopping-cart-item-list mysop-item-list">
 				<li>
 					<div class="col-xs-12 list-header change-list-header">
@@ -497,6 +517,81 @@
 						<div class="col-md-2 list-item-set-price hidden-xs">옵션</div>
 						<div class="col-md-1 list-item-price hidden-xs">가격(원)</div>
 						<div class="col-md-2 list-item-total ">합계(원)/PV/BV</div>
+					</div>
+				</li>
+				<li class="product-list-item">
+					<div class="col-xs-12 col-md-5 product-details">
+						<div class="product-item-element list-item-image">
+							<a href="#"><img src="/_ui/responsive/theme-blue/images/akl_common/@img_sop_package.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
+						</div>
+						<div class="product-item-element list-item-info">
+							<span class="product-name"> Nutrilite Cal Mag D </span>
+							<div class="product-code">SKU:<span class="product-item-number">105480</span></div>
+							<div class="product-category">18.22PV/57.31BV</div>
+							<div class="product-stock cartlist-promotions cartlist-view">
+								<a class="">View Bundle Contents<i class="fas fa-angle-down"></i></a>
+							</div>
+
+							<!-- core 번들 위치이동
+							<div class="view-bundle-contents shopping-cart-view-bundle-contents mysop-bundle-contents"></div> -->
+						</div>
+
+						<!-- 번들 목록 -->
+						<div class="view-bundle-contents shopping-cart-view-bundle-contents mysop-bundle-contents">
+							<div class="row">
+								<div class="col-xs-6">BodyKey by NUTRILITE Meal<br>Replacement Shake (Chocolate)<span class="sku-num">SKU:110622</span></div>
+								<div class="col-xs-2">5</div>
+								<div class="col-xs-2">Chocolate</div>
+								<div class="col-xs-2 text-right">$35.00</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">BodyKey by NUTRILITE Meal<br>Replacement Shake (Chocolate)<span class="sku-num">SKU:110622</span></div>
+								<div class="col-xs-2">5</div>
+								<div class="col-xs-2">Vanilla</div>
+								<div class="col-xs-2 text-right">$35.00</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">BodyKey by NUTRILITE Meal<br>Replacement Shake (Chocolate)<span class="sku-num">SKU:110622</span></div>
+								<div class="col-xs-2">5</div>
+								<div class="col-xs-2">Vanilla</div>
+								<div class="col-xs-2 text-right">$35.00</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">BodyKey by NUTRILITE Meal<br>Replacement Shake (Chocolate)<span class="sku-num">SKU:110622</span></div>
+								<div class="col-xs-2">5</div>
+								<div class="col-xs-2">Cafe Au Lait</div>
+								<div class="col-xs-2 text-right">$35.00</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">BodyKey by NUTRILITE Meal<br>Replacement Shake (Chocolate)<span class="sku-num">SKU:110622</span></div>
+								<div class="col-xs-2">5</div>
+								<div class="col-xs-2">Blue</div>
+								<div class="col-xs-2 text-right">$35.00</div>
+							</div>
+						</div>
+						<!-- //번들 목록 -->
+					</div>
+					<div class="col-md-1 col-xs-9 product-item-element list-item-amount">
+						<span class="total-price-label">수량</span>
+						<div class="value-wrapper new-value-wrapper"><span>12</span></div>
+					</div>
+					<div class="col-md-2 col-xs-9 product-item-element list-item-quantity">
+						<span class="total-price-label">옵션</span>
+						<div class="value-wrapper new-value-wrapper">옵션내용자리</div>
+					</div>
+					<div class="col-md-1 col-xs-9 product-item-element list-item-ibo-price list-item-price">
+						<span class="price-label">가격(원)</span>
+						<div class="value-wrapper new-value-wrapper">
+							<span class="past-price">35,000</span>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-9 product-item-element list-item-price js-item-total">
+						<span class="total-price-label">합계(원)/PV/BV</span>
+						<div class="value-wrapper new-value-wrapper">
+							<span class="txt-price">80,000</span>
+							<span class="txt-pv">18,300 PV</span>
+							<span class="txt-bv">29,100 BV</span>
+						</div>
 					</div>
 				</li>
 				<li class="product-list-item">
