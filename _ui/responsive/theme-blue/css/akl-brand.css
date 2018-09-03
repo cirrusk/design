@@ -37,7 +37,7 @@ Editor : HYEWON HWANG
 /* 전체메뉴 */
 #brandMenu {position:relative;max-width:1400px;margin:0 auto;padding:35px 12px;}
 #brandMenu .breadcrumb-section {padding:0;}
-#brandMenu .jump-to-amway {position:absolute;top:5px;right:15px;margin:0;background:none;}
+#brandMenu .jump-to-amway {position:absolute;top:5px;right:15px;z-index:100;margin:0;background:none;}
 
 #brandMenu .breadcrumb {margin:0;padding:0;}
 #brandMenu .breadcrumb li::after {padding:0 5px;content:'/ ';color:#cccccc;}
@@ -348,7 +348,8 @@ Editor : HYEWON HWANG
 .title-component .title-ul li:nth-of-type(5):before {background-position-y:-360px;}
 .title-component .title-ul li p {margin-bottom:5px;color:#002f5f;font-weight:500;}
 .title-component .title-ul li p em {display:block;font-weight:700;}
-.title-component + .content-row {margin-top:0;}
+.title-component + .content-row, 
+.top-title-wrapper + .content-row {margin-top:0;}
 
 .brand .video-preview {position:relative;margin:0;height:400px;overflow:hidden;background:url('/_ui/responsive/theme-blue/images/akl_brand/queen/movie_bg.jpg') no-repeat 50% 50%;background-size:1376px auto;}
 .oneforone .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/movie_bg.jpg');}
@@ -370,8 +371,9 @@ Editor : HYEWON HWANG
 .content-row article [class*="cont-type"] a.arr1:after {border-color:#0075a4;}
 .content-row article .cont-type2 figcaption + p {padding-bottom:20px;} /* 하단 상세보기 버튼이 없는 경우 */
 
-.content-row.s1 {display:block;margin:0 0 40px;}
+.content-row.s1 {display:block;}
 .content-row.s1 article {flex:none;width:100%;padding:40px 0 30px;border-bottom:1px solid #e3e3e3;}
+.content-row.s1 article:first-child {padding-top:10px;}
 .content-row.s1 article:last-child {padding-bottom:0;border-bottom:0;}
 
 .content-row.s2 {display:block;margin-top:0;}
@@ -404,6 +406,10 @@ Editor : HYEWON HWANG
 .txtbox div span {display:block;margin-top:10px;}
 .txtbox div a.arr1:after {border-color:#0075a4;}
 .txtbox div strong {color:#00305e;font-weight:700;}
+
+.brand .sub [class*="box-bnr"] {margin-bottom:40px;}
+
+.brand [class*="sub"] .content-row {margin-left:0;margin-right:0;}
 
 /* 뉴트리라이트 */
 .nutrilite .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.png');}
@@ -452,13 +458,58 @@ Editor : HYEWON HWANG
 .akl .espring .homepage_banner .banner__title:before,
 .akl .espring .homepage_banner .owl-dots .owl-dot.active:before {background-color:#3a7bdf;}
 .akl .espring .homepage_banner .banner__wrapper {background:url('/_ui/responsive/theme-blue/images/akl_brand/espring/main_visual01.jpg') no-repeat 50% 0;background-size:auto 100%;}
-.espring .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg1.jpg');background-position:50% 0;background-size:1376px auto;}
-.espring .txtbox.s1 div {max-width:90%;top:50px;}
-.espring .txtbox.s1 p{margin-top:0;font-size:16px;}
+.espring .txtbox {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg1.jpg');background-position:50% 0;background-size:1376px auto;}
+.espring .txtbox div {max-width:90%;top:50px;}
+.espring .txtbox p{margin-top:0;font-size:16px;}
 
 /* 이스프링 서브 */
-.espring .title-h3 {padding-top:30px;}
-.espring table tbody tr:nth-of-type(even) {background:none;}
+.content-row.type1 .txtbox > div {top:auto;}
+.content-row.type1 .txtbox h3 {font-size:40px;font-weight:500;}
+.brand .content-row table tr:nth-of-type(even) {background:none;}
+
+[class *= 'sub'] .content-row {margin-bottom:40px;}
+[class *= 'sub'] .content-row:last-child {margin-bottom:0;}
+[class *= 'sub'] .content-row + .content-row {margin-top:40px}
+[class *= 'sub'] .content-row.s1 {margin-top:40px;margin-left:0;margin-right:0;}
+.espring .content-row.type2 .txtbox {height:300px;justify-content:center;background:#f4f4f4;}
+.espring .content-row.type2 .txtbox img {width:auto;}
+.espring .content-row.s1 article p {line-height:1.6;}
+
+.espring.sub1 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg1-1.jpg);}
+.espring.sub2 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg2-1.jpg);}
+.espring.sub3 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg3-1.jpg);}
+.espring.sub4 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg4-1.jpg);}
+.espring.sub5 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg5-1.jpg);}
+.espring.sub6 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg6-1.jpg);}
+.espring.sub7 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg7-1.jpg);}
+.espring.sub8 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg8-1.jpg);}
+
+.espring.sub4 .content-row.type2 .txtbox {display:table;width:100%;padding:70px 0;}
+.espring.sub4 .content-row.type2 .txtbox span {display:table-cell;vertical-altin:middle;text-align:center;border-right:1px solid #dadada;}
+.espring.sub4 .content-row.type2 .txtbox span:last-child {border:0;}
+.espring.sub4 .content-row.type2 .txtbox.mob {display:none;}
+
+.espring.sub8 .content-row.type2 .txtbox {display:flex;width:100%;padding:70px 20px 0;align-items:start;}
+.espring.sub8 .content-row.type2 .txtbox span {position:relative;z-index:1;flex:1;padding:0 10px;text-align:center;}
+.espring.sub8 .content-row.type2 .txtbox span img {display:block;width:90px;margin:0 auto 15px;}
+.espring.sub8 .content-row.type2 .txtbox span:before, .espring.sub8 .content-row.type2 .txtbox span:after {content:'';position:absolute;z-index:-1;display:block;}
+.espring.sub8 .content-row.type2 .txtbox span:before {width:100%;height:1px;top:45px;left:50%;background:#999;}
+.espring.sub8 .content-row.type2 .txtbox span:after {content:'▶';font-size:10px;color:#999;top:38px;right:-5px;}
+.espring.sub8 .content-row.type2 .txtbox span:last-child:before, .espring.sub8 .content-row.type2 .txtbox span:last-child:after {content:none;}
+.espring.sub8 .content-row.type2 .txtbox span strong {display:block;color:#002f5f;}
+.espring.sub8 [class*='img-text-row-box-type'] div {position:relative;}
+.espring.sub8 [class*='img-text-row-box-type'] div button{width:100%;height:100%;position:absolute;top:0;left:0;background:transparent;}
+.espring.sub8 [class*='img-text-row-box-type'] div button img {width:auto;}
+
+.content-row.type3 {border:1px solid #dadada;padding:0 100px 40px;}
+.content-row.type3 h3{width:100%;margin-top:40px;margin-bottom:20px;}
+.content-row.type3 .price {position:relative;padding:15px 0 0px 60px;}
+.content-row.type3 .price:before {content:'';display:block;position:absolute;left:0;top:0;width:56px;height:100px;background:url('/_ui/responsive/theme-blue/images/akl_brand/espring/subicon1.png') no-repeat 0 0;background-size:56px auto;}
+.content-row.type3 .price strong {font-size:32px;color:#002f5f;}
+.content-row.type3 table {margin-bottom:15px;letter-spacing:0;}
+.content-row.type3 table th {text-align:center;}
+.content-row.type3 table td {padding-left:20px;}
+
 
 /* 엣모스피어 */
 .atmosphere .txtbox.s1 {height:574px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg1.png');background-position:50% 0;background-size:1376px auto;}
@@ -469,6 +520,114 @@ Editor : HYEWON HWANG
 .atmosphere .txtbox.s1 div {max-width:100%;top:140px;}
 .atmosphere .txtbox.s2 div {max-width:100%;top:10px;}
 .atmosphere .txtbox.s3 div {left:19%;top:35%;}
+
+@media (max-width: 768px){
+	/* ### 브랜드 메인 레이아웃 ### */
+	.akl .brand .homepage_banner,
+	.akl .brand .homepage_banner .owl-carousel .owl-stage-outer,
+	.akl .brand .homepage_banner .wrapper .banner__wrapper,
+	.akl .brand .homepage_banner .owl-carousel .owl-item .banner__image-sub {height:auto;}
+
+	.akl .brand .homepage_banner .owl-dots {top:auto;bottom:20px;width:100%;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot {display:inline-block;padding:0 !important;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot.active:before {content:none;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot span {width:30px;height:10px;background:rgba(0,0,0,0.5);font-size:0;border-radius:0;margin:5px 5px;}
+	.akl .brand .homepage_banner .owl-dots .owl-dot.active span {background:#cb1a3a;}
+
+	.akl .brand .homepage_banner .banner__wrapper .banner__message {width:60%;right:0;}
+	.akl .brand .homepage_banner .banner__message--main {width:150%;margin-left:-70px;font-size:25px;line-height:1.4;text-align:left;}
+	.akl .brand .homepage_banner .banner__message--sub {display:block;padding:30px;font-size:14px;}
+	.akl .brand .homepage_banner .banner__wrapper .banner__image {display:none;}
+
+	.brand .video-preview {padding:0;height:auto;background:none;}
+	.brand .video-preview .mob {width:100%;}
+
+	.content-row {display:block;margin:30px 0 0;}
+	.content-row article, .content-row.col3 article {width:100%;padding:0 0 20px;}
+	.content-row article:last-child {padding-bottom:0;}
+	.content-row.col4 {display:flex;margin:10px -7px 0;}
+	.content-row.col4 article {width:50%;padding:20px 7px 0;}
+	
+	.content-row.s1 article:first-child {padding-top:0;}
+	.content-row.s1 {margin-bottom:-10px}
+
+	.akl .brand .category-success-story {display:block;margin:0;}
+	.akl .brand .category-success-story .success-story__item {max-width:100%;margin:30px 0 0;}
+	.akl .brand .category-success-story .success-story__item + .success-story__item {margin-left:0;}
+	
+	.title-component {margin:40px 0 30px;}
+	.title-component .title-ul {display:block;width:100%;margin:0 auto;}
+	.title-component .title-ul li {display:block;padding-top:60px;margin-top:40px;}
+	.title-component .title-ul li:before {height:60px;background-size:70px auto;}
+	.title-component .title-ul li:nth-of-type(2):before {background-position-y:-70px;}
+	.title-component .title-ul li:nth-of-type(3):before {background-position-y:-140px;}
+	.title-component .title-ul li:nth-of-type(4):before {background-position-y:-210px;}
+	.title-component .title-ul li:nth-of-type(5):before {background-position-y:-280px;}
+	
+	.txtbox {height:auto;}
+	.txtbox h3 {font-size:26px;}
+	.txtbox p {display:none;}
+	.txtbox div.s2 {left:49%;}
+	.txtbox div.s2 span {margin-top:20px;}
+
+	/* 암웨이퀸 */
+	.content-row.s1 article {padding:30px 0 20px;margin-bottom:0}
+	.content-row.s2 dl {float:none;width:auto;padding:0;}
+	.content-row.s2 dt {margin-top:25px;}
+	.content-row.s2 dd {padding:20px;}
+	.content-row.s2 + .txt-italic {margin-top:10px;}
+	.full-component.vsual03 {margin-top:40px;}
+	
+	.queen_prod_list li {width:100%;height:auto;float:none;border-right:0;border-bottom:1px solid #dadada;padding:10px 0 20px;}
+	.queen_prod_list li:first-child {padding-top:0;}
+	.queen_prod_list li > span img {width:180px;}
+	.bdnone {border:0 !important;}
+	
+	/* 뉴트리라이트 */
+	.brand .history-list > li {padding-left:0;}
+	.brand .history-list > li strong {position:relative;} 
+	
+	/* 배스바디*/
+	.akl .bathbody .homepage_banner .owl-dots .owl-dot.active span {background:#12a3da;}
+		
+	/* 아티스트리 */
+	.artistry .txtbox.s1 p, .artistry .txtbox.s2 p {display:block;}
+	
+	/* 이스프링 */
+	/* 브랜드 서브 레이아웃 */
+	.content-row.type1 .txtbox {background:none;}
+	.content-row.type1 .txtbox > div {top:25px;left:5%;}
+	.content-row.type1 .txtbox h3 {font-size:28px;}
+	
+	.espring .txtbox p {display:block;font-size:14px;}
+	.espring .content-row.type2 .txtbox {height:auto;padding:40px 20px;}
+	.espring .content-row.type2 .txtbox img {width:100%;max-width:302px;}
+	.espring.sub2 .content-row.type2 .txtbox img {max-width:120px;}
+	.espring.sub4 .content-row.type2 .txtbox.pc {display:none;}
+	.espring.sub4 .content-row.type2 .txtbox.mob {display:block;}
+	.espring.sub4 .content-row.type2 .txtbox {display:block;padding:0 20px;}
+	.espring.sub4 .content-row.type2 .txtbox span {display:block;text-align:center;padding:40px 0;border:0;border-bottom:1px solid #dadada;} 
+	.espring.sub4 .content-row.type2 .txtbox span img {max-width:100px;}
+	.espring.sub7 .content-row.type2 .txtbox img {max-width:135px;}
+	.espring.sub8 .content-row.type2 .txtbox {display:block;padding-top:40px;}
+	.espring.sub8 .content-row.type2 .txtbox span {display:block;width:100%;margin:0 auto 50px;padding:0 0 10px;background:#f4f4f4;}
+	.espring.sub8 .content-row.type2 .txtbox span:before {width:1px;height:100%;top:100%;left:50%;}
+	.espring.sub8 .content-row.type2 .txtbox span:after {content:'▼';left:50%;right:auto;top:110%;transform:translateX(-50%);}
+	.espring.sub8 [class*='img-text-row-box-type'] div {padding:0;}
+	.espring.sub8 [class*="img-text-row-box-type"] dl dd {margin-top:5px}
+	
+	.content-row.type3 {padding:0 15px 20px;}
+	.content-row.type3 h3 {margin-top:25px;}
+	.content-row.type3 .price {position:relative;padding:10px 0 0px 60px;}
+	.content-row.type3 .price:before {content:'';display:block;position:absolute;left:0;top:0;width:50px;height:52px;background-size:50px auto;}
+	.content-row.type3 .price strong {font-size:25px;}
+	.content-row.type3 table {margin-bottom:10px;}
+	.content-row.type3 table th {width:100px;letter-spacing:-1px;}
+	.content-row.type3 table td {padding-left:10px;}
+	
+	/* 엣모스피어 */
+	
+}
 
 /* XS 에너지 */
 .xsenergy_mainlist {position:relative;width:100%;overflow:hidden;background:#000;}
@@ -606,79 +765,4 @@ Editor : HYEWON HWANG
 	.timeline .slideBox > div ul>li strong {position:relative;display:block;}*/
 
 	.history .content-row article .cont-type1 figcaption{text-align:left;}
-	
-	/* ### 브랜드 메인 레이아웃 ### */
-	.akl .brand .homepage_banner,
-	.akl .brand .homepage_banner .owl-carousel .owl-stage-outer,
-	.akl .brand .homepage_banner .wrapper .banner__wrapper,
-	.akl .brand .homepage_banner .owl-carousel .owl-item .banner__image-sub {height:auto;}
-
-	.akl .brand .homepage_banner .owl-dots {top:auto;bottom:20px;width:100%;}
-	.akl .brand .homepage_banner .owl-dots .owl-dot {display:inline-block;padding:0 !important;}
-	.akl .brand .homepage_banner .owl-dots .owl-dot.active:before {content:none;}
-	.akl .brand .homepage_banner .owl-dots .owl-dot span {width:30px;height:10px;background:rgba(0,0,0,0.5);font-size:0;border-radius:0;margin:5px 5px;}
-	.akl .brand .homepage_banner .owl-dots .owl-dot.active span {background:#cb1a3a;}
-
-	.akl .brand .homepage_banner .banner__wrapper .banner__message {width:60%;right:0;}
-	.akl .brand .homepage_banner .banner__message--main {width:150%;margin-left:-70px;font-size:25px;line-height:1.4;text-align:left;}
-	.akl .brand .homepage_banner .banner__message--sub {display:block;padding:30px;font-size:14px;}
-	.akl .brand .homepage_banner .banner__wrapper .banner__image {display:none;}
-
-	.brand .video-preview {padding:0;height:auto;background:none;}
-	.brand .video-preview .mob {width:100%;}
-
-	.content-row {display:block;margin:30px 0 0;}
-	.content-row article, .content-row.col3 article {width:100%;padding:0 0 20px;}
-	.content-row article:last-child {padding-bottom:0;}
-	.content-row.col4 {display:flex;margin:10px -7px 0;}
-	.content-row.col4 article {width:50%;padding:20px 7px 0;}
-
-	.akl .brand .category-success-story {display:block;margin:0;}
-	.akl .brand .category-success-story .success-story__item {max-width:100%;margin:30px 0 0;}
-	.akl .brand .category-success-story .success-story__item + .success-story__item {margin-left:0;}
-	
-	.title-component {margin:40px 0 30px;}
-	.title-component .title-ul {display:block;width:100%;margin:0 auto;}
-	.title-component .title-ul li {display:block;padding-top:60px;margin-top:40px;}
-	.title-component .title-ul li:before {height:60px;background-size:70px auto;}
-	.title-component .title-ul li:nth-of-type(2):before {background-position-y:-70px;}
-	.title-component .title-ul li:nth-of-type(3):before {background-position-y:-140px;}
-	.title-component .title-ul li:nth-of-type(4):before {background-position-y:-210px;}
-	.title-component .title-ul li:nth-of-type(5):before {background-position-y:-280px;}
-	
-	.txtbox {height:auto;}
-	.txtbox h3 {font-size:26px;}
-	.txtbox p {display:none;}
-	.txtbox div.s2 {left:49%;}
-	.txtbox div.s2 span {margin-top:20px;}
-
-	/* 암웨이퀸 */
-	.content-row.s1 article {padding:30px 0 20px;margin-bottom:0}
-	.content-row.s2 dl {float:none;width:auto;padding:0;}
-	.content-row.s2 dt {margin-top:25px;}
-	.content-row.s2 dd {padding:20px;}
-	.content-row.s2 + .txt-italic {margin-top:10px;}
-	.full-component.vsual03 {margin-top:40px;}
-	
-	.queen_prod_list li {width:100%;height:auto;float:none;border-right:0;border-bottom:1px solid #dadada;padding:10px 0 20px;}
-	.queen_prod_list li:first-child {padding-top:0;}
-	.queen_prod_list li > span img {width:180px;}
-	.bdnone {border:0 !important;}
-	
-	/* 뉴트리라이트 */
-	.brand .history-list > li {padding-left:0;}
-	.brand .history-list > li strong {position:relative;} 
-	
-	/* 배스바디*/
-	.akl .bathbody .homepage_banner .owl-dots .owl-dot.active span {background:#12a3da;}
-		
-	/* 아티스트리 */
-	.artistry .txtbox.s1 p, .artistry .txtbox.s2 p {display:block;}
-	
-	/* 이스프링 */
-	.espring .txtbox.s1 p {display:block;font-size:14px;}
-	.espring .txtbox.s1 div {top:25px;left:5%;}
-	
-	/* 엣모스피어 */
-	
 }
