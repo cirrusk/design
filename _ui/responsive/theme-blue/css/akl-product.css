@@ -50,7 +50,7 @@ iframe {border:0;}
 
 /* 포인트 메이크업 */
 .visual-area.point-makeup01{min-height:1056px;background:url(../images/akl_product/beauty/bg_point_makeup_01.png) no-repeat center center;}
-.visual-area.point-makeup02{min-height:919px;background:url(../images/akl_product/beauty/bg_point_makeup_02.png) no-repeat center center;}
+.visual-area.point-makeup02{min-height:942px;background:url(../images/akl_product/beauty/bg_point_makeup_02.png) no-repeat center center;}
 .visual-area.point-makeup03{height:1025px;background:url(../images/akl_product/beauty/bg_point_makeup_03.png) no-repeat center center;} /* 립스틱 */
 .visual-area.point-makeup04{min-height:1014px;background:url(../images/akl_product/beauty/bg_point_makeup_03.png) no-repeat center center;}
 .visual-area.mascara{min-height:1067px;background:url(../images/akl_product/beauty/bg_mascara.png) no-repeat center center;}
@@ -3085,7 +3085,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.point-makeup .visual-area.lipgloss .v-logo{width:auto;padding:38px 0 0;}
 	.point-makeup .visual-area.lipgloss .v-pro span img {width:auto;height:auto;}
 	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:20px;}
-	.visual-area.point-makeup03 .v-pro span img{width:auto;}
+	.visual-area.point-makeup03 .v-pro span img, .visual-area.point-makeup02 .v-pro span img{width:auto;}
 	
 	
 	/* 배스바디 */
@@ -4205,9 +4205,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
    .ade-photo img.seasoning-food{width: 100% !important;margin-bottom:27px;}	
    
    /* 메이크업 1,2,3 립스틱 */
-   .visual-area.point-makeup03 .txt-info-visual .v-logo-txt{font-size: 18px;font-weight: 300;}
-   .visual-area.point-makeup03 .v-logo.beauty img{height:16px;}
-   .visual-area.point-makeup03 .v-pro span img{width:inherit;}
+   .visual-area.point-makeup03 .txt-info-visual .v-logo-txt, .visual-area.point-makeup02 .txt-info-visual .v-logo-txt{font-size: 18px;font-weight: 300;}
+   .visual-area.point-makeup03 .v-logo.beauty img, .visual-area.point-makeup02 .v-logo.beauty img{height:16px;}
+   .visual-area.point-makeup03 .v-pro span img, .visual-area.point-makeup02 .v-pro span img{width:inherit;}
    
 	
 	
@@ -4216,8 +4216,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 
 @media (max-width: 474px) {
-	
-	
+
 	.skin-care .ingre-list li{width:100% !important;}
 	.ingre-list li:before{display:none;}
 	.pro-video.type2{margin: 25px 0 0;padding: 25px 0 0;}
@@ -4389,6 +4388,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 @media (max-width: 324px) {	
 	
+	/* bottom */
+	.ingestion-usage dl{margin: 20px 0 0;}
+	
 	/* 영양건강*/
 	.enerjuvetm-complex li span,
 	.enerjuvetm-complex .clx-img img{width:100%;}
@@ -4433,12 +4435,13 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.food_gray_wrap ul li:last-child{padding-bottom:25px;}
 	.food_gray_wrap ul li dl dd{font-size:12px;margin:0 20px;}
 	
-		/*  엣모스피어 스카이 */
+	/*  엣모스피어 스카이 */
 	.atmosky-allergy-lst .allergy-txt-cont ul li{font-size:12px;}
 	
 	
 	/* 뷰티 */
 	.system-lst3 ul li{float:none;width:100%;text-align:center;}
+	
 	
 	/* 셀렉트 시그니처 */
 	.signature-cont-area .pcomp-area .comp-info .comp-box dl dd{min-height:130px;}
