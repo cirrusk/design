@@ -487,28 +487,8 @@
 			</div>
 			<!-- //SOP 제품목록 -->
 
-			<br><br>
-<script>
-$(function(){
-	var sopBundleConts = $('.shopping-cart-item-list.mysop-item-list').find('.product-details .mysop-bundle-contents');
-	var sopBundleBtn = $('.product-item-element.list-item-info').find('.product-stock');
-	sopBundleBtn.each(function(){
-		$(this).on('click',function(e){
-			e.preventDefault();
-			var $bundleConts = $(this).parents('.product-item-element.list-item-info').siblings('.view-bundle-contents');
+			<br><br><!-- 영역 구분용 -->
 
-			if( $bundleConts.is(':hidden')){
-				$(this).addClass('view-open');
-				$bundleConts.slideDown('200');
-			} else {
-				$(this).removeClass('view-open');
-				$bundleConts.hide();
-			}
-
-		});
-	});
-});
-</script>
 			<ul class="shopping-cart-item-list mysop-item-list">
 				<li>
 					<div class="col-xs-12 list-header change-list-header">
@@ -528,9 +508,7 @@ $(function(){
 							<span class="product-name"> Nutrilite Cal Mag D </span>
 							<div class="product-code">SKU:<span class="product-item-number">105480</span></div>
 							<div class="product-category">18.22PV/57.31BV</div>
-							<div class="product-stock cartlist-promotions cartlist-view">
-								<a class="">View Bundle Contents<i class="fas fa-angle-down"></i></a>
-							</div>
+							<div class="product-stock cartlist-promotions cartlist-view"><a href="#">View Bundle Contents<i class="fas fa-angle-down"></i></a></div>
 
 							<!-- core 번들 위치이동
 							<div class="view-bundle-contents shopping-cart-view-bundle-contents mysop-bundle-contents"></div> -->
@@ -603,9 +581,7 @@ $(function(){
 							<span class="product-name"> Nutrilite Cal Mag D </span>
 							<div class="product-code">SKU:<span class="product-item-number">105480</span></div>
 							<div class="product-category">18.22PV/57.31BV</div>
-							<div class="product-stock cartlist-promotions cartlist-view">
-								<a class="">View Bundle Contents<i class="fas fa-angle-down"></i></a>
-							</div>
+							<div class="product-stock cartlist-promotions cartlist-view"><a href="#">View Bundle Contents<i class="fas fa-angle-down"></i></a></div>
 
 							<!-- core 번들 위치이동
 							<div class="view-bundle-contents shopping-cart-view-bundle-contents mysop-bundle-contents"></div> -->

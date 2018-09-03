@@ -192,6 +192,11 @@
 	//SOP - 번들선택 toggle
 	SOP_PDP_editBundle();
 
+	SOP_PDP_viewBundle();
+
+
+
+
 /** ----- 나의 쇼핑정보 ----- */
 	//나의 주문내역 list - 짝수줄 서브목록 bg 넣기
 	MyOrderLIST_row_bgcolor();
@@ -1501,6 +1506,26 @@ function SOP_PDP_editBundle(){
 		});
 	});
 };
+
+function SOP_PDP_viewBundle(){
+	var sopBundleConts = $('.shopping-cart-item-list.mysop-item-list').find('.product-details .mysop-bundle-contents');
+	var sopBundleBtn = $('.product-item-element.list-item-info').find('.product-stock');
+	sopBundleBtn.each(function(){
+		$(this).on('click',function(e){
+			e.preventDefault();
+			var $bundleConts = $(this).parents('.product-item-element.list-item-info').siblings('.view-bundle-contents');
+
+			if( $bundleConts.is(':hidden')){
+				$(this).addClass('view-open');
+				$bundleConts.slideDown('200');
+			} else {
+				$(this).removeClass('view-open');
+				$bundleConts.hide();
+			}
+
+		});
+	});
+}
 
 /** ------------------------------------
  *  나의 쇼핑정보
