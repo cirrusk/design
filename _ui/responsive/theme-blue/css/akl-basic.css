@@ -1418,12 +1418,12 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.akl .cbox.typeAdminAdd .tabcon-tit {padding:0; margin:0 20px 17px;}
 
 	/* Layer: 동영상 크게보기 */
-	.akl #videobox {top:15px;width:auto; left:15px; right:15px; height:auto;transform:none;}
-	.akl .popup-video-preview__content {padding:20px 20px 0; }
+	.akl #videobox {top:15px; left:15px; right:15px; width:100%; padding:0 15px; height:auto; transform:none; box-sizing:border-box;}
+	.akl .popup-video-preview__content {padding:20px 20px 0;}
 	.akl .video-pop {padding-bottom:20px;}
 	.akl #videobox #cboxTitle {padding:17px 30px 15px 0;margin:0 20px;}
 	.akl #videobox #cboxTitle .headline {font-size:18px;line-height:20px;}
-	.akl #videobox #cboxClose {right:6px; top:2px;}
+	.akl #videobox #cboxClose {right:15px; top:2px;}
 	.akl #videobox .popup-video-preview__content .video-cont span {height:300px;}
 	.akl #videobox .popup-video-preview__content .video-cont span img {height:100%;}
 	.akl .popup-video-preview__content .video-preview__play {margin-left:-41px;margin-top:-41px;}
@@ -1762,4 +1762,5 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 @media (max-width:320px) {
 	.cbox {max-width:320px !important; min-width:100%;}
 	.akl .popup-video-preview__content { max-height:350px; }
+	.akl .view-sns {padding:20px 20px 0}
 }
