@@ -25,10 +25,15 @@
 
 <style>
 .in-sync, .in-link { border:1px solid #639; box-sizing:border-box }
-.carousel_2 .current { border:2px solid #639; box-sizing:border-box }
-.owl-nav * {font-size:3em}
+
+
 .owl-carousel {max-width:1024px; margin-top:20px;}
 .owl-carousel .item {height:200px; width:100%; background:#fff; border:1px solid pink}
+.owl-carousel .current { border:2px solid #639; box-sizing:border-box }
+.owl-carousel.carousel_1 .item {background:#888; border:1px solid #000; color:#fff;}
+.owl-nav * {font-size:3em; color:#fff;}
+
+
 </style>
 
 <script type="text/javascript">
@@ -50,9 +55,7 @@ $(function(){
 		mouseDrag: false,
 		linked: owlSync2.prev()
 	}).on('initialized.owl.carousel  linked.to.owl.carousel', function(){
-		//owlSync2.find('.owl-item.current').removeClass('current');
-		//var current = owlSync2.find('.owl-item.active.center').length ? owlSync2.find('.owl-item.active.center') : owlSync2.find('.owl-item.active').eq(0);
-		//current.addClass('current');
+		//
 	});
 });
 /**
@@ -211,7 +214,7 @@ $(function(){
 	<div class="item"> <h4>12</h4> </div>
 </div>
 
-<a href="https://github.com/OwlCarousel2/OwlCarousel2/issues/1378#issuecomment-218110714">Find us on GitHub! &lt;3</a>
+
 
 </body>
 </html>
