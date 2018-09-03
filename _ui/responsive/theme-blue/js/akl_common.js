@@ -183,8 +183,6 @@
 	toggleBox_Guide();
 
 /** ----- SHOP > SOP ----- */
-	//SOP 프로필 수정하기  : 삭제 09.03
-	//SOP_editProfile()
 
 	//SOP - 정기주문 혜택정보 노출
 	SOP_PDP_benefitsTips();
@@ -421,11 +419,6 @@ function tabsTgg_Control(){
 			if(_winWidth < 769){ runSmallView();}
 		};
 
-		$tabWidthCheck();
-		$(window).resize(function(){
-			$tabWidthCheck();
-		});
-
 		/* --- 스크롤 가능 표시 컨트롤 --- */
 		var leftDiv = $(this).parent().siblings('.scrollable-area.left');
 		var righttDiv = $(this).parent().siblings('.scrollable-area.right');
@@ -448,7 +441,7 @@ function tabsTgg_Control(){
 				}
 		}
 
-		function width_check(){
+		function $scrollableArea_show(){
 			var _winWidth = $(window).width();
 			if(_winWidth > 768){
 				$scrollArea.pc();
@@ -458,9 +451,24 @@ function tabsTgg_Control(){
 			}
 		}
 
-		width_check();
+		//로딩 시 활성화 탭 보이도록 scroll
+		var activeNode = _LI.filter('.active');
+		var activeLeft = activeNode.position().left;
+		if(_winWidth < 769){
+			_UL.parents('.tabWrapper').scrollLeft(activeLeft-20);
+		}
+
+		$tabWidthCheck(); //너비 비교하기
+		$scrollableArea_show(); //좌우 스크롤 영역 표시
+
 		$(window).resize(function(){
-			width_check();
+			$tabWidthCheck();
+			$scrollableArea_show();
+
+			//로딩 시 활성화 탭 보이도록 scroll
+			if(_winWidth < 769){
+				_UL.parents('.tabWrapper').scrollLeft(activeLeft-20);
+			}
 		});
 
 		_UL.parent('.tabWrapper').scroll(function(event){
@@ -487,6 +495,9 @@ function tabsTgg_Control(){
 				righttDiv.show();
 			}
 		});
+
+
+
 	});
 }
 
