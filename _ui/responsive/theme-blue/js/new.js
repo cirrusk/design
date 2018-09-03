@@ -107,6 +107,26 @@ $(function(){
 		$("#" + excludeId).show();
 	}
 
+	//SOP 프로필 수정하기 : akl_common.js 에서 이동 (개발삭제 요청)
+	SOP_editProfile();
+	function SOP_editProfile(){
+		$('#edit-profile').on('click',function(e){
+			e.preventDefault();
+			var $orderInfo = $(this).parent('.sop-order-info');
+			var $editBox = $(this).parents().find('.edit-block');
+			var $editBoxClose = $editBox.find('.close-edit');
+
+			if($editBox.is(':hidden')){
+				$editBox.slideDown('fast');
+			} else if ($editBox.is(':visible')){
+				$editBox.hide();
+			}
+			$editBoxClose.on('click',function(){
+				$editBox.hide();
+			});
+		});
+	}
+
 
 	/** ---------------------------------
 	 *  주문/결제 공통사용
