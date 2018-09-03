@@ -2336,12 +2336,13 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			if( _winWidth < 769 ){
 				$layerVideoView.css({
 					'display':'block',
-					'top':topPosition,
+					'position':'absolute',
+					'top':'3%',
 					'left':'0',
 					'max-width':'',
 					'height':'auto',
 					'margin':'0 auto',
-					'margin-top': -(targetHeight_video/2)
+					'margin-bottom':'3%'
 				});
 			} else {
 				$layerVideoView.css({
