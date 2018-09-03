@@ -410,6 +410,7 @@ Editor : HYEWON HWANG
 .brand .sub [class*="box-bnr"] {margin-bottom:40px;}
 
 .brand [class*="sub"] .content-row {margin-left:0;margin-right:0;}
+.brand [class*="sub"] .content-row[class*='col'] {margin-left:-12px;margin-right:-12px;}
 
 /* 뉴트리라이트 */
 .nutrilite .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.png');}
@@ -462,15 +463,14 @@ Editor : HYEWON HWANG
 .espring .txtbox div {max-width:90%;top:50px;}
 .espring .txtbox p{margin-top:0;font-size:16px;}
 
-/* 이스프링 서브 */
+/* ### 브랜드 서브 레이아웃 ### */
 .content-row.type1 .txtbox > div {top:auto;}
 .content-row.type1 .txtbox h3 {font-size:40px;font-weight:500;}
 .brand .content-row table tr:nth-of-type(even) {background:none;}
-
-[class *= 'sub'] .content-row {margin-bottom:40px;}
+[class *= 'sub'] .content-row {margin:40px 0;}
 [class *= 'sub'] .content-row:last-child {margin-bottom:0;}
-[class *= 'sub'] .content-row + .content-row {margin-top:40px}
-[class *= 'sub'] .content-row.s1 {margin-top:40px;margin-left:0;margin-right:0;}
+
+/* 이스프링 */
 .espring .content-row.type2 .txtbox {height:300px;justify-content:center;background:#f4f4f4;}
 .espring .content-row.type2 .txtbox img {width:auto;}
 .espring .content-row.s1 article p {line-height:1.6;}
