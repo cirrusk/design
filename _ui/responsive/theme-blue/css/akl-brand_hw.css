@@ -216,7 +216,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .biz-qna .list-type5 > li:before, p.list-type5:before {background: #5d5d61;border-radius:100%;}
 
 /* 글로벌암웨이 */
-.info-icotype.global {width:100%;background:#fff;}
+.info-icotype.global {margin:30px 0 60px;width:100%;background:#f6f6f6;}
 .info-icotype.global li {width:25%;font-size:13px;}
 .info-icotype.global li:before {content:"";display:inline-block;width:58px;height:58px;background-position:50% 50%;background-size:100%;background-repeat:no-repeat}
 .info-icotype.global li:nth-child(1):before {background-image:url(../images/akl_brand/about/ico_global01.png);}
@@ -236,6 +236,16 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .full-component.hr {margin-top:30px !important;}
 .full-component.hr .img-bnr {margin-top:0;}
 
+.ico-list-br {margin-top:40px;}
+.ico-list-br li {position:relative;padding:35px 0 35px 120px;border-top:1px solid #e3e3e3;min-height:160px;}
+.ico-list-br li:after {position:absolute;left:0;top:35px;content:"";display:inline-block;width:90px;height:90px;background:url(../images/akl_brand/about/ico-list-br.png) no-repeat 0 0;background-size:90px auto;}
+.ico-list-br li:nth-child(2):after {background-position:0 -165px;}
+.ico-list-br li:nth-child(3):after {background-position:0 -318px;}
+.ico-list-br li:nth-child(4):after {background-position:0 -472px;}
+.ico-list-br li:nth-child(5):after {background-position:0 -638px;}
+.ico-list-br li:nth-child(6):after {background-position:0 -792px;}
+.ico-list-br li strong {color:#002f5f;}
+.ico-list-br li p {line-height:24px;}
 
 /*뉴트리키즈*/
 .kids-playground {margin:0 -40px;}
@@ -435,8 +445,9 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.kids-playground {margin:0 0;}
 	.kids-playground a.primary-link:after {width:64px;height:64px;margin:-32px 0 0 -32px;}
 
-	.info-icotype.global {padding:0;}
-	.info-icotype.global li {width:100%;font-size:14px;padding: 20px 0 20px 90px;}
+	.info-icotype.global {padding:10px;}
+	.info-icotype.global li {width:100%;font-size:14px;padding: 20px 0 20px 80px;}
+	.info-icotype.global li + li {border-top:1px solid #e3e3e3;}
 	.info-icotype.global li:before {width:50px;left:10px;height:50px;background-size:contain;}
 	.info-icotype.global li em {margin:0;}
 	.info-icotype.global li span {display:inline;}
@@ -448,6 +459,15 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.br-box-cont-hr {margin-top:30px !important;padding-top:30px !important;}
 	.br-box-cont-hr .list-type5 li {margin-top:10px;}
 	.brand.amway-theme .link-btn {margin:0;}
+
+	.ico-list-br {margin-top:40px;}
+	.ico-list-br li {padding:20px 0 20px 80px;min-height:100px;}
+	.ico-list-br li:after {position:absolute;left:5px;top:20px;width:60px;height:60px;background:url(../images/akl_brand/about/ico-list-br_mob.png) no-repeat 0 0;background-size:60px auto;}
+	.ico-list-br li:nth-child(2):after {background-position:0 -60px;}
+	.ico-list-br li:nth-child(3):after {background-position:0 -120px;}
+	.ico-list-br li:nth-child(4):after {background-position:0 -180px;}
+	.ico-list-br li:nth-child(5):after {background-position:0 -240px;}
+	.ico-list-br li:nth-child(6):after {background-position:0 -300px;}
 
 	/*채용정보*/
 	.recruit-step-wrap {padding:60px 7% 20px 0;}
