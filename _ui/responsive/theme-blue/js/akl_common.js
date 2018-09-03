@@ -183,18 +183,15 @@
 	toggleBox_Guide();
 
 /** ----- SHOP > SOP ----- */
-	//SOP 프로필 수정하기
-	SOP_editProfile();
+	//SOP 프로필 수정하기  : 삭제 09.03
+	//SOP_editProfile()
 
 	//SOP - 정기주문 혜택정보 노출
 	SOP_PDP_benefitsTips();
 
 	//SOP - 번들선택 toggle
 	SOP_PDP_editBundle();
-
 	SOP_PDP_viewBundle();
-
-
 
 
 /** ----- 나의 쇼핑정보 ----- */
@@ -1414,24 +1411,6 @@ function toggleBox_Guide(){
  *  쇼핑-스마트오더 프로그램
  *  ------------------------------------
  */
-/* SOP 프로필 수정하기 */
-function SOP_editProfile(){
-	$('#edit-profile').on('click',function(e){
-		e.preventDefault();
-		var $orderInfo = $(this).parent('.sop-order-info');
-		var $editBox = $(this).parents().find('.edit-block');
-		var $editBoxClose = $editBox.find('.close-edit');
-
-		if($editBox.is(':hidden')){
-			$editBox.slideDown('fast');
-		} else if ($editBox.is(':visible')){
-			$editBox.hide();
-		}
-		$editBoxClose.on('click',function(){
-			$editBox.hide();
-		});
-	});
-}
 
 /* SOP - 정기주문 혜택정보 노출 */
 function SOP_PDP_benefitsTips(){
