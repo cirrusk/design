@@ -183,8 +183,6 @@
 	toggleBox_Guide();
 
 /** ----- SHOP > SOP ----- */
-	//SOP 프로필 수정하기  : 삭제 09.03
-	//SOP_editProfile()
 
 	//SOP - 정기주문 혜택정보 노출
 	SOP_PDP_benefitsTips();
@@ -362,6 +360,8 @@ function tabsTgg_Control(){
 	var _winWidth = $(window).width();
 	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
 
+	if (!_tabsToggles.length){ return; }
+
 	_tabsToggles.each(function(){
 		var _UL = $(this);
 		var _LI = _UL.find('li');
@@ -421,11 +421,6 @@ function tabsTgg_Control(){
 			if(_winWidth < 769){ runSmallView();}
 		};
 
-		$tabWidthCheck();
-		$(window).resize(function(){
-			$tabWidthCheck();
-		});
-
 		/* --- 스크롤 가능 표시 컨트롤 --- */
 		var leftDiv = $(this).parent().siblings('.scrollable-area.left');
 		var righttDiv = $(this).parent().siblings('.scrollable-area.right');
@@ -448,7 +443,7 @@ function tabsTgg_Control(){
 				}
 		}
 
-		function width_check(){
+		function $scrollableArea_show(){
 			var _winWidth = $(window).width();
 			if(_winWidth > 768){
 				$scrollArea.pc();
@@ -458,9 +453,12 @@ function tabsTgg_Control(){
 			}
 		}
 
-		width_check();
+		$tabWidthCheck(); //너비 비교하기
+		$scrollableArea_show(); //좌우 스크롤 영역 표시
+
 		$(window).resize(function(){
-			width_check();
+			$tabWidthCheck();
+			$scrollableArea_show();
 		});
 
 		_UL.parent('.tabWrapper').scroll(function(event){
@@ -486,6 +484,27 @@ function tabsTgg_Control(){
 				leftDiv.show();
 				righttDiv.show();
 			}
+		});
+
+		//로딩 시 활성화 탭 보이도록 scroll
+		var activeNode = _LI.filter('.active');
+		var activeLeft = activeNode.position().left;
+		var activeTabScroll = function(){ _UL.parents('.tabWrapper').scrollLeft(activeLeft-20); }
+
+		function $activeSCROLL(){
+			var _winWidth = $(window).width();
+			if(_winWidth < 769){
+				activeTabScroll();
+
+				setTimeout(function(){
+					activeTabScroll();
+				},400);
+			}
+		}
+
+		$activeSCROLL();
+		$(window).resize(function(){
+			$activeSCROLL();
 		});
 	});
 }
@@ -625,6 +644,7 @@ function tbl_colspan(){
 /* 약관 더보기 (768이하) */
 function terms_ViewAll(){
 	var $btnViewAll = $('.text-btn.view-all');
+	if (!$btnViewAll.length){ return;}
 	$btnViewAll.each(function(){
 		$(this).on('click',function(){
 			var $termsTexts = $(this).parent('.conditions');
@@ -792,6 +812,8 @@ function HEADER_RecentSearches(){
 
 /* 장바구니,주문결제 툴팁 */
 function promotionTooltip(){
+	if(!$('.tooltip-btn').length){return;}
+
 	$('.tooltip-btn').each(function(){
 		var _this = $(this);
 
@@ -823,7 +845,7 @@ function promotionTooltip(){
 function stepBox_Remargin(){
 	var _winWidth = $(window).width();
 	var _stepBox = $('.shipping-delivery').find('.checkout-steps');
-	if(! _stepBox.length){return;}
+	if(!_stepBox.length){return;}
 
 	if (_winWidth < 769){
 		_stepBox.css({
@@ -908,7 +930,7 @@ function orderSummaryFixed(){
 
 /* 장바구니,위시리스트 : floating box */
 function cartSummaryFixed(){
-	if (! $('.cart-content-wrapper .shopping-cart-total-wrapper').length){ return;}
+	if (!$('.cart-content-wrapper .shopping-cart-total-wrapper').length){ return;}
 
 	function fixedBox(){
 		//target position : top
@@ -990,7 +1012,10 @@ function cartSummaryFixed(){
 
 /* 주문 배송메시지 */
 function deliveryMSG(){
-	$('.delivery-msg, .delivery-msg02').each(function(){
+	var $deliveryMSG_box = $('.delivery-msg, .delivery-msg02');
+	if(!$deliveryMSG_box.length){return;}
+	
+	$deliveryMSG_box.each(function(){
 		var $inputBox = $(this).find('input[type=text].m-message');
 		var $msgList = $(this).find('.delivery-msg-list');
 		var $msgText = $msgList.find('button')
