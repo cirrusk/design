@@ -360,6 +360,10 @@ function tabsTgg_Control(){
 	var _winWidth = $(window).width();
 	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
 
+	if (!_tabsToggles.length){ return; }
+
+	console.log('_tabsToggles 실행')
+
 	_tabsToggles.each(function(){
 		var _UL = $(this);
 		var _LI = _UL.find('li');
@@ -454,9 +458,12 @@ function tabsTgg_Control(){
 		//로딩 시 활성화 탭 보이도록 scroll
 		var activeNode = _LI.filter('.active');
 		var activeLeft = activeNode.position().left;
-		if(_winWidth < 769){
-			_UL.parents('.tabWrapper').scrollLeft(activeLeft-20);
+		var activeTabScroll = function(){
+				setTimeout(function(){
+					_UL.parents('.tabWrapper').scrollLeft(activeLeft-20);
+				},300);
 		}
+		if(_winWidth < 769){ activeTabScroll(); }
 
 		$tabWidthCheck(); //너비 비교하기
 		$scrollableArea_show(); //좌우 스크롤 영역 표시
@@ -467,7 +474,7 @@ function tabsTgg_Control(){
 
 			//로딩 시 활성화 탭 보이도록 scroll
 			if(_winWidth < 769){
-				_UL.parents('.tabWrapper').scrollLeft(activeLeft-20);
+				activeTabScroll();
 			}
 		});
 
@@ -495,9 +502,6 @@ function tabsTgg_Control(){
 				righttDiv.show();
 			}
 		});
-
-
-
 	});
 }
 
