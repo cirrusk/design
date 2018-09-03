@@ -543,7 +543,7 @@ html.scrollLock body {overflow:hidden;}
 .akl #videobox #cboxClose {right:30px; padding:5px 15px;}
 .akl #videobox #cboxTitle .headline {font-size:22px;line-height:24px; font-weight:500; font-family:'Noto Sans KR', sans-serif; color:#002f5f; letter-spacing:-1px;}
 .akl .video-pop {background:#fff; display:block; margin:0 auto; width:100%; padding-bottom:50px; border:1px solid #c0c0c0;}
-.akl .popup-video-preview__content {padding:40px 39px 0;}
+.akl .popup-video-preview__content {padding:40px 39px 0; max-height:525px; overflow-y:auto;}
 .akl #videobox .popup-video-preview__content .video-cont {display:table; position:relative; width:100%;}
 .akl #videobox .popup-video-preview__content .video-cont span {display:table-cell; height:396px; vertical-align:middle;}
 .akl .popup-video-preview__content .video-preview__img {height:100%;}
@@ -1419,7 +1419,7 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 
 	/* Layer: 동영상 크게보기 */
 	.akl #videobox {top:15px;width:auto; left:15px; right:15px; height:auto;transform:none;}
-	.akl .popup-video-preview__content {padding:20px 20px 0;}
+	.akl .popup-video-preview__content {padding:20px 20px 0; }
 	.akl .video-pop {padding-bottom:20px;}
 	.akl #videobox #cboxTitle {padding:17px 30px 15px 0;margin:0 20px;}
 	.akl #videobox #cboxTitle .headline {font-size:18px;line-height:20px;}
@@ -1761,4 +1761,5 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 } */
 @media (max-width:320px) {
 	.cbox {max-width:320px !important; min-width:100%;}
+	.akl .popup-video-preview__content { max-height:350px; }
 }
