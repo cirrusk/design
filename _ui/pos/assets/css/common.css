@@ -493,6 +493,26 @@ table input[type='text'] {font-family:'NSM';}
 .list_serial li input[readonly]{width:237px; padding-bottom:6px; font-size:14px; border-color:transparent; background-color:transparent}
 .list_serial li:before {content:counter(li)'.'; counter-increment:li; display:inline-block; width:40px; padding-right:8px; text-align:right}
 
+/* 통합결제 금액란 */
+.payment_list {height:155px; color:#fff}
+.payment_list ul {width:calc(50% - 5px); box-sizing:border-box;}
+.payment_list li {display:table; width:100%; box-sizing:border-box;}
+.payment_list li > * {display:table-cell}
+.payment_list li > span {width:90px}
+.payment_list li > em {text-align:right}
+.payment_list .pl01 { background-color:#11224e}
+.payment_list .pl01 li {padding:0 15px}
+.payment_list .pl01 li + li {border-top:1px solid #4d597a}
+.payment_list .pl01 li > * {height:50px; line-height:48px;}
+.payment_list .pl01 li span {font-size:16px; font-family:'NSB'}
+.payment_list .pl01 li em {font-size:20px; font-family:'NSB'}
+.payment_list .pl02 {padding:5px 20px 6px;  background-color:#47b8f2}
+.payment_list .pl02 li + li {border-top:1px solid #91d4f7}
+.payment_list .pl02 li > * {height:27px; line-height:25px}
+.payment_list .pl02 li > span {font-size:13px; font-family:'NSM'}
+.payment_list .pl02 li em {font-size:16px; font-family:'NSB'}
+.payment_list .pl02 li em span {font-size:10px; font-family:'NSB'; margin-right:5px}
+
 /* tab */
 .tab_type01 {display:block; text-align:center; font-size:0}
 .tab_type01 > span {position:relative; display:inline-block; width:160px; height:35px; line-height:31px; box-sizing:border-box; color:#999; font-size:16px; border:1px solid #999; background-color:#f2f2f5}
