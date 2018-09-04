@@ -45,9 +45,11 @@ iframe {border:0;}
 
 /* 포인트 메이크업 */
 .visual-area.point-makeup01{min-height:1065px;background:url(../images/akl_product/beauty/bg_point_makeup_01.png) no-repeat center center;}
+.visual-area.point-makeup01.short{min-height:902px;background:url(../images/akl_product/beauty/bg_point_makeup_01_short.png) no-repeat center center;}/* 아이펜슬 */
 .visual-area.point-makeup02{min-height:942px;background:url(../images/akl_product/beauty/bg_point_makeup_02.png) no-repeat center center;}
 .visual-area.point-makeup02.blusher{min-height:976px;background:url(../images/akl_product/beauty/bg_point_makeup_blusher.png) no-repeat center center;} /* 블러셔 */
 .visual-area.point-makeup03{height:1025px;background:url(../images/akl_product/beauty/bg_point_makeup_03.png) no-repeat center center;} /* 립스틱 */
+.visual-area.point-makeup03.short{height:946px;background:url(../images/akl_product/beauty/bg_point_makeup_03.png) no-repeat center center;} /* 립 라이너 */
 .visual-area.point-makeup04{min-height:1014px;background:url(../images/akl_product/beauty/bg_point_makeup_04.png) no-repeat center center;}
 .visual-area.mascara{min-height:1067px;background:url(../images/akl_product/beauty/bg_mascara.png) no-repeat center center;}
 .visual-area.tools{min-height:1085px;background:url(../images/akl_product/beauty/bg_brush.png) no-repeat center top;}
@@ -126,7 +128,7 @@ iframe {border:0;}
 .visual-area.type02.ex_fit_powder{background: #000000 url(../images/akl_product/beauty/bg_powder_refill_4931.png) no-repeat top center;height:798px;} /* 베이스메이크업(이그젝트 핏 프레스드 파우더) */
 .visual-area.type02.ex_fit_loose_powder{background: #000000 url(../images/akl_product/beauty/bg_ex_fit_loose_powder_4231.png) no-repeat top center;height:847px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
 .visual-area.type02.concealer{background: #000000 url(../images/akl_product/beauty/bg_concealer.png) no-repeat top center;height:884px;} /* 베이스메이크업(익스퍼트 핏 퍼펙팅 루스 파우더) */
-.visual-area.type02.lipgloss{background: #000000 url(../images/akl_product/beauty/bg_lipgloss.png) no-repeat top center;height:974px;} /* 포인트메이크업(립글로스) */
+.visual-area.type02.lipgloss{background: #000000 url(../images/akl_product/beauty/bg_lipgloss.png) no-repeat top center;height:1033px;} /* 포인트메이크업(립글로스) */
 .visual-area.type02.lipgloss-pop{background: #000000 url(../images/akl_product/beauty/bg_pop_triple_lipgloss.png) no-repeat top center;height:1144px;} /* 포인트메이크업(립글로스) */
 .visual-area.sw-foundation{background: #000000 url(../images/akl_product/beauty/bg_sheer_weightless_foundation_01.png) no-repeat top center;height:1169px;} /* 하이드라-브이 쉬어 라이트 파운데이션 */
 
@@ -341,6 +343,8 @@ p, div, li span{word-break: keep-all;word-wrap: break-word;}
 
 
 .product-body-view .pink{color:#eb7a8f !important;}
+.pink01{color:#ff6785 !important;}
+
 
 .product-body-view .yellow{color:#dfaa26 !important;}/* .yellow */
 .yellow01{color:#f1c192;}/* .gold */
@@ -1627,7 +1631,8 @@ dl.amo-txt dd br {line-height:18px}
 
 
 .concealer-img-wrap{position:relative;max-width: 365px;max-height: 423px;}
-.concealer-img-wrap .dsc{position:absolute;bottom: 0;left:19.72%;margin-left: -19px;}
+.concealer-img-wrap span.dsc{position:absolute;bottom: 7px;left: 16%;margin-left: -19px;color: #808285;}
+.concealer-img-wrap span.dsc em{margin-bottom:84px;display:block;}
 .concealer-img-wrap .dsc.mid{margin-left: -42px;}
 
 .crack-txt-wrap{display: block;margin-top:50px;padding-top:20px;}
@@ -3071,12 +3076,13 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.visual-area .v-logo.atmo-hepa img{height:28px;}
 	.visual-area .v-logo.atmo-hepa{padding: 27px 0 0;}
 	.v-pro{margin-top:55px;}
+	.v-pro span img{width:auto;height: auto;}
 	.txt-info-visual .v-logo-txt{padding: 13px 0 0;}
 	.txt-info-visual .v-tit{padding: 18px 0 0;}
 	
 	/* 베이스 메이크업 공통 */
 	.base-makeup .visual-area .v-logo.beauty img{height:13px;}
-	.base-makeup .v-pro span img{width:auto;height: auto;}
+	/*.base-makeup .v-pro span img{width:auto;height: auto;}*/
 	.foundation-cont-area .ade-photo span img{width:auto;}
 	
 	
@@ -4517,6 +4523,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.triangle.circle-type .comment03{right:-15%;}
 	.triangle.circle-type .comment01 em, .triangle.circle-type .comment03 em{padding-top:17px;}
 	.triangle.circle-type .comment02 em{padding-top:28px}
+	
+	.concealer-img-wrap span.dsc em{margin-bottom: 46px;display: block;}
 		
 	/* 배스바디 */
 	.bep-lst.deaf02 ul li{width:100%;}
