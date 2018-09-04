@@ -183,7 +183,6 @@
 	toggleBox_Guide();
 
 /** ----- SHOP > SOP ----- */
-
 	//SOP - 정기주문 혜택정보 노출
 	SOP_PDP_benefitsTips();
 
