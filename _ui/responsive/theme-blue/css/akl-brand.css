@@ -19,6 +19,7 @@ Editor : HYEWON HWANG
 .brand {letter-spacing:-1px;}
 .arr1 {position:relative;display:inline-block;} /* 오른쪽 화살표 > */
 .arr1:after {content:'';position:absolute;top:50%;right:-9px;width:7px;height:7px;transform:rotate(45deg) translatey(-50%);border:2px solid #fff;border-width:2px 2px 0 0;}
+.txt-italic.s2 {background-image:url('../images/akl_common/ico_star2.png');background-size:auto 5px;} 
 
 .brand img:hover, .brand a:hover{-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;}
 
@@ -80,9 +81,10 @@ Editor : HYEWON HWANG
 .brand-contents .list-type5 > li > strong {display:block;margin:6px 0;}
 
 .brand-contents .col-search-tab {margin-top:40px;}
+.brand-contents .col-search-tab ul li:nth-of-type(8) a {border-right:none;}
 .brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;}
 .brand-contents .col-search-tab.s1 ul li {flex:1;}
-
+.brand-contents .col-search-tab ul li a {text-align:center;padding:0 2px;}
 
 /* 암웨이소개 메인 */
 .brand .mob { display:none;}
@@ -97,19 +99,17 @@ Editor : HYEWON HWANG
 .amway-theme .intro .experience-brands.pullRight .masthead .banner_wrapper {transform:translate(0, -50%); width:auto; max-width:100%; overflow:hidden;}
 .amway-theme .intro .experience-brands .masthead .banner_wrapper .text{color:#002f5f;}
 .amway-theme .intro .experience-brands .masthead .banner_wrapper h1 {color:#002f5f;}
-.amway-theme .intro .experience-brands.hasBorder {border-bottom:1px solid #dadada; padding-bottom:50px;}
 
 #about-amway .about-amway-content {margin-top:50px;}
-#about-amway .content-article-bottom {border-top:none;}
+#about-amway .content-article-bottom {margin-top:50px;padding-top:30px;}
 #about-amway .about-amway-content .block .item-content-wrap {background-color:#002F5F;}
 
 .akl .intro .bt-akl-blue {border:1px solid #fff;}
 
 .intro .banner-button-link .btn{line-height:0.95em; height:40px; padding:10px 25px;}
 .amway-theme .intro .category-success-story .item-content-wrap {max-width:80%; height:auto; max-height:191px; padding-top:22px; padding-bottom:22px;}
-.intro .category-success-story .item-content-wrap .banner-title{font-size:36px; font-weight:bold; font-stretch:condensed; text-transform:uppercase; text-align:center; line-height:1; margin:0;}
-.intro .category-success-story .item-content-wrap .sub-title-wrap {font-size:18px; font-weight:600; line-height:1.11;}
-.intro .category-success-story{margin:0 auto 20px; text-align:center;}
+.intro .category-success-story .item-content-wrap .sub-title-wrap {font-size:18px;}
+.intro .category-success-story {margin:0 auto 20px; text-align:center;}
 
 .akl .brand h2.amway-learning__title {margin:55px auto;text-align:center;font-size:32px;letter-spacing:-2px;}
 .akl .brand #recentlyViewedListTab.product-recentlyviewed__imagelist .owl-item a {display:inline-block;width:136px;padding-top:136px;color:#00305e;font-size:16px;font-weight:400;background:url('/_ui/responsive/theme-blue/images/akl_brand/about/brand_icons.png') no-repeat 0 0;}
@@ -274,8 +274,11 @@ Editor : HYEWON HWANG
 .hubcenter .image-gallery.js-gallery img {display:inline-block;width:auto;}
 .hubcenter .slides .image-gallery img:hover {margin:0;-webkit-transform:none;-ms-transform:none;transform:none;}
 
+.hubcenter #uiPrdViewDetail {margin:40px 30px 0;padding:0;width:auto;}
 .hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn {margin:0 15px;max-width:100%;max-height:100%;}
 .hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn img {max-height:100%;}
+.brand #uiPrdViewDetail .owl-nav .owl-next {right:-20px;}
+.brand #uiPrdViewDetail .owl-nav .owl-prev {left:-20px;}
 
 /* 파운더스 카운슬 */
 .brand .new-social-list {overflow:hidden;margin:-10px;}
@@ -311,7 +314,7 @@ Editor : HYEWON HWANG
 .akl .brand .homepage_banner .banner__wrapper .banner__image {width:100%;}
 
 /* 기본 스타일 */
-.akl .brand .homepage_banner .banner__wrapper .banner__message {display:block;position:absolute;top:17%;right:10%;width:450px;height:65%;margin:0;padding:0;background:#e11e44;}
+.akl .brand .homepage_banner .banner__wrapper .banner__message {display:block;position:absolute;z-index:1;top:17%;right:10%;width:450px;height:65%;margin:0;padding:0;background:#e11e44;}
 .akl .brand .homepage_banner .banner__message--main {margin:10% 0 0 -37%;width:100%;font-size:44px;font-weight:500;line-height:1.3;}
 .akl .brand .homepage_banner .banner__message--sub {position:absolute;bottom:0;width:100%;padding:50px 30px 30px 40%;font-size:16px;word-break:break-word; line-height:1.5;}
 .akl .brand .homepage_banner .banner__message--sub > span {display:block;}
@@ -393,7 +396,6 @@ Editor : HYEWON HWANG
 .queen_prod_list li .txt-italic {display:inline;} 
 
 .akl .brand .item-content-wrap h2 {margin:0 0 10px;text-align:center;}
-.akl .brand .category-success-story .success-story__item {-webkit-flex:1;flex:1;max-width:50%;margin:12px;}
 
 .txtbox {position:relative;display:flex;align-items:center;margin:0;width:100%;height:400px;overflow:hidden;background-repeat:no-repeat;background-position:50% 0;background-size:1200px auto;}
 .txtbox div{position:absolute;max-height:100%;max-width:50%;}
