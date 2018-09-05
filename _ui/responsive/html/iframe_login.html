@@ -29,17 +29,20 @@
 			<button type="button">삭제</button>
 		</div>
 		<input type="password" placeholder="비밀번호" class="login-form__password" title="비밀번호 입력">
-		<div class="fingerprint-wrap">
+		<input class="login-form__remember" id="remember" name="remember" type="checkbox">
+		<label for="remember" class="remember-me">아이디 저장</label>
+
+		<!--<div class="fingerprint-wrap">
 			<input class="login-form__remember" id="remember" name="remember" type="checkbox">
 			<label for="remember" class="remember-me">아이디 저장</label>
-			<p class="fingerprint">
+			<!--<p class="fingerprint">
 				<label class="amw-radio-wrap radio-label focus">
 					<span class="amw-label-radio-text">지문인증 로그인</span>
 					<input type="radio" name="radio-1" class="amw-global-radio">
 					<span class="amw-radio-overlay"></span>
 				</label>
 			</p>
-		</div>
+		</div> -->
 	</div>
 	<input class="btn-primary button login-form__submit" type="button" value="로그인">
 </body>

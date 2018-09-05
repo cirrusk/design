@@ -212,7 +212,9 @@ hidden; }
 .akl .tooltip-wrap:before {content:""; position:absolute; top:-9px; right:15px; width:19px; height:9px;  background:url(../images/akl_common/ico_tooltip.png) no-repeat 0 0;}
 .akl .moble-login .fingerprint { display:none}
 .akl .moble-login .fingerprint-wrap [type="checkbox"]:not(:checked) + label::before,
-.akl .moble-login .fingerprint-wrap [type=checkbox]:checked+label::before {top: 2px;}
+.akl .moble-login .fingerprint-wrap [type=checkbox]:checked+label::before,
+.akl .moble-login [type="checkbox"]:not(:checked) + label::before,
+.akl .moble-login [type=checkbox]:checked+label::before {top: 2px;}
 
 /* header > mini deshboard */
 .akl .ico-wraper.noData span.message-num {background:#bbb !important;}
@@ -323,12 +325,13 @@ hidden; }
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .brand-shop .depth2-links a {padding:0px; font-size:14px; font-weight:500; display:block; margin-bottom:0}
 
 .akl .overlay-menu-tab-left {position:absolute; right:0; top:0; width:22%; min-width:180px; padding:45px 0 0 30px; box-sizing:border-box;}
-.akl .overlay-menu-tab-left ul {margin-bottom:35px;}
+.akl .overlay-menu-tab-left ul { }
 .akl .overlay-menu-tab-left ul li a {font-size:14px; font-weight:500; display:block; margin-bottom:4px;}
 .akl header.main-header .amway-theme .amw-navigation-menu .navigation-menu-container .desktop-nav-menu .top-menu .top-menu-links .menu-nav-list .nav-list-item .overlay-menu-tab-left a {padding:0px; font-size:14px; font-weight:400;font-family:'Noto Sans KR', sans-serif; color:#56565a;}
-.akl .overlay-menu-tab-left:after {content:""; position:absolute; top:46px; bottom:14px; left:0; border-left:1px solid #ccc}
+.akl .overlay-menu-tab-left:after {content:""; position:absolute; top:46px; bottom:10px; left:0; border-left:1px solid #ccc}
 .akl .overlay-menu-tab-left h5 {font-size:14px!important; color:#56565a; margin-bottom:11px;}
-
+.akl .overlay-menu-tab-left h5:nth-of-type(2),
+.akl .overlay-menu-tab-left ul + h5 { margin-top:30px}
 /* ----- 푸터 ----- */
 .akl footer {margin-top:0; padding-top:20px;}
 .akl .footer {height:auto; padding-bottom:25px;}
