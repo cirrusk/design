@@ -131,14 +131,15 @@
 .mysop-product-active.both-side .right-side {float:right;}
 
 /* SOP 제품상세 > 번들(kit) */
-.mysop-product-detail-list.sop-kit-prdt {margin-top:0}
+.mysop-product-detail-list.sop-kit-prdt {margin-top:0;}
+.view-bundle-contents.mysop-bundle-contents {margin-left:80px;}
+
 .akl .list-content .list-row-title > .type-edit-btn {padding-right:30px;}
 .akl .list-content .type-edit-btn {position:relative; padding-right:30px;}
 .list-content .type-edit-btn[class^=col-] > div {display:block; padding-left:0; clear:both;}
 .list-content .type-edit-btn .edit.edit-type-option {position:absolute; top:0; right:15px; width:30px; height:25px;}
 .list-content .type-edit-btn .edit.edit-type-option .btn-open-close {}
-
-
+.shopping-cart-item-list.mysop-item-list .value-wrapper > span {display:block}
 
 .edit.edit-type-option .btn-open-close {display:block; width:30px; height:25px; text-align:right; line-height:1;}
 .edit.edit-type-option .btn-open-close:before {content:'\e95b'; font-family:'AmwayIcons'!important; font-weight:500; font-size:24px;}
@@ -161,13 +162,7 @@
 .dynamic-bundle-edit-main-content .sub-dynamic-bundle-edit-main-content {display:block; overflow:hidden; padding:0; border-top:1px solid #e3e3e3;}
 .dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half {float:left; width:50%; text-align:left; padding:15px 0;}
 .dynamic-bundle-edit-main-content .dynamic-bundle-edit-main-content-half.clear-selection {text-align:right;}
-
-.list-content .giftList  [class^=col-] {display:block; float:left}
-.content-list .edit .fa-angle-down{cursor:pointer;}
-.content-list.view-open .edit .fa-angle-down:before{content:'\f106';}
-
-
-.view-bundle-contents.mysop-bundle-contents {margin-left:80px;}
+.list-content .giftList  [class^=col-] {display:block; float:left;}
 
 
 /* ---- SOP 주문서 생성 ---- */
@@ -293,6 +288,8 @@
 .mysop-monthly-part {margin-top:40px;}
 .mysop-monthly-part .title-h6 {margin-bottom:20px;}
 .mysop-monthly-part .mysop-text-list {border-bottom:1px solid #e3e3e3;}
+.mysop-monthly-part .mysop-text-list .total-cell > span {display:inline-block;}
+.mysop-monthly-part .mysop-text-list .total-cell > span + span {margin-left:8px;}
 .mysop-monthly-part .mysop-text-list .list-row-content:nth-child(even){background:#f4f4f4;}
 .mysop-monthly-part .list-row-content {padding:20px 0; border:0;}
 .mysop-monthly-part .list-row-content div {padding-top:0;}
