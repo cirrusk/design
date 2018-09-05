@@ -68,7 +68,7 @@
 	});
 
 	//온라인 매거진 SNS
-	magazinSNS();
+	//magazinSNS();
 
 	//회원가입 완료
 	$('.brandsList').owlCarousel({
@@ -579,7 +579,7 @@ function searchBox_filter(){
 	});
 }
 
-/* 온라인 매거진 */
+/* 온라인 매거진 : 2018.09.05 삭제(개발이관)
 function magazinSNS(){
 	$('.mz-item .btn-ico.sns').click(function() {
 		$(this).parents('.bod-view-sns ').find('.url_pop').hide();
@@ -596,7 +596,7 @@ function magazinSNS(){
 			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
 		}
 	});
-}
+} */
 
 /* 테이블 결과없음 : resize */
 function tbl_colspan(){
