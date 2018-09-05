@@ -21,9 +21,7 @@ Editor : HYEWON HWANG
 .arr1 {position:relative;display:inline-block;} /* 오른쪽 화살표 > */
 .arr1:after {content:'';position:absolute;top:50%;right:-9px;width:7px;height:7px;transform:rotate(45deg) translatey(-50%);border:2px solid #fff;border-width:2px 2px 0 0;}
 .txt-italic.s2 {background-image:url('../images/akl_common/ico_star2.png');background-size:auto 5px;} 
-
 .brand img:hover, .brand a:hover{-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;}
-
 [class*=btn-wrap] {clear:both;margin:auto;text-align:center;}
 .btn-wrap50 {margin:50px 0 50px;}
 
@@ -65,7 +63,6 @@ Editor : HYEWON HWANG
 .brand .brand-contents h2{text-align:left;text-transform:none;letter-spacing:-1px;margin-bottom:20px;}
 .brand .brand-contents h2:not(:first-child) {margin-top:40px;}
 .brand .brand-contents h3 {margin-bottom:10px;}
-/*.brand .brand-contents p {margin:0 0 10px;}*/
 
 
 /* ### 암웨이소개 ### */
@@ -95,7 +92,7 @@ Editor : HYEWON HWANG
 .amway-theme .intro .experience-brands .masthead .banner_wrapper h1 {color:#002f5f;}
 
 #about-amway .about-amway-content {margin-top:50px;}
-#about-amway .content-article-bottom {margin-top:50px;padding-top:30px;}
+#about-amway .content-article-bottom {margin-top:50px;padding-top:50px;}
 #about-amway .about-amway-content .block .item-content-wrap {background-color:#002F5F;}
 
 .akl .intro .bt-akl-blue {border:1px solid #fff;}
@@ -274,6 +271,12 @@ Editor : HYEWON HWANG
 .brand #uiPrdViewDetail .owl-nav .owl-next {right:-20px;}
 .brand #uiPrdViewDetail .owl-nav .owl-prev {left:-20px;}
 
+.brand .history-list {margin:0;}
+.brand .history-list > li {margin-top:25px;padding-left:120px;position:relative;}
+.brand .history-list > li strong {display:block; margin-bottom:3px;color:#002f5f;font-weight:500;position:absolute;left:0;}
+.brand .history-list > li > p {position:relative;padding:0 0 3px 10px;margin:0;font-size:14px;}
+.brand .history-list > li > p:before {content:""; position:absolute; width:3px; height:3px; background:#56565a;left:0; top:9px;border-radius:2px;}
+	
 /* 파운더스 카운슬 */
 .brand .new-social-list {overflow:hidden;margin:-10px;}
 
@@ -311,7 +314,7 @@ Editor : HYEWON HWANG
 /* 메인 비주얼 기본 스타일 */
 .akl .brand .homepage_banner .banner__wrapper .banner__message {display:block;position:absolute;z-index:1;top:17%;right:10%;width:400px;height:65%;margin:0;padding:0;background:#e11e44;}
 .akl .brand .homepage_banner .banner__message--main {margin:10% 0 0 -37%;width:100%;font-size:44px;font-weight:500;line-height:1.3;text-transform:none;}
-.akl .brand .homepage_banner .banner__message--sub {position:absolute;bottom:0;width:100%;padding:50px 30px 30px 40%;font-weight:300;font-size:16px;word-break:break-word; line-height:1.5;}
+.akl .brand .homepage_banner .banner__message--sub {position:absolute;bottom:0;width:100%;padding:50px 30px 50px 40%;font-weight:300;font-size:16px;word-break:break-word; line-height:1.5;}
 .akl .brand .homepage_banner .banner__message--sub > span {display:block;}
 
 /* 비디오영역 */
@@ -330,7 +333,7 @@ Editor : HYEWON HWANG
 .content-row article [class*="cont-type"] figcaption{padding:15px 20px 5px;font-size:16px;font-weight:500;color:#002f5f;}
 .content-row article [class*="cont-type"] figcaption:only-child {padding-bottom:20px;}
 .content-row article [class*="cont-type"] figcaption > span {display:block;padding:3px 0 13px;font-weight:400;}
-.content-row article [class*="cont-type"] figcaption + p {margin:0;padding:0 20px 50px;line-height:1.8;}
+.content-row article [class*="cont-type"] figcaption + p {margin:0;padding:0 20px 50px;line-height:1.6;}
 .content-row article [class*="cont-type"] figcaption + p > span {display:block;margin-bottom:10px;}
 .content-row article [class*="cont-type"] a.arr1 {position:absolute;bottom:20px;left:20px;display:inline-block;font-weight:500;}
 .content-row article [class*="cont-type"] a.arr1:after {border-color:#0075a4;}
@@ -354,7 +357,7 @@ Editor : HYEWON HWANG
 .txtbox div{position:absolute;max-height:100%;max-width:48%;}
 .txtbox img {width:100%;}
 .txtbox .mob-image {display:none;}
-.txtbox h3 {font-size:40px;font-weight:700;line-height:1.2;color:#00305e;}
+.txtbox h3 {font-size:40px;font-weight:500;line-height:1.2;color:#00305e;}
 .txtbox p {margin-top:10px;font-size:20px;}
 .txtbox div.s1 {left:7%;max-width:50%;}
 .txtbox div.s2 {left:51%;}
@@ -372,23 +375,7 @@ Editor : HYEWON HWANG
 .akl .queen .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01.jpg');}
 .akl .queen .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01.jpg');}
 .akl .queen .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01.jpg');}
-/*
-.akl .brand .homepage_banner .banner__wrapper.s2 {}
-.akl .brand .homepage_banner  .owl-carousel .owl-item .banner__wrapper.s2 .banner__image-sub {position:absolute;z-index:1;float:none;height:auto;width:70%;max-width:708px;margin:0;left:25%;top:10%;}
-.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message {top:72%;left:50%;right:auto;width:700px;height:auto;transform:translate(-50%,-50%);}
-.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message:before,
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message:before {content:none;}
-.akl .brand .homepage_banner .banner__wrapper.s2 .banner__message--sub {position:relative;right:auto;bottom:auto;width:100%;padding:0;}
 
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message {top:10%;left:20%;max-width:800px;width:75%;height:auto;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--main {font-size:25px;font-weight:400;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub {position:relative;right:auto;bottom:auto;width:100%;padding-top:24px;margin-top:10px;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub:before {content:'';display:block;position:absolute;left:0;top:0px;width:33px;height:3px;background:#e11e44;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div {width:48%;float:left;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div:last-child {float:right;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div > p {margin-bottom:40px;font-size:14px;}
-.akl .brand .homepage_banner .banner__wrapper.s3 .banner__message--sub > div > p strong {display:block;font-size:16px;margin-bottom:10px;}
-*/
 .title-component {clear:both;margin:50px 0 50px;text-align:center;}
 .title-component h2 {margin:0;text-transform:none;text-align:center !important;line-height:1.2;}
 .title-component h2 span {display:block;font-size:24px;font-weight:400;margin-bottom:8px;}
@@ -416,29 +403,28 @@ Editor : HYEWON HWANG
 .akl .brand .item-content-wrap h2 {margin:0 0 10px;text-align:center;}
 
 /* 2.뉴트리라이트 */
-.nutrilite .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.png');}
-.nutrilite .txtbox.s2:before {content:"";position:absolute;z-index:-1;left:0;display:block;width:650px;height:100%;background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg2.jpg') no-repeat 0 0;}
-.nutrilite .txtbox.s2:after {content:"";position:absolute;z-index:-1;right:0;display:block;width:550px;height:100%;background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg2.jpg') no-repeat 100% 0;}
-.nutrilite .txtbox div.s2 h3 {color:#20893d;}
+.akl .nutrilite .homepage_banner .banner__wrapper .banner__message,
+.akl .nutrilite .homepage_banner .banner__title:before,
+.akl .nutrilite .homepage_banner .owl-dots .owl-dot.active:before {background-color:#20893d;}
+.akl .nutrilite .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
+.akl .nutrilite .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
+.akl .nutrilite .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
 
-.brand .history-list {margin:0;}
-.brand .history-list > li {margin-top:25px;padding-left:120px;position:relative;}
-.brand .history-list > li strong {display:block; margin-bottom:3px;color:#002f5f;font-weight:500;position:absolute;left:0;}
-.brand .history-list > li > p {position:relative;padding:0 0 3px 10px;margin:0;font-size:14px;}
-.brand .history-list > li > p:before {content:""; position:absolute; width:3px; height:3px; background:#56565a;left:0; top:9px;border-radius:2px;}
-	
+.nutrilite .txtbox.s1 {background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.jpg') no-repeat 90% 0;}
+.nutrilite .txtbox.s2 {background-color:pink;width:100%;height:300px;}
+
 /* 3.배스/바디 */
 .akl .bathbody .homepage_banner .banner__wrapper .banner__message,
 .akl .bathbody .homepage_banner .banner__title:before,
 .akl .bathbody .homepage_banner .owl-dots .owl-dot.active:before {background:#12a3da;}
+.akl .bathbody .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual01.jpg');}
+.akl .bathbody .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual01.jpg');}
+.akl .bathbody .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual01.jpg');}
 .bathbody .txtbox.s1 {height:454px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg1.jpg');background-position:50% 0;}
 .bathbody .txtbox.s2 {height:490px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg2.jpg');background-position:50% 0;}
 .bathbody .txtbox.s3 {height:464px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg3.jpg');background-position:50% 0;}
 .bathbody .txtbox div.s2 {left:60%;max-width:40%;}
-.bathbody .txtbox h3, .bathbody .txtbox p {color:#000;}
-.bathbody .txtbox.s1 div h3, .bathbody .txtbox.s1 div p {color:#fff;}
-.bathbody .txtbox.s1 div a.arr1 {color:#fff;}
-.bathbody .txtbox.s1 div a.arr1:after {border-color:#fff;}
+.bathbody .txtbox div p {font-size:16px;}
 
 /* 4.아티스트리 */
 .akl .artistry .homepage_banner .banner__wrapper .banner__message,
@@ -457,7 +443,6 @@ Editor : HYEWON HWANG
 .artistry .txtbox div p > span {display:block;margin-top:30px;font-size:13px;line-height:20px;}
 .artistry sup {font-size:13px;}
 
-
 /* 5.이스프링 */
 .akl .espring .homepage_banner .banner__wrapper .banner__message,
 .akl .espring .homepage_banner .banner__title:before,
@@ -467,10 +452,23 @@ Editor : HYEWON HWANG
 .espring .txtbox div {max-width:90%;top:50px;}
 .espring .txtbox p{margin-top:0;font-size:16px;}
 
-/* 원포원 */
+/* 6.원포원 */
 .akl .oneforone .homepage_banner .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/main_visual01.jpg');}
 .oneforone .txtbox.s1 {height:400px;background:#f4f4f4;}
 .oneforone .txtbox.s1 img {width:100%;max-width:1078px;margin:auto;}
+
+/* 7.암웨이홈 */
+.akl .home .homepage_banner .banner__wrapper .banner__message,
+.akl .home .homepage_banner .banner__title:before,
+.akl .home .homepage_banner .owl-dots .owl-dot.active:before {background-color:#86c12c;}
+.akl .home .homepage_banner .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/home/main_visual01.jpg');}
+.home .txtbox {height:auto;min-height:300px;padding:30px 30px 30px 25%;}
+.home .txtbox.s1 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg1.png') no-repeat 8% 50%;background-size:140px auto;}
+.home .txtbox.s2 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg2.png') no-repeat 10% 50%;background-size:86px auto;}
+.home .txtbox div {position:relative;max-width:100%;}
+.home .txtbox li{margin-bottom:10px;line-height:1.6;}
+.home .txtbox .list-type5 li {padding-bottom:0;}
+.home .txtbox li > strong {display:block;}
 
 /* ######## 브랜드 서브 레이아웃######## */
 .brand .sub [class*="box-bnr"] {margin-bottom:40px;}
@@ -619,7 +617,7 @@ Editor : HYEWON HWANG
 	.title-component .title-ul li:nth-of-type(5):before {background-position-y:-280px;}
 	
 	.txtbox {height:auto;}
-	.txtbox h3 {font-size:28px;}
+	.txtbox h3 {font-size:28px;font-weight:700;}
 	.txtbox p {display:none;}
 	.txtbox div.s2 {left:49%;}
 	.txtbox div.s2 span {margin-top:20px;}
@@ -638,11 +636,12 @@ Editor : HYEWON HWANG
 	.bdnone {border:0 !important;}
 	
 	/* 뉴트리라이트 */
-	.brand .history-list > li {padding-left:0;}
-	.brand .history-list > li strong {position:relative;} 
+	.akl .nutrilite .homepage_banner .owl-dots .owl-dot.active span {background:#20893d;}
+	.nutrilite .txtbox.s1 {background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1_mob.png') no-repeat 100% 0;background-size:294px auto;}
 	
 	/* 배스바디*/
 	.akl .bathbody .homepage_banner .owl-dots .owl-dot.active span {background:#12a3da;}
+	.bathbody .txtbox {height:auto !important;background:none;}
 
 	/* ### 브랜드 서브 레이아웃 ### */
 	.brand [class*="sub"] .content-row.type1 {margin:0 -15px 40px;}
@@ -694,6 +693,12 @@ Editor : HYEWON HWANG
 	/* 원포원 */
 	.oneforone .txtbox.s1 {height:auto;padding:40px 10px;}
 	.oneforone .txtbox.s1 img {max-width:322px;margin:auto;}
+	
+	/* 암웨이홈 */
+	.home .txtbox {height:auto;min-height:auto;padding:170px 20px 20px;}
+	.home .txtbox.s1 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg1.png') no-repeat 50% 30px;background-size:94px auto;}
+	.home .txtbox.s2 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg2.png') no-repeat 50% 30px;background-size:59px auto;}
+	
 
 	/* 엣모스피어 */
 	
@@ -784,6 +789,9 @@ Editor : HYEWON HWANG
 	.hubcenter .image-gallery.js-gallery img {width:100%;}
 	.hubcenter .product-recentlyviewed__imagelist {max-width:100%;margin:auto;}
 	.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn {margin:0 9px;}
+	
+	.brand .history-list > li {padding-left:0;}
+	.brand .history-list > li strong {position:relative;} 
 
 	/* 연혁 */
 	.timeline {
