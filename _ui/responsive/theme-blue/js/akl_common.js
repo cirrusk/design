@@ -215,7 +215,7 @@
 			var headHei = $('.general-header').height();
 			var trgt = $(hash).offset().top;
 
-			$('html').animate({scrollTop: trgt - headHei}, 400);
+			$('html,body').animate({scrollTop: trgt - headHei}, 400);
 		}
 	});
 
