@@ -53,7 +53,7 @@ iframe {border:0;}
 .visual-area.point-makeup04{min-height:1014px;background:url(../images/akl_product/beauty/bg_point_makeup_04.png) no-repeat center center;}
 .visual-area.mascara{min-height:1067px;background:url(../images/akl_product/beauty/bg_mascara.png) no-repeat center center;}
 .visual-area.tools.short{}
-.visual-area.tools{min-height:1085px;background:url(../images/akl_product/beauty/bg_brush.png) no-repeat center top;}
+.visual-area.tools{min-height:1040px;background:url(../images/akl_product/beauty/bg_brush.png) no-repeat center top;}
 .visual-area.tools.long{min-height:1104px;}
 .visual-area.tools.min-tools{min-height:834px;}
 .visual-area.artistry_flora_perfume{min-height:1140px;background:url(../images/akl_product/beauty/bg_flora_chic_perfume.png) no-repeat top center;}
@@ -1617,8 +1617,8 @@ dl.amo-txt dd br {line-height:18px}
 .color-tip-lst li{display: table;margin: auto;margin-bottom: 30px;}
 .color-tip-lst li:last-child{margin-bottom:0;}
 .color-tip-lst li > span{display: table-cell;vertical-align: middle;}
-.color-tip-lst li > .pr-name{width: 86px;text-align: center;font-size: 16px;color: #808285;font-weight: 300;}
-.color-tip-lst li > .color-tip{}
+.color-tip-lst li > .pr-name{width:40%;text-align: center;font-size: 16px;color: #808285;font-weight: 300;}
+.color-tip-lst li > .color-tip{width:60%;}
 
 
 /* 1237 도표 */
@@ -3081,11 +3081,16 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.v-pro span img{width:auto;height: auto;}
 	.txt-info-visual .v-logo-txt{padding: 13px 0 0;}
 	.txt-info-visual .v-tit{padding: 18px 0 0;}
+	.advantage-area.btm-line{padding:25px 0 0 0;}
 	
 	/* 베이스 메이크업 공통 */
 	.base-makeup .visual-area .v-logo.beauty img{height:13px;}
 	/*.base-makeup .v-pro span img{width:auto;height: auto;}*/
 	.foundation-cont-area .ade-photo span img{width:auto;}
+	
+	/* 스무싱 파운데이션 */	
+	.color-tip-lst{margin-top:25px;}
+	.color-tip-lst li{float: left;}
 	
 	
 	/* 립메이크업 공통 */
@@ -3400,6 +3405,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.advantage-area.bt-none{padding:25px 0 0 !important;}
 	.pro-video.video-type{margin: 25px 0 0;padding-top:25px;}
 	.line-gray-top{display: block;padding-top:25px;border-top: 1px solid #e3e3e3;clear: both;}
+	.ingestion-usage.line-gray-top{padding:inherit !important}
 	.line-gray-bottom{display: block;padding-bottom:25px;border-bottom: 1px solid #e3e3e3;clear: both;}
 	
 	.health-inform-box.type2 {margin-top:40px;}
@@ -4166,6 +4172,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 
 @media (max-width: 576px) {
 	.txt-info-visual .v-logo-txt sup{font-size:10px;/*top:-.8em;*/letter-spacing:1px;padding-left:1px;}
+	.advantage-area.btm-line{padding:25px 0;border-bottom:1px solid #e3e3e3;}
 	
 	/* 시그니처 셀렉트 */
 	.signature-cont-area .health-inform-box .effet-area{padding: 25px 25px;}
@@ -4220,7 +4227,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
    .visual-area.point-makeup03 .v-logo.beauty img, .visual-area.point-makeup02 .v-logo.beauty img{height:16px;}
    .visual-area.point-makeup03 .v-pro span img, .visual-area.point-makeup02 .v-pro span img{width:inherit;}
    
-	
+   /* 스무싱 파운데이션 */
+   .color-tip-lst li{float:inherit;}
 	
 }
 
@@ -4390,7 +4398,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.miyoek-detail-warp .detail-top-txt:before,
 	.miyoek-detail-warp .detail-top-txt:after{display:none;}
-	
+		
 	/* 홈앤리빙 */
 	.rep-box{height:150px;}
 	.rep-fle-money dl dd strong{font-size:36px;}
@@ -4528,10 +4536,6 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.concealer-img-wrap span.dsc em{margin-bottom: 46px;display: block;}
 	
-	/* 스무싱 파운데이션 */
-	.color-tip-lst{margin-top:25px;}
-	
-		
 	/* 배스바디 */
 	.bep-lst.deaf02 ul li{width:100%;}
 	.bath-body .pcomp-list.deaf-left div.comp-info {display:block;float:inherit;width:100%;text-align: center;padding:0 0;margin-right:0;}
