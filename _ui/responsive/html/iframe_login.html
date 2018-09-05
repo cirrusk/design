@@ -23,23 +23,26 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 </head>
 <body class="akl">
-	<div class="amway-theme moble-login"><!-- pc : moble-login 제거, 모바일 : moble-login 추가  -->
+	<div class="amway-theme moble-login"><!--모바일 웹에서 사용할 경우  - pc : 'moble-login' 제거, 모바일 : 'moble-login' 추가  -->
 		<div class="login-email-box">
 			<input type="text" placeholder="아이디/회원번호" class="login-form__username" title="아이디/회원번호">
 			<button type="button">삭제</button>
 		</div>
 		<input type="password" placeholder="비밀번호" class="login-form__password" title="비밀번호 입력">
-		<div class="fingerprint-wrap">
+		<input class="login-form__remember" id="remember" name="remember" type="checkbox">
+		<label for="remember" class="remember-me">아이디 저장</label>
+
+		<!--<div class="fingerprint-wrap">
 			<input class="login-form__remember" id="remember" name="remember" type="checkbox">
 			<label for="remember" class="remember-me">아이디 저장</label>
-			<p class="fingerprint">
+			<!--<p class="fingerprint">
 				<label class="amw-radio-wrap radio-label focus">
 					<span class="amw-label-radio-text">지문인증 로그인</span>
 					<input type="radio" name="radio-1" class="amw-global-radio">
 					<span class="amw-radio-overlay"></span>
 				</label>
 			</p>
-		</div>
+		</div> -->
 	</div>
 	<input class="btn-primary button login-form__submit" type="button" value="로그인">
 </body>
