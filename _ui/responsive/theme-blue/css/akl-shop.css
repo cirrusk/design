@@ -89,16 +89,20 @@
 .new-plp > .row > [class^=col-sm],
 .new-plp > .row > [class^=col-xs] {padding:0;}
 
-/* 상품목록 >  위시리스트, 스마트오더 담기 영역 ***/
+/* 상품목록 >  위시리스트, 스마트오더 담기 영역 */
 .form-wrapper.address-pop02 form input {margin-right:0;}
 .akl .product-list__item-link-text button,
-.akl .product-list__item-link-ditto button {background-color:#fff; white-space:nowrap;color:#0075a4;letter-spacing:-1px;font-weight:500}
+.akl .product-list__item-link-ditto button {background-color:#fff; white-space:nowrap;color:#0075a4;letter-spacing:-1px;font-weight:500;}
+.akl .product-list__item .product-list__item-link-ditto button {padding-left:35px; background-size:20px 20px !important}
+.akl .product-list__item .product-list__item-link-text {background:url(../images/akl_common/ico_heart.png) no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
+
+.akl .product-list__item-link .plp-add-to-shopping-list {display:inline-block; float:left; height:35px;}
+.akl .product-list__item-link .plp-add-to-shopping-list .product-list__item-link-common {position:absolute; left:10px; top:0 }
+.akl .product-list__item-link .plp-add-to-ditto {display:inline-block; float:right;}
 .akl .product-list__item-link-ditto {background:none !important;}
 .akl .product-list__item-link-ditto button  {padding:0 10px 0 40px; display:inline-block; background:url(../images/akl_common/ditto_2.png) no-repeat 10px center !important; background-size:24px 24px !important;}
-.akl .product-list__item .product-list__item-link-ditto button {padding-left:35px; background-size:20px 20px !important}
-.akl .product-list__item-link .plp-add-to-shopping-list .product-list__item-link-common {position:absolute; left:10px; top:0 }
-.akl .product-list__item .product-list__item-link-text {background:url(../images/akl_common/ico_heart.png) no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
-.ditto-changeTo-sop .product-list__item-link-ditto {text-align:left;padding:0 0 0 0;float:none;}
+
+.ditto-changeTo-sop .product-list__item-link-ditto {float:none; text-align:left; padding:0;}
 .new-product__listing .product-list__item-link-ditto:before {width:0;height:0;}
 
 .akl .product-list__item-link-common {font-weight:500;font-size:14px;}
