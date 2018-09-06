@@ -2867,7 +2867,7 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div:first-of-type { padding-top:16px  }
 	.tbl-list-board.type-tbody-th.aboRenewal .tbody .tr>div:last-of-type { padding-bottom:16px  }
 	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block,
-	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block>p  {}
+	.tbl-list-board.type-tbody-th.aboRenewal .tr>div.mob-block> p button{ margin-left:8px}
 
 	/* ----- 회원가입 ----- */
 	/* 로그인 */
@@ -3725,9 +3725,9 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 나의 주문내역 */
 	.akl .order-conts .form-wrapper { padding: 10px 0 0;}
 	.akl .order-conts .form-s {margin-bottom:0;}
-	.toggle-buttons-container.myorder {width:100%;display:table;table-layout:fixed;box-sizing:border-box;}
-	.toggle-buttons-container.myorder button {display:table-cell;border:1px solid #dadada;width:48.5%; box-sizing:border-box;}
-	.toggle-buttons-container.myorder button:last-child {margin-right:0px; float:right}
+	.toggle-buttons-container.myorder {width:100%;display:block; overflow:hidden; box-sizing:border-box;}
+	.toggle-buttons-container.myorder button {display:block; float:left; border:1px solid #dadada; width:48.5%; box-sizing:border-box;}
+	.toggle-buttons-container.myorder button:last-child {float:right; margin-right:0px;}
 
 	.mob-product-facet {display:block}
 	.myorder-search .cuton-sel {display:block;width:100%;margin-right:0;margin-bottom:10px;}
@@ -3737,9 +3737,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.akl .myorder-list .list-content .content-list {border-top:0;}
 	.pop-orderCancel-area .myorder-list + .odc-info {border-top:0;}
 
+	.akl .myorder-history .panel-group .panel-heading+.panel-collapse>.list-group,
+	.akl .myorder-history .panel-group .panel-heading+.panel-collapse > .panel-body {padding-left:15px}
 	.akl .panel-group.accordion-custom.myorder .panel-title {position:relative;padding:10px 0 12px;}
 	.akl .panel-group.accordion-custom.myorder .panel-title a {cursor:pointer;}
-	.akl .panel-group.accordion-custom.myorder .panel-title span.text-uppercase {font-size:14px;letter-spacing:-1px;color:#002f5f;font-weight:500;padding-left:15px; }
+	.akl .panel-group.accordion-custom.myorder .panel-title span.text-uppercase {font-size:14px;letter-spacing:-1px;color:#002f5f;font-weight:500; padding-left:15px;}
 	.akl .panel-group.accordion-custom.myorder .panel-title [role=button] {white-space:normal}
 	.akl .panel-group.accordion-custom.myorder .panel-title span.pull-right {position: absolute;right:10px;top:5px;}
 	.akl .myorder-history .panel-group.accordion-custom.myorder .panel-title span.pull-right { top:22px;}

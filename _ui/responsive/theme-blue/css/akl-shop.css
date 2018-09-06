@@ -56,7 +56,7 @@
 .search-left-list li{border-bottom:1px solid #dadada; padding:15px 20px;}
 .search-left-list li [type="checkbox"]:checked+label,
 .search-left-list [type="checkbox"]:not(:checked)+label {color:#002f5f; font-weight:500}
-.akl .search-list-page-right-result-list-slot {padding-top:0;}
+.akl .search-list-page-right-result-list-slot {padding-top:0; margin-left:20px;}
 .akl .search-list-page-right-result-list-slot .pagination-bar {margin:0; padding-bottom:10px; border-bottom:1px solid #e3e3e3;}
 .akl .product__list--wrapper .pagination-bar .pagination-toolbar {padding:0 0 0 20px;}
 .akl .product__list--wrapper .pagination-bar .pagination-toolbar [class^=col-] {padding:0;}
@@ -86,19 +86,23 @@
 .product-solition-top {padding:40px 0 0}
 
 /* 제품 카테고리 > 목록  */
-.plp > .new-plp > .row > [class^=col-sm],
-.plp > .new-plp > .row > [class^=col-xs] {padding:0;}
+.new-plp > .row > [class^=col-sm],
+.new-plp > .row > [class^=col-xs] {padding:0;}
 
-/* 상품목록 >  위시리스트, 스마트오더 담기 영역 ***/
+/* 상품목록 >  위시리스트, 스마트오더 담기 영역 */
 .form-wrapper.address-pop02 form input {margin-right:0;}
 .akl .product-list__item-link-text button,
-.akl .product-list__item-link-ditto button {background-color:#fff; white-space:nowrap;color:#0075a4;letter-spacing:-1px;font-weight:500}
+.akl .product-list__item-link-ditto button {background-color:#fff; white-space:nowrap;color:#0075a4;letter-spacing:-1px;font-weight:500;}
+.akl .product-list__item .product-list__item-link-ditto button {padding-left:35px; background-size:20px 20px !important}
+.akl .product-list__item .product-list__item-link-text {background:url(../images/akl_common/ico_heart.png) no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
+
+.akl .product-list__item-link .plp-add-to-shopping-list {display:inline-block; float:left; height:35px;}
+.akl .product-list__item-link .plp-add-to-shopping-list .product-list__item-link-common {position:absolute; left:10px; top:0 }
+.akl .product-list__item-link .plp-add-to-ditto {display:inline-block; float:right;}
 .akl .product-list__item-link-ditto {background:none !important;}
 .akl .product-list__item-link-ditto button  {padding:0 10px 0 40px; display:inline-block; background:url(../images/akl_common/ditto_2.png) no-repeat 10px center !important; background-size:24px 24px !important;}
-.akl .product-list__item .product-list__item-link-ditto button {padding-left:35px; background-size:20px 20px !important}
-.akl .product-list__item-link .plp-add-to-shopping-list .product-list__item-link-common {position:absolute; left:10px; top:0 }
-.akl .product-list__item .product-list__item-link-text {background:url(../images/akl_common/ico_heart.png) no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
-.ditto-changeTo-sop .product-list__item-link-ditto {text-align:left;padding:0 0 0 0;float:none;}
+
+.ditto-changeTo-sop .product-list__item-link-ditto {float:none; text-align:left; padding:0;}
 .new-product__listing .product-list__item-link-ditto:before {width:0;height:0;}
 
 .akl .product-list__item-link-common {font-weight:500;font-size:14px;}
@@ -2038,6 +2042,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .product-list__thum {padding:0 9% 62%; width:62%;}
 
 	/* 제품목록 > 카드형 */
+	.akl .search-list-page-right-result-list-slot { margin-left:0;}
 	.akl .product-list__item-content {height:auto;}
 	.akl .product-list__item-content .product-list__thum {margin:0 auto 20px; text-align:center;}
 	.akl .product-list__thumbnail {float:none; margin-right:0;width:auto; display:inline-block;}

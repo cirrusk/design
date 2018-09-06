@@ -67,9 +67,6 @@
 		}
 	});
 
-	//온라인 매거진 SNS
-	//magazinSNS();
-
 	//회원가입 완료
 	$('.brandsList').owlCarousel({
 		loop: false,
@@ -578,25 +575,6 @@ function searchBox_filter(){
 		stateMOB();
 	});
 }
-
-/* 온라인 매거진 : 2018.09.05 삭제(개발이관)
-function magazinSNS(){
-	$('.mz-item .btn-ico.sns').click(function() {
-		$(this).parents('.bod-view-sns ').find('.url_pop').hide();
-		if(!$(this).next('.bod-view-sns').hasClass('on')){
-			$('.bod-view-sns').removeClass('on');
-			$(this).next('.bod-view-sns').addClass('on')
-		}else{
-			$(this).next('.bod-view-sns').removeClass('on');
-		}
-	});
-	$('html').click(function(e) {
-		if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
-			$('.bod-view-sns').removeClass('on');
-			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
-		}
-	});
-} */
 
 /* 테이블 결과없음 : resize */
 function tbl_colspan(){
@@ -2293,6 +2271,10 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			}
 
 			//RD화면 (모바일 전체화면)
+			var RD_layerTit = $layerPrdtDetail.find('.cart-popup__header.white').outerHeight(true);
+			var RD_layerBtm = $layerPrdtDetail.find('.cart-popup__item-link').outerHeight(true);
+			var $RD_ConBox  = $layerPrdtDetail.find('.layer-content-wrapper.RD-Viewer');
+
 			if ( $layerPrdtDetail.is('.RD-View') ){
 				if( _winWidth < 769 ){
 					$layerContentBox.css({
@@ -2308,6 +2290,10 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 						'margin-left':'0',
 						'margin-bottom':'0'
 					});
+					$RD_ConBox.css({
+						'height': ( $(window).height() - RD_layerTit - RD_layerBtm )
+					});
+
 				} else {
 					$layerContentBox.css({
 						'display':'block',
@@ -2319,6 +2305,9 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 						'height':'auto',
 						'margin':'0 auto',
 						'margin-bottom':'20px'
+					});
+					$RD_ConBox.css({
+						'height':''
 					});
 				}
 			}

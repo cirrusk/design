@@ -127,6 +127,26 @@ $(function(){
 		});
 	}
 
+	//온라인 매거진 SNS : 2018.09.05 삭제(개발이관)
+	magazinSNS();
+	function magazinSNS(){
+		$('.mz-item .btn-ico.sns').click(function() {
+			$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+			if(!$(this).next('.bod-view-sns').hasClass('on')){
+				$('.bod-view-sns').removeClass('on');
+				$(this).next('.bod-view-sns').addClass('on')
+			}else{
+				$(this).next('.bod-view-sns').removeClass('on');
+			}
+		});
+		$('html').click(function(e) {
+			if(!$(e.target).is('.bod-view-sns, .bod-view-sns *, .btn-ico.sns')){
+				$('.bod-view-sns').removeClass('on');
+				$(this).parents('.bod-view-sns ').find('.url_pop').hide();
+			}
+		});
+	}
+
 
 	/** ---------------------------------
 	 *  주문/결제 공통사용
@@ -329,7 +349,7 @@ $(function(){
 $(function() {
 
 	//$(".select2-hidden-accessible").select2();
-	$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
+	//$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
 
 	$("#addToLIST").click(function(){
 		$(".add-to-shopping-list-container").removeClass('open');

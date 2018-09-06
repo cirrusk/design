@@ -1110,7 +1110,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 .tbl-type2 th {background:#f4f4f4;font-size:14px;color:#002f5f;font-weight:500;line-height:20px;}
 .tbl-type2 td {background:#fff;font-size:12px;line-height:18px;color:#808285;}
 .tbl-type1 th:last-child {text-align:center !important;}
-.akl .datepicker-days table th {color:#fff; background:#002f5f;border-bottom:1px solid #dadada;}
+.akl .datepicker-days table th {color:#fff; background:#002f5f;border-bottom:1px solid #dadada; text-align:center}
 .akl .datepicker-days table thead tr {height:auto; line-height:130%; border-top:0; border-bottom:0;}
 .akl .datepicker-months table th {color:#fff; background:#002f5f;border-bottom:1px solid #dadada;}
 .akl .datepicker-months table thead tr {height:auto; line-height:130%; border-top:0; border-bottom:0;}
@@ -1336,7 +1336,7 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.akl .breadcrumb-section {margin:0 0 0;}
 	.akl .extraclass1 {top:63px !important;}
 	.akl .message-num-1 {font-weight:500; line-height:20px; padding:0 5px;}
-	.akl .mini-cart-icon .nav-items-total {font-weight:500 !important; line-height:20px; top:-1px; padding:0 5px;}
+	.akl .mini-cart-icon .nav-items-total {font-weight:500 !important; padding:0 5px;}
 	.akl .userinfo-open .user-info-container:after {left:16px;}
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .mobile-cart-container .mini-cart-link .mini-cart-icon {top:3px;}
 	.akl .icon-shopping-cart {background-size:28px !important;}
@@ -1374,7 +1374,24 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.akl .amway-theme a span.icon-search {font-weight:400;}
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container {max-width:65px;}
 	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container button {background:#fff }
-	.akl .breadcrumb {padding:8px 0;font-size:12px; margin-top:60px;}
+	.akl header.main-header .amway-theme .mobile-container .mobile-wrapper .user-info-container button .message-num-1 {
+    position: absolute;
+    z-index: 99;
+    top: -8px;
+    left: 14px;
+    min-width: 24px;
+    height: 20px;
+    padding: 0 5px;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff!important;
+    border: 0;
+    border-radius: 10px;
+    background: #e11e45!important;
+    border: 2px solid #fff;
+}
+	.akl .breadcrumb {padding:8px 0 17px ;font-size:12px; margin-top:60px;}
 	.akl .breadcrumb a{font-size:12px;}
 
 	/* header > mini deshboard */
@@ -1737,7 +1754,7 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.tbl-list-board.type-tbody-th .tr>div.mob-block {padding:0 20px 15px;}
 	.tbl-list-board.type-tbody-th .tbody .tr:nth-of-type(1) {border-top:1px solid #e3e3e3;}
 	.tbl-list-board.type-tbody-th .tbody .tr>div,
-	.tbl-list-board.type-tbody-th .tfoot .tr>div {width:100%;}
+	.tbl-list-board.type-tbody-th .tfoot .tr>div {width:100%; text-align:left;}
 
 	/* table : tbody에서 th block (모바일view - .tbl-list-view 와 비슷) */
 	.tbl-list-board.type-row-block .mob-block .th {display:block;}

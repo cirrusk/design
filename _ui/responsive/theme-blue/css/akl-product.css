@@ -655,6 +655,9 @@ div.feat-txt p span.next-sort {display:block;}
 .advantage-area.bt-none{margin-top:0 !important;padding-top:50px !important;border-top:none;}
 .advantage-area.btm-line{padding:50px 0;border-bottom:1px solid #e3e3e3;}
 .pro-video.video-type{margin: 50px 0 0;padding-top:50px;}
+.pro-video + .inge-lst03{margin-top:8px;}
+.pro-video + .inge-lst03 li{font-size:12px;color:#808285;}
+.pro-video + .inge-lst03 li:after{top: 6px;}
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
 
 /* 마진, 패딩*/
@@ -1375,7 +1378,7 @@ dl.amo-txt dd br {line-height:18px}
 .technology-step .program-list li{display:table;width:100%;padding-top:20px;}
 .technology-step .program-list .program-box{display:table-cell;width:50%;padding-right:10px;vertical-align:middle;}
 .technology-step .program-list .program-img{display:table-cell;width:50%;padding-right:10px;vertical-align:middle;}
-.technology-step .program-list .program-step{display:block;width:140px;height:40px;line-height:40px;font-size:18px;color:#fff;text-align:center;background-color:#ad9172;border-radius:20px;}
+.technology-step .program-list .program-step{display:block;min-width:140px;height:40px;line-height:40px;font-size:18px;color:#fff;text-align:center;background-color:#ad9172;border-radius:20px;}
 .technology-step .program-list .program-tit{display:block;padding-left:15px;margin-top:10px;font-size:16px;color:#56565a;font-weight:400;letter-spacing:-1px;}
 .technology-step .program-list .program-txt{display:block;padding:8px 20px 0 15px;font-size:14px;color:#808285;font-weight:300;letter-spacing:-1px;}
 .ar_4285 .technology-step .program-list .program-txt{padding: 0 30px 0 15px;}
@@ -1607,6 +1610,13 @@ dl.amo-txt dd br {line-height:18px}
 
 /*.base-makeup .ad-setp-lst dt:first-child{margin-top:0;}*/
 
+/* 컨텐츠내 블릿 공통 간격 */
+.visual-area .inge-lst01{margin-top:17px;}
+.visual-area .inge-lst01 li{font-size:16px !important;}
+
+.beauty .advantage-area .inge-lst08 li, 
+.beauty .advantage-area .inge-lst08 li, 
+.beauty .advantage-area .inge-lst08 li{font-size:12px;}
 
 /* 파운데이션  */
 .base-makeup .skin-care .txt-info-visual .v-tit{padding: 32px 19% 0;}
@@ -1619,12 +1629,13 @@ dl.amo-txt dd br {line-height:18px}
 
 .color-tip-tit{display:block;font-size:16px;color:#56565a;text-align:left;margin: 0 0 20px 20%;font-weight:400;}
 .color-tip-lst{display:block;margin:auto;}
-.color-tip-lst li{display: table;margin: auto;/*margin-bottom: 30px;*/}
+.color-tip-lst li{display: table;margin: auto;margin-bottom: 30px;}
 .color-tip-lst li:last-child{margin-bottom:0;}
 .color-tip-lst li > span{display: table-cell;vertical-align: middle;}
 .color-tip-lst li > .pr-name{width:40%;text-align: center;font-size: 16px;color: #808285;font-weight: 300;}
 .color-tip-lst li > .color-tip{width:60%;}
 
+.color-tip-lst.loose li{margin-bottom:0;}
 .color-tip-lst.loose li > .pr-name{width:20%;padding-bottom: 38px;}
 .color-tip-lst.loose li > .color-tip{width:80%;}
 
