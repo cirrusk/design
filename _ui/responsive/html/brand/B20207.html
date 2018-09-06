@@ -128,17 +128,15 @@
 				
 			<div class="brand-contents artistry">
 				<div class="top-title-wrapper">
-					<h1 class="title-h2">스킨케어 제품맵</h1>
+					<h1 class="title-h2">스킨케어 제품 맵</h1>
 				</div>
 				
 				<div class="full-component">
 					<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/skincare_map_min.jpg" alt="" >
 				</div>
 				<div class="btn-wrap50">
-					<a href="#" class="bt-akl-blue">+ 크게보기</a>
+					<a href="#" onclick="layerPopOver(this,'.B20207_lp1');" class="bt-akl-blue">+ 크게보기</a>
 				</div>
-				
-				
 			</div>
 			<!-- //## 컨텐츠 영역 -->
 		</div>
@@ -146,6 +144,24 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	
+
+	<!-- 크게보기 팝업 -->
+	<div class="layerWrapper B20207_lp1">
+		<div class="cbox layerBox RD-View typeFullSizeView"><!-- 수정 : 2018.04.25 (.RD-View.typeFullSizeView 추가) -->
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header white">
+					<span class="cart-popup__header-text">스킨케어 제품 맵
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close">
+							<img src="/_ui/responsive/theme-blue/images/akl_common/ico_closed.png" alt="닫기">
+						</a>
+					</span>
+				</div>
+				<div class="layer-content-wrapper RD-Viewer">
+					<img src="/_ui/responsive/theme-blue/images/akl_brand/artistry/skincare_map_min.jpg" alt="스킨케어 제품 맵">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //크게보기 팝업 -->
 </body>
 </html>
