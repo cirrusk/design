@@ -349,7 +349,7 @@ $(function(){
 $(function() {
 
 	//$(".select2-hidden-accessible").select2();
-	$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
+	//$(".form_datetime").datepicker({format: 'yyyy-dd-mm',autoclose: true});
 
 	$("#addToLIST").click(function(){
 		$(".add-to-shopping-list-container").removeClass('open');
