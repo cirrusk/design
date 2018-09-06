@@ -2271,6 +2271,10 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			}
 
 			//RD화면 (모바일 전체화면)
+			var RD_layerTit = $layerPrdtDetail.find('.cart-popup__header.white').outerHeight(true);
+			var RD_layerBtm = $layerPrdtDetail.find('.cart-popup__item-link').outerHeight(true);
+			var $RD_ConBox  = $layerPrdtDetail.find('.layer-content-wrapper.RD-Viewer');
+
 			if ( $layerPrdtDetail.is('.RD-View') ){
 				if( _winWidth < 769 ){
 					$layerContentBox.css({
@@ -2286,6 +2290,10 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 						'margin-left':'0',
 						'margin-bottom':'0'
 					});
+					$RD_ConBox.css({
+						'height': ( $(window).height() - RD_layerTit - RD_layerBtm )
+					});
+
 				} else {
 					$layerContentBox.css({
 						'display':'block',
@@ -2297,6 +2305,9 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 						'height':'auto',
 						'margin':'0 auto',
 						'margin-bottom':'20px'
+					});
+					$RD_ConBox.css({
+						'height':''
 					});
 				}
 			}
