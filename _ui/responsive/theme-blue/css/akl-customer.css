@@ -170,8 +170,11 @@
 /* 사회공헌뉴스 */
 .akl .new-social-list {margin:0 -10px;padding:0 0;}
 .akl .new-social-list .option-item-container {padding:10px;height:auto;}
-.akl .thumnail-box {width:100%;height:230px;overflow: hidden;}
-.akl .thumnail-box .featured-product__thumnail {width:100%;cursor:pointer;margin:0 0;height:100%;}
+.akl .thumnail-box {position:relative; overflow:hidden; width:100%;}
+.akl .thumnail-box .featured-product__thumnail {position:absolut; top:0; left:0; width:100%; margin:0 0;}
+.akl .new-social-list .option-item-container > a {position:relative; display:block; padding-top:54.90196078431373%;}
+.akl .new-social-list .thumnail-box {position:absolute; z-index:-1; top:0; left:0; width:100%; height:auto; max-height:250px;}
+
 .akl .news-result-item-text {display:block;min-height: 110px;padding:15px 20px 0;background-color: #F4F4F4;cursor: pointer;letter-spacing:-0.05em;}
 .akl .news-result-item-text .featured-product__title {font-size:16px;margin-bottom: 10px;font-weight:500;line-height:24px;margin:0 0;height:50px;word-break:break-all;overflow: hidden;color:#002f5f;}
 .akl .news-result-item-text .featured-product__title:hover {color:#0075a4;}
@@ -1045,16 +1048,14 @@
 	.akl .content-list .con-list-item > div.news-subje {display:block;width:100%;padding:5px 20px;}
 	.akl .content-list .con-list-item > div.news-date {display:block;width:100%;padding:5px 20px;}
 
-
-
 	/* 사회공헌뉴스 */
 	.title-box .product-list-page-title h1.social:before {left:0;}
-
+	.akl .new-social-list .option-item-container > a {padding-top:0;}
+	.akl .new-social-list .thumnail-box {position:static; max-height:none;}
+	.akl .thumnail-box .featured-product__thumnail {position:static;}
 	.akl .news-result-item-text {display:block;min-height:auto;padding:15px 20px 15px;}
 	.akl .news-result-item-text .featured-product__title {height:auto;}
 	.akl .news-result-item-text .featured-product__subtitle {padding:15px 0 0}
-	.akl .thumnail-box {height:auto;overflow:hidden;}
-	.akl .thumnail-box .featured-product__thumnail {width:100%;height:auto;margin-bottom:0;}
 	.bod-view-thumnail img {width:100%;height:auto;margin:0 auto}
 	.akl .news-result-item-text {min-height:auto;padding:15px 20px;}
 
