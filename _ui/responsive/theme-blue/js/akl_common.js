@@ -355,8 +355,9 @@ function MAIN_featuredProduct(){
 function tabsTgg_Control(){
 	var _winWidth = $(window).width();
 	var _tabsToggles = $('.tabs-toggles , .col-search-tab>ul');
+	var _exceptObject = _tabsToggles.parent('.sizer-tabs-toggles');
 
-	if (!_tabsToggles.length){ return; }
+	if (!_tabsToggles.length || _exceptObject.length){ return; }
 
 	_tabsToggles.each(function(){
 		var _UL = $(this);
@@ -1790,12 +1791,10 @@ function glossaryPage(){
 
 			_Parent.addClass('active')
 			_Parent.siblings().removeClass('active');
-
-			//스크롤 top 함수 실행
-			//glossaryScrollTop();
 		}
 	});
-
+	
+	//스크롤 top 함수
 	//glossaryScrollTop();
 	function glossaryScrollTop(){
 		$(document).on('click', '.sizer-row>p>a' , function(e){
