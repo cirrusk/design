@@ -34,7 +34,7 @@ Editor :
 .team-player-box {overflow:hidden;}
 .team-player-box .team-tit {float:right;padding-left:12px;width:50%;margin-top:0;font-size:34px;letter-spacing:-2px;color:#002F5F;line-height:100%;font-weight:500;}
 .team-player-box > div {float:left;width:50%;padding-right:12px;}
-.team-player-box > div img {width:100%;}
+.team-player-box > div img {width:100%;max-width:588px;text-align:right;}
 .team-player-box dl {float:right;padding-left:12px;width:50%;}
 .team-player-box dt {margin:25px 0 12px;font-size:16px;line-height:24px;color:#002f5f;}
 .team-player-box dt:first-child {margin-top:0;}
@@ -76,10 +76,11 @@ Editor :
 .brand .lay-box-2 .plp-item-label.bg-gray {background:#56565a;}
 .brand .lay-box-2 .plp-item-label.bg-gray:after {border-color:#56565a transparent transparent #56565a;}
 
+[class*="img-text-row-box-type"] .list-style-info {margin-top:6%;}
 .list-style-info {position:relative;margin-top:20px;}
-.list-style-info li {position:relative;overflow:hidden;margin-top:15px;}
-.list-style-info li strong {float:left;width:150px;color:#002f5f;}
-.list-style-info li span {float:left;}
+.list-style-info li {position:relative;display:table;margin-top:15px;}
+.list-style-info li strong {display:table-cell;width:150px;color:#002f5f;vertical-align:top;}
+.list-style-info li span {display:table-cell;vertical-align:top;}
 
 .list-style-info2 > li, p.list-style-info2, dd.list-style-info2 {background:url(../images/akl_common/ico_star.png) no-repeat left 9px;background-size:5px;padding:0 0 4px 10px;font-size:13px;color:#808285;line-height:20px;font-style:italic;}
 .list-style-info2 > li a, p.txt-italic a {font-size:13px;font-style:normal;font-weight:500;}
@@ -202,15 +203,15 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 /* 암웨이 사업 */
 [class*="img-text-row-box-type"]{margin-top:40px;}
 [class*="img-text-row-box-type"] {display:flex;justify-content:space-between;}
-[class*="img-text-row-box-type"] div {width:45%;}
-[class*="img-text-row-box-type"] div:first-child {width:55%;}
+[class*="img-text-row-box-type"] div {width:46%;}
+[class*="img-text-row-box-type"] div:first-child {width:54%;}
 [class*="img-text-row-box-type"] div img {width:100%;}
 [class*="img-text-row-box-type"] dl {margin-top:6%;}
 [class*="img-text-row-box-type"] dl dt {font-size:16px;color:#002f5f;font-weight:500;}
 [class*="img-text-row-box-type"] dl dd {margin-top:15px;line-height:24px;}
 .img-text-row-box-type2 {flex-direction:row-reverse;}
-.img-text-row-box-type1 div:nth-of-type(2) {padding-left:40px;}
-.img-text-row-box-type2 div:nth-of-type(1) {padding-left:40px;}
+.img-text-row-box-type1 div:nth-of-type(2) {margin-left:40px;}
+.img-text-row-box-type2 div:nth-of-type(1) {margin-left:40px;}
 
 [class*="img-text-row-box-type"] a.primary-link span {position:absolute;width:100%;height:auto;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);margin:0;text-indent:-99999px;}
 [class*="img-text-row-box-type"] a.primary-link:after {clear:both;content:'';display:block;position:absolute;left:50%;top:50%;width:110px;height:110px;margin:-55px 0 0 -55px;background:url(../images/akl_brand/common/bg_movie_play.png) no-repeat 0 0;background-size:contain;}
@@ -382,6 +383,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 @media (max-width:768px) {
+	.brand h2.title-h4 {font-size:20px;}
 	.view-m {display:block;}
 	.brand [class*="box-bnr"] {height:auto;max-height:750px;}
 	.brand [class*="box-bnr"] .txt-wrap {margin:0 auto;padding:0 20px;text-align:center;width:100%;}
@@ -455,6 +457,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	[class*="img-text-row-box-type"] div {padding-left:0;width:100%;}
 	[class*="img-text-row-box-type"] div:first-child {width:100%}
 	[class*="img-text-row-box-type"] dl {margin-top:20px;}
+	[class*="img-text-row-box-type"] .list-style-info {margin-top:20px;}
+
 
 
 	[class*="img-text-row-box-type"] a.primary-link:after {width:64px;height:64px;margin:-32px 0 0 -32px;}
@@ -539,8 +543,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand .br-btn-tab:before {display:none;}
 	.brand .br-btn-tab .tabs-toggles {margin:0;}
 
-	.img-text-row-box-type1 div:nth-of-type(2) {padding-left:0;}
-	.img-text-row-box-type2 div:nth-of-type(1) {padding-left:0;}
+	.img-text-row-box-type1 div:nth-of-type(2) {margin-left:0;}
+	.img-text-row-box-type2 div:nth-of-type(1) {margin-left:0;}
 
 	/*Traceability Story*/
 	.br-box-cont-hr .refund-box {padding:0 20px 0}
