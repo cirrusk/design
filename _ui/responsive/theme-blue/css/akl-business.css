@@ -1266,6 +1266,7 @@ table.clone thead, .clone tfoot{background:transparent;}
 .diag-calculation p>.math-txt:first-child {width:28%;}
 .diag-calculation .math-txt {position:relative;display:table-cell; width:28%; box-sizing:border-box; vertical-align:middle; color:#002f5f;}
 .diag-calculation .math-txt.plus {width:8%}
+.diag-calculation .math-txt.minus {width:8%}
 .diag-calculation .math-txt.last {width:36%;}
 .diag-calculation .math-txt * {display:inline-block; vertical-align:middle;}
 .diag-calculation [class^=ico-type] {position:relative; display:inline-block; padding:15px 0 0 82px; height:72px;}
@@ -1277,13 +1278,24 @@ table.clone thead, .clone tfoot{background:transparent;}
 .diag-calculation .ico-type-a:after {display:none;}
 .diag-calculation .ico-type-b:before {right:30px; background-position:50% -210px;}
 .diag-calculation .ico-type-plus{width:20px; height:20px; padding:0;}
-.diag-calculation .ico-type-plus:before {width:20px; height:20px; background-position:0 -350px; top:50%; right:; margin-top:-10px;}
+.diag-calculation .ico-type-plus:before {width:20px; height:20px; background-position:0 -350px; top:50%; margin-top:-10px;}
+.diag-calculation .ico-type-minus{width:20px; height:20px; padding:0;}
+.diag-calculation .ico-type-minus:before {width:20px; height:20px; background-position:0 -402px; top:50%; margin-top:-10px;}
+
 .diag-details li>p{margin:0; padding-left:35px;}
 .diag-details .txt-required {color:#e11e45;}
 .diag-details .symbol-tit+.txt {font-size:13px;color:#808285;}
 .diag-details .symbol-tit {position:relative; padding-left:35px;font-weight:500;}
 .diag-details .symbol-tit .symbol-round-txt {position:absolute; top:0; left:0}
 .symbol-round-txt {display:inline-block; background:#002f5f; color:#fff; font-size:16px; font-weight:500; border-radius:12px; width:24px; height:24px; text-align:center; line-height:22px;}
+
+/* 여행점수 프로모션 */
+.box-diagram.typeminus { margin-top:40px;}
+.box-diagram.typeminus .diag-calculation .ico-type-equal:before {background-position:0 -500px;}
+.box-diagram.typeminus .diag-details { margin-top:20px}
+.box-diagram.typeminus .ico-type-a:before { background-position:50% -210px;}
+.box-diagram.typeminus .ico-type-a em { margin-top:10px}
+.box-diagram.typeminus .ico-type-b:before {background-position:50% -120px;}
 
 /* 여행점수 확인 */
 .rewards-program-wrapper .status-travel-point {margin-bottom:0;}
@@ -1752,6 +1764,9 @@ table.clone thead, .clone tfoot{background:transparent;}
 	.diag-calculation [class^=ico-type] {padding:15px 0 0 62px; height:52px;}
 	.diag-calculation [class^=ico-type]:before, .diag-calculation [class^=ico-type]:after {display:none;}
 	.box-diagram .diag-calculation>p {overflow:hidden; display:block; height:1px; padding:70px 0 0; margin:0; background:url(../images/akl_common/img_rewards_travel2_mob.png) 50% 0 no-repeat; background-size:auto 70px;}
+
+	/* 여행점수 프로모션 */
+	.box-diagram .diag-calculation>p { background:url(../images/akl_common/img_rewards_travel3_mob.png) 50% 0 no-repeat; background-size:auto 70px;}
 
 	/* 여행점수 확인 */
 	.rewards-program-wrapper .mob-inline {display:inline;}
