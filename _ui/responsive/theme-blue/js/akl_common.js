@@ -2335,13 +2335,24 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 			var targetWidth_video = $layerVideoView.width();
 			var targetHeight_video = $layerVideoView.height();
 
-			if( _winWidth < 769 ){
+			if( _winWidth < 769 && targetHeight_video < _winHeight ){
+				$layerVideoView.css({
+					'display':'block',
+					'top':topPosition,
+					'left':'0',
+					'max-width':'',
+					'height':'auto',
+					'margin':'0 auto',
+					'margin-top': -(targetHeight_video/2)
+				});
+			} else if( _winWidth < 769 && targetHeight_video > _winHeight ){
 				$layerVideoView.css({
 					'display':'block',
 					'position':'absolute',
 					'top':'3%',
 					'left':'0',
-					'max-width':'',
+					'right':'0',
+					'max-width':'600px',
 					'height':'auto',
 					'margin':'0 auto',
 					'margin-bottom':'3%'
