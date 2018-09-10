@@ -138,6 +138,21 @@
 		videoWrapperSize();
 	});
 
+	//제품상세 > 제품사용순서
+	$('#productProcess').owlCarousel({
+		loop: false,
+		margin: 0,
+		nav: true,
+		dots: true,
+		responsiveClass: true,
+		responsive: {
+			480 :{items: 1 },
+			768 :{items: 2 },
+			960 :{items: 3 },
+			1200:{items: 5 }
+		}
+	});
+
 	//약관 더보기 (768이하)
 	terms_ViewAll();
 
@@ -1793,7 +1808,7 @@ function glossaryPage(){
 			_Parent.siblings().removeClass('active');
 		}
 	});
-	
+
 	//스크롤 top 함수
 	//glossaryScrollTop();
 	function glossaryScrollTop(){
