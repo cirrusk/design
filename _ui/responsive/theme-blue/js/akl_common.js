@@ -144,6 +144,7 @@
 		margin: 0,
 		nav: true,
 		dots: true,
+		items: 1,
 		responsiveClass: true,
 		responsive: {
 			480 :{items: 1 },
