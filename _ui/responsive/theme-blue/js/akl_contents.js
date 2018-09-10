@@ -13,6 +13,7 @@ $(function(){
 
 	//연혁
 	timelineFunc();
+
 });
 
 /* 브랜드 모바일 SNS 위치 */
@@ -71,7 +72,7 @@ function timelineFunc(){
 		nav: true,
 		dots: true,
 		margin: 0,
-
+		items: 1,
 		responsive: {
 			768 : {
 				items: 1
