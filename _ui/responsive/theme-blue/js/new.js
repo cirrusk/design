@@ -688,6 +688,14 @@ $(function() {
 
 });
 
+//Personal Q
+$(function() {
+	$('.G20203b_lp1').click(function(event) {
+		event.preventDefault();
+		layerPopOver(this,'.G20203b_lp1_pop');
+	});
+});
+
 //고객센터
 $(function() {
 	$('#F50000_lp').click(function(event) {
