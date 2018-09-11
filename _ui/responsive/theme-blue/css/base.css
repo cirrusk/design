@@ -4335,8 +4335,8 @@ header.main-header .overlay-menu-container .overlay-menu .tab-content .overlay-m
 #cboxLoadedContent .modal-details{line-height:1.8em;}
 #cboxLoadedContent .modal-actions{margin-top:24px;}
 #cboxLoadedContent .modal-actions .btn{margin-top:24px;}
-#cboxTitle{position:absolute;top:0;display:table;width:100%;height:88px;margin:0;padding:40px 40px 15px;background:0 0;}
-#cboxTitle .headline{width:100%;margin-bottom:0;font-size:24px;font-weight:bold;line-height:24px;vertical-align:middle;}
+#cboxTitle, .cboxTitle{position:absolute;top:0;display:table;width:100%;height:88px;margin:0;padding:40px 40px 15px;background:0 0;}
+#cboxTitle .headline, .cboxTitle .headline{width:100%;margin-bottom:0;font-size:24px;font-weight:bold;line-height:24px;vertical-align:middle;}
 #cboxLoadingOverlay{position:absolute;top:0;left:0;width:100%;height:100%;}
 #cboxLoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%;}
 #cboxPrevious{position:absolute;bottom:-29px;left:0;overflow:visible;width:23px;height:23px;margin:0;padding:0;cursor:pointer;text-indent:-9999px;border:0;background-position:-51px -25px;}
@@ -4357,20 +4357,20 @@ header.main-header .overlay-menu-container .overlay-menu .tab-content .overlay-m
 #cboxMiddleRight{width:14px;}
 #cboxError{padding:50px;border:1px solid #cccccc;}
 #cboxCurrent{position:absolute;bottom:-25px;left:58px;font-weight:bold;color:#7c7c7;}
-#cboxClose{position:absolute;top:10px;right:13px;padding:5px;font-size:25px;color:#797979;border:0;background:0 0;}
+#cboxClose, .cboxClose{position:absolute;top:10px;right:13px;padding:5px;font-size:25px;color:#797979;border:0;background:0 0;}
 #cboxClose:active{}
 .cboxSlideshow_on #cboxSlideshow{right:27px;background-position:-125px 0;}
 .cboxSlideshow_on #cboxSlideshow:hover{background-position:-150px 0;}
 .cboxSlideshow_off #cboxSlideshow{right:27px;background-position:-150px -25px;}
 .cboxSlideshow_off #cboxSlideshow:hover{background-position:-125px 0;}
 @media (max-width: 768px){
-  #cboxTitle{height:112px;padding-right:24px;padding-left:24px;}
-  #cboxTitle:before{display:table;content:' ';}
-  #cboxTitle:after{display:table;clear:both;content:' ';}
-  #cboxLoadedContent{margin-top:112px;padding:15px 24px 34px;}
-  #cboxLoadedContent .addressEntry ul{margin-top:-29px;}
+  #cboxTitle, .cboxTitle{height:112px;padding-right:24px;padding-left:24px;}
+  #cboxTitle:before, .cboxTitle:before{display:table;content:' ';}
+  #cboxTitle:after, .cboxTitle:after{display:table;clear:both;content:' ';}
+  #cboxLoadedContent, .cboxLoadedContent{margin-top:112px;padding:15px 24px 34px;}
+  #cboxLoadedContent .addressEntry ul, .cboxLoadedContent .addressEntry ul{margin-top:-29px;}
 }
-#cboxTitle{height:68px;padding:23px 40px 15px;}
+#cboxTitle, .cboxTitle{height:68px;padding:23px 40px 15px;}
 .add-to-cart-modal #cboxWrapper #cboxContent #cboxLoadedContent #addToCartLayer .buttons-container{position:relative;top:30px;}
 .add-to-cart-modal #cboxWrapper #cboxContent #cboxLoadedContent #addToCartLayer .add-to-cart-item .details .name-wrapper .name{font-size:26px;}
 .add-to-cart-modal #cboxWrapper #cboxContent #cboxTitle .headline .headline-text{font-size:26px;}
@@ -5701,9 +5701,9 @@ select.form-control option{float:left;width:100%;padding:6px 10px;border:none;}
   .bundle-carousel-pagination{display:none;}
   .amway-theme .full-width-banner-component.banner-left-align .banner-content-wrap{margin-left:0!important;}
   .dashboard-acc__profile{width:100%;}
-  .lynx-modal-window #cboxContent #cboxClose{top:10px;}
-  .lynx-modal-window #cboxContent #cboxTitle{padding:25px 15px 15px;}
-  .lynx-modal-window #cboxContent #cboxTitle .headline{line-height:1.2;}
+  .lynx-modal-window #cboxContent #cboxClose, .lynx-modal-window #cboxContent .cboxClose{top:10px;}
+  .lynx-modal-window #cboxContent #cboxTitle, .lynx-modal-window #cboxContent .cboxTitle{padding:25px 15px 15px;}
+  .lynx-modal-window #cboxContent #cboxTitle .headline, .lynx-modal-window #cboxContent .cboxTitle .headline{line-height:1.2;}
   .create-new-shopping-list-modal #saveShoppingListForm #createShoppingList{margin-top:10px;margin-bottom:20px;}
   header.main-header .amw-navigation-menu .navigation-menu-container{padding-right:0;padding-left:0;}
   header.main-header .header-wrapper {padding:0;}
@@ -6662,7 +6662,8 @@ button[disabled].remove-function:hover{color:#002f5f!important;}
 .message-center-pop1.new-pop .account-cards .block-right,.message-center-pop2.new-pop .account-cards .block-right{padding-top:10px;text-align:right;}
 .message-center-pop1.new-pop .account-cards .card-data .expiration-date,.message-center-pop2.new-pop .account-cards .card-data .expiration-date{display:block;}
 .message-center-pop1.new-pop .account-cards .card-data .icon-print,.message-center-pop2.new-pop .account-cards .card-data .icon-print{padding-left:10px;}
-.message-center-pop1.new-pop #cboxClose:before,.message-center-pop2.new-pop #cboxClose:before{content:'Back to Message Center'!important;}
+.message-center-pop1.new-pop #cboxClose:before, .message-center-pop1.new-pop .cboxClose:before,
+.message-center-pop2.new-pop #cboxClose:before, .message-center-pop2.new-pop .cboxClose:before {content:'Back to Message Center'!important;}
 .message-center-pop1.new-pop .billing-shipping .accordion-billing-shipping .panel .panel-collapse,.message-center-pop2.new-pop .billing-shipping .accordion-billing-shipping .panel .panel-collapse{padding:0;}
 .profile-management-help-block{display:none;}
 .has-error .profile-management-help-block{display:block;}
@@ -6852,11 +6853,11 @@ button[disabled].remove-function:hover{color:#002f5f!important;}
 .lynx-modal-window #cboxContent #cboxTitle{position:static!important;float:none!important;height:auto!important;height:80px;padding:20px 0;background:#002f5f;-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;box-ordinal-group:1;}
 .lynx-modal-window #cboxContent #cboxTitle .headline{margin:0;padding:0 40px;font-family:Roboto;font-size:30px;font-weight:100;line-height:40px;text-transform:uppercase;color:#ffffff;}
 .lynx-modal-window #cboxContent #cboxLoadedContent{float:none!important;height:auto!important;margin-top:0;padding-bottom:20px;-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;box-ordinal-group:2;}
-.lynx-modal-window #cboxContent #cboxClose{top:0;right:8px;padding:0;font-size:30px;font-weight:200;line-height:32px;color:#ffffff;}
-.lynx-modal-window #cboxContent #cboxClose .modal-close-icon{display:block;}
+.lynx-modal-window #cboxContent #cboxClose, .lynx-modal-window #cboxContent .cboxClose{top:0;right:8px;padding:0;font-size:30px;font-weight:200;line-height:32px;color:#ffffff;}
+.lynx-modal-window #cboxContent #cboxClose .modal-close-icon, .lynx-modal-window #cboxContent .cboxClose .modal-close-icon {display:block;}
 @media (max-width: 768px){
-  .lynx-modal-window #cboxContent #cboxTitle .headline{padding:0 20px;font-size:20px;}
-  .lynx-modal-window #cboxContent #cboxLoadedContent{box-sizing:border-box;width:100%!important;}
+  .lynx-modal-window #cboxContent #cboxTitle .headline , .lynx-modal-window #cboxContent .cboxTitle .headline{padding:0 20px;font-size:20px;}
+  .lynx-modal-window #cboxContent #cboxLoadedContent, .lynx-modal-window #cboxContent .cboxLoadedContent{box-sizing:border-box;width:100%!important;}
 }
 .amway-theme .product-card{overflow:hidden;min-height:11.375em;font-size:1em;border:1px solid #e3e3e3;}
 .bundle-carousel-pagination{display:none;}

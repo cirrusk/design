@@ -479,15 +479,18 @@ function tabsTgg_Control(){
 			var actualContentSize = event.currentTarget.scrollWidth; //B. 스크롤되는 컨텐츠 길이
 			var scrolledPosition  = event.currentTarget.scrollLeft;  //C. 스크롤바 움직인 길이 (x좌표가 움직인 거리)
 
+
 			//스크롤 가능 길이(D) : B - A
 			var scrollable_width  = actualContentSize - targetWrapperSize;
+
+			var scrollRemainArea = scrollable_width - scrolledPosition;
 
 			if (scrolledPosition < 30) {
 				//스크롤 시작
 				leftDiv.hide();
 				righttDiv.show();
 			}
-			else if ( scrollable_width === scrolledPosition ){
+			else if ( scrollable_width === scrolledPosition || scrollRemainArea > 40 ){
 				//스크롤 끝, 스크롤 가능 길이(D) === 움직인 길이(C)
 				leftDiv.show();
 				righttDiv.hide();

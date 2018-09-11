@@ -62,6 +62,7 @@ $(function(){
 	$("#footer").load("/_ui/responsive/html/footer.html");
 	$("#topbanner").load("/_ui/responsive/html/topbanner.html");
 
+
 	/** ---------------------------------
 	 *  배송지 정보
 	 *  ---------------------------------
@@ -127,7 +128,7 @@ $(function(){
 		});
 	}
 
-	//온라인 매거진 SNS : 2018.09.05 삭제(개발이관)
+	//온라인 매거진 SNS : 2018.09.05( akl_common.js 에서 이동/개발이관)
 	magazinSNS();
 	function magazinSNS(){
 		$('.mz-item .btn-ico.sns').click(function() {
