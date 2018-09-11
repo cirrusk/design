@@ -84,6 +84,9 @@ function timelineFunc(){
 	});
 
 	if($('.timeline .scrollbar-inner').length){
-		$('.scrollbar-inner').scrollbar(); //스크롤바 플러그인 실행
+		setTimeout(function(){
+			$('.scrollbar-inner').scrollbar(); //스크롤바 플러그인 실행
+		}, 800)
+
 	}
 }

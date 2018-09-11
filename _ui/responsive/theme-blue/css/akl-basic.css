@@ -23,14 +23,14 @@
 /* simple inner scrollbar */
 .scrollbar-inner>.scroll-element,.scrollbar-inner>.scroll-element div{position:absolute;z-index:10;margin:0;padding:0;border:none;}
 .scrollbar-inner>.scroll-element div{top:0;left:0;display:block;width:100%;height:100%;}
-.scrollbar-inner>.scroll-element.scroll-x{bottom:2px;left:0;width:100%;height:8px;}
-.scrollbar-inner>.scroll-element.scroll-y{top:0;right:2px;width:8px;height:100%;}
+.scrollbar-inner>.scroll-element.scroll-x{bottom:2px;left:0;width:100%;height:6px;}
+.scrollbar-inner>.scroll-element.scroll-y{top:0;right:2px;width:6px;height:100%;}
 .scrollbar-inner>.scroll-element .scroll-element_outer{overflow:hidden;}
-.scrollbar-inner>.scroll-element .scroll-bar,.scrollbar-inner>.scroll-element .scroll-element_outer,.scrollbar-inner>.scroll-element .scroll-element_track{-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;}
+.scrollbar-inner>.scroll-element .scroll-bar,.scrollbar-inner>.scroll-element .scroll-element_outer,.scrollbar-inner>.scroll-element .scroll-element_track{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
 .scrollbar-inner>.scroll-element .scroll-bar,.scrollbar-inner>.scroll-element .scroll-element_track{opacity:.4;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=40)';filter:alpha(opacity=40);}
-.scrollbar-inner>.scroll-element .scroll-element_track{background-color:#e0e0e0;}
-.scrollbar-inner>.scroll-element .scroll-bar{background-color:#c2c2c2;}
-.scrollbar-inner>.scroll-element:hover .scroll-bar{background-color:#919191;}
+.scrollbar-inner>.scroll-element .scroll-element_track{background-color:rgba(244,244,244, 0)}
+.scrollbar-inner>.scroll-element .scroll-bar{background-color:rgba(194,194,194,.5)}
+.scrollbar-inner>.scroll-element:hover .scroll-bar{background-color:rgba(194,194,194,.9)}
 .scrollbar-inner>.scroll-element.scroll-draggable .scroll-bar{background-color:#919191;}
 .scrollbar-inner>.scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track{left:-12px;}
 .scrollbar-inner>.scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track{top:-12px;}
@@ -1324,6 +1324,11 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.quick-links-header.akl-foot:before {display:none}
 }
 @media (max-width:768px){
+	/* ----- 스크롤바 plugin 전용 : 2018.09.10 ----- */
+	.scrollbar-inner>.scroll-element.scroll-y{width:4px;}
+	.scrollbar-inner>.scroll-element .scroll-bar{background-color:rgba(194,194,194, 0)}
+	.scrollbar-inner>.scroll-element:hover .scroll-bar{background-color:rgba(194,194,194,0)}
+
 	/* ----- core 재정의 ----- */
 	.akl header.main-header .amway-theme .mobile-container {margin-top:-75px;}
 	.akl header.main-header .mobile-container .mobile-wrapper {height:63px;}
