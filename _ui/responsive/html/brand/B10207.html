@@ -23,6 +23,14 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.raty.min.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 플러그인 : 2018.08.24 추가  -->
+	<script language="javascript" type="text/javascript">
+	$(function(){
+		var $mapItem = $('[class*="global-comp-"] .btn-tooltip');
+		$mapItem.click(function(){
+			$(this).parent().siblings('.toolTip-wrapper').find('.btn-tooltip-close').trigger('click');
+		});
+	});
+	</script>
 </head>
 <body class="akl">
 	<!-- skipToContent -->
@@ -136,10 +144,77 @@
 					<div class="img-bnr">
 						<img src="/_ui/responsive/theme-blue/images/akl_brand/about/img_global_amway04.jpg" alt="" class="pc"/>
 						<img src="/_ui/responsive/theme-blue/images/akl_brand/about/img_global_amway_mob04.jpg" alt="" class="mob"/>
+
+						<!-- 툴팁 -->
+						<div class="toolTip-wrapper global-comp-01">
+							<button type="button" class="btn-tooltip"><span>1</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>본사 (미국 미시건)</strong>
+								<p>80개의 건물과 사무실, 제조공간 등으로 구성된 9만9천 평 글로벌 단지</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-02">
+							<button type="button" class="btn-tooltip"><span>2</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>뉴트리라이트 옵티멀 헬스센터 (COH) (캘리포니아) </strong>
+								<p>개개인의 특성에 맞춘 프로그램과 상담을 통해 건강한 생활을 체험하는 공간</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-03">
+							<button type="button" class="btn-tooltip"><span>3</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>월드 헤드쿼터 헤리티지 홀 (미시건)</strong>
+								<p>Amway의 도전과 성공을 한눈에 보여주는 역사전시관</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-04">
+							<button type="button" class="btn-tooltip"><span>4</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>Amway센터 (올랜도)</strong>
+								<p>프로농구(NBA)팀인 올랜도 매직의 홈경기장이자 라이브 콘서트, 국제회의 등이 열리는 2만석 규모의 엔터테인먼트 복합빌딩</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-05">
+							<button type="button" class="btn-tooltip"><span>5</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>생태계 농장 (미국 워싱턴 주, 멕시코, 브라질)</strong>
+								<p>‘씨앗에서 완제품’까지를 실천하기 위해, 제품에 사용되는 원료식물을 직접 경작, 수확, 가공하는 자체 생태계 농장</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-05-1">
+							<button type="button" class="btn-tooltip"><span>5</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>생태계 농장 (미국 워싱턴 주, 멕시코, 브라질)</strong>
+								<p>‘씨앗에서 완제품’까지를 실천하기 위해, 제품에 사용되는 원료식물을 직접 경작, 수확, 가공하는 자체 생태계 농장</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-06">
+							<button type="button" class="btn-tooltip"><span>6</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>Amway 호텔 그룹 (그랜드 래피드, 미시건 주)</strong>
+								<p>커뮤니티를 더 좋은 곳으로 만들고자 Amway가 운영하는 Amway 그랜드 플라자와 JW 메리어트 그랜드 래피즈, 코트야드 바이 메리어트</p>
+							</div>
+						</div>
+						<div class="toolTip-wrapper global-comp-07">
+							<button type="button" class="btn-tooltip"><span>7</span></button>
+							<div class="tooltip-content">
+								<button type="button" class="btn-tooltip-close"><span class="hidden">툴팁닫기</span></button>
+								<strong>아시아 물류허브센터 (부산) </strong>
+								<p>미국 에이다, 네덜란드 벤로에 이어 세계 3번째이자 아시아지역의 첫 물류기지, 미국 본사에서 생산된 제품을 아시아 태평양 지역으로 공급하는 최첨단 고부가가치형 물류센터</p>
+							</div>
+						</div>
+						<!-- //툴팁 -->
 					</div>
 				</div>
 				<article class="br-box-cont-hr">
-					<h2 class="title-h4">암웨이 본사 ①</h2>
+					<h2 class="title-h4">암웨이 본사</h2>
 					<p class="title-txt02">공동 창업자 2세에 의해 암웨이의 모회사 알티코 (Alticor)가 2000년에 설립되었습니다.</p>
 					<div class="img-text-row-box-type1">
 						<div>
@@ -237,7 +312,7 @@
 					</div>
 
 	
-					<h3 class="title-h5 mgt40">월드 헤드쿼터 헤리티지 홀 (역사 전시관) ③</h3>
+					<h3 class="title-h5 mgt40">월드 헤드쿼터 헤리티지 홀 (역사 전시관)</h3>
 					<p class="mgt15">미국 미시간주 에이다에 위치한 글로벌 암웨이 본사에 헤리티지 홀(역사 전시관)이 건립되었습니다.<br />이곳에는 도전과 혁신으로 점철된 암웨이의 역사와 관련된 생생한 이야기와 다양한 유물들이 전시되어 있습니다.</p>
 					<p class="mgt15">스티브 밴 앤델 암웨이 회장은 이곳에 대해 &quot;암웨이 역사 전시관은 50년 이상 이어진 두 분의 공동 창업자 - 제이 밴 앤델과 리치 디보스-의 여정을 기념하는 곳&quot;이라고 평가한 바 있습니다.​</p>
 				</article>
@@ -258,14 +333,14 @@
 						</div>
 					</div>
 					<ul class="list-type5 mgt15">
-						<li>뉴트리라이트 농업연구소 (옵티멀 헬스 센터) ②<br />개개인의 특성에 맞춘 프로그램과 상담을 통해 건강한 생활을 체험하는 공간</li>
+						<li>뉴트리라이트 농업연구소 (옵티멀 헬스 센터)<br />개개인의 특성에 맞춘 프로그램과 상담을 통해 건강한 생활을 체험하는 공간</li>
 						<li>뉴트리라이트 (Nutrilite)</li>
-						<li>Amway센터 - 올랜도 매직팀 (Orlando Magic-NBA) ④<br />프로농구(NBA)팀인 올랜도 매직의 홈경기장이자 라이브 콘서트, 국제회의 등이 열리는 2만석 규모의 엔터테인먼트 복합빌딩</li>
-						<li>생태계 농장 ⑤<br />'씨앗에서 완제품’까지를 실천하기 위해, 제품에 사용되는 원료식물을 직접 경작, 수확, 가공하는 자체 생태계 농장 (워싱턴 트라웃 레이크 농장, 브라질 우바자라 농장, 멕시코 엘 페타칼 농장 )</li>
-						<li>Amway 호텔그룹 ⑥<br />커뮤니티를 더 좋은 곳으로 만들고자 Amway가 운영하는 암웨이 그랜드 플라자 호텔 (Amway Grand Plaza Hotel), JW 메리어트-그랜드 래피즈 (JW Marriott-Grand Rapids), 코트야드 바이 메리어트</li>
+						<li>Amway센터 - 올랜도 매직팀 (Orlando Magic-NBA)<br />프로농구(NBA)팀인 올랜도 매직의 홈경기장이자 라이브 콘서트, 국제회의 등이 열리는 2만석 규모의 엔터테인먼트 복합빌딩</li>
+						<li>생태계 농장<br />'씨앗에서 완제품’까지를 실천하기 위해, 제품에 사용되는 원료식물을 직접 경작, 수확, 가공하는 자체 생태계 농장 (워싱턴 트라웃 레이크 농장, 브라질 우바자라 농장, 멕시코 엘 페타칼 농장 )</li>
+						<li>Amway 호텔그룹<br />커뮤니티를 더 좋은 곳으로 만들고자 Amway가 운영하는 암웨이 그랜드 플라자 호텔 (Amway Grand Plaza Hotel), JW 메리어트-그랜드 래피즈 (JW Marriott-Grand Rapids), 코트야드 바이 메리어트</li>
 						<li>피터 아일랜드 리조트 (Peter Island Resort)</li>
 						<li>현재 알티코(Altico)가 전부 또는 일부의 소유권을 가진 회사들<br />암웨이 그랜드 플라자, 호텔 Gurwitch Products, Fulton Innovations,  Interleukin Genetics</li>
-						<li>아시아 물류허브센터 (부산) ⑦<br />미국 에이다, 네덜란드 벤로에 이어 세계 3번째이자 아시아지역의 첫 물류기지, 미국 본사에서 생산된 제품을 아시아 태평양 지역으로 공급하는 최첨단 고부가가치형 물류센터</li>
+						<li>아시아 물류허브센터 (부산)<br />미국 에이다, 네덜란드 벤로에 이어 세계 3번째이자 아시아지역의 첫 물류기지, 미국 본사에서 생산된 제품을 아시아 태평양 지역으로 공급하는 최첨단 고부가가치형 물류센터</li>
 					</ul>
 				</article>
 
