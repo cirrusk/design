@@ -364,8 +364,8 @@ function MAIN_featuredProduct(){
 		});
 	}
 
-	setTimeout(function(){ setHeight(); }, 600);
-}
+	setTimeout(function(){ setHeight(); },3000);
+ }
 
 /* 탭 스크롤 */
 function tabsTgg_Control(){
