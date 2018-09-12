@@ -531,15 +531,47 @@ Editor : HYEWON HWANG
 .atmosphere .txtbox.s7 {background-color:#f4f4f4 ;}
 .atmosphere .txtbox.s8 {background-color:#fff ;}
 .atmosphere .txtbox.s1 div {width:100%;max-width:936px;top:100px;}
-.atmosphere .txtbox.s2 div {width:100%;max-width:978px;top:20px;}
-.atmosphere .txtbox.s3 div {width:100%;max-width:494px;left:10%;top:15%;}
+.atmosphere .txtbox.s2 div {width:100%;max-width:1024px;top:20px;}
+.atmosphere .txtbox.s3 div {width:100%;max-width:497px;left:10%;top:15%;}
 .atmosphere .txtbox.s4 div.img1 {width:100%;max-width:498px;right:150px;top:85px;}
-.atmosphere .txtbox.s4 div.img2 {width:100%;max-width:737px;left:10%;bottom:40px;}
-.atmosphere .txtbox.s5 div {width:100%;max-width:1081px;}
+.atmosphere .txtbox.s4 div.img2 {width:100%;max-width:800px;left:6%;bottom:40px;}
+.atmosphere .txtbox.s5 div {width:100%;max-width:1080px;}
+.atmosphere .txtbox.s5 > div > p {color:#fff;font-size:20px;}
+.atmosphere .txtbox.s5 > div > p > span {font-size:13px;font-weight:200;opacity:0.6;}
 .atmosphere .txtbox.s6 div {width:100%;max-width:580px;left:10%;}
 .atmosphere .txtbox.s7 div {width:100%;max-width:955px;}
-.atmosphere #banner_list2 div img {display:block;margin:auto;max-width:950px;width:100%;height:auto;}
+.atmosphere #banner_list2 div img {margin:auto;max-width:950px;width:100%;height:auto;}
 
+@media (max-width: 768px){
+/* 엣모스피어 */
+	.akl .atmosphere .homepage_banner .owl-dots .owl-dot.active span {background:#1abdbf;}
+	.atmosphere .content-row {margin-left:-15px;margin-right:-15px;}
+	.atmosphere .title-component.t1 {margin-top:0px;}
+	.atmosphere .txtbox {padding:0;-webkit-justify-content:center;justify-content:center;background-repeat:repeat-x;background-position:50% 0;background-size:100% auto;background-color:#f4f4f4;}
+	.atmosphere .txtbox.s1 {height:816px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg1_mob.png');background-position:50% 100%;}
+	.atmosphere .txtbox.s2 {height:860px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg2_mob.jpg');background-position:50% 100%;}
+	.atmosphere .txtbox.s3 {height:475px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg3_mob.jpg');}
+	.atmosphere .txtbox.s4 {height:519px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg4_mob.jpg');}
+	.atmosphere .txtbox.s5 {height:559px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg5_mob.jpg');}
+	.atmosphere .txtbox.s6 {height:456px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg6_mob.jpg');}
+	.atmosphere .txtbox.s7 {height:800px;background-color:#f4f4f4;}
+	
+	.atmosphere .txtbox div {margin:0 auto;}
+	.atmosphere .txtbox.s1 div {max-width:267px;top:30px;}
+	.atmosphere .txtbox.s2 div {max-width:267px;top:30px;}
+	.atmosphere .txtbox.s3 div {max-width:316px;top:30px;}
+	.atmosphere .txtbox.s4 div.img1 {max-width:326px;right:auto;top:30px;}
+	.atmosphere .txtbox.s5 div {max-width:316px;top:30px;}
+	.atmosphere .txtbox.s6 div {max-width:316px;top:30px;}
+	.atmosphere .txtbox.s6 div {max-width:315px;top:30px;}
+	.atmosphere .txtbox.s7 div {max-width:345px;top:30px;}
+	
+	.atmosphere #banner_list2 div img {max-width:315px;}
+	.atmosphere #banner_list2 div img.pc {display:none;}
+	
+	.atmosphere .content-row .owl-nav .owl-prev {left:15px;}
+	.atmosphere .content-row .owl-nav .owl-next {right:15px;}
+}
 
 /* ######## 브랜드 서브 레이아웃######## */
 .brand .sub [class*="box-bnr"] {margin-bottom:40px;}
@@ -719,53 +751,6 @@ Editor : HYEWON HWANG
 	.home .txtbox.s1 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg1.png') no-repeat 50% 30px;background-size:94px auto;}
 	.home .txtbox.s2 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg2.png') no-repeat 50% 30px;background-size:59px auto;}
 
-	/* 엣모스피어 */
-	.akl .atmosphere .homepage_banner .owl-dots .owl-dot.active span {background:#1abdbf;}
-	.atmosphere .title-component.t1 {margin-top:0px;}
-	.atmosphere .txtbox {height:auto !important;padding:30px 20px;}
-	
-	.atmosphere .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg1.png');}
-	.atmosphere .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg2.jpg');}
-	.atmosphere .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg3.jpg');}
-	.atmosphere .txtbox.s4 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg4.jpg');}
-	.atmosphere .txtbox.s5 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg5.jpg');}
-	.atmosphere .txtbox.s6 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg6.jpg');}
-	
-	.atmosphere .txtbox div {margin:auto;position:relative;}
-	.atmosphere .txtbox.s1 div {max-width:267px;}
-	.atmosphere .txtbox.s2 {min-height:668px;}
-	.atmosphere .txtbox.s2 div {max-width:272px;}
-	.atmosphere .txtbox.s3 div {max-width:315px;}
-	.atmosphere .txtbox.s4 div.img1 {max-width:326px;}
-	.atmosphere .txtbox.s5 div {max-width:315px;}
-	.atmosphere .txtbox.s6 div {max-width:315px;}
-	.atmosphere .txtbox.s6 div {max-width:315px;}
-	.atmosphere .txtbox.s6 div {max-width:345px;}
-	.atmosphere .txtbox.s7 {min-height:711px;}
-	
-	.atmosphere #banner_list2 div img {max-width:315px;}
-	.atmosphere #banner_list2 div img.pc {display:none;}
-	
-	/*
-	.atmosphere .txtbox {-webkit-justify-content: center; justify-content:center;}
-	.atmosphere .txtbox.s1 {height:575px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg1.png');}
-	.atmosphere .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg2.jpg');}
-	.atmosphere .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg3.jpg');}
-	.atmosphere .txtbox.s4 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg4.jpg');}
-	.atmosphere .txtbox.s5 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg5.jpg');}
-	.atmosphere .txtbox.s6 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/fullimg6.jpg');}
-	.atmosphere .txtbox.s7 {background-color:#f4f4f4 ;}
-	.atmosphere .txtbox.s8 {background-color:#fff ;}
-	.atmosphere .txtbox.s1 div {width:100%;max-width:936px;top:100px;}
-	.atmosphere .txtbox.s2 div {width:100%;max-width:978px;top:20px;}
-	.atmosphere .txtbox.s3 div {width:100%;max-width:494px;left:10%;top:15%;}
-	.atmosphere .txtbox.s4 div.img1 {width:100%;max-width:498px;right:150px;top:85px;}
-	.atmosphere .txtbox.s4 div.img2 {width:100%;max-width:737px;left:10%;bottom:40px;}
-	.atmosphere .txtbox.s5 div {width:100%;max-width:1081px;}
-	.atmosphere .txtbox.s6 div {width:100%;max-width:580px;left:10%;}
-	.atmosphere .txtbox.s7 div {width:100%;max-width:955px;}
-	*/
-
 	/* ### 이스프링,아티스트리 서브 레이아웃 ### */
 	.brand [class*="sub"] .content-row.type1 {margin:0 -15px 40px;}
 	.content-row.type1 .txtbox > div {top:25px;left:5%;}
@@ -811,6 +796,9 @@ Editor : HYEWON HWANG
 
 	.akl .B20207_lp1.layerWrapper .cbox.layerBox {top:0 !important; transform:none !important;}
 	.akl .B20207_lp1.layerWrapper .layer-content-wrapper.RD-Viewer {height:100vh !important;}
+	
+	/* 엣모스피어 */
+	.akl .atmosphere .homepage_banner .owl-dots .owl-dot.active span {background:#1abdbf;}
 }
 
 @media (max-width: 420px){
