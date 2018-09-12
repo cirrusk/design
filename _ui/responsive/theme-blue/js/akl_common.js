@@ -2446,8 +2446,8 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	// $(btnOpenLayer)가  Anchor일 경우 return false
 	var elTagName = $(btnOpenLayer).prop('tagName');
 	var tagA = 'A';
-	if( elTagName == tagA ){
-		event.preventDefault();
+	if( elTagName === tagA ){
+		return false;
 	}
 
 	// $(btnOpenLayer)가 없는 경우 (버튼클릭 없이 자동실행)
