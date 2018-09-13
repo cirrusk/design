@@ -461,6 +461,40 @@ Editor : HYEWON HWANG
 .brand .history-list > li > p {position:relative;padding:0 0 3px 10px;margin:0;font-size:14px;}
 .brand .history-list > li > p:before {content:""; position:absolute; width:3px; height:3px; background:#56565a;left:0; top:9px;border-radius:2px;}
 
+/* 뉴트리라이트 농장: 공통 */
+.farm .accordion-custom {border:0;}
+.farm .accordion-custom .panel {border:0;}
+.farm .panel-group .panel+.panel {margin-top:40px;}
+.farm .panel .panel-heading {padding:0;}
+.farm .panel-heading+.panel-collapse>.panel-body {padding:0;}
+
+.farm .panel-heading a {display:block;height:200px;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;
+	background-position:50% 0;background-size:1376px auto;background-repeat:no-repeat;}
+/* 배경 */
+.farm1 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm1_bg.jpg');}
+.farm2 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm2_bg.jpg');}
+.farm3 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm3_bg.jpg');}
+.farm4 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm4_bg.jpg');}
+.farm5 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm5_bg.jpg');}
+
+.farm .panel-heading .panel-title {width:100%;color:#fff;padding:0 120px;line-height:1;}
+.farm .panel-heading .panel-title .text-uppercase.accordion-header-text {position:relative;display:block;padding:0;}
+.farm .panel-heading .panel-title .text-uppercase.accordion-header-text [class*=tit]{font-size:40px;line-height:48px;}
+.farm .panel-heading .panel-title .text-uppercase.accordion-header-text .tit2 {display:none;}
+
+.farm .panel-heading .panel-title p {display:none;margin:10px 0 0;font-size:16px;line-height:24px;letter-spacing:-1px;}
+
+.farm .accordion-custom .icon-minus {position:absolute;left:-50px;top:10px;}
+.farm .accordion-custom .icon-minus:before {font-size:20px;color:#fff;}
+
+.farm .panel-heading a[aria-expanded="false"] .panel-title .text-uppercase.accordion-header-text .tit1 {display:block;}
+.farm .panel-heading a[aria-expanded="false"] .panel-title .text-uppercase.accordion-header-text .tit2 {display:none;}
+
+.farm .panel-heading a[aria-expanded="true"]{height:400px;}
+.farm .panel-heading a[aria-expanded="true"] .panel-title .text-uppercase.accordion-header-text .tit1 {display:none;}
+.farm .panel-heading a[aria-expanded="true"] .panel-title .text-uppercase.accordion-header-text .tit2 {display:block;}
+.farm .panel-heading a[aria-expanded="true"] .panel-title p {display:block;}
+
 /* 4.아티스트리 */
 .akl .artistry .homepage_banner .banner__wrapper .banner__message,
 .akl .artistry .homepage_banner .banner__title:before,
@@ -734,6 +768,26 @@ Editor : HYEWON HWANG
 	.brand .history-list > li {padding-left:0;}
 	.brand .history-list > li strong {position:relative;}
 	
+	/* 뉴트리라이트 농장: 공통 */
+	.farm .panel-group .panel+.panel {margin-top:20px;}
+	/* 배경 */
+	.farm .panel-heading a {height:150px;background-size:auto 100%;}
+	.farm .panel-heading a[aria-expanded="true"] {height:300px;}
+	.farm1 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm1_bg.jpg');}
+	.farm2 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm2_bg.jpg');}
+	.farm3 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm3_bg.jpg');}
+	.farm4 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm4_bg.jpg');}
+	.farm5 .panel-heading a {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/farm5_bg.jpg');}
+	
+	.farm .panel-heading .panel-title {padding:0 25px 0 45px;}
+	.farm .panel-heading .panel-title .text-uppercase.accordion-header-text [class*=tit]{font-size:18px;line-height:35px;}
+	.farm .panel-heading a[aria-expanded="true"] .panel-title .text-uppercase.accordion-header-text .tit1 {display:block;}
+	.farm .panel-heading a[aria-expanded="true"] .panel-title .text-uppercase.accordion-header-text .tit2 {display:block;font-size:28px;}
+	.farm .panel-heading a[aria-expanded="true"] .panel-title p {display:none;}
+	
+	.farm .accordion-custom .icon-minus {position:absolute;left:-28px;top:7px;}
+	.farm .accordion-custom .icon-minus:before {font-size:15px;}
+
 	/* 배스바디*/
 	.akl .bathbody .homepage_banner .owl-dots .owl-dot.active span {background:#12a3da;}
 	.bathbody .txtbox {height:auto !important;background:none;}
@@ -1163,56 +1217,22 @@ Editor : HYEWON HWANG
 	.hubcenter #uiPrdViewDetail .owl-item button.ui-snap-btn {margin:0 9px;}
 
 	/* 연혁 */
-	.timeline {
-	  border-bottom: 0;
-	  margin-bottom: 0;
-	  padding:0;
-	  height:auto;
-	}
-	.timeline .timelineWrap {
-	  margin: 0 auto;
-	}
-	.timeline .slideBox {
-	  padding: 0 7%;
-	  margin: 30px auto 0;
-	  text-align: left;
-	}
+	.timeline {border-bottom:0;margin-bottom:0;padding:0;height:auto;}
+	.timeline .timelineWrap {margin:0 auto;}
+	.timeline .slideBox {padding:0 7%;margin:30px auto 0;text-align:left;}
 	.timeline .slideBox .slide-text,
-	.timeline .slideBox .slide-img {
-	  display: table;
-	  width: 100%;
-	  padding: 0;
-	  font-size: 16px;
-	}
+	.timeline .slideBox .slide-img {display:table;width:100%;padding:0;font-size:16px;}
 	.timeline .slideBox .slide-text h1,
-	.timeline .slideBox .slide-img h1 {
-	  font-size: 36px;
-	  font-weight: 600;
-	}
+	.timeline .slideBox .slide-img h1 {font-size:36px;font-weight:600;}
 	.timeline .slideBox .slide-text .mob,
-	.timeline .slideBox .slide-img .mob {
-	  display: block;
-	}
+	.timeline .slideBox .slide-img .mob {display:block;}
 	.timeline .slideBox .slide-text .pc,
-	.timeline .slideBox .slide-img .pc {
-	  display: none;
-	}
-	.timeline .owl-dots {
-	  height: 0;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	}
-	.timeline .owl-dots .owl-dot {
-	  display: nonel;
-	}
-	.timeline .owl-theme .owl-controls .owl-nav .owl-prev {
-	  left: 0;
-	}
-	.timeline .owl-theme .owl-controls .owl-nav .owl-next {
-	  right: 0;
-	}
-
+	.timeline .slideBox .slide-img .pc {display:none;}
+	.timeline .owl-dots {height:0;margin:0;padding:0;overflow:hidden;}
+	.timeline .owl-dots .owl-dot {display:nonel;}
+	.timeline .owl-theme .owl-controls .owl-nav .owl-prev {left:0;}
+	.timeline .owl-theme .owl-controls .owl-nav .owl-next {right:0;}
+	
 	.history .content-row article .cont-type1 figcaption{text-align:left;}
 
 	/* 암웨이소개 홈 */
