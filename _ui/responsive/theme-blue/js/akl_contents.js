@@ -18,16 +18,18 @@ $(function(){
 
 /* 브랜드 모바일 SNS 위치 */
 function brandTopSNS(){
-	var $brandHeading = $('.brand .top-title-wrapper');
+	var $brandHeading = $('.top-title-wrapper');
 	if(!$brandHeading.length){return;}
 
 	var $brandSns = $('.brand .bod-view-sns');
+	var $brandHomeSns = $('.sns-container .bod-view-sns');
 	var titHeight = $brandHeading.outerHeight();
 	var windowWidth = $(window).width();
 
 	function titSpaceCal(){
-		//console.log('h1 높이: ' + titHeight);
+		console.log('h1 높이: ' + titHeight);
 		$brandSns.css('top',titHeight);
+		$brandHomeSns.css('top',titHeight);
 	}
 
 	if(windowWidth < 769){
@@ -38,6 +40,7 @@ function brandTopSNS(){
 	else{
 		setTimeout(function(){
 			$brandSns.css('top','0');
+			$brandHomeSns.css('top','0');
 		},300);
 	}
 }
