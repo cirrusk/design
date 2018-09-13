@@ -368,11 +368,12 @@ Editor : HYEWON HWANG
 .content-row.s1 article:first-child {padding-top:10px;}
 .content-row.s1 article:last-child {padding-bottom:0;border-bottom:0;}
 
-.content-row.s2 {display:block;margin-top:0;}
-.content-row.s2 dl{width:50%;float:left;padding:0 15px;box-sizing:border-box;}
-.content-row.s2 dt {margin-top:40px;font-size:16px;font-weight:500;}
-.content-row.s2 dd {margin-top:10px;border:1px solid #dadada;padding:40px 40px 40px;}
-.content-row.s2 + .txt-italic {margin-top:20px;}
+.content-row.s2 {display:block;margin-top:0;display:flex;}
+.content-row.s2 dl{flex-wrap:wrap;width:50%;margin-bottom:40px;padding:0 15px;box-sizing:border-box;}
+.content-row.s2 dl:last-child {margin-bottom:0;}
+.content-row.s2 dt {font-size:16px;font-weight:500;margin-bottom:10px;}
+.content-row.s2 dd {border:1px solid #dadada;padding:40px 40px 40px;}
+.content-row.s2 + .txt-italic {margin-top:-20px;}
 
 .full-component.vsual03 {margin-top:60px;}
 .full-component.vsual03 span {position:absolute;left:50%;top:70%;display:inline-block;background:#002f5f;border-radius:20px;color:#fff;padding:7px 40px;width:270px;-webkit-transform:translateX(-50%);transform:translateX(-50%);}
@@ -418,8 +419,9 @@ Editor : HYEWON HWANG
 .title-component + .content-row,
 .top-title-wrapper + .content-row {margin-top:0;}
 
-.queen_prod_list {overflow:hidden;margin:40px 0;width:100%;}
-.queen_prod_list li {width:33.3%;height:100%;float:left;border-right:1px solid #dadada;box-sizing:border-box;text-align:center;line-height:1.7;}
+.queen_prod_list {overflow:hidden;margin:40px 0;width:100%;display:flex;text-align:center;justify-content:center;}
+.queen_prod_list li {flex-wrap:wrap;width:33.3%;height:100%;border-left:1px solid #dadada;box-sizing:border-box;text-align:center;line-height:1.7;}
+.queen_prod_list li:first-child {border-left:0;}
 .queen_prod_list li > span {display:block;}
 .queen_prod_list li > span img {margin:auto;margin:30px auto;width:200px;}
 .queen_prod_list li p strong {display:block;color:#002f5f;}
@@ -714,13 +716,12 @@ Editor : HYEWON HWANG
 
 	/* 암웨이퀸 */
 	.content-row.s1 article {padding:30px 0 20px;margin-bottom:0}
-	.content-row.s2 dl {float:none;width:auto;padding:0;}
-	.content-row.s2 dt {margin-top:25px;}
+	.content-row.s2 dl {width:100%;padding:0;margin-bottom:25px;}
 	.content-row.s2 dd {padding:20px;}
-	.content-row.s2 + .txt-italic {margin-top:10px;}
+	.content-row.s2 + .txt-italic {margin:-25px 0 30px;}
 	.full-component.vsual03 {margin-top:40px;}
-
-	.queen_prod_list li {width:100%;height:auto;float:none;border-right:0;border-bottom:1px solid #dadada;padding:10px 0 20px;}
+	.queen_prod_list {display:block;}
+	.queen_prod_list li {width:100%;height:auto;border:0;border-bottom:1px solid #dadada;padding:10px 0 20px;}
 	.queen_prod_list li:first-child {padding-top:0;}
 	.queen_prod_list li > span img {width:180px;}
 	.akl .brand .category-success-story .item-content-wrap .banner-title > span {display:none;}
@@ -792,6 +793,9 @@ Editor : HYEWON HWANG
 	.akl .B20207_lp1.layerWrapper .cbox.layerBox {top:0 !important; transform:none !important;}
 	.akl .B20207_lp1.layerWrapper .layer-content-wrapper.RD-Viewer {height:100vh !important;}
 	
+	/* 암웨이홈 */
+	.akl .home .homepage_banner .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/home/main_visual01_mob.jpg');}
+	
 	/* 엣모스피어 */
 	.akl .atmosphere .homepage_banner .owl-dots .owl-dot.active span {background:#1abdbf;}
 }
@@ -843,14 +847,16 @@ Editor : HYEWON HWANG
 	.xsenergy_mainlist .wide3 .txt-wrap h3 {top:45%;left:40px;font-size:36px;line-height:1.1;}
 	.xsenergy_mainlist .hashtag {top:60%;left:40px;font-size:14px;}
 }
-
 @media (max-width: 768px){
 	.xsenergy_mainlist li {width:100% !important;}
 	.xsenergy_mainlist li.wide1 .txt-wrap {font-size:16px;}
 	.xsenergy_mainlist li.wide2 .txt-wrap .hashtag {top:55%;font-size:16px;}
-	.xsenergy_mainlist .link-btn {top:70%;}
 	.xsenergy_mainlist .link-btn .bt-akl-blue {font-size:14px;height:40px;line-height:1;padding-top:12px;}
 	.xsenergy_mainlist .hashtag {top:60%;left:40px;font-size:13px;}
+	.xsenergy_mainlist .txt-wrap {padding:20px 0 0 30px;font-size:15px;}
+}
+@media (max-width: 630px){
+	.xsenergy_mainlist .link-btn {top:63%;}
 }
 
 /* XS 에너지 서브 */
@@ -888,7 +894,7 @@ Editor : HYEWON HWANG
 .sub-cont1 .img-wrap img {display:block;}
 
 .ex-wrap2 {position:absolute;width:100%;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);text-align:center;}
-.ex-wrap2 .tit {font-size:22px;font-weight:500;}
+.ex-wrap2 .tit {font-size:22px;font-weight:500;margin-bottom:20px;}
 .ex-wrap2 .icon-wrap {width:90%;margin:0 auto;}
 .ex-wrap2 .icon-wrap span {position:relative;display:inline-block;vertical-align:top;margin:20px 0 0;padding-top:95px;width:16%;font-size:15px;line-height:1.4;}
 .ex-wrap2 .icon-wrap span:before {width:80px;height:80px;left:50%;margin-left:-40px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/xs_icon01.png') no-repeat 0 -360px;}
@@ -938,10 +944,10 @@ Editor : HYEWON HWANG
 .drink .ex-wrap span:nth-child(5):before {background-position-x:-810px;}
 
 .drink .ex-wrap2 .icon-wrap span:nth-child(1):before {background-position-x:0;}
-.drink .ex-wrap2 .icon-wrap span:nth-child(1):before {background-position-x:-90px;}
-.drink .ex-wrap2 .icon-wrap span:nth-child(2):before {background-position-x:-180px;}
-.drink .ex-wrap2 .icon-wrap span:nth-child(3):before {background-position-x:-270px;}
-.drink .ex-wrap2 .icon-wrap span:nth-child(4):before {background-position-x:-360px;}
+.drink .ex-wrap2 .icon-wrap span:nth-child(2):before {background-position-x:-90px;}
+.drink .ex-wrap2 .icon-wrap span:nth-child(3):before {background-position-x:-180px;}
+.drink .ex-wrap2 .icon-wrap span:nth-child(4):before {background-position-x:-270px;}
+.drink .ex-wrap2 .icon-wrap span:nth-child(5):before {background-position-x:-360px;}
 
 /* drink1 */
 .drink1 .txt-wrap h3, .drink1 .ex-wrap2 .tit span {color:#c3d200;}
@@ -1011,7 +1017,17 @@ Editor : HYEWON HWANG
 .gum .sub-cont2 .txt-wrap ul li:last-child {margin-bottom:0;}
 .gum .sub-cont2 .txt-wrap ul li span {color:#a6f82a;}
 
-
+@media (max-width: 900px){
+	/* XS 에너지 서브 */
+	.ex-wrap2 .tit {margin:0;}
+	.ex-wrap2 .icon-wrap {width:100%;}
+	.ex-wrap2 .icon-wrap span {width:22%;font-size:14px;}
+	.drink .ex-wrap2 .icon-wrap span {width:19%;font-size:14px;}
+	
+	/* 아티스트리 */
+	.category-success-story .item-content-wrap .banner-title {font-size:28px;margin-bottom:10px;}
+	.akl .category-success-story .item-content-wrap .sub-title-wrap {height:auto;}
+}
 @media (max-width: 768px){
 	/* XS 에너지 서브 */
 	.xs_subpage {margin:0 -15px;}
