@@ -68,7 +68,7 @@ iframe {border:0;}
 .visual-area.styling.min{min-height:800px;}
 .visual-area.scalp-care01{min-height:1062px;background:url(../images/akl_product/bath-body/bg_scalp_care01.png) no-repeat center center;}
 .visual-area.scalp-care02{min-height:1108px;background:url(../images/akl_product/bath-body/bg_scalp_care02.png) no-repeat bottom center;}
-.visual-area.hair-color{min-height:963px;background:url(../images/akl_product/bath-body/bg_hair_color.png) no-repeat bottom center;}
+.visual-area.hair-color{/*min-height:963px;*/background:url(../images/akl_product/bath-body/bg_hair_color.png) no-repeat bottom center;padding-bottom:80px;}
 
 .visual-area.others{padding-bottom:90px;background:#f4f4f4;}
 .visual-area.queen{min-height:807px;background:url(../images/akl_product/home-living/bg_queen_01.png) no-repeat bottom center;}
@@ -685,7 +685,7 @@ div.feat-txt p span.next-sort {display:block;}
 .line-gray-top{display: block;padding-top:50px;border-top: 1px solid #e3e3e3;clear: both;}
 
 /* 마진, 패딩*/
-.mt20{margin-top:17px;padding:0 0 0;}
+.mt20{margin-top:17px !important;padding:0 0 0 !important;}
 .advantage-area.mt30, .hua-system.mt30, .product-rank.mt30, .mt30{margin-top:27px !important;padding:0 0 0;}
 .mt40, .advantage-area.mt40{margin-top:38px !important;padding:0 0 0;}
 .mt50, .advantage-area.mt50{margin-top:48px !important;padding:0 0 0;}
@@ -1738,6 +1738,9 @@ dl.amo-txt dd br {line-height:18px}
 
 .bath-body .system-lst3 ul li .lst-won span{font-weight:400;}
 
+/* 헤어 썸네일 내부 list */
+.special-list p + .txt-s.mt20{margin:11px 0 0 !important;}
+
 /* 홈앤리빙 */
 .assistant-pr .effet-area{padding: 50px 93px;}
 .assistant-pr .effet-area .advan-right{padding-right: 0;}
@@ -2061,7 +2064,7 @@ dl.mark-area dd span.dark-OliveGreen {color:#5b7927;}
 .special-list .special-txt{display:table-cell;padding-right:30px;vertical-align:middle;}
 .advan-left .special-list .special-txt{padding-right:0;}
 .special-list dt,
-.special-list p{font-size:16px;color:#56565a;font-weight:400;}
+.special-list p{font-size:16px;color:#56565a;font-weight:400;margin-bottom: 0;}
 .special-list dd{margin-top:2px;font-size:16px;color:#808285;font-weight:300;line-height:1.6;}
 .special-list .special-txt span,
 .special-list .special-txt .list-star li{display:block;font-size:14px;color:#808285;font-weight:300;line-height:1.6;}
