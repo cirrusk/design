@@ -58,10 +58,10 @@ Editor : HYEWON HWANG
 .brand .bod-view-sns > div, .sns-container .bod-view-sns > div {float:left;margin-left:10px;}
 
 /* 브랜드 타이틀 */
-.top-title-wrapper {margin:0 auto 40px;width:1400px;padding:0 12px;}
+.top-title-wrapper {margin:0 auto 40px;width:100%;max-width:1400px;padding:0 12px;}
 .top-title-wrapper h1 {margin:0;}
-.brand .brand-contents .top-title-wrapper {width:1376px;padding:0;}
-.brand .brand-contents .top-title-wrapper > p {margin:10px 0 0;}
+.top-title-wrapper > p {margin:10px 0 0;}
+.brand .brand-contents .top-title-wrapper {width:100%;max-width:1376px;padding:0;}
 .brand .brand-contents {position:relative;}
 .brand .brand-contents h2{text-align:left;text-transform:none;letter-spacing:-1px;margin-bottom:20px;}
 .brand .brand-contents h2:not(:first-child) {margin-top:40px;}
@@ -77,7 +77,7 @@ Editor : HYEWON HWANG
 .brand-contents .col-search-tab {margin-top:40px;}
 .brand-contents .col-search-tab ul li:nth-of-type(8) a {border-right:none;}
 /*.brand-contents .col-search-tab li:last-child a {border-right:1px solid #dadada;} 마크업에서 수정하면서 삭제 */
-.brand-contents .col-search-tab.s1 ul li {flex:1;}
+.brand-contents .col-search-tab.s1 ul li {width:11.111111%;}
 .brand-contents .col-search-tab ul li a {text-align:center;}
 
 .akl .brand .category-success-story .item-content-wrap {max-width:80%; height:auto; max-height:191px; padding-top:22px; padding-bottom:22px;}
@@ -172,7 +172,6 @@ Editor : HYEWON HWANG
 .brand [class*="box-bnr-fw0"] .txt-wrap p em {display:block;font-size:18px; color:#fff;font-weight:500;font-style:normal;}
 .history .content-row article .cont-type1 figcaption {padding:20px 20px;text-align:center;}
 .history p.bdbtm {border-bottom:1px solid #e3e3e3;padding-bottom:20px;font-size:16px;margin:-10px 0 0;}
-
 .history-area {display:block;margin-top:30px;}
 .history-area article {
     display: inline-block;
@@ -348,14 +347,14 @@ Editor : HYEWON HWANG
 .espring .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/movie_bg.jpg');}
 .artistry .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/movie_bg.jpg');}
 
-.content-row {position:relative;clear:both;overflow:hidden;display:flex;flex-wrap:wrap;margin:60px 0 0;}
+.content-row {position:relative;clear:both;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;margin:60px 0 0;}
 .content-row article {position:relative;width:50%;padding:0 12px 30px;box-sizing:border-box;}
 .content-row[class*='col'] {margin-left:-12px;margin-right:-12px;}
 .content-row.col3 article {width:33.3%;}
 .content-row.col4 article {width:25%;}
 .content-row article img {width:100%;}
 .content-row article [class*="cont-type"] {position:relative;margin:0;height:100%;background:#f4f4f4;}
-.content-row article [class*="cont-type"] figcaption{padding:15px 20px 5px;font-size:16px;font-weight:500;color:#002f5f;}
+.content-row article [class*="cont-type"] figcaption{padding:15px 20px 5px;min-height:60px;font-size:16px;font-weight:500;color:#002f5f;}
 .content-row article [class*="cont-type"] figcaption:only-child {padding-bottom:20px;}
 .content-row article [class*="cont-type"] figcaption > span {display:block;padding:3px 0 13px;font-weight:400;}
 .content-row article [class*="cont-type"] figcaption + p {margin:0;padding:0 20px 50px;line-height:1.6;}
@@ -435,8 +434,8 @@ Editor : HYEWON HWANG
 .akl .nutrilite .homepage_banner .banner__title:before,
 .akl .nutrilite .homepage_banner .owl-dots .owl-dot.active:before {background-color:#20893d;}
 .akl .nutrilite .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
-.akl .nutrilite .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
-.akl .nutrilite .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
+.akl .nutrilite .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual02.jpg');}
+.akl .nutrilite .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual03.jpg');}
 
 .nutrilite .txtbox.s1 {background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.jpg') no-repeat 90% 0;}
 .nutrilite .txtbox.s2 {margin:-20px 0;}
@@ -765,9 +764,14 @@ Editor : HYEWON HWANG
 
 	/* 뉴트리라이트 */
 	.akl .nutrilite .homepage_banner .owl-dots .owl-dot.active span {background:#20893d;}
-	.nutrilite .txtbox.s1 {background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1_mob.png') no-repeat 100% 0;background-size:294px auto;}
+	.akl .nutrilite .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01_mob.jpg');}
+	.akl .nutrilite .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual02_mob.jpg');}
+	.akl .nutrilite .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual03_mob.jpg');}
+	
+	.nutrilite .txtbox.s1 {height:350px;background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1_mob.png') no-repeat 100% 0;background-size:auto 375px;}
+	.nutrilite .txtbox.s2 img {width:100%;max-width:450px;margin:0 auto;padding:0 20px;}
+
 	.nutrilite .txtbox.s2 {margin:0 auto;}
-	.nutrilite .txtbox.s2 img {max-width:305px;width:100%;}
 
 	.brand .history-list > li {padding-left:0;}
 	.brand .history-list > li strong {position:relative;}
@@ -1256,4 +1260,5 @@ Editor : HYEWON HWANG
 	.amway-theme .intro .bt-akl-blue {height:40px;padding:7px 30px 8px}
 	.akl .amway-theme .intro .bt-akl-blue {background:#002f5f;color:#fff;}
 	.akl .intro .category-success-story .item-content-wrap .banner-title {margin-bottom:30px;}
+	.intro .masthead.visual .banner_wrapper .text {display:block;}
 }
