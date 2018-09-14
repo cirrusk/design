@@ -441,7 +441,7 @@ Editor : HYEWON HWANG
 
 .nutrilite .txtbox.s1 {background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.jpg') no-repeat 90% 0;}
 .nutrilite .txtbox.s2 {margin:-20px 0;}
-.nutrilite .txtbox.s2 img {width:auto;margin:0 auto;}
+.nutrilite .txtbox.s2 img {width:100%;max-width:899px;margin:0 auto;}
 
 /* 3.배스/바디 */
 .akl .bathbody .homepage_banner .banner__wrapper .banner__message,
@@ -504,7 +504,7 @@ Editor : HYEWON HWANG
 .akl .artistry .homepage_banner .banner__title:before,
 .akl .artistry .homepage_banner .owl-dots .owl-dot.active:before {background-color:#e1b738;}
 .akl .artistry .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual01.jpg');}
-.akl .artistry .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual01.jpg');}
+.akl .artistry .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual02.jpg');}
 .artistry .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg1.jpg');}
 .artistry .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg2.jpg');}
 .artistry .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg3.jpg');}
@@ -533,7 +533,9 @@ Editor : HYEWON HWANG
 .espring .txtbox p{margin-top:0;font-size:16px;}
 
 /* 6.원포원 */
-.akl .oneforone .homepage_banner .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/main_visual01.jpg');}
+.akl .oneforone .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/main_visual01.jpg');}
+.akl .oneforone .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/main_visual02.jpg');}
+.akl .oneforone .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/main_visual03.jpg');}
 .oneforone .txtbox.s1 {height:400px;background:#f4f4f4;}
 .oneforone .txtbox.s1 img {width:100%;max-width:1078px;margin:auto;}
 
@@ -638,12 +640,6 @@ Editor : HYEWON HWANG
 
 .artistry.sub2 .akl-toggle-wrap {margin-top:40px;}
 .artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] {position:relative;margin:0;padding:40px 40px;background:#f6f6f6;}
-/*.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl{margin-top:10px;}
-.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl dt {font-size:18px;}
-.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl dd{margin-top:10px;font-size:14px;line-height:22px;}
-[class*="img-text-row-box-type"] dl dd p:last-child{margin:0;}*/
-.artistry [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:0;}
-
 .artistry.sub4 .prod-list > div:not(:first-child) {margin-top:40px;}
 
 /*아티스트리 스튜디오*/
@@ -717,6 +713,8 @@ Editor : HYEWON HWANG
 	.akl .brand .homepage_banner .banner__wrapper .banner__message {width:50%;right:5%;}
 	.akl .brand .homepage_banner .banner__message--main {width:150%;margin-left:-70px;font-size:25px;line-height:1.4;text-align:left;}
 	.akl .brand .homepage_banner .banner__message--sub {display:block;padding:30px;font-size:14px;}
+	
+	.akl .brand .txtbox {background-size:auto 100%;background-position:50% 0;}
 
 	.brand .video-preview {padding:0;height:auto;background:none;}
 	.brand .video-preview .mob {width:100%;}
@@ -845,6 +843,17 @@ Editor : HYEWON HWANG
 
 	/* 아티스트리 */
 	.akl .artistry .homepage_banner .owl-dots .owl-dot.active span {background:#e1b738;}
+	.akl .artistry .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual01_mob.jpg');}
+	.akl .artistry .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual02_mob.jpg');}
+	.artistry .txtbox {height:375px;}
+	.artistry .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg1_mob.jpg');}
+	.artistry .txtbox.s2 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg2_mob.jpg');}
+	.artistry .txtbox.s3 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg3_mob.jpg');}
+	.artistry .txtbox.s4 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg4_mob.jpg');}
+	.artistry .txtbox.s5 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg5_mob.jpg');}
+	.artistry .txtbox.s6 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg_mob6.jpg');}
+	.artistry .txtbox.s1 div, .artistry .txtbox.s2 div, .artistry .txtbox.s3 div {top:50px;max-width:90%;}
+
 	.artistry .txtbox.s1 p,.artistry .txtbox.s2 p,.artistry .txtbox.s3 p {display:block;font-size:16px;margin-top:0;}
 	.artistry.sub1 .content-row.type1 .txtbox .logo {left:auto;}
 	.artistry.sub2 .akl-toggle-wrap .panel-heading +.panel-collapse>.panel-body {padding:0;}
@@ -1209,6 +1218,7 @@ Editor : HYEWON HWANG
 	.brand .about .img-text-row-box-wrap .list-style-info span {margin-top:0;}
 	.brand-cont1 {margin:0 -15px 40px; padding:25px 15px;font-size:14px;}
 	.brand .value [class*="box-bnr"] .txt-wrap p {display:block;}
+	.brand .value .panel-heading+.panel-collapse>.panel-body {padding:0 30px 30px;}
 	.brand .value .akl-toggle-wrap .panel-body .title-h6 {font-size:14px !important;line-height:1.3;}
 	.brand .value [class*="img-text-row-box-type"] div {width:100% !important;}
 	.brand .value [class*="img-text-row-box-type"] div + div {margin-top:15px;}
