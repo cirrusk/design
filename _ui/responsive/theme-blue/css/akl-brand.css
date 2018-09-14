@@ -66,7 +66,7 @@ Editor : HYEWON HWANG
 .brand .brand-contents h2{text-align:left;text-transform:none;letter-spacing:-1px;margin-bottom:20px;}
 .brand .brand-contents h2:not(:first-child) {margin-top:40px;}
 .brand .brand-contents h3 {margin-bottom:10px;}
-
+.full-component + .content-row {margin-top:40px;}
 
 /* ### 암웨이소개 ### */
 .brand-contents .accordion-custom .pull-right {position:absolute;display:inline-block;top:50%;right:0;margin-top:-6px;}
@@ -139,12 +139,13 @@ Editor : HYEWON HWANG
 .brand .about .plp-item-label.bg-gray {background:#56565a;}
 .brand .about .plp-item-label.bg-gray:after {border-color:#56565a transparent transparent #56565a;}
 
+/* 가치 */
 .brand .value .akl-toggle-wrap {margin-top:40px;}
-.brand .value [class*="img-text-row-box-type"],
-.brand .value [class*="img-text-row-box-type"] dl {margin:0;}
-.brand .value [class*="img-text-row-box-type"] div {width:40%;}
-.brand .value [class*="img-text-row-box-type"] div:first-child {width:60%;}
-.brand .value [class*="img-text-row-box-type"] dl dt {font-size:18px;}
+.brand .akl-toggle-wrap [class*="img-text-row-box-type"],
+.brand .akl-toggle-wrap [class*="img-text-row-box-type"] dl {margin:0;}
+.brand .akl-toggle-wrap [class*="img-text-row-box-type"] div {width:40%;}
+.brand .akl-toggle-wrap [class*="img-text-row-box-type"] div:first-child {width:60%;}
+.brand .akl-toggle-wrap [class*="img-text-row-box-type"] dl dt {font-size:18px;}
 
 .brand .ceo .sign {width:100%;margin:50px 0 0;text-align:right;}
 .brand .ceo .sign strong{display:block;font-size:18px;font-weight:500;}
@@ -164,7 +165,8 @@ Editor : HYEWON HWANG
 .brand .ceo section h2{margin-top:40px;}
 
 /* 연혁 */
-.brand [class*="box-bnr-fw0"] {height:400px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/about/historyimg_01.jpg');background-repeat:no-repeat;background-position:50% 0;background-size:auto 108%;}
+.brand [class*="box-bnr-fw0"] {background-repeat:no-repeat;background-position:50% 0;background-size:auto 108%;}
+.brand .history .box-bnr-fw01 {height:400px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/about/historyimg_01.jpg');background-repeat:no-repeat;background-position:50% 0;background-size:auto 108%;}
 .brand .history2 .box-bnr-fw01 {height:400px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/about/historyimg_02.jpg');background-repeat:no-repeat;background-position:50% 0;background-size:auto 108%;}
 .brand [class*="box-bnr-fw0"] .txt-wrap strong,
 .brand [class*="box-bnr-fw0"] .txt-wrap p {color:#fff !important;}
@@ -448,9 +450,10 @@ Editor : HYEWON HWANG
 .akl .bathbody .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual01.jpg');}
 .akl .bathbody .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual02.jpg');}
 .akl .bathbody .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual03.jpg');}
-.bathbody .txtbox.s1 {height:454px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg1.jpg');background-position:50% 0;}
-.bathbody .txtbox.s2 {height:490px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg2.jpg');background-position:50% 0;}
-.bathbody .txtbox.s3 {height:464px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg3.jpg');background-position:50% 0;}
+.bathbody .content-row +.content-row {margin-top:0;}
+.bathbody .txtbox.s1 {height:495px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg1.jpg');background-position:50% 0;}
+.bathbody .txtbox.s2 {height:495px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg2.jpg');background-position:50% 0;}
+.bathbody .txtbox.s3 {height:510px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg3.jpg');background-position:50% 0;}
 .bathbody .txtbox div.s2 {left:60%;max-width:40%;}
 .bathbody .txtbox div p {font-size:16px;}
 
@@ -635,13 +638,11 @@ Editor : HYEWON HWANG
 
 .artistry.sub2 .akl-toggle-wrap {margin-top:40px;}
 .artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] {position:relative;margin:0;padding:40px 40px;background:#f6f6f6;}
-.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] div:first-child {width:45%;}
-.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] div:last-child {width:55%;}
-.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl{margin-top:10px;}
+/*.artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl{margin-top:10px;}
 .artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl dt {font-size:18px;}
 .artistry.sub2 .akl-toggle-wrap [class*="img-text-row-box-type"] dl dd{margin-top:10px;font-size:14px;line-height:22px;}
+[class*="img-text-row-box-type"] dl dd p:last-child{margin:0;}*/
 .artistry [class*="img-text-row-box-type"]:nth-of-type(1) {margin-top:0;}
-[class*="img-text-row-box-type"] dl dd p:last-child{margin:0;}
 
 .artistry.sub4 .prod-list > div:not(:first-child) {margin-top:40px;}
 
