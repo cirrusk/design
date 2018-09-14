@@ -147,6 +147,12 @@ iframe {border:0;}
 .visual-area.type02.normal-tooth3{background: #5c85c4  url(../images/akl_product/bath-body/bg_glister_03.png) no-repeat top center;} /* 3355 치실 */
 .visual-area.type02.normal-tooth[class*='long'], .visual-area.type02.normal-tooth2[class*='long'], .visual-area.type02.normal-tooth3[class*='long']{padding-bottom: 80px;}
 
+
+.visual-area.styling[class*='short']{}
+.visual-area.styling-oil{background:url(../images/akl_product/bath-body/bg_styling_oil.png) no-repeat center center;padding-bottom:80px;}
+.visual-area.styling-mousse{background:url(../images/akl_product/bath-body/bg_styling_mousse.png) no-repeat center center;padding-bottom:66px;}
+
+
 .visual-area.type02.nurish-bodywash{background: #ffffff url(../images/akl_product/bath-body/bg_nurish_bodywash.png) no-repeat top center;height:1008px;} /* 너리쉬 바디워시*/
 .visual-area.type02.nurish-bodywash2{background: #ffffff url(../images/akl_product/bath-body/bg_nurish_bodywash.png) no-repeat top center;height:1008px;} /* 너리쉬 바디워시 배경 짧은타입*/
 .visual-area.type02.verganic{background: #ffffff url(../images/akl_product/bath-body/bg_verganic_bodywash.png) no-repeat top center;height:932px;} /* 베르가닉 오가닉 */
@@ -1956,7 +1962,7 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 .bep-lst{margin-top:40px;}
 .bep-lst ul {display:table;width:100%;box-sizing: border-box;table-layout:fixed;}
 .bep-lst li {/*display:inline-block;*/float: left;width:25%;text-align:center;vertical-align:top;}
-.bep-lst li .beoprod-box {width:80%;margin:0 auto;text-align:center;}
+.bep-lst li .beoprod-box {width:100%;margin:0 auto;text-align:center;}
 .bep-lst li .beoprod-box span {width:100%;text-align:center;}
 .bep-lst li .beoprod-box span img {vertical-align:bottom;}
 .bep-lst li .beoprod-box p {font-size:16px;font-weight:400;padding:35px 30px 0;word-break: keep-all;word-wrap: break-word;}
@@ -3199,6 +3205,10 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.oral-round-lst li .txt-wrap dt{font-size:16px;}
 	.oral-round-lst li .txt-wrap dd{font-size:13px;}
 	
+	/* 배스 바디 헤어케어 */
+	.bath-body .fig-b {min-height:106px;}
+	.bath-body .deaf03.bep-lst li:first-child .fig-b{}
+	
 	/* 홈리빙 */
 	.border-bx{padding: 25px 47px;}
 	
@@ -3646,7 +3656,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.explic-lst dd {clear:both;display:block;}
 	.explic-lst dd p {font-size:14px;}
 
-	.bep-lst li {width:50%;}
+	.bep-lst li {width:25%;}
 	.bep-lst li .beoprod-box p {padding:13px 5px 0}
 	.fig-b span img {height:inherit;}
 	
@@ -4155,7 +4165,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.enerjuvetm-complex li span:before{top:-27px;left:50%;margin-left:-5px;transform: -webkit-rotate(90deg);transform: -moz-rotate(90deg);transform: -ms-rotate(90deg);transform: rotate(90deg);}
 	.enerjuvetm-complex .clx-txt{padding:0 30px;}
 	
-	.deaf03.bep-lst li{width:50%;}
+	.deaf03.bep-lst li{width:50%;margin-bottom: 44px;}
 	
 	
 	/* 홈리빙 */
@@ -4322,6 +4332,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
    /* 스무싱 파운데이션 */
    .color-tip-lst li{float:inherit;}
 	
+	/* 배스바디 헤어케어 */
+	.bep-lst li, .deaf02.bep-lst li, .deaf03.bep-lst li, .deaf04.bep-lst li{width:100%;}
+	
 }
 
 
@@ -4345,6 +4358,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.polymer.vita .two{top:45%;font-size:12px;line-height:1.2;letter-spacing:-1.3px;}
 	
 	.v-pro span img{width:inherit;}
+	.visual-area .v-logo img{height:18px;}
 	
 	/* 리스토어 울트라좀 4523 */
 	.ade-photo .reposom-wrap em.one{top: 24px;left: 70%;}
@@ -4418,6 +4432,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.oral-round-lst li .img-wrap img{width:100%;height:100%;}
 	.oral-round-lst li .txt-wrap dt{font-size:20px;margin-bottom:5px;}
 	.oral-round-lst li .txt-wrap dd{font-size:14px;}
+	
 	
 	/* 에너지 칩스 */
 	.pro-candy.chip .com-tit span{font-size: 16px;}
