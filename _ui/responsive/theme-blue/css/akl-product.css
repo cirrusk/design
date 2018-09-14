@@ -84,7 +84,6 @@ iframe {border:0;}
 .visual-area.type02.intensive-skin{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_skincare.png) no-repeat top center;height:1144px;}   /*01 인텐시브 스킨케어 4532 4657*/
 .visual-area.type02.intensive-restore{background: #f8f8f8 url(../images/akl_product/beauty/bg_intensive_night_restore.png) no-repeat top center;height:1098px;} /*01 인텐시브 리스토어 프로그램 4523*/
 
-
 .visual-area.type02.youth-xtend.middle{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_01.png) no-repeat top left;height:1136px;}   /* 02 유스익스텐드-1 */
 .visual-area.type02.youth-xtend.long{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_02.png) no-repeat top center;height:1186px;}   /* 02 유스익스텐드-2 */
 .visual-area.type02.youth-xtend.short{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_03.png) no-repeat top center;height:1116px;}   /* 02 유스익스텐드-3 , 리프로그래밍 마스크 */ 
@@ -95,7 +94,6 @@ iframe {border:0;}
 .visual-area.type02.youth-xtend.cream{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend.png) no-repeat top center;height:900px;}   /* 02 Youth_Xtend*/
 .visual-area.type02.youth-xtend-set{background: #f3e8e6 url(../images/akl_product/beauty/bg_youth_xtend_set.png) no-repeat top center;height:797px;}  /* 02 Youth_Xtend set*/
 .visual-area.type02.ultra-lifting{background: #f8f8f8 url(../images/akl_product/beauty/bg_youth_xtend_ultra_lifting.png) no-repeat top center;height:1100px;} /*03 Youth Xtend lifting */
-
 
 .visual-area.type02.ideal.long{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience_long.png) no-repeat top center;height:1137px;} /* 4. 아이디얼  9621 */
 .visual-area.type02.ideal.middle{background: #d3e1f8 url(../images/akl_product/beauty/bg_ideal_radience_middle.png) no-repeat top center;height:1049px;} /* 4. 아이디얼 일루미네이팅, 7555, 9618, 9619, 9622*/
@@ -144,9 +142,11 @@ iframe {border:0;}
 .visual-area.cleansing-device-02{min-height:904px;background:url(../images/akl_product/beauty/bg_cleansing_device_02.png) no-repeat center bottom;}
 
 /* 배스바디 */
-.visual-area.type02.normal-tooth{background: #ffffff url(../images/akl_product/bath-body/bg_glister.png) no-repeat top center;height:932px;} /* 바디워시 */
-.visual-area.type02.normal-tooth2{background: #ffffff url(../images/akl_product/bath-body/bg_glister_02.png) no-repeat top center;height:1021px;} /* 바디워시 */
-.visual-area.type02.normal-tooth3{background: #5c85c4  url(../images/akl_product/bath-body/bg_glister_03.png) no-repeat top center;min-height:795px;padding-bottom: 80px;} /* 3355 치실 */
+.visual-area.type02.normal-tooth{background: #5c85c4 url(../images/akl_product/bath-body/bg_glister.png) no-repeat top center;min-height:932px;} /* 바디워시 */
+.visual-area.type02.normal-tooth2{background: #5c85c4 url(../images/akl_product/bath-body/bg_glister_02.png) no-repeat top center;} /* 바디워시 */
+.visual-area.type02.normal-tooth3{background: #5c85c4  url(../images/akl_product/bath-body/bg_glister_03.png) no-repeat top center;} /* 3355 치실 */
+.visual-area.type02.normal-tooth[class*='long'], .visual-area.type02.normal-tooth2[class*='long'], .visual-area.type02.normal-tooth3[class*='long']{padding-bottom: 80px;}
+
 .visual-area.type02.nurish-bodywash{background: #ffffff url(../images/akl_product/bath-body/bg_nurish_bodywash.png) no-repeat top center;height:1008px;} /* 너리쉬 바디워시*/
 .visual-area.type02.nurish-bodywash2{background: #ffffff url(../images/akl_product/bath-body/bg_nurish_bodywash.png) no-repeat top center;height:1008px;} /* 너리쉬 바디워시 배경 짧은타입*/
 .visual-area.type02.verganic{background: #ffffff url(../images/akl_product/bath-body/bg_verganic_bodywash.png) no-repeat top center;height:932px;} /* 베르가닉 오가닉 */
@@ -159,6 +159,7 @@ iframe {border:0;}
 .visual-area.type04.bath-gift-s05{background: #ffffff url(../images/akl_product/bath-body/bg_gift_set_s_05.png) no-repeat top center;height:834px;} /* 기프트세트 mini */
 .visual-area.type04.bath-gift-s06{background: #ffffff url(../images/akl_product/bath-body/bg_gift_set_s_06.png) no-repeat top center;height:835px;} /* 기프트세트 mini */
 .visual-area.type04.bath-gift-ss{background: #ffffff url(../images/akl_product/bath-body/bg_gift_set_ss.png) no-repeat top center;height:775px;} /* 기프트세트 mini */
+
 .visual-area.type04[class*='bath-gift-s'] {min-height:auto}
 .visual-area.type04[class*='bath-gift-s'] .v-pro{margin-top:60px}
 .visual-area.type02.dayblock{background: #ffffff url(../images/akl_product/bath-body/bg_dayblock_sun.png) no-repeat top center;height:976px;} /* 데이블럭 썬케어  */
@@ -235,7 +236,7 @@ iframe {border:0;}
 .txt-info-visual .v-tit strong{font-size: 60px;font-weight:400;line-height: 1;}
 .txt-info-visual .v-tit span {display:inline-block;font-weight:500;font-size:60px;line-height: 1.2;}
 .txt-info-visual .v-txt {font-size:18px;line-height:28px;font-weight:300;margin:28px 0 0;letter-spacing:-0.08em;word-break: keep-all;word-wrap: break-word;}
-.txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 16px;font-weight: 300;line-height: 1.6;letter-spacing: -1px;}
+.txt-info-visual .v-etc{margin: 20px 10% 0;font-size: 16px;font-weight: 300;line-height: 1.6;letter-spacing: -1px;color:#808285;}
 .txt-info-visual .v-etc li{display:inline-block;padding:0 10px;}
 .v-pro {margin-top:68px;width:100%;text-align:center;}
 .v-pro span {display:block;text-align:center;margin:0 auto;width:100%;}
@@ -1719,9 +1720,9 @@ dl.amo-txt dd br {line-height:18px}
 .verganic-cont .advanBody-area.bb-none{padding:0 0;}
 .verganic-cont h5{font-weight:400 !important;}
 
-.oral-round-lst{display:block;padding: 0 8.5% 45px;overflow: hidden;border-bottom: 1px solid #e3e3e3;}
-.oral-round-lst li{float:left;width:33.3%;}
-.oral-round-lst li .round-area{display: block;text-align: center;margin: 0 20px;}
+.oral-round-lst{display:block;padding: 0 0 45px;overflow: hidden;border-bottom: 1px solid #e3e3e3;}
+.oral-round-lst li{float:left;width:33.3%;letter-spacing: -2px;}
+.oral-round-lst li .round-area{display: block;text-align: center;margin: 0 75px;}
 .oral-round-lst li .img-wrap{display: inline-block;overflow: hidden;text-align: center;margin-bottom:18px;}
 .oral-round-lst li .img-wrap:after{display:block;clear:both;content:"";}
 .oral-round-lst li .img-wrap img{width:auto;height:auto;display:inline-block;text-align:center;}
@@ -1958,7 +1959,7 @@ ol.lst-dec li {list-style-type: decimal;font-size:16px;font-weight:300;color:#80
 .bep-lst li .beoprod-box {width:80%;margin:0 auto;text-align:center;}
 .bep-lst li .beoprod-box span {width:100%;text-align:center;}
 .bep-lst li .beoprod-box span img {vertical-align:bottom;}
-.bep-lst li .beoprod-box p {font-size:16px;font-weight:400;padding:33px 30px 0;word-break: keep-all;word-wrap: break-word;}
+.bep-lst li .beoprod-box p {font-size:16px;font-weight:400;padding:35px 30px 0;word-break: keep-all;word-wrap: break-word;}
 
 .fig-b {display:block;position:relative;min-height:140px;}
 .fig-b span {position:absolute;bottom:0;left:0;right:0;}
