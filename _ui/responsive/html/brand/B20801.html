@@ -123,13 +123,38 @@
 			</div>
 		</div>
 		<!-- //sns 영역 -->
-		<div class="top-title-wrapper">
-			<h1 class="title-h2">ONE FOR ONE 홈</h1>
+		<div class="top-title-wrapper main">
+			<h1 class="title-h2">ONE FOR ONE</h1>
+			<p>당신을 위한, 사회를 위한 배려</p>
 		</div>
 		<div class="brand oneforone" id="contents">
-			<!-- ## 메인 비주얼 영역 -->
 			<div class="homepage_banner">
-				<div id="banner_list">
+				<!-- ## 메인 비주얼 영역 -->
+				<div id="banner_list" class="owl-carousel owl-theme">
+					<div class="wrapper">
+						<div class="banner__wrapper">
+							<div class="banner__title">ONE for ONE</div>
+							<div class="banner__message">
+								<p class="banner__message--main">당신을 위한, 사회를 위한 배려 <br>원포원 프로젝트</p>
+								<div class="banner__message--sub">
+									<p>원포원 프로젝트는 한결같은 마음으로 국내외 크고 작은 기업과 함께 상생을 넘어 사회적 관심과 배려가 필요한 모든 이의 행복한 생활을
+									염원하는 한국암웨이의 노력입니다.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="banner__wrapper">
+							<div class="banner__title">ONE for ONE</div>
+							<div class="banner__message">
+								<p class="banner__message--main">당신을 위한, 사회를 위한 배려 <br>원포원 프로젝트</p>
+								<div class="banner__message--sub">
+									<p>원포원 프로젝트는 한결같은 마음으로 국내외 크고 작은 기업과 함께 상생을 넘어 사회적 관심과 배려가 필요한 모든 이의 행복한 생활을
+									염원하는 한국암웨이의 노력입니다.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="wrapper">
 						<div class="banner__wrapper">
 							<div class="banner__title">ONE for ONE</div>
@@ -148,17 +173,6 @@
 			
 			<!-- ## 컨텐츠 영역 -->
 			<div class="main-container amway-theme">
-				<div class="title-component">
-					<h2>원포원이란?</h2>
-				</div>
-				
-				<div class="content-row">
-					<div class="txtbox s1">
-						<img class="pc" src="/_ui/responsive/theme-blue/images/akl_brand/oneforone/fullimg1.jpg" alt="" >
-						<img class="mob" src="/_ui/responsive/theme-blue/images/akl_brand/oneforone/fullimg1_mob.png" alt="" >
-					</div>
-				</div>
-				
 				<div class="content-row col3">
 					<article>
 						<figure class="cont-type1">
@@ -241,6 +255,22 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
+	
+	<script type="text/javascript">$(function() {
+		$('#banner_list').owlCarousel({
+			loop: false,
+			nav: false,
+			dots: true,
+			margin: 0,
+			items: 1
+		});
+		
+		var bannerId = $('#banner_list');
+		var $dotItembar = bannerId.find('.owl-dots');
+		var $dotItems = bannerId.find('.owl-dots > button');
+		
+	})
+	</script>
 
 </body>
 </html>

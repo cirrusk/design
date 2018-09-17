@@ -16,7 +16,7 @@
 .ico-fa-repeat-alt:before{content:'\e996';}
 
 /* SOP 기간조회 icon */
-[class*=ico-sop] {position:relative; overflow:hidden; display:inline-block; padding-left:20px; height:20px; line-height:normal;}
+[class*=ico-sop] {position:relative; overflow:hidden; display:block; float:left; padding-left:20px; height:20px; line-height:normal; }/*사파리 오류로 수정*/
 [class*=ico-sop]:before {content:''; position:absolute; top:0; left:0; display:block; width:20px; height:20px; font-weight:500; background:url(../images/icons/icon_sop_01.png) no-repeat; background-size:20px auto;}
 [class*=ico-sop]>em {display:block;overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px;}
 
@@ -399,7 +399,7 @@
 .akl .list-content.tbl-prdt {border-width:0; margin-top:20px;}
 .list-content.tbl-prdt {display:table; width:100%; table-layout:fixed;}
 .list-content.tbl-prdt .list-row-content.row {display:table-row; padding:0;}
-.list-content.tbl-prdt .list-row-content.row>div {display:table-cell; padding:22px 0; vertical-align:middle; text-align:center; border-bottom:1px solid #e3e3e3;}
+.list-content.tbl-prdt .list-row-content.row>div {display:table-cell; padding:32px 0; vertical-align:middle; text-align:center; border-bottom:1px solid #e3e3e3;}/*2018.09.14 부장님 요청으로 수정*/
 .list-content.tbl-prdt .list-item-image a {min-width:40px; max-width:65px; max-height:65px;}
 .list-content.tbl-prdt .list-item-image img {width:100%; height:auto; max-width:65px; max-height:65px;}
 

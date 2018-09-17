@@ -417,6 +417,35 @@ $(function() {
 		}
 	});
 
+	// 2013.09.13 회원가입 완료 암웨이 대표 브랜드
+	$(function() {
+		$('#recentlyViewedListTabnew').owlCarousel({
+			loop: false,
+			nav: true,
+			dots: false,
+			margin: 0,
+			items: 1,
+			responsiveClass: true,
+			responsive: {
+				480 : {
+					items: 2
+				},
+				630 : {
+					items: 3
+				},
+				768 : {
+					items: 4
+				},
+				960 : {
+					items: 5
+				},
+				1200 : {
+					items: 6
+				}
+			}
+		});
+	})
+
 	$('#Cart_Search').click(function(e){
 		e.preventDefault();
 		$(".shoping-cart-search").show();

@@ -714,9 +714,9 @@
 .akl .pro-over-name p {font-size:14px;color:#002f5f;font-weight:500;line-height:24px;margin:0 0;}
 .akl .pro-overlap-num {display:table;table-layout:fixed;width:100%;margin:5px 0 0;padding:0 0;}
 .akl .prover-qty, .akl .prover-add-qty, .akl .prover-all-qty {font-size:14px;font-weight:400;}
-.akl .prover-qty {display:inline-block;width:33%;}
-.akl .prover-add-qty {display:inline-block;width:33%;}
-.akl .prover-all-qty {display:inline-block;width:33%;}
+.akl .prover-qty {display:table-cell;width:33%;}
+.akl .prover-add-qty {display:table-cell;width:33%;}
+.akl .prover-all-qty {display:table-cell;width:33%;}
 .akl .duplicate-txt {padding:35px 0 0}
 
 /* 제품상세 > URL 팝업 */
@@ -1237,15 +1237,18 @@ span.btn-business {display:inline-block;}
 .akl .amway-theme.order-payment {}
 .akl .amway-theme.order-payment .tabs-toggles {border-bottom:0 none;}
 .akl .amway-theme.order-payment .outer-border-bottom .tabs-toggles .tab-toggle-wrap {min-width:62px; height:40px; padding:0;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap {border:0; background:none;}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle {border:1px solid #dadada;background:#f4f4f4;padding:0 0;min-width:62px;height:38px;}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {font-size:14px;color:#bbb;font-weight:700}
-.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle {border:1px solid #dadada;background:#fff;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle {border:1px solid #dadada;background:#fff; border-top:4px solid #008fc5}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {color:#20893d;font-weight:700}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap:first-child .tab-toggle {border-top-left-radius:4px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:4px;}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap:last-child .tab-toggle {margin-left:-1px;border-top-left-radius:0px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:0px;}
 .akl .order-payment .outer-border-bottom .tabs-toggles {overflow:hidden; display:block;}
 .akl .order-payment .tab-toggle-wrap {display:block; float:left;}
 .akl .order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; line-height:36px;}
+.akl .order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {display:block; line-height:33px;}
+
 
 /* 주문결제 > 단일 */
 .single-body {position:relative;}
@@ -2098,11 +2101,12 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .featured-product .featured-product__item {padding:20px 0;}
 
 	.akl .homepage_banner {height:auto; margin-top:0;}
-	.akl .homepage_banner .wrapper .banner__wrapper {height:auto;}
-	.akl .homepage_banner .banner__message  {margin-top:30px; width:228px;}
+	.akl .homepage_banner .wrapper .banner__wrapper {height:375px; margin-top:60px }
+	.akl .homepage_banner .banner__message  {margin-top:0; width:228px; padding-top:70px}
 	.akl .homepage_banner .owl-carousel .owl-stage-outer {height:auto;}
-	.akl .homepage_banner .owl-carousel .owl-item .banner__image-sub {width:27%; margin-right:0;height:auto;}
-
+	.akl .homepage_banner .owl-carousel .owl-item .banner__image {left: -190px;}
+	.akl .homepage_banner .owl-carousel .owl-item .banner__image-sub {width:31%; margin-right:0;height:auto;}
+	.akl .homepage_banner .owl-carousel .owl-item .banner__image-sub { margin:0 10px 0 0}
 	.akl .new-hot-brand .sub_banner {height:auto;}
 	.akl .new-hot-brand #sub_banner_list .owl-item .banner__image-sub {bottom:-100px;}
 
@@ -2115,14 +2119,14 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .new-hot-brand .owl-theme .owl-controls .owl-nav .owl-next {right:17px;} */
 
 	.akl .video-preview + .recommendation {margin-top:40px; border:0}
-	.akl .full-width-title-component.notice {margin:0 auto 50px; position:relative; max-width:none; width:auto; text-align:left;}
+	.akl .full-width-title-component.notice {margin:0 auto 20px; position:relative; max-width:none; width:auto; text-align:left;}
 	.akl .full-width-title-component.notice h2 {position:static; font-size:16px; text-align:center; width:auto }
 	.akl .full-width-title-component.notice h2:after {display:none}
 	.akl .amway-theme h4.full-width-title-component__sub-title {padding:0 85px; line-height:130%}
-	.akl .full-width-title-component.notice > div {padding:20px 0 0; text-align:center;}
+	.akl .full-width-title-component.notice > div {padding:15px 0 5px; text-align:center;}
 	.akl .full-width-title-component.notice > a {position:static; text-align:center;}
 	.akl .full-width-title-component.notice p {width:auto; float:none;}
-	.akl .full-width-title-component.notice p > a {padding-left:0; padding-right:0; max-width:768px;}
+	.akl .full-width-title-component.notice p > a {padding-left:0; padding-right:0; max-width:768px; font-size:14px}
 	.akl .full-width-title-component.notice p:after {display:none}
 
 	/* 검색 > 결과  */
