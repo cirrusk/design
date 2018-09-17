@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -99,7 +99,7 @@
                                            <div class="plp-item-label bg-green">출시예정</div>
                                            <div class="plp-item-label bg-purple">프로모션</div>
                                            <div class="plp-item-label bg-red">일시품절</div>
-                                          </div> 
+                                          </div>
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -232,7 +232,7 @@
                                            <div class="plp-item-label bg-green">출시예정</div>
                                            <div class="plp-item-label bg-purple">프로모션</div>
                                            <div class="plp-item-label bg-red">일시품절</div>
-                                          </div> 
+                                          </div>
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -365,7 +365,7 @@
                                            <div class="plp-item-label bg-green">출시예정</div>
                                            <div class="plp-item-label bg-purple">프로모션</div>
                                            <div class="plp-item-label bg-red">일시품절</div>
-                                          </div> 
+                                          </div>
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -497,7 +497,7 @@
                                            <div class="plp-item-label bg-green">출시예정</div>
                                            <div class="plp-item-label bg-purple">프로모션</div>
                                            <div class="plp-item-label bg-red">일시품절</div>
-                                          </div> 
+                                          </div>
 									<div class="product-list__item-content amwahover">
 										<label class="checkbox-element-wrapper">
 											<input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
@@ -675,16 +675,19 @@
 			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
 				var tag = $(this).siblings('.dropdown-menu');
 				var flag=true;
-				if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
+				/* 수정 2018.09.17 : 시작 */
+				if( $(this).parent(".plp-add-to-shopping-list ").hasClass('open')){
 					e.stopPropagation();
-					$(".plp-add-to-shopping-list ").removeClass("open");
-					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
-					$(tag).show();
+					$(".plp-add-to-shopping-list").removeClass("open");
 					$(".plp-add-to-ditto").removeClass("open");
-				}else{
-					$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
+					$(tag).show();
+					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
+				} else {
 					$(tag).hide();
+					$(this).parent(".plp-add-to-shopping-list").removeClass("open");
 				}
+				/* 수정 2018.09.17 : 끝 */
+
 				$(document).bind("click",function(e){//点击空白处，设置的弹框消失
 					var target = $(e.target);
 					if(target.closest(tag).length == 0 && flag == true){

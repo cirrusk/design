@@ -9,7 +9,7 @@
 	<meta name="keywords">
 	<meta name="description" content="NY Fee Bundle">
 	<meta name="robots" content="index,follow">
-	
+
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css"><!-- 플러그인용 css : 2018.03.14 추가  -->
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
@@ -198,7 +198,7 @@
 										<span>
 											<input type="text" class="email-input1" id="mainOperatorEmail" title="이메일 아이디 "><em class="email-input-txt">@</em><input type="text" class="email-input2" title="직접 이메일 주소 입력">
 										</span>
-										
+
 										<select class="email-select form-control" title="이메일 주소 선택">
 											<option value="" selected="selected">직접입력</option>
 											<option value="">naver.com</option>
@@ -206,7 +206,7 @@
 										</select>
 										<button type="button" class="email-btn bt-akl-white">이메일 인증</button>
 									</div>
-									<p class="confirm-sucees col-space-top">정상적으로 인증 되었습니다.</p>
+									<p class="confirm-sucees col-space-top">사용이 가능한 형태의 이메일 입니다.</p>
 									<p class="help-block" style="display:block"><span>이메일 형식이 올바르지 않습니다.</span></p>
 
 									<ul class="list-type2">
@@ -237,8 +237,12 @@
 						<div class="form-group seek-address">
 							<label class="col-md-2 control-label" for="mainOperatorAddress">주소<span class="ico-must-astar">필수</span></label>
 							<div class="col col-md-10 col-xs-12">
-								<input type="text" class="form-control" readonly="readonly" id="mainOperatorAddress">
+								<!-- 2018.09.17 마크업 수정 -->
+								<p><input type="text" class="form-control" readonly="readonly" id="mainOperatorAddress"></p>
 								<button type="button" class="bt-akl-white">주소찾기</button>
+								<input type="text" name="" class="form-control" title="나머지 주소1" readonly="readonly">
+								<input type="text" name="" class="form-control" title="나머지 주소2" readonly="readonly">
+								<!-- 2018.09.17 마크업 수정 -->
 							</div>
 						</div>
 
