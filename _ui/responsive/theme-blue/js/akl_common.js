@@ -1587,7 +1587,7 @@ function myPage_EqualHeight(){
 						maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
 					});
 
-					_child_height.css({height:maxHeight + 'px'});
+					_child_height.css({height:maxHeight});
 				});
 			}
 	}
@@ -1601,8 +1601,10 @@ function myPage_EqualHeight(){
 			colHeightResize.init();
 		}
 	}
-
 	colHeight_check();
+	setTimeout(function(){
+		colHeight_check();
+	},3000);
 	$(window).resize(function(){
 		colHeight_check();
 	});
