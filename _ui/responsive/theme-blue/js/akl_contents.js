@@ -4,11 +4,11 @@ $(function(){
 	brandTopSNS();
 
 	//XS에너지 홈
-	xsEnergyHome();
+	//xsEnergyHome();
 
 	$(window).resize(function(){
 		brandTopSNS();
-		xsEnergyHome();
+		//xsEnergyHome();
 	});
 
 	//연혁
@@ -45,7 +45,7 @@ function brandTopSNS(){
 	}
 }
 /* XS에너지 홈 */
-function xsEnergyHome(){
+/* function xsEnergyHome(){
 
 	var $xsenergyList = $('.xsenergy_mainlist');
 	if(!$xsenergyList.length){return;}
@@ -66,7 +66,7 @@ function xsEnergyHome(){
 	else{
 		colmn.css('margin-top','0');
 	}
-}
+} */
 
 /* 연혁 */
 function timelineFunc(){
