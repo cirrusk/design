@@ -261,7 +261,7 @@
 
 #show-more .text-wrap {font-family:'Noto Sans KR', sans-serif;;letter-spacing:-0.05em;font-weight:500;font-size:14px;}
 
-/* 온라인 고객센터 > 자주 묻는 질문 */
+/* 온라인 고객센터 > 자주 묻는 질문(faq) */
 .title-h2 + .outer-border-bottom{ margin-top:40px}
 .akl-toggle-wrap + .paging {margin-top:30px}
 .outer-border-bottom + .customer-conts{ margin-top:32px}
@@ -270,7 +270,11 @@
 .customer-form-wrapper .cote-s { float:left}
 .customer-form-wrapper .cote-s select.form-control { max-width:200px; margin-right:8px; color:#002f5f; font-weight:500 }
 .customer-form-wrapper .form-s { float:right}
-
+.akl-faq-wrap {}
+.akl-faq-wrap .akl-faq-imgwrap { border:1px solid #dadada; padding:40px; text-align:center; margin-bottom: 20px;}
+.akl-faq-wrap ol li { text-indent:-18px; padding-left:18px; font-size:14px;}
+.akl-faq-wrap .answer { position:relative; border-top:1px solid #dadada; padding:40px 0 0 10px; margin-top:40px }
+.akl-faq-wrap .answer:before {content:""; position:absolute; width:3px; height:3px; background:#56565a;left:0; top:49px;font-size:14px;}
 /* 온라인 고객센터 > 이메일 문의 */
 .faq-login-guide { padding:0 0 18px;}
 .faq-login-guide p:first-child{color:#002f5f; font-weight:500; padding-bottom:5px}
@@ -805,6 +809,7 @@
 
 .announcement-search-result + .tbl-list-board {margin-top:18px}
 
+
 @media (max-width: 1024px) {
 	/* 암웨이 브랜드 센터 */
 	.customer-conts .center-photo  {padding-right:270px;}
@@ -1103,6 +1108,7 @@
 	.akl .extinction-list .product__list--item {margin-bottom:20px;}
 	.akl .extinction-list {margin-top:20px;margin-left:0px;}
 	.akl .extinction-list .product-list__item-detail {margin-top:10px}
+
 
 	/* 온라인 고객센터 > 이메일 문의 */
 	.customer-form-wrapper .cote-s { float:none; margin-bottom:15px}

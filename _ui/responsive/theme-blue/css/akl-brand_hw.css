@@ -3,7 +3,7 @@ Version :AKL Hybris UIUX 1.0
 Date :2018-07-02
 Editor :
 *************************************************/
-.brand .bod-view-sns {z-index:10;}
+.brand .bod-view-sns {z-index:10;padding-top: 5px;}
 
 .view-m {display:none;}
 .brand .img-bnr-bg.type3 .tablet {display:none;}
@@ -32,7 +32,7 @@ Editor :
 .brand .title-txt02, .layerWrapper .title-txt02 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#55565a;}
 .brand .title-txt03, .layerWrapper .title-txt03 {font-size:14px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
 .brand h2.title-h4 {color:#55565a;}
-.layerWrapper p + .title-txt02 {display:block;margin-top:30px;} 
+.layerWrapper p + .title-txt02 {display:block;margin-top:30px;}
 
 .team-player-box {overflow:hidden;}
 .team-player-box .team-tit {float:right;padding-left:12px;width:50%;margin-top:0;font-size:34px;letter-spacing:-2px;color:#002F5F;line-height:100%;font-weight:500;}
@@ -255,7 +255,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 /* 글로벌암웨이 */
 [class*="global-comp-"] {position:absolute;}
 [class*="global-comp-"] .btn-tooltip {margin:0;padding:0; width:24px; height:30px;background:url(../images/akl_brand/about/ico_tooltip_a.png) no-repeat;text-align:center;}
-[class*="global-comp-"] .btn-tooltip span {position:relative;top:-4px;left:-1px;display:block;color:#fff;font-size:12px;font-style:italic;} 
+[class*="global-comp-"] .btn-tooltip span {position:relative;top:-4px;left:-1px;display:block;color:#fff;font-size:12px;font-style:italic;}
 [class*="global-comp-"].open {width:40px;height:50px;margin:-20px 0 0 -8px;}
 [class*="global-comp-"].open .btn-tooltip {width:40px;height:50px;background:url(../images/akl_brand/about/ico_tooltip_b.png) no-repeat;z-index:3}
 [class*="global-comp-"].open .btn-tooltip:after {top:55px;left:10px;}
@@ -307,7 +307,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 /*레이어 팝업*/
 .gallery-wrapper {width:100%;max-height:524px;overflow-y:auto;}
 .gallery-wrapper img {max-width:100%;}
-.gallery-wrapper img + img {margin-top:10px;} 
+.gallery-wrapper img + img {margin-top:10px;}
 
 /*채용정보*/
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
@@ -421,6 +421,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 @media (max-width:768px) {
+	.brand .bod-view-sns {padding-top:0; top: 39px;}
 	.brand h2.title-h4 {font-size:20px;}
 	.view-m {display:block;}
 	.brand [class*="box-bnr"] {height:auto;max-height:750px;}
