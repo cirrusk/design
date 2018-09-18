@@ -671,11 +671,12 @@
 
 	<!--  2018.03.16 스크립트 정리 -->
 	<script type="text/javascript">
+		/* 2018.09.18 삭제 : new.js 공통사용
 		(function ($) {
 			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
 				var tag = $(this).siblings('.dropdown-menu');
 				var flag=true;
-				/* 수정 2018.09.17 : 시작 */
+
 				if( $(this).parent(".plp-add-to-shopping-list ").hasClass('open')){
 					e.stopPropagation();
 					$(".plp-add-to-shopping-list").removeClass("open");
@@ -686,7 +687,6 @@
 					$(tag).hide();
 					$(this).parent(".plp-add-to-shopping-list").removeClass("open");
 				}
-				/* 수정 2018.09.17 : 끝 */
 
 				$(document).bind("click",function(e){//点击空白处，设置的弹框消失
 					var target = $(e.target);
@@ -724,6 +724,7 @@
 				});
 			});
 		})(jQuery);
+		*/
 
 		$(function() {
 			$('.quick-view-btn').click(function(event) {
