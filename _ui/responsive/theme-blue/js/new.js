@@ -63,6 +63,56 @@ $(function(){
 	$("#topbanner").load("/_ui/responsive/html/topbanner.html");
 
 
+
+	//제품상세 - 위시리스트 레이어
+	$(".js-add-list-shopping-button,.addToLIST").click(function(e){
+		var tag = $(this).siblings('.dropdown-menu');
+		var flag=true;
+		if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
+			e.stopPropagation();
+			$(".plp-add-to-shopping-list ").removeClass("open");
+			$(this).parent(".plp-add-to-shopping-list ").addClass("open");
+			$(tag).show();
+			$(".plp-add-to-ditto").removeClass("open");
+		}else{
+			$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
+			$(tag).hide();
+		}
+		$(document).bind("click",function(e){
+			var target = $(e.target);
+			if(target.closest(tag).length == 0 && flag == true){
+				$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
+				$(tag).hide();
+				flag = false;
+			}
+		});
+	});
+
+	//제품상세 - 정기주문에 추가 레이어
+	$(".product-list__item-link-ditto").click(function(e){
+		var tag = $(this).siblings('.dropdown-menu');
+		var flag=true;
+		if(!$(this).parent(".plp-add-to-ditto ").hasClass("open")){
+			e.stopPropagation();
+			$(".plp-add-to-ditto").removeClass("open");
+			$(this).parent(".plp-add-to-ditto").addClass("open");
+			$(tag).show();
+			$(".plp-add-to-shopping-list ").removeClass("open");
+		}else{
+			$(this).parent(".plp-add-to-ditto").removeClass("open");
+			$(tag).hide();
+		}
+		$(document).bind("click",function(e){
+			var target = $(e.target);
+			if(target.closest(tag).length == 0 && flag == true){
+				$(tag).parent(".plp-add-to-ditto ").removeClass("open");
+				$(tag).hide();
+				flag = false;
+			}
+		});
+	});
+
+
 	/** ---------------------------------
 	 *  배송지 정보
 	 *  ---------------------------------
@@ -489,30 +539,6 @@ $(function() {
 		layerPopOver(this,'.U70410_lp1_pop');
 	});
 
-	(function ($) {
-			$(".js-add-list-shopping-button,.addToLIST").click(function(e){
-				var tag = $(this).siblings('.dropdown-menu');
-				var flag=true;
-				if(!$(this).parent(".plp-add-to-shopping-list ").hasClass("open")){
-					e.stopPropagation();
-					$(".plp-add-to-shopping-list ").removeClass("open");
-					$(this).parent(".plp-add-to-shopping-list ").addClass("open");
-					$(tag).show();
-					$(".plp-add-to-ditto").removeClass("open");
-				}else{
-					$(this).parent(".plp-add-to-shopping-list ").removeClass("open");
-					$(tag).hide();
-				}
-				$(document).bind("click",function(e){
-					var target = $(e.target);
-					if(target.closest(tag).length == 0 && flag == true){
-						$(tag).parent(".plp-add-to-shopping-list ").removeClass("open");
-						$(tag).hide();
-						flag = false;
-					}
-				});
-			});
-		})(jQuery);
 });
 
 
