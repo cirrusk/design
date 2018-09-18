@@ -739,9 +739,9 @@ a:focus{text-decoration:none;}
 .amway-theme select:disabled{color:#bbbbbb;background:#f4f4f4;}
 .amway-theme input[type=submit]{overflow:visible;padding:0;font:inherit;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border:0;-webkit-appearance:button;}
 .amway-theme input[type=submit]:focus{}
-.amway-theme input[type=reset]{overflow:visible;box-sizing:border-box;height:40px;padding:0;padding:0 25px;font:inherit;font-family:SourceSansPro;font-size:1.125em;font-weight:500;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;color:#002f5f;border:0;-webkit-appearance:button;}
+.amway-theme input[type=reset]{overflow:visible;box-sizing:border-box;height:40px;padding:0;padding:0 25px;font:inherit; font-size:20px;font-weight:500;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;color:#002f5f;border:0;-webkit-appearance:button;}
 .amway-theme input[type=reset]:focus{}
-.amway-theme input[type=button]{overflow:visible;box-sizing:border-box;height:40px;padding:0;padding:0 20px;font:inherit;font-family:SourceSansPro;font-size:1.125em;font-weight:500;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;color:#002f5f;border:0;-webkit-appearance:button;}
+.amway-theme input[type=button]{overflow:visible;box-sizing:border-box;height:40px;padding:0;padding:0 20px;font:inherit; font-size:20px;font-weight:500;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;color:#002f5f;border:0;-webkit-appearance:button;}
 .amway-theme input[type=button]:focus{}
 .amway-theme input::-moz-focus-inner{padding:0;border:0;}
 .amway-theme [role=button]{display:inline-block;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;text-align:center;white-space:pre;text-decoration:none;}
@@ -1169,7 +1169,7 @@ body>.popover.auto-suggestion-popover .popover-content{overflow-y:auto;max-width
   body.asm-mode>.popover.fade.bottom.in:not(.auto-suggestion-popover){top:117px!important;}
   body.asm-mode>.popover.auto-suggestion-popover{top:185px!important;}
 }
-.popover{position:absolute;z-index:1060;top:0;left:0;display:none;max-width:276px;padding:1px;text-align:left;white-space:normal;border:1px solid #cccccc;border:1px solid rgba(0, 0, 0, .2);border-radius:0;background-color:#ffffff;background-clip:padding-box;-webkit-box-shadow:0 5px 10px rgba(0, 0, 0, .2);box-shadow:0 5px 10px rgba(0, 0, 0, .2);}
+.popover{position:absolute;z-index:1060;top:0;left:0;display:none;max-width:276px;padding:0;text-align:left;white-space:normal;border:1px solid #cccccc;border:1px solid rgba(0, 0, 0, .2);border-radius:0;background-color:#ffffff;background-clip:padding-box;-webkit-box-shadow:0 5px 10px rgba(0, 0, 0, .2);box-shadow:0 5px 10px rgba(0, 0, 0, .2);}
 .popover>.arrow{position:absolute;display:block;width:0;height:0;border-width:11px;border-style:solid;border-color:transparent;}
 .popover>.arrow:after{position:absolute;display:block;width:0;height:0;content:'';border-width:10px;border-style:solid;border-color:transparent;}
 .popover.top{margin-top:-10px;}
@@ -4492,12 +4492,10 @@ footer{margin-top:30px;padding-top:50px;font-weight:300;color:#002f5f;background
 .popover .login-form label{position:relative;display:inline-block;max-width:100%;margin-bottom:5px;padding-left:1.95em;font-size:15px;font-weight:100;cursor:pointer;text-align:left;color:#55565a;}
 .login-form__username{height:44px;margin-bottom:15px;padding:14px;border:1px solid #dadada;border-radius:4px;background:url(../images/info-icon@2x.png) 95% 11px no-repeat!important;background-color:#ffffff;background-size:18px!important;}
 .login-form__password{height:44px;padding:14px;border:1px solid #dadada;border-radius:4px;background-color:#ffffff;}
-.login-form__submit{display:block;width:100%;height:60px!important;-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;}
-.login-form__submit:hover{text-decoration:none!important;color:#002f5f!important;border:2px solid #002f5f!important;background:#ffffff!important;}
-.login-form__link{display:block;margin-top:15px!important;font-size:14px!important;line-height:1.43!important;text-align:left;letter-spacing:.1px;color:#0075a4;}
-.login-form__owner{margin-bottom:16px;font-size:16px;font-weight:500;line-height:3.44px;text-align:left;color:#002f5f;}
-.login-form__register{width:100%;height:60px!important;font-size:22px!important;font-weight:bold!important;-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;letter-spacing:.2px;text-transform:uppercase!important;color:#ffffff!important;background-color:#e11e45!important;}
-.login-form__register:hover{color:#e11e45!important;border:1px solid #e11e45!important;background:#ffffff!important;}
+.amway-theme .login-form__link{display:block;margin-top:15px;font-size:14px;line-height:1.43;text-align:left;letter-spacing:.1px;color:#0075a4;}
+.amway-theme .login-form__owner{margin-bottom:16px;font-size:16px;font-weight:500;line-height:3.44px;text-align:left;color:#002f5f;}
+.amway-theme .login-form__register{text-align:center; display:block; width:100%;height:60px; line-height:55px; font-size:20px; border:2px solid #e11e45; -webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;letter-spacing:.2px; color:#fff;background-color:#e11e45; }
+.amway-theme .login-form__register:hover{color:#e11e45; background:#fff;}
 .remember-me{position:relative!important;display:block;margin:15px 0!important;padding:0 0 0 28px!important;}
 .remember-me::before{top:8px;}
 .extraclass1{top:41px ;}
@@ -4859,8 +4857,7 @@ h1.sponsorship__title img{margin-top:-4px;margin-right:10px;}
 .btn{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background:none;background-color:#002f5f;}
 .btn:hover *{color:#002f5f;}
 */
-.login-form__submit{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
-.login-form__register{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
+
 .minicart__view-cart{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
 .homepage .new-hot-brand{overflow:hidden;}
 .new-hot-brand__message-link{display:inline-block;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;background-color:#002f5f;}
@@ -4876,8 +4873,6 @@ h1.sponsorship__title img{margin-top:-4px;margin-right:10px;}
 .btn-ink{display:inline-block;font-size:16px;font-weight:100;letter-spacing:.2px;color:#ffffff;border:2px solid transparent;border:1px solid #ffffff!important;border-radius:2px;background:rgba(0, 0, 0, .3);background-color:#002f5f;}
 .btn-ink:hover{-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;color:#000000;background:#ffffff;}
 .btn-ink:hover span{color:#000000;}
-.btn-primary{font-weight:100;}
-.cart-actions .btn{font-weight:100;}
 .owl-theme .owl-item .sponsorship__img{width:182px;margin:0 auto;}
 .owl-theme .owl-controls{display:table;width:100%;}
 .owl-theme .owl-controls .owl-nav div{position:absolute;z-index:100;top:50%;overflow:hidden;width:18px;height:18px;margin-top:-12px;padding:0;border-radius:0;background:none;}
@@ -5753,7 +5748,7 @@ select.form-control option{float:left;width:100%;padding:6px 10px;border:none;}
   .quick-links .container .row{margin:0;} */
   .banner__component a{position:relative;top:5px;width:124px;height:42px;background:url(../images/logo1.png) no-repeat;}
   .banner__component a img{display:block;}
-  .icon-shopping-cart{position:relative;display:inline-block;width:25px;height:25px; margin-top:6px;margin-left:0;margin-left:-8px;background:url(../images/vector-smart-object@2x_mobile.png) no-repeat!important;background-size:contain!important;background-size:25px!important;}
+  .icon-shopping-cart{position:relative;display:inline-block;width:32px;height:32px; margin-top:6px; margin-left:-8px; background:url(../images/vector-smart-object@2x_mobile.png) no-repeat!important;background-size:contain!important;background-size:28px!important;}
   body>.popover.auto-suggestion-popover{top:114px!important;width:calc(100vh);}
   .quick-links-misc{width:100%;}
   .footer{height:250px;}
