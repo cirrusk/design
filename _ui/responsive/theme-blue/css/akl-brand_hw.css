@@ -254,21 +254,25 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 /* 글로벌암웨이 */
 [class*="global-comp-"] {position:absolute;}
-[class*="global-comp-"] .btn-tooltip {margin:0;padding:0; width:24px; height:30px;background:url(../images/akl_brand/about/ico_tooltip_a.png) no-repeat;text-align:center;}
-[class*="global-comp-"] .btn-tooltip span {position:relative;top:-4px;left:-1px;display:block;color:#fff;font-size:12px;font-style:italic;}
+[class*="global-comp-"] .btn-tooltip {margin:0;padding:0; width:24px; height:30px;background:url(../images/akl_brand/about/ico_tooltip_a.png) no-repeat;background-size:cover;text-align:center;}
+[class*="global-comp-"] .btn-tooltip span {position:relative;left:auto;top:-3px;display:block;color:#002f5f;font-size:10px;}
 [class*="global-comp-"].open {width:40px;height:50px;margin:-20px 0 0 -8px;}
-[class*="global-comp-"].open .btn-tooltip {width:40px;height:50px;background:url(../images/akl_brand/about/ico_tooltip_b.png) no-repeat;z-index:3}
+[class*="global-comp-"].open .tipCont-wrapper {margin-left:-130px;width:auto !important;max-width:200px !important;}
+[class*="global-comp-"].open .btn-tooltip {width:40px;height:50px;z-index:3}
 [class*="global-comp-"].open .btn-tooltip:after {top:55px;left:10px;}
 [class*="global-comp-"].open .btn-tooltip span {top:-7px;font-size:20px;}
-[class*="global-comp-"].open .tooltip-content {top:63px;margin-left:-130px;}
+[class*="global-comp-"].open .tooltip-content {top:63px;}
 [class*="global-comp-"].open .tooltip-content > strong {font-size:14px;}
 [class*="global-comp-"].open .tooltip-content > p {margin:5px 0 0 0;}
+
 .global-comp-01 {top:19.25%;left:67.42%;}
+.global-comp-01 .btn-tooltip {background:url(../images/akl_brand/about/ico_tooltip_b.png) no-repeat;background-size:cover;}
 .global-comp-02 {top:30.5%;left:62.5%;}
 .global-comp-03 {top:32.5%;left:70.78%;}
 .global-comp-04 {top:42.5%;left:68.89%;}
 .global-comp-05 {top:51%;left:66.27%;}
 .global-comp-05-1 {top:64.25%;left:74.27%;}
+.global-comp-05-2 {top:20%;left:63%;}
 .global-comp-06 {top:17.5%;left:70.93%;}
 .global-comp-07 {top:43.5%;left:41.56%;}
 
@@ -655,18 +659,24 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 	/*글로벌 암웨이*/
 	[class*="global-comp-"].type-mob-full {position: absolute;}
+	[class*="global-comp-"].type-mob-full .btn-tooltip {width:20px;height:25px;}
+	[class*="global-comp-"].type-mob-full.open {width:25px;height:32px;margin: -7px 0 0 -2px;}
+	[class*="global-comp-"].type-mob-full.open .btn-tooltip {width:25px;height:32px;}
+	[class*="global-comp-"].type-mob-full.open .tipCont-wrapper {margin-left:-168px;min-width:200px;}
 	[class*="global-comp-"].type-mob-full.open .btn-tooltip:after {top:55px;left:11px;}
-	[class*="global-comp-"].type-mob-full.open .btn-tooltip span {top:-7px;font-size:20px;}
-	[class*="global-comp-"].type-mob-full.open .tooltip-content {top:13px;margin-left:-168px;max-width:200px;}
-	.global-comp-07.type-mob-full.open .tooltip-content {margin-left:-80px;}
+	[class*="global-comp-"].type-mob-full.open .btn-tooltip span {top:-3px;font-size:10px;}
+	[class*="global-comp-"].type-mob-full.open .tooltip-content {top:13px;max-width:200px;}
+	.global-comp-07.type-mob-full.open .tipCont-wrapper {margin-left:-80px;}
 
-	.global-comp-01 {top:27.2%;left:81%;}
+
+	.global-comp-01 {top:26.2%;left:81%;}
 	.global-comp-02 {top:33.33%;left:72.33%;}
 	.global-comp-03 {top:32.93%;left:85.9%;}
 	.global-comp-04 {top:37.06%;left:81.86%;}
 	.global-comp-05 {top:41.06%;left:78%;}
-	.global-comp-05-1 {top:50.33%;left:92%;}
-	.global-comp-06 {top:25.46%;left:86.73%;}
+	.global-comp-05-1 {top:50.33%;left:91%;}
+	.global-comp-05-2 {top:27.2%;left:73%;}
+	.global-comp-06 {top:24.46%;left:86.73%;}
 	.global-comp-07 {top:38.93%;left:40%;}
 
 	.biz-slide-wrap {margin:40px -10px 0;padding:0 30px;}
