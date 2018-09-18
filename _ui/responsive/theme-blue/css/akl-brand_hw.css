@@ -16,6 +16,7 @@ Editor :
 .brand [class*="br-box-cont"] ul + .img-bnr {margin:10px 0 35px;}
 .full-component.br-box-cont-hr .img-bnr {margin:0;}
 .brand .br-box-cont-hr .content-row {margin-top:0;}
+.brand .br-box-cont-hr .img-text-row-box-type1 {margin-top:0;}
 
 .img-bnr {position:relative;margin:35px 0 45px;}
 .img-bnr img {width:100%;}
@@ -254,21 +255,25 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 /* 글로벌암웨이 */
 [class*="global-comp-"] {position:absolute;}
-[class*="global-comp-"] .btn-tooltip {margin:0;padding:0; width:24px; height:30px;background:url(../images/akl_brand/about/ico_tooltip_a.png) no-repeat;text-align:center;}
-[class*="global-comp-"] .btn-tooltip span {position:relative;top:-4px;left:-1px;display:block;color:#fff;font-size:12px;font-style:italic;}
+[class*="global-comp-"] .btn-tooltip {margin:0;padding:0; width:24px; height:30px;background:url(../images/akl_brand/about/ico_tooltip_a.png) no-repeat;background-size:cover;text-align:center;}
+[class*="global-comp-"] .btn-tooltip span {position:relative;left:auto;top:-3px;display:block;color:#002f5f;font-size:10px;}
 [class*="global-comp-"].open {width:40px;height:50px;margin:-20px 0 0 -8px;}
-[class*="global-comp-"].open .btn-tooltip {width:40px;height:50px;background:url(../images/akl_brand/about/ico_tooltip_b.png) no-repeat;z-index:3}
+[class*="global-comp-"].open .tipCont-wrapper {margin-left:-130px;width:auto !important;max-width:200px !important;}
+[class*="global-comp-"].open .btn-tooltip {width:40px;height:50px;z-index:3}
 [class*="global-comp-"].open .btn-tooltip:after {top:55px;left:10px;}
 [class*="global-comp-"].open .btn-tooltip span {top:-7px;font-size:20px;}
-[class*="global-comp-"].open .tooltip-content {top:63px;margin-left:-130px;}
+[class*="global-comp-"].open .tooltip-content {top:63px;}
 [class*="global-comp-"].open .tooltip-content > strong {font-size:14px;}
 [class*="global-comp-"].open .tooltip-content > p {margin:5px 0 0 0;}
+
 .global-comp-01 {top:19.25%;left:67.42%;}
+.global-comp-01 .btn-tooltip {background:url(../images/akl_brand/about/ico_tooltip_b.png) no-repeat;background-size:cover;}
 .global-comp-02 {top:30.5%;left:62.5%;}
 .global-comp-03 {top:32.5%;left:70.78%;}
 .global-comp-04 {top:42.5%;left:68.89%;}
 .global-comp-05 {top:51%;left:66.27%;}
 .global-comp-05-1 {top:64.25%;left:74.27%;}
+.global-comp-05-2 {top:20%;left:63%;}
 .global-comp-06 {top:17.5%;left:70.93%;}
 .global-comp-07 {top:43.5%;left:41.56%;}
 
@@ -305,7 +310,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .ico-list-br li p {line-height:24px;margin:2px 0 0;}
 
 /*레이어 팝업*/
-.gallery-wrapper {width:100%;max-height:524px;overflow-y:auto;}
+.gallery-wrapper {width:100%;}
 .gallery-wrapper img {max-width:100%;}
 .gallery-wrapper img + img {margin-top:10px;}
 
@@ -336,8 +341,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .recruit-step-wrap > ul > li ul {display:table;margin:7px auto;}
 .recruit-step-wrap > ul > li ul li {text-align:left;letter-spacing:0;}
 
-.br_ico_list {margin-top:40px;border-top:1px solid #e3e3e3;}
-.br_ico_list li {display:table;overflow:hidden;padding:40px 20px;border-bottom:1px solid #e3e3e3;width:100%;}
+.br_ico_list {margin-top:40px;border-top:1px solid #e3e3e3;overflow:hidden;}
+.br_ico_list li {float:left;overflow:hidden;padding:40px 20px 0;border-bottom:1px solid #e3e3e3;width:50%;height:200px;}
 .br_ico_list li img {float:left;width:107px;}
 .br_ico_list li dl {float:left;width:calc(100% - 120px);padding-left:40px;}
 .br_ico_list li dl dt {font-size:16px;color:#002f5f;}
@@ -375,6 +380,33 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .c-tbl .tbl-type1 tbody tr:nth-of-type(even) {background:none;}
 
 .bod-view-sns + .content-row  {margin-top:0}
+
+.educ-system-box {max-width:630px;margin:0 auto;text-align:left;}
+.educ-system-box > ul > li {padding:20px 0;border-bottom:1px solid #dadada;}
+.educ-system-box > ul > li:first-child {padding-top:0;}
+.educ-system-box > ul > li dl {position:relative;overflow:hidden;padding-left:270px;}
+.educ-system-box > ul > li dl dt {position:absolute;top:50%;left:0;margin-top:-29px;display:table;width:236px;color:#fff;text-align:center;background:#002f5f;height:58px;border-radius:50px;padding:0 20px;letter-spacing:0;} 
+.educ-system-box > ul > li dl dt:after {content:"";position:absolute;top:50%;right:-50px;width:50px;height:1px;background:#999;}
+.educ-system-box > ul > li dl dt span {display:table-cell;vertical-align:middle;}
+.educ-system-box > ul > li dl dd {position:relative;float:left;max-width:360px;width:100%; padding:18px 20px;background:#fff;border:1px solid #dadada;z-index:1;}
+.educ-system-box > ul > li dl dd ul {padding:0;}
+.educ-system-box > ul > li .list-style-info2 {margin:15px 0 0;}
+.educ-system-box .list-style-info2 {margin:15px 0;}
+
+.au-box {overflow:hidden;max-width:630px;margin:0 auto;text-align:left;}
+.au-box li {float:left;display:table;position:relative;padding-left:75px;width:33.333%;height:120px;}
+.au-box li:after {content:"";position:absolute;margin-top:-58px;top:50%;left:0;width:64px;height:116px;}
+.au-box li strong {display:table-cell;vertical-align:middle;line-height:22px;padding-right:30px;letter-spacing:0;}
+.au-box li.type01 {width:100%;margin-bottom:20px}
+.au-box li.type01:after {background:url(../images/akl_brand/about/bg_au_box01.png) no-repeat 0 0;background-size:cover;}
+.au-box li.type02:after {background:url(../images/akl_brand/about/bg_au_box02.png) no-repeat 0 0;background-size:cover;}
+.au-box li.type03:after {background:url(../images/akl_brand/about/bg_au_box03.png) no-repeat 0 0;background-size:cover;}
+.au-box li.type04:after {background:url(../images/akl_brand/about/bg_au_box04.png) no-repeat 0 0;background-size:cover;}
+.au-box li.type01 strong {width:20%;color:#6e6b69;}
+.au-box li.type01 p {display:table-cell;vertical-align:middle;width:80%;margin:0;line-height:22px;letter-spacing: 0;}
+.au-box li.type02 strong {color:#592c66;}
+.au-box li.type03 strong {color:#cb3247;}
+.au-box li.type04 strong {color:#587537;}
 
 /*건강지킴이*/
 .btn-health-area {margin-top:70px;padding-top:11px;background:url(../images/akl_brand/nutrilite/bg_health01.jpg) no-repeat 0 0; text-align:right;}
@@ -561,7 +593,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.c-tbl table.tbl-type1 thead th {padding:10px 10px;font-size:13px;}
 
 	.br_ico_list {margin-top:40px;}
-	.br_ico_list li {display:block;padding:40px 0;}
+	.br_ico_list li {float:none;width:100%;height:auto;display:block;padding:40px 0;}
 	.br_ico_list li img {float:none;margin-left:30px;}
 	.br_ico_list li dl {float:none;width:100%;padding:0;}
 	.br_ico_list li dl dt {font-size:16px;color:#002f5f;}
@@ -584,6 +616,25 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.biz-slide-wrap a.primary-link p span {display:block;height:auto;line-height:1.2;font-size:28px;text-align:center;}
 	.biz-slide-wrap a.primary-link span:after {top:40%;width:83px;height:83px;margin:-42.5px 0 0 -42.5px}
 	.biz-slide-wrap a.primary-link .view-n {display:none;}
+
+	.educ-system-box {max-width:250px;}
+	.educ-system-box > ul > li {padding:30px 0;}
+	.educ-system-box > ul > li dl {padding-left:0;}
+	.educ-system-box > ul > li dl dt {position:static;width:180px;height:55px;margin:0 auto;font-size:12px;} 
+	.educ-system-box > ul > li dl dt:after {top:55px;right:50%;width:1px;height:50px;}
+	.educ-system-box > ul > li dl dd {float:none;max-width:250px;margin:20px auto 0;padding:10px 5px 10px 10px;}
+	.educ-system-box > ul > li dl dd ul li {font-size:11px;background-position:0 7px;}
+	.educ-system-box > ul > li .list-style-info2 {margin-top:10px;}
+	.educ-system-box .list-style-info2 {margin-top:30px;font-size:12px;background-position:0 7px;}
+
+	.au-box {max-width:305px;padding:0 10px;}
+	.au-box li {float:none;padding-left:50px;width:100%;height:80px;}
+	.au-box li:after {margin-top:-34.5px;top:50%;left:0;width:38px;height:69px;}
+	.au-box li strong {width:100%;padding-right:0;}
+	.au-box li.type01 {min-height:200px}
+	.au-box li.type01 strong {width:100%;vertical-align:top;padding-top:22px}
+	.au-box li.type01 p {display:block;width:100%;position:absolute;left:0;bottom:0; }
+	.au-box li.type01:after {top:0;margin:0;}
 
 	/*건강지킴이*/
 	.btn-health-area {margin-top:40px;padding-top:0;background:url(../images/akl_brand/nutrilite/bg_health01.jpg) no-repeat 0 0;background-size:72px auto;}
@@ -609,18 +660,24 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 	/*글로벌 암웨이*/
 	[class*="global-comp-"].type-mob-full {position: absolute;}
+	[class*="global-comp-"].type-mob-full .btn-tooltip {width:20px;height:25px;}
+	[class*="global-comp-"].type-mob-full.open {width:25px;height:32px;margin: -7px 0 0 -2px;}
+	[class*="global-comp-"].type-mob-full.open .btn-tooltip {width:25px;height:32px;}
+	[class*="global-comp-"].type-mob-full.open .tipCont-wrapper {margin-left:-168px;min-width:200px;}
 	[class*="global-comp-"].type-mob-full.open .btn-tooltip:after {top:55px;left:11px;}
-	[class*="global-comp-"].type-mob-full.open .btn-tooltip span {top:-7px;font-size:20px;}
-	[class*="global-comp-"].type-mob-full.open .tooltip-content {top:13px;margin-left:-168px;max-width:200px;}
-	.global-comp-07.type-mob-full.open .tooltip-content {margin-left:-80px;}
+	[class*="global-comp-"].type-mob-full.open .btn-tooltip span {top:-3px;font-size:10px;}
+	[class*="global-comp-"].type-mob-full.open .tooltip-content {top:13px;max-width:200px;}
+	.global-comp-07.type-mob-full.open .tipCont-wrapper {margin-left:-80px;}
 
-	.global-comp-01 {top:27.2%;left:81%;}
+
+	.global-comp-01 {top:26.2%;left:81%;}
 	.global-comp-02 {top:33.33%;left:72.33%;}
 	.global-comp-03 {top:32.93%;left:85.9%;}
 	.global-comp-04 {top:37.06%;left:81.86%;}
 	.global-comp-05 {top:41.06%;left:78%;}
-	.global-comp-05-1 {top:50.33%;left:92%;}
-	.global-comp-06 {top:25.46%;left:86.73%;}
+	.global-comp-05-1 {top:50.33%;left:91%;}
+	.global-comp-05-2 {top:27.2%;left:73%;}
+	.global-comp-06 {top:24.46%;left:86.73%;}
 	.global-comp-07 {top:38.93%;left:40%;}
 
 	.biz-slide-wrap {margin:40px -10px 0;padding:0 30px;}
