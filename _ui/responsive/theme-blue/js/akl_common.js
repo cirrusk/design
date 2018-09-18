@@ -1,4 +1,4 @@
-﻿$(function(){
+$(function(){
 /** ----- 공통 ----- */
 
 	//radio, checkbox 키보드로 체크하기
@@ -557,7 +557,6 @@ function searchBox_filter(){
 		var _winWidth = $(window).width();
 		if(_winWidth < 769){
 			searchTypeFilter.each(function(){
-				$(this).find('.form-wrapper').hide();
 				var boxSearch = $(this).find('.js-search-form-wrapper');
 				var boxFilter = $(this).find('.js-filter-form-wrapper');
 				var hiddenClass = $(this).find('.hidden-sm.hidden-xs')
@@ -1672,6 +1671,14 @@ function jumpMenuList(){
 		var _listSelect = $(this).find('.select-list');
 		var _depth1 = _listSelect.find('.menu-dep1');
 
+		//current 상위메뉴 활성화
+		_listSelect.find('>li').addClass('sbDep1');
+
+		var _current = _menuBox.find('.current');
+		var _currDep1 = _current.parents('.sbDep1');
+		_currDep1.addClass('on');
+		_currDep1.find('.select-depth2').show();
+
 		_depth1.each(function(){
 			var subAll = $(this).parents().find('.select-depth2');
 			var mySub = $(this).parent().find('.select-depth2');
@@ -1688,7 +1695,7 @@ function jumpMenuList(){
 						$(this).parent().addClass('on');
 						$(this).parent().siblings().removeClass('on');
 						subAll.hide();
-						mySub.slideDown('fast');
+						mySub.slideDown('fast').show();
 					}
 					else if(mySub.is(':visible')){
 						$(this).parent().removeClass('on');
