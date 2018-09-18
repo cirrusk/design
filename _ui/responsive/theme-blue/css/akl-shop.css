@@ -2013,13 +2013,13 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .zoom-center button {margin-bottom:10px}
 
 	/* 카테고리 */
-	.akl .search-list-page-right-result-list-slot {margin-left:0;}
+	/* .akl .search-list-page-right-result-list-slot {margin-left:0;} */
 	.akl .product-list__item-content {height:500px;}
 	.akl .product-list__item-link .plp-add-to-shopping-list,
-	.akl .product-list__item-link .plp-add-to-ditto {display:block; float:none;}
+	.akl .product-list__item-link .plp-add-to-ditto {display:block; float:none; padding-top:20px;}
 	.akl .product-list__item-link .product-list__item-link-ditto {padding:0; display:block; float:none;}
-	.akl .product-list__item-link .plp-add-to-shopping-list .dropdown-menu { width:100%;}
-	.akl .product-list__item-link .plp-add-to-ditto .dropdown-menu {left:0; right:auto; width:100%;}
+	.akl .product-list__item-link .plp-add-to-shopping-list .dropdown-menu { width:100%; border:1px solid #dadada;}
+	.akl .product-list__item-link .plp-add-to-ditto .dropdown-menu {left:0; right:auto; width:100%; top:70px; border:1px solid #dadada;}
 }
 @media (min-width:1250px){
 	.img-product .product-main-info {min-height:590px;}
@@ -2063,15 +2063,15 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .myorder-history .order-conts .accordion-custom .panel-title .pull-right {margin-top:-10px}
 	.akl .accordion-custom.pro-category .panel-title .pull-right {right:0;}
 
-	/* 제품목록 */
+	/* 제품목록 (카테고리) */
 	.akl .product-list__item-link {padding:0;}
 	.akl .product-list__item-link:after {content:""; clear:both; display:block;}
-	.akl .product-list__item-link .plp-add-to-shopping-list .dropdown-menu ,
-	.akl .product-list__item-link .plp-add-to-ditto .dropdown-menu {/* width:60%; */ top:51px;}
-	.akl .product-list__thum {padding:0 9% 62%; width:62%;}
-
-	/* 카테고리 */
+	.akl .product-list__item-link .plp-add-to-shopping-list, .akl .product-list__item-link .plp-add-to-ditto { padding-top:0;}
+	.akl .product-list__item-link .plp-add-to-shopping-list .dropdown-menu,
+	.akl .product-list__item-link .plp-add-to-ditto .dropdown-menu {/* width:60%; */ top:51px; border-top:0;}
 	.akl .product-list__item-link .product-list__item-link-ditto {float:right;}
+
+	.akl .product-list__thum {padding:0 9% 62%; width:62%;}
 
 	/* 제품목록 > 카드형 */
 	.akl .search-list-page-right-result-list-slot { margin-left:0;}
