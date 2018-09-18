@@ -882,11 +882,14 @@ div.tobe-earned, div.earning-used, div.available-point {width:17%;}
 .table-point-wrapper ul li.tbody div {display:table-cell; padding:16px 15px;vertical-align:middle;font-size:14px;}
 .table-point-wrapper ul li.tbody span {font-size:14px;vertical-align:middle;}
 .table-point-wrapper ul li.tbody:nth-child(odd) {background:#f4f4f4;}
-.table-point-wrapper.mpoint ul li.tbody {border-bottom:1px solid #dadada;}
+.table-point-wrapper.mpoint, .table-point-wrapper.mpoint .thead-tit > span {border-bottom:1px solid #dadada;}
+.table-point-wrapper.mpoint .thead-tit+.tbody > div {border-top:0;}
+.table-point-wrapper.mpoint ul li.tbody > div {border-top:1px solid #dadada;}
 .table-point-wrapper.mpoint ul li.tbody:after {content:''; display:block; clear:both}
 .table-point-wrapper.mpoint ul li.tbody:nth-child(odd) {background:#fff;}
 .table-point-wrapper ul li.tbody.no-data {padding:16px 0;border-bottom:1px solid #dadada;}
 .table-point-wrapper ul li.tbody.no-data div.no-list {display:table-cell;text-align:center;width:100%;}
+ul li.tbody div span.look-money .mon-num + .min-btn {margin-left:10px;}
 ul li.tbody div.tobe-earned,
 ul li.tbody div.earning-used,
 ul li.tbody div.available-point {text-align:center; }
@@ -3048,7 +3051,6 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.table-point-wrapper ul li.tbody div span.mob-order-txt {display:inline-block;}
 
 	div.tobe-earned,div.earning-used,div.available-point {clear:both;display:block;padding:5px 0 0}
-
 	span.mob-earned-txt, span.mob-earning-txt, span.mob-available-txt {float:left;display:block;color:#002f5f;font-weight:500}
 	span.earned-money, span.earning-money, span.available-money {float:right;}
 
@@ -3056,12 +3058,12 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	div.order-divison {width:50%;text-align:right !important;}
 	div.tobe-earned, div.earning-used, div.available-point {width:100%;}
 	.table-point-wrapper ul li.tbody {display:block; padding:0 0 15px}
+
 	ul li.tbody div.tobe-earned,
 	ul li.tbody div.earning-used,
-	ul li.tbody div.available-point {text-align:right;padding:3px 15px; overflow:hidden; }
-
+	ul li.tbody div.available-point {text-align:right;padding:3px 15px; overflow:hidden;}
 	ul li.tbody div.name-txt {clear:both;display:block;width:100%;}
-	ul li.tbody div.no-point-txt {clear:both;display:block;width:100%;text-align:left;padding:10px 0 0}
+	ul li.tbody div.no-point-txt {clear:both;display:block;width:100%;text-align:left; padding:10px 15px 0}
 	ul li.tbody div.m-point-look {clear:both;display:block;width:100%;padding:8px 0 0}
 	ul li.tbody div.apply-conver {clear:both;display:block;width:100%;padding:5px 0 0}
 	ul li.tbody div.request-conver {clear:both;display:block;width:100%;padding:10px 0 0}
@@ -3077,6 +3079,15 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	span.min-btn {display:block;}
 	div.mob-ttoy {display:block;}
 	.member.table-point-wrapper ul li.tbody div.order-divison {width:50%;}
+
+	ul li.tbody div span.look-money .mon-num + .min-btn {margin:8px 0 0;}
+	.table-point-wrapper.mpoint ul li.tbody + li.tbody {border-top:1px solid #dadada;}
+	.table-point-wrapper.mpoint ul li.tbody > div {border:0; overflow:hidden;}
+	.table-point-wrapper.mpoint ul li.tbody .m-point-look,
+	.table-point-wrapper.mpoint ul li.tbody .apply-conver,
+	.table-point-wrapper.mpoint ul li.tbody .request-conver {padding:16px 15px 0;}
+	.table-point-wrapper.mpoint ul li.tbody .mob-ttoy {padding-top:0;}
+	.table-point-wrapper.mpoint ul li.tbody .mob-ttoy > div {padding:0;}
 
 	/* 회원가입 > M포인트 전환 popup */
 	.pop-switch-poconts .form-group.pop-conver .col-md-4 {width: 33.33333333%;}
@@ -3374,19 +3385,19 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	/* 마이페이지  > 포인트관리 */
 	.pointe-body {padding: 18px 0 0;}
 	.poit-contents .point-management,
-	.poit-contents .po-list {padding:10px 0 0;}
+	.poit-contents .po-list {padding:10px 0 30px;}
+	.point-title + .po-list {margin-bottom:0;}
+	.poit-contents .table-point-wrapper {padding-top:0;}
 
 	/* 마이페이지  > 반품환불계좌 */
 	.refund-box {padding:18px 20px;}
 
 	/* 마이페이지 > 쿠폰관리 */
 	.mypage-cupon-managment {padding:0;}
-
 	.akl .list-content .list-row-title > div.mycupon-num {display:none}
 	.akl .list-content .list-row-title > div.mycupon-name {display:none}
 	.akl .list-content .list-row-title > div.mycupon-day {display:none}
 	.akl .list-content .list-row-title > div.mycupon-way {display:none}
-
 	.akl .content-list .con-list-item > div.mycupon-num {width:100%;padding:0 20px}
 
 	.akl .mypage-cupon-managment .content-list .con-list-item {display:block;}
