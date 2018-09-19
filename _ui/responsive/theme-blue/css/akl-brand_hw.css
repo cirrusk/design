@@ -443,7 +443,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 /*건강지킴이*/
-.btn-health-area {margin-top:70px;padding-top:11px;background:url(../images/akl_brand/nutrilite/bg_health01.jpg) no-repeat 0 0; text-align:right;}
+.btn-health-area {min-height:72px;margin-top:70px;padding-top:11px;background:url(../images/akl_brand/nutrilite/bg_health01.jpg) no-repeat 0 0; text-align:right;}
 .btn-health-area a {display:inline-block;}
 
 .brand .br-btn-tab {margin:30px 0;}
@@ -456,10 +456,22 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .br-btn-tab .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {color:#fff;}
 .brand .br-btn-tab .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {display:none;}
 
-
-
-
-
+/*nq검사하기*/
+.nq-test-box {padding-bottom:35px;border-bottom:1px solid #e3e3e3;}
+.nq-test-box .top-q {padding-bottom:35px;font-size:16px;font-weight:500;border-bottom:1px solid #e3e3e3;}
+.nq-test-box .top-q strong {color:#002f5f;}
+.nq-test-box .nq-list {margin-top:35px;} 
+.nq-test-box .nq-list .q-box {position:relative;padding-left:40px;}
+.nq-test-box .nq-list .q-box .num {position:absolute;width:28px;height:28px;top:0;left:0;border:1px solid #999;border-radius:50%;text-align:center;font-weight:500;line-height:26px;}
+.nq-test-box .nq-list .q-box p {font-weight:500;margin:0;}
+.nq-test-box .nq-list .q-box p strong {color:#002f5f;}
+.nq-test-box .nq-list .q-box .list-style-info2 {background-position:left 6px;font-weight:400;}
+.nq-test-box .nq-list .q-box .img {display:block;margin:20px 0 25px;}
+.nq-test-box .nq-list .q-box .img img {width:300px;}
+.nq-test-box .nq-list .a-box {padding-left:40px;}
+.nq-test-box .nq-list .a-box li {margin-top:20px}
+.nq-test-box .nq-list .a-box li label {font-weight:400;}
+.nq-btn a {margin:0 5px 10px;}
 
 @media (max-width:1024px) {
 	[class*="media-borad-list"] li {width:33.333%;}
@@ -692,7 +704,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.benefit-box [class*="list0"] li:after {display:none;}
 
 	/*건강지킴이*/
-	.btn-health-area {margin-top:40px;padding-top:0;background:url(../images/akl_brand/nutrilite/bg_health01.jpg) no-repeat 0 0;background-size:72px auto;}
+	.btn-health-area {margin-top:40px;padding-top:0;min-height:41px;background:url(../images/akl_brand/nutrilite/bg_health01.jpg) no-repeat 0 0;background-size:72px auto;}
 	.btn-health-area a img {height:41px;}
 
 	.biz-qna {padding:0 0 0 30px}
@@ -724,7 +736,6 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	[class*="global-comp-"].type-mob-full.open .tooltip-content {top:13px;max-width:200px;}
 	.global-comp-07.type-mob-full.open .tipCont-wrapper {margin-left:-80px;}
 
-
 	.global-comp-01 {top:26.2%;left:81%;}
 	.global-comp-02 {top:33.33%;left:72.33%;}
 	.global-comp-03 {top:32.93%;left:85.9%;}
@@ -738,6 +749,8 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.biz-slide-wrap {margin:40px -10px 0;padding:0 30px;}
 	.biz-slide-wrap .owl-nav .owl-next {right:0;background-position: 10px 50% !important;}
 	.biz-slide-wrap .owl-nav .owl-prev {left:0;background-position: 10px 50% !important;}
+
+	.nq-test-box .nq-list .q-box .img img {width:100%;max-width:300px;}
 
 }
 
