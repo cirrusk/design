@@ -16,7 +16,7 @@ Editor :
 .brand [class*="br-box-cont"] ul + .img-bnr {margin:10px 0 35px;}
 .full-component.br-box-cont-hr .img-bnr {margin:0;}
 .brand .br-box-cont-hr .content-row {margin-top:0;}
-.brand .outer-border-bottom + .content-row, .brand .outer-border-bottom + .full-component.mgt35 {margin-top:40px !important;}
+.brand .outer-border-bottom + .content-row, .brand .outer-border-bottom + .hidden + .full-component.mgt35 {margin-top:40px !important;}
 .brand .br-box-cont-hr .img-text-row-box-type1:nth-of-type(1) {margin-top:0;}
 
 .img-bnr {position:relative;margin:35px 0 45px;}
@@ -216,6 +216,13 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .brand .box-bnr-15 .txt-wrap p.txt-italic {font-size:13px;color:#808285;padding:0 0 2px 5px;}
 .brand .box-bnr-15 .txt-wrap .t1 {display:block;line-height:48px;font-size:40px;margin-bottom:15px;}
 
+.brand .box-bnr-16 .txt-wrap strong {display:block;line-height:48px;font-size:40px;}
+.brand .box-bnr-16 .txt-wrap span {display:block;}
+.brand .box-bnr-16 .txt-wrap p {margin:0;font-size:14px;color:#56565a;}
+.brand .box-bnr-16 .txt-wrap p.txt-italic {font-size:13px;color:#808285;padding:0 0 2px 5px;}
+.brand .box-bnr-16 .txt-wrap .woo-btn {padding-top:0;margin-top:20px}
+.brand .box-bnr-16 .txt-wrap .woo-btn a + a {margin-left:5px;}
+.brand .box-bnr-16 .txt-wrap strong.t1 {font-size:16px;line-height:50px;}
 
 /* 암웨이 사업 */
 [class*="img-text-row-box-type"]{margin-top:40px;}
@@ -478,6 +485,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand .box-bnr-08 .txt-wrap {padding-left:15px;}
 	.brand .box-bnr-10 .txt-wrap {padding-left:15px;}
 	.brand .box-bnr-15 .txt-wrap {padding-left:15px;}
+	.brand .box-bnr-16 .txt-wrap {padding-left:15px;}
 }
 
 @media (max-width:944px) {
@@ -486,6 +494,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 
 
 @media (max-width:768px) {
+	.brand .tbl-list-board.type-tbody-th.type-left .tbody .mob-block>p {text-align:left;}
 	.brand .bod-view-sns {padding-top:0; top: 39px;}
 	.brand h2.title-h4 {font-size:20px;}
 	.view-m {display:block;}
@@ -495,10 +504,10 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand [class*="box-bnr"] .txt-wrap p, .brand [class*="box-bnr"] .txt-wrap ul {display:none;margin:5px 0 0;font-size:14px;}
 	.brand [class*="box-bnr"] .txt-wrap .txt-right {margin:0;float:none;display:inline-block;}
 	.brand [class*="box-bnr"] .woo-btn {margin-top:20px;}
-	.brand [class*="box-bnr"] .woo-btn a {font-size:16px;height:45px;padding:9px 30px 8px;}
+	.brand [class*="box-bnr"] .woo-btn a {height:40px;padding:8px 10px 8px;}
 	.brand .box-bnr-03 .txt-wrap {top:25px;left:20px;transform:none;text-align:left;width:90%;}
 	.brand .box-bnr-02 .txt-wrap p, .brand .box-bnr-03 .txt-wrap p, .brand .box-bnr-04 .txt-wrap p, .brand .box-bnr-07 .txt-wrap p, .brand .box-bnr-09 .txt-wrap p, .brand .box-bnr-10 .txt-wrap p, .brand .box-bnr-12 .txt-wrap p,
-	.brand .box-bnr-14 .txt-wrap p, .brand .box-bnr-13 .txt-wrap p, .brand .box-bnr-15 .txt-wrap p {display:block;}
+	.brand .box-bnr-14 .txt-wrap p, .brand .box-bnr-13 .txt-wrap p, .brand .box-bnr-15 .txt-wrap p, .brand .box-bnr-16 .txt-wrap p, .brand .box-bnr-16 .txt-wrap ul {display:block;}
 	.brand .box-bnr-03 {background:#f4f4f4;}
 	.brand .box-bnr-03 img {width:auto;height:375px;margin: 0 auto;}
 	.brand .box-bnr-03 .txt-wrap p span {display:inline;}
@@ -533,6 +542,11 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.brand .box-bnr-15 {max-height:750px;padding:20px 0 200px;background:url(../images/akl_brand/nutrilite/img_bnr_health_mob02.jpg) no-repeat center bottom;background-size: 375px auto;}
 	.brand .box-bnr-15 .txt-wrap {position:static;text-align:left;transform:initial;}
 	.brand .box-bnr-15 .woo-btn {text-align:center;}
+	.brand .box-bnr-16 {max-height:750px;padding:20px 0 220px;background:#f4f4f4 url(../images/akl_brand/nutrilite/img_bnr_nptest_mob01.jpg) no-repeat center bottom;background-size: 375px auto;}
+	.brand .box-bnr-16 .txt-wrap {position:static;text-align:left;transform:initial;}
+	.brand .box-bnr-16 .txt-wrap span {display:inline;}
+	.brand .box-bnr-16 .woo-btn {text-align:center;}
+	.brand .box-bnr-16 .woo-btn a {width:132px;}
 	.img-bnr {margin:20px 0 35px;}
 	.img-bnr-bg {margin:20px 0 35px;padding:30px 10px 15px;}
 	.img-bnr-bg img.mob {display:inline-block !important;max-width:305px;width:100%;}
