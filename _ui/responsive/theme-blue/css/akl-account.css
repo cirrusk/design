@@ -49,7 +49,8 @@
 .mypage-block-list p {margin-bottom:0; font-size:14px;}
 .mypage-block-list ul {overflow:hidden;}
 .mypage-block-list li {float:left; width:32%; margin-top:24px;}
-.mypage-block-list li>div a {display:block; position:relative; box-sizing:border-box; height:75px; padding:18px 20px 16px 65px; border:1px solid #dadada; border-radius:3px; color:#56565a; font-weight:400;}
+.mypage-block-list li>div {border:1px solid #dadada; border-radius:3px;}
+.mypage-block-list li>div a {position:relative; display:block; box-sizing:border-box; padding:20px 20px 18px 65px;  color:#56565a; font-weight:400; vertical-align:middle;}
 .mypage-block-list li>div a:before {content:''; position:absolute; top:50%; left:22px; margin-top:-14px; width:28px; height:28px; background:url(../images/akl_common/ico_mypage_main.png) no-repeat; background-size:40px auto}
 .mypage-block-list li>div strong{display:inline-block; margin-bottom:3px; color:#032c5e; font-weight:500;}
 .mypage-block-list li p>span {display:inline-block; margin-left:10px; padding-left:10px; font-size:14px; line-height:1.2; font-weight:normal;border-left:1px solid #56565a;}
@@ -66,7 +67,7 @@
 .mypage-block-list.top-info li>div:before {top:50%; left:22px; margin-top:-14px; width:28px; height:28px; background:#0074a3;}
 .mypage-block-list.top-info li>div:after {top:26px; right:-12px; width:1px; height:40px; background:#dadada;}
  */
-
+.mypage-block-list.top-info li>div {border:0;}
 .mypage-block-list.top-info li>.box-top-03:after {display:none;}
 .mypage-block-list.top-info li.nth-3n {margin-top:0;}
 .mypage-block-list li.nth-3n-1 {width:36%; padding-left:24px; padding-right:24px;}
@@ -2663,6 +2664,10 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox .col-md-2 {width:18% !important;}
 	.wrapper-memb-join.prev-step-fold .fold-hiddenbox .col-md-10 {width:82% !important;}
 	.akl .wrapper-memb-join.prev-step-fold #reg-confirm-info.reg-confirm-txt {padding-left:15px;}
+}
+@media (max-width: 850px) {
+	.mypage-block-list li>div a {padding:10px 10px 10px 55px;}
+	.mypage-block-list li>div a:before {top:20px; left:15px;}
 }
 @media (max-width: 768px) {
 	.akl #register-step-page .form-control + .bt-akl-white {margin-left:0;}
