@@ -1611,7 +1611,7 @@ function myPage_EqualHeight(){
 
 			_child_A.each(function() {
 				maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
-				//maxHeightTotal.push(maxHeight);
+				maxHeightTotal.push(maxHeight);
 			});
 			_child_D.css({height:maxHeight});
 
