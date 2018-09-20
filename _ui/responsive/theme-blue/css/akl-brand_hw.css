@@ -34,6 +34,7 @@ Editor :
 .brand .title-txt01 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
 .brand .title-txt02, .layerWrapper .title-txt02 {font-size:16px;letter-spacing:-1px;font-weight:500;color:#55565a;}
 .brand .title-txt03, .layerWrapper .title-txt03 {font-size:14px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
+.brand .title-txt04, .layerWrapper .title-txt04 {display:block;margin:30px 0 15px;font-size:18px;letter-spacing:-1px;font-weight:500;color:#002f5f;}
 .brand h2.title-h4 {color:#55565a;}
 .layerWrapper p + .title-txt02 {display:block;margin-top:30px;}
 
@@ -326,12 +327,24 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .nq-pop-wrap .form-group > label {padding-top:7px;}
 .nq-pop-wrap .form-group.ty-input-birth .row.form-item-row  select {width:90px}
 .nq-pop-wrap .form-group .unit {display:inline-block;margin:0 10px}
-
+.nq-pop-wrap .form-group textarea {width:100%;border: solid 1px #dadada;min-height: 145px;}
 .nq-pop-wrap .terms-box {padding-top:30px;margin-top:30px;border-top:1px solid #e3e3e3;}
 .nq-pop-wrap .terms-box .terms-tit {display:block;margin-bottom:10px;font-size:16px;}
 .nq-pop-wrap .terms-box .terms {margin-top:20px;padding:15px 20px;border:1px solid #e3e3e3;}
 .nq-pop-wrap .terms-box .terms-radio-box {margin:20px 0;text-align:right;}
 .nq-pop-wrap .terms-box .terms-radio-box .radio-wrapper {display:inline-block;margin-left: 20px;}
+
+/*nq검사결과*/
+.nq-pop-wrap .sub-bg-btn-wrap {padding:15px 20px 20px;background:#f4f4f4}
+.nq-pop-wrap .sub-bg-btn-wrap .txte-btn {margin-top:20px;text-align:center;}
+.nq-pop-wrap .sub-bg-btn-wrap .txte-btn a {margin:0 10px}
+
+.nq-pop-wrap .nq-member-info-box {overflow:hidden;background:#f4f4f4;}
+.nq-pop-wrap .nq-member-info-box li {float:left;display:table;padding:25px 30px;width:33.333%;border-left:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.nq-pop-wrap .nq-member-info-box .item01, .nq-pop-wrap .nq-member-info-box .item04 {border-left:none;}
+.nq-pop-wrap .nq-member-info-box .item04, .nq-pop-wrap .nq-member-info-box .item05, .nq-pop-wrap .nq-member-info-box .item04, .nq-pop-wrap .nq-member-info-box .item06  {border-bottom:none;}
+.nq-pop-wrap .nq-member-info-box li span {padding-left:60px;display:table-cell;vertical-align:middle;font-size:16px;letter-spacing:-0.5px;}
+
 
 /*채용정보*/
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
@@ -484,6 +497,20 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .nq-test-box .nq-list .a-box li {margin-top:20px}
 .nq-test-box .nq-list .a-box li label {font-weight:400;}
 .nq-btn a {margin:0 5px 10px;}
+.brand .nq-btn .text {margin:0 0 35px;font-size:16px;font-weight:500;color:#002f5f;}
+
+
+.brand .nq-pop-wrap .apply-form {border-bottom:1px solid #dadada;}
+.brand .nq-pop-wrap .apply-form .dl-form-group {padding:15px 0 15px;}
+.brand .nq-pop-wrap .apply-form .dl-form-group .form-group {margin-top:18px;}
+.brand .nq-pop-wrap .apply-form .dl-form-group.txt:first-child {padding:0 0 35px;border-top:none;}
+.brand .nq-pop-wrap .apply-form .tit {margin-bottom:35px;}
+   
+.brand .nq-pop-wrap .apply-form .text-form input {width:calc(100% - 40px)}
+.brand .nq-pop-wrap .apply-form .text-form div {padding:0;}
+.brand .nq-pop-wrap .apply-form .list-style-info2 {margin-left:15px;}
+
+
 
 @media (max-width:1024px) {
 	[class*="media-borad-list"] li {width:33.333%;}
@@ -764,6 +791,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.biz-slide-wrap .owl-nav .owl-prev {left:0;background-position: 10px 50% !important;}
 
 	.nq-test-box .nq-list .q-box .img img {width:100%;max-width:300px;}
+	.nq-pop-wrap .form-group > label {padding-top:0 !important;}
 
 }
 
