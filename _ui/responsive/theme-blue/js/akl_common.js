@@ -1,10 +1,12 @@
 $(function(){
 /** ----- 공통 ----- */
+	$('body').append('<div id="mask" style="display:none"/>');
 
 	//radio, checkbox 키보드로 체크하기
 	var focusable_labels = '.amw-radio-wrap, .radio-label, input[type=radio]+label , .checkbox-element-wrapper, input[type=checkbox]+label';
 	var _focusableEls = $(document).find( focusable_labels );
-	_focusableEls.addClass('focus').attr('tabindex','0');
+	//_focusableEls.addClass('focus').attr('tabindex','0');
+	_focusableEls.addClass('focus');
 	_focusableEls.keypress(function(event){
 		var keycode = event.keyCode || event.which;
 		if( keycode == '13' ){
@@ -2435,19 +2437,20 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	var _zindex = 9999;
 	var _thisIndex = _zindex+layerCounter;
 
+	/*
 	if(!$('#mask').length){
 		if($('.compliance-area').is('.privacy')){
 			$('.termsWrapper').append('<div id="mask"/>');
 		} else{
 			$('body').append('<div id="mask"/>');
 		}
-	}
+	}*/
 
 	$(targetLayer).fadeIn(150, function(){
 		scroll_LOCK();
 		setPosition();
 
-		$('#mask').addClass('on');
+		$('#mask').show().addClass('on');
 		$(this).css('z-index',_thisIndex);
 		$(this).addClass('active');
 		$(this).attr('tabindex','0').show().focus();
@@ -2464,7 +2467,8 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		if($(this).data('closeAll') === true){
 			var layerAll = $(document).find('.layerWrapper.active');
 			$(layerAll).fadeOut().removeClass('active').attr('style','');
-			$('#mask').remove();
+			//$('#mask').remove();
+			$('#mask').hide().removeClass('on');
 			layerCounter = 0;
 			scroll_RESET();
 		}
@@ -2474,7 +2478,8 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 
 			if($('.layerWrapper.active').length === 0){
 				layerCounter = 0;
-				$('#mask').remove();
+				//$('#mask').remove();
+				$('#mask').hide().removeClass('on');
 				scroll_RESET();
 			}
 		}
