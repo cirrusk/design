@@ -1592,8 +1592,8 @@ function myPage_EqualHeight(){
 	//높이값 초기화
 	function colHeightResizeInit(){
 		_UL.each(function(){
-			var _child_A = $(this).find('li>div>a');
-			_child_A.each(function() {
+			var _child_D = $(this).find('li>div');
+			_child_D.each(function() {
 				$(this).css({height:''});
 			});
 		});
@@ -1602,28 +1602,30 @@ function myPage_EqualHeight(){
 	//높이값 맞추기
 	function colHeightResizeReSize(){
 		var maxHeight = 85;
-		//var maxHeightTotal = [];
-		//var maxARRAY = Math.max.apply(0, maxHeightTotal);
+		var maxHeightTotal = [];
+		var maxARRAY = Math.max.apply(0, maxHeightTotal);
 
 		_UL.each(function(){
+			var _child_D = $(this).find('li>div');
 			var _child_A = $(this).find('li>div>a');
+
 			_child_A.each(function() {
 				maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
-				//maxHeightTotal.push(maxHeight);
+				maxHeightTotal.push(maxHeight);
 			});
-			_child_A.css({height:maxHeight});
+			_child_D.css({height:maxHeight});
 
 			/*
 			console.log(maxHeightTotal);
 			console.log(Math.max.apply(0, maxHeightTotal)); // 최대값
 			console.log(Math.min.apply(0, maxHeightTotal)); // 최소값
 			*/
-		});
 
-		var panel = _blockList.parents('.panel-collapse.collapse').not('.in');
-		if( panel.length){
-			panel.find('.mypage-block-list ul>li>div>a').css({height:'95px'});
-		}
+			var panel = _blockList.parents('.panel-collapse.collapse').not('.in');
+			if( panel.length){
+				panel.find('.mypage-block-list ul>li>div').css({height:maxARRAY});
+			}
+		});
 	}
 
 	function colHeight_check(){
@@ -1639,7 +1641,7 @@ function myPage_EqualHeight(){
 
 	setTimeout(function(){
 		colHeight_check();
-	}, 3000);
+	}, 1000);
 
 	$(window).resize(function(){
 		colHeight_check();
