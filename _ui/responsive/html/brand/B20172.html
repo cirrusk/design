@@ -159,7 +159,7 @@
 				<!-- // 로그인 전  -->
 
 				<!-- 로그인 후  -->
-				<h3 class="title-h6">NQ 검사현황</h3>
+				<h3 class="title-h6 mgt40">NQ 검사현황</h3>
 
 				<div class="table-wrapper tbl-pc">
 					<table class="tbl-type1 txt-c">
@@ -186,7 +186,7 @@
 						<td>0</td>
 						<td>
 							<span class="txte-btn">
-								<button type="button" class="bt-akl-blue mini">검사현황</button>
+								<button type="button" class="bt-akl-blue mini B20172_lp1">검사현황</button>
 							</span>
 						</td>
 					</tr>
@@ -247,7 +247,7 @@
 				</ul>
 
 				<div class="btn-area mgt30">
-					<a href="#" class="bt-akl-blue">아동등록하기</a>
+					<a href="#" class="bt-akl-blue B20172_lp2">아동등록하기</a>
 				</div>
 
 				<section class="full-component mgt40">
@@ -281,6 +281,152 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	
+
+	<!-- 약관1 팝업 -->
+	<div class="layerWrapper B20172_lp1_pop">
+		<div class="cbox layerBox popWidL">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text"> [필수] 전자상거래에 관한 이용약관
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+						   <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+				</div>
+				<div class="cart-popup__content payment">
+					<div class="cart-popup__item-info">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //약관1 팝업 -->
+
+	<!-- NQ 검사 아동 등록 팝업 -->
+	<div class="layerWrapper B20172_lp2_pop">
+		<div class="cbox layerBox popWidM">
+			<div class="cart-popup__dialog">
+				<div class="cart-popup__header">
+					<span class="cart-popup__header-text">NQ 검사 아동 등록
+						<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close" >
+						   <img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기">
+						</a>
+					</span>
+				</div>
+				<div class="cart-popup__content payment">
+					<div class="cart-popup__item-info nq-pop-wrap amway-theme">
+						
+
+						<div class="form-group">
+							<label class="col-md-3 col-xs-12 control-label" for="seName">이름<span class="ico-must-astar">필수</span></label>
+							<div class="col-md-9 col-xs-12 last-col">
+								<input type="text" class="form-control" id="seName">
+							</div>
+						</div>
+
+						<div class="form-group ty-input-birth">
+							<label class="col-md-3 col-xs-12 control-label" for="simpleBirth">생년월일<span class="ico-must-astar">필수</span></label>
+							<div class="col-md-9 col-xs-12">
+								<div class="row form-item-row">
+									<select class="form-control" id="simpleBirth">
+										<option>선택</option>
+										<option>2000</option>
+									</select>
+									<span class="unit">년</span>
+									<select class="form-control" title="생년 월">
+										<option>선택</option>
+										<option>02</option>
+									</select>
+									<span class="unit">월</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-3 col-xs-12 control-label">성별<span class="ico-must-astar">필수</span></label>
+							<div class="col-md-9 col-xs-12">
+								<div class="radio-wrapper">
+									<label class="amw-radio-wrap radio-label focus" tabindex="0">
+										<input type="radio" name="radio-1" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">남</span>
+									</label>
+									<label class="amw-radio-wrap radio-label focus" tabindex="0">
+										<input type="radio" name="radio-1" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">여</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-3 col-xs-12 control-label">프로그램<span class="ico-must-astar">필수</span></label>
+							<div class="col-md-9 col-xs-12">
+								<div class="radio-wrapper">
+									<label class="amw-radio-wrap radio-label focus" tabindex="0">
+										<input type="radio" name="radio-2" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">일반측정하기</span>
+									</label>
+									<label class="amw-radio-wrap radio-label focus m320m0" tabindex="0">
+										<input type="radio" name="radio-2" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">건강지킴이 측정하기</span>
+									</label>
+								</div>
+								<p class="txt-input-guide">뉴트리라이트 건강지킴이 프로그램에 참여한 아동은 ‘건강지킴이 측정하기’를, 개인적으로 NQ를 측정하시려면 ‘일반 측정하기’를 선택해 주세요. 프로그램 변경은 수정 변경한 다음달 1일 부터 적용됩니다.</p>
+							</div>
+						</div>
+
+
+						<div class="terms-box">
+							<strong class="terms-tit">개인정보 수집 및 이용에 관한 동의</strong>
+							<p>개인정보의 수집 및 이용에 동의하실 경우 보다 체계적인 관리 서비스를 이용하실 수 있습니다.</p>
+							<div class="terms">
+								<p>한국암웨이는 이용자 문의에 대한 원활한 관리, 운영이 이루어질 수 있도록 아래와 같이 개인정보를 수집/이용합니다.</p>
+								
+								<p>1) 수집 항목<br />- 기본 필수 수집 항목 (일반 측정) 아동의 이름, 생년월일, 성별<br />(건강지킴이 측정) 아동의 이름, 생년월일, 성별, 학교/단체 명, 학년, 반<br />- 측정 질문에 따른 추가 수집 항목<br />(공통) 아동의 키, 몸무게 </p><p> 2) 이용 목적<br />- NQ 검사 아동 식별<br />- 검사 결과 및 추이 그래프 보기 등 서비스 제공<br />- 연구 자료로의 사용<br />- 기타 검사관련 문의사항 대응 </p> <p>3) 보유 기간<br />- 질문 접수 후 6개월 동안 보유</p> <p class="list-style-info2">신청자가 개인정보 삭제를 요청할 경우 지체없이 파기합니다.</p>
+							</div>
+							<div class="terms-radio-box">
+								<div class="radio-wrapper">
+									<label class="amw-radio-wrap radio-label focus" tabindex="0">
+										<input type="radio" name="radio-1" class="amw-global-radio">
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">동의하지 않음</span>
+									</label>
+								</div>
+								<div class="radio-wrapper">
+									<label class="amw-radio-wrap radio-label focus" tabindex="0">
+										<input type="radio" name="radio-1" class="amw-global-radio" checked="checked" >
+										<span class="amw-radio-overlay"></span>
+										<span class="amw-label-radio-text">동의함</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+				<div class="cart-popup__item-link">
+					<button type="button" class="bt-akl-blue">아동 등록하기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //NQ 검사 아동 등록 팝업 -->
+
+
+<script type="text/javascript">
+	$('.B20172_lp1').on('click',function(){
+		layerPopOver(this,'.B20172_lp1_pop');
+	});
+	$('.B20172_lp2').on('click',function(){
+		layerPopOver(this,'.B20172_lp2_pop');
+	});
+</script>
 </body>
 </html>
