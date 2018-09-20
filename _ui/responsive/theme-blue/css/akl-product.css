@@ -127,12 +127,9 @@ iframe {border:0;}
 .visual-area.type02.lipgloss{background: #000000 url(../images/akl_product/beauty/bg_lipgloss.png) no-repeat top center;height:1033px;} /* 포인트메이크업(립글로스) */
 .visual-area.type02.lipgloss-pop{background: #000000 url(../images/akl_product/beauty/bg_pop_triple_lipgloss.png) no-repeat top center;height:1144px;} /* 포인트메이크업(립글로스) */
 .visual-area.sw-foundation{background: #000000 url(../images/akl_product/beauty/bg_sheer_weightless_foundation_01.png) no-repeat top center;height:1169px;} /* 하이드라-브이 쉬어 라이트 파운데이션 */
-.visual-area.type02.studio-newyork{background:url(../images/akl_product/beauty/bg_studio_newyork.png) no-repeat center bottom;padding-bottom:90px;} /* 메이크업3 스튜디오 뉴욕 마스카라 */
 
 .visual-area.cleansing-device-01{min-height:904px;background:url(../images/akl_product/beauty/bg_cleansing_device_01.png) no-repeat center bottom;}
 .visual-area.cleansing-device-02{min-height:904px;background:url(../images/akl_product/beauty/bg_cleansing_device_02.png) no-repeat center bottom;}
-
-
 
 /* 배스바디 */
 .visual-area.type02.normal-tooth{background: #5c85c4 url(../images/akl_product/bath-body/bg_glister.png) no-repeat top center;min-height:932px;} /* 바디워시 */
@@ -1284,7 +1281,11 @@ dl.amo-txt dd br {line-height:18px}
 .neon-sns .sns-notice{float:left;margin:0;font-size:18px;color:#56565a;font-weight:300;}
 .neon-sns .sns-box{float:right;padding-top:2px;}
 .neon-sns .sns-box li{float:left;margin-left:20px;}
-.neon-sns .sns-box .sns-txt{margin-left:8px;}
+.neon-sns .sns-box .sns-txt{margin-left:8px;color:#56565a; font-weight:300}
+.neon-sns.red {background-color:#f9e7eb}
+.neon-sns.yellow {background-color:#fdf2e8}
+.neon-sns + .advantage-area {border-top:0; margin-top:0}
+
 
 
 /* 뉴트리라이트 파운데이션 트리오 번들팩 */
@@ -1576,7 +1577,6 @@ dl.amo-txt dd br {line-height:18px}
 .point-wrap .tit span {display:block;font-weight:400;line-height:1.2;}
 .point-wrap .tit span.d-inline {display:inline-block;}
 .point-wrap .desc{display: block;margin-top:17px;font-size:16px;color:#808285;text-align:center;padding: 0 8.5% 0;font-weight:300;line-height: 1.5;}
-.point-wrap .desc.top{font-size:32px;color:#56565a;font-weight:400;}
 .point-wrap.block{margin-top:40px;letter-spacing:-2px}
 
 .t-big.point-wrap .tit{font-size:60px;letter-spacing:-2px;line-height:70px;}
@@ -2340,19 +2340,18 @@ span.txt-next {display:block;}
 .round3-thum-list{}
 .round3-thum-list ul{display:block;margin:0 30px;}
 .round3-thum-list ul:after{clear:both;content:"";display:block;}
-.round3-thum-list ul li{float:left;width: 33.3%;padding: 0 12px;}
-.round3-thum-list ul li .studio-thum-area{position: relative;display: block;margin: 0;padding:140px 0 0 0;}
-
+.round3-thum-list ul li{float:left;/* margin-left: 20px; */width: 33.3%;/* display: inline-block; */}
+.round3-thum-list ul li .studio-thum-area{margin: 0 10px;border: 1px solid #f00000;}
 .studio-thum-area{}
 .studio-thum-area p{display:block;font-size:16px;text-align:center;line-height:1.5;}
 .studio-thum-area strong{display:block;line-height:1.5;}
 .studio-thum-area span{display:block;font-size:16px;color:#808285;line-height:1.5;text-align: center;}
 .studio-thum-area em{display:block;font-size:12px;color:#808285;line-height:1.5;text-align: center;}
-.studio-thum-area .tit{color: #56565a !important;font-weight:400;margin: 10px 0 3px;/* margin: 0; */}
-.studio-thum-area .txt{margin-bottom: 13px;}
+.studio-thum-area .tit{color:#56565a;font-weight:400;}
+.studio-thum-area .txt{}
 .studio-thum-area .sub-txt{}
-.studio-thum-area .img{position:absolute;top: 0;left: 50%;margin-left: -70px;}
-.studio-thum-area .img img{width: auto;}
+
+
 
 
 /* 샘플작업 */
@@ -3507,7 +3506,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.point-wrap .tit span{display:block;font-weight:400;}
 	.point-wrap .sec-tit{font-size:22px;font-weight:400;letter-spacing:-2px}
 	.point-wrap .tit strong{font-weight:400;}
-	.point-wrap .desc{display: block;margin-top: 20px;font-size:14px;text-align:center;font-weight:300;line-height: 1.5;padding: 0 5%;}	
+	.point-wrap .desc{display: block;margin-top: 20px;font-size:14px;text-align:center;font-weight:300;line-height: 1.5;padding: 0 5%;}
+	.point-wrap .desc.top{font-size:32px;}
 	.point-wrap.block{margin-top:20px;}
 	
 	.t-big.point-wrap .tit{font-size:32px;letter-spacing:-2px}
@@ -4331,7 +4331,6 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.nurish-cont .ingre-list-wrap .system-lst3.type-2nd ul li .lst-won span{line-height:1.5;}
 	
 	
-	
 }	
 
 
@@ -4397,9 +4396,6 @@ ol.decimal-num li ol li ol {padding:0 15px;}
    .visual-area.point-makeup03 .txt-info-visual .v-logo-txt, .visual-area.point-makeup02 .txt-info-visual .v-logo-txt{font-size: 18px;font-weight: 300;}
    .visual-area.point-makeup03 .v-logo.beauty img, .visual-area.point-makeup02 .v-logo.beauty img{height:16px;}
    .visual-area.point-makeup03 .v-pro span img, .visual-area.point-makeup02 .v-pro span img{width:inherit;}
-   
-   /* 메이크업3 스튜디오 뉴욕 */
-	.round3-thum-list ul li{float:inherit;width:100%;text-align:center;margin-bottom:30px;}
    
    /* 스무싱 파운데이션 */
    .color-tip-lst li{float:inherit;}
