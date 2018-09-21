@@ -97,7 +97,8 @@
 .akl .product-list__item .product-list__item-link-ditto button {padding-left:35px; background-size:20px 20px !important}
 .akl .product-list__item .product-list__item-link-text {background:url(../images/akl_common/ico_heart.png) no-repeat 0 center;background-size:20px 20px;padding-left:20px;}
 
-.akl .plp-add-to-shopping-list .dropdown-menu {width:100%;}
+.akl .plp-add-to-shopping-list .dropdown-menu {width:300px;}
+.akl .product-list__item-link .plp-add-to-shopping-list .dropdown-menu {width:100%;}
 .akl .product-list__item-link .plp-add-to-ditto {float:right; display:inline-block; width:100%;}
 .akl .product-list__item-link .plp-add-to-ditto .dropdown-menu {width:100%;}
 .akl .product-list__item-link .plp-add-to-shopping-list .product-list__item-link-common {position:absolute; left:10px; top:0;}
@@ -1245,27 +1246,23 @@ span.btn-business {display:inline-block;}
 .akl .use-agreement #terms .conditions {letter-spacing:-1px;word-break:break-all;}
 
 /* 주문결제 > Tab */
-.akl .amway-theme.order-payment {}
-.akl .amway-theme.order-payment .tabs-toggles {border-bottom:0 none;}
-.akl .amway-theme.order-payment .outer-border-bottom .tabs-toggles .tab-toggle-wrap {min-width:62px; height:40px; padding:0;}
-.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap {border:0; background:none;}
+.akl .amway-theme.order-payment .tabs-toggles {border-bottom:0}
+.akl .amway-theme.order-payment .outer-border-bottom .tabs-toggles .tab-toggle-wrap {min-width:62px; padding:0;border:0; background:none;}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle {border:1px solid #dadada;background:#f4f4f4;padding:0 0;min-width:62px;height:38px;}
-.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {font-size:14px;color:#bbb;font-weight:700}
-.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle {border:1px solid #dadada;background:#fff; border-top:4px solid #008fc5}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; font-size:14px; line-height:36px; color:#bbb;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle {border:1px solid #dadada;background:#fff;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle:before {background:none;}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {color:#20893d;font-weight:700}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap:first-child .tab-toggle {border-top-left-radius:4px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:4px;}
 .akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap:last-child .tab-toggle {margin-left:-1px;border-top-left-radius:0px;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:0px;}
-.akl .order-payment .outer-border-bottom .tabs-toggles {overflow:hidden; display:block;}
-.akl .order-payment .tab-toggle-wrap {display:block; float:left;}
-.akl .order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle .toggle-text {display:block; line-height:36px;}
-.akl .order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {display:block; line-height:33px;}
-
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle {border:1px solid #dadada;background:#fff; border-top:4px solid #008fc5;}
+.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap.active .tab-toggle .toggle-text {display:block; line-height:33px;}
 
 /* 주문결제 > 단일 */
 .single-body {position:relative;}
 .btn-adress-list {position: absolute;top:-51px;left:160px;}
 .btn-adress-list.mounting {position: relative;top:0;left:0;}
-.akl .btn-adress-list.G10600_lp3 {top:-55px;}
+.akl .btn-adress-list.G10600_lp3 {top:-80px;}
 
 /* 주문결제 > 단일 > 기본배송지 */
 .akl .ico-bg-sky {display:inline-block;border:1px solid #007eb0;background:#e5f2f7;color:#007eb0;font-size:11px;padding:1px 8px;height:20px;}
@@ -2681,7 +2678,8 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .amway-theme.order-payment .tabs-toggles .tab-toggle-wrap .tab-toggle {height:38px; }
 
 	/* 주문결제 > 단일 */
-	.btn-adress-list {position: absolute;top:-67px;left:150px;}
+	.btn-adress-list {position:absolute; top:-67px; left:150px;}
+ 	.akl .btn-adress-list.G10600_lp3 .link-btn {margin-top:0;}
  	.akl .btn-adress-list.mounting .link-btn {margin-top:0;}
 
 	/* 주문결제 > 단일 > 배송지 목록 */
@@ -2836,6 +2834,7 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 
 	/* 주문결제 > 오른쪽 */
 	.akl .sopInstantPayment .shipping-delivery-summary {width:100%;max-width:100%;}
+	.akl .shipping-delivery-summary {max-width:none;}
 
 	/* 카드사 혜택보기 (레이어) */
 	.tbl-list-board.card-benefits .th,
