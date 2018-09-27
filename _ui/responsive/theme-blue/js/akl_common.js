@@ -673,12 +673,6 @@ function terms_ViewAll(){
  *  ------------------------------------
  */
 
-function isIE () {
-	var myNav = navigator.userAgent.toLowerCase();
-	return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-}
-var ua = window.navigator.userAgent;
-
 /* body 클릭 시 열린 레이어 닫기 */
 function HEADER_stopPropagation(){
 	//event bubbling 막기
@@ -701,24 +695,35 @@ function HEADER_stopPropagation(){
 }
 
 /* 쇼핑메뉴 클릭이벤트 : .overlay-menu-toggle-desktop */
+function isIE () {
+	var myNav = navigator.userAgent.toLowerCase();
+	return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+//var ua = window.navigator.userAgent;
+
 function HEADER_MenuShop(){
 	var _btnSHOP = $('.overlay-menu-toggle-desktop');
 
-	//Internet Explorer
-	if (isIE () === 9) {
+	//Internet Explorer 9 에서 메가메뉴 show/hide
+	if (isIE () === 9 && isIE () !== 10 ) {
+		var overlayMenu = $('#overlay-menu-wrapper');
 		_btnSHOP.on('click', function(){
 			$(this).addClass('collapsed');
 			$('.popoverword').hide();
+
+			if (overlayMenu.is(':hidden')){
+				overlayMenu.show();
+				$(this).removeClass('collapsed');
+			} else {
+				overlayMenu.hide();
+				//$(this).addClass('collapsed');
+			}
+		});
+
+		$('.overlay-menu-container .search-results-close').on('click',function(){
+			overlayMenu.hide();
 		});
 	}
-	/*
-	//IE 10
-	else if (isIE () === 10){}
-	//IE 11
-	else if (ua.indexOf("Trident/7.0") > 0) {}
-	//not IE
-	else {}
-	*/
 
 	_btnSHOP.addClass('collapsed');
 	_btnSHOP.on('click', function(){
