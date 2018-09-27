@@ -866,16 +866,34 @@
 }
 
 @media (max-width: 768px) {
-	/* 암웨이플라자 */
-	.akl .shop-finder-container .order-history-container .order-history-search-wrapper .form-wrapper form select.form-control { width: 48% !important;}
-	.akl .shop-finder-container .order-history-container .order-history-search-wrapper .form-wrapper form select.form-control:first-child {margin-right: 1%;}
-	.akl .shop-finder-container .order-history-container .order-history-search-wrapper .form-wrapper form select.form-control:nth-child(2) {margin-left: 1%;margin-right: 0;}
-	.akl .shop-finder-container .shop-finder-main-content {padding-top: 20px;}
-	.akl .shop-finder-container .shop-finder-main-content .shop-finder-main-content-title-area .shop-finder-main-content-title {float: left;}
-	.akl .shop-finder-container .shop-finder-main-content .shop-finder-main-content-body-area .shop-finder-main-content-body-area-left .QA-container {height: 510px;}
-
 	/* 암웨이소식 타이틀 공통 */
-	.customer-area .title-box + .customer-wrap .amway-theme .navigation-tabs-container  { margin-top:-15px}
+	.customer-area .title-box + .customer-wrap .amway-theme .navigation-tabs-container  {margin-top:-15px;}
+
+	/* 암웨이플라자 - 검색 */
+	.akl .shop-finder-container .order-history-account-section-content .account-orderhistory {margin:30px 0 40px;}
+	.akl .shop-finder-container .order-history-container .order-history-search-wrapper {border:0;}
+	.akl .shop-finder-container .order-history-search-wrapper .form-wrapper {position:relative; padding:0 90px 0 0; border:0;}
+	.akl .shop-finder-container .order-history-search-wrapper .form-wrapper select.form-control.width185 {margin-right:0;}
+	.akl .shop-finder-container .order-history-search-wrapper .form-wrapper select.form-control {width:100%;}
+	.akl .shop-finder-container .order-history-search-wrapper .form-wrapper > button {position:absolute; top:0; right:0; margin-top:0;}
+
+	/* 암웨이플라자 - 컨텐츠(지도,사진) */
+	.check-area {display:block;}
+	.akl .shop-finder-main-content .check-area {text-align: right;}
+	.akl .shop-finder-main-content .check-area label {text-align:left; line-height:100%; margin-bottom: 0!important; vertical-align:bottom;}
+
+	.shop-finder-container .shop-finder-main-content {padding-top:0;}
+	.akl .shop-finder-container .shop-finder-main-content .shop-finder-main-content-title-area .shop-finder-main-content-title {float:left; padding-top:0; font-size:16px;}
+	.akl .shop-finder-main-content-body-area p { height:240px; margin-bottom:10px;}
+	.akl .shop-finder-main-content-body-area-right {margin:0 -15px;}
+	.akl .shop-finder-main-content ._checkbox-element-global-class ~ span._checkbox-element-global-span {top:0;}
+	.akl .shop-finder-main-content ._checkbox-element-global-class ~ span._checkbox-element-global-span:before {bottom:0;}
+
+	/* 이미지 영역 */
+	.akl .shop-finder-container .shop-finder-main-content .shop-finder-main-content-body-area .shop-finder-main-content-body-area-right {padding-top: 10px; padding-bottom:20px}
+
+	/* 샵 리스트 accordion */
+	.akl .shop-finder-container .shop-finder-main-content .shop-finder-main-content-body-area .shop-finder-main-content-body-area-left .QA-container {height: 510px;}
 
 	/* 컴플라이언스 센터 */
 	.compliance-area .list-certifi li {padding:50px 0; border-top:1px solid #e3e3e3}
