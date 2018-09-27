@@ -1624,30 +1624,39 @@ function myPage_EqualHeight(){
 
 	//높이값 맞추기
 	function colHeightResizeReSize(){
-		var maxHeight = 85;
-		var maxHeightTotal = [];
-		var maxARRAY = Math.max.apply(0, maxHeightTotal);
+		var max_subHeight = 0;
+		var maximumNum = [];
 
-		_UL.each(function(){
+		_UL.each(function(i){
+			var maxTotal = [];
+			var maxARRAY;
 			var _child_D = $(this).find('li>div');
 			var _child_A = $(this).find('li>div>a');
 
+			//anchor 높이값 (A)
 			_child_A.each(function() {
-				maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
-				maxHeightTotal.push(maxHeight);
+				var max_subHeight = $(this).outerHeight(true);
+				maxTotal.push( max_subHeight ); //배열에 담기
+				maxARRAY = Math.max.apply(0, maxTotal); //배열 값중 가장 큰 값
 			});
-			_child_D.css({height:maxHeight});
 
-			/*
-			console.log(maxHeightTotal);
-			console.log(Math.max.apply(0, maxHeightTotal)); // 최대값
-			console.log(Math.min.apply(0, maxHeightTotal)); // 최소값
-			*/
+			// (A)에서 가장 긴 값 적용
+			_child_D.css({height: maxARRAY });
 
+			/* 닫힌 panel에 적용할 높익 구하기 */
+			maximumNum.push( maxARRAY ); //각 배열에서 최고 높이값
+			var hiddenHeight = Math.max.apply(0, maximumNum );
 			var panel = _blockList.parents('.panel-collapse.collapse').not('.in');
 			if( panel.length){
-				panel.find('.mypage-block-list ul>li>div').css({height:maxARRAY});
+				panel.find('.mypage-block-list ul>li>div').css({height : hiddenHeight});
 			}
+
+			/*
+			console.log(hiddenHeight)
+			console.log(maxTotal);
+			console.log(Math.max.apply(0, maxTotal)); // 최대값
+			console.log(Math.min.apply(0, maxTotal)); // 최소값
+			*/
 		});
 	}
 
