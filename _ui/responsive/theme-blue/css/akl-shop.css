@@ -1213,6 +1213,13 @@
 .shipping-delivery-ship .form-group input + button {margin-left:10px;}
 .shipping-delivery-ship .form-group .card-sort {clear:both; padding-top:15px; border:0;}
 
+/* 주문배송 label - inline block 으로 변경 */
+.shipping-delivery-ship > .panel label,
+.shipping-delivery-ship .panel .new-shipping-agree label,
+.shipping-delivery-ship.method .panel label,
+.shipping-list-order > span > label {display:inline-block;}
+.shipping-delivery-ship .panel .new-shipping-agree .form-group div.clearfix {margin-top:0;}
+
 /* 주문결제 실패화면 모바일*/
 .order-failed-area {padding:30px 0 0;}
 .order-failed-txt {border-bottom:1px solid #e3e3e3;padding:0 0 20px;}
@@ -1232,6 +1239,7 @@
 
 .btn-delivery-guide {padding-left:10px;}
 .delivery-txt {padding:0 0 5px;}
+.shipping-delivery-ship .delivery-txt {margin-bottom:10px;}
 .panel.col-panel { margin-bottom: 0}
 .akl .shipping-delivery-ship .panel label {line-height:18px;}
 .akl .shipping-delivery-ship {clear:both;display:block;margin:0 0;padding:35px 0;}
@@ -1240,6 +1248,7 @@ label.tax-bill {display:inline-block;}
 span.btn-business {display:inline-block;}
 .tax-bill + span.btn-business{margin-left:8px}
 .shipping-list-order span {display:block;margin-top:20px}
+.shipping-list-order > span {margin-top:8px;}
 .akl .amwa-btnbar {margin:0 auto; text-align:center;padding:10px 0 0}
 .akl .shipping-delivery-radio-body.card {margin:17px 0 0 0}
 .akl .show-more-products-wrapper {clear:both;display:block; margin-bottom:0}
@@ -2492,11 +2501,14 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .owl-carousel.owl-theme.carousel-title-containeramway-suggest__list {padding:0 20px;}
 	.akl .amway-suggest.cart-amway-suggest {}
 	.akl .amway-suggest.cart-amway-suggest .amway-suggest__title {text-align:left;font-size:18px;font-weight:500;margin:0 0;padding:30px 0 20px}
-	.akl .amway-suggest.cart-amway-suggest .amway-suggest__item {margin:12px 12px;border:0 none;position: relative;}
+	.akl .amway-suggest.cart-amway-suggest .amway-suggest__item {position: relative; margin:12px auto 12px; border:0;}
 	.akl .amway-suggest.cart-amway-suggest .amway-suggest__item-content {padding:0 0;}
 	.akl .amway-suggest.cart-amway-suggest .amway-suggest__item-detail {background:#f4f4f4;padding:20px 20px;margin-top:0;}
 	.akl .amway-suggest.cart-amway-suggest .amway-suggest__item-title {height:45px;}
 	.akl .amway-suggest.cart-amway-suggest .amway-suggest__item .plp-item-label-wrap {top:-20px}
+
+	.akl .amway-suggest.cart-amway-suggest .thumnail-box > a {padding-top:0; display:block; max-width:none; max-height:none; width:100%; height:auto;}
+	.akl .amway-suggest.cart-amway-suggest .thumnail-box img {position:static}
 
 	/* 장바구니 > 위시리스트 툴팁 */
 	.akl .sort-refine-bar .col-sm-5 {width:100%;}
