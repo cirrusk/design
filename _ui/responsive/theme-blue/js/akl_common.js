@@ -1,6 +1,10 @@
 $(function(){
 /** ----- 공통 ----- */
+	//레이어 마스크 추가
 	$('body').append('<div id="mask" style="display:none"/>');
+
+	//주문결제 > 새배송지 - label 사이에  clearfix 추가
+	label_to_inlineblock();
 
 	//radio, checkbox 키보드로 체크하기
 	var focusable_labels = '.amw-radio-wrap, .radio-label, input[type=radio]+label , .checkbox-element-wrapper, input[type=checkbox]+label';
@@ -336,6 +340,18 @@ function onScroll_TOP(){
 
 	//스크롤 시
 	window.onscroll = function(){ pageScrollTOP(); };
+}
+
+/* 주문결제 > 새배송지
+ * - inline-block으로 변경(css)후
+ * - label 사이에  clearfix 추가
+ */
+function label_to_inlineblock(){
+	var switchInlineBlock = $('.new-shipping-agree .form-group');
+	if (!switchInlineBlock){return;}
+
+	var firstNodeLabel = switchInlineBlock.find('.amwa-radio:first-child+label');
+	$('<div class=\"clearfix\"/>').insertAfter(firstNodeLabel);
 }
 
 /* 메인 > 신제품,프로모션 div 동일 높이 맞추기 */

@@ -339,12 +339,39 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .nq-pop-wrap .sub-bg-btn-wrap .txte-btn {margin-top:20px;text-align:center;}
 .nq-pop-wrap .sub-bg-btn-wrap .txte-btn a {margin:0 10px}
 
-.nq-pop-wrap .nq-member-info-box {overflow:hidden;background:#f4f4f4;}
-.nq-pop-wrap .nq-member-info-box li {float:left;display:table;padding:25px 30px;width:33.333%;border-left:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.nq-pop-wrap .nq-member-info-box {position:relative;overflow:hidden;background:#f4f4f4;}
+.nq-pop-wrap .nq-member-info-box:after {content:'';position:absolute;width:100%;height:1px;left:0;top:50%;background:#e3e3e3;}
+.nq-pop-wrap .nq-member-info-box li {float:left;display:table;padding:25px 30px;width:33.333%;border-left:1px solid #e3e3e3;}
 .nq-pop-wrap .nq-member-info-box .item01, .nq-pop-wrap .nq-member-info-box .item04 {border-left:none;}
-.nq-pop-wrap .nq-member-info-box .item04, .nq-pop-wrap .nq-member-info-box .item05, .nq-pop-wrap .nq-member-info-box .item04, .nq-pop-wrap .nq-member-info-box .item06  {border-bottom:none;}
-.nq-pop-wrap .nq-member-info-box li span {padding-left:60px;display:table-cell;vertical-align:middle;font-size:16px;letter-spacing:-0.5px;}
+.nq-pop-wrap .nq-member-info-box li span {position:relative;padding-left:60px;height:30px;display:table-cell;vertical-align:middle;font-size:16px;letter-spacing:-0.5px;}
+.nq-pop-wrap .nq-member-info-box li span:after {content:'';position:absolute;width:40px;height:40px;top:50%;left:0;margin-top:-20px;background:url(../images/akl_brand/nutrilite/ico_nq_member_info_box.png) no-repeat 0 0;background-size:cover;}
+.nq-pop-wrap .nq-member-info-box .item01 span:after {background-position:0 0;}
+.nq-pop-wrap .nq-member-info-box .item02 span:after {background-position:0 -40px;}
+.nq-pop-wrap .nq-member-info-box .item03 span:after {background-position:0 -80px;}
+.nq-pop-wrap .nq-member-info-box .item04 span:after {background-position:0 -120px;}
+.nq-pop-wrap .nq-member-info-box .item05 span:after {background-position:0 -160px;}
+.nq-pop-wrap .nq-member-info-box .item06 span:after {background-position:0 -200px;}
 
+.nq-pop-wrap .nq-graph-wrap {padding:5px 40px 5px 0;margin:15px 0;background:#f4f4f4;}
+.nq-pop-wrap .nq-graph-wrap .total-score {margin:15px 0 20px;text-align:center;color:#002f5f;font-weight:500;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box {margin:15px 0;position:relative;padding-left:85px;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .tit {position:absolute;width:65px;height:20px;top:0;left:0;text-align:right;font-size:13px;font-weight:500;letter-spacing:-0.5px;line-height: 20px;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph {position:relative;padding-bottom:50px;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .index {position:absolute;width:100%;top:45px;padding: 0 15px 0 0;display:table;margin:0;padding-top:7px;border-top:1px solid #dadada;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .index span {position:relative;display:table-cell;width:20%;font-size:13px;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .index span:after {content:'';position:absolute;width:1px;height:10px;left:6px;top:-17px;background:#dadada;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .index span:first-child:after {height:15px;top:-22px;left:0;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .index span:last-child {position:absolute;width:auto;right:0;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .index span:last-child:after {height:15px;top:-22px;left:auto;right:0;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph [class*="score"] {display:block;height:20px;border-radius: 0 10px 10px 0;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .score01 {background:#002f5f;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .score02 {background:#20893d;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .score03 {background:#f99d1c;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .score04 {background:#731472;}
+.nq-pop-wrap .nq-graph-wrap .nq-graph-box .nq-graph .score05 {background:#e11e45;}
+
+.nq-pop-wrap .img-nq-state {display:block;text-align:center;}
+.nq-pop-wrap .img-nq-state img {width:50px;}
 
 /*채용정보*/
 .akl-toggle-wrap.recruit .panel-title {padding:15px 0 17px;}
@@ -406,11 +433,13 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .info-icotype.internship li:nth-child(3):before {background-image:url(../images/akl_brand/about/ico_internship03.png);}
 .info-icotype.internship li:nth-child(4):before {background-image:url(../images/akl_brand/about/ico_internship04.png);}
 .info-icotype.internship li:nth-child(5):before {background-image:url(../images/akl_brand/about/ico_internship05.png);}
+
 .c-tbl .tbl-type1 th {line-height:18px;word-break:keep-all;word-wrap: break-word;}
 .c-tbl .tbl-type1 td {text-align:center;word-break:keep-all;word-wrap: break-word;}
 .c-tbl .tbl-type1 th + th, .c-tbl .tbl-type1 td + td {border-left:1px solid #e3e3e3;}
 .c-tbl .tbl-type1 tbody tr:nth-of-type(even) {background:none;}
-
+.c-tbl .tbl-type1 .list li {position:relative;padding:0 0 0 8px;text-align:left;}
+.c-tbl .tbl-type1 .list li:after {position:absolute;content:'';display:block;clear:both;top:10px;left:0;width:4px;height:1px;background:#56565a;}
 .bod-view-sns + .content-row  {margin-top:0}
 
 .educ-system-box {max-width:630px;margin:0 auto;text-align:left;}
@@ -790,8 +819,22 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.biz-slide-wrap .owl-nav .owl-next {right:0;background-position: 10px 50% !important;}
 	.biz-slide-wrap .owl-nav .owl-prev {left:0;background-position: 10px 50% !important;}
 
+	/*nq 검사하기*/
 	.nq-test-box .nq-list .q-box .img img {width:100%;max-width:300px;}
 	.nq-pop-wrap .form-group > label {padding-top:0 !important;}
+
+	.nq-pop-wrap .nq-member-info-box {overflow:hidden;background:#f4f4f4;}
+	.nq-pop-wrap .nq-member-info-box li {float:none;display:block;padding:15px;width:100%;border:none;border-top:1px solid #e3e3e3;}
+	.nq-pop-wrap .nq-member-info-box .item01 {border-top:none;}
+	.nq-pop-wrap .nq-member-info-box li span {height:34px;padding-left:50px;}
+	.nq-pop-wrap .nq-member-info-box li span:after {width:34px;height:34px;margin-top:-17px;}
+	.nq-pop-wrap .nq-member-info-box .item01 span:after {background-position:0 0;}
+	.nq-pop-wrap .nq-member-info-box .item02 span:after {background-position:0 -34px;}
+	.nq-pop-wrap .nq-member-info-box .item03 span:after {background-position:0 -68px;}
+	.nq-pop-wrap .nq-member-info-box .item04 span:after {background-position:0 -102px;}
+	.nq-pop-wrap .nq-member-info-box .item05 span:after {background-position:0 -136px;}
+	.nq-pop-wrap .nq-member-info-box .item06 span:after {background-position:0 -170px;}
+	.nq-pop-wrap .nq-member-info-box:after {display:none;}
 
 }
 
