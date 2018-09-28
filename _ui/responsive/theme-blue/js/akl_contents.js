@@ -222,7 +222,7 @@ $(function() {
 	$dotItembar.css('margin-top',-mTop);
 	
 });
-//원포원
+//원포원 : B20801
 $(function() {
 	$('.oneforone #banner_list2').owlCarousel({
 		loop: false,
