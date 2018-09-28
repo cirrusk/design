@@ -1707,7 +1707,7 @@ function message_newABO_state(){
 /* 마이페이지 상단 - 메뉴 list */
 function jumpMenuList(){
 	var $jumpMenu = $('.jump-menu');
-	if(! $jumpMenu.length){return;}
+	if (!$jumpMenu.length){return;}
 
 	//body 클릭시 열린 메뉴 닫음
 	$jumpMenu.click(function(e){
