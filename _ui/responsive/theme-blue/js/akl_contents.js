@@ -163,7 +163,7 @@ $(function() {
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
 	
-	$('#banner_list2').owlCarousel({
+	$('.atmosphere #banner_list2').owlCarousel({
 		loop: false,
 		nav: true,
 		dots: false,
@@ -222,7 +222,21 @@ $(function() {
 	$dotItembar.css('margin-top',-mTop);
 	
 });
-
+//원포원
+$(function() {
+	$('.oneforone #banner_list2').owlCarousel({
+		loop: false,
+		nav: false,
+		dots: true,
+		margin: 0,
+		items: 1
+	});
+	
+	var bannerId = $('.oneforone #banner_list2');
+	var $dotItembar = bannerId.find('.owl-dots');
+	var $dotItems = bannerId.find('.owl-dots > button');
+	
+});
 /*
 한국암웨이 연혁: B10106
 암웨이 시작: B10201
