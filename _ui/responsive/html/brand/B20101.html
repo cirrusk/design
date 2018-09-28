@@ -132,7 +132,7 @@
 			
 			<div class="homepage_banner">
 				<!-- ## 메인 비주얼 영역 -->
-				<div id="banner_list" class="owl-carousel owl-theme">
+				<div id="banner_list" class="owl-carousel owl-theme ">
 					<div class="wrapper">
 						<div class="banner__wrapper">
 							<div class="banner__title">Nutrilite</div>
@@ -271,32 +271,6 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	
-	<script type="text/javascript">$(function() {
-		$('#banner_list').owlCarousel({
-			loop: false,
-			nav: false,
-			dots: true,
-			//autoplay: true,
-			//autoplayTimeout:5000,
-			margin: 0,
-			items: 1
-		});
-		
-		var bannerId = $('#banner_list');
-		var $dotItembar = bannerId.find('.owl-dots');
-		var $dotItems = bannerId.find('.owl-dots > button');
-		
-		
-		$dotItems.eq(0).html('<span>뉴트리라이트 브랜드 스토리</span>');
-		$dotItems.eq(1).html('<span>뉴트리라이트 보태니컬 프로세스 9 캠페인</span>');
-		$dotItems.eq(2).html('<span>뉴트리라이트 농장</span>');
-		
-		var mTop = $dotItembar.height()/2;
-		$dotItembar.css('margin-top',-mTop);
-		
-	})
-	</script>
 
 </body>
 </html>

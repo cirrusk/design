@@ -356,37 +356,6 @@
 		<div id="quick"></div>
 		<div id="footer"></div>
 	</main>
-	<script type="text/javascript">$(function() {
-		$('#banner_list').owlCarousel({
-			loop: false,
-			nav: true,
-			dots: true,
-			margin: 0,
-			items: 1
-		});
-		
-		var bannerId = $('#banner_list');
-		var $dotItembar = bannerId.find('.owl-dots');
-		var $dotItems = bannerId.find('.owl-dots > button');
-		
-		
-		$dotItems.eq(0).html('<span>좋은 공기가 좋은 차의 기준</span>');
-		$dotItems.eq(1).html('<span>아이에게 더 중요한 AIR</span>');
-		$dotItems.eq(2).html('<span>에어백만큼 중요한 AIR</span>');
-		
-		var mTop = $dotItembar.height()/2;
-		$dotItembar.css('margin-top',-mTop);
-		
-		$('#banner_list2').owlCarousel({
-			loop: false,
-			nav: true,
-			dots: false,
-			margin: 0,
-			items: 1
-		});
-		
-	})
-	</script>
 
 </body>
 </html>
