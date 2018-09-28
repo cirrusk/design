@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>레이어 팝업 / 알럿-컨펌 | HTML 가이드</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" type="image/x-icon" href="/_ui/responsive/theme-blue/images/akl_common/favicon.ico">
+	<link rel=”apple-touch-startup-image” href="/_ui/responsive/theme-blue/images/akl_common/favicon_app.png">
+
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-lib.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/theme-blue/css/akl-common.css">
+	<link rel="stylesheet" type="text/css" href="/_ui/responsive/_htmlWSG/_guide.css"><!-- html 스타일 가이드 전용 css  -->
+
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/bootstrap.datepicker.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/owl.carousel.js"></script>
+
+	<script type="text/javascript" src="/_ui/responsive/_htmlWSG/guide.js"></script><!-- html 스타일 가이드 전용 js  -->
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/new.js"></script>
+	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_common.js"></script>
+</head>
+<body class="akl htmlWSG">
+	<div id="skipToContent"><a href="#contents">콘텐츠 바로가기 </a></div>
+	<main>
+		<div id="header-guide"></div><!-- 가이드용 header -->
+		<div class="container">
+			<div class="topTitle"><h1>레이어 팝업 / 알럿-컨펌</h1></div>
+
+			<h2>레이어 팝업 (기본)</h2>
+			<div class="guideCodeWrapper">
+				<a href="#" class="bt-akl-blue" onclick="layerPopOver('this','.pop-sample')">레이어 열기</a>
+
+				<div class="layerWrapper pop-sample">
+					<div class="cbox layerBox popWidM" style="display:block">
+						<div class="cart-popup__dialog">
+							<div class="cart-popup__header">
+								<span class="cart-popup__header-text">
+									팝업 타이틀
+									<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+								</span>
+							</div>
+							<div class="cart-popup__content payment">
+								<div class="cart-popup__item-info">팝업 내용
+								</div>
+							</div>
+							<div class="cart-popup__item-link">
+								<button type="button" class="bt-akl-blue">확인</button>
+								<button type="button" class="btn-cancel">취소</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2>레이어 팝업 (메인 공통팝업 - 어드민등록)</h2>
+			<div class="guideCodeWrapper">
+			</div>
+
+			<h2>알럿/컨펌 (플러그인) <span>개발요청</span></h2>
+			<div class="guideCodeWrapper">
+
+				<a href="#" class="bt-akl-blue jmb-confirm">confirm 01 - anchor</a>
+				<button type="button" class="bt-akl-white jmb-confirm2">confirm 02 - button</button>
+
+<style>
+
+.codeField code {display:block; padding:20px;}
+.codeField>p {padding:20px; margin-top:10px;font-size:14px; background:#f2f2f2; font-family:"Courier New", monospace;}
+</style>
+<div class="codeField">
+	<code>function msgboxCommon( msgboxType, msgboxContent , functionName )</code>
+	<p><strong>사용방법</strong><br>
+		alert : msgboxCommon('alert','메시지자리');<br>
+		confirm : msgboxCommon('confirm','메시지자리', 콜백function);
+	</p>
+
+</div>
+
+<script type="text/javascript">
+$(function() {
+	var alertTEXT_01   = '<strong class="color-blue">alert</strong><br>시스템 alert 대신 사용합니다.';
+	var confirmTEXT_01 = '<strong class="color-blue">confirm 테스트</strong><br> 시스템 confirm 대신 사용합니다.<br><span class="color-red">시스템 confirm 대신 사용합니다.</span>';
+
+	function callback_test01(){
+		console.log( !!this.val() );
+	}
+	$('.jmb-confirm').on('click',function(){
+		msgboxCommon('confirm', confirmTEXT_01 , callback_test01);
+	});
+	$('.jmb-confirm2').on('click',function(){
+		msgboxCommon('alert', alertTEXT_01);
+	});
+});
+</script>
+
+			</div>
+		</div>
+
+	</main>
+</body>
+</html>
