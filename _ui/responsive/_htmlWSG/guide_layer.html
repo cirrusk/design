@@ -31,6 +31,7 @@
 		<div class="container">
 			<div class="topTitle"><h1>레이어 팝업 / 알럿-컨펌</h1></div>
 
+
 			<h2>레이어 팝업 (기본)</h2>
 			<div class="guideCodeWrapper">
 				<a href="#" class="bt-akl-blue" onclick="layerPopOver('this','.pop-sample')">레이어 열기</a>
@@ -57,48 +58,50 @@
 				</div>
 			</div>
 
+
+
 			<h2>레이어 팝업 (메인 공통팝업 - 어드민등록)</h2>
 			<div class="guideCodeWrapper">
 			</div>
 
+
+
 			<h2>알럿/컨펌 (플러그인) <span>개발요청</span></h2>
 			<div class="guideCodeWrapper">
+				<div class="uiExample">
+					<a href="#" class="bt-akl-blue jmb-alert">알럿 테스트</a>
+					<button type="button" class="bt-akl-white jmb-confirm">컨펌 테스트</button>
+				</div>
 
-				<a href="#" class="bt-akl-blue jmb-confirm">confirm 01 - anchor</a>
-				<button type="button" class="bt-akl-white jmb-confirm2">confirm 02 - button</button>
-
-<style>
-
-.codeField code {display:block; padding:20px;}
-.codeField>p {padding:20px; margin-top:10px;font-size:14px; background:#f2f2f2; font-family:"Courier New", monospace;}
-</style>
-<div class="codeField">
-	<code>function msgboxCommon( msgboxType, msgboxContent , functionName )</code>
-	<p><strong>사용방법</strong><br>
-		alert : msgboxCommon('alert','메시지자리');<br>
-		confirm : msgboxCommon('confirm','메시지자리', 콜백function);
-	</p>
-
-</div>
-
-<script type="text/javascript">
-$(function() {
-	var alertTEXT_01   = '<strong class="color-blue">alert</strong><br>시스템 alert 대신 사용합니다.';
-	var confirmTEXT_01 = '<strong class="color-blue">confirm 테스트</strong><br> 시스템 confirm 대신 사용합니다.<br><span class="color-red">시스템 confirm 대신 사용합니다.</span>';
-
-	function callback_test01(){
-		console.log( !!this.val() );
-	}
-	$('.jmb-confirm').on('click',function(){
-		msgboxCommon('confirm', confirmTEXT_01 , callback_test01);
-	});
-	$('.jmb-confirm2').on('click',function(){
-		msgboxCommon('alert', alertTEXT_01);
-	});
-});
-</script>
-
+				<div class="codeField">
+					<code>function msgboxCommon( msgboxType, msgboxContent , functionName )</code>
+					<p><strong>사용방법</strong><br>
+						alert : msgboxCommon('alert','메시지자리');<br>
+						confirm : msgboxCommon('confirm','메시지자리', 콜백function);
+					</p>
+				</div>
 			</div>
+
+			<script type="text/javascript">
+			$(function() {
+				//테스트 메시지
+				var alertTEXT_01 = '<strong class="color-blue">alert</strong><br>시스템 alert 대신 사용합니다.';
+				var confirmTEXT_01 = '<strong class="color-blue">confirm 테스트</strong><br> 시스템 confirm 대신 사용합니다.<br><span class="color-red">시스템 confirm 대신 사용합니다.</span>';
+
+				$('.jmb-alert').on('click',function(){
+					msgboxCommon('alert', alertTEXT_01);
+				});
+				$('.jmb-confirm').on('click',function(){
+					msgboxCommon('confirm', confirmTEXT_01 , callback_test01);
+				});
+
+				//테스트 콜백함수
+				function callback_test01(){
+					console.log( !!this.val() );
+				}
+			});
+			</script>
+
 		</div>
 
 	</main>
