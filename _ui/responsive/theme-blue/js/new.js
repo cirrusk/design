@@ -910,7 +910,7 @@ $(function() {
 
 
 /* ----- 코어 제공 js ----- */
-(function () {
+$(function(){
 	'use strict';
 
 	$(window).resize(handleToggling);
@@ -943,7 +943,7 @@ $(function() {
 	$(".cartlist-view").click(function(){
 		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
 	})
-})();
+});
 
 (function () {
 	var SPEED = 'slow';
