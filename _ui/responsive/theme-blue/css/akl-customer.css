@@ -209,11 +209,12 @@
 
 .new-product-box .product-item-list li {border-bottom:0 none;border-top:1px solid #e3e3e3;}
 .new-product-box .product-item-list li:first-child {border-top:0 none;}
-.product-item-list div.new-all-ceek {width:5%;text-align:center;}
+.new-product-box .product-item-list li>div {text-align:center;}
+.product-item-list div.new-all-ceek {width:5%;}
 .product-item-list div.shop-pro-prod {width:55%;}
-.product-item-list div.shop-pro-price {width:14%;text-align:right;padding:0 60px 0 0;}
-.product-item-list div.shop-pro-pvbv {width:14%;text-align:right;padding:0 60px 0 0;}
-.product-item-list div.shop-pro-btn {width:12%;text-align:center;}
+.product-item-list div.shop-pro-price {width:14%;padding:0;}
+.product-item-list div.shop-pro-pvbv {width:14%;padding:0;}
+.product-item-list div.shop-pro-btn {width:12%;}
 
 .product-item-list div.new-all-ceek, .product-item-list div.shop-pro-prod, .product-item-list div.shop-pro-price,
 .product-item-list div.shop-pro-pvbv, .product-item-list div.shop-pro-btn {display:table-cell;vertical-align:middle;box-sizing: border-box;}
@@ -1106,7 +1107,9 @@
 	.new-product-head .cuton-sel select {display:block; width:100%;}
 
 	/* 신제품 > 상세보기 */
-	.product-item-header div.new-all-ceek {width:100% !important;text-align:left;padding-left:12px}
+	.new-product-box .product-item-list li>div {text-align:left;}
+
+	.product-item-header div.new-all-ceek {width:100% !important; text-align:left; padding-left:12px}
 	.product-item-header div.shop-pro-prod {display:none;}
 	.product-item-header div.shop-pro-price {display:none;}
 	.product-item-header div.shop-pro-pvbv {display:none;}
