@@ -726,14 +726,16 @@ Editor : HYEWON HWANG
 .espring .content-row.type1 .txtbox * {color:#fff;}
 .espring .content-row.type1 .txtbox > div {max-width:65%;}
 .espring .content-row.type2 {height:300px;justify-content:center;background:#f4f4f4;text-align:center;}
-.espring .content-row.type2 .txtbox {height:auto;position:absolute;top:50%;transform:translateY(-50%);}
+.espring .content-row.type2 .txtbox {height:auto;position:absolute;top:50%; margin-top:-85px; }
 .espring .content-row.type2 .txtbox img {width:auto;}
+.espring.sub1 .content-row.type2 .txtbox {  margin-top:-100px; }
+.espring.sub7 .content-row.type2 .txtbox {  margin-top:-100px; }
 
 .espring.sub1 .content-row.type1 {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg1-1.jpg);}
 .espring.sub2 .content-row.type1 {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg2-1.jpg);}
 .espring.sub3 .content-row.type1 {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg3-1.jpg);}
 .espring.sub4 .content-row.type1 {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg4-1.jpg);}
-.espring.sub4 .content-row.type2 .txtbox {display:table;width:100%;padding:70px 0;}
+.espring.sub4 .content-row.type2 .txtbox {display:table;width:100%;padding:0 0;}
 .espring.sub4 .content-row.type2 .txtbox span {display:table-cell;vertical-altin:middle;text-align:center;border-right:1px solid #dadada;}
 .espring.sub4 .content-row.type2 .txtbox span:last-child {border:0;}
 .espring.sub4 .content-row.type2 .txtbox.mob {display:none;}
@@ -743,8 +745,8 @@ Editor : HYEWON HWANG
 .espring.sub8 .content-row.type1 {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg8-1.jpg);}
 .espring.sub9 .content-row.type1 {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/espring/subimg9-1.jpg);}
 
-.espring.sub9 .content-row.type2 .txtbox {display:flex;width:100%;padding:70px 20px 0;align-items:start;}
-.espring.sub9 .content-row.type2 .txtbox span {position:relative;z-index:1;flex:1;padding:0 10px;text-align:center;}
+.espring.sub9 .content-row.type2 .txtbox { width:100%;padding:0 20px 0; overflow:hidden; }
+.espring.sub9 .content-row.type2 .txtbox span {position:relative;z-index:1;flex:1;padding:0 10px;text-align:center; float:left; width:16.6666%}
 .espring.sub9 .content-row.type2 .txtbox span img {display:block;width:90px;margin:0 auto 15px;}
 .espring.sub9 .content-row.type2 .txtbox span:before,
 .espring.sub9 .content-row.type2 .txtbox span:after {content:'';position:absolute;z-index:-1;display:block;}
@@ -818,6 +820,9 @@ Editor : HYEWON HWANG
 	.espring.main .espring-sub-home h2.title-h4 { margin-bottom:20px}
 	.espring.main .espring .content-row.type2 .txtbox { height:auto }
 	.espring.sub9 .content-row.type2 .txtbox span:last-child {margin: 0 auto 0;}
+	.espring .content-row.type2 .txtbox {top:0; margin-top:0 }
+	.espring.sub1 .content-row.type2 .txtbox {  margin-top:0; }
+	.espring.sub7 .content-row.type2 .txtbox {  margin-top:0; }
 }
 
 @media (max-width: 768px){
