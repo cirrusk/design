@@ -1546,7 +1546,8 @@ function SOP_PDP_editBundle(){
 };
 
 function SOP_PDP_viewBundle(){
-	var sopBundleConts = $('.shopping-cart-item-list.mysop-item-list').find('.product-details .mysop-bundle-contents');
+	if ($('.product-list-item.js-shopping-cart-list-item').length){return;} //장바구니에서 return;
+
 	var sopBundleBtn = $('.product-item-element.list-item-info').find('.product-stock');
 	sopBundleBtn.each(function(){
 		$(this).on('click',function(e){
@@ -1560,8 +1561,8 @@ function SOP_PDP_viewBundle(){
 				$(this).removeClass('view-open');
 				$bundleConts.hide();
 			}
-
 		});
+		
 	});
 }
 

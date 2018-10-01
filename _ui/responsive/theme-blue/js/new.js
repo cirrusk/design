@@ -292,10 +292,6 @@ $(function(){
 		$('.delete-example,.delete-example-gift').hide();
 	});
 
-	$(".cartlist-view").click(function(){
-		$(this).hasClass("view-open") ? $(this).removeClass("view-open") : $(this).addClass("view-open");
-	})
-
 	$('#G10000_lp9').click(function(event) {
 		event.preventDefault();
 		layerPopOver(this,'.G10000_lp9_pop');
