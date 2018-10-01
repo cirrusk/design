@@ -1,6 +1,6 @@
 $(function(){
 /** ----- 공통 ----- */
-	//레이어 마스크 추가
+	//레이어 layerPopOver() 마스크 추가
 	$('body').append('<div id="mask" style="display:none"/>');
 
 	//주문결제 > 새배송지 - label 사이에  clearfix 추가
@@ -695,11 +695,11 @@ function HEADER_stopPropagation(){
 }
 
 /* 쇼핑메뉴 클릭이벤트 : .overlay-menu-toggle-desktop */
+//var ua = window.navigator.userAgent;
 function isIE () {
 	var myNav = navigator.userAgent.toLowerCase();
 	return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 }
-//var ua = window.navigator.userAgent;
 
 function HEADER_MenuShop(){
 	var _btnSHOP = $('.overlay-menu-toggle-desktop');
@@ -1170,7 +1170,6 @@ function prdtDetails_IMG(){
 			},300);
 
 			$(document).off('click.snapimg').on('click.snapimg', '.ui-snap-btn', function(){
-				//popidx = $(this).closest('.owl-item').index();
 				popidx = $(this).data('n');
 				$('#pdpImg').find('li').removeClass('on').eq(popidx).addClass('on');
 
@@ -1183,9 +1182,6 @@ function prdtDetails_IMG(){
 			$('.G10300_lp1_btn').click(function(event) {
 				event.preventDefault();
 				layerPopOver('this','.G10300_lp1_pop');
-
-				//$(this).find('.owl-item').removeClass('.on');
-				//$('#recentlyViewedListTab2').find('.owl-item').removeClass('.on');
 				popidx = $(this).closest('.on').index();
 
 				$('#recentlyViewedListTab2').owlCarousel({
@@ -1643,9 +1639,9 @@ function myPage_EqualHeight(){
 			// (A)에서 가장 긴 값 적용
 			_child_D.css({height: maxARRAY });
 
-			/* 닫힌 panel에 적용할 높익 구하기 */
-			maximumNum.push( maxARRAY ); //각 배열에서 최고 높이값
-			var hiddenHeight = Math.max.apply(0, maximumNum );
+			//닫힌 panel에 적용할 높익 구하기
+			maximumNum.push( maxARRAY );
+			var hiddenHeight = Math.max.apply(0, maximumNum ); //각 배열에서 최대값
 			var panel = _blockList.parents('.panel-collapse.collapse').not('.in');
 			if( panel.length){
 				panel.find('.mypage-block-list ul>li>div').css({height : hiddenHeight});
@@ -1890,8 +1886,9 @@ function glossaryPage(){
 		}
 	});
 
+	/*
 	//스크롤 top 함수
-	//glossaryScrollTop();
+	glossaryScrollTop();
 	function glossaryScrollTop(){
 		$(document).on('click', '.sizer-row>p>a' , function(e){
 			e.preventDefault();
@@ -1908,7 +1905,7 @@ function glossaryPage(){
 				scrollTop: targetTop
 			}, 1000);
 		});
-	}
+	}*/
 }
 
 /** ------------------------------------------
@@ -1984,25 +1981,24 @@ function GNB_SubDepth_Control(){
 				$2Dep_sideMenu.hide();
 			} else {
 				$2Dep_sideMenu.show();
-				//gnbSideMenu();
 			}
 		});
 	});
 
 	/* 오른쪽 메뉴 숨기기 */
-	//gnbSideMenu();
+	/*
+	//메뉴영역 확보위해 메뉴 숨김
+	gnbSideMenu();
 	function gnbSideMenu(){
-		//메뉴영역 확보위해 메뉴 숨김
+
 		var _winWidth = $(window).width();
 		if( _winWidth < 1051){
 			$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
 		} else if ( _winWidth > 1050){
 			$('#gnbSubDepthBox').find('.js-gnbSide-menu').show();
 		}
-	}
+	} */
 	$(window).resize(function(){
-		//gnbSideMenu();
-
 		//브랜드샵 활성화상태에서 resize 되면 숨김
 		if ($2Dep_brandShop.hasClass('active')){
 			$2Dep_sideMenu.hide();
@@ -2162,8 +2158,8 @@ function qkLinkAlign(){
 		}
 	}
 
-	//스크롤 width 17px 포함한 값으로 변경
 	//기준너비 785 = 768+17
+	//스크롤 width 17px 포함한 값으로 변경
 	if( _winWidth > 785){
 		qLinkItemRun.setupAlign();
 		setTimeout(function(){
@@ -2202,12 +2198,10 @@ function loadingLayerClose(){
  */
 var layerCounter = 0;
 var openedLayerPrdt = false;
-var openedLayerCMS = false;
 function layerPopOver( btnOpenLayer , targetLayer ){
 	var $layerContentBox = $(targetLayer).find('.layerBox'); //기본 레이어 타입
 	var $layerPrdtDetail = $(targetLayer).find('.typeFullSizeView'); //제품 크게보기 레이어
-	var $layerVideoView = $(targetLayer).find('.typeVideoView'); //동영상 레이어
-	var $layerAdminAdd = $(targetLayer).find('.typeAdminAdd'); //관리자 등록(CMS)
+	var $layerVideoView  = $(targetLayer).find('.typeVideoView'); //동영상 레이어
 
 	var scroll_LOCK = function(){
 		$('html').addClass('scrollLock');
@@ -2236,10 +2230,11 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		var _winWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 		var _winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
+		var topPosition = (_winHeight/2);
+		var leftPosition = (_winWidth/2);
+
 		/* TYPE 1 : 기본형 */
 		function _layerTypeBasic(){
-			var topPosition = (_winHeight/2);
-			var leftPosition = (_winWidth/2);
 			var targetWidth = $layerContentBox.width();
 			var targetHeight = $layerContentBox.height();
 
@@ -2313,8 +2308,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 
 		/* TYPE 2 : 제품상세-크게보기 (모바일 전체화면) */
 		function _layerTypeFullSize(){
-			var topPosition = (_winHeight/2);
-			var leftPosition = (_winWidth/2);
 			var targetWidth_prdt = $layerPrdtDetail.width();
 			var targetHeight_prdt = $layerPrdtDetail.height();
 
@@ -2411,8 +2404,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 
 		/* TYPE 3 : 동영상보기 */
 		function _layerTypeVideoView(){
-			var topPosition = (_winHeight/2);
-			var leftPosition = (_winWidth/2);
 			var targetWidth_video = $layerVideoView.width();
 			var targetHeight_video = $layerVideoView.height();
 
@@ -2467,15 +2458,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	var _zindex = 9999;
 	var _thisIndex = _zindex+layerCounter;
 
-	/*
-	if(!$('#mask').length){
-		if($('.compliance-area').is('.privacy')){
-			$('.termsWrapper').append('<div id="mask"/>');
-		} else{
-			$('body').append('<div id="mask"/>');
-		}
-	}*/
-
 	$(targetLayer).fadeIn(150, function(){
 		scroll_LOCK();
 		setPosition();
@@ -2497,7 +2479,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		if($(this).data('closeAll') === true){
 			var layerAll = $(document).find('.layerWrapper.active');
 			$(layerAll).fadeOut().removeClass('active').attr('style','');
-			//$('#mask').remove();
 			$('#mask').hide().removeClass('on');
 			layerCounter = 0;
 			scroll_RESET();
@@ -2508,7 +2489,6 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 
 			if($('.layerWrapper.active').length === 0){
 				layerCounter = 0;
-				//$('#mask').remove();
 				$('#mask').hide().removeClass('on');
 				scroll_RESET();
 			}
@@ -2549,7 +2529,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		lastFocusableEl = focusableEls.last()[0],
 		KEYCODE_TAB = 9;
 
-	$($(targetLayer)).on('keydown', function(e) {
+	$(targetLayer).on('keydown', function(e) {
 		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
 
 		if (!isTabPressed) {
@@ -2672,8 +2652,8 @@ function commonPopOver( cmnBtnOpenLayer , cmnTargetLayer ){
 	// $(cmnBtnOpenLayer)가  Anchor일 경우 return false
 	var elTagName = $(cmnBtnOpenLayer).prop('tagName');
 	var tagA = 'A';
-	if( elTagName == tagA ){
-		event.preventDefault();
+	if( elTagName === tagA ){
+		return false;
 	}
 
 	// $(cmnBtnOpenLayer)가 없는 경우 (버튼클릭 없이 자동실행)
