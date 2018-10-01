@@ -1646,13 +1646,6 @@ function myPage_EqualHeight(){
 			if( panel.length){
 				panel.find('.mypage-block-list ul>li>div').css({height : hiddenHeight});
 			}
-
-			/*
-			console.log(hiddenHeight)
-			console.log(maxTotal);
-			console.log(Math.max.apply(0, maxTotal)); // 최대값
-			console.log(Math.min.apply(0, maxTotal)); // 최소값
-			*/
 		});
 	}
 
@@ -1990,7 +1983,6 @@ function GNB_SubDepth_Control(){
 	//메뉴영역 확보위해 메뉴 숨김
 	gnbSideMenu();
 	function gnbSideMenu(){
-
 		var _winWidth = $(window).width();
 		if( _winWidth < 1051){
 			$('#gnbSubDepthBox').find('.js-gnbSide-menu').hide();
