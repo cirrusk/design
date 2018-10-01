@@ -256,11 +256,9 @@
 							<div class="woo-btn"><a href="#" class="bt-akl-blue B10601_lp">상세설명</a></div>
 						</div>
 					</div>
-				</section> 
+				</section>
 
-				
-				
-				<div id="bizMovie" class="owl-carousel owl-theme biz-slide-wrap"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  -->
+				<div id="bizMovie02" class="owl-carousel owl-theme biz-slide-wrap"><!-- carousel 수정(2018.06.15) : .owl-carousel.owl-theme 추가  -->
 					<div class="item">
 						<div class="full-width-item second-option">
 							<div class="item-image-wrap">
@@ -789,64 +787,5 @@
 		</div>
 	<!--//암웨이에 대해 궁금하신가요? 팝업 -->
 
-
-	<script language="javascript" type="text/javascript">
-	
-		$(function(){
-
-			$('#bizMovie').owlCarousel({
-				loop: false,
-				nav: true,
-				dots: false,
-				margin: 0,
-				items: 1,
-				responsiveClass: true,
-				responsive: {
-					480 : {
-						items: 1
-					},
-					768: {
-						items: 3
-					},
-					1200 : {
-						items: 4
-					}
-				}
-			});
-
-			//동영상보기 레이어
-			$('.B10601_lp1').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp1_pop');
-			});
-
-			$('.B10601_lp2').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp2_pop');
-			});
-			$('.B10601_lp3').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp3_pop');
-			});
-			$('.B10601_lp4').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp4_pop');
-			});
-			$('.B10601_lp5').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp5_pop');
-			});
-			$('.B10601_lp6').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp6_pop');
-			});
-
-			$('.B10601_lp').click(function(event) {
-				event.preventDefault();
-				layerPopOver('this','.B10601_lp_pop');
-			});
-
-		});
-	</script>
 </body>
 </html>

@@ -25,33 +25,6 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 플러그인 : 2018.08.24 추가  -->
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/masonry.pkgd.min.js"></script><!-- media-borad-list 플러그인 : 2018.07.25 추가  -->
 
-	<script language="javascript" type="text/javascript">
-		$(document).ready(function(){
-			$('.media-borad-list-video ul').masonry({
-				columnWidth: '.grid-item',
-				transitionDuration:0,
-				percentPosition: true
-			});
-
-			var i = 0;
-
-			$(document).on('click', '.media-more-btn button', function(e) {
-				var $winSize = $(window).outerWidth();
-				i++;
-				e.preventDefault();
-				var startNum = 10 * i;
-				var endNum = startNum + 10;
-
-				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
-
-				setTimeout(function(){ $('.media-borad-list-video ul').masonry() }, 0);
-
-				if(!$(this).parent().prev().is(':hidden')){
-					$(this).hide();
-				}
-			});
-		});
-	</script>
 </head>
 <body class="akl">
 	<!-- skipToContent -->
@@ -183,7 +156,7 @@
 				<div class="media-borad-list-video">
 					<ul>
 						<li class="highlight">
-							<a href="#" class="B20193_lp1">
+							<a href="#" class="B20194_lp1">
 								<div class="view-img">
 									<img src="../../theme-blue/images/akl_brand/nutrilite/2013_L1_H.jpg" alt="[뉴트리라이트] TV 광고 채소편식 편"/>
 								</div>
@@ -195,7 +168,7 @@
 							</a>
 						</li>
 						<li class="grid-item">
-							<a href="#" class="B20193_lp2">
+							<a href="#" class="B20194_lp2">
 								<div class="view-img">
 									<img src="../../theme-blue/images/akl_brand/nutrilite/2013_L2.jpg" alt="[뉴트리라이트] 식물영양소의 생명력 편"/>
 								</div>
@@ -217,8 +190,8 @@
 		<div id="footer"></div>
 	</main>
 
-<!-- (팝업) B20193_lp1_pop -->
-<div class="layerWrapper B20193_lp1_pop">
+<!-- (팝업) B20194_lp1_pop -->
+<div class="layerWrapper B20194_lp1_pop">
 	<div class="videobox lynx-modal-window--opened directbox typeVideoView">
 		<div class="video-pop">
 			<div class="cboxTitle">
@@ -250,10 +223,10 @@
 		</div>
 	</div>
 </div>
-<!-- //(팝업) B20193_lp1_pop -->
+<!-- //(팝업) B20194_lp1_pop -->
 
-<!-- (팝업) B20193_lp2_pop -->
-<div class="layerWrapper B20193_lp2_pop">
+<!-- (팝업) B20194_lp2_pop -->
+<div class="layerWrapper B20194_lp2_pop">
 	<div class="videobox lynx-modal-window--opened directbox typeVideoView">
 		<div class="video-pop">
 			<div class="cboxTitle">
@@ -285,22 +258,7 @@
 		</div>
 	</div>
 </div>
-<!-- //(팝업) B20193_lp2_pop -->
+<!-- //(팝업) B20194_lp2_pop -->
 
-<script language="javascript" type="text/javascript">
-	$(function(){
-		//동영상보기 레이어
-		$('.B20193_lp1').click(function(event) {
-			event.preventDefault();
-			layerPopOver('this','.B20193_lp1_pop');
-		});
-
-		$('.B20193_lp2').click(function(event) {
-			event.preventDefault();
-			layerPopOver('this','.B20193_lp2_pop');
-		});
-
-	});
-</script>
 </body>
 </html>

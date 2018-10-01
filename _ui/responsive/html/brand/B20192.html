@@ -25,33 +25,6 @@
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/akl_contents.js"></script><!-- brand 플러그인 : 2018.08.24 추가  -->
 	<script type="text/javascript" src="/_ui/responsive/theme-blue/js/masonry.pkgd.min.js"></script><!-- media-borad-list 플러그인 : 2018.07.25 추가  -->
 
-	<script language="javascript" type="text/javascript">
-		$(document).ready(function(){
-			$('.media-borad-list-video ul').masonry({
-				columnWidth: '.grid-item',
-				transitionDuration:0,
-				percentPosition: true
-			});
-
-			var i = 0;
-
-			$(document).on('click', '.media-more-btn button', function(e) {
-				var $winSize = $(window).outerWidth();
-				i++;
-				e.preventDefault();
-				var startNum = 10 * i;
-				var endNum = startNum + 10;
-
-				$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
-
-				setTimeout(function(){ $('.media-borad-list-video ul').masonry() }, 0);
-
-				if(!$(this).parent().prev().is(':hidden')){
-					$(this).hide();
-				}
-			});
-		});
-	</script>
 </head>
 <body class="akl">
 	<!-- skipToContent -->
@@ -287,20 +260,5 @@
 <!-- //(팝업) B20192_lp2_pop -->
 
 
-
-<script language="javascript" type="text/javascript">
-	$(function(){
-		//동영상보기 레이어
-		$('.B20192_lp1').click(function(event) {
-			event.preventDefault();
-			layerPopOver('this','.B20192_lp1_pop');
-		});
-
-		$('.B20192_lp2').click(function(event) {
-			event.preventDefault();
-			layerPopOver('this','.B20192_lp2_pop');
-		});
-	});
-</script>
 </body>
 </html>
