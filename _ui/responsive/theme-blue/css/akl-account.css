@@ -129,8 +129,6 @@
 /* 전자세금계산서 수신정보 */
 .tax-bill-sms>p {padding-bottom:36px;margin-bottom:36px;border-bottom:1px solid #e3e3e3;}
 
-
-
 /* 프로필사진 */
 .photo-managing-tool {background:#efefef;}
 .photo-managing-tool > img {width:100%; height:auto;}
@@ -1118,7 +1116,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .modify .confirm-password dd .form-group label, .confirm-password dd .form-group div {line-height: 40px}
 .akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:40px;text-align: center;}
 
-/* 마이페이지 > 회원정보변경 */
+/* 마이페이지 > 개인정보 수정 */
 .noti-suc { font-size:16px; font-weight:500; padding-left: 22px; font-size:16px; font-weight:500; color:#20893d; background:url('../images/icons/success.png') no-repeat left 4px; background-size:14px; letter-spacing:-1px;}
 .noti-error { display:inline-block; font-size:16px; font-weight:500; color:#e11e45; letter-spacing:-1px; }
 .noti-error:before { content:"";  background:url('../images/icons/warning.png') no-repeat left 5px; background-size:16px; padding-right: 22px; }
@@ -1158,7 +1156,7 @@ ul li.tbody div.mob-ttoy {display:none;}
 .akl .account-profile .mobile-phone-form-group .certifi-input-box .certifi-input { width:33%;}
 .akl .account-profile .mobile-phone-form-group .certifi-input-box .col-btn { width:22%; padding-left:0}
 
-.akl .address-form-group { margin-bottom:20px}
+.akl .account-profile .btn.btn-primary.edit-button {margin-top:20px;}
 .akl .address-form-group .bt-akl-white {right:15px}
 .akl .account-profile__editor__avatar__img-overlay button{margin-top:-4px; display:block; width:100%; background:none; border: 0; height:30px; line-height:100%;  text-align:center; padding:0;}
 .akl .account-profile__editor__avatar__img-overlay button span {font-size:14px; color: #fff; font-weight:500}
@@ -1237,8 +1235,9 @@ p + .modify-form-group {padding: 15px 0 20px !important;}
 .akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-left: -3px;}
 .akl .account-profile__editor .form-group .email-dotcom select {width:43%;margin-right:8px;text-transform:lowercase}
 .akl .account-profile__editor .form-group .col-md-5.address {width:426px;}
+/*
 .preferred-name-form-group, .mobile-phone-form-group, .gender-form-group, .date-of-birth-form-group, .name-form-group, .preferred-name-form-group,
-.email-form-group, .alternate-phone-form-group, .address-form-group, .preferred-langauge-form-group, .date-of-birth-form-group {padding:5px 0 0}
+.email-form-group, .alternate-phone-form-group, .address-form-group, .preferred-langauge-form-group, .date-of-birth-form-group {padding:5px 0 0} */
 
 
 /*** 마이페이지 > header ***/
@@ -3212,9 +3211,19 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.confirm-password dd .form-group > div { float: left; width:70%;}
 	.akl .modify .btn-group-type02 { border-top:1px solid #e3e3e3; padding-top:30px;  }
 
-	/* 마이페이지 > 회원정보변경 */
+	/* 마이페이지 > 개인정보 수정 */
 	.akl .modify-form-group .form-group label, .akl .modify-form-group .form-group div {line-height: 30px;}
 	p + .modify-form-group { padding: 15px 0 30px !important;}
+
+	.akl .account-profile.modify .account-profile__editor .form-group {margin-bottom:0;}
+	.akl .account-profile.modify .col-md-12>.row {clear:both; min-height:26px;}
+	.akl .account-profile.modify .col-md-12>.row+.row,
+	.akl .account-profile.modify .col-md-12 fieldset>.row+.row {margin-top:7px;}
+	.akl .account-profile.modify .col-md-12>.row .account-profile__label,
+	.akl .account-profile.modify .col-md-12 fieldset>.row .account-profile__label {float:left; width:30%; min-width:100px;}
+	.akl .account-profile.modify .col-md-12>.row .account-profile__value,
+	.akl .account-profile.modify .col-md-12 fieldset>.row .account-profile__value {float:left;}
+	.akl .account-profile.modify .preferred-langauge-form-group .bt-akl-white.mini {margin-left:0;}
 
 	/* 마이페이지 > 후원자정정 */
 	.sponsor-seek > p {margin-bottom:0;}
@@ -3223,86 +3232,34 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.sponsor-seek .form-wrapper>.form-s {float:none;}
 
 	/* 후원자 정정 */
-	/*
-	.sponsor-certification:after {display:none;}
-	.sponsor-certification>dl {display:block; width:auto;}
-	.sponsor-certification dl>dt {position:relative; display:inline-block; padding-left:32px; line-height:2;}
-	.sponsor-certification:after {display:none}
-	.sponsor-certification dl + dl {width:auto; border-top: 1px solid #e3e3e3; padding-top:20px; margin-top: 20px;} */
-
 	.akl .account-profile {padding:0;}
-
-	.akl .account-profile .address-form-group .account-profile__value { line-height: 140%; margin-bottom:15px }
 	.akl .account-profile__panel .panel-heading a {padding: 30px 10px 30px 5px;}
-
 	.akl .account-profile__panel .panel-collapse { padding: 0 0.6em 0 2.20em; }
 	.akl .address-form-group .bt-akl-white {right:0;}
 
-	.akl .account-profile.modify .name-form-group { position: relative;}
-	.akl .account-profile.modify .name-form-group label { position: absolute; left:0; width:200px }
-	.akl .account-profile.modify .name-form-group .account-profile__value { margin-left:100px;}
-
-	.akl .account-profile.modify .mobile-phone-form-group { position: relative;}
-	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0; width:200px }
-	.akl .account-profile.modify .mobile-phone-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .preferred-name-form-group { position: relative;}
-	.akl .account-profile.modify .preferred-name-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .preferred-name-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .alternate-phone-form-group { position: relative;}
-	.akl .account-profile.modify .alternate-phone-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .alternate-phone-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .email-form-group { position: relative;}
-	.akl .account-profile.modify .email-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .email-form-group .account-profile__value {margin-top:25px}
-
-	.akl .account-profile.modify .date-of-birth-form-group { position: relative;}
-	.akl .account-profile.modify .date-of-birth-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .date-of-birth-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .preferred-langauge-form-group { position: relative;}
-	.akl .account-profile.modify .preferred-langauge-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .preferred-langauge-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .mobile-phone-form-group { position: relative;}
-	.akl .account-profile.modify .mobile-phone-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .mobile-phone-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .renewal-form-group { position: relative;}
-	.akl .account-profile.modify .renewal-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .renewal-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .gender-form-group { position: relative;}
-	.akl .account-profile.modify .gender-form-group label { position: absolute; left:0;width:200px }
-	.akl .account-profile.modify .gender-form-group .account-profile__value { margin-left:100px}
-
-	.akl .account-profile.modify .account-profile__editor.mobile { margin-left:100px}
+	.akl .account-profile.modify .panel-body fieldset .row {clear:both; min-height:26px;}
+	.row.mobile-phone-form-group .account-profile__editor .certifi-input-box .bt-akl-white {min-width:auto;}
 
 	.akl .account-profile .mobile-phone-form-group .input-part-1,.akl .account-profile .alternate-phone-form-group .input-part-1{margin-top:30px}
 	.akl .account-profile .mobile-phone-form-group .input-part-1 .form-control,
-	.akl .account-profile .alternate-phone-form-group .input-part-1 .form-control  {  float: left}
+	.akl .account-profile .alternate-phone-form-group .input-part-1 .form-control { float: left}
 	.akl .account-profile .mobile-phone-form-group .input-part-2,
-	.akl .account-profile .alternate-phone-form-group .input-part-2 { float:right}
+	.akl .account-profile .alternate-phone-form-group .input-part-2 {float:right}
 
 	.akl .account-profile__editor .form-group span.txt {margin:0;padding:0;font-size:14px;vertical-align:top;line-height:1.5}
 	.akl .email-form-group .account-profile__editor.mobile {margin-left:0 !important;margin-top:30px}
-	.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-top:10px;margin-left:0}
+	.akl .account-profile__editor .form-group .col-md-4.email-dotcom {padding-left:0;margin-top:0; margin-left:0}
 
-	.akl .account-profile__editor .form-group .col-md-4.email-id { width:100%}
+	.akl .account-profile__editor .form-group .col-md-4.email-id {overflow:hidden; width:100%}
 	.akl .account-profile__editor .form-group .col-md-4.email-id span:nth-of-type(1){ width:40%; }
 	.akl .account-profile__editor .form-group .col-md-4.email-id span:nth-of-type(3){ width:50%; float:right}
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom { width:100%}
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom button,
 	.akl .account-profile__editor .form-group .col-md-4.email-dotcom select { margin-top:9px}
+	.akl .account-profile__editor .form-group .col-md-5.address {width:100%;}
 
 	.akl .account-profile .mobile-phone-form-group .input-part-1,.account-profile .alternate-phone-form-group .input-part-1 { width:41% !important;}
 	.akl .account-profile .mobile-phone-form-group .input-part-2 , .account-profile .alternate-phone-form-group .input-part-2 {width:55% !important;}
-
-	.akl .account-profile__editor .form-group .col-md-4.email-id { width:100%;}
-	.akl .account-profile__editor .form-group .col-md-5.address {width:100%;}
-
 
 	.akl .account-profile .mobile-phone-form-group .input-part-2 {width:320px;}
 	.akl .account-profile .mobile-phone-form-group .input-part-3 { margin-left:0; padding-top: 10px; clear: both; float:none }
