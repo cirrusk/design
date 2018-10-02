@@ -382,9 +382,8 @@ Date : 2018-07-02
 .content-row article .cont-type2 figcaption + p {padding-bottom:20px;min-height:auto;} /* 하단 상세보기 버튼이 없는 경우 */
 
 .content-row.s1 {display:block;}
-.content-row.s1 article {flex:none;width:100%;padding:40px 0 30px;border-bottom:1px solid #e3e3e3;}
-.content-row.s1 article:first-child {padding-top:10px;}
-.content-row.s1 article:last-child {padding-bottom:0;border-bottom:0;}
+.content-row.s1 article { width:31.3333%;padding:27px 30px 30px; margin:0 1%; float:left; background:#f4f4f4; height:280px; text-align:left;}
+.akl .content-row.s1 .title-h6 {font-size: 18px !important; line-height:140%}
 
 .content-row.s2 {display:block;margin-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;}
 .content-row.s2 dl{width:50%;margin-bottom:40px;padding:0 15px;box-sizing:border-box;}
@@ -879,8 +878,6 @@ Date : 2018-07-02
 	.content-row.col4 {display:flex;margin:10px -7px 0;}
 	.content-row.col4 article {width:50%;padding:20px 7px 0;}
 
-	.content-row.s1 article:first-child {padding-top:0;}
-
 	.akl .brand .category-success-story {display:block;margin:30px 0 0;}
 	.akl .brand .category-success-story .success-story__item {max-width:100%;margin:30px 0 0;}
 	.akl .brand .category-success-story .success-story__item:first-child {margin-top:0}
@@ -905,7 +902,9 @@ Date : 2018-07-02
 	.akl .queen .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02_mob.jpg');}
 	.akl .queen .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual03_mob.jpg');}
 
-	.content-row.s1 article {padding:30px 0 20px;margin-bottom:0}
+	.content-row.s1 article { width:100%;padding:17px 20px 20px; margin:0 0 30px; float:none;  height:auto; min-height:240px }
+	.content-row.s1 article:last-child { margin:0}
+
 	.content-row.s2 dl {width:100%;padding:0;margin-bottom:25px;}
 	.content-row.s2 dd {padding:20px;}
 	.content-row.s2 + .txt-italic {margin:-25px 0 30px;}
