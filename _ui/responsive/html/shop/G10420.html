@@ -256,10 +256,8 @@
 														<label class="control-label" for="sopPdp_profiles">주문서</label>
 														<select class="size-select text-center form-control" id="sopPdp_profiles">
 															<option>선택하세요</option>
-															<option>주문서 새로만들기</option><!-- 2018.09.06 텍스트 수정 -->
-															<option>기존 저장된 정기주문 명</option>
-															<option>기존 저장된 정기주문 명</option>
-															<option>기존 저장된 정기주문 명</option>
+															<option value="order_new">주문서 새로만들기</option><!-- 2018.09.06 텍스트 수정 -->
+															<option value="order_old">기존 저장된 정기주문 명</option>
 														</select>
 													</div>
 												</div>
@@ -273,6 +271,10 @@
 															<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
 															<input type="hidden" name="productCodePost" value="119889" />
 															<button id="PDP_SmartOrder" class="bt-akl-blue large">다음</button><!-- 2018.03.15 태깅 아이디 추가 -->
+
+															<!-- 2018.10.02 테스트링크용으로 추가 -->
+															<button class="bt-akl-blue large urlNew" onclick="window.location ='/_ui/responsive/html/shop/G10430.html';">다음</button>
+															<button class="bt-akl-blue large urlOld" onclick="window.location ='/_ui/responsive/html/shop/G10441.html';">다음</button>
 														</div>
 
 														<!-- SOP 사용안함
@@ -318,6 +320,32 @@
 											</div>
 										</div>
 										<!-- //SOP제품 옵션 -->
+
+
+										<!-- 2018.10.02 테스트링크용으로 추가 -->
+										<script type="text/javascript">
+										function sopTestURL() {
+											$('.AddToCart-AddToCartAction').find('.bt-akl-blue.large.urlNew').hide();
+											$('.AddToCart-AddToCartAction').find('.bt-akl-blue.large.urlOld').hide();
+
+											$('select#sopPdp_profiles').on('change',function(){
+												var selectValue = event.target.value;
+												if(selectValue === 'order_new'){
+													$('.AddToCart-AddToCartAction').find('.bt-akl-blue.large.urlNew').show();
+													$('.AddToCart-AddToCartAction').find('#PDP_SmartOrder, .bt-akl-blue.large.urlOld').hide();
+												}
+												else if(selectValue === 'order_old'){
+													$('.AddToCart-AddToCartAction').find('#PDP_SmartOrder, .bt-akl-blue.large.urlNew').hide();
+													$('.AddToCart-AddToCartAction').find('.bt-akl-blue.large.urlOld').show();
+												}
+											});
+										}
+										$(function(){
+											sopTestURL();
+										});
+										</script>
+										<!-- //2018.10.02 테스트링크용으로 추가 -->
+
 									</div>
 								</div>
 							</div>

@@ -2497,7 +2497,11 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 	var elTagName = $(btnOpenLayer).prop('tagName');
 	var tagA = 'A';
 	if( elTagName === tagA ){
-		return false;
+		if (isIE () === 9 || isIE () === 10) {
+			event.returnValue = false;
+		} else {
+			event.preventDefault();
+		}
 	}
 
 	// $(btnOpenLayer)가 없는 경우 (버튼클릭 없이 자동실행)
@@ -2640,7 +2644,11 @@ function commonPopOver( cmnBtnOpenLayer , cmnTargetLayer ){
 	var elTagName = $(cmnBtnOpenLayer).prop('tagName');
 	var tagA = 'A';
 	if( elTagName === tagA ){
-		return false;
+		if (isIE () === 9 || isIE () === 10) {
+			event.returnValue = false;
+		} else {
+			event.preventDefault();
+		}
 	}
 
 	// $(cmnBtnOpenLayer)가 없는 경우 (버튼클릭 없이 자동실행)
