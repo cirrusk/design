@@ -20,17 +20,44 @@ h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
 
 .akl.htmlWSG .container {padding-top:25px;}
 .akl.htmlWSG .topTitle {margin-bottom:40px;}
-.akl.htmlWSG .topTitle h1 {padding:20px 0 0; font-size:60px !important; letter-spacing:normal; font-family:'Segoe UI','Noto Sans KR'; font-weight:300; text-transform:capitalize; letter-spacing:-0.02em;}
-.akl.htmlWSG h2.subHeading {color:#5b8cbd; font-weight:500; font-size:16px; letter-spacing:-0.025em; background:#e7f1fb; padding:18px; }
+.akl.htmlWSG .topTitle h1 {padding:20px 0 0; font-size:60px !important; letter-spacing:normal; text-align:center; font-family:'Segoe UI','Noto Sans KR'; font-weight:300; text-transform:capitalize; letter-spacing:-0.02em;}
+
+.guideCodeWrapper { padding:20px 0; border-radius:5px; border:1px dashed rgba(167,186,206,.4);}
+.guideCodeWrapper.noline {border:0;}
+
+
+.btnLink {font-size:30px;}
+.akl.htmlWSG .guideIndex h2.guideHeading {font-size:40px !important; line-height:normal;}
+.akl.htmlWSG section{margin:0 0 20px;}
+.akl.htmlWSG section li>a {line-height:normal; font-size:18px;}
+.guideIndex ol {list-style-position:outside; padding-left:28px;}
+.guideIndex ol li {padding-left:5px; list-style-type:decimal-leading-zero;}
+
+.subHeading {color:#3f7bb7; font-weight:300 !important; font-size:24px !important; letter-spacing:-0.025em; padding:0 0 10px;}
+
+.subList {margin-bottom:100px;}
+.subList>li .subHeading:before {content:''; position:; display:inline-block; margin-right:5px; min-width:32px; font-size:23px; }
+.subList>li+li {margin-top:60px;}
+.subList>li:nth-of-type(1) .subHeading:before {content:'01.';}
+.subList>li:nth-of-type(2) .subHeading:before {content:'02.';}
+.subList>li:nth-of-type(3) .subHeading:before {content:'03.';}
+.subList>li:nth-of-type(4) .subHeading:before {content:'04.';}
+.subList>li:nth-of-type(5) .subHeading:before {content:'05.';}
+.subList>li:nth-of-type(6) .subHeading:before {content:'06.';}
+.subList>li:nth-of-type(7) .subHeading:before {content:'07.';}
+.subList>li:nth-of-type(8) .subHeading:before {content:'08.';}
+.subList>li:nth-of-type(9) .subHeading:before {content:'09.';}
+.subList>li:nth-of-type(10) .subHeading:before {content:'10.';}
 
 /* 헤딩 */
 #guideType_heading .guideCodeWrapper {padding:0 0 50px;}
+#guideType_step .guideCodeWrapper {border:0; padding:20px 0;}
+#guideType_iconFonts .guideCodeWrapper {padding:20px 0 20px 40px; margin-top:12px;}
+#guideType_iconFonts .subHeading {letter-spacing:normal;}
+#guideType_button .guideCodeWrapper {padding:40px;}
+#guideType_button .guideCodeWrapper hr {margin:30px 0;}
+#guideType_bulletList .guideCodeWrapper {padding:40px;}
 
-
-
-
-.guideCodeWrapper {border:1px dashed rgba(167,186,206,.5); padding:20px 0; margin-bottom:100px;}
-.guideCodeWrapper.noline {border:0;}
 
 .codeField code {display:block; padding:20px;}
 .codeField>p {padding:20px; margin-top:10px;font-size:14px; background:#f2f2f2; font-family:"Courier New", monospace;}
@@ -66,6 +93,11 @@ h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
 
 
 	.iconsLIST>li {width:50%;}
+
+	.subHeading {font-size:18px !important; letter-spacing:-0.025em; line-height:1.5}
+	.subList>li .subHeading:before {font-size:18px; }
+
+	#guideType_iconFonts .guideCodeWrapper {padding:0; margin-top:;}
 
 
 }
