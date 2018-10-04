@@ -1,49 +1,82 @@
 $(function(){
-/** ----- 브랜드 ----- */
-	//브랜드 상단 SNS
+	//브랜드 상단 SNS - 모바일에서 위치조정
 	brandTopSNS();
-
-	//XS에너지 홈
-	//xsEnergyHome();
-
 	$(window).resize(function(){
 		brandTopSNS();
-		//xsEnergyHome();
 	});
 
 	//연혁
 	timelineFunc();
 
+	//미디어갤러리
+	mediaGallery();
 });
 
-/* 브랜드 모바일 SNS 위치 */
+/* 브랜드 상단 SNS - 모바일에서 위치조정 */
 function brandTopSNS(){
 	var $brandHeading = $('.top-title-wrapper');
 	if(!$brandHeading.length){return;}
 
-	var $brandSns = $('.brand .bod-view-sns');
-	var $brandHomeSns = $('.sns-container .bod-view-sns');
-	var titHeight = $brandHeading.outerHeight();
 	var windowWidth = $(window).width();
+	var $brandSns = $('.brand .bod-view-sns , .sns-container .bod-view-sns');
+	var titHeight = $brandHeading.outerHeight();
 
 	function titSpaceCal(){
-		console.log('h1 높이: ' + titHeight);
-		$brandSns.css('top',titHeight);
-		$brandHomeSns.css('top',titHeight);
+		$brandSns.css({
+			'opacity':'1',
+			'top':titHeight
+		});
 	}
 
 	if(windowWidth < 769){
-		setTimeout(function(){
-			titSpaceCal();
-		},300);
+		$brandSns.css('opacity','0');
+		setTimeout(function(){ titSpaceCal(); },300);
 	}
 	else{
-		setTimeout(function(){
-			$brandSns.css('top','0');
-			$brandHomeSns.css('top','0');
-		},300);
+		setTimeout(function(){ $brandSns.css('top',''); }, 300);
 	}
 }
+
+/* 미디어갤러리 */
+function mediaGallery(){
+	var $GalleryList =  $('.media-borad-list-video ul');
+	if(!$GalleryList.length){ return; }
+
+	$.getScript( '/_ui/responsive/theme-blue/js/masonry.pkgd.min.js'); //플러그인 호출
+
+	$('.media-borad-list-video ul').masonry({
+		columnWidth: '.grid-item',
+		transitionDuration:0,
+		percentPosition: true
+	});
+
+	$('.media-borad-list-gallery ul').masonry({
+		columnWidth: '.grid-item',
+		transitionDuration:0,
+		percentPosition: true
+	});
+
+	var i = 0;
+	$(document).on('click', '.media-more-btn button', function(e) {
+		var $winSize = $(window).outerWidth();
+		i++;
+		e.preventDefault();
+		var startNum = 10 * i;
+		var endNum = startNum + 10;
+
+		$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
+
+		setTimeout(function(){ $('.media-borad-list-video ul').masonry() }, 0);
+
+		if(!$(this).parent().prev().is(':hidden')){
+			$(this).hide();
+		}
+	});
+}
+
+
+
+
 /* XS에너지 홈 */
 /* function xsEnergyHome(){
 
@@ -105,19 +138,19 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 	var bannerId = $('.nutrilite #banner_list');
 	var $dotItembar = bannerId.find('.owl-dots');
 	var $dotItems = bannerId.find('.owl-dots > button');
-	
-	
+
+
 	$dotItems.eq(0).html('<span>뉴트리라이트 브랜드 스토리</span>');
 	$dotItems.eq(1).html('<span>뉴트리라이트 보태니컬 프로세스 9 캠페인</span>');
 	$dotItems.eq(2).html('<span>뉴트리라이트 농장</span>');
-	
+
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
-	
+
 });
 //아티스트리 홈 : B20200
 $(function() {
@@ -128,18 +161,18 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 	var bannerId = $('.artistry #banner_list');
 	var $dotItembar = bannerId.find('.owl-dots');
 	var $dotItems = bannerId.find('.owl-dots > button');
-	
-	
+
+
 	$dotItems.eq(0).html('<span>아티스트리 소개</span>');
 	$dotItems.eq(1).html('<span>아티스트리 스튜디오</span>');
-	
+
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
-	
+
 });
 // 엣모스피어 드라이브 홈 : B20601 - 상단 nav - true에서 false로 변경
 $(function() {
@@ -150,19 +183,19 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 	var bannerId = $('.atmosphere #banner_list');
 	var $dotItembar = bannerId.find('.owl-dots');
 	var $dotItems = bannerId.find('.owl-dots > button');
-	
-	
+
+
 	$dotItems.eq(0).html('<span>좋은 공기가 좋은 차의 기준</span>');
 	$dotItems.eq(1).html('<span>아이에게 더 중요한 AIR</span>');
 	$dotItems.eq(2).html('<span>에어백만큼 중요한 AIR</span>');
-	
+
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
-	
+
 	$('.atmosphere #banner_list2').owlCarousel({
 		loop: false,
 		nav: true,
@@ -170,7 +203,7 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 });
 //배스바디 홈 : B20901
 $(function() {
@@ -183,19 +216,19 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 	var bannerId = $('.bathbody #banner_list');
 	var $dotItembar = bannerId.find('.owl-dots');
 	var $dotItems = bannerId.find('.owl-dots > button');
-	
-	
+
+
 	$dotItems.eq(0).html('<span>글리스터 구강 청결 시스템</span>');
 	$dotItems.eq(1).html('<span>새티니크 헤어케어,<br>그 이상의 아름다움</span>');
 	$dotItems.eq(2).html('<span>브랜드 이야기</span>');
-	
+
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
-	
+
 });
 //암웨이 퀸 홈 : B20501
 $(function() {
@@ -208,19 +241,19 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 	var bannerId = $('.queen #banner_list');
 	var $dotItembar = bannerId.find('.owl-dots');
 	var $dotItems = bannerId.find('.owl-dots > button');
-	
-	
+
+
 	$dotItems.eq(0).html('<span>My Cooking Story</span>');
 	$dotItems.eq(1).html('<span>암웨이 퀸의 5가지 <br>[지키는 기술]</span>');
 	$dotItems.eq(2).html('<span>암웨이 퀸 쿠킹스토리</span>');
-	
+
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
-	
+
 });
 //원포원 : B20801
 $(function() {
@@ -231,17 +264,17 @@ $(function() {
 		margin: 0,
 		items: 1
 	});
-	
+
 	var bannerId = $('.oneforone #banner_list2');
 	var $dotItembar = bannerId.find('.owl-dots');
 	var $dotItems = bannerId.find('.owl-dots > button');
-	
+
 });
 /*
 한국암웨이 연혁: B10106
 암웨이 시작: B10201
 */
-$(function() { 
+$(function() {
     $('.timelineWrap').owlCarousel({
         loop: true,
         nav: true,
@@ -249,7 +282,7 @@ $(function() {
         margin: 0,
         items: 1
     });
-}); 
+});
 //부산 아시아 물류 허브 센터: B10112
 $(function(){
 	//연혁
@@ -275,7 +308,7 @@ $(function(){
 			}
 		}
 	});
-}); 
+});
 //암웨이소개(암웨이 대표 브랜드) : B10000
 $(function() {
 
@@ -389,7 +422,7 @@ $(function(){
 
 //레이어팝업
 //뉴트리라이트 과학 : B20114
-$(function(){	
+$(function(){
 	//뉴트리라이트 과학 팝업
 	$('#B20114_lp01').click(function(event) {
 		event.preventDefault();
@@ -417,7 +450,7 @@ $(function(){
 	});
 });
 //식물 영양소 캠페인 : B20118
-$(function(){	
+$(function(){
 	////빨간색(RED) 팝업
 	$('#B20118_lp01').click(function(event) {
 		event.preventDefault();
@@ -445,7 +478,7 @@ $(function(){
 	});
 });
 //뉴트리라이트 건강지킴이 : B20160
-$(function(){	
+$(function(){
 	$('#B20160_lp01').click(function(event) {
 		event.preventDefault();
 		layerPopOver('this','.B20160_lp01');
@@ -468,7 +501,7 @@ $(function(){
 	});
 });
 //뉴트리라이트 건강지킴이(NQ검사하기) : B20172
-$(function(){	
+$(function(){
 	$('.B20172_lp2').on('click',function(){
 		layerPopOver(this,'.B20172_lp2_pop');
 	});
@@ -533,42 +566,6 @@ $(function(){
 		layerPopOver('this','.B10601_lp_pop');
 	});
 });
-
-//미디어갤러리
-
-$(function(){
-	$('.media-borad-list-video ul').masonry({
-		columnWidth: '.grid-item',
-		transitionDuration:0,
-		percentPosition: true
-	});
-
-	$('.media-borad-list-gallery ul').masonry({
-		columnWidth: '.grid-item',
-		transitionDuration:0,
-		percentPosition: true
-	});
-
-	var i = 0;
-
-	$(document).on('click', '.media-more-btn button', function(e) {
-		var $winSize = $(window).outerWidth();
-		i++;
-		e.preventDefault();
-		var startNum = 10 * i;
-		var endNum = startNum + 10;
-
-		$(this).parent().parent().children().slice(startNum, endNum).css("display", "block");
-
-		setTimeout(function(){ $('.media-borad-list-video ul').masonry() }, 0);
-
-		if(!$(this).parent().prev().is(':hidden')){
-			$(this).hide();
-		}
-	});
-});
-
-
 
 //암웨이 미디어 갤러리 : B10910
 $(function(){
@@ -1343,7 +1340,7 @@ $(function(){
 $(function(){
 	var owlSync1 = $('#carousel_1');
 	var owlSync2 = $('#carousel_2, #carousel_3, #carousel_4, #carousel_5');
-	
+
 	owlSync1.owlCarousel({
 		items: 1,
 		nav: true,
@@ -1358,7 +1355,7 @@ $(function(){
 		mouseDrag: false,
 		linked: owlSync2.prev()
 	}).on('initialized.owl.carousel  linked.to.owl.carousel', function(){
-		
+
 	});
 });
 /**
