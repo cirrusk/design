@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
 .guideIndex ol {list-style-position:outside; padding-left:28px;}
 .guideIndex ol li {padding-left:5px; list-style-type:decimal-leading-zero;}
 
-.subHeading {color:#3f7bb7; font-weight:300 !important; font-size:24px !important; letter-spacing:-0.025em; background:#e7f1fb; padding:15px;}
+.subHeading {color:#3f7bb7; font-weight:300 !important; font-size:24px !important; letter-spacing:normal !important; background:#e7f1fb; padding:15px;}
 
 .subList {margin-bottom:100px;}
 .subList>li .subHeading:before {content:''; position:; display:inline-block; margin-right:5px; min-width:32px; font-size:23px; }
@@ -64,6 +64,9 @@ h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
 #guideType_button .guideCodeWrapper {padding:40px;}
 #guideType_button .guideCodeWrapper hr {margin:30px 0;}
 #guideType_bulletList .guideCodeWrapper {padding:40px;}
+#guideType_table .subHeading {padding:0 0 20px; background:none;}
+#guideType_table .subList>li .subHeading:before {display:none;}
+#guideType_table .guideCodeWrapper {padding:30px;}
 
 
 .codeField code {display:block; padding:20px;}
