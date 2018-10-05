@@ -16,7 +16,7 @@
 .ico-fa-repeat-alt:before{content:'\e996';}
 
 /* SOP 기간조회 icon */
-[class*=ico-sop] {position:relative; overflow:hidden; display:block; float:left; padding-left:20px; height:20px; line-height:normal; }/*사파리 오류로 수정*/
+[class*=ico-sop] {position:relative; overflow:hidden; display:inline-block; margin:0; padding-left:20px; height:20px; line-height:normal; }/*사파리 오류로 수정*/
 [class*=ico-sop]:before {content:''; position:absolute; top:0; left:0; display:block; width:20px; height:20px; font-weight:500; background:url(../images/icons/icon_sop_01.png) no-repeat; background-size:20px auto;}
 [class*=ico-sop]>em {display:block;overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px;}
 
@@ -44,11 +44,11 @@
 .akl .grey-block .plp-item-label:after {width:12px; height:21px; right:-10px; background:none; border-style: solid; border-width:21px 7px 0 0; border-color: #bbb transparent transparent transparent;}
 
 /* sop 6개월조회 결과 - 회색 icon */
-.order-benefits {display:block; line-height:0; text-align:center;}
+.order-benefits {display:block; line-height:0; min-height:25px; text-align:center;}
 .order-benefits + span {line-height:25px;}
 .order-benefits>span {display:inline-block; margin:0; vertical-align:middle; line-height:16px;}
 .order-benefits .ico-sop-benefits {display:inline-block; width:20px; margin:0;}
-.order-benefits .ico-sop-benefits+.ico-sop-benefits {margin-left:-1px;}
+.order-benefits .ico-sop-benefits+.ico-sop-benefits {margin-left:-2px;}
 
 .sop-container span[class^=circle-] {display:inline-block; width:35px; height:35px; font-size:16px; font-weight:400; line-height:35px; text-align:center;}
 .sop-container .mysop-list [class^=circle-] {margin-top:23px;}
