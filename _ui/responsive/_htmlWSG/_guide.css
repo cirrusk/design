@@ -4,8 +4,11 @@
   * ---------------------------------------------------------
   */
 
-h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
+/* 가이드용 재조정 */
+h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
+.akl.htmlWSG table td {padding:0}
 
+/* 가이드용 헤더 */
 .amway-theme {}
 .akl.htmlWSG main {margin-top:;}
 .akl.htmlWSG a.logo {display:block; height:36px; padding-left:120px; color:#fff; font-size:26px; font-weight:500; text-transform:uppercase; background:url(../theme-blue/images/logo1.png) 0 50% no-repeat; background-size:auto 36px;}
@@ -14,21 +17,9 @@ h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
 .akl.htmlWSG .header-wrapper .header-content {display:table-cell; vertical-align:middle;}
 .akl.htmlWSG .navigation-menu-container {font-size:16px; height:64px;}
 .akl.htmlWSG header.main-header .amw-navigation-menu .navigation-menu-container {max-width:1400px; padding:0 12px;}
-.akl.htmlWSG .header-element-content h1 {margin:0; }
+.akl.htmlWSG .header-element-content h1 {margin:0;}
 
-.akl.htmlWSG table td {padding:0}
-
-.akl.htmlWSG .mobile-header-cell.mobile-nav-row-btn-logo {vertical-align:middle; border:1px solid red}
-
-
-/* .akl.htmlWSG .container {padding-top:25px;} */
-.akl.htmlWSG .topTitle {margin-bottom:40px;}
-.akl.htmlWSG .topTitle h1 {padding:20px 0 0; font-size:60px !important; letter-spacing:normal; text-align:center; font-family:'Segoe UI','Noto Sans KR'; font-weight:300; text-transform:capitalize; letter-spacing:-0.02em;}
-
-.guideCodeWrapper {padding:30px; border-radius:5px; border:1px dashed rgba(167,186,206,.4);}
-.guideCodeWrapper.noline {border:0;}
-
-
+/* 가이드 목차 */
 .btnLink {font-size:30px;}
 .akl.htmlWSG .guideIndex h2.guideHeading {font-size:40px !important; line-height:normal;}
 .akl.htmlWSG section{margin:0 0 20px;}
@@ -36,95 +27,77 @@ h1,h2,h3,h4,h5,h6{ etter-spacing:normal; margin:0; padding:0;}
 .guideIndex ol {list-style-position:outside; padding-left:28px;}
 .guideIndex ol li {padding-left:5px; list-style-type:decimal-leading-zero;}
 
-.subHeading {color:#3f7bb7; font-weight:300 !important; font-size:24px !important; letter-spacing:normal !important; background:#e7f1fb; padding:15px;}
+/* 가이드 제목 */
+.akl.htmlWSG .topTitle {margin-bottom:40px;}
+.akl.htmlWSG .topTitle h1 {padding:20px 0 0; font-size:60px !important; letter-spacing:normal; text-align:center; font-family:'Segoe UI','Noto Sans KR'; font-weight:300; text-transform:capitalize; letter-spacing:-0.02em;}
 
+/* 가이드 코드 wrapper */
+.guideCodeWrapper {padding:30px; border-radius:5px;}
+.guideCodeWrapper.noline {border:0;}
+
+/* 가이드 상세목록 */
+.subHeading {color:#3f7bb7; font-weight:400 !important; font-size:24px !important; letter-spacing:-1px !important; background:#e7f1fb; padding:15px;}
 .subList {margin-bottom:100px;}
-.subList>li .subHeading:before {content:''; position:; display:inline-block; margin-right:5px; min-width:32px; font-size:23px; }
-.subList>li+li {margin-top:60px;}
-.subList>li:nth-of-type(1) .subHeading:before {content:'01.';}
-.subList>li:nth-of-type(2) .subHeading:before {content:'02.';}
-.subList>li:nth-of-type(3) .subHeading:before {content:'03.';}
-.subList>li:nth-of-type(4) .subHeading:before {content:'04.';}
-.subList>li:nth-of-type(5) .subHeading:before {content:'05.';}
-.subList>li:nth-of-type(6) .subHeading:before {content:'06.';}
-.subList>li:nth-of-type(7) .subHeading:before {content:'07.';}
-.subList>li:nth-of-type(8) .subHeading:before {content:'08.';}
-.subList>li:nth-of-type(9) .subHeading:before {content:'09.';}
-.subList>li:nth-of-type(10) .subHeading:before {content:'10.';}
+.subList>li {overflow:hidden; border:1px solid rgba(167,186,206,.4); border-radius:15px;}
+.subList>li+li {margin-top:30px;}
+.subtit {}
 
-/* 헤딩 */
-#guideType_heading .guideCodeWrapper {padding:0 0 50px;}
-#guideType_heading .guideCodeWrapper.default_set {padding:20px}
-#guideType_heading .guideCodeWrapper.default_set [class^=title-] {margin-bottom:10px;}
-#guideType_step .guideCodeWrapper {border:0; padding-left:0; padding-right:0;}
-#guideType_step .subHeading {background:none; padding:0;}
-
-#guideType_iconFonts .guideCodeWrapper {padding:20px 0 20px 40px;}
-#guideType_iconFonts .subHeading {letter-spacing:normal;}
-#guideType_button .guideCodeWrapper {padding:40px;}
-#guideType_button .guideCodeWrapper hr {margin:30px 0;}
-#guideType_bulletList .guideCodeWrapper {padding:40px;}
-#guideType_table .subHeading {padding:0 0 20px; background:none;}
-#guideType_table .subList>li .subHeading:before {display:none;}
-#guideType_table .guideCodeWrapper {padding:30px;}
-
-
-.codeField code {display:block; padding:20px;}
-.codeField>p {padding:20px; margin-top:10px;font-size:14px; background:#f2f2f2; font-family:"Courier New", monospace;}
-
-.uiExample {margin:0 15px 20px;}
-
+/* 기타 */
 .iconsLIST {overflow:hidden;}
 .iconsLIST>li {float:left; display:block; width:20%; min-height:40px; box-sizing:border-box;}
 .iconsLIST>li>span, .iconsLIST>li> div>span {display:block; padding:15px; height:auto; font-size:14px; }
 .iconsLIST>li>span:before {margin-right:15px; font-size:24px; vertical-align:middle}
 .iconsLIST>li [class^=icon-] {width:auto;}
-
 .akl.htmlWSG .icon-minus:before {font-size:24px; vertical-align:middle}
 
-@media (min-width:769px){
-}
+.uiExample {margin:0 15px 20px;}
+.codeField code {display:block; padding:20px;}
+.codeField>p {padding:20px; margin-top:10px;font-size:14px; background:#f2f2f2; font-family:"Courier New", monospace;}
+
 
 @media (max-width:900px){
 	.iconsLIST>li {width:33%;}
 }
+@media (min-width:769px){
+	/* 헤딩
+	#guideType_heading .guideCodeWrapper {padding:0 0 50px;}
+	#guideType_heading .guideCodeWrapper.default_set {padding:20px}
+	#guideType_heading .guideCodeWrapper.default_set [class^=title-] {margin-bottom:10px;}*/
+
+	/* 가이드 상세목록 */
+	/* .subHeading:before {content:''; position:; display:inline-block; margin-right:5px; min-width:32px; font-size:23px;} */
+
+}
 @media (max-width:768px){
-	.akl.htmlWSG .topTitle {margin-bottom:20px;}
-	.akl.htmlWSG .topTitle h1 {font-size:24px !important; font-weight:400;}
-
-
+	/* 가이드용 헤더 */
 	.akl.htmlWSG header.main-header .amway-theme .header-container {display:none;}
 	.akl.htmlWSG header.main-header .navigation-menu-container .desktop-nav-menu {display:none;}
 	.akl.htmlWSG header.main-header .amw-navigation-menu .navigation-menu-container {padding:0;}
 	.akl.htmlWSG header.main-header .mobile-container {display:block;}
 	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-header-cell:first-of-type {border:0}
 	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-nav-row-btn-logo {text-align:left;}
-
 	.akl.htmlWSG a.logo {display:inline-block; margin-top:2px;padding-left:95px; font-size:20px; line-height:32px; color:#002f5f; background:url(../theme-blue/images/logo2.png) 0 50% no-repeat; background-size:auto 30px;}
 
+	.akl.htmlWSG .mobile-header-cell.mobile-nav-row-btn-logo {vertical-align:middle; border:1px solid red}
+
+	/* 가이드 제목 */
+	.akl.htmlWSG .topTitle {margin-bottom:20px;}
+	.akl.htmlWSG .topTitle h1 {font-size:24px !important; font-weight:400;}
+	.subHeading {position:relative; padding:20px 20px 18px; border-radius:14px 14px 0 0; font-size:16px !important; font-weight:400 !important;}
+
+
+	/* 가이드 상세목록
+	.subHeading {position:relative; padding:20px 10px 18px 30px; background:#e3e3e3; border-radius:14px 14px 0 0; color:#555; font-size:16px !important; font-weight:400 !important; letter-spacing:normal !important;}
+	.subtit {font-size:15px; font-weight:500; padding:30px 0 15px; margin-bottom:0; color:#222;}
+	.subList>li {overflow:hidden; border:1px solid #ddd; border-radius:15px;}
+	.subHeading:before {content:'\e95b'; position:absolute; left:8px; display:block; font-family:'AmwayIcons'!important; font-size:18px;}
+	.subList>li+li {margin-top:10px;} */
+
+	/* 가이드 코드 wrapper */
+	.guideCodeWrapper {border:0; border-width:0 1px 1px; padding:30px 20px 20px; border-radius:0; box-shadow:0px 10px 10px rgba(110,110,110,0);}
+	.guideCodeWrapper > .subtit:first-child {padding-top:0;}
+
+	/* 가이드용 여백조정 */
 	.akl.htmlWSG main {margin-top:62px;}
-	.guideCodeWrapper {padding:0 0 20px; margin-bottom:0;}
-
-	.subHeading {padding:15px 0; background:#e7f1fb; border-top:0px solid #3f7bb7; border-radius:15px;}
-	.guideCodeWrapper {border:0; padding:0}
-
-
 	.iconsLIST>li {width:50%;}
-
-	.subHeading {font-size:14px !important; letter-spacing:normal !important; line-height:1.5; padding:10px; text-align:center;}
-	.subList>li .subHeading:before {font-size:18px; display:none;}
-	.subList>li+li {margin-top:20px;}
-
-	#guideType_heading .guideCodeWrapper {padding:0 0 100px;}
-
-	#guideType_iconFonts .guideCodeWrapper {padding:0; margin-top:;}
-
-	#guideType_step .subHeading {margin-bottom:20px;}
-	#guideType_step .guideCodeWrapper {padding:0; margin-bottom:20px;}
-
-
-
-
-
-
 }
