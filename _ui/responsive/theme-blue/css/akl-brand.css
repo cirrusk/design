@@ -280,7 +280,9 @@ Date : 2018-07-02
 .timeline .owl-dots .owl-dot.active span {
   width: 42px;
   height: 42px;
-  margin: -7px 0 0 -14px;
+  position:absolute;
+  left:-12px;
+  top:-23px;
   background:url('/_ui/responsive/theme-blue/images/akl_brand/common/timeline_dot.png') no-repeat 0 0;
 }
 .timeline.s1 .owl-dots {
@@ -290,7 +292,7 @@ Date : 2018-07-02
   padding: 8px 0 20px 296px;
 }
 .timeline.s1 .owl-dots .owl-dot {
-  margin-right:74.0px;
+  margin-right:74.0px; position:relative;
 }
 
 /* 스크롤바 플러그인 추가 */
@@ -351,7 +353,7 @@ Date : 2018-07-02
 .akl .brand .homepage_banner .banner__wrapper .banner__image {width:100%;}
 
 /* 메인 비주얼 기본 스타일 */
-.akl .brand .homepage_banner .banner__message {display:block;position:absolute;z-index:1;top:17%;right:10%;width:400px;height:69%;margin:0;padding:0;background:#e11e44;opacity:0.8;}
+.akl .brand .homepage_banner .banner__message {display:block;position:absolute;z-index:1;top:17%;right:10%;width:400px;height:69%;margin:0;padding:0; background-color:rgba(225,30,68,0.8); }
 .akl .brand .homepage_banner .banner__message--main {margin:10% 0 0 -37%;width:100%;font-size:44px;font-weight:500;line-height:1.3;text-transform:none;}
 .akl .brand .homepage_banner .banner__message--sub {position:absolute;bottom:0;width:100%;padding:50px 30px 50px 40%;font-weight:300;font-size:16px;word-break:break-word; line-height:1.5;}
 .akl .brand .homepage_banner .banner__message--sub > span {display:block;}
@@ -382,8 +384,13 @@ Date : 2018-07-02
 .content-row article .cont-type2 figcaption + p {padding-bottom:20px;min-height:auto;} /* 하단 상세보기 버튼이 없는 경우 */
 
 .content-row.s1 {display:block;}
-.content-row.s1 article { width:31.3333%;padding:22px 30px 30px; margin:0 1%; float:left; background:#f4f4f4; height:280px; text-align:left;}
-.akl .content-row.s1 .title-h6 {font-size: 18px !important; line-height:140%}
+.content-row.s1 article {flex:none;width:100%;padding:40px 0 30px;border-bottom:1px solid #e3e3e3;}
+.content-row.s1 article:first-child {padding-top:10px;}
+.content-row.s1 article:last-child {padding-bottom:0;border-bottom:0;}
+
+.content-row.s3 {display:block;}
+.content-row.s3 article { width:31.3333%;padding:22px 30px 30px; margin:0 1%; float:left; background:#f4f4f4; height:280px; text-align:left;}
+.akl .content-row.s3 .title-h6 {font-size: 18px !important; line-height:140%}
 
 .content-row.s2 {display:block;margin-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;}
 .content-row.s2 dl{width:50%;margin-bottom:40px;padding:0 15px;box-sizing:border-box;}
@@ -412,7 +419,7 @@ Date : 2018-07-02
 /* 1.암웨이퀸 */
 .akl .queen .homepage_banner .banner__wrapper .banner__message,
 .akl .queen .homepage_banner .banner__title:before,
-.akl .queen .homepage_banner .owl-dots .owl-dot.active:before {background-color:#e11e44;}
+.akl .queen .homepage_banner .owl-dots .owl-dot.active:before { background-color:rgba(225,30,68,0.8);}
 .akl .queen .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual01.jpg');}
 .akl .queen .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02.jpg');}
 .akl .queen .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual03.jpg');}
@@ -422,8 +429,11 @@ Date : 2018-07-02
 .title-component h2 span {display:block;font-size:24px;font-weight:400;margin-bottom:8px;}
 .title-component h2 sup{top:-1.0em;font-size:13px;}
 .title-component > p {margin:10px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-1px;}
-
-.brand .box-bnr-fw03{height:400px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/sub3_visual01.jpg');}
+.brand .sub .full-component .box-bnr-fw01,
+.brand .sub .full-component .box-bnr-fw03  {margin-bottom:60px;}
+.brand .box-bnr-fw03 {height:400px; background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/sub3_visual01.jpg');}
+.brand .box-bnr-fw03 .txt-wrap strong {color:#002f5f!important;}
+.brand .box-bnr-fw03 .txt-wrap p {color:#56565a!important;}
 .brand .box-bnr-fw04{height:400px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/sub2_visual01.jpg');}
 .queen .full-component.vsual02 {height:400px;background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/queen/sub2_visual02.jpg') no-repeat 50% 50%;background-size:auto;}
 .queen .full-component.vsual03 {height:400px;background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/queen/sub2_visual03.jpg') no-repeat 50% 50%;background-size:auto;}
@@ -457,7 +467,7 @@ Date : 2018-07-02
 /* 2.뉴트리라이트 */
 .akl .nutrilite .homepage_banner .banner__wrapper .banner__message,
 .akl .nutrilite .homepage_banner .banner__title:before,
-.akl .nutrilite .homepage_banner .owl-dots .owl-dot.active:before {background-color:#20893d;}
+.akl .nutrilite .homepage_banner .owl-dots .owl-dot.active:before {background-color:#20893d; background-color:rgba(32,137,61,0.8);}
 .akl .nutrilite .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01.jpg');}
 .akl .nutrilite .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual02.jpg');}
 .akl .nutrilite .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual03.jpg');}
@@ -469,7 +479,7 @@ Date : 2018-07-02
 /* 3.배스/바디 */
 .akl .bathbody .homepage_banner .banner__wrapper .banner__message,
 .akl .bathbody .homepage_banner .banner__title:before,
-.akl .bathbody .homepage_banner .owl-dots .owl-dot.active:before {background:#12a3da;}
+.akl .bathbody .homepage_banner .owl-dots .owl-dot.active:before {background:#12a3da; background-color:rgba(18,163,218,0.8);}
 .akl .bathbody .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual01.jpg');}
 .akl .bathbody .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual02.jpg');}
 .akl .bathbody .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/main_visual03.jpg');}
@@ -526,7 +536,7 @@ Date : 2018-07-02
 /* 4.아티스트리 */
 .akl .artistry .homepage_banner .banner__wrapper .banner__message,
 .akl .artistry .homepage_banner .banner__title:before,
-.akl .artistry .homepage_banner .owl-dots .owl-dot.active:before {background-color:#e1b738;}
+.akl .artistry .homepage_banner .owl-dots .owl-dot.active:before { background-color:rgba(225,183,56,0.8);}
 .akl .artistry .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual01.jpg');}
 .akl .artistry .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/main_visual02.jpg');}
 .artistry .txtbox.s1 {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/fullimg1.jpg');}
@@ -553,7 +563,7 @@ Date : 2018-07-02
 /* 5.이스프링 */
 .akl .espring .homepage_banner .banner__wrapper .banner__message,
 .akl .espring .homepage_banner .banner__title:before,
-.akl .espring .homepage_banner .owl-dots .owl-dot.active:before {background-color:#3a7bdf;}
+.akl .espring .homepage_banner .owl-dots .owl-dot.active:before {background-color:#3a7bdf; background-color:rgba(58,123,223,0.8);}
 .akl .espring .homepage_banner .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/main_visual01.jpg');}
 .espring.main .txtbox {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/fullimg1.jpg');}
 .espring.main .txtbox > div {transform:none;top:10%;max-width:90%;}
@@ -588,7 +598,7 @@ Date : 2018-07-02
 /* 7.암웨이홈 */
 .akl .home .homepage_banner .banner__wrapper .banner__message,
 .akl .home .homepage_banner .banner__title:before,
-.akl .home .homepage_banner .owl-dots .owl-dot.active:before {background-color:#86c12c;}
+.akl .home .homepage_banner .owl-dots .owl-dot.active:before {background-color:#86c12c; background-color:rgba(134,193,44,0.8);}
 .akl .home .homepage_banner .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/home/main_visual01.jpg');}
 .home .txtbox {height:auto;min-height:300px;padding:30px 30px 30px 25%;}
 .home .txtbox.s1 {background:#f4f4f4 url('/_ui/responsive/theme-blue/images/akl_brand/home/contimg1.png') no-repeat 8% 50%;background-size:140px auto;}
@@ -601,7 +611,7 @@ Date : 2018-07-02
 /* 8.엣모스피어 */
 .akl .atmosphere .homepage_banner .banner__wrapper .banner__message,
 .akl .atmosphere .homepage_banner .banner__title:before,
-.akl .atmosphere .homepage_banner .owl-dots .owl-dot.active:before {background-color:#1abdbf;}
+.akl .atmosphere .homepage_banner .owl-dots .owl-dot.active:before {background-color:#1abdbf; background-color:rgba(26,189,191,0.8);}
 .akl .atmosphere .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/main_visual01.jpg');}
 .akl .atmosphere .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/main_visual02.jpg');background-position:0 0;}
 .akl .atmosphere .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/atmosphere/main_visual03.jpg');}
@@ -778,6 +788,7 @@ Date : 2018-07-02
 .brand .espring-sub-home .txtbox h3 {display:none}
 .brand .espring-sub-home .txtbox p { font-size:14px; text-align: center;}
 .brand .espring-sub-home .txtbox div.s1 {left:7%; max-width:100%;}
+.brand .espring-sub-home .txtbox div.s2 {left:0; max-width:100%;}
 .brand .espring-sub-home .txtbox div span {display:block;}
 .brand .espring-sub-home .txtbox div a.arr1:after {border-color:#0075a4;}
 
@@ -877,7 +888,8 @@ Date : 2018-07-02
 	.content-row[class*='col'] {margin-left:0 !important;margin-right:0 !important;}
 	.content-row.col4 {display:flex;margin:10px -7px 0;}
 	.content-row.col4 article {width:50%;padding:20px 7px 0;}
-
+	.content-row.col4 article:nth-of-type(1),
+	.content-row.col4 article:nth-of-type(2){ padding-top:0}
 	.akl .brand .category-success-story {display:block;margin:30px 0 0;}
 	.akl .brand .category-success-story .success-story__item {max-width:100%;margin:30px 0 0;}
 	.akl .brand .category-success-story .success-story__item:first-child {margin-top:0}
@@ -902,8 +914,11 @@ Date : 2018-07-02
 	.akl .queen .homepage_banner .owl-item:nth-child(2) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual02_mob.jpg');}
 	.akl .queen .homepage_banner .owl-item:nth-child(3) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/main_visual03_mob.jpg');}
 
-	.content-row.s1 article { width:100%;padding:17px 20px 20px; margin:0 0 30px; float:none;  height:auto; min-height:240px }
-	.content-row.s1 article:last-child { margin:0}
+	.content-row.s1 article:first-child {padding-top:0;}
+
+	.content-row.s3 { margin-top:-30px !important;}
+	.content-row.s3 article { width:100%;padding:17px 20px 20px; margin:0 0 30px; float:none;  height:auto; min-height:240px }
+	.content-row.s3 article:last-child { margin:0}
 
 	.content-row.s2 dl {width:100%;padding:0;margin-bottom:25px;}
 	.content-row.s2 dd {padding:20px;}
@@ -917,6 +932,10 @@ Date : 2018-07-02
 	.akl .brand .category-success-story .item-content-wrap .banner-title > span {display:none;}
 	.akl .brand .category-success-story .item-content-wrap .banner-button-wrap {position:relative;bottom:auto;}
 	.queen .queen_prod_list + .title-component {margin:0;}
+
+	.brand .sub .full-component .box-bnr-fw01,
+	.brand .sub .full-component .box-bnr-fw03  {margin-bottom:0;}
+
 	/* 뉴트리라이트 */
 	.akl .nutrilite .homepage_banner .owl-dots .owl-dot.active span {background:#20893d;}
 	.akl .nutrilite .homepage_banner .owl-item:nth-child(1) .banner__wrapper {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/main_visual01_mob.jpg');}
@@ -969,6 +988,7 @@ Date : 2018-07-02
 	.content-row.type1 {overflow:hidden;}
 	.content-row.type1 .txtbox > img.mob {min-height:375px;}
 	.content-row.type1 .txtbox > div {top:35px;left:5%;max-width:90% !important;transform:none;}
+	.content-row.type1 .txtbox > div.s2 {left:0;max-width:100% !important; padding:0 15px }
 	.content-row.type1 .txtbox > div.txt-center {text-align:center;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:80%;max-width:100%;}
 	.content-row.type1 .txtbox h3 {font-size:28px;}
 
@@ -1499,7 +1519,7 @@ Date : 2018-07-02
 	[class*='sub-cont'] {float:none;width:100%;}
 	.sub-cont1 .item {background-size:auto 100%;}
 	.brand [class*='sub'] [class*="box-bnr"] {height:375px;background:none;}
-
+	.brand [class*='sub'] .box-bnr-fw03 img{ height:100%}
 	/* 배경 */
 	.whatisxs .sub-cont1 .item {height:783px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/cont1_bg_01_mob.jpg');background-size:auto 100%;}
 	.drink .sub-cont1 .item {height:740px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/cont1_bg_05_mob.jpg');}
