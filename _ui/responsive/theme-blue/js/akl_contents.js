@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 	//브랜드 상단 SNS - 모바일에서 위치조정
 	brandTopSNS();
 	$(window).resize(function(){

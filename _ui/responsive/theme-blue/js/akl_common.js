@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 /** ----- 공통 ----- */
 	//레이어 layerPopOver() 마스크 추가
 	$('body').append('<div id="mask" style="display:none"/>');
