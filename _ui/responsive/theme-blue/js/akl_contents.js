@@ -295,7 +295,10 @@ function mediaGallery(){
 	var $GalleryList =  $('.media-borad-list-video ul');
 	if(!$GalleryList.length){ return; }
 
-	$.getScript( '/_ui/responsive/theme-blue/js/masonry.pkgd.min.js'); //플러그인 호출
+	//플러그인 호출
+	$.getScript( '/_ui/responsive/common/js/masonry.pkgd.min.js').done(function(){
+		console.log('미디어갤러리 플러그인 로드 완료');
+	});
 
 	$('.media-borad-list-video ul').masonry({
 		columnWidth: '.grid-item',
