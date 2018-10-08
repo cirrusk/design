@@ -146,19 +146,6 @@
 /* .akl .homepage_banner .owl-theme .owl-controls {margin-top:0;} */
 .akl .homepage_banner .owl-carousel .owl-item .banner__image-sub {margin-top:30px; width:auto; height:350px; margin-right:5%;}
 .akl .homepage_banner .owl-carousel .owl-item .banner__image {width:auto; top:0px;height:100%; bottom:auto; left:60px;}
-.akl .akl-main-banner { margin-top:60px; overflow:hidden;}
-.akl .akl-main-banner .akl-banner_itemleft { padding-right:12px; float:left; width:50%}
-.akl .akl-main-banner .akl-banner_itemleft .item-banner-wrap {background:#ececec; }
-.akl .akl-main-banner .akl-banner_itemright { padding-left:12px; float:right; width:50%}
-.akl .akl-main-banner .akl-banner_itemright .item-banner-wrap {background:#bde6fc; }
-.akl .akl-main-banner .item-banner-wrap a {display:block; height:150px; position:relative; padding:27px 0 0 50px; color:#002f5f}
-.akl .akl-main-banner .item-banner-wrap a:before { content:""; position:absolute; left:50px; bottom:23px; width:20px; height:20px; background:#002f5f; border-radius:24px;z-index:1}
-.akl .akl-main-banner .item-banner-wrap a:after { content:"\e95d"; font-family:'AmwayIcons';position:absolute; left:54px; bottom:23px; color:#fff; z-index:2}
-.akl .akl-main-banner .item-banner-wrap a b { display:block; color:#e11e45; font-size:10px; margin-bottom:3px; font-weight:700; font-style:italic; }
-.akl .akl-main-banner .item-banner-wrap a strong { display:block; font-size:16px; margin-bottom:3px; position:relative; z-index: 2}
-.akl .akl-main-banner .item-banner-wrap a p {  position:relative; z-index: 2}
-.akl .akl-main-banner .item-banner-wrap a span { display:block; position:absolute; right:0; bottom:0; z-index:1}
-.akl .akl-main-banner .item-banner-wrap a span img { width:218px}
 
 /* 신제품 출시 (롤링 배너) */
 .akl .new-hot-brand {overflow:hidden; max-width:1367px; margin:0 auto;}
@@ -178,6 +165,32 @@
 .akl .featured-product__link,
 .akl .featured-product__subtitle {font-size:14px; font-weight:500;}
 .akl .featured-product__subtitle {overflow:hidden; margin-bottom:0;}
+
+/* 일시품절 해지단종 & 체험예약(수정 전)
+.akl .akl-main-banner { margin-top:60px; overflow:hidden;}
+.akl .akl-main-banner .akl-banner_itemleft { padding-right:12px; float:left; width:50%}
+.akl .akl-main-banner .akl-banner_itemleft .item-banner-wrap {background:#ececec; }
+.akl .akl-main-banner .akl-banner_itemright { padding-left:12px; float:right; width:50%}
+.akl .akl-main-banner .akl-banner_itemright .item-banner-wrap {background:#bde6fc; }
+.akl .akl-main-banner .item-banner-wrap a {display:block; height:150px; position:relative; padding:27px 0 0 50px; color:#002f5f}
+.akl .akl-main-banner .item-banner-wrap a:before { content:""; position:absolute; left:50px; bottom:23px; width:20px; height:20px; background:#002f5f; border-radius:24px;z-index:1}
+.akl .akl-main-banner .item-banner-wrap a:after { content:"\e95d"; font-family:'AmwayIcons';position:absolute; left:54px; bottom:23px; color:#fff; z-index:2}
+.akl .akl-main-banner .item-banner-wrap a b { display:block; color:#e11e45; font-size:10px; margin-bottom:3px; font-weight:700; font-style:italic; }
+.akl .akl-main-banner .item-banner-wrap a strong { display:block; font-size:16px; margin-bottom:3px; position:relative; z-index: 2}
+.akl .akl-main-banner .item-banner-wrap a p {  position:relative; z-index: 2}
+.akl .akl-main-banner .item-banner-wrap a span { display:block; position:absolute; right:0; bottom:0; z-index:1}
+.akl .akl-main-banner .item-banner-wrap a span img { width:218px}*/
+
+/* 일시품절 해지단종 & 체험예약(수정 후) */
+.akl .akl-banner-menu .category-success-story .success-story__item { width:49%; }
+.akl .akl-banner-menu .category-success-story .item-image-wrap{ min-height:155px; padding:0 15px; }
+.akl .akl-banner-menu .category-success-story .item-image-wrap img { display:none;}
+.akl .akl-banner-menu .category-success-story .item-content-wrap{  max-width:366px;height:93px;margin:0;padding-top:17px; }
+.akl .akl-banner-menu .item-content-wrap h2 {font-size:14px; margin-top:0;letter-spacing:-1px; line-height:1; font-weight:400}
+.akl .akl-banner-menu .item-content-wrap h4 {font-size:18px;letter-spacing:-1px; line-height:1;}
+.akl .akl-banner-menu .btn-blue-white {padding: 6px 10px 6px; min-width: 84px; min-height:20px; font-size:12px; position:absolute; left:50%; margin-left:-42px; bottom:-12px; }
+.akl .akl-banner-menu .success-story__item:nth-of-type(1){ float:left;background: url(../images/akl_common/img_main_banner03.png) no-repeat 100% 100%; background-size:cover}
+.akl .akl-banner-menu .success-story__item:nth-of-type(2){ float:right;background: url(../images/akl_common/img_main_banner04.png) no-repeat 100% 100%; background-size:cover}
 
 /* 성공 스토리 */
 .akl .row.category-success-story {margin:60px auto; overflow:hidden;}
@@ -1992,6 +2005,11 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 .order-impossible-list .pop-prot-body .cartlist-image {position:absolute; top:20px; left:36px; margin:0;}
 .order-impossible-list .pop-prot-body .cartlist-text {float:left; width:100%; margin:0; padding:0;}
 
+@media (max-width:1280px){
+
+/* 일시품절 해지단종 & 체험예약(수정 후) */
+.akl .akl-banner-menu .category-success-story .item-image-wrap{ min-height:138px; }
+}
 
 @media (max-width:1200px){
 	/* 제품상세 */
@@ -2139,6 +2157,19 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.akl .homepage_banner .owl-carousel .owl-item .banner__image-sub { margin:0 10px 0 0}
 	.akl .new-hot-brand .sub_banner {height:auto;}
 	.akl .new-hot-brand #sub_banner_list .owl-item .banner__image-sub {bottom:-100px;}
+
+	/* 일시품절 해지단종 & 체험예약(수정 후) */
+	.akl .akl-banner-menu .category-success-story .success-story__item { width:100%; }
+	.akl .akl-banner-menu .category-success-story .item-image-wrap{ min-height:138px; }
+	.akl .akl-banner-menu .category-success-story .item-image-wrap img { display:none;}
+	.akl .akl-banner-menu .category-success-story .item-content-wrap{  max-width:230px;height:93px;margin:0;padding-top:17px; }
+	.akl .akl-banner-menu .item-content-wrap h2 {font-size:14px; margin-top:0;letter-spacing:-1px; line-height:1; font-weight:400}
+	.akl .akl-banner-menu .item-content-wrap h4 {font-size:18px;letter-spacing:-1px; line-height:1;}
+	.akl .akl-banner-menu .btn-blue-white {padding: 6px 10px 6px; min-width: 84px; min-height:20px; font-size:12px; position:absolute; left:50%; margin-left:-42px; bottom:15px; }
+	.akl .akl-banner-menu .success-story__item:nth-of-type(1){ float:left;background:#bcd8d8 url(../images/akl_common/img_main_banner03_mob.png) no-repeat 100% 100%; background-size:343px auto}
+	.akl .akl-banner-menu .success-story__item:nth-of-type(2){ float:right; background: url(../images/akl_common/img_main_banner04_mobbg.png) repeat-x 100% 100%; background-size:100% 138px}
+	.akl .akl-banner-menu .success-story__item:nth-of-type(2) .item-image-wrap { background: url(../images/akl_common/img_main_banner04_mob.png) no-repeat 100% 100%; background-size:343px auto}
+
 
 /*
 	.akl .featured_brands .owl-theme .owl-controls .owl-nav .owl-prev {left:0}
