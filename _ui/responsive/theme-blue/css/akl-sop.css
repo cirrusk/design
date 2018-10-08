@@ -340,15 +340,20 @@
 .list-content.mysop-list .grey-block .product-category,
 .list-content.mysop-list .grey-block .product-pvbv,
 .list-content.mysop-list .grey-block.list-row-content>div{color:#bbb;}
-
 .list-row-content.grey-block [class*=ico-sop]:before {filter: grayscale(100%); opacity:.5}
-
 
 /* 즉시결제 */
 .shipping-delivery.sopInstantPayment {padding:0 0 0 30px;}
 .shipping-delivery.sopInstantPayment .icon-sub-title.mySOP-title {padding-bottom:16px;}
 .shipping-delivery.sopInstantPayment .cart-items-wrapper {margin-top:20px; padding-right:20px;}
 .shipping-delivery.sopInstantPayment .product-list-page-title {margin-bottom:10px}
+
+.sop-payment-top {margin-bottom:18px;}
+.sop-payment-top ul {overflow:hidden;}
+.sop-payment-top ul>li {overflow:hidden; float:left; padding-left:20px;}
+.sop-payment-top ul>li:first-child {padding-left:0;}
+.sop-payment-top ul>li >* {display:block;float:left; font-size:16px; line-height:150%;}
+.sop-payment-top ul>li>strong {margin-right:5px;}
 
 /* (layer) 나의 정기주문&스마트오더 > 상세보기 */
 .pop-sop-details {padding-bottom:20px; border-bottom:1px solid #e3e3e3;}
@@ -641,6 +646,10 @@
 	/* 즉시결제 */
 	.shipping-delivery.sopInstantPayment {padding:0;}
 	.shipping-delivery.sopInstantPayment .cart-items-wrapper {margin-top:20px; padding-right:0;}
+
+	.sop-payment-top ul>li {float:none; padding-left:0;}
+/* 	.sop-payment-top ul>li >* {display:block;float:left;}
+	.sop-payment-top ul>li>span {padding-left:5px;} */
 
 	/* 나의 스마트 오더(6개월)*/
 	.list-content.tbl-prdt .list-item-image img {min-width:40px;}

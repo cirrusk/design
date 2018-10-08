@@ -42,6 +42,52 @@
 				<div class="pop-payment-change cart-items-wrapper">
 					<div id="selectPay" class="shipping-delivery-ship method">
 						<p class="shipping-delivery-shipping-header">결제방법 선택</p>
+
+						<!-- 수정 : 2018.10.08 (결제방법 선택 순서변경 - 자동이체 > 신용카드 > 무통장) -->
+						<div class="panel">
+							<input class="amwa-radio" type="radio" name="optradio" id="radio5" />
+							<label for="radio5">자동이체</label>
+							<div id="collapseFive" class="shipping-delivery-radio-body panel-collapse collapse">
+								<div class="panel-body paymemnt">
+									<div class="row card-method">
+										<div class="form-group">
+											<div  class="col-xs-12 col-md-3 card-tit"><label for="ap">자동이체 비밀번호</label></div>
+											<div class="col-xs-12 col-md-8">
+												<div class="a-point">
+													<input name="point" id="ap" type="text" value="" class="auto-pw" placeholder="자동이체 비밀번호 6자리"><!-- 수정 : 2018.05.03 (placeholder) -->
+													<button type="button" class="bt-akl-white">자동이체계좌 등록</button>
+												</div>
+												<div class="a-point info">
+													<ul class="list-type2">
+														<li>자동이체계좌를 등록하지 않은 분은 자동이체계좌 및 비밀번호 등록을 먼저 해주시기 바랍니다.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<!-- 수정 : 2018.08.22 (추가) -->
+										<div class="form-group info-txtbox">
+											<div class="col-xs-12 col-md-3 card-tit">주의사항</div>
+											<div class="col-xs-12 col-md-8">
+												<ul class="list-type5">
+													<li> 즉시결제 시 A 포인트는 신용카드 또는 자동이체와 혼합하여 결제하실 수 있습니다.</li>
+													<li>ABN에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li>
+													<li>나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다.</li>
+													<li>현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
+													<li>2016년 9월부터는 스마트 오더 프로그램의 혜택과 자동이체 10% PV UP 은 중복 적용되지 않습니다.</li>
+												</ul>
+											</div>
+										</div>
+										<!-- //수정 : 2018.08.22 (추가) -->
+									</div>
+
+									<!--
+									<div class="transfer-resver-guide"></div> 수정 : 2018.08.22 (SOP 사용안함 - 자동이체 안내 삭제) -->
+								</div>
+							</div>
+						</div>
+						<!-- //수정 : 2018.10.08 (결제방법 선택 순서변경 - 자동이체 > 신용카드 > 무통장) -->
+
 						<div class="panel">
 							<input class="amwa-radio" type="radio" name="optradio" id="radio3" /><label for="radio3">신용카드</label>
 							<div id="collapseThree" class="shipping-delivery-radio-body panel-collapse collapse">
@@ -174,48 +220,6 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<input class="amwa-radio" type="radio" name="optradio" id="radio5" />
-							<label for="radio5">자동이체</label>
-							<div id="collapseFive" class="shipping-delivery-radio-body panel-collapse collapse">
-								<div class="panel-body paymemnt">
-									<div class="row card-method">
-										<div class="form-group">
-											<div  class="col-xs-12 col-md-3 card-tit"><label for="ap">자동이체 비밀번호</label></div>
-											<div class="col-xs-12 col-md-8">
-												<div class="a-point">
-													<input name="point" id="ap" type="text" value="" class="auto-pw" placeholder="자동이체 비밀번호 6자리"><!-- 수정 : 2018.05.03 (placeholder) -->
-													<button type="button" class="bt-akl-white">자동이체계좌 등록</button>
-												</div>
-												<div class="a-point info">
-													<ul class="list-type2">
-														<li>자동이체계좌를 등록하지 않은 분은 자동이체계좌 및 비밀번호 등록을 먼저 해주시기 바랍니다.</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-
-										<!-- 수정 : 2018.08.22 (추가) -->
-										<div class="form-group info-txtbox">
-											<div class="col-xs-12 col-md-3 card-tit">주의사항</div>
-											<div class="col-xs-12 col-md-8">
-												<ul class="list-type5">
-													<li> 즉시결제 시 A 포인트는 신용카드 또는 자동이체와 혼합하여 결제하실 수 있습니다.</li>
-													<li>ABN에서 결제 정보(계좌이체 통장) 변경 시 스마트 오더 프로그램에도 동일하게 적용됩니다.</li>
-													<li>나의 주문 내역 페이지에서 현금영수증을 발급하실 수 있습니다.</li>
-													<li>현금영수증은 예약결제일 또는 즉시결제일 당일에만 발급 가능합니다.</li>
-													<li>2016년 9월부터는 스마트 오더 프로그램의 혜택과 자동이체 10% PV UP 은 중복 적용되지 않습니다.</li>
-												</ul>
-											</div>
-										</div>
-										<!-- //수정 : 2018.08.22 (추가) -->
-									</div>
-
-									<!--
-									<div class="transfer-resver-guide"></div> 수정 : 2018.08.22 (SOP 사용안함 - 자동이체 안내 삭제) -->
 								</div>
 							</div>
 						</div>
