@@ -1303,11 +1303,18 @@ span.btn-business {display:inline-block;}
 .default-shipping-address .detail-content input.form-control {width:80%;}
 .default-shipping-address .message-shop {padding:10px 30px 0 0px;}
 .default-shipping-address .detail-content input.form-control.m-message {margin-left:0;}
+/*
 .default-shipping-address .delivery-msg{position:relative;}
 .default-shipping-address .delivery-msg02{position:relative;}
 .default-shipping-address .delivery-msg .byte-txt { position:absolute; right:95px; top:10px; font-size:13px; letter-spacing:0}
 .default-shipping-address .delivery-msg02 .byte-txt { position:absolute; right:135px; top:10px; font-size:13px; letter-spacing:0}
 .ship-messige .byte-txt { position:absolute; right:310px; top:45px; font-size:13px; letter-spacing:0}
+*/
+.default-shipping-address .delivery-msg .byte-txt,
+.default-shipping-address .delivery-msg02 .byte-txt,
+.ship-messige .byte-txt {display:inline-block; line-height:40px; font-size:13px; letter-spacing:0; padding-left:10px;}
+.akl .amway-theme.fax-order-wrapper .panel-body .byte-txt {font-size:13px;}
+
 .delivery-msg-list {display:none; position:absolute; width:80%; padding:10px 5px 9px; left:0; top:39px; border:1px solid #e3e3e3; background:#fff; z-index:100}
 .delivery-msg-list button { display:block; background:none; height:25px;}
 
@@ -2742,9 +2749,13 @@ ul.ap-tabs li:first-child {border-left:0 none;padding:0 10px 0 0}
 	.default-shipping-address .detail-content input.form-control {width:100%;}
 	.default-shipping-address .delivery-msg .delivery-msg-list {width:100%;}
 	/* .default-shipping-address .delivery-msg .delivery-msg-list + .message-shop { margin-bottom:-30px} */
-	.default-shipping-address .delivery-msg .byte-txt { position:static; padding-top:10px; display: block;}
+	/* .default-shipping-address .delivery-msg .byte-txt { position:static; padding-top:10px; display: block;}
 	.default-shipping-address .delivery-msg02 .byte-txt { position:static; padding-top:10px; display: block;}
-	.ship-messige .byte-txt { position:static; padding-top:10px; display: block;}
+	.ship-messige .byte-txt { position:static; padding-top:10px; display: block;} */
+
+	.default-shipping-address .delivery-msg .byte-txt,
+	.ship-messige .byte-txt {display:block; line-height:140%; padding-left:0; padding-top:10px;}
+
 
 	/* 주문결제 > 단일 > 새배송지 */
 	.new-shipping-address .detail-content .new-cart .delv-shopbox {width:100%;}

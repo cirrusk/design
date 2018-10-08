@@ -33,13 +33,14 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 .akl.htmlWSG .topTitle h1 {padding:20px 0 0; font-size:60px !important; letter-spacing:normal; text-align:center; font-family:'Segoe UI','Noto Sans KR'; font-weight:300; text-transform:capitalize; letter-spacing:-0.02em;}
 
 /* 가이드 코드 wrapper */
-.guideCodeWrapper {padding:30px; border-radius:5px;}
-.guideCodeWrapper.noline {border:0;}
+.guideCodeWrapper {padding:30px; margin-bottom:40px; border-radius:;}
+.noline .guideCodeWrapper {}
+
 
 /* 가이드 상세목록 */
-.subHeading {color:#3f7bb7; font-weight:500 !important; font-size:15px !important; letter-spacing:0 !important; background:#e7f1fb; padding:18px 20px;}
+.subHeading {color:#3f7bb7; font-weight:500 !important; font-size:15px !important; letter-spacing:0 !important; background:#e7f1fb; padding:20px 20px;}
 .subList {margin-bottom:100px;}
-.subList>li {overflow:hidden; border:1px solid rgba(167,186,206,.4); border-radius:15px;}
+.subList>li {overflow:hidden;/*  border:1px solid rgba(167,186,206,.4); border-radius:15px; */}
 .subList>li+li {margin-top:30px;}
 .subtit {padding:40px 0 10px; margin-bottom:0; font-size:21px; font-weight:500; color:#111; letter-spacing:-1px;}
 .guideCodeWrapper > .subtit:first-child {padding-top:0;}

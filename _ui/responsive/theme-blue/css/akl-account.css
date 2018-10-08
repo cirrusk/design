@@ -2018,10 +2018,14 @@ p.txt-reserv-num {padding:30px 0 0;font-size:14px;font-weight:400;letter-spacing
 .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name {position:relative;}
 .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name input.form-control {width:100%;}
 .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .delivery-name {position:relative;}
-.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .delivery-name .byte-txt { position: absolute;right: -70px;top: 10px;font-size: 13px;letter-spacing: 0;}
 .mychange-ship .default-shipping-address .detail-content .normal-devy .message-shop {padding:10px 0 0;}
-.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .byte-txt { position:absolute; right:-70px; top:10px; font-size:13px; letter-spacing:0}
+/* .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .delivery-name .byte-txt { position: absolute;right: -70px; top: 10px;font-size: 13px;letter-spacing: 0;} */
+/* .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .byte-txt {position:absolute; right:-70px; top:0; font-size:13px; letter-spacing:0} */
 .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .delivery-msg-list {width:100%;}
+
+.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .byte-txt,
+.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .delivery-name .byte-txt {position:absolute; right:-70px; top:0; font-size:13px; line-height:40px; letter-spacing:0;}
+
 
 .mychange-ship .new-shipping-address .phone-group {padding-left:0px !important}
 .mychange-ship .new-shipping-agree label {font-size:14px;font-weight:500}
@@ -3904,10 +3908,11 @@ p.pef-txt strong {color:#002f5f;font-weight:500;}
 	.mychange-ship .default-shipping-address .detail-content .normal-devy .col-md-10 {width:100%;}
 	.mychange-ship .default-shipping-address .detail-content .normal-devy .form-group {width: calc(100% - 32%);}
 	.mychange-ship .default-shipping-address .detail-content input.form-control {width:100%;}
-	.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .byte-txt {position:relative; right:0;  display:block; margin-bottom:10px }
+	/* .mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .byte-txt {position:relative; top:0; right:0; display:block; padding-top:10px; margin-bottom:10px } */
 	.view-info-delvery .orderPicup .txt-label {width:35%;}
 	.view-info-delvery .orderPicup .txt-content {width:65%;}
-
+	.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .bo-name .byte-txt,
+	.mychange-ship .default-shipping-address .detail-content .normal-devy .mo-content .delivery-name .byte-txt {position:static; display:block; padding-top:10px; margin-bottom:10px; line-height:120%;}
 	.mychange-ship .default-shipping-address .detail-content .normal-devy .control-group.emplace {width:100%;}
 	.mychange-ship .default-shipping-address .detail-content .normal-devy .control-group.emplace select {width:100%;}
 

@@ -31,16 +31,84 @@
 		<div id="header-guide"></div><!-- 가이드용 header -->
 		<div class="container">
 			<div class="topTitle"><h1>레이어 팝업 / 알럿-컨펌</h1></div>
+<style>
+.layerMask {background:rgba(0,0,0,0); width:100%; height:100%;}
+</style>
+			<div class="layerMask">
+				<div class="codeField">
+					<code>layerPopOver( btnOpenLayer , targetLayer )</code>
+					<p>
+					  - btnOpenLayer : 레이어 열기 버튼<br>
+					  - targetLayer  : 버튼 클릭시 열리는 레이어
+					</p>
+					<p><a href="#" class="bt-akl-white mini" onclick="layerPopOver(this,'.U30000_lp6')">예시 레이어 열기</a></p>
+				</div>
+				<!-- 레이어 layout 참고용 -->
+				<p>참조) layer layout</p>
+				<div class="layerWrapper pop-sample" style="position:relative !important; left:0; top:0; display:block; z-index:1; padding-bottom:30px;">
+					<div class="cbox layerBox popWidM" style="position:relative !important; left:0; top:0; display:block;opacity:1;">
+						<div class="cart-popup__dialog">
+							<div class="cart-popup__header">
+								<span class="cart-popup__header-text">
+									팝업 타이틀
+									<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+								</span>
+							</div>
+							<div class="cart-popup__content payment">
+								<div class="cart-popup__item-info">팝업 내용
+								</div>
+							</div>
+							<div class="cart-popup__item-link">
+								<button type="button" class="bt-akl-blue">확인</button>
+								<button type="button" class="btn-cancel">취소</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //레이어 layout 참고용 -->
+			</div>
+
 
 			<ol class="subList">
 				<li>
 					<h2 class="subHeading">레이어 팝업 (기본)</h2>
 					<div class="guideCodeWrapper">
-						<div>
-							<a href="#" class="bt-akl-blue" onclick="layerPopOver('this','.pop-sample')">레이어 열기</a>
-						</div>
-						-
+
+
+						<a href="../html/shop/G10000_lp2.html" target="wsguideLayer">동영상</a>
+						<a href="../html/account/U61000_lp1.html" target="wsguideLayer">주소찾기</a>
+						<a href="../html/sns_pop.html" target="wsguideLayer">SNS공유 알림</a>
+						<a href="../html/shop/QUICK_VIEW_pop.html" target="wsguideLayer">퀵뷰</a>
+						<a href="../" target="wsguideLayer"></a>
 					</div>
+
+					<!-- (팝업) ABO 자격 상실 안내 -->
+					<div class="layerWrapper U30000_lp6">
+						<div class="cbox layerBox popWidM">
+							<div class="cart-popup__dialog">
+								<div class="cart-popup__header">
+									<span class="cart-popup__header-text">
+										ABO 자격 상실 안내
+										<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+									</span>
+								</div>
+								<div class="cart-popup__content height-auto">
+									<div class="cart-popup__item-info">
+										<div class="txt-ineligibility">
+											귀하께서는 2019년 3월~5월 사이에 ABO 자격 갱신을 하지 않으시어 ABO 자격을 상실하셨으나,
+											2019년 8월 23일까지 전화주문(1588-0080) 또는 암웨이 비즈니스 센터를 통해 본인 확인 후 10만원 이상 구매를 하시거나 지연갱신 서류를 제출하시면,
+											<p>2020년 2월 말까지 한국암웨이 ABO 자격이 연장됩니다.</p>
+										</div>
+									</div>
+
+								</div>
+								<div class="cart-popup__item-link">
+									<button type="button" class="bt-akl-blue">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //(팝업) ABO 자격 상실 안내 -->
 				</li>
 				<li>
 					<h2 class="subHeading"></h2>
@@ -55,6 +123,8 @@
 					</div>
 				</li>
 			</ol>
+
+
 
 
 			<h2 class="subHeading"></h2>
