@@ -410,6 +410,7 @@ Date : 2018-07-02
 .txtbox h3 {font-size:40px;font-weight:500;line-height:1.2;color:#00305e;}
 .txtbox h3 em{font-size:40px;font-weight:500; }
 .txtbox p {margin-top:10px;font-size:20px;}
+.txtbox p.artistry-txt {margin-bottom:5px;font-size:18px; color:#002f5f}
 .txtbox div.s1 {left:7%;max-width:50%;}
 .txtbox div.s2 {left:51%;}
 .txtbox div span {display:block;margin-top:10px;}
@@ -698,13 +699,14 @@ Date : 2018-07-02
 .content-row.type1 .txtbox >div > em {display:block;margin-bottom:5px;font-weight:400;font-size:18px;color:#002f5f;}
 
 /* 아티스트리 서브 */
-.artistry.sub1 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg1-1.jpg);background-position: 0;}
+.artistry.sub1 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg1-1.jpg);background-position: 0 0;}
 .artistry.sub1 .content-row.type2 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg1-2.jpg);background-position:100% 0;}
 .artistry.sub2 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg2-1.jpg);background-position:50% 0;}
 .artistry.sub4 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg4-1.jpg);background-position:100% 0;}
 
-.artistry.sub1 .content-row.type1 .txtbox .logo {position:absolute;z-index:1;top:30px;right:20px;}
+.artistry.sub1 .content-row.type1 .txtbox .logo {position:absolute;z-index:1;top:45px;right:30px;}
 .artistry.sub1 .content-row.type2 .txtbox .logo {margin-bottom:5px;}
+.artistry.sub1 .content-row.type2 .txtbox h3 { font-size:32px;}
 .artistry.sub1 .content-row.type2 .txtbox h3, .artistry.sub1 .content-row.type2 .txtbox p > em {color:#c29850;}
 .artistry.sub1 .content-row.type2 .txtbox p {font-size:14px;}
 .artistry.sub1 .content-row .txtbox .logo img {width:auto;}
@@ -907,7 +909,7 @@ Date : 2018-07-02
 
 	.txtbox h3 {font-size:28px; }
 	.txtbox h3 br{ display:none}
-	.txtbox h3 em{ display:block;font-size:28px; line-height: 1}
+	.txtbox h3 em{ display:block;font-size:28px; line-height:130%}
 	.txtbox p {display:none;}
 	.txtbox div.s2 {left:49%;}
 	.txtbox div.s2 span {margin-top:20px;}
@@ -1014,6 +1016,9 @@ Date : 2018-07-02
 	.artistry .video-preview {height:375px;background:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/movie_bg_mob.jpg') 50% 0;background-size:auto 100%;}
 
 	.artistry .txtbox.s1 p,.artistry .txtbox.s2 p,.artistry .txtbox.s3 p {display:block;font-size:16px;margin-top:0;}
+	.artistry.sub1 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg1-1_mob.jpg);background-position: 43% 0; background-size:auto 375px;}
+	.artistry.sub2 .content-row.type1 .txtbox {background-image:url(/_ui/responsive/theme-blue/images/akl_brand/artistry/subimg2-1_mob.jpg);background-position:60% 0; background-size:auto 375px;}
+	.artistry.sub1 .content-row.type2 {margin: 40px -15px;}
 	.artistry.sub1 .content-row.type2 .txtbox {background:none;}
 	.artistry.sub1 .content-row.type1 .txtbox .logo {left:auto;}
 	.artistry.sub1 .txtbox div.s1 {max-width:60%;}
@@ -1894,7 +1899,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .biz-slide-wrap .owl-nav .owl-next {right:-20px;}
 .biz-slide-wrap .owl-nav .owl-prev {left:-20px;}
 .biz-slide-wrap .owl-item *:hover{margin:0;-webkit-transform:none !important; transform:none !important; -ms-transform:none !important;}
-.biz-slide-wrap a.primary-link > span {position:absolute;width:100%;height:auto;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);margin:0;text-indent:-99999px;}
+.biz-slide-wrap a.primary-link > span {position:absolute;width:100%;height:auto;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.2);margin:0;text-indent:-99999px;}
 .biz-slide-wrap a.primary-link > span:after {clear:both;content:'';display:block;position:absolute;left:50%;top:42%;width:56px;height:56px;margin:-28px 0 0 -28px;background:url(../images/akl_brand/common/bg_movie_play.png) no-repeat 0 0;background-size:contain;}
 .biz-slide-wrap a.primary-link p {position:absolute;bottom:20px;left:20px;color:#fff;z-index:1;font-weight:400;font-size:14px;margin:0;}
 .biz-slide-wrap a.primary-link p span {display:inline;font-size:14px;text-align:left;font-weight:400;}
@@ -2432,6 +2437,7 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 	.biz-slide-wrap a.primary-link p span {display:block;height:auto;line-height:1.2;font-size:28px;text-align:center;}
 	.biz-slide-wrap a.primary-link span:after {top:40%;width:83px;height:83px;margin:-42.5px 0 0 -42.5px}
 	.biz-slide-wrap a.primary-link .view-n {display:none;}
+	.biz-slide-wrap a.primary-link p { font-size:14px; top:80%}
 
 	.educ-system-box {max-width:250px;}
 	.educ-system-box > ul > li {padding:30px 0;}

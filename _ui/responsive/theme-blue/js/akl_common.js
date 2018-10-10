@@ -1,7 +1,7 @@
 ﻿$(function(){
 /** ----- 공통 ----- */
 	//레이어 layerPopOver() 마스크 추가
-	$('body').append('<div id="mask" style="display:none"/>');
+	$('body').append('<div id="uiLayerMask" style="display:none"/>');
 
 	//주문결제 > 새배송지 - label 사이에  clearfix 추가
 	label_to_inlineblock();
@@ -2449,7 +2449,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		scroll_LOCK();
 		setPosition();
 
-		$('#mask').show().addClass('on');
+		$('#uiLayerMask').show().addClass('on');
 		$(this).css('z-index',_thisIndex);
 		$(this).addClass('active');
 		$(this).attr('tabindex','0').show().focus();
@@ -2466,7 +2466,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 		if($(this).data('closeAll') === true){
 			var layerAll = $(document).find('.layerWrapper.active');
 			$(layerAll).fadeOut().removeClass('active').attr('style','');
-			$('#mask').hide().removeClass('on');
+			$('#uiLayerMask').hide().removeClass('on');
 			layerCounter = 0;
 			scroll_RESET();
 		}
@@ -2476,7 +2476,7 @@ function layerPopOver( btnOpenLayer , targetLayer ){
 
 			if($('.layerWrapper.active').length === 0){
 				layerCounter = 0;
-				$('#mask').hide().removeClass('on');
+				$('#uiLayerMask').hide().removeClass('on');
 				scroll_RESET();
 			}
 		}
