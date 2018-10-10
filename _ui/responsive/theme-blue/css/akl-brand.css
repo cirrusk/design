@@ -92,7 +92,7 @@ Date : 2018-07-02
 /* 암웨이소개 홈 */
 .intro .three-tile-component {margin-left:-15px; margin-right:-15px;}
 .intro .masthead {position:relative; width:100%; display:table; margin:0 auto;}
-.intro .masthead img {width:100%;}
+.intro .masthead img {width:100%; max-width:1400px}
 .intro .masthead .banner_wrapper {padding-left:100px; z-index:99; max-width:1400px; margin:0; position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); transform:translate(-50%, -50%); width:100%;}
 .intro .masthead .banner_wrapper h1 { font-size:45px; line-height:1.2; text-transform:uppercase; margin-bottom:30px; color:#fff;}
 .intro .masthead .banner_wrapper .text {font-size:20px; display:block; margin-bottom:20px; color:#fff;}
@@ -408,6 +408,7 @@ Date : 2018-07-02
 .txtbox > div{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);max-height:100%;max-width:48%;}
 .txtbox img {width:100%;}
 .txtbox h3 {font-size:40px;font-weight:500;line-height:1.2;color:#00305e;}
+.txtbox h3 em{font-size:40px;font-weight:500; }
 .txtbox p {margin-top:10px;font-size:20px;}
 .txtbox div.s1 {left:7%;max-width:50%;}
 .txtbox div.s2 {left:51%;}
@@ -904,7 +905,9 @@ Date : 2018-07-02
 	.title-component .title-ul li:nth-of-type(4):before {background-position-y:-210px;}
 	.title-component .title-ul li:nth-of-type(5):before {background-position-y:-280px;}
 
-	.txtbox h3 {font-size:28px;font-weight:700;}
+	.txtbox h3 {font-size:28px; }
+	.txtbox h3 br{ display:none}
+	.txtbox h3 em{ display:block;font-size:28px; line-height: 1}
 	.txtbox p {display:none;}
 	.txtbox div.s2 {left:49%;}
 	.txtbox div.s2 span {margin-top:20px;}
@@ -977,6 +980,7 @@ Date : 2018-07-02
 	.bathbody .txtbox.s1 {height:445px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg1_mob.png');background-position:50% 0;}
 	.bathbody .txtbox.s2 {height:429px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg2_mob.png');background-position:50% 0;}
 	.bathbody .txtbox.s3 {height:443px;background-image:url('/_ui/responsive/theme-blue/images/akl_brand/bathbody/fullimg3_mob.png');background-position:50% 0;}
+	.bathbody .txtbox div.s2 {left:45%;max-width:60%;}
 
 	/* 암웨이홈 */
 	.home .txtbox {height:auto;min-height:auto;padding:170px 20px 20px;}
@@ -991,6 +995,7 @@ Date : 2018-07-02
 	.content-row.type1 .txtbox > div.s2 {left:0;max-width:100% !important; padding:0 15px }
 	.content-row.type1 .txtbox > div.txt-center {text-align:center;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:80%;max-width:100%;}
 	.content-row.type1 .txtbox h3 {font-size:28px;}
+	.content-row.type1 .txtbox h3 em {font-size:28px;}
 
 	/* 아티스트리 */
 	.akl .artistry .homepage_banner .owl-dots .owl-dot.active span {background:#e1b738;}
@@ -1502,6 +1507,7 @@ Date : 2018-07-02
 	#about-amway .content-row.col4 {margin:15px 0 0;}
 	#about-amway .content-row.col4 article{width:100%;margin:30px 0 0;padding:0;}
 	.amway-theme .intro .bt-akl-blue {height:40px;padding:7px 30px 8px}
+	.intro .masthead { width:auto;  margin:0 -15px;}
 	.akl .amway-theme .intro .bt-akl-blue {background:#002f5f;color:#fff;}
 	.akl .intro .category-success-story .item-content-wrap .banner-title {margin-bottom:30px;}
 	.intro .masthead.visual .banner_wrapper .text {display:block;}
