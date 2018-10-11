@@ -1468,55 +1468,46 @@ function toggleBox_Guide(){
 /* SOP - 정기주문 혜택정보 노출 */
 function SOP_PDP_benefitsTips(){
 	var _targetO = $('.toggle-benefits');
+	if(!_targetO.length){return};
 
-	//버튼
-	var $tggBTN = _targetO.find('.btn-tgg-list');
-	var $BtnText = $tggBTN.find('em.hidden');
+	_targetO.each(function(){
+		var _LIST = $(this);
+		var sop_benefits = $(this).find('.sop-more-benefits');
+		var subItem = sop_benefits.find('>p:not(:nth-of-type(1))');
 
-	//SOP혜택 목록
-	var sop_benefits = _targetO.find('.sop-more-benefits');
-	var subItem = sop_benefits.find('>p');
+		//혜택이 1개 인 경우, 버튼 숨김
+		var tggBTN = _LIST.find('.btn-tgg-list');
+		var childP = sop_benefits.find('p');
+		if ( childP.length === 1 ){ tggBTN.hide(); }
 
-	//animate 적용할 높이값 구하기
-	var catchHeight;
-	var height_firstChild;
-	var height_wrapper;
-
-	function moreBenefits(){
-		height_firstChild = sop_benefits.find('>p').eq(0).outerHeight(true);
-		height_wrapper = sop_benefits.outerHeight(true);
-
-		catchHeight = setTimeout(function(){
-			sop_benefits.height(height_firstChild);
-		}, 600);
-	}
-
-	moreBenefits();
-	$(window).on('resize',function(){
-		sop_benefits.attr('style','');
-		moreBenefits();
+		//SOP혜택 감싸기
+		var hiddenWrapper = _LIST.find('.innerWrap'); //appended wrapper
+		if(!hiddenWrapper.length) {
+			subItem.wrapAll('<div class="innerWrap" style="display:none"></div>');
+		}
 	});
 
-	//혜택이 1개 인 경우, 버튼 숨김
-	if( subItem.length === 1 ){ $tggBTN.hide();}
-
 	//버튼 클릭
-	$tggBTN.on('click',function(e){
-		e.preventDefault();
-		clearTimeout(catchHeight);
+	_targetBtn = _targetO.find('.btn-tgg-list');
+	_targetBtn.each(function(){
+		$(this).off().on('click',function(e){
+			e.preventDefault();
+			var btnText = $(this).find('em.hidden');
+			var subItemWrapper = $(this).parent().find('.innerWrap');
 
-		if( sop_benefits.hasClass('open')){
-			$(this).removeClass('on');
-			$BtnText.text('정기주문 혜택 열기');
-			sop_benefits.removeClass('open');
-			sop_benefits.stop().animate({ height: height_firstChild },'fast');
-		}
-		else {
-			$(this).addClass('on');
-			$BtnText.text('정기주문 혜택 닫기');
-			sop_benefits.addClass('open');
-			sop_benefits.stop().animate({ height: height_wrapper },'fast');
-		}
+			if( $(this).is('.on') ){
+				$(this).find('em.hidden').text('정기주문 혜택 열기');
+				$(this).removeClass('on');
+				$(this).parent().find('.sop-more-benefits').removeClass('open');
+				subItemWrapper.hide();
+			}
+			else {
+				$(this).find('em.hidden').text('정기주문 혜택 닫기');
+				$(this).addClass('on');
+				$(this).parent().find('.sop-more-benefits').addClass('open');
+				subItemWrapper.show();
+			}
+		});
 	});
 }
 
