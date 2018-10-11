@@ -360,13 +360,16 @@ Date : 2018-07-02
 .akl .brand .homepage_banner .banner__message--sub .arr1 {color:#fff !important;}
 
 /* 비디오영역 */
-.brand .video-preview {position:relative;margin:0;height:400px;overflow:hidden;background-repeat:no-repeat;background-position:50% 50%;background-size:1376px auto;}
+.brand .video-preview {position:relative;margin:0;height:430px;overflow:hidden;background-repeat:no-repeat;background-position:50% 50%;background-size:1376px auto;}
 .brand .video-preview__content button {padding:0;}
 .queen .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/queen/movie_bg.jpg');}
 .oneforone .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/oneforone/movie_bg.jpg');}
 .espring .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/espring/movie_bg.jpg');}
 .artistry .video-preview {background-image:url('/_ui/responsive/theme-blue/images/akl_brand/artistry/movie_bg.jpg');}
-
+@media (max-width: 1280px){
+	/* 비디오영역 */
+	.brand .video-preview {height:400px;}
+ }
 .content-row {position:relative;clear:both;overflow:hidden;margin:60px 0 0;}
 .content-row article {position:relative;width:50%;padding:0 12px 30px;box-sizing:border-box;}
 .content-row[class*='col'] {margin-left:-12px;margin-right:-12px;display:-webkit-box;display:-ms-flexbox;display:flex;flex-wrap:wrap; }
@@ -429,6 +432,7 @@ Date : 2018-07-02
 .title-component {clear:both;margin:50px 0 50px;text-align:center;}
 .title-component h2 {margin:0;text-transform:none;text-align:center !important;line-height:1.2;}
 .title-component h2 span {display:block;font-size:24px;font-weight:400;margin-bottom:8px;}
+.title-component h2 em {font-size:32px;font-weight:700; }
 .title-component h2 sup{top:-1.0em;font-size:13px;}
 .title-component > p {margin:10px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-1px;}
 .brand .sub .full-component .box-bnr-fw01,
@@ -477,6 +481,60 @@ Date : 2018-07-02
 .nutrilite .txtbox.s1 {background:url('/_ui/responsive/theme-blue/images/akl_brand/nutrilite/fullimg1.jpg') no-repeat 90% 0;}
 .nutrilite .txtbox.s2 {text-align:center;}
 .nutrilite .txtbox.s2 img {width:100%;max-width:899px;margin:0 auto;}
+
+.akl .nutrilite .video-preview {background-image: url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite/movie_bg.jpg);}
+
+/* 2.뉴트리라이트 > 보내티컬*/
+.os_noticeRes.botanical .bgCover { background-size:cover;}
+.os_noticeRes.botanical .osResHeader {position: relative; padding:80px 0;}
+.os_noticeRes.botanical .tab01 { text-align: center;}
+.os_noticeRes.botanical .tab01 p{ display:inline-block; text-align:left; padding:0 25px; vertical-align: middle; }
+.os_noticeRes.botanical .tab01 p:nth-of-type(2) {line-height:1.6; bottom:15px; font-size:17px; margin-top:-10px }
+.os_noticeRes.botanical .tab02 { text-align: center;}
+.os_noticeRes.botanical .tab02 p{ display:inline-block; text-align:left; padding:0 15px; vertical-align: middle; }
+.os_noticeRes.botanical .tab02 p:nth-of-type(2) {line-height:1.6;bottom:15px; font-size:22px;  margin-top:-10px }
+
+.os_noticeRes.botanical .osResHeader.botanical01 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step01_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical02 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step02_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical03 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step03_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical04 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step04_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical05 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step05_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical06 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step06_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical07 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step07_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical08 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step08_bg01.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .osResHeader.botanical09 {background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step09_bg01.jpg) repeat-x center top; background-size:cover; }
+
+.os_noticeRes.botanical .botanical-btm { margin-bottom:40px; padding-bottom:40px; border-bottom:1px solid #e3e3e3}
+.os_noticeRes.botanical .botanical-btm p {padding:65px 0; background:url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/nutrilite_180813_step01_bg02.jpg) repeat-x center top;background-size:cover; text-align:center; }
+.os_noticeRes.botanical .botanical-btm p span{ font-size: 24px; color:#fff; display:block; line-height:130%}
+
+.os_noticeRes.botanical .campaign09 {margin-top:40px; padding:50px 0; text-align:center; background:#00291c url(/_ui/responsive/theme-blue/images/akl_brand/nutrilite_9step/bg_campaign09.jpg) repeat-x center top; background-size:cover; }
+.os_noticeRes.botanical .campaign09 dt {font-size: 40px; color:#fff; font-weight:400; letter-spacing:-2px; line-height:100%; margin-bottom:30px}
+.os_noticeRes.botanical .campaign09 dt em {font-size: 40px;}
+.os_noticeRes.botanical .campaign09 dt span{font-size:28px; display:inline-block; line-height:100%; font-weight:300; background:#597c3a; background-color:rgba(89,124,58,0.5); padding:3px 25px; margin-top:15px;letter-spacing:0;}
+
+
+@media (max-width: 768px){
+	.title-component h2 em {display:block;font-size:24px; }
+
+	/* 2.뉴트리라이트 > 보내티컬*/
+	.os_noticeRes.botanical .bgCover { background-size:cover;}
+	.os_noticeRes.botanical .osResHeader {position: relative; padding:80px 0;}
+	.os_noticeRes.botanical .tab01,.os_noticeRes.botanical .tab02{ text-align:left; }
+	.os_noticeRes.botanical .tab01 p,.os_noticeRes.botanical .tab02 p{ display:block; padding:0 10px; }
+	.os_noticeRes.botanical .tab01 p img,.os_noticeRes.botanical .tab02 p img{ width:89px}
+	.os_noticeRes.botanical .tab01 p:nth-of-type(2),.os_noticeRes.botanical .tab02 p:nth-of-type(2) { font-size:14px; margin-top:10px}
+	.os_noticeRes.botanical .botanical-btm p {padding:30px 0; }
+	.os_noticeRes.botanical .botanical-btm p span{ font-size:14px; line-height:140%}
+
+	.os_noticeRes.botanical .campaign09 { padding:30px 0; }
+	.os_noticeRes.botanical .campaign09 dt {font-size:27px; margin-bottom:30px}
+	.os_noticeRes.botanical .campaign09 dt em {display:block;font-size:27px; line-height:130%}
+	.os_noticeRes.botanical .campaign09 dt span{font-size:14px;  padding:3px 10px; margin:15px 10px 0; }
+	.os_noticeRes.botanical .campaign09 dd { padding:0 15px}
+	.os_noticeRes.botanical .campaign09 dd img { max-width:299px;}
+
+}
 
 /* 3.배스/바디 */
 .akl .bathbody .homepage_banner .banner__wrapper .banner__message,
@@ -885,7 +943,7 @@ Date : 2018-07-02
 
 	.brand .txtbox {height:375px;background-size:auto 100%;background-position:50% 0;}
 
-	.brand .video-preview {padding:0;height:375px;background-size:auto 375px;}
+	.brand .video-preview {padding:0;height:375px;background-size:auto 375px; margin:0 -15px;}
 	.brand .video-preview .mob {width:100%;}
 
 	.content-row {display:block;margin:30px 0 0;}
