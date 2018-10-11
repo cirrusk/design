@@ -1235,9 +1235,26 @@ Date : 2018-07-02
 .txt-wrap2 h3 strong {display:block;font-weight:700;}
 .drink .sub-cont2 .txt-wrap2 h3 {left:80px;font-size:62px;line-height:1.0;}
 
+/*
 .sub-cont2 {width:66.67%;}
 .sub-cont3 {width:33.33%;}
-.sub-cont4 {width:100%;}
+.sub-cont4 {width:100%;} */
+
+/* #topCarousel_xs , #subCarousel_xs */
+.xs_subpage .sub-cont-wrapper .owl-dots {top:0; width:0;}
+.multiCarousel .sub-cont-wrapper {position:relative; float:none; overflow:initial; clear:both;}
+.multiCarousel .xsDrink-img-box {position:relative; display:block; height:100%;}
+.multiCarousel .sub-insta{ position:absolute; right:0; bottom:0; display:table; table-layout:fixed; width:66.6%; float:none;}
+.multiCarousel .sub-insta .xsDrink-img-box {z-index:100;}
+.multiCarousel .sub-cont4 {float:none; width:100%;}
+.multiCarousel .sub-cont4 img {width:100%; height:auto}
+.sub-carousel {display:table; width:100%; table-layout:fixed;}
+.sub-carousel>.tr {display:table-row;}
+.sub-carousel .td {display:table-cell; padding:0; line-height:0}
+.sub-carousel td img {width:100%; height:auto;}
+.sub-carousel .sizeWide {width:66.6%;}
+.sub-carousel .sizeSmall {width:33.4%;}
+
 
 /* What is XS */
 .whatisxs .sub-cont1 .item:before {content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/bg_icon13.png') no-repeat 0 0;background-size:162px auto;}
@@ -1653,6 +1670,16 @@ Date : 2018-07-02
 	.drink .sub-cont1 .img-wrap {bottom:8%;}
 	.drink .sub-cont1 .img-wrap img {width:80%;}
 	.drink .ex-wrap2 .icon-wrap span {width:29%;}
+
+	/* #topCarousel_xs , #subCarousel_xs */
+	.multiCarousel .sub-insta {position:static; width:100%; display:block;}
+	.multiCarousel .xsDrink-img-box.type-need .bg {height:395px;}
+	.sub-carousel {display:block;}
+	.sub-carousel>.tr {display:block;}
+	.sub-carousel .td {display:block; padding:0;}
+	.sub-carousel .sizeWide,
+	.sub-carousel .sizeSmall {width:100%;}
+	.sub-carousel .bg {height:auto}
 
 	/* 바*/
 	.bar .sub-cont1 .img-wrap img {width:55%;}

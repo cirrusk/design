@@ -475,25 +475,55 @@ function bannerList_oneforone(){
 function static_multiCarousel(){
 	if (!$('.multiCarousel').length){return;}
 
-	var owlSync1 = $('#carousel_1');
-	var owlSync2 = $('#carousel_2, #carousel_3, #carousel_4, #carousel_5');
+	var sync1 = $("#topCarousel_xs");
+	var sync2 = $("#subCarousel_xs");
 
-	owlSync1.owlCarousel({
-		items: 1,
+	var slidesPerPage = 1; //globaly define number of elements per page
+	var syncedSecondary = true;
+
+	sync1.owlCarousel({
+		items : 1,
+		slideSpeed : 2000,
 		nav: true,
+		autoplay: false,
 		dots: true,
-		linked: owlSync2
-	});
+		loop: false,
+		responsiveRefreshRate : 200
+	}).on('changed.owl.carousel', syncPosition);
 
-	owlSync2.owlCarousel({
-		items: 1,
+	sync2.on('initialized.owl.carousel', function(){
+		sync2.find(".owl-item").eq(0).addClass("current");
+	}).owlCarousel({
+		items : 1,
+		dots: false,
+		loop: false,
 		nav: false,
 		touchDrag: false,
 		mouseDrag: false,
-		linked: owlSync2.prev()
-	}).on('initialized.owl.carousel  linked.to.owl.carousel', function(){
-		//do something
-	});
+		smartSpeed: 200,
+		slideSpeed : 500,
+		slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+		responsiveRefreshRate : 100
+	}).on('changed.owl.carousel', syncPosition2);
+
+
+	function syncPosition(el) {
+		var current = el.item.index;
+		sync2.find(".owl-item").removeClass("current").eq(current).addClass("current");
+
+		var onscreen = sync2.find('.owl-item.active').length - 1;
+		var start    = sync2.find('.owl-item.active').first().index();
+		var end      = sync2.find('.owl-item.active').last().index();
+
+		if (current > end)   { sync2.data('owl.carousel').to(current, 100, true); }
+		if (current < start) { sync2.data('owl.carousel').to(current - onscreen, 100, true); }
+	}
+
+	function syncPosition2(el) {
+		if(syncedSecondary){  var number = el.item.index;
+		  sync1.data('owl.carousel').to(number, 100, true);
+		}
+	}
 }
 
 /** ------------------------------------------
