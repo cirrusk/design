@@ -415,8 +415,8 @@ function bannerList_bathbody(){
 
 
 	$dotItems.eq(0).html('<span>글리스터 구강 청결 시스템</span>');
-	$dotItems.eq(1).html('<span>새티니크 헤어케어,<br>그 이상의 아름다움</span>');
-	$dotItems.eq(2).html('<span>브랜드 이야기</span>');
+	$dotItems.eq(1).html('<span>풍부한 자연의 영양으로<br>건강하고 편안한 바디 케어</span>');
+	$dotItems.eq(2).html('<span>G&H 바디 케어</span>');
 
 	var mTop = $dotItembar.height()/2;
 	$dotItembar.css('margin-top',-mTop);
