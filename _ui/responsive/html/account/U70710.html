@@ -41,7 +41,6 @@
 					<li>정기주문 & 스마트 오더</li>
 				</ol>
 			</div>
-
 		</div>
 
 		<!-- 마이페이지 상단공통 -->
@@ -128,7 +127,6 @@
 			</div>
 		</div>
 		<!-- //마이페이지 상단공통 -->
-
 
 		<!-- container-fluid -->
 		<div class="container-fluid main-container amway-theme">
@@ -406,7 +404,7 @@
 					<div class="form-wrapper search-form-wrapper js-search-form-wrapper col-md-8">
 						<div class="form-group sort-cell">
 							<label class="control-label" for="sop_sort_period">기간설정</label>
-							<select name="type" tabindex="-1" aria-hidden="true" class="form-control" id="sop_sort_period">
+							<select name="type" tabindex="-1" aria-hidden="false" class="form-control" id="sop_sort_period">
 								<option value="/_ui/responsive/html/account/U70710.html" selected="selected">1개월</option>
 								<option value="/_ui/responsive/html/account/U70720.html">6개월</option>
 							</select>
@@ -432,7 +430,7 @@
 								<option>2017</option>
 								<option>2016</option>
 							</select>
-							<select name="sort" class="form-control">
+							<select name="sort" class="form-control" title="월 선택"><!-- 수정 : 2018.10.12 (title 추가) -->
 								<option selected="selected">1월</option>
 								<option>1월</option>
 								<option>3월</option>
@@ -453,7 +451,7 @@
 								<option>혜택있음</option>
 								<option>혜택없음</option>
 							</select>
-							<select name="sortFilter" class="form-control" id="sop_sort_filter2">
+							<select name="sortFilter" class="form-control" id="sop_sort_filter2" title="진행상태 선택"><!-- 수정 : 2018.10.12 (title 추가) -->
 								<option>전체</option>
 								<option>진행</option>
 								<option>완료 </option>

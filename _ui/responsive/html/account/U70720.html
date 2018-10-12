@@ -71,7 +71,7 @@
 												<span class="currentTxt"><a href="#">마이페이지</a></span>
 												<div class="select-wrapper">
 													<ul class="select-list">
-														<li class="sub-main"><a href="#" class="menu-dep1 current">마이페이지 메인</a>
+														<li class="sub-main"><a href="#" class="menu-dep1">마이페이지 홈</a>
 														<li><a href="#" class="menu-dep1">ABO갱신</a>
 														<li>
 															<a href="#" class="menu-dep1">회원정보 관리</a>
@@ -85,7 +85,7 @@
 															</ul>
 														</li>
 														<li>
-															<a href="#" class="menu-dep1">나의쇼핑정보</a>
+															<a href="#" class="menu-dep1 current">나의쇼핑정보</a>
 															<ul class="select-depth2">
 																<li><a href="#" class="menu-dep2">나의주문내역</a></li>
 																<li><a href="#" class="menu-dep2">나의반품내역</a></li>
@@ -405,7 +405,7 @@
 					<div class="form-wrapper search-form-wrapper js-search-form-wrapper col-md-6">
 						<div class="form-group sort-cell">
 							<label class="control-label" for="sop_sort_period">기간설정</label>
-							<select name="type" tabindex="-1" aria-hidden="true" class="form-control" id="sop_sort_period">
+							<select name="type" tabindex="-1" aria-hidden="false" class="form-control" id="sop_sort_period">
 								<option value="/_ui/responsive/html/account/U70710.html">1개월</option>
 								<option value="/_ui/responsive/html/account/U70720.html" selected="selected">6개월</option>
 							</select>
@@ -431,7 +431,7 @@
 								<option>2017</option>
 								<option>2016</option>
 							</select>
-							<select name="sort" class="form-control">
+							<select name="sort" class="form-control" title="월 선택"><!-- 수정 : 2018.10.12 (title 추가) -->
 								<option selected="selected">1월</option>
 								<option>1월</option>
 								<option>3월</option>
@@ -452,7 +452,7 @@
 								<option>혜택있음</option>
 								<option>혜택없음</option>
 							</select>
-							<select name="sortFilter" class="form-control" id="sop_sort_filter2">
+							<select name="sortFilter" class="form-control" id="sop_sort_filter2" title="진행상태 선택"><!-- 수정 : 2018.10.12 (title 추가) -->
 								<option>전체</option>
 								<option>진행</option>
 								<option>완료 </option>
