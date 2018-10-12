@@ -68,8 +68,8 @@ iframe {border:0;}
 .visual-area.queen02{min-height:953px;background:url(../images/akl_product/home-living/bg_queen_02.png) no-repeat top center;}
 .visual-area.queen03{min-height:904px;background:url(../images/akl_product/home-living/bg_queen_03.png) no-repeat top center;}
 .visual-area.home-giftset{min-height:844px;background:url(../images/akl_product/home-living/bg_home_giftset_01.png) no-repeat top center;}
-.visual-area.espring{min-height:1103px;background:url(../images/akl_product/home-living/bg_espring_01.png) no-repeat top center;}
-.visual-area.espring.min{min-height:880px;}
+.visual-area.espring{min-height:400px;background:url(../images/akl_product/home-living/bg_espring_01.png) no-repeat top center;padding-bottom:92px;}
+.visual-area.espring.min{/*min-height:880px;*/padding-bottom:92px;}
 .visual-area.icook{min-height:1053px;background:url(../images/akl_product/home-living/bg_icook_01.png) no-repeat bottom center;}
 
 .visual-area.type02.vitamin{background:#c1dff4 url(../images/akl_product/beauty/bg_intensive_advanced_1480.png) no-repeat bottom center;min-height:1069px;} /*01 인텐시브 비타민 1480 */
@@ -143,7 +143,7 @@ iframe {border:0;}
 .visual-area.styling-oil{background:url(../images/akl_product/bath-body/bg_styling_oil.png) no-repeat center center;padding-bottom:80px;}
 .visual-area.styling-mousse{background:url(../images/akl_product/bath-body/bg_styling_mousse.png) no-repeat center center;padding-bottom:66px;}
 .visual-area.vital-mask{min-height:1034px;background:url(../images/akl_product/bath-body/bg_vital_mask.png) no-repeat bottom center;padding-bottom: 28px;} /* 배스바디 리바이탈라이징 마스크 */
-.visual-area.satinique-extra{min-height:1035px;background:url(../images/akl_product/bath-body/bg_satinique_extra.png) no-repeat bottom center;}
+.visual-area.satinique-extra{min-height:1035px;background:url(../images/akl_product/bath-body/bg_satinique_extra.png) no-repeat bottom left;}
 .visual-area.satinique-glossy{min-height:1035px;background:url(../images/akl_product/bath-body/bg_satinique_glossy.png) no-repeat bottom center;}
 .visual-area.satinique-anti{min-height:1035px;background:url(../images/akl_product/bath-body/bg_satinique_anti.png) no-repeat bottom center;}
 .visual-area.satinique_smooth{min-height:1062px;background:url(../images/akl_product/bath-body/bg_satinique_smooth.png) no-repeat top center;}
@@ -1775,6 +1775,10 @@ dl.amo-txt dd br {line-height:18px}
 .bath-body .system-lst3 ul li .lst-won span{font-weight:400;}
 .bath-body.hair .advan-right.v-top .com-tit.mt20{margin-top:0 !important;}
 
+.supp-cont-area .comp-box dl dt{height:60px;}
+.supp-cont-area .comp-box dl dd{height: inherit;}
+.supp-cont-area .comp-box dl dd p{margin: 0 auto 10px;}
+
 /* 헤어 썸네일 내부 list */
 .special-list p + .txt-s.mt20{margin:11px 0 0 !important;}
 
@@ -2492,6 +2496,10 @@ ul.ecoup-kiut li p {font-size:12px;padding:8px 0 0;letter-spacing:-1px;}
 .tbl-home1 li.tbody span {display:table-cell;vertical-align:middle;text-align:center;color:#808285;font-weight:300;}
 .tbl-home1 li.tbody .list-tit {width:30%;text-align:left;padding-left:40px;color:#56565a;min-height: 60px;}
 .tbl-home1 li.tbody .txt-amount {width:23.333%;min-height: 60px;}
+
+.home-living .ingestion-usage .inge-numlst01 .use-tbl{margin:0 auto 0;}
+.home-living .ingestion-usage .inge-numlst01 .tbl-home1.three-block{margin: 10px 0 15px;}
+.home-living .ingestion-usage .inge-numlst01 .tbl-home1.three-block li{margin-left:0;}
 
 .tbl-home1.drum li.tbody .list-tit {display:none;}
 .tbl-home1.hand-wash li.tbody .list-tit {display:none;}
@@ -3254,8 +3262,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.visual-area .v-logo{padding:53px 0 0;}
 	.visual-area .v-logo.none{padding: 0 0 0;}
-	.visual-area .v-logo.atmo img{height:10px;}
-	.visual-area .v-logo.atmo-guide img{height:24px;}
+	/*.visual-area .v-logo.atmo img{height:10px;}*/
+	/*.visual-area .v-logo.atmo-guide img{height:24px;}*/
 	.visual-area .v-logo.atmo-hepa img{height:28px;}
 	.visual-area .v-logo.atmo-hepa{padding: 27px 0 0;}
 	.v-pro{margin-top:55px;}
@@ -3305,7 +3313,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.bath-body .pcomp-list.deaf-left div.comp-info {display:block;float:inherit;width:100%;text-align: center;padding:0 0;margin-right:0;}
 	.bath-body .special-feat{padding: 15px 0 15px;}
 	.bath-body .special-feat ul.spc-list > li{border-top:none;padding: 15px 0 15px 30px;background: url(../images/akl_product/icon/ico_bullet.png) no-repeat 0 50%;background-size: 20px;}
-	.bath-body .v-pro span img{width:50%;}	
+	/*.bath-body .v-pro span img{width:50%;}*/	
 	
 	.oral-round-lst{padding: 0 0 25px;}
 	.oral-round-lst li .round-area{margin: 0 10px;}
@@ -3490,6 +3498,15 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	/* 뷰티 */
 	.health-inform-box .effet-area .advan-left .ade-photo{margin-top:0;}
 	.health-inform-box .effet-area .advan-right.bd-left{border-left:none;border-top:1px solid #e3e3e3;}
+	
+	/* 배스 바디 */
+	.detail-content-area.supp-cont-area .pcomp-area .comp-info .comp-box dl dd{min-height:inherit;}
+	.supp-cont-area .comp-box dl dd{height:inherit;}
+	.supp-cont-area .comp-box dl dd p{height:inherit;}
+	.supp-cont-area .pcomp-list.deaf04 div.comp-info{}
+	.supp-cont-area .pcomp-list.deaf04 div.comp-info .comp-box{}
+	.supp-cont-area .pcomp-list.deaf04 div.comp-info:nth-child(3) .comp-box .code-im{height:145px;}
+	.supp-cont-area .pcomp-list.deaf04 div.comp-info:nth-child(4) .comp-box .code-im{height:125px;}
 
 	/* 김미역 */
 	.miyoek-detail-warp{margin:25px 0 0;}
@@ -4426,7 +4443,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.v-pro.kc-mark-area .mark-wrap span{font-size: 12px;}
 	
 	/* 배스바디 */
-	.bath-body .v-pro span img{width:80%;}
+	/*.bath-body .v-pro span img{width:80%;}*/
 	.nurish-cont .system-lst3 ul li .lst-won {width:auto;}	
 	
 	/* 홈앤리빙 */
@@ -4467,7 +4484,14 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.detail-content-area .advantage-area:first-child .t-big.point-wrap{margin-top:0;}
 	
-	.hydra-cont-area
+	.txt-info-visual .v-etc{font-size:14px;}
+	.visual-area.espring, .visual-area.espring.min{padding-bottom:46px;}
+	
+	.home-living .ingestion-usage .inge-numlst01 .use-tbl{margin:0 auto 0;}
+	.home-living .ingestion-usage .inge-numlst01 .tbl-home1.three-block{margin: 10px 0 15px;}
+	.home-living .ingestion-usage .inge-numlst01 .tbl-home1.three-block li{margin-left:0;}
+	/*.home-living .ingestion-usage .inge-numlst01 li ul li.inge-numlst01{margin-left:0;}
+	.home-living .ingestion-usage .inge-numlst01 li ul li{text-indent: -20px;margin-left:0;}*/
 }
 
 
@@ -4680,7 +4704,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 @media (max-width: 324px) {	
 	
 	.v-pro span img {text-align:center;width:inherit;height:auto;}
-	.ingestion-usage dl{margin: 20px 0 0;}
+	.ingestion-usage dl{margin: 20px 0 0;}	
+	.home-living .ingestion-usage .inge-numlst01 .tbl-home1.three-block li.tbody .list-tit{text-indent: 0;}		
 	
 	/* 영양건강*/
 	.enerjuvetm-complex li span,
