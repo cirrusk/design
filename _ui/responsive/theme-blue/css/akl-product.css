@@ -500,7 +500,7 @@ iframe {border:0;}
 
 /* 공통 타이틀 */
 .detail-content-area {padding: 0 7%;}
-.com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.3;margin-bottom:18px;}
+.com-tit {font-size:44px;font-weight:400;letter-spacing:-2px;line-height:1.3;margin-top:18px;}
 .com-tit.small {font-size:32px !important;}
 .com-tit.sub-tit{margin-top:35px;}
 .com-tit span {display:inline-block;font-weight:400;font-size:44px;}
@@ -1595,7 +1595,7 @@ dl.amo-txt dd br {line-height:18px}
 .point-wrap.block{margin-top:40px;letter-spacing:-2px}
 
 .t-big.point-wrap .tit{font-size:60px;letter-spacing:-2px;line-height:70px;}
-.t-big.point-wrap .tit sup{font-size:32px;top: -.7em;}
+.t-big.point-wrap .tit sup{font-size:26px;top: -1.2em;}
 .t-big.point-wrap .desc{font-size:18px;}
 .t-small.point-wrap .tit{font-size: 44px;letter-spacing:-2px}
 .t-mini.point-wrap .tit{font-size: 32px;letter-spacing:-2px}
@@ -2246,9 +2246,6 @@ span.txt-next {display:block;}
 .advan-right.ar_4285 .ad-setp-lst dd {padding-right:50px}
 .advan-right.ar_4285 .ad-setp-lst dd strong{font-weight:400}
 
-/* 아이디얼 래디언스 4988_ UV 프로텍트 */
-.visual-area.type02.ideal-uv .v-pro span img{width:auto;}
-
 .triangle.circle-type.uv{padding: 0;display: block;}
 .triangle.circle-type.uv .tit-child{color: #8eb1d3;padding-top:50px;font-size: 18px;font-weight: 400;text-align: center;letter-spacing: 0;}
 .triangle.circle-type.uv .tit-child sup{font-size: 6px !important;top: -.7em;font-weight: 300;}
@@ -2334,7 +2331,7 @@ span.txt-next {display:block;}
 /* 스킨케어 */
 .visual-area.type02.indicator p.v-txt {padding:15px 0 0}
 .visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
-.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
+/*.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}*/
 .visual-area.type02.ultra-lifting.ar4223 {height:995px;background: #f8f8f8 url('../images/akl_product/beauty/bg_youth_xtend_ultra_lifting_AR4223.png') no-repeat center center;}
 .visual-area.type02.hydrav.ar4919 {height:1030px;background: #f8f8f8 url('../images/akl_product/beauty/bg_hydrav_refreshing_ar4919.png') no-repeat top center;}
 .txt-info-visual.ar1616 .v-etc {margin:20px 0 0}
@@ -3269,8 +3266,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.txt-info-visual .v-tit{padding: 18px 0 0;}
 	.advantage-area.btm-line{padding:25px 0;}	
 	
-	/* 베이스 메이크업 공통 */
-	.base-makeup .visual-area .v-logo.beauty img{height:13px;}
+	.t-big.point-wrap .tit sup{font-size:16px;top: -0.8em;}
+	
+	/* 베이스 메이크업 공통 */	
 	.foundation-cont-area .ade-photo span img{width:auto;}
 	
 	/* 스무싱 파운데이션 */	
@@ -3284,7 +3282,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.color-tip-lst.loose li > .color-tip img{width:inherit;}
 	
 	/* 립메이크업 공통 */
-	.point-makeup .visual-area .v-logo.beauty img{height:13px;}
+	.point-makeup .visual-area .v-logo.beauty img{height:20px;}
 	.point-makeup .visual-area.lipgloss .v-logo{width:auto;padding:38px 0 0;}
 	.point-makeup .visual-area.lipgloss .v-pro span img {width:auto;height:auto;}
 	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:20px;}
@@ -3293,6 +3291,13 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	/* 메이크업3 */
 	.point-wrap .desc.top{font-size:20px;}
 	.studio-thum-area .txt{min-height:inherit;}
+	
+	/* 패치 */
+	.ad-setp-lst.ar7227 dt{font-size:26px !important;}
+	.ad-setp-lst.ar7227 dd{margin-top:12px;font-size:14px;line-height:1.3 !important;}
+	.radience-cont-area .ad-setp-lst dt.ar7227, .radience-cont-area .ad-setp-lst dd.ar7227{font-size:14px;line-height:1.3 !important;}
+	
+	
 	/* 스튜디오 뉴욕 */
 	.bana-studio p {display: block;padding:170px 50px 0;text-align: center;font-size: 22px;line-height: 1.5;color: #d51b60;}
 	
@@ -3366,7 +3371,8 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.skin-care .visual-area .v-logo{padding: 34px 0 0;}
 	.skin-care .visual-area .v-logo img {height:38px;}
-	.skin-care .visual-area.special-care .v-logo img {height:15px;}
+	.skin-care .visual-area .v-logo img.logo-small, .visual-area .v-logo.beauty img.logo-small, .v-logo.beauty img.logo-small{height:20px;}	
+	.skin-care.skin-type2 .visual-area .v-logo img {height:20px;}
 	
 	.skin-care .visual-area .txt-info-visual .v-logo-txt{font-size:18px;}
 	.skin-care .visual-area .txt-info-visual .v-pro span img{width:auto;}	
@@ -3836,7 +3842,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.akl .com-tit em{font-size:20px;}
 
 	.visual-area.type02.supreme_lx .v-pro.ar4438 {margin-top:230px;}
-	.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}
+	/*.visual-area.type02.supreme_lx .v-pro.ar4439 {margin-left:-50px;}*/
 	.visual-area.type02.supreme_lx .v-pro.ar4439 span img {width:inherit;height:inherit;}
 	
 	
@@ -4438,7 +4444,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
    
    /* 메이크업 1,2,3 립스틱 */
    .visual-area.point-makeup03 .txt-info-visual .v-logo-txt, .visual-area.point-makeup02 .txt-info-visual .v-logo-txt{font-size: 18px;font-weight: 300;}
-   .visual-area.point-makeup03 .v-logo.beauty img, .visual-area.point-makeup02 .v-logo.beauty img{height:16px;}
+   .visual-area.point-makeup03 .v-logo.beauty img, .visual-area.point-makeup02 .v-logo.beauty img, .visual-area.point-makeup01 .v-logo.beauty img{height:20px;}
    .visual-area.point-makeup03 .v-pro span img, .visual-area.point-makeup02 .v-pro span img{width:inherit;}
    
    /* 스무싱 파운데이션 */
@@ -4459,6 +4465,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.point-wrap .desc.top{margin-top:0;}
 	.point-wrap .desc.top{font-size:20px;}
 	
+	.detail-content-area .advantage-area:first-child .t-big.point-wrap{margin-top:0;}
+	
+	.hydra-cont-area
 }
 
 
@@ -4480,10 +4489,12 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.polymer.vita .two em{font-size:13px;}
 	
 	.polymer.vita .two{top:45%;font-size:12px;line-height:1.2;letter-spacing:-1.3px;}
-	
+		
 	.v-pro span img{width:inherit;}
 	/*.visual-area .v-logo img{height:18px;}*/
 	.bath-body .visual-area .v-logo img{height:auto !important;}
+	
+	.t-big.point-wrap .tit sup{font-size: 16px;top: -1em;font-weight: 400;}
 	
 	/* 리스토어 울트라좀 4523 */
 	.ade-photo .reposom-wrap em.one{top: 24px;left: 70%;}
@@ -4498,8 +4509,10 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.triangle.men-type .tit br{display:block;}
 	.triangle.men-type span.comment02{left:8%}
 	.triangle.men-type span.comment03{margin-right:0}
-	.triangle.lx-tech span.comment02{left: 4%;}
-	.triangle.lx-tech span.comment03{right:5%}
+	
+	.triangle.lx-tech span.comment02{width: 140px;left: 0;margin-top:-35px;}
+	.triangle.lx-tech span.comment03{width: 140px;right: 0;margin-top:-35px;}
+	
 	.triangle.lx-tech span.comment03 .linght-beige br{display:block;}	
 	.triangle.ingre-three .tit .linght-beige{font-size:16px}
 	.beam-balance .txt-left, .beam-balance .txt-right{font-size:14px}
@@ -4527,6 +4540,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	/* 하이드라 */
 	.system-lst3 ul li{float:none;width:100%;text-align:center;}
 	
+	/* 슈프림 */
+	.supreme-area .system-lst3.sp-lx ul li{float: left;width: 33.333%;}
+	
 	
 	/* 포인트 메이크업 립 */
 	.point-makeup .visual-area .v-logo{width:auto;padding:38px 0 0;}
@@ -4535,7 +4551,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.point-makeup .v-pro{margin-top: 34px;}
 	
 	.point-makeup .visual-area.lipgloss .v-pro span img {width:inherit;height:auto;}
-	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:13px;}
+	.point-makeup .visual-area.lipgloss .v-logo.beauty img{width:auto;height:20px;}
 	
 	/* 아티스트리 뉴욕 에디션 */
 	.stick-thum-list ul li .studio-thum-area div{float:left;width:50%;}
@@ -4744,6 +4760,7 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	
 	.visual-area.type02.zone-patch .v-logo.beauty img{height:15px;}
 	
+
 	/* 7227 존패치 */
 	.photo-zone-patch{margin-bottom:50px;}
 	.photo-zone-patch .ade-photo img{}
@@ -4763,8 +4780,6 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.technology-step .program-list .program-img{display:none;clear:both;}		
 	.triangle.men-type span.comment02{left:2%;margin-top: -20px;}
 	.triangle.men-type span.comment03{margin-top: -20px;}
-	.triangle.lx-tech span.comment02{left:0;margin-top: -32px;}
-	.triangle.lx-tech span.comment03{right:0;margin-top: -32px;}
 	.triangle br{line-height:18px !important;}
 	.triangle.circle-type .comment01, .triangle.circle-type .comment02, .triangle.circle-type .comment03{font-size:12px;}
 	.triangle.circle-type .comment01{padding-top:13px}
@@ -4776,7 +4791,9 @@ ol.decimal-num li ol li ol {padding:0 15px;}
 	.ade-photo .reposom-wrap em.one{top: 24px;left: 64%;}
 	.ade-photo .reposom-wrap em.two{bottom: 29px;left: 73%;}
 	
-	
+	/* 4439 */
+	.triangle.lx-tech span.comment02{width:90px !important;left: 0;margin-top:-35px;}
+	.triangle.lx-tech span.comment03{width:90px !important;right: 0;margin-top:-35px;}
 			
 	/* 베이스 메이크업 */	
 	.triangle.circle-type .tit-child{font-size:14px;}
