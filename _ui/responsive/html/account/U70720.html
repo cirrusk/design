@@ -157,12 +157,13 @@
 
 						<div class="row">
 							<div class="editbox box-left">
-								<label class="control-label col-md-3 col-xs-12">주문서 명</label>
+								<label class="control-label col-md-3 col-xs-12" for="txt_sopOrderName">주문서 명</label><!-- 수정 : 2018.10.11 (for 추가) -->
 								<div class="col-md-9 col-xs-12">
-									<input type="text" class="verify-form text-left form-control" value="사용자명의 정기주문명">
-									<p class="error">에러문구가 표시되는 영역</p>
+									<input type="text" class="verify-form text-left form-control" id="txt_sopOrderName" value="사용자명의 정기주문명"><!-- 수정 : 2018.10.11 (id 추가) -->
+									<p class="error">Please select a valid profile name</p>
 								</div>
 							</div>
+
 							<!-- 수정 : 2018.10.10 -->
 							<div class="editbox box-right">
 								<label class="control-label col-md-3 col-xs-12">결제일</label>
@@ -476,11 +477,11 @@
 									<a href="#" class="ico-sop-benefits ico-sop-guide"><em>info</em></a>
 								</div>
 								<div class="right-info">
-									<span class="ico-sop-pending">미결제</span><!-- 수정 : 2018.08.28(추가) -->
+									<span class="ico-sop-pending">결제실패</span><!-- 수정 : 2018.08.28(추가) -->
 									<span class="ico-sop-benefits ico-sop-discount">할인</span>
 									<span class="ico-sop-benefits ico-sop-pvbv">PV/BV up</span>
 									<span class="ico-sop-benefits ico-sop-gift">선물</span>
-									<span class="ico-sop-benefits ico-sop-coupon">쿠폰</span>
+									<!-- <span class="ico-sop-benefits ico-sop-coupon">쿠폰</span> -->
 									<span class="ico-sop-complete">완료</span>
 								</div>
 							</div>
@@ -523,7 +524,7 @@
 												<span class="ico-sop-benefits ico-sop-discount"><em>할인</em></span>
 												<span class="ico-sop-benefits ico-sop-pvbv"><em>PV/BV up</em></span>
 												<span class="ico-sop-benefits ico-sop-gift"><em>선물</em></span>
-												<span class="ico-sop-benefits ico-sop-coupon"><em>쿠폰</em></span>
+												<!-- <span class="ico-sop-benefits ico-sop-coupon"><em>쿠폰</em></span> -->
 											</div>
 										</div>
 										<div class="product-item-element list-item-image">
@@ -541,7 +542,7 @@
 											<span class="ico-sop-benefits ico-sop-discount"><em>할인</em></span>
 											<span class="ico-sop-benefits ico-sop-pvbv"><em>PV/BV up</em></span>
 											<span class="ico-sop-benefits ico-sop-gift"><em>선물</em></span>
-											<span class="ico-sop-benefits ico-sop-coupon"><em>쿠폰</em></span>
+											<!-- <span class="ico-sop-benefits ico-sop-coupon"><em>쿠폰</em></span> -->
 										</div>
 										<span class="circle-green">2</span>
 
@@ -549,9 +550,9 @@
 									</div>
 									<div class="col-md-1"><span class="circle-green">2</span></div>
 									<div class="col-md-1">
-										<div class="order-benefits">
+										<!-- <div class="order-benefits">
 											<span class="ico-sop-benefits ico-sop-coupon"><em>쿠폰</em></span>
-										</div>
+										</div> -->
 										<span class="circle-red">2</span>
 									</div>
 									<div class="col-md-1">
@@ -594,9 +595,9 @@
 									<div class="col-md-1"><span class="circle-green">2</span></div>
 									<div class="col-md-1"><span class="circle-green">2</span></div>
 									<div class="col-md-1">
-										<div class="order-benefits">
+										<!-- <div class="order-benefits">
 											<span class="ico-sop-benefits ico-sop-coupon"><em>쿠폰</em></span>
-										</div>
+										</div> -->
 										<span class="circle-not-yet">3</span>
 									</div>
 									<div class="col-md-1">
@@ -863,7 +864,7 @@
 										<div class="row con-list-item">
 											<div class="col-md-5 col-xs-12 item-prdt-name"><p>아티스트리 시그니쳐 컬러 쉬어 립스틱</p></div>
 											<div class="col-md-2 col-xs-9 color-option">
-												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png"></div>
+												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
 												<span>19번 코랄 선라이즈</span>
 											</div>
 											<div class="col-md-2 col-xs-3">
@@ -883,7 +884,7 @@
 										<div class="row con-list-item">
 											<div class="col-md-5 col-xs-12 item-prdt-name"><p>아티스트리 시그니처 컬러 립스틱</p></div>
 											<div class="col-md-2 col-xs-9 color-option">
-												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png"></div>
+												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="6번 달링 레드"></div>
 												<span>6번 달링 레드</span>
 											</div>
 											<div class="col-md-2 col-xs-3">
@@ -903,7 +904,7 @@
 										<div class="row con-list-item">
 											<div class="col-md-5 col-xs-12 item-prdt-name"><p>아티스트리 시그니처 컬러 립스틱</p></div>
 											<div class="col-md-2 col-xs-9 color-option">
-												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png"></div>
+												<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="6번 달링 레드"></div>
 												<span>6번 달링 레드</span>
 											</div>
 											<div class="col-md-2 col-xs-3">
@@ -944,7 +945,7 @@
 											</div>
 										</div>
 										<div class="col-md-2 col-xs-9  product-item-element list-item-option">
-											<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png"></div>
+											<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
 											<span>19번 코랄 선라이즈</span>
 										</div>
 										<div class="col-md-2 col-xs-9  product-item-element list-item-price">
