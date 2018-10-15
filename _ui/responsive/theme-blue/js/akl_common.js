@@ -209,6 +209,8 @@
 	SOP_PDP_editBundle();
 	SOP_PDP_viewBundle();
 
+	//SOP - 제품상세 gift 옵션선택 selectbox
+	SOP_PDP_optionSelect();
 
 /** ----- 나의 쇼핑정보 ----- */
 	//나의 주문내역 list - 짝수줄 서브목록 bg 넣기
@@ -1065,6 +1067,8 @@ function deliveryMSG(){
 
 /* 주문,장바구니 (옵션,프로모션 박스 width 조정) */
 function gwpGiftSelections(){
+	if($('.faxOrder-prdt-list').length ){return;} //온라인팩스주문에서 return;
+
 	var _ItemOptions = $('.gwp-gift-selections');
 	var _PromOptions = $('.view-bundle-contents');
 
@@ -1550,6 +1554,55 @@ function SOP_PDP_viewBundle(){
 
 	});
 }
+
+/* SOP - 제품상세 gift 옵션선택 selectbox */
+function SOP_PDP_optionSelect(){
+	var $sopGiftSelect = $('.js-sopSelectBox');
+	if(!$sopGiftSelect.length){return;}
+
+	$sopGiftSelect.each(function(){
+		var _selected = $(this).find('.selected-option');
+		var _selectHead = _selected.find('.option-html');
+		var _options = $(this).find('.color-overlay');
+
+		//옵션 열고닫기
+		_selected.off('click.optHead').on('click.optHead', function(e){
+			e.preventDefault();
+			if (_options.is(':hidden')){
+				//열려있는 옵션 닫기
+				$sopGiftSelect.find('.color-search-box').removeClass('open');
+				$sopGiftSelect.find('.color-overlay').hide();
+
+				//옵션열기
+				_options.show();
+				$(this).parent().addClass('open');
+			}
+			else {
+				_options.hide();
+				$(this).parent().removeClass('open');
+			}
+		});
+
+		//current
+		var subOption = $(this).find('.color-overlay-content .optionbox');
+		var currented = $(this).find('.optionbox.current');
+		if( currented.length ){
+			_selectHead.empty().append( currented.html());
+		}
+
+		//옵션선택
+		subOption.off('click.optChild').on('click.optChild',function(e){
+			e.preventDefault();
+
+			var optionCODE = $(this).html();
+			$(this).addClass('current');
+
+			_selectHead.empty().append( optionCODE );
+			_options.hide();
+		});
+	});
+}
+
 
 /** ------------------------------------
  *  나의 쇼핑정보

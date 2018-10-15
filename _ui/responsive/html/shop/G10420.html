@@ -715,47 +715,7 @@
 							</div>
 						</div>
 					</div>
-<script>
-$(function(){
-	$('.js-sopSelectBox').each(function(){
-		var _selected = $(this).find('.selected-option');
-		var _options = $(this).find('.color-overlay');
 
-		_selected.on('click',function(e){
-			e.preventDefault();
-
-			//옵션열기
-			if (_options.is(':hidden')){
-				_options.show();
-				$(this).parent().addClass('open');
-			}
-			else {
-				_options.hide();
-				$(this).parent().removeClass('open')
-			}
-		});
-
-		//옵션선택
-		var subOption = $(this).find('.color-overlay-content .optionbox');
-
-		var currented = $(this).find('.optionbox.current');
-		if( currented.length ){
-			_selected.empty().append( currented.html() );
-		}
-
-		subOption.on('click',function(e){
-			e.preventDefault();
-			var optionCODE = $(this).html();
-			$(this).addClass('current');
-
-			_selected.empty().append( optionCODE );
-			_options.hide();
-		});
-	});
-
-
-});
-</script>
 					<div class="content-list row">
 						<div class="row con-list-item">
 							<div class="col-md-5 col-xs-12 ty-prdt-name">
@@ -772,12 +732,16 @@ $(function(){
 									<div class="color-select js-sopSelectBox">
 										<div class="search-box form-control color-search-box color-option before-select">
 											<a href="#" class="selected-option" title="선택된 옵션">
-												<div class="color-panel"></div>
-												<div class="color-name">Select Color</div>
+												<div class="option-html">
+													<span>선택하세요</span><!-- 선택전 text -->
+												</div>
 											</a>
 										</div>
 										<div class="search-overlay color-overlay">
 											<div class="color-overlay-content">
+												<div class="color-option">
+													<a href="#" class="optionbox"><span>선택하세요</span></a><!-- 선택전 text -->
+												</div>
 												<div class="color-option">
 													<a href="#" class="optionbox">
 														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-1.png" alt="Red"></div>
@@ -785,7 +749,7 @@ $(function(){
 													</a>
 												</div>
 												<div class="color-option">
-													<a href="#" class="optionbox current">
+													<a href="#" class="optionbox current"><!-- .current -->
 														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Pink"></div>
 														<div class="color-name">Pink</div>
 													</a>
@@ -803,7 +767,7 @@ $(function(){
 													</a>
 												</div>
 												<div class="color-option">
-													<a href="#" class="optionbox current">
+													<a href="#" class="optionbox">
 														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Pink"></div>
 														<div class="color-name">Pink</div>
 													</a>
@@ -827,7 +791,87 @@ $(function(){
 									<span class="mob-float-right gift-free">Free</span>
 								</div>
 
+							</div>
+							<div class="col-md-2 col-xs-12 list-item-total">
+								<span class="hidden-md hidden-lg color-blue">Total PV/BV</span>
+								<span class="mob-float-right">21.0/42.0</span>
+							</div>
+						</div>
+					</div>
+					<div class="content-list row">
+						<div class="row con-list-item">
+							<div class="col-md-5 col-xs-12 ty-prdt-name">
+								<p>ARTISTRY Signature Color Sheer Lipstick</p>
+								<span class="lightBlue">Selection applicable for Delivery 2 of Cycle 1, Delivery 4 of Cycle 1 &amp; Delivery 6 of Cycle 1 &amp; onwards.</span>
+							</div>
+							<div class="col-md-1 col-xs-12 list-item-quantity">
+								<span class="hidden-md hidden-lg color-blue">수량</span>
+								<span class="mob-float-right">1</span>
+							</div>
+							<div class="col-md-4 col-xs-12 list-item-option">
 
+								<div class="inner-box">
+									<div class="color-select js-sopSelectBox">
+										<div class="search-box form-control color-search-box color-option before-select">
+											<a href="#" class="selected-option" title="선택된 옵션">
+												<div class="option-html">
+													<span>선택하세요</span>
+												</div>
+											</a>
+										</div>
+										<div class="search-overlay color-overlay">
+											<div class="color-overlay-content">
+												<div class="color-option">
+													<a href="#" class="optionbox"><span>선택하세요</span></a><!-- 선택전 text -->
+												</div>
+												<div class="color-option">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-1.png" alt="Red"></div>
+														<div class="color-name">Red2</div>
+													</a>
+												</div>
+												<div class="color-option">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Pink"></div>
+														<div class="color-name">Pink2</div>
+													</a>
+												</div>
+												<div class="color-option disabled-click">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-3.png" alt="Purple"></div>
+														<div class="color-name">Purple2</div>
+													</a>
+												</div>
+												<div class="color-option">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="Baby Pink"></div>
+														<div class="color-name">Baby Pink2</div>
+													</a>
+												</div>
+												<div class="color-option">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="Pink"></div>
+														<div class="color-name">blue</div>
+													</a>
+												</div>
+												<div class="color-option">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-6.png" alt="Purple"></div>
+														<div class="color-name">Purple</div>
+													</a>
+												</div>
+												<div class="color-option">
+													<a href="#" class="optionbox">
+														<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-7.png" alt="Baby Pink"></div>
+														<div class="color-name">Baby Pink</div>
+													</a>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<span class="mob-float-right gift-free">Free</span>
+								</div>
 
 							</div>
 							<div class="col-md-2 col-xs-12 list-item-total">
@@ -837,73 +881,7 @@ $(function(){
 						</div>
 					</div>
 
-					<!-- <div class="content-list row">
-						<div class="row con-list-item">
-							<div class="col-md-5 col-xs-12 ty-prdt-name">
-								<p>ARTISTRY Signature Color Sheer Lipstick</p>
-								<span class="lightBlue">Selection applicable for Delivery 2 of Cycle 1, Delivery 4 of Cycle 1 &amp; Delivery 6 of Cycle 1 &amp; onwards.</span>
-							</div>
-							<div class="col-md-1 col-xs-12 list-item-amount">
-								<span class="hidden-md hidden-lg color-blue">수량</span>
-								<span class="mob-float-right">1</span>
-							</div>
-							<div class="col-md-2 col-xs-8 list-item-quantity">
-								<div class="color-select">
-									<div class="search-box form-control color-search-box color-option before-select">
-										<div class="color-panel"></div>
-										<div class="color-name">Select Color</div>
-									</div>
-									<div class="search-overlay color-overlay">
-										<div class="color-overlay-content">
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-1.png" alt="Red"></div>
-												<div class="color-name">Red</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-2.png" alt="Pink"></div>
-												<div class="color-name">Pink</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-3.png" alt="Purple"></div>
-												<div class="color-name">Purple</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="Baby Pink"></div>
-												<div class="color-name">Baby Pink</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-5.png" alt="Red"></div>
-												<div class="color-name">Red</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-6.png" alt="Pink"></div>
-												<div class="color-name">Pink</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-7.png" alt="Baby Pink"></div>
-												<div class="color-name">Baby Pink</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-8.png" alt="Yellow"></div>
-												<div class="color-name">Yellow</div>
-											</div>
-											<div class="color-option">
-												<div class="color-panel"><img src="/_ui/responsive/theme-blue/images/@glitz-9.png" alt="Blue"></div>
-												<div class="color-name">Blue</div>
-											</div>
-										</div>
 
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2 col-xs-4 gift-free"><span class="mob-float-right uppercase">Free</span></div>
-							<div class="col-md-2 col-xs-12">
-								<span class="hidden-md hidden-lg color-blue">Total PV/BV</span>
-								<span class="mob-float-right">21.0/42.0</span>
-							</div>
-
-						</div>
-					</div> -->
 				</div>
 
 			</div>
