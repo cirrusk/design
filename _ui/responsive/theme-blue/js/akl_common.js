@@ -437,17 +437,18 @@ function tabsTgg_Control(){
 
 		function $tabWidthCheck(){
 			var _winWidth = $(window).width()+17; //스크롤바 17px
-			if( _winWidth > 768){
-				_UL.removeClass('scroll-tab');
-				if( _winWidth > children_sum ){ _UL.removeClass('width-auto'); }
-				else if( child_each_sum < children_sum ){ _UL.removeClass('width-auto'); }
-				else if( _winWidth < children_sum || _winWidth < outerWrapperWD || children_sum > outerWrapperWD ){ _UL.addClass('width-auto');}
-			}
+			//console.log('outerWrapperWD : ' + outerWrapperWD + ' / children_sum : ' + children_sum + ' / _winWidth : ' + _winWidth);
 
 			if( _winWidth < 769){
 				_UL.removeClass('width-auto');
 				if(_winWidth > children_sum ){ _UL.removeClass('scroll-tab width-auto'); }
 				if(_winWidth < children_sum ){ _UL.addClass('scroll-tab'); }
+			}
+			else {
+				_UL.removeClass('scroll-tab');
+				if( child_each_sum < children_sum ){ _UL.removeClass('width-auto'); }
+				if( _winWidth < children_sum || _winWidth < outerWrapperWD || children_sum > outerWrapperWD ){ _UL.addClass('width-auto');}
+				if( _winWidth > children_sum ){ _UL.removeClass('width-auto'); }
 			}
 		}
 
@@ -526,6 +527,10 @@ function tabsTgg_Control(){
 				setTimeout(function(){
 					activeTabScroll();
 				},300);
+
+				$(window).resize(function(){
+					activeTabScroll();
+				});
 			}
 		}
 
