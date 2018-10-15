@@ -55,8 +55,52 @@
 			</div>
 			<!-- //회원유형 선택하기 -->
 
+			<!-- ABO 선택시  / 수정 : 2018.10.15 (탭삭제) -->
+			<div id="choose-abo" class="navigation-tabs-container" style="display:none;">
+				<div class="author-content">
+					<strong class="author-tit">본인확인</strong>
+					<p class="author-text">
+						본인확인은 <em>전체아이디가 표시</em>됩니다.<br>
+						인증 시 제공되는 정보는 해당 인증기관에서 직접 수집하며, 인증이외의 용도로 이용/저장하지 않습니다.
+					</p>
 
-			<!-- ABO 선택시 -->
+					<div class="validation-wrapper findInfo_author"><!-- 수정 : 2018.10.15 (.findInfo_author 추가 / .subBiz 삭제) -->
+						<!-- 수정 : 2018.10.15 (간편 본인확인 추가) -->
+						<div class="valid-type-simple">
+							<p class="validation-para">
+								<strong>간편 본인확인</strong>
+								<span>고객님의 이름과 생년월일, 휴대폰번호로 <br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
+							</p>
+						</div>
+						<!-- //수정 : 2018.10.15 (간편 본인확인 추가) -->
+
+						<div class="valid-type-phone">
+							<p class="validation-para">
+								<strong>휴대폰 본인확인</strong>
+								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show">휴대폰 본인확인</a>
+							</p>
+						</div>
+						<div class="valid-type-ipin">
+							<p class="validation-para">
+								<strong>아이핀 본인확인</strong>
+								<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show">아이핀 본인확인</a>
+							</p>
+						</div>
+					</div>
+					<div class="info-txt-btm">
+						<ul class="list-type2">
+							<li>아이디를 찾지 못하신 경우 <a href="tel:1588-0080" class="type-tel">한국암웨이 고객센터 1588-0080</a> 로 연락 바랍니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //ABO 선택시  / 수정 : 2018.10.15 (탭삭제) -->
+
+
+			<!-- ABO 선택시  / 수정 : 2018.10.15 (탭형식 사용안함)
 			<div id="choose-abo" class="navigation-tabs-container" style="display:none;">
 				<div class="outer-border-bottom">
 					<ul class="tabs-toggles">
@@ -65,7 +109,7 @@
 					</ul>
 				</div>
 				<div class="tab-content tabs-content-blocks">
-					<!-- tab1 -->
+					tab1
 					<div class="tab-pane content-block active" id="authorization-abo">
 						<h2 class="hidden">본인인증 ABO</h2>
 
@@ -98,9 +142,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- //tab1 -->
+					//tab1
 
-					<!-- tab2 -->
+					tab2
 					<div class="tab-pane content-block" id="authorization-simple">
 						<h2 class="hidden">간편가입 ABO</h2>
 						<div class="author-content">
@@ -111,7 +155,7 @@
 							</p>
 
 							<div class="validation-wrapper simpleABO">
-								<!-- 간편가입 ABO 입력 전체 -->
+								간편가입 ABO 입력 전체
 								<div class="box-input-details">
 									<div class="validation-box-simple">
 										<div class="form-group ty-input-name">
@@ -165,7 +209,7 @@
 										</div>
 									</div>
 								</div>
-								<!-- //간편가입 ABO 입력 전체 -->
+								//간편가입 ABO 입력 전체
 							</div>
 
 							<div class="info-txt-btm">
@@ -179,10 +223,10 @@
 							</div>
 						</div>
 					</div>
-					<!-- //tab2 -->
+					//tab2
 				</div>
 			</div>
-			<!-- //ABO 선택시 -->
+			//ABO 선택시 -->
 
 			<!-- Member 선택시 -->
 			<div id="choose-member" class="author-content member" style="display:none;">

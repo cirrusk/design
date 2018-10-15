@@ -67,28 +67,7 @@
 					</ul>
 
 					<div class="validation-wrapper amway-theme"><!-- 2018.03.12 : amway-theme 추가 -->
-						<div class="valid-type-phone">
-							<p class="validation-para">
-								<strong>휴대폰 본인확인</strong>
-								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
-								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Mobile">휴대폰 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
-							</p>
-							<div class="valid-progress">
-								<p class="valid-result-box on"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
-							</div>
-						</div>
-
-						<div class="valid-type-ipin">
-							<p class="validation-para">
-								<strong>아이핀 본인확인</strong>
-								<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
-								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Ipin">아이핀 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
-							</p>
-							<div class="valid-progress">
-								<p class="valid-result-box"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
-							</div>
-						</div>
-
+						<!-- 수정 : 2018.10.15 (간편 본인확인 순서이동) -->
 						<div class="valid-type-simple">
 							<p class="validation-para">
 								<strong>간편 본인확인</strong>
@@ -96,7 +75,7 @@
 								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
 							</p>
 							<div class="valid-progress">
-								<!-- 간편 본인확인 입력 전체 -->
+								<!-- 간편 본인확인 입력 전체 : 사용안함 (2018.10.15)
 								<div class="box-input-details">
 									<p><strong class="st-text">간편 본인확인으로 ABO 가입 시 ABO에게 제공되는 일부 서비스와 활동이 제한될 수 있습니다.</strong></p>
 									<p>모든 입력 항목은 필수 항목입니다.</p>
@@ -135,8 +114,6 @@
 											</div>
 										</div>
 
-
-										<!-- 휴대폰 번호+인증 -->
 										<div class="form-group mobile">
 											<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호</label>
 											<div class="col-md-6 col-xs-12">
@@ -165,14 +142,37 @@
 												<div class="col-md-4 col-xs-4 col-btn"><button type="button" class="bt-akl-blue">확인</button></div>
 											</div>
 										</div>
-										<!-- //휴대폰 번호+인증 -->
-									</div>
-								</div>
-								<!-- //간편 본인확인 입력 전체 -->
 
+									</div>
+								</div> -->
+
+								<p class="valid-result-box on"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
+							</div>
+						</div>
+						<!-- //수정 : 2018.10.15 (간편 본인확인 순서이동) -->
+
+						<div class="valid-type-phone">
+							<p class="validation-para">
+								<strong>휴대폰 본인확인</strong>
+								<span>고객님 명의로 된 휴대폰을 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Mobile">휴대폰 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
+							</p>
+							<div class="valid-progress">
 								<p class="valid-result-box"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
 							</div>
 						</div>
+
+						<div class="valid-type-ipin">
+							<p class="validation-para">
+								<strong>아이핀 본인확인</strong>
+								<span>고객님의 아이핀과 패스워드를 통해<br> 본인을 확인합니다.</span>
+								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Ipin">아이핀 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
+							</p>
+							<div class="valid-progress">
+								<p class="valid-result-box"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
+							</div>
+						</div>
+
 					</div>
 					<div class="info-txt-btm">
 						<ul class="list-type2">
@@ -195,7 +195,7 @@
 
 	<script type="text/javascript">
 	$(function(){
-		validationStepBox(); //간편 본인확인
+		//validationStepBox(); //간편 본인확인
 	});
 
 	//간편 본인확인

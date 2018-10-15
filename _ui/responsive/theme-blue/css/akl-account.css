@@ -553,9 +553,9 @@
 
 /* 인증방법 선택 */
 .validation-wrapper>div[class^=valid-type]>p {position:absolute; top:0; width:33.3333%; text-align:center; box-sizing:border-box;}
-.validation-wrapper>div.valid-type-phone>p {left:0; border-left:0;}
-.validation-wrapper>div.valid-type-ipin>p {left:33.5%;}
-.validation-wrapper>div.valid-type-simple>p {left:66.5%;}
+.validation-wrapper>div.valid-type-simple>p {left:0; border-left:0;}
+.validation-wrapper>div.valid-type-phone>p {left:33.5%;}
+.validation-wrapper>div.valid-type-ipin>p {left:66.5%;}
 .validation-wrapper>div>p{border-left:1px solid #e3e3e3;}
 .validation-wrapper.subBiz>div.valid-type-phone>p {padding-left:16%; left:0; border-left:0;}
 .validation-wrapper.subBiz>div.valid-type-ipin>p {padding-right:16%; left:50%;}
@@ -789,11 +789,11 @@
 
 /* 본인확인 정보입력 (본인확인 완료 메시지 영역 없음) */
 .akl .author-content .validation-wrapper {padding-top:0;}
-.akl .author-content .validation-wrapper.subBiz {height:190px; margin-top:50px;}
+.akl .author-content .validation-wrapper.findInfo_author {height:190px;}
+.akl .author-content .validation-wrapper.subBiz {height:190px; margin-top:50px; border:1px solid red}
 .akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;}
 .akl .author-content .validation-wrapper.simpleMember {padding-bottom:30px; border-bottom:1px solid #dadada;}
-.akl .author-content .author-tit {display:block;font-size:16px;}
-.akl .author-content.member .author-tit {padding-top:40px; border-top:1px solid #dadada;}
+.akl .author-content .author-tit {display:block;font-size:16px; padding-top:40px; border-top:1px solid #dadada;}
 .akl .author-content .author-text em {color:#002f5f;font-weight:500;}
 .akl .amway-theme .author-content .author-text {margin-top:10px;}
 .akl .amway-theme .author-text, .akl .amway-theme .author-text * {font-size:14px;}
