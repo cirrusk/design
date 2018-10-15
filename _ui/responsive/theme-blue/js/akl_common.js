@@ -1067,6 +1067,8 @@ function deliveryMSG(){
 
 /* 주문,장바구니 (옵션,프로모션 박스 width 조정) */
 function gwpGiftSelections(){
+	if($('.faxOrder-prdt-list').length ){return;} //온라인팩스주문에서 return;
+
 	var _ItemOptions = $('.gwp-gift-selections');
 	var _PromOptions = $('.view-bundle-contents');
 
