@@ -32,10 +32,38 @@
 		<div class="container">
 			<div class="topTitle"><h1>레이어 팝업 / 알럿-컨펌</h1></div>
 
-			<ol class="subList">
+			<h2 class="subHeading top">레이어 기본 layout</h2>
+			<div class="layerMask">
+
+				<!-- 기본레이어 layout 참고용 -->
+				<div class="layerWrapper pop-sample"    style="position:relative !important; left:0; top:0; display:block; z-index:1; padding-bottom:30px;">
+					<div class="cbox layerBox popWidM"  style="position:relative !important; left:0; top:0; display:block;opacity:1;">
+						<div class="cart-popup__dialog">
+							<div class="cart-popup__header">
+								<span class="cart-popup__header-text">
+									팝업 타이틀
+									<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+								</span>
+							</div>
+							<div class="cart-popup__content payment">
+								<div class="cart-popup__item-info">팝업 내용
+								</div>
+							</div>
+							<div class="cart-popup__item-link">
+								<button type="button" class="bt-akl-blue">확인</button>
+								<button type="button" class="btn-cancel">취소</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //기본레이어 layout 참고용 -->
+
+			</div>
+
+			<ol class="subList border">
 				<li>
-					<h2 class="subHeading">layerPopOver('버튼 class/ID', '레이어  class/ID')</h2>
 					<div class="codeField">
+						<p class="subtit">기본 레이어팝업</p>
 						<code>layerPopOver( btnOpenLayer , targetLayer )</code>
 						<p class="btns">
 							<a class="bt-akl-blue mini" href="#" onclick="layerPopOver(this,'.U30000_lp6')">기본형(text)</a>
@@ -44,229 +72,137 @@
 							<a class="bt-akl-white mini" href="../html/shop/QUICK_VIEW_pop.html" target="wsguideLayer">[link] 퀵뷰</a>
 							<a class="bt-akl-white mini" href="../html/account/U61000_lp1.html" target="wsguideLayer">[link] 주소찾기</a>
 						</p>
-						<p class="btns">
-							<a class="bt-akl-blue mini" href="#" onclick="commonPopOver(this,'.commonCMS-sample')">공통 팝업 (관리자 등록, 메인)</a>
-						</p>
-					</div>
-
-					<div class="layerMask">
-						<!-- 기본레이어 layout 참고용 -->
-						<p class="subtit">참조) layer layout</p>
-						<div class="layerWrapper pop-sample" style="position:relative !important; left:0; top:0; display:block; z-index:1; padding-bottom:30px;">
-							<div class="cbox layerBox popWidM" style="position:relative !important; left:0; top:0; display:block;opacity:1;">
-								<div class="cart-popup__dialog">
-									<div class="cart-popup__header">
-										<span class="cart-popup__header-text">
-											팝업 타이틀
-											<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-										</span>
-									</div>
-									<div class="cart-popup__content payment">
-										<div class="cart-popup__item-info">팝업 내용
-										</div>
-									</div>
-									<div class="cart-popup__item-link">
-										<button type="button" class="bt-akl-blue">확인</button>
-										<button type="button" class="btn-cancel">취소</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //기본레이어 layout 참고용 -->
-
-
 					</div>
 				</li>
+				<li>
+					<div class="codeField">
+						<p class="subtit">공통팝업(어드민 등록)</p>
+						<code>commonPopOver( btnOpenLayer , targetLayer )</code>
+						<p class="btns">
+							<a class="bt-akl-blue mini" href="#" onclick="commonPopOver(this,'.commonCMS-sample')">공통 팝업(기본)</a>
+							<a class="bt-akl-white mini" href="../html/popup_cmnMain.html" target="wsguideLayer">[link] 메인 관리자 등록 </a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="codeField">
+						<p class="subtit">알럿/컨펌 (플러그인) : 개발요청</p>
+						<code>msgboxCommon( msgboxType, msgboxContent , functionName )</code>
+						<p class="btns">
+							<a class="bt-akl-blue mini  jmb-alert" href="#">알럿</a>
+							<a class="bt-akl-blue mini jmb-confirm" href="#" target="wsguideLayer">컨펌 </a>
+						</p>
+						<hr>
+						<p class="code-explain">
+							<strong>사용방법</strong><br>
+							<span>alert</span> : msgboxCommon('alert','메시지자리');<br>
+							<span>confirm</span> : msgboxCommon('confirm','메시지자리', 콜백function);
+						</p>
+
+					</div>
+					<script type="text/javascript">
+					$(function() {
+						//테스트 메시지
+						var alertTEXT_01 = '<strong class="color-blue">alert</strong><br>시스템 alert 대신 사용합니다.';
+						var confirmTEXT_01 = '<strong class="color-blue">confirm 테스트</strong><br> 시스템 confirm 대신 사용합니다.<br><span class="color-red">시스템 confirm 대신 사용합니다.</span>';
+
+						$('.jmb-alert').on('click',function(e){
+							e.preventDefault();
+							msgboxCommon('alert', alertTEXT_01);
+						});
+						$('.jmb-confirm').on('click',function(e){
+							e.preventDefault();
+							msgboxCommon('confirm', confirmTEXT_01 , callback_test01);
+						});
+
+						//테스트 콜백함수
+						function callback_test01(){
+							alert( !!this.val() );
+						}
+					});
+					</script>
+				</li>
 			</ol>
-
-
-
-			<!-- (팝업) ABO 자격 상실 안내 -->
-			<div class="layerWrapper U30000_lp6">
-				<div class="cbox layerBox popWidM">
-					<div class="cart-popup__dialog">
-						<div class="cart-popup__header">
-							<span class="cart-popup__header-text">
-								ABO 자격 상실 안내
-								<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-							</span>
-						</div>
-						<div class="cart-popup__content height-auto">
-							<div class="cart-popup__item-info">
-								<div class="txt-ineligibility">
-									귀하께서는 2019년 3월~5월 사이에 ABO 자격 갱신을 하지 않으시어 ABO 자격을 상실하셨으나,
-									2019년 8월 23일까지 전화주문(1588-0080) 또는 암웨이 비즈니스 센터를 통해 본인 확인 후 10만원 이상 구매를 하시거나 지연갱신 서류를 제출하시면,
-									<p>2020년 2월 말까지 한국암웨이 ABO 자격이 연장됩니다.</p>
-								</div>
-							</div>
-
-						</div>
-						<div class="cart-popup__item-link">
-							<button type="button" class="bt-akl-blue">확인</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //(팝업) ABO 자격 상실 안내 -->
-
-			<div class="layerWrapper commonCMS-sample"><!-- @레이어 이름 : pop-sample -->
-				<div class="cbox typeAdminAdd popWidM"><!-- @팝업 사이즈 600px : popWidM -->
-					<div class="cart-popup__dialog">
-						<div class="cart-popup__header">
-							<span class="cart-popup__header-text">Amway 알리미 <!-- 수정 : 2018.05.24 (text 추가) -->
-								<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
-							</span>
-						</div>
-						<div class="layer-content-wrapper"><!-- @컨텐츠 길이 : 높이 제한 없음 -->
-							<!-- 팝업내용 -->
-							<div class="layer-tabs-wrapper">
-
-								<!-- (내용1개) 탭 없음 / 수정 : 2018.05.25 (제목 추가) -->
-								<h2 class="tabcon-tit">$ 타이틀 타이틀 $</h2>
-								<div class="tb-box">
-									내용자리<br>내용자리<br>
-								</div>
-
-
-								<!-- (내용2개) 탭2개 -->
-								<div class="col-equality-tab num2">
-									<ul>
-										<li class="active"><a href="#tabContss1" data-toggle="tab"><span>제목1 들어갑니다 제목1 들어갑니다</span></a></li>
-										<li><a href="#tabContss2" data-toggle="tab"><span>제목2 들어갑니다 제목2 들어갑니다</span></a></li>
-									</ul>
-								</div>
-
-
-								<!-- (내용3개) 탭3개 -->
-								<div class="col-equality-tab num3">
-									<ul>
-										<li class="active"><a href="#tabContss1" data-toggle="tab"><span>제목1 들어갑니다 제목1 들어갑니다</span></a></li>
-										<li><a href="#tabContss2" data-toggle="tab"><span>제목2 들어갑니다 제목2 들어갑니다</span></a></li>
-										<li><a href="#tabContss3" data-toggle="tab"><span>제목3 들어갑니다 제목3 들어갑니다</span></a></li>
-									</ul>
-								</div>
-								<div class="tab-content tabs-content-blocks">
-									<div class="tab-pane content-block active" id="tabContss1">
-										<h2 class="tabcon-tit">$ 타이틀 타이틀 $</h2><!-- 수정 : 2018.05.25 (제목 추가) -->
-										<div class="tb-box">
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-										</div>
-									</div>
-									<div class="tab-pane content-block" id="tabContss2">
-										<h2 class="tabcon-tit">$ 타이틀 타이틀 $</h2><!-- 수정 : 2018.05.25 (제목 추가) -->
-										<div class="tb-box">
-											<p  style="height:510px">
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											</p>
-										</div>
-									</div>
-									<div class="tab-pane content-block" id="tabContss3">
-										<h2 class="tabcon-tit">$ 타이틀 타이틀 $</h2><!-- 수정 : 2018.05.25 (제목 추가) -->
-										<div class="tb-box">
-											<p  style="height:500px">
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											내용<br>내용<br>내용<br>내용<br>내용<br>내용<br>
-											</p>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<!-- //팝업내용 -->
-
-						</div>
-
-						<!-- 버튼 영역
-						<div class="cart-popup__item-link">
-							<button type="button" class="bt-akl-blue">확인</button>
-							<button type="button" class="btn-cancel">취소</button>
-						</div> -->
-
-						<!-- 오늘 하루 그만 열기 -->
-						<div class="layer-bottom-wrapper">
-							<div class="left-box">
-								<input id="notOpen_ndays" type="checkbox"><label for="notOpen_ndays" class="normal inline-label checklabel">7일동안 보이지 않음</label>
-							</div>
-							<div class="right-box">
-								<button type="button" class="not-open-today">오늘 하루 그만 열기</button>
-							</div>
-						</div>
-						<!-- //오늘 하루 그만 열기 -->
-
-					</div>
-				</div>
-			</div>
-
-
-
-
-
-
-
-
-
-			<h2>레이어 팝업 (메인 공통팝업 - 어드민등록)</h2>
-			<div class="guideCodeWrapper">
-
-
-				<!-- ** ----------------------------------------------------------------
-					 * @레이어 이름 : class 또는 ID
-					 * @팝업 사이즈 : popWidS, popWidM, popWidL
-					 * @컨텐츠 영역 : layer-content-wrapper (높이제한 없음)
-					 * ----------------------------------------------------------------
-				-->
-
-
-
-
-			</div>
-
-
-
-			<h2>알럿/컨펌 (플러그인) <span>개발요청</span></h2>
-			<div class="guideCodeWrapper">
-				<div class="uiExample">
-					<a href="#" class="bt-akl-blue jmb-alert">알럿 테스트</a>
-					<button type="button" class="bt-akl-white jmb-confirm">컨펌 테스트</button>
-				</div>
-
-				<div class="codeField">
-					<code>function msgboxCommon( msgboxType, msgboxContent , functionName )</code>
-					<p><strong>사용방법</strong><br>
-						alert : msgboxCommon('alert','메시지자리');<br>
-						confirm : msgboxCommon('confirm','메시지자리', 콜백function);
-					</p>
-				</div>
-			</div>
-
-			<script type="text/javascript">
-			$(function() {
-				//테스트 메시지
-				var alertTEXT_01 = '<strong class="color-blue">alert</strong><br>시스템 alert 대신 사용합니다.';
-				var confirmTEXT_01 = '<strong class="color-blue">confirm 테스트</strong><br> 시스템 confirm 대신 사용합니다.<br><span class="color-red">시스템 confirm 대신 사용합니다.</span>';
-
-				$('.jmb-alert').on('click',function(){
-					msgboxCommon('alert', alertTEXT_01);
-				});
-				$('.jmb-confirm').on('click',function(){
-					msgboxCommon('confirm', confirmTEXT_01 , callback_test01);
-				});
-
-				//테스트 콜백함수
-				function callback_test01(){
-					console.log( !!this.val() );
-				}
-			});
-			</script>
-
 		</div>
 
 	</main>
+
+
+
+<!-- ** ----------------------------------------------------------------
+	 * @레이어 이름 : .U30000_lp6 (class 또는 ID)
+	 * @팝업 사이즈 : .popWidS, .popWidM, .popWidL
+	 * @컨텐츠 영역 : .cart-popup__content
+	 * ----------------------------------------------------------------
+-->
+<div class="layerWrapper U30000_lp6"><!-- @레이어 이름 -->
+	<div class="cbox layerBox popWidM"><!-- @팝업 사이즈 600px : popWidM -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">
+					ABO 자격 상실 안내
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true"  class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="cart-popup__content height-auto">
+				<div class="cart-popup__item-info">
+					<div class="txt-ineligibility">
+						귀하께서는 2019년 3월~5월 사이에 ABO 자격 갱신을 하지 않으시어 ABO 자격을 상실하셨으나,
+						2019년 8월 23일까지 전화주문(1588-0080) 또는 암웨이 비즈니스 센터를 통해 본인 확인 후 10만원 이상 구매를 하시거나 지연갱신 서류를 제출하시면,
+						<p>2020년 2월 말까지 한국암웨이 ABO 자격이 연장됩니다.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="cart-popup__item-link">
+				<button type="button" class="bt-akl-blue">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ** ----------------------------------------------------------------
+	 * @레이어 이름 : .commonCMS-sample (class 또는 ID)
+	 * @팝업 사이즈 : .popWidS, .popWidM, .popWidL
+	 * @컨텐츠 영역 : .layer-content-wrapper (높이제한 없음)
+	 * ----------------------------------------------------------------
+-->
+<div class="layerWrapper commonCMS-sample"><!-- @레이어 이름 -->
+	<div class="cbox typeAdminAdd popWidM"><!-- @팝업 사이즈 600px : popWidM -->
+		<div class="cart-popup__dialog">
+			<div class="cart-popup__header">
+				<span class="cart-popup__header-text">Amway 알리미
+					<a href="#" data-dismiss="modal" aria-label="Close" aria-hidden="true" class="cart-popup__close"><img src="/_ui/responsive/theme-blue/images/close.png" alt="닫기"></a>
+				</span>
+			</div>
+			<div class="layer-content-wrapper"><!-- @컨텐츠 길이 : 높이 제한 없음 -->
+				<!-- 팝업내용 -->
+				<div class="layer-tabs-wrapper">
+
+					<div style="padding:20px; text-align:center;">
+						메인에서 어드민에서 등록한 팝업이고,<br>
+						마스크 (#uiLayerMask) 없이 띄움니다.
+					</div>
+
+				</div>
+				<!-- //팝업내용 -->
+			</div>
+
+			<!-- 오늘 하루 그만 열기 -->
+			<div class="layer-bottom-wrapper">
+				<div class="left-box">
+					<input id="notOpen_ndays" type="checkbox"><label for="notOpen_ndays" class="normal inline-label checklabel">7일동안 보이지 않음</label>
+				</div>
+				<div class="right-box">
+					<button type="button" class="not-open-today">오늘 하루 그만 열기</button>
+				</div>
+			</div>
+			<!-- //오늘 하루 그만 열기 -->
+
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
