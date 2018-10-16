@@ -2401,18 +2401,19 @@ dl.box-txt-list dd + dt {margin-top:30px;}
 .nq-test-box {padding-bottom:35px;border-bottom:1px solid #e3e3e3;}
 .nq-test-box .top-q {padding-bottom:35px;font-size:16px;font-weight:500;border-bottom:1px solid #e3e3e3;}
 .nq-test-box .top-q strong {color:#002f5f;}
-.nq-test-box .nq-list {margin-top:35px;}
-.nq-test-box .nq-list .q-box {position:relative;padding-left:40px;}
-.nq-test-box .nq-list .q-box .num {position:absolute;width:28px;height:28px;top:0;left:0;border:1px solid #999;border-radius:50%;text-align:center;font-weight:500;line-height:26px;}
-.nq-test-box .nq-list .q-box p {font-weight:500;margin:0;}
+.nq-test-box .nq-list {margin-top:35px; text-align:center}
+.nq-test-box .nq-list .q-box {position:relative;padding-left:40px; display:inline-block;}
+.nq-test-box .nq-list .q-box .num {/*position:absolute; top:0;left:0;*/width:28px;height:28px; border:1px solid #999;border-radius:50%;text-align:center;font-weight:500;line-height:26px;  display:inline-block; }
+.nq-test-box .nq-list .q-box p {font-weight:500;margin:0; }
+.nq-test-box .nq-list .q-box p:nth-of-type(1) { display:inline-block;}
 .nq-test-box .nq-list .q-box p strong {color:#002f5f;}
 .nq-test-box .nq-list .q-box .list-style-info2, .nq-test-box .nq-list .q-box .list-style-info2 li {background-position:left 6px;font-weight:400;letter-spacing:0;}
 .nq-test-box .nq-list .q-box .list-style-info2 li {padding-bottom:0;}
 .nq-test-box .nq-list .q-box .img {display:block;margin:20px 0 25px;}
 .nq-test-box .nq-list .q-box .img img {width:300px;}
 .nq-test-box .nq-list .a-box {padding-left:40px;}
-.nq-test-box .nq-list .a-box li {margin-top:20px}
-.nq-test-box .nq-list .a-box li label {font-weight:400;}
+.nq-test-box .nq-list .a-box li {margin-top:20px; }
+.nq-test-box .nq-list .a-box li label {font-weight:400;   display:inline-block;}
 .nq-btn a {margin:0 5px 10px;}
 .brand .nq-btn .text {margin:0 0 35px;font-size:16px;font-weight:500;color:#002f5f;}
 
