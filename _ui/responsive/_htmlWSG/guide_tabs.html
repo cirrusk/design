@@ -29,24 +29,60 @@
 	<div id="skipToContent"><a href="#contents">콘텐츠 바로가기 </a></div>
 	<main>
 		<div id="header-guide"></div><!-- 가이드용 header -->
-		<div id="guideType_" class="container">
+		<div id="guideType_tabs" class="container">
 			<div class="topTitle"><h1>탭(스크롤 탭)</h1></div>
 
 			<ol class="subList">
 				<li>
-					<h2 class="subHeading top" style="margin-bottom:30px;">탭 type1 &nbsp;&nbsp; (min-width 120px)</h2>
+					<h2 class="subHeading">Type 1 : min-width (.amway-theme 상속 필수)</h2>
+					<div class="guideCodeWrapper amway-theme">
 
-					<div class="amway-theme"><!-- .amway-theme 필수 사용 -->
 
+						<div class="navigation-tabs-container order-history-container js-order-history-container">
+							<div class="outer-border-bottom">
+								<ul class="tabs-toggles">
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#All"> <span class="toggle-text">Tab01</span> </a> </li>
+									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#General"> <span class="toggle-text">Tab02</span> </a> </li>
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#business"> <span class="toggle-text">Tab03</span> </a> </li>
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#academy"> <span class="toggle-text">Tab04</span> </a> </li>
+									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#news-room"> <span class="toggle-text">Tab05</span> </a> </li>
+
+								</ul>
+							</div>
+							<div class="tab-content tabs-content-blocks">
+								<div class="tab-pane content-block active" id="All">
+									<h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>
+									<div>
+											내용 1
+									</div>
+								</div>
+								<div class="tab-pane content-block" id="General">
+									<h2 class="hidden">Tab02 타이틀 (탭명과 동일)</h2>
+									<div>
+											내용2
+									</div>
+								</div>
+								<div class="tab-pane content-block" id="business">
+									<h2 class="hidden">Tab03 타이틀 (탭명과 동일)</h2>
+									<div>
+											내용 3
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- 탭(.tabs-toggles)-->
 						<div class="outer-border-bottom">
 							<ul class="tabs-toggles">
 								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab01"> <span class="toggle-text">01 탭 제목</span> </a> </li>
 								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab02"> <span class="toggle-text">02 가나다라마바사아자차카타파하</span> </a> </li>
 								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab03"> <span class="toggle-text">03 탭 제목</span> </a> </li>
 								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab04"> <span class="toggle-text">04 제목제목제목제목 제목제목제목</span> </a> </li>
-								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab05"> <span class="toggle-text">05 제목제목제목제목 제목제목제목</span> </a> </li>
+								<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#tab05"> <span class="toggle-text">05 제목제목제목제목 제목제목제목</span> </a> </li>
 								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab06"> <span class="toggle-text">06 제목제목제목제목 제목제목제목</span> </a> </li>
-								<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#tab07"> <span class="toggle-text">07 제목제목제목제목 제목제목제목</span> </a> </li>
+								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab07"> <span class="toggle-text">07 제목제목제목제목 제목제목제목</span> </a> </li>
 								<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#tab08"> <span class="toggle-text">08 제목제목제목제목 제목제목제목</span> </a> </li>
 							</ul>
 						</div>
@@ -84,40 +120,16 @@
 								<div>내용 8</div>
 							</div>
 						</div>
+						<!-- //탭(.tabs-toggles)-->
+					</div>
+
+
+					<div class="">
+
+
 
 						<p class="subtit" style="margin-bottom:30px;">탭 type1 &nbsp;&nbsp; (min-width 120px)</p>
-						<div class="navigation-tabs-container order-history-container js-order-history-container">
-							<div class="outer-border-bottom">
-								<ul class="tabs-toggles">
-									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#All"> <span class="toggle-text">Tab01</span> </a> </li>
-									<li class="tab-toggle-wrap active"> <a class="tab-toggle" data-toggle="tab" href="#General"> <span class="toggle-text">Tab02</span> </a> </li>
-									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#business"> <span class="toggle-text">Tab03</span> </a> </li>
-									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#academy"> <span class="toggle-text">Tab04</span> </a> </li>
-									<li class="tab-toggle-wrap"> <a class="tab-toggle" data-toggle="tab" href="#news-room"> <span class="toggle-text">Tab05</span> </a> </li>
 
-								</ul>
-							</div>
-							<div class="tab-content tabs-content-blocks">
-								<div class="tab-pane content-block active" id="All">
-									<h2 class="hidden">Tab01 타이틀 (탭명과 동일)</h2>
-									<div>
-											내용 1
-									</div>
-								</div>
-								<div class="tab-pane content-block" id="General">
-									<h2 class="hidden">Tab02 타이틀 (탭명과 동일)</h2>
-									<div>
-											내용2
-									</div>
-								</div>
-								<div class="tab-pane content-block" id="business">
-									<h2 class="hidden">Tab03 타이틀 (탭명과 동일)</h2>
-									<div>
-											내용 3
-									</div>
-								</div>
-							</div>
-						</div>
 
 					</div>
 				</li>
