@@ -35,7 +35,29 @@
 			<ol class="subList">
 				<li>
 
-					<h2 class="subHeading">제목</h2>
+					<p class="subtit">owlCarousel 사용방법</p>
+					<div class="codeField">
+<pre><code>$('ID 또는 class').owlCarousel({
+	loop: false,
+	nav: true,
+	dots: false,
+	margin: 0,
+	items: 1,
+	responsiveClass: true,
+	responsive: {
+		480 : {
+			items: 1
+		},
+		960 : {
+			items: 3
+		},
+		1200 : {
+			items: 5
+		}
+	}
+});
+</code></pre>
+					</div>
 					<div class="guideCodeWrapper">
 						<div class="row featured_brands">
 							<div class=" col-sm-12">
