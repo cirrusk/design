@@ -1588,14 +1588,8 @@ function SOP_PDP_optionSelect(){
 			}
 		});
 
-		//current
-		var subOption = $(this).find('.color-overlay-content .optionbox');
-		var currented = $(this).find('.optionbox.current');
-		if( currented.length ){
-			_selectHead.empty().append( currented.html());
-		}
-
 		//옵션선택
+		var subOption = $(this).find('.color-overlay-content .optionbox');
 		subOption.off('click.optChild').on('click.optChild',function(e){
 			e.preventDefault();
 
