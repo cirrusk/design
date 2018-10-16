@@ -1037,7 +1037,7 @@ label + .toolTip-wrapper {margin-left:6px;}
 
 /* 검색 > 탭 */
 .col-search-tab {position:relative; margin:0 0 40px; padding:0;}
-.col-search-tab ul {display:table; width:100%; margin:0; padding:0;}
+.col-search-tab ul {display:table; width:100%; margin:0; padding:0; table-layout:fixed;}
 .col-search-tab ul li {display:table-cell; width:; height:50px; vertical-align:middle; line-height:120%; background:#f4f4f4; border:1px solid #dadada; border-left:0;}
 .col-search-tab ul li:nth-of-type(1) {border-left:1px solid #dadada;}
 .col-search-tab ul li a {display:block; width:100%; padding:0 10px; text-align:center; color:#55565a;}
@@ -1684,6 +1684,7 @@ p.txt-warning {padding-left:22px; text-indent:-22px;}
 	.amway-theme .outer-border-bottom>.tabWrapper {overflow:hidden; overflow-x:auto;}
 
 	/* 검색 > 탭 */
+	.col-search-tab ul {table-layout:auto;}
 	.col-search-tab ul li {width:auto; background:none; border:0;}
 	.col-search-tab ul li:nth-of-type(1) {border-left:0;}
 	.col-search-tab ul li.active {background:none; border-top:0; border-bottom:4px solid #008fc5;}
