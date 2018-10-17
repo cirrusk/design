@@ -1,4 +1,4 @@
-/************************************************
+`/************************************************
 Version : AKL Hybris UIUX 1.0
 Date : 2018-07-02
 *************************************************/
@@ -1326,7 +1326,7 @@ Date : 2018-07-02
 .ex-wrap2 {position:absolute;width:100%;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);text-align:center;}
 .ex-wrap2 .tit {font-size:22px;font-weight:500;margin-bottom:20px;}
 .ex-wrap2 .icon-wrap {width:90%;margin:0 auto;}
-.ex-wrap2 .icon-wrap span {position:relative;display:inline-block;vertical-align:top;margin:20px 0 0;padding-top:95px;width:16%;font-size:15px;line-height:1.4;}
+.ex-wrap2 .icon-wrap span {position:relative;display:inline-block;vertical-align:top;margin:20px 0 0;padding-top:95px;width:125px;font-size:15px;line-height:1.4; letter-spacing:-2px}
 .ex-wrap2 .icon-wrap span:before {width:80px;height:80px;left:50%;margin-left:-40px;background:url('/_ui/responsive/theme-blue/images/akl_brand/xs_energy/xs_icon01.png') no-repeat 0 -360px;}
 
 [class*='sub-cont'] {float:left;overflow:hidden;position:relative;}
@@ -1596,7 +1596,12 @@ Date : 2018-07-02
 .brand .brand-artisti-banner.type20 a dl dd {color:#828387;}
 .brand .brand-artisti-banner.type21 a dl dd {color:#dbdad8;}
 
-@media (max-width: 900px){
+@media (max-width:1120px){
+	/* XS 에너지 드링크 */
+	.drink .ex-wrap2 .icon-wrap span {width:19%; font-size:14px}
+}
+
+@media (max-width: 910px){
 	/* XS 에너지 서브 */
 	.ex-wrap2 .tit {margin:0;}
 	.ex-wrap2 .icon-wrap {width:100%;}
@@ -1787,6 +1792,9 @@ Date : 2018-07-02
 	.sub-carousel .sizeWide,
 	.sub-carousel .sizeSmall {width:100%;}
 	.sub-carousel .bg {height:auto}
+	.multiCarousel .sub-carousel .td {display: block;}
+	.multiCarousel .sub-carousel .sizeWide,
+	.multiCarousel .sub-carousel .sizeSmall {width:100%;}
 
 	/* 바*/
 	.bar .sub-cont1 .img-wrap img {width:55%;}
