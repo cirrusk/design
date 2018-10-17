@@ -1592,12 +1592,12 @@ function SOP_PDP_optionSelect(){
 		var subOption = $(this).find('.color-overlay-content .optionbox');
 		subOption.off('click.optChild').on('click.optChild',function(e){
 			e.preventDefault();
-
+			/* 개발 삭제요청 : 2018.10.17
 			var optionCODE = $(this).html();
 			$(this).addClass('current');
 
 			_selectHead.empty().append( optionCODE );
-			_options.hide();
+			_options.hide();*/
 		});
 	});
 }
