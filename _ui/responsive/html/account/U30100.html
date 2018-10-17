@@ -69,9 +69,81 @@
 						<div class="valid-type-simple">
 							<p class="validation-para">
 								<strong>간편 본인확인</strong>
-								<span>고객님의 이름과 생년월일, 휴대폰번호로 <br> 본인을 확인합니다.</span>
+								<span>고객님의 이름과 법정생년월일,<br> 성별, 휴대폰번호로 본인을 확인합니다</span><!-- 수정 : 2018.10.17 -->
 								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
 							</p>
+
+							<!-- 본인확인 입력영역 -->
+							<div class="identify-input">
+								<strong class="author-tit">본인확인</strong>
+								<p class="author-text">
+									본인인증(휴대폰 또는 아이핀 인증)없이 간편 회원가입을 통해 가입하신 회원의 경우 이용 가능하며, <em>전체 아이디</em>가 표시됩니다.<br>
+									회원정보에 등록된 이름, 성별, 생년월일, 휴대폰번호를 입력해주세요.
+								</p>
+
+								<div class="validation-wrapper simpleABO">
+									<!-- 간편가입 ABO 입력 전체 -->
+									<div class="box-input-details">
+										<div class="validation-box-simple">
+											<div class="form-group ty-input-name">
+												<label class="col-md-3 col-xs-12 control-label" for="simpleName">이름</label>
+												<div class="col-md-9 col-xs-12"><input type="text" id="simpleName" class="form-control" placeholder="실명 입력"></div>
+											</div>
+
+											<div class="form-group ty-input-birth">
+												<label class="col-md-3 col-xs-12 control-label">성별</label>
+												<div class="col-md-9 col-xs-12 select-gender">
+													<div class="radio-wrapper">
+														<label class="amw-radio-wrap radio-label" for="selectGenderMale">
+															<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderMale">
+															<span class="amw-radio-overlay"></span>
+															<span class="amw-label-radio-text">남</span>
+														</label>
+													</div>
+													<div class="radio-wrapper">
+														<label class="amw-radio-wrap radio-label" for="selectGenderFemale">
+															<input type="radio" name="radio-gender" class="amw-global-radio" id="selectGenderFemale">
+															<span class="amw-radio-overlay"></span>
+															<span class="amw-label-radio-text">여</span>
+														</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-group ty-input-birth">
+												<label class="col-md-3 col-xs-12 control-label" for="simpleBirth">법정생년월일</label>
+												<div class="col-md-9 col-xs-12">
+													<input type="text" id="simpleBirth" class="form-control" value="" placeholder="예: 19800323">
+													<p class="txt-input-guide">주민등록번호상의 생년월일을 입력해주세요. </p>
+												</div>
+											</div>
+
+											<div class="form-group mobile">
+												<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호</label>
+												<div class="col-md-6 col-xs-12">
+													<div class="row form-item-row">
+														<div class="col-md-4 col-xs-4 input-part-1">
+															<select class="form-control" id="simpleMobile">
+																<option>010</option>
+																<option>011</option>
+															</select>
+														</div>
+														<div class="col-md-8 col-xs-8 input-part-2">
+															<input type="text" class="form-control" placeholder="‘-’없이 입력" title="휴대폰번호 뒷자리 입력">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="next-control">
+										<button type="button" class="bt-akl-blue">확인</button>
+									</div>
+									<!-- //간편가입 ABO 입력 전체 -->
+								</div>
+
+							</div>
+							<!-- //본인확인 입력영역 -->
 						</div>
 						<!-- //수정 : 2018.10.15 (간편 본인확인 추가) -->
 
@@ -98,7 +170,6 @@
 				</div>
 			</div>
 			<!-- //ABO 선택시  / 수정 : 2018.10.15 (탭삭제) -->
-
 
 			<!-- ABO 선택시  / 수정 : 2018.10.15 (탭형식 사용안함)
 			<div id="choose-abo" class="navigation-tabs-container" style="display:none;">
@@ -317,6 +388,23 @@ $(function(){
 		_parentsDiv.find('#choose-abo').hide();
 		_parentsDiv.find('#choose-member').slideDown(500);
 	});
+
+	validationStepBox(); //간편 본인확인
 });
+
+//간편 본인확인
+function validationStepBox(){
+	var simpleAuthor = $('.valid-type-simple');
+	var jsBtnShow = simpleAuthor.find('.js-btn-show');
+	var hiddenBox = simpleAuthor.find('.identify-input');
+
+	$(jsBtnShow).on('click',function(e){
+		e.preventDefault();
+
+		if( hiddenBox.is(':hidden')){
+			hiddenBox.slideDown('fast');
+		}
+	});
+}
 </script>
 </html>

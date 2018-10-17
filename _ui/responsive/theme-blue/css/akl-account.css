@@ -780,6 +780,7 @@
 /* 회원유형 선택 */
 .akl .choose-seeking-type {padding:10px 0 40px;}
 .akl .choose-seeking-type>span {display:block; margin-top:20px;}
+.akl .choose-seeking-type>span>label {display:inline-block;}
 
 /* 인증방법 선택 */
 .akl .seek-login-data .navigation-tabs-container {margin-left:0; margin-right:0; box-sizing:border-box;}
@@ -789,9 +790,10 @@
 
 /* 본인확인 정보입력 (본인확인 완료 메시지 영역 없음) */
 .akl .author-content .validation-wrapper {padding-top:0;}
-.akl .author-content .validation-wrapper.findInfo_author {height:190px;}
-.akl .author-content .validation-wrapper.subBiz {height:190px; margin-top:50px; border:1px solid red}
-.akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;}
+.akl .author-content .validation-wrapper.findInfo_author {padding-top:190px;}
+.akl .author-content .validation-wrapper.findInfo_author .identify-input {display:none}
+.akl .author-content .validation-wrapper.subBiz {height:190px; margin-top:50px;}
+/* .akl .author-content .validation-wrapper.simpleABO {padding-bottom:25px;} */
 .akl .author-content .validation-wrapper.simpleMember {padding-bottom:30px; border-bottom:1px solid #dadada;}
 .akl .author-content .author-tit {display:block;font-size:16px; padding-top:40px; border-top:1px solid #dadada;}
 .akl .author-content .author-text em {color:#002f5f;font-weight:500;}
@@ -801,6 +803,7 @@
 .akl .author-content .validation-box-simple .ty-input-birth input[type=text] {width:317px;}
 .akl .wrapper-memb-join .author-content .author-text {}
 .akl .wrapper-memb-join .author-content .next-control {margin-top:35px;}
+.akl .wrapper-memb-join .author-content .simpleABO .next-control {margin-top:0; padding:20px 0 40px; border-bottom:1px solid #dadada;}
 .akl .wrapper-memb-join .author-content .info-txt-btm + .next-control {margin-top:0}
 
 /* 본인확인 (본인확인 완료 메시지 포함) */

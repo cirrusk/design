@@ -71,11 +71,11 @@
 						<div class="valid-type-simple">
 							<p class="validation-para">
 								<strong>간편 본인확인</strong>
-								<span>고객님의 이름과 생년월일, 휴대폰번호로 <br> 본인을 확인합니다.</span>
+								<span>고객님의 이름과 법정생년월일,<br> 성별, 휴대폰번호로 본인을 확인합니다</span><!-- 수정 : 2018.10.17 -->
 								<a href="#" class="bt-akl-blue js-btn-show" id="Authentication_Simple">간편 본인확인</a><!-- 수정: 2018.03.13 (Tagging ID 추가) -->
 							</p>
 							<div class="valid-progress">
-								<!-- 간편 본인확인 입력 전체 : 사용안함 (2018.10.15)
+								<!-- 간편 본인확인 입력 전체 -->
 								<div class="box-input-details">
 									<p><strong class="st-text">간편 본인확인으로 ABO 가입 시 ABO에게 제공되는 일부 서비스와 활동이 제한될 수 있습니다.</strong></p>
 									<p>모든 입력 항목은 필수 항목입니다.</p>
@@ -114,6 +114,8 @@
 											</div>
 										</div>
 
+
+										<!-- 휴대폰 번호+인증 -->
 										<div class="form-group mobile">
 											<label class="col-md-3 control-label" for="simpleMobile">휴대폰 번호</label>
 											<div class="col-md-6 col-xs-12">
@@ -142,9 +144,10 @@
 												<div class="col-md-4 col-xs-4 col-btn"><button type="button" class="bt-akl-blue">확인</button></div>
 											</div>
 										</div>
-
+										<!-- //휴대폰 번호+인증 -->
 									</div>
-								</div> -->
+								</div>
+								<!-- //간편 본인확인 입력 전체 -->
 
 								<p class="valid-result-box on"><strong class="noti-suc">본인확인이 완료되었습니다.</strong></p><!-- 본인확인 결과 노출 시 .on 추가 -->
 							</div>
@@ -195,7 +198,7 @@
 
 	<script type="text/javascript">
 	$(function(){
-		//validationStepBox(); //간편 본인확인
+		validationStepBox(); //간편 본인확인
 	});
 
 	//간편 본인확인
