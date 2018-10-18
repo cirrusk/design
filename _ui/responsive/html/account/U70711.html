@@ -332,6 +332,13 @@
 																<a href="#" class="btnMinus">수량하나빼기</a>
 																<a href="#" class="btnPlus">수량하나더하기</a>
 															</div>
+															<!-- 수정 : 2018.10.18 (비활성 case 추가) -->
+															<div class="opt-quantity amount-cal disabled"><!-- .disabled -->
+																<input type="text" value="1" class="form-control js-qty-selector-input inpNum" id="amount-cal-input-id" disabled="disabled">
+																<a href="#" class="btnMinus">수량하나빼기</a>
+																<a href="#" class="btnPlus">수량하나더하기</a>
+															</div>
+															<!-- //수정 : 2018.10.18 (비활성 일때 case 추가) -->
 														</div>
 													</div>
 
@@ -343,6 +350,12 @@
 																<option>매 달, 3개월</option>
 															</select>
 														</div>
+														<!-- 수정 : 2018.10.18 (비활성 case 추가) -->
+														<div class="size-selector-container">
+															<label class="control-label" for="sopPdp_settlingDay">주기</label>
+															<span>매달, 6개월</span>
+														</div>
+														<!-- //수정 : 2018.10.18 (비활성 case 추가) -->
 													</div>
 
 													<div class="row">
@@ -352,6 +365,13 @@
 																<option>2018년 8월</option>
 																<option>2018년 9월</option>
 															</select>
+
+															<!-- 수정 : 2018.10.18 (비활성 case 추가) -->
+															<select class="size-select text-center form-control" id="sopPdp_starting" disabled="disabled">
+																<option>2018년 8월</option>
+																<option>2018년 9월</option>
+															</select>
+															<!-- //수정 : 2018.10.18 (비활성 case 추가) -->
 														</div>
 													</div>
 
@@ -526,6 +546,92 @@
 					<!-- //Type2 증정 -->
 				</div>
 				<!-- //SOP 제품목록 -->
+
+
+				<!-- 수정 : 2018.10.18 (증정품 추가) -->
+				<div class="mysop-product-detail-list sop-gwp-datail-list">
+					<h3 class="title-h6">증정품</h3>
+					<div class="list-content">
+						<div class="list-row-title row">
+							<div class="col-md-5 col-xs-12 list-item-info">제품</div>
+							<div class="col-md-1 hidden-xs">수량</div>
+							<div class="col-md-4 hidden-xs color-option">옵션</div>
+							<div class="col-md-2 hidden-xs">PV/BV</div>
+						</div>
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12 ty-prdt-name">
+									<p>ARTISTRY Signature Color Sheer Lipstick</p>
+									<span class="lightBlue">Selection applicable for Delivery 2 of Cycle 1, Delivery 4 of Cycle 1 &amp; Delivery 6 of Cycle 1 &amp; onwards.</span>
+								</div>
+								<div class="col-md-1 col-xs-12 list-item-quantity">
+									<span class="hidden-md hidden-lg color-blue">수량</span>
+									<span class="mob-float-right">1</span>
+								</div>
+								<div class="col-md-4 col-xs-12 list-item-option">
+									<div class="selected-option">
+										<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
+										<span>19번 코랄 선라이즈</span>
+									</div>
+									<span class="mob-float-right gift-free">Free</span>
+								</div>
+								<div class="col-md-2 col-xs-12 list-item-total">
+									<span class="hidden-md hidden-lg color-blue">Total PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12 ty-prdt-name">
+									<p>ARTISTRY Signature Color Sheer Lipstick</p>
+									<span class="lightBlue">Selection applicable for Delivery 2 of Cycle 1, Delivery 4 of Cycle 1 &amp; Delivery 6 of Cycle 1 &amp; onwards.</span>
+								</div>
+								<div class="col-md-1 col-xs-12 list-item-quantity">
+									<span class="hidden-md hidden-lg color-blue">수량</span>
+									<span class="mob-float-right">1</span>
+								</div>
+								<div class="col-md-4 col-xs-12 list-item-option">
+									<div class="selected-option">
+										<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
+										<span>19번 코랄 선라이즈</span>
+									</div>
+									<span class="mob-float-right gift-free">Free</span>
+								</div>
+								<div class="col-md-2 col-xs-12 list-item-total">
+									<span class="hidden-md hidden-lg color-blue">Total PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span>
+								</div>
+							</div>
+						</div>
+						<div class="content-list row">
+							<div class="row con-list-item">
+								<div class="col-md-5 col-xs-12 ty-prdt-name">
+									<p>ARTISTRY Signature Color Sheer Lipstick</p>
+									<span class="lightBlue">Selection applicable for Delivery 2 of Cycle 1, Delivery 4 of Cycle 1 &amp; Delivery 6 of Cycle 1 &amp; onwards.</span>
+								</div>
+								<div class="col-md-1 col-xs-12 list-item-quantity">
+									<span class="hidden-md hidden-lg color-blue">수량</span>
+									<span class="mob-float-right">1</span>
+								</div>
+								<div class="col-md-4 col-xs-12 list-item-option">
+									<div class="selected-option">
+										<div class="color-img"><img src="/_ui/responsive/theme-blue/images/@glitz-4.png" alt="19번 코랄 선라이즈"></div>
+										<span>19번 코랄 선라이즈</span>
+									</div>
+									<span class="mob-float-right gift-free">Free</span>
+								</div>
+								<div class="col-md-2 col-xs-12 list-item-total">
+									<span class="hidden-md hidden-lg color-blue">Total PV/BV</span>
+									<span class="mob-float-right">21.0/42.0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //수정 : 2018.10.18 (증정품 추가) -->
+
 
 				<!-- 버튼 -->
 				<div class="mysop-product-active both-side">
