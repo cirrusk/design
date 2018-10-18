@@ -9,29 +9,24 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 .akl.htmlWSG table td {padding:0}
 #guideType_form .customer-wrap {padding:0}
 
-.mgbLarge {margin-bottom:60px;}
-
-
-
 /* 가이드 목차 */
-.container.guideIndex {position:relative; overflow:hidden; padding-top:100px;}
-.container.guideIndex h1.guideHeading {position:absolute; top:50px; left:12px}
-.container.guideIndex > section {float:left;}
-.container.guideIndex .typeLayout {width:28%;}
-.container.guideIndex .typeUIcommon {width:36%;}
-.container.guideIndex .typeUIbehavior {width:36%;}
+.container.guideIndex {position:relative; overflow:hidden; padding:100px 0 0 250px;}
+.container.guideIndex h1.guideHeading{position:absolute; top:100px; left:20px; padding:40px; font-weight:300; background:#333; color:#fff;}
+.container.guideIndex > section {float:left; box-sizing:border-box; padding-right:70px;}
+.container.guideIndex .typeLayout {width:220px;}
+.container.guideIndex .typeUIcommon {}
+.container.guideIndex .typeUIbehavior {}
 
 .btnLink {font-size:30px;}
-.akl.htmlWSG .guideIndex h2.guideHeading {font-size:40px !important; line-height:normal; font-weight:300 !important;}
-.akl.htmlWSG section{margin:0 0 20px;}
+.akl.htmlWSG .guideIndex h2.guideHeading {position:relative; padding:30px 0 10px; font-size:40px !important; line-height:normal; font-weight:300 !important;}
 .akl.htmlWSG section li>a {}
 .guideIndex ol {list-style-position:outside; padding-left:28px;}
-.guideIndex ol li {padding-left:5px; list-style-type:decimal-leading-zero;}
-.guideIndex ol li a {color:#777;line-height:normal; font-size:18px;}
+.guideIndex ol li {padding-left:5px; font-size:18px; margin-top:5px; list-style-type:decimal-leading-zero;}
+.guideIndex ol li a {color:#555; line-height:normal; font-size:18px;}
 .guideIndex ol li a:hover, .guideIndex ol li a:focus {text-decoration:underline; color:#222;/*  font-style:oblique */}
+.guideIndex ol li a > span {/* display:block; */ margin:0 0 10px 13px; font-size:13px; color:#999;}
 
 /* 가이드용 헤더 */
-
 .akl.htmlWSG main {margin-top:;}
 .akl.htmlWSG a.logo {display:inline-block; height:36px; padding:4px 0 0 120px; color:#fff; text-transform:uppercase; background:url(../theme-blue/images/logo1.png) 0 50% no-repeat; background-size:auto 36px;}
 .akl.htmlWSG a.logo:hover {color:#fff;}
@@ -41,11 +36,9 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 .akl.htmlWSG header.main-header .amw-navigation-menu .navigation-menu-container {max-width:1400px; padding:0 12px;}
 .akl.htmlWSG .header-element-content h1 {margin:0; font-size:27px; font-weight:300 !important; letter-spacing:0;}
 
-
 /* 가이드 제목 */
-.akl.htmlWSG .topTitle {}
-.akl.htmlWSG .topTitle h1 {padding:60px 0 20px; font-size:47px !important; letter-spacing:0; text-align:center; font-weight:300;  letter-spacing:-0.05em;}
-.akl.htmlWSG .topTitle h1>span {display:block; margin-top:5px; font-size:18px; letter-spacing:0}
+.akl.htmlWSG .topTitle h1 {padding:60px 0 40px; font-size:47px !important;  text-align:center; font-weight:300;  letter-spacing:-0.05em;}
+.akl.htmlWSG .topTitle h1>span {display:block; margin-top:10px;  font-size:18px; letter-spacing:0;line-height:normal;}
 
 .subHeading { olor:#3f7bb7; font-weight:400 !important; font-size:18px !important; letter-spacing:0 !important; border-top:1px dashed #dcdcdc;}
 .subHeading > em {display:inline-block; padding:20px; background:#444; color:#fff;}
@@ -60,13 +53,12 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 /* 가이드 상세목록 */
 .subHeading + .codeField {margin-top:20px;}
 
-.subHeading.titType-Example {margin-top:40px; border-top:1px solid #eee; color:#aaa; font-weight:normal}
-/* .subHeading.titType-Example:before {content:'\e909'; display:inline-block; padding-right:5px; vertical-align:middle; font-family:'AmwayIcons'!important; font-size:18px; } */
 .subHeading.top {background:none; padding-left:0; border-top:1px solid #bbb; font-size:20px !important; color:#111 ;letter-spacing:-1px !important;}
 .subList.border {margin-top:40px; border-bottom:0;}
 .subList.border li {border-radius:3px; border:1px solid #ddd;}
 .subList.border .subHeading {background:none;}
 .subList.border .codeField {border:0;}
+.mgbLarge {margin-bottom:60px;}
 
 .subList {margin-bottom:100px;}
 .subList>li {overflow:hidden;/*  border:1px solid rgba(167,186,206,.4); border-radius:15px; */}
@@ -93,6 +85,12 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 .codeField .code-explain {font-family:'돋움체','DotumChe'; font-size:13px;}
 .btns a+a{margin-left:10px;}
 
+@media (max-width:1200px){
+	.container.guideIndex > section {float:none; margin-right:0;}
+	.container.guideIndex .typeLayout {}
+	.container.guideIndex .typeUIcommon {}
+	.container.guideIndex .typeUIbehavior {}
+}
 @media (max-width:900px){
 	.iconsLIST>li {width:33%;}
 }
@@ -121,10 +119,11 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 	.container.guideIndex .typeLayout {border-top:0}
 	.container.guideIndex .typeLayout,
 	.container.guideIndex .typeUIcommon,
-	.container.guideIndex .typeUIbehavior {width:100%}
+	.container.guideIndex .typeUIbehavior {width:100%; padding:0 0 40px 30px;}
 	.guideIndex ol {padding-left:0;}
-	.guideIndex ol li {padding-left:33px;font-weight:300; font-size:14px; list-style-position:inside; margin-top:5px}
+	.guideIndex ol li {padding-left:0; font-weight:300; font-size:14px; list-style-position:inside; margin-top:5px}
 	.guideIndex ol li a {font-size:14px;}
+	.guideIndex ol li a > span {display:none}
 
 	/* 가이드 제목 */
 	.akl.htmlWSG .topTitle {margin-bottom:20px;}
@@ -133,8 +132,6 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 	.subHeading {position:relative; padding:20px; font-size:16px !important; background:#444; border-top:0}
 	.subHeading > em {padding:0;}
 	.subtit {font-size:16px; font-weight:500; padding:30px 0 15px; margin-bottom:0; color:#222;}
-
-
 
 	/* 가이드 코드 wrapper */
 	.guideCodeWrapper {border:0; border-width:0 1px 1px; border-radius:0; box-shadow:0px 10px 10px rgba(110,110,110,0);}
