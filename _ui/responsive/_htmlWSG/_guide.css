@@ -10,13 +10,11 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 #guideType_form .customer-wrap {padding:0}
 
 .mgbLarge {margin-bottom:60px;}
-@media (max-width:768px){
-	.mgbLarge {margin-bottom:30px;}
-}
+
 
 
 /* 가이드 목차 */
-.container.guideIndex {position:relative;overflow:hidden; padding-top:100px;}
+.container.guideIndex {position:relative; overflow:hidden; padding-top:100px;}
 .container.guideIndex h1.guideHeading {position:absolute; top:50px; left:12px}
 .container.guideIndex > section {float:left;}
 .container.guideIndex .typeLayout {width:28%;}
@@ -24,14 +22,13 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 .container.guideIndex .typeUIbehavior {width:36%;}
 
 .btnLink {font-size:30px;}
-.akl.htmlWSG .guideIndex h2.guideHeading {font-size:40px !important; line-height:normal;}
+.akl.htmlWSG .guideIndex h2.guideHeading {font-size:40px !important; line-height:normal; font-weight:300 !important;}
 .akl.htmlWSG section{margin:0 0 20px;}
-.akl.htmlWSG section li>a {line-height:normal; font-size:18px;}
+.akl.htmlWSG section li>a {}
 .guideIndex ol {list-style-position:outside; padding-left:28px;}
 .guideIndex ol li {padding-left:5px; list-style-type:decimal-leading-zero;}
-
-
-
+.guideIndex ol li a {color:#777;line-height:normal; font-size:18px;}
+.guideIndex ol li a:hover, .guideIndex ol li a:focus {text-decoration:underline; color:#222;/*  font-style:oblique */}
 
 /* 가이드용 헤더 */
 
@@ -102,16 +99,32 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 @media (min-width:769px){
 }
 @media (max-width:768px){
+	.mgbLarge {margin-bottom:30px;}
+
 	/* 가이드용 헤더 */
 	.akl.htmlWSG header.main-header .amway-theme .header-container {display:none;}
 	.akl.htmlWSG header.main-header .navigation-menu-container .desktop-nav-menu {display:none;}
 	.akl.htmlWSG header.main-header .amw-navigation-menu .navigation-menu-container {padding:0;}
 	.akl.htmlWSG header.main-header .mobile-container {display:block;}
-	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-header-cell:first-of-type {border:0}
+	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-header-cell:first-of-type {border:0;}
 	.akl.htmlWSG header.main-header .mobile-container .mobile-wrapper .mobile-nav-row-btn-logo {text-align:left;}
-	.akl.htmlWSG a.logo {display:inline-block; margin-top:2px;padding-left:95px; font-size:20px; line-height:32px; color:#002f5f; background:url(../theme-blue/images/logo2.png) 0 50% no-repeat; background-size:auto 30px;}
+	.akl.htmlWSG .navigation-menu-toggle-wrapper {display:none !important;}
+	.akl.htmlWSG .mobile-header-cell.mobile-nav-row-btn-logo {padding-left:15px; vertical-align:middle;}
+	.akl.htmlWSG a.logo {display:inline-block; margin-top:3px; padding:6px 0 0 85px; color:#002f5f; background:url(../theme-blue/images/logo2.png) 0 50% no-repeat; background-size:auto 25px;}
+	.akl.htmlWSG a.logo h1 {font-size:22px; font-weight:400 !important; letter-spacing:0;}
 
-	.akl.htmlWSG .mobile-header-cell.mobile-nav-row-btn-logo {vertical-align:middle; border:1px solid red}
+	/* 가이드 목차 */
+	.akl.htmlWSG .guideIndex h2.guideHeading {padding:30px 0 10px; font-size:30px !important; font-weight:400 !important;}
+	.container.guideIndex {padding:30px 15px;}
+	.container.guideIndex h1.guideHeading {position:static; display:inline-block; padding:20px; font-size:20px !important; color:#fff; background:#333;}
+	.container.guideIndex > section {float:none; width:100%; border-top:1px dashed #ddd;}
+	.container.guideIndex .typeLayout {border-top:0}
+	.container.guideIndex .typeLayout,
+	.container.guideIndex .typeUIcommon,
+	.container.guideIndex .typeUIbehavior {width:100%}
+	.guideIndex ol {padding-left:0;}
+	.guideIndex ol li {padding-left:33px;font-weight:300; font-size:14px; list-style-position:inside; margin-top:5px}
+	.guideIndex ol li a {font-size:14px;}
 
 	/* 가이드 제목 */
 	.akl.htmlWSG .topTitle {margin-bottom:20px;}
@@ -128,6 +141,7 @@ h1,h2,h3,h4,h5,h6{etter-spacing:normal; margin:0; padding:0;}
 	#guideType_heading .guideCodeWrapper {padding:0}
 	#guideType_heading .guideCodeWrapper.brand {margin-bottom:80px;}
 	#guideType_heading .subList>li {overflow:visible;}
+	.layerMask {padding-top:20px;}
 
 	/* 가이드용 여백조정 */
 	.akl.htmlWSG main {margin-top:62px;}
